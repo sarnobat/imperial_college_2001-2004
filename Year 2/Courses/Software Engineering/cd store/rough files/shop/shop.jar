@@ -1,0 +1,9 @@
+package shopbeans;
+
+public class shop
+{
+    public void test()
+    {
+        out.println("<h1>This is a silly test method</h1>");
+    }        
+}

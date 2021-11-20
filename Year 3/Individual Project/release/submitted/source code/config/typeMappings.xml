@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- These are specific to PostgreSQL -->
+<type_mappings>
+  <!-- MAPPINGS FOR PSEUDO XSD TYPES -->
+  <mapping>
+    <xsd_type>primary_key_auto_number</xsd_type>
+    <sql_type>INT</sql_type>
+  </mapping>
+  <!-- EXACT MAPPINGS -->
+  <mapping>
+    <xsd_type>string</xsd_type>
+    <sql_type>VARCHAR(50)</sql_type>
+  </mapping>
+  <mapping>
+    <xsd_type>decimal</xsd_type>
+    <sql_type>DECIMAL</sql_type>
+  </mapping>
+  <mapping>
+    <xsd_type>date</xsd_type>
+    <sql_type>DATE</sql_type>
+  </mapping>
+  <mapping>
+    <xsd_type>integer</xsd_type>
+    <sql_type>INT</sql_type>
+  </mapping>
+  <mapping>
+    <xsd_type>dateTime</xsd_type>
+    <sql_type>DATETIME</sql_type>
+  </mapping>
+  <mapping>
+    <xsd_type>boolean</xsd_type>
+    <sql_type>boolean</sql_type>
+  </mapping>
+  <mapping>
+    <xsd_type>float</xsd_type>
+    <sql_type>FLOAT</sql_type>
+  </mapping>
+  <!-- QUESTIONABLE -->
+  <mapping>
+    <xsd_type>NMTOKEN</xsd_type>
+    <sql_type>VARCHAR(50)</sql_type>
+  </mapping>
+  <!-- MAPPINGS WHICH REQUIRE TRIGGERS -->
+  <mapping>
+    <xsd_type>positiveInteger</xsd_type>
+    <sql_type>INT</sql_type>
+    <trigger>&gt;0</trigger>
+  </mapping>
+  <!-- NO MAPPING FOUND YET -->
+  <mapping>
+    <xsd_type>double</xsd_type>
+    <sql_type>FLOAT</sql_type>
+  </mapping>
+  <mapping>
+    <xsd_type>duration</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>hexBinary</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>base64Binary</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>anyURI</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>ID</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>IDREF</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>ENTITY</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>NOTATION</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>normalizedString</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>token</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>language</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>IDREFS</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>ENTITIES</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>NMTOKENS</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>Name</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>QName</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>NCName</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>nonNegativeInteger</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>nonPositiveInteger</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>negativeInteger</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>byte</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>int</xsd_type>
+    <sql_type>INT</sql_type>
+  </mapping>
+  <mapping>
+    <xsd_type>long</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>short</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>unsignedByte</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>unsignedInt</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>unsignedLong</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>unsignedShort</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>time</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>gYearMonth</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>gYear</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>gMonthDay</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>gDay</xsd_type>
+    <sql_type />
+  </mapping>
+  <mapping>
+    <xsd_type>gMonth</xsd_type>
+    <sql_type />
+  </mapping>
+  <!--
+	<mapping>
+		<xsd_type></xsd_type>
+		<sql_type></sql_type>
+	</mapping>
+-->
+</type_mappings>
+

@@ -1,0 +1,38 @@
+/////////////////////////////////////////////////////////////////
+
+void main()
+{
+	int aBoard [numberofBowls];
+	aBoard = InitialiseBoard(aBoard);
+	int [ ] playerscores  = {0,0}
+	DisplayScoreAndBoard(aBoard,player);
+	int playerno = 2;
+
+	while (player[0]<24 && player[1]<24)
+	{
+		oldBoard = aBoard;
+		int bowl;
+		int oneplayerscore;
+		playerno = SwitchPlayer(aBoard,playerno);
+		if (!CanMove(playerno,aBoard))
+		{
+			SwitchPlayer(playerno);	
+		}
+
+//I put the following line in myselt because otherwise the program won't know what the value of int Bowl is
+		println("Player " + playerno + ": Please make a move -> ");
+		bowl = GetMove();
+		PutMove(playerno,bowl);
+		doMove(aBoard,bowl);
+//		oneplayerscore = CalculateScoreIncrease(oldBoard,aBoard,playerno);
+		player [whichplayer-1] = player[whichplayer-1]+oneplayerscore;
+		DisplayScoreAndBoard(aBoard,player);
+	}
+	println("Player " + whichplayer + " wins");
+
+
+}
+
+/////////////////////////////////////////////////////////////////
+
+main();

@@ -1,0 +1,15 @@
+Questions
+---------
+
+Should I bother explaining the element schema in the report?
+	Fully, include example - but use your own. Also do so for the edge schema.
+To what extent do I explain other people's work? Do I go as far as copying and pasting their examples, or describe them very briefly?
+	Use your own example to apply to theirs.
+	It should be like a tutorial of existing technologies.
+	Mention their strengths and weaknesses, and why you've chosen what you have.
+Is it possible to work on code after the report deadline (when the cd has been submitted)?
+	Yes, but only for demonstration purposes. It's really better to do it before.
+	Perhaps making the GUI look nicer can be done afterwards.
+What qualifies as 'state-of the art'?
+	Everything before. It doesn't have to be 'yesterday'. The theory of relativity is
+	'state of the art'

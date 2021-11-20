@@ -1,0 +1,533 @@
+head	1.18;
+access;
+symbols
+	yams-final-19-12-03:1.18
+	yams-release2-17-12-03:1.18
+	yams-release-17-12-03:1.18;
+locks; strict;
+comment	@# @;
+
+
+1.18
+date	2003.12.05.17.04.39;	author qq01;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2003.11.26.15.02.40;	author ajb101;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.11.25.15.55.43;	author ajb101;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.11.21.16.21.30;	author ajb101;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.11.16.23.35.41;	author ajb101;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.11.16.17.52.32;	author ajb101;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.11.10.10.57.52;	author qq01;	state dead;
+branches;
+next	1.11;
+
+1.11
+date	2003.11.08.17.39.29;	author qq01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.11.05.22.07.59;	author ajb101;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.11.05.15.31.37;	author ajb101;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.11.05.14.58.59;	author ss401;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.04.23.06.50;	author ajb101;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.04.14.30.33;	author bmc01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.03.11.47.41;	author jkm01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.03.11.13.25;	author jkm01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.02.15.03.00;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.01.19.52.15;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.01.15.24.21;	author ajb101;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.18
+log
+@Added configuration file reader
+@
+text
+@import yams.*;
+
+public class YAMS {
+
+	public static void main(String args[]) {
+
+		YAMSController y = null;
+
+		if (args.length >= 1) {
+			// first argument must specify GUI or Console
+			if (args[0].equalsIgnoreCase("-console"))
+				y = new YAMSConsole();
+			if (args[0].equalsIgnoreCase("-gui"))
+				y = new YAMSGui();
+		}
+
+		if (y == null) {
+			// invalid command line arguments
+			System.out.println(
+				"Invalid command line arguments, first argument must be either -console or -gui");
+		} else {
+			y.start(args);
+		}
+
+	}
+
+}
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d3 3
+a5 1
+public class YAMS{
+a6 2
+	public static void main (String args[]) {
+	
+d8 1
+a8 1
+	
+d16 2
+a17 2
+		
+		if ( y == null ) {
+d19 2
+a20 1
+			System.out.println("Invalid command line arguments, first argument must be either -console or -gui");
+d24 1
+a24 1
+	
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d7 1
+a7 1
+		System.out.println("STARTING YAMS");
+d9 7
+a15 4
+		YAMSController y = new YAMSConsole();
+		y.start(args);
+		
+		System.out.println("FINISHED YAMS");
+d17 6
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+		YAMSController y = new YAMSGui();
+@
+
+
+1.14
+log
+@modified controller structure
+@
+text
+@d9 1
+a9 1
+		YAMSController y = new YAMSConsole();
+@
+
+
+1.13
+log
+@fixed type in MIPSParser, and changing layout of controller classes
+@
+text
+@d9 1
+a9 1
+		YAMSConsole y = new YAMSConsole();
+@
+
+
+1.12
+log
+@Updated package structure.
+@
+text
+@d1 1
+a1 1
+// this is a change to the file
+d3 1
+a3 98
+// import java packages
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.LinkedList;
+
+import assembler.Assembler;
+
+
+/**
+ * @@author ajb101
+ *
+ */
+public class YAMS {
+
+	/**
+	 * @@param args arguments provided from the command line - see program documentation
+	 */
+	public static void main(String args[]) {
+
+		// variable declarations (include default options)
+		LinkedList files = new LinkedList();
+		boolean statsMode = false;
+		String instruction_File = "Instruction_file.xml";
+
+		// parse command line arguments
+		for (int i = 0; i < args.length; i++) {
+
+			if (args[i].equalsIgnoreCase("-m1")
+				|| args[i].equalsIgnoreCase("--mode1")) {
+				statsMode = false;
+
+			} else if (
+				args[i].equalsIgnoreCase("-m2")
+					|| args[i].equalsIgnoreCase("--mode2")) {
+				statsMode = true;
+
+			} else if (args[i].equalsIgnoreCase("-if")) {
+				// next argument is an input file containing a list of files
+				if (i == args.length - 1) {
+					// but no more options
+					System.err.println("-if needs an argument");
+					System.exit(1);
+				} else {
+					i++;
+					// open file and read filenames
+					FileReader file;
+					BufferedReader input = null;
+					try {
+						file = new FileReader(args[i]);
+						input = new BufferedReader(file);
+					} catch (FileNotFoundException e) {
+						System.err.println(
+							"Unable to find input file: " + args[i]);
+						System.exit(1);
+					}
+					try {
+						String line;
+						while ((line = input.readLine()) != null) {
+							files.add(new File(line));
+						}
+					} catch (IOException e) {
+						// some other error
+						e.printStackTrace();
+					}
+
+				}
+
+			} else {
+				// assume it's a file
+				files.add(new File(args[i]));
+
+			}
+
+		}
+
+		// loop through our list of files
+		for (int i = 0; i < files.size(); i++) {
+			// check file exists
+			if (((File)files.get(i)).exists()) {
+				// parse it
+				// Parser parse = new Parser();
+				// TreeMap ast = parse.parseFile((File)files.get(i));
+				// assemble it
+				Assembler asm = new Assembler(instruction_File);
+				asm.testAssembler();
+				// asm.assemble(ast);
+				// if mode 1 - start processor normally
+				// if mode 2 - start processor in silent mode and output stats
+
+			} else {
+				// file does not exist
+				System.err.println("File not found: " + ((File)files.get(i)).getName());
+			}
+		}
+d5 10
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d5 6
+a10 2
+import java.util.*;
+import java.io.*;
+d12 1
+a12 5
+// import YAMS packages
+import assembler.*;
+import parser.*;
+import processor.*;
+import exceptions.*;
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d29 1
+d87 2
+d90 1
+a90 1
+				Assembler asm = new Assembler("Instruction_file.xml");
+d92 1
+@
+
+
+1.8
+log
+@teachingness
+@
+text
+@d15 4
+d21 3
+d87 1
+a87 1
+				Assembler asm = new Assembler("xmlfile.xml");
+@
+
+
+1.7
+log
+@adding assembler calls to YAMS.java
+@
+text
+@d1 1
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d2 1
+a3 1
+// import packages...
+d7 7
+d79 2
+@
+
+
+1.5
+log
+@blah
+@
+text
+@d3 1
+a3 1
+// import packages
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+// comment for jimbo
+@
+
+
+1.3
+log
+@working on controller
+@
+text
+@d1 1
+@
+
+
+1.2
+log
+@working on main YAMS controller
+@
+text
+@d8 23
+a30 30
+	public static void main ( String args[] ) {
+	
+	// variable declarations (include default options)
+	LinkedList files = new LinkedList();
+	boolean statsMode = false;
+	
+	// parse command line arguments
+	for(int i=0; i<args.length; i++) {
+	
+		if (args[i].equalsIgnoreCase("-m1") || args[i].equalsIgnoreCase("--mode1")) {
+			statsMode = false;
+			
+		} else if (args[i].equalsIgnoreCase("-m2") || args[i].equalsIgnoreCase("--mode2")) {
+			statsMode = true;
+			
+		} else if (args[i].equalsIgnoreCase("-if")) {
+			// next argument is an input file containing a list of files
+			if (i == args.length - 1) {
+				// but no more options
+				System.err.println("-if needs an argument");
+				System.exit(1);
+			} else {
+				i++;
+				// open file and read filenames
+				FileReader file = null;
+				try {
+					file  = new FileReader(args[i]);
+				}
+				catch (FileNotFoundException e) {
+					System.err.println("Unable to find input file: " + args[i]);
+d32 21
+a52 6
+				}
+				BufferedReader input = new BufferedReader(file);
+				try {
+					String line;
+					while( (line = input.readLine()) != null ) {
+						System.out.println("file: " + line);
+d54 1
+d56 21
+a76 5
+				catch (IOException e) {
+					// some other error
+					e.printStackTrace();
+				}
+				
+a77 5
+			
+		} else {
+			// unrecognised option
+			System.out.println("ERROR: Unrecognised Option: " + args[i]);
+			
+d79 1
+a79 13
+		
+	}
+	
+	// loop through files
+		// parse the file
+		// assemble the file
+		// if mode 1 - start processor normally, giving it standard output to
+		//             talk to
+		// if mode 2 - start processor in stats mode
+		//           - display statistics
+	
+	// finished, if mode 2, display overall statistics
+	
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d4 1
+a12 1
+	String inputFile;
+d27 2
+a28 1
+				System.out.println("ERROR: -if needs an argument");
+d31 21
+a51 1
+				inputFile = args[i];
+d65 2
+a66 1
+		// if mode 1 - start processor normally, giving it standard output to talk to
+@
+

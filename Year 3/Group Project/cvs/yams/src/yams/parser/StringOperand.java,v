@@ -1,0 +1,111 @@
+head	1.3;
+access;
+symbols
+	yams-final-19-12-03:1.3
+	yams-release2-17-12-03:1.3
+	yams-release-17-12-03:1.3
+	cleanup:1.3.0.2
+	Root_cleanup:1.3
+	stable-13-12-2003:1.3;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2003.12.08.12.40.47;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.12.02.13.34.03;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.28.16.53.08;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@Removed the double quote surrounding the original text
+@
+text
+@/*
+ * Created on 2003-11-28
+ */
+package yams.parser;
+
+/**
+ * Models an operand of an instruction that's a string.
+ * 
+ * @@author Qian Qiao(qq01)
+ */
+public class StringOperand extends Operand {
+	
+	private String string;
+	
+	/**
+	 * Constructs a new <code>StringOperand</code>.
+	 * 
+	 * @@param string value of the <code>String</code>
+	 */
+	public StringOperand(String string){
+		this.string = string;
+	}
+
+	/* (non-Javadoc)
+	 * @@see yams.parser.Operand#getType()
+	 */
+	public int getType() {
+		return TYPE_STRING;
+	}
+
+	/* (non-Javadoc)
+	 * @@see java.lang.Object#toString()
+	 */
+	public String toString() {
+		return string;
+	}
+	
+	/**
+	 * @@return the actual value of the <code>String</code>
+	 */
+	public String getString(){
+		return string;
+	}
+}
+@
+
+
+1.2
+log
+@Updated javadoc
+@
+text
+@d35 1
+a35 1
+		return "\"" + string + "\"";
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d7 2
+d15 5
+d35 1
+a35 1
+		return string;
+d38 3
+a43 1
+
+@
+

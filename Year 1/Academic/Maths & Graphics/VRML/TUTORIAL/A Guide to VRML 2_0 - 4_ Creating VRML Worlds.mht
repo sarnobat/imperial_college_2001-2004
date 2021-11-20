@@ -1,0 +1,1293 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: A Guide to VRML 2.0 - 4. Creating VRML Worlds
+Date: Mon, 4 Feb 2002 13:20:07 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0043_01C1AD7E.AA32B920";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4910.0300
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.agocg.ac.uk/train/vrml2rep/part1/guide4.htm
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>A Guide to VRML 2.0 - 4. Creating VRML Worlds</TITLE>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type>
+<META content=3D"MSHTML 5.00.3502.4373" name=3DGENERATOR></HEAD>
+<BODY background=3Dhttp://www.agocg.ac.uk/images/ORG1BACK.GIF =
+bgColor=3Dwhite=20
+link=3D#0000ff text=3Dblack vLink=3D#800080>
+<TABLE border=3D0 cellSpacing=3D10 width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD width=3D160><IMG alt=3D"AGOCG logo" height=3D64=20
+      src=3D"http://www.agocg.ac.uk/images/agocgs.gif" width=3D150></TD>
+    <TD></TD>
+    <TD align=3Dright width=3D400>
+      <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D400>
+        <TBODY>
+        <TR>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/graphics.htm"><IMG =
+alt=3DGraphics=20
+            border=3D0 height=3D25 =
+src=3D"http://www.agocg.ac.uk/images/graphics.gif"=20
+            width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/mmedia.htm"><IMG =
+alt=3DMultimedia=20
+            border=3D0 height=3D25 =
+src=3D"http://www.agocg.ac.uk/images/mmedia.gif"=20
+            width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/virtual.htm"><IMG alt=3DVR =
+border=3D0=20
+            height=3D25 =
+src=3D"http://www.agocg.ac.uk/images/virtual.gif"=20
+            width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/visual.htm"><IMG =
+alt=3DVisualisation=20
+            border=3D0 height=3D25 =
+src=3D"http://www.agocg.ac.uk/images/vis.gif"=20
+            width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/cdroot.htm"><IMG =
+alt=3DContents border=3D0=20
+            height=3D25 =
+src=3D"http://www.agocg.ac.uk/images/contents.gif"=20
+            width=3D80></A></TD></TR>
+        <TR>
+          <TD colSpan=3D4 height=3D13 width=3D320><IMG border=3D0 =
+height=3D13=20
+            src=3D"http://www.agocg.ac.uk/images/baro.gif" =
+width=3D320></TD>
+          <TD align=3Dright height=3D13 width=3D80><IMG border=3D0 =
+height=3D13=20
+            src=3D"http://www.agocg.ac.uk/images/bari.gif" =
+width=3D78></TD></TR></TR>
+        <TR>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/virtual.htm#train"><IMG =
+alt=3DTraining=20
+            border=3D0 height=3D25 =
+src=3D"http://www.agocg.ac.uk/images/traino.gif"=20
+            width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/virtual.htm#reports"><IMG =
+alt=3DReports=20
+            border=3D0 height=3D25 =
+src=3D"http://www.agocg.ac.uk/images/reporto.gif"=20
+            width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/virtual.htm#workshop"><IMG=20
+            alt=3DWorkshops border=3D0 height=3D25=20
+            src=3D"http://www.agocg.ac.uk/images/wshopo.gif" =
+width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/virtual.htm#briefings"><IMG=20
+            alt=3DBriefings border=3D0 height=3D25=20
+            src=3D"http://www.agocg.ac.uk/images/briefo.gif" =
+width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/index.htm"><IMG alt=3DIndex =
+border=3D0=20
+            height=3D25 src=3D"http://www.agocg.ac.uk/images/index.gif"=20
+          =
+width=3D80></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE bgColor=3D#008000 border=3D0 cellSpacing=3D0 width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD><FONT color=3D#ffffff>&nbsp;<I>Part One: <B>A Guide to VRML=20
+      2.0</B></I></FONT>=20
+    <TD align=3Dright><A=20
+      =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/guide3.htm"><IMG=20
+      alt=3Dprevious border=3D0=20
+      =
+src=3D"http://www.agocg.ac.uk/train/vrml2rep/buttons/gprev.gif"></A><IMG =
+
+      border=3D0 =
+src=3D"http://www.agocg.ac.uk/train/vrml2rep/buttons/gline.gif"><A=20
+      href=3D"http://www.agocg.ac.uk/train/vrml2rep/contents.htm"><IMG=20
+      alt=3Dcontents border=3D0=20
+      =
+src=3D"http://www.agocg.ac.uk/train/vrml2rep/buttons/gcont.gif"></A><IMG =
+
+      border=3D0 =
+src=3D"http://www.agocg.ac.uk/train/vrml2rep/buttons/gline.gif"><A=20
+      =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/guide.htm"><IMG=20
+      alt=3Dstart border=3D0=20
+      =
+src=3D"http://www.agocg.ac.uk/train/vrml2rep/buttons/gstart.gif"></A><IMG=
+=20
+      border=3D0 =
+src=3D"http://www.agocg.ac.uk/train/vrml2rep/buttons/gline.gif"><A=20
+      =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/guide5.htm"><IMG=20
+      alt=3Dnext border=3D0=20
+      =
+src=3D"http://www.agocg.ac.uk/train/vrml2rep/buttons/gnext.gif"></A>=20
+  </TR></TBODY></TABLE>
+<H1>4. Creating VRML Worlds</H1>
+<UL>
+  <LI><A=20
+  =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/guide4.htm#heading80"=
+>4.1=20
+  Modelling Tools</A>=20
+  <LI><A=20
+  =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/guide4.htm#heading81"=
+>4.2=20
+  File Translators</A>=20
+  <LI><A=20
+  =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/guide4.htm#heading87"=
+>4.3=20
+  Validators</A>=20
+  <LI><A=20
+  =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/guide4.htm#heading91"=
+>4.4=20
+  Object Libraries</A>=20
+  <LI><A=20
+  =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/guide4.htm#heading92"=
+>4.5=20
+  Other Utilities</A> </LI></UL>
+<HR noShade SIZE=3D1>
+
+<BLOCKQUOTE>
+  <P>The previous section explained how the VRML language can be used to =
+define=20
+  interactive 3D worlds. This section will describe some of the many =
+software=20
+  tools and resources now available, that can be used to help create =
+these=20
+  worlds. For the latest information on what is available the reader =
+should=20
+  refer to the VRML Repository (<I><A=20
+  =
+href=3D"http://www.sdsc.edu/vrml">www.sdsc.edu/vrml</A></I>).</P></BLOCKQ=
+UOTE>
+<H2><A name=3DHeading80>4.1 Modelling Tools</A></H2>
+<BLOCKQUOTE>
+  <P>Although its perfectly possible to create VRML world entirely using =
+a text=20
+  editor, in practice some sort of modelling application is often =
+required,=20
+  especially when more complex shapes are desired. Part Two of this =
+report has a=20
+  detailed evaluation of some of the modelling tools currently =
+available, so=20
+  they won't be discussed in detail here. However, its worth noting that =
+many=20
+  standard modelling and CAD packages now include a VRML export =
+function, such=20
+  as Alias|Wavefront Power Animator, Kinetix 3D Studio Max (see <A=20
+  =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/guide4.htm#heading48"=
+>4.2</A>),=20
+  3D/Eye TriSpectives. and Bentley MicroStation. Although, some only =
+support=20
+  VRML 1.0.</P></BLOCKQUOTE>
+<H2><A name=3DHeading81>4.2 File Translators</A></H2>
+<BLOCKQUOTE>
+  <P>A VRML file translator converts geometry data from another 3D file =
+format=20
+  into VRML. All the VRML 2.0 translator programs listed below can be =
+obtained=20
+  for free via the internet.</P>
+  <H3><A name=3DHeading82>VRML 1.0 to VRML 2.0 Translators</A></H3>
+  <P>There are currently two freeware command-line programs for =
+converting VRML=20
+  1.0 files into VRML 2.0. They are available for a variety of operating =
+
+  systems.</P>
+  <H3><A name=3DHeading83>vrml1to2 (Sony Corporation)</A></H3>
+  <P>platforms: (SunOS 5.5), NEWS (NEWS-OS 6.0), SGI (Irix 5.3) and =
+Windows=20
+  95/NT<BR><I><A=20
+  =
+href=3D"http://vs.spiw.com/vs/vrml1to2E.html">http://vs.spiw.com/vs/vrml1=
+to2E.html</A></I></P>
+  <H3><A name=3DHeading84>Vrml1ToVrml2 (Silicon Graphics)</A></H3>
+  <P>platforms: SGI (Irix 5.3 &amp; 6.2) and Windows 95/NT.<BR><I><A=20
+  =
+href=3D"http://cosmosoftware.com/developer/utilities.html">http://cosmoso=
+ftware.com/developer/utilities.html</A></I></P>
+  <H3><A name=3DHeading85>Crossroads 3D (Keith Rule)</A></H3>
+  <P>Crossroads is a freeware Windows 95/NT application by Keth Rule, =
+that can=20
+  translate between several different 3D file formats. It also allows =
+the user=20
+  to view and maniplate a wireframe rendering of the model. Version 1.0 =
+Beta can=20
+  generate a VRML 2.0 file from the following formats: 3D Studio (.3ds), =
+AutoCAD=20
+  (.dxf), POVRay, RAW Triangle, TrueSpace (.cob), VRML 1.0, Wavefront =
+(.obj) and=20
+  WorldToolkit (.nff). However, it cannot currently read a VRML 2.0 =
+file.=20
+  Crossroads is available from <I><A=20
+  =
+href=3D"http://www.europa.com/~keithr">http://www.europa.com/~keithr</A><=
+/I>.
+  <P>
+  <P>
+  <CENTER></CENTER>
+  <CENTER>
+  <TABLE>
+    <TBODY>
+    <TR>
+      <TD align=3Dmiddle><A=20
+        =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/fig41.jpg"><IMG=20
+        border=3D0 height=3D150=20
+        src=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/fig41s.jpg"=20
+        width=3D200></A>=20
+    <TR>
+      <TD align=3Dmiddle><B>Figure 4-1</B> Crossroads 3D=20
+</TR></TBODY></TABLE></CENTER>
+  <P>
+  <H3><A name=3DHeading86>VRML Exporter Plug-in for 3D Studio MAX=20
+  (Kinetix)</A></H3>
+  <P>A free plug-in for 3D Studio MAX, that allows a model to be saved =
+in VRML=20
+  2.0 format, is available from the Kinetix Web site. The exporter =
+supports=20
+  animations, sensors, sound, URL anchors, inlines, and LOD, Billboard,=20
+  Background and NavigationInfo nodes. The export dialogue also includes =
+various=20
+  options to optimise the output, such as removal of normals, =
+indentation and=20
+  numerical precison.
+  <P>
+  <CENTER>
+  <TABLE>
+    <TBODY>
+    <TR>
+      <TD align=3Dmiddle><A=20
+        =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/fig42.jpg"><IMG=20
+        border=3D0 height=3D174=20
+        src=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/fig42s.jpg"=20
+        width=3D200></A>=20
+    <TR>
+      <TD align=3Dmiddle><B>Figure 4-2</B> 3D Studio MAX VRML Exporter =
+Dialogue=20
+        Window </TR></TBODY></TABLE></CENTER>
+  <P>The plug-in is available from <I><A=20
+  =
+href=3D"http://www.ktx.com/3dsmax/html/vrml_exporter.html">http://www.ktx=
+.com/3dsmax/html/vrml_exporter.html</A></I>=20
+  (Windows NT). A tutorial on how to use 3DS MAX for creating VRML 2.0 =
+worlds=20
+  can be found at <I><A=20
+  =
+href=3D"http://www.dform.com/inquiry/tutorials/3dsmax/">http://www.dform.=
+com/inquiry/tutorials/3dsmax/</A></I>.=20
+  </P></BLOCKQUOTE>
+<H2><A name=3DHeading87>4.3 Validators</A></H2>
+<BLOCKQUOTE>
+  <P>If you want other people to view and interact with your VRML world, =
+it is=20
+  good idea to check that it conforms correctly to the VRML 2.0 =
+specification.=20
+  VRML browsers handle files containing invalid VRML in different ways, =
+some may=20
+  show only part of the scene, while others may display nothing at all. =
+Even=20
+  .wrl files generated by modelling tools or translators can sometimes =
+contain=20
+  errors. A validator program reads a VRML file, checks its syntax and =
+reports=20
+  any errors it may find.</P>
+  <H3><A name=3DHeading88>Vorlon (Trapezium Development =
+Company)</A></H3>
+  <P>Vorlon is a free, command-line VRML 2.0 validator produced by the =
+Trapezium=20
+  Development Company. It is a Java application, so can run on any =
+operating=20
+  system (Windows, Macintosh, UNIX) that has a Java Virtual Machine =
+installed.=20
+  Vorlon can check inline files, report the inclusion of unnecessary =
+nodes or=20
+  fields and also handle gzipped compressed files. It can check both =
+local and=20
+  remote VRML files, the latter by specifying the file's URL. The =
+software can=20
+  be obtained from:
+  <P><I><A=20
+  =
+href=3D"http://www.trapezium.com/vorlon.html">http://www.trapezium.com/vo=
+rlon.html</A></I></P>
+  <H3><A name=3DHeading89>Shadows (Hans Holten-Lund)</A></H3>
+  <P>Shadows is another freeware command-line validator, currently only=20
+  available for Windows 95 and NT. There is an option to print out the =
+parsed=20
+  scene graph.
+  <P><I><A=20
+  =
+href=3D"http://www.it.dtu.dk/~hahl/shadows.html">http://www.it.dtu.dk/~ha=
+hl/shadows.html</A></I></P>
+  <H3><A name=3DHeading90>Using VRML Browsers to Check VRML</A></H3>
+  <P>Some VRML browsers, such as Cosmo Player will create a log of any =
+errors=20
+  they encounter when loading a VRML file. Inspecting this log file can =
+also=20
+  help the user identify any problems with the VRML =
+source.</P></BLOCKQUOTE>
+<H2><A name=3DHeading91>4.4 Object Libraries</A></H2>
+<BLOCKQUOTE>
+  <P>Silicon Graphics has a large collection of VRML 2.0 objects, =
+ranging from=20
+  household items to spacecraft, which are free for people to use in =
+their own=20
+  worlds. The objects can be obtained from <I><A=20
+  =
+href=3D"http://cosmosoftware.com/developer/models.html">http://cosmosoftw=
+are.com/developer/models.html</A></I>.=20
+  There is also a selection of textures.</P>
+  <H2><A name=3DHeading92>4.5 Other Utilities</A></H2>
+  <P><B>Rotor </B>by David Harvey is a Java applet that allows the user =
+to=20
+  create custom VRML extrusion shapes, by defining polygon =
+cross-sections with=20
+  the mouse pointer. The VRML 2.0 source is then displayed. The applet =
+can be=20
+  viewed at <I><A=20
+  =
+href=3D"http://web.ftech.net/~honeyg/rotor.htm">http://web.ftech.net/~hon=
+eyg/rotor.htm</A></I>.
+  <P><B>SitePad </B>from Modelworks Software is a shareware VRML file =
+editor,=20
+  that includes colour coding and various other useful utilities which =
+make=20
+  writing a VRML file easier, see <I><A=20
+  href=3D"http://www.modelworks.com/">http://www.modelworks.com/</A> =
+</I>for more=20
+  details.
+  <P><B>VRMLPlot.m</B> by Dr. Craig Sayers, is a Matlab function for =
+generating=20
+  interactive 3D VRML 2.0 graphs and animations from statistical data, =
+using the=20
+  Matlab software. The source code is available from <I><A=20
+  =
+href=3D"http://www.dsl.whoi.edu/~sayers/VRMLplot">http://www.dsl.whoi.edu=
+/~sayers/VRMLplot</A></I>.
+  <P>
+  <P>
+  <CENTER>
+  <TABLE>
+    <TBODY>
+    <TR>
+      <TD align=3Dmiddle><A=20
+        =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/fig43.jpg"><IMG=20
+        border=3D0 height=3D138=20
+        src=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/fig43s.jpg"=20
+        width=3D200></A>=20
+    <TR>
+      <TD align=3Dmiddle><B>Figure 4-3</B> SitePad Pro =
+</TR></TBODY></TABLE></CENTER>
+  <P></P></BLOCKQUOTE>
+<P>
+<TABLE bgColor=3D#008000 border=3D0 cellSpacing=3D0 width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD><FONT color=3D#ffffff>&nbsp;</FONT>=20
+    <TD align=3Dright><A=20
+      =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/guide3.htm"><IMG=20
+      alt=3Dprevious border=3D0=20
+      =
+src=3D"http://www.agocg.ac.uk/train/vrml2rep/buttons/gprev.gif"></A><IMG =
+
+      border=3D0 =
+src=3D"http://www.agocg.ac.uk/train/vrml2rep/buttons/gline.gif"><A=20
+      href=3D"http://www.agocg.ac.uk/train/vrml2rep/contents.htm"><IMG=20
+      alt=3Dcontents border=3D0=20
+      =
+src=3D"http://www.agocg.ac.uk/train/vrml2rep/buttons/gcont.gif"></A><IMG =
+
+      border=3D0 =
+src=3D"http://www.agocg.ac.uk/train/vrml2rep/buttons/gline.gif"><A=20
+      =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/guide.htm"><IMG=20
+      alt=3Dstart border=3D0=20
+      =
+src=3D"http://www.agocg.ac.uk/train/vrml2rep/buttons/gstart.gif"></A><IMG=
+=20
+      border=3D0 =
+src=3D"http://www.agocg.ac.uk/train/vrml2rep/buttons/gline.gif"><A=20
+      =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/part1/guide5.htm"><IMG=20
+      alt=3Dnext border=3D0=20
+      =
+src=3D"http://www.agocg.ac.uk/train/vrml2rep/buttons/gnext.gif"></A>=20
+  </TR></TBODY></TABLE>
+<P align=3Dcenter><FONT size=3D-1><A=20
+href=3D"http://www.agocg.ac.uk/graphics.htm">Graphics</A>&nbsp;=20
+&nbsp;&nbsp;&nbsp;<A=20
+href=3D"http://www.agocg.ac.uk/mmedia.htm">Multimedia</A>&nbsp; =
+&nbsp;&nbsp;&nbsp;=20
+<A href=3D"http://www.agocg.ac.uk/virtual.htm">Virtual =
+Environments</A>&nbsp;=20
+&nbsp;&nbsp;&nbsp; <A=20
+href=3D"http://www.agocg.ac.uk/visual.htm">Visualisation</A>&nbsp;=20
+&nbsp;&nbsp;&nbsp; <A =
+href=3D"http://www.agocg.ac.uk/contents.htm">Contents</A>=20
+</FONT></P></BODY></HTML>
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/images/agocgs.gif
+
+R0lGODlhlgA/APf/AAAAAAAAEAAIEAgAAAgACAgICA0FChgICBAIEBgIEBgQEBwQFBQeJiUeIAlI
+WAB7nCkpKSkxKTEhITMjJjovL0Y3N1dEQmVOaZcpfoBJhcARd7QshXxkYIl0caGAfbmTjgCErQCM
+rQCMtRGAoQSVxASlzhSSxxWfzgCl1gCl3gCt1gCt3gic1git1hig1hSt1jJ2rl9mpi2Uw1ybuIpf
+pZOSp6WlpYuxyrqDsK2lpbWzr7q2yLXGvcDGwMbGxsbOxgil3git3gCt5wit5wC13gC15wC95wi1
+4gi93hCl3hCt3hC13hC15xit3hi13iG13iG15yG94im34Sm95zG13jG15zG93jHB5zm93jm95znG
+4kK93kK950fD3kTI50rO61a93lLK51rF4nO13lfQ72TS7WvO73DQ7HnJ5HPW73vW74TW73vi84Te
+74zW74ze757M6JTe75ze76Xe75rk9aXn96nr863n98bO57ni77Xn98Hn97Xv973v98bv98bv/9gJ
+ddoUf84YhNIchOsAa+wCeO0Mf+Mdhf8Ac/8Ae/8Ie/8IhPcQhP8QhPcchP8YiNYtkO8piO8xjO85
+lPcplPcxjO85nPc9mP8hjP8pjP8plP8xlP8xnP85lP85nP9ClM5SpeZKpfdSpfNkrfdrtf9CnP9C
+pf9KnP9Kpf9Spf9Srf9apf9arf9jrf9jtf9rrf9rtedztf9ztf9zvf97tf97vc6Evd6Evc6poNCa
+u/+Evf+Jw+yizv+Uyv+gzv+l1t6txt61ree1xue93s7Oxs7O1u+93trWzu/G3u/O3ve11v+t1v+1
+1v+13v+91v+93s7n797O5+fW597e6/fG5+/S6+fn5/Pa7/fe7//G3v/G5//O5//W5//W7//e5//e
+7+fn7+/n7//n7/fn9//n987v7+fv787v99bv997v9+/v9/fv9//v987v//f3787399b399739+f3
+9//39873/9b3/973/+f3/+/3//f3///3/97//+f//+////f//////yH5BAEAAP8ALAAAAACWAD8A
+QAj/AP8JHEiwoMGDCBMqXMiw4UB/0PTE8+ewosWEFC9q3MjxXx4xQVo8kYOvo8mTBdPJkYJiyZly
+BucJTIfuzpw1a85gCdliRZMgQ1qkEIqiBdEgKJy8kLJFjFMxYMTMkedwHrotPYOEbIIGJkqL5boM
+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
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/images/graphics.gif
+
+R0lGODlhUAAZAPcAAAAAAAgICBAQEBghISEpKSkxMTFCQjlKSkJSUkpjY1Jra1pzc2OEhGuMjHOU
+lISlpYytrZS1tZTW3pzGxqXOzq3W1rXn573v78b/787//+//9+////f/////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gD/Cfyn
+YYPBgwgTKlzIsKHDhwoHCuQAsaLFixgRauAw8GCGDRhCihxJsqTJkyhTptyQQQLLDRz/IcxAs6bN
+mzhz6tzJsycGmhJcGqRo0ObPoxmQKk3KdKnTplCfSoVa82dQkB5p/uzJtavXrluTYpBA82DYqGin
+qk3LdirTtzWvgtx69qvduzrpan0rF2nbv2sDA4ab06rQujstJBgAQECCC3hpPlBwc7LXp1r7DrZA
+4ICFDBYOEBjslIEBqBEeCC4c93BXBqNrWhBQIcOECgwmgG7A4MFnC7d70zRdoYFv0BRoWuBde3fu
+vX6bal5LoEFhAAUYNIgAYAGDAQUy/nwnwEAA5fLkBxwQf3qC4wUAIsw+sGCAA5xnxwr1CkB3hgoT
+RDDBZwA8QJMD92XAnXgAQDZBg+V9BgEA7GVAwAIHOvAgZAhW5eFW07FFU3+SGWCAAAxkEF9NDyxg
+AGMVjjiBizQ9WCGJNhEAwAEGGoWfZjttVd1NBqSIo2i5PUChaTX1x6SCS56Go00RLCDAaT76FeJS
+ez0wwGc1kaeifzgysKQAn0UgQIw2MnnhgQZEgECNFO51k2EGIWZnTQgMsN0DBdA2Jk0FkIdAAGdm
+J8B9T7Z5GgXvDeCbAAd8R1mWVW0JV3QTJGDAAQ2AyUBzFjzQG264GTDBc7YliFurV8rxlpxzEPjo
+YVJA2nprZE9G5tOtclEF3a539errnW/ll2t0hOWn67G+aulaXWFFV22ywkL74bDOLostsoTlBZad
+elHLWmb7NcstuX8Jy+W3zsYLb1ABAQA7
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/images/mmedia.gif
+
+R0lGODlhUAAZAPcAAAAAAAgICBAQEBghGCEpISkxKSn/ITFCMTlKOUJSQkpjSlJrUlpzWmOEY2uM
+a3OUc4SlhIytjJS1lJzGnKXOpaXWpa3WrbXntb3vvcb3xs7/xs7/zuf/5/f/9///////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gD/CeRA
+kMOGggQPIlRYkGFChAYhOoy4UKLFigQFanyo8CBDjw0pRvwoEiTHkCRTogzJQeM/kRk2bIg5UybN
+DDRr5oy5s6ZNnzplBv3Zc6fIDgMV4hT6E6jQm02h+pRKNarVqT8rRHyp9CnQokzD5mzqlelYp2jP
+5pxAMENBnk7Hyg06FyxRr3aH6o2p1e1BtWa/hg0MOLDhsojJNp1QQSsHqHnJwoVLGK/lu5j3Am3M
+dvBVzZ71Kk4rtvThrI4hIy5Ml3Reyppf+6xAoW3cDQAAYBAaAcCBsjEb/L7AYMMEAINZKz5uHLnn
+s4wNmsYdAEJNBQF+oxW+gfuFCa0z/sOOKQE5Bgl3525obFswAAUKbA5Q8FuC9QwXGnQ/YOHAAAgW
+6DcBBBEcoAAGwh0oUwQIHPCAUBMggAAEyAUo0wT0IYDeV+wlJxQAEQggUwUFcMddc/td4B8EzDUg
+QAMTDBAAjPNtEMF/EhSAQHMECoAcc8dBIEEDAFxAVgVsPbYaABFKkAEDD5ioXXn7VUllAwPI1AAB
+Wv5GAAQxXVAkfDI58CNyF4C5gZgT9NThargNGN8AAf52Yot2/oZnl3zm5ieTB+i3AZVUIngAAAMw
+GRV7ShrGpAUCWJCllBciR+mV2p3IHQAbCnVAcSgytwABExip6Fi02SZVnBsQoEBxv9w5kOUGDFia
+J4qaZvobAgVcOEAGWBqJwJkbfCrTA4p6haR0S4JHpAVVQjoAAbVaCUACe+4X3HAEDHBoBDIVMEAB
+BCBHqG8EFMDpUIyuGlOpG2AA3gYWQHuhBfLSa68FpYJXr0z/6isUv0YOXMF38W54HrQV2PvUm9OF
+JvHEFEdssWWpNipYeBV3HFpPn4FMU6qHrWpYVZMNJfLGIUsGYWolW2YyWs8BF/NZpDHFqAHuJuYh
+WCm7LHRlLWfQWEAAADs=
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/images/virtual.gif
+
+R0lGODlhUAAZAPcAAAAAABAQCCEYECkhGDEpIUIxIUo5KVJCMWNKOWtSQnNaQoRjSoxrUpRzWqWE
+Y7WUa8acc9ate96tY+e1hOe9e++9jP/OnP/nzv//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gD/Cfx3
+oaDBgwgTKlzIsKFDhAMjEixogaLFCxUxXszIcaNHjSA7hvwosqBEgxUtqFzJsqXLlzBjypSJ0qTA
+jS4rtNTJkudKnyqBWhBKdKfRnxYkQKA4ESXSnkefSg0alSrUq1MrSJCAsCJPoGCvhs1qtexQsVjP
+rtwa4SBMn2Orxk07lyxSrVsxon1Z12xftX75xtzKVW9MoYJnVlUMOCfSvBe+Wv27WDHimX8hXz48
+2bFayYE/l637VXPntGaHCojAcgGCqwUAyAYwgHVjwHOFQpY5Fu5KBQp+DnhwuwCElQ0ELN48Nq/n
+yi4nBAg6QblU4ywBTL29+edu7qFxvask4EAlggV8DTR4AOGBAQKJ36Y1zVixgwIWpE9IXWCAAQEB
+LADaZQTu9N1dp4n3UwWrOQAfVthNMJxl0K3FFWr1AXYeealZUABxFkQQwH7h2XWWTgfupeBtEQD4
+k21BYafSAgaoBOJtjXVHX4fyXXUAeipF8JpPCsBogQH74WdUbrjthlhvz1WIGWeKOSclgtBB2Z1v
+Uap1IJQ4btddYqBlCJST9Q1YYZl/cUkaZIalNqaYYc6JIY9JSRAQAAA7
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/images/vis.gif
+
+R0lGODlhUAAZAPcAAAAAABAQECEYGCkhITEpKUIxMUo5OVJCQmNKSmtSUnNaWoRjY4xra5Rzc6WE
+hK2MjLWUlMacnM6lpdatree1te+9vdqPj//OnP/Ozv/nzv/v7///////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gD/Cfyn
+oaDBgwgTKlzIsKFDhAMjEnxIsaLFiwYlIsTAsaPHjyBDihxJcqTCgQdLqlzJsmVHCxBTupxJk6YF
+mAlr6typ8ibOghl4Ch3q0afBC0STCjWqQanTnTcLPp06M2pTDAIYfDSAYEEBngAiQADQMoIDDF6r
+4uTIQIDHCQAmyAULoUKElgUWYJjr0ipHuHc5LnBrFgMFrwbuTtAreMJeBQUKaMUQdjEGBwoWaIbw
+OLJWCAIKiD2L4YEByRwhOHhQAIGEl2s5cu2YFe1XBAMiJAhglyzHsBUCIFAd4GzYCGQdaD4AoK5w
+4g4ihI6Q1oGA1QMOoA2wIEKBAbCl/nJ8IIACBuSO0xow4JhBhbEdw1KYXGGA3rDwOVIQoL3CZAr2
+YZCXbVhNJgEAh7mFQX4Y+NVRcRggYIBgX00gAAADnMVgWJcVEEAAAtwnlm8YEAAeRw54KAB3AuqV
+Foe/UffVeSQ6yJECA1TQHIUdSbBAccjFF8EDAUBg3oD4+ZZAeeMVeaReA77ImWFhpbVgjbH9BQAC
+AXSUFgENcDQAA3CZhxx1Jx4oYpAOxOVlmgBA6eJX63HUQJdWBsmRjWICoICXX7VZgAA5YjBAAAUw
+F8EEAQyg4p9JYgBiZAUkYGFoIP65WwNpAUhoAOnNyCCfe0VQQUd8vedYj47VxZFYNIa1WsF750Eg
+1qKvckbBqhFIwNdeU+61Kq17ZknVsSSRiuyyRRnL7LMNOgvtsspOe+xNAQEAOw==
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/images/contents.gif
+
+R0lGODlhUAAZAPcAAAAAAAgIEBAQGBAQIRgYKSEhMSEhOSkpQjExSjExUjk5Wjk5c0JCY0JCa0pK
+c1JSe1pahFpajGNjlGtrnGtrpXNzrXt7tYSExt7e7/f/9///////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gD/CfyH
+oaDBgwgTKlzIsKHDhAMjPpxIsaLFgxEJHrzAsaPHjyBDihxJsiTCDAI3llzJsqVLjwczqHxJs6ZN
+hTZz6myJcKfPnyAXzARKVOeCowWLKs15VCiGkhYQBAAggEFOCTUrVKDZNOlICwIAIGBAAMCBmgQK
+0IwQAOvLrk9HIgAwoSMBARY4UmDAgEJHCVoZPNALgIDbvQ22XqiA9QGDrVEBONi6l0GEknBJChAg
+kkHhsFYvfC57tgCA0xcgfA7g13PaqRQknAbAQPVdAApIZh4JQC1ICmY5HgDgF0CAvGE59uYYgMAF
+sGc9W31A+4JnrKbrNrg8crfI5SCvx3OMUB28aeVqZQsoUGCqdQBYZVsV79k4grrdkcYVWTYvRwQH
+7AUfRxOU59t5oqXXG198vRdfdeJdMAECYQGgWEjehUTeAVs5QNUFwJ11gWnFHQgAes8VtlgBEDh4
+gXwuNiBihBjqV1J9p7H232fVJcgRgmEVIAF1d+koHozUCYCAauupmJ9TK1XQgGD+6cWXXxwJxpFj
+HFXAV16VKSbBY4sx4JZjl1XG3ZNeLeVmSxm+KadIcc5pZ0d13mlnnnrKyWefbjYVEAAAOw==
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/images/baro.gif
+
+R0lGODlhkAENAPcAADGMazmMc3vOtYTWvd6tY//OnP/nzv//////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAkAENAAAI0QANCBxI
+sKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatxYcQDHjyBDihxJsqTJkyhLCiBQoKXLlzBjypxJs6bN
+mzhz6tzJs6fPn0CDCh1KtKjRnwRYHl3KtKnTp1CjSp1KFWrSqlizat3KtavXrzavgh1LtqzZs2ix
+ik3Ltq3bt3DLro1Lt67du3hzzs3Lt6/fv2P3Ah5MuLBhoYIPK17MWPHVAEkjS55MubLly5gza97M
+ubPnz6BDix5NurTp06hTjwagurXr17Bjy55Nu7Zt2gEBADs=
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/images/bari.gif
+
+R0lGODlhTgANAPcAADk5c4SExt7e7///////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAATgANAAAIZQAFCBxI
+sKDBgwgTKlzIsKHDhxAjCgAAIIDFixgzatzIsaPHjx0pVgRJsqTJkxhFolzJsmUAlS5jyuQIc6bN
+mTVv6mSZc6fPkj1/Cg1JcahRjyKTKl3KtKnTp1CjSp1KtapVpwEBADs=
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/images/traino.gif
+
+R0lGODlhUAAZAPcAAAAAABAQCCEYECkhGDEpIUIxIUo5KWNKOWtSQnNaQoRjSoxzUpR7WqWEY62M
+a7WUa8acc86le9athN6tY+e1jO+9jP/OnP/nzv//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gAvCBxI
+sKDBgwgTKlzIsKHDhxAjGpwg0ILFixgzatzIsaPHjx4nULwAsqTJkyg1iqyYsqXLlxZWkoRJs2ZH
+mTZz6ow50iSAn0ABQPgIAQBHBQV2YsSJUqhJCkM3UpCg9CLTk04tNnBg4ICFCAcKGHhggYICCxC2
+FjhAFQIDCw0gIE1QweKCtQ7eorzqM6qFAgEeMIgAgIFcAFCNKgigAEKBARaQ/hWwVUACCwwCMwCQ
+dG/Ppn4LXC6rl4LQopEFWEQtea1FyQMaWDTQ+STfkln/nrVQASkAAacVd2adtMBuyVkle2aJNfRu
+BAMg1A0eebhw3a+TJq9t8jbI3MYtiYq2uBkC8dXXw1e3YMAAbwHcS3r/CH73A84DBgB4cB5t+uNJ
+URDAAAIQEB9I83kk3UUSUHBRBRBQ1SBUZVHF21BTWdCgRRk2AJVZ7i03U1U0QefAA4GllCCJJ5kl
+FlkqfsbijB+tSOONNt44Y446kiiTSEAGKeSQRBZp5JFIJkmRkkw26eSTQQYEADs=
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/images/reporto.gif
+
+R0lGODlhUAAZAPcAAAAAABAQCCEYECkhGDEpIUIxIUo5KVJCMWNKOWtSQnNaQoRjSoxzUpR7WqWE
+Y62Ma7WUa8acc86le9athN6tY+e1jO+9jPfGlP/OnP/nzv//////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gAzCBxI
+sKDBgwgTKlzIsKHDhxAjGqQgEIPFixgzatzIsaPHjx4pUMwAsqTJkyg1iqyYsqXLlxhWkoRJs2ZH
+mTZz6ow5MiWAnz8FLNiJQYIDmjhRAohwUQIACTsLDIWZ9ORSjFItQjBQgIHFCA4aFEBgweIEBAUU
+lK3QYIFUAQWYOihQ4OjJqiavWqwQ4CiEvhEGHMCwIMCBwAQwTAiwIIKBARYiADgAoQFcsAEgOHh6
+t6fSAXQLTLY4wG4FABUK70WNwMBFwADKYsjKQMAEDA5um8RbEkADzA0uAgUawa3wCFktSpV8MasF
+AgCEyi7JG6TeCQAgWMye0TgGCwAmqqS9OKAxgOZTMVRwIABBZ5ZWmVosXNZA4qICLiwIj8Eyhtpl
+YTcBc8oN1ZpFCri2m2fxYTSAaxYMABcADxAmAGgByHdAAKJVSCAGCQTQwGIDDBCAbtQxaFIE06kn
+n2IszldAZC1WEON3L2IQgW4R5JgifETJGCRI1e3kQAJDflRkkkyqpGKTUGa0ZJRNTkllkjKJpOWW
+XHbp5ZdghinmmBSRaeaZaKa5ZUAAADs=
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/images/wshopo.gif
+
+R0lGODlhUAAZAPcAAAAAABAQCCEYECkhGDEpIUIxIUo5KVJCMWNKOWtSQnNaQoRjSoxzUpR7WqWE
+Y62Ma7WUa8acc86le9athN6tY+e1jO+9jPfGlP/OnP/nzv//////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gAzCBxI
+sKDBgwgTKlzIsKHDhxAjGqQgEIPFixgzatzIsaPHjx4pUMwAsqTJkyg1iqyYsqXLlxhWkoRJs2ZH
+mTZz6ow5cqdPmDg3CnBwkQGACRcRIAAJIILHCAB+BtWo9OKAAgouDmXqtCNUqT03OhBgsUKACWQx
+VABQAcMEBFgtqG2woABUpxAWXKhQ14AEDFAlGDAAwaIFBQUQIMWwIIKBAoVDhtW4Vi6DpQKQQiA7
+IUBjAwMsQD0AYUJTBwAeYEAwIEKCAKIBtE4AwIKFAQYiLDiLAYAACA0A/L05WeOAwscxKMi6fLWB
+iwEcQJXbm7ZqDIPbMojdtncEBwEu+RpYCoCBxarEWW5cbiG82wEYkhdYcHH+V4sA8i9GK5vofe91
+XRRgUxYFmN5MG0FQgANLWSSABLVhgJVVjUWFXwMIEIDRBLtJZyGA8FmEmHciPndgRxYAQNhFCoBm
+EQMCyGXaBP81ZVYDGBCAY3wM1BjBjBhYIIB5Kga51YkdDfChWwBkZdEBARSQGmAfEgieBQ8AUIAA
+ofmIAWoFBHAAfgMMIICJSHI0wWIXRdBdWRFQV0FXgFHnplo/GkZnnHq+2dSaIE31k08EliTooDoV
+wOZHhyLqKEeNPirpRZFOKqlMImWq6aacdurpp6CGKipFo5Zq6qmoahoQAAA7
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/images/briefo.gif
+
+R0lGODlhUAAZAPcAAAAAABAQCCEYECkhGDEpIUIxIUo5KVJCMWNKOWtSQnNaQoRjSoxzUpR7WqWE
+Y62Ma7WUa8acc86le9athN6tY+e1jO+9jP/OnP/nzv//////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gAxCBxI
+sKDBgwgTKlzIsKHDhxAjGqQg8ILFixgzatzIsaPHjx4pUMQAsqTJkyg1iqyYsqXLlxdWkoRJs2ZH
+mTZz6ow5cqdPmDhLAhgKIAACCxkjAOi4YOiCAj8zBgUJIILFCgMWZKxglSMACBcqTIiKcerHqhef
+XojgAIGBCFovTEBQQAHSpggiRGhwwQHcukgvMCiAwIGDsE8NSDBp1iPasFkvNG3QQGnYAAsiHBhg
+Ae/fCwUEOHggQMGFBgEgNAAAFcGACAkCBP7YuCPRobIlD7BoWQGCi6IvoFVL2KLaAYcvGIBqwEAF
+wc9B1vba1YIBApKhrl1a4DYArcOhvhaIq/ax2gkCACBn3FNo1+3ZeXM3nTE8aPJQzWuXuyBActrt
+UfXeAgLEBx8DuWFllX3jGcecAWEJABUBfF0wAAMlTbeRegUUMEAAY6kF3wUHBFBAAAdYxCB+lw0g
+AAFQPcCaAJxlGOBHeuV4kVhXvcdVdGs9x+ME0fHowI8LQBhWBGOxxxJZKSUwwAMQpPaShlB6VEFi
+YF15Y5ZgSvVlmGRiSSZZMomk5ppstunmm3DGKeecFNFp55145rlmQAAAOw==
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/images/index.gif
+
+R0lGODlhUAAZAPcAAAAAAAAACAgIEBAQGBAQIRgYKSEhMSEhOTExSjExUjk5Wjk5c0JCY0JCa0pK
+c1JSe1pajGNjlGtrnGtrpXNzrXt7tYSExt7e7///////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gAvCBxI
+sKDBgwgTKlzIsKHDhxAjGlwg0ILFixgzatzIsaPHjx4XULwAsqTJkyg1iqyYsqXLlxZWkoRJs2ZH
+mTZz6ow5kiYAAyUjAGCw82ZPmD+DDi3KESdSoBEYUEBg4MHFBwYQPFhqAcIBAw4sPmAwoSsDCTCd
+vkzKAEABBgQAQLDQtoCCAUshADjQVoEFoQUoCBhQIe3RtUDbWtVLlIAAiw2WFhhgUQGAwpYBAEBr
+mCViugAi/F2adDRRzahDW6gQ1y9NtS7ZqhZ6uoBFxhbcRtgdobBQAAQKd575ua1o2hYQbK5QYOkB
+ABQqCDiw2rFl6sN9Jp69lLlmA93jVwIYQCE5AKvN576E3TJCWQq9V0cob9H9X/oWKEAQvttihfnZ
+MSUgSuwNaGBThx2ooEoJLuggT5496GCBEhook0gYZqjhhhx26OGHIIZIkYgklmjiiRkGBAA7
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/train/vrml2rep/buttons/gprev.gif
+
+R0lGODdhOgASAOMAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwICAgP8AAAD/AP//AAAA//8A/wD/
+/////ywAAAAAOgASAAAEb1DISau9OOvNu/9gKI7fQ55oqq6a+byTawovTFduXMfUTO8438x24/kk
+uSJyyVM6ncOeVBmFMplHy7GKrNmE2OlWhxlbL8mi2UzGiada6lUNr/+a7HMY387fgE9ebk0/RIVU
+gIQsi0+MKlmOkZIhEQA7
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/train/vrml2rep/buttons/gline.gif
+
+R0lGODdhDQASAOMAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwICAgP8AAAD/AP//AAAA//8A/wD/
+/////ywAAAAADQASAAAEHFDISau9OL88NxceF2ofWI4YeqkWW7kU3J3lFQEAOw==
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/train/vrml2rep/buttons/gcont.gif
+
+R0lGODdhOQASAOMAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwICAgP8AAAD/AP//AAAA//8A/wD/
+/////ywAAAAAOQASAAAEbFDISau9OOvNu/9gKI5kaQrPmJ7cGrraI8Ozm85SneM5Ku8/X7A3WdF2
+RSKKYrQpj0qmdJmkWqlQ5wVWJWaLNeOUxr12sePzWVwZmqNsrxoenV7j6KpWrl8zeUB7WEE6dEKB
+LImKi4yNjo8aEQA7
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/train/vrml2rep/buttons/gstart.gif
+
+R0lGODdhIQASAOMAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwICAgP8AAAD/AP//AAAA//8A/wD/
+/////ywAAAAAIQASAAAER1DISau9OOvNu//g9YCjV5rYo5Yru05jq1anwMKUi1v1zku1HqxHfNly
+mhkQuTz6MrdmMyhinq5RKc1oU76yXWFoTC6bz5sIADs=
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/train/vrml2rep/buttons/gnext.gif
+
+R0lGODdhHwASAOMAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwICAgP8AAAD/AP//AAAA//8A/wD/
+/////ywAAAAAHwASAAAEQlDISau9OOvNu/+g94TdaI1PSqWqYE5sC7/m60o0ftn1Ct+6k88V4w0r
+RuDuyOwtc8KfEgi1SYPElhUlI3m/4LA4AgA7
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/train/vrml2rep/part1/fig41s.jpg
+
+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
+IP/Z
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/train/vrml2rep/part1/fig42s.jpg
+
+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
+AGgJa18YDI7YIidJfHa5GCA//9k=
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/train/vrml2rep/part1/fig43s.jpg
+
+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
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.agocg.ac.uk/images/ORG1BACK.GIF
+
+R0lGODlhagUBAMQAAP///////v/+/v/8/P/6+P/58v/17P/y5P/v3P/q0f/kyP/fvv/atv/Wrv/T
+p//Pof/Mnf/Mm//Mmv/MmQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAA
+agUBAAAFPeA0SRH0OA2zKAlyGAUxCAFg33iu73zv/8CgcEgsGo/IpHLJbDqf0Kh0Sq1ar9isdsvt
+er/gsHhMLpvP3BAAOw==
+
+------=_NextPart_000_0043_01C1AD7E.AA32B920--

@@ -1,0 +1,557 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.11.08.02.58.09;	author qq01;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.10.29.15.15.26;	author ajb101;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@STMTLIST 	:	STMT ( STMTLIST )?
+		;
+STMT		:	STAT ( ";" )?
+		; 
+STAT		:	LABEL INSTRUCTION 
+	 		| LABEL DATA 
+			| LABEL 
+			| INSTRUCTION 
+			| DATA 
+			| SYMDEF 
+			| DIRECTIVE 
+		;
+LABEL		:	<IDENTIFIER_COLON> 
+		;	| <DECIMAL_COLON> 
+INSTRUCTION :	OPCODE( OPERAND ( "," OPERAND ( "," OPERAND )? )? )? 
+		;
+OPERAND 	:	REGISTER 
+			| "(" REGISTER ")" 
+			| FLOATREGISTER 
+			| ADDRIMMED ( "(" REGISTER ")" )? 
+			| <FLOAT> 
+		;
+REGISTER 	: <DOLLAR_DECIMAL> 
+			| REGISTERNAME 
+			| DOLLARREGISTERNAME 
+		;
+FLOATREGISTER 	:	<DOLLAR_F_DECIMAL> 
+		;
+ADDRIMMED 	:	LABELEXPR ( ( "+"			| "-" ) EXPR )? 
+			| EXPR 
+		;
+LABELEXPR 	:	LABELREF ( "-" LABELREF )? 
+LABELREF 	:	<DECIMAL_B> 
+			| <DECIMAL_F> 
+			| <IDENTIFIER> 
+			| "." 
+		;
+DATA 		:	DATAMODE DATALIST 
+			| ".ascii" <STRING> 
+			| ".asciiz" <STRING> 
+			| ".space" EXPR 
+		;
+DATAMODE 	:	".byte" 
+			| ".half" 
+			| ".word" 
+			| ".float" 
+			| ".double" 
+DATALIST 	:	DATAEXPR ( "," DATALIST )* 
+DATAEXPR 	:	EXPR ( ":" EXPR )? 
+			| <FLOAT> ( ":" <FLOAT> )? 
+SYMDEF 	:	<IDENTIFIER_EQUAL> EXPR 
+DIRECTIVE 	:	SETDIR 
+			| SEGMENTDIR 
+			| ALIGNDIR 
+			| SYMBOLDIR
+			| BLOCKDIR 
+			| COMPILERDIR 
+		;
+SETDIR 	:	".set" SETDIRARGS 
+		;
+SETDIRARGS 	:	"volatile" 
+			| "novolatile" 
+			| "reorder" 
+			| "noreorder" 
+			| "at" 
+			| "noat" 
+			| "macro" 
+			| "nomacro" 
+			| "bopt" 
+			| "nobopt" 
+			| "move" 
+			| "nomove" 
+		;
+SEGMENTDIR 	:	".text" 
+			| ".DATA" 
+			| ".rDATA" 
+			| ".sDATA" 
+		;
+ALIGNDIR 	:	".align" EXPR 
+		;
+SYMBOLDIR	:	".globl" <IDENTIFIER> 
+			| ".extern" <IDENTIFIER> "," CONSTANT 
+			| ".comm" <IDENTIFIER> "," CONSTANT 
+			| ".lcomm" <IDENTIFIER> "," CONSTANT 
+		;
+BLOCKDIR 	:	".ent" <IDENTIFIER> ( "," CONSTANT )? 
+			| ".aent" <IDENTIFIER> "," CONSTANT 
+			| ".mask" EXPR "," EXPR 
+			| ".fmask" EXPR "," EXPR 
+			| ".frame" REGISTER "," EXPR "," REGISTER 
+			| ".end" ( <IDENTIFIER> )? 
+		;
+COMPILERDIR 	:	".alias" REGISTER "," REGISTER 
+			| ".bgnb" EXPR 
+			| ".endb" EXPR 
+			| ".file" CONSTANT <STRING> 
+			| ".galive" 
+			| ".gjaldef" 
+			| ".gjrlive" 
+			| ".lab" <IDENTIFIER> 
+			| ".livereg" EXPR "," EXPR 
+			| ".noalias" REGISTER "," REGISTER 
+			| ".option" "flag" 
+			| ".verstamp" CONSTANT CONSTANT 
+			| ".vreg" EXPR "," EXPR 
+		;
+EXPR 	:	TERM EXPR_ 
+		;
+EXPR_ 	:	( BINARYOP EXPR EXPR_ )* 
+		;
+TERM 	:	UNARYOP TERM 
+			| PRIMARY 
+		;
+PRIMARY 	:	CONSTANT 
+			| "(" EXPR ")" 
+		;
+BINARYOP 	:	"*" 
+			| "/" 
+			| "%" 
+			| "+" 
+			| "-" 
+			| "<<" 
+			| ">>" 
+			| "&" 
+			| "^" 
+			| "|" 
+		;
+UNARYOP 	:	"+" 
+			| "-" 
+			| "~" 
+			| "!" 
+		;
+CONSTANT 	:	<DECIMAL> 
+			| <HEXADECIMAL> 
+			| <OCTAL> 
+			| <CHARACTER> 
+			| <IDENTIFIER> 
+
+		;
+REGISTERNAME 	:	"zero" 
+			| "at" 
+			| "v0" 
+			| "v1" 
+			| "a0" 
+			| "a1" 
+			| "a2" 
+			| "a3" 
+			| "t0" 
+			| "t1" 
+			| "t2" 
+			| "t3" 
+			| "t4" 
+			| "t5" 
+			| "t6" 
+			| "t7" 
+			| "s0" 
+			| "s1" 
+			| "s2" 
+			| "s3" 
+			| "s4" 
+			| "s5" 
+			| "s6" 
+			| "s7" 
+			| "t8" 
+			| "t9" 
+			| "k0" 
+			| "k1" 
+			| "gp" 
+			| "sp" 
+			| "s8" 
+			| "fp" 
+			| "ra" 
+		;
+DOLLARREGISTERNAME 	:	"$zero" 
+			| "$at" 
+			| "$v0" 
+			| "$v1" 
+			| "$a0" 
+			| "$a1" 
+			| "$a2" 
+			| "$a3" 
+			| "$t0" 
+			| "$t1" 
+			| "$t2" 
+			| "$t3" 
+			| "$t4" 
+			| "$t5" 
+			| "$t6" 
+			| "$t7" 
+			| "$s0" 
+			| "$s1" 
+			| "$s2" 
+			| "$s3" 
+			| "$s4" 
+			| "$s5" 
+			| "$s6" 
+			| "$s7" 
+			| "$t8" 
+			| "$t9" 
+			| "$k0" 
+			| "$k1" 
+			| "$gp" 
+			| "$sp" 
+			| "$s8" 
+			| "$fp" 
+			| "$ra" 
+		;
+OPCODE	:	"abs" 
+			| "add" 
+			| "addciu" 
+			| "addu" 
+			| "and" 
+			| "b" 
+			| "bal" 
+			| "bc0f" 
+			| "bc0fl" 
+			| "bc0t" 
+			| "bc0tlbc1f" 
+			| "bc1fl" 
+			| "bc1t" 
+			| "bc1tl" 
+			| "bc2f" 
+			| "bc2fl" 
+			| "bc2t" 
+			| "bc2tl" 
+			| "beq" 
+			| "beql" 
+			| "beqz" 
+			| "beqzl" 
+			| "bge" 
+			| "bgel" 
+			| "bgeu" 
+			| "bgeul" 
+			| "bgez" 
+			| "bgezal" 
+			| "bgezall" 
+			| "bgezl" 
+			| "bgt" 
+			| "bgtl" 
+			| "bgtu" 
+			| "bgtul" 
+			| "bgtz" 
+			| "bgtzl" 
+			| "ble" 
+			| "blel" 
+			| "bleu" 
+			| "bleul" 
+			| "blez" 
+			| "blezl" 
+			| "blt" 
+			| "bltl" 
+			| "bltu" 
+			| "bltul" 
+			| "bltz" 
+			| "bltzal" 
+			| "bltzall" 
+			| "bltzl" 
+			| "bne" 
+			| "bnel" 
+			| "bnez" 
+			| "bnezl" 
+			| "break" 
+			| "cache" 
+			| "cfc0" 
+			| "cfc1" 
+			| "cfc2" 
+			| "ctc0" 
+			| "ctc1" 
+			| "ctc2" 
+			| "dabs" 
+			| "dadd" 
+			| "daddi" 
+			| "daddiu" 
+			| "daddu" 
+			| "ddiv" 
+			| "ddivd" 
+			| "ddivdu" 
+			| "ddivu" 
+			| "div" 
+			| "divd" 
+			| "divdu" 
+			| "divo" 
+			| "divou" 
+			| "divu" 
+			| "dla" 
+			| "dli" 
+			| "dmadd16" 
+			| "dmfc0" 
+			| "dmfc1" 
+			| "dmfc2" 
+			| "dmtc0" 
+			| "dmtc1" 
+			| "dmtc2" 
+			| "dmul" 
+			| "dmulo" 
+			| "dmulou" 
+			| "dmult" 
+			| "dmultu" 
+			| "dneg" 
+			| "dnegu" 
+			| "drem" 
+			| "dremu" 
+			| "dret" 
+			| "drol" 
+			| "dror" 
+			| "dsll" 
+			| "dsllv" 
+			| "dsll32" 
+			| "dsra" 
+			| "dsra32" 
+			| "dsrl" 
+			| "dsrlv" 
+			| "dsrl32" 
+			| "dsub" 
+			| "dsubu" 
+			| "eret" 
+			| "ffc" 
+			| "ffs" 
+			| "flushd" 
+			| "j" 
+			| "jr" 
+			| "jal" 
+			| "jalr" 
+			| "la" 
+			| "lb" 
+			| "lbu" 
+			| "ld" 
+			| "ldl" 
+			| "ldr" 
+			| "ldxc1" 
+			| "lh" 
+			| "lhu" 
+			| "li" 
+			| "ll" 
+			| "lld" 
+			| "lui" 
+			| "lw" 
+			| "lwc1" 
+			| "lwl" 
+			| "lwr" 
+			| "lwu" 
+			| "lwxc1" 
+			| "madd" 
+			| "maddu" 
+			| "mad" 
+			| "madu" 
+			| "madd16" 
+			| "max" 
+			| "mfc0" 
+			| "mfc1" 
+			| "mfc2" 
+			| "mfhi" 
+			| "mflo" 
+			| "min" 
+			| "move" 
+			| "movf" 
+			| "movn" 
+			| "movt" 
+			| "movz" 
+			| "msub" 
+			| "msubu" 
+			| "mtc0" 
+			| "mtc1" 
+			| "mtc2" 
+			| "mthi" 
+			| "mtlo" 
+			| "mul" 
+			| "mulu" 
+			| "mulo" 
+			| "mulou" 
+			| "mult" 
+			| "multu" 
+			| "neg" 
+			| "negu" 
+			| "nop" 
+			| "nor" 
+			| "not" 
+			| "or" 
+			| "ori" 
+			| "pref" 
+			| "prefx" 
+			| "r2u" 
+			| "radd" 
+			| "rem" 
+			| "remu" 
+			| "rfe" 
+			| "rmul" 
+			| "rol" 
+			| "ror" 
+			| "rsub" 
+			| "sb" 
+			| "sc" 
+			| "scd" 
+			| "sd" 
+			| "sdbbp" 
+			| "sdc1" 
+			| "sdl" 
+			| "sdr" 
+			| "sdxc1" 
+			| "selsl" 
+			| "selsr" 
+			| "seq" 
+			| "sge" 
+			| "sgeu" 
+			| "sgt" 
+			| "sgtu" 
+			| "sh" 
+			| "sle" 
+			| "sleu" 
+			| "sll" 
+			| "sllv" 
+			| "slt" 
+			| "slti" 
+			| "sltiu" 
+			| "sltu" 
+			| "sne" 
+			| "sra" 
+			| "srav" 
+			| "srl" 
+			| "srlv" 
+			| "standby" 
+			| "sub" 
+			| "subu" 
+			| "suspend" 
+			| "sw" 
+			| "swc1" 
+			| "swl" 
+			| "swr" 
+			| "swxc1" 
+			| "sync" 
+			| "syscall" 
+			| "teq" 
+			| "teqi" 
+			| "tge" 
+			| "tgei" 
+			| "tgeiu" 
+			| "tgeu" 
+			| "tlbp" 
+			| "tlbr" 
+			| "tlbwi" 
+			| "tlbwr" 
+			| "tlt" 
+			| "tlti" 
+			| "tltiu" 
+			| "tltu" 
+			| "tne" 
+			| "tnei" 
+			| "u2r" 
+			| "uld" 
+			| "ulh" 
+			| "ulhu" 
+			| "ulw" 
+			| "usd" 
+			| "ushusw" 
+			| "waiti" 
+			| "wb" 
+			| "xor" 
+			| "xori" 
+			| "abs.s" 
+			| "add.s" 
+			| "c.eq.s" 
+			| "c.f.s" 
+			| "c.le.s" 
+			| "c.lt.s" 
+			| "c.nge.s" 
+			| "c.ngl.s" 
+			| "c.ngt.s" 
+			| "c.ole.s" 
+			| "c.olt.s" 
+			| "c.seq.s" 
+			| "c.sf.s" 
+			| "c.ueq.s" 
+			| "c.ule.s" 
+			| "c.ult.s" 
+			| "c.un.s" 
+			| "ceil.l.d" 
+			| "ceil.l.s" 
+			| "ceil.w.d" 
+			| "ceil.w.s" 
+			| "cvt.d.l" 
+			| "cvt.d.s" 
+			| "cvt.d.w" 
+			| "cvt.l.d" 
+			| "cvt.l.s" 
+			| "cvt.s.d" 
+			| "cvt.s.l" 
+			| "cvt.s.w" 
+			| "cvt.w.d" 
+			| "cvt.w.s" 
+			| "div.s" 
+			| "floor.l.d" 
+			| "floor.l.s" 
+			| "floor.w.d" 
+			| "floor.w.s" 
+			| "l.d" 
+			| "l.s" 
+			| "ldc1" 
+			| "madd.s" 
+			| "mov.s" 
+			| "movf.s" 
+			| "movn.s" 
+			| "movt.s" 
+			| "movz.s" 
+			| "msub.s" 
+			| "mul.s" 
+			| "neg.s" 
+			| "nmadd.s" 
+			| "nmsub.s" 
+			| "recip.s" 
+			| "round.l.d" 
+			| "round.l.s" 
+			| "round.w.d" 
+			| "round.w.s" 
+			| "rsqrt.s" 
+			| "s.d" 
+			| "s.s" 
+			| "sqrt.s" 
+			| "sub.s" 
+			| "trunc.l.d" 
+			| "trunc.l.s" 
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@@
+

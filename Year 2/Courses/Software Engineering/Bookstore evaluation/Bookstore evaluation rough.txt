@@ -1,0 +1,32 @@
+
+=============================================================
+
+
+Forseen
+
+Unsolvable problems
+Screen resolution, font size etc. (may be easier/harder to find something)
+The people being tested were involved in the report design (so not objective)
+Can’t repeat measurements due to increased familiarity
+Server speed
+
+
+Solvable
+Site may be familiar to user
+
+
+Constant
+Typer’s speed
+Browsing skills/habits (e.g. keyboard shortcuts, depth of examining results, rate of typing errors)
+Prior software experience  
+Connection speed
+Length of title being typed in
+
+
+
+Unforseen
+
+Ordering of search results when upper case letters are used (e.g. does ‘A.A…’ come before ‘Ab…’?)
+Prior knowledge of book (e.g. what cover looks like, so easier to spot picture in hundreds of search results)
+Shortcuts – easier to find links to popular categories
+

@@ -1,0 +1,68 @@
+MINUTES - PROJECT MEETING
+=============================================
+Date: 20/10/03
+Time: 1000
+Location: Blueshift Lab
+
+Present: Adam, James, Ben, Qian, Sridar, Simon
+----------------------------------------------------------
+
+Summary of topics discussed:
+
+- Adam has found there are 3 Types of instruction, rtype itype and jtype
+More complex coprocessor and floating point instructions could be in extensions
+
+- James has an initial implementation of a memory manager
+Done using tree maps for each segment, fast...
+Memory needs to be byte addressable
+
+- Antlr will be able to generate the parser, providing we work out the internal rep
+
+- BNF of MIPS assembly found
+This is not going to change so could be used 'as is', but the XML could still store extra help information so might be worthwhile
+
+- Simon has looked at the register manager and has general interfaces for it
+Common routines
+
+- Implementing breakpoints
+	- Have an instruction in the code OR
+	- Implement in the sequencer OR
+	- Have a reserve memory where the processor looks first for breakpoints
+
+- All should make use of exceptions where possible, and make a note of these
+
+- Each class should have an interface so it is clear what the expected input and output is
+
+- Sridar proposed the following components for the GUI:
+	- File selector - run an individual file
+	- Programme code view
+	- Error window
+	- Control buttons (start/stop etc)
+	- Data window
+	- Statistics
+Should be possible to resize panels, select which ones to view
+
+Need to update the gui 
+	- Make all of the panels threads OR
+	- Use the event/subscribe method - decided this was better
+
+- All maintain our own logbooks, hours worked etc as this will be needed for the end report
+
+- Needed for the report
+	- Flow diagrams show the system structure best (with explaination)
+	- Basic UML diagrams to show the class structure
+	- XML needs to be specified
+	- Specification of the AST from antlr
+	- Example of the output
+
+- Report Outline
+	- Introduction to the problem
+	- Chosen language
+	- Flow diagrams/UML
+	- Specs (min and max for each of these)
+		- Config stage
+		- Parser, assembler, loader
+		- Processor, execution and mem manager
+		- GUI
+	- Division of the work
+	- Timeline

@@ -1,0 +1,61 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.11.10.10.57.50;	author qq01;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.06.16.21.38;	author jkm01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 05-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+package assembler;
+
+
+
+/**
+ * @@author jkm01
+ *
+ * Contains static variables for the data tags that are to be present within the parsed instruction structure
+ * passed to the assembler from the Parser.
+ */
+public class AssemblerTags {
+	
+	//constants
+	public static String DATA_TAG = ".data";
+	public static String TEXT_TAG = ".text";
+	
+
+}
+@
+
+
+1.1
+log
+@Tags for assembler
+@
+text
+@@
+

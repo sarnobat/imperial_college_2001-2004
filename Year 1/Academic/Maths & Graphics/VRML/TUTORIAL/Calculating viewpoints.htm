@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!--last modified on Saturday, May 22, 1999 09:58 AM -->
+<HTML>
+
+<HEAD>
+	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+<SCRIPT LANGUAGE="JavaScript">
+/*
+        JavaScript version of 29 Oct 1997 by Kevin Laurent, klaurent@usgs.gov,
+        U.S. Geological Survey, Reston, VA, based on the C version by Stephen Chenney.
+        The Chenney copyright header appears below.
+*/
+
+/*
+**    orient.c: Code to convert a from/at/up cmaera model to the orientation
+**              model used by VRML.
+**    Copyright (C) 1995  Stephen Chenney (schenney@cs.berkeley.edu)
+**
+**    This program is free software; you can redistribute it and/or modify
+**    it under the terms of the GNU General Public License as published by
+**    the Free Software Foundation; either version 2 of the License, or
+**    (at your option) any later version.
+**
+**    This program is distributed in the hope that it will be useful,
+**    but WITHOUT ANY WARRANTY; without even the implied warranty of
+**    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+**    GNU General Public License for more details.
+**
+**    You should have received a copy of the GNU General Public License
+**    along with this program; if not, write to the Free Software
+**    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+*/
+
+/*
+** Written by Stephen Chenney, October 1995.
+** schenney@cs.berkeley.edu
+*/
+
+/*
+** As is this program prompts for a from vector, an at vector and an up
+** vector, then calculates the orientation required to align the default
+** VRML camera with the given camera.
+**
+** As a standalone program it does fine.
+** You are welcome to incorporate it into any other program you write, and
+** to modify it as required. However, it would be good if you left it all
+** in one file, and left the GNU header at the top. You probably shouldn't
+** sell it either.
+*/
+
+var rotAxis, rotAngle;
+function vMod () {
+        return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z);
+}
+function vDot (v2) {
+        return this.x * v2.x + this.y * v2.y + this.z * v2.z;
+}
+function vAdd (v2) {
+        var r;
+        r = new Vector ((this.x + v2.x), (this.y + v2.y), (this.z + v2.z));
+        return r;
+}
+function vSub (v2) {
+        var r;
+        r = new Vector ((this.x - v2.x), (this.y - v2.y), (this.z - v2.z));
+        return r;
+}
+function vCross (v2) {
+        var r;
+        r = new Vector ((this.y * v2.z - this.z * v2.y),
+                        (this.z * v2.x - this.x * v2.z),
+                        (this.x * v2.y - this.y * v2.x));
+//      alert("r(in vCross): "+r.x+" "+r.y+" "+r.z); // ***DEBUG
+        return r;
+}
+function vScalarMul (d) {
+        var r;
+        r = new Vector ((this.x * d), (this.y * d), (this.z * d));
+        return r;
+}
+function vUnit () {
+        var t, r;
+        t = 1.0/this.vMod();
+        r = this.vScalarMul (t);
+        return r;
+}
+function Vector (x, y, z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+        this.vAdd = vAdd;
+        this.vSub = vSub;
+        this.vCross = vCross;
+        this.vScalarMul = vScalarMul;
+        this.vUnit = vUnit;
+        this.vMod = vMod;
+        this.vDot = vDot;
+}
+function QQMul (q2) {
+        var r, tempV;
+//      alert("q2: "+q2.vectPart.x+" "+q2.vectPart.y+" "+q2.vectPart.z+" "+q2.realPart); // ***DEBUG
+        r = new Quaternion (this.vectPart.vCross(q2.vectPart),
+                (this.realPart * q2.realPart - this.vectPart.vDot(q2.vectPart)));
+        tempV = this.vectPart.vScalarMul(q2.realPart);
+        r.vectPart = tempV.vAdd(r.vectPart);
+//      alert(r.vectPart.x+" "+r.vectPart.y+" "+r.vectPart.z+" "+r.realPart); // ***DEBUG
+        tempV = q2.vectPart.vScalarMul(this.realPart);
+        r.vectPart = tempV.vAdd(r.vectPart);
+        return r;
+}
+function toAxisAngle () {
+        var halfAngle, sinHalfAngle;
+        halfAngle = Math.acos(this.realPart);
+        sinHalfAngle = Math.sin(halfAngle);
+        rotAngle = halfAngle * 2.0;
+        if ((sinHalfAngle < 1e-8) && (sinHalfAngle > -1e-8)) rotAxis = new Vector(1.0,0.0,0.0);
+        else {
+                sinHalfAngle = 1/sinHalfAngle;
+                rotAxis = this.vectPart.vScalarMul(sinHalfAngle);
+        }
+}
+function Quaternion (vectPart, realPart) {
+        this.vectPart = vectPart;
+        this.realPart = realPart;
+        this.QQMul = QQMul;
+        this.toAxisAngle = toAxisAngle;
+}
+function buildRotateQuaternion (axis, cosAngle) {
+        var angle = 0.0, sinHalfAngle = 0.0, cosHalfAngle = 0.0, r;
+        if (cosAngle > 1.0) cosAngle = 1.0;
+        if (cosAngle < -1.0) cosAngle = -1.0;
+        angle = Math.acos(cosAngle);
+        sinHalfAngle = Math.sin(angle/2.0);
+        cosHalfAngle = Math.cos(angle/2.0);
+        r = new Quaternion (axis.vScalarMul(sinHalfAngle), cosHalfAngle);
+        return r;
+}
+function convertCameraModel (pos, at, up, resAxis, resAngle) {
+        var n, tempD, tempV, v, normAxis, normQuat, invNormQuat, yQuat, newYQuat, newY, rotYQuat, rotQuat;
+        n = at.vSub(pos);
+        n = n.vUnit();
+        up = up.vUnit();
+        tempD = up.vDot(n);
+        tempV = n.vScalarMul(tempD);
+        v = up.vSub(tempV);
+        v = v.vUnit();
+        normAxis = new Vector(n.y, -n.x, 0);
+        if (normAxis.vDot(normAxis) < 1e-8) {
+                if (n.z > 0.0) normQuat = new Quaternion(new Vector(0.0,1.0,0.0), 1.0);
+                else normQuat = new Quaternion(new Vector(0.0,0.0,0.0), 1.0);
+        }
+        else {
+                normAxis = normAxis.vUnit();
+                normQuat = buildRotateQuaternion(normAxis, -n.z);
+        }
+        invNormQuat = new Quaternion(normQuat.vectPart.vScalarMul(-1),normQuat.realPart);
+        yQuat = new Quaternion(new Vector(0.0,1.0,0.0),0.0);
+        newYQuat = normQuat.QQMul(yQuat);
+        newYQuat = newYQuat.QQMul(invNormQuat);
+        newY = newYQuat.vectPart;
+        tempV = newY.vCross(v);
+        if (tempV.vDot(tempV) < 1e-8) {
+                tempV = new Vector(0.0, -v.z, v.y);
+                if (tempV.vDot(tempV) < 1e-8) tempV = new Vector(v.z, 0.0, -v.x);
+        }
+        tempV = tempV.vUnit();
+//      alert(tempV.x+" "+tempV.y+" "+tempV.z); // ***DEBUG
+        rotYQuat = buildRotateQuaternion(tempV, newY.vDot(v));
+        rotQuat = rotYQuat.QQMul(normQuat);
+        rotQuat.toAxisAngle();
+}
+function calcView (form) {
+//      document.write ("With camera at "+form.cameraX.value+", ");
+//      document.writeln (form.cameraY.value+", "+form.cameraZ.value+"<P>");
+        var pos, at, up;
+        pos = new Vector (eval(form.cameraX.value),eval(form.cameraY.value),
+                        eval(form.cameraZ.value));
+        at = new Vector (eval(form.lookX.value),eval(form.lookY.value),
+                        eval(form.lookZ.value));
+        up = new Vector (eval(form.upX.value),eval(form.upY.value),
+                        eval(form.upZ.value));
+        rotAxis = new Vector(0.0,0.0,0.0);
+        convertCameraModel(pos, at, up, rotAxis, rotAngle);
+        form.orientation.value =
+                "orientation " + rotAxis.x + " " + rotAxis.y + " " + rotAxis.z + " " + rotAngle;
+}
+</SCRIPT>
+
+	<META NAME="GENERATOR" Content="Visual Page 2.0 for Windows">
+	<META NAME="Author" Content="Kelly Crispen">
+	<TITLE>Calculating VRML Viewpoints</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="white">
+<a href="../contributors/email.cgi"><img src="../imgs/contrib.gif" alt="Contributors" border="0"></a>
+
+<FORM METHOD="POST" ENCTYPE="application/x-www-form-urlencoded" NAME="parms">
+<P ALIGN="CENTER"><B><FONT SIZE="5" FACE="Arial, Helvetica">Kevin Laurent's </FONT><CODE><FONT SIZE="5" FACE="Arial, Helvetica">&lt;</FONT></CODE><FONT
+SIZE="5" FACE="Courier New, Courier">klaurent@usgs.gov</FONT><CODE><FONT SIZE="5" FACE="Arial, Helvetica">&gt;<BR>
+JavaScript version of Steve Chenney's Orient</FONT></CODE></B></P>
+<P>Camera Location: (where are you)<BR>
+X <INPUT TYPE="TEXT" NAME="cameraX" SIZE="10"> Y <INPUT TYPE="TEXT" NAME="cameraY" SIZE="10"> Z <INPUT TYPE="TEXT"
+NAME="cameraZ" SIZE="10"></P>
+<P>Look At Vector: (coordinates of the object you want to look at)<BR>
+X <INPUT TYPE="TEXT" NAME="lookX" SIZE="10"> Y <INPUT TYPE="TEXT" NAME="lookY" SIZE="10"> Z <INPUT TYPE="TEXT"
+NAME="lookZ" SIZE="10"></P>
+<P>Look Up Vector: (usually 0 1 0)<BR>
+X <INPUT TYPE="TEXT" NAME="upX" SIZE="10" VALUE="0"> Y <INPUT TYPE="TEXT" NAME="upY" SIZE="10" VALUE="1"> Z <INPUT
+TYPE="TEXT" NAME="upZ" SIZE="10" VALUE="0"></P>
+<P><INPUT TYPE="button" VALUE="Calc Viewpoint" ONCLICK="calcView(this.form)"></P>
+
+<P>Viewpoint Orientation (calculated):<BR>
+<INPUT TYPE="TEXT" NAME="orientation" SIZE="85">
+</FORM>
+
+</BODY>
+
+</HTML>

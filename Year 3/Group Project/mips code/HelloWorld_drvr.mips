@@ -1,0 +1,61 @@
+# Driver program for Hello World!
+# Ima X Traterrestrial
+# ixterres
+#
+# This program runs the Hello World subroutine.
+# It also demonstrates/tests the preservation of registers 2, 3 & 4
+# by outputting their contents to the terminal before and after
+# the call to Hello.  Lastly, note that a subroutine (printReg) is
+# used for printing register contents, but that it fails to preserve
+# register 1 (this is not good practice).  Also note that this subroutine
+# is declared AFTER the end of program- this is not necessary, but it helps
+# keep this modular.
+# 
+# Registers:
+#   $1 -- a constant value (-1) to demonstrate preservation
+#   $2 -- a constant value (-2) to demonstrate preservation
+#   $3 -- a constant value (-3) to demonstrate preservation
+#   $4 -- the values to be output
+
+.globl main
+
+# initialize $2 and $3, and print out their values
+main:   addi    $1, $0, -1      # initialize $1
+        addi    $2, $0, -2      # initialize $2
+        addi    $3, $0, -3      # initialize $3
+
+# Print out the contents of registers 2-4 as integers on their own lines
+        add     $4, $0, $1      # read $1 into $4
+        jal     printReg        # print out register
+
+        add     $4, $0, $2      # read $2 into $1
+        jal     printReg        # print out register
+
+        add     $4, $0, $3      # read $3 into $1
+        jal     printReg        # print out register
+
+# Actually call Hello World
+        jal     Hello           # call the HelloWorld subroutine
+
+# Print out the contents of registers 2-4 as integers on their own lines
+        add     $4, $0, $1      # read $1 into $4
+        jal     printReg        # print out register
+
+        add     $4, $0, $2      # read $2 into $1
+        jal     printReg        # print out register
+
+        add     $4, $0, $3      # read $3 into $1
+        jal     printReg        # print out register
+
+# Quit running the program
+        trap    10              # end program
+
+
+# Prints out the contents of register 4 on its own line
+# Note that printReg overwrites the contents of $4 with the value 10
+# 	- this is an example of poor register preservation
+printReg:	
+        trap    1               # output $4 as an integer
+        addi    $4, $0, 10      # put ascii value for newline in r$
+        trap    101             # output newline
+        jr      $31             # return to caller

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path="final report/converter/docbook/extensions/saxon643"/>
+    <classpathentry kind="src" path="final report/converter/docbook/extensions/xalan2"/>
+    <classpathentry kind="lib" path="final report/converter/docbook/extensions/saxon644.jar"/>
+    <classpathentry kind="lib" path="final report/converter/docbook/extensions/saxon651.jar"/>
+    <classpathentry kind="lib" path="final report/converter/docbook/extensions/xalan25.jar"/>
+    <classpathentry kind="lib" path="final report/converter/docbook/extensions/saxon643.jar"/>
+    <classpathentry kind="lib" path="final report/converter/docbook/extensions/saxon65.jar"/>
+    <classpathentry kind="lib" path="final report/converter/docbook/extensions/xalan2.jar"/>
+    <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+    <classpathentry kind="output" path="bin"/>
+</classpath>

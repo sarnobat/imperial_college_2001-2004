@@ -1,0 +1,749 @@
+head	1.12;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.12
+date	2003.12.02.14.44.40;	author jkm01;	state dead;
+branches;
+next	1.11;
+
+1.11
+date	2003.11.28.10.39.37;	author jkm01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.11.25.18.36.54;	author ajb101;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.11.25.15.57.13;	author ajb101;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.11.21.17.42.47;	author jkm01;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.18.14.51.46;	author ajb101;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.14.16.57.44;	author ajb101;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.14.15.18.02;	author jkm01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.11.21.16.23;	author qq01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.11.17.41.18;	author jkm01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.11.15.14.06;	author jkm01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.11.13.46.01;	author jkm01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@/*
+ * Created on 11-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+package yams.assembler;
+//import yams.parser.*;
+
+
+/**
+ * @@author jkm01
+ *
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+public class OperandEncoder {
+
+/*
+
+	private static int MAX_OPERANDS = 10;	
+
+	private SymbolTable symbolTable;
+	private ToBeDoneTable toBeDoneTable; 
+	private String[] translatedOperands;
+	private int currentOperandNumber;
+
+	public OperandEncoder(SymbolTable s, ToBeDoneTable t)
+	{
+		symbolTable=s; toBeDoneTable = t;
+	}
+	
+	/*	
+	public String[] returnOperands(List operandList)
+	{
+		translatedOperands = new String[MAX_OPERANDS];
+		currentOperandNumber = 0;
+		for (int count = 0; count<operandList.size(); count++)
+			{
+				handleOperand((Operand)operandList.get(count));
+			}
+		return translatedOperands;
+	}
+	
+	public int returnNumberOfOperands()
+	{
+		return currentOperandNumber;
+	}
+	
+
+	public void handleOperand(Operand currentOperand)
+	{
+		//TODO change this selection statement to handle specific operand types once added to parser package
+		
+		if (currentOperand instanceof RegisterOperand)
+			{handleRegisterOperand((RegisterOperand)currentOperand);}
+			
+		else if (currentOperand instanceof ImmediateOperand)
+			{handleImmediateOperand((ImmediateOperand)currentOperand);}
+			
+		else if (currentOperand instanceof ImmediateRegisterOperand)
+			{handleImmediateRegisterOperand((ImmediateRegisterOperand)currentOperand);}
+			
+		else if (currentOperand instanceof LabelOperand)
+			{handleLabelOperand((LabelOperand)currentOperand);}
+			
+		else if (currentOperand instanceof LabelPlusImmediateOperand)
+			{handleLabelImmediate((LabelPlusImmediateOperand)currentOperand);}
+			
+		else if (currentOperand instanceof LabelPlusImmediateRegisterOperand)
+			{handleLabelImmediateRegister((LabelPlusImmediateRegisterOperand)currentOperand);}
+			
+		else
+			{/*invalid operand - should have been checked}		
+	}
+			
+	private void handleRegisterOperand(RegisterOperand currentOperand)
+	{
+		translatedOperands[currentOperandNumber] = encodeRegister(currentOperand.getValue());
+		currentOperandNumber++;
+	}
+	
+	private void handleImmediateOperand(ImmediateOperand currentOperand)
+	{
+		translatedOperands[currentOperandNumber] = intToBinaryString(currentOperand.getValue());
+		currentOperandNumber++;
+	}
+
+	private String intToBinaryString(int immediate)
+	{
+		int value = immediate;
+		String output = "";
+		while (value>1)
+			{
+				output += (value%2);
+				value = value/2;
+			}	
+		return output;		
+	}
+
+	private void handleImmediateRegisterOperand(ImmediateRegisterOperand currentOperand)
+	{
+
+		int immediateValue = currentOperand.getImmediateValue();
+		String register = currentOperand.getRegister();
+
+		translatedOperands[currentOperandNumber] = intToBinaryString(immediateValue);
+		currentOperandNumber++;
+		translatedOperands[currentOperandNumber] = encodeRegister(register);
+		currentOperandNumber++;
+	}
+
+	private void handleLabelOperand(LabelOperand currentOperand)
+	{
+		String label = currentOperand.getValue();
+
+		if (symbolTable.containsLabel(label))
+			{
+				translatedOperands[currentOperandNumber] = 	""+symbolTable.returnAddress(label);			
+			}
+		else
+			{
+				translatedOperands[currentOperandNumber] = "ERROR";
+			}
+		currentOperandNumber++;
+	}
+
+	private void handleLabelImmediate(LabelPlusImmediateOperand currentOperand)
+	{
+		String label = currentOperand.getLabel();
+		String sign = currentOperand.getSign();
+		int immediate = currentOperand.getImmediate();
+		
+		if (symbolTable.containsLabel(label))
+			{
+				translatedOperands[currentOperandNumber] = 	""+symbolTable.returnAddress(label);			
+			}
+		else
+			{
+				translatedOperands[currentOperandNumber] = "ERROR";
+			}
+		currentOperandNumber++;
+		translatedOperands[currentOperandNumber] = sign;
+		currentOperandNumber++;
+		translatedOperands[currentOperandNumber] = intToBinaryString(immediate);		
+		currentOperandNumber++;
+	}
+
+	private void handleLabelImmediateRegister(LabelPlusImmediateRegisterOperand currentOperand)
+	{
+		
+		String label = currentOperand.getLabel();
+		String sign = currentOperand.getSign();
+		int immediate = currentOperand.getImmediate();
+		String register = currentOperand.getRegister();
+
+		if (symbolTable.containsLabel(label))
+			{
+				translatedOperands[currentOperandNumber] = 	""+symbolTable.returnAddress(label);			
+			}
+		else
+			{
+				translatedOperands[currentOperandNumber] = "ERROR";
+			}
+		currentOperandNumber++;
+		translatedOperands[currentOperandNumber] = sign;
+		currentOperandNumber++;
+		translatedOperands[currentOperandNumber] = intToBinaryString(immediate);		
+		currentOperandNumber++;
+	}
+
+	private String encodeRegister(String registerName)
+	{		
+		if 			(registerName.equals("$zero")) 	{return "00000";}
+		else if 	(registerName.equals("$at")) 		{return "00001";}
+		else if 	(registerName.equals("$v0")) 		{return "00010";}
+		else if 	(registerName.equals("$v1"))	 	{return "00011";}
+		else if 	(registerName.equals("$a0")) 		{return "00100";}
+		else if 	(registerName.equals("$a1")) 		{return "00101";}
+		else if 	(registerName.equals("$a2")) 		{return "00110";}
+		else if 	(registerName.equals("$a3"))	 	{return "00111";}
+		else if 	(registerName.equals("$t0")) 		{return "01000";}
+		else if 	(registerName.equals("$t1")) 		{return "01001";}
+		else if 	(registerName.equals("$t2")) 		{return "01010";}
+		else if 	(registerName.equals("$t3")) 		{return "01011";}
+		else if 	(registerName.equals("$t4")) 		{return "01100";}
+		else if 	(registerName.equals("$t5")) 		{return "01101";}
+		else if 	(registerName.equals("$t6")) 		{return "01110";}
+		else if 	(registerName.equals("$t7")) 		{return "01111";}
+		else if 	(registerName.equals("$s0"))	 	{return "10000";}
+		else if 	(registerName.equals("$s1")) 		{return "10001";}
+		else if 	(registerName.equals("$s2")) 		{return "10010";}
+		else if 	(registerName.equals("$s3")) 		{return "10011";}
+		else if 	(registerName.equals("$s4")) 		{return "10100";}
+		else if 	(registerName.equals("$s5")) 		{return "10101";}
+		else if 	(registerName.equals("$s6")) 		{return "10110";}
+		else if 	(registerName.equals("$s7")) 		{return "10111";}
+		else if 	(registerName.equals("$t8")) 		{return "11000";}
+		else if 	(registerName.equals("$t9"))		{return "11001";}
+		else if 	(registerName.equals("$k0")) 		{return "11010";}
+		else if 	(registerName.equals("$k1")) 		{return "11011";}
+		else if 	(registerName.equals("$gp")) 		{return "11100";}
+		else if 	(registerName.equals("$sp"))	 	{return "11101";}
+		else if 	(registerName.equals("$fp")) 		{return "11110";}
+		else if 	(registerName.equals("$ra")) 		{return "11111";}
+		else
+			{
+				System.out.println("error this is not a register -> this should have been picked up by parser");
+				return "";
+			}
+	}
+	
+	public String replaceOperand(String translatedOperand, String machineCode, int operandNumber)
+	{
+		char oprep = alphaNumericOperandNumber(operandNumber);
+		int firstOccurrance = machineCode.indexOf(oprep);
+		int lastOccurrance = machineCode.lastIndexOf(oprep);
+		int substituteLength = lastOccurrance-firstOccurrance+1;
+		String replaceString = "";
+		for (int count = 0; count<substituteLength; count++)
+		{
+			replaceString = replaceString+oprep;
+		}
+		return machineCode.replaceAll(replaceString,translatedOperand);	
+	}
+
+	private char alphaNumericOperandNumber(int number)
+	{
+		switch (number)
+		{
+			case 0	:	{return 'a';}
+			case 1	:	{return 'b';}
+			case 2	:	{return 'c';}
+			case 3	:	{return 'd';}
+			case 4	:	{return 'e';}			
+		}
+		return 'z';
+	}
+
+*/
+/*
+
+	public String handleOperand(Operand currentOperand, Instruction currentInstruction, int lineNumber)
+	{
+		//TODO change this selection statement to handle specific operand types once added to parser package
+		
+		if (currentOperand instanceof RegisterOperand)
+			{return handleRegisterOperand((RegisterOperand)currentOperand,currentInstruction,lineNumber);}
+			
+		else if (currentOperand instanceof ImmediateOperand)
+			{return handleImmediateOperand((ImmediateOperand)currentOperand,currentInstruction,lineNumber);}
+			
+		else if (currentOperand instanceof ImmediateRegisterOperand)
+			{return handleImmediateRegisterOperand((ImmediateRegisterOperand)currentOperand,currentInstruction,lineNumber);}
+			
+		else if (currentOperand instanceof LabelOperand)
+			{return handleLabelOperand((LabelOperand)currentOperand,currentInstruction,lineNumber);}
+			
+		else if (currentOperand instanceof LabelPlusImmediateOperand)
+			{return handleLabelImmediate((LabelPlusImmediateOperand)currentOperand,currentInstruction,lineNumber);}
+			
+		else if (currentOperand instanceof LabelPlusImmediateRegisterOperand)
+			{return handleLabelImmediateRegister((LabelPlusImmediateRegisterOperand)currentOperand,currentInstruction,lineNumber);}
+			
+		else
+			{//invalid operandreturn
+			 return "";}		
+	}
+			
+	private String handleRegisterOperand(RegisterOperand currentOperand, Instruction currentInstruction, int lineNumber)
+	{
+		return encodeRegister(currentOperand.getValue());
+	}
+	
+	private String handleImmediateOperand(ImmediateOperand currentOperand, Instruction currentInstruction, int lineNumber)
+	{
+		String output = "";
+		int value = currentOperand.getValue();
+		while (value>1)
+			{
+				output += (value%2);
+				value = value/2;
+			}	
+		return output;
+	}
+
+	private static String handleImmediateRegisterOperand(ImmediateRegisterOperand currentOperand, Instruction currentInstruction, int lineNumber)
+	{
+
+		int immediateValue = currentOperand.getImmediateValue();
+		String register = currentOperand.getRegister();
+
+		//TODO
+		//ImmediateRegisterOprand 
+		return "";
+	}
+
+	private static String handleLabelOperand(LabelOperand currentOperand, Instruction currentInstruction, int lineNumber)
+	{
+		String label = currentOperand.getValue();
+
+		//TODO
+		//LabelOprand
+		return "";
+	}
+
+	private static String handleLabelImmediate(LabelPlusImmediateOperand currentOperand, Instruction currentInstruction, int lineNumber)
+	{
+		String label = currentOperand.getLabel();
+		String sign = currentOperand.getSign();
+		int immediate = currentOperand.getImmediate();
+		
+		//TODO
+		//LabelImmediateOprand 
+		return "";
+	}
+
+	private static String handleLabelImmediateRegister(LabelPlusImmediateRegisterOperand currentOperand, Instruction currentInstruction, int lineNumber)
+	{
+		
+		String label = currentOperand.getLabel();
+		String sign = currentOperand.getSign();
+		int immediate = currentOperand.getImmediate();
+		String register = currentOperand.getRegister();
+		
+		//TODO
+		//LabelImmediateRegisterOprand 
+		return "";
+	}
+
+	private String encodeRegister(String registerName)
+	{		
+		if 			(registerName.equals("$zero")) 	{return "00000";}
+		else if 	(registerName.equals("$at")) 		{return "00001";}
+		else if 	(registerName.equals("$v0")) 		{return "00010";}
+		else if 	(registerName.equals("$v1"))	 	{return "00011";}
+		else if 	(registerName.equals("$a0")) 		{return "00100";}
+		else if 	(registerName.equals("$a1")) 		{return "00101";}
+		else if 	(registerName.equals("$a2")) 		{return "00110";}
+		else if 	(registerName.equals("$a3"))	 	{return "00111";}
+		else if 	(registerName.equals("$t0")) 		{return "01000";}
+		else if 	(registerName.equals("$t1")) 		{return "01001";}
+		else if 	(registerName.equals("$t2")) 		{return "01010";}
+		else if 	(registerName.equals("$t3")) 		{return "01011";}
+		else if 	(registerName.equals("$t4")) 		{return "01100";}
+		else if 	(registerName.equals("$t5")) 		{return "01101";}
+		else if 	(registerName.equals("$t6")) 		{return "01110";}
+		else if 	(registerName.equals("$t7")) 		{return "01111";}
+		else if 	(registerName.equals("$s0"))	 	{return "10000";}
+		else if 	(registerName.equals("$s1")) 		{return "10001";}
+		else if 	(registerName.equals("$s2")) 		{return "10010";}
+		else if 	(registerName.equals("$s3")) 		{return "10011";}
+		else if 	(registerName.equals("$s4")) 		{return "10100";}
+		else if 	(registerName.equals("$s5")) 		{return "10101";}
+		else if 	(registerName.equals("$s6")) 		{return "10110";}
+		else if 	(registerName.equals("$s7")) 		{return "10111";}
+		else if 	(registerName.equals("$t8")) 		{return "11000";}
+		else if 	(registerName.equals("$t9"))		{return "11001";}
+		else if 	(registerName.equals("$k0")) 		{return "11010";}
+		else if 	(registerName.equals("$k1")) 		{return "11011";}
+		else if 	(registerName.equals("$gp")) 		{return "11100";}
+		else if 	(registerName.equals("$sp"))	 	{return "11101";}
+		else if 	(registerName.equals("$fp")) 		{return "11110";}
+		else if 	(registerName.equals("$ra")) 		{return "11111";}
+		else
+			{
+				System.out.println("error this is not a register -> this should have been picked up by parser");
+				return "";
+			}
+	}
+	
+	public String replaceOperand(String translatedOperand, String machineCode, int operandNumber)
+	{
+		char oprep = alphaNumericOperandNumber(operandNumber);
+		int firstOccurrance = machineCode.indexOf(oprep);
+		int lastOccurrance = machineCode.lastIndexOf(oprep);
+		int substituteLength = lastOccurrance-firstOccurrance+1;
+		String replaceString = "";
+		for (int count = 0; count<substituteLength; count++)
+		{
+			replaceString = replaceString+oprep;
+		}
+		return machineCode.replaceAll(replaceString,translatedOperand);	
+	}
+
+	private char alphaNumericOperandNumber(int number)
+	{
+		switch (number)
+		{
+			case 0	:	{return 'a';}
+			case 1	:	{return 'b';}
+			case 2	:	{return 'c';}
+			case 3	:	{return 'd';}
+			case 4	:	{return 'e';}			
+		}
+		return 'z';
+	}
+
+*/
+
+}
+@
+
+
+1.11
+log
+@removed the code in the operand handler to avoid errors.
+@
+text
+@@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+import yams.parser.*;
+d19 2
+d241 1
+d399 1
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d19 2
+d23 2
+d30 209
+d240 1
+a240 1
+	public String handleOperand(Operand currentOperand)
+d245 1
+a245 1
+			{return handleRegisterOperand((RegisterOperand)currentOperand);}
+d248 1
+a248 1
+			{return handleImmediateOperand((ImmediateOperand)currentOperand);}
+d251 1
+a251 1
+			{return handleImmediateRegisterOperand((ImmediateRegisterOperand)currentOperand);}
+d254 1
+a254 1
+			{return handleLabelOperand((LabelOperand)currentOperand);}
+d257 1
+a257 1
+			{return handleLabelImmediate((LabelPlusImmediateOperand)currentOperand);}
+d260 1
+a260 1
+			{return handleLabelImmediateRegister((LabelPlusImmediateRegisterOperand)currentOperand);}
+d262 3
+a264 1
+		else																													{/*invalid operand - should have been checked*/return "";}		
+d267 1
+a267 1
+	private String handleRegisterOperand(RegisterOperand currentOperand)
+d272 1
+a272 1
+	private String handleImmediateOperand(ImmediateOperand currentOperand)
+d284 1
+a284 1
+	private static String handleImmediateRegisterOperand(ImmediateRegisterOperand currentOperand)
+d295 1
+a295 1
+	private static String handleLabelOperand(LabelOperand currentOperand)
+d304 1
+a304 1
+	private static String handleLabelImmediate(LabelPlusImmediateOperand currentOperand)
+d315 1
+a315 1
+	private static String handleLabelImmediateRegister(LabelPlusImmediateRegisterOperand currentOperand)
+@
+
+
+1.8
+log
+@updated operand handler to handle immediate operands
+@
+text
+@d72 3
+d82 2
+d91 4
+d102 6
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d35 1
+a35 1
+			{return handleImmediateOperand((RegisterOperand)currentOperand);}
+d38 1
+a38 1
+			{return handleImmediateRegisterOperand((RegisterOperand)currentOperand);}
+d41 1
+a41 1
+			{return handleLabelOperand((RegisterOperand)currentOperand);}
+d44 1
+a44 1
+			{return handleLabelImmediate((RegisterOperand)currentOperand);}
+d47 1
+a47 1
+			{return handleLabelImmediateRegister((RegisterOperand)currentOperand);}
+d57 1
+a57 1
+	private String handleImmediateOperand(RegisterOperand currentOperand)
+d59 8
+a66 3
+		//TODO
+		//ImmediateOprand
+		return "";
+d69 1
+a69 1
+	private static String handleImmediateRegisterOperand(RegisterOperand currentOperand)
+d77 1
+a77 1
+	private static String handleLabelOperand(RegisterOperand currentOperand)
+d84 1
+a84 1
+	private static String handleLabelImmediate(RegisterOperand currentOperand)
+d91 1
+a91 1
+	private static String handleLabelImmediateRegister(RegisterOperand currentOperand)
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d31 18
+a48 6
+		if (currentOperand instanceof RegisterOperand) 											{return handleRegisterOperand((RegisterOperand)currentOperand);}
+		else if (currentOperand instanceof ImmediateOperand)	 							{return handleImmediateOperand((RegisterOperand)currentOperand);}
+		else if (currentOperand instanceof ImmediateRegisterOperand)					{return handleImmediateRegisterOperand((RegisterOperand)currentOperand);}
+		else if (currentOperand instanceof LabelOperand)										{return handleLabelOperand((RegisterOperand)currentOperand);}
+		else if (currentOperand instanceof LabelPlusImmediateOperand)					{return handleLabelImmediate((RegisterOperand)currentOperand);}
+		else if (currentOperand instanceof LabelPlusImmediateRegisterOperand)	{return handleLabelImmediateRegister((RegisterOperand)currentOperand);}
+@
+
+
+1.5
+log
+@changed the implementation of the operand encoder
+@
+text
+@d140 5
+a144 5
+			case 1	:	{return 'a';}
+			case 2	:	{return 'b';}
+			case 3	:	{return 'c';}
+			case 4	:	{return 'd';}
+			case 5	:	{return 'e';}			
+@
+
+
+1.4
+log
+@corrected typo
+@
+text
+@d82 33
+a114 3
+	{
+		if (registerName.equals("$a3")) 		{return "1";}
+		else if (registerName.equals("")) 	{return "2";}
+d117 1
+a117 1
+				//error this is not a register -> this should have been
+@
+
+
+1.3
+log
+@Corrected errors, now works
+@
+text
+@d27 1
+a27 1
+	public String handleOperand(Oprand currentOperand)
+d31 6
+a36 6
+		if (currentOperand instanceof RegisterOprand) 											{return handleRegisterOperand((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof ImmediateOperand)	 							{return handleImmediateOperand((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof ImmediateRegisterOperand)					{return handleImmediateRegisterOperand((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof LabelOperand)										{return handleLabelOperand((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof LabelPlusImmediateOperand)					{return handleLabelImmediate((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof LabelPlusImmediateRegisterOperand)	{return handleLabelImmediateRegister((RegisterOprand)currentOperand);}
+d40 1
+a40 1
+	private String handleRegisterOperand(RegisterOprand currentOperand)
+d45 1
+a45 1
+	private String handleImmediateOperand(RegisterOprand currentOperand)
+d52 1
+a52 1
+	private static String handleImmediateRegisterOperand(RegisterOprand currentOperand)
+d60 1
+a60 1
+	private static String handleLabelOperand(RegisterOprand currentOperand)
+d67 1
+a67 1
+	private static String handleLabelImmediate(RegisterOprand currentOperand)
+d74 1
+a74 1
+	private static String handleLabelImmediateRegister(RegisterOprand currentOperand)
+@
+
+
+1.2
+log
+@Updated the assembler and operand encoder to include assembler directives and
+the approproate operand classes
+@
+text
+@a8 1
+import yams.*;
+d39 1
+a39 14
+
+	private char alphaNumericOperandNumber(int number)
+	{
+		switch (number)
+		{
+			case 1	:	{return 'a';}
+			case 2	:	{return 'b';}
+			case 3	:	{return 'c';}
+			case 4	:	{return 'd';}
+			case 5	:	{return 'e';}			
+		}
+		return 'z';
+	}
+		
+d42 1
+a42 1
+		return "";
+d47 1
+d54 2
+d62 1
+d69 1
+d76 1
+d80 11
+d105 14
+@
+
+
+1.1
+log
+@Restructured the assembler jkm
+@
+text
+@d9 1
+d32 7
+a38 7
+		if (currentOperand instanceof RegisterOprand) 					{return handleRegisterOperand((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof RegisterOprand)	 			{return handleImmediateOperand((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof RegisterOprand)				{return handleImmediateRegisterOperand((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof RegisterOprand)				{return handleLabelOperand((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof RegisterOprand)				{return handleLabelImmediate((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof RegisterOprand)				{return handleLabelImmediateRegister((RegisterOprand)currentOperand);}
+		else																							{/*invalid operand - should have been checked*/return "";}		
+@
+

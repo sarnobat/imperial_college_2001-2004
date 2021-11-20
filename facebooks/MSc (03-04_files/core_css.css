@@ -1,0 +1,7 @@
+@import url( coreSlave.css );
+.spacer {
+	CLEAR: both
+}
+.clearall {
+	CLEAR: both; FLOAT: none; OVERFLOW: hidden; WIDTH: 100%; HEIGHT: 1px
+}

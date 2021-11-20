@@ -1,0 +1,30 @@
+MEETING = (hwllo -> converse -> goodbye -> STOP).
+
+JOB = (arrive -> work -> leave -> JOB).
+
+GAME = (one -> WON |
+	two -> WON |
+	three -> LOST),
+WON = (win -> GAME),
+LOST = (lose -> GAME).
+
+MOVE = (ahead -> DIRECTION),
+DIRECTION  = (left ->STOP |
+			  right -> MOVE).
+
+DOUBLE = (in[i:1..3] -> out[2*i] -> DOUBLE).
+
+FOURTICK(N=4)	= FOURTICK[0],
+FOURTICK[i:0..N] = (when (i < 4) tick -> FOURTICK[i+1]).
+
+PERSON = (weekend -> ONE | weekday -> TWO),
+ONE = (sleep -> FOUR),
+TWO = (sleep -> THREE),
+THREE = (work -> PERSON),
+FOUR = (shop -> PERSON | play ->PERSON).
+
+********************************************************
+
+VARIABLE(N=9) = VARIABLE[0],
+VARIABLE[i:0..N] = (write[j:0..N] -> VARIABLE[j]
+                   |read[i] -> VARIABLE[i]).

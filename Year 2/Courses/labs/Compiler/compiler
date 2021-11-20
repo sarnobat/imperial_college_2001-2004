@@ -1,0 +1,4 @@
+#!/bin/sh
+# Run the decm2 compiler  
+dir=`dirname $0`
+exec java -classpath .:/vol/labsrc/src/antlr-2.7.1/antlr.jar:$dir Compiler $@

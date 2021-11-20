@@ -1,0 +1,72 @@
+g0226115db=> SELECT * FROM game ;
+ game | playernum | turn | playing
+------+-----------+------+---------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM goods ;
+ playernum | resourcename | price | volume
+-----------+--------------+-------+--------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM mailbox ;
+ msgnum | dest
+--------+------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM messages ;
+ msgnum | game | sender | sent | message | subject
+--------+------+--------+------+---------+---------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM planets;
+ starnum | food | water | fuel | gold | titanium | industrial | mining | farming
+---------+------+-------+------+------+----------+------------+--------+---------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM players;
+ playernum | playername | playing | password | balance
+-----------+------------+---------+----------+---------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM ships;
+ shipnumber | name | food | water | fuel | gold | titanium | industrial | mining | farming
+------------+------+------+-------+------+------+----------+------------+--------+---------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM shipstate;
+ shipnumber | game | owner | x | y | z | fuelcontent | mileage
+------------+------+-------+---+---+---+-------------+---------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM shipstorage;
+ shipnum | game | volumeused | freespace
+---------+------+------------+-----------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM starstate;
+ starnum | game | owner | civilisation
+---------+------+-------+--------------
+       1 |      |       | industrial
+       2 |      |       | mine
+       3 |      |       | industrial
+       4 |      |       | industrial
+    
+(31 rows)
+
+
+g0226115db=> SELECT * FROM universe;
+       star       | starnum |     x      |      y      |     z
+------------------+---------+------------+-------------+-----------
+ Sun              |       1 |    1.5e-05 |           0 |         0
+ Procione A       |       2 |  -0.435614 |     4.72827 | -0.909959
+ Proxima Cen      |       3 |   -2.99638 |    -2.41866 |  0.418553
+(31 rows)

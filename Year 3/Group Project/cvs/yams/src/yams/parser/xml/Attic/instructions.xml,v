@@ -1,0 +1,42 @@
+head	1.2;
+access;
+symbols
+	yams-release2-17-12-03:1.1
+	yams-release-17-12-03:1.1
+	cleanup:1.1.0.2
+	Root_cleanup:1.1
+	stable-13-12-2003:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.12.19.14.08.14;	author qq01;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.52;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@deleted deprecated files
+@
+text
+@<?xml version="1.0" encoding="UTF-8"?><Instructions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="F:\My Documents\ajiao\3rd_yr_project\Schemas\instructions.xsd">	<Instruction>		<OpCode>add</OpCode>		<JavaCode/>		<Description/>	</Instruction></Instructions>@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@@
+

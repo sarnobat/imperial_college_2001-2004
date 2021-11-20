@@ -1,0 +1,106 @@
+From MAILER-DAEMON Mon Jun 10 18:31:10 2002
+Date: 10 Jun 2002 18:31:10 +0100
+From: Mail System Internal Data <MAILER-DAEMON@mallard.doc.ic.ac.uk>
+Subject: DON'T DELETE THIS MESSAGE -- FOLDER INTERNAL DATA
+Message-ID: <1023730270@mallard.doc.ic.ac.uk>
+X-IMAP: 1016969428 0000000002
+Status: RO
+
+This text is part of the internal format of your mail folder, and is not
+a real message.  It is created automatically by the mail system software.
+If deleted, important folder data will be lost, and it will be re-created
+with the data reset to initial values.
+
+From mjs@doc.ic.ac.uk Thu Mar 21 15:20:52 2002
+Return-path: <mjs@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 21 Mar 2002 15:20:52 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16o4Mr-00023Y-00; Thu, 21 Mar 2002 15:20:41 +0000
+Received: from fal.doc.ic.ac.uk ([146.169.4.86] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16o4Mq-0003YX-00; Thu, 21 Mar 2002 15:20:40 +0000
+Message-ID: <3C99FB1F.BC85F836@doc.ic.ac.uk>
+Date: Thu, 21 Mar 2002 15:24:15 +0000
+From: Marek Sergot <mjs@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; I)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: all-first-year@doc.ic.ac.uk, all-second-year@doc.ic.ac.uk
+CC: mjs <mjs@doc.ic.ac.uk>
+Subject: Databases revision lecture
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 1
+
+
+There will be a revision lecture for my half of the database course on
+
+  15:00  Tuesday 26th March
+
+  room 311
+
+
+I don't want to say the same thing twice, so this is open to 1st year
+and 2nd year students (it was the same course). I hope you can all cram
+in. I'm assuming you won't all turn up.
+
+For those of you who can't make it: I have prepared a model answer, with
+commentary, of the assessed coursework exercise and will put this on the
+course website
+
+http://www.doc.ic.ac.uk/~mjs/teaching/databases
+
+as soon as I finish typing it all in.
+
+As you may know, the delay in return of your assessed coursework was
+caused by logistical problems in allocating markers. I hope these are
+resolved; your coursework will be returned asap. In the meantime, the
+model answer should serve for revision purposes. (By the way, the
+questions --- particularly question 2 on relational algebra queries ---
+are much more difficult/complicated than you would get in an
+examination.)
+
+
+
+
+Marek Sergot
+
+From akr@doc.ic.ac.uk Wed May 22 13:18:35 2002
+Return-path: <akr@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 22 May 2002 13:18:35 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 17AV3A-0003vD-00; Wed, 22 May 2002 13:17:04 +0100
+Received: from nene.doc.ic.ac.uk ([146.169.5.169] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 17AV3A-0005Nu-00; Wed, 22 May 2002 13:17:04 +0100
+Message-ID: <3CEB8C40.5060304@doc.ic.ac.uk>
+Date: Wed, 22 May 2002 13:17:04 +0100
+From: Angela Ragoopath <akr@doc.ic.ac.uk>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.9) Gecko/20020311
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To:  cs-first-year@doc.ic.ac.uk,  cs-second-year@doc.ic.ac.uk
+Subject: Databases Courseworks
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 2
+
+Dear All,
+
+Your courseworks are being marked  and they will be returned by the end 
+of this month, May.
+
+Angela.
+
+

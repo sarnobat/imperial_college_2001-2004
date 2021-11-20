@@ -1,0 +1,2 @@
+gunzip [tgzfilename]
+tar -xvvf [tarfile.tar]

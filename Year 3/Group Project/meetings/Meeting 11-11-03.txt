@@ -1,0 +1,18 @@
+MINUTES - PROJECT MEETING
+=============================================
+Date: 11/11/03
+Time: 1400
+Location: 218
+
+Present: Adam, James, Ben, Sridhar, apgs
+----------------------------------------------------
+
+- Clarify that this is in application and not a java applet
+
+- Jo is hard coding the parser which will generate the java
+
+- Some form of integration will be attempted by the end of the week
+
+- A demo with the supervisor would be good to include in the report as evidence of integration
+
+- CVS should be mentioned in the report, any admin stuff about integration...

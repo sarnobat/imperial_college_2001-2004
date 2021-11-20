@@ -1,0 +1,82 @@
+MINUTES - PROJECT MEETING
+=============================================
+Date: 17/10/03
+Time: 1515
+Location: Blueshift Lab
+
+Present: Adam, James, Ben, Qian, Sridar, Simon
+----------------------------------------------------------
+
+- Adam proposed a system structure diagram for the initialisation procedure
+	XML file is the input
+	Generate grammer file then the generate the parser
+	Generate instruction handler 
+	Generate system call handler - call depends on register contents
+
+- Events during the running of a program
+	Assembly file
+		Input to the program
+	Parser
+		Take the assembly file
+		Syntax check, output any errors 
+		Produce internal representation - AST, should be simple format as instructions arent complex
+	Assembler	
+		Step through the AST
+		Convert to machine code
+		Organise all static variables, starting at beginning of data segment, assigning addresses (from symbol table)
+	Loader
+		Memory manager will handle out of memory situations
+		Assign the text part of the memory with the code
+		Set up extra parts of memory, stack etc before execution
+		Update the statistics with number of instructions
+	Start Processor
+		Get frst instruction from the memory manager
+		Decode - Regular instruction - Decode and execute
+		           - System call - Hard coded, executed
+		House keeping, update PC...
+	Stats Manager
+		Every time register manager does something, tell the stats manager, regs used, 
+		Memory manager tells stats manager how much mem its using. Stat manager keeps the max value
+		Number of clock cycles are updated after decoding the instr
+
+	Memory Manager
+		Access procedures for the memory locations
+	Register Manager (in cpu)
+		Access procedures for the registers
+	Cycle Manager
+		Coordinates the activity in the cycle of the CPU
+		
+
+- Stats to output
+	Number of instruction in the code - done during loading
+	Number of registers used
+	Amount of memory used, code/data
+	Number of clock cycles used, updated on each instruction from the instruction handler
+
+- Dividing up the work - 3 main areas
+	Initialisation
+	Stages of execution
+	Processor operations
+
+Better to have 2 groups of 3 to start with as the spec of the processor will depend on the initial stages of development.
+
+After 3 groups of 2 would be sufficient
+
+
+Actions:
+
+Need to know about the parser generator - JO
+www.antlr.org
+Can this handle XML inputs?
+
+Does the text segment in memory vary in length, or is it fixed before hand - JAMES
+Anything else in the memory that needs to be done on load
+
+Looking at the assembler and loading procedure - ADAM
+
+Looking at CPU Module - SIMON
+Do certain registers need to be updated at the end of each cycle?
+
+Getting examples of MIPS code that could be run, variety of instructions etc - BEN
+
+Looking at possibilities for version 2 GUI - features etc - SRIDAR

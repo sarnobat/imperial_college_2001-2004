@@ -1,0 +1,171 @@
+// this is a change to the file
+
+// import java packages
+
+package yams;
+
+import java.io.*;
+import java.util.*;
+
+import yams.parser.*;
+import yams.assembler.*;
+import yams.processor.*;
+
+
+/**
+ * @author ajb101
+ *
+ */
+public class YAMSConsole extends YAMSController {
+
+
+	boolean statsMode = false;
+	boolean verboseMode = false;
+	
+	public YAMSConsole() {
+		// constructor
+	}
+	
+	public void start(String args[]) {
+
+		// variable declarations (include default options)
+		LinkedList files = new LinkedList();
+		String instructionFile = "Instruction_file.xml";
+
+		// parse command line arguments
+		for (int i = 1; i < args.length; i++) {
+
+			if (args[i].equalsIgnoreCase("-s")
+					|| args[i].equalsIgnoreCase("--stats")) {
+				statsMode = true;
+
+			} else if (args[i].equalsIgnoreCase("-v")
+					|| args[i].equalsIgnoreCase("--verbose")) {
+				verboseMode = true;
+
+			} else if (args[i].equalsIgnoreCase("-if")) {
+				// next argument is an input file containing a list of files
+				if (i == args.length - 1) {
+					// but no more options
+					System.err.println("-if needs an argument");
+					continue;
+				} else {
+					i++;
+					// open file and read filenames
+					FileReader file;
+					BufferedReader input = null;
+					try {
+						file = new FileReader(args[i]);
+						input = new BufferedReader(file);
+					} catch (FileNotFoundException e) {
+						System.err.println("Unable to find input file: " + args[i]);
+						continue;
+					}
+					try {
+						String line;
+						while ((line = input.readLine()) != null) {
+							files.add(new File(line));
+						}
+					} catch (IOException e) {
+						// some other error
+						e.printStackTrace();
+					}
+
+				}
+
+			} else {
+				// assume it's a file
+				files.add(new File(args[i]));
+
+			}
+
+		}
+		
+		
+		// if in stats mode, create processor with a blank out stream
+		Processor processor = null;
+		Assembler asm;
+		if (verboseMode == true) {
+			processor = new Processor(this, System.in, System.out, System.out);
+			asm = new Assembler(instructionFile, processor.memoryManager, processor.statisticsManager, System.out);
+		} else {
+			processor = new Processor(this, System.in, System.out, new PrintStream(new NullStream()));
+			asm = new Assembler(instructionFile, processor.memoryManager, processor.statisticsManager, new PrintStream(new NullStream()));
+		}
+		
+
+		// loop through our list of files
+		Iterator it = files.iterator();
+		File currentFile;
+		
+		while( it.hasNext() ) {
+			currentFile = (File)it.next();
+			System.out.println("");
+			System.out.println("=====STARTING NEW FILE=====");
+			System.out.println("Input File: " + currentFile.getName());
+			
+			// reset processor (memoryManager, statistics manager, register manager and cycle manager)
+			processor.reset();
+			
+			// reset assembler
+			asm.resetAssembler();
+
+			StringBuffer programCode;
+			Parser parser = new Parser();
+			LineList instrList = null;
+
+			try {
+				// load code into string buffer
+				programCode = loadCode(currentFile);
+				// parse it
+				instrList = parser.parse(programCode);
+//				System.out.println(instrList.toString());
+				// assemble it
+				asm.assembleCode(instrList);
+			}
+			catch (FileNotFoundException e) {
+				System.out.println("File Not Found, skipping");
+				continue;
+			}
+			catch (LexerException e) {
+				System.out.println("Lexer Error:" + e.toString());
+				continue;
+			}
+			catch (ParseException e) {
+				System.out.println("Parser Error:" + e.toString());
+				continue;
+			}
+			catch (AssemblerException e) {
+				System.out.println("Assembler Error:" + e.toString());
+				continue;
+			}
+			
+			try {
+				// start processor
+				processor.cycleManager.jump(0x400000);
+				processor.cycleManager.start();
+			}
+			catch (Exception e) {
+				System.out.println("Processor error");
+				continue;
+			}
+			
+			
+			// if in stats mode, display stats
+			if (statsMode == true) {
+				processor.statisticsManager.printStats(instrList);
+			}
+			
+		}
+
+	}
+	
+	public void regChanged(String regID) {}
+	public void memoryChanged(int address) {}
+
+	class NullStream extends OutputStream {
+		NullStream() {}
+		public void write(int b) {}
+	} 
+
+}

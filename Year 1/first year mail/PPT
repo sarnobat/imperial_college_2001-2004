@@ -1,0 +1,306 @@
+From MAILER-DAEMON Mon Jun 10 19:12:56 2002
+Date: 10 Jun 2002 19:12:56 +0100
+From: Mail System Internal Data <MAILER-DAEMON@mallard.doc.ic.ac.uk>
+Subject: DON'T DELETE THIS MESSAGE -- FOLDER INTERNAL DATA
+Message-ID: <1023732776@mallard.doc.ic.ac.uk>
+X-IMAP: 1003144557 0000000008
+Status: RO
+
+This text is part of the internal format of your mail folder, and is not
+a real message.  It is created automatically by the mail system software.
+If deleted, important folder data will be lost, and it will be re-created
+with the data reset to initial values.
+
+From ss401@mallard.doc.ic.ac.uk Mon Jan 14 17:13:22 2002 -0000
+>From wjk@owl.doc.ic.ac.uk Mon, 14 Jan 2002 09:13:37 -0800
+Received: from [146.169.1.47] by hotmail.com (3.2) with ESMTP id MHotMailBE0C5CB0008740042A0D92A9012F0B440; Mon, 14 Jan 2002 09:13:22 -0800
+Received: from owl.doc.ic.ac.uk ([146.169.1.44] ident=root)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16QAZ3-0004G5-00
+	for sarnobat@hotmail.com; Mon, 14 Jan 2002 17:06:29 +0000
+Received: (from wjk@localhost)
+	by owl.doc.ic.ac.uk (8.11.6/8.8.8) id g0EH6TC28685
+	for sarnobat@hotmail.com; Mon, 14 Jan 2002 17:06:29 GMT
+Date: Mon, 14 Jan 2002 17:06:29 +0000
+From: William Knottenbelt <wjk@doc.ic.ac.uk>
+To: Sridhar Sarnobat <sarnobat@hotmail.com>
+Subject: Re: PPT sessions
+Message-ID: <20020114170629.A28532@owl.doc.ic.ac.uk>
+References: <OE47C300ilIXejwSVtu0000d7f6@hotmail.com>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <OE47C300ilIXejwSVtu0000d7f6@hotmail.com>; from sarnobat@hotmail.com on Mon, Jan 14, 2002 at 12:32:01PM -0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 4
+
+hi sridhar
+
+> Are our PPT meetings at 12:00 like last term?
+
+yes, but i believe they only begin in the week of the 28th?
+
+cheers
+will
+
+From wjk@doc.ic.ac.uk Mon Feb 11 15:47:16 2002
+Return-path: <wjk@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 11 Feb 2002 15:47:16 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16aIfk-0002cT-00
+	for ss401@doc.ic.ac.uk; Mon, 11 Feb 2002 15:47:16 +0000
+Received: from moa.doc.ic.ac.uk ([146.169.1.39] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16aIfk-0005mH-00
+	for ss401@doc.ic.ac.uk; Mon, 11 Feb 2002 15:47:16 +0000
+Received: from wjk by moa.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16aIfj-0004Pk-00
+	for ss401@doc.ic.ac.uk; Mon, 11 Feb 2002 15:47:15 +0000
+Date: Mon, 11 Feb 2002 15:47:15 +0000
+From: William Knottenbelt <wjk@doc.ic.ac.uk>
+To: Sridhar Sarnobat <ss401@doc.ic.ac.uk>
+Subject: Re: My java problem
+Message-ID: <20020211154715.A15926@doc.ic.ac.uk>
+References: <000901c1b1ab$c7c169b0$0334a992@win.doc.ic.ac.uk>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <000901c1b1ab$c7c169b0$0334a992@win.doc.ic.ac.uk>; from ss401@doc.ic.ac.uk on Sat, Feb 09, 2002 at 08:53:08PM -0000
+Sender: "William Knottenbelt,371H,48331," <wjk@doc.ic.ac.uk>
+Status: RO
+X-Status: DA
+X-Keywords:               
+X-UID: 5
+
+hi sridhar
+
+> Sorry to disturb your weekend. You need not answer this by email if it's too difficult to solve. I can ask you on Monday at lunch time if that's better.
+> 
+> Anyway, my problem is that my ExploreMaze method in the Amazing.java file behaves very strangely when I run the main program. Do you have any idea what's wrong?
+
+mmm i've just had a look at it and it looks good to me. perhaps i'd
+move the m.RemoveMarker(pos) a little higher (to just before the { else)
+so that you only attempt to remove the marker if it's at a valid
+position. 
+
+if it's still giving trouble let me know and i'll have a harder look.
+
+cheers
+will
+
+From wjk@doc.ic.ac.uk Mon Feb 11 19:05:16 2002
+Return-path: <wjk@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 11 Feb 2002 19:05:16 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16aLlM-00015S-00
+	for ss401@doc.ic.ac.uk; Mon, 11 Feb 2002 19:05:16 +0000
+Received: from moa.doc.ic.ac.uk ([146.169.1.39] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16aLlM-0002LE-00
+	for ss401@doc.ic.ac.uk; Mon, 11 Feb 2002 19:05:16 +0000
+Received: from wjk by moa.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16aLlL-0005Hl-00
+	for ss401@doc.ic.ac.uk; Mon, 11 Feb 2002 19:05:15 +0000
+Date: Mon, 11 Feb 2002 19:05:15 +0000
+From: William Knottenbelt <wjk@doc.ic.ac.uk>
+To: Sridhar Sarnobat <ss401@doc.ic.ac.uk>
+Subject: Re: My java problem
+Message-ID: <20020211190515.A19952@doc.ic.ac.uk>
+References: <000901c1b1ab$c7c169b0$0334a992@win.doc.ic.ac.uk> <20020211154715.A15926@doc.ic.ac.uk> <001101c1b320$91fce540$1532a992@win.doc.ic.ac.uk>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <001101c1b320$91fce540$1532a992@win.doc.ic.ac.uk>; from ss401@doc.ic.ac.uk on Mon, Feb 11, 2002 at 05:21:41PM -0000
+Sender: "William Knottenbelt,371H,48331," <wjk@doc.ic.ac.uk>
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 6
+
+hi sridhar
+
+> I've been struggling with it all day and don't see what the problem is. I
+> think I'll just submit what I've got.
+
+yeah do that; it must be something quite subtle.
+
+cheers
+will
+
+From ss401@mallard.doc.ic.ac.uk Wed Nov 28 15:12:42 2001 -0000
+>From wjk@owl.doc.ic.ac.uk Wed, 28 Nov 2001 07:13:59 -0800
+Received: from [146.169.1.47] by hotmail.com (3.2) with ESMTP id MHotMailBDCE49E9003F4136E81E92A9012F0DB30; Wed, 28 Nov 2001 07:12:42 -0800
+Received: from owl.doc.ic.ac.uk ([146.169.1.44] ident=root)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 1696O9-0005af-00
+	for sarnobat@hotmail.com; Wed, 28 Nov 2001 15:12:41 +0000
+Received: (from wjk@localhost)
+	by owl.doc.ic.ac.uk (8.11.6/8.8.8) id fASFCW615661
+	for sarnobat@hotmail.com; Wed, 28 Nov 2001 15:12:32 GMT
+Date: Wed, 28 Nov 2001 15:12:32 +0000
+From: William Knottenbelt <wjk@doc.ic.ac.uk>
+To: Sridhar Sarnobat <sarnobat@hotmail.com>
+Subject: Re: problem with my first function, getMarks
+Message-ID: <20011128151232.A14804@owl.doc.ic.ac.uk>
+References: <OE71Y0QUUBPcZi71mrv00017a49@hotmail.com>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <OE71Y0QUUBPcZi71mrv00017a49@hotmail.com>; from sarnobat@hotmail.com on Wed, Nov 28, 2001 at 02:54:55PM -0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 7
+
+Hi Sridhar
+
+> My code translates to java without an problems, but then when I try to compile it I get the following error message.
+> (also, I had to put i<11 because it crashes while compiling if I try to use i<marks.length).
+>
+> Any suggestions?
+> Thanks,
+> Sridhar.
+>
+>
+> /////////////////////////////////////////////////////////////
+> /////////////////////////////////////////////////////////////
+>
+>
+> int [ ] marks = {0,0,0,0,0,0,0,0,0,0,0};
+>
+> int [ ] getMarks (int mark)
+>  {
+>   int i;
+>   for (i= 0; i<11;i++)
+>   {
+>    if (i == mark) {marks [i] = marks [i] + 1;}
+>   }
+>  }
+
+so perhaps your function signature should be:
+
+int [ ] getMarks (int[] marks)
+
+and you should create and pass the array marks from another function
+called main():
+
+void main() {
+
+  int [ ] marks = {0,0,0,0,0,0,0,0,0,0,0};
+
+  marks = getMarks(marks);
+
+}
+
+getMarks itself can keep reading in marks while there is still further
+input:
+
+while (!isEOF()) {
+  mark = readInt(); // etc.
+  ... marks[mark] = ...
+}
+
+in general you should aim to make your functions take the
+information they need through their paramters (so that they can be
+reused).
+
+hope that helps. if you have any more questions about it come and see
+me (i'll be in until 5pm now)
+
+cheers
+will
+
+
+> ////////////////////////////////////////////////////////////////
+> //////////////////////////////////////////////////////////////
+>
+> h:\\GetMarks.java:15: cannot resolve symbol
+> symbol  : variable marks
+> location: class GetMarks
+>     marks[i] = marks[i] + 1;
+>                                 ^
+> h:\\GetMarks.java:15: cannot resolve symbol
+> symbol  : variable marks
+> location: class GetMarks
+>     marks[i] = marks[i] + 1;
+>                                            ^
+> 2 errors
+>
+
+From ss401@mallard.doc.ic.ac.uk Fri Dec  7 17:35:41 2001 -0000
+>From wjk@doc.ic.ac.uk Fri, 07 Dec 2001 09:36:35 -0800
+Received: from [146.169.1.47] by hotmail.com (3.2) with ESMTP id MHotMailBDDA48EC0078400438E792A9012F07340; Fri, 07 Dec 2001 09:35:41 -0800
+Received: from moa.doc.ic.ac.uk ([146.169.1.39] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16COuR-0001g9-00
+	for sarnobat@hotmail.com; Fri, 07 Dec 2001 17:35:39 +0000
+Received: from wjk by moa.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16COuR-0008Pl-00
+	for sarnobat@hotmail.com; Fri, 07 Dec 2001 17:35:39 +0000
+Date: Fri, 7 Dec 2001 17:35:39 +0000
+From: William Knottenbelt <wjk@doc.ic.ac.uk>
+To: Sridhar Sarnobat <sarnobat@hotmail.com>
+Subject: Re: Owari problems
+Message-ID: <20011207173539.A30486@moa.doc.ic.ac.uk>
+References: <OE47fKHmj9n1xxWn9R6000003d1@hotmail.com>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <OE47fKHmj9n1xxWn9R6000003d1@hotmail.com>; from sarnobat@hotmail.com on Fri, Dec 07, 2001 at 04:59:15PM -0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 8
+
+hi sridhar
+
+> 1. If I input 12 as my bowl number, then the program fails to
+     acknowledge that it should go back to the start of the board. In
+     fact, the program gives an error message. I've tried to us the %
+     function but I haven't done it correctly. What should I do?
+
+yes % is the correct thing to use. your array of 12 bowls will in fact
+be indexed from 0 to 11 (bowl[0], bowl[1], ... , bowl[11]), so i
+suspect you should say something like
+
+if (bowl >= 12)
+  bowl = bowl % 12;
+
+or, if you are thinking of the bowls as being indexed from 1 to 12 and
+then subtracting 1 everytime you access the array (because it's really
+indexed from 0 to 11), you might say
+
+if (bowl > 12)
+  bowl = (bowl % 12) + 1;
+
+> 2. If there is an illegal user input (say I select Bowl number 93 or
+     something I will make it print an assertion error. But how
+     exactly do I get it to resume the game by asking the user for a
+     proper input? Obviously I must restart the main() funtion at a
+     certain point, but I'm not sure where or how.
+
+assertion errors are fatal. so if you use assert(condition) and the
+condition fails, the program will terminate.
+
+it is better to use a while-loop of the following form:
+
+input = readInt()
+while (input < 1 || input > 12) {
+  println("Invalid input!!");
+  input = readInt()
+}
+
+cheers
+will
+

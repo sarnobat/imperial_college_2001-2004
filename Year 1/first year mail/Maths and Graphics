@@ -1,0 +1,936 @@
+From MAILER-DAEMON Mon Jun 10 17:58:59 2002
+Date: 10 Jun 2002 17:58:59 +0100
+From: Mail System Internal Data <MAILER-DAEMON@mallard.doc.ic.ac.uk>
+Subject: DON'T DELETE THIS MESSAGE -- FOLDER INTERNAL DATA
+Message-ID: <1023728339@mallard.doc.ic.ac.uk>
+X-IMAP: 1018447496 0000000017
+Status: RO
+
+This text is part of the internal format of your mail folder, and is not
+a real message.  It is created automatically by the mail system software.
+If deleted, important folder data will be lost, and it will be re-created
+with the data reset to initial values.
+
+From ss401@mallard.doc.ic.ac.uk Wed Mar  6 10:34:08 2002 +0100
+Return-path: <kp@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 06 Mar 2002 09:34:13 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16iXoG-0000aB-00; Wed, 06 Mar 2002 09:34:08 +0000
+Received: from brigg.doc.ic.ac.uk ([146.169.5.107] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16iXoG-0006DU-00; Wed, 06 Mar 2002 09:34:08 +0000
+Message-ID: <3C85E33F.C3355973@doc.ic.ac.uk>
+Date: Wed, 06 Mar 2002 09:37:03 +0000
+From: Katherine <kp@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+CC: Chris Hogger <cjh@doc.ic.ac.uk>
+Subject: Lecture on Vector Algebra/Geometry tomorrow (07 March)
+Content-Type: multipart/alternative;
+ boundary="------------ADBE981885F1D0BCF53CC988"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 1
+
+
+--------------ADBE981885F1D0BCF53CC988
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Dear All
+
+Dr Hogger has asked me to forward the note below:
+
+  ------------------------------------------------------------------------
+
+Dear Computing-1 students,
+
+I remind you that you are urged to attend the special lecture tomorrow
+on vector algebra/geometry being given by Dr. David Herbert:
+
+        Thursday March 7th  12.00 pm  Room 308
+
+This is important for your exams, and he will be distributing useful
+background notes on this subject. He is likely also to offer a follow-up
+class, probably a tutorial, on the following Thursday.
+
+Regards,
+Chris.
+  ------------------------------------------------------------------------
+
+
+
+--------------ADBE981885F1D0BCF53CC988
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+Dear All
+<p>Dr Hogger has asked me to forward the note below:
+<p>
+<hr WIDTH="100%">
+<br>Dear Computing-1 students,
+<p>I remind you that you are urged to attend the special lecture tomorrow
+on vector algebra/geometry being given by Dr. David Herbert:
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thursday March 7th&nbsp;
+12.00 pm&nbsp; Room 308
+<p>This is important for your exams, and he will be distributing useful
+background notes on this subject. He is likely also to offer a follow-up
+class, probably a tutorial, on the following Thursday.
+<p>Regards,
+<br>Chris.
+<br>
+<hr WIDTH="100%">
+<br>&nbsp;</html>
+
+--------------ADBE981885F1D0BCF53CC988--
+
+
+From ss401@mallard.doc.ic.ac.uk Wed Feb 27 13:06:08 2002 +0100
+Return-path: <cjh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 27 Feb 2002 12:06:14 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16g2qW-00024I-00; Wed, 27 Feb 2002 12:06:08 +0000
+Received: from g3-cjh.doc.ic.ac.uk ([146.169.29.12])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16g2qW-00082r-00; Wed, 27 Feb 2002 12:06:08 +0000
+X-Sender: cjh@pop.doc.ic.ac.uk
+Message-Id: <l03102800b8a27d3b2bcd@[146.169.29.12]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Wed, 27 Feb 2002 12:11:41 +0000
+To: cs-first-year@doc.ic.ac.uk
+From: chris hogger <cjh@doc.ic.ac.uk>
+Subject: Important - vector algebra and geometry
+Cc: sue@doc.ic.ac.uk
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 2
+
+Dear All,
+
+The recent Staff-Student meeting discussed the fact that the basics of
+vector algebra and vector geometry had not been covered in last term's
+lectures by Dr. Luzzatto, resulting in insufficient preparation for this
+term's material on graphics.
+
+Although the graphics course has now finished, there remains serious
+concern that the official syllabus for Course 145 has not been fully
+covered, having potential implications not only for next session's courses
+but - of more immediate relevance - for your forthcoming examinations.
+
+Therefore, we have arranged that one or more special classes will be given
+this term on this material by Dr. David Herbert - the Director of Studies
+for the Maths Department - who will also supply printed background
+material. We have had to assign these classes to the 12-1 slots on
+Thursdays, notwithstanding that for a few students this may clash with
+foreign language teaching.
+
+The first of these classes will be a lecture on
+
+	  Thursday March 7th starting at 12.00 in Room 308
+
+with the possibility of one or two follow-up lectures/problem-classes on
+the Thursdays following that, likewise at 12.00 in Room 308.
+
+It has taken some effort to put these arrangements in place, but we would
+not have done so had we not felt this was a serious matter requiring
+remedy.
+
+Therefore, I urge all of you to attend, and I will remind you again nearer
+the time.
+
+Regards,
+Chris.
+
+
+
+From ss401@mallard.doc.ic.ac.uk Thu Feb 14 14:04:00 2002 +0100
+Return-path: <jd101@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 14 Feb 2002 13:04:05 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16bLYO-0003k5-00; Thu, 14 Feb 2002 13:04:00 +0000
+Received: from [146.169.27.23] (helo=jamie)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16bLYO-0004CX-00
+	for cs-first-year@doc.ic.ac.uk; Thu, 14 Feb 2002 13:04:00 +0000
+From: "Jamie Denton" <jd101@doc.ic.ac.uk>
+To: "Cs1" <cs-first-year@doc.ic.ac.uk>
+Subject: FW: graphics coursework
+Date: Thu, 14 Feb 2002 13:03:58 -0000
+Message-ID: <009301c1b558$10c85b00$10251f81@jamie>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2616
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 3
+
+As promised, results.
+
+Signature :: Option -> EmailAddress
+Signature choice
+|choice == ADVICE = "Don't Play With Hand Grenades"
+|choice == MSN = "jd101@doc.ic.ac.uk" 
+|otherwise = "Jamie_Denton@Hotmail.com"
+
+-----Original Message-----
+From: Susan Eisenbach [mailto:sue@doc.ic.ac.uk] 
+Sent: 14 February 2002 13:02
+To: jd101@doc.ic.ac.uk
+Cc: oskar@doc.ic.ac.uk; clh@doc.ic.ac.uk; ld@doc.ic.ac.uk;
+elham@doc.ic.ac.uk; jks100@doc.ic.ac.uk; sza@doc.ic.ac.uk;
+mrc@doc.ic.ac.uk
+Subject: graphics coursework
+
+Dear first year computing students,
+
+At yesterday's staff student meeting your representative Jamie Denton
+expressed a strong feeling from the class that you were having serious
+problems doing the vrml coursework. This seems to be caused by two
+factors:
+1. you feel that the material you have covered in class is not
+sufficient to do the lab
+2. you feel overloaded with 3 pieces of assessed work due on Tuesday, 19
+Feb.
+
+I am looking for someone to give you a talk on vrml but so far I have
+not found someone. I will continue looking but you have to assume that I
+will not be successful.
+
+I have discussed this with your year coordinator and your rep and here
+is the revision of the exercise:
+
+The due date is 22 Feb. The exercise may be done in pairs (or your
+choice). If you hand in a solution done by yourself it will be marked
+out of 120% rather than the 100% that a paired exercise will attract.
+
+Do the best you can without letting this dominate your work.
+
+Susan
+
+
+
+
+
+From ss401@mallard.doc.ic.ac.uk Mon Feb 11 18:26:36 2002 +0100
+Return-path: <oskar@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 11 Feb 2002 17:26:39 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16aKDs-0005oH-00; Mon, 11 Feb 2002 17:26:36 +0000
+Received: from owl.doc.ic.ac.uk ([146.169.1.44] ident=oskar)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16aKDs-0000gr-00; Mon, 11 Feb 2002 17:26:36 +0000
+Date: Mon, 11 Feb 2002 17:26:34 +0000 (GMT)
+From: Oskar Mencer <oskar@doc.ic.ac.uk>
+To: Sridhar Sarnobat <ss401@doc.ic.ac.uk>
+cc:  <cs-first-year@doc.ic.ac.uk>
+Subject: Re: "interacting objects?"
+In-Reply-To: <000b01c1b320$46093b20$1532a992@win.doc.ic.ac.uk>
+Message-ID: <Pine.LNX.4.33.0202111723350.26835-100000@owl.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 4
+
+
+"interacting objects" means that the objects have to be connected in one
+way or another; in the simplest case by being placed next to each other.
+
+
+
+
+From ss401@mallard.doc.ic.ac.uk Thu Feb  7 22:43:05 2002 +0100
+Return-path: <jd101@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 07 Feb 2002 21:43:14 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16YwJt-0001Xu-00; Thu, 07 Feb 2002 21:43:05 +0000
+Received: from [146.169.27.24] (helo=jamie)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16YwJs-00023u-00
+	for cs-first-year@doc.ic.ac.uk; Thu, 07 Feb 2002 21:43:04 +0000
+From: "Jamie Denton" <jd101@doc.ic.ac.uk>
+To: "Cs1" <cs-first-year@doc.ic.ac.uk>
+Subject: FW: Exam
+Date: Thu, 7 Feb 2002 21:43:04 -0000
+Message-ID: <000201c1b020$6c7232b0$10251f81@jamie>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2616
+Importance: Normal
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 5
+
+
+
+-----Original Message-----
+From: Oskar Mencer [mailto:oskar@doc.ic.ac.uk] 
+Sent: 07 February 2002 21:40
+To: Jamie Denton
+Subject: Re: Exam
+
+>Can VRML be examined in the summer given we are teaching ourselves not
+>being taught it?
+
+VRML was introduced in a lecture including basic syntax.
+Also I believe, exams are not limited to lecture notes, but also include
+lessons learned from tutorials, assessed and unassessed coursework.
+
+
+
+From ss401@mallard.doc.ic.ac.uk Thu Feb  7 18:25:47 2002 +0100
+Return-path: <oskar@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 07 Feb 2002 17:25:56 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16YsIt-0005xy-00; Thu, 07 Feb 2002 17:25:47 +0000
+Received: from owl.doc.ic.ac.uk ([146.169.1.44] ident=oskar)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16YsIt-0002pu-00; Thu, 07 Feb 2002 17:25:47 +0000
+Date: Thu, 7 Feb 2002 17:25:45 +0000 (GMT)
+From: Oskar Mencer <oskar@doc.ic.ac.uk>
+To: Philip James Richard Standen <pjs01@doc.ic.ac.uk>
+cc:  <cs-first-year@doc.ic.ac.uk>
+Subject: Re: VRML Generators?
+In-Reply-To: <E16YryD-0005xG-00@duck.doc.ic.ac.uk>
+Message-ID: <Pine.LNX.4.33.0202071720550.1367-100000@owl.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 6
+
+You are obviously not allowed to use any VRML generators.
+The task is to learn how the language looks like and how it works
+by laboriously hand coding line by line.
+
+oskar
+
+
+On Thu, 7 Feb 2002, Philip James Richard Standen wrote:
+
+>Are cs1 students allowed to use VRML generators to aid the creation of there
+>coursework submissions or does it have to be laboriously hand coded line by
+>line?
+>
+>--
+>Phil
+>pjs01@doc.ic.ac.uk
+>
+
+
+From ss401@mallard.doc.ic.ac.uk Thu Feb  7 16:51:32 2002 +0100
+Return-path: <oskar@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 07 Feb 2002 15:51:38 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16Yqpg-0004DW-00; Thu, 07 Feb 2002 15:51:32 +0000
+Received: from owl.doc.ic.ac.uk ([146.169.1.44] ident=oskar)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16Yqpg-0001E3-00; Thu, 07 Feb 2002 15:51:32 +0000
+Date: Thu, 7 Feb 2002 15:51:31 +0000 (GMT)
+From: Oskar Mencer <oskar@doc.ic.ac.uk>
+To:  <cs-first-year@doc.ic.ac.uk>
+cc: Laura Dempere-Marco <ld@doc.ic.ac.uk>, 
+    James Kilbey Stanton <jks100@doc.ic.ac.uk>
+Subject: msg from help
+Message-ID: <Pine.LNX.4.33.0202071550390.18815-100000@owl.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: DA
+X-Keywords:               
+X-UID: 7
+
+
+
+---------- Forwarded message ----------
+Date: Thu, 7 Feb 2002 14:07:59 -0000
+From: Eion Murdock <ecm99@doc.ic.ac.uk>
+To: oskar@doc.ic.ac.uk
+Subject: VRML Plugin
+
+Could you forward this to whoever needs it, please?
+
+I've had another look at the VRML plugin thing and as far as I can tell, it
+only works if you embed the .wrl in an HTML page. Create a .html file
+containing the following text:
+
+<HTML>
+<HEAD>
+<TITLE>VRML Model</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<EMBED SRC="vrmlsample.wrl" BORDER=0 WIDTH="100%" HEIGHT=98%">
+</BODY>
+</HTML>
+
+subsitituting the name of your VRML file for vrmlsample. The .html file
+needs to be in the same directory as the .wrl file. This *should* then
+enable you to view your file. Sorry for the confusion.
+Regards,
+
+--
+Eion Murdock
+Computing Support Group
+
+
+
+From ss401@mallard.doc.ic.ac.uk Wed Feb  6 02:01:49 2002 +0100
+Return-path: <oskar@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 06 Feb 2002 01:01:57 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16YGT7-0000y2-00; Wed, 06 Feb 2002 01:01:49 +0000
+Received: from owl.doc.ic.ac.uk ([146.169.1.44] ident=oskar)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16YGT7-0003uE-00; Wed, 06 Feb 2002 01:01:49 +0000
+Date: Wed, 6 Feb 2002 01:01:47 +0000 (GMT)
+From: Oskar Mencer <oskar@doc.ic.ac.uk>
+To:  <cs-first-year@doc.ic.ac.uk>
+cc: James Kilbey Stanton <jks100@doc.ic.ac.uk>, 
+    Laura Dempere-Marco <ld@doc.ic.ac.uk>
+Subject: extension to feb 19th
+Message-ID: <Pine.LNX.4.33.0202060059030.5526-100000@owl.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 8
+
+
+the assessed coursework for math methods and graphics
+is now due Feb 19th.
+
+
+
+
+
+From ss401@mallard.doc.ic.ac.uk Tue Feb  5 17:24:19 2002 +0100
+Return-path: <oskar@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 05 Feb 2002 16:24:26 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16Y8OJ-00029w-00; Tue, 05 Feb 2002 16:24:19 +0000
+Received: from owl.doc.ic.ac.uk ([146.169.1.44] ident=oskar)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16Y8OJ-0004du-00; Tue, 05 Feb 2002 16:24:19 +0000
+Date: Tue, 5 Feb 2002 16:24:17 +0000 (GMT)
+From: Oskar Mencer <oskar@doc.ic.ac.uk>
+To: Jamie Denton <jd101@doc.ic.ac.uk>
+cc:  <cs-first-year@doc.ic.ac.uk>, Laura Dempere-Marco <ld@doc.ic.ac.uk>, 
+    James Kilbey Stanton <jks100@doc.ic.ac.uk>
+Subject: Re: Extension
+In-Reply-To: <000301c1adbb$6ea15140$10251f81@jamie>
+Message-ID: <Pine.LNX.4.33.0202051617450.2796-100000@owl.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 9
+
+
+I am working on setting an extension of 1 week for the deadline
+assigned to the coursework. I will let you know as soon as it has
+gone through the departments administrative chain.
+
+As for the specification, the robot is to be understood in the most
+general sense of the word. Anything from a robot fish to a robot arm,
+as long as it keeps the other specifications.
+
+oskar
+
+
+From ss401@mallard.doc.ic.ac.uk Mon Feb  4 18:20:52 2002 +0100
+Return-path: <kb@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 04 Feb 2002 17:21:01 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16XmnU-0005sj-00; Mon, 04 Feb 2002 17:20:52 +0000
+Received: from dse-mac-keng.doc.ic.ac.uk ([146.169.29.134])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16XmnU-0000hY-00; Mon, 04 Feb 2002 17:20:52 +0000
+X-Sender: kb@pop.doc.ic.ac.uk
+Message-Id: <l0310280cb884730c32e5@[146.169.29.134]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Mon, 4 Feb 2002 17:25:02 +0000
+To: jmc-first-year@doc.ic.ac.uk, cs-first-year@doc.ic.ac.uk
+From: Krysia Broda <kb@doc.ic.ac.uk>
+Subject: reasoning sheet kb3 (exercises 4)
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 10
+
+I forgot to hand out the next exercise sheet today. Please collect the
+sheet from the SGO from tomorrow morning. Or you can print it from
+http://www.doc.ic.ac.uk/~kb/Students.html
+It works ok from windows.
+
+Krysia Broda
+
+-------------------------
+| Dr. Krysia Broda      |
+| Dept. of Computing    |
+| Imperial College      |
+| 180 Queen's Gate      |
+| London SW7  2BZ       |
+| Tel: ++ 020 7594 8426 |
+| Fax: 020 7581 8024     |
+-------------------------
+
+
+
+From ss401@mallard.doc.ic.ac.uk Mon Feb  4 15:44:00 2002 +0100
+Return-path: <oskar@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 04 Feb 2002 14:44:12 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16XkLg-00020T-00; Mon, 04 Feb 2002 14:44:00 +0000
+Received: from owl.doc.ic.ac.uk ([146.169.1.44] ident=oskar)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16XkLg-0001Es-00; Mon, 04 Feb 2002 14:44:00 +0000
+Date: Mon, 4 Feb 2002 14:43:59 +0000 (GMT)
+From: Oskar Mencer <oskar@doc.ic.ac.uk>
+To:  <cs-first-year@doc.ic.ac.uk>
+cc: Laura Dempere-Marco <ld@doc.ic.ac.uk>, 
+    James Kilbey Stanton <jks100@doc.ic.ac.uk>
+Subject: VRML Plugin in the lab
+Message-ID: <Pine.LNX.4.33.0202041441390.27583-100000@owl.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: DA
+X-Keywords:               
+X-UID: 11
+
+a message from help regarding the VRML plugin in the lab in Huxley.
+Even if you decide to do the work on another machine with another VRML
+plugin, make sure that your submission works correctly with the setup on
+the lab.
+
+oskar
+
+---------- Forwarded message ----------
+From: Eion Murdock <ecm99@doc.ic.ac.uk>
+To: oskar@doc.ic.ac.uk
+Subject: VRML Plugin
+
+Hello.
+I've got the blaxxun Contact VRML plugin packaged up for Windows and ready
+to go out. It can be downloaded from www.blaxxun.com. Interesting errata,
+however: you will need to change your IE security settings to make it work.
+It's ok, you don't need to be an admin to do this, they are user-specific.
+Step-by-step instructions:
+ - In Internet Explorer, select Internet Options... from the Tools menu.
+ - Select the Security tab
+ - Click on the Custom Level button (just above the OK button)
+ - Under Download unsigned ActiveX controls, change to Prompt
+ - Under Initialize and script ActiveX controls not marked as safe, change
+to Prompt
+Then you can view your VRML pages happily (if prompted about ActiveX
+controls, select Yes - to get rid of the prompt, change the settings above
+to Enable rather than Prompt).
+Regards,
+
+--
+Eion Murdock
+Computing Support Group
+
+
+
+
+From ss401@mallard.doc.ic.ac.uk Wed Jan 23 12:51:18 2002 +0100
+Return-path: <oskar@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 23 Jan 2002 11:51:23 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16TLvy-0003xZ-00; Wed, 23 Jan 2002 11:51:18 +0000
+Received: from owl.doc.ic.ac.uk ([146.169.1.44] ident=oskar)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16TLvy-0000yX-00
+	for cs-first-year@doc.ic.ac.uk; Wed, 23 Jan 2002 11:51:18 +0000
+Date: Wed, 23 Jan 2002 11:51:18 +0000 (GMT)
+From: Oskar Mencer <oskar@doc.ic.ac.uk>
+To:  <cs-first-year@doc.ic.ac.uk>
+Subject: re: additional lecture
+Message-ID: <Pine.LNX.4.33.0201231148550.32610-100000@owl.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 12
+
+
+the lecture below is instead of the lecture on tuesday feb 5th.
+so there won't be any graphics lecture on feb. 5th.
+
+oskar
+
+From: Katherine <kp@doc.ic.ac.uk>
+Subject: Mathematical Methods and Graphics (additional lecture)
+
+Dear All
+
+There will be an additional lecture for the above course, next Monday
+(28 January) from 5 to 6 in 308.
+
+Best wishes
+Katherine
+
+
+
+
+
+From ss401@mallard.doc.ic.ac.uk Wed Jan 23 12:25:00 2002 +0100
+Return-path: <kp@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 23 Jan 2002 11:25:08 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16TLWW-0003aL-00; Wed, 23 Jan 2002 11:25:00 +0000
+Received: from brigg.doc.ic.ac.uk ([146.169.5.107] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16TLWW-0000X4-00; Wed, 23 Jan 2002 11:25:00 +0000
+Message-ID: <3C4E9E3A.A568ACD8@doc.ic.ac.uk>
+Date: Wed, 23 Jan 2002 11:27:54 +0000
+From: Katherine <kp@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+CC: oskar@doc.ic.ac.uk
+Subject: Mathematical Methods and Graphics (additional lecture)
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 13
+
+Dear All
+
+There will be an additional lecture for the above course, next Monday
+(28 January) from 5 to 6 in 308.
+
+Best wishes
+Katherine
+
+
+From ss401@mallard.doc.ic.ac.uk Wed Dec 12 12:50:21 2001 +0100
+Return-path: <mrc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 12 Dec 2001 11:50:28 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16E7u1-0000QF-00; Wed, 12 Dec 2001 11:50:21 +0000
+Received: from mac-g4-mrc.doc.ic.ac.uk ([146.169.29.40])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16E7u1-00012d-00
+	for cs-first-year@doc.ic.ac.uk; Wed, 12 Dec 2001 11:50:21 +0000
+X-Sender: mrc@pop.doc.ic.ac.uk
+Message-Id: <l03102806b83cf4b8c94f@[146.169.29.40]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Wed, 12 Dec 2001 11:49:46 +0000
+To: cs-first-year@doc.ic.ac.uk
+From: Margaret Cunningham <mrc@doc.ic.ac.uk>
+Subject: Problem and Solutions Sheets
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 14
+
+>From: Stefano Luzzatto <stefano.luzzatto@ic.ac.uk>
+>
+>The complete set of problem and solution sheets is
+>now available from my web site http://www.ma.ic.ac.uk/~luzzatto
+>
+>Best wishes to all of you
+>
+>Stefano Luzzatto
+>
+>
+>
+>--------------------------------------------------------------
+>Stefano Luzzatto
+>Mathematics Department          Tel: +44 20 759 48507
+>Imperial College                       Fax  +44 870 1309532
+>180 Queen's Gate                      Stefano.Luzzatto@ic.ac.uk
+>London SW7 2BZ                        http://www.ma.ic.ac.uk/~luzzatto
+>---------------------------------------------------------------
+>
+>
+>
+>
+
+
+
+From ss401@mallard.doc.ic.ac.uk Thu Oct 25 14:11:58 2001 +0100
+Return-path: <jd101@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 25 Oct 2001 14:12:06 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15wkIg-0006DA-00; Thu, 25 Oct 2001 14:11:58 +0100
+Received: from voxel34.doc.ic.ac.uk
+	([146.169.49.184] helo=doc.ic.ac.uk ident=jd101)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15wkId-0004rE-00
+	for cs-first-year@doc.ic.ac.uk; Thu, 25 Oct 2001 14:11:55 +0100
+Sender: jd101@doc.ic.ac.uk
+Message-ID: <3BD80F9E.6C026B84@doc.ic.ac.uk>
+Date: Thu, 25 Oct 2001 14:11:58 +0100
+From: Jamie Denton <jd101@doc.ic.ac.uk>
+X-Mailer: Mozilla 4.77 [en] (X11; U; Linux 2.4.4-4GB i686)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: "cs-first-year@doc.ic.ac.uk" <cs-first-year@doc.ic.ac.uk>
+Subject: S Luzzano notes
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 15
+
+I spoke to Luzzano today and raised with him the issue of printed
+lecture notes, he agreed as he would rather ppl listened to his
+explanations rather than copying like mad, and, although the meeting was
+cut short due to time pressures (i.e. he had a lecture to teach), he has
+conditionally agreed to print lecture notes, as long as it does not
+breach copyright (the notes would be copied from "Mathmatical Methods
+For Science Students", which is one of the books on the lectures cover
+sheet given out in the 1st lecture).
+
+I am going to speak to him tommorow to try get him to fully agree, but
+it's looking good so far.
+
+And to those who asked about test format, it's basically going to be
+like the proble sheet, with a bit on the lectures today and last week.
+
+cya l8r
+
+Jamie
+
+From ss401@mallard.doc.ic.ac.uk Tue Oct 23 10:22:44 2001 +0100
+>From stefano.luzzatto@ic.ac.uk Tue, 23 Oct 2001 02:23:39 -0700
+Received: from [155.198.5.114] by hotmail.com (3.2) with ESMTP id MHotMailBD9E81E300C04004321F9BC60572BA950; Tue, 23 Oct 2001 02:22:44 -0700
+Received: from icex7.cc.ic.ac.uk ([155.198.3.7])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 15vxlj-0007L8-04
+	for sarnobat@hotmail.com; Tue, 23 Oct 2001 10:22:43 +0100
+Received: from [155.198.192.70] (mane.ma.ic.ac.uk [155.198.192.70]) by icex7.cc.ic.ac.uk with SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2653.13)
+	id 4FY2KQBM; Tue, 23 Oct 2001 10:22:42 +0100
+User-Agent: Microsoft-Entourage/9.0.2509
+Date: Tue, 23 Oct 2001 10:22:42 +0100
+Subject: Re: Reading material for convergence tests (Computing student)
+From: Stefano Luzzatto <stefano.luzzatto@ic.ac.uk>
+To: Sridhar Sarnobat <sarnobat@hotmail.com>
+Message-ID: <B7FAF572.19A5%stefano.luzzatto@ic.ac.uk>
+In-Reply-To: <OE63HdYyesqN0zYE3SA00005900@hotmail.com>
+Mime-version: 1.0
+Content-type: multipart/alternative; boundary="B_3086677362_20442431"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 16
+
+> This message is in MIME format. Since your mail reader does not understand
+this format, some or all of this message may not be legible.
+
+--B_3086677362_20442431
+Content-type: text/plain; charset="US-ASCII"
+Content-transfer-encoding: 7bit
+
+Dear Sridhar,
+
+some students re coming to see me on Wednesday at 2.00 in my office to ask
+some questions. You are most welcome to come as well.
+
+Yours
+
+Stefano Luzzatto
+
+
+
+--------------------------------------------------------------
+Stefano Luzzatto
+Mathematics Department          Tel: +44 20 759 48507
+Imperial College                       Fax  +44 870 1309532
+180 Queen's Gate                      Stefano.Luzzatto@ic.ac.uk
+London SW7 2BZ                        http://www.ma.ic.ac.uk/~luzzatto
+---------------------------------------------------------------
+
+From: "Sridhar Sarnobat" <sarnobat@hotmail.com>
+> Date: Mon, 22 Oct 2001 13:38:11 +0100
+> To: <stefano.Luzzatto@ic.ac.uk>
+> Subject: Reading material for convergence tests (Computing student)
+>
+>
+> My understanding of the convergence tests is not good enough and I need a
+> textbook or some other source of reading material to learn it more carefully.
+>
+> I've tried looking at library books but they use examples with complex
+> numbers, making it unnecessarily complicated.
+> Are there any books which will explain it more simply?
+>
+> Do you have a homepage? Does it contain any lecture notes?
+>
+> Thank you.
+>
+>
+
+
+--B_3086677362_20442431
+Content-type: text/html; charset="US-ASCII"
+Content-transfer-encoding: quoted-printable
+
+<HTML>
+<HEAD>
+<TITLE>Re: Reading material for convergence tests (Computing student)</TITL=
+E>
+</HEAD>
+<BODY>
+<FONT FACE=3D"Palatino">Dear Sridhar, <BR>
+<BR>
+some students re coming to see me on Wednesday at 2.00 in my office to ask =
+some questions. You are most welcome to come as well. <BR>
+<BR>
+Yours <BR>
+<BR>
+Stefano Luzzatto<BR>
+<BR>
+</FONT><BLOCKQUOTE><FONT FACE=3D"Palatino"><BR>
+</FONT></BLOCKQUOTE><FONT FACE=3D"Palatino"><BR>
+-------------------------------------------------------------- &nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;<BR>
+Stefano Luzzatto<BR>
+Mathematics Department &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;Tel: +44 20 759 48507<BR>
+Imperial College &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fa=
+x &nbsp;+44 870 1309532<BR>
+180 Queen's Gate &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stefano.=
+Luzzatto@ic.ac.uk<BR>
+London SW7 2BZ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;http://www.ma.ic.ac.uk/~luzzatto<BR>
+---------------------------------------------------------------<BR>
+<BR>
+<B>From: </B>&quot;Sridhar Sarnobat&quot; &lt;sarnobat@hotmail.com&gt;<BR>
+</FONT><BLOCKQUOTE><FONT FACE=3D"Palatino"><B>Date: </B>Mon, 22 Oct 2001 13:3=
+8:11 +0100<BR>
+<B>To: </B>&lt;stefano.Luzzatto@ic.ac.uk&gt;<BR>
+<B>Subject: </B>Reading material for convergence tests (Computing student)<=
+BR>
+<BR>
+</FONT></BLOCKQUOTE><FONT FACE=3D"Palatino"><BR>
+</FONT><BLOCKQUOTE><FONT SIZE=3D"2"><FONT FACE=3D"Arial">My understanding of th=
+e convergence tests is not good enough and I need a textbook or some other s=
+ource of reading material to learn it more carefully.<BR>
+</FONT></FONT><FONT FACE=3D"Palatino"> <BR>
+</FONT><FONT SIZE=3D"2"><FONT FACE=3D"Arial">I've tried looking at library book=
+s but they use examples with complex numbers, making it unnecessarily compli=
+cated.<BR>
+Are there any books which will explain it more simply?<BR>
+</FONT></FONT><FONT FACE=3D"Palatino"> <BR>
+</FONT><FONT SIZE=3D"2"><FONT FACE=3D"Arial">Do you have a homepage? Does it co=
+ntain any lecture notes?<BR>
+</FONT></FONT><FONT FACE=3D"Palatino"> <BR>
+</FONT><FONT SIZE=3D"2"><FONT FACE=3D"Arial">Thank you.<BR>
+</FONT></FONT><FONT FACE=3D"Palatino"><BR>
+</FONT></BLOCKQUOTE><FONT FACE=3D"Palatino"><BR>
+</FONT>
+</BODY>
+</HTML>
+
+
+--B_3086677362_20442431--
+
+
+From ss401@mallard.doc.ic.ac.uk Thu Apr 18 11:28:23 2002 +0100
+Return-path: <rb301@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 18 Apr 2002 11:28:28 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16y99L-0005Yn-00; Thu, 18 Apr 2002 11:28:23 +0100
+Received: from texel23.doc.ic.ac.uk ([146.169.49.72] ident=rb301)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16y99L-0001Z7-00; Thu, 18 Apr 2002 11:28:23 +0100
+Date: Thu, 18 Apr 2002 11:28:22 +0100 (BST)
+From: Rahul Sen <rb301@doc.ic.ac.uk>
+To: cs-first-year@doc.ic.ac.uk
+cc: jmc-first-year@doc.ic.ac.uk
+Subject: Re:Maths Formula Sheet - Very IMPORTANT
+In-Reply-To: <f05101402b8bbf2c04c8c@[146.169.29.133]>
+Message-ID: <Pine.LNX.4.42.0204181122140.23154-100000@texel23.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 17
+
+
+In the Mathematical Methods and Graphics exam you will be provided with
+a Formula Sheet to help you in your exam.
+This sheet has not been given out to anyone in our year.
+I have scaned this sheet and put a copy on my webspace at
+http://www.doc.ic.ac.uk/~rb301/maths/
+
+the two files are in jpg format - sorry i couldnt convert to pdf!!
+
+Hope this helps
+
+Rahul and Barbod
+

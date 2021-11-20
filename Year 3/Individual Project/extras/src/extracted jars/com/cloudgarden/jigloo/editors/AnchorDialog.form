@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form style="SWT" ide="eclipse" builder="jigloo" version="1.0.0">
+	<Component class="org.eclipse.swt.widgets.Dialog" name="AnchorDialog" style="0">
+		<Constraints>
+			<LayoutConstraint/>
+		</Constraints>
+		<Layout class="Fill">
+			<Property name="type" type="int" value="256"/>
+		</Layout>
+		<Properties>
+			<Property name="size" type="Dimension">
+				<Dimension value="[240, 254]"/>
+			</Property>
+		</Properties>
+		<SubComponents>
+			<Component class="com.cloudgarden.jigloo.editors.AnchorPanel" name="anchorPanel1" style="0">
+				<Constraints>
+					<Constraint class="org.eclipse.swt.layout.GridData"/>
+					<LayoutConstraint/>
+				</Constraints>
+				<Layout class="Form">
+					<Property name="marginHeight" type="int" value="0"/>
+					<Property name="marginWidth" type="int" value="0"/>
+				</Layout>
+				<Events>
+				</Events>
+				<Properties>
+					<Property name="size" type="Dimension">
+						<Dimension value="[210, 150]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[0, 0, 220, 200]"/>
+					</Property>
+				</Properties>
+			</Component>
+		</SubComponents>
+	</Component>
+</Form>

@@ -1,0 +1,135 @@
+%% Created by Maple 7.00 (IBM INTEL LINUX)
+%% Source Worksheet: part2.mws
+%% Generated: Sun Mar  2 19:31:38 2003
+\documentclass{article}
+\usepackage{maple2e}
+ \def\emptyline{\vspace{12pt}}
+\DefineParaStyle{Maple Output}
+\DefineParaStyle{Maple Plot}
+\DefineCharStyle{2D Math}
+\DefineCharStyle{2D Output}
+\begin{document}
+\pagestyle{empty}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{SRIDHAR SARNOBAT (ss401)}{%
+}
+\end{mapleinput}
+
+\begin{mapleinput}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{mynorm := (p,x) ->}{%
+}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{   if p=infinity then max(abs(x[1]),abs(x[2]))}{%
+}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{   else root(abs(x[1])^p+abs(x[2])^p,p)}{%
+}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{   end if;}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{mynorm := proc (p, x) options operator, arrow; if p = infinity then
+max(abs(x[1]),abs(x[2])) else root(abs(x[1])^p+abs(x[2])^p,p) end if
+end proc;}{%
+\maplemultiline{
+\mathit{mynorm} := \textbf{proc} (p, \,x) \\
+\textbf{option} \,\mathit{operator}, \,\mathit{arrow}; \\
+\mapleIndent{1} \textbf{if} \,p=\infty \,\textbf{then} \,\mathrm{
+max}(\mathrm{abs}({x_{1}}), \,\mathrm{abs}({x_{2}})) \\
+\mapleIndent{1} \textbf{else} \,\mathrm{root}(\mathrm{abs}({x_{1}
+})^{p} + \mathrm{abs}({x_{2}})^{p}, \,p) \\
+\mapleIndent{1} \textbf{end if}  \\
+\textbf{end proc}  }
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{mynorm(1,[-1,-1]);}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{2;}{%
+\[
+2
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{mynorm(2,[1,1]);}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{sqrt(2);}{%
+\[
+\sqrt{2}
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{mynorm(infinity,[1,1]);}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{1;}{%
+\[
+1
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{display(map(p->
+implicitplot((mynorm(p,[x,y])=1),x=-1..1,y=-1..1),[1,2,3,4,5,infinity]
+));}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{center}
+\mapleplot{part201.eps}
+\end{center}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\end{document}
+%% End of Maple 7.00 Output

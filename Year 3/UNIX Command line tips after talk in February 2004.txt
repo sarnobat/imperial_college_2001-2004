@@ -1,0 +1,54 @@
+export -p
+'HOME' specifies where 'cd' returns to
+'PS1' specifies what comes at ethe start of each line
+
+dir /p - pipe in DOS
+
+| less - can go up or down (& allows edit?)
+| more - 1st version (kit key for 'more') but can't go back up
+| head - only first few lines
+df - mounted file systems
+| sort (can have more than 1)
+
+0 | 1 | 2 > redirect to stdin/out/error
+>> to append
+(dev/null - just throws away output)
+
+alias
+-----
+
+alias dir = ls
+'.' files are hidden
+'..rc' - configuration
+
+ls -l (l = long)
+
+cygwin emulates UNIX commands under windows
+
+
+
+
+patch
+awk - only prints a certain column
+~
+echo
+!javac ...
+!?vac ...
+!!:$
+...`...` .. (next to 1 on keyboard)
+
+ctrl a e k
+(a = beginning,e=end,k=cut rest)
+
+sort -n (sort by numeric ordering - default = lexicographic)
+
+wc - word count
+
+
+
+grep -i (i = case insensitive)
+-c (count the occurrences)
+-H (include filename)
+-E (regular expressions)
+
+find

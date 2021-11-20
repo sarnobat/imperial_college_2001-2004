@@ -1,0 +1,231 @@
+head	1.6;
+access;
+symbols
+	yams-final-19-12-03:1.6
+	yams-release2-17-12-03:1.4
+	yams-release-17-12-03:1.4;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2003.12.19.14.20.25;	author qq01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.19.13.25.30;	author jkm01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.12.16.11.50;	author jkm01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.12.12.15.03.44;	author jkm01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.12.10.01.00.42;	author jkm01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.09.18.55.24;	author jkm01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@updated javadoc
+@
+text
+@/*
+ * Created on 09-Dec-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+package yams.assembler;
+import java.util.*;
+/**
+ * Contained as objects within a TreeMap in the Representation object, this class stores information on specific machine code representations of the instruction indexed by operand combinations. In addition it maintains references to any operand information that needs to be included.
+ * 
+ * @@author jkm01
+ */
+public class Representation {
+
+	private String operandsEncoding;
+	private String machineCode;
+	private TreeMap operandDetails;
+	
+	public Representation()
+	{
+		operandDetails = new TreeMap();
+	}
+	public void setOperandsEncoding(String opse)
+	{
+		operandsEncoding = opse;
+	}
+	public void setMachineCode(String mc)
+	{
+		machineCode = mc;
+	}
+	public String printRepresentation()
+	{
+		String outputString="Encoding: "+operandsEncoding+" machineCode: "+machineCode+" OPERANDS: \n";
+		Set instructionSet = operandDetails.keySet();
+		Iterator instructionSetIterator = instructionSet.iterator();
+		while (instructionSetIterator.hasNext())
+		{
+			int currentKey = ((Integer)instructionSetIterator.next()).intValue();
+			OperandDetails currentOperand = (OperandDetails)operandDetails.get(new Integer(currentKey));
+			outputString += currentOperand.printOperand();
+		}
+		return outputString;
+	}
+/*
+	public void addOperand(String optype, OperandDetails o)
+	{
+		operandDetails.put(optype,o);
+	}
+	public boolean isOperand(String optype)
+	{
+		return operandDetails.containsKey(optype);
+	}
+	public OperandDetails getOperand(String optype)
+	{
+		if (isOperand(optype))  return (OperandDetails)operandDetails.get(optype);
+		else					return null;
+	}
+*/	
+	// index operand by number
+	public void addOperand(int number,OperandDetails o)
+	{
+		operandDetails.put(new Integer(number),o);
+	}
+	public OperandDetails getOperand(int number,String type)
+	{
+		if (isOperand(number,type)) return (OperandDetails)operandDetails.get(new Integer(number));
+		else return null;
+	}
+	public boolean isOperand(int number,String type)
+	{
+		return (operandDetails.containsKey(new Integer(number)) && ((OperandDetails)operandDetails.get(new Integer(number))).getType().equals(type));
+	}
+	//index oeprand by number	
+		
+		
+	public String getEncoding()
+	{
+		return operandsEncoding;
+	}
+	public String getMachineCode()
+	{
+		return machineCode;
+	}
+}
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d10 2
+a12 1
+ * Contained as objects within a TreeMap in the Representation object, this class stores information on specific machine code representations of the instruction indexed by operand combinations. In addition it maintains references to any operand information that needs to be included.
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d11 1
+a11 3
+ *
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d40 2
+a41 2
+			String currentKey = (String)instructionSetIterator.next();
+			OperandDetails currentOperand = (OperandDetails)operandDetails.get(currentKey);
+d46 1
+a46 1
+
+d60 1
+a60 1
+	
+d62 1
+a62 1
+	public void addOperand2(int number,OperandDetails o)
+d66 1
+a66 1
+	public OperandDetails getOperand2(int number,String type)
+d68 1
+a68 1
+		if (isOperand2(number,type)) return (OperandDetails)operandDetails.get(new Integer(number));
+d71 1
+a71 1
+	public boolean isOperand2(int number,String type)
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d60 18
+@
+
+
+1.1
+log
+@added extra files
+@
+text
+@d8 1
+a8 1
+import java.util.TreeMap;
+d25 23
+a47 2
+	
+	public void addOperand(int optype, OperandDetails o)
+d49 1
+a49 1
+		operandDetails.put(new Integer(optype),o);
+d51 1
+a51 1
+	public boolean isOperand(int optype)
+d53 1
+a53 1
+		return operandDetails.containsKey(new Integer(optype));
+d55 1
+a55 1
+	public OperandDetails getOperand(int optype)
+d57 2
+a58 1
+		return (OperandDetails)operandDetails.get(new Integer(optype));
+d63 4
+@
+

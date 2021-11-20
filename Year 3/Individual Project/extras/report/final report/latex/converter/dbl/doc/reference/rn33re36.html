@@ -1,0 +1,13 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type"><title>generate.latex.article.preamble</title><meta name="generator" content="DocBook XSL Stylesheets V1.50.0"><link rel="home" href="index.html" title="DB2LaTeX API Documentation"><link rel="up" href="rn33.html" title="Variables and Templates used in LaTeX Preamble Generation"><link rel="previous" href="rn33.html#id2841143" title="2. Flow"><link rel="next" href="rn33re37.html" title="generate.latex.book.preamble"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">generate.latex.article.preamble</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="rn33.html#id2841143">Prev</a> </td><th width="60%" align="center">Variables and Templates used in LaTeX Preamble Generation</th><td width="20%" align="right"> <a accesskey="n" href="rn33re37.html">Next</a></td></tr></table><hr></div><div class="refentry"><a name="template.generate.latex.article.preamble"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>generate.latex.article.preamble &#8212;  Top level template, called by article template, 
+	    responsible of generating the LaTeX preamble according to user 
+	    XSL variables and templates.
+	</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><pre class="synopsis">&lt;xsl:template name=&quot;generate.latex.article.preamble&quot;/&gt;</pre></div><div class="refdescription"><a name="id2841214"></a>
+	    <p><b>Overview. </b>
+		If the xsl:variable <tt>latex.override</tt>
+		is empty, the template outputs <tt>latex.article.preamblestart</tt> 
+		and calls <tt>generate.latex.common.preamble</tt>. Otherwise,
+		it outputs the value of <tt>latex.override</tt> and
+		exists.
+	    </p>
+	</div><div class="refauthor"><b><a name="id2841260"></a>Author</b>Ramon Casellas <tt>&lt;<a href="mailto:casellas@aist.enst.fr">casellas@aist.enst.fr</a>&gt;</tt></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="rn33.html#id2841143">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="rn33.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="rn33re37.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2. Flow </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> generate.latex.book.preamble</td></tr></table></div></body></html>

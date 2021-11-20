@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Statistics Mode</TITLE>
+<META NAME="description" CONTENT="Statistics Mode">
+<META NAME="keywords" CONTENT="report3">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="report3.css">
+
+<LINK REL="previous" HREF="node26.html">
+<LINK REL="up" HREF="node25.html">
+<LINK REL="next" HREF="node28.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html447"
+  HREF="node28.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html443"
+  HREF="node25.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html439"
+  HREF="node26.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html445"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html448"
+  HREF="node28.html">Using YAMS - GUI</A>
+<B> Up:</B> <A NAME="tex2html444"
+  HREF="node25.html">Interpreting the Output</A>
+<B> Previous:</B> <A NAME="tex2html440"
+  HREF="node26.html">Standard Mode</A>
+ &nbsp; <B>  <A NAME="tex2html446"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00522200000000000000">
+Statistics Mode</A>
+</H3>
+When the statistics option is turned on, YAMS will also output the following statistics after the file has been executed :
+- How many times each line of the program was executed
+- How many times each instruction was used
+- How many times each register was used
+- The total number of CPU cycles required
+- The total memory required.
+
+<P>
+An example of the output is show below:
+
+<P>
+<PRE>
+=====STARTING NEW FILE=====
+Input File: EvalExpr.asm
+1234
+
+==============
+  STATISTICS
+==============
+
+------------LINES EXECUTED------------
+
+Line                                  Count
+9    li $t0,10:                         1
+10    sw $t0,_x:                        1
+11    li $t6,1:                         1
+12    lw $t7,_x:                        1
+13    mul $t5,$t6,$t7:                  1
+14    li $t6,2:                         1
+15    add $t4,$t5,$t6:                  1
+16    lw $t5,_x:                        1
+17    mul $t3,$t4,$t5:                  1
+18    li $t4,3:                         1
+19    add $t2,$t3,$t4:                  1
+20    lw $t3,_x:                        1
+21    mul $t1,$t2,$t3:                  1
+22    li $t2,4:                         1
+23    add $t0,$t1,$t2:                  1
+24    sw $t0,_x:                        1
+25    lw $a0,_x:                        1
+26    li $v0,1:                         1
+27    syscall:                          1
+28    la $a0,_newline:                  1
+29    li $v0,4:                         1
+30    syscall:                          1
+31   # exit call to Stop the program
+32    li $v0,10:                        1
+33    syscall:                          1
+
+
+-----------INSTRUCTIONS USED-----------
+
+Instr   Count
+ADD:    2
+ADDI:   9
+BEQ:    5
+BNE:    3
+LUI:    1
+LW:     7
+ORI:    6
+SW:     3
+
+------------REGISTERS USED------------
+
+Reg   Count
+$0:   27
+$1:   4
+$2:   4
+$4:   4
+$8:   2
+$9:   8
+$10:  2
+
+CPU CYCLES: 313
+
+MEMORY USED: 65 WORDS
+</PRE>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Benjamin Michael Cotter
+2003-12-15
+</ADDRESS>
+</BODY>
+</HTML>

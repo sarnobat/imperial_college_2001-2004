@@ -1,0 +1,656 @@
+\documentclass[12pt]{report}
+\usepackage{times}
+\usepackage{graphicx}
+\begin{document}
+
+\chapter{Instruction Addition}
+
+\tableofcontents
+\thispagestyle{empty}
+
+
+\section{Overview}
+
+The core functionality of YAMS is extensible and has been designed so that advanced users can add new instructions to its framework. The purpose of this aspect to the application is to provide flexibility, users can add new Regular and Pseudo instructions to the system. This is to cater for the differing standards within MIPS instruction sets and allows the application to be specifically adapted to certain situations (i.e. restrict the instructions that can be used to encourage low-level optimisation of programs). A potential further extension of this implies that an entirely new instruction set (different to MIPS) could be developed and tested within the YAMS framework, taking into account the restraints of the MIPS processor.
+
+The following guide will explain how to add a new instruction to the existing application, providing information on the three specific areas such an addition will have a significant impact upon: the Parser, the Assembler and the Processor.
+
+\section{How-to Add Instructions}
+
+\subsection{Overview}
+
+Fundamentally the process of adding an instruction can be broken down into four main stages:
+
+\begin{enumerate}
+\item Parser Extension
+\item Assembler Extension
+\item Processor Extension
+\item Building
+\end{enumerate}
+
+\subsection{YAMS and XML}
+
+As has already been mentioned, YAMS has been designed to work flexibly with different instruction sets. To achieve this, a central XML repository of data regarding each instruction is maintained within the application containing all relevant details and some code. The various software components behave according to the data contained within this repository. This behaviour is achieved in two main ways:
+
+\begin{enumerate}
+
+\item Specific Java Code
+
+Some project components will require specific code handlers to determine their behaviour on encountering a specific instruction. YAMS has been designed such that this code can be directly contained within \begin{verbatim}<Javacode></Javacode>\end{verbatim} within the XML file. XSLT will then be used to re-generate the specific classes required for YAMS to handle the newly added instructions. Thus, it will be necessary to perform a recompilation of YAMS before the changes to the project will take effect.
+
+Software components affected: Parser, Processor (Instruction and System-call Handlers)
+
+
+\item Real-time XML Parsing
+
+Some project elements will not require specific code, and instead need only to refer to the data contained within the XML Repository. In these situations, we can make use of XML DOM parsing to read in the data from the file at startup and fill object tables with the required information.
+
+Software components affected:	Assembler, Statistics Manager (Processor sub component)
+
+\end{enumerate}
+
+
+Therefore, to add a new instruction (or manipulate the current instruction set), the advanced user need only design the instruction, modfiy the XML file and then recompile YAMS. There are specific scripts available within the YAMS package to make this as user-friendly as possible.
+
+\subsection{Step-by-step Design / Addition of Instruction}
+
+The following guide  explains how to add an instruction to the system step-by-step (R steps are REQUIRED fields that are needed by YAMS). When constructing the XML representation it would be useeful to refer to the quick-reference tables included at the conclusion of this section of the guide, which will indicate which tags need to be filled out for which instruction, and their allowed content types.
+
+The general XML structure required is as follows:
+
+ \begin{verbatim}
+
+
+  <Instruction>
+    <Name> ......... </Name>
+      <OperandTypes> ......... </OperandTypes>
+      <Type fixedRt="BOOLEAN"> ......... </Type>
+      <Javacode></Javacode>
+      <CoreMachineCode> ......... </CoreMachineCode>
+      <MachineCodeRepresentations>
+        <Representation>
+          <OperandsCoding> ......... </OperandsCoding>
+          <MachineCode> ......... </MachineCode>
+          <Operands>
+            <Op>
+              <Number> ......... </Number>
+              <Type> ......... </Type>
+              <Mask> ......... </Mask>
+              <EncodeBits> ......... </EncodeBits>
+              <OutputBits> ......... </OutputBits>
+              <OffSetMode> ......... </OffSetMode>
+            </Op>
+
+            ......
+
+          </Operands>
+        </Representation>
+
+        ......
+
+      </MachineCodeRepresentations>
+      <Help>
+        <FullName></FullName>
+        <Format></Format>
+        <Description></Description>
+      </Help>
+   </Instruction>
+
+ \end{verbatim}
+
+
+\subsubsection{FRAMEWORK MODIFICATION}
+
+Some parts of the XML Instruction representation are generic, and will be used by multiple software components within YAMS (Parser,Assembler,Processor), these tags are described below.
+
+textbf{1R - Instruction Name: <Name> }
+
+This field contains the name of the instruction, as will be used within the MIPS code e.g. "add","neg" etc.
+
+
+textbf{2R - Type: <Type> }
+
+Tells Assembler/Processor/Parser what type of instruction this in terms of structure. This is the FIRST major instruction decision to be made, and will have an impact on other sections of the XML.
+
+\begin{list}{Admissable Instruction Types}{}
+
+\item[Regular]
+
+A REGULAR INSTRUCTION has one set of possible operands, therefore one machine code representation.
+
+Details on regular instructions are required in the following software components:
+\begin{itemize}
+\item included in parser (usable in mips code)
+\item included in assembler (encoded to machine code)
+\item included in processor (processor knows what specific steps to take to execute this instruction)
+\end{itemize}
+
+\item[Extended]
+
+An EXTENDED INSTRUCTION has multiple representations depending on the different operand combinations, thus will require and entry for the Core Machine Code field.
+
+More than one set of possible operands e.g. add REG REG REG / add REG REG IMMEDIATE -> One machine code representation per possible operand construct NOT a pseudoinstruction because underlying instruction is still atomic but for some operand representations, other steps have to be taken to cater for the different operand before the core function is executed
+
+e.g. there is a specific instruction machine code representation add REG REG REG = 00-9o-0os, however if add REG REG IMMEDIATE is required as a variation on this instruction a li REG IMMEDIATE must 'first' be executed before the regular add can be made. To cater for this	conceptual difference, these are called Extended instructions.
+
+NB with extended instructions, since they still have a core instruction (e.g. add still has atomic underlying expression) it is now NECESSARY to fill in the CoreMachineCode tag (described in a moment) included in parser (usable in mips code).
+
+Details on extended instructions are required in the following software components:
+\begin{itemize}
+\item included in parser (instruction is usable in mips code)
+\item included in assembler (encoded to machine code)
+\item included in processor (processor knows what specific steps to take to execute the CORE VERSION of this instruction)
+\end{itemize}
+
+\item[Pseudoinstruction]
+
+A PSEUDOINSTRUCTION is not specifically executed by processor,rather is made up of other atomic instructions.
+
+Can be one set of operands or more than one set of operands (and therefore representations), and has no core representation (i.e. there is no explicit core machine code representation for this instruction). Therefore it is composed of a series of other atomic instructions that overall have the required effect of the instruction. It will not be known the processor, since it will already know the core instructions it uses.
+
+Details on pseudoinstructions are required in the following software components:
+\begin{itemize}
+\item included in parser (usable in mips code)
+\item included in assembler (encoded to machine code)
+\item NOT included in processor
+\end{itemize}
+
+There also exists an attribute for the Type tag which must be filled in as fixedRt="true" for instructions
+
+...... MISSING
+
+\end{list}
+
+\textbf{3D - Core Machine Code : <CoreMachineCode> }
+
+This is ONLY required when an Extended instruction is created (multiple representations depending on operands, while using underlying machine code representation). It contains the machine code for the actual instruction, not including an pre-instruction execution steps that need to occur for more complicated combinations of operands e.g. add REG REG REG has a specific machine code representation, but add REG REG IMMEDIATE uses this representation plus some other atomic instructions to cater for the different operands.
+
+The value of this field should be the simplest representation within the MachineCodeRepresentations/Representation/MachineCode tag, and should be 1 x 32 bit machine word.
+
+\subsubsection{PARSER MODIFICATIONS}
+
+The Parser will use method 1 (see earlier) to obtain the information from the XML file. Essentially it will use an XSLT transformation to convert selected data fields contained within the XML to parts of the Parser handler. This handler will deal with recognising an instruction and will be able to instruct the parser how to recognise and validate the presented instruction. This information includes the name of the instruction, and the possible operands that it takes. The following field is solely used by the Parser in this respect:
+
+\textbf{4R - Operand Types : <OperandTypes>}
+
+This indicates to the parser what number and type of operands are being used for the specified instruction. For the purposes of parsing (decided to be more of a syntax check than a semantic check, which will be dealt with more within the assembling phase), there are four main operand types:
+
+\begin{list}
+
+\item[Operand.TYPE_REGISTER]
+Indicates the operand is a register (from available list in MIPS architecture)
+\item[Operand.TYPE_IMMEDIATE]
+Operand is an immediate (NB encompasses all forms of immediates, no range checking this occurs within the assembler)
+\item[Operand.TYPE_LABEL]
+Operand is a Label (String referring to another point within the program)
+\item[Operand.TYPE_ADDRESSING]
+Operand is an Addressing Operand, referring to some address within memory. This can take one of 6 sub-forms (please consult MIPS addressing documentation and following table for further information):
+
+\end{list}
+
+Table 4 : Addressing Modes
+
+The addressing mode can either be an absolute value, an offset from the current text address or an offset from a fixed block address (for YAMS it is 0x10008000 in main memory).
+
+Key: where I(R) = I+R
+
+Type				Addressing Mode
+
+Immediate			16 bit Immediate offset, 32 bit Absolute address
+Immediate(Register)		Immediate (16/32 bit) plus register value gives absolute address
+Register			Register value gives absolute address
+Label				Label (Evaluate offset)
+Label+-Immediate		Label (Evaluate offset) +- 16/32 bit offset
+Label+-Immediate(Register)	Label (Evaluate offset) +- 16/32 bit offset
+
+
+This will tell the parser exactly what operands to expect when an instruction of this type is presented within the MIPS code. To specify a representation, place comma separated operand types (in corresponding order to desired instruction) within the <OperandTypes></OperandTypes> tags.
+
+Cardinality:
+
+\begin{list}
+\item For Regular instructions there will only be one valid operands representation, thus one \begin{verbatim} <OperandTypes> \end{verbatim} entry.
+\item For Extended / Pseudoinstructions there can be more than representation for the operand types thus there will be a corresponding \begin{verbatim} <OperandTypes> \end{verbatim}entry for each one.
+\end{list}
+
+Example: Instruction Name = add
+
+<OperandTypes>Register,Register,Register</OperandTypes>		// regular add instruction dealing with registers
+<OperandTypes>Register,Register,Immediate</OperandTypes>	// add instruction allowing an immediate to be included
+
+
+\subsubsection{ASSEMBLER MODIFICATIONS}
+
+The assembler requires complex and specific information regarding the structure and operand types involved in an instruction. It utilies method 2 to obtain information from the XML file, reading it on startup, parsing the information and loading it into table objects for further reference to during the assembling phase. The following sections must be specifically included to tell the assembler exactly what to do with the operands you provide it.
+
+
+\textbf{5R - Machine Code Representations : <MachineCodeRepresentations> }
+
+The assembler needs to know what the specific machine code representation(s) for the current instruction is (are).
+
+If the instruction is a Regular Instruction, then there must be ONLY ONE Representation node within this higher level tag. If however, the instruction is an Extended or Pseudo Instruction, then there must be more of these representations to cope with the different alternatives.
+
+
+Operand Semantic Differences
+
+It is important to note, that when we come to defining the details of the instruction for the assembler, our notion of operands must change slightly. Within the parser operand definition tags (\begin{verbatim}<OperandTypes>\end{verbatim}) we only consider there to be four possible operand types. However, the assembler must take into account the fact that there will in fact be different machine code representations for separate instructions using the same parser operand type.
+
+For example, the parser has no notion of there being a difference between a 16 and 32 bit integer, however when it comes to assembling we can only deal with 16 bit integers in the majority of our operations. Thus we must solve this problem by using other commands to load in order the bottom half and top half of 32 bit integers into a register. Once there we can manipulate it to perform the required operation. So that our generated code remains optimal (i.e instructions using only 16 bit immediates dont need to perform as many instructions as 32 bit immediates will), we separate dealing with 16 and 32 bit immediates into different \begin{verbatim}<Representation>\end{verbatim} tags.
+
+The required contents of the \begin{verbatim}<Representation>\end{verbatim} node(s) within this lower level will be discussed within this section, but essentially they are differentiated from each other by an encoded representation of the operands (discussed later) and any further details regarding these operands are contained within its \begin{verbatim}<Operands>\end{verbatim} tag. The following example illustrates this and the points discussed regarding the operands.
+
+e.g. "add" instruction has two <OperandType> tags and thus must have two representation tags to correspond to these:
+
+\begin{verbatim}
+....
+
+<OperandType>Register,Register,Register</OperandType>
+<OperandType>Register,Register,Immediate</OperandType>
+
+....
+
+<MachineCodeRepresentations>
+	<Representation>
+		<OperandsCoding>111</OperandsCoding>
+		<MachineCode>000000bbbbbcccccaaaaa00000100000</MachineCode>
+		<Operands>
+		</Operands>
+	</Representation>
+	<Representation>
+		<OperandsCoding>110</OperandsCoding>
+		<MachineCode>001000bbbbbaaaaacccccccccccccccc</MachineCode>
+		<Operands>
+			<Op>
+				<Number>3</Number>
+				<Type>0</Type>
+				<Mask>1111111111111111</Mask>
+				<EncodeBits>16</EncodeBits>
+				<OutputBits>16</OutputBits>
+				<OffSetMode>2</OffSetMode>
+			</Op>
+		</Operands>
+	</Representation>
+	<Representation>
+		<OperandsCoding>11a</OperandsCoding>
+		<MachineCode>	00111100000aaaaadddddddddddddddd
+				001101aaaaaaaaaacccccccccccccccc
+				000000bbbbbaaaaaaaaaa00000100000
+		</MachineCode>
+		<Operands>
+			<Op>
+				<Number>3</Number>
+				<Type>a</Type>
+				<Mask>11111111111111111111111111111111</Mask>
+				<EncodeBits>32</EncodeBits>
+				<OutputBits>32</OutputBits>
+				<OffSetMode>2</OffSetMode>
+			</Op>
+		</Operands>
+	</Representation>
+</MachineCodeRepresentations>
+\end{verbatim}
+
+As can be seen from the above example, "add" only has two possible parser configurations:
+
+add REGISTER REGISTER REGISTER
+add REGISTER REGISTER IMMEDIATE
+
+However, the immediate in the second instruction could be dealt with differently depending on whether it is a 16 bit or a 32 bit immediate, as has been reflected by the fact that there are THREE <Representation> nodes and only TWO <OperandType> nodes. Therefore as can be seen there are conceptually different concepts between how the Parser and Assembler see operands, and when designing an instruction it would be a good idea to deal with the sections differently.
+
+Please note it is also perfectly possible to restrict the use of immediates to only 16 bit integers, by only including its representation and not the code for 32 bit integer representations. Given this information in the XML, YAMS will infer that the instruction is designed to only take 16 bit ntegers and will throw an error when presented with 32 bit ones instead.
+
+Representation
+
+The basic structure of a <Representation> node is highlighted below:
+
+\begin{verbatim}
+
+<Representation>
+	<OperandsCoding> ......... </OperandsCoding>
+	<MachineCode>
+
+		.................
+
+	</MachineCode>
+	<Operands>
+		<Op>
+			<Number> ..... </Number>
+			<Type> ..... </Type>
+			<Mask> ................... </Mask>
+			<EncodeBits> ..... </EncodeBits>
+			<OutputBits> ..... </OutputBits>
+			<OffSetMode> ..... </OffSetMode>
+		</Op>
+	</Operands>
+</Representation>
+
+\end{verbatim}
+
+When adding an instruction, as has already been mentioned, you must add Representation nodes for each of the different operand combinations that there will be (from extended Operand set).
+
+For each representation we must fill out the following information:
+
+i	Operands Coding
+
+Each representation is uniquely identified by a string of characters which represent the operand types that this representation of the instruction will be catering for. The following table contains the available operand types that we can use in our operand code:
+
+Table : Operand Coding Set
+
+Contains a list of available operand codes that we can use to uniquely describe our representation. As has already been mentioned there are differences between the Parser and Assembler representations of operands, and the following table matches the two distinct sets.
+
+Character	Meaning						[ Corresponding Parser Operand ]
+Code
+
+0 		<=16 Bit Twos Complement Immediate		Immediate
+a 		32 Bit Twos Complement Immediate		Immediate
+1 		Register					Register
+2 		Label						Label
+3 		Address						Addressing
+4 		Add: Immediate					Addressing
+5 		Add: Immediate(Register)			Addressing
+6 		Add: Label					Addressing
+7 		Add: Label_Plus_Immediate			Addressing
+8 		Add: Label_Plus_Immediate_Register		Addressing
+c 		Add: Label_Minus_Immediate_Register		Addressing
+9 		Add: Register					Addressing
+b 		no operands					Addressing
+
+Example: for the "add" instruction
+
+\begin{enumerate}
+\item add REGISTER REGISTER REGISTER has only one possible representation for registers, thus \begin{verbatim}<OperandCode>111</OperandCode>\end{verbatim}
+\item add REGISTER REGISTER IMMEDIATE has two possible representations, 16/32 bit immediates, thus
+	a)	<OperandCode>110</OperandCode>
+	b)	<OperandCode>11a</OperandCode>
+
+ii	MachineCode
+
+The representation will contain a <MachineCode> tag which contains the underlying machine code required to carry out the instruction. However, before receiving the actual instruction it is impossible to identify what the values of these operands are. Therefore the machine code will contain "gaps" in specific parts, which can be filled in by the assembler when it works out the actual values of each operand. These actual values need to be mapped into their correct "gaps" in the code. Thus within the XML file, these gaps are represented as string of characters (from following table) of the required length.
+
+Table : Characters used within strings to indicate a position for operand substitution by the assembler
+
+Character	Operand Number
+
+a		1
+b		2
+c		3
+d		4
+e		5
+f		6
+g		7
+h		8
+i		9
+j		10
+
+As can be seen, YAMS has been designed to cater for instructions with up to 10 operands if necessary.
+
+Example : In YAMS, given an instruction
+
+instruction OPERAND_1 OPERAND_2 OPERAND_3
+
+the assembler will retrieve the required representation from the Pre-Loaded XML Tables by working out the required operand code (see above) for this specific "instruction." This will return a pre-defined machine code representation with "gaps" where the computed operands need to go. The assembler thus calculates the machine code values of the user supplied operands and then one-by-one substitutes their values into the required places in the machine code. For example, the machine code for our generic "instruction" example is as follows
+
+010010aaaaabbbbbccccc00000111111
+
+YAMS will then calculate the values of OPERAND_1,_2 and _3 and then map them to their correct positions within the code.
+
+OPERAND_1 = 00001 = aaaaa
+OPERAND_2 = 00100 = bbbbb
+OPERAND_3 = 11111 = ccccc
+
+01001000001001001111100000111111
+
+Therefore during the design of an instruction, effort must be made to ensure that the correct operand gaps are left in the right places ready for substitution at run time.
+
+
+ii	Operands
+
+As has been seen, the specific type of the operand (e.g. immediate, label etc) has already been decided upon for the current instruction being added. However, the assembler will require further information on some of these operands in order to calculate their values correctly.
+
+For example if we have an Immediate value for one of the operands, it is possible we may not want to include all of this immediate value when we write it to memory. Such a situation may occur when considering offsets. If our immediate is a value of 400 bytes = 110010000 bytes, since we are using aligned memory access, then we could feasibly drop the last 2 bytes of our immediate and save some space for further information in our instruction. In such cases, YAMS provides the facility for an instruction
+writer to tell the assembler to do so.
+
+However, this only applies to some of the operand types that we are using, the following table indicates for which Operands an \begin{verbatim}<Op>\end{verbatim} tag should be included.
+
+Table : Requirement for \begin{verbatim}<Op>\end{verbatim} Tags for Operand Types
+
+Operand 	Description					Required <Op> Description?
+
+0 		<=16 Bit Twos Complement Immediate		Yes
+a 		32 Bit Twos Complement Immediate		Yes
+1 		Register					No
+2 		Label						Yes
+3 		Address						Yes
+4 		Add: Immediate					Yes
+5 		Add: Immediate(Register)			Yes
+6 		Add: Label					Yes
+7 		Add: Label_Plus_Immediate			Yes
+8 		Add: Label_Plus_Immediate_Register		Yes
+c 		Add: Label_Minus_Immediate_Register		Yes
+9 		Add: Register					Yes
+b 		no operands					No
+
+For each of the YES cases above, an \begin{verbatim}<Op>\end{verbatim} tag must be filled out as set out below:
+
+Operands
+
+An Operand tag takes the following form:
+
+\begin{verbatim}
+<Op>
+	<Number> ..... </Number>
+	<Type> ..... </Type>
+	<Mask> ................... </Mask>
+	<EncodeBits> ..... </EncodeBits>
+	<OutputBits> ..... </OutputBits>
+	<OffSetMode> ..... </OffSetMode>
+</Op>
+\end{verbatim}
+
+Essentially, the assembler has already been told what machine code representation it has to map the operands to, and the information contained within the \begin{verbatim}<Op>\end{verbatim} tags for each operand explains to what level of accuracy to perform calculations, what offset mode to be using if we are calculating symbolic labels and which specific bits to use in the final substitution.
+
+i	Number
+
+This refers to which operand within the \begin{verbatim}<OperandCode>\end{verbatim} we are referring to, via indexing. The first operand takes a Number=1, the second Number=2 and so on.
+
+ii	Type
+
+This refers to the operand type which we are placing constraints upon (from extended Assembler Operand Type list described already)
+
+
+Example: for the "add" instruction, under the 11a representation, the XML will contain:
+
+\begin{verbatim}
+<Op>
+	<Number>3</Number>
+	<Type>a</Type>
+
+	.....
+\end{verbatim}
+
+iii	Encode Bits
+
+This field specifies to how many bits we wish to encode the binary value which YAMS' Operand Handler will be calculating the current operand to.
+YAMS will thus throw an error if the provided value cannot be represented within this range. For example, for a Label operand, we are dealing with an 16 bit "gap" in which we can place our offset. Therefore if we encode to 16 bits accuracy we make sure that the label is within our addressable range.
+
+The number of Encode Bits must be >= OutputBits field (number of bits we use in the substitution).
+
+iv	Mask
+
+The Mask will highlight which bits of the encoded representation we wish to include in the final output for our operand (the value we will actually be substituing into the predefined machine word. This is done bitwise:
+
+1 (at index i)	Indicates that the encoded bit at index i IS included in the substituting value
+0 (at index i)	Indicates that the encoded bit at index i IS NOT included in the substituting value
+
+Therefore, the restriction here is that the number of 1s in the Mask must be equal to the OutputBits field.
+
+For example, to mask out the bottom two bits of a 16 bit number, use 1111111111111100 as the Mask value.
+
+v	Output Bits
+
+This indicates the final number of bits that we will be using as the substituting bit string (the final value we substitute into the machine word as the operand). It must equal the number of 1s we have in the Mask field.
+
+vi	Off Set Mode
+
+For certain operands (e.g. Labels), the value of the provided operand that we want to place into our instruction will need to be a calcualated offset. This offset can be from the current line address or maybe from the fixed block address of 0x10008000 used in MIPS. On other occasions we may want to calculate the absolute address. Therefore, YAMS provides instructions with three calculation modes for their operands, as below:
+
+Table : Offset Modes For Operands
+
+Mode	Title			Description
+
+0 	Current Position Mode	Will calculate the offset based on the current line address (e.g. jump)
+1 	Block Address Mode	Calculates offset from 0x10008000
+2 	Absolute Address Mode	Calculates the absolute address of the operand
+
+\subsubsection{PROCESSOR MODIFICATIONS}
+
+The processor must be able to handle instructions correctly, and the XML file will contain all the data regarding each instruction. The processor will read this data using Method 1, so at compile time the java code contained within the XML should be able to be placed within the Processor Instruction Handlers. This code is contained within the \begin{verbatim}<Javacode>\end{verbatim} tag for each instruction, highlighted below.
+
+\textbf{6D - Javacode : <Javacode>}
+
+For newly added REGULAR and EXTENDED instructions, the processor will have to be able to carry out some new functionality in order to execute the required behaviour for the specific instruction. However, for PSEDUOINSTRUCTIONS, this will not be necessary since they will be defined in terms of already existing instructions.
+
+Table : Requirements For Javacode Modification
+
+Instruction Type		Javacode Tag
+
+Regular				Required
+Extended			Required
+Pseudoinstruction		Not Required
+
+In order to implement the functionality of a new instruction, it will be necessary to understand the functions available to this new instruction through the processor. There are interfaces available in the YAMS procesor documentation that highlight the features of the simulated mips processor, and they can be used to construct the java code appropriately.
+
+
+
+
+\textbf{7R - Help Modification : <Help>	}
+
+The final stage to adding an instruction would be to add the help tags, so that the help documentation can be created appropriately:
+
+<Help>
+	<FullName></FullName>			// Add the full name of the instruction
+	<Format></Format>			// Add the format of the instruction e.g. add rdest,rsrc1,rsrc2
+	<Description></Description>		// Add a full text description of what the instruction actually does
+</Help>
+
+
+\subsubsection{BUILDING}
+
+
+.....MISSING
+
+\subsubsection{QUICK-REFERENCE PAGE for adding an instruction}
+
+The following quick-reference tables give an overview of how to add an insruction to the YAMS application:
+
+\textbf{PARSER TABLE}
+
+Table : <OperandType> Tag Comma Separated Available Types
+
+Type
+
+Operand.TYPE_REGISTER
+Operand.TYPE_IMMEDIATE
+Operand.TYPE_LABEL
+Operand.TYPE_ADDRESSING
+
+\textbf{ASSEMBLER TABLES}
+
+Table 1: Reference Key
+
+Symbol	Meaning
+
+R 		Required
+N		Not Required
+1		1 tag only
+*		1 or more tags
+
+Table 2: XML Reference Table (INSTRUCTIONS)
+
+The contents and cardinality of these tags depend on whether the
+instructions are of Regular/Extended/Pseudoinstruction type. For discrete
+value types (referred to with capital letters, see below).
+
+Tag					Regular		Extended	Pseudo		Value
+
+<Instruction>
+  <Name>				R,1		R,1		R,1		1 x Character String
+  <Type>				R,1		R,1		R,1		1 x INSTRUCTION_TYPE + 1x fixedRt="true" attribute
+  <CoreMachineCode>			N		R,1		N		1 x 32 Bit BitString (with possible character-gaps)
+  <OperandTypes>			R,1		R,*		R,*		1+ x comma separated PARSER_OPERAND
+  <MachineCodeRepresentation>		R,1		R,1		R,1		-
+    <Representation>			R,1		R,*		R,*		-
+      <OperandsCoding>			R,1		R,1		R,1		1+ x string from ASSEMBLER_OPERAND
+  	<MachineCode>			R,1		R,1		R,1		1 x 32 bit BitString (with appropriate character gaps)
+	<Operands>			see operand table				-
+    </Representation>
+  </MachineCodeRepresentation>
+  <Javacode>				R,1		R,1		N		Written java code for compilation
+  <Help>				R,1 		R,1		R,1		-
+    <FullName>				R,1		R,1		R,1		1 x Character String
+    <Format>				R,1		R,1		R,1		1 x Character String
+    <Description>			R,1		R,1		R,1		1 x Character String
+  </Help>
+</Instruction>
+
+Table 2: XML Reference Table (OPERANDS)
+
+For every operand within the operand encoding must have an <Op></Op> in the
+<Operands> section (exception: register operand). There are certain
+restrictions upon the contents of the tags:
+
+Tag				Requirements 			Type				Restrictions
+				0 a 1 2 3 4 5 6 7 8 c 9
+
+<Op>				R R N R R R R R R R R R		R = Entry required, N = No entry required
+  <Number>			| | | | | | | | | | | |		Int				Index 1+ corresponding in operand encoding
+  <Type>			| | | | | | | | | | | |		ASSEMBLER_OPERAND		Corresponding operand encoding symbol
+  <Mask>			| | | | | | | | | | | |		Bit String 			Length(Mask) = OutputBits
+  <EncodeBits>			| | | | | | | | | | | |		Int				EncodeBits >= OutputBits
+  <OutputBits>			| | | | | | | | | | | |		Int				OutputBits = Length(Mask)
+  <OffSetMode>			2 2 2 n n n n n n n n n		Int				OFFSET_MODE
+</Op>				| | | | | | | | | | | |
+
+Table 3: Discrete Value Types
+
+INSTRUCTION_TYPE		PARSER_OPERAND		ASSEMBLER_OPERAND					OFFSET MODE
+
+Regular				Register			0 <=16 Bit Immediate				0 Current Position Mode
+Extended			Immediate			a 32 Bit Immediate				1 Block Address Mode
+Pseudoinstruction		Label				1 Register					2 Absolute Address Mode
+				Immediate			2 Label
+								3 Address
+								4 Add: Immediate
+								5 Add: Immediate(Register)
+								6 Add: Label
+								7 Add: Label_Plus_Immediate
+								8 Add: Label_Plus_Immediate_Register
+								c Add: Label_Minus_Immediate_Register
+								9 Add: Register
+								b no operands
+
+\textbf{PROCESSOR TABLE}
+
+	Table : Requirements For Javacode Modification
+
+	Instruction Type		Javacode Tag
+
+	Regular				Required
+	Extended			Required
+	Pseudoinstruction		Not Required
+
+
+\section{ EXTENSION: Adding A System Call}
+
+It is also possible to add a system call to the YAMS framework. MIPS system calls are carried out by the call code being placed into v0
+
+..... MISSING
+
+\section{ TroubleShooting}
+
+This section highlights certain areas that might be giving users problems during instruction addition.
+
+
+..... MISSING
+
+\end{document}

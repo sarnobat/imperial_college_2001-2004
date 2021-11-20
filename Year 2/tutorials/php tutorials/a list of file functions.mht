@@ -1,0 +1,2889 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: Developer.be : PHP Functions - Filesystemfunction
+Date: Mon, 16 Jun 2003 20:03:18 +0100
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0036_01C33442.54773410";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1106
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0036_01C33442.54773410
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/GroupID/23/FunctionGroupName/Filesystemfunction.htm
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Developer.be : PHP Functions - =
+Filesystemfunction</TITLE>
+<META=20
+content=3D"web,development,coldfusion,java,server,script,scripting,cold =
+fusion,php,application =
+developer,javascript,xml,dynamic,programming,sql,tutorial,faq,e-commerce,=
+tag,study,tools,asp"=20
+name=3Dkeywords>
+<META=20
+content=3D"Developer.be  Resource site designed and create by web =
+developers. Designed to provide first class help and information.Some =
+include  downloads,forums,references,tutorials,links,..."=20
+name=3Ddescription>
+<META content=3DALL name=3Drobots>
+<META http-equiv=3DCache-Control content=3Dno-cache>
+<META content=3D"Developer.be : PHP Functions - Filesystemfunction" =
+name=3Dtitle>
+<META http-equiv=3Dexpires content=3D"Wed, 20 Feb 2001 08:30:00 GMT">
+<META http-equiv=3DPragma-directive content=3Dno-cache>
+<META http-equiv=3Dcache-directive content=3Dno-cache>
+<META content=3D"7 days" name=3Drevisit-after>
+<META content=3Dhttp://www.developer.be/ name=3Durl>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3DISO-8859-1"><LINK=20
+href=3D"http://www.developer.be/developerbemain.css" type=3Dtext/css =
+rel=3Dstylesheet>
+<SCRIPT src=3D"http://www.developer.be/custom.js" =
+type=3Dtext/javascript></SCRIPT>
+
+<META content=3D"MSHTML 6.00.2800.1106" name=3DGENERATOR></HEAD>
+<BODY>
+<SCRIPT language=3DJavascript type=3Dtext/javascript>if (top.location =
+!=3D location) {top.location.href =3D "http://www.developer.be"; =
+}</SCRIPT>
+
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" bgColor=3D#000000 =
+border=3D0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+bgColor=3D#000000=20
+        border=3D0><TBODY>
+        <TR vAlign=3Dcenter align=3Dmiddle bgColor=3D#23517b>
+          <TD vAlign=3Dcenter align=3Dleft height=3D20><A=20
+            href=3D"http://www.developer.be/"><IMG height=3D46 alt=3D""=20
+            src=3D"http://www.developer.be/images/logo.jpg" width=3D137=20
+          border=3D0></A></TD>
+          <TD vAlign=3Dcenter align=3Dright height=3D20>
+            <TABLE>
+              <TBODY>
+              <TR>
+                <TD class=3Dsubhead align=3Dright>Mon 16 Jun 2003 , 1 =
+out of 43=20
+                  user(s)</TD></TR>
+              <TR>
+                <TD class=3Dsubhead align=3Dright>Your Server Side Web =
+Development=20
+                  Community!=20
+  =
+</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></T=
+ABLE>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=3D0 cellPadding=3D4 width=3D"100%" border=3D0>
+        <TBODY>
+        <TR vAlign=3Dcenter align=3Dmiddle bgColor=3Dblack>
+          <TD align=3Dmiddle height=3D10><A title=3DHome=20
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            =
+href=3D"http://www.developer.be/index.cfm/fuseaction/dsp_index.htm">Home<=
+/A></TD>
+          <TD align=3Dmiddle height=3D10><A title=3DForums=20
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            =
+href=3D"http://www.developer.be/forums/index.cfm">Forums</A></TD>
+          <TD align=3Dmiddle height=3D10><A title=3DFAQs=20
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            =
+href=3D"http://www.developer.be/index.cfm/fuseaction/faqList.htm">Code/FA=
+Qs</A></TD>
+          <TD align=3Dmiddle height=3D10><A title=3DNews=20
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            =
+href=3D"http://www.developer.be/news/index.cfm">News</A></TD>
+          <TD align=3Dmiddle height=3D10><A title=3DDownloads=20
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            =
+href=3D"http://www.developer.be/index.cfm/fuseaction/downloads.htm">Downl=
+oads</A></TD>
+          <TD align=3Dmiddle height=3D10><A title=3DGlossary=20
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            =
+href=3D"http://www.developer.be/glossary/index.cfm/fuseaction/dsp_glossar=
+y_alpha/alpha/A.htm">Glossary</A></TD>
+          <TD align=3Dmiddle height=3D10><A title=3DGlossary=20
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            =
+href=3D"http://www.developer.be/index.cfm/fuseaction/bookcats.htm">Books<=
+/A></TD>
+          <TD align=3Dmiddle height=3D10><A title=3DTutorials=20
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            =
+href=3D"http://www.developer.be/index.cfm/fuseaction/tutorials.htm">Tutor=
+ials</A></TD>
+          <TD align=3Dmiddle height=3D10><A title=3DBenchmarks=20
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            =
+href=3D"http://www.developer.be/index.cfm/fuseaction/Benchmarks.htm">Benc=
+hMarks</A></TD>
+          <TD align=3Dmiddle height=3D10><A title=3DGlossary=20
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            =
+href=3D"http://www.developer.be/index.cfm/fuseaction/UserGroupCats.htm">U=
+ser=20
+            Groups</A></TD>
+          <TD align=3Dmiddle height=3D10><A title=3D"web directory"=20
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            href=3D"http://www.developer.be/webdirectory/">Web=20
+        Directory</A></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=3D0 cellPadding=3D2 width=3D"100%" border=3D0>
+        <TBODY>
+        <TR vAlign=3Dcenter align=3Dmiddle bgColor=3D#003366>
+          <TD align=3Dmiddle width=3D"10%" height=3D1><A title=3DSitemap =
+
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/sitemap.htm"=
+>-Sitemap-</A></TD>
+          <TD align=3Dmiddle width=3D"10%" height=3D1><A =
+title=3DRegister=20
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            =
+href=3D"http://www.developer.be/index.cfm/fuseaction/register.htm">-Regis=
+ter-</A></TD>
+          <TD align=3Dmiddle width=3D"10%" height=3D1><A title=3DLogin=20
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            =
+href=3D"http://www.developer.be/index.cfm/fuseaction/login.htm">-Login-</=
+A></TD>
+          <TD align=3Dmiddle width=3D"10%" height=3D1><A title=3D"Top =
+Members"=20
+            style=3D"FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffffff; =
+FONT-FAMILY: Verdana,arial; TEXT-DECORATION: none"=20
+            =
+href=3D"http://www.developer.be/index.cfm/fuseaction/TopCoders.htm">-Top =
+
+            =
+Members-</A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+  <TBODY>
+  <TR>
+    <TD vAlign=3Dtop>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+        <TBODY>
+        <TR>
+          <TD vAlign=3Dtop width=3D80>
+            <TABLE cellSpacing=3D0 cellPadding=3D2 width=3D148 =
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD class=3DLMenuHeader>Quick Links</TD></TR>
+              <TR>
+                <TD class=3DLMenuItems>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/dsp_index.htm">Home<=
+/A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/forums/index.cfm">Forums</A><BR>&nbsp;<A =
+
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/faqList.htm">FAQ</A>=
+<BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/news/index.cfm">News</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/downloads.htm">Downl=
+oads</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/tutorials.htm">Tutor=
+ials</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/resources.htm">Resou=
+rces</A></TD></TR>
+              <TR>
+                <TD class=3DLMenuHeader>Languages</TD></TR>
+              <TR>
+                <TD class=3DLMenuItems>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/codecat/cat/php.htm"=
+>PHP</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/codecat/cat/java.htm=
+">Java</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/codecat/cat/asp.htm"=
+>ASP</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/codecat/cat/coldfusi=
+on.htm">Coldfusion</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/codecat/cat/sql.htm"=
+>SQL</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/codecat/cat/csharp.h=
+tm">C#</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/codecat/cat/visualba=
+sic.htm">Visual=20
+                  basic</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/codecat/cat/xml.htm"=
+>XML</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/codecat/cat/perl.htm=
+">Perl</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/codecat/cat/javascri=
+pt.htm">Javascript</A></TD></TR>
+              <TR>
+                <TD align=3Dmiddle><A=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/callforautho=
+rs.htm">Call=20
+                  for authors</A></TD></TR>
+              <TR>
+                <TD>
+                  <FORM action=3D/index.cfm/fuseaction/addmail.htm =
+method=3Dpost>
+                  <TABLE cellSpacing=3D0 cellPadding=3D2 width=3D148 =
+border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DLMenuHeader>NewsLetter</TD></TR>
+                    <TR>
+                      <TD class=3DLRMenuItemsCenter><INPUT =
+maxLength=3D255 size=3D16=20
+                        value=3DEmail name=3Demail></TD></TR>
+                    <TR>
+                      <TD class=3DLRMenuItemsCenter><INPUT type=3Dradio =
+CHECKED=20
+                        value=3Dyes name=3Dsubscribe>subscribe</TD></TR>
+                    <TR>
+                      <TD class=3DLRMenuItemsCenter><INPUT type=3Dradio =
+value=3Dno=20
+                        name=3Dsubscribe>un-subscribe</TD></TR>
+                    <TR>
+                      <TD class=3DLRMenuItemsCenter><INPUT =
+class=3DcustButton type=3Dsubmit value=3Dgo =
+name=3Dsave></TD></TR></TBODY></TABLE></FORM></TD></TR>
+              <TR>
+                <TD class=3DLMenuHeader>Top members<BR></TD></TR>
+              <TR>
+                <TD class=3DLMenuItems>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/memberdetail/member/=
+703.htm">roby=20
+                  Joehanes</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/memberdetail/member/=
+15.htm">Bjorn=20
+                  Jensen</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/memberdetail/member/=
+706.htm">Rollins=20
+                  Warden</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/memberdetail/member/=
+116.htm">Pradeep=20
+                  Mamgain</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/memberdetail/member/=
+14.htm">Martin=20
+                  Sutton</A><BR></TD></TR>
+              <TR>
+                <TD class=3DLMenuHeader>Site:</TD></TR>
+              <TR>
+                <TD class=3DLMenuItems>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/linktous.htm=
+">Link=20
+                  to developer.be</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/partners.htm=
+">Partners</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/mailafriend.=
+htm">Mail=20
+                  a friend</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/feedback.htm=
+">Feedback</A><BR>&nbsp;<A=20
+                  =
+href=3D"javascript:AddBookMark();">Bookmark</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/about.htm">A=
+bout</A></TD></TR>
+              <TR>
+                <TD class=3DLMenuHeader>Partner sites</TD></TR>
+              <TR>
+                <TD class=3DLMenuItems><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.programmersheaven.com/">Programmersheaven</A><BR>&nbsp=
+;<A=20
+                  =
+href=3D"http://www.xmlpitstop.com/">XMLPitstop</A><BR><BR></TD></TR>
+              <TR>
+                <TD><BR></TD></TR>
+              <TR>
+                <TD>
+              <TR>
+                <TD align=3Dmiddle><A =
+href=3D"http://www.cf-europe.org/"><IMG=20
+                  =
+src=3D"http://www.developer.be/images/CF_Europe_110x110.gif"=20
+                  =
+border=3D0></A></TD></TR></TD></TR></TBODY></TABLE></TD>
+          <TD vAlign=3Dtop>
+            <TABLE width=3D"100%">
+              <TBODY>
+              <TR>
+                <TD colSpan=3D8><BR>&nbsp;&nbsp;&nbsp;<A =
+class=3DdefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctions/show_fu=
+nctions.cfm"><STRONG>Back=20
+                  to the categories</STRONG></A><BR><BR>
+                  <HR>
+                </TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#basename"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;basename</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#chgrp"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;chgrp</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#chmod"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;chmod</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#chown"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;chown</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#clearstatcache"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;clearstatcache</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#copy"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;copy</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#delete"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;delete</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#dirname"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;dirname</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#disk_free_space"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;disk_free_space</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#diskfreespace"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;diskfreespace</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#disk_total_space"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;disk_total_space</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fclose"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fclose</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#feof"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;feof</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fflush"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fflush</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fgetc"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fgetc</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fgetcsv"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fgetcsv</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fgets"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fgets</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fgetss"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fgetss</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#file"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;file</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#file_exists"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;file_exists</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fileatime"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fileatime</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#filectime"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;filectime</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#filegroup"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;filegroup</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fileinode"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fileinode</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#filemtime"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;filemtime</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fileowner"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fileowner</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fileperms"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fileperms</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#filesize"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;filesize</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#filetype"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;filetype</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#flock"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;flock</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fopen"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fopen</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fpassthru"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fpassthru</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fputs"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fputs</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fread"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fread</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fscanf"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fscanf</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fseek"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fseek</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fstat"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fstat</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#ftell"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;ftell</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#ftruncate"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;ftruncate</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#fwrite"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;fwrite</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#set_file_buffer"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;set_file_buffer</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#is_dir"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;is_dir</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#is_executable"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;is_executable</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#is_file"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;is_file</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#is_link"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;is_link</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#is_readable"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;is_readable</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#is_writable"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;is_writable</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#is_writeable"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;is_writeable</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#is_uploaded_file"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;is_uploaded_file</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#link"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;link</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#linkinfo"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;linkinfo</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#mkdir"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;mkdir</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#move_uploaded_file"><IMG=
+=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;move_uploaded_file</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#parse_ini_file"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;parse_ini_file</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#pathinfo"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;pathinfo</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#pclose"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;pclose</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#popen"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;popen</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#readfile"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;readfile</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#readlink"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;readlink</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#rename"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;rename</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#rewind"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;rewind</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#rmdir"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;rmdir</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#stat"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;stat</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#lstat"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;lstat</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#realpath"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;realpath</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#symlink"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;symlink</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#tempnam"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;tempnam</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#tmpfile"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;tmpfile</A></TD></TR>
+              <TR>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#touch"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;touch</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#umask"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;umask</A></TD>
+                <TD class=3Ddefaultbody><A class=3DDefaultLinkBlack=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctionsList/Gro=
+upID/23/FunctionGroupName/Filesystemfunction.htm#unlink"><IMG=20
+                  src=3D"http://www.developer.be/images/folder.gif"=20
+                  border=3D0>&nbsp;unlink</A></TD></TR>
+              <TR>
+                <TD colSpan=3D8><BR>
+                  <HR>
+                </TD></TR></TBODY></TABLE>
+            <TABLE width=3D"100%" border=3D0>
+              <TBODY>
+              <TR>
+                <TD width=3D25>&nbsp;</TD>
+                <TD>
+                  <TABLE cellSpacing=3D4 cellPadding=3D0 width=3D"100%" =
+border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#basename></A><STRONG>basename</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>basename&nbsp;--&nbsp;=20
+                        Returns filename component of path </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.basename.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#chgrp></A><STRONG>chgrp</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>chgrp&nbsp;--&nbsp;Changes file =
+group </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.chgrp.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#chmod></A><STRONG>chmod</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>chmod&nbsp;--&nbsp;Changes file =
+mode </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.chmod.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#chown></A><STRONG>chown</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>chown&nbsp;--&nbsp;Changes file =
+owner </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.chown.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#clearstatcache></A><STRONG>clearstatcache</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>clearstatcache&nbsp;--&nbsp;Clears =
+file stat=20
+                        cache </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.clearstatcache.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        name=3D#copy></A><STRONG>copy</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>copy&nbsp;--&nbsp;Copies file =
+</TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.copy.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#delete></A><STRONG>delete</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>delete&nbsp;--&nbsp;A=20
+                        dummy manual entry </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.delete.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#dirname></A><STRONG>dirname</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>dirname&nbsp;--&nbsp;Returns =
+directory name=20
+                        component of path </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.dirname.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#disk_free_space></A><STRONG>disk_free_space</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        =
+vAlign=3Dtop>disk_free_space&nbsp;--&nbsp;Returns=20
+                        available space in directory </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.disk-free-space.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#diskfreespace></A><STRONG>diskfreespace</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>diskfreespace&nbsp;--&nbsp;Alias of =
+
+                        disk_free_space() </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.diskfreespace.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#disk_total_space></A><STRONG>disk_total_space</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        =
+vAlign=3Dtop>disk_total_space&nbsp;--&nbsp;Returns the=20
+                        total size of a directory </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.disk-total-space.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fclose></A><STRONG>fclose</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>fclose&nbsp;--&nbsp;Closes an open =
+file=20
+                        pointer </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fclose.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        name=3D#feof></A><STRONG>feof</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>feof&nbsp;--&nbsp;Tests=20
+                        for end-of-file on a file pointer </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.feof.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fflush></A><STRONG>fflush</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>fflush&nbsp;--&nbsp;Flushes the =
+output to a=20
+                        file </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fflush.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fgetc></A><STRONG>fgetc</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>fgetc&nbsp;--&nbsp;Gets=20
+                        character from file pointer </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fgetc.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fgetcsv></A><STRONG>fgetcsv</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>fgetcsv&nbsp;--&nbsp;=20
+                        Gets line from file pointer and parse for CSV =
+fields=20
+                    </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fgetcsv.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fgets></A><STRONG>fgets</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>fgets&nbsp;--&nbsp;Gets=20
+                        line from file pointer </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fgets.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fgetss></A><STRONG>fgetss</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>fgetss&nbsp;--&nbsp;=20
+                        Gets line from file pointer and strip HTML tags =
+</TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fgetss.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        name=3D#file></A><STRONG>file</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>file&nbsp;--&nbsp;Reads=20
+                        entire file into an array </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.file.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#file_exists></A><STRONG>file_exists</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>file_exists&nbsp;--&nbsp;Checks =
+whether a=20
+                        file exists </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.file-exists.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fileatime></A><STRONG>fileatime</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>fileatime&nbsp;--&nbsp;Gets last =
+access time=20
+                        of file </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fileatime.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#filectime></A><STRONG>filectime</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>filectime&nbsp;--&nbsp;Gets inode =
+change time=20
+                        of file </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.filectime.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#filegroup></A><STRONG>filegroup</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>filegroup&nbsp;--&nbsp;Gets file =
+group </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.filegroup.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fileinode></A><STRONG>fileinode</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>fileinode&nbsp;--&nbsp;Gets file =
+inode </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fileinode.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#filemtime></A><STRONG>filemtime</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>filemtime&nbsp;--&nbsp;Gets file =
+modification=20
+                        time </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.filemtime.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fileowner></A><STRONG>fileowner</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>fileowner&nbsp;--&nbsp;Gets file =
+owner </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fileowner.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fileperms></A><STRONG>fileperms</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>fileperms&nbsp;--&nbsp;Gets file =
+permissions=20
+                      </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fileperms.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#filesize></A><STRONG>filesize</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>filesize&nbsp;--&nbsp;Gets file =
+size </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.filesize.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#filetype></A><STRONG>filetype</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>filetype&nbsp;--&nbsp;Gets file =
+type </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.filetype.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#flock></A><STRONG>flock</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>flock&nbsp;--&nbsp;Portable =
+advisory file=20
+                        locking </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.flock.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fopen></A><STRONG>fopen</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>fopen&nbsp;--&nbsp;Opens file or =
+URL </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fopen.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fpassthru></A><STRONG>fpassthru</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>fpassthru&nbsp;--&nbsp;=20
+                        Output all remaining data on a file pointer =
+</TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fpassthru.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fputs></A><STRONG>fputs</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>fputs&nbsp;--&nbsp;Writes to a file =
+pointer=20
+                      </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fputs.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fread></A><STRONG>fread</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>fread&nbsp;--&nbsp;Binary-safe file =
+read=20
+                    </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fread.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fscanf></A><STRONG>fscanf</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>fscanf&nbsp;--&nbsp;Parses input =
+from a file=20
+                        according to a format </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fscanf.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fseek></A><STRONG>fseek</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>fseek&nbsp;--&nbsp;Seeks on a file =
+pointer=20
+                    </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fseek.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fstat></A><STRONG>fstat</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>fstat&nbsp;--&nbsp;=20
+                        Gets information about a file using an open file =
+pointer=20
+                      </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fstat.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#ftell></A><STRONG>ftell</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>ftell&nbsp;--&nbsp;Tells file =
+pointer=20
+                        read/write position </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.ftell.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#ftruncate></A><STRONG>ftruncate</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>ftruncate&nbsp;--&nbsp;=20
+                        Truncates a file to a given length. </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.ftruncate.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#fwrite></A><STRONG>fwrite</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>fwrite&nbsp;--&nbsp;Binary-safe =
+file write=20
+                    </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.fwrite.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#set_file_buffer></A><STRONG>set_file_buffer</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>set_file_buffer&nbsp;--&nbsp; Sets =
+file=20
+                        buffering on the given file pointer </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.set-file-buffer.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#is_dir></A><STRONG>is_dir</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>is_dir&nbsp;--&nbsp;Tells whether =
+the=20
+                        filename is a directory </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.is-dir.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#is_executable></A><STRONG>is_executable</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>is_executable&nbsp;--&nbsp;Tells =
+whether the=20
+                        filename is executable </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.is-executable.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#is_file></A><STRONG>is_file</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>is_file&nbsp;--&nbsp;=20
+                        Tells whether the filename is a regular file =
+</TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.is-file.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#is_link></A><STRONG>is_link</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>is_link&nbsp;--&nbsp;=20
+                        Tells whether the filename is a symbolic link =
+</TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.is-link.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#is_readable></A><STRONG>is_readable</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>is_readable&nbsp;--&nbsp; Tells =
+whether the=20
+                        filename is readable </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.is-readable.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#is_writable></A><STRONG>is_writable</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>is_writable&nbsp;--&nbsp;Tells =
+whether the=20
+                        filename is writable </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.is-writable.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#is_writeable></A><STRONG>is_writeable</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>is_writeable&nbsp;--&nbsp;Tells =
+whether the=20
+                        filename is writable </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.is-writeable.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#is_uploaded_file></A><STRONG>is_uploaded_file</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>is_uploaded_file&nbsp;--&nbsp;Tells =
+whether=20
+                        the file was uploaded via HTTP POST. </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.is-uploaded-file.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        name=3D#link></A><STRONG>link</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>link&nbsp;--&nbsp;Create a hard =
+link </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.link.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#linkinfo></A><STRONG>linkinfo</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>linkinfo&nbsp;--&nbsp;Gets =
+information about=20
+                        a link </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.linkinfo.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#mkdir></A><STRONG>mkdir</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>mkdir&nbsp;--&nbsp;Makes directory =
+</TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.mkdir.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#move_uploaded_file></A><STRONG>move_uploaded_file</STRONG></TD></=
+TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        =
+vAlign=3Dtop>move_uploaded_file&nbsp;--&nbsp;Moves an=20
+                        uploaded file to a new location. </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.move-uploaded-file.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#parse_ini_file></A><STRONG>parse_ini_file</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>parse_ini_file&nbsp;--&nbsp;Parse a =
+
+                        configuration file </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.parse-ini-file.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#pathinfo></A><STRONG>pathinfo</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>pathinfo&nbsp;--&nbsp;Returns =
+information=20
+                        about a file path </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.pathinfo.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#pclose></A><STRONG>pclose</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>pclose&nbsp;--&nbsp;Closes process =
+file=20
+                        pointer </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.pclose.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#popen></A><STRONG>popen</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>popen&nbsp;--&nbsp;Opens process =
+file pointer=20
+                      </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.popen.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#readfile></A><STRONG>readfile</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>readfile&nbsp;--&nbsp;Outputs a =
+file </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.readfile.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#readlink></A><STRONG>readlink</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>readlink&nbsp;--&nbsp;Returns the =
+target of a=20
+                        symbolic link </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.readlink.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#rename></A><STRONG>rename</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>rename&nbsp;--&nbsp;Renames a file =
+</TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.rename.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#rewind></A><STRONG>rewind</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>rewind&nbsp;--&nbsp;Rewind the =
+position of a=20
+                        file pointer </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.rewind.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#rmdir></A><STRONG>rmdir</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>rmdir&nbsp;--&nbsp;Removes =
+directory </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.rmdir.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        name=3D#stat></A><STRONG>stat</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>stat&nbsp;--&nbsp;Gives=20
+                        information about a file </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.stat.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#lstat></A><STRONG>lstat</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>lstat&nbsp;--&nbsp;=20
+                        Gives information about a file or symbolic link =
+</TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.lstat.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#realpath></A><STRONG>realpath</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>realpath&nbsp;--&nbsp;Returns =
+canonicalized=20
+                        absolute pathname </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.realpath.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#symlink></A><STRONG>symlink</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>symlink&nbsp;--&nbsp;Creates a =
+symbolic link=20
+                      </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.symlink.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#tempnam></A><STRONG>tempnam</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>tempnam&nbsp;--&nbsp;Create file =
+with unique=20
+                        file name </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.tempnam.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#tmpfile></A><STRONG>tmpfile</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>tmpfile&nbsp;--&nbsp;Creates a =
+temporary file=20
+                      </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.tmpfile.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#touch></A><STRONG>touch</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody =
+vAlign=3Dtop>touch&nbsp;--&nbsp;Sets=20
+                        access and modification time of file </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.touch.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#umask></A><STRONG>umask</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>umask&nbsp;--&nbsp;Changes the =
+current umask=20
+                      </TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.umask.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD colSpan=3D2>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=3Dforumtextwhite vAlign=3Dtop =
+colSpan=3D2><A=20
+                        =
+name=3D#unlink></A><STRONG>unlink</STRONG></TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody=20
+                        vAlign=3Dtop>unlink&nbsp;--&nbsp;Deletes a =
+file</TD></TR>
+                    <TR>
+                      <TD vAlign=3Dtop>=B7</TD>
+                      <TD class=3Ddefaultbody vAlign=3Dtop><A=20
+                        class=3DdefaultLinkBlack=20
+                        =
+href=3D"http://www.php.net/manual/en/function.unlink.php"=20
+                        target=3D_blank>Detail here</A></TD></TR>
+                    <TR>
+                      <TD=20
+            =
+colSpan=3D2>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></T=
+D>
+          <TD vAlign=3Dtop width=3D80>
+            <TABLE cellSpacing=3D0 cellPadding=3D2 width=3D148 =
+align=3Dright border=3D0>
+              <TBODY>
+              <TR>
+                <TD class=3DRMenuHeader>Members</TD></TR>
+              <TR>
+                <TD>
+                  <FORM action=3D/index.cfm/fuseaction/act_login.htm =
+method=3Dpost>
+                  <TABLE cellSpacing=3D0 cellPadding=3D2 width=3D148 =
+border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DRMenuItemsCenter><A class=3Dregister=20
+                        =
+href=3D"http://www.developer.be/index.cfm/fuseaction/register.htm">Regist=
+er=20
+                        here </A><BR><BR></TD></TR>
+                    <TR>
+                      <TD class=3DRMenuItemsCenter>&nbsp;<INPUT=20
+                        =
+onclick=3D"javascript:if(document.forms[1].email.value =3D=3D =
+'Email')document.forms[1].email.value =3D'';"=20
+                        maxLength=3D255 size=3D15 value=3DEmail =
+name=3Demail></TD></TR>
+                    <TR>
+                      <TD class=3DRMenuItemsCenter>&nbsp;<INPUT =
+type=3Dpassword=20
+                        maxLength=3D255 size=3D15 =
+name=3Dpassword></TD></TR>
+                    <TR>
+                      <TD class=3DRMenuItemsCenter><INPUT =
+type=3Dcheckbox=20
+                        value=3Dyes name=3Drememberme>remember me =
+?<BR><INPUT type=3Dsubmit value=3Dlogin =
+name=3Dsave></TD></TR></TBODY></TABLE></FORM></TD></TR>
+              <TR>
+                <TD class=3DRMenuHeader>Featured book</TD></TR>
+              <TR>
+                <TD class=3DRMenuItemsCenter><A=20
+                  =
+href=3D"http://www.developer.be/index.cfm?fuseaction=3Dawsbooks&amp;itmde=
+=3D1861007612&amp;input_search_type=3DAsinSearch&amp;name=3DBeginning =
+VB.NET, Second Edition"><IMG=20
+                  alt=3D"Beginning VB.NET, Second Edition" hspace=3D0=20
+                  =
+src=3D"http://www.developer.be/images/amazon/1861007612.01.MZZZZZZZ.jpg" =
+
+                  border=3D0></A><BR><A=20
+                  =
+href=3D"http://www.developer.be/index.cfm?fuseaction=3Dawsbooks&amp;itmde=
+=3D1861007612&amp;input_search_type=3DAsinSearch&amp;name=3DBeginning =
+VB.NET, Second Edition">Beginning=20
+                  VB.NET, Second Edition</A></TD></TR>
+              <TR>
+                <TD><BR></TD></TR>
+              <TR>
+                <TD class=3DRMenuHeader>Reading</TD></TR>
+              <TR>
+                <TD class=3DRMenuItems>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/cert_advisor=
+ies.htm">Cert=20
+                  Advisories.</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/allaire_art/=
+topic/1.htm">MM=20
+                  CF Articles.</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/allaire_art/=
+topic/2.htm">MM=20
+                  JRUN Articles.</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/cftalk.htm">=
+New=20
+                  on Cftalk</A><BR></TD></TR>
+              <TR>
+                <TD>
+                  <FORM action=3D/index.cfm/fuseaction/act_Search.htm =
+method=3Dpost>
+                  <TABLE cellSpacing=3D0 cellPadding=3D2 width=3D148 =
+border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DRMenuHeader>Search</TD></TR>
+                    <TR>
+                      <TD class=3DRMenuItems><INPUT maxLength=3D50 =
+size=3D15=20
+                        name=3Dsearchstring><INPUT type=3Dimage=20
+                        =
+src=3D"http://www.developer.be/images/glass.gif"></TD></TR></TBODY></TABL=
+E></FORM></TD></TR>
+              <TR>
+                <TD class=3DRMenuHeader>References</TD></TR>
+              <TR>
+                <TD class=3DRMenuItems>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/cffunctions/show_fun=
+ctions.cfm">Coldfusion=20
+                  functions</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/cftags.htm">Coldfusi=
+on=20
+                  tags</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/phpfunctions/show_fu=
+nctions.cfm">PHP=20
+                  functions</A><BR></TD></TR>
+              <TR>
+                <TD class=3DRMenuHeader>Varia</TD></TR>
+              <TR>
+                <TD class=3DRMenuItems>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/browsers.htm=
+">Browsers=20
+                  List</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/index.cfm/fuseaction/TopCoders.htm">Top=20
+                  Members</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/colorpicker.=
+htm">Color=20
+                  picker</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/htmlentities=
+.htm">HTML=20
+                  entities</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/glossary/index.cfm/fuseaction/dsp_glossar=
+y_alpha/alpha/A.htm">Glossary</A><BR>&nbsp;<A=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/httpErrorCod=
+es.htm">HTTP=20
+                  status codes</A> </TD></TR>
+              <TR>
+                <TD class=3DRMenuHeader>Contact</TD></TR>
+              <TR>
+                <TD class=3DRMenuItems><BR>&nbsp;<A=20
+                  =
+href=3D"mailto:info@developer.be">info@developer.be</A><BR><BR></TD></TR>=
+</TBODY></TABLE></TD></TR></TBODY></TABLE><BR><BR><BR>
+      <TABLE cellSpacing=3D0 cellPadding=3D1 width=3D"100%" =
+bgColor=3D#000000=20
+        border=3D0><TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" =
+bgColor=3D#23517b=20
+            border=3D0>
+              <TBODY>
+              <TR>
+                <TD class=3Dsubhead align=3Dmiddle>Copyright =A9 =
+2001-2003=20
+                  www.developer.be All rights reserved, unless otherwise =
+
+                  noted.<BR>Please read the <A class=3Dwhiteonblue=20
+                  =
+href=3D"http://www.developer.be/publish/index.cfm/fuseaction/termsofuse/t=
+ermsofuse.html">Terms=20
+                  Of Use</A> for more=20
+        =
+information.</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR=
+></TBODY></TABLE></BODY></HTML>
+
+------=_NextPart_000_0036_01C33442.54773410
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://www.developer.be/images/logo.jpg
+
+/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEP
+ERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4e
+Hh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAuAIkDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDyWiii
+vrj5UKKKKACipXjxHG65O4HPsRWLNrlvHI6CJ3CnGQRg1FSrCl8bsaU6cqnwq5q1Tm1SxilaN5sM
+pwcKTVQ61HLbzGKN1kVMqD/P8K50kkkk5JrixGOULez1OzD4Jzv7TQ7G0vba6Zlgk3FRkjBH86sV
+xunzyW93HJGCTnBUfxD0rqze2YJBuYQR1BcVphcUqsfe0ZnicK6Uvd1RPRTIZoplLRSK4BwSpzT6
+7E09UcjTW4UUUUCCiiigAooooAKK7bT/AIaa9f8AgUeL7e70s2pt57pbVrgi5aKFtsrhSuCFOM89
+x3IFZXgTwnfeMNTurGxvdPsvslo95PPfSmOJIkKhiWAOMbgeeMZqPaQs3fY09nK6Vtznqz7zV7a2
+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
+
+------=_NextPart_000_0036_01C33442.54773410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.developer.be/images/CF_Europe_110x110.gif
+
+R0lGODlhbgBuAOZRABAwUAAwYAAwcABAcBBAYBBAcCBAUDBAQDBAUDBQUCBAYFBQMGBQMHBgMEBQ
+QEBQUFBQQFBgQGBgQABAgABAkABQkBBQgBBQkABQoABQsBBgkABgsCBQgCBgkDBggDBgkCBgoCBw
+oCBwsAJnwxFwxiBwwEBwkFBwkEBwoC+CwVCAoGCAoGCQsHCQoHCQsECAwEqS1GCQwGCg0HCg0IBg
+IIBgMIBwMJBwILBwEKBwILCAEMCAENCAAOCQAP+ZAICgsICgwICg0JCwwICz4ZCw4KCwwKDA0LDA
+0KDA4LDQ4L/Z/8DQ4MDg/9Dg4NDg/+D//////wAwYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYCH/
+C05FVFNDQVBFMi4wAwEAAAAh+QQFlgB/ACwAAAAAbgBuAAAH/oABgoOEhYaHiImKi4yNjoYmLpKT
+lJWWl5iZmpucnZ4uJoKfo6SlpqeToi6PrK2ur6+SqrC0tbausgG5t7y9vrm7vsLDrcCrxMjJisbK
+zc6zusfP08PM1Ne91tjbtNrc36ze4NQXA+HHwePOFyIWxejS6soWIiXu79DyyAP1JRqx8PQRGwCi
+hMF/APMJvCWgoMESIboFXHhLw0ODESUqpOiK3cUSImyJ4+iI3keQ5mqNJKloQr+TKVVOZLmI4MmH
+90TOpHmo4U2c2XbyHCTA4s+Dv4QO9XjUn7CVJE02hVhNKUepUzM+tSpwQIipD0MSg6rOJliDImJu
+3Siv6NmL/mrXRqN44e3FnGO5cnNpN2zcpGzHCfja1yCIv7fIgjNa2KncdAKx9hVxAfBclvwao0WM
+S68+h4Xxygzc9eXbdpYhR26c9nG8haDthhBQlTS4zIVBIFO8zYJmhHltb4ttV7RrfbgnGz+uzjdr
+zqlfD9c8+xlvZcn76p52HZnzxsCte05GvDi27r6y2xUxYRt6Xt8Lt3Y/3lf5t1rpC++l3u72b+/B
+El9h4XET4CtMhSbPgbAkCBZ7+jBIS11nzaeOhLS4dRYItI2DYS0aTkWZh/UlM1iF0DXzoS0DaNfh
+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
+AqOUhwgEAAA7
+
+------=_NextPart_000_0036_01C33442.54773410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.developer.be/images/folder.gif
+
+R0lGODlhEAANAKIAAOfea5SUY+/v72NjY////87OY/fvewAAACH5BAAAAAAALAAAAAAQAA0AAAMx
+SFRcoTAuQIGTsOnNXhFgKIbB8BloqqLlub6t8MKmPKvxjdd6mveGFmdYGhiPyOQgAQA7
+
+------=_NextPart_000_0036_01C33442.54773410
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://www.developer.be/images/amazon/1861007612.01.MZZZZZZZ.jpg
+
+/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEP
+ERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4e
+Hh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCACMAG8DASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC8n7I+
+u3KC5HxAtlEo3hfsL8Z5x/rKX/hkDX/+ih23/gA//wAcr6107/kHW3/XFf5CuC8d/GPwR4P1pNH1
+LUVkvdwWSKJ0zHn13MMn2HNAHg//AAyDr3/RQrb/AMAJP/jlH/DIGv8A/RQ7X/wAf/45X1B4S8W+
+HfFds1xoGq298iBTIIz8yZ6AjseDW5QB8h/8Mga//wBFDtv/AAAf/wCOUf8ADIOv/wDRQ7b/AMAJ
+P/jleifHn9pfw58K/GEPhf8AsS61u/WNZb0QziJbZWGVGSDuYrhscDBHPNclq37avge31GGHT/C+
+t3towQyzs8cRTIBYBDndtyR1GSPTmgDI/wCGQde/6KFbf+AEn/xyj/hkHX/+ihWv/gBJ/wDHK+r9
+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
+quS5bcqt919v1P/Z
+
+------=_NextPart_000_0036_01C33442.54773410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.developer.be/images/glass.gif
+
+R0lGODlhHgAeAPcAAOL0/0hw4rHS/8XM1k1mp/r8/xokIanM/+L2/8rJwsfGwis5W/78/fv7/Of2
+//Pz8+D3/6GktOfn5lRoteHh4AUFFKXH/wsLDhwcHwAAAf///v39/f7///7//uj1/5WWlvL//+37
+/+X2//v8/P3//fz8/e3///79/v///fz8/OT2//b29vr///v6+8bY+Qwypfj6/u/5/+bn6I2kv9/u
+/xstZt70/42UqI6guP3++RASEOf7+3iBla3T/1hppd/e2AEKBen+//3+//r6+6SlpHaa6b7c/8ne
+4Pb///j8/SUtVuL1/O7r5vj6+JCTtUBbiKatseX1/77j/Pr9+en4//38/bvU32ZqbXp/f3Z6d1x4
+rLjQ/77K2P3++/T09ZWUkfP9/+D3+UNTjll4s56en3h5gHl/g8fHvfz8+md0nOT5/5KkxeT4++Xz
+9+v5/tvu/63Q/NjX1uX3/5rD/9zc2FaC7u7t7vH5/wUECB86jPf39yEnXvz///39/szi/6amovj+
+/Vd31vn+/mB9v/v+/RcrXFJpnuf//8jJyNLl9Ft9wHqf3HmOx/7+/5KVq/v79v/+/jY3RpO6//Py
+7kRds7Kytbuzs7u8uPn5+/r5+Pr5+vv7+f39/E5dk5a3/yEiKZ6//6Wlnef1/0hjnFFgjkREQk9O
+Vf/+/1NVUWZ3g/z9/SowZUlqypKhzO/w8IGDgouLjqqpw9bW2T1DW3N1eEJPckVQfFBZdrnT+3d5
+hfDy8fLx8DtfvZKbx+Pj4OHj45KXl2dxb/H//7/AwvP+/aqopkNThDJHglxxve7t65iZmzFg2dTV
+3z5gvH18gc3O1MPCu4OIqfz9+Y2atxogMmt9n3+XttPT1HyUvJekwW5rZ3+DieH09/f6/un6/1p3
+oHyEmjhCTT9AQmxviNjW0qCfneT3/1xtqkds0PX8/53A/7rW/+f4/1mB8uzv77LO/+///3aHrvP7
+/+nm6RY1j3eEsPf29yIuSOv9/7a8z/z+//Dv7/z9//z9/v7+/v///yH5BAEAAP8ALAAAAAAeAB4A
+QAj+AP8JHEiwoMGDCBMqNLhiHCNsbUKISndHhRwbB1gp2LCwY8EsBipUcObFo8mTTqaxwefBjwA4
+oAI8gXZyYAtYC+jl6dVqTapwEwY1qVnTXTAdpYgqXapUT6xzgeoUQWbszNI034KYc9NBiLwo6yyo
+05KsJoVazY5xQQIAgQg1Jqzd2qWBqT0KEh6k+DdP2wU8ZZgi1PTKwIUMkQQrXsy48dIB9QhUi/BL
+cYR4Lvy82+JpWQ1LSvORSnTIQT9iS4xY6LGIR01fYhQdASECzL9+baXMCaCgwUkohijhAOEBAgQE
+DkLgIhCH6J9CL0ZZgSfMRJgZC8ygkKY0wQ1bq5QpzLoSKhsvVLIc/5OBQWQu34x1Afv01xSzxf7+
+2cFiAMgF9dd8QAZCAQEAOw==
+
+------=_NextPart_000_0036_01C33442.54773410
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.developer.be/developerbemain.css
+
+A {
+	COLOR: #003366; FONT-FAMILY: Verdana,Helvetica,Arial,sans-serif; =
+TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+A.amazonlink {
+	BORDER-RIGHT: 2px; BORDER-TOP: 2px; FONT-WEIGHT: bold; FONT-SIZE: 11pt; =
+BORDER-LEFT: 2px; COLOR: #403361; BORDER-BOTTOM: #000000 thick double; =
+BACKGROUND-COLOR: #ffcc55
+}
+A.black {
+	COLOR: #000000
+}
+A.bold {
+	FONT-WEIGHT: bold
+}
+A.darkblue {
+	COLOR: #003366
+}
+A.forumheader {
+	FONT-WEIGHT: bold; COLOR: #000000
+}
+A.forumlink {
+	COLOR: #000000
+}
+A.forummsg {
+	COLOR: #ffffff
+}
+A.leftnav {
+	COLOR: #ffffff
+}
+A.membersarea {
+	FONT-WEIGHT: bold; FONT-SIZE: 70%; COLOR: #ffffff
+}
+A.register {
+	FONT-WEIGHT: bold; COLOR: #336699
+}
+A.rightnav {
+	COLOR: #336699
+}
+A.smallbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 79%
+}
+A.white {
+	COLOR: #ffffff
+}
+A.whiteonblue {
+	COLOR: #ffffff
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: #23517b; MARGIN: 0px; SCROLLBAR-HIGHLIGHT-COLOR: =
+#c0c0c0; CURSOR: default; SCROLLBAR-SHADOW-COLOR: #323232; =
+SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #ffffff; =
+SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000; =
+SCROLLBAR-BASE-COLOR: #789789; BACKGROUND-COLOR: #ffffff
+}
+HR {
+	BORDER-RIGHT: #003366 0px solid; BORDER-TOP: #003366 0px solid; =
+MARGIN-TOP: 0em; MARGIN-BOTTOM: 0em; BORDER-LEFT: #003366 0px solid; =
+COLOR: #003366; BORDER-BOTTOM: #003366 0px solid; HEIGHT: 1px
+}
+SELECT {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 100%; PADDING-BOTTOM: =
+2px; COLOR: #000000; PADDING-TOP: 2px; FONT-FAMILY: =
+Verdana,Arial,Helvetica,sans-serif
+}
+INPUT {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 100%; PADDING-BOTTOM: =
+2px; COLOR: #000000; PADDING-TOP: 2px; FONT-FAMILY: =
+Verdana,Arial,Helvetica,sans-serif
+}
+SPAN.small {
+	FONT-SIZE: 80%; FONT-FAMILY: Verdana,Helvetica,Arial,sans-serif
+}
+TD {
+	FONT-SIZE: 70%; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif
+}
+TD.bold {
+	FONT-WEIGHT: bold
+}
+TD.forum {
+	BACKGROUND-COLOR: #000000
+}
+TD.forumheader {
+	FONT-SIZE: 70%; COLOR: #ffffff; FONT-FAMILY: =
+Verdana,Arial,Helvetica,sans-serif; BACKGROUND-COLOR: #21517b
+}
+TD.lmenuheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 70%; BACKGROUND-IMAGE: =
+url(/images/headerbgleft.gif); COLOR: #ffffff; BACKGROUND-REPEAT: =
+repeat; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; =
+BACKGROUND-COLOR: #21517b; TEXT-ALIGN: center
+}
+TD.lmenuitems {
+	FONT-SIZE: 70%; BACKGROUND-IMAGE: url(/images/headerbglineleft.gif); =
+COLOR: #000000; BACKGROUND-REPEAT: repeat; FONT-FAMILY: =
+Verdana,Arial,Helvetica,sans-serif; BACKGROUND-COLOR: #e7efff
+}
+TD.lrmenuitemscenter {
+	FONT-SIZE: 70%; BACKGROUND-IMAGE: url(/images/headerbglineleft.gif); =
+COLOR: #000000; BACKGROUND-REPEAT: repeat; FONT-FAMILY: =
+Verdana,Arial,Helvetica,sans-serif; BACKGROUND-COLOR: #21517b; =
+TEXT-ALIGN: center
+}
+TD.rmenuheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 70%; BACKGROUND-IMAGE: =
+url(/images/headerbgright.gif); COLOR: #ffffff; BACKGROUND-REPEAT: =
+repeat; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; =
+BACKGROUND-COLOR: #21517b; TEXT-ALIGN: center
+}
+TD.rmenuitems {
+	FONT-SIZE: 70%; BACKGROUND-IMAGE: url(/images/headerlineright.gif); =
+COLOR: #000000; BACKGROUND-REPEAT: repeat; FONT-FAMILY: =
+Verdana,Arial,Helvetica,sans-serif; BACKGROUND-COLOR: #e7efff
+}
+TD.rmenuitemscenter {
+	FONT-SIZE: 70%; BACKGROUND-IMAGE: url(/images/headerlineright.gif); =
+COLOR: #000000; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; =
+BACKGROUND-COLOR: #e7efff; TEXT-ALIGN: center
+}
+TD.subhead {
+	FONT: 12px Verdana,Geneva,Arial,Helvetica,sans-serif; COLOR: #ffffff
+}
+TEXTAREA {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; =
+BORDER-LEFT: #7f9db9 1px solid; BORDER-BOTTOM: #7f9db9 1px solid; =
+BACKGROUND-COLOR: #f5f5f5
+}
+TR.membersarea {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; CURSOR: auto; COLOR: #000000; =
+FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; BACKGROUND-COLOR: =
+#ececec
+}
+.forumthreadheaders {
+	FONT-WEIGHT: bold; COLOR: #ffffff; BACKGROUND-COLOR: #003366
+}
+TD.tmpstyle {
+	FONT-WEIGHT: bold; FONT-SIZE: 85%; COLOR: #666699; FONT-FAMILY: =
+Verdana,Helvetica,Arial,sans-serif; TEXT-DECORATION: none
+}
+
+------=_NextPart_000_0036_01C33442.54773410
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: 7bit
+Content-Location: http://www.developer.be/custom.js
+
+function atOnMouseOverLight(o) {
+	o.style.backgroundColor = 'F7F6F4';
+	o.style.cursor = 'hand';
+}
+
+function atOnMouseOutLight(o) {
+	o.style.backgroundColor = 'EFEFEF';
+}
+
+function atOnMouseOverDark(o) {
+	o.style.backgroundColor='BCD6E3';
+	o.style.cursor='hand';
+}
+
+function atOnMouseOutDark(o) {
+	o.style.backgroundColor='FFFFFF';
+}
+function AddBookMark()
+{
+	var url="http://www.developer.be";
+	var title="Developer.be";
+	window.external.AddFavorite(url,title);
+}
+
+------=_NextPart_000_0036_01C33442.54773410--

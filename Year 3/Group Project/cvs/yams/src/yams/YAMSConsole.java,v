@@ -1,0 +1,1197 @@
+head	1.43;
+access;
+symbols
+	yams-final-19-12-03:1.43
+	yams-release2-17-12-03:1.43
+	yams-release-17-12-03:1.43;
+locks; strict;
+comment	@# @;
+
+
+1.43
+date	2003.12.17.15.05.25;	author ajb101;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2003.12.16.18.40.33;	author ajb101;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2003.12.16.02.07.24;	author ajb101;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2003.12.15.04.05.45;	author ajb101;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2003.12.14.22.30.20;	author ajb101;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2003.12.14.03.54.20;	author jkm01;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2003.12.12.04.23.31;	author ajb101;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2003.12.11.20.20.19;	author ajb101;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2003.12.11.19.06.22;	author bmc01;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2003.12.10.17.21.12;	author ajb101;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2003.12.10.17.15.04;	author jkm01;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2003.12.10.15.14.26;	author ajb101;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2003.12.10.14.38.17;	author jkm01;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2003.12.09.21.00.21;	author ajb101;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2003.12.08.19.44.13;	author ajb101;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2003.12.04.19.13.01;	author ajb101;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2003.12.04.18.45.51;	author ajb101;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2003.12.04.18.29.57;	author ajb101;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2003.12.04.18.28.25;	author ajb101;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2003.12.04.18.27.23;	author ajb101;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2003.12.04.16.37.13;	author ajb101;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2003.12.04.15.40.38;	author jkm01;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2003.12.04.02.48.12;	author ajb101;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2003.12.03.17.54.45;	author qq01;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2003.12.03.17.46.43;	author ajb101;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2003.12.03.16.59.34;	author ajb101;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2003.12.03.13.40.14;	author sw00;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.12.03.01.59.34;	author ajb101;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.12.02.21.01.53;	author ajb101;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.12.02.15.02.56;	author ajb101;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.12.02.14.51.06;	author ajb101;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.02.14.21.19;	author jkm01;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.02.12.32.44;	author qq01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.01.11.49.22;	author ajb101;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.11.30.23.17.35;	author ajb101;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.11.30.17.17.38;	author ajb101;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.29.14.20.19;	author ajb101;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.26.15.02.41;	author ajb101;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.26.13.04.00;	author sw00;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.21.16.26.56;	author ajb101;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.21.15.12.25;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.16.23.35.40;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.16.17.52.33;	author ajb101;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.43
+log
+@*** empty log message ***
+@
+text
+@
+// import java packages
+
+package yams;
+
+import java.io.*;
+import java.util.*;
+
+import yams.parser.*;
+import yams.assembler.*;
+import yams.processor.*;
+
+
+/**
+ * @@author ajb101
+ *
+ */
+public class YAMSConsole extends YAMSController {
+
+
+	boolean statsMode = false;
+	boolean verboseMode = false;
+	
+	PrintWriter statsOutputFile = null;
+	
+	public YAMSConsole() {
+		// constructor
+	}
+	
+	public void start(String args[]) {
+
+		// variable declarations (include default options)
+		LinkedList files = new LinkedList();
+		String instructionFile = "Instruction_file.xml";
+
+		// parse command line arguments
+		for (int i = 1; i < args.length; i++) {
+
+			if (args[i].equalsIgnoreCase("-s")
+					|| args[i].equalsIgnoreCase("--stats")) {
+				statsMode = true;
+			
+			} else if (args[i].equalsIgnoreCase("-o")
+					|| args[i].equalsIgnoreCase("--output")) {
+				// next argument should be the name of an output file
+				if (i == args.length - 1) {
+					// no more options
+					System.err.println("-o/--output needs an argument");
+					continue;
+				} else {
+					i++;
+					// create an output stream
+					try {
+						statsOutputFile = new PrintWriter(new BufferedWriter(new FileWriter(args[i])));
+					}
+					catch (IOException e) {
+						// error opening output file
+						System.err.println("Error opening stats output file: " + args[i]);
+						statsOutputFile = null;
+					}
+				}
+
+			} else if (args[i].equalsIgnoreCase("-v")
+					|| args[i].equalsIgnoreCase("--verbose")) {
+				verboseMode = true;
+
+			} else if (args[i].equalsIgnoreCase("-if")) {
+				// next argument is an input file containing a list of files
+				if (i == args.length - 1) {
+					// but no more options
+					System.err.println("-if needs an argument");
+					continue;
+				} else {
+					i++;
+					// open file and read filenames
+					FileReader file;
+					BufferedReader input = null;
+					// get the path of the file we were given
+					File fileName = new File(args[i]);
+					String path = (fileName.getPath()).substring(0, fileName.getPath().length() - fileName.getName().length());
+					try {
+						file = new FileReader(args[i]);
+						input = new BufferedReader(file);
+					} catch (FileNotFoundException e) {
+						System.err.println("Unable to find input file: " + args[i]);
+						continue;
+					}
+					try {
+						String line;
+						while ((line = input.readLine()) != null) {
+							files.add(new File(path + line));
+						}
+					} catch (IOException e) {
+						// some other error
+						e.printStackTrace();
+					}
+
+				}
+
+			} else {
+				// assume it's a file
+				files.add(new File(args[i]));
+
+			}
+
+		}
+		
+		
+		// if in stats mode, create processor with a blank out stream
+		Processor processor = null;
+		Assembler asm;
+		if (verboseMode == true) {
+			processor = new Processor(this, System.in, System.out, System.out);
+			asm = new Assembler(instructionFile, processor.memoryManager, processor.statisticsManager, new PrintStream(new NullStream()));
+		} else {
+			processor = new Processor(this, System.in, System.out, new PrintStream(new NullStream()));
+			asm = new Assembler(instructionFile, processor.memoryManager, processor.statisticsManager, new PrintStream(new NullStream()));
+		}
+		
+
+		// loop through our list of files
+		Iterator it = files.iterator();
+		File currentFile;
+		
+		while( it.hasNext() ) {
+			currentFile = (File)it.next();
+			System.out.println("");
+			System.out.println("=====STARTING NEW FILE=====");
+			System.out.println("Input File: " + currentFile.getName());
+			
+			// reset processor (memoryManager, statistics manager, register manager and cycle manager)
+			processor.reset();
+			
+			// reset assembler
+			asm.resetAssembler();
+
+			StringBuffer programCode;
+			Parser parser = new Parser();
+			LineList instrList = null;
+
+			try {
+				// load code into string buffer
+				programCode = loadCode(currentFile);
+				// parse it
+				instrList = parser.parse(programCode);
+//				System.out.println(instrList.toString());
+				// assemble it
+				asm.assembleCode(instrList);
+			}
+			catch (FileNotFoundException e) {
+				System.out.println("File Not Found, skipping");
+				continue;
+			}
+			catch (LexerException e) {
+				System.out.println("Lexer Error:" + e.toString());
+				continue;
+			}
+			catch (ParseException e) {
+				System.out.println("Parser Error: LINE("+e.getLine()+ ") - " +e.toString());
+				continue;
+			}
+			catch (AssemblerException e) {
+				int line = e.getLine();
+				Instruction i = e.getInstruction();				
+//				System.out.println("Assembler Error: LINE("+e.getLine()+") INSTURCTION("+e.getInstruction().toString()+" - " + e.toString());
+				System.out.println("Assembler Error: LINE("+e.getLine() + e.toString());
+				continue;
+
+			}
+			
+			try {
+				// start processor
+				processor.cycleManager.jump(0x400000);
+				processor.cycleManager.start();
+			}
+			catch (Exception e) {
+				System.out.println("Processor error");
+				continue;
+			}
+			
+			
+			// if in stats mode, display stats
+			if (statsMode == true) {
+				processor.statisticsManager.printStats(instrList);
+			}
+			
+			// if an output file was specified, output some stats to it
+			if (statsOutputFile != null) {
+				statsOutputFile.println(currentFile.getName() + "," + processor.statisticsManager.getCycles());
+			}
+			
+		}
+		
+		if (statsOutputFile != null) {
+			statsOutputFile.println("Total Cycles," + processor.statisticsManager.getTotalCycles());
+			statsOutputFile.flush();
+		}
+
+	}
+	
+	public void regChanged(String regID) {}
+	public void memoryChanged(int address) {}
+	public void updateStatistics() {}
+
+	class NullStream extends OutputStream {
+		NullStream() {}
+		public void write(int b) {}
+	} 
+
+}
+@
+
+
+1.42
+log
+@*** empty log message ***
+@
+text
+@d114 1
+a114 1
+			asm = new Assembler(instructionFile, processor.memoryManager, processor.statisticsManager, System.out);
+@
+
+
+1.41
+log
+@*** empty log message ***
+@
+text
+@d189 1
+a189 1
+				statsOutputFile.println(processor.statisticsManager.getCycles());
+d195 1
+a195 1
+			statsOutputFile.println(processor.statisticsManager.getTotalCycles());
+@
+
+
+1.40
+log
+@more updates and bug fixes, including a weird one with the processorHandler thread
+@
+text
+@a53 2
+						// TODO: fix this output file nonsense
+						//statsOutputFile = new PrintWriter(new FileWriter(args[i]));
+@
+
+
+1.39
+log
+@lovely beautiful code
+@
+text
+@d24 2
+d42 22
+d189 10
+@
+
+
+1.38
+log
+@*** empty log message ***
+@
+text
+@d56 3
+d69 1
+a69 1
+							files.add(new File(line));
+@
+
+
+1.37
+log
+@LOADS of gui changes
+@
+text
+@d134 1
+a134 1
+				System.out.println("Parser Error:" + e.toString());
+d138 4
+a141 1
+				System.out.println("Assembler Error:" + e.toString());
+d143 1
+@
+
+
+1.36
+log
+@*** empty log message ***
+@
+text
+@d164 1
+@
+
+
+1.35
+log
+@*** empty log message ***
+@
+text
+@a0 1
+// this is a change to the file
+@
+
+
+1.34
+log
+@*** empty log message ***
+@
+text
+@d156 1
+a156 1
+				processor.statisticsManager.printStats();
+@
+
+
+1.33
+log
+@*** empty log message ***
+@
+text
+@d87 1
+d90 1
+d93 1
+a94 3
+		
+		// create assembler
+		Assembler asm = new Assembler(instructionFile, processor.memoryManager, processor.statisticsManager, System.out);
+@
+
+
+1.32
+log
+@*** empty log message ***
+@
+text
+@d122 1
+a122 1
+				System.out.println(instrList.toString());
+@
+
+
+1.31
+log
+@*** empty log message ***
+@
+text
+@a86 1
+		// TODO: use a different print stream for verbose
+d94 1
+a94 2
+		// TODO: Instruction_file.xml
+//		Assembler asm = new Assembler(instructionFile, processor.memoryManager, processor.statisticsManager);
+a101 1
+			Assembler asm = new Assembler(instructionFile, processor.memoryManager, processor.statisticsManager, System.out );
+d107 2
+a108 5
+			// reset memory manager and register manager
+			processor.memoryManager.reset();
+			processor.registerManager.reset();
+			// reset statistics manager
+			processor.statisticsManager.reset();
+d110 2
+a111 1
+			// TODO: reset assembler
+a112 1
+			
+@
+
+
+1.30
+log
+@updated data panel
+@
+text
+@d104 1
+a104 1
+			Assembler asm = new Assembler(instructionFile, processor.memoryManager, processor.statisticsManager, new PrintStream(new NullStream()) );
+@
+
+
+1.29
+log
+@*** empty log message ***
+@
+text
+@d170 1
+d173 2
+a174 8
+		
+		NullStream() {
+		}
+		
+		public void write(int b) {
+			// do nuffink
+		}
+		
+@
+
+
+1.28
+log
+@*** empty log message ***
+@
+text
+@a85 1
+		// TODO: passing empty print stream to processor??
+d113 1
+a113 2
+			
+			// TODO: reset statistics manager
+@
+
+
+1.27
+log
+@*** empty log message ***
+@
+text
+@d116 1
+@
+
+
+1.26
+log
+@*** empty log message ***
+@
+text
+@d105 1
+a105 1
+			Assembler asm = new Assembler(instructionFile, processor.memoryManager, processor.statisticsManager);
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@d147 1
+a147 1
+				break;
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d38 2
+a39 6
+			if (args[i].equalsIgnoreCase("-m1")
+				|| args[i].equalsIgnoreCase("--mode1")) {
+				statsMode = false;
+
+			} else if (args[i].equalsIgnoreCase("-m2")
+					|| args[i].equalsIgnoreCase("--mode2")) {
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@d20 4
+d33 1
+a33 2
+		boolean statsMode = false;
+		String instruction_File = "Instruction_file.xml";
+d42 1
+a42 2
+			} else if (
+				args[i].equalsIgnoreCase("-m2")
+d46 4
+a90 1
+		PrintStream empty;
+d93 1
+a93 1
+		if (statsMode == true) {
+d96 1
+a96 1
+			processor = new Processor(this, System.in, System.out, System.out);
+d101 1
+a101 1
+//		Assembler asm = new Assembler("Instruction_file.xml", processor.memoryManager, processor.statisticsManager);
+d109 1
+a109 1
+			Assembler asm = new Assembler("Instruction_file.xml", processor.memoryManager, processor.statisticsManager);
+d151 1
+a151 1
+				continue;
+d158 1
+a158 65
+/*
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+*/
+			processor.statisticsManager.printStats();
+
+
+						}
+d175 11
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d232 2
+@
+
+
+1.21
+log
+@lots of gooey updates
+@
+text
+@d96 1
+a96 1
+		Assembler asm = new Assembler("Instruction_file.xml", processor.memoryManager, processor.statisticsManager);
+d104 1
+d117 1
+a117 1
+			
+d152 55
+a206 2
+//				processor.cycleManager.start();
+
+d209 1
+d213 3
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@a103 1
+			asm = new Assembler("Instruction_file.xml", processor.memoryManager, processor.statisticsManager);
+d109 1
+a109 1
+			// reset memory manager
+d114 3
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@d149 2
+a150 2
+				processor.cycleManager.start();
+/*
+d156 1
+a156 1
+*/
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d104 1
+d112 1
+@
+
+
+1.17
+log
+@added verbose printstream
+@
+text
+@d147 2
+d154 2
+a155 1
+			}
+@
+
+
+1.16
+log
+@lots of new GUI stuff :)
+@
+text
+@d87 1
+d89 1
+a89 1
+			processor = new Processor(this, System.in, System.out);
+d91 1
+a91 1
+			processor = new Processor(this, System.in, System.out);
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d95 1
+a95 1
+		Assembler asm = new Assembler("Instruction_file.xml", processor.memoryManager);
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d95 1
+a95 2
+		Assembler asm = new Assembler("Instruction_file.xml", processor.memoryManager, processor.statisticsManager);
+
+d108 3
+a110 1
+			// TODO: reset memory manager
+d143 13
+a155 7
+			// start processor
+			processor.cycleManager.jump(0x400000);
+			processor.cycleManager.advance();
+			processor.cycleManager.advance();
+			processor.cycleManager.advance();
+			processor.cycleManager.advance();
+			processor.cycleManager.advance();
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d113 1
+a113 1
+			Parser parser = new Parser(null);
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d96 1
+@
+
+
+1.11
+log
+@Changed a method in parser. Just to make it look more OO.
+@
+text
+@d95 1
+a95 1
+		Assembler asm = new Assembler("Instruction_file.xml", processor.memoryManager);
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d119 1
+a119 1
+				instrList = parser.parseProgram(programCode);
+@
+
+
+1.9
+log
+@random updates
+@
+text
+@d120 1
+@
+
+
+1.8
+log
+@passed controller to each frame instead of processor, and updated the console version
+@
+text
+@d49 1
+a49 1
+					System.exit(1);
+d60 1
+a60 1
+						System.exit(1);
+@
+
+
+1.7
+log
+@changes made to aid testing
+@
+text
+@d6 3
+a8 6
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.LinkedList;
+d81 16
+d99 19
+a117 13
+		for (int i = 0; i < files.size(); i++) {
+			// check file exists
+			if (((File)files.get(i)).exists()) {
+				// read the file into a StringBuffer
+				StringBuffer programCode;
+				try {
+					programCode = loadCode( (File)files.get(i) );
+				}
+				catch (FileNotFoundException e) {
+					System.out.println("Input File Not Found: " + ((File)files.get(i)).getName());
+					break;
+				}
+				
+d119 1
+a119 19
+				Parser parser = new Parser(null);
+				LineList instrList = null;
+				try {
+					instrList = parser.parseProgram(programCode);
+					System.out.println(instrList.toString());
+				}
+				catch(ParseException e) {
+					System.out.println("ParseException:" + e.toString());
+					System.exit(0);
+				}
+				catch(LexerException e) {
+					System.out.println("LexerException:" + e.toString());
+					System.exit(0);
+				}
+				
+				
+				// create processor
+				Processor processor = new Processor(this, System.in, System.out);
+				
+d121 31
+a151 20
+				Assembler asm = new Assembler("Instruction_file.xml", processor.memoryManager);
+				
+				try {
+					asm.assembleCode(instrList);
+				}
+				catch (AssemblerException e) {
+					System.out.println("Problem assembling:" + e.getMessage());
+				}
+				
+				processor.cycleManager.jump(0x400000);
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				processor.cycleManager.advance();
+				
+				
+			} else {
+				// file does not exist
+				System.err.println("File not found: " + ((File)files.get(i)).getName());
+d153 1
+a156 3
+
+
+
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d130 6
+a135 1
+				processor.cycleManager.start();
+@
+
+
+1.5
+log
+@added input & output stream support
+@
+text
+@d36 1
+a36 1
+		for (int i = 0; i < args.length; i++) {
+d141 1
+a141 25
+	/**
+	 * @@param fileName
+	 * @@return returns a StringBuffer containing the text from the file
+	 */
+	private static StringBuffer loadCode(File fileName) throws FileNotFoundException
+	{
+		FileReader inFile;
+		BufferedReader inBuf;
+		inFile = new FileReader(fileName);
+		inBuf = new BufferedReader(inFile);
+		StringBuffer outBuf = new StringBuffer();
+		
+		// load inBuf into outBuf
+		try {
+			String line;
+			while ( (line = inBuf.readLine()) != null )
+				outBuf.append(line + "\n");
+		}
+		catch (IOException e) {
+			// some other error
+			e.printStackTrace();
+		}
+		
+		return outBuf;
+	}
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d117 1
+a117 1
+				Processor processor = new Processor(this);
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d122 6
+a127 1
+				asm.assembleCode(instrList);
+@
+
+
+1.2
+log
+@modified controller structure
+@
+text
+@d90 8
+a97 1
+				StringBuffer programCode = loadCode( (File)files.get(i) );
+d100 1
+a100 1
+				MIPSParser parser = new MIPSParser();
+d125 1
+a125 1
+				processor.cycleManager.advance();
+a126 4
+				// asm.assemble(ast);
+				// if mode 1 - start processor normally
+				// if mode 2 - start processor in silent mode and output stats
+
+a136 8
+	 * @@param args arguments provided from the command line - see program documentation
+	 */
+	public static void main(String args[]) {
+		YAMSConsole yams = new YAMSConsole();
+		yams.start(args);
+	}
+	
+	/**
+d140 1
+a140 1
+	private static StringBuffer loadCode(File fileName)
+d142 18
+a159 1
+		return new StringBuffer("ADD $a1,$a2,$a3\n");
+@
+
+
+1.1
+log
+@fixed type in MIPSParser, and changing layout of controller classes
+@
+text
+@d22 1
+a22 1
+public class YAMSConsole {
+d147 1
+a147 1
+		return new StringBuffer("ADD $a1,$a2,$a3");
+@
+

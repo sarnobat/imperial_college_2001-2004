@@ -1,0 +1,11 @@
+
+31/10/03 - Wrote the classes for LineList etc.
+
+6/11/03 - Started a DOM for registers
+
+13/11/03 - Finisehd DOM; Worked on XSLT with Joe.
+
+
+18/11/03
+--------
+Started a GUI

@@ -1,0 +1,11 @@
+GENERAL::true#?#true#?#true#?#true#?#true#?#true#?#
+TYPE::SoapOpera::false#?#false#?#false#?#true#?#white#?#SoapOpera#?#ellipse
+TYPE::Person::true#?#false#?#false#?#true#?#white#?#Person#?#ellipse
+RELATION::SoapOpera::true#?#false#?#false#?#true#?#none#?#black#?#SoapOpera
+RELATION::S@0::true#?#false#?#false#?#true#?#none#?#black#?#S@0
+RELATION::y@2::true#?#false#?#false#?#true#?#none#?#black#?#y@2
+RELATION::SoapOpera$cast::true#?#false#?#true#?#true#?#none#?#black#?#cast
+RELATION::Person::true#?#false#?#false#?#true#?#none#?#black#?#Person
+RELATION::x@1::true#?#false#?#false#?#true#?#none#?#black#?#x@1
+RELATION::SoapOpera$loves::true#?#false#?#false#?#true#?#none#?#black#?#loves
+RELATION::SoapOpera$lead::true#?#false#?#true#?#true#?#none#?#black#?#lead

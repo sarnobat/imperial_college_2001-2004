@@ -1,0 +1,72 @@
+# Recursive string print/length
+# Richard C. Bilson
+# rcbilson
+# 27 September 2001
+
+# Print a string and calculate its length
+# PRE:  0($30) is the address of the string to print
+#       the string ends with character 10 (new-line)
+# POST: the string is printed, including the new-line
+#       $1 contains the number of characters printed
+#       all other registers are preserved
+
+# Registers
+#   $1 -- comparison (and the return value)
+#   $2 -- the address of the string
+#   $4 -- the ascii value of the character to output
+
+# Pseudo Code:
+# 
+# int print_recursive( Address array )
+# {
+#       byte ch;                          // Current character
+#	
+#       ch = load_from( position );
+#       print( ch );
+#
+#       if( ch == 10 ) {
+#               return 1;
+#       } else {
+#               return 1 + print_recursive( array  + 1);
+#       }
+# }
+
+
+.globl printStr
+
+printStr:
+# preservation of registers
+        addi $30, $30, -12      # create room on the stack
+        sw   $2, 0($30)         # save $2
+        sw   $4, 4($30)         # save $4
+        sw   $31, 8($30)        # save $31
+	
+        addi $1, $0, 10         # initialize the comparison value
+
+# read in and print the next character from the array
+        lw   $2, 12($30)        # initialize $2 with the array start
+
+        lb   $4, 0($2)          # load the character
+        trap 101                # print the character
+        beq $4, $1, base        # if we just did 10 (the newline), 
+                                # it's the recursive base case
+	
+# continue in the recursive case
+        addi $2, $2, 1          # pass start + 1 to the recursive call
+        addi $30, $30, -4       # set up the parameter
+        sw   $2, 0($30)         # to be passed on the stack
+        jal  printStr           # make the recursive call
+        addi $30, $30, 4        # free the parameter
+
+        addi $1, $1, 1          # add 1 to the result
+        j    done
+	
+# base case: return 1
+base:   addi $1, $0, 1          # base case: return 1
+	
+# restore the registers from the stack and return
+done:   lw   $2, 0($30)         # restore $2
+        lw   $4, 4($30)         # retore $4
+        lw   $31, 8($30)        # restore $31
+        addi $30, $30, 12       # free up memory from stack
+        jr   $31                # return to caller

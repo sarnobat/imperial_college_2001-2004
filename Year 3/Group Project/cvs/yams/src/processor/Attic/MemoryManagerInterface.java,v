@@ -1,0 +1,97 @@
+head	1.4;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.4
+date	2003.11.10.10.57.52;	author qq01;	state dead;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.08.02.58.10;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.04.23.06.49;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.04.15.29.46;	author bmc01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@Updated package structure.
+@
+text
+@package processor;
+
+public interface MemoryManagerInterface {
+
+//	public MemoryManagerInterface(
+//		int reserved_segment_size,
+//		int text_segment_size,
+//		int maximum_memory_size);
+
+	public void setLocation(int addr, int val);
+
+	public int getLocation(int addr);
+
+}
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.2
+log
+@adding assembler calls to YAMS.java
+@
+text
+@d5 4
+a8 3
+	public MemoryManager(int reserved_segment_size,
+			     int text_segment_size,
+			     int maximum_memory_size);
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d1 13
+a13 13
+package ic.doc.yams;
+
+public interface MemoryManagerInterface {
+
+	public MemoryManager(int reserved_segment_size,
+			     int text_segment_size,
+			     int maximum_memory_size);
+
+	public void setLocation(int addr, int val);
+
+	public int getLocation(int addr);
+
+}
+@
+

@@ -1,0 +1,66 @@
+#!/bin/sh
+cd /usr/solution
+echo ""
+echo "\section{include}"
+cd include
+for I in *.h
+do
+echo ""
+echo "\subsection{"
+echo $I
+echo "}"
+echo "\begin{verbatim}"
+diff $I  /usr/student/include/$I
+echo "\end{verbatim}"
+done
+echo ""
+echo "\section{include/minix}"
+cd minix
+for I in *
+do
+echo ""
+echo "\subsection{"
+echo $I
+echo "}"
+echo "\begin{verbatim}"
+diff $I  /usr/student/include/minix/$I
+echo "\end{verbatim}"
+done
+
+cd /usr/solution/src/lib
+
+echo ""
+echo "\section{src/lib}"
+for I in posix syscall
+do
+echo ""
+echo "\subsection{"
+echo $I
+echo "/Makefile}"
+echo "\begin{verbatim}"
+diff $I/Makefile /usr/student/src/lib/$I/Makefile
+echo "\end{verbatim}"
+done
+
+cd /usr/solution/src
+
+for I in fs kernel mm tools
+do
+cd $I
+echo ""
+echo "\section{"
+echo $I
+echo "}"
+for J in *
+do
+echo ""
+echo "\subsection{"
+echo $J
+echo "}"
+echo "\begin{verbatim}"
+diff $J /usr/student/src/$I/$J
+echo "\end{verbatim}"
+done
+cd ..
+done
+

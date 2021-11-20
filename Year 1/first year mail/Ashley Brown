@@ -1,0 +1,372 @@
+From MAILER-DAEMON Mon Jun 10 18:17:44 2002
+Date: 10 Jun 2002 18:17:44 +0100
+From: Mail System Internal Data <MAILER-DAEMON@mallard.doc.ic.ac.uk>
+Subject: DON'T DELETE THIS MESSAGE -- FOLDER INTERNAL DATA
+Message-ID: <1023729464@mallard.doc.ic.ac.uk>
+X-IMAP: 1004348408 0000000007
+Status: RO
+
+This text is part of the internal format of your mail folder, and is not
+a real message.  It is created automatically by the mail system software.
+If deleted, important folder data will be lost, and it will be re-created
+with the data reset to initial values.
+
+From ashley.brown@ic.ac.uk Sun Oct 28 19:14:03 2001
+Return-path: <ashley.brown@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Sun, 28 Oct 2001 19:14:03 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15xvNd-0000Qf-00; Sun, 28 Oct 2001 19:13:57 +0000
+Received: from dialup04.doc.ic.ac.uk ([146.169.43.67] helo=ashley)
+	by duck.doc.ic.ac.uk with smtp (Exim 3.16 #7)
+	id 15xvNc-0005M7-00
+	for cs-first-year@doc.ic.ac.uk; Sun, 28 Oct 2001 19:13:57 +0000
+Received: FROM ic.ac.uk BY ashley ; Sun, 28 Oct 2001 19:13:12 +00:00 
+From: "Ashley Brown" <ashley.brown@ic.ac.uk>
+To: <cs-first-year@doc.ic.ac.uk>
+Subject: Mathematical Methods and Graphics
+Date: Sun, 28 Oct 2001 19:13:12 -0000
+Message-ID: <NCBBILEEELOAODIMHOJMAECCCIAA.ashley.brown@ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 1
+
+I've taken the Word format MM&G notes and placed them in my DoC webspace:
+
+http://www.doc.ic.ac.uk/~awb01/mmg/
+
+If I get time to strip the crap out of Word-generated HTML files I'll upload
+them in HTML format. No promises on that though. The W2K machines all have
+Word 2000 on them. I know using Windows will be painful for some of you, but
+that's life :).
+
+
+Ashley Brown
+CS1
+@IC: ashley.brown@ic.ac.uk
+@Home: ashley@ashleybrown.co.uk
+http://www.ashleybrown.co.uk
+
+
+From ashley.brown@ic.ac.uk Sun Oct 28 19:54:19 2001
+Return-path: <ashley.brown@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Sun, 28 Oct 2001 19:54:19 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15xw0e-0000fx-00; Sun, 28 Oct 2001 19:54:16 +0000
+Received: from dialup01.doc.ic.ac.uk ([146.169.43.64] helo=ashley)
+	by duck.doc.ic.ac.uk with smtp (Exim 3.16 #7)
+	id 15xw0d-0005pI-00
+	for cs-first-year@doc.ic.ac.uk; Sun, 28 Oct 2001 19:54:15 +0000
+Received: FROM ic.ac.uk BY ashley ; Sun, 28 Oct 2001 19:52:42 +00:00 
+From: "Ashley Brown" <ashley.brown@ic.ac.uk>
+To: <cs-first-year@doc.ic.ac.uk>
+Subject: MSN Community Link...
+Date: Sun, 28 Oct 2001 19:52:41 -0000
+Message-ID: <NCBBILEEELOAODIMHOJMEECDCIAA.ashley.brown@ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 2
+
+BTW - the lecture notes I've posted are the ones that Charlee created and
+placed on the MSN community as mentioned on Friday - I've taken them
+straight from there.
+
+If you've already given your details to Bill's evil empire the community
+page is here - http://communities.msn.co.uk/Imperial1styrComputingStudents/.
+I'll try and mirror the files for MM&G in my DoC webspace though.
+
+FYI - Charlee is ncb01@doc.ic.ac.uk. They're her notes not mine :)
+
+Ashley Brown
+CS1
+@IC: ashley.brown@ic.ac.uk
+@Home: ashley@ashleybrown.co.uk
+http://www.ashleybrown.co.uk
+
+
+From awb01@doc.ic.ac.uk Tue Oct 30 14:28:58 2001
+Return-path: <awb01@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 30 Oct 2001 14:28:58 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15yZso-0002t0-00; Tue, 30 Oct 2001 14:28:50 +0000
+Received: from voxel37.doc.ic.ac.uk ([146.169.49.187] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15yZsm-0007fi-00; Tue, 30 Oct 2001 14:28:48 +0000
+Message-ID: <3BDEB922.7010906@doc.ic.ac.uk>
+Date: Tue, 30 Oct 2001 14:28:50 +0000
+From: Ashley Brown <awb01@doc.ic.ac.uk>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.5) Gecko/20011011
+X-Accept-Language: en-us
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+CC: Stefano.Luzzatto@ic.ac.uk
+Subject: Mathematical Methods & Graphics
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 3
+
+Hi all,
+
+I've finally got Word to produce HTML pages for the notes which will 
+show in NS4, Moz and IE. There's still lots of Word-generated junk in 
+the files but they display correctly now. They're available on DoC 
+webspace at:
+
+http://www.doc.ic.ac.uk/~awb01/mmg/html/
+
+Ashley
+
+
+
+
+From awb01@doc.ic.ac.uk Fri Nov 02 08:48:32 2001
+Return-path: <awb01@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 02 Nov 2001 08:48:32 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15zZzx-0001Cw-00; Fri, 02 Nov 2001 08:48:21 +0000
+Received: from voxel19.doc.ic.ac.uk ([146.169.49.169] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15zZzw-0001x2-00
+	for cs-first-year@doc.ic.ac.uk; Fri, 02 Nov 2001 08:48:20 +0000
+Message-ID: <3BE25DD4.4040905@doc.ic.ac.uk>
+Date: Fri, 02 Nov 2001 08:48:20 +0000
+From: Ashley Brown <awb01@doc.ic.ac.uk>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.5) Gecko/20011011
+X-Accept-Language: en-us
+MIME-Version: 1.0
+To: cs-first-year <cs-first-year@doc.ic.ac.uk>
+Subject: Public HTML Pages
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 4
+
+To the people who've asked how to place pages in DoC webspace, CSG have a page about it:
+
+http://www.doc.ic.ac.uk/csg/www/homepage.html
+
+Ash
+
+ 
+
+
+
+From ashley.brown@ic.ac.uk Sat Jan 19 15:14:26 2002
+Return-path: <ashley.brown@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Sat, 19 Jan 2002 15:14:26 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16RxCC-0001Ks-00; Sat, 19 Jan 2002 15:14:16 +0000
+Received: from [146.169.27.24] (helo=mailhost.expupils.co.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16RxCB-00079Y-00
+	for cs-first-year@doc.ic.ac.uk; Sat, 19 Jan 2002 15:14:15 +0000
+Received: from ashley ([127.0.0.1]) by mailhost.expupils.co.uk with Microsoft SMTPSVC(5.0.2195.3779);
+	 Sat, 19 Jan 2002 15:14:12 +0000
+From: "Ashley Brown" <ashley.brown@ic.ac.uk>
+To: <cs-first-year@doc.ic.ac.uk>
+Subject: Java
+Date: Sat, 19 Jan 2002 15:14:12 -0000
+Message-ID: <NCBBILEEELOAODIMHOJMEENECJAA.ashley.brown@ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+Importance: Normal
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4522.1200
+X-OriginalArrivalTime: 19 Jan 2002 15:14:12.0382 (UTC) FILETIME=[F36543E0:01C1A0FB]
+Status: RO
+X-Status: DA
+X-Keywords:               
+X-UID: 5
+
+Hi all,
+
+I'm quite bored so I've knocked up a page on roughly how the Java
+class/object and package system works. It might be no help whatsoever but
+it's there if anyone's interested:
+http://www.doc.ic.ac.uk/~awb01/java/objects.php.
+
+The Sun website has an area called "Your First Cup of Java" which might help
+with setting up the Java Development Kit (Java SDK) and compiling Java
+programs:
+http://java.sun.com/docs/books/tutorial/getStarted/cupojava/index.html.
+
+None of this seems to have been explained in the lectures or the notes -
+although I'm sure it'll be explained in a lab workshop or the first lab
+sheet, that's not much good right now.
+
+If you're not in the slightest bit interested or you know all this already,
+sorry for the email :). If it is helpful I might add some other stuff, like
+some more advice on dealing with compiler errors (they did actually make
+sense in v1.0 [1996] but seem to get more obscure with each new version...).
+
+Ashley
+
+
+From ashley.brown@ic.ac.uk Tue Jan 29 20:20:39 2002
+Return-path: <ashley.brown@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 29 Jan 2002 20:20:39 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16VekB-0002M8-00
+	for ss401@doc.ic.ac.uk; Tue, 29 Jan 2002 20:20:39 +0000
+Received: from host213-1-109-84.btinternet.com ([213.1.109.84] helo=mailhost.expupils.co.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16Vek8-0005S3-00
+	for ss401@doc.ic.ac.uk; Tue, 29 Jan 2002 20:20:39 +0000
+Received: from ashley ([127.0.0.1]) by mailhost.expupils.co.uk with Microsoft SMTPSVC(5.0.2195.3779);
+	 Tue, 29 Jan 2002 20:20:25 +0000
+From: "Ashley Brown" <ashley.brown@ic.ac.uk>
+To: <ss401@doc.ic.ac.uk>
+Subject: .Edit
+Date: Tue, 29 Jan 2002 20:20:24 -0000
+Message-ID: <NCBBILEEELOAODIMHOJMKEAJCKAA.ashley.brown@ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+Importance: Normal
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4522.1200
+X-OriginalArrivalTime: 29 Jan 2002 20:20:25.0102 (UTC) FILETIME=[62855AE0:01C1A902]
+Status: RO
+X-Status: DA
+X-Keywords:               
+X-UID: 6
+
+Sridhar,
+
+I noticed that you've downloaded and registered .Edit for Java highlighting.
+As you've probably noticed, it won't install correctly on the lab machines
+as a result of the security settings.
+
+A few people in CS1 are already using it in the labs and I can make a copy
+available to you if you're still interested.
+
+Regards,
+Ashley
+www.ashleybrown.co.uk
+www.doc.ic.ac.uk/~awb01/
+
+
+From ashley.brown@ic.ac.uk Thu Jan 31 00:19:43 2002
+Return-path: <ashley.brown@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 31 Jan 2002 00:19:43 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16W4x5-0004aD-00
+	for ss401@doc.ic.ac.uk; Thu, 31 Jan 2002 00:19:43 +0000
+Received: from [62.7.67.5] (helo=mailhost.expupils.co.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16W4x5-00051Q-00
+	for ss401@doc.ic.ac.uk; Thu, 31 Jan 2002 00:19:43 +0000
+Received: from ashley ([127.0.0.1]) by mailhost.expupils.co.uk with Microsoft SMTPSVC(5.0.2195.3779);
+	 Thu, 31 Jan 2002 00:19:41 +0000
+From: "Ashley Brown" <ashley.brown@ic.ac.uk>
+To: "Sridhar Sarnobat" <ss401@doc.ic.ac.uk>
+Subject: RE: .Edit
+Date: Thu, 31 Jan 2002 00:19:40 -0000
+Message-ID: <NCBBILEEELOAODIMHOJMKEBACKAA.ashley.brown@ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4522.1200
+Importance: Normal
+In-reply-to: <001501c1a973$dfe82230$6932a992@win.doc.ic.ac.uk>
+X-OriginalArrivalTime: 31 Jan 2002 00:19:41.0098 (UTC) FILETIME=[F9C640A0:01C1A9EC]
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 7
+
+www.doc.ic.ac.uk/~awb01/deic.exe.
+
+It'll default to install to H:\DotEdit\.
+
+You'll need to create the shortcuts to H:\DotEdit\dotedit.exe yourself.
+
+Ashley
+
+-----Original Message-----
+From: Sridhar Sarnobat [mailto:ss401@doc.ic.ac.uk]
+Sent: 30 January 2002 09:53
+To: Ashley Brown
+Subject: Re: .Edit
+
+
+I certainly would be interested. Please could you make it available for me?
+Many thanks,
+Sridhar
+
+
+----- Original Message -----
+From: "Ashley Brown" <ashley.brown@ic.ac.uk>
+To: <ss401@doc.ic.ac.uk>
+Sent: Tuesday, January 29, 2002 8:20 PM
+Subject: .Edit
+
+
+> Sridhar,
+>
+> I noticed that you've downloaded and registered .Edit for Java
+highlighting.
+> As you've probably noticed, it won't install correctly on the lab machines
+> as a result of the security settings.
+>
+> A few people in CS1 are already using it in the labs and I can make a copy
+> available to you if you're still interested.
+>
+> Regards,
+> Ashley
+> www.ashleybrown.co.uk
+> www.doc.ic.ac.uk/~awb01/
+>
+>
+
+
+

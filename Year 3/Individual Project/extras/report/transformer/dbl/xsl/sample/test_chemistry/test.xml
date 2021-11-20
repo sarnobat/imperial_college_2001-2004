@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE book SYSTEM "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+	<!ENTITY alpha "<?latex $\alpha$?>">
+	<!ENTITY beta "<?latex $\beta$?>">
+	<!ENTITY times "<?latex $\?>times<?latex $?>">
+	<!ENTITY text "The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog! ">
+	<!ENTITY LaTeX "<?latex \?>LaTeX<?latex {}?>">
+	<!ENTITY DB2LaTeX "DB2<?latex \?>LaTeX<?latex {}?>">
+]>
+<book id="chemistry" lang="en_AU" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<bookinfo>
+		<title>Physical Chemistry</title>
+		<author><surname>Devenish</surname><firstname>James</firstname></author>
+		<copyright>
+			<year>2004</year>
+			<holder>James Devenish. All rights reserved.</holder>
+		</copyright>
+	</bookinfo>
+	<preface>
+		<title>Preface</title>
+		<para>
+
+			This is an example of a &LaTeX; document that is being converted to
+			DocBook. It demonstrates how you might customise &DB2LaTeX; to
+			retain the style of custom &LaTeX; class. It does <emphasis>not</emphasis>
+			demonstrate how to convert your mathematics to MathML.
+
+		</para>
+	</preface>
+	<toc/>
+	<preface>
+		<title>Introduction</title>
+		<para>
+		This is another introductory preface.
+		</para>
+	</preface>
+	<chapter id="c:matter">
+		<title>States of Matter</title>
+		<highlights>
+			<para>
+				This Chapter covers the kinetics of intermollecular
+				interactions with a particular focus on gases.
+			</para>
+		</highlights>
+		<section id="s:ktgases">
+			<title>Kinetic Theory of Gases</title>
+			<remark>July 17</remark>
+			<para>
+				<informalequation>
+					<alt>Boyle's Law, Charles' Law and Avogadro's Law</alt>
+					<mediaobject>
+						<textobject>
+							<phrase role="latex"><![CDATA[
+\[
+	\begin{rcases}
+		$Boyle's Law$ | V\propto P^{-1}\\
+		$Charles' Law$ | V\propto T\\
+		$Avogadro's Law$ | V\propto n
+	\end{rcases}
+	\text{Explicable using the Kinetic Theory of Gases}
+\]
+							]]></phrase>
+						</textobject>
+					</mediaobject>
+				</informalequation>
+				The above can be combined by the Ideal Gas Equation:
+				<informalequation>
+					<alt>PV=nRT</alt>
+					<mediaobject>
+						<textobject>
+							<phrase role="latex"><![CDATA[%
+\begin{eqnarray}
+	PV | = | nRT
+\end{eqnarray}
+							]]></phrase>
+						</textobject>
+					</mediaobject>
+				</informalequation>
+			</para>
+			<section>
+			<title>The Postulates</title>
+			<itemizedlist>
+				<listitem><simpara>
+				Large distances between very small particles,
+				</simpara></listitem>
+				<listitem><simpara>
+				Continual, rapid, random, straight-line motion,
+				</simpara></listitem>
+				<listitem><simpara>
+				Negligible inter-particle forces,
+				</simpara></listitem>
+				<listitem><simpara>
+				Elastic collisions,
+				</simpara></listitem>
+				<listitem><simpara>
+				<inlineequation>
+					<inlinemediaobject>
+						<textobject>
+							<phrase role="latex">
+								<![CDATA[$E_{\overline K}\propto T$]]>
+							</phrase>
+						</textobject>
+					</inlinemediaobject>
+				</inlineequation>
+				(is the same for all gases).
+				</simpara></listitem>
+			</itemizedlist>
+			<example>
+				<title>Ideal Gas Law</title>
+					<informalequation>
+						<mediaobject>
+							<textobject>
+								<phrase role="latex"><![CDATA[%
+\begin{tabular}{lll}
+\begin{minipage}{4cm}
+\begin{eqnarray}
+	m|=|0.100\text{ g}\nonumber\\
+	|=|0.0001\text{ kg}\nonumber\\
+	P|=|0.0928\text{ mm}\nonumber\\
+	V|=|250\text{ mL}\nonumber\\
+	|=|0.25\text{ L}\nonumber\\
+	T|=|23\degr\nonumber\\
+	|=|300\text{ K}\nonumber\\
+	R|=|0.0821\text{ L mm mol}^{-1}\text{ K}^{-1}\nonumber
+\end{eqnarray}
+\end{minipage}
+|\ |
+\begin{minipage}{4cm}
+\begin{eqnarray}
+	PV|=|nRT\nonumber\\
+	n|=|\frac{PV}{RT}\nonumber\\
+	|\approx|106\text{ g/mol}\nonumber
+\end{eqnarray}
+\end{minipage}
+\end{tabular}
+								]]></phrase>
+						</textobject>
+					</mediaobject>
+				</informalequation>
+			</example>
+			</section>
+			<section>
+			<title>Non-ideal Gases</title>
+			<remark>July 18</remark>
+			<para>
+				Gases become non-ideal at:
+				<itemizedlist>
+				<listitem><simpara>
+					High pressures, or
+				</simpara></listitem>
+				<listitem><simpara>
+					Low temperatures.
+				</simpara></listitem>
+				</itemizedlist>
+			</para>
+			<para>
+				This is because in these circumstances, molecules occupy appreciable
+				volume and intermolecular forces are no longer negligible. The latter
+				means that collisions are weaker against any container, and may arise
+				because slow moving, low temperature particles are more easily
+				affected by intermolecular forces and because at high pressures the
+				molecules are closer.
+			</para>
+			<sidebar>
+				<title>Van der Waals Equation</title>
+				<para>
+					This equation is important as a conceptual reminder, because it is used to account for deviations from the ideal gas law. The equation is:
+					<informalequation>
+						<mediaobject>
+							<textobject>
+								<phrase role="latex"><![CDATA[%
+\begin{eqnarray}
+\left(P+\frac{\alpha n^2}{V^2}\right)\left(V-\beta n\right)|=|nRT
+\end{eqnarray}
+								]]></phrase>
+							</textobject>
+						</mediaobject>
+					</informalequation>
+					where the &alpha; accounts for intermolecular forces and the &beta; accounts for the volumes of molecules.
+				</para>
+			</sidebar>
+			</section>
+		</section>
+		<section>
+			<title>Effusion and Diffusion</title>
+			<formalpara>
+			<title>Effusion</title>
+			<para>
+				is the movement of particles through a tiny opening (aperture, pore) into another container region of lower pressure. Molecules of low weight (higher speed) elements strike barrier more frequently and therefore effuse quicker.
+			</para>
+			</formalpara>
+			<formalpara>
+			<title>Diffusion</title>
+			<para>
+				is the mixing of substances by one spreading throughout the other substance.
+			</para>
+			</formalpara>
+		</section>
+		<section>
+			<title>Intermolecular Forces</title>
+			<remark>July 21</remark>
+			<para>Normal spacing:</para>
+			<itemizedlist>
+				<listitem><simpara>
+					are electrostatic forces (attraction);
+				</simpara></listitem>
+				<listitem><simpara>
+					are weaker than ionic or covalent bonds;
+				</simpara></listitem>
+				<listitem><simpara>
+					are directly related to fusion and vapourisation points.
+				</simpara></listitem>
+			</itemizedlist>
+			<para>Compact spacing:</para>
+			<itemizedlist spacing="compact">
+				<listitem><simpara>
+					are electrostatic forces (attraction);
+				</simpara></listitem>
+				<listitem><simpara>
+					are weaker than ionic or covalent bonds;
+				</simpara></listitem>
+				<listitem><simpara>
+					are directly related to fusion and vapourisation points.
+				</simpara></listitem>
+			</itemizedlist>
+			<para>Within a paragraph:
+			<orderedlist spacing="compact">
+				<listitem><simpara>
+					blah.
+				</simpara></listitem>
+				<listitem><simpara>
+					blah blah.
+				</simpara></listitem>
+			</orderedlist>
+			Did it work?</para>
+			<para>
+				See &#167;9.8 of Kotz and Treichel for more on polar molecules and dipole moments.
+			</para>
+		</section>
+	</chapter>
+	<chapter>
+		<title>
+			Solutions &amp;  Colloids
+		</title>
+		<sidebar>
+			<title>
+				Definition
+			</title>
+			<para>
+				A <firstterm>solute</firstterm> dissolves into a <firstterm>solvent</firstterm>.
+				<inlineequation>
+					<inlinemediaobject>
+						<textobject>
+							<phrase role="latex">
+								<![CDATA[V$_{\text{solvent}}$ $>$ V$_{\text{solute}}$]]>
+							</phrase>
+						</textobject>
+					</inlinemediaobject>
+				</inlineequation>
+				
+			</para>
+		</sidebar>
+		<para>
+			For dissolution to occur:
+			<orderedlist spacing="compact">
+				<listitem><simpara>
+					Solute particles must be separate from one another;
+				</simpara></listitem>
+				<listitem><simpara>
+					Solvent particles must be separate from one another;
+				</simpara></listitem>
+				<listitem><simpara>
+					The particles of both substances must mix together.
+				</simpara></listitem>
+			</orderedlist>
+		</para>
+		<sidebar>
+			<title>
+				Definition
+			</title>
+			<para>
+				<firstterm>Miscible</firstterm> substances mix together without interface.
+			</para>
+		</sidebar>
+		<para>
+
+			Miscibility is determined by the intermolecular bonds types in the
+			solvent and solute and how these compare with each other. That is,
+			the relative strengths of all the intermolecular bonds involved.
+
+		</para>
+		<para>
+
+			Dissolution occurs when the intermolecular forces between the
+			solvent and solute are similar and strong enough to compete with
+			the forces within the solvent itself and the solute itself.
+
+		</para>
+		<sidebar>
+			<title>
+				Ways of Expressing Concentration
+			</title>
+			<informaltable colsep="0" rowsep="0" frame="none">
+				<tgroup cols="2">
+					<colspec align="right"/>
+					<colspec align="left"/>
+					<tbody>
+						<row><entry>
+	Molarity (<mml:math mode="inline"><mml:mrow><mml:mi>M</mml:mi></mml:mrow></mml:math>)
+						</entry><entry>
+	(moles solute)/(litres solution)
+						</entry></row>
+						<row><entry>
+	Molality
+						</entry><entry>
+	(moles solute)/(kg solvent)
+						</entry></row>
+						<row><entry>
+	Mole Fraction (<mml:math mode="inline"><mml:mrow><mml:mi>X</mml:mi></mml:mrow></mml:math>)
+						</entry><entry>
+	(moles solute)/(moles solvent + moles solute)
+						</entry></row>
+						<row><entry>
+	\%w/v
+						</entry><entry>
+	(grams solute)/(100 ml solution)
+						</entry></row>
+						<row><entry>
+	\%w/w
+						</entry><entry>
+	(grams solute)/(100 g solution)
+						</entry></row>
+						<row><entry>
+	ppm
+						</entry><entry>
+	(mg of solute)/(litre of solution)
+						</entry></row>
+					</tbody>
+				</tgroup>
+			</informaltable>
+		</sidebar>
+		<para>
+
+			When diluting, more solvent is added to a solution. This increases
+			the solution volume, decreases the concentration, but does
+			<emphasis>not</emphasis> affect the amount of solute.
+
+		</para>
+
+		<section>
+			<title>
+				Factors Affecting Solubility
+			</title>
+			<remark>July 26</remark>
+
+			<simpara>
+				You should be familiar information in the following sections.
+			</simpara>
+
+			<section>
+				<title>Pressure</title>
+
+				<para>
+					For gas into liquid, the solubility increase as gas pressure increases. There is a mathematical relationship called Henry's Law, which states
+					<informalequation>
+						<alt>Gas solubility is proportional to gas pressure according to Henry's coefficient</alt>
+						<mediaobject>
+							<textobject>
+								<phrase role="latex"><![CDATA[%
+\begin{eqnarray}
+	S_g&=&k_H\times P_g\\
+	\text{where }S_g&=&\text{gas solubility}\\
+	P_g&=&\text{gas pressure}\\
+	k_H&=&\text{Henry's coefficient}
+\end{eqnarray}
+								]]></phrase>
+							</textobject>
+						</mediaobject>
+					</informalequation>
+				</para>
+				<para>
+
+					For an explanation of this relationship, consider the
+					comparative rates of vaporisation and condensation which
+					occur at the interface of the liquid and atmosphere, and
+					what must happen to the gas to reach equilibrium.
+
+				</para>
+			</section>
+			<section>
+				<title>Temperature</title>
+				<para>
+
+					For gases into liquids, the solubility decreases as
+					temperature increases. This is because at higher
+					temperatures, more energy is present to overcome
+					intermolecular forces and therefore a phase change from
+					liquid to gas is more likely than at lower temperatures.
+
+				</para>
+				<para>
+
+					For solids in liquids, it is most common that solubility
+					increases as temperature increases, though the relationship
+					is not necessarily linear. Some compounds are
+					<emphasis>less</emphasis> soluble at higher temperatures.
+
+				</para>
+			</section>
+		</section>
+	</chapter>
+	<chapter>
+		<title>Colligative Properties</title>
+		<remark>July 26</remark>
+		<para>
+
+			Colligative properties of a solution depend on <emphasis>how many</emphasis> solute particle there are, not <emphasis>what</emphasis> they are. That is, colligative properties depend on the dissociation of substances in solution.
+
+		</para>
+		<sidebar>
+			<title>How many solute particles?</title>
+			<informaltable frame="none">
+				<tgroup cols="3" align="left">
+					<thead>
+						<row><entry>
+Moles when pure
+						</entry><entry>
+Substance
+						</entry><entry>
+Moles of particles when in water
+						</entry></row>
+					</thead>
+					<tbody>
+						<row><entry>
+0.01
+						</entry><entry>
+ethanol
+						</entry><entry>
+0.01 mol
+						</entry></row>
+
+						<row><entry>
+0.01
+						</entry><entry>
+NaCl
+						</entry><entry>
+0.02 mol
+						</entry></row>
+
+						<row><entry>
+0.01
+						</entry><entry>
+BaCl<subscript>2</subscript>
+						</entry><entry>
+0.03 mol
+						</entry></row>
+					</tbody>
+				</tgroup>
+			</informaltable>
+		</sidebar>
+		<section>
+			<title>
+				van't Hoff Factor
+				(<?latex $?>i<?latex $?>)
+			</title>
+			<para>
+
+				The van't Hoff factor relates the number of moles of a substance to the number of particles in solution.
+
+			</para>
+			<informalequation>
+				<alt>Examples of dissociation.</alt>
+				<mediaobject>
+					<textobject>
+						<phrase role="latex"><![CDATA[%
+\begin{center}\begin{tabular}{lcl}
+NaCl&$\quad $NaCl$\to Na^+ + Cl^-\quad$&$i=2$\\
+BaCl$_2$&$\quad $BaCl$_2\to Ba_{2+}+2Cl^-\quad$&$i=3$
+\end{tabular}\end{center}
+						]]></phrase>
+					</textobject>
+				</mediaobject>
+			</informalequation>
+			<sidebar>
+				<title>Definition</title>
+				<para>
+					Non-volatile electrolytes (<quote>non-electrolytes</quote>) have a unity van't Hoff factor.
+					Examples include alcohols, ethylene glycol and urea.
+				</para>
+			</sidebar>
+		</section>
+		<section>
+			<title>Freezing Point Depression</title>
+			<sidebar>
+				<title> Molar Mass Calculations </title>
+				<para>
+					Some colligative properties can be used to calculate
+					molar masses for non-volatile (<?latex $?>i=1<?latex $?>) solvents.
+					For example:
+				</para>
+				<procedure>
+					<step><title>Step 1.</title><simpara>
+Calculate <?latex $\?>Delta T<?latex _?>F<?latex $?> from given information.
+					</simpara></step>
+					<step><title>Step 2.</title><simpara>
+Find the molality<?latex \ $\frac{\Delta T_F}{K_F}$?>.
+					</simpara></step>
+					<step><title>Step 3.</title><simpara>
+Calculate the moles (molality &times; given mass).
+					</simpara></step>
+					<step><title>Step 4.</title><simpara>
+Find the molar mass<?latex \ $M=\frac mn$?>.
+					</simpara></step>
+				</procedure>
+			</sidebar>
+		</section>
+	</chapter>
+</book>

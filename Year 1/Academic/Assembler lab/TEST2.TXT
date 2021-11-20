@@ -1,0 +1,7 @@
+01BA    9C
+01BB    2B
+01BC    DD
+01BD    07
+01BE    FE
+01BF    27
+01C0    42

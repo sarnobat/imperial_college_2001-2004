@@ -1,0 +1,174 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: Using nodes
+Date: Mon, 4 Feb 2002 12:58:03 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0007_01C1AD7B.94BFB960";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4910.0300
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0007_01C1AD7B.94BFB960
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/slides/mt0022.htm
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Using nodes</TITLE>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type><!-- Created by mktalk.pl on 4/20/98 at =
+6:30:21 PM -->
+<META content=3D"MSHTML 5.00.3502.4373" name=3DGENERATOR></HEAD>
+<BODY aLink=3D#00ff00 bgColor=3D#000000 link=3D#ffffff text=3D#ffffff =
+vLink=3D#888888>
+<TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD align=3Dmiddle width=3D"24%"><FONT color=3D#ffffff size=3D-1><A=20
+      =
+href=3D"http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/slides/=
+mt0000.htm"><B><IMG=20
+      border=3D0 height=3D24=20
+      =
+src=3D"http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/images/a=
+rwtoc2.gif"=20
+      width=3D24></B></A> </FONT></TD>
+    <TD align=3Dmiddle width=3D"24%"><FONT color=3D#ffffff size=3D-1><A=20
+      =
+href=3D"http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/slides/=
+mt0016.htm"><B><IMG=20
+      border=3D0 height=3D24=20
+      =
+src=3D"http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/images/a=
+rwndx2.gif"=20
+      width=3D24></B></A> </FONT></TD>
+    <TD align=3Dmiddle width=3D"24%"><FONT color=3D#ffffff size=3D-1><A=20
+      =
+href=3D"http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/slides/=
+mt0021.htm"><B><IMG=20
+      border=3D0 height=3D24=20
+      =
+src=3D"http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/images/a=
+rwprev2.gif"=20
+      width=3D24></B></A> </FONT></TD>
+    <TD align=3Dmiddle width=3D"24%"><FONT color=3D#ffffff size=3D-1><A=20
+      =
+href=3D"http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/slides/=
+mt0023.htm"><B><IMG=20
+      border=3D0 height=3D24=20
+      =
+src=3D"http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/images/a=
+rwnext2.gif"=20
+      width=3D24></B></A> </FONT></TD>
+    <TD align=3Dmiddle width=3D"4%"><FONT color=3D#ffffff size=3D-1>22=20
+  </FONT></TD></TR></TBODY></TABLE>
+<P><FONT color=3D#ffff00 size=3D+0>
+<CENTER>Building a VRML world</CENTER><FONT color=3D#ffff00 size=3D+3>
+<CENTER><B><I>Using nodes</I></B></CENTER>
+<CENTER><IMG border=3D0 height=3D2=20
+src=3D"http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/images/r=
+ed.jpg"=20
+width=3D"70%"></CENTER>
+<P><FONT color=3D#ffffff size=3D+2>
+<DL>
+  <DD><B><TT><FONT color=3D#00ff00 size=3D+2><PRE>Cylinder {
+}</PRE></FONT></TT></B>
+  <P></P>
+  <DD>
+  <LI>Nodes describe shapes, lights, sounds, etc.=20
+  <P></P></LI>
+  <DD>
+  <LI>Every node has:=20
+  <DL>
+    <DD>
+    <LI>A <I>node type</I> (<B><TT><FONT color=3D#00ff00=20
+    size=3D+2>Shape</FONT></TT></B>, <B><TT><FONT color=3D#00ff00=20
+    size=3D+2>Cylinder</FONT></TT></B>, etc.) </LI>
+    <DD>
+    <LI>A pair of curly-braces </LI>
+    <DD>
+    <LI>Zero or more fields inside the curly-braces=20
+</LI></DD></DL></LI></DD></DL></FONT></FONT></FONT></BODY></HTML>
+
+------=_NextPart_000_0007_01C1AD7B.94BFB960
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/images/arwtoc2.gif
+
+R0lGODlhGAAYALMAAP////8A5v8AAL+/v4CAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACH5BAEAAAEALAAAAAAYABgAQARkMMhJq70VDCEGwKDGcQMBSuKorp15pSz5neg2ljSg73yv
+DxbNYEgsGl0Y2G0GKhGeNtJzSgsocdWJc/rMepPG8DEYjamwlO1UCOBST1dmrnyWk4tnY/WKzPK/
+VmVofmF9gFURAAA7
+
+------=_NextPart_000_0007_01C1AD7B.94BFB960
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/images/arwndx2.gif
+
+R0lGODlhGAAYALMAAP////8A5v8AAL+/v4CAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACH5BAEAAAEALAAAAAAYABgAQARTMMhJq71giM37AJeVeURojsJnhug2lGvVpnAsgrasdSlu
+voTgzhUs2mav3ARZywGLQaU0l1FNA0hfbObRigZgsCcMPg5pU2b6nJSq3eymmdy+KiMAOw==
+
+------=_NextPart_000_0007_01C1AD7B.94BFB960
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/images/arwprev2.gif
+
+R0lGODlhGAAYALMAAP////8A5v8AAL+/v4CAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACH5BAEAAAEALAAAAAAYABgAQARXMMhJq71giD0I+GCYWYQmdFdqZYRalVsszzKqEq2r72p2
+5jwfbRizSWDFgXLJVAJfTp50St2NqpKMcSrcWk2cptgmJBKNSDPNm+7g3vD3Beallp7YvD4CADs=
+
+------=_NextPart_000_0007_01C1AD7B.94BFB960
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/images/arwnext2.gif
+
+R0lGODlhGAAYALMAAP////8A5v8AAL+/v4CAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACH5BAEAAAEALAAAAAAYABgAQARZMMhJq6Ug662H+ANwjRLhCQRBkkDInl8sz1+6Uvat76/g
+Wi2aUPYLtAbIpBIpy/FMTp50Sp1kqhikCBv0bbPLMMybHZrJxvE55hyk3vA3LLozoVTVN3ZPjQAA
+Ow==
+
+------=_NextPart_000_0007_01C1AD7B.94BFB960
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/images/red.jpg
+
+/9j/4AAQSkZJRgABAgEASABIAAD/7QUAUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEA
+AQBIAAAAAQABOEJJTQPzAAAAAAAIAAAAAAAAAAA4QklNBAoAAAAAAAEAADhCSU0nEAAAAAAACgAB
+AAAAAAAAAAI4QklNA/UAAAAAAEgAL2ZmAAEAbGZmAAYAAAAAAAEAL2ZmAAEAoZmaAAYAAAAAAAEA
+MgAAAAEAWgAAAAYAAAAAAAEANQAAAAEALQAAAAYAAAAAAAE4QklNA/gAAAAAAHAAAP//////////
+//////////////////8D6AAAAAD/////////////////////////////A+gAAAAA////////////
+/////////////////wPoAAAAAP////////////////////////////8D6AAAOEJJTQQIAAAAAAAQ
+AAAAAQAAAkAAAAJAAAAAADhCSU0ECQAAAAADjwAAAAEAAACAAAAAgAAAAYAAAMAAAAADcwAYAAH/
+2P/gABBKRklGAAECAQBIAEgAAP/+ACdGaWxlIHdyaXR0ZW4gYnkgQWRvYmUgUGhvdG9zaG9wqCA0
+LjAA/+4ADkFkb2JlAGSAAAAAAf/bAIQADAgICAkIDAkJDBELCgsRFQ8MDA8VGBMTFRMTGBEMDAwM
+DAwRDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAENCwsNDg0QDg4QFA4ODhQUDg4ODhQRDAwM
+DAwREQwMDAwMDBEMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8AAEQgAgACAAwEiAAIRAQMR
+Af/dAAQACP/EAT8AAAEFAQEBAQEBAAAAAAAAAAMAAQIEBQYHCAkKCwEAAQUBAQEBAQEAAAAAAAAA
+AQACAwQFBgcICQoLEAABBAEDAgQCBQcGCAUDDDMBAAIRAwQhEjEFQVFhEyJxgTIGFJGhsUIjJBVS
+wWIzNHKC0UMHJZJT8OHxY3M1FqKygyZEk1RkRcKjdDYX0lXiZfKzhMPTdePzRieUpIW0lcTU5PSl
+tcXV5fVWZnaGlqa2xtbm9jdHV2d3h5ent8fX5/cRAAICAQIEBAMEBQYHBwYFNQEAAhEDITESBEFR
+YXEiEwUygZEUobFCI8FS0fAzJGLhcoKSQ1MVY3M08SUGFqKygwcmNcLSRJNUoxdkRVU2dGXi8rOE
+w9N14/NGlKSFtJXE1OT0pbXF1eX1VmZ2hpamtsbW5vYnN0dXZ3eHl6e3x//aAAwDAQACEQMRAD8A
+5ZJJJdm56kkkklKSSSSUpJJJJSkkkklKSSSSUpJJJJSkkkklP//Q5ZJJJdm56kkkklKSSSSUpJJJ
+JSkkkklKSSSSUpJJJJSkkkklP//R5ZJJJdm56kkkklKSSSSUpJJJJSkkkklKSSSSUpJJJJSkkkkl
+P//S5ZJJJdm56kkkklKSSSSUpJJJJSkkkklKSSSSUpJJJJSkkkklP//T5ZJJJdm56kkkklKSSSSU
+pJJJJSkkkklKSSSSUpJJJJSkkkklP//U5ZJJJdm56kkkklKSSSSUpJJJJSkkkklKSSSSUpJJJJSk
+kkklP//V5ZJJJdm56kkkklKSSSSUpJJJJSkkkklKSSSSUpJJJJSkkkklP//W5ZJJJdm56kkkklKS
+SSSUpJJJJSkkkklKSSSSUpJJJJSkkkklP//ZADhCSU0EBgAAAAAABwAIAAAAAQEA//4AJ0ZpbGUg
+d3JpdHRlbiBieSBBZG9iZSBQaG90b3Nob3CoIDQuMAD/7gAOQWRvYmUAZEAAAAAB/9sAhAABAQEB
+AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAgICAgICAgICAgIDAwMDAwMD
+AwMDAQEBAQEBAQEBAQECAgECAgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD
+AwMDAwMDAwMDAwP/wAARCAABAAEDAREAAhEBAxEB/90ABAAB/8QBogAAAAYCAwEAAAAAAAAAAAAA
+BwgGBQQJAwoCAQALAQAABgMBAQEAAAAAAAAAAAAGBQQDBwIIAQkACgsQAAIBAwQBAwMCAwMDAgYJ
+dQECAwQRBRIGIQcTIgAIMRRBMiMVCVFCFmEkMxdScYEYYpElQ6Gx8CY0cgoZwdE1J+FTNoLxkqJE
+VHNFRjdHYyhVVlcassLS4vJkg3SThGWjs8PT4yk4ZvN1Kjk6SElKWFlaZ2hpanZ3eHl6hYaHiImK
+lJWWl5iZmqSlpqeoqaq0tba3uLm6xMXGx8jJytTV1tfY2drk5ebn6Onq9PX29/j5+hEAAgEDAgQE
+AwUEBAQGBgVtAQIDEQQhEgUxBgAiE0FRBzJhFHEIQoEjkRVSoWIWMwmxJMHRQ3LwF+GCNCWSUxhj
+RPGisiY1GVQ2RWQnCnODk0Z0wtLi8lVldVY3hIWjs8PT4/MpGpSktMTU5PSVpbXF1eX1KEdXZjh2
+hpamtsbW5vZnd4eXp7fH1+f3SFhoeIiYqLjI2Oj4OUlZaXmJmam5ydnp+So6SlpqeoqaqrrK2ur6
+/9oADAMBAAIRAxEAPwCrf3zM6+qLr//Z
+
+------=_NextPart_000_0007_01C1AD7B.94BFB960--

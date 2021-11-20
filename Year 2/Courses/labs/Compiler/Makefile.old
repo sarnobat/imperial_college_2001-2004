@@ -1,0 +1,32 @@
+# generate antlr java
+%.class : %.java
+	javac -g -source 1.4 -classpath .:$(ANTLRCLASS) $<
+
+GFILES = Decm2Parser.java Decm2Lexer.java Decm2LexerTokenTypes.java  
+BFILES = Decm2Parser.class Decm2Lexer.class Compiler.class CodeGen.class textTranslator.class Decm2LexerTokenTypes.class  Decm2ParserTokenTypes.class  MAST.class  MSymbolTable.class  SymbolNode.class  MSymbolTable$$IterateVars.class
+
+# the jar to run parsers generated using antlr
+ANTLRCLASS = /vol/labsrc/src/antlr-2.7.1/antlr.jar
+# classes to run antlr tool
+ANTLRLOC =  /vol/labsrc/src/antlr-2.7.1
+
+$(GFILES) : decm2.g
+	java  -classpath .:$(ANTLRLOC):$(ANTLRCLASS) $(ANTLROPTS) antlr.Tool  decm2.g
+
+
+Compiler.class : Compiler.java Decm2Parser.class Decm2Lexer.class Decm2LexerTokenTypes.class   MSymbolTable.class CodeGen.class MAST.class textTranslator.class
+
+Decm2Parser.class : Decm2Parser.java Decm2LexerTokenTypes.java MSymbolTable.class MAST.class
+
+Decm2Lexer.class : Decm2Lexer.java Decm2LexerTokenTypes.class
+
+Decm2LexerTokenTypes.class : Decm2LexerTokenTypes.java
+
+MSymbolTable.class : MSymbolTable.java
+
+textTranslator.class : textTranslator.java
+
+CodeGen.class : CodeGen.java MSymbolTable.java MAST.class Decm2LexerTokenTypes.class
+	javac -g -source 1.4 -classpath .:$(ANTLRCLASS) *.java
+
+

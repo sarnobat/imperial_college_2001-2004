@@ -1,0 +1,367 @@
+head	1.7;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.7
+date	2003.11.10.10.57.52;	author qq01;	state dead;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.09.23.09.01;	author sw00;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.08.17.39.30;	author qq01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.08.02.58.10;	author qq01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.06.13.52.16;	author sw00;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.01.16.09.29;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.10.31.15.35.18;	author sw00;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.7
+log
+@Updated package structure.
+@
+text
+@package processor;
+import exceptions.YAMSIllegalArgumentException;
+
+/*
+ * Created on 31-Oct-2003
+ *
+ */
+
+
+/**
+ * @@author sw00
+ *
+ */
+public class MIPSBitstring {
+
+	private int length;
+	private int[] bits;
+
+	public MIPSBitstring(int length) {
+		this.length = length;
+		bits = new int[length];
+		for(int i = 0; i < length; i++) {
+			setBit(i, 0);	
+		}
+	}
+	
+	public int getBit(int bitnumber) {
+		return bits[bitnumber];
+	}
+	
+	public void setBit(int bitnumber, int value) {
+		if((bitnumber < 0) || (bitnumber >= length)) {
+			// 0 .. length-1 are only permissible values for 'bitnumber'
+			throw new YAMSIllegalArgumentException("bitnumber out of range");
+		}
+		if((value < 0) || (value > 1)) {
+			// 0 .. 1 are only permissible values for 'value'
+			throw new YAMSIllegalArgumentException("value out of range");
+		}
+		bits[bitnumber] = value;
+	}
+
+	public int getLength() {
+		return length;
+	}
+
+	public static MIPSBitstring repeat(int value, int repeatcount) {
+		if((value < 0) || (value > 1)) {
+			// 0 .. 1 are only permissible values for 'value'
+			throw new YAMSIllegalArgumentException("value out of range");
+		}
+		if(repeatcount < 1) {
+			// 'repeatcount' must be at least 1
+			throw new YAMSIllegalArgumentException("repeatcount out of range");
+		}
+		MIPSBitstring bitstring = new MIPSBitstring(repeatcount);
+		for(int i = 0; i < repeatcount; i++) {
+			bitstring.setBit(i, value);			
+		}
+		return bitstring;
+	}
+	
+	public static MIPSBitstring extract(MIPSWord word, int lowbit, int highbit) {
+		if((lowbit < 0) || (lowbit > 31) || (lowbit <= highbit)) {
+			// invalid value for 'lowbit'
+			throw new YAMSIllegalArgumentException("lowbit out of range");
+		}
+		if((highbit < 0) || (highbit > 31) || (highbit <= lowbit)) {
+			// invalid value for 'highbit'
+			throw new YAMSIllegalArgumentException("highbit out of range");
+		}
+		MIPSBitstring bitstring = new MIPSBitstring(highbit - lowbit + 1);
+		int j = 0;
+		for(int i = lowbit; i <= highbit; i++) {
+			bitstring.setBit(j, word.getBit(i));
+			j++;			
+		}
+		return bitstring;
+	}
+	
+	public MIPSBitstring extract(int lowbit, int highbit) {
+		if((lowbit < 0) || (lowbit > length) || (lowbit <= highbit)) {
+			// invalid value for 'lowbit'
+			throw new YAMSIllegalArgumentException("lowbit out of range");
+		}
+		if((highbit < 0) || (highbit > length) || (highbit <= lowbit)) {
+			// invalid value for 'highbit'
+			throw new YAMSIllegalArgumentException("highbit out of range");
+		}
+		MIPSBitstring bitstring = new MIPSBitstring(highbit - lowbit + 1);
+		int j = 0;
+		for(int i = lowbit; i <= highbit; i++) {
+			bitstring.setBit(j, getBit(i));
+			j++;			
+		}
+		return bitstring;
+	}
+		
+	public static MIPSBitstring concatenate(MIPSBitstring left, 
+											MIPSBitstring right) {
+		int combinedlength = left.getLength() + right.getLength();
+		MIPSBitstring bitstring = new MIPSBitstring(combinedlength);
+		int j = 0;
+		for(int i = 0; i < right.getLength(); i++) {
+			bitstring.setBit(j, right.getBit(i));
+			j++;			
+		}
+		for(int i = 0; i < left.getLength(); i++) {
+			bitstring.setBit(j, left.getBit(i));
+			j++;			
+		}
+		return bitstring;
+	}
+
+	public MIPSWord toMIPSWord() {
+		int value = toInt();
+		return new MIPSWord(value);
+	}
+	
+	public int signExtend() {
+			// TODO - signExtend
+			return 0;
+	}
+
+	public int toInt() {
+		// NB this is not sign extended
+		int total = 0;
+		for(int i = 0; i < length; i++) {
+			total += getBit(i) * (1 << i); 
+		}
+		return total;
+	}
+
+	public String toString() {
+		StringBuffer str = new StringBuffer();
+		for(int i = length - 1; i >= 0; i--) {
+			str.append(getBit(i));		
+		}
+		return str.toString();
+	}
+
+}
+
+
+
+
+@
+
+
+1.6
+log
+@throws runtime exceptions
+@
+text
+@@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d2 1
+d11 1
+a11 1
+ * @@author sw00 Simon West
+d33 2
+a34 2
+			// TODO - throw an exception here, maybe YAMSIllegalArgumentException
+			// since 0 .. length-1 are only permissible values for 'bitnumber'
+d37 2
+a38 2
+			// TODO - throw an exception here, maybe YAMSIllegalArgumentException
+			// 	since 0 .. 1 are only permissible values for 'value'
+d49 2
+a50 2
+			// TODO - throw an exception here, maybe YAMSIllegalArgumentException
+			// since 0 .. 1 are only permissible values for 'value'
+d53 2
+a54 2
+			// TODO - throw an exception here, maybe YAMSIllegalArgumentException
+			// since 'repeatcount' must be at least 1
+d65 2
+a66 2
+			// TODO - throw an exception here, maybe YAMSIllegalArgumentException
+			// since invalid value for 'lowbit'
+d69 2
+a70 2
+			// TODO - throw an exception here, maybe YAMSIllegalArgumentException
+			// since invalid value for 'highbit'
+d83 2
+a84 2
+			// TODO - throw an exception here, maybe YAMSIllegalArgumentException
+			// since invalid value for 'lowbit'
+d87 2
+a88 2
+			// TODO - throw an exception here, maybe YAMSIllegalArgumentException
+			// since invalid value for 'highbit'
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@a7 1
+import java.lang.StringBuffer;
+@
+
+
+1.3
+log
+@general improvements
+@
+text
+@d1 2
+d7 1
+a7 1
+package processor;
+@
+
+
+1.2
+log
+@fixed package src. typo
+@
+text
+@d6 1
+d8 4
+d31 2
+a32 2
+			// TODO - throw an exception here, maybe YAMSInvalidArgumentException
+			// 			since 0 .. length-1 are only permissible values for 'bitnumber'
+d35 2
+a36 2
+			// TODO - throw an exception here, maybe YAMSInvalidArgumentException
+			// 			since 0 .. 1 are only permissible values for 'value'
+d47 6
+a52 2
+			// TODO - throw an exception here, maybe YAMSInvalidArgumentException
+			// 			since 0 .. 1 are only permissible values for 'value'
+d63 2
+a64 2
+			// TODO - throw an exception here, maybe YAMSInvalidArgumentException
+			// 			since invalid value for 'lowbit'
+d67 2
+a68 2
+			// TODO - throw an exception here, maybe YAMSInvalidArgumentException
+			// 			since invalid value for 'highbit'
+d81 2
+a82 2
+			// TODO - throw an exception here, maybe YAMSInvalidArgumentException
+			// 			since invalid value for 'lowbit'
+d85 2
+a86 2
+			// TODO - throw an exception here, maybe YAMSInvalidArgumentException
+			// 			since invalid value for 'highbit'
+d97 14
+a110 3
+	public static MIPSBitstring concatenate(MIPSBitstring leftbitstring, MIPSBitstring rightbitstring) {
+		// TODO - implement concatenate
+		return null;
+d114 7
+a120 2
+		// TODO - implement toMIPSWord()
+		return null;
+d124 6
+a129 2
+		// TODO - implement toInt()
+		return 0;
+d133 5
+a137 2
+		// TODO - implement toString()
+		return null;
+d142 1
+a142 25
+/*
+ * Semantics
+ * We treat memory as if it were a large one-dimensional array. The name of that array is M.
+ * <- is used as the assignment operator. For example, R[i] <- R[j] means that R[i] is assigned R[j]'s value.
+ * M4[ addr ] accesses 4 byte starting at addr in memory. This address must be word-aligned.
+ * M1[ addr ] accesses 1 byte starting at addr in memory. This can be any address.
+ * M4[ R[i] ] accesses 4 bytes starting at the address stored in register i.
+ * R[i]j refers to bit j of register i. We assume that bits are numbered right to left, starting at 0 on the right
+ *   for the LSb, and ending at 31 on the left as the MSb.
+ * R[i]hi-lo refers to a range of bits from bit hi to lo (inclusive) of register i. We assume that bits are numbered 
+ *   right to left, starting at 0 on the right for the LSb, and ending at 31 on the left as the MSb.
+ * We may refer to two hidden registers: PC, the program counter, which stores the current address of the instruction
+ *   being executed, and IR which stores the instruction being executed.
+ * Hidden registers are not directly accessible by the ISA programmer, but they can help to explain what the 
+ *   instructions do.
+ * (IR15)16 means to repeat bit B15 16 times (thus, producing a 16 bit value).
+ * To create 32 bit values, we may need to concatenate several bitstrings together. 
+ * We will use :: (two colons), as the concatenation operator. 
+ * For example, (IR15)16::IR15-0 means bit B15 of the IR register repeated 15 times, 
+ *   concatenated with the low 16 bits of the IR. This produces a 32 bit result.
+ * 
+ * MIPSWord ir = reg.IR.get();
+ * MIPSBitstring bitstring = MIPSBitstring.concatenate(repeat(ir.getBit(15), 15), extract(ir, 0, 15));
+ * MIPSWord result = bitstring.toMIPSWord(); 
+ */
+@
+
+
+1.1
+log
+@added by Simon
+@
+text
+@d5 1
+a5 1
+package src.processor;
+@
+

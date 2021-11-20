@@ -1,0 +1,47 @@
+# Divide - divide.dlx
+# John Doe
+# jcdoe
+# Feb 31, 2001
+# Updated and Converted to MIPS - Sept 10 2002
+
+# Divide x by y.  Place the answer in quo.
+# Both x and y are positive.  No error checking.
+# Use integer division by repeated subtraction.
+
+# Registers
+#       $1 -- result
+#       $2 -- x
+#       $3 -- y
+#       $4 -- base address of variables
+#       $5 -- scratch
+
+.globl main
+
+# Get the x and y values
+main:   llo     $4, x           # load base address
+        lhi     $4, x
+        lw      $2, 0($4)       # load x
+        lw      $3, 4($4)       # load y
+
+        add     $1, $0, $0      # init. answer
+
+# loop, subtracting y from x, until x <= 0
+subt:   sub     $2, $2, $3
+        addi    $1, $1, 1       # incr answer
+
+        addi    $5, $0, 1       # make equal to 1 since the next command checks strict inequality
+
+        slti    $5, $2, 0       # is x <= 0?
+        beq     $5, $0, subt    # no (ie $5 = 0) -- loop again
+        j       end             # finished
+
+        addi    $1, $1, -1      # correct for remainder
+
+end:    sw      $1, 8($4)       # store the answer
+        trap    10
+
+        .align  4
+x:      .word   15
+y:      .word   3
+quo:    .word   0
+

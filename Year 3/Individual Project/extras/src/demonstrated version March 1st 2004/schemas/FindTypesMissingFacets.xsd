@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+    targetNamespace="http://www.research.ibm.com/XML/NS/xsd"
+    xmlns="http://www.research.ibm.com/XML/NS/xsd"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    >
+    
+    <xsd:annotation>
+        <xsd:documentation>
+        Sample queries a schema for simpleTypes derived 
+        from the base integer type that are missing either  
+        max/min Inclusive or Exclusive facets.
+        </xsd:documentation>
+    </xsd:annotation>
+    
+    <!-- Directly derived datatypes -->
+    <xsd:simpleType name="integer-noFacets">
+        <xsd:restriction base="xsd:integer">
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="integer-bothFacets">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minExclusive value="10"/>
+            <xsd:maxInclusive value="100"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="positiveInteger-inheritedMinFacet">
+        <xsd:restriction base="xsd:positiveInteger"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="integer-minFacet">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minExclusive value="10"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="positiveInteger-bothFacets">
+        <xsd:restriction base="positiveInteger-inheritedMinFacet">
+            <xsd:maxExclusive value="100"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

@@ -1,0 +1,43 @@
+head	1.2;
+access;
+symbols
+	yams-release2-17-12-03:1.1
+	yams-release-17-12-03:1.1
+	cleanup:1.1.0.2
+	Root_cleanup:1.1
+	stable-13-12-2003:1.1;
+locks; strict;
+comment	@# @;
+expand	@b@;
+
+
+1.2
+date	2003.12.19.14.08.14;	author qq01;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.52;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@deleted deprecated files
+@
+text
+@<?xml version="1.0" encoding="UTF-8"?><!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Qian Qiao (Imperial College) --><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">	<xs:element name="Instructions">		<xs:annotation>			<xs:documentation>Comment describing your root element</xs:documentation>		</xs:annotation>		<xs:complexType>			<xs:sequence maxOccurs="unbounded">				<xs:element name="Instruction">					<xs:complexType>						<xs:sequence>							<xs:element name="OpCode"/>							<xs:element name="JavaCode"/>							<xs:element name="Description"/>						</xs:sequence>					</xs:complexType>				</xs:element>			</xs:sequence>		</xs:complexType>	</xs:element></xs:schema>@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@@
+

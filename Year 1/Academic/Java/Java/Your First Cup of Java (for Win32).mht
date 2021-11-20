@@ -1,0 +1,2200 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: Your First Cup of Java (for Win32)
+Date: Sun, 20 Jan 2002 18:42:59 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0000_01C1A1E2.48600E20";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4522.1200
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32.html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Your First Cup of Java (for Win32)</TITLE>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type>
+<SCRIPT language=3DJavaScript>=0A=
+<!-- hide=0A=
+function openWin(term) {=0A=
+  url=3D"../../information/glossary.html#" + term;=0A=
+  myWin=3D window.open(url, "Glossary",=0A=
+              =
+"width=3D400,height=3D150,scrollbars=3Dyes,status=3Dno,toolbar=3Dno,menub=
+ar=3Dno");=0A=
+  myWin.focus();=0A=
+}=0A=
+//-->=0A=
+</SCRIPT>
+
+<META content=3D"MSHTML 5.00.3315.2870" name=3DGENERATOR></HEAD>
+<BODY bgColor=3D#ffffff link=3D#000099><B><FONT size=3D-1>The =
+Java</FONT><SUP><FONT=20
+size=3D-2>TM</FONT></SUP> <FONT size=3D-1>Tutorial</FONT></B> <BR>
+<TABLE width=3D550>
+  <TBODY>
+  <TR>
+    <TD align=3Dleft vAlign=3Dcenter><A=20
+      =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/index=
+.html"=20
+      target=3D_top><IMG align=3Dcenter alt=3D"Previous Page" border=3D0 =
+height=3D26=20
+      =
+src=3D"http://java.sun.com/docs/books/tutorial/images/PreviousArrow.gif" =
+
+      width=3D26></A> <A=20
+      =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/TOC.html#cupoj=
+ava"=20
+      target=3D_top><IMG align=3Dcenter alt=3D"Lesson Contents" =
+border=3D0 height=3D26=20
+      src=3D"http://java.sun.com/docs/books/tutorial/images/TOCIcon.gif" =
+
+      width=3D26></A> <A=20
+      =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/unix.=
+html"=20
+      target=3D_top><IMG align=3Dcenter alt=3D"Next Page" border=3D0 =
+height=3D26=20
+      =
+src=3D"http://java.sun.com/docs/books/tutorial/images/NextArrow.gif"=20
+      width=3D26></A></TD>
+    <TD align=3Dmiddle vAlign=3Dcenter><FONT size=3D-1><A=20
+      href=3D"http://java.sun.com/docs/books/tutorial/index.html"=20
+      target=3D_top>Start of Tutorial</A> &gt; <A=20
+      =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/index.html"=20
+      target=3D_top>Start of Trail</A> &gt; <A=20
+      =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/index=
+.html"=20
+      target=3D_top>Start of Lesson</A> </FONT></TD>
+    <TD align=3Dright vAlign=3Dcenter><FONT size=3D-1><A=20
+      href=3D"http://java.sun.com/docs/books/tutorial/search.html"=20
+      target=3D_top>Search</A> <BR><A=20
+      =
+href=3D"http://java.sun.com/docs/books/tutorial/forms/sendusmail.html">Fe=
+edback=20
+      Form</A> </FONT></TD></TR></TBODY></TABLE><IMG align=3Dbottom =
+height=3D8=20
+src=3D"http://java.sun.com/docs/books/tutorial/images/blueline.gif" =
+width=3D550=20
+NATURALSIZEFLAG=3D"3"> <BR><FONT size=3D-1><B>Trail</B>: Getting Started =
+
+<BR><B>Lesson</B>: Your First Cup of Java </FONT>
+<H2>Your First Cup of Java (for Win32) </H2>
+<BLOCKQUOTE><A name=3Dtop></A>
+  <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D680 NOSAVE>
+    <TBODY>
+    <TR NOSAVE>
+      <TD NOSAVE>
+        <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D2 width=3D500 =
+NOSAVE>
+          <TBODY>
+          <TR NOSAVE>
+            <TD rowSpan=3D2 NOSAVE>
+              <CENTER>
+              <P>
+              <CENTER><IMG align=3Dbottom alt=3D"" height=3D96=20
+              =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/butlers=
+m.gif"=20
+              width=3D86 NATURALSIZEFLAG=3D"3"></CENTER>
+              <P></P></CENTER></TD>
+            <TD>
+              <BLOCKQUOTE><B><FONT face=3D"Arial, Helvetica"><FONT=20
+                color=3D#707070>Detailed Instructions <BR>for Your First =
+
+                Program</FONT></FONT></B>=20
+                <P>The following instructions will help you write your =
+first=20
+                program. These instructions are for users of Win32 =
+platforms,=20
+                which include Windows 95/98 and Windows NT/2000. We =
+start with a=20
+                checklist of what you need to write your first program. =
+Next, we=20
+                cover the steps to creating an application, steps to =
+creating an=20
+                applet, and explanations of error messages you may =
+encounter.=20
+                </P></BLOCKQUOTE></TD></TR></TBODY></TABLE>
+        <TABLE border=3D0 cellPadding=3D10 cellSpacing=3D0 NOSAVE>
+          <TBODY>
+          <TR NOSAVE>
+            <TD vAlign=3Dtop NOSAVE><B><FONT face=3D"Arial, =
+Helvetica"><FONT=20
+              color=3D#0000ff>1. </FONT></FONT></B><A=20
+              =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#1">A=20
+              Checklist</A></TD>
+            <TD vAlign=3Dtop NOSAVE><B><FONT face=3D"Arial, =
+Helvetica"><FONT=20
+              color=3D#ff0000>2. </FONT></FONT></B><A=20
+              =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#2">Creating=20
+              Your First Application</A> <BR>&nbsp;<FONT=20
+              size=3D-1>&nbsp;&nbsp;&nbsp; a. <A=20
+              =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#2a">Create=20
+              a Java Source File</A></FONT> <BR>&nbsp;<FONT=20
+              size=3D-1>&nbsp;&nbsp;&nbsp; b. <A=20
+              =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#2b">Compile=20
+              the Source File</A></FONT> <BR>&nbsp;<FONT=20
+              size=3D-1>&nbsp;&nbsp;&nbsp; c. <A=20
+              =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#2c">Run=20
+              the Program</A></FONT></TD></TR>
+          <TR NOSAVE>
+            <TD vAlign=3Dtop NOSAVE><B><FONT face=3D"Arial, =
+Helvetica"><FONT=20
+              color=3D#990099>3.</FONT><FONT color=3D#ff00ff> =
+</FONT></FONT></B><A=20
+              =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#3">Creating=20
+              Your First Applet</A></TD>
+            <TD vAlign=3Dtop NOSAVE><B><FONT face=3D"Arial, =
+Helvetica"><FONT=20
+              color=3D#009900>4. </FONT></FONT></B><A=20
+              =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#4">Where=20
+              to Go from Here</A></TD></TR></TBODY></TABLE>
+        <P><B>Your feedback is important to us! </B>If you have comments =
+about=20
+        these instructions, send them to: <A=20
+        href=3D"mailto:tutorial@java.sun.com">tutorial@java.sun.com</A>. =
+In your=20
+        message, put<I> cup of java</I> in the subject header.=20
+        <H2>
+        <HR align=3Dleft>
+        <BR><A name=3D1></A><FONT face=3D"Arial, Helvetica, =
+sans-serif"><FONT=20
+        color=3D#0000ff>1. </FONT>A Checklist&nbsp;</FONT> <IMG alt=3D"" =
+height=3D35=20
+        =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/check.g=
+if"=20
+        width=3D31></H2>To write your first program, you need:=20
+        <OL>
+          <LI><B>The Java<SUP><FONT size=3D-2>TM</FONT></SUP> 2 =
+Platform, Standard=20
+          Edition.</B> You can <A=20
+          href=3D"http://java.sun.com/j2se/1.3/download-windows.html"=20
+          target=3Dother><FONT color=3D#009bbb>download it =
+now</FONT></A><A=20
+          =
+href=3D"http://java.sun.com/j2se/1.3/download-windows.html"><IMG=20
+          align=3DabsMiddle alt=3D"(outside of the tutorial)" border=3D0 =
+height=3D11=20
+          =
+src=3D"http://java.sun.com/docs/books/tutorial/images/otherIcon.gif"=20
+          width=3D11></A> and consult the <A=20
+          href=3D"http://java.sun.com/j2se/1.3/install-windows.html"=20
+          target=3Dother><FONT color=3D#009bbb>installation=20
+          instructions</FONT></A><A=20
+          =
+href=3D"http://java.sun.com/j2se/1.3/install-windows.html"><IMG=20
+          align=3DabsMiddle alt=3D"(outside of the tutorial)" border=3D0 =
+height=3D11=20
+          =
+src=3D"http://java.sun.com/docs/books/tutorial/images/otherIcon.gif"=20
+          width=3D11></A>.&nbsp;=20
+          <LI><B>A text editor.</B> In this example, we'll use NotePad, =
+the=20
+          simple editor included with the Windows platforms. To find =
+NotePad,=20
+          from the <FONT color=3D#990099>Start</FONT> menu select <FONT=20
+          color=3D#990099>Programs</FONT> &gt; <FONT=20
+          color=3D#990099>Accessories</FONT> &gt; <FONT=20
+          color=3D#990099>NotePad</FONT>. You can easily adapt these =
+instructions=20
+          if you use a different text editor.&nbsp; </LI></OL>These two =
+items are=20
+        all you need to write your first Java program. You may want to =
+consider=20
+        using an IDE to help you write your programs. Java 2 SDK, =
+Standard=20
+        Edition v. 1.3, is available bundled with an IDE, the Forte<FONT =
+
+        size=3D-2><SUP>TM</SUP></FONT> for Java<FONT =
+size=3D-2><SUP>TM</SUP></FONT>,=20
+        Community Edition.=20
+        <HR>
+
+        <BLOCKQUOTE></BLOCKQUOTE>
+        <H2>
+        <HR align=3Dleft>
+        </H2>
+        <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 =
+width=3D"100%">
+          <TBODY>
+          <TR>
+            <TD vAlign=3Dtop>
+              <H2><A name=3D2></A><FONT face=3D"Arial, Helvetica, =
+sans-serif"><FONT=20
+              color=3D#ff0000>2. </FONT>Creating Your First=20
+            Application</FONT></H2></TD>
+            <TD rowSpan=3D2>
+              <TABLE border=3D0 cellPadding=3D5 cellSpacing=3D2 =
+width=3D"100%">
+                <TBODY>
+                <TR>
+                  <TD>&nbsp;</TD></TR></TBODY></TABLE></TD>
+            <TD rowSpan=3D2 vAlign=3Dtop>
+              <TABLE border=3D1 cellPadding=3D10 cellSpacing=3D0 =
+width=3D"100%">
+                <TBODY>
+                <TR bgColor=3D#ccffff vAlign=3Dtop>
+                  <TD bgColor=3D#dbe3f7 vAlign=3Dtop><B><FONT=20
+                    face=3D"Arial, Helvetica, sans-serif"><FONT =
+color=3D#990000>Why=20
+                    Bytecodes are Cool</FONT></FONT></B>=20
+                    <P><FONT size=3D-1>So, you've heard that with the =
+Java=20
+                    programming language, you can "write once, run =
+anywhere."=20
+                    This means that when you compile your program, you =
+don't=20
+                    generate instructions for one specific platform. =
+Instead,=20
+                    you generate Java bytecodes, which are instructions =
+for the=20
+                    Java Virtual Machine (Java VM). If your =
+platform--whether=20
+                    it's Windows, UNIX, MacOS, or an Internet =
+browser--has the=20
+                    Java VM, it can understand those=20
+                bytecodes.</FONT></P></TD></TR></TBODY></TABLE></TD>
+            <TD rowSpan=3D2 vAlign=3Dtop>&nbsp;</TD></TR>
+          <TR>
+            <TD vAlign=3Dtop>Your first program, =
+<CODE>HelloWorldApp</CODE>,=20
+              will simply display the greeting "Hello world!". To create =
+this=20
+              program, you will:&nbsp;=20
+              <UL>
+                <LI><B>Create a <FONT color=3D#990099>source =
+file</FONT>.</B> A=20
+                source file contains text, written in the Java =
+programming=20
+                language, that you and other programmers can understand. =
+You can=20
+                use any text editor to create and edit source files. =
+<BR>&nbsp;=20
+                <LI><B>Compile the source file into a <FONT=20
+                color=3D#990099>bytecode file</FONT>.</B> The =
+<I>compiler</I>,=20
+                <CODE>javac</CODE>, takes your source file and =
+translates its=20
+                text into instructions that the <I>Java Virtual Machine=20
+                </I>(Java VM) can understand. The compiler converts =
+these=20
+                instructions into a bytecode file. <BR>&nbsp;=20
+                <LI><B>Run the program contained in the bytecode =
+file.</B> The=20
+                Java interpreter installed on your computer implements =
+the Java=20
+                VM. This interpreter takes your bytecode file and =
+carries out=20
+                the instructions by translating them into instructions =
+that your=20
+                computer can understand. </LI></UL>
+              <P>
+              <CENTER><IMG align=3Dbottom alt=3D"" height=3D218=20
+              =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/helloWo=
+rld.gif"=20
+              width=3D465 NATURALSIZEFLAG=3D"3"></CENTER>
+              <P></P></TD></TR></TBODY></TABLE>
+        <P><IMG alt=3D"" height=3D16=20
+        =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/arrow.g=
+if"=20
+        width=3D13><FONT size=3D-1><A=20
+        =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#top">top</A></FONT>=20
+        <BR>
+        <HR align=3Dleft width=3D"70%">
+
+        <H2><A name=3D2a></A><FONT face=3D"Arial, Helvetica, =
+sans-serif"><FONT=20
+        color=3D#ff0000>a.</FONT> Create a Source File.</FONT></H2>
+        <BLOCKQUOTE>
+          <P>To create a source file, you have two options:</P>
+          <UL>
+            <LI>You can save the file <CODE><A=20
+            =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/application/ex=
+ample/HelloWorldApp.java"=20
+            target=3Dsource><FONT=20
+            color=3D#bb000f><CODE>HelloWorldApp.java</CODE></FONT></A><A =
+
+            =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/application/ex=
+ample/HelloWorldApp.java"><IMG=20
+            align=3DabsMiddle alt=3D"(in a .java source file)" =
+border=3D0 height=3D11=20
+            =
+src=3D"http://java.sun.com/docs/books/tutorial/images/sourceIcon.gif"=20
+            width=3D11></A></CODE> on your computer and avoid a lot of =
+typing.=20
+            Then, you can go straight to <A=20
+            =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#2b">step=20
+            b</A>.<BR><BR>
+            <LI>Or, you can follow these longer instructions: </LI></UL>
+          <P><B><FONT color=3D#ff0000>1.</FONT></B> Start NotePad. In a =
+new=20
+          document, type in the following code:</P>
+          <TABLE border=3D1 cellPadding=3D2 cellSpacing=3D2 width=3D500>
+            <TBODY>
+            <TR>
+              <TD width=3D"100%"><PRE>/**
+ * The HelloWorldApp class implements an application that
+ * displays "Hello World!" to the standard output.
+ */
+public class HelloWorldApp {
+    public static void main(String[] args) {
+        // Display "Hello World!"
+        System.out.println("Hello World!");
+    }
+}
+</PRE></TD></TR></TBODY></TABLE>
+          <BLOCKQUOTE>&nbsp;=20
+            <TABLE border=3D1 cellPadding=3D10 cellSpacing=3D0 =
+width=3D450>
+              <TBODY>
+              <TR bgColor=3D#ffffcc>
+                <TD bgColor=3D#ffffdb>
+                  <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 =
+width=3D402>
+                    <TBODY>
+                    <TR>
+                      <TD width=3D"77%">&nbsp;<B><FONT=20
+                        face=3D"Arial, Helvetica, sans-serif"><FONT=20
+                        color=3D#990000>Be Careful When You=20
+                      Type</FONT></FONT></B></TD>
+                      <TD width=3D"13%"><IMG alt=3D"" height=3D30=20
+                        =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/typeA.g=
+if"=20
+                        width=3D30></TD>
+                      <TD width=3D"10%"><IMG alt=3D"" height=3D30=20
+                        =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/typea2.=
+gif"=20
+                        width=3D30></TD></TR></TBODY></TABLE>
+                  <P><FONT size=3D-1>Type all code, commands, and file =
+names=20
+                  exactly as shown. The Java compiler and interpreter =
+are=20
+                  <I>case-sensitive</I>, so you must capitalize=20
+                  consistently.</FONT></P>
+                  <CENTER>
+                  <P><CODE>HelloWorldApp <IMG alt=3D"" height=3D19=20
+                  =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/notequa=
+l.gif"=20
+                  =
+width=3D20>&nbsp;helloworldapp</CODE></CENTER></P></TD></TR></TBODY></TAB=
+LE></BLOCKQUOTE><B><FONT=20
+          color=3D#ff0000>2.</FONT> </B>Save this code to a file. From =
+the menu=20
+          bar, select <FONT color=3D#990099>File</FONT> &gt; <FONT=20
+          color=3D#990099>Save As</FONT>. In the <FONT =
+color=3D#990099>Save=20
+          As</FONT> dialog box:&nbsp;</BLOCKQUOTE>
+        <UL>
+          <UL>
+            <LI>Using the <FONT color=3D#990099>Save in</FONT> drop-down =
+menu,=20
+            specify the folder (directory) where you'll save your file. =
+In this=20
+            example, the directory is <CODE>java</CODE> on the =
+<CODE>C</CODE>=20
+            drive.=20
+            <LI>In the <FONT color=3D#990099>File name</FONT> text box, =
+type=20
+            <CODE>"HelloWorldApp.java"</CODE>, including the double =
+quotation=20
+            marks.=20
+            <LI>From the <FONT color=3D#990099>Save as type</FONT> =
+drop-down menu,=20
+            choose <FONT color=3D#990099>Text Document</FONT>.&nbsp; =
+</LI></UL></UL>
+        <BLOCKQUOTE>When you're finished, the dialog box should look =
+like=20
+          this:=20
+          <P>
+          <CENTER><IMG align=3Dbottom alt=3D"" height=3D165=20
+          =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/saveas.=
+gif"=20
+          width=3D426 NATURALSIZEFLAG=3D"3"></CENTER>
+          <P></P>Now click <FONT color=3D#990099>Save</FONT>, and exit =
+NotePad.=20
+        </BLOCKQUOTE><IMG alt=3D"" height=3D16=20
+        =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/arrow.g=
+if"=20
+        width=3D13><FONT size=3D-1><A=20
+        =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#top">top</A></FONT>=20
+        <BR>
+        <HR align=3Dleft width=3D"70%">
+
+        <H2><A name=3D2b></A><FONT face=3D"Arial, Helvetica, =
+sans-serif"><FONT=20
+        color=3D#ff0000>b. </FONT>Compile the Source File.</FONT></H2>
+        <BLOCKQUOTE>
+          <P>From the <FONT color=3D#990099>Start</FONT> menu, select =
+the <FONT=20
+          color=3D#990099>MS-DOS Prompt</FONT> application (Windows =
+95/98) or=20
+          <FONT color=3D#990099>Command Prompt</FONT> application =
+(Windows NT).=20
+          When the application launches, it should look like this:</P>
+          <P>
+          <CENTER><IMG align=3Dbottom alt=3D"" height=3D120=20
+          =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/dos.gif=
+"=20
+          width=3D489 NATURALSIZEFLAG=3D"3"></CENTER>
+          <P></P>
+          <P>The prompt shows your <I>current directory</I>. When you =
+bring up=20
+          the prompt for Windows 95/98, your current directory is =
+usually=20
+          <CODE>WINDOWS</CODE> on your <CODE>C</CODE> drive (as shown =
+above) or=20
+          <CODE>WINNT</CODE> for Windows NT. To compile your source code =
+file,=20
+          change your current directory to the directory where your file =
+is=20
+          located. For example, if your source directory is =
+<CODE>java</CODE> on=20
+          the <CODE>C</CODE> drive, you would type the following command =
+at the=20
+          prompt and press <FONT color=3D#990099>Enter</FONT>:</P>
+          <BLOCKQUOTE>
+            <TABLE border=3D1 cellPadding=3D0 cellSpacing=3D2>
+              <TBODY>
+              <TR>
+                <TD width=3D"100%"><CODE>&nbsp;cd=20
+              =
+c:\java&nbsp;</CODE></TD></TR></TBODY></TABLE></BLOCKQUOTE>
+          <P>Now the prompt should change to =
+<CODE>C:\java&gt;</CODE>.</P>
+          <BLOCKQUOTE>
+            <HR align=3Dleft>
+            <B>Note: </B>To change to a directory on a different drive, =
+you must=20
+            type an extra command. <BR>&nbsp;=20
+            <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D2 =
+width=3D486>
+              <TBODY>
+              <TR>
+                <TD width=3D"50%"><IMG alt=3D"" height=3D68=20
+                  =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/extrast=
+ep.gif"=20
+                  width=3D198> </TD>
+                <TD width=3D"50%">As shown here, to change to the=20
+                  <CODE>java</CODE> directory on the <CODE>D</CODE> =
+drive, you=20
+                  must reenter the drive, =
+<CODE>d:</CODE></TD></TR></TBODY></TABLE>
+            <HR align=3Dleft>
+          </BLOCKQUOTE>
+          <P>If you enter <CODE>dir</CODE> at the prompt, you should see =
+your=20
+          file.</P>
+          <P>
+          <CENTER><IMG align=3Dbottom alt=3D"" height=3D260=20
+          =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/cd.gif"=
+=20
+          width=3D528 NATURALSIZEFLAG=3D"3"></CENTER>
+          <P></P>
+          <P>Now you can compile. At the prompt, type the following =
+command and=20
+          press <FONT color=3D#990099>Enter</FONT>:</P>
+          <BLOCKQUOTE>
+            <TABLE border=3D1 cellPadding=3D0 cellSpacing=3D2>
+              <TBODY>
+              <TR>
+                <TD width=3D"100%"><CODE>&nbsp;javac=20
+                  =
+HelloWorldApp.java&nbsp;</CODE></TD></TR></TBODY></TABLE></BLOCKQUOTE>
+          <P>If your prompt reappears without error messages, =
+congratulations.=20
+          You have successfully compiled your program.</P>
+          <BLOCKQUOTE>&nbsp;=20
+            <TABLE border=3D1 cellPadding=3D10 cellSpacing=3D0 =
+width=3D550>
+              <TBODY>
+              <TR bgColor=3D#ffcccc>
+                <TD bgColor=3D#ffdddd><B><FONT=20
+                  face=3D"Arial, Helvetica, sans-serif"><FONT =
+color=3D#804000><FONT=20
+                  size=3D+1>Error Explanation</FONT></FONT></FONT></B>=20
+                  <P><B><CODE>Bad command or file name</CODE></B> =
+<I>(Windows=20
+                  95/98)</I>=20
+                  <P><B><CODE>The name specified is not recognized as an =
+
+                  internal or external command, operable program or =
+batch=20
+                  file</CODE></B> <I>(Windows NT)</I>=20
+                  <P>If you receive this error, Windows cannot find the =
+Java=20
+                  compiler, <CODE>javac</CODE>.=20
+                  <P>Here's one way to tell Windows where to find=20
+                  <CODE>javac</CODE>. Suppose you installed the Java 2 =
+Software=20
+                  Development Kit in <CODE>C:\jdk1.3</CODE>. At the =
+prompt you=20
+                  would type the following command and press =
+<B>Enter</B>:&nbsp;=20
+
+                  <BLOCKQUOTE><PRE><CODE>C:\jdk1.3\bin\javac =
+HelloWorldApp.java</CODE></PRE></BLOCKQUOTE><B>Note:=20
+                  </B>If you choose this option, each time you compile =
+or run a=20
+                  program, you'll have to precede your =
+<CODE>javac</CODE> and=20
+                  <CODE>java</CODE> commands with =
+<CODE>C:\jdk1.3\bin\</CODE>.=20
+                  To avoid this extra typing, consult the section <I><A=20
+                  =
+href=3D"http://java.sun.com/j2se/1.3/install-windows.html#Environment"=20
+                  target=3Dother><FONT color=3D#009bbb>Update the PATH=20
+                  variable</FONT></A><A=20
+                  =
+href=3D"http://java.sun.com/j2se/1.3/install-windows.html#Environment"><I=
+MG=20
+                  align=3DabsMiddle alt=3D"(outside of the tutorial)" =
+border=3D0=20
+                  height=3D11=20
+                  =
+src=3D"http://java.sun.com/docs/books/tutorial/images/otherIcon.gif"=20
+                  width=3D11></A> </I>in the installation=20
+              instructions.</TD></TR></TBODY></TABLE></BLOCKQUOTE>
+          <P><BR>The compiler has generated a Java bytecode file,=20
+          <CODE>HelloWorldApp.class</CODE>. At the prompt, type =
+<CODE>dir</CODE>=20
+          to see the new file that was generated:=20
+          <P>
+          <CENTER><IMG align=3Dbottom alt=3D"" height=3D248=20
+          =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/dosclas=
+s.gif"=20
+          width=3D532 NATURALSIZEFLAG=3D"3"></CENTER>
+          <P></P>Now that you have a <CODE>.class</CODE> file, you can =
+run your=20
+          program.</BLOCKQUOTE><IMG alt=3D"" height=3D16=20
+        =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/arrow.g=
+if"=20
+        width=3D13><FONT size=3D-1><A=20
+        =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#top">top</A></FONT>=20
+        <BR>
+        <HR align=3Dleft width=3D"70%">
+
+        <H2><A name=3D2c></A><FONT face=3D"Arial, Helvetica, =
+sans-serif"><FONT=20
+        color=3D#ff0000>c.</FONT> Run the Program.</FONT></H2>
+        <BLOCKQUOTE>In the same directory, enter at the prompt:=20
+          <BLOCKQUOTE>
+            <TABLE border=3D1 cellPadding=3D0 cellSpacing=3D2>
+              <TBODY>
+              <TR>
+                <TD width=3D"100%"><CODE>&nbsp;java=20
+              =
+HelloWorldApp&nbsp;</CODE></TD></TR></TBODY></TABLE></BLOCKQUOTE>Now=20
+          you should see:=20
+          <P>
+          <CENTER><IMG align=3Dbottom alt=3D"" height=3D131=20
+          =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/dosresu=
+lt.gif"=20
+          width=3D484 NATURALSIZEFLAG=3D"3"></CENTER>
+          <P></P>Congratulations! Your program works. </BLOCKQUOTE>
+        <BLOCKQUOTE>
+          <BLOCKQUOTE>&nbsp;=20
+            <TABLE border=3D1 cellPadding=3D10 cellSpacing=3D0 =
+width=3D550>
+              <TBODY>
+              <TR bgColor=3D#ffcccc>
+                <TD bgColor=3D#ffdddd><A name=3Derror></A><B><FONT=20
+                  face=3D"Arial, Helvetica, sans-serif"><FONT =
+color=3D#804000><FONT=20
+                  size=3D+1>Error Explanation</FONT></FONT></FONT></B>=20
+                  <P><B><CODE>Exception in thread "main"=20
+                  java.lang.NoClassDefFoundError: =
+HelloWorldApp</CODE></B>=20
+                  <P>If you receive this error, <CODE>java</CODE> cannot =
+find=20
+                  your bytecode file, <CODE>HelloWorldApp.class</CODE>.=20
+                  <P>One of the places <CODE>java</CODE> tries to find =
+your=20
+                  bytecode file is your current directory. So, if your =
+bytecode=20
+                  file is in <CODE>C:\java</CODE>, you should change =
+your=20
+                  current directory to that. To change your directory, =
+type the=20
+                  following command at the prompt and press =
+<B>Enter</B>:=20
+                  <BLOCKQUOTE><PRE><CODE>cd =
+c:\java</CODE></PRE></BLOCKQUOTE>The prompt=20
+                  should change to <CODE>C:\java&gt;</CODE>. If you =
+enter=20
+                  <CODE>dir</CODE> at the prompt, you should see your=20
+                  <CODE>.java</CODE> and <CODE>.class</CODE> files. Now =
+enter=20
+                  <CODE>java HelloWorldApp</CODE> again.=20
+                  <P>If you still have problems, you might have to =
+change your=20
+                  CLASSPATH variable. To see if this is necessary, try=20
+                  "clobbering" the classpath with the following command: =
+
+                  <BLOCKQUOTE><PRE><CODE>set =
+CLASSPATH=3D</CODE></PRE></BLOCKQUOTE>Now enter=20
+                  <CODE>java HelloWorldApp</CODE> again. If the program =
+works=20
+                  now, you'll have to change your CLASSPATH variable. =
+For more=20
+                  information, consult the section <I><A=20
+                  =
+href=3D"http://java.sun.com/j2se/1.3/install-windows.html#Classpath"=20
+                  target=3Dother><FONT color=3D#009bbb>Check the =
+CLASSPATH=20
+                  Variable</FONT></A><A=20
+                  =
+href=3D"http://java.sun.com/j2se/1.3/install-windows.html#Classpath"><IMG=
+=20
+                  align=3DabsMiddle alt=3D"(outside of the tutorial)" =
+border=3D0=20
+                  height=3D11=20
+                  =
+src=3D"http://java.sun.com/docs/books/tutorial/images/otherIcon.gif"=20
+                  width=3D11></A> </I>in the installation=20
+              =
+instructions.</TD></TR></TBODY></TABLE></BLOCKQUOTE></BLOCKQUOTE><IMG=20
+        alt=3D"" height=3D16=20
+        =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/arrow.g=
+if"=20
+        width=3D13><FONT size=3D-1><A=20
+        =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#top">top</A></FONT>=20
+
+        <HR align=3Dleft>
+
+        <H2><A name=3D3></A><FONT face=3D"Arial, Helvetica, =
+sans-serif"><FONT=20
+        color=3D#990099>3.</FONT><FONT color=3D#009900> </FONT>Creating =
+Your First=20
+        Applet</FONT></H2>
+        <P><CODE>HelloWorldApp</CODE> is an example of a Java=20
+        <I>application</I>, a standalone program. Now you will create a =
+Java=20
+        <I>applet </I>called <CODE>HelloWorld</CODE>, which also =
+displays the=20
+        greeting "Hello world!". Unlike <CODE>HelloWorldApp</CODE>, =
+however, the=20
+        applet runs in a Java-enabled Web browser such as HotJava, =
+Netscape=20
+        Navigator, or Microsoft Internet Explorer.</P>
+        <P>To create this applet, you'll perform the basic steps as =
+before:=20
+        create a Java source file; compile the source file; and run the=20
+        program.</P>
+        <HR align=3Dleft width=3D"70%">
+
+        <H2><FONT face=3D"Arial, Helvetica, sans-serif"><FONT =
+color=3D#990099><A=20
+        name=3D3a></A><FONT face=3D"Arial, Helvetica, sans-serif"><FONT=20
+        color=3D#990099></FONT></FONT>a. </FONT>Create a Java Source=20
+        File.</FONT></H2>
+        <BLOCKQUOTE>
+          <P>Again, you have two options:</P>
+          <UL>
+            <LI>You can save the files <A=20
+            =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/applet/example=
+/HelloWorld.java"=20
+            target=3Dsource><FONT=20
+            color=3D#bb000f><CODE>HelloWorld.java</CODE></FONT></A><A=20
+            =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/applet/example=
+/HelloWorld.java"><IMG=20
+            align=3DabsMiddle alt=3D"(in a .java source file)" =
+border=3D0 height=3D11=20
+            =
+src=3D"http://java.sun.com/docs/books/tutorial/images/sourceIcon.gif"=20
+            width=3D11></A> and <A=20
+            =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/applet/example=
+/Hello.html"><CODE>Hello.html</CODE></A>=20
+            on your computer and avoid a lot of typing. Then, you can go =
+
+            straight to <A=20
+            =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#3b">step=20
+            b</A>.<BR><BR>
+            <LI>Or, you can follow these instructions: </LI></UL>
+          <P><B><FONT color=3D#990099>1.</FONT></B><FONT =
+color=3D#990099>=20
+          </FONT>Start NotePad. Type the following code into a new =
+document:=20
+</P>
+          <TABLE border=3D1 cellPadding=3D2 cellSpacing=3D2 width=3D500>
+            <TBODY>
+            <TR>
+              <TD width=3D"100%"><PRE><CODE>import java.applet.*;
+import java.awt.*;
+=20
+/**
+ * The HelloWorld class implements an applet that
+ * simply displays "Hello World!".
+ */
+public class HelloWorld extends Applet {
+    public void paint(Graphics g) {
+        // Display "Hello World!"
+        g.drawString("Hello world!", 50, 25);
+    }
+}
+</PRE></CODE></TD></TR></TBODY></TABLE>
+          <P>Save this code to a file called =
+<CODE>HelloWorld.java</CODE>.</P>
+          <P><B><FONT color=3D#990099>2.</FONT> </B>You also need an =
+HTML file to=20
+          accompany your applet. Type the following code into a new =
+NotePad=20
+          document:</P>
+          <TABLE border=3D1 cellPadding=3D2 cellSpacing=3D2 width=3D500>
+            <TBODY>
+            <TR>
+              <TD width=3D"100%"><PRE><CODE>&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;TITLE&gt;A Simple Program&lt;/TITLE&gt;
+&lt;/HEAD&gt;
+&lt;BODY&gt;
+Here is the output of my program:
+&lt;APPLET CODE=3D"HelloWorld.class" WIDTH=3D150 HEIGHT=3D25&gt;
+&lt;/APPLET&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;
+</CODE></PRE></TD></TR></TBODY></TABLE>
+          <P>Save this code to a file called=20
+        <CODE>Hello.html</CODE>.</P></BLOCKQUOTE>
+        <HR align=3Dleft width=3D"70%">
+
+        <H2><FONT face=3D"Arial, Helvetica, sans-serif"><FONT =
+color=3D#990099><A=20
+        name=3D3b></A><FONT face=3D"Arial, Helvetica, sans-serif"><FONT=20
+        color=3D#990099></FONT></FONT>b. </FONT>Compile the Source=20
+        File.</FONT></H2>
+        <BLOCKQUOTE>
+          <P>At the prompt, type the following command and press <FONT=20
+          color=3D#990099>Return</FONT>: </P>
+          <BLOCKQUOTE>
+            <TABLE border=3D1 cellPadding=3D0 cellSpacing=3D2>
+              <TBODY>
+              <TR>
+                <TD width=3D"100%"><CODE>&nbsp;javac HelloWorld.java=20
+              </CODE></TD></TR></TBODY></TABLE></BLOCKQUOTE>
+          <P>The compiler should generate a Java bytecode file,=20
+          <CODE>HelloWorld.class</CODE>. </P></BLOCKQUOTE>
+        <HR align=3Dleft width=3D"70%">
+
+        <H2><FONT face=3D"Arial, Helvetica, sans-serif"><FONT =
+color=3D#990099><A=20
+        name=3D3c></A><FONT face=3D"Arial, Helvetica, sans-serif"><FONT=20
+        color=3D#990099></FONT></FONT>c. </FONT>Run the =
+Program.</FONT></H2>
+        <BLOCKQUOTE>
+          <P>Although you can view your applets using a Web browser, you =
+may=20
+          find it easier to test your applets using the simple=20
+          <CODE>appletviewer</CODE> application that comes with the=20
+          Java<SUP><FONT size=3D-2>TM</FONT></SUP> Platform. To view the =
+
+          <CODE>HelloWorld</CODE> applet using =
+<CODE>appletviewer</CODE>, enter=20
+          at the prompt: </P>
+          <BLOCKQUOTE>
+            <TABLE border=3D1 cellPadding=3D0 cellSpacing=3D2>
+              <TBODY>
+              <TR>
+                <TD width=3D"100%"><CODE>&nbsp;appletviewer Hello.html=20
+              </CODE></TD></TR></TBODY></TABLE></BLOCKQUOTE>
+          <P>Now you should see:</P><IMG alt=3D"" height=3D116=20
+          =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/applet.=
+gif"=20
+          width=3D173>
+          <P>Congratulations! Your applet works.</P></BLOCKQUOTE><IMG =
+alt=3D""=20
+        height=3D16=20
+        =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/arrow.g=
+if"=20
+        width=3D13><FONT size=3D-1><A=20
+        =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#top">top</A></FONT>=20
+
+        <HR align=3Dleft>
+
+        <H2><A name=3D4></A><FONT face=3D"Arial, Helvetica, =
+sans-serif"><FONT=20
+        color=3D#009900>4. </FONT>Where to Go from Here</FONT></H2>
+        <P>To continue your introduction to the Java programming =
+language, check=20
+        out these trails:</P>
+        <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D2 width=3D450>
+          <TBODY>
+          <TR>
+            <TD width=3D10>&nbsp;</TD>
+            <TD width=3D"86%"><A=20
+              =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/index.html"=20
+              target=3D_top>Getting Started</A><A=20
+              =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/index.html"=20
+              target=3D_top><IMG align=3DabsMiddle=20
+              alt=3D"(in the Getting Started trail)" border=3D0 =
+height=3D11=20
+              =
+src=3D"http://java.sun.com/docs/books/tutorial/images/tutorialIcon.gif"=20
+              width=3D11></A> </TD></TR>
+          <TR>
+            <TD width=3D10>&nbsp;</TD>
+            <TD width=3D"86%"><A=20
+              =
+href=3D"http://java.sun.com/docs/books/tutorial/java/index.html"=20
+              target=3D_top>Learning the Java Language</A><A=20
+              =
+href=3D"http://java.sun.com/docs/books/tutorial/java/index.html"=20
+              target=3D_top><IMG align=3DabsMiddle=20
+              alt=3D"(in the Getting Started trail)" border=3D0 =
+height=3D11=20
+              =
+src=3D"http://java.sun.com/docs/books/tutorial/images/tutorialIcon.gif"=20
+              width=3D11></A> </TD></TR></TBODY></TABLE>
+        <P><IMG alt=3D"" height=3D16=20
+        =
+src=3D"http://java.sun.com/docs/books/tutorial/figures/getStarted/arrow.g=
+if"=20
+        width=3D13><FONT size=3D-1><A=20
+        =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/win32=
+.html#top">top</A></FONT>=20
+        </P></TD></TR></TBODY></TABLE></BLOCKQUOTE><IMG align=3Dbottom =
+height=3D8=20
+src=3D"http://java.sun.com/docs/books/tutorial/images/blueline.gif" =
+width=3D550=20
+NATURALSIZEFLAG=3D"3"> <BR>
+<TABLE width=3D550>
+  <TBODY>
+  <TR>
+    <TD align=3Dleft vAlign=3Dcenter><A=20
+      =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/index=
+.html"=20
+      target=3D_top><IMG align=3Dcenter alt=3D"Previous Page" border=3D0 =
+height=3D26=20
+      =
+src=3D"http://java.sun.com/docs/books/tutorial/images/PreviousArrow.gif" =
+
+      width=3D26></A> <A=20
+      =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/TOC.html#cupoj=
+ava"=20
+      target=3D_top><IMG align=3Dcenter alt=3D"Lesson Contents" =
+border=3D0 height=3D26=20
+      src=3D"http://java.sun.com/docs/books/tutorial/images/TOCIcon.gif" =
+
+      width=3D26></A> <A=20
+      =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/unix.=
+html"=20
+      target=3D_top><IMG align=3Dcenter alt=3D"Next Page" border=3D0 =
+height=3D26=20
+      =
+src=3D"http://java.sun.com/docs/books/tutorial/images/NextArrow.gif"=20
+      width=3D26></A></TD>
+    <TD align=3Dmiddle vAlign=3Dcenter><FONT size=3D-1><A=20
+      href=3D"http://java.sun.com/docs/books/tutorial/index.html"=20
+      target=3D_top>Start of Tutorial</A> &gt; <A=20
+      =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/index.html"=20
+      target=3D_top>Start of Trail</A> &gt; <A=20
+      =
+href=3D"http://java.sun.com/docs/books/tutorial/getStarted/cupojava/index=
+.html"=20
+      target=3D_top>Start of Lesson</A> </FONT></TD>
+    <TD align=3Dright vAlign=3Dcenter><FONT size=3D-1><A=20
+      href=3D"http://java.sun.com/docs/books/tutorial/search.html"=20
+      target=3D_top>Search</A> <BR><A=20
+      =
+href=3D"http://java.sun.com/docs/books/tutorial/forms/sendusmail.html">Fe=
+edback=20
+      Form</A> </FONT></TD></TR></TBODY></TABLE>
+<P><FONT size=3D-1><A=20
+href=3D"http://java.sun.com/docs/books/tutorial/information/copyright.htm=
+l">Copyright</A>=20
+1995-2001 Sun Microsystems, Inc. All rights reserved. =
+</FONT></P></BODY></HTML>
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/images/PreviousArrow.gif
+
+R0lGODdhGgAaAPUAAPf8//Hy9+34/+bu/97e3tbW3tLh+87W3snN28TS9LvG3LG52ae856XG56O4
+96Cu1p2nwJy955y155S155St54+o2Y+awIyt54yl54ea1oSl54Sc54OVwn6LvHuc53uU53uT2nuM
+53OM53OM3nOE1nKM03KE3m+BvWuE1muEzmt7zmN7zmN7xmN7vV9zvV50sV5zxlBouEpgrUpaljdP
+nwokeQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAGgAaAAAG/sCGsBEpFiWSiZJC
+uTgxUI1mkxkaj8llswnFSDdg4TWCVE6Y3MolqslQiUYJ2TypoCVM7xTsGSMrEQABAQCFhgNTbhke
+IFdJFRWEBYaUCWAbHhsgfUeQGYUDC5SGEoqMjEd1JQEJJzKfowAYfBkfIB9IEhUnFgcuMhaTsYuL
+H8YjfyAvFgbBsQ8AA3y2HyMhjx3AsQAKLzWFm7e2ISNKuzIQlAEP3jXfANQgIuTlFBks2oIL7e79
+/tUjRjTJ0EIbAn7+EtYQEdDEwIIWoiV40EJhQoYkUDyU0UEiA138HDBg4WLFCBMZUTi5J+PEoQQM
+GOyrkUABCxYoSOhEkeJCnoUMrl6MMgBTJgABGXIqTaECSoYUMmbEGgBTQSEGJVBkZdr0J1QahKYO
+AJWSKwsvG0rIoGGBwDZKSVMwvdkmbQwaM/DKeHGig98OHDJUGGGWBQwpGUCweCFjbVQakGk0ZqFC
+roqbMFpcAgGC500XMVy8iDHaBQumK26SdEFFEyMQI7KimJ1iRW0VuFW72A0mnK2AwDOSsHyZRYvd
+ooMAADs=
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/images/TOCIcon.gif
+
+R0lGODlhGgAaAPcAAPz8//v7/vz8/v7+/+ns+uXp+/P1/vn6/vf4/HOBt3B9rX+Owo+e0ouZy5im
+26a16sDH4vDz/vDy+WJzqWJyp5Kh1Jur4KCw5au78LDA9bK+5c3V8ODl9u3w+kZhqVVppGZ6tpur
+26W147DA8Ku657XF8Kay1sTS+7XB4dzk++Xr/ezv+O/x9/v8//r7/vn6/fj5/AAlfgkthBAzhxEz
+hyBAjyFBjydGlDBOlzFOl0VgoVdxr1VtqWV7sWZ8sXeLvnaKun6Rv4WXxImaxIqbxLXH8qKw0r7N
+8qq21NTb7M/W5/f5/vb4/WR7sXWKuoOWwoygy4iaxImbxKvA8JqpzLvL8Ky62dTg/LvF3Nnk/ODn
+9+vx/t/k7+/0/+7z/vL2//L1/LDF8Ka327fH58DQ8LrF3Nrk+MzV5/D1//b5//X4/u7x9/j6/vf5
+/fz9//v8/omi0cvV5+bu/fP3/vH1/LXL8OLs/O7z+/X4/bvQ8Onx/e/1/vL2/Pn7/vL3/vf6/vX4
+/MDV8Orw9/v9//3+//z9/sXb8PX7//r9//P7//z+//v+//7///3+/v////7+/gAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAGgAaAEAI/wANGQpE
+sGAgMmTyKKxSpY7DOiUihgkzImEDO3cKNXLEsSOAJQIK9RkwgI4FOwwyPIBYAlEMIooc+RlCI4YN
+JIpyCpkRA0ccRAoaMBgxggSGBw6QMmAgtEFTp04XQHVaEJFVq3ay6kl0FVGirHa6IJrgQEQVrC85
+0gBC0lEOHo5oOLEqiIJTBxcmXrxiIMsSNx0DO1Jz4kSGKV2EOjB48GDChQwdlhgzJowGoiQ0BLKq
+CA8jNgM4MhowmjQjRjkHTbj7QGGM16+jsNAB24kiRmtov4aCSKgFhw3kvHwjwAaPAY8c2fDhosaO
+AgVMeNDSwIGFlogWoUa9KOYANm4YOf8ieXqQggVLLYzQQOJBAxQQJHSZT7/+fDRfuoSdMJCxY4V5
+RNZQRJNZRlRBZHSl4IIKikACQVe9QUgjAwjwyGiDdJXIV0BVdwEZDXTBByABvNFIch21oYYXYLiw
+xBIcJMbABa3lAQcIYlghRhIcKYEFFwO4QdIbPrJgRogOZBCgVS+x4YgPNJQxgBQxUOFIDzScMUgT
+MXwg1AVVhHhEWo6Q+YgOOpQZBAEEbGCHb2BC1EAMP7ghABEvYcFDDFI+EcMTRtwgwwJ2KOBARFYd
+AsAhA7TwByEDpDEHaYrskUYaioyF3qEhjtCHGy4QwkaLFcLwghsRqBBBBEUkVl0IFE1DcVEWc2xx
+ACFMCPAGAhKs0IELAggQQQoWyKjBFCM8YEEDFTg1QQITPBsttNNWmwAJU2BAQnvtWeCtA+CGu9S4
+4zYQEAA7
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/images/NextArrow.gif
+
+R0lGODdhGgAaAPUAAPf8//Hy9+34/+bu/97e3tbW3tLh+8nN28TS9LvG3LHI+bG52ae856XG56Cu
+1p2nwJy955y155S155St54+o2Y+awIyt54yl54ea1oSl54Sc54OVwn6LvHuc53uU53uT2nuM53OM
+53OM3nOE1nKM03KE3m+BvWuE1muEzmt7zmN7zmN7xmN7vV9zvV50sV5zxlBouEpgrUpaljdPnwok
+eQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAGgAaAAAG/sCGsAEpFiMRiXIy
+sTgv0ExGgxkaj8llswm9SDVg4fWolDCblq43g6ESjREIQ56cUJiU7hfcGSMHAIGCAQEAFBhTbRgd
+H1dIEgiCkgUAAhgfix0aH31YSg2SggmAASQfnKieShGhgRguHAgBKCQYHh8eSFlmFq0ABQ4wMQUY
+KyIeHiKPWhaFDq0DCQYbMCgiIiC7Z70ANC4JvhUxxtdlTE7cNOouDoWCDzEvJOVmE+r3+OsL7hUz
+LSfXtuUbuO4AAHH/RJQ4Z4EgPhYOFADq9+/EiS1QPrRYwSDCPRcUIjBAAIiDPxQWLTShkOGDiRUI
+EHhjQJOkIBP+UpxA8eRClZtahRbUNBDKhYwXKlCk0MNGQyQADBTYDCUjRgsVKZZGSQQIwAB3oQLM
+8Id1xdY2E3xJItDP6oq3UqZQuRCBwgYOeDmYcBFDxtgZ8d62kNuG0QcUMPz+9RsDcAwYglmAmYzr
+wwkVL1q0gMHZBQzNLV6wYKGZyqYOt5KRGGExq4rXb9+SLn0a160Q10Sw3pk1hWzQLoIAADs=
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/images/blueline.gif
+
+R0lGODlhJgIIAPcAAAJVswNWtgZWtQdRsAdTtQhWuwlSuQpWtApWtgtTtwtVtAxUuAxWtRJOsBVF
+qSRFrjVKmTs8aD47Zj47aD48bj85ZUA5ZUA6ZkA9akA/aUE7aUE+bUFMnEJNnUM6aUM8aEZTokdM
+nkdNoUdOnkhPn0hQpUhbxElQnkpMo0tMpkw7aExNnU5RnlFQoFs1aGBKn29cinJqv6CNoanj1aqH
+nbb/7Lyksb2lsr6irr6isL7X07+dtb/19cGjr8H31cKgsMKir8KiscKjssL11MP01MSlt8bGxsbx
+08fx2civwsrx1Mr258zu083Nzc6wyM7//9D1+9H66NL/+9T/99X27dbW1tu359vu6N3x8t7/79/M
+39//7eDg4OD/7eD/7+Hh4eH/8OL/6ePu5uP+7eP/8+X97eb87+jUzejo6Oj//+n27Ovr6+3t7e/q
+8PHx8fLr8/Ly8vT09PT6//b29vf7/Pj4+Pj+/Pj/6fn+9/r6+vv7+/zo4fz8/Pz97fz/5/z/6v3o
+4/3s5P39/f3+7v75/f76+/787f7+/v7+///07f/1/v/28P/3/P/4/f/4///5+//5/P/5/f/6/P/7
+7P/88P/+5P/+6f///wAAABgaGHx/dQB4XBYAAIgAAAAAJhgAGHUAdVAAXAAAawAALgAAZ3wAaQAA
+YgAAbAEAACMAAGsAEu8AAP8a4utm1ejoxgAFAAXAtRcCmfgfi8PAw7ICsq40rgAYAAB1AABQAAAg
+AAAACgDvAAD/AADqAADYHAACAAD5AACIvxoAAGYAAOgAvn4AAEgAAncA4sQA1dwAxgD/tQDwmSUw
+iwD/wwDtsgHArv8CAO1fACisA/8aBe1mBCTolP8AF+0A/CBvxAAAGAAAWgAJpAAA7wAA/wAA8AgA
+nAIAACYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH+JEZpbGUgd3JpdHRlbiBi
+eSBBZG9iZSBQaG90b3Nob3CoIDUuMAAsAAAAACYCCAAACP4AnzzhAQWKnDeECCFq06ehw4cQI0qc
+SLGixYsYM2rcyLGjx48gQ4ocSbKkyZMoU6o0acnSn0GUKBm648dPpUuHcl6KEaMDBAgcVrBgcWIE
+iaNIkypdyrSp06dQo0qdSrWq1atYs2rdyrWr169gw4odSxZsiBAiUKRIUQJEixYv0Lhxk+eSCRMO
+FCgQwGDAAAIFDAgeTLiw4cOIEytezLix48eQI0ueTLmy5cuYM2vezLmz58+bDxxAsCBBggAAGjR4
+0OTLlzmHrFiBMWFChAoWLGyg8KG379/AgwsfTry48ePIkytfzry58+fQo0ufTr269evYs2u3fuGC
+BA0ePP5gyKBChQsjXLjUueTIkRYnTnbQKFIkiYwe+PPr38+/v///AAYo4IAEFmjggQgmqOCCDDbo
+4IMQRijhhBRWGKEQQtxgQxBB/JADDjgAUcUaawhySQ01SJFGGljoQAUVU8yAxIw01mjjjTjmqOOO
+PPbo449ABinkkEQWaeSRSCap5JJMNunkk1AyqYQSRAwxJRNHDDGED2zUsd4lUURxBR102CGGGmqQ
+sUQYbLbp5ptwxinnnHTWaeedeOap55589unnn4AGKuighBZq6KGIJlqoGWZ0scUYY5ThRRZZgHHI
+JTjxMckkZwACSCKB7LHHInhEYuqpqKaq6qqsturqqzCwxirrrLTWauutuOaq66689urrr8AGK+yw
+vzLCCCSSPPJIIXo00ogil+SRRxxwBAQAOw==
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/figures/getStarted/butlersm.gif
+
+R0lGODlhVgBgAPf/AP/////39/f/9/f39/f37/fv7+/v7+/n7+/n5+fn5+fn3ufe3t7e3t7e1t7W
+1t7O3t61ztbW3tbW1tbWztbOzs7Ozs7Oxs7Gxs6MrcbGxsbGvca9vcacvcaUtcaEpb29vb29tb21
+tbW1tbW1rbWtrbVjjK2tra2tpa2lpa1ajK1Cc605a6WlpaWlnKWcnKVShKU5a6UxY6UhUpycnJyc
+lJyUlJxznJwpUpwQOZSUlJSUjJSMjJQYOZQQMZQQKYyMjIyMhIyEhIwQKYwQIYwIMYSMnISEhISE
+e4R7e4QQGIQQEIQIMXt7jHt7e3t7c3tzc3sYCHsQMXsQCHNzc3Nza3Nra2tra2trY2tjY2tjWmNr
+e2NjY2NjWmNaWlpac1paWlpSUlpKSloIKVJSUlJSSlJKSlJKQkpKSkpCQkoQKUoQIUJCQkJCOUI5
+OUIQIUIIGDk5OTkxMTkIGDFCSjExMTEpKSk5QikpKSkhISkhGCkYGCkQGCEpMSEhKSEhISEhGCEY
+GCEYECEIEBgYGBgQEBgIEBAQEBAICBAACAgQEAgICAgACAgAAMDAwAAIAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAI0ALAAAAABWAGAA
+QAj/ABsJHEiwoMGDCBMqXMiwocI6AwrscNGljA4wDjNq3OgQSRcLFSgA6KKDo8mTJwc9Wsmy5aNB
+G1DK3NgCxYgQOHPqDLHBRZifYcxs2LlThIgRJ1rMXLpxh8uWJjO4ZEq14CM/Ge883boSa9WljxQp
+/MG1LFcTX0+uNHjmaY+3MFSskPG2rt23W9PKNPEIgN+/f5uwNLTHTRpBLVkAXux3rcEZj87oNbjm
+UQbGfweYdTkI818rj35Y3fyI6UrPBqasHLSlQkIGRrastIL5wyMrCcmWlhkCEJ0CA4xcGJBlsnGG
+M0jUKWDggwE6W45LZ7jBbxAdDlAEcTC9O0ERj5xw/30SYo13vRIMuQTj4mCQll/Oe1fUksHGzfIz
+Xm3ohzTX/ArRl8FB4LlkhxaLeXBXXU8ZAqBCDAwGmGx3DTEEFBhmiKESPZz2FwMsPALHFh88SNBK
+EngWgCFkSDCAZwTMUEYengHAgCJwILTacR7W+GKNi1UApGwzNKKVY3RwZZ5pfdm4Ehz2zfSFh0Y8
+MkV3gwzQCAoklDGGCUuaaJwIfsQxwABNWBBAF2Iax8UHd+BxZgiutTmZCx+wMUAAIDiwBkZ2TvYB
+AFdwsUADAAzQQKCTjeBXBRJcgEIFAzJKlSFglHUHAE5ZCtZWg3hqUguEEBIIIKgGoqqqqLaqRx54
+xP8KSEyiblSFS2gAAZVaL9XaSFkbRfiUWL7y9UidDvm3m6j7NTSlsiwx6+BC0P7H6ErIGrRVH3ww
+YUMMC/agRl52gkbHQU8tksIBgEGwQrg9iEGumBKsJFojFbik3iPwvpWEElJIIYQPPSxhraWPbLqY
+YG/5oGGGFjLYBGZHPsJCIwXiJh9kZwD5IaUZVPCjx36NsWxB4BU53SOG+PjUIVVg8ZQfQJpcYkH9
+7SpQBtEtVeVlNRrQUhfV+TWAC3hIWCNoPyS5WY5f9eixBCb8YMUaa5zRxA8sCElyZZWy5ZgEfvhh
+hcozSQ3AFPRZaVJ/LQPW30KGTDtZvmHpBZlj3T3/oSUdbZgwRh20+ioTF0D4PUDgA4RquEw1+IGH
+AQXQ4IABRzwuUxNVcHEmGiAMcIfmKF3ggAJt1LFAC3GQftIXJO1QwEg5uG7SDCygcSYKFKBRhu0c
+XVADGgg4IAIAaOwAPEc7TIAFFo8usDxHDLz4RBULZPDE9Bq14NcHF2ywwwY3c8/QBX5RwEACH1Ag
+vfkBVlmWehfDX1Cch3AFBgBUnGy/QFUwRBnm9T+EfIARCGSE/7gnARFU4Q+DGESrAPGHPFgQVrGK
+VR02yMEy5OACUbJdBeJwB0DEQQILiaDjzKcBFrHBJVggCAhWgob2mKR+njKL3TZirAUGClgbKZDO
+/yzVhqcY4X0OYcC+nnKvHNZHI88CYq16lRGnkQYtzPJKQ6qVsCw2RCpcjEwOV5iQioXRhw9i2UIE
+c0aWXOmHigihQeCwmUUIQg5vKAQiuDI6O62kfAWxjUsSMYciCCAAJeBBuAhoIvodxIwr8UIEFoMB
+eDniKSgUU4SI9R239OAGHXgAB16Ag3516Cl2qowc6ehJU96FCFvpY6BAwxK58esuPgDYwzDUg0I0
+yQAiaFsmr2UZwEjFEQ1Lwi6hoIQk+MAHclDEoBbTEkNY4QdyzM+xMNMfQvTAB0NQ5hDsEoX80QYz
+UuHkQIwlnykBSYgzMwLJ+EaQTXqnLRMjmT49I8sYQJ5IY9JRG2ACwBJAaIAxWFDJI/AApDuocyBC
+FMFxIPMDlymrM0t7RO0IYoIlciVsKAGPPIP2lCCYAAWQjJtnVPMDEZyBBR3lihUYkE2Z0GdkmEkA
+HZDgsQ044RBAAk0O9rYSQ0QRlVQR6D6X+heTSbQRYxgDQXKGr6l8ymPCYokiDDEIQ7TNjT7yw0MJ
+QkvjKDUHCiXjQmiZT8D0MyH1QuNV/xKiR3zhqSZZyRRGRk8AaWUKM6BqUh9xPPpky0QiMEFNmSJW
+tJ0kIAA7
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/figures/getStarted/check.gif
+
+R0lGODlhHwAjAPf/AAAAAAAAQAAAgAAA/wAgAAAgQAAggAAg/wBAAABAQABAgABA/wBgAABgQABg
+gABg/wCAAACAQACAgACA/wCgAACgQACggACg/wDAAADAQADAgADA/wD/AAD/QAD/gAD//yAAACAA
+QCAAgCAA/yAgACAgQCAggCAg/yBAACBAQCBAgCBA/yBgACBgQCBggCBg/yCAACCAQCCAgCCA/yCg
+ACCgQCCggCCg/yDAACDAQCDAgCDA/yD/ACD/QCD/gCD//0AAAEAAQEAAgEAA/0AgAEAgQEAggEAg
+/0BAAEBAQEBAgEBA/0BgAEBgQEBggEBg/0CAAECAQECAgECA/0CgAECgQECggECg/0DAAEDAQEDA
+gEDA/0D/AED/QED/gED//2AAAGAAQGAAgGAA/2AgAGAgQGAggGAg/2BAAGBAQGBAgGBA/2BgAGBg
+QGBggGBg/2CAAGCAQGCAgGCA/2CgAGCgQGCggGCg/2DAAGDAQGDAgGDA/2D/AGD/QGD/gGD//4AA
+AIAAQIAAgIAA/4AgAIAgQIAggIAg/4BAAIBAQIBAgIBA/4BgAIBgQIBggIBg/4CAAICAQICAgICA
+/4CgAICgQICggICg/4DAAIDAQIDAgIDA/4D/AID/QID/gID//6AAAKAAQKAAgKAA/6AgAKAgQKAg
+gKAg/6BAAKBAQKBAgKBA/6BgAKBgQKBggKBg/6CAAKCAQKCAgKCA/6CgAKCgQKCggKCg/6DAAKDA
+QKDAgKDA/6D/AKD/QKD/gKD//8AAAMAAQMAAgMAA/8AgAMAgQMAggMAg/8BAAMBAQMBAgMBA/8Bg
+AMBgQMBggMBg/8CAAMCAQMCAgMCA/8CgAMCgQMCggMCg/8DAAMDAQMDAgMDA/8D/AMD/QMD/gMD/
+//8AAP8AQP8AgP8A//8gAP8gQP8ggP8g//9AAP9AQP9AgP9A//9gAP9gQP9ggP9g//+AAP+AQP+A
+gP+A//+gAP+gQP+ggP+g///AAP/AQP/AgP/A////AP//QP//gP///yH5BAAAAEIALAAAAAAfACMA
+QAiPAP8JHEiwoMGDCBMiBMeQYcI2ECNKhNjQocKBEf9VrJjxosePIEOKvLjxYpuSA1GCnMhS4siX
+MEk2jFlQJc2KH08ybGnTpM6ZGjmK7LgR3L+OK1u2pMm0qdOnH4E+xTlVKtOeMbHC1GpQqUSuXakS
+FJuzqMCNbYZSLNoQotq0bMEhzen2LM65Hr2yhMo3ZkAAOw==
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/images/otherIcon.gif
+
+R0lGODlhCwALAKIBAP///7+/v5nt/zNeZhwiAAC43QCbuwAAACH5BAEAAAEALAAAAAALAAsAAAMl
+GKq1rqKMB4UZ0wlrbg5bJ2JBUYgoQQQYaqhL28FOSz/DTa1OAgA7
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/figures/getStarted/helloWorld.gif
+
+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
+n3hsBwQAOw==
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/figures/getStarted/arrow.gif
+
+R0lGODlhDQAQAPf/AAAAAAAAQAAAgAAA/wAgAAAgQAAggAAg/wBAAABAQABAgABA/wBgAABgQABg
+gABg/wCAAACAQACAgACA/wCgAACgQACggACg/wDAAADAQADAgADA/wD/AAD/QAD/gAD//yAAACAA
+QCAAgCAA/yAgACAgQCAggCAg/yBAACBAQCBAgCBA/yBgACBgQCBggCBg/yCAACCAQCCAgCCA/yCg
+ACCgQCCggCCg/yDAACDAQCDAgCDA/yD/ACD/QCD/gCD//0AAAEAAQEAAgEAA/0AgAEAgQEAggEAg
+/0BAAEBAQEBAgEBA/0BgAEBgQEBggEBg/0CAAECAQECAgECA/0CgAECgQECggECg/0DAAEDAQEDA
+gEDA/0D/AED/QED/gED//2AAAGAAQGAAgGAA/2AgAGAgQGAggGAg/2BAAGBAQGBAgGBA/2BgAGBg
+QGBggGBg/2CAAGCAQGCAgGCA/2CgAGCgQGCggGCg/2DAAGDAQGDAgGDA/2D/AGD/QGD/gGD//4AA
+AIAAQIAAgIAA/4AgAIAgQIAggIAg/4BAAIBAQIBAgIBA/4BgAIBgQIBggIBg/4CAAICAQICAgICA
+/4CgAICgQICggICg/4DAAIDAQIDAgIDA/4D/AID/QID/gID//6AAAKAAQKAAgKAA/6AgAKAgQKAg
+gKAg/6BAAKBAQKBAgKBA/6BgAKBgQKBggKBg/6CAAKCAQKCAgKCA/6CgAKCgQKCggKCg/6DAAKDA
+QKDAgKDA/6D/AKD/QKD/gKD//8AAAMAAQMAAgMAA/8AgAMAgQMAggMAg/8BAAMBAQMBAgMBA/8Bg
+AMBgQMBggMBg/8CAAMCAQMCAgMCA/8CgAMCgQMCggMCg/8DAAMDAQMDAgMDA/8D/AMD/QMD/gMD/
+//8AAP8AQP8AgP8A//8gAP8gQP8ggP8g//9AAP9AQP9AgP9A//9gAP9gQP9ggP9g//+AAP+AQP+A
+gP+A//+gAP+gQP+ggP+g///AAP/AQP/AgP/A////AP//QP//gP///yH5BAAAAEIALAAAAAANABAA
+QAg4AP8JHEiw4MABCA3+Q8iQocKFCR82LDjRoUOKESVmVLgR40SCDUMOODgSYsmOJh8KvKixpEqF
+AQEAOw==
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/images/sourceIcon.gif
+
+R0lGODlhCwALAKIBAP///7+/v/+ZoGYzOAADIt0AEbsADwAAACH5BAEAAAEALAAAAAALAAsAAAMl
+GKq1rqKMB4UZ0wlrbg5bJ2JBUYgoQQQYaqhL28FOSz/DTa1OAgA7
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/figures/getStarted/typeA.gif
+
+R0lGODlhHgAeAPf/AAAAAAAAQAAAgAAA/wAgAAAgQAAggAAg/wBAAABAQABAgABA/wBgAABgQABg
+gABg/wCAAACAQACAgACA/wCgAACgQACggACg/wDAAADAQADAgADA/wD/AAD/QAD/gAD//yAAACAA
+QCAAgCAA/yAgACAgQCAggCAg/yBAACBAQCBAgCBA/yBgACBgQCBggCBg/yCAACCAQCCAgCCA/yCg
+ACCgQCCggCCg/yDAACDAQCDAgCDA/yD/ACD/QCD/gCD//0AAAEAAQEAAgEAA/0AgAEAgQEAggEAg
+/0BAAEBAQEBAgEBA/0BgAEBgQEBggEBg/0CAAECAQECAgECA/0CgAECgQECggECg/0DAAEDAQEDA
+gEDA/0D/AED/QED/gED//2AAAGAAQGAAgGAA/2AgAGAgQGAggGAg/2BAAGBAQGBAgGBA/2BgAGBg
+QGBggGBg/2CAAGCAQGCAgGCA/2CgAGCgQGCggGCg/2DAAGDAQGDAgGDA/2D/AGD/QGD/gGD//4AA
+AIAAQIAAgIAA/4AgAIAgQIAggIAg/4BAAIBAQIBAgIBA/4BgAIBgQIBggIBg/4CAAICAQICAgICA
+/4CgAICgQICggICg/4DAAIDAQIDAgIDA/4D/AID/QID/gID//6AAAKAAQKAAgKAA/6AgAKAgQKAg
+gKAg/6BAAKBAQKBAgKBA/6BgAKBgQKBggKBg/6CAAKCAQKCAgKCA/6CgAKCgQKCggKCg/6DAAKDA
+QKDAgKDA/6D/AKD/QKD/gKD//8AAAMAAQMAAgMAA/8AgAMAgQMAggMAg/8BAAMBAQMBAgMBA/8Bg
+AMBgQMBggMBg/8CAAMCAQMCAgMCA/8CgAMCgQMCggMCg/8DAAMDAQMDAgMDA/8D/AMD/QMD/gMD/
+//8AAP8AQP8AgP8A//8gAP8gQP8ggP8g//9AAP9AQP9AgP9A//9gAP9gQP9ggP9g//+AAP+AQP+A
+gP+A//+gAP+gQP+ggP+g///AAP/AQP/AgP/A////AP//QP//gP///yH5BAAAAEIALAAAAAAeAB4A
+QAirAP8JHEiwoMGDAwEgFAim4UKBAGzZgnjQIUGLBiNO/KfwoUeIEil+9NhRpEGMGDOG5DiS5EqC
+EmPKnEkzJsGSLQviZJkToUaTJ8H8S6ly486BDZMSvbnyaE+QRp8e/HkTgNWrWLNinVlVq1evU6Xe
+1ClW50aeCJO6jJpW6FKmbCu6FbqQqtOhSt9CBYqUbl+fTeUW1Gu3LFy+Ygsb3gvx7kerNgvWnEx5
+8cKAADs=
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/figures/getStarted/typea2.gif
+
+R0lGODlhHgAeAPf/AAAAAAAAQAAAgAAA/wAgAAAgQAAggAAg/wBAAABAQABAgABA/wBgAABgQABg
+gABg/wCAAACAQACAgACA/wCgAACgQACggACg/wDAAADAQADAgADA/wD/AAD/QAD/gAD//yAAACAA
+QCAAgCAA/yAgACAgQCAggCAg/yBAACBAQCBAgCBA/yBgACBgQCBggCBg/yCAACCAQCCAgCCA/yCg
+ACCgQCCggCCg/yDAACDAQCDAgCDA/yD/ACD/QCD/gCD//0AAAEAAQEAAgEAA/0AgAEAgQEAggEAg
+/0BAAEBAQEBAgEBA/0BgAEBgQEBggEBg/0CAAECAQECAgECA/0CgAECgQECggECg/0DAAEDAQEDA
+gEDA/0D/AED/QED/gED//2AAAGAAQGAAgGAA/2AgAGAgQGAggGAg/2BAAGBAQGBAgGBA/2BgAGBg
+QGBggGBg/2CAAGCAQGCAgGCA/2CgAGCgQGCggGCg/2DAAGDAQGDAgGDA/2D/AGD/QGD/gGD//4AA
+AIAAQIAAgIAA/4AgAIAgQIAggIAg/4BAAIBAQIBAgIBA/4BgAIBgQIBggIBg/4CAAICAQICAgICA
+/4CgAICgQICggICg/4DAAIDAQIDAgIDA/4D/AID/QID/gID//6AAAKAAQKAAgKAA/6AgAKAgQKAg
+gKAg/6BAAKBAQKBAgKBA/6BgAKBgQKBggKBg/6CAAKCAQKCAgKCA/6CgAKCgQKCggKCg/6DAAKDA
+QKDAgKDA/6D/AKD/QKD/gKD//8AAAMAAQMAAgMAA/8AgAMAgQMAggMAg/8BAAMBAQMBAgMBA/8Bg
+AMBgQMBggMBg/8CAAMCAQMCAgMCA/8CgAMCgQMCggMCg/8DAAMDAQMDAgMDA/8D/AMD/QMD/gMD/
+//8AAP8AQP8AgP8A//8gAP8gQP8ggP8g//9AAP9AQP9AgP9A//9gAP9gQP9ggP9g//+AAP+AQP+A
+gP+A//+gAP+gQP+ggP+g///AAP/AQP/AgP/A////AP//QP//gP///yH5BAAAAEIALAAAAAAeAB4A
+QAiiAP8JHEiwoMGDAwEgXHgQgC1bAhUeBEOxIkOHEP9JZMhR48OIHTtu1NiR4sWPJEOezEjwocuX
+MGO6JDhSJc2CNW3SRJlzYEUwHDGCRGjS5EKhKXUaRNpTKdKEAKJKnUp1KkyaVbNqbagUp9euOFk2
+1ckUbNiMTX8aRVh24c+VQw0aXduQp9uiQNnaNZtwL1+PaP9GRKlxbFCMLAfKXMxYMMKAADs=
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/figures/getStarted/notequal.gif
+
+R0lGODlhFAATAJH/AAAAAP8AAMDAwAAAACH5BAEAAAIALAAAAAAUABMAQAI0lI8pwXoMg4rN2buo
+ARzQ0IUdhmii+IWTdn1kVr1yCc3uiVJ4HomOq+BBdqEUEQCrvViyAgA7SZpUuAIAOwD//yAAACAA
+QCAAgCAA/yAgACAgQCAggCAg/yBAACBAQCBAgCBA/yBgACBgQCBggCBg/yCAACCAQCCAgCCA/yCg
+ACCgQCCggCCg/yDAACDAQCDAgCDA/yD/ACD/QCD/gCD//0AAAEAAQEAAgEAA/0AgAEAgQEAggEAg
+/0BAAEBAQEBAgEBA/0BgAEBgQEBggEBg/0CAAECAQECAgECA/0CgAECgQECggECg/0DAAEDAQEDA
+gEDA/0D/AED/QED/gED//2AAAGAAQGAAgGAA/2AgAGAgQGAggGAg/2BAAGBAQGBAgGBA/2BgAGBg
+QGBggGBg/2CAAGCAQGCAgGCA/2CgAGCgQGCggGCg/2DAAGDAQGDAgGDA/2D/AGD/QGD/gGD//4AA
+AIAAQIAAgIAA/4AgAIAgQIAggIAg/4BAAIBAQIBAgIBA/4BgAIBgQIBggIBg/4CAAICAQICAgICA
+/4CgAICgQICggICg/4DAAIDAQIDAgIDA/4D/AID/QID/gID//6AAAKAAQKAAgKAA/6AgAKAgQKAg
+gKAg/6BAAKBAQKBAgKBA/6BgAKBgQKBggKBg/6CAAKCAQKCAgKCA/6CgAKCgQKCggKCg/6DAAKDA
+QKDAgKDA/6D/AKD/QKD/gKD//8AAAMAAQMAAgMAA/8AgAMAgQMAggMAg/8BAAMBAQMBAgMBA/8Bg
+AMBgQMBggMBg/8CAAMCAQMCAgMCA/8CgAMCgQMCggMCg/8DAAMDAQMDAgMDA/8D/AMD/QMD/gMD/
+//8AAP8AQP8AgP8A//8gAP8gQP8ggP8g//9AAP9AQP9AgP9A//9gAP9gQP9ggP9g//+AAP+AQP+A
+gP+A//+gAP+gQP+ggP+g///AAP/AQP/AgP/A////AP//QP//gP///yH5BAAAAEIALAAAAAAfABwA
+QAhqAP8JHEiwoMGDCBMSBMewoUKBACJGbNhQokWLDzNq3MjR4EWLFBl+BKAwJLiOKFOqpJhxJMiQ
+FzuaTCnRpMuYCEOq3Mmzp8+fBh0C1elzZsubNnFyNMqTaceXFG9KfOh0JdGiQoFq3UowIAA7
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/figures/getStarted/saveas.gif
+
+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
+GgIAOw==
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/figures/getStarted/dos.gif
+
+R0lGODlh6QF4APcAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwMDcwKbK8AAAAAAAGAAAMQAAcxgA
+ABgAORgAUhgYABgYGCkpKTEAADEAczEAnDEAvTExADExGDkAADlCADlCOVIAAFIAGFIAMVIAvVIA
+3lpjAFpjWmtza3MAAHMAMXMAc3MA/3N7AHN7c3sAAHt7AHt7e4SEhJSUlJwAAJycAKWlpbW1tb0A
+AL29AL29vd4AAN7eAN7e3v8AAP//AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAP/78KCgpICAgP8AAAD/AP//AAAA//8A/wD//////yH5BAAAAAAALAAAAADpAXgA
+AAj+AHkIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIENOzEGypMmTKFOqXMmypcuX
+MGPKnEmzps2bOHPq3Mmz50wAIoNizCG0qNGjSJMqXco0pAqgTaPyIGqjqtWrWLNq3cq1q9evYMOK
+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
+w8VIHKpDjMZufHdVzAMBAQA7
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/figures/getStarted/extrastep.gif
+
+R0lGODlhxgBEAPcAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwMDcwKbK8AAAAHt7e6Wlpd7e3v//
+/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAP/78KCgpICAgP8AAAD/AP//AAAA//8A/wD//////ywAAAAAxgBEAAAI/wAXABhI
+sKDBgwgTKlzIsKHDhxAjSpxIEaHAihgzatzIsaPHhBc/ihxJsqTJhiFPqlzJsuXDlC5jypxJEibN
+mzhzviTIoCeDiT15/gTgcyhRo0GLGh3oU6jTo0GfPmzakGrFqDoNXoyK9eBSqVi7hh2aFOlPrmaP
+Ml3atepXhW0NvpU7V6fAsULT0gXLFu3av3gDk/0aF25dr331Zo14t65VtQXx/s17djDgtIIXjhVb
+lKHSyJwRdl4refPhjI0jhq4sFepov5lZQzUM2S/khLY1O35rO25hjalVY769mipszGdvK3/q2zLt
+5bjnmnY+fWRw4oUzt0ZLXXZt2bknQ/8Pj1j87PJ7v0/ufbriVufn0ZcFTX+99/mX7dfXr/45593p
+5TZafx+FNKBDlpnGl2uEFUfZfg/mBR1o3lVFYFOSSfgbRjYt5mFJ5C3W4YckfnTghyOWqOKKHqXI
+4oswSuRijDTWaJGNOOYIko488jhjj0CiGOSQMP5I5JEzGYnkkiwpyeSTJTkJ5ZQtUmllS1JeqeVE
+Bj42lV4DCualVaU99puXW+5EoFeiKRaaftrF2Vd0aXKJnYTmiZfheezdKWd6gMZX541nvrmgeZ31
+qZ1aG2JnZqN1XofgnPcl9lqCyBH13WH4QTqoVhPq5lSl9F2aX34VZtfdpxBdt1mbo87XyZyiYIIH
+n563oskqAO/hCiCjsuJ6KrCx8odorp5u2WWyPA0bJnJjOkhasBq2tyuv12bLmLbcotTttzuCKy5B
+WY6rZbnmWoluulOuy+6T7r67ZLzyHklvvUPeiy+Q+u7ro7/X9gswjo3pKpxHzA6sJn64eWbtwQpz
+1KujrbGUcMQKTfxqxdNGeKGuF2N8kMbtFSrfrXmmLPLCKMOKHoPGfhboytt+LB1vq/ZHXsg0kzus
+oBDqbFaZQffcKsyq2XwnhWsaXbNGITqdZEcnSm311VhnrbVHAQEAOw==
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/figures/getStarted/cd.gif
+
+R0lGODlhEAIEAfcAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwMDcwKbK8AAAAAAAIQAAOQAAeyEA
+ACEAQiEAWiEhACEhITExMTkAADkAezkAnDkAvTk5ADk5IUIAAEJCAEJCQloAAFoAIVoAOVoAvVoA
+3mNjAGNjY3Nzc3sAAHsAOXsAe3sA/3t7AHt7e4QAAISEAISEhJSUlJwAAJycAKWlpbW1tb0AAL29
+AL29vcbGxt4AAN7eAN7e3v8AAP//AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAP/78KCgpICAgP8AAAD/AP//AAAA//8A/wD//////ywAAAAAEAIEAQAI/wBzCBxI
+sKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaPHjx8B5OBBsqTJkyhTqlzJsqXLlzBjypxJs6bN
+mzhz6tzJs6fPn0CD/lQhkkeNo0iTKl3KtKnTp1CjSp1KtarVq1izat3KtavXr2DDih1LNizRkWXT
+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
++ZRUWZWkp5QVOZVWuZVceXlRyZBa2ZViOZaNh5UNuYnbV4X3V40xuIsEqI5kGZd5+JULGZLyaI3G
+yJZtKYjDKJd+iYlmCZJo+YPZaIOaN4V6+ZeKqYV0iZKDCYZu2ZfgSIXmiJhOeIW6KI6LuZn6F5jE
+9ZhEAZeMKJl2KJluOImhuIKJyZmseXyNiZGgqZl5CYmSWIy1eYe2yYjpuJqt2Zu955npEZusaJm4
+qYx2iIrMOIyi6ZvM6XuvWQN2iZrIiJy2SZmo6Yp3qYjNuZ3NB5wp2Y9z1I1X/0iITqiMZpiLRoiM
+3LmevPecYSmBo8me8umP3hmb/Kie85mf6+ie9qmf/vmT9YmL/zmgM8mfAkqgCKqSASqND5mgDqqR
+BsqgDzqhHfma70mhGDqPEfqOGdqh/7igHOqhIqqhnnmhI3qiewiiB4eiLOqMG7qiLRqjgGmh/Smj
+NjqXJVqjN7qjOaiiulecjwielLec40hHRBqe+PmNEsh+Z6iLmMmjOfiiPyqE6nikYmelphmJ9xmf
+WnpH5+iAwIilUIp8PpqWUFilvEl6Ylp2qRh5xymeoLimYwp8UmqmQOqknxiLZ3iZSIqZ1binQfik
+1ZmkotmPQnqmenqa1DmnG/9YpvoIiaUJh29oinfJl+YJqUmoncZ5nV2KpK84m+gJptiZpoyKfHX6
+qIiam4QoqqqZpJLKqXdanpp6hIeqpBjoi0aaqIrajbJZqtbnqAOZqpe6qod4muCXnHzZptmoqvVn
+mM3aqcIKppHqq/t3qsE6jsj6qsJIqbBKm5VKpc6qnEzareDqqcyKmzT4pXBKrfsHrA1anHx6mWxo
+rLBIjk06rEXaqndonfvKlrUqrxUYpNY5sGzoquyafNb6rge7sMDnrgz7sKaaowcKsRS7ew6brHj4
+r/FosM96qwJrq3lJqrkadk0asG9ZiY54r2opryxbsdaTsB2Lppb3rfA5sqD/2qsd66YiK63aOqoZ
+m4CbWogg67IXi6k2O6TkCnkCm7Q523oMGKuv+rHlip5U67KAA7MYG69MqKcEe6tzOJ6CCo5Di41x
+arJ+qrW76bG9aK/vJ6zo+rPcF47S6oIaS7FFG62cmq7FWrYeO7WKapqL2qx7OqlBa46eeLM027Lh
+GJ+02oSAurJuaKy8arWdJrESmrXDqrdpuKsyS41gi6ueC6+CmJ7bWriPm7ZeO7ZU6rYAu4pt+7dq
+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
+Wctb5nKXvfxlMIdZzB0mc5lNEhAAOw==
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/figures/getStarted/dosclass.gif
+
+R0lGODlhFAL4APcAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwMDcwKbK8AAAAAAAIQAAOQAAeyEA
+ACEAQiEAWiEhACEhITExMTkAADkAezkAnDkAvTk5ADk5IUIAAEJCAEJCQloAAFoAIVoAOVoAvVoA
+3mNjAGNjY3Nzc3sAAHsAOXsAe3sA/3t7AHt7e4QAAISEAISEhJSUlJwAAJycAKWlpbW1tb0AAL29
+AL29vcbGxt4AAN7eAN7e3v8AAP//AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAP/78KCgpICAgP8AAAD/AP//AAAA//8A/wD//////ywAAAAAFAL4AAAI/wBzCBxI
+sKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaPHjyAHAsjBo6TJkyhTqlzJsqXLlzBjypxJs6bN
+mzhz6tzJs6fPn0CDCh3KQ8VIHjWSKl3KtKnTp1CjSp1KtarVq1izat3KtavXr2DDih1LtqzZs0ZJ
+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
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/figures/getStarted/dosresult.gif
+
+R0lGODlh5AGDAPcAAAAAAIAAAACAAICAAAAAgIAAgACAgMDAwMDcwKbK8AAAAAAAGAAAMQAAcxgA
+ABgAORgAUhgYABgYGCkpKTEAADEAczEAnDEAvTExADExGDkAADlCADlCOVIAAFIAGFIAMVIAvVIA
+3lpjAFpjWmtza3MAAHMAMXMAc3MA/3N7AHN7c3sAAHt7AHt7e4SEhJSUlJwAAJycAKWlpbW1tb0A
+AL29AL29vd4AAN7eAN7e3v8AAP//AP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAP/78KCgpICAgP8AAAD/AP//AAAA//8A/wD//////ywAAAAA5AGDAAAI/wB5CBxI
+sKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaPHjyBDEsxBsqTJkyhTqlzJsqXLlzBjypxJs6bN
+mzhz6tzJsydOACKDOswhtKjRo0iTKl3K1KgKoE2LErVBtarVq1izat3KtavXr2DDih1LtqzZs2jT
+ql3Ltm3Zp1Gl8nBLt67du3jz6t3Lt29euHGDTrXRoLDhw4gTK17MuLHjx5AjS55MubLly5gza97M
+ubNnyVQBBw452PAIGQAKnwYAYIQN1J9jy55Nu7bt27hz644cGupokKVV25DQAMAL1CNIAJgAe7fz
+59CjS58e+6FvhqkbWC/c+zfpuYRVv/9wsXwG8hGsWVNfz769+/e1ebyEOz+7fJdPudsQ7b1j8AYj
+cPCCBC8wx9oEI7hA3GECMciDYQQpVhBiE0I4kIQVwqfhhhxSJ59X9NmQ3ois9VbYh13l10B3/Xn0
+X4ATuPACAKhNMEEDBjqoo3YP8phYgz6e2GOQQAK5Y5CdGdnhkkwuiSJXIZI4oona5UBViVVhqSKL
+LXL0IgfGTUDjci+M8IJyDvZ4IZIYWiikm2z+OKSSm9HZ5J14emhlikBZCUBWf+5n354iBoqloPrx
+12VGwQFQwqMlOFDBpAukYCkG2QmpZpFDtvkmkpw2ZmSDa0bIY4Wo2pnnqqze9uRWUQL/SuWrU1a1
+paCLegleYQDo4CsMF6CAggU17GDsDjVkipCFqo66KZyndspsqc/6SOqD176paqvcdpskobD2KaKs
+iFZ51aFUcpkrRo3qQMMKH4TgAQUP7JBBBQCkEIOyB8mpKajVximwnaFai+3BRCLs7cIMa/aqVrFi
+FaiKtKZn1a2KrltRuyUAUAEIjwKAwwMopKdjthRKC/CnA6tMcLXZxvzstg3XbLOE4EIsbqDnzkoo
+lodifJ3GG+9anA4lNPDxow1EQHIKNWBwssIF7+gsnFVDi/XMCKOM8s1gh83gnlJevDO5FJPNc6Hp
+4kr0RRwrbQHTAJAcAQ478HukqSmv/zltp3wfCa2pMkc7p8piJ74wimXburOUWg4KYnbqvj0Rx6yZ
+cIMDItfAAADFZqq4wKOX3vDDWYXI54k5p06525ZT1K6vvnZwQQUxHLvDvqaT3vvvrPKgwvDEF188
+UMYnT7x9yiv/esaxP9ToDTRUDwMEIIAgAQs11BCDCKIDL/74eEJu/vnm84o+iYkOHb30RgOgwfwa
+OLDAA/hHsMEGEYRP/v8ADCBkKve+oRhNgAhMoAIpQ8ACMmQwfomgBCdIwQpa8IIY1JkDIzKY5nnw
+gyAMoQhHSMISmvCEKEyhClfIwha68IUwjCEJG7jBhAymhjjMoQ53uBQa8lAgEMygEP+HSMQiGvGI
+fIHeD4EIHiQ68YlQjKIUh6jEJQZxinyxiPsgskXraEWLX6xIFx2yNquAEYsYrOIPOyjDNrqxiVe5
+D03oUxM6zrGMVZHjTJ7yRZvYcY94pIoeZcJHNF5QjTzs4PoWychGOvKR5rtiHlv3FdWNxZJiKSRW
+UFfJQNqAk5MDJZ/6+BZPGrIviNyhIlUJEwBIUpCUDGUs+SRKKHnyQ6DpDSnJgskBCmqXlzTlKfeS
+Sh2u0pgNecorP6m2KxnqmY5DUfJo2bpauY6UhuNBCQyyIl1mBZRla9+rfKnJOFJSmL8cJgWLmcNj
+thOOOlsm47zCM9WpgCDDsyXjRmT/LBJdpZxmtJLhIDUhxwHTKnh8nriqks2CpnOT1UQXVgCqTlSO
+cY3gYadE0qNFgnDUIMs0mzxnqc893dNWwgvXh/KlghQAIG8vBUBLy0lRWBKGIJB6VIQM+s1qjusq
+4gSX4U7g0JoyU2IS/Sc6K2oXjdbQnRzxzUUT8lEeSBWk8HTdSK9Ez2iaVHgq2M80zbbS4SW0pWsz
+Ki4Nsk2HPtSchbLYn8oYVKuciqh4vZA3IYrUpPKUqX5x6gahupGrUmSL7gup47b6U67Uc6EnFch+
+8BlWr4ooBU+BnFnNhk2BtFWbA2lrN98aUBEJZK7j4plCx0mQvOqVtJPsmcV0BtgI/wrWgYTViGEN
+ApUxIhark2PsUh8rTbASr4n3rCyu/DRTzDq3uWm9pUC1+VmcbnO0avWTVU2LWovVFTIN2itcERpX
+Txq1tk2dqiozqt7Dsoaqp4VvQbYIQX8uNqs25SVk5zKQ5Ia1eN3x03NToJjoYjOnn0UwdqXLXaly
+d6LiAu+DxFvaLGXJr7BF711uW8DcZmS3vL3o0LoYxNned5fDtexkjcffFp80Ss1VgeH0Q+HYaken
+bL3uX+H62+0qda0K8VGN88tVZ/r1vBp2C4ff52GMgHi+IvaoDeGJR2Xi96iN3Qpxv/pJgfiXeJNd
+7mWbO+MJD/moPEpwaMN75pUqpP/KEV7IYdoMLvNdM8l6WXL0mnyRJw+kt/K1qkIU2xvhdjXAoUle
+i/s7Fxg/VzscnXOG0cxWbu64tEB5L4l8TNbpBlmpwCyjNS+N57roOXZ87vN7EQJoVv95RMDlE2OD
++aSCfDmfL97ZgBtq5uzeNLQ53SmdTUtVCAM5IaMddpERmlQkl1otp7ZcqlF9ZZFeeZ5d2TLEFu3l
+Ru8sxpDedDd9PVAcv3bSbtY0rOF87GWBuqflvbB9z/zstUT7bdOW9ghdee1msu3fQVvoRJvn7X2a
+zN3o9jROLT1sERtb4QgnNZEzudR6m+XeRMv32x45a4qLMiFixkpjhp3LhJfXzj//Fuhj3s1X/Vo8
+vUtESAd9QvOal6TfpaylSkkaroOGxdf61Tlt4e3yl9MF4xq7Ycwf4nOwYPLnAqd40zs5dVmWsuqj
+NLqS2/tOrZvFuCdEXgrFjsJbqtDsYwe7CdFedq+3BenrIrTbAQXJutu9kVq5u4nPpfe+Y9jvc7c3
+13Eo98Ab/vCIz/Pgn1rtxDv+8ZBHC9xzxUY3Wv7ymM+85jfP+c57PvPsXXqsM+v30pv+9KhPvepX
+z/rWu/71sF+fxrsuqNjb/va4z73ud8/73jMyJvz2IUZ74/viG//4yE++8m1PFIZYWfiJZO/yp0/9
+6lv/+sWX+/NhJ3omEh/74A+///jHT/7zaT/43O++IsvP/va7//28P//sCS99+Nv//vjPPyTlH/ru
+D2T9NCIDAth3A3h6Bbg+B8h6BZiAkCOACeiAqIE+B8iAjASBUuKAI0KB+reBp3dFcDZ/jEd8CxiB
+DYiAJGh6GkgiKWiAEbiCGXiCrOGCAZgeMng+GjiBGMiBOtiBcLR3ggKCg8VeOEiDQ5h7NQh7I1iB
+MDiDEkiCR9iAS8iESbiDVKh39TVq2zd5i6JIKZiDMRiFFviFRYiDNxiFAUiGTtiCaSiDU3iGS0iB
+D+iFYyiHA8iAcZiDU1iHSeiFVViFgwE5J5Z+oseFZmg+XfiGaviFFwiGhQiHif/IhC/YhGHYhoqo
+gmlYiXU4g22ohyc4h5h4iVL4iH1IhfwHfevVG09IhFBIhHgoihCIiE3Iinm4hi44i2GoipaIi3uo
+ia6oh5H4iWJIh8AIiaOog6UoiEtHiLh4hquYi6E4jJRIjM04i9BYiM8ojb+YjZuIGtRYiYuoi4/o
+iddYjMbYeIXWf/4nH9K3jWZoh+FIi+CYjTb4jrIYj/NYjc6ojb14jUX4jfgIid2YiuRIfseohV0C
+gLdYgeOIgf0ohuPoj2QIkDDIkI3Yi3fYipPIh74YjPX4ghnJjSDpja8oi9Y4kO+XA/sGhBSxAisw
+EC15FABIgKKIhDNpkq7niDb/mZOQo5ITwZIC4ZMV0QItABExKZMCWXoJqZOrl5BJqZT2x1+fFJVQ
+CZU8KRFACZQUIZRa2RBF6ZRe+ZVfKZViOZXMhI4+iZUs+ZIumZZqiZU8cJUtyZZqGRFaWZcLoYzY
+aIkXaXcN2UhNqZElCZaC2YdkWZhR6U5y+ZNsuZaJ+ZZzCZeOmZZZWZeUKXNCWJOGCIt115eOVIYd
+OZigOZBjOZr8hZho2ZYveZqKSRCQ6ZgWQZmwKZQFgZdHiJObCYq32YxuGJq8WYyGaZimyZpymZqS
+KZzG6ZrIOZmxCZv/d5kiyYfeuIy7GYufGJHu6JFo2JvaSYWkSZrByZiLqZjF/5mcyNmaBrGc6Jme
+lEmIGRmd2CiOmTkmGzmEgGmP7rmd+Hl/vzma37maCRGebtmabkkQ6lmg6emcoZiUtvmQ3xiS7EiM
+8JmX+Tmh7NedhdmfkemfqpmcxWmeBWGgILqV6oiK9Bif+RiNDVqiEhqhFNqiT2mhYomhkXmajTmc
+AjqedFmgs4mg3Sidz3mfudijh2ifEuqiRmp9MDqVMpqhwomji2meOAoR6DllJPqcFzmCHxmYGzmd
+XBqMWCqRRxqm4befZFmVTcGcd1l/YrqmbNp6SSqVZsoUIsqVatqmdnqnfUemMYqO/teVePqngCp7
+rRSn0langXqoiJoezbcQWf+4eEH4fYkaqYdakI6KW4YqqZjappSajt5Xe5n6qZpqjj/Ip+p3qaB6
+qhS6qZzqp6jaqtuJkiKEfgbZIqzqqra6poSKb6Z6q7z6lcCXqxm3q706rDm5qArRqJw6op5KrMyq
+lKqajrXarNLqh6KKrKsqrNOarRv4rH1af035SEdJndo6rnbHraUqgphJgyaYeuFKruP6h40zqqaI
+TFVqpT4ae+3qrtN6hXtnrdCKoIvYiYyYncPYpfeqrwg7IiUmUf7arfXql+2omSjqmQlbsQpLZRAG
+rEkHsBCrmyO5kH8ZmBabreY6iAAbkf74iwGpokA6svpassm4jhZpovZIsA//ma8uy6swG3MICZ0I
+CLIh6Z4U6Z6slrPSurNWhK0dW6SmV7RGy6ywGkKyWqkdprQQi7ON5LRPO7IaG3fs9as2F7ZiO7Zk
+G7Z/oqdo+6Zpu7Zq27Zs+7ZJCnxi0bWU97XJxG/JmrccARdu27dw+7d+G7iAm7bGmhDOdhV0u4V2
+G1yiGnmIx0eDK7iSG7mUO7lxW60VVxWJe5CLK2uN67iGx7eVO7qWS7qm27bnN7ekarLnKDFKVXig
+G3iQW7q0e7q2W7ve2YN39hXKOqv9oUgeWEbbF7ugK7q4e7vIe7yWu7AQBhbCs7m02rlG9rqfS7xe
+N7vJm73Kq71kurDCW3Fg/wW9vyu9oyav1uu4xsu927u+6lumPdivSwVWNiC+3gG87/u9sHu+Roe9
+7Nu/7eu/Zcls39sV8tu7VMtk0utM1Ku/kZe+APy/EEy7zMty35RPz7u6Mdu6PWNtDAx5/BvBIPzA
+gltiu7tJFjw89Psb9su4Hfx4DhzCMCzChIu5X3TCYZXCo7HCntvCjvfBMvzDMby2qWvCYVXAOBwY
+OmxL+cvDePbCQPzEQdydQ2xGNvxJKnDEcQG8Kfl5XNzFXgxDZwvFYhzFvxm1IFRGBWzDWBwV0bq1
+xUfGYxzHZPlIVFzEVbzGTTFzZbvHfNzHfvzHgBzIglxzGMyz4KG3iJzIij4cF/NKe0z8yJCcZL5b
+v9UbyZZ8yUU0ySr8xZzcyZ78yaAcyqJ8xsnqxqa8g4ucyqq8yqzcyq78yrAcy0EREAA7
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/figures/getStarted/applet.gif
+
+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
+2tgGtrWzze1uf2jb3g63uD0C7nGb29zlPre6u53udbub2u1+t7ybHe9529vY9b63vn+d7337G9f9
+/rfATxLwZIcoIwfnyMETDmyGg+jh4S44sh3ucIRDPNgVX7i4JX5simOkYB+/OMj+LS5yEBEs5CFK
++Mk1HnEVi9vjIwp5zGeucpLPPOY1HxHLF85yb3Pc2PIsOc2FjnKcCz3nSN+4y8MN84NBvOceT/nQ
+ny7zpLe81kzXSM+rTvSHSx3qR+f61Zf2cq2Hfeo3l/nNrY72irN76d6Guc7ZPnKzX3zualf5yN1+
+7Z8P/O/khjvgB29rvxP+8IY//OATr/i/M77xAn885P0t+cnru/KWtzfmMy/vzXPe3Z7/vLpDL3p0
+C770lic96seuotVzXvWu5zbsY4/t2dMe3nDn+0d0r3u1714kvf98saVeEt6HJPh39wjyMz/8tesc
+5TnHu/Q/fnLp1z3le6++ydO7Hvvm6/3pOz973qkOfvJPXfu09zXdz8725HO/7eJffupd7nTn25/n
+e9/I9alffaQbrOvdR39iB39o53t2B3b3p38G6HoOE3U7F34JaHMQ2H8DiIC314Bmh33Ql3fah37T
+13/E933TN3dbh3rllnG3N28nqIAp+G6214LVdnowOHAvOIPJVoM2eGw4mIPDlmGz1mqf9oOg5hOy
+VYRGeIRImIRKuIRM2IRO+FrXFYVSOIVUWIVWeIVYeIUBAQA7
+
+------=_NextPart_000_0000_01C1A1E2.48600E20
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://java.sun.com/docs/books/tutorial/images/tutorialIcon.gif
+
+R0lGODlhCwALAKIBAP///7+/vwAiGQAiGQAiGQAiGQAiGQAAACH5BAEAAAEALAAAAAALAAsAAAMl
+GKq1rqKMB4UZ0wlrbg5bJ2JBUYgoQQQYaqhL28FOSz/DTa1OAgA7
+
+------=_NextPart_000_0000_01C1A1E2.48600E20--

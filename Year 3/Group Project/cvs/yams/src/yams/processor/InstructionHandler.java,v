@@ -1,0 +1,2996 @@
+head	1.32;
+access;
+symbols
+	yams-final-19-12-03:1.32
+	yams-release2-17-12-03:1.32
+	yams-release-17-12-03:1.32;
+locks; strict;
+comment	@# @;
+
+
+1.32
+date	2003.12.15.21.37.05;	author sw00;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2003.12.15.14.32.37;	author sw00;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2003.12.10.17.13.25;	author ajb101;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2003.12.10.13.15.52;	author bmc01;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2003.12.10.08.27.47;	author sw00;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2003.12.04.19.00.43;	author sw00;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2003.12.04.18.00.26;	author sw00;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2003.12.04.17.26.40;	author sw00;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2003.12.04.17.00.07;	author sw00;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2003.12.04.11.49.26;	author sw00;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2003.12.03.17.29.50;	author sw00;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2003.12.03.17.13.22;	author sw00;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2003.12.03.16.03.03;	author sw00;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2003.12.03.14.53.24;	author sw00;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2003.12.03.14.25.37;	author sw00;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2003.12.03.13.33.13;	author sw00;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.11.28.03.27.41;	author sw00;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.11.27.02.28.49;	author sw00;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.11.26.16.49.55;	author sw00;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.11.26.13.05.40;	author sw00;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.11.21.14.02.14;	author sw00;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.11.21.13.17.42;	author sw00;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.11.14.17.31.01;	author sw00;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.11.14.16.41.57;	author sw00;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.11.14.16.02.30;	author sw00;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.14.15.49.16;	author sw00;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.14.14.30.20;	author sw00;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.14.13.39.28;	author sw00;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.14.02.34.33;	author sw00;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.14.00.58.27;	author sw00;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.13.01.49.02;	author sw00;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.50;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.32
+log
+@added setVerbose(PrintStream)
+@
+text
+@/*
+ * Created on 03-Nov-2003
+ *
+ */
+package yams.processor;
+import java.io.PrintStream;
+import yams.exceptions.YAMSUnsupportedInstructionException;
+
+/**
+ * A template instruction handler.
+ * The instructions will be added to this file by the instruction handler
+ * generator, taking the XML file as input.
+ * N.B. R type instructions should be added as cases to the switch on 'func', and
+ * I & J type instructions should be added as cases to the switch on 'op'.
+ *  
+ * @@author sw00
+ */
+public class InstructionHandler implements InstructionHandlerInterface {
+	
+	private RegisterManagerInterface regs;
+	private MemoryManagerInterface mem;
+	private StatisticsManagerInterface stats;
+	private PrintStream out;
+	private PrintStream verbose;
+	
+	/**
+	 * Create a new instruction handler.
+	 * @@param registerManager
+	 * @@param memoryManager
+	 */
+	public InstructionHandler(RegisterManagerInterface registerManager,
+								MemoryManagerInterface memoryManager,
+								StatisticsManagerInterface statisticsManager,
+								PrintStream out,
+								PrintStream verbose) {
+		regs = registerManager;
+		mem = memoryManager;
+		stats = statisticsManager;
+		this.out = out;
+		this.verbose = verbose;
+	}
+
+	public boolean execute(int instruction) {
+		MIPSWord inst = new MIPSWord(instruction);
+		verbose.println("Next: " + inst.toString());
+		// get 'op' field to determine instruction
+		MIPSBitstring op_bitstr = MIPSBitstring.extract(inst, 26, 31);
+		int op = op_bitstr.toInt();
+		
+		// TODO - add coprocessor and floating point instructions (an extension)
+		// TODO - detect MIPS exceptions e.g. arithmetic overflow (an extension)
+		// TODO - implement MIPS exception & interrupt handling (an extension)
+		
+		if(op == 0) {
+			// we're executing an R type instruction
+			
+			// extract R type instruction operands
+			MIPSBitstring rs_bitstr = MIPSBitstring.extract(inst, 21, 25);
+			MIPSBitstring rt_bitstr = MIPSBitstring.extract(inst, 16, 20);
+			MIPSBitstring rd_bitstr = MIPSBitstring.extract(inst, 11, 15);
+			MIPSBitstring shamt_bitstr = MIPSBitstring.extract(inst, 6, 10);
+			MIPSBitstring func_bitstr = MIPSBitstring.extract(inst, 0, 5);
+			int rs = rs_bitstr.toInt();
+			int rt = rt_bitstr.toInt();
+			int rd = rd_bitstr.toInt();
+			int shamt = shamt_bitstr.toInt();
+			int func = func_bitstr.toInt();
+			
+			switch(func) {
+				/* 
+				  * Available to the XML Java code programmer:
+				 * 
+				 *   For R types
+				 *   -----------
+				 *   rs (int)						first source register
+				 *   rs_bitstr (MIPSBitstring)
+				 * 
+				 *   rt (int)						second source register
+				 *   rt_bitstr (MIPSBitstring)
+				 * 
+				 *   rd (int)						destination register
+				 *   rd_bitstr (MIPSBitstring)
+				 * 
+				 *   shamt (int)					shift amount
+				 *   shamt_bitstr (MIPSBitstring)
+				 *  
+				 *	 regs (RegisterManagerInterface)
+				 *	 mem (MemoryManagerInterface)
+				 */
+					
+				case 0x00: {
+					if((rs == 0) && (rt == 0) && (rd == 0) && (shamt == 0)) {
+						verbose.println("NOP");
+						stats.instructionUsed("NOP");
+						// no operation
+					}
+					else {
+						verbose.println("SLL");
+						stats.instructionUsed("SLL");
+						// shift left logical
+						int shifted;
+						shifted = regs.getReg(rt) << shamt;
+						regs.setReg(rd, shifted);
+					}
+					break;
+				}
+				
+				case 0x02: {
+					verbose.println("SRL");
+					stats.instructionUsed("SRL");
+					// shift right logical 
+					MIPSBitstring higherbits;
+					MIPSBitstring shiftedbits;
+					MIPSBitstring output;
+					if(shamt == 0) {
+						output = rt_bitstr;	
+					}
+					else {
+						higherbits = MIPSBitstring.repeat(0, shamt);
+						shiftedbits = rt_bitstr.extract(shamt, 31);
+						output = MIPSBitstring.concatenate(higherbits, shiftedbits);
+					}
+					regs.setReg(rd, output.toInt());
+					break;
+				}
+				
+				case 0x03: {
+					verbose.println("SRA");
+					stats.instructionUsed("SRA");
+					// shift right arithmetic 
+					MIPSBitstring higherbits;
+					MIPSBitstring shiftedbits;
+					MIPSBitstring output;
+					if(shamt == 0) {
+						output = rt_bitstr;	
+					}
+					else {
+						higherbits = MIPSBitstring.repeat(rt_bitstr.getBit(31), shamt);
+						shiftedbits = rt_bitstr.extract(shamt, 31);
+						output = MIPSBitstring.concatenate(higherbits, shiftedbits);
+					}
+					regs.setReg(rd, output.toInt());
+					break;
+				}
+								
+				case 0x04: {
+					verbose.println("SLLV");
+					stats.instructionUsed("SLLV");
+					// shift left logical variable
+					MIPSBitstring rs_shamt;
+					int shiftamount;
+					int shifted;
+					shiftamount = rs_bitstr.extract(0, 4).toInt();
+					shifted = regs.getReg(rt) << shiftamount;
+					regs.setReg(rd, shifted);
+					break;
+				}
+								
+				case 0x06: {
+					verbose.println("SRLV");
+					stats.instructionUsed("SRLV");
+					// shift right logical variable
+					MIPSBitstring higherbits;
+					MIPSBitstring shiftedbits;
+					MIPSBitstring output;
+					int shiftamount;
+					shiftamount = rs_bitstr.extract(0, 4).toInt();
+					if(shiftamount == 0) {
+						output = rt_bitstr;	
+					}
+					else {
+						higherbits = MIPSBitstring.repeat(0, shiftamount);
+						shiftedbits = rt_bitstr.extract(shiftamount, 31);
+						output = MIPSBitstring.concatenate(higherbits, shiftedbits);
+					}
+					regs.setReg(rd, output.toInt());
+					break;
+				}
+								
+				case 0x07: {
+					verbose.println("SRAV");
+					stats.instructionUsed("SRAV");
+					// shift right arithmetic variable
+					MIPSBitstring higherbits;
+					MIPSBitstring shiftedbits;
+					MIPSBitstring output;
+					int shiftamount;
+					shiftamount = rs_bitstr.extract(0, 4).toInt();
+					if(shiftamount == 0) {
+						output = rt_bitstr;	
+					}
+					else {
+						higherbits = MIPSBitstring.repeat(rt_bitstr.getBit(31), shiftamount);
+						shiftedbits = rt_bitstr.extract(shiftamount, 31);
+						output = MIPSBitstring.concatenate(higherbits, shiftedbits);
+					}
+					regs.setReg(rd, output.toInt());
+					break;
+				}
+								
+				case 0x08: {
+					verbose.println("JR");
+					stats.instructionUsed("JR");
+					// jump register
+					regs.setReg("PC", regs.getReg(rs)); 
+					break;
+				}
+								
+				case 0x09: {
+					verbose.println("JALR");
+					stats.instructionUsed("JALR");
+					// jump and link register
+					regs.setReg(31, regs.getReg("PC") + 4);
+					regs.setReg("PC", regs.getReg(rs)); 
+					break;
+				}
+								
+				case 0x0c: {
+					verbose.println("SYSCALL");
+					stats.instructionUsed("SYSCALL");
+					// system call
+					// we shouldn't ever be passed a syscall instruction
+					// (that's for the syscall handler)
+					// the instruction decoder has done its job wrong
+					throw new YAMSUnsupportedInstructionException();
+				}
+								
+				case 0x0d: {
+					verbose.println("BREAK");
+					stats.instructionUsed("BREAK");
+					// TODO - BREAK (an extension)
+					break;
+				}
+								
+				case 0x10: {
+					verbose.println("MFHI");
+					stats.instructionUsed("MFHI");
+					// move from HI
+					regs.setReg(rd, regs.getReg("HI"));
+					break;
+				}
+								
+				case 0x11: {
+					verbose.println("MTHI");
+					stats.instructionUsed("MTHI");
+					// move to HI
+					regs.setReg("HI", regs.getReg(rs));
+					break;
+				}
+								
+				case 0x12: {
+					verbose.println("MFLO");
+					stats.instructionUsed("MFLO");
+					// move from LO
+					regs.setReg(rd, regs.getReg("LO"));
+					break;
+				}
+				
+				case 0x13: {
+					verbose.println("MTLO");
+					stats.instructionUsed("MTLO");
+					// move to LO
+					regs.setReg("LO", regs.getReg(rs));
+					break;
+				}
+				
+				case 0x18: {
+					verbose.println("MULT");
+					stats.instructionUsed("MULT");
+					// multiply
+					long left = regs.getReg(rs);
+					long right = regs.getReg(rt);
+					long product = left * right;
+					int lo = (int) (product & 0xffffffff);
+					int hi = (int) (product >>> 32);
+					regs.setReg("LO", lo);
+					regs.setReg("HI", hi);
+					break;
+				}
+				
+				case 0x19: {
+					verbose.println("MULTU");
+					stats.instructionUsed("MULTU");
+					// multiply unsigned
+					long left = regs.getReg(rs);
+					long right = regs.getReg(rt);
+					long product = left * right;
+					int lo = (int) (product & 0xffffffff);
+					int hi = (int) (product >>> 32);
+					regs.setReg("LO", lo);
+					regs.setReg("HI", hi);
+					break;
+				}
+				
+				case 0x1a: {
+					verbose.println("DIV");
+					stats.instructionUsed("DIV");
+					// divide
+					int quotient;
+					int remainder;
+					int rscontents = regs.getReg(rs);
+					int rtcontents = regs.getReg(rt);
+					quotient = rscontents / rtcontents;
+					remainder = rscontents % rtcontents;
+					regs.setReg("LO", quotient);
+					regs.setReg("HI", remainder);
+					break;
+				}
+				
+				case 0x1b: {
+					verbose.println("DIVU");
+					stats.instructionUsed("DIVU");
+					// divide unsigned
+					int quotient;
+					int remainder;
+					int rscontents = regs.getReg(rs);
+					int rtcontents = regs.getReg(rt);
+					quotient = rscontents / rtcontents;
+					remainder = rscontents % rtcontents;
+					regs.setReg("LO", quotient);
+					regs.setReg("HI", remainder);
+					break;
+				}
+				
+				case 0x20: {
+					verbose.println("ADD");
+					stats.instructionUsed("ADD");
+					// add
+					regs.setReg(rd, regs.getReg(rs) + regs.getReg(rt));
+					break;
+				}
+
+				case 0x21: {
+					verbose.println("ADDU");
+					stats.instructionUsed("ADDU");
+					// addu
+					regs.setReg(rd, regs.getReg(rs) + regs.getReg(rt));
+					break;
+				}
+				
+				case 0x22: {
+					verbose.println("SUB");
+					stats.instructionUsed("SUB");
+					// sub
+					regs.setReg(rd, regs.getReg(rs) - regs.getReg(rt));
+					break;
+				}
+
+				case 0x23: {
+					verbose.println("SUBU");
+					stats.instructionUsed("SUBU");
+					// subu
+					regs.setReg(rd, regs.getReg(rs) - regs.getReg(rt));
+					break;
+				}
+				
+				case 0x24: {
+					verbose.println("AND");
+					stats.instructionUsed("AND");
+					// and
+					regs.setReg(rd, regs.getReg(rs) & regs.getReg(rt));
+					break;
+				}
+				
+				case 0x25: {
+					verbose.println("OR");
+					stats.instructionUsed("OR");
+					// or
+					regs.setReg(rd, regs.getReg(rs) | regs.getReg(rt));
+					break;
+				}
+				
+				case 0x26: {
+					verbose.println("XOR");
+					stats.instructionUsed("XOR");
+					// xor
+					regs.setReg(rd, regs.getReg(rs) ^ regs.getReg(rt));
+					break;
+				}
+				
+				case 0x27: {
+					verbose.println("NOR");
+					stats.instructionUsed("NOR");
+					// nor
+					regs.setReg(rd, ~(regs.getReg(rs) | regs.getReg(rt)));
+					break;
+				}
+				
+				case 0x2a: {
+					verbose.println("SLT");
+					stats.instructionUsed("SLT");
+					// set less than
+					if(regs.getReg(rs) < regs.getReg(rt)) {
+						regs.setReg(rd, 1);
+					}
+					else {
+						regs.setReg(rd, 0);
+					}
+					break;
+				}
+				
+				case 0x2b: {
+					verbose.println("SLTU");
+					stats.instructionUsed("SLTU");
+					// set less than unsigned
+					if(regs.getReg(rs) < regs.getReg(rt)) {
+						regs.setReg(rd, 1);
+					}
+					else {
+						regs.setReg(rd, 0);
+					}
+					break;
+				}
+								
+				default: {
+					// unsupported instruction
+					throw new YAMSUnsupportedInstructionException();	
+				}
+			}
+			return true;
+		}
+
+		// extract I type instruction operands
+		MIPSBitstring rs_bitstr = MIPSBitstring.extract(inst, 21, 25);
+		MIPSBitstring rt_bitstr = MIPSBitstring.extract(inst, 16, 20);
+		MIPSBitstring i_bitstr = MIPSBitstring.extract(inst, 0, 15);
+		int rs = rs_bitstr.toInt();
+		int rt = rt_bitstr.toInt();
+		int i = i_bitstr.signExtend();
+		
+		// extract J type instruction operand
+		MIPSBitstring addr_bitstr = MIPSBitstring.extract(inst, 0, 25);
+		int addr = addr_bitstr.signExtend();
+
+		switch(op) { 
+			/* 
+			* Available to the XML Java code programmer:
+			 * 
+			 *   For I types
+			 *   -----------
+			 *   rs (int)						first source register
+			 *   rs_bitstr (MIPSBitstring)
+			 * 
+			 * 	 rt (int)						second source register
+			 *   rt_bitstr (MIPSBitstring)
+			 * 
+			 *   i (int)						immediate value
+			 *   i_bitstr (MIPSBitstring)
+			 * 
+			 *   For J types
+			 *   -----------
+			 *   addr (int)						address
+			 *   addr_bitstr (MIPSBitstring)
+			 *  
+			 * 	 For both types
+			 *   --------------
+			 *	 regs (RegisterManagerInterface)
+			 *	 mem (MemoryManagerInterface)
+			 *
+			 */
+				
+			// I type instructions
+			
+			case 0x01: {
+				if(rt == 0x00) {
+					verbose.println("BLTZ");
+					stats.instructionUsed("BLTZ");
+					// branch on less than zero [rs, offset]
+					if(regs.getReg(rs) < 0) {
+						int pc = 0;
+						pc = regs.getReg("PC");
+						pc += i * 4 - 4;
+						regs.setReg("PC", pc);						
+					}
+				}
+				else if(rt == 0x01) {
+					verbose.println("BGEZ");
+					stats.instructionUsed("BGEZ");	
+					// branch on greater than equal zero [rs, offset]
+					if(regs.getReg(rs) >= 0) {
+						int pc = 0;
+						pc = regs.getReg("PC");
+						pc += i * 4 - 4;
+						regs.setReg("PC", pc);						
+					}		
+				}
+				else if(rt == 0x10) {
+					verbose.println("BLTZAL");
+					stats.instructionUsed("BLTZAL");
+					// branch on less than zero and link
+					if(regs.getReg(rs) < 0) {
+						int pc = 0;
+						pc = regs.getReg("PC");
+						regs.setReg(31, pc + 4);	
+						pc += i * 4 - 4;
+						regs.setReg("PC", pc);
+					}
+				}
+				else if(rt == 0x11) {
+					verbose.println("BGEZAL");
+					stats.instructionUsed("BGEZAL");
+					// branch on greater than equal zero and link
+					if(regs.getReg(rs) >= 0) {
+						int pc = 0;
+						pc = regs.getReg("PC");
+						regs.setReg(31, pc + 4);	
+						pc += i * 4 - 4;
+						regs.setReg("PC", pc);	
+					}
+				}
+				else {
+					throw new YAMSUnsupportedInstructionException();
+				}
+				break;
+			}
+			
+			case 0x04: {
+				verbose.println("BEQ");
+				stats.instructionUsed("BEQ");
+				//branch on equal
+				if(regs.getReg(rs) == regs.getReg(rt)) {
+					 int pc = 0;
+					pc = regs.getReg("PC");
+					 pc += i * 4 - 4;
+					regs.setReg("PC", pc);						
+				}
+				break;
+			}
+			
+			case 0x05: {
+				verbose.println("BNE");
+				stats.instructionUsed("BNE");
+				//branch on not equal
+				if(regs.getReg(rs) != regs.getReg(rt)) {
+					 int pc = 0;
+					pc = regs.getReg("PC");
+					 pc += i * 4 - 4;
+					regs.setReg("PC", pc);						
+				}
+				break;
+			}
+			
+			case 0x06: {
+				verbose.println("BLEZ");
+				stats.instructionUsed("BLEZ");
+				// branch on less than equal zero [rs, offset]
+				if(regs.getReg(rs) <= 0) {
+					int pc = 0;
+					pc = regs.getReg("PC");
+					pc += i * 4 - 4;
+					regs.setReg("PC", pc);						
+				}
+				break;
+			}
+			
+			case 0x07: {
+				verbose.println("BGTZ");
+				stats.instructionUsed("BGTZ");
+				// branch on greater than zero [rs, offset]
+				if(regs.getReg(rs) > 0) {
+						int pc = 0;
+						pc = regs.getReg("PC");
+						pc += i * 4 - 4;
+						regs.setReg("PC", pc);						
+					}
+				break;
+			}
+			
+			case 0x08: {
+				verbose.println("ADDI");
+				stats.instructionUsed("ADDI");
+				// add immediate
+				regs.setReg(rt, regs.getReg(rs) + i);
+				break;
+			}
+			
+			case 0x09: {
+				verbose.println("ADDIU");
+				stats.instructionUsed("ADDIU");
+				// add immediate unsigned
+				regs.setReg(rt, regs.getReg(rs) + i);
+				break;
+			}
+			
+			case 0x0a: {
+				verbose.println("SLTI");
+				stats.instructionUsed("SLTI");
+				// set less than immediate
+				if(regs.getReg(rs) < i) {
+					regs.setReg(rt, 1);
+				}
+				else {
+					regs.setReg(rt, 0);
+				}
+				break;
+			}
+			
+			case 0x0b: {
+				verbose.println("SLTIU");
+				stats.instructionUsed("SLTIU");
+				// set less than immediate
+				if(regs.getReg(rs) < i) {
+					regs.setReg(rt, 1);
+				}
+				else {
+					regs.setReg(rt, 0);
+				}
+				break;
+			}
+			
+			case 0x0c: {
+				verbose.println("ANDI");
+				stats.instructionUsed("ANDI");
+				// and immediate
+				regs.setReg(rt, regs.getReg(rs) & i);
+				break;
+			}				
+						
+			case 0x0d: {
+				verbose.println("ORI");
+				stats.instructionUsed("ORI");
+				// or immediate
+				regs.setReg(rt, regs.getReg(rs) | i_bitstr.toInt());
+				break;
+			}
+			
+			case 0x0e: {
+				verbose.println("XORI");
+				stats.instructionUsed("XORI");
+				// xor immediate
+				regs.setReg(rt, regs.getReg(rs) ^ i);
+				break;
+			}
+			
+			case 0x0f: {
+				verbose.println("LUI");
+				stats.instructionUsed("LUI");
+				// load upper immediate
+				MIPSBitstring zerohalfword;
+				MIPSBitstring result;
+				zerohalfword = MIPSBitstring.repeat(0, 16);
+				result = MIPSBitstring.concatenate(i_bitstr, zerohalfword);
+				regs.setReg(rt, result.toInt());
+				break;
+			}
+
+			case 0x20: {
+				verbose.println("LB");
+				stats.instructionUsed("LB");
+				// load byte
+				int bytelocation = regs.getReg(rs) + i;
+				int bytevalue = mem.getByte(bytelocation);
+				// now sign extend the byte to a word
+				MIPSWord result = new MIPSWord(bytevalue);
+				int signbit = result.getBit(7);
+				for(int j = 8; j < 32; j++) {
+					result.setBit(j, signbit);
+				}
+				regs.setReg(rt, result.get());
+				break;
+			}
+			
+			case 0x21: {
+				verbose.println("LH");
+				stats.instructionUsed("LH");
+				// load halfword
+				int hwlocation = regs.getReg(rs) + i;
+				int hwvalue = (mem.getByte(hwlocation) << 8) + mem.getByte(hwlocation + 1);
+				// now sign extend the halfword to a word
+				MIPSWord result = new MIPSWord(hwvalue);
+				int signbit = result.getBit(15);
+				for(int j = 16; j < 32; j++) {
+					result.setBit(j, signbit);
+				}
+				regs.setReg(rt, result.get());
+				break;
+			}
+			
+			case 0x22: {
+				verbose.println("LWL");
+				stats.instructionUsed("LWL");
+				// load word left
+				/*
+				Sign-extend 16-bit offset and add to contents of register base to form 
+				address. 
+				Shift addressed word left so that addressed byte is leftmost 
+				byte of a word. Merge bytes from memory with contents of register rt 
+				and load result into register rt.  
+
+				M is byte at given address
+				Register			A			B			C			D
+				Memory			W		X			Y			Z
+				
+				Addr(1..0)=0	M			M+1		M+2		M+3		(WXYZ)
+				Addr(1..0)=1	M			M+1		M+2		D			(XYZD)
+				Addr(1..0)=2	M			M+1		C			D			(YZCD)
+				Addr(1..0)=3	M			B			C			D			(ZBCD)
+				*/
+				
+				int memoryaddress = regs.getReg(rs) + i;
+				MIPSWord register = new MIPSWord(regs.getReg(rt));
+				MIPSBitstring result;
+				MIPSBitstring byte3;
+				MIPSBitstring byte2;
+				MIPSBitstring byte1;
+				MIPSBitstring byte0;
+							
+				switch(memoryaddress & 3) {
+					case 0 : regs.setReg(rt, mem.getLocation(memoryaddress));
+							break;
+					case 1 : byte3 = new MIPSByte(mem.getByte(memoryaddress)).getBitstring();
+							byte2 = new MIPSByte(mem.getByte(memoryaddress+1)).getBitstring();
+							byte1 = new MIPSByte(mem.getByte(memoryaddress+2)).getBitstring();
+							byte0 = MIPSBitstring.extract(register, 0, 7);
+							result = MIPSBitstring.concatenate(
+										MIPSBitstring.concatenate(byte3, byte2),
+										MIPSBitstring.concatenate(byte1, byte0));
+							regs.setReg(rt, result.toInt());
+							break;
+					case 2 : byte3 = new MIPSByte(mem.getByte(memoryaddress)).getBitstring();
+							byte2 = new MIPSByte(mem.getByte(memoryaddress+1)).getBitstring();
+							byte1 = MIPSBitstring.extract(register, 8, 15);
+							byte0 = MIPSBitstring.extract(register, 0, 7);
+							result = MIPSBitstring.concatenate(
+										MIPSBitstring.concatenate(byte3, byte2),
+										MIPSBitstring.concatenate(byte1, byte0));
+							regs.setReg(rt, result.toInt());
+							break;
+					case 3 : byte3 = new MIPSByte(mem.getByte(memoryaddress)).getBitstring();
+							byte2 = MIPSBitstring.extract(register, 16, 23);
+							byte1 = MIPSBitstring.extract(register, 8, 15);
+							byte0 = MIPSBitstring.extract(register, 0, 7);
+							result = MIPSBitstring.concatenate(
+										MIPSBitstring.concatenate(byte3, byte2),
+										MIPSBitstring.concatenate(byte1, byte0));
+							regs.setReg(rt, result.toInt());
+							break;				
+				}
+				break;
+			}
+			
+			case 0x23: {
+				verbose.println("LW");
+				stats.instructionUsed("LW");
+				// load word
+				int memorylocation = regs.getReg(rs) + i;
+				regs.setReg(rt, mem.getLocation(memorylocation));
+				break;
+			}
+			
+			case 0x24: {
+				verbose.println("LBU");
+				stats.instructionUsed("LBU");
+				// load byte unsigned
+				int bytelocation = regs.getReg(rs) + i;
+				int bytevalue = mem.getByte(bytelocation);
+				regs.setReg(rt, bytevalue);
+				break;
+			}
+			
+			case 0x25: {
+				verbose.println("LHU");
+				stats.instructionUsed("LHU");
+				// load halfword unsigned
+				int hwlocation = regs.getReg(rs) + i;
+				int hwvalue = (mem.getByte(hwlocation) << 8) + mem.getByte(hwlocation + 1);
+				regs.setReg(rt, hwvalue);
+				break;
+			}
+			
+			case 0x26: {
+				verbose.println("LWR");
+				stats.instructionUsed("LWR");
+				// load word right
+				/*
+				Sign-extend 16-bit offset and add to contents of register base to form
+				address. 
+				Shift addressed word right so that addressed byte is rightmost
+				byte of a word. Merge bytes from memory with contents of register rt
+				and load result into register rt. 
+				
+				M is byte at Addr
+				Register			A			B			C			D
+				Memory			W		X			Y			Z
+				
+				Addr(1..0)=0	A			B			C			M		(ABCW)
+				Addr(1..0)=1	A			B			M-1		M		(ABWX)
+				Addr(1..0)=2	A			M-2		M-1		M		(AWXY)
+				Addr(1..0)=3	M-3		M-2		M-1		M		(WXYZ)
+				*/
+				
+				int memoryaddress = regs.getReg(rs) + i;
+				MIPSWord register = new MIPSWord(regs.getReg(rt));
+				MIPSBitstring result;
+				MIPSBitstring byte3;
+				MIPSBitstring byte2;
+				MIPSBitstring byte1;
+				MIPSBitstring byte0;
+							
+				switch(memoryaddress & 3) {
+					case 0 : byte3 = MIPSBitstring.extract(register, 24, 31);
+							byte2 = MIPSBitstring.extract(register, 16, 23);
+							byte1 = MIPSBitstring.extract(register, 8, 15);
+							byte0 = new MIPSByte(mem.getByte(memoryaddress)).getBitstring();
+							result = MIPSBitstring.concatenate(
+										MIPSBitstring.concatenate(byte3, byte2),
+										MIPSBitstring.concatenate(byte1, byte0));
+							regs.setReg(rt, result.toInt());
+							break;
+					case 1 : byte3 = MIPSBitstring.extract(register, 24, 31);
+							byte2 = MIPSBitstring.extract(register, 16, 23);
+							byte1 = new MIPSByte(mem.getByte(memoryaddress-1)).getBitstring();
+							byte0 = new MIPSByte(mem.getByte(memoryaddress)).getBitstring();
+							result = MIPSBitstring.concatenate(
+										MIPSBitstring.concatenate(byte3, byte2),
+										MIPSBitstring.concatenate(byte1, byte0));
+							regs.setReg(rt, result.toInt());
+							break;
+					case 2 : byte3 = MIPSBitstring.extract(register, 24, 31);
+							byte2 = new MIPSByte(mem.getByte(memoryaddress-2)).getBitstring();
+							byte1 = new MIPSByte(mem.getByte(memoryaddress-1)).getBitstring();
+							byte0 = new MIPSByte(mem.getByte(memoryaddress)).getBitstring();
+							result = MIPSBitstring.concatenate(
+										MIPSBitstring.concatenate(byte3, byte2),
+										MIPSBitstring.concatenate(byte1, byte0));
+							regs.setReg(rt, result.toInt());
+							break;
+					case 3 : regs.setReg(rt, mem.getLocation(memoryaddress - 3));
+							break;				
+				}
+				break;
+			}
+
+			case 0x28: {
+				verbose.println("SB");
+				stats.instructionUsed("SB");
+				// store byte
+				int memorylocation = regs.getReg(rs) + i;
+				MIPSWord rtword = new MIPSWord(regs.getReg(rt));
+				int thebyte = MIPSBitstring.extract(rtword, 0, 7).toInt();
+				mem.setByte(memorylocation, thebyte);
+				break;
+			}
+			
+			case 0x29: {
+				verbose.println("SH");
+				stats.instructionUsed("SH");
+				// store halfword
+				int memorylocation = regs.getReg(rs) + i;
+				MIPSWord rtword = new MIPSWord(regs.getReg(rt));
+				int thebyte = MIPSBitstring.extract(rtword, 8, 15).toInt();
+				mem.setByte(memorylocation, thebyte);
+				thebyte = MIPSBitstring.extract(rtword, 0, 7).toInt();
+				mem.setByte(memorylocation + 1, thebyte);
+				break;
+			}
+			
+			case 0x2a: {
+				verbose.println("SWL");
+				stats.instructionUsed("SWL");
+				// store word left
+				/*
+				 Sign-extend 16-bit offset and add to contents of register base to form
+				 address. 
+				 Shift contents of register rt right so that leftmost byte of the word 
+				 is in position of addressed byte. Store bytes containing original data
+				 into corresponding bytes at addressed byte.
+				 
+				 M is byte at Addr
+				 Register			A		B		C		D
+				 Memory			W	X		Y		Z
+				 
+				 Addr(1..0)=0	A		B		C		D		(ABCD)
+				 Addr(1..0)=1	-		A		B		C		(-ABC)
+				 Addr(1..0)=2	-		-		A		B		(--AB)
+				 Addr(1..0)=3	-		-		-		A		(---A)
+				 */
+				
+				int memoryaddress = regs.getReg(rs) + i;
+				int rtcontents = regs.getReg(rt);
+				MIPSWord register = new MIPSWord(rtcontents);
+				int byte3 = MIPSBitstring.extract(register, 24, 31).toInt(); 
+				int byte2 = MIPSBitstring.extract(register, 16, 23).toInt();
+				int byte1 = MIPSBitstring.extract(register, 8, 15).toInt();
+							
+				switch(memoryaddress & 3) {
+					case 0 : mem.setLocation(memoryaddress, rtcontents);
+								break;
+					case 1 : mem.setByte(memoryaddress, byte3);
+								mem.setByte(memoryaddress + 1, byte2); 
+								mem.setByte(memoryaddress + 2, byte1); 
+								break;
+					case 2 : mem.setByte(memoryaddress, byte3);
+								mem.setByte(memoryaddress + 1, byte2); 
+								break;
+					case 3 : mem.setByte(memoryaddress, byte3);
+								break;				
+				}
+				break;
+			}
+			
+			case 0x2b: {
+				verbose.println("SW");
+				stats.instructionUsed("SW");
+				// store word
+				int memorylocation = regs.getReg(rs) + i;
+				mem.setLocation(memorylocation, regs.getReg(rt));
+				break;
+			}
+			
+			case 0x2e: {
+				verbose.println("SWR");
+				stats.instructionUsed("SWR");
+				// store word right
+				/*
+				 Sign-extend 16-bit offset and add to contents of register base to form 
+				 address. 
+				 Shift contents of register rt left so that rightmost byte of the word 
+				 is in position of addressed byte. Store bytes containing original data
+				 into corresponding bytes at addressed byte. 
+				 
+				 M is byte at Addr
+				 Register			A		B		C		D
+				 Memory			W	X		Y		Z
+				 
+				 Addr(1..0)=0	D		-		-		-		(D---)
+				 Addr(1..0)=1	C		D		-		-		(CD--)
+				 Addr(1..0)=2	B		C		D		-		(BCD-)
+				 Addr(1..0)=3	A		B		C		D		(ABCD)
+				 */
+				 
+				int memoryaddress = regs.getReg(rs) + i;
+				int rtcontents = regs.getReg(rt);
+				MIPSWord register = new MIPSWord(rtcontents);
+				int byte3 = MIPSBitstring.extract(register, 24, 31).toInt(); 
+				int byte2 = MIPSBitstring.extract(register, 16, 23).toInt();
+				int byte1 = MIPSBitstring.extract(register, 8, 15).toInt();
+				int byte0 = MIPSBitstring.extract(register, 0, 7).toInt();
+							
+				switch(memoryaddress & 3) {
+					case 0 : mem.setByte(memoryaddress, byte0);
+								break;
+					case 1 : mem.setByte(memoryaddress - 1, byte1);
+								mem.setByte(memoryaddress, byte0); 
+								break;
+					case 2 : mem.setByte(memoryaddress - 2, byte2); 
+								mem.setByte(memoryaddress - 1, byte1);
+								mem.setByte(memoryaddress, byte0); 
+								break;
+					case 3 : mem.setLocation(memoryaddress - 3, rtcontents);
+								break;				
+				}
+				break;
+			}
+						
+			
+			// J type instructions
+			
+			case 0x02: {
+				verbose.println("J");
+				stats.instructionUsed("J");
+				// jump
+				int pc = 0;
+				pc = regs.getReg("PC");				 
+				MIPSWord pcword;
+				MIPSBitstring higherpcbits;
+				MIPSBitstring newpc;
+				pcword = new MIPSWord(pc);
+				higherpcbits = MIPSBitstring.extract(pcword, 28, 31);
+				newpc = MIPSBitstring.concatenate(higherpcbits, addr_bitstr);
+				newpc = MIPSBitstring.concatenate(newpc, MIPSBitstring.repeat(0, 2));
+				regs.setReg("PC", pc);
+				break;
+			}
+			
+			case 0x03: {
+				verbose.println("JAL");
+				stats.instructionUsed("JAL");
+				// jump and link
+				int pc = 0;
+				pc = regs.getReg("PC");
+				regs.setReg(31, pc + 4);				 
+				MIPSWord pcword;
+				MIPSBitstring higherpcbits;
+				MIPSBitstring newpc;
+				pcword = new MIPSWord(pc);
+				higherpcbits = MIPSBitstring.extract(pcword, 28, 31);
+				newpc = MIPSBitstring.concatenate(higherpcbits, addr_bitstr);
+				newpc = MIPSBitstring.concatenate(newpc, MIPSBitstring.repeat(0, 2));
+				regs.setReg("PC", pc);
+				break;
+			}
+			
+			default: {
+				// unsupported instruction
+				throw new YAMSUnsupportedInstructionException();
+			}		
+		}		
+		return true;
+	}
+
+	public void setCycleManager(CycleManagerInterface cycleManager) {
+	}
+	
+	public void setVerbose(PrintStream verbose) {
+		this.verbose = verbose;
+	}
+
+}
+
+@
+
+
+1.31
+log
+@final version before autogen
+@
+text
+@d1004 4
+@
+
+
+1.30
+log
+@*** empty log message ***
+@
+text
+@a468 1
+					debugImmediate(i, i_bitstr);
+a479 1
+					debugImmediate(i, i_bitstr);
+a490 1
+					debugImmediate(i, i_bitstr);
+a502 1
+					debugImmediate(i, i_bitstr);
+a520 1
+				debugImmediate(i, i_bitstr);
+a533 1
+				debugImmediate(i, i_bitstr);
+a546 1
+				debugImmediate(i, i_bitstr);
+a559 1
+				debugImmediate(i, i_bitstr);
+a572 1
+				debugImmediate(i, i_bitstr);
+a580 1
+				debugImmediate(i, i_bitstr);
+a588 1
+				debugImmediate(i, i_bitstr);
+a601 1
+				debugImmediate(i, i_bitstr);
+a614 1
+				debugImmediate(i, i_bitstr);
+a622 1
+				debugImmediate(i, i_bitstr);
+a630 1
+				debugImmediate(i, i_bitstr);
+a638 1
+				debugImmediate(i, i_bitstr);
+a650 1
+				debugImmediate(i, i_bitstr);
+a666 1
+				debugImmediate(i, i_bitstr);
+a682 1
+				debugImmediate(i, i_bitstr);
+a745 1
+				debugImmediate(i, i_bitstr);
+a754 1
+				debugImmediate(i, i_bitstr);
+a764 1
+				debugImmediate(i, i_bitstr);
+a774 1
+				debugImmediate(i, i_bitstr);
+a836 1
+				debugImmediate(i, i_bitstr);
+a847 1
+				debugImmediate(i, i_bitstr);
+a860 1
+				debugImmediate(i, i_bitstr);
+a904 1
+				debugImmediate(i, i_bitstr);
+a913 1
+				debugImmediate(i, i_bitstr);
+a962 1
+				debugImmediate(addr, addr_bitstr);
+a979 1
+				debugImmediate(addr, addr_bitstr);
+a1004 5
+	public void debugImmediate(int num, MIPSBitstring numstr) {
+		verbose.print("Immediate is " + num + " (" + Integer.toHexString(num) + "h) (");
+		verbose.println(numstr.toString() + "b)");
+	}
+	
+@
+
+
+1.29
+log
+@*** empty log message ***
+@
+text
+@d637 1
+a637 1
+				regs.setReg(rt, regs.getReg(rs) | i);
+@
+
+
+1.28
+log
+@added more helpful debugging information (to verbose stream)
+@
+text
+@d68 1
+a68 1
+					
+@
+
+
+1.27
+log
+@changed out prints to verbose prints
+@
+text
+@d45 1
+d469 1
+a469 1
+					verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d481 1
+a481 1
+					verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d493 1
+a493 1
+					verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d506 1
+a506 1
+					verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d525 1
+a525 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d539 1
+a539 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d553 1
+a553 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d567 1
+a567 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d581 1
+a581 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d590 1
+a590 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d599 1
+a599 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d613 1
+a613 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d627 1
+a627 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d636 1
+a636 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d645 1
+a645 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d654 1
+a654 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d667 1
+a667 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d684 1
+a684 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d701 1
+a701 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d765 1
+a765 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d775 1
+a775 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d786 1
+a786 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d797 1
+a797 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d860 1
+a860 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d872 1
+a872 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d886 1
+a886 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d931 1
+a931 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d941 1
+a941 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d991 1
+a991 1
+				verbose.println("Address is " + addr + " (" + Integer.toHexString(i) + "addr)");
+d1009 1
+a1009 1
+				verbose.println("Immediate is " + addr + " (" + Integer.toHexString(addr) + "h)");
+d1035 5
+@
+
+
+1.26
+log
+@changed immediate printing to stream out
+@
+text
+@d468 1
+a468 1
+					out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d480 1
+a480 1
+					out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d492 1
+a492 1
+					out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d505 1
+a505 1
+					out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d524 1
+a524 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d538 1
+a538 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d552 1
+a552 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d566 1
+a566 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d580 1
+a580 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d589 1
+a589 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d598 1
+a598 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d612 1
+a612 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d626 1
+a626 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d635 1
+a635 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d644 1
+a644 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d653 1
+a653 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d666 1
+a666 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d683 1
+a683 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d700 1
+a700 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d764 1
+a764 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d774 1
+a774 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d785 1
+a785 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d796 1
+a796 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d859 1
+a859 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d871 1
+a871 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d885 1
+a885 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d930 1
+a930 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d940 1
+a940 1
+				out.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d1008 1
+a1008 1
+				out.println("Immediate is " + addr + " (" + Integer.toHexString(addr) + "h)");
+@
+
+
+1.25
+log
+@removed statsManager.addInstruction calls, these are now in the assembler
+@
+text
+@d468 1
+a468 1
+					verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d480 1
+a480 1
+					verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d492 1
+a492 1
+					verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d505 1
+a505 1
+					verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d524 1
+a524 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d538 1
+a538 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d552 1
+a552 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d566 1
+a566 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d580 1
+a580 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d589 1
+a589 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d598 1
+a598 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d612 1
+a612 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d626 1
+a626 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d635 1
+a635 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d644 1
+a644 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d653 1
+a653 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d666 1
+a666 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d683 1
+a683 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d700 1
+a700 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d764 1
+a764 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d774 1
+a774 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d785 1
+a785 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d796 1
+a796 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d859 1
+a859 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d871 1
+a871 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d885 1
+a885 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d930 1
+a930 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d940 1
+a940 1
+				verbose.println("Immediate is " + i + " (" + Integer.toHexString(i) + "h)");
+d1008 1
+a1008 1
+				verbose.println("Immediate is " + addr + " (" + Integer.toHexString(addr) + "h)");
+@
+
+
+1.24
+log
+@fixed BNE
+@
+text
+@a40 62
+		
+		// stats.addInstruction(String name) must be called for all instructions handled
+		
+		stats.addInstruction("NOP");
+		stats.addInstruction("SLL");
+		stats.addInstruction("SRL");
+		stats.addInstruction("SRA");
+		stats.addInstruction("SLLV");
+		stats.addInstruction("SRLV");
+		stats.addInstruction("SRAV");
+		stats.addInstruction("JR");
+		stats.addInstruction("JALR");
+		stats.addInstruction("SYSCALL");
+		stats.addInstruction("BREAK");
+		stats.addInstruction("MFHI");
+		stats.addInstruction("MTHI");
+		stats.addInstruction("MFLO");
+		stats.addInstruction("MTLO");
+		stats.addInstruction("MULT");
+		stats.addInstruction("MULTU");
+		stats.addInstruction("DIV");
+		stats.addInstruction("DIVU");
+		stats.addInstruction("ADD");
+		stats.addInstruction("ADDU");
+		stats.addInstruction("SUB");
+		stats.addInstruction("SUBU");
+		stats.addInstruction("AND");
+		stats.addInstruction("OR");
+		stats.addInstruction("XOR");
+		stats.addInstruction("NOR");
+		stats.addInstruction("SLT");
+		stats.addInstruction("SLTU");
+		stats.addInstruction("BLTZ");
+		stats.addInstruction("BGEZ");	
+		stats.addInstruction("BLTZAL");
+		stats.addInstruction("BGEZAL");
+		stats.addInstruction("BEQ");
+		stats.addInstruction("BNE");
+		stats.addInstruction("BLEZ");
+		stats.addInstruction("BGTZ");
+		stats.addInstruction("ADDI");
+		stats.addInstruction("ADDIU");
+		stats.addInstruction("SLTI");
+		stats.addInstruction("SLTIU");
+		stats.addInstruction("ANDI");
+		stats.addInstruction("ORI");
+		stats.addInstruction("XORI");
+		stats.addInstruction("LUI");
+		stats.addInstruction("LB");
+		stats.addInstruction("LH");
+		stats.addInstruction("LWL");
+		stats.addInstruction("LW");
+		stats.addInstruction("LBU");
+		stats.addInstruction("LHU");
+		stats.addInstruction("LWR");
+		stats.addInstruction("SB");
+		stats.addInstruction("SH");
+		stats.addInstruction("SWL");
+		stats.addInstruction("SW");
+		stats.addInstruction("SWR");
+		stats.addInstruction("J");
+		stats.addInstruction("JAL");
+@
+
+
+1.23
+log
+@added print statements to show immediate
+@
+text
+@d605 1
+a605 1
+					 //regs.setReg(PC_REGISTER_ID, pc);						
+@
+
+
+1.22
+log
+@fixed LWL, LWR, SWL, SWR, DIV, DIVU
+@
+text
+@d530 1
+d542 1
+d554 1
+d567 1
+d586 1
+d600 1
+d614 1
+d628 2
+a629 1
+					if(regs.getReg(rs) > 0) {
+d642 1
+d651 1
+d660 1
+d674 1
+d688 1
+d697 1
+d706 1
+d715 1
+d728 1
+d745 1
+d762 1
+d826 1
+d836 1
+d847 1
+d858 1
+d921 1
+d933 1
+d947 1
+d992 1
+d1002 1
+d1052 1
+d1070 1
+@
+
+
+1.21
+log
+@all non copro & fp instructions implemented
+@
+text
+@d362 4
+a365 2
+					quotient = regs.getReg(rs) / regs.getReg(rt);
+					remainder = regs.getReg(rs) % regs.getReg(rt);
+d377 4
+a380 2
+					quotient = regs.getReg(rs) / regs.getReg(rt);
+					remainder = regs.getReg(rs) % regs.getReg(rt);
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d747 3
+a749 3
+				M is byte at Addr
+				Register		A		B		C		D
+				Memory			W		X		Y		Z
+d751 4
+a754 4
+				Addr(1..0)=0	M		M+1		M+2		M+3		(WXYZ)
+				Addr(1..0)=1	M		M+1		M+2		D		(XYZD)
+				Addr(1..0)=2	M		M+1		C		D		(YZCD)
+				Addr(1..0)=3	M		B		C		D		(ZBCD)
+d840 2
+a841 2
+				Register		A		B		C		D
+				Memory			W		X		Y		Z
+d843 4
+a846 4
+				Addr(1..0)=0	A		B		C		M		(ABCW)
+				Addr(1..0)=1	A		B		M		M+1		(ABWX)
+				Addr(1..0)=2	A		M		M+1		M+2		(AWXY)
+				Addr(1..0)=3	M		M+1		M+2		M+3		(WXYZ)
+d869 2
+a870 2
+							byte1 = new MIPSByte(mem.getByte(memoryaddress)).getBitstring();
+							byte0 = new MIPSByte(mem.getByte(memoryaddress+1)).getBitstring();
+d877 3
+a879 3
+							byte2 = new MIPSByte(mem.getByte(memoryaddress)).getBitstring();
+							byte1 = new MIPSByte(mem.getByte(memoryaddress+1)).getBitstring();
+							byte0 = new MIPSByte(mem.getByte(memoryaddress+2)).getBitstring();
+d885 1
+a885 1
+					case 3 : regs.setReg(rt, mem.getLocation(memoryaddress));
+d918 1
+a918 1
+				// TODO - SWL (next to be done)
+d935 21
+d971 1
+a971 1
+				// TODO - SWR (next to be done)
+d983 3
+a985 3
+				 Addr(1..0)=0	-		-		-		A		(---A)
+				 Addr(1..0)=1	-		-		A		B		(--AB)
+				 Addr(1..0)=2	-		A		B		C		(-ABC)
+d988 22
+@
+
+
+1.19
+log
+@added instruction stats
+@
+text
+@a110 1
+		// TODO - inform statistics manager when stats.instructionUsed(String name)
+d927 2
+a928 2
+				 Register		A		B		C		D
+				 Memory			W		X		Y		Z
+d931 3
+a933 3
+				 Addr(1..0)=1	A		B		C		-		(ABC-)
+				 Addr(1..0)=2	A		B		-		-		(AB--)
+				 Addr(1..0)=3	A		-		-		-		(A---)
+d959 2
+a960 2
+				 Register		A		B		C		D
+				 Memory			W		X		Y		Z
+@
+
+
+1.18
+log
+@added ref to StatisticsManager
+@
+text
+@d42 1
+a42 1
+		// TODO - stats.addInstruction(String name) for all instructions
+d44 59
+d156 1
+d161 1
+d172 1
+d191 1
+d210 1
+d223 1
+d244 1
+d265 1
+d273 1
+d282 1
+d292 1
+d299 1
+d307 1
+d315 1
+d323 1
+d331 1
+d345 1
+d359 1
+d372 1
+d385 1
+d393 1
+d401 1
+d409 1
+d417 1
+d425 1
+d433 1
+d441 1
+d449 1
+d462 1
+d525 1
+d535 2
+a536 1
+					verbose.println("BGEZ");	
+d547 1
+d559 1
+d577 1
+d590 1
+d603 1
+d616 1
+d629 1
+d637 1
+d645 1
+d658 1
+d671 1
+d679 1
+d687 1
+d695 1
+d707 1
+d723 1
+d739 1
+d802 1
+d811 1
+d821 1
+d831 1
+d894 1
+d905 1
+d918 1
+d941 1
+d950 1
+d976 1
+d993 1
+@
+
+
+1.17
+log
+@added verbose printstream
+@
+text
+@d22 1
+d33 1
+d38 1
+d41 3
+d52 1
+a52 1
+		// TODO - inform statistics manager when instruction type is been executed
+@
+
+
+1.16
+log
+@fixed MULT, MULTU, LWL, LWR
+@
+text
+@d23 1
+d32 2
+a33 1
+								PrintStream out) {
+d37 1
+a45 1
+		// TODO - autogenerate this file from XML
+d90 1
+a90 1
+						out.println("NOP");
+d94 1
+a94 1
+						out.println("SLL");
+d104 1
+a104 1
+					out.println("SRL");
+d122 1
+a122 1
+					out.println("SRA");
+d140 1
+a140 1
+					out.println("SLLV");
+d152 1
+a152 1
+					out.println("SRLV");
+d172 1
+a172 1
+					out.println("SRAV");
+d192 1
+a192 1
+					out.println("JR");
+d199 1
+a199 1
+					out.println("JALR");
+d207 1
+a207 1
+					out.println("SYSCALL");
+d216 1
+a216 1
+					out.println("BREAK");
+d222 1
+a222 1
+					out.println("MFHI");
+d229 1
+a229 1
+					out.println("MTHI");
+d236 1
+a236 1
+					out.println("MFLO");
+d243 1
+a243 1
+					out.println("MTLO");
+d250 1
+a250 1
+					out.println("MULT");
+d263 1
+a263 1
+					out.println("MULTU");
+d276 1
+a276 1
+					out.println("DIV");
+d288 1
+a288 1
+					out.println("DIVU");
+d300 1
+a300 1
+					out.println("ADD");
+d307 1
+a307 1
+					out.println("ADDU");
+d314 1
+a314 1
+					out.println("SUB");
+d321 1
+a321 1
+					out.println("SUBU");
+d328 1
+a328 1
+					out.println("AND");
+d335 1
+a335 1
+					out.println("OR");
+d342 1
+a342 1
+					out.println("XOR");
+d349 1
+a349 1
+					out.println("NOR");
+d356 1
+a356 1
+					out.println("SLT");
+d368 1
+a368 1
+					out.println("SLTU");
+d430 1
+a430 1
+					out.println("BLTZ");
+d440 1
+a440 1
+					out.println("BGEZ");	
+d450 1
+a450 1
+					out.println("BLTZAL");
+d461 1
+a461 1
+					out.println("BGEZAL");
+d478 1
+a478 1
+				out.println("BEQ");
+d490 1
+a490 1
+				out.println("BNE");
+d502 1
+a502 1
+				out.println("BLEZ");
+d514 1
+a514 1
+				out.println("BGTZ");
+d526 1
+a526 1
+				out.println("ADDI");
+d533 1
+a533 1
+				out.println("ADDIU");
+d540 1
+a540 1
+				out.println("SLTI");
+d552 1
+a552 1
+				out.println("SLTIU");
+d564 1
+a564 1
+				out.println("ANDI");
+d571 1
+a571 1
+				out.println("ORI");
+d578 1
+a578 1
+				out.println("XORI");
+d585 1
+a585 1
+				out.println("LUI");
+d596 1
+a596 1
+				out.println("LB");
+d611 1
+a611 1
+				out.println("LH");
+d626 1
+a626 1
+				out.println("LWL");
+d688 1
+a688 1
+				out.println("LW");
+d696 1
+a696 1
+				out.println("LBU");
+d705 1
+a705 1
+				out.println("LHU");
+d714 1
+a714 1
+				out.println("LWR");
+d776 1
+a776 1
+				out.println("SB");
+d786 1
+a786 1
+				out.println("SH");
+d798 1
+a798 1
+				out.println("SWL");
+d820 1
+a820 1
+				out.println("SW");
+d828 1
+a828 1
+				out.println("SWR");
+d853 1
+a853 1
+				out.println("J");
+d869 1
+a869 1
+				out.println("JAL");
+@
+
+
+1.15
+log
+@added implementations for LWL & LWR (semantics have been double-sourced)
+@
+text
+@a44 1
+		// TODO - use longs for unsigned & mult instructions
+d250 7
+a256 5
+					// TODO - full (64-bit result) multiplication in MULT
+					int product;
+					product = regs.getReg(rs) * regs.getReg(rt);
+					regs.setReg("LO", product);
+					regs.setReg("HI", 0);
+d263 7
+a269 6
+					// TODO - full (64-bit result) multiplication in MULTU
+					// TODO - unsigned MULTU
+					int product;
+					product = regs.getReg(rs) * regs.getReg(rt);
+					regs.setReg("LO", product);
+					regs.setReg("HI", 0);
+a287 1
+					// TODO - unsigned DIVU
+a306 1
+					// TODO - unsigned ADDU
+a320 1
+					// TODO - unsigned SUBU
+a367 1
+					// TODO - unsigned SLTU
+a532 1
+				// TODO - unsigned ADDIU
+a550 1
+				// TODO - unsigned SLTIU
+d627 15
+a641 2
+				LWL, LWR, SWL & SWR instructions actions depend upon the 
+				bottom two bits of the address.
+a642 9
+				Load Word Left
+				Register	A	B	C	D
+				Memory		W	X	Y	Z
+				
+				Addr1..0=0	W	X	Y	Z
+				Addr1..0=1	X	Y	Z	D
+				Addr1..0=2	Y	Z	C	D
+				Addr1..0=3	Z	B	C	D
+				*/
+a643 1
+				int memoryword = mem.getLocation(memoryaddress);
+a644 1
+				MIPSWord memory = new MIPSWord(memoryword);
+d646 5
+a650 1
+				
+d652 1
+a652 1
+					case 0 : regs.setReg(rt, memory.get());
+d654 7
+a660 3
+					case 1 : result = MIPSBitstring.concatenate(
+											MIPSBitstring.extract(memory, 0, 23), 
+											MIPSBitstring.extract(register, 0, 7));
+d663 8
+a670 4
+					case 2 : result = MIPSBitstring.concatenate(
+											MIPSBitstring.extract(memory, 0, 15), 
+											MIPSBitstring.extract(register, 0, 15));
+							regs.setReg(rt, result.toInt());  
+d672 7
+a678 3
+					case 3 : result = MIPSBitstring.concatenate(
+											MIPSBitstring.extract(memory, 0, 7),
+											MIPSBitstring.extract(register, 0, 23));  
+d715 14
+a728 8
+				Load Word Right
+				Register	A	B	C	D
+				Memory		W	X	Y	Z
+				
+				Addr1..0=0	A	B	C	W
+				Addr1..0=1	A	B	W	X
+				Addr1..0=2	A	W	X	Y
+				Addr1..0=3	W	X	Y	Z
+d730 1
+a731 1
+				int memoryword = mem.getLocation(memoryaddress);
+a732 1
+				MIPSWord memory = new MIPSWord(memoryword);
+d734 5
+a738 1
+				
+d740 7
+a746 3
+					case 0 : result = MIPSBitstring.concatenate(
+											MIPSBitstring.extract(register, 8, 31),
+											MIPSBitstring.extract(memory, 24, 31));  
+d748 8
+a755 4
+							break; 					
+					case 1 : result = MIPSBitstring.concatenate(
+											MIPSBitstring.extract(register, 16, 31), 
+											MIPSBitstring.extract(memory, 16, 31));
+d758 8
+a765 4
+					case 2 : result = MIPSBitstring.concatenate(
+											MIPSBitstring.extract(register, 24, 31), 
+											MIPSBitstring.extract(memory, 8, 31));
+							regs.setReg(rt, result.toInt());  
+d767 1
+a767 1
+					case 3 : regs.setReg(rt, memory.get());
+d798 16
+d828 16
+@
+
+
+1.14
+log
+@handles ten or so more instructions
+@
+text
+@d630 17
+a646 5
+				// TODO - LWL (an extension)
+				int memorylocation = regs.getReg(rs) + i;
+				int theword = mem.getLocation(memorylocation);
+				MIPSWord va = new MIPSWord(theword);
+				MIPSWord rtword = new MIPSWord(regs.getReg(rt));
+d648 19
+a666 13
+				// correct this, look at the lowest 2 bits of address, not contents
+				switch(va.getBit(1) * 2 + va.getBit(0)) {
+					case 0 :	regs.setReg(rt, va.get());
+									break;
+					case 1 :	result = MIPSBitstring.concatenate(MIPSBitstring.extract(va, 8, 31), MIPSBitstring.extract(rtword, 0, 7));
+									regs.setReg(rt, result.toInt());
+									break;
+					case 2 :	result = MIPSBitstring.concatenate(MIPSBitstring.extract(va, 16, 31), MIPSBitstring.extract(rtword, 0, 15));
+									regs.setReg(rt, result.toInt());  
+									break;
+					case 3 :	result = MIPSBitstring.concatenate(MIPSBitstring.extract(va, 24, 31), MIPSBitstring.extract(rtword, 0, 23));  
+									regs.setReg(rt, result.toInt());
+									break;				
+d700 14
+a713 5
+				// TODO - LWR (an extension)
+				int memorylocation = regs.getReg(rs) + i;
+				int theword = mem.getLocation(memorylocation);
+				MIPSWord va = new MIPSWord(theword);
+				MIPSWord rtword = new MIPSWord(regs.getReg(rt));
+d715 19
+a733 12
+				switch(va.getBit(1) * 2 + va.getBit(0)) {
+					case 0 :	result = MIPSBitstring.concatenate(MIPSBitstring.extract(rtword, 8, 31), MIPSBitstring.extract(va, 0, 7));  
+									regs.setReg(rt, result.toInt());	
+									break;
+					case 1 :	result = MIPSBitstring.concatenate(MIPSBitstring.extract(rtword, 16, 31), MIPSBitstring.extract(va, 0, 15));
+									regs.setReg(rt, result.toInt());
+									break;
+					case 2 :	result = MIPSBitstring.concatenate(MIPSBitstring.extract(rtword, 24, 31), MIPSBitstring.extract(va, 0, 23));
+									regs.setReg(rt, result.toInt());  
+									break;
+					case 3 :	regs.setReg(rt, va.get());
+									break;				
+d762 1
+a762 1
+				// TODO - SWL (an extension)
+d776 1
+a776 1
+				// TODO - SWR (an extension)
+@
+
+
+1.13
+log
+@added input & output stream support
+@
+text
+@d43 1
+d45 4
+d67 1
+a67 3
+				 * TODO - add cases for every R type instruction from XML file
+				 * 
+				 * Available to the XML Java code programmer:
+d74 1
+a74 1
+				 * 	 rt (int)						second source register
+d216 1
+a216 1
+					// TODO - BREAK
+d263 1
+d286 1
+d306 1
+d321 1
+d369 1
+d401 1
+a401 3
+			 * TODO - add cases for every I or J type instruction from XML file
+			 *
+			 * Available to the XML Java code programmer:
+d429 1
+a429 1
+				if(rt == 0) {
+d439 1
+a439 1
+				else if(rt == 1) {
+d449 1
+a449 1
+				else if(rt == 16) {
+d451 8
+a458 1
+					// TODO - BLTZAL
+d460 1
+a460 1
+				else if(rt == 17) {
+d462 8
+a469 1
+					// TODO - BGEZAL
+d527 2
+a528 1
+				// TODO - ADDI
+d534 3
+a536 1
+				// TODO - ADDIU
+d542 7
+a548 1
+				// TODO - SLTI
+d554 8
+a561 1
+				// TODO - SLTIU
+d567 2
+a568 1
+				// TODO - ANDI
+d574 2
+a575 1
+				// TODO - ORI
+d581 2
+a582 1
+				// TODO - XORI
+d599 10
+a608 1
+				// TODO - LB
+d614 10
+a623 1
+				// TODO - LH
+d629 21
+a649 1
+				// TODO - LWL
+d663 4
+a666 1
+				// TODO - LBU
+d672 4
+a675 1
+				// TODO - LHU
+d681 20
+a700 1
+				// TODO - LWR
+d706 5
+a710 1
+				// TODO - SB
+d716 7
+a722 1
+				// TODO - SH
+d728 1
+a728 1
+				// TODO - SWL
+d742 1
+a742 1
+				// TODO - SWR
+@
+
+
+1.12
+log
+@added todo
+@
+text
+@d6 1
+d22 1
+d30 2
+a31 1
+								MemoryManagerInterface memoryManager) {
+d34 1
+d86 1
+a86 1
+						System.out.println("NOP");
+d90 1
+a90 1
+						System.out.println("SLL");
+d100 1
+a100 1
+					System.out.println("SRL");
+d118 1
+a118 1
+					System.out.println("SRA");
+d136 1
+a136 1
+					System.out.println("SLLV");
+d148 1
+a148 1
+					System.out.println("SRLV");
+d168 1
+a168 1
+					System.out.println("SRAV");
+d188 1
+a188 1
+					System.out.println("JR");
+d195 1
+a195 1
+					System.out.println("JALR");
+d203 1
+a203 1
+					System.out.println("SYSCALL");
+d212 1
+a212 1
+					System.out.println("BREAK");
+d218 1
+a218 1
+					System.out.println("MFHI");
+d225 1
+a225 1
+					System.out.println("MTHI");
+d232 1
+a232 1
+					System.out.println("MFLO");
+d239 1
+a239 1
+					System.out.println("MTLO");
+d246 1
+a246 1
+					System.out.println("MULT");
+d257 1
+a257 1
+					System.out.println("MULTU");
+d268 1
+a268 1
+					System.out.println("DIV");
+d280 1
+a280 1
+					System.out.println("DIVU");
+d292 1
+a292 1
+					System.out.println("ADD");
+d299 1
+a299 1
+					System.out.println("ADDU");
+d306 1
+a306 1
+					System.out.println("SUB");
+d313 1
+a313 1
+					System.out.println("SUBU");
+d320 1
+a320 1
+					System.out.println("AND");
+d327 1
+a327 1
+					System.out.println("OR");
+d334 1
+a334 1
+					System.out.println("XOR");
+d341 1
+a341 1
+					System.out.println("NOR");
+d348 1
+a348 1
+					System.out.println("SLT");
+d360 1
+a360 1
+					System.out.println("SLTU");
+d424 1
+a424 1
+					System.out.println("BLTZ");
+d434 1
+a434 1
+					System.out.println("BGEZ");	
+d444 1
+a444 1
+					System.out.println("BLTZAL");
+d448 1
+a448 1
+					System.out.println("BGEZAL");
+d458 1
+a458 1
+				System.out.println("BEQ");
+d470 1
+a470 1
+				System.out.println("BNE");
+d482 1
+a482 1
+				System.out.println("BLEZ");
+d494 1
+a494 1
+				System.out.println("BGTZ");
+d506 1
+a506 1
+				System.out.println("ADDI");
+d512 1
+a512 1
+				System.out.println("ADDIU");
+d518 1
+a518 1
+				System.out.println("SLTI");
+d524 1
+a524 1
+				System.out.println("SLTIU");
+d530 1
+a530 1
+				System.out.println("ANDI");
+d536 1
+a536 1
+				System.out.println("ORI");
+d542 1
+a542 1
+				System.out.println("XORI");
+d548 1
+a548 1
+				System.out.println("LUI");
+d559 1
+a559 1
+				System.out.println("LB");
+d565 1
+a565 1
+				System.out.println("LH");
+d571 1
+a571 1
+				System.out.println("LWL");
+d577 1
+a577 1
+				System.out.println("LW");
+d585 1
+a585 1
+				System.out.println("LBU");
+d591 1
+a591 1
+				System.out.println("LHU");
+d597 1
+a597 1
+				System.out.println("LWR");
+d603 1
+a603 1
+				System.out.println("SB");
+d609 1
+a609 1
+				System.out.println("SH");
+d615 1
+a615 1
+				System.out.println("SWL");
+d621 1
+a621 1
+				System.out.println("SW");
+d629 1
+a629 1
+				System.out.println("SWR");
+d638 1
+a638 1
+				System.out.println("J");
+d654 1
+a654 1
+				System.out.println("JAL");
+@
+
+
+1.11
+log
+@updated for new interface version
+@
+text
+@d39 2
+@
+
+
+1.10
+log
+@fixed div typo
+@
+text
+@d672 3
+a676 44
+
+
+	/*
+	
+	Compiler Lab MIPS Instructions
+	
+	PSEUDOS
+	mul
+	neg
+	b
+	beqz
+	bnez
+	bgt
+	bge
+	blt
+	ble
+	li
+	la
+	move
+	
+	R		'func'
+	nop		0x00
+	syscall	0x0c
+	div		0x1a
+	add		0x20
+	sub		0x22
+	
+	I		'op'	'rs'	'rt'
+	bltz	0x01			0x00
+	bgez	0x01			0x01
+	beq		0x04	
+	bne		0x05
+	blez	0x06			0x00
+	bgtz	0x07			0x00
+	lui		0x0f	0x00
+	lw		0x23
+	sw		0x2b
+	
+	J		'op'
+	j		0x02
+	jal		0x03
+	
+	*/
+	@
+
+
+1.9
+log
+@added various logical instructions
+@
+text
+@d267 1
+a267 1
+					remainder = regs.getReg(rs) / regs.getReg(rt);
+d279 1
+a279 1
+					remainder = regs.getReg(rs) / regs.getReg(rt);
+@
+
+
+1.8
+log
+@handles JR, JALR, MFHI, MTHI, MFLO, MTLO
+@
+text
+@d241 6
+a246 1
+					// TODO - MULT
+d252 6
+a257 1
+					// TODO - MULTU
+d275 7
+a281 1
+					// TODO - DIVU
+d294 2
+a295 1
+					// TODO - ADDU
+d308 2
+a309 1
+					// TODO - SUBU
+d315 2
+a316 1
+					// TODO - AND
+d322 2
+a323 1
+					// TODO - OR
+d329 2
+a330 1
+					// TODO - XOR
+d336 2
+a337 1
+					// TODO - NOR
+d343 7
+a349 1
+					// TODO - SLT
+d355 7
+a361 1
+					// TODO - SLTU
+@
+
+
+1.7
+log
+@now uses new register interfaces
+@
+text
+@d183 2
+a184 1
+					// TODO - JR 
+d190 3
+a192 1
+					// TODO - JALR 
+d213 2
+a214 1
+					// TODO - MFHI
+d220 2
+a221 1
+					// TODO - MTHI
+d227 2
+a228 1
+					// TODO - MFLO
+d234 2
+a235 1
+					// TODO - MTLO
+@
+
+
+1.6
+log
+@added handling for srl, sra, sllv, srlv, srav
+@
+text
+@d251 2
+a252 3
+					// TODO - get register IDs for LO & HI regs (in register manager)
+					//regs.setReg(LO_REGISTER_ID, quotient);
+					//regs.setReg(HI_REGISTER_ID, remainder);
+d381 1
+a381 2
+						// TODO - get register ID for PC (in register manager)
+						//pc = regs.getReg(PC_REGISTER_ID);
+d383 1
+a383 1
+						//regs.setReg(PC_REGISTER_ID, pc);						
+d391 1
+a391 2
+						// TODO - get register ID for PC (in register manager)
+						//pc = regs.getReg(PC_REGISTER_ID);
+d393 1
+a393 1
+						//regs.setReg(PC_REGISTER_ID, pc);						
+d415 1
+a415 2
+					 // TODO - get register ID for PC (in register manager)
+					 //pc = regs.getReg(PC_REGISTER_ID);
+d417 1
+a417 1
+					 //regs.setReg(PC_REGISTER_ID, pc);						
+d427 1
+a427 2
+					 // TODO - get register ID for PC (in register manager)
+					 //pc = regs.getReg(PC_REGISTER_ID);
+d439 1
+a439 2
+					// TODO - get register ID for PC (in register manager)
+					//pc = regs.getReg(PC_REGISTER_ID);
+d441 1
+a441 1
+					//regs.setReg(PC_REGISTER_ID, pc);						
+d451 1
+a451 2
+						// TODO - get register ID for PC (in register manager)
+						//pc = regs.getReg(PC_REGISTER_ID);
+d453 1
+a453 1
+						//regs.setReg(PC_REGISTER_ID, pc);						
+d594 1
+a594 2
+				// TODO - get register ID for PC (in register manager)
+				//pc = regs.getReg(PC_REGISTER_ID);				 
+d602 1
+a602 1
+				//regs.setReg(PC_REGISTER_ID, newpc.toInt());
+d610 1
+a610 2
+				// TODO - get register ID for PC (in register manager)
+				//pc = regs.getReg(PC_REGISTER_ID);
+d619 1
+a619 1
+				//regs.setReg(PC_REGISTER_ID, newpc.toInt());
+@
+
+
+1.5
+log
+@added sll/nop handling
+@
+text
+@d59 1
+d61 12
+a72 4
+				 *   rs (int)		first source register
+				 * 	 rt (int)		second source register
+				 *   rd (int)		destination register
+				 *   shamt (int)	shift amount
+a78 1
+					// shift left logical / no operation
+d81 1
+d85 3
+a87 1
+						int shifted = regs.getReg(rt) << shamt;
+d95 13
+a107 4
+					// TODO - SRL
+					
+					//rd  0sa||rt(31..31-sa)
+					
+d113 13
+a125 1
+					// TODO - SRA
+d131 7
+a137 1
+					// TODO - SLLV
+d143 15
+a157 1
+					// TODO - SRLV
+d163 15
+a177 1
+					// TODO - SRAV
+d350 1
+d352 9
+a360 3
+			 *   rs (int)		first source register
+			 * 	 rt (int)		second source register
+			 *   i (int)		immediate value
+d363 3
+a365 1
+			 *   addr (int)		address
+d368 1
+@
+
+
+1.4
+log
+@added case stubs for most instructions (except coprocessor & fp ones)
+@
+text
+@d68 1
+a68 2
+	
+				// example: the no-operation instruction, NOP				
+d70 9
+a78 2
+					System.out.println("SLL / NOP");
+					// TODO - SLL / NOP
+d85 3
+d129 1
+d132 1
+d180 1
+d199 1
+d212 1
+@
+
+
+1.3
+log
+@added implementations for all (non-pseudo) instructions needed for compiler lab
+@
+text
+@d70 94
+a163 2
+				case 0x0: {
+					System.out.println("NOP");
+d179 6
+d190 6
+d202 42
+d286 1
+a286 1
+			case 0x1: {
+d309 8
+d323 1
+a323 1
+			case 0x4: {
+d336 1
+a336 1
+			case 0x5: {
+d349 1
+a349 1
+			case 0x6: {
+d362 1
+a362 1
+			case 0x7: {
+d375 43
+a417 1
+			case 0xf: {
+d427 18
+d454 36
+d497 6
+d507 1
+a507 1
+			case 0x2: {
+d524 1
+a524 1
+			case 0x3: {
+@
+
+
+1.2
+log
+@added 'add' and 'sub' handlers and javadoc comments
+@
+text
+@d36 2
+a37 2
+		MIPSBitstring bst_op = MIPSBitstring.extract(inst, 26, 31);
+		int op = bst_op.toInt();
+d43 10
+a52 10
+			MIPSBitstring bst_rs = MIPSBitstring.extract(inst, 21, 25);
+			MIPSBitstring bst_rt = MIPSBitstring.extract(inst, 16, 20);
+			MIPSBitstring bst_rd = MIPSBitstring.extract(inst, 11, 15);
+			MIPSBitstring bst_shamt = MIPSBitstring.extract(inst, 6, 10);
+			MIPSBitstring bst_func = MIPSBitstring.extract(inst, 0, 5);
+			int rs = bst_rs.toInt();
+			int rt = bst_rt.toInt();
+			int rd = bst_rd.toInt();
+			int shamt = bst_shamt.toInt();
+			int func = bst_func.toInt();
+d77 7
+a83 1
+					// TODO - DIV Java code
+d108 6
+a113 6
+		MIPSBitstring bst_rs = MIPSBitstring.extract(inst, 21, 25);
+		MIPSBitstring bst_rt = MIPSBitstring.extract(inst, 16, 20);
+		MIPSBitstring bst_immediate = MIPSBitstring.extract(inst, 0, 15);
+		int rs = bst_rs.toInt();
+		int rt = bst_rt.toInt();
+		int i = bst_immediate.signExtend();
+d116 2
+a117 2
+		MIPSBitstring bst_address = MIPSBitstring.extract(inst, 0, 25);
+		int address = bst_address.signExtend();
+d143 8
+a150 1
+					// TODO - BLTZ Java code
+d154 8
+a161 1
+					// TODO - BGEZ Java code		
+d171 8
+a178 1
+				// TODO - BEQ Java code
+d184 8
+a191 1
+				// TODO - BNE Java code
+d197 8
+a204 1
+				// TODO - BLEZ Java code
+d210 8
+a217 1
+				// TODO - BGTZ Java code
+d223 6
+a228 1
+				// TODO - LUI Java code
+d234 3
+a236 1
+				// TODO - LW Java code
+d242 3
+a244 1
+				// TODO - SW Java code
+d253 12
+a264 1
+				// TODO - J Java code
+d270 13
+a282 1
+				// TODO - JAL Java code
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d9 6
+a15 1
+ *
+a17 1
+	// this is a template
+d22 5
+d41 1
+d43 3
+a45 3
+			MIPSBitstring bst_s = MIPSBitstring.extract(inst, 21, 25);
+			MIPSBitstring bst_t = MIPSBitstring.extract(inst, 16, 20);
+			MIPSBitstring bst_d = MIPSBitstring.extract(inst, 11, 15);
+d48 3
+a50 3
+			int s = bst_s.toInt();
+			int t = bst_t.toInt();
+			int d = bst_d.toInt();
+d60 3
+a62 3
+				 *   s (int)		first source register
+				 * 	 t (int)		second source register
+				 *   d (int)		destination register
+d68 1
+a68 1
+				 
+d72 18
+a89 1
+					// R type instruction's Java code included here
+d102 2
+a103 2
+		MIPSBitstring bst_s = MIPSBitstring.extract(inst, 21, 25);
+		MIPSBitstring bst_t = MIPSBitstring.extract(inst, 16, 20);
+d105 2
+a106 2
+		int s = bst_s.toInt();
+		int t = bst_t.toInt();
+d119 2
+a120 2
+			 *   s (int)		first source register
+			 * 	 t (int)		second source register
+d132 59
+d192 1
+a193 1
+			// example: the jump instruction, J
+d196 7
+d215 45
+@
+

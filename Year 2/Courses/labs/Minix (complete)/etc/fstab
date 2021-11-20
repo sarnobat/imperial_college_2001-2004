@@ -1,0 +1,3 @@
+# Poor man's File System Table.
+tmp=/dev/ram
+minix=/dev/fd0

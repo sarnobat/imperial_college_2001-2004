@@ -1,0 +1,85 @@
+head	1.2;
+access;
+symbols
+	yams-final-19-12-03:1.2
+	yams-release2-17-12-03:1.2
+	yams-release-17-12-03:1.2
+	cleanup:1.2.0.2
+	Root_cleanup:1.2
+	stable-13-12-2003:1.2;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.12.02.13.34.04;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.28.16.53.08;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@Updated javadoc
+@
+text
+@/*
+ * Created on 2003-11-28
+ */
+package yams.parser;
+
+import java.util.Vector;
+
+/**
+ * Models the assembler directives. They are treated the same as instructions by the parser, but gets
+ * translated in to several instructions by the assembler.
+ * 
+ * @@author Qian Qiao(qq01)
+ */
+public class Directive extends Instruction {
+
+	/**
+	 * Constructs a new assembler directive.
+	 * 
+	 * @@param name name of the directive
+	 * @@param lexer lexer
+	 * @@param operands operands of the directive
+	 * @@throws LexerException if the lexer finds an error
+	 * @@throws ParseException if the parser finds an error
+	 */
+	public Directive(String name, Lexer lexer, int[] operands)
+		throws LexerException, ParseException {
+
+		this.name = name;
+		this.operands = new Vector();
+		parseOperands(lexer, operands);
+	}
+
+	/* (non-Javadoc)
+	 * @@see yams.parser.Instruction#getType()
+	 */
+	public int getType() {
+		return TYPE_DIRECTIVE;
+	}
+
+}
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d9 3
+d16 9
+@
+

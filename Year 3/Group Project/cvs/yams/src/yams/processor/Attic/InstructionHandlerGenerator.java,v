@@ -1,0 +1,165 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2003.12.03.19.02.19;	author qq01;	state dead;
+branches;
+next	1.2;
+
+1.2
+date	2003.12.03.13.12.15;	author sw00;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.01.09.59.41;	author sw00;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@
+
+// Please delete this deprecated file@
+
+
+1.2
+log
+@deprecated
+@
+text
+@@
+
+
+1.1
+log
+@added
+@
+text
+@a0 12
+/*
+ * Created on 30-Nov-2003
+ *
+ */
+package yams.processor;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.lang.StringBuffer;
+import java.util.Collection;
+a1 6
+/**
+ * This class produces an InstructionHandlerAutoGen.java file from the XML
+ *  
+ * @@author sw00
+ */
+public class InstructionHandlerGenerator {
+d3 1
+a3 91
+	private Collection rtypes;
+	private Collection itypes;
+	private Collection jtypes;
+	
+	public InstructionHandlerGenerator() {
+	}
+
+	public boolean generateInstructionHandler() {
+		/* 
+		 
+		read XML file
+		extract rtypes
+		extract rtypes
+		extract rtypes
+		*/
+		
+		try {
+			StringBuffer ih;
+			ih = loadFile(new File("InstructionHandlerTemplate.txt"));
+		
+		
+		
+		
+		
+		}
+		catch (FileNotFoundException e) {
+			e.printStackTrace();
+			return false;
+		}
+		
+		/*
+		find rtype insertion point
+		foreach rtype {
+			println "case " + r.funct + " : {"
+			println "out.println(" + r.name + ");"
+			print r.javacode
+			println "break;"
+			println "}"
+			println
+		}
+		
+		find itype insertion point
+		foreach itype {
+			println "case " + i.op + " : {"
+			// add if-then-else on rt field
+			println "out.println(" + i.name + ");"
+			print i.javacode
+			println "break;"
+			println "}"
+			println
+		}
+		
+		find jtype insertion point
+		foreach jtype {
+			println "case " + j.op + " : {"
+			println "out.println(" + j.name + ");"
+			print j.javacode
+			println "break;"
+			println "}"
+			println
+		}
+		
+		write stringbuffer to InstructionHandlerAutoGen.java
+		
+		*/
+		
+		return false;
+	}
+	
+	protected static StringBuffer loadFile(File fileName) throws FileNotFoundException
+	{
+		FileReader inFile;
+		BufferedReader inBuf;
+		inFile = new FileReader(fileName);
+		inBuf = new BufferedReader(inFile);
+		StringBuffer outBuf = new StringBuffer();
+		
+		// load inBuf into outBuf
+		try {
+			String line;
+			while ( (line = inBuf.readLine()) != null )
+				outBuf.append(line + "\n");
+		}
+		catch (IOException e) {
+			// some other error
+			e.printStackTrace();
+		}
+		return outBuf;
+	}
+	
+}
+@
+

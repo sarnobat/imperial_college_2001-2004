@@ -1,0 +1,99 @@
+head	1.4;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.4
+date	2003.11.10.10.57.50;	author qq01;	state dead;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.10.02.04.39;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.10.00.06.33;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.06.17.05.03;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 06-Nov-2003
+ */
+
+package parser;
+
+/**
+ * Models a register as an oprand of an instruction.
+ * 
+ * @@author qq01
+ */
+public class RegisterOprand extends Oprand {
+	private String value;
+	
+	public RegisterOprand(String value){
+		this.value = value;
+	}
+
+	/**
+	 * Returns the value of the oprand.
+	 * 
+	 * @@return the value of the oprand.
+	 */
+	public String getValue(){
+		return value;
+	}
+}
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.2
+log
+@Updated parser classes and some instruction definitions
+@
+text
+@a0 1
+package parser;
+d5 2
+d8 2
+d13 1
+a13 1
+	String value;
+d19 8
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d10 5
+@
+

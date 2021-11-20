@@ -1,0 +1,37 @@
+	<Instruction>
+		<Name>muli</Name>
+		<OperandTypes>Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE, Operand.TYPE_IMMEDIATE</OperandTypes>
+		<Type>Pseudoinstruction</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>100</OperandsCoding>
+				<MachineCode>00100000000aaaaabbbbbbbbbbbbbbbb0010000000000001cccccccccccccccc000000aaaaa0000100000000000110000000000000000000aaaaa00000010010</MachineCode>
+				<!-- li a,b
+					 li at, c
+					 mul a a at -->
+				<Operands>
+					<Op>
+						<Number>2</Number>
+						<Type>0</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+					<Op>
+						<Number>3</Number>
+						<Type>0</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+		<Help>
+			<FullName></FullName>
+			<Format></Format>
+			<Description></Description>
+		</Help>
+	</Instruction>

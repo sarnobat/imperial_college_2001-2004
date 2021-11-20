@@ -1,0 +1,667 @@
+head	1.18;
+access;
+symbols
+	yams-final-19-12-03:1.18
+	yams-release2-17-12-03:1.17
+	yams-release-17-12-03:1.17;
+locks; strict;
+comment	@# @;
+
+
+1.18
+date	2003.12.19.14.20.26;	author qq01;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2003.12.15.21.37.05;	author sw00;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.12.08.18.00.20;	author sw00;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.12.05.17.28.56;	author sw00;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.12.04.19.03.03;	author sw00;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.12.04.17.36.19;	author sw00;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.04.16.32.46;	author sw00;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.03.17.38.27;	author sw00;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.03.14.59.13;	author sw00;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.03.13.34.03;	author sw00;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.11.26.16.51.18;	author sw00;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.26.13.07.37;	author sw00;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.24.01.28.24;	author sw00;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.21.13.50.36;	author sw00;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.21.13.23.45;	author sw00;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.16.17.52.30;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.13.01.53.30;	author sw00;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.50;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.18
+log
+@updated javadoc
+@
+text
+@/*
+ * Created on 03-Nov-2003
+ *
+ */
+package yams.processor;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.io.PrintStream;
+import yams.exceptions.YAMSRuntimeException;
+import yams.exceptions.YAMSUnsupportedSyscallException;
+
+/**
+ * A template syscall handler.
+ * The syscall handling will be added to this file by the instruction handler
+ * generator, taking the XML file as input.
+ *  
+ * @@author sw00
+ */
+public class SyscallHandler implements InstructionHandlerInterface {
+	
+	private RegisterManagerInterface regs;
+	private MemoryManagerInterface mem;
+	private StatisticsManagerInterface stats;
+	private CycleManagerInterface cycleManager;
+	private InputStream in;
+	private PrintStream out;
+	private PrintStream verbose;
+	
+
+	/**
+	 * @@param registerManager
+	 * @@param memoryManager
+	 * @@param statisticsManager
+	 * @@param in
+	 * @@param out
+	 * @@param verbose
+	 */
+	public SyscallHandler(RegisterManagerInterface registerManager,
+								MemoryManagerInterface memoryManager,
+								StatisticsManagerInterface statisticsManager,
+								InputStream in,
+								PrintStream out,
+								PrintStream verbose) {
+		regs = registerManager;
+		mem = memoryManager;
+		stats = statisticsManager;
+		this.in = in;
+		this.out = out;
+		this.verbose = verbose;
+	}
+
+	public boolean execute(int instruction) {
+		// register $v0 holds the system call code
+		
+		/*
+		Service 		Code		Arguments 						Result
+		
+		print_int 			01 		$a0 = integer
+		print_float 		02 		$f12 = float
+		print_double 	03 		$f12 = double
+		print_string 		04 		$a0 = string
+		read_int 			05 											integer (in $v0)
+		read_float 		06 											float (in $f0)
+		read_double 	07 											double (in $f0)
+		read_string 		08		$a0 = buffer, $a1 = length
+		sbrk 				09		$a0 = amount 				address (in $v0)
+		exit 					10
+		*/		
+		
+		stats.addInstruction("SYSCALL");
+		
+		switch(regs.getReg(2)) {
+			case 1: {
+				verbose.println("SYSCALL : print_int");
+				// print_int syscall
+				out.print(regs.getReg(4));
+				break;
+			}
+			
+			case 2: {
+				verbose.println("SYSCALL : print_float");
+				// TODO - SYSCALL print_float (an extension)
+				break;
+			}
+			
+			case 3: {
+				verbose.println("SYSCALL : print_double");
+				// TODO - SYSCALL print_double  (an extension)
+				break;
+			}
+						
+			case 4: {
+				verbose.println("SYSCALL : print_string");
+				// print_string syscall
+				int address = regs.getReg(4);
+				int character = mem.getByte(address);
+				char c;
+				while(character != 0) {
+					c = (char) character;
+					out.print(c);
+					address++;
+					character = mem.getByte(address);
+				}
+				break;
+			}
+						
+			case 5: {
+				verbose.println("SYSCALL : read_int");
+				// read_int syscall
+				try {
+					regs.setReg(2,in.read());
+				}
+				catch(IOException e){
+					throw new YAMSRuntimeException("Syscall read_int failed");
+				}
+				break;
+			}
+						
+			case 6: {
+				verbose.println("SYSCALL : read_float");
+				// TODO - SYSCALL read_float  (an extension)
+				break;
+			}
+						
+			case 7: {
+				verbose.println("SYSCALL : read_double");
+				// TODO - SYSCALL read_double  (an extension)
+				break;
+			}
+						
+			case 8: {
+				verbose.println("SYSCALL : read_string");
+				// read_string syscall
+				int maxlength = regs.getReg(5);
+				int address = regs.getReg(4);
+				BufferedReader reader = new BufferedReader(
+											new InputStreamReader(in));
+				try {
+					// read a line from stdin
+					String str = reader.readLine();
+					char c;
+					int charbyte;
+					// for each char, write it to the memory
+					for(int i = 0; i < str.length(); i++) {
+						c = str.charAt(i);
+						charbyte = (int) c;
+						mem.setByte(address, c);
+						address++;
+						// if we have reached the max length that we've been told to read
+						if(i == maxlength - 1) { break; }
+					}
+					// write a null terminator
+					mem.setByte(address, 0);
+				}
+				catch(IOException e){
+					throw new YAMSRuntimeException("Syscall read_string failed");
+				}
+				break;
+			}
+						
+			case 9: {
+				verbose.println("SYSCALL : sbrk");
+				// TODO - SYSCALL sbrk  (an extension)
+				break;
+			}			
+						
+			case 10: {
+				// 'exit' syscall
+				verbose.println("SYSCALL : exit");
+				cycleManager.finish();
+				break;
+			}
+			
+			default: {
+				// unsupported syscall
+				throw new YAMSUnsupportedSyscallException();	
+			}
+			
+		}
+		return true;
+	}
+
+	public void setCycleManager(CycleManagerInterface cycleManager) {
+		this.cycleManager = cycleManager;
+	}
+	
+	public void setVerbose(PrintStream verbose) {
+		this.verbose = verbose;
+	}
+	
+}
+@
+
+
+1.17
+log
+@added setVerbose(PrintStream)
+@
+text
+@d31 1
+a32 1
+	 * Create a new syscall handler.
+d35 4
+a38 1
+	 * @@param cycleManager
+@
+
+
+1.16
+log
+@calls finish rather than terminate
+@
+text
+@a50 4
+	public void setCycleManager(CycleManagerInterface cycleManager) {
+		this.cycleManager = cycleManager;
+	}
+
+d182 8
+@
+
+
+1.15
+log
+@no longer erroneously prints newlines after ints & strings
+@
+text
+@d173 1
+a173 1
+				cycleManager.terminate();
+@
+
+
+1.14
+log
+@int/string output goes to out, debug output to verbose
+@
+text
+@d79 1
+a79 1
+				out.println(regs.getReg(4));
+a103 1
+					//out.println(character);
+a106 1
+				out.println("");
+@
+
+
+1.13
+log
+@print_string and print_int now send output to 'verbose'
+@
+text
+@d79 1
+a79 1
+				verbose.println(regs.getReg(4));
+d103 1
+a103 1
+					verbose.print(c);
+@
+
+
+1.12
+log
+@final version of print_string
+@
+text
+@d79 1
+a79 1
+				out.println(regs.getReg(4));
+d103 1
+a103 1
+					out.print(c);
+@
+
+
+1.11
+log
+@print_string prints ascii
+@
+text
+@d102 3
+a104 3
+					//c = (char) character;
+					// out.print(c);
+					out.println(character);
+@
+
+
+1.10
+log
+@added call to stats
+@
+text
+@d102 3
+a104 2
+					c = (char) character;
+					out.print(c);
+@
+
+
+1.9
+log
+@added verbose printstream
+@
+text
+@d25 1
+d39 1
+d45 1
+d72 2
+@
+
+
+1.8
+log
+@handles read_string
+@
+text
+@d28 1
+d39 2
+a40 1
+								PrintStream out) {
+d45 1
+d72 1
+a72 1
+				//out.println("SYSCALL : print_int");
+d79 1
+a79 1
+				out.println("SYSCALL : print_float");
+d85 1
+a85 1
+				out.println("SYSCALL : print_double");
+d91 1
+a91 1
+				//out.println("SYSCALL : print_string");
+d107 1
+a107 1
+				out.println("SYSCALL : read_int");
+d119 1
+a119 1
+				out.println("SYSCALL : read_float");
+d125 1
+a125 1
+				out.println("SYSCALL : read_double");
+d131 1
+a131 1
+				out.println("SYSCALL : read_string");
+d161 1
+a161 1
+				out.println("SYSCALL : sbrk");
+d168 1
+a168 1
+				out.println("SYSCALL : exit");
+@
+
+
+1.7
+log
+@added input & output stream support
+@
+text
+@d53 1
+a53 1
+		Service 		Code	Arguments 			Result
+d55 2
+a56 2
+		print_int 		01 		$a0 = integer
+		print_float 	02 		$f12 = float
+d58 7
+a64 7
+		print_string 	04 		$a0 = string
+		read_int 		05 							integer (in $v0)
+		read_float 		06 							float (in $f0)
+		read_double 	07 							double (in $f0)
+		read_string 	08							$a0 = buffer, $a1 = length
+		sbrk 			09		$a0 = amount 		address (in $v0)
+		exit 			10
+d130 1
+a130 1
+				// TODO - finish SYSCALL read_string (wrt length semantics)
+a138 1
+					int length = 0;
+d145 2
+@
+
+
+1.6
+log
+@implemented print_string syscall
+@
+text
+@d7 1
+d10 1
+d26 2
+d36 3
+a38 1
+								MemoryManagerInterface memoryManager) {
+d41 2
+a42 1
+		
+d69 1
+a69 1
+				//System.out.println("SYSCALL : print_int");
+d71 1
+a71 1
+				System.out.println(regs.getReg(4));
+d76 1
+a76 1
+				System.out.println("SYSCALL : print_float");
+d82 1
+a82 1
+				System.out.println("SYSCALL : print_double");
+d88 1
+a88 1
+				//System.out.println("SYSCALL : print_string");
+d95 1
+a95 1
+					System.out.print(c);
+d99 1
+a99 1
+				System.out.println("");
+d104 1
+a104 1
+				System.out.println("SYSCALL : read_int");
+d107 1
+a107 1
+					regs.setReg(2,System.in.read());
+d116 1
+a116 1
+				System.out.println("SYSCALL : read_float");
+d122 1
+a122 1
+				System.out.println("SYSCALL : read_double");
+d128 1
+a128 1
+				System.out.println("SYSCALL : read_string");
+d133 1
+a133 1
+											new InputStreamReader(System.in));
+d157 1
+a157 1
+				System.out.println("SYSCALL : sbrk");
+d164 1
+a164 1
+				System.out.println("SYSCALL : exit");
+@
+
+
+1.5
+log
+@added read_int implementation
+@
+text
+@d6 2
+d70 1
+a70 1
+				// TODO - SYSCALL print_float
+d76 1
+a76 1
+				// TODO - SYSCALL print_double
+d81 12
+a92 3
+				System.out.println("SYSCALL : print_string");
+				// TODO - SYSCALL print_string
+				// TODO - need byte-addressable memory			
+d98 1
+a98 1
+				// TODO - SYSCALL read_int
+d110 1
+a110 1
+				// TODO - SYSCALL read_float
+d116 1
+a116 1
+				// TODO - SYSCALL read_double
+d122 24
+a145 2
+				// TODO - SYSCALL read_string
+				// TODO - need byte-addressable memory
+d151 1
+a151 1
+				// TODO - SYSCALL sbrk
+@
+
+
+1.4
+log
+@added cases for the different syscalls, most are to be extensions though
+@
+text
+@d6 2
+d88 6
+d112 1
+@
+
+
+1.3
+log
+@fixed type in MIPSParser, and changing layout of controller classes
+@
+text
+@a5 1
+import yams.YAMSConsole;
+d19 1
+a19 1
+	private YAMSConsole controller;
+d25 1
+a25 1
+	 * @@param controller
+d28 1
+a28 2
+								MemoryManagerInterface memoryManager,
+								YAMSConsole controller) {
+d31 5
+a35 1
+		this.controller = controller;
+d40 16
+d57 56
+a114 1
+				// TODO - have 'exit' SYSCALL invoke controller's terminate method
+d116 1
+@
+
+
+1.2
+log
+@added support for exit syscall, throwing unsupported syscall exceptions and added javadoc comments
+@
+text
+@d6 1
+a6 1
+import yams.YAMS;
+d20 1
+a20 1
+	private YAMS controller;
+d30 1
+a30 1
+								YAMS controller) {
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d7 1
+d10 4
+a14 1
+ *
+a16 1
+	// this is a dummy implementation
+d22 6
+d37 15
+@
+

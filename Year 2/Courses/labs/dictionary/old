@@ -1,0 +1,116 @@
+	/*
+	find leftmost node in RIGHT subtree ('replacement'), returning its pointer
+	replace the left or right reference of the node ABOVE 'deleted' with this returned pointer
+	set the left reference from anchor to the value of 'replacement''s right subtree (could be null)
+	*/
+
+	/*
+	ATTEMPT 2:
+	if (deleted.right == null)
+	{
+		set deleted's predecessor to null
+	}
+	else
+	{
+		find leftmost node in right subtree of deleted
+		if it is null
+		{
+			attach deleted's left subtree to deleted's predecessor
+		}
+		else
+		{
+
+		}
+
+
+
+
+		copy its word value into deleted (leave the references unchanged)
+		free the space allocated to replacement
+
+	}
+
+	*/
+
+
+
+
+
+
+
+
+
+
+	dict findLeftmost(dict r)
+{//copies the word from leftmost node in r to d
+//pre:r is not null
+//post: returns d
+	/*if (r->left == NULL)
+	{//r is a singleton tree
+	//copy contents of r to node d
+		r->left = d->left;
+		free(d);
+		return r;
+	}
+	else
+	{
+	}*/
+
+	if (r==NULL)
+	{
+		return r;
+	}
+	else
+	{
+		return findLeftmost(r->left);
+	}
+}
+
+dict deleteLeftmost(dict d)
+{
+	return d;//
+}
+
+dict unify(dict d,dict l,dict r)
+{//post: returns the single ordered tree of l and r, where d has been deleted
+//d->theword will have the value of the leftmost node in r,d->right may change,d->left will be the same
+
+	/*if (r==NULL)
+	{
+		return d;
+	}
+	return moveLeftmost(d,r);*/
+	dict newHead = findLeftmost(r);
+	r = deleteLeftmost(r);//
+	strcpy(d->theword,newHead->theword);
+
+	return d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*ATTEMPT 3
+	split subtree into 3 pieces (pre node and deleted's two subtrees)
+	unify two subtrees
+	attach unified subtree to pre
+	*/
+
+	int comp = strcmp(d->theword,w);
+
+	if (comp == 0)
+	{//make sure you deal with the case where the top node is deleted
+ 		return unify(d,d->left,d->right);
+	}
+	return d; //STUB

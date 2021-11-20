@@ -1,0 +1,403 @@
+head	1.9;
+access;
+symbols
+	yams-final-19-12-03:1.9
+	yams-release2-17-12-03:1.9
+	yams-release-17-12-03:1.9
+	cleanup:1.9.0.2
+	Root_cleanup:1.9
+	stable-13-12-2003:1.9;
+locks; strict;
+comment	@# @;
+
+
+1.9
+date	2003.12.08.12.42.06;	author qq01;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.11.24.01.26.20;	author qq01;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.23.23.19.27;	author qq01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.23.22.50.31;	author qq01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.21.15.12.26;	author ajb101;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.14.15.59.40;	author qq01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.14.15.56.36;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.14.15.29.38;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.49;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.9
+log
+@Now stores user's original program
+@
+text
+@/*
+ * Created on 06-Nov-2003
+ */
+package yams.parser;
+
+/**
+ * Models a line of code in a MIPS program that is input to the program. 
+ * A line consists of a line number, an optional Label and an optional Instruction.
+ * The latter two are optional because the line could be blank by the user's decision
+ * 
+ * @@author qq01
+ */
+public class Line {
+	private String original;
+	private Instruction instruction;
+	private Label label;
+	private int lineNumber;
+
+	/**
+	 * Creates a Line with no label or instruction
+	 * 
+	 * @@param lineNumber line number of the line
+	 */
+	public Line(int lineNumber, String original) {
+		this.lineNumber = lineNumber;
+		this.original = original;
+	}
+
+	/**
+	 * Creates a line with an instruction only
+	 * 
+	 * @@param lineNumber line number of the line
+	 * @@param instruction the instruction
+	 */
+	public Line(int lineNumber, String original, Instruction instruction) {
+		this.lineNumber = lineNumber;
+		this.original = original;
+		this.instruction = instruction;
+	}
+
+	/**
+	 * Creates a Line with a label only
+	 * 
+	 * @@param lineNumber line number of the line
+	 * @@param label the label
+	 */
+	public Line(int lineNumber, String original, Label label) {
+		this.lineNumber = lineNumber;
+		this.original = original;
+		this.label = label;
+	}
+
+	/**
+	 * creates a Line with a label AND an instruction.
+	 * 
+	 * @@param lineNumber the line number
+	 * @@param label the label
+	 * @@param instruction the instruction
+	 */
+	public Line(int lineNumber,String original, Label label, Instruction instruction) {
+		this.lineNumber = lineNumber;
+		this.original = original;
+		this.label = label;
+		this.instruction = instruction;
+	}
+
+	/**
+	 * Whether this line contains an instruction.
+	 * 
+	 * @@return <code>true</code> it contains an instruction, <code>false</code> if it doesn't
+	 */
+	public boolean containsInstruction() {
+		return instruction != null;
+	}
+
+	/**
+	 * Whether this line contains a label
+	 * 
+	 * @@return <code>true</code> if contails a label, <code>false</code> if not
+	 */
+	public boolean containsLabel() {
+		return label != null;
+	}
+
+	/** 
+	 * Returns the instruction in this line.
+	 * 
+	 * @@return the instruction in this line
+	 */
+	public Instruction getInstruction() {
+		return instruction;
+	}
+
+	/**
+	 * Returns the label object. Note that a <code>null</code> is returned if no label is present
+	 * 
+	 * @@return the label
+	 */
+	public Label getLabel() {
+		return label;
+	}
+
+	/**
+	 * Returns the line number of the line.
+	 * 
+	 * @@return the line number of the line
+	 */
+	public int getLineNumber() {
+		return lineNumber;
+	}
+
+	/**
+	 * Whether the line is a blank line.
+	 * 
+	 * @@return true if the line is a blank line
+	 */
+	public boolean isBlank() {
+		return (label == null && instruction == null);
+	}
+	
+	public String getOriginal(){
+		return original;
+	}
+
+	/* (non-Javadoc)
+	 * @@see java.lang.Object#toString()
+	 */
+	public String toString() {
+		StringBuffer buffer = new StringBuffer("Line(" + lineNumber + "): " + original + "\n");
+
+		if (label != null) {
+			buffer.append("Label: " + label.toString() + ", ");
+		}
+
+		if (instruction != null) {
+			buffer.append(instruction.toString());
+		}
+		
+		buffer.append('\n');
+
+		return buffer.toString();
+	}
+}
+@
+
+
+1.8
+log
+@Updated javadoc comments
+@
+text
+@d14 1
+d24 1
+a24 1
+	public Line(int lineNumber) {
+d26 1
+d35 1
+a35 1
+	public Line(int lineNumber, Instruction instruction) {
+d37 1
+d47 1
+a47 1
+	public Line(int lineNumber, Label label) {
+d49 1
+d54 1
+a54 2
+	 * creates a Line with a label AND an instruction. Note that in theory it is possible that a line
+	 * has both a label and a instruction.
+d60 1
+a60 1
+	public Line(int lineNumber, Label label, Instruction instruction) {
+d62 1
+d120 4
+d129 1
+a129 1
+		StringBuffer buffer = new StringBuffer("Line(" + lineNumber + "): ");
+d138 2
+@
+
+
+1.7
+log
+@Better toString() output
+@
+text
+@d14 1
+a16 1
+	private Instruction instruction;
+d28 1
+a28 1
+	 * Creates a Line with a label only
+d31 1
+a31 1
+	 * @@param label the label
+d33 1
+a33 1
+	public Line(int lineNumber, Label label) {
+d35 1
+a35 1
+		this.label = label;
+d39 1
+a39 1
+	 * Creates a line with an instruction only
+d42 1
+a42 1
+	 * @@param instruction the instruction
+d44 1
+a44 1
+	public Line(int lineNumber, Instruction instruction) {
+d46 1
+a46 1
+		this.instruction = instruction;
+d63 18
+d82 2
+a90 7
+	 * @@return the line number of the line
+	 */
+	public int getLineNumber() {
+		return lineNumber;
+	}
+
+	/**
+d100 1
+a100 1
+	 * whether this line contains a label
+d102 1
+a102 1
+	 * @@return <code>true</code> if contails a label, <code>false</code> if not
+d104 2
+a105 2
+	public boolean containsLabel() {
+		return label != null;
+d109 1
+a109 1
+	 * whether this line contains an instruction
+d111 1
+a111 1
+	 * @@return <code>true</code> it contains an instruction, <code>false</code> if it doesn't
+d113 2
+a114 2
+	public boolean containsInstruction() {
+		return instruction != null;
+d117 3
+@
+
+
+1.6
+log
+@Improved toString() method. Now won't give a NullPointerException of empty lines.
+@
+text
+@d108 1
+a108 1
+			buffer.append(label.toString() + ":");
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d37 1
+a37 1
+	
+d45 2
+a46 2
+			this.lineNumber = lineNumber;
+			this.instruction = instruction;
+a62 2
+	
+
+d94 1
+a94 1
+	
+d100 1
+a100 1
+	public boolean containsInstruction(){
+d104 9
+a112 6
+	public String toString(){
+		StringBuffer buffer = new StringBuffer();
+		
+		if(label != null){
+			buffer.append(label.toString());
+			buffer.append(":");
+d114 1
+a114 3
+		
+		buffer.append(instruction.toString());
+		
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d93 1
+a93 1
+	public boolean containLabel() {
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d103 1
+a103 1
+		return instruction == null;
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d94 1
+a94 1
+		return label == null;
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d106 12
+@
+

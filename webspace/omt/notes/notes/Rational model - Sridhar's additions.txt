@@ -1,0 +1,33 @@
+Good way to tackle argument: quote a feature of the Rational Model theory, and then give your view on whether the case study exibits this feature (giving an example).
+
+PROCESS means the decision making process, not the decision itself so the 1st point isn't really valid (I think).
+
+RULES not agreed because the engineers were excluded from the decision making process.
+
+Didn't evaluate ALTERNATIVE courses of action - rejected 'no lauch' on commercial grounds (wanted to keep main customer NASA happy) rather than on the grounds of the data to support it.
+
+Top quote by Sherlock Holmes! Make sure you include that.
+
+CHOICE CRITERIA weren't CLEAR - The management didn't identify whether safety was more important than meeting deadlines.
+
+CHOICE CRITERIA were CONTROVERSIAL - Launch would go ahead if the data to support 'no launch' wasn't conclusive, rather than it being necessary to find conclusive evidence to lauch. Had the latter criteria been used, the launch would not have gone ahead (bit of article at bottom of page 2 mentions this)
+(This could come under PROBLEMATIC DATA if you prefer)
+
+There WERE a FINITE number of choices (so it would have been rational), but they were completely ignored so this feature of the rational model never entered the decision arena.
+
+Not a STABLE ENVIRONMENT because:
+(a) The weather kept changing, so the safety level could never be determined
+(b) Thiokol management suddenly changed their mind during an interval in the teleconference, so NASA's job of deciding was in an unstable environment
+
+Dimensions (see table in reading 6.1 page 168)
+----------
+'Decision process' dimension of rational model was not ORDERLY - when MTI engineers were presenting their data by teleconference they didn't have any time to rehearse their presentation.
+
+'Preferences and Goals' dimension was NOT consistent. NASA preferred to get the rocket off the ground. Thiokol engineers preferred to ensure safety.
+
+'Information requirements' - There was systematic information gathering (so it would have conformed to the rational model). However:
+(a) It was not EXTENSIVE (MTI managers didn't provdide resources for 	    engineers to fully investigate O-ring problem.
+(b) NASA management ignored the information. They wouldn't even look at the photographic evidence that suggested the O-ring wouldn't survive the low temperature
+
+
+

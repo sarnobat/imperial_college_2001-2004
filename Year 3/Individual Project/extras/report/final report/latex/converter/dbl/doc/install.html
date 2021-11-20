@@ -1,0 +1,44 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><meta content="Website XSL Stylesheet V2.4.1" name="generator"><link rel="home" href="index.html" title="Welcome to DB2LaTeX"><link rel="up" href="index.html" title="Welcome to DB2LaTeX"><link rel="previous" href="whatis.html" title="What is DB2LaTeX?"><link rel="next" href="quickstart.html" title="QuickStart Using DB2LaTeX"><link rel="first" href="whatis.html" title="What is DB2LaTeX?"><link rel="last" href="biblio.html" title="Bibliography"><link rel="icon" href="graphics/rarrow.gif" type="image/gif"><link href="db2latex.css" rel="stylesheet" type="text/css">
+    <title>Installing the Stylesheets</title>
+    
+  </head><body class="website" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="webpage"><a name="install"></a><div class="navhead"><p><a href="index.html"><img border="0" align="left" src="graphics/db2latex_home.png" alt="Banner"></a> | <a href="whatis.html">What is DB2LaTeX?</a> | Installing the Stylesheets <img border="0" src="graphics/navicons/triangle/current/pointer.gif" width="12" height="12" alt="*" align="middle" /> | <a href="quickstart.html">QuickStart Using DB2LaTeX</a> | <a href="using.html">Using DB2LaTeX</a> | <a href="custom.html">Customization</a> | <a href="reference/">Reference</a> | <a href="qanda.html">FAQ</a> | <a href="developer.html">Developer Information</a> | <a href="bugs.html">Known Bugs</a> | <a href="credits.html">Credits</a> | <a href="legalnotice.html">Copyright and Warranty</a> | <a href="biblio.html">Bibliography</a><br></p><hr></div><h1>Installing the Stylesheets</h1><div class="sect1" lang="en"><div class="titlepage"><div><h2 class="title" style="clear: both"><a name="N400014"></a>How? (Using lynx)</h2></div></div><p>The DB2LaTeX stylesheets no longer depend on Norman DocBook XSL
+    stylesheets. You just need to checkout the latest (and greatest?) release
+    from the cvs repository. In a Unix/cygwin like environment with /bin/sh
+    and lynx installed, you may type :</p><pre class="programlisting">
+      
+you@yourhost(/usr/any/path)%  lynx -source http://db2latex.sourceforge.net/get-db2latex.sh | sh
+###############################################################
+get-db2latex: 
+###############################################################
+...
+
+</pre><p>And that's all. The directory db2latex will be created, and you
+    only need to type the following command to update your local copy:</p><pre class="programlisting">
+      
+you@yourhost(/usr/any/path)%  cd db2latex
+you@yourhost(/usr/any/path/db2latex)%  cvs update 
+
+</pre></div><div class="sect1" lang="en"><div class="titlepage"><div><h2 class="title" style="clear: both"><a name="N400021"></a>How? (Using CVS snapshots)</h2></div></div><p>Alternatively, you may want to checkout the cvs repository manually
+    :</p><pre class="programlisting">
+      
+baldrick(/home/casellas/sgml/xsl)% cvs -z3 -d:pserver:anonymous@cvs.db2latex.sourceforge.net:/cvsroot/db2latex login
+baldrick(/home/casellas/sgml/xsl)% cvs -z3 -d:pserver:anonymous@cvs.db2latex.sourceforge.net:/cvsroot/db2latex co db2latex
+baldrick(/home/casellas/sgml/xsl)% cvs -z3 -d:pserver:anonymous@cvs.db2latex.sourceforge.net:/cvsroot/db2latex logout
+
+</pre></div><div class="sect1" lang="en"><div class="titlepage"><div><h2 class="title" style="clear: both"><a name="N400029"></a>How? (Downloading releases)</h2></div></div><p>What If I don't have cvs / lynx / sh installed? You may download
+    releases from the 
+    <a href="http://www.sourceforge.net/projects/db2latex" target="_top">Sourceforge
+    DB2LaTeX page</a>. Then :</p><div class="itemizedlist"><ul type="disc"><li><p>Download the file db2latex-x.y.z.tar.gz</p></li><li><p>Unpack ( 
+        <tt>tar xvfz db2latex-x.y.z.tar.gz</tt>) the distribution.
+        the db2latex directory hierarchy is created.</p></li></ul></div><pre class="screen">you@yourhost $ mkdir /tmp/downloads you@yourhost $ cd
+    /tmp/downloads (download file) you@yourhost $ su Password: root@yourhost
+    # cp /tmp/downloads/db2latex-x.y.z.tar.gz /usr/fianl/destination
+    root@yourhost # cd /usr/fianl/destination root@yourhost # tar xvfz
+    db2latex-x.y.z.tar.gz (creates the directory docbook/latex)</pre><p>See the README file and the xsl/sample subdirectory for examples. I
+    am currently in the process of Documenting the stylesheets the same way
+    Norman does,using the 
+    <tt>doc:</tt>namespace. Documentation is just in its barebones,
+    but I plan to improve it.</p></div><div class="sect1" lang="en"><div class="titlepage"><div><h2 class="title" style="clear: both"><a name="N400046"></a>Copyright and Disclaimer</h2></div></div><p>In order to make them more portable, the test XML files specify the
+    docbookx DTD by declaring a SYSTEM identifier that points to the Oasis
+    URL. This works but affects performance. Change the xml DOCTYPE
+    declarations to reflect your local installation.</p></div><div class="navfoot"><hr><table summary="Footer navigation" border="0" width="100%"><tr><td align="left" width="33%"><span class="footdate">$Date: 2003/03/21 02:37:20 $</span></td><td align="center" width="34%"><span class="foothome"><a href="index.html">Home</a></span></td><td align="right" width="33%">&nbsp;<a href="http://sourceforge.net/projects/db2latex"><img src="http://sourceforge.net/sflogo.php?group_id=22450&amp;type=1" border="0" width="88" height="31" alt="Hosted at SourceForge." /></a> <a href="http://docbook.sourceforge.net/projects/website/"><img src="http://docbook.sourceforge.net/graphics/buttons/website-1.png" border="0" width="128" height="40" alt="Created with Website: a DocBook document type." /></a></td></tr><tr><td align="right" colspan="3"><span class="footcopy"><span class="copyright">Copyright &copy; 2000, 2001, 2002, 2003 Ramon Casellas. </span></span></td></tr></table></div></div></body></html>

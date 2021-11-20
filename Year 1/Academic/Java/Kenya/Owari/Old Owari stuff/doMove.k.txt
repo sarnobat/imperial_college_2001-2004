@@ -1,0 +1,47 @@
+/////////////////DoMove/////////////////
+
+int DoMove (int [ ] board,int bowl,int playerno)
+
+{
+
+	boolean capturable [12];
+	int k;
+	for (k=0;k<capturable.length;k++)
+	{
+		capturable[k] = false;
+	}
+
+	int j;
+	for (j=0;j<board.length;j++)
+	{
+		if (board[j]==1)
+		{
+			capturable[j] = true;
+		}
+
+	}
+
+	bowl = GetMove();
+	int stoneswon = 0;
+
+	int i;
+	for (i=bowl;i<bowl-1+board[bowl];i++)
+	{
+	//check whether the for loop boundary condition should contain a +1
+		board[i] = board[i] + 1;
+
+		if (capturable[i])
+		{
+			stoneswon = stoneswon + board[i];
+			board[i] = 0;
+		}
+
+	}
+
+	return stoneswon;
+
+}
+
+///////////Update Scores/////////////////////
+
+player[playerno-1] = player[playerno-1] + DoMove(aBoard,bowl,playerno);

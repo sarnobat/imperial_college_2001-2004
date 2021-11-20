@@ -1,0 +1,62 @@
+\documentclass[pdftex,english,a4paper,10pt]{article}
+\usepackage[pdftex,bookmarksnumbered,colorlinks,backref, bookmarks, breaklinks, linktocpage]{hyperref}
+\usepackage[pdftex]{graphicx}
+\usepackage{isolatin1}
+\pdfcompresslevel=9
+\title{Title}
+\author{Ramon Casellas}
+\begin{document}
+
+\maketitle
+
+% ------------------------   
+% Section 
+\section{Introduction}
+\label{id2720279}\hypertarget{id2720279}{}%
+\subsection{blah}
+\label{id2720286}\hypertarget{id2720286}{}%
+
+% ------------------------   
+% Section 
+\section{Section}
+\label{id2720295}\hypertarget{id2720295}{}%
+% ------------------------------------------- 
+%	
+%  Bibliography
+%	
+% -------------------------------------------	
+\bibliography{}
+\begin{thebibliography}{WIDELABEL}
+
+% -------------- biblioentry 
+\bibitem[BerGal]{BerGal}
+\emph{Data Networks} , D. Bertsekas and R. Gallager, Prentice Hall International Editions. ISBN 0-13-196981-1, 1987. \label{BerGal}
+
+
+\end{thebibliography}
+\newcommand{\dbglossary}[1]{\section*{#1}}%
+\newcommand{\dbglossdiv}[1]{\subsection*{#1}}%
+% ------------------------------------------------------------- 
+% 
+% GLOSSARY Glossaire
+% 
+% ------------------------------------------------------------- 
+\dbglossary{Glossaire}
+\label{gloss@glossary}\hypertarget{gloss@glossary}{}%
+% 
+% ------------------------------------------------------------- 
+\dbglossdiv{A}
+\label{id2720961}\hypertarget{id2720961}{}%
+\noindent%
+\begin{description}%
+\item[\hypertarget{gloss@arp}{Address Resolution Protocol}]  ( {\tt ARP} ) 
+
+Def.
+
+
+\end{description}%
+
+% --------------------------------------------
+% End of document
+% --------------------------------------------
+\end{document}

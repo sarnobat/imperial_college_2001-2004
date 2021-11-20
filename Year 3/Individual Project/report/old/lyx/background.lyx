@@ -1,0 +1,3483 @@
+#LyX 1.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 221
+\textclass report
+\language english
+\inputencoding auto
+\fontscheme default
+\graphics default
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 0
+\use_amsmath 0
+\use_natbib 0
+\use_numerical_citations 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Section
+
+XML Storage techniques
+\layout Standard
+
+There are several techniques for storing XML documents in relational databases
+ that could be employed in this project.
+ Some of the more common ones are discussed here.
+ The techniques will be evaluated against two criteria:
+\layout Enumerate
+
+all XML document structural information must be retained so that the document
+ can be regenerated.
+ 
+\layout Enumerate
+
+The technique must store the data in an intuitive form so that the user
+ can manipulate the data with similar ease to that of a conventional relational
+ database.
+\layout Standard
+
+The following example XML document will be used when describing the techniques:
+ 
+\layout Standard
+
+
+\begin_inset Minipage
+position 0
+inner_position 0
+height "0pt"
+width "500mm"
+collapsed false
+
+\layout Standard
+
+
+\family typewriter 
+<ps_db>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<part pno="100" colour="red" price="20"/>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<part pno="101" colour="red" price="22"/>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<part pno="102" colour="yellow" price="11"/>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<supplier sno="20I" town="London">
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<name>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+I
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<sup>2</sup>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+electronics
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</name>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<supplies>100</supplies>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<supplies>102</supplies>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</supplier>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<supplier sno="50J" town="Oslo">
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<name>J &amp; S</name>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<supplies>100</supplies>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<supplies>101</supplies>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</supplier> 
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<supplier sno="63H" town="Paris">
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<name>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<![CDATA[<HTML> SA]]>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</name>
+\layout Standard
+
+
+\family typewriter 
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</supplier>
+\layout Standard
+
+
+\family typewriter 
+</ps_db>
+\end_inset 
+
+
+\layout Subsection
+
+Edge Storage 
+\layout Standard
+
+Many variations of relational storage of XML focus on storing information
+ about the edges between elements in an XML document.
+ [4] suggests 3 related approaches.
+ 
+\layout Subsubsection
+
+Edge Approach 
+\layout Standard
+
+Two tables are created: an edge table and a value table.
+ The value table stores all attribute values and character data values.
+ These are referenced by a row in the edge table, where each row represents
+ an edge between a parent and child element.
+ Separate value tables can be created for different types of data (integer,
+ string, id reference).
+\layout Comment
+
+[Explain this better] 
+\layout Standard
+
+
+\begin_inset  Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features>
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+
+\begin_inset  Tabular
+<lyxtabular version="3" rows="25" columns="5">
+<features>
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" rightline="true" width="0">
+<row topline="true" bottomline="true">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+Edge
+\end_inset 
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+source
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+ordinal
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+name
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+flag
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+target
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+1
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+1
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+1
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+2
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+1
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+3
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+1
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+4
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+1
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+5
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+1
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+6
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+2
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+1
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+2
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+2
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+2
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+3
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+3
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+3
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+3
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+4
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+4
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+4
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+5
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+1
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+5
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+2
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+5
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+3
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+6
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+1
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+6
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+2
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+6
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+3
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+7
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+1
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+8
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+1
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset 
+
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset 
+
+
+\layout Standard
+
+Edge source ordinal name flag target 1 1 part ref 1 1 2 part ref 2 1 3 part
+ ref 3 1 4 supplier ref 4 1 5 supplier ref 5 1 6 supplier ref 6 2 1 pno
+ decimal v1 2 2 colour string v2 2 3 price decimal v3 3 1 pno decimal v4
+ 3 2 colour string v5 3 3 price decimal v6 4 1 pno decimal v7 4 2 colour
+ string v8 4 3 price decimal v9 5 1 name ref 8 5 2 supplies decimal v10
+ 5 3 supplies decimal v11 6 1 name string v12 6 2 supplies decimal v13 6
+ 3 supplies decimal v14 7 1 name string v15 8 1 sup decimal v16 vdecimal
+ vid value v1 100 v4 101 v7 102 v10 100 v11 102 v13 100 v14 101 v16 2 v3
+ 20 v6 22 v9 11 
+\layout Standard
+
+vstring vid value v2 red v5 red v8 yellow v12 J & S v15 <HTML> SA 
+\layout Subsubsection
+
+Binary Approach
+\layout Standard
+
+A separate table is created for each element or attribute name.
+ Each row in any table indicates an edge from that element instance to another
+ element.
+ 
+\layout Standard
+
+
+\begin_inset  Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features>
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" rightline="true" width="0">
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset 
+
+
+\layout Standard
+
+Bps_db source ord vdecimal vstring target null 1 null null 1 Bsupplier source
+ ord vdecimal vstring target 1 4 null null 5 1 5 null null 6 1 6 null null
+ 7 
+\layout Standard
+
+Bpart source ord vdecimal vstring target 1 1 null null 2 1 2 null null 3
+ 1 3 null null 4 Bsno source ord vdecimal vstring target 5 1 null 20I null
+ 6 1 null 50J null 7 1 null 63H null 
+\layout Standard
+
+Bpno source ord vdecimal vstring target 1 1 100 null null 2 1 101 null null
+ 3 1 102 null null Btown source ord vdecimal vstring target 5 2 null London
+ null 6 2 null Oslo null 7 2 null Paris null 
+\layout Standard
+
+Bcolour source ord vdecimal vstring target 1 2 null red null 2 2 null red
+ null 3 2 null yellow null Bname source ord vdecimal vstring target 5 3
+ null null 8 6 3 null J & S null 7 3 null <HTML> SA null 
+\layout Standard
+
+Bprice source ord vdecimal vstring target 1 3 20 null null 2 3 22 null null
+ 3 3 11 null null Bsup source ord vdecimal vstring target 8 1 2 null null
+ 
+\layout Standard
+
+Bsupplies source ord vdecimal vstring target 5 4 100 null null 5 5 102 null
+ null 6 4 100 null null 6 5 101 null null 
+\layout Subsubsection
+
+Universal Table
+\layout Standard
+
+A single table is created to store all information.
+ 
+\layout Comment
+
+[This needs to be explained properly] 
+\layout Comment
+
+
+\begin_inset  Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features>
+<column alignment="center" valignment="top" leftline="true" rightline="true" width="0">
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset 
+
+
+\layout Standard
+
+source ord flag targetsupplier ord flag targetsno ord flag targetsupplies
+ .
+ 1 4 ref 2 1 string 20I 1 decimal 100 1 4 ref 2 1 string 20I 2 decimal 102
+ 1 5 ref 3 1 string 50J 1 decimal 100 1 5 ref 3 1 string 50J 2 decimal 101
+ 1 6 ref 4 1 string 63H null null null 
+\layout Standard
+
+The number of columns in the table is the three times the total number of
+ element and names (each of which has an ord, flag and target column).
+ Only a subset of the columns and the rows have been shown here.
+ 
+\layout Standard
+
+All approaches satisfy criteria (b) of a lossless transformation from an
+ XML document to a relational data representation.
+ 
+\layout Standard
+
+The problem with the first approach is that the value of an attribute or
+ element is completely alienated from its name (the name and value pair
+ are distributed across two relations) which certainly doesnt satisfy criteria
+ (a).
+ The next two resolve this problem, but as a result lead to denormalization:
+ for example, the data of an element with two children is repeated in the
+ two rows where the edge is represented.
+ Also, there are many null values which are undesirable for many reasons.
+ Denormalization is problematic when updating data (multiple updates are
+ required instead of just 1).
+ 
+\layout Subsubsection
+
+Edge Schema 
+\layout Standard
+
+Another edge representation is described in [3,9].
+ 
+\layout Standard
+
+
+\begin_inset  Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features>
+<column alignment="center" valignment="top" leftline="true" rightline="true" width="0">
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset 
+
+
+\layout Standard
+
+edge schema id pid ord type name value 1 0 1 element ps_db null 2 1 1 element
+ part null 3 1 2 element part null 4 1 3 element part null 5 1 4 element
+ supplier null 6 1 5 element supplier null 7 1 6 element supplier null 8
+ 2 1 attribute pno 100 9 2 2 attribute colour red 10 2 3 attribute price
+ 20 11 3 1 attribute pno 101 12 3 2 attribute colour red 13 3 3 attribute
+ price 22 14 4 1 attribute pno 102 15 4 2 attribute colour yellow 16 4 3
+ attribute price 11 17 5 1 attribute sno 20I 18 5 2 attribute town London
+ 19 6 1 attribute sno 50J 20 6 2 attribute town Oslo 21 7 1 attribute sno
+ 63H 22 7 2 attribute town Paris 23 5 1 element name I * electronics 24
+ 5 2 element supplies 100 25 5 3 element supplies 102 26 6 1 element name
+ J & S 27 6 2 element supplies 100 28 6 3 element supplies 101 29 7 1 element
+ name <HTML> SA 30 23 1 element sup 2 
+\layout Standard
+
+This is an improvement on the aforementioned because there is less denormalizati
+on.
+ There is less denormalization because rather than have 3 columns with only
+ one ever containing applicable data there are 2 equivalent columns, with
+ the first saying how to interpret the data in the second.
+ There is still denormalization because rows with type value 'element' contain
+ no information in the 'value' column.
+ 
+\layout Standard
+
+Until the database has been normalized sufficiently, it cannot possibly
+ be considered well-designed and intuitive to a database user.
+ 
+\layout Standard
+
+To reduce denormalization to an acceptable level, the relational schema
+ must be generated to suit the underlying schema of an XML document.
+ In the edge approaches, the only XML schema information used was that which
+ was self-contained in the markup.
+ But a particular XML document seldom reveals the whole schema.
+ A representation of the whole schema is required.
+ 
+\layout Section
+
+XML Schemas 
+\layout Standard
+
+Several XML schema-specification languages exist.
+ They include: 
+\layout Itemize
+
+Document Type Definition (DTD)
+\layout Itemize
+
+XSD Schema (XML Schema Definition) 
+\layout Itemize
+
+XDR (XML-Data Reduced)
+\layout Itemize
+
+SOX (Schema for Object-Oriented XML)
+\layout Itemize
+
+Schematron § DSD 
+\layout Standard
+
+DTD and XSD Schema are by far the most common.
+ Of the two, DTD has been used more widely thus far due to its relative
+ longer existence and greater compactness.
+ 
+\layout Standard
+
+However, XSD Schema is likely to replace DTD particularly in the more serious
+ applications.
+ There are many reasons for increasing preference to XSD Schema: 
+\layout Itemize
+
+It supports object-oriented structuring of data.
+ Type definitions can be extended.
+ 
+\layout Itemize
+
+It supports data types.
+ Content validation is thus more rigorous.
+ 
+\layout Itemize
+
+It is written in XML syntax.
+ Many of the powerful XML parsers are therefore usable with XSD Schema documents
+ as well.
+ 
+\layout Standard
+
+Thus we shall only study relational schema generation from XSD Schema.
+ 
+\layout Standard
+
+The XML document introduced earlier conforms to the following XSD Schema:
+ 
+\layout Standard
+
+
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0"
+width "100col%"
+collapsed false
+
+\layout Standard
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:element name="ps_db"> 
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:complexType>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:choice maxOccurs="unbounded">
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:element name="part" type="part"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:element name="supplier" type="supplier"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</xsd:choice>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</xsd:complexType>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:key name="part_pk"> 
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:selector xpath="part"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:field xpath="@pno"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</xsd:key>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:key name="supplier_pk"> 
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:selector xpath="supplier"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:field xpath="@sno"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</xsd:key>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:keyref name="supplier_supplies_fk" refer="part_pk"> 
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:selector xpath="supplier/supplies"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:field xpath="."/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</xsd:keyref>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</xsd:element>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:complexType name="supplier">
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:sequence>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:element name="name" type="name"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:element name="supplies" type="xsd:integer" minOccurs="0" maxOccurs="unbound
+ed"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</xsd:sequence>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:attribute name="sno" type="xsd:string" use="required"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:attribute name="town" type="xsd:string" use="required"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</xsd:complexType>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:complexType name="name" mixed="true">
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:choice minOccurs="0" maxOccurs="unbounded">
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:element name="sup" type="xsd:string"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</xsd:choice>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</xsd:complexType>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:complexType name="part">
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:attribute name="pno" type="xsd:integer" use="required"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:attribute name="colour" type="xsd:string" use="required"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<xsd:attribute name="price" type="xsd:float" use="required"/>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+</xsd:complexType>
+\layout Standard
+
+</xsd:schema>
+\end_inset 
+
+
+\layout Subsection
+
+Schema-Adaptive XML Storage 
+\layout Standard
+
+[3,9] explain another approach which does make use of schema information.
+ [9] has called it the Element Schema.
+ It creates separate relations for the different types of elements; any
+ attributes they contain become attributes of the relation
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+We use the term 'column' when referring to relational attributes to avoid
+ confusion with XML attributes
+\end_inset 
+
+.
+ The information about different types of elements is obtained from the
+ XML schema.
+ 
+\layout Standard
+
+
+\begin_inset  Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features>
+<column alignment="center" valignment="top" leftline="true" rightline="true" width="0">
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset 
+
+
+\layout Standard
+
+ps_db id pid ord 1 0 0 name id pid ord name 8 5 1 I * electronics 9 6 1
+ J & S 10 7 1 <HTML> SA 
+\layout Standard
+
+part id pid ord pno colour price 2 1 1 100 red 20 3 1 2 101 red 22 4 1 3
+ 102 yellow 11 supplies id pid ord supplies 11 5 1 100 12 5 2 102 13 6 1
+ 100 14 6 2 101 
+\layout Standard
+
+supplier id pid ord sno town 5 1 4 20I London 6 1 5 50J Oslo 7 1 6 63H Paris
+ sup id pid ord sup 15 8 1 2 
+\layout Standard
+
+This relational schema is normalized to an acceptable degree.
+ It will be the basis for our storage method.
+ 
+\layout Standard
+
+However, several problems remain: 
+\layout Itemize
+
+The element schema relations still contain noise that is of no use to a
+ conventional database user, impeding their ability to browse the dataset.
+ This noise data is only required to reconstruct the shredded XML document.
+ 
+\layout Itemize
+
+This noise doesnt stop short of being a nuisance: it actually causes a serious
+ problem when overlapping documents are stored (see below for explanation).
+ 
+\layout Itemize
+
+Simple elements are stored in a separate relation (e.g.
+ 'sup') when theyd more intuitively be represented as columns in the parent
+ elements table.
+ 
+\layout Paragraph
+
+'Noise' Columns 
+\layout Standard
+
+There hasnt been much work addressing (a).
+ One reason is that the aim of existing work such as [3] is not to provide
+ XML support in a conventional relational database.
+ Rather, it is to store XML documents in the efficient relational structure
+ but to be used in a Native XML Database.
+ A Native XML Database is a database that is queried using XML query languages
+ (such as XPath and XQuery).
+ Logically, the database is one large XML file made up of the data from
+ several smaller documents (only physically is it relational).
+ Inserted and retrieved data are presented in XML format.
+ While XML Databases have exciting potential, trust remains with relational
+ databases and is likely to for some time.
+ The aim of this project is not to build an XML Database, but to incorporate
+ support for XML seamlessly in a relational database for conventional use.
+ 
+\layout Standard
+
+This project is to address the problem of noise columns.
+ 
+\layout Paragraph
+
+Data 'Collision'
+\layout Standard
+
+Problem (b) is not immediately obvious, but is a very serious one.
+ Imagine a very simple scenario where the data from two documents is imported
+ into the database.
+ 
+\layout Standard
+
+
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0"
+width "100col%"
+collapsed false
+
+\layout Standard
+
+<ps_db>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<part pno=
+\begin_inset Quotes erd
+\end_inset 
+
+100
+\begin_inset Quotes erd
+\end_inset 
+
+ colour=red price=
+\begin_inset Quotes erd
+\end_inset 
+
+20
+\begin_inset Quotes erd
+\end_inset 
+
+/>
+\layout Standard
+
+</ps_db>
+\end_inset 
+
+
+\layout Standard
+
+
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0"
+width "100col%"
+collapsed false
+
+\layout Standard
+
+<ps_db>
+\layout Standard
+
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+\SpecialChar ~
+<part pno=
+\begin_inset Quotes erd
+\end_inset 
+
+100
+\begin_inset Quotes erd
+\end_inset 
+
+ colour=red price=
+\begin_inset Quotes erd
+\end_inset 
+
+
+\series bold 
+30
+\series default 
+
+\begin_inset Quotes erd
+\end_inset 
+
+/>
+\layout Standard
+
+</ps_db>
+\end_inset 
+
+
+\layout Standard
+
+These documents contain information regarding the same physical entity (namely,
+ the red part given the number '100').
+ The intention of importing the second document is to update the price of
+ the part.
+ However, the element schema representation of these documents would be:
+ 
+\layout Standard
+
+
+\begin_inset  Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features>
+<column alignment="center" valignment="top" leftline="true" rightline="true" width="0">
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\layout Standard
+
+\end_inset 
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset 
+
+
+\layout Standard
+
+part id pid ord pno colour price 2 1 1 100 red 20 4 3 1 100 red 30 
+\layout Standard
+
+The data from the first document remains intact without any price change.
+ How is a conventional database user supposed to determine the price of
+ the part with number 100? The user only expects to see one relevant row.
+ Furthermore, when the first document is regenerated, it will not contain
+ the latest price of this part.
+ 
+\layout Standard
+
+The reason that outdated information is retained is that the primary key
+ is the id column.
+ Regardless of the real-world equivalence between the 'two' parts, they
+ are treated completely independently in this relational schema because
+ they originate from different documents.
+ Again, this is a consequence of the denormalized relational schema: the
+ price value is uniquely identified by the value of a column not declared
+ as a key attribute.
+ The problem is 
+\emph on 
+not
+\emph default 
+ solved by making 'pno' the primary key instead and thus only allowing one
+ row containing this pno value.
+ This is because structural information about the first document will be
+ overwritten.
+ It is also not solved by making id 
+\emph on 
+and
+\emph default 
+ pno primary key attributes, because two rows will still exist for the same
+ part.
+ 
+\layout Standard
+
+The 'Element Schema' was only intended to provide a relational storage for
+ XML documents, without any concern for overall data consistency.
+ It is left for this project to address this problem too.
+ 
+\layout Paragraph
+
+Simple Elements in separate tables 
+\layout Standard
+
+The element schema interprets the schema of the XML document rather literally
+ with limited regard for the deeper meaning.
+ 
+\layout Standard
+
+What is required is a more abstract, conceptual interpretation of the XML
+ schema that resembles a human users interpretation more closely.
+ 
+\layout Standard
+
+
+\hfill 
+
+\newline 
+
+\layout Standard
+
+As stated, problems (a) and (b) are left for this project to address.
+ Problem (c) can be addressed by investigating further work.
+ 
+\layout Standard
+
+The Constraints Preserving and Inlining (CPI) algorithm described in [4]
+ (and originally proposed in [21]) deals with problems such as (c) by developing
+ a 
+\emph on 
+conceptual model
+\emph default 
+ of the XML schema.
+ The conceptual model used is the DTD Graph.
+ From the DTD Graph, a relational schema is built.
+ Because the DTD Graph resembles a human user's interpretation of a schema
+ more closely, the relational schema is likely to be more intuitively structured.
+ 
+\layout Standard
+
+However, it has already been decided that XSD Schema is the XML schema of
+ choice.
+ Therefore, the CPI algorithms specific operation cannot be adopted in this
+ project.
+ Despite this, its general 
+\emph on 
+strategy
+\emph default 
+ can be.
+ This strategy to generate a relational schema from an XML schema is to:
+ 
+\layout Itemize
+
+create a conceptual model of the schema
+\layout Itemize
+
+build a relational schema that reflects this conceptual model 
+\layout Standard
+
+We investigate two conceptual modelling techniques for XSD Schemas.
+ 
+\layout Subsubsection
+
+Conceptual Modelling of XSD Schemas 
+\layout Standard
+
+One conceptual modelling technique for XSD Schema is given in [14] - the
+ X-Entity model.
+ 
+\layout Comment
+
+insert x-entity diagram
+\layout Standard
+
+The constructs are defined as follows: 
+\layout Itemize
+
+rectangle - an entity (from a complex element) 
+\layout Itemize
+
+diamond - a relationship between entities (from containment of one element
+ within another) 
+\layout Itemize
+
+curved bisector a disjunction (one of the containment relationships it bisects
+ may be instantiated) 
+\layout Itemize
+
+oval - an attribute (multi-occurring attributes have a double oval).
+ The line connecting the entity and the attribute is solid if the attribute
+ is required and dashed if it is optional.
+ Primary key attributes are underlined.
+ 
+\layout Standard
+
+However, in attempting to achieve generality among XML schemas (i.e.
+ it can model DTDs and XSD Schemas), it has neglected to represent some
+ fundamental aspects of XSD Schema.
+ For example, it does not distinguish between entities originating from
+ elements with and without mixed content.
+ It also does not distinguish between attributes originating from XML elements
+ and those originating from XML attributes.
+ Schema information is being lost during the modelling process, so this
+ model shall not be used.
+ 
+\layout Standard
+
+We now consider the conceptual model proposed in [20] - the Extensible Entity
+ Relationship Model.
+ While this can also apply to DTDs, it provides a wider range of constructs
+ to cater for those that can arise from XSD Schemas.
+ It also resembles the conceptual model of the target schema (the relational
+ schema) relatively closely and thus conversion will be more straightforward.
+ This is the definitive feature that makes it a strong choice for use in
+ our relational schema generation algorithm.
+ Indeed this is the modelling technique that shall be employed.
+ It is described in detail below.
+ 
+\layout Standard
+
+No mechanisms are proposed for mapping the model to a relational schema.
+ This is left for our project to investigate.
+ 
+\layout Standard
+
+Note that hereafter 'XSD Schema' will be referred to by its more familiar
+ name, 'XML Schema'.
+ 
+\layout Section
+
+Extensible Entity Relationship Modelling 
+\layout Standard
+
+First the basic constructs are introduced.
+ Then their derivation from an XSD Schema is described.
+ 
+\layout Subsection
+
+Basic Constructs 
+\layout Standard
+
+The Extensible Entity relationship model shares many features with its more
+ familiar predecessor, the Entity relationship model.
+ It is based on: 
+\layout Itemize
+
+entities
+\layout Itemize
+
+attributes
+\layout Itemize
+
+relationships.
+ 
+\layout Subsubsection
+
+XER Entity 
+\layout Standard
+
+An entity is displayed as a rectangle as expected, with the top label being
+ the name given to it.
+ Its attributes are ordered, and is therefore called an 
+\series bold 
+Ordered Entity
+\series default 
+.
+ 
+\layout Standard
+
+There may be entities with no attribute ordering specified.
+ Such an entity is denoted by a rectangle with a pointed base
+\begin_inset Foot
+collapsed false
+
+\layout Standard
+
+This is not the representation used in [20],which looks exactly like an
+ ordered entity but prefixes the name with a '?'.
+ This becomes a problematic when illustrating mappings in later sections,
+ and so a differently shaped construct will be used instead.
+\end_inset 
+
+ .
+ It represents an 
+\series bold 
+Unordered Entity
+\series default 
+.
+ 
+\layout Standard
+
+There may also be entities with content occurring outside any of the entitys
+ child constructs, yet nonetheless part of the entity.
+ Such an entities is called a 
+\series bold 
+Mixed Entity
+\series default 
+.
+ It is represented by a rounded box instead of a rectangle.
+\layout Comment
+
+insert diagram here
+\layout Subsubsection
+
+XER Attribute 
+\layout Standard
+
+Just like entities, attributes occur in different flavours to account for
+ the fact that they can originate from related but quite distinct constructs
+ in XML: an attribute and an element that has a simple type (i.e.
+ it only contains character data).
+ 
+\layout Standard
+
+To incorporate such information, XER attributes originating from XML attributes
+ are prefixed with an '@' symbol.
+ Those that originate from an element have no prefix.
+ 
+\layout Standard
+
+As with ER attributes, primary key attributes in an XER Entity are underlined.
+ Multi-valued attributes are suffixed by a '*'.
+ 
+\layout Comment
+
+insert diagram here
+\layout Subsubsection
+
+XER Generalization 
+\layout Standard
+
+Some constructs may be categorized by some common 'super entity'.
+ This super entity is modelled as a Generalization.
+ 
+\layout Comment
+
+insert diagram here
+\layout Standard
+
+The specialization constructs are not limited to entities; they can be XER
+ attributes too.
+ 
+\layout Subsubsection
+
+XER Relationships 
+\layout Standard
+
+Relationships are displayed in exactly the same format as in an ER model.
+ A line with a diamond in the middle (with the name of the relationship
+ inside the diamond) connects the two related entities.
+ The cardinality constraints are specified as expected.
+ 
+\layout Comment
+
+insert diagram here
+\layout Subsection
+
+Building the XER Model from an XML Schema 
+\layout Standard
+
+To illustrate all aspects of the modelling, the mappings will be explained
+ using modified versions of the constructs that occur in the parts and suppliers
+ XSD Schema introduced earlier.
+ Miscellaneous examples are occasionally used where no suitable construct
+ exists in the parts and suppliers schema.
+ The full XER model of the parts and suppliers schema is shown at the end.
+ 
+\layout Standard
+
+Before continuing, it should be noted that [20] does not illustrate how
+ to model every possible XML Schema construct.
+ It only considers: 
+\layout Itemize
+
+elements (simple, complex and mixed)
+\layout Itemize
+
+attributes 
+\layout Itemize
+
+containment of complex elements 
+\layout Itemize
+
+model groups (all, sequence, choice) 
+\layout Standard
+
+[20] does not discuss some constructs.
+ These include key, keyref and group.
+ However, modelling of these will be discussed here.
+ 
+\layout Standard
+
+There are also some more complex contexts in which the constructs can occur
+ which [20] does not address.
+ These will be considered here.
+ 
+\layout Standard
+
+Other constructs such as those which support inheritance will not be considered.
+ 
+\layout Subsubsection
+
+Elements and Attributes
+\layout Standard
+
+An element with a complex type maps to an XER entity.
+ In the example given, the element part becomes an XER entity named part.
+ 
+\layout Standard
+
+The schema attribute inside the complex type definition becomes an XER attribute
+ of the entity.
+ Thus, the price, pno and colour attributes become XER attributes of the
+ part entity, and are prefixed with an @ symbol.
+ 
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0"
+width "100col%"
+collapsed false
+
+\layout Standard
+
+<xsd:element name="part"> <xsd:complexType> <xsd:attribute name="pno" type="xsd:
+integer" use="required"/> <xsd:attribute name="colour" type="xsd:string"
+ use="optional"/> <xsd:attribute name="price" type="xsd:float" use="required"/>
+ </xsd:complexType></xsd:element> 
+\end_inset 
+
+
+\layout Comment
+
+insert diagram here
+\layout Standard
+
+The usage (required or optional) is denoted in the expected way ('?' meaning
+ optional, nothing meaning required).
+ 
+\layout Standard
+
+If the complex type definition is globally accessible (rather than defined
+ inline), the entity should take the name of the type, not the element instance.
+ 
+\layout Standard
+
+A simple element within a complex element can be modelled very similarly,
+ but unlike XML attributes, elements can occur multiple times.
+ The cardinality of the simple element is determined by its 'maxOccurs'
+ attribute value.
+ If it is greater than 1, if becomes a multi-valued attribute.
+ 
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0"
+width "100col%"
+collapsed false
+
+\layout Standard
+
+<xsd:element name="supplier"> <xsd:complexType> <xsd:sequence> <xsd:element
+ name=supplies maxOccurs=1> </xsd:sequence> </xsd:complexType></xsd:element>
+ 
+\end_inset 
+
+
+\layout Comment
+
+insert diagram here
+\layout Standard
+
+A complex element which can contain mixed content is modelled as an XER
+ Mixed Entity.
+ 
+\layout Standard
+
+
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0"
+width "100col%"
+collapsed false
+
+\layout Standard
+
+<xsd:element name="paragraph"> <xsd:complexType mixed=true> <xsd:attribute
+ name=bold/> <xsd:attribute name=italic/> </xsd:complexType></xsd:element>
+ 
+\end_inset 
+
+
+\layout Comment
+
+insert diagram here
+\layout Standard
+
+A complex element within 
+\emph on 
+another
+\emph default 
+ complex element means that there will be two separate entities (one per
+ element), with the outer element referencing the inner one via an XER Relations
+hip.
+ 
+\layout Standard
+
+
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0"
+width "100col%"
+collapsed false
+
+\layout Standard
+
+<xsd:element name=book> <xsd:complexType> <xsd:element name=chapter minOccurs=1
+ maxOccurs=unbounded/> </xsd:complexType></xsd:element > 
+\end_inset 
+
+
+\layout Comment
+
+insert diagram here
+\layout Standard
+
+There are some points to note regarding cardinalities.
+ The 'minOccurs' and 'maxOccurs' attributes correspond as expected in the
+ XER Model (and when none are specified XML Schemas convention is that they
+ are implicitly both 1).
+ 
+\layout Standard
+
+More interestingly, there doesnt appear to be any information about the
+ cardinality in the reverse direction in the XML Schema.
+ However, XMLs data model is known to be tree-like.
+ By definition, this means that child entities can belong to one 
+\emph on 
+and only one
+\emph default 
+ parent.
+ Thus it can be inferred that the cardinality at the childs end must be
+ 1:1.
+ This inference is only true for 
+\emph on 
+containment
+\emph default 
+ relationships (i.e.
+ when a complex element is contained within a complex element).
+ Relationships that do not arise from containment are handled differently
+ as shall be seen shortly.
+ 
+\layout Subsubsection
+
+Keys and Keyrefs 
+\layout Standard
+
+Within a complex type definition a unique identifier may be specified via
+ the key construct.
+ The fields which are declared as constituents of the key are modelled as
+ XER primary key attributes within the entity that corresponds to the complex
+ type definition.
+ 
+\layout Standard
+
+
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0"
+width "100col%"
+collapsed false
+
+\layout Standard
+
+<xsd:element name=book> <xsd:complexType> <xsd:key name=book_pk> <xsd:selector
+ xpath=book/> <xsd:field xpath=@ISBN/> </xsd:key> </xsd:complexType></xsd:elemen
+t >
+\end_inset 
+
+ 
+\layout Standard
+
+insert diagram here
+\layout Standard
+
+A reference from one complex element to another is achieved via a keyref
+ tag.
+ This corresponds to an XER Relationship.
+\layout Standard
+
+
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0"
+width "100col%"
+collapsed false
+
+\layout Standard
+
+<xsd:element name=book> <xsd:complexType> <xsd:keyref name=supplied_by refer=pub
+lisher_pkey> <xsd:selector xpath=publisher/> <xsd:field xpath=@publisherName/>
+ </xsd:key> </xsd:complexType></xsd:element > 
+\end_inset 
+
+
+\layout Standard
+
+insert diagram here
+\layout Standard
+
+However, unlike previously, the referred entity can exist independently
+ of the referring entity.
+ Thus the cardinality at the referred entitys end is 
+\emph on 
+zero to n
+\emph default 
+.
+ The cardinalities at the referring entitys end will depend on the characteristi
+cs of the attributes concerned (for example, if an attribute in a keyref
+ field was 'optional' then the relationships lower bound would be 0 whereas
+ if it was 'required' then it would be 1 etc.).
+ 
+\layout Subsubsection
+
+Model Groups 
+\layout Standard
+
+Within the complex type definition a 
+\emph on 
+model group
+\emph default 
+ may be specified (the schema constructs all, choice, group and sequence
+ are all model groups).
+\layout Standard
+
+As was seen from the multi-valued attribute example, a sequence simply means
+ all its child constructs are added to the entity.
+ A group is also modelled in this way.
+ 
+\layout Standard
+
+A choice construct means that only one of its child elements may occur.
+ In such a case it becomes necessary to use an XER Generalization.
+ 
+\layout Standard
+
+
+\begin_inset Minipage
+position 1
+inner_position 0
+height "0"
+width "100col%"
+collapsed false
+
+\layout Standard
+
+<xsd:element name=ps_db> <xsd:complexType> <xsd:choice> <xsd:element name=part/>
+ <xsd:element name=supplier/> </xsd:choice> </xsd:complexType></xsd:element
+ > 
+\end_inset 
+
+
+\layout Standard
+
+insert diagram here
+\layout Standard
+
+The 'all' construct means that its contents can appear in any order, and
+ so would be modelled by an unordered entity.
+ 
+\layout Standard
+
+<xsd:element name=book> <xsd:complexType> <xsd:all> <xsd:attribute name=priceUSD
+/> <xsd:attribute name=priceGBP/> </xsd:all> </xsd:complexType></xsd:element
+ > 
+\layout Standard
+
+Figure x: Mapping between schema all and XER Unordered Entity 
+\layout Standard
+
+More complex model group constructs are possible.
+ For example: § a model group may have a maxOccurs value greater than 1
+ § attributes can occur outside a model group but nonetheless inside the
+ complex type definition containing the model group.
+ § model groups may be nested 
+\layout Standard
+
+[20] doesnt consider such contexts, but the parts and supplier schema does
+ indeed contain such contexts and these must be handled.
+ What is done is to consider a model group as another entity, with a relationshi
+p from the original entity.
+ This allows multiple instances to exist, outer attributes to be kept separate
+ and nesting via a series of relationships.
+ 
+\layout Standard
+
+<xsd:element name=name> <xsd:complexType> <xsd:attribute name=text type=xsd:stri
+ng/> <xsd:choice minOccurs=0 maxOccurs=unbounded> <xsd:element name=sup
+ type=xsd:string/> </xsd:choice> </xsd:complexType></xsd:element > 
+\layout Standard
+
+Figure x 
+\layout Standard
+
+A Complete Example The modelling techniques above have been shown on some
+ miscellaneous examples as the original example (the parts and suppliers
+ schema) is not diverse enough to illustrate all constructs.
+ 
+\layout Standard
+
+The complete XER model of the parts and suppliers schema would look as follows:
+ 
+\layout Standard
+
+One may point out that the supplies attribute is not shown.
+ This is intentional because, like with ER models, foreign key attributes
+ are not explicitly shown in the entity as they are implied by the relationship.
+ 
+\layout Standard
+
+As stated, the task that remains is to translate the model into a relational
+ schema.
+ 
+\the_end

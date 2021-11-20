@@ -1,0 +1,10 @@
+<project default="compiler">
+	<target name="compiler">
+		<javac srcdir="." destdir="antBuild" classpath="jars/codegen.ecore.jar;jars/codegen.ecore.ui.jar;jars/codegen.jar;jars/codegen.ui.jar;jars/common.jar;jars/common.resources.jar;jars/common.ui.jar;jars/common.ui.resources.jar;jars/ecore.edit.jar;jars/ecore.editor.jar;jars/ecore.jar;jars/ecore.xmi.jar;jars/edit.jar;jars/edit.resources.jar;jars/edit.ui.jar;jars/edit.ui.resources.jar;jars/jdom.jar;jars/mapping.jar;jars/mapping.ui.jar;jars/mapping.xsd2ecore.editor.jar;jars/mapping.xsd2ecore.jar;jars/xercesImpl.jar;jars/xmlParserAPIs.jar;jars/xsd.edit.jar;jars/xsd.editor.jar;jars/xsd.jar;jars/xsd.resources.jar;jars/xsd.test.jar;jars/junit.jar;jars/log4j-1.2.8.jar">
+			<exclude name="exclude/**"/>
+			<exclude name="build/**"/>
+			<exclude name="antBuild/**"/>
+			<include name="jars/*.jar;**"/>
+		</javac>
+	</target>
+ </project>

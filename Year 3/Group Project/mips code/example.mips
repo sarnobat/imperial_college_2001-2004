@@ -1,0 +1,30 @@
+# example.mips - Example to illustrate assembly process.
+# Divide x by y, placing result in quo, assuming x and y
+# are both positive.  There is no error checking.
+# Division is accomplished by repeated subtraction.
+#
+# Register Usage:
+# $1 - result, $2 - x, $3 - y
+# $4 - base address of variables
+
+.globl main
+
+main:   llo $4, x          # load base address
+        lhi $4, x
+        lw $2, 0($4)       # load x
+        lw $3, (y-x)($4)   # load y
+        add $1, $0, $0     # initialize result
+
+loop:   sub $2, $2, $3
+        addi $1, $1, 1     # increment answer
+        bgtz $2, loop      # is x > 0? if so, loop again
+
+
+        beq  $0, $2, done  # exact division - done
+        addi $1, $1, -1    # correct for remainder
+done:   sw $1, (quo-x)($4) # store answer
+        trap 10            # exit program
+
+x:      .word 15
+y:      .word 3
+quo:    .word 0

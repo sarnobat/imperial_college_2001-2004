@@ -1,0 +1,445 @@
+head	1.22;
+access;
+symbols
+	yams-final-19-12-03:1.22
+	yams-release2-17-12-03:1.22
+	yams-release-17-12-03:1.22;
+locks; strict;
+comment	@# @;
+
+
+1.22
+date	2003.12.17.13.31.42;	author qq01;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2003.12.17.13.04.12;	author qq01;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2003.12.16.22.40.20;	author sw00;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2003.12.16.16.04.50;	author qq01;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2003.12.16.15.18.23;	author qq01;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2003.12.16.14.48.02;	author sw00;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.12.13.20.04.10;	author qq01;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.12.13.19.51.57;	author qq01;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.12.12.12.52.06;	author qq01;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.12.11.17.08.40;	author qq01;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.04.19.18.03;	author qq01;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.04.18.56.45;	author qq01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.04.18.48.00;	author qq01;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.04.18.38.00;	author qq01;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.03.10.56.46;	author qq01;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.24.01.28.38;	author qq01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.10.19.27.36;	author qq01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.08.17.39.30;	author qq01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.08.02.58.10;	author qq01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.10.25.01.41.27;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.10.24.15.46.14;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.10.24.15.18.43;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.22
+log
+@updated build.xml. It now deletes the files before the generating process
+@
+text
+@<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="yams" default="all">
+	<property name="classpath" location="${java.class.path}"/>
+	<property name="src" location="src"/>
+	<property name="conf" location="src"/>
+	<property name="build" location="build"/>
+	<property name="bin" location="bin"/>
+	<property name="docdir" location="doc"/>
+	
+	<target name="clean">
+		<delete dir="${build}"/>
+		<delete dir="${bin}"/>
+	</target>
+	
+	<target name="init" depends="clean">
+		<mkdir dir="${build}"/>
+		<mkdir dir="${bin}"/>
+	</target>
+	
+	<target name="compile" depends="init, generate">
+		<javac srcdir="${src}" destdir="${bin}" classpath="${classpath}"/>
+		<copy file="${conf}/Instruction_file.xml" todir="${bin}"/>
+	</target>
+
+    <target name="javadoc">
+        <javadoc destdir="${docdir}/javadoc" access="public" source="1.4" use="true"
+            notree="false" nonavbar="false" noindex="false"
+            splitindex="true" author="true" version="true"
+            nodeprecatedlist="false" nodeprecated="false"
+            packagenames="yams.exceptions,yams.parser,yams.processor,yams.assembler,yams.GUI, yams.GUI.graphs, yams.GUI.hexTable"
+            sourcepath="${src}" classpath="bin"/>
+    </target>
+    
+    <target name="jar" depends="compile">
+    	<jar destfile="${build}/YAMS.jar" basedir="${bin}">
+    	 	 <manifest>
+ 		  	<attribute name="Main-Class" value="YAMS"/>
+ 		 </manifest>
+    	</jar>
+    </target>
+
+    <target name="generate_parser">
+    	<delete file="${src}/yams/parser/Parser.java"/>
+        <xslt in="${src}/Instruction_file.xml" out="${src}/yams/parser/Parser.java" style="${src}/yams/parser/xslt/parser.xslt"/>
+    </target>
+    
+    <target name="generate_handlers">
+    	<delete file="${src}/yams/processor/InstructionHandler.java"/>
+	<delete file="${src}/yams/processor/SyscallHandler.java"/>
+        <xslt in="${src}/Instruction_file.xml" out="${src}/yams/processor/InstructionHandler.java" style="${src}/yams/auto/xslt/instructionHandler.xslt"/>
+        <xslt in="${src}/Instruction_file.xml" out="${src}/yams/processor/SyscallHandler.java" style="${src}/yams/auto/xslt/syscallHandler.xslt"/>
+    </target>
+
+    <target name="generate" depends="generate_parser, generate_handlers"/>
+    
+    <target name="all" depends="jar, javadoc"/>
+</project>
+@
+
+
+1.21
+log
+@modified build.xml
+@
+text
+@d44 1
+d49 2
+@
+
+
+1.20
+log
+@finalised generate_handlers
+@
+text
+@d38 2
+a39 2
+ 		  	 	<attribute name="Main-Class" value="YAMS"/>
+ 		  	 </manifest>
+@
+
+
+1.19
+log
+@ant command will now generate, compile, jar the whole thing
+@
+text
+@d48 2
+a49 1
+        <xslt in="${src}/Instruction_file.xml" out="${src}/ih.java" style="${src}/yams/auto/xslt/instructionHandler.xslt"/>
+d52 1
+a52 1
+    <target name="generate" depends="generate_parser"/>
+@
+
+
+1.18
+log
+@Updated build script to generate Parser.java at the correct place
+@
+text
+@d21 1
+a21 1
+	<target name="compile" depends="init">
+d51 1
+a51 1
+    <target name="generate" depends="generate_parser, generate_handlers"/>
+@
+
+
+1.17
+log
+@added generate_handlers
+@
+text
+@d44 1
+a44 1
+        <xslt in="${src}/Instruction_file.xml" out="${src}/p.java" style="${src}/yams/parser/xslt/parser.xslt"/>
+d51 1
+a51 1
+    <target name="generate" depends="generate_parser"/>
+@
+
+
+1.16
+log
+@Added javadoc for packages yams.GUI.graphs and yams.GUI.hexTable
+@
+text
+@d46 4
+@
+
+
+1.15
+log
+@Changed location for javadoc
+@
+text
+@d31 2
+a32 1
+            packagenames="yams.exceptions,yams.parser,yams.processor,yams.assembler,yams.GUI" sourcepath="${src}" classpath="bin"/>
+@
+
+
+1.14
+log
+@Updated ant build script
+@
+text
+@d27 1
+a27 1
+        <javadoc destdir="${docdir}" access="public" source="1.4" use="true"
+@
+
+
+1.13
+log
+@Updated Ant buildfile
+@
+text
+@d3 1
+a3 1
+<project name="yams" default="javadoc">
+d6 1
+d23 1
+a23 1
+		<copy file="${src}/Instruction_file.xml" todir="${bin}"/>
+d46 3
+a48 1
+    <target name="auto_generation" depends="generate_parser"/>
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d44 2
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d34 5
+a38 1
+    	<jar destfile="${build}/YAMS.jar" basedir="${bin}"/>
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d34 1
+a34 1
+    	<jar destfile="${build}/yams.jar" basedir="${bin}"/>
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d32 4
+@
+
+
+1.8
+log
+@Auto Generation now works
+@
+text
+@d22 1
+@
+
+
+1.7
+log
+@Updated ant build file to support javadoc for GUI package
+@
+text
+@d20 1
+a20 6
+	<target name="compile_parser" depends="init">
+		<mkdir dir="${bin}"/>
+		<javac srcdir="${src}/yams/parser" destdir="${bin}/yams/parser" classpath="${classpath}"/>
+	</target>
+	
+	<target name="compile_all" depends="compile_parser">
+d30 4
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d21 1
+a21 1
+		<mkdir dir="${bin}/yams/parser"/>
+d34 1
+a34 1
+            packagenames="yams.exceptions,yams.parser,yams.processor,yams.assembler" sourcepath="${src}" classpath="bin"/>
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d21 2
+a22 2
+		<mkdir dir="${bin}/parser"/>
+		<javac srcdir="${src}/parser" destdir="${bin}/parser" classpath="${classpath}"/>
+d34 1
+a34 1
+            packagenames="exceptions,parser,processor,assembler" sourcepath="${src}" classpath="bin"/>
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d20 6
+a25 1
+	<target name="compile" depends="init">
+@
+
+
+1.3
+log
+@New build targets added to build.xml
+@
+text
+@d2 1
+d29 1
+a29 1
+            sourcefiles="" sourcepath="${src}" classpath="bin"/>
+@
+
+
+1.2
+log
+@Added Javadoc generation target
+@
+text
+@d3 20
+d24 1
+a24 1
+        <javadoc destdir="doc" access="public" source="1.4" use="true"
+d28 1
+a28 1
+            sourcefiles="" sourcepath="src" classpath="bin"/>
+@
+
+
+1.1
+log
+@Added the Apache Ant build file
+@
+text
+@d1 10
+@
+

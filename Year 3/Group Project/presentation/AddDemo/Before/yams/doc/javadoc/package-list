@@ -1,0 +1,7 @@
+yams.GUI
+yams.GUI.graphs
+yams.GUI.hexTable
+yams.assembler
+yams.exceptions
+yams.parser
+yams.processor

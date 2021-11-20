@@ -1,0 +1,202 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.10.31.14.34.33;	author qq01;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.10.30.18.24.07;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@// $ANTLR : "lexrules.g" -> "WhateverPaser.java"$
+
+public interface WhateverLexerTokenTypes {
+	int EOF = 1;
+	int NULL_TREE_LOOKAHEAD = 3;
+	int IDENTIFIER = 4;
+	int COLON = 5;
+	int DOLLAR = 6;
+	int EQUAL = 7;
+	int DECIMAL = 8;
+	int POINT = 9;
+	int FLOAT = 10;
+	int DOLLAR_F_DECIMAL = 11;
+	// ";" = 12
+	int Operand = 13;
+	// "," = 14
+	// "(" = 15
+	// ")" = 16
+	// "+" = 17
+	// "-" = 18
+	int Expr = 19;
+	int DECIMAL_B = 20;
+	int DECIMAL_F = 21;
+	// "." = 22
+	// ".ascii" = 23
+	int STRING = 24;
+	// ".asciiz" = 25
+	// ".space" = 26
+	// ".byte" = 27
+	// ".half" = 28
+	// ".word" = 29
+	// ".float" = 30
+	// ".double" = 31
+	// ":" = 32
+	int SetDir = 33;
+	int SegmentDir = 34;
+	int AlignDir = 35;
+	int SymbolDir = 36;
+	int BlockDir = 37;
+	int CompilerDir = 38;
+	// ".set" = 39
+	int LITERAL_volatile = 40;
+	int LITERAL_novolatile = 41;
+	int LITERAL_reorder = 42;
+	int LITERAL_noreorder = 43;
+	int LITERAL_at = 44;
+	int LITERAL_noat = 45;
+	int LITERAL_macro = 46;
+	int LITERAL_nomacro = 47;
+	int LITERAL_bopt = 48;
+	int LITERAL_nobopt = 49;
+	int LITERAL_move = 50;
+	int LITERAL_nomove = 51;
+	// ".text" = 52
+	// ".data" = 53
+	// ".rdata" = 54
+	// ".sdata" = 55
+	// ".align" = 56
+	// ".globl" = 57
+	// ".extern" = 58
+	int Constant = 59;
+	// ".comm" = 60
+	// ".lcomm" = 61
+	// ".ent" = 62
+	// ".aent" = 63
+	// ".mask" = 64
+	// ".fmask" = 65
+	// ".frame" = 66
+	int Register = 67;
+	// ".end" = 68
+	// ".alias" = 69
+	// ".bgnb" = 70
+	// ".endb" = 71
+	// ".file" = 72
+	// ".galive" = 73
+	// ".gjaldef" = 74
+	// ".gjrlive" = 75
+	// ".lab" = 76
+	// ".livereg" = 77
+	// ".noalias" = 78
+	// ".option" = 79
+	int LITERAL_flag = 80;
+	// ".verstamp" = 81
+	// ".vreg" = 82
+	int Term = 83;
+	// "*" = 84
+	// "/" = 85
+	// "%" = 86
+	int LITERAL_ = 87;
+	// "&" = 88
+	// "^" = 89
+	// "| " = 90
+	// "~" = 91
+	// "!" = 92
+	int HEXADECIMAL = 93;
+	int OCTAL = 94;
+	int CHARACTER = 95;
+	int LITERAL_zero = 96;
+	// "v0" = 97
+	// "v1" = 98
+	// "a0" = 99
+	// "a1" = 100
+	// "a2" = 101
+	// "a3" = 102
+	// "t0" = 103
+	// "t1" = 104
+	// "t2" = 105
+	// "t3" = 106
+	// "t4" = 107
+	// "t5" = 108
+	// "t6" = 109
+	// "t7" = 110
+	// "s0" = 111
+	// "s1" = 112
+	// "s2" = 113
+	// "s3" = 114
+	// "s4" = 115
+	// "s5" = 116
+	// "s6" = 117
+	// "s7" = 118
+	// "t8" = 119
+	// "t9" = 120
+	// "k0" = 121
+	// "k1" = 122
+	int LITERAL_gp = 123;
+	int LITERAL_sp = 124;
+	// "s8" = 125
+	int LITERAL_fp = 126;
+	int LITERAL_ra = 127;
+	// "$zero" = 128
+	// "$at" = 129
+	// "$v0" = 130
+	// "$v1" = 131
+	// "$a0" = 132
+	// "$a1" = 133
+	// "$a2" = 134
+	// "$a3" = 135
+	// "$t0" = 136
+	// "$t1" = 137
+	// "$t2" = 138
+	// "$t3" = 139
+	// "$t4" = 140
+	// "$t5" = 141
+	// "$t6" = 142
+	// "$t7" = 143
+	// "$s0" = 144
+	// "$s1" = 145
+	// "$s2" = 146
+	// "$s3" = 147
+	// "$s4" = 148
+	// "$s5" = 149
+	// "$s6" = 150
+	// "$s7" = 151
+	// "$t8" = 152
+	// "$t9" = 153
+	// "$k0" = 154
+	// "$k1" = 155
+	// "$gp" = 156
+	// "$sp" = 157
+	// "$s8" = 158
+	// "$fp" = 159
+	// "$ra" = 160
+	int LITERAL_abs = 161;
+	int LITERAL_add = 162;
+}
+@
+
+
+1.1
+log
+@Test parser
+@
+text
+@@
+

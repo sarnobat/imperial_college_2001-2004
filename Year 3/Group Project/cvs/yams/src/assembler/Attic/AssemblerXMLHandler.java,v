@@ -1,0 +1,227 @@
+head	1.4;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.4
+date	2003.11.10.10.57.50;	author qq01;	state dead;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.08.17.39.30;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.05.14.08.45;	author jkm01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.04.19.38.46;	author jkm01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 04-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+
+/**
+ * @@author jkm01
+ *
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+
+package assembler;
+
+import java.io.File;
+import java.io.IOException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+
+public class AssemblerXMLHandler {
+
+	private static String INSTRUCTIONS_TAG = "Instructions";
+	private static String INSTRUCTION_TAG = "Instruction";
+	private static String NAME_TAG = "Name";
+	private static String MACHINE_CODE_REPRESENTATION_TAG = "MachineCodeRepresentation";
+	private static String TYPE_TAG = "Type";	
+	
+	
+	public static void LoadTableFromXML(String xmlFilePath, InstructionTable instrTable)
+	{
+		// take the xml file path and parse through the xml loading appropriate data into respective tables
+		
+		InstructionTable instructionTable = instrTable;
+
+
+		DocumentBuilderFactory factory =
+			DocumentBuilderFactory.newInstance();
+		//factory.setValidating(true);
+		//factory.setNamespaceAware(true);
+		try {
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document document = builder.parse( new File(xmlFilePath) );
+
+			// document now contains the xml file
+
+			Node rootNode = document.getFirstChild();
+
+			//	System.out.println(MIPS_root_Node.getNodeType());
+			//	System.out.println(MIPS_root_Node.getNodeName());
+
+			NodeList children = rootNode.getChildNodes();
+
+			for (int i = 0; i <children.getLength(); i++)
+			{
+				Node currentNode =children.item(i);
+				System.out.println(i+" "+currentNode.getNodeName() + " " + currentNode.getNodeType() + " " +currentNode.getNodeValue());
+
+				if ((currentNode.getNodeName()).equals(INSTRUCTIONS_TAG))
+				{
+					handleInstructions(instructionTable, currentNode);
+				}
+			}
+
+		} catch (SAXException sxe) {
+			// Error generated during parsing)
+			Exception  x = sxe;
+			if (sxe.getException() != null)
+			x = sxe.getException();
+			x.printStackTrace();
+
+		} catch (ParserConfigurationException pce) {
+			// Parser with specified options can't be built
+			pce.printStackTrace();
+
+		} catch (IOException ioe) {
+			// I/O error
+			ioe.printStackTrace();
+		}	
+	}
+
+	private static void handleInstructions(InstructionTable instructionTable, Node currentNode)
+	{
+		NodeList instructionNodes = currentNode.getChildNodes();
+		for (int i = 0; i<instructionNodes.getLength(); i++)
+		{
+			if (instructionNodes.item(i).getNodeName().equals(INSTRUCTION_TAG))
+				{
+					handleInstruction(instructionTable, instructionNodes.item(i));
+				}
+		}
+	}
+
+	private static void handleInstruction(InstructionTable instructionTable, Node currentNode)
+	{
+		// take the instruction node from the xml and fill the required information into the tables
+		instructionTable.add(getChildValue(NAME_TAG,currentNode),getChildValue(MACHINE_CODE_REPRESENTATION_TAG,currentNode),getChildValue(TYPE_TAG,currentNode));
+	}
+
+	private static String getChildValue(String name, Node node)
+	{
+		NodeList childNodes = node.getChildNodes();
+		int i = 0;
+		while (i<childNodes.getLength() && !childNodes.item(i).getNodeName().equals(name))
+		{
+			i++;
+		}
+		if (i<childNodes.getLength())
+		{
+			return childNodes.item(i).getFirstChild().getNodeValue();
+		}
+		else
+		{
+			return null;
+		}
+	}
+
+	
+}
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.2
+log
+@Modified XML handler to be static method and added XML Instruction File
+@
+text
+@d17 2
+a18 2
+import java.io.*;
+import javax.xml.parsers.*;
+d20 8
+a27 2
+import org.w3c.dom.*;
+import org.xml.sax.*;
+@
+
+
+1.1
+log
+@Updated the Assembler.java file as well as adding 6 other related classes
+
+James
+@
+text
+@a30 1
+	private InstructionTable instructionTable;
+d33 1
+a33 1
+	public AssemblerXMLHandler(String xmlFilePath, InstructionTable instrTable)
+d37 1
+a37 1
+		instructionTable = instrTable;
+d64 1
+a64 1
+					handleInstructions(currentNode);
+d82 1
+a82 1
+		}
+d85 1
+a85 1
+	private void handleInstructions(Node currentNode)
+d92 1
+a92 1
+					handleInstruction(instructionNodes.item(i));
+d97 1
+a97 1
+	private void handleInstruction(Node currentNode)
+d103 1
+a103 1
+	private String getChildValue(String name, Node node)
+@
+

@@ -1,0 +1,49 @@
+# Driver program for string print/length example
+# Richard C. Bilson
+# rcbilson
+# 27 September 2001
+
+# Reads a string from standard input, then calls printStr
+# to print it.  Also prints the length of the string as
+# returned by printStr.  Needs to be linked with either the
+# iterative or recursive implementation of printStr.
+
+# Registers
+#   $1 -- scratch (also holds the return value from printStr)
+#   $2 -- the ascii value of the character read
+#   $3 -- address of the next character in the array
+#   $4 -- address of the array where the string is stored
+
+.globl main
+
+main:   llo  $3, array          # load address of array in $3
+        lhi  $3, array
+        add  $4, $3, $0         # keep a copy in $4 to pass to printStr
+     
+        addi $1, $0, 10
+   
+# Get the character string from stdin (delimited by a newline)
+loop:   trap 102                # get a character
+        sb   $2, 0($3)          # put it in the array
+        addi $3, $3, 1          # increment position in the array
+        bne  $2, $1, loop       # loop again, unless we found 10
+	
+# Call PrintStr, passing the starting address of the array on the stack
+        addi $30, $30, -4       # pass location of array to printStr
+        sw   $4, 0($30)
+        jal  printStr           # actually call printStr
+        addi $30, $30, 4        # free the space we used for the parameter
+	
+# Print out the result and exit
+        add $4, $1, $0          # print out the length of the input string 
+        trap 1                  # (the result from printStr)
+        addi $4, $0, 10         # put ascii value for newline in r$
+        trap 101                # output newline
+        trap 10                 # end program
+
+# create space for the array (up to 80 bytes)
+array:  .space 80               # space to store the string that's read in
+                                # this allows a buffer overrun
+                                # (if the string is longer than 80 chars)
+                                # so don't write your web server this way
+        .align 4                # just to keep things safely lined up

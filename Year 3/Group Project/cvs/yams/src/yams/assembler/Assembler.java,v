@@ -1,0 +1,4593 @@
+head	1.65;
+access;
+symbols
+	yams-final-19-12-03:1.65
+	yams-release2-17-12-03:1.61
+	yams-release-17-12-03:1.61;
+locks; strict;
+comment	@# @;
+
+
+1.65
+date	2003.12.19.14.20.25;	author qq01;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2003.12.19.14.09.01;	author jkm01;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2003.12.19.13.25.30;	author jkm01;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2003.12.19.12.07.00;	author jkm01;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2003.12.14.22.17.16;	author jkm01;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2003.12.12.16.11.50;	author jkm01;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2003.12.11.18.26.16;	author jkm01;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2003.12.11.17.29.23;	author jkm01;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2003.12.11.16.32.14;	author jkm01;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2003.12.11.16.15.19;	author jkm01;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2003.12.10.17.15.07;	author jkm01;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2003.12.10.14.56.03;	author jkm01;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2003.12.10.14.38.20;	author jkm01;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2003.12.10.12.15.46;	author bmc01;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2003.12.10.01.00.42;	author jkm01;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2003.12.09.18.52.56;	author jkm01;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2003.12.09.15.26.52;	author ajb101;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2003.12.08.01.15.17;	author ajb101;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2003.12.04.18.46.14;	author jkm01;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2003.12.04.18.45.32;	author jkm01;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2003.12.04.18.16.41;	author jkm01;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2003.12.04.18.06.41;	author jkm01;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2003.12.04.18.02.50;	author jkm01;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2003.12.04.17.56.46;	author jkm01;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2003.12.03.17.26.08;	author ajb101;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2003.12.03.16.59.36;	author ajb101;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2003.12.02.20.43.36;	author jkm01;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2003.12.02.14.21.22;	author jkm01;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2003.12.02.13.41.14;	author jkm01;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2003.12.01.17.53.11;	author jkm01;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2003.12.01.14.41.59;	author jkm01;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2003.12.01.02.08.11;	author jkm01;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2003.11.30.02.54.26;	author jkm01;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2003.11.29.14.19.38;	author ajb101;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2003.11.28.16.56.14;	author jkm01;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2003.11.28.16.28.04;	author jkm01;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2003.11.28.10.39.37;	author jkm01;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2003.11.27.17.05.14;	author jkm01;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2003.11.27.12.04.42;	author jkm01;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2003.11.26.01.21.28;	author jkm01;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2003.11.25.18.36.54;	author ajb101;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2003.11.25.15.57.13;	author ajb101;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2003.11.25.15.55.44;	author ajb101;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2003.11.21.17.11.03;	author ajb101;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2003.11.21.17.05.48;	author jkm01;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2003.11.21.17.03.18;	author ajb101;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2003.11.21.16.26.49;	author jkm01;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2003.11.21.15.57.46;	author ajb101;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2003.11.21.15.12.25;	author ajb101;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.11.18.14.51.46;	author ajb101;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.11.14.16.57.43;	author ajb101;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.11.14.16.08.29;	author ajb101;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.11.14.15.54.38;	author jkm01;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.11.14.15.50.32;	author qq01;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.11.14.15.32.23;	author jkm01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.11.14.15.03.17;	author jkm01;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.11.14.14.27.34;	author ajb101;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.11.14.14.26.06;	author ajb101;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.12.14.55.11;	author jkm01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.11.21.16.23;	author qq01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.11.17.41.18;	author jkm01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.11.15.14.06;	author jkm01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.11.13.46.01;	author jkm01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.11.09.40.39;	author jkm01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.51;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.65
+log
+@updated javadoc
+@
+text
+@package yams.assembler;
+
+import yams.parser.*;
+import yams.processor.*;
+import java.util.*;
+import java.io.PrintStream;
+
+/**
+ * The Assembler class is a core component of the assembler package, 
+ * which provides an intermediate assembly stage between the parser 
+ * (reading in the MIPS instruction file) and the processor (executing
+ * the assembled machine code).
+ * <BR><BR>
+ * The Assembler class coordinates the activities of the other components
+ * to which it maintains references. It is created by the YAMSConsole /
+ * YAMSGui objects during creation of the YAMS software. During normal
+ * runtime execution, the public methods it provides will 
+ * allow one entire program to be assembled into machine code, using the 
+ * other components which it creates. It is the only class within the package
+ * to have such a connection to external components within the package
+ * <BR><BR>
+ * It maintains references to the following classes:<BR><BR>
+ * 	SymbolTable<BR>
+ * 	GUIMap<BR>
+ * 	ToBeDoneTable<BR>
+ * 	OperandHandler<BR>
+ * 	InstructionTable<BR>
+ * 	AssemblerXMLHandler<BR>
+ * 	Memory Manager<BR>
+ * 
+ * <BR><BR>
+ * It goes through the following execution stages:<BR>
+ * 0	Assembler Instantiation<BR>
+ * 1	Table Initialisation<BR>
+ * 2	1st Pass Assembly<BR>
+ * 3	2nd Pass Assembly<BR>
+ * 
+ * @@author jkm01
+ */
+public class Assembler {
+
+	// Assembler Directives
+	private static String ALIGN = ".align";
+	private static String ASCII = ".ascii";
+	private static String ASCIIZ = ".asciiz";
+	private static String BYTE = ".byte";
+	private static String DATA = ".data";
+	private static String DOUBLE = ".double";
+	private static String EXTERN = ".extern";
+	private static String FLOAT = ".float";
+	private static String GLOBL = ".globl";
+	private static String HALF = ".half";
+	private static String KDATA = ".kdata";
+	private static String KTEXT = ".ktext";
+	private static String SET = ".set";
+	private static String SPACE = ".space";
+	private static String TEXT = ".text";
+	private static String WORD = ".word";
+
+	// Internal Tables
+	private SymbolTable symbolTable;
+	// holds all the symbol -> address mappings
+	private ToBeDoneTable toBeDoneTable;
+	// holds all the information on items that need to be reassembled in the second phase
+	private GuiMap guiMap; // maps physical addresses to program line numbers 
+	private InstructionTable instructionTable;
+	// holds information on the instructions
+
+	// External Operand Handler
+	private OperandHandler operandHandler;
+
+	//Assembler read_modes & current line numbers
+	private boolean data_mode;
+	private boolean data_declaration_mode;
+	private int thisLine;
+	private int maxLine;
+	private int NEXT_TEXT_ADDRESS = 0x400000;
+	private int NEXT_DATA_ADDRESS = 0x10000000;
+	private int $AT_REGISTER_VALUE = 0x10008000;
+
+	// memory manager reference
+	private MemoryManager memoryManager;
+
+	// printstream reference
+	private PrintStream verboseStream;
+
+	/**
+	 * The Assembler constructor sets up the Assembler so that it is ready to receive a MIPS program and
+	 * assemble it into machine code. 
+	 * <br><br>
+	 * It goes through these stages to do so:
+	 * <br><br>
+	 * 1) TABLE CREATION<br><br>
+	 *		Must create tables it will need during assembly: InstructionTable,SymbolTable,ToBeDoneTable,GUIMap<br><br>
+	 * 2)	OPERAND HANDLER CREATION<br><br>
+	 * 3)	SET INTERNAL MEMORY MANAGER REFERENCE<br><br>
+	 * 		The Assembler creation call will also contain an external reference to an already existing MemoryManager. Since the writeToLocation() method contained within this class will be used frequently throughout various stages of the Assembler, it is important to set a global reference to this object.<br><br> 
+	 * 4) 	XML FILE READING<br><br>
+	 * 		It is necessary to fill the InstructionTable with information on each of the instructions within the “Instruction_file.xml? repository, since this will give us our supported instruction set. It would be possible to do this every time we reset the assembler, and capture any changes to the XML file (say if an instruction is added). However any changes to the instruction set require recompilation of YAMS to autogenerate the Parser and Processor handlers, so it is only necessary to read the XML once and copy the data to our tables.<br><br>
+	 * 		This is achieved by utilising the LoadTableFromXML(?) method within the AssemblerXMLHandler, which when provided with the XML File Path and the empty instruction table (just created in phase I), will fill the table. 
+	 * 
+	 * @@param xmlFilePath	The file path location of the Instruction_file.xml (Instruction Repository)
+	 * @@param mm			Provide a reference to the memory manager within the processor
+	 * @@param sm			Reference to the statistics manager, to create the entries in the instruction count table
+	 * @@param verbose		Outputstream for Assembler verbose mode (for debugging)
+	 */
+	public Assembler(
+		String xmlFilePath,
+		MemoryManagerInterface mm,
+		StatisticsManagerInterface sm,
+		PrintStream verbose) {
+		// Create required tables
+		symbolTable = new SymbolTable(); // create the new symbol table
+		toBeDoneTable = new ToBeDoneTable();
+		guiMap = new GuiMap();
+		instructionTable = new InstructionTable();
+
+		// Create the operand handler for operand encoding
+		operandHandler =
+			new OperandHandler(symbolTable, toBeDoneTable, instructionTable);
+
+		// Pass the statistics manager a reference to the GUIMap
+		sm.setLineMap(guiMap);
+
+		// Initialise assembler modes (data mode and in the midst of declaring data)
+		data_mode = false;
+		data_declaration_mode = false;
+
+		// Memory manager reference
+		memoryManager = (MemoryManager) mm;
+
+		// Set verbose output stream
+		verboseStream = verbose;
+
+		// Load the instruction data from the XML to the instruction table for assembler reference
+		AssemblerXMLHandler.LoadTableFromXML(xmlFilePath, instructionTable, sm);
+		verboseStream.println(instructionTable.printTable());
+	}
+
+	/**
+	 * 
+	 * The resetAssembler() method resets the assembler so that it is ready to receive a new 
+	 * MIPS file to be assembled into machine code. It resets the SymbolTable, ToBeDoneTable,
+	 * the GUIMap table and the values of NEXT_TEXT and NEXT_DATA addresses, to effectively wipe
+	 * the effects of any previous assembly.
+	 * 
+	 */
+	public void resetAssembler() {
+		// reset symboltable
+		symbolTable.resetSymbolTable();
+		// reset tobedonetable
+		toBeDoneTable.resetToBeDoneTable();
+		// reset guimap
+		guiMap.resetGuiMap();
+		// reset static values
+		NEXT_TEXT_ADDRESS = 0x400000;
+		NEXT_DATA_ADDRESS = 0x10000000;
+		$AT_REGISTER_VALUE = 0x10008000;
+	}
+
+	/**
+	 * The assembleCode() method receives a LineList (AST) from the parser containing the MIPS code for
+	 * the required file. It then proceeds to execute the required flow the assemble this code into machine
+	 * code and place the words within memory.
+	 * <BR><BR>
+	 * Two phases:
+	 * <BR><BR>
+	 * Pass 1: Go through entire program (LineList) and translate the instructions one at a time, placing 
+	 * instructions that have symbol table errors into the ToBeDoneTable.
+	 * <BR><BR>
+	 * Pass 2: Iterate through the ToBeDoneTable and translate the instructions with the noew complete symbol table
+	 * <BR><BR>
+	 * 
+	 * @@param code The MIPS code in a LineList AST
+	 * @@throws AssemblerException Throws exceptions if there are errors during assembly.
+	 */
+	public void assembleCode(LineList code) throws AssemblerException {
+		// FIRST PHASE OF ASSEMBLY
+		Line currentLine;
+		thisLine = 1;
+		maxLine = code.totalLines();
+		while (thisLine <= maxLine) {
+			currentLine = code.getLine(thisLine);
+			verboseStream.println(
+				"[Assembler] Encountered new line "
+					+ thisLine
+					+ " : "
+					+ currentLine.toString());
+			if (currentLine.containsLabel()) {
+				handleLabel(
+					currentLine.getLabel(),
+					currentLine.getLineNumber());
+				if (currentLine.containsInstruction())
+					handleInstruction(
+						currentLine.getInstruction(),
+						currentLine.getLineNumber());
+			} else if (currentLine.containsInstruction()) {
+				handleInstruction(
+					currentLine.getInstruction(),
+					currentLine.getLineNumber());
+			}
+			thisLine++;
+		}
+
+		// SECOND PHASE OF ASSEMBLY
+		int address;
+		Instruction instruction;
+		int lineNumber;
+		for (int count = 0; count < toBeDoneTable.size(); count++) {
+			address = toBeDoneTable.get(count).getAddress();
+			instruction = toBeDoneTable.get(count).getInstruction();
+			lineNumber = toBeDoneTable.get(count).getLineNumber();
+			handleToBeDoneInstruction(address, instruction, lineNumber);
+		}
+	}
+
+	/**
+	 * 
+	 * Handles any label encountered within a line, whether it is found within a DATA segment
+	 * or within a TEXT segment, adding to SymbolTable with respective addresses ready for later
+	 * reference.
+	 * 
+	 * @@param currentLabel Label being examined
+	 * @@param lineNumber Current line number
+	 * @@throws AssemblerException
+	 */
+	private void handleLabel(Label currentLabel, int lineNumber)
+		throws AssemblerException {
+		if (data_mode) {
+			symbolTable.add(
+				currentLabel.getLabel(),
+				NEXT_DATA_ADDRESS,
+				lineNumber);
+			verboseStream.println(
+				"[Assembler] "
+					+ currentLabel.getLabel()
+					+ " given address "
+					+ NEXT_DATA_ADDRESS);
+			data_declaration_mode = true;
+		} else {
+			symbolTable.add(
+				currentLabel.getLabel(),
+				NEXT_TEXT_ADDRESS,
+				lineNumber);
+			verboseStream.println(
+				"[Assembler] "
+					+ currentLabel.getLabel()
+					+ " given address "
+					+ NEXT_TEXT_ADDRESS);
+		}
+	}
+
+	/**
+	 * 
+	 * Handles any instruction found within a single line, but essentially checks whether it is a Directive
+	 * or a General Instruction, passing the currentInstruction variable to other handlers to deal with those two
+	 * cases. Will also throw an error if found to not fit into either of these categories. NB uses InstructionTable
+	 * to determine whether the current instruction is valid.
+	 * 
+	 * @@param currentInstruction	Current Instruction being considered
+	 * @@param lineNumber	Line number of current instruction
+	 * @@throws AssemblerException	
+	 */
+	private void handleInstruction(
+		Instruction currentInstruction,
+		int lineNumber)
+		throws AssemblerException {
+		if (currentInstruction.getName().charAt(0) == '.') {
+			handleDirective(currentInstruction, lineNumber);
+		} else if (
+			instructionTable.isInstruction(currentInstruction.getName())) {
+			if (!data_mode) {
+				guiMap.add(lineNumber, NEXT_TEXT_ADDRESS, currentInstruction);
+				handleGenericInstruction(currentInstruction, lineNumber);
+			} else
+				throw new AssemblerException(
+					"[Error A01] Instruction should not be within data section",
+					lineNumber,
+					currentInstruction);
+		} else
+			throw new AssemblerException(
+				"[Error A02] Encountered keyword is not an instruction and has been identified by parser incorrectly",
+				lineNumber,
+				currentInstruction);
+	}
+
+	/**
+	 * This handles a normal instruction (not a directive), by working out what Representation it has in machine code
+	 * and its individual operand combination. It then takes one machine word at a time from the code and invokes the
+	 * operand handler to translate the operands and substitute them into that word. This done, all of the machine
+	 * code is written to memory. If there is a symbol table miss, then it is not written to memory at the 
+	 * NEXT_TEXT_ADDRESS.
+	 * 
+	 * @@param currentInstruction
+	 * @@param lineNumber
+	 * @@throws AssemblerException
+	 */
+	private void handleGenericInstruction(
+		Instruction currentInstruction,
+		int lineNumber)
+		throws AssemblerException {
+		// variables
+		String fullCodedMachineCode = "";
+		String currentUncodedWord = "";
+		String currentCodedWord = "";
+		String currentSubWord = "";
+		int CURRENT_ADDRESS;
+
+		// need instruction name and operand code to obtain the machine code representation
+		operandHandler.resetHandler();
+		String instructionName = currentInstruction.getName();
+		String operandCode =
+			operandHandler.encodeOperandList(currentInstruction.getOperands());
+		Representation instructionRepresentation =
+			instructionTable
+				.getInstruction(instructionName, lineNumber, currentInstruction)
+				.getRepresentation(operandCode);
+		String fullUncodedMachineCode =
+			instructionRepresentation.getMachineCode();
+		CURRENT_ADDRESS = NEXT_TEXT_ADDRESS;
+		for (int wordNumber = 1;
+			wordNumber
+				<= numberOfWordsWithinWordString(
+					fullUncodedMachineCode,
+					lineNumber,
+					currentInstruction);
+			wordNumber++) {
+			//iterate through the subwords in the fullUncodedMachineWord
+			currentUncodedWord =
+				extractWord(
+					wordNumber,
+					fullUncodedMachineCode,
+					lineNumber,
+					currentInstruction);
+			currentCodedWord =
+				operandHandler.encodeWord(
+					currentUncodedWord,
+					CURRENT_ADDRESS,
+					instructionRepresentation,
+					currentInstruction.getOperands(),
+					operandCode,
+					lineNumber,
+					currentInstruction);
+			fullCodedMachineCode += currentCodedWord;
+			CURRENT_ADDRESS += (currentCodedWord.length() / 32 * 4);
+		}
+		if (operandHandler.isSymbolTableError()) {
+			// if there is an symbol table error, then add the whole instruction
+			toBeDoneTable.add(
+				NEXT_TEXT_ADDRESS,
+				currentInstruction,
+				lineNumber);
+			verboseStream.println(
+				"[Assembler] "
+					+ " added  "
+					+ currentInstruction
+					+ " line "
+					+ lineNumber
+					+ " at "
+					+ NEXT_TEXT_ADDRESS
+					+ " to2bdonetable");
+			NEXT_TEXT_ADDRESS =
+				NEXT_TEXT_ADDRESS + (fullCodedMachineCode.length() / 32) * 4;
+		} else {
+			for (int subWordNumber = 1;
+				subWordNumber
+					<= numberOfWordsWithinWordString(
+						fullCodedMachineCode,
+						lineNumber,
+						currentInstruction);
+				subWordNumber++) {
+				currentSubWord =
+					extractWord(
+						subWordNumber,
+						fullCodedMachineCode,
+						lineNumber,
+						currentInstruction);
+				memoryManager.setLocation(
+					NEXT_TEXT_ADDRESS,
+					operandHandler.binaryStringToInteger(currentSubWord));
+				verboseStream.println(
+					"[Assembler] "
+						+ "Assembled "
+						+ currentInstruction
+						+ " ( "
+						+ currentSubWord
+						+ " = "
+						+ operandHandler.binaryStringToInteger(currentSubWord)
+						+ " = "
+						+ instructionTable.getMonatomicInstruction(
+							currentSubWord,
+							lineNumber,
+							currentInstruction)
+						+ " ) + to location "
+						+ NEXT_TEXT_ADDRESS);
+				NEXT_TEXT_ADDRESS = NEXT_TEXT_ADDRESS + 4;
+			}
+		}
+	}
+
+	/**
+	 * 
+	 * See implementation for handleGenericInstruction() for details of how this metho fundementally works. The only
+	 * real difference is that if there is a symbol table error during this second phase of passing, then an error
+	 * is thrown to indicate an invalid program. Additionally, the extra operand provides the specific addresses to
+	 * write the instructions to on a instruction-by-instruction basis.
+	 * 
+	 * @@param address Address to start writing the translated machine code for this particular instruction.
+	 * @@param currentInstruction
+	 * @@param lineNumber
+	 * @@throws AssemblerException
+	 */
+	private void handleToBeDoneInstruction(
+		int address,
+		Instruction currentInstruction,
+		int lineNumber)
+		throws AssemblerException {
+		//variables
+		String fullCodedMachineCode = "";
+		String currentUncodedWord = "";
+		String currentCodedWord = "";
+		String currentSubWord = "";
+		int CURRENT_ADDRESS;
+
+		// need instruction name and operand code to obtain the machine code representation
+		operandHandler.resetHandler();
+		String instructionName = currentInstruction.getName();
+		String operandCode =
+			operandHandler.encodeOperandList(currentInstruction.getOperands());
+		Representation instructionRepresentation =
+			instructionTable
+				.getInstruction(instructionName, lineNumber, currentInstruction)
+				.getRepresentation(operandCode);
+		String fullUncodedMachineCode =
+			instructionRepresentation.getMachineCode();
+		CURRENT_ADDRESS = address;
+		for (int wordNumber = 1;
+			wordNumber
+				<= numberOfWordsWithinWordString(
+					fullUncodedMachineCode,
+					lineNumber,
+					currentInstruction);
+			wordNumber++) {
+			//iterate through the subwords in the fullUncodedMachineWord
+			currentUncodedWord =
+				extractWord(
+					wordNumber,
+					fullUncodedMachineCode,
+					lineNumber,
+					currentInstruction);
+			currentCodedWord =
+				operandHandler.encodeWord(
+					currentUncodedWord,
+					CURRENT_ADDRESS,
+					instructionRepresentation,
+					currentInstruction.getOperands(),
+					operandCode,
+					lineNumber,
+					currentInstruction);
+			fullCodedMachineCode += currentCodedWord;
+			CURRENT_ADDRESS += (currentCodedWord.length() / 32 * 4);
+		}
+		CURRENT_ADDRESS = address;
+		if (operandHandler.isSymbolTableError()) {
+			throw new AssemblerException(
+				"[Error A03] SymbolTable Error: no such label on second pass through code",
+				lineNumber,
+				currentInstruction);
+		} else {
+			for (int subWordNumber = 1;
+				subWordNumber
+					<= numberOfWordsWithinWordString(
+						fullCodedMachineCode,
+						lineNumber,
+						currentInstruction);
+				subWordNumber++) {
+				currentSubWord =
+					extractWord(
+						subWordNumber,
+						fullCodedMachineCode,
+						lineNumber,
+						currentInstruction);
+				memoryManager.setLocation(
+					CURRENT_ADDRESS,
+					operandHandler.binaryStringToInteger(currentSubWord));
+				verboseStream.println(
+					"[Assembler] "
+						+ "Assembled "
+						+ currentInstruction
+						+ " ( "
+						+ currentSubWord
+						+ " = "
+						+ operandHandler.binaryStringToInteger(currentSubWord)
+						+ " = "
+						+ instructionTable.getMonatomicInstruction(
+							currentSubWord,
+							lineNumber,
+							currentInstruction)
+						+ " ) + to location "
+						+ CURRENT_ADDRESS);
+				CURRENT_ADDRESS = CURRENT_ADDRESS + 4;
+			}
+		}
+	}
+
+	/**
+	 * 
+	 * Returns the number of 32 bit words within a given word string, throwing an exception if the string is not
+	 * in multiples of 32 bits (including line / instruction reference).
+	 * 
+	 * @@param wordString
+	 * @@param lineNumber
+	 * @@param currentInstruction
+	 * @@return integer number of 32 bit words within given word string
+	 * @@throws AssemblerException
+	 */
+	public int numberOfWordsWithinWordString(
+		String wordString,
+		int lineNumber,
+		Instruction currentInstruction)
+		throws AssemblerException {
+		if (wordString.length() % 32 == 0) {
+			return wordString.length() / 32;
+		} else
+			throw new AssemblerException(
+				"[Error 04] XML Representation of instruction invalid, given word string ("
+					+ wordString
+					+ ") doesnt have length of multiples of 32",
+				lineNumber,
+				currentInstruction);
+	}
+
+	/**
+	 * 
+	 * Extracts a specific 32 bit from a string, whose length is a multiple of 32 bits.
+	 * 
+	 * @@param wordNumber		Word number to extract, index 1 is the first and so on
+	 * @@param wordString		Provided machine code
+	 * @@param lineNumber	
+	 * @@param currentInstruction
+	 * @@return returns requested 32 bit word from string
+	 * @@throws AssemblerException
+	 */
+	public String extractWord(
+		int wordNumber,
+		String wordString,
+		int lineNumber,
+		Instruction currentInstruction)
+		throws AssemblerException {
+		if (wordNumber * 32 <= wordString.length() && wordNumber >= 1) {
+			return wordString.substring((wordNumber - 1) * 32, wordNumber * 32);
+		} else
+			throw new AssemblerException(
+				"[Error A05] Requested word ("
+					+ wordNumber
+					+ ") out of bounds for current instruction representation("
+					+ wordString
+					+ ")",
+				lineNumber,
+				currentInstruction);
+	}
+
+	/**
+	 * Sets the data mode of the Assembler (boolean indicating whether we are in the DATA / TEXT segment)
+	 * to the boolean "value"
+	 * @@param value Required data_mode value
+	 */
+	private void setDataMode(boolean value) {
+		data_mode = value;
+	}
+	private void setDataDeclarationMode(boolean value) {
+		data_declaration_mode = value;
+	}
+	/**
+	 * 
+	 * Returns a reference to the GUIMap in the assembler (for use when GUI / Statistics wants to get mapping
+	 * information of lines -> addresses).
+	 * 
+	 * @@return returns a reference to the GUIMap object in the Assembler
+	 */
+	public GuiMap getGUIMap() {
+		return guiMap;
+	}
+
+	/**
+	 * 
+	 * Distinguishes between different types of directives, passing implementation down to the correct handlers, 
+	 * and throwing errors if an invalid directive is encountered.
+	 * 
+	 * @@param currentDirective
+	 * @@param lineNumber
+	 * @@throws AssemblerException
+	 */
+	private void handleDirective(Instruction currentDirective, int lineNumber)
+		throws AssemblerException {
+		if (currentDirective.getName().equals(ALIGN)) {
+			handleAlign(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(ASCII)) {
+			handleAscii(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(ASCIIZ)) {
+			handleAsciiz(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(BYTE)) {
+			handleByte(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(DATA)) {
+			handleData(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(DOUBLE)) {
+			handleDouble(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(EXTERN)) {
+			handleExtern(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(FLOAT)) {
+			handleFloat(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(GLOBL)) {
+			handleGlobl(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(HALF)) {
+			handleHalf(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(KDATA)) {
+			handleKdata(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(KTEXT)) {
+			handleKtext(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(SET)) {
+			handleSet(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(SPACE)) {
+			handleSpace(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(TEXT)) {
+			handleText(currentDirective, lineNumber);
+		} else if (currentDirective.getName().equals(WORD)) {
+			handleWord(currentDirective, lineNumber);
+		} else
+			throw new AssemblerException(
+				"[Error A06] Encountered keyword is not an assembler directive and has been identified by parser incorrectly",
+				lineNumber,
+				currentDirective);
+	}
+
+	/**
+	 * Convert a given Ascii string (contained within Directive itelf) into ascii bytes and write to memory within
+	 * the DATA / TEXT segment as indicated by the code.
+	 * 
+	 * @@param currentDirective
+	 * @@param lineNumber
+	 * @@throws AssemblerException
+	 */
+	private void handleAsciiz(Instruction currentDirective, int lineNumber)
+		throws AssemblerException {
+		List ops = currentDirective.getOperands();
+		if (ops.size() >= 1) {
+			Operand op = (Operand) ops.get(0);
+			if (op instanceof StringOperand) {
+				String str = ((StringOperand) op).toString();
+
+				int currentChar = 0;
+				int currentCharValue = 0;
+				while (currentChar < str.length()) {
+					if (str.charAt(currentChar) == 92) {
+						verboseStream.println("[Assembler] Picked up escape ");
+						currentChar++;
+						if (currentChar < str.length()) {
+							verboseStream.println(
+								"[Assembler] Assigning escape ");
+
+							if (str.charAt(currentChar) == 'n')
+								currentCharValue = 10;
+							//										else if 						other escape characters definitions
+						} else {
+							currentChar--;
+							currentCharValue = (int) str.charAt(currentChar);
+						}
+					} else
+						currentCharValue = (int) str.charAt(currentChar);
+					if (data_mode) {
+						memoryManager.setByte(
+							NEXT_DATA_ADDRESS,
+							currentCharValue);
+						verboseStream.println(
+							"[Assembler] Assembled "
+								+ currentDirective
+								+ " ( "
+								+ currentCharValue
+								+ " ) + to location "
+								+ NEXT_DATA_ADDRESS);
+						NEXT_DATA_ADDRESS = NEXT_DATA_ADDRESS + 1;
+					} else {
+						memoryManager.setByte(
+							NEXT_TEXT_ADDRESS,
+							currentCharValue);
+						verboseStream.println(
+							"[Assembler] Assembled "
+								+ currentDirective
+								+ " ( "
+								+ currentCharValue
+								+ " ) + to location "
+								+ NEXT_TEXT_ADDRESS);
+						NEXT_TEXT_ADDRESS = NEXT_TEXT_ADDRESS + 1;
+					}
+					currentChar++;
+				}
+				if (data_mode) {
+					while (NEXT_DATA_ADDRESS % 4 != 0) {
+						memoryManager.setByte(NEXT_DATA_ADDRESS, 0);
+						verboseStream.println(
+							"[Assembler] Assembled "
+								+ currentDirective
+								+ " ( 0 ) + to location "
+								+ NEXT_DATA_ADDRESS);
+						NEXT_DATA_ADDRESS++;
+					}
+				} else {
+					while (NEXT_TEXT_ADDRESS % 4 != 0) {
+						memoryManager.setByte(NEXT_TEXT_ADDRESS, 0);
+						verboseStream.println(
+							"[Assembler] Assembled "
+								+ currentDirective
+								+ " (0) + to location "
+								+ NEXT_TEXT_ADDRESS);
+						NEXT_TEXT_ADDRESS++;
+					}
+				}
+			} else
+				throw new AssemblerException(
+					"[Error A07] invalid argument for .asciiz",
+					lineNumber,
+					currentDirective);
+		}
+	}
+
+	/**
+	 * 
+	 * When the data tag is encountered as a directive in the code, changes the data_mode value so that the assembler
+	 * will expect data declarations / variable declarations.
+	 * 
+	 * @@param currentDirective
+	 * @@param lineNumber
+	 * @@throws AssemblerException
+	 */
+	private void handleData(Instruction currentDirective, int lineNumber)
+		throws AssemblerException {
+		verboseStream.println("[Assembler] Encountered DATA tag");
+		// data directive, so set data mode to true
+		setDataMode(true);
+		// if has operand then set next data address to immediate value
+		List ops = currentDirective.getOperands();
+		if (ops.size() >= 1) {
+			Operand op = (Operand) ops.get(0);
+			if (op instanceof ImmediateOperand) {
+				NEXT_DATA_ADDRESS = ((ImmediateOperand) op).getValue();
+				verboseStream.println(
+					"[Assembler] Changed NEXT_DATA_ADDRESS to "
+						+ NEXT_DATA_ADDRESS);
+			} else
+				throw new AssemblerException(
+					"[Error A08] Invalid argument for .data",
+					lineNumber,
+					currentDirective);
+		}
+	}
+
+	/**
+	 * 
+	 * Allocates a specified number of bytes within the DATA segment to a specified label in the symbol table,
+	 * effectively incrementing the NEXT_DATA_ADDRESS so that variables can be stored there in the future.
+	 * 
+	 * @@param currentDirective
+	 * @@param lineNumber
+	 * @@throws AssemblerException
+	 */
+	private void handleSpace(Instruction currentDirective, int lineNumber)
+		throws AssemblerException {
+		int n;
+		List ops = currentDirective.getOperands();
+		if (ops.size() >= 1) {
+			Operand op = (Operand) ops.get(0);
+			if (op instanceof ImmediateOperand) {
+				n = ((ImmediateOperand) op).getValue();
+			} else
+				throw new AssemblerException(
+					"[Error A09] Invalid argument for .space",
+					lineNumber,
+					currentDirective);
+		} else
+			throw new AssemblerException(
+				"[Error A10] Argument missing for .space",
+				lineNumber,
+				currentDirective);
+		if (data_mode) {
+			NEXT_DATA_ADDRESS += n;
+			while (NEXT_DATA_ADDRESS % 4 != 0)
+				NEXT_DATA_ADDRESS++;
+			verboseStream.println(
+				"[Assembler] Assigned space in memory for " + n + " bytes");
+		} else {
+			NEXT_TEXT_ADDRESS += n;
+			while (NEXT_TEXT_ADDRESS % 4 != 0)
+				NEXT_TEXT_ADDRESS++;
+			verboseStream.println(
+				"[Assembler] Assigned space in memory for " + n + " bytes");
+		}
+	}
+
+	/**
+	 * When the text tag is encountered as a directive in the code, changes the data_mode value so that the assembler
+	 * will expect instructions to be required to be translated in subsequent lines.
+	 * 
+	 * 
+	 * @@param currentDirective
+	 * @@param lineNumber
+	 * @@throws AssemblerException
+	 */
+	private void handleText(Instruction currentDirective, int lineNumber)
+		throws AssemblerException {
+		verboseStream.println("[Assembler] Encountered TEXT directive");
+		// set data mode off
+		setDataMode(false);
+		// if has operand then set next text address to immediate value
+		List ops = currentDirective.getOperands();
+		if (ops.size() >= 1) {
+			Operand op = (Operand) ops.get(0);
+			if (op instanceof ImmediateOperand) {
+				NEXT_TEXT_ADDRESS = ((ImmediateOperand) op).getValue();
+			} else
+				throw new AssemblerException(
+					"[Error A11] Invalid argument for .text",
+					lineNumber,
+					currentDirective);
+		}
+	}
+
+	/**
+	 * Convert a given word value (contained within Directive itelf) into binary and write to memory within
+	 * the DATA / TEXT segment as indicated by the code.
+	 * 
+	 * @@param currentDirective
+	 * @@param lineNumber
+	 * @@throws AssemblerException
+	 */
+	private void handleWord(Instruction currentDirective, int lineNumber)
+		throws AssemblerException {
+		verboseStream.println(
+			"[Assembler] Encountered WORD directive " + currentDirective);
+		int n;
+		List ops = currentDirective.getOperands();
+		for (int count = 0; count < ops.size(); count++) {
+			Operand op = (Operand) ops.get(count);
+			if (op instanceof ImmediateOperand) {
+				n = ((ImmediateOperand) op).getValue();
+				if (data_mode) {
+					memoryManager.setLocation(NEXT_DATA_ADDRESS, n);
+					verboseStream.println(
+						"[Assembler] Assembled "
+							+ currentDirective
+							+ " ( "
+							+ n
+							+ " ) + to location "
+							+ NEXT_DATA_ADDRESS);
+					NEXT_DATA_ADDRESS = NEXT_DATA_ADDRESS + 4;
+				} else {
+					memoryManager.setLocation(NEXT_TEXT_ADDRESS, n);
+					verboseStream.println(
+						"[Assembler] Assembled "
+							+ currentDirective
+							+ " ( "
+							+ n
+							+ " ) + to location "
+							+ NEXT_TEXT_ADDRESS);
+					NEXT_TEXT_ADDRESS = NEXT_TEXT_ADDRESS + 4;
+				}
+			} else
+				throw new AssemblerException(
+					"[Error A12] Invalid argument for .word",
+					lineNumber,
+					currentDirective);
+		}
+	}
+
+	private void handleAscii(Instruction currentDirective, int lineNumber)
+		throws AssemblerException {
+		// NOT REQUIRED FOR COMPILER LAB
+		String translatedOperand;
+		// data section, datadeclaration mode 
+		if (data_mode) {
+		} else {
+			// ascii defined not in data mode (i.e. after a .text)
+			throw new AssemblerException(
+				"[Error A13] .ascii found not in .data section",
+				lineNumber,
+				currentDirective);
+		}
+	}
+
+	private void handleByte(Instruction currentDirective, int lineNumber)
+		throws AssemblerException {
+		// NOT REQUIRED FOR COMPILER LAB
+		if (data_mode) {
+			//store successive operands in memory @@ next_data_address, increment appropriate amount, already stored label address in symbol table & null terminate it if has name
+			// once finished turn off data declaration mode
+
+		} else {
+			throw new AssemblerException(
+				"[Error A14] .byte found not in .data section",
+				lineNumber,
+				currentDirective);
+		}
+	}
+
+	private void handleHalf(Instruction currentDirective, int lineNumber)
+		throws AssemblerException {
+		// NOT REQUIRED FOR COMPILER LAB
+		if (data_mode) {
+			//store successive 16 bit nums in memory halfwords @@ next_data_address, increment appropriate amount, already stored label address in symbol table & null terminate it if has name
+			// once finished turn off data declaration mode
+		} else {
+			throw new AssemblerException(
+				"[Error A15] .half found not in .data section",
+				lineNumber,
+				currentDirective);
+		}
+	}
+
+	private void handleDouble(
+		Instruction currentDirective,
+		int lineNumber) { /* NOWAY */
+	}
+	private void handleFloat(
+		Instruction currentDirective,
+		int lineNumber) { /* NOWAY */
+	}
+	private void handleAlign(
+		Instruction currentDirective,
+		int lineNumber) { /*NOWAY*/
+	}
+	private void handleExtern(
+		Instruction currentDirective,
+		int lineNumber) { /*NOWAY*/
+	}
+	private void handleGlobl(
+		Instruction currentDirective,
+		int lineNumber) { /*NOWAY*/
+	}
+	private void handleKdata(
+		Instruction currentDirective,
+		int lineNumber) { /*NOWAY*/
+	}
+	private void handleKtext(
+		Instruction currentDirective,
+		int lineNumber) { /*NOWAY*/
+	}
+	private void handleSet(
+		Instruction currentDirective,
+		int lineNumber) { /*NOWAY*/
+	}
+}
+@
+
+
+1.64
+log
+@*** empty log message ***
+@
+text
+@a8 16
+ * @@author Administrator
+ *
+ * To change the template for this generated type comment go to
+ * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+ */
+/*
+ * 
+ * Created on 04-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+
+/**
+ * @@author jkm01
+ *
+d38 1
+a38 1
+ *
+d99 2
+a100 2
+	 * 		It is necessary to fill the InstructionTable with information on each of the instructions within the “Instruction_file.xml” repository, since this will give us our supported instruction set. It would be possible to do this every time we reset the assembler, and capture any changes to the XML file (say if an instruction is added). However any changes to the instruction set require recompilation of YAMS to autogenerate the Parser and Processor handlers, so it is only necessary to read the XML once and copy the data to our tables.<br><br>
+	 * 		This is achieved by utilising the LoadTableFromXML(…) method within the AssemblerXMLHandler, which when provided with the XML File Path and the empty instruction table (just created in phase I), will fill the table. 
+@
+
+
+1.63
+log
+@*** empty log message ***
+@
+text
+@d530 1
+a530 1
+	 * @@return
+d557 1
+a557 1
+	 * @@return
+d595 1
+a595 1
+	 * @@return
+@
+
+
+1.62
+log
+@*** empty log message ***
+@
+text
+@d29 1
+a29 1
+ * 
+d37 9
+d47 6
+a52 15
+ * It maintains references to the following classes:
+ * 	SymbolTable
+ * 	GUIMap
+ * 	ToBeDoneTable
+ * 	OperandHandler
+ * 	InstructionTable
+ * 	AssemblerXMLHandler
+ * 	Memory Manager
+ * 
+ * 
+ * It goes through the following execution stages:
+ * 0	Assembler Instantiation
+ * 1	Table Initialisation
+ * 2	1st Pass Assembly
+ * 3	2nd Pass Assembly
+d181 1
+a181 1
+	 * 
+d183 1
+a183 1
+	 * 
+d186 1
+a186 1
+	 * 
+d188 1
+a188 1
+	 * 
+@
+
+
+1.61
+log
+@*** empty log message ***
+@
+text
+@d8 6
+a13 1
+
+d25 30
+a54 2
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+d57 1
+a57 1
+		
+d59 15
+a73 15
+	private static String ALIGN= ".align";
+	private static String ASCII= ".ascii";
+	private static String ASCIIZ= ".asciiz";
+	private static String BYTE= ".byte";
+	private static String DATA= ".data";
+	private static String DOUBLE= ".double";
+	private static String EXTERN= ".extern";
+	private static String FLOAT= ".float";
+	private static String GLOBL= ".globl";
+	private static String HALF= ".half";
+	private static String KDATA= ".kdata";
+	private static String KTEXT= ".ktext";
+	private static String SET= ".set";
+	private static String SPACE= ".space";
+	private static String TEXT= ".text";
+d75 1
+a75 1
+	
+d77 7
+a83 4
+	private SymbolTable symbolTable; 			// holds all the symbol -> address mappings
+	private ToBeDoneTable  toBeDoneTable; 	// holds all the information on items that need to be reassembled in the second phase
+	private GuiMap guiMap;								// maps physical addresses to program line numbers 
+	private InstructionTable instructionTable;	// holds information on the instructions
+d96 1
+a96 1
+	
+d103 25
+a127 2
+	public Assembler(String xmlFilePath, MemoryManagerInterface mm, StatisticsManagerInterface sm, PrintStream verbose)
+	{
+d133 1
+a133 1
+		
+d135 2
+a136 1
+		operandHandler = new OperandHandler(symbolTable,toBeDoneTable,instructionTable);
+d140 1
+a140 1
+	
+d143 2
+a144 2
+		data_declaration_mode=false;
+		
+d146 2
+a147 2
+		memoryManager = (MemoryManager)mm;
+		
+d152 1
+a152 1
+		AssemblerXMLHandler.LoadTableFromXML(xmlFilePath,instructionTable,sm);
+d156 9
+a164 2
+	public void resetAssembler()
+	{
+d177 17
+a193 2
+	public void assembleCode(LineList code) throws AssemblerException
+	{
+d197 2
+a198 3
+		maxLine = code.totalLines();		
+		while (thisLine<=maxLine)
+		{
+d200 18
+a217 10
+			verboseStream.println("[Assembler] Encountered new line "+thisLine+" : "+currentLine.toString());
+			if (currentLine.containsLabel())
+				{
+					handleLabel(currentLine.getLabel(), currentLine.getLineNumber());
+					if (currentLine.containsInstruction()) handleInstruction(currentLine.getInstruction(), currentLine.getLineNumber());
+				}
+			else if (currentLine.containsInstruction())
+				{
+					handleInstruction(currentLine.getInstruction(), currentLine.getLineNumber());
+				}
+d225 6
+a230 7
+		for (int count = 0; count <toBeDoneTable.size(); count++)
+			{
+				address = toBeDoneTable.get(count).getAddress();
+				instruction = toBeDoneTable.get(count).getInstruction();
+				lineNumber = toBeDoneTable.get(count).getLineNumber();
+				handleToBeDoneInstruction(address,instruction,lineNumber);
+			}
+d233 12
+a244 3
+	
+	private void handleLabel(Label currentLabel,int lineNumber) throws AssemblerException
+	{
+d246 10
+a255 3
+			symbolTable.add(currentLabel.getLabel(),NEXT_DATA_ADDRESS, lineNumber);
+			verboseStream.println("[Assembler] "+currentLabel.getLabel()+" given address "+NEXT_DATA_ADDRESS);		
+			data_declaration_mode=true;			
+d257 9
+a265 2
+			symbolTable.add(currentLabel.getLabel(),NEXT_TEXT_ADDRESS, lineNumber);
+			verboseStream.println("[Assembler] "+currentLabel.getLabel()+" given address "+NEXT_TEXT_ADDRESS);		
+d268 50
+a317 22
+	
+	
+	 
+	private void handleInstruction(Instruction currentInstruction, int lineNumber) throws AssemblerException 
+	{
+		if (currentInstruction.getName().charAt(0)=='.')
+			{
+				handleDirective(currentInstruction,lineNumber);
+			} 
+		else if (instructionTable.isInstruction(currentInstruction.getName())) 
+			{
+				if (!data_mode)
+					{
+						guiMap.add(lineNumber, NEXT_TEXT_ADDRESS,currentInstruction);
+						handleGenericInstruction(currentInstruction,lineNumber);
+					} 
+				else throw new AssemblerException("[Error A01] Instruction should not be within data section",lineNumber,currentInstruction);			
+		} else throw new AssemblerException("[Error A02] Encountered keyword is not an instruction and has been identified by parser incorrectly",lineNumber,currentInstruction);
+	}
+	
+	private void handleGenericInstruction(Instruction currentInstruction, int lineNumber) throws AssemblerException
+	{
+d322 1
+a322 1
+		String currentSubWord="";
+d324 1
+a324 1
+		
+d328 85
+a412 28
+		String operandCode = operandHandler.encodeOperandList(currentInstruction.getOperands());
+		Representation instructionRepresentation = instructionTable.getInstruction(instructionName,lineNumber,currentInstruction).getRepresentation(operandCode);
+		String fullUncodedMachineCode = instructionRepresentation.getMachineCode();
+		CURRENT_ADDRESS = NEXT_TEXT_ADDRESS; 
+		for (int wordNumber=1; wordNumber<=numberOfWordsWithinWordString(fullUncodedMachineCode, lineNumber, currentInstruction); wordNumber++)
+			{
+				//iterate through the subwords in the fullUncodedMachineWord
+				currentUncodedWord = extractWord(wordNumber,fullUncodedMachineCode,lineNumber,currentInstruction);
+				currentCodedWord = operandHandler.encodeWord(currentUncodedWord,CURRENT_ADDRESS, instructionRepresentation, currentInstruction.getOperands(), operandCode, lineNumber, currentInstruction);
+				fullCodedMachineCode+=currentCodedWord;
+				CURRENT_ADDRESS+=(currentCodedWord.length()/32*4);
+			}
+		if (operandHandler.isSymbolTableError())
+			{
+				// if there is an symbol table error, then add the whole instruction
+				toBeDoneTable.add(NEXT_TEXT_ADDRESS,currentInstruction,lineNumber);
+				verboseStream.println("[Assembler] "+" added  "+currentInstruction+" line "+lineNumber+" at "+NEXT_TEXT_ADDRESS+" to2bdonetable");
+				NEXT_TEXT_ADDRESS = NEXT_TEXT_ADDRESS + (fullCodedMachineCode.length()/32)*4;
+			}
+		else
+			{
+				for (int subWordNumber = 1; subWordNumber<=numberOfWordsWithinWordString(fullCodedMachineCode, lineNumber, currentInstruction); subWordNumber++)
+					{
+						currentSubWord = extractWord(subWordNumber,fullCodedMachineCode, lineNumber, currentInstruction);
+						memoryManager.setLocation(NEXT_TEXT_ADDRESS,operandHandler.binaryStringToInteger(currentSubWord));
+						verboseStream.println("[Assembler] "+"Assembled "+currentInstruction+" ( "+currentSubWord+" = "+operandHandler.binaryStringToInteger(currentSubWord)+" = "+instructionTable.getMonatomicInstruction(currentSubWord,lineNumber,currentInstruction)+" ) + to location "+NEXT_TEXT_ADDRESS);
+						NEXT_TEXT_ADDRESS = NEXT_TEXT_ADDRESS+4;									
+					}
+d414 1
+d416 18
+a433 3
+	
+	private void handleToBeDoneInstruction(int address, Instruction currentInstruction, int lineNumber) throws AssemblerException
+	{
+d438 1
+a438 1
+		String currentSubWord="";
+d440 1
+a440 1
+		
+d444 74
+a517 11
+		String operandCode = operandHandler.encodeOperandList(currentInstruction.getOperands());
+		Representation instructionRepresentation = instructionTable.getInstruction(instructionName,lineNumber,currentInstruction).getRepresentation(operandCode);
+		String fullUncodedMachineCode = instructionRepresentation.getMachineCode();
+		CURRENT_ADDRESS = address; 
+		for (int wordNumber=1; wordNumber<=numberOfWordsWithinWordString(fullUncodedMachineCode, lineNumber, currentInstruction); wordNumber++)
+			{
+				//iterate through the subwords in the fullUncodedMachineWord
+				currentUncodedWord = extractWord(wordNumber,fullUncodedMachineCode,lineNumber,currentInstruction);
+				currentCodedWord = operandHandler.encodeWord(currentUncodedWord,CURRENT_ADDRESS, instructionRepresentation, currentInstruction.getOperands(), operandCode, lineNumber, currentInstruction);
+				fullCodedMachineCode+=currentCodedWord;
+				CURRENT_ADDRESS+=(currentCodedWord.length()/32*4);
+d519 1
+a519 33
+		CURRENT_ADDRESS=address;
+		if (operandHandler.isSymbolTableError())
+			{
+				throw new AssemblerException("[Error A03] SymbolTable Error: no such label on second pass through code",lineNumber,currentInstruction);
+			}
+		else
+			{
+				for (int subWordNumber = 1; subWordNumber<=numberOfWordsWithinWordString(fullCodedMachineCode, lineNumber, currentInstruction); subWordNumber++)
+					{
+						currentSubWord = extractWord(subWordNumber,fullCodedMachineCode, lineNumber, currentInstruction);
+						memoryManager.setLocation(CURRENT_ADDRESS,operandHandler.binaryStringToInteger(currentSubWord));
+						verboseStream.println("[Assembler] "+"Assembled "+currentInstruction+" ( "+currentSubWord+" = "+operandHandler.binaryStringToInteger(currentSubWord)+" = "+instructionTable.getMonatomicInstruction(currentSubWord,lineNumber,currentInstruction)+" ) + to location "+CURRENT_ADDRESS);
+						CURRENT_ADDRESS= CURRENT_ADDRESS+4;									
+					}
+			}
+	}
+
+	public int numberOfWordsWithinWordString(String wordString, int lineNumber, Instruction currentInstruction) throws AssemblerException
+	{
+		if (wordString.length()%32==0)
+			{
+				return wordString.length()/32;
+			}
+		else	throw new AssemblerException("[Error 04] XML Representation of instruction invalid, given word string ("+wordString+") doesnt have length of multiples of 32",lineNumber,currentInstruction);
+	}	
+	
+	public String extractWord(int wordNumber, String wordString, int lineNumber, Instruction currentInstruction) throws AssemblerException
+	{
+		if (wordNumber*32<=wordString.length() && wordNumber>=1)
+			{
+				return wordString.substring((wordNumber-1)*32,wordNumber*32);
+			}
+		else throw new AssemblerException("[Error A05] Requested word ("+wordNumber+") out of bounds for current instruction representation("+wordString+")",lineNumber,currentInstruction);
+d522 139
+a660 30
+
+	private void setDataMode(boolean value) {data_mode=value;}
+	private void setDataDeclarationMode(boolean value) {data_declaration_mode=value;}
+	public GuiMap getGUIMap() {return guiMap;}
+
+
+	private void handleDirective(Instruction currentDirective, int lineNumber) throws AssemblerException
+	{
+		if (currentDirective.getName().equals(ALIGN)) 				{handleAlign(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(ASCII))			{handleAscii(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(ASCIIZ))		{handleAsciiz(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(BYTE))			{handleByte(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(DATA))			{handleData(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(DOUBLE))	{handleDouble(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(EXTERN))	{handleExtern(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(FLOAT))		{handleFloat(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(GLOBL))		{handleGlobl(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(HALF))			{handleHalf(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(KDATA))		{handleKdata(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(KTEXT))		{handleKtext(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(SET))			{handleSet(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(SPACE))		{handleSpace(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(TEXT))			{handleText(currentDirective,lineNumber);}
+		else if (currentDirective.getName().equals(WORD))		{handleWord(currentDirective,lineNumber);}
+		else	throw new AssemblerException("[Error A06] Encountered keyword is not an assembler directive and has been identified by parser incorrectly",lineNumber,currentDirective);
+	}
+
+
+	private void handleAsciiz(Instruction currentDirective, int lineNumber) throws AssemblerException
+	{
+d662 10
+a671 41
+		if (ops.size()>= 1) 
+		{
+			Operand op = (Operand)ops.get(0);
+			if (op instanceof StringOperand) 
+			{
+				String str = ((StringOperand)op).toString();
+
+				int currentChar=0;
+				int currentCharValue=0;
+				while (currentChar<str.length())
+					{
+						if (str.charAt(currentChar)==92)
+							{
+								verboseStream.println("[Assembler] Picked up escape ");
+								currentChar++;
+								if (currentChar<str.length())
+									{
+										verboseStream.println("[Assembler] Assigning escape ");
+
+										if (str.charAt(currentChar)=='n') currentCharValue=10;
+//										else if 						other escape characters definitions
+									}
+								else 
+									{
+										currentChar--;
+										currentCharValue= (int)str.charAt(currentChar);
+									}
+							}
+						else	currentCharValue = (int)str.charAt(currentChar);
+						if (data_mode)
+							{
+								memoryManager.setByte(NEXT_DATA_ADDRESS,currentCharValue);
+								verboseStream.println("[Assembler] Assembled "+currentDirective+" ( "+currentCharValue+" ) + to location "+NEXT_DATA_ADDRESS);							
+								NEXT_DATA_ADDRESS=NEXT_DATA_ADDRESS+1;		
+							}
+						else
+							{
+								memoryManager.setByte(NEXT_TEXT_ADDRESS,currentCharValue);
+								verboseStream.println("[Assembler] Assembled "+currentDirective+" ( "+currentCharValue+" ) + to location "+NEXT_TEXT_ADDRESS);							
+								NEXT_TEXT_ADDRESS= NEXT_TEXT_ADDRESS+1;
+							}
+d673 37
+d711 11
+a721 8
+				if (data_mode)
+					{
+						while (NEXT_DATA_ADDRESS%4!=0)
+							{
+								memoryManager.setByte(NEXT_DATA_ADDRESS,0);
+								verboseStream.println("[Assembler] Assembled "+currentDirective+" ( 0 ) + to location "+NEXT_DATA_ADDRESS);	
+								NEXT_DATA_ADDRESS++;
+							}
+d723 9
+a731 8
+				else
+					{
+						while (NEXT_TEXT_ADDRESS%4!=0)
+							{
+								memoryManager.setByte(NEXT_TEXT_ADDRESS,0);
+								verboseStream.println("[Assembler] Assembled "+currentDirective+" (0) + to location "+NEXT_TEXT_ADDRESS);	
+								NEXT_TEXT_ADDRESS++;						
+							}
+d733 6
+a738 2
+			}
+			else throw new AssemblerException("[Error A07] invalid argument for .asciiz",lineNumber,currentDirective);
+d740 13
+a752 5
+	}	
+	
+	
+	private void handleData(Instruction currentDirective, int lineNumber) throws AssemblerException
+	{
+d758 12
+a769 9
+		if (ops.size()>= 1) 
+		{
+			Operand op = (Operand)ops.get(0);
+			if (op instanceof ImmediateOperand) 
+			{
+				NEXT_DATA_ADDRESS = ((ImmediateOperand)op).getValue();
+				verboseStream.println("[Assembler] Changed NEXT_DATA_ADDRESS to "+NEXT_DATA_ADDRESS);											
+			}
+			else throw new AssemblerException("[Error A08] Invalid argument for .data",lineNumber,currentDirective);
+d772 12
+a783 3
+	
+	private void handleSpace(Instruction currentDirective, int lineNumber) throws AssemblerException
+	{
+d786 27
+a812 22
+		if (ops.size() >= 1)
+			{
+				Operand op = (Operand)ops.get(0);
+				if (op instanceof ImmediateOperand) 
+					{
+						n = ((ImmediateOperand)op).getValue();
+					}
+				else throw new AssemblerException("[Error A09] Invalid argument for .space",lineNumber,currentDirective);
+			}
+		else throw new AssemblerException("[Error A10] Argument missing for .space",lineNumber,currentDirective);
+		if (data_mode) 
+			{
+				NEXT_DATA_ADDRESS += n;
+				while (NEXT_DATA_ADDRESS%4!=0) NEXT_DATA_ADDRESS++;
+				verboseStream.println("[Assembler] Assigned space in memory for "+n+" bytes");
+			}
+		else
+			{
+				NEXT_TEXT_ADDRESS += n;
+				while (NEXT_TEXT_ADDRESS%4!=0) NEXT_TEXT_ADDRESS++;
+				verboseStream.println("[Assembler] Assigned space in memory for "+n+" bytes");
+			}
+d814 12
+a825 3
+	
+	private void handleText(Instruction currentDirective, int lineNumber) throws AssemblerException
+	{
+d831 10
+a840 9
+		if (ops.size() >= 1) 
+			{
+				Operand op = (Operand)ops.get(0);
+				if (op instanceof ImmediateOperand) 
+					{
+						NEXT_TEXT_ADDRESS = ((ImmediateOperand)op).getValue();
+					} 
+				else throw new AssemblerException("[Error A11] Invalid argument for .text",lineNumber,currentDirective);
+			}
+d842 13
+a854 4
+	
+	private void handleWord(Instruction currentDirective, int lineNumber) throws AssemblerException
+	{
+		verboseStream.println("[Assembler] Encountered WORD directive "+currentDirective);
+d857 31
+a887 21
+		for (int count = 0; count < ops.size(); count++)
+			{
+				Operand op = (Operand)ops.get(count);
+				if (op instanceof ImmediateOperand) 
+					{
+						n = ((ImmediateOperand)op).getValue();
+						if (data_mode)
+							{
+								memoryManager.setLocation(NEXT_DATA_ADDRESS,n);
+								verboseStream.println("[Assembler] Assembled "+currentDirective+" ( "+n+" ) + to location "+NEXT_DATA_ADDRESS);							
+								NEXT_DATA_ADDRESS=NEXT_DATA_ADDRESS+4;
+							}
+						else
+							{
+								memoryManager.setLocation(NEXT_TEXT_ADDRESS,n);
+								verboseStream.println("[Assembler] Assembled "+currentDirective+" ( "+n+" ) + to location "+NEXT_TEXT_ADDRESS);							
+								NEXT_TEXT_ADDRESS= NEXT_TEXT_ADDRESS+4;
+							}
+					}
+				else throw new AssemblerException("[Error A12] Invalid argument for .word",lineNumber,currentDirective);
+			}
+d890 3
+a892 3
+	private void handleAscii(Instruction currentDirective, int lineNumber) throws AssemblerException
+	{
+	// NOT REQUIRED FOR COMPILER LAB
+d898 4
+a901 1
+			throw new AssemblerException("[Error A13] .ascii found not in .data section",lineNumber,currentDirective);
+d904 4
+a907 4
+	
+	private void handleByte(Instruction currentDirective, int lineNumber) throws AssemblerException
+	{
+	// NOT REQUIRED FOR COMPILER LAB
+d911 1
+a911 1
+			
+d913 4
+a916 1
+			throw new AssemblerException("[Error A14] .byte found not in .data section",lineNumber,currentDirective);
+d920 3
+a922 4
+	
+	private void handleHalf(Instruction currentDirective, int lineNumber) throws AssemblerException
+	{
+	// NOT REQUIRED FOR COMPILER LAB
+d927 4
+a930 1
+			throw new AssemblerException("[Error A15] .half found not in .data section",lineNumber,currentDirective);
+a932 1
+	
+d934 32
+a965 8
+	private void handleDouble(Instruction currentDirective, int lineNumber) { /* NOWAY */  }
+	private void handleFloat(Instruction currentDirective, int lineNumber) { /* NOWAY */ }
+	private void handleAlign(Instruction currentDirective, int lineNumber) {/*NOWAY*/}
+	private void handleExtern(Instruction currentDirective, int lineNumber) {/*NOWAY*/}
+	private void handleGlobl(Instruction currentDirective, int lineNumber) {/*NOWAY*/}
+	private void handleKdata(Instruction currentDirective, int lineNumber) {/*NOWAY*/}
+	private void handleKtext(Instruction currentDirective, int lineNumber) {/*NOWAY*/}
+	private void handleSet(Instruction currentDirective, int lineNumber) {/*NOWAY*/}	
+@
+
+
+1.60
+log
+@*** empty log message ***
+@
+text
+@d24 1
+a24 1
+	
+d93 1
+a93 1
+		//System.out.println(instructionTable.printTable());
+d276 1
+a276 1
+		else throw new AssemblerException("[Error A05] Requested word ("+wordNumber+") out of bounds for current instruction representation("+wordString+")",lineNumber,currentInstruction);
+@
+
+
+1.59
+log
+@*** empty log message ***
+@
+text
+@d93 1
+@
+
+
+1.58
+log
+@*** empty log message ***
+@
+text
+@d90 1
+a90 1
+		
+d169 1
+a169 1
+						guiMap.add(lineNumber, NEXT_TEXT_ADDRESS);
+d189 1
+a189 1
+		Representation instructionRepresentation = instructionTable.getInstruction(instructionName).getRepresentation(operandCode);
+d213 1
+a213 1
+						verboseStream.println("[Assembler] "+"Assembled "+currentInstruction+" ( "+currentSubWord+" = "+operandHandler.binaryStringToInteger(currentSubWord)+" = "+instructionTable.getMonatomicInstruction(currentSubWord)+" ) + to location "+NEXT_TEXT_ADDRESS);
+d232 1
+a232 1
+		Representation instructionRepresentation = instructionTable.getInstruction(instructionName).getRepresentation(operandCode);
+d254 1
+a254 1
+						verboseStream.println("[Assembler] "+"Assembled "+currentInstruction+" ( "+currentSubWord+" = "+operandHandler.binaryStringToInteger(currentSubWord)+" = "+instructionTable.getMonatomicInstruction(currentSubWord)+" ) + to location "+CURRENT_ADDRESS);
+d281 2
+d322 1
+a322 1
+								verboseStream.println("Picked up escape ");
+d326 1
+a326 1
+										verboseStream.println("Assigning escape ");
+d341 1
+a341 1
+								verboseStream.println("*A* Assembled "+currentDirective+" ( "+currentCharValue+" ) + to location "+NEXT_DATA_ADDRESS);							
+d347 1
+a347 1
+								verboseStream.println("*A* Assembled "+currentDirective+" ( "+currentCharValue+" ) + to location "+NEXT_TEXT_ADDRESS);							
+d357 1
+a357 1
+								verboseStream.println("*A* Assembled "+currentDirective+" ( 0 ) + to location "+NEXT_DATA_ADDRESS);	
+d366 1
+a366 1
+								verboseStream.println("Assembled "+currentDirective+" (0) + to location "+NEXT_TEXT_ADDRESS);	
+d371 1
+a371 4
+			else 
+			{
+				throw new AssemblerException("Error A07 - Line " + lineNumber + ": invalid argument for .asciiz");
+			}
+d378 1
+a378 1
+		verboseStream.println("Encountered DATA tag");
+d389 1
+a389 5
+				verboseStream.println("Changed NEXT_DATA_ADDRESS to "+NEXT_DATA_ADDRESS);											
+			}
+			else 
+			{
+				throw new AssemblerException("Error A08 - Line " + lineNumber + ": invalid argument for .data");
+d391 1
+d406 1
+a406 4
+				else
+					{
+						throw new AssemblerException("Error A09 - Line " + lineNumber + ": invalid argument for .space");
+					}
+d408 1
+a408 4
+		else
+		{
+			throw new AssemblerException("Error A10 - Line " + lineNumber + ": argument missing for .space");
+		}
+d413 1
+a413 1
+				verboseStream.println("Assigned space in memory for "+n+" bytes");
+d419 1
+a419 1
+				verboseStream.println("Assigned space in memory for "+n+" bytes");
+d425 1
+a425 1
+		verboseStream.println("Encountered TEXT directive");
+d437 1
+a437 5
+				else 
+					{
+						// parser should have picked up this error
+						throw new AssemblerException("Error A11 - Line " + lineNumber + ": invalid argument for .text");
+					}
+d443 1
+a443 1
+		verboseStream.println("Encountered WORD directive "+currentDirective);
+d455 1
+a455 1
+								verboseStream.println("Assembled "+currentDirective+" ( "+n+" ) + to location "+NEXT_DATA_ADDRESS);							
+d461 1
+a461 1
+								verboseStream.println("Assembled "+currentDirective+" ( "+n+" ) + to location "+NEXT_TEXT_ADDRESS);							
+d465 1
+a465 4
+				else
+					{
+						throw new AssemblerException("Error A12 - Line " + lineNumber + ": invalid argument for .word");
+					}
+d477 1
+a477 2
+			throw new AssemblerException("Error A13 - Line " + lineNumber + ": .ascii found not in .data section");
+
+d489 1
+a489 1
+			throw new AssemblerException("Error A13 - Line " + lineNumber + ": .byte found not in .data section");
+d501 1
+a501 1
+			throw new AssemblerException("Error A07 - Line " + lineNumber + ": .half found not in .data section");
+d513 1
+a513 5
+	private void handleSet(Instruction currentDirective, int lineNumber) {/*NOWAY*/}
+	
+	public GuiMap getGUIMap() {
+		return guiMap;
+	}
+@
+
+
+1.57
+log
+@*** empty log message ***
+@
+text
+@d25 1
+a25 1
+	// assembler directives listed here
+d43 5
+a47 6
+	
+	//tables
+	private SymbolTable symbolTable; // holds all the symbol -> address mappings
+	private ToBeDoneTable  toBeDoneTable; // holds all the information on items that need to be reassembled in the second phase
+	private GuiMap guiMap;
+	private InstructionTable instructionTable;
+d49 1
+a49 1
+	// subhandlers
+d61 1
+a61 2
+	
+	//memory manager reference
+d64 1
+d69 1
+a69 4
+		// constructor takes the xmlfilepath so that the various substructures can build up their information
+
+		//create all the tables required for the system
+	
+d73 6
+d81 1
+a81 1
+		//initialise assembler modes and line numbers
+d85 1
+a85 1
+		//memory manager reference
+d88 1
+a88 1
+		//set verbose output stream
+d91 2
+a92 5
+		instructionTable = new InstructionTable();
+		AssemblerXMLHandler.LoadTableFromXML("Instruction_file.xml",instructionTable,sm);
+		operandHandler = new OperandHandler(symbolTable,toBeDoneTable,instructionTable);
+		
+		
+d98 1
+a99 1
+		symbolTable.resetSymbolTable();
+d101 1
+d103 1
+a106 1
+
+d111 1
+d118 1
+a118 1
+			verboseStream.println("*A* Encountered new line "+thisLine+" : "+currentLine.toString());
+a121 1
+//					guiMap.add(currentLine.getLineNumber(),NEXT_TEXT_ADDRESS);			
+a126 1
+//					guiMap.add(currentLine.getLineNumber(),NEXT_TEXT_ADDRESS);								
+d130 2
+d140 1
+a140 1
+				handleToBeDoneInstruction2(address,instruction,lineNumber);
+a147 1
+			// nb dont increment here because the next assembler directive should indicate the size of memory to allocate
+d149 1
+a149 1
+			verboseStream.println("*A* "+currentLabel.getLabel()+" given address "+NEXT_DATA_ADDRESS);		
+a151 1
+			// dont increment text address as labels an instruction
+d153 1
+a153 1
+			verboseStream.println("*A* "+currentLabel.getLabel()+" given address "+NEXT_TEXT_ADDRESS);		
+d159 15
+a173 21
+	private void handleInstruction(Instruction currentInstruction, int lineNumber) throws AssemblerException {
+	
+		if (currentInstruction.getName().charAt(0)=='.') {
+			// instruction is a directive
+			handleDirective(currentInstruction,lineNumber);
+			
+		} else if (instructionTable.isInstruction(currentInstruction.getName())) {
+			// instruction is an instruction, check not in data mode and add entry to GUImap
+			if (!data_mode) {
+				guiMap.add(lineNumber, NEXT_TEXT_ADDRESS);
+				handleGenericInstruction2(currentInstruction,lineNumber);
+				
+			} else {
+				throw new AssemblerException("Error A01 - Line "+lineNumber+": "+currentInstruction.getName()+" -  Instruction should not be within data section");
+				
+			}
+			
+		} else {
+			throw new AssemblerException("Error A02 - Line "+lineNumber+": "+currentInstruction.getName()+" -  Encountered keyword is not an instruction and has been identified by parser incorrectly");
+			
+		}		
+d176 1
+a176 1
+	private void handleGenericInstruction2(Instruction currentInstruction, int lineNumber) throws AssemblerException
+d178 1
+a178 1
+		//variables
+d183 2
+a184 1
+
+d191 1
+a191 1
+		int CURRENT_ADDRESS = NEXT_TEXT_ADDRESS; 
+d202 1
+d204 1
+a204 1
+				verboseStream.println("*A* "+" added  "+currentInstruction+" line "+lineNumber+" at "+NEXT_TEXT_ADDRESS+" to2bdonetable");
+d213 1
+a213 1
+						verboseStream.println("*A* "+"Assembled "+currentInstruction+" ( "+currentSubWord+" = "+operandHandler.binaryStringToInteger(currentSubWord)+" = "+instructionTable.getMonatomicInstruction(currentSubWord)+" ) + to location "+NEXT_TEXT_ADDRESS);
+d219 1
+a219 1
+	private void handleToBeDoneInstruction2(int address, Instruction currentInstruction, int lineNumber) throws AssemblerException
+d226 2
+a227 1
+
+d234 1
+a234 1
+		int CURRENT_ADDRESS = address; 
+d246 1
+a246 1
+				throw new AssemblerException("Error A03 - Line "+lineNumber+": "+currentInstruction.getName()+" - SymbolTable Error: no such label on second pass through code");
+d254 1
+a254 1
+						verboseStream.println("*A* "+"Assembled "+currentInstruction+" ( "+currentSubWord+" = "+operandHandler.binaryStringToInteger(currentSubWord)+" = "+instructionTable.getMonatomicInstruction(currentSubWord)+" ) + to location "+CURRENT_ADDRESS);
+d266 1
+a266 4
+		else
+			{
+				throw new AssemblerException("Error 04 - Line "+lineNumber+": "+currentInstruction.getName()+" - Given word string ("+wordString+") doesnt have length of multiples of 32");
+			}
+d275 1
+a275 3
+		else
+			{
+				throw new AssemblerException("Error A05 - Line "+lineNumber+": "+currentInstruction.getName()+" - Requested word ("+wordNumber+") out of bounds for current instruction representation("+wordString+")");			}
+d300 1
+a300 4
+		else
+		{
+			throw new AssemblerException("Error A06 - Line "+lineNumber+": "+currentDirective.getName()+" -  Encountered keyword is not an assembler directive and has been identified by parser incorrectly");
+		}
+@
+
+
+1.56
+log
+@*** empty log message ***
+@
+text
+@d48 1
+a48 1
+	private InstructionTable2 instructionTable2;
+d51 1
+a51 1
+	private OperandHandler2 operandHandler2;
+a77 2
+				
+
+d89 3
+a91 3
+		instructionTable2 = new InstructionTable2();
+		AssemblerXMLHandler2.LoadTableFromXML("Instruction_file2.xml",instructionTable2,sm);
+		operandHandler2 = new OperandHandler2(symbolTable,toBeDoneTable,instructionTable2);
+d166 1
+a166 1
+		} else if (instructionTable2.isInstruction(currentInstruction.getName())) {
+d192 1
+a192 1
+		operandHandler2.resetHandler();
+d194 2
+a195 2
+		String operandCode = operandHandler2.encodeOperandList(currentInstruction.getOperands());
+		Representation instructionRepresentation = instructionTable2.getInstruction(instructionName).getRepresentation(operandCode);
+d202 1
+a202 1
+				currentCodedWord = operandHandler2.encodeWord(currentUncodedWord,CURRENT_ADDRESS, instructionRepresentation, currentInstruction.getOperands(), operandCode, lineNumber, currentInstruction);
+d206 1
+a206 1
+		if (operandHandler2.isSymbolTableError())
+d217 2
+a218 2
+						memoryManager.setLocation(NEXT_TEXT_ADDRESS,operandHandler2.binaryStringToInteger(currentSubWord));
+						verboseStream.println("*A* "+"Assembled "+currentInstruction+" ( "+currentSubWord+" = "+operandHandler2.binaryStringToInteger(currentSubWord)+" = "+instructionTable2.getMonatomicInstruction(currentSubWord)+" ) + to location "+NEXT_TEXT_ADDRESS);
+d233 1
+a233 1
+		operandHandler2.resetHandler();
+d235 2
+a236 2
+		String operandCode = operandHandler2.encodeOperandList(currentInstruction.getOperands());
+		Representation instructionRepresentation = instructionTable2.getInstruction(instructionName).getRepresentation(operandCode);
+d243 1
+a243 1
+				currentCodedWord = operandHandler2.encodeWord(currentUncodedWord,CURRENT_ADDRESS, instructionRepresentation, currentInstruction.getOperands(), operandCode, lineNumber, currentInstruction);
+d248 1
+a248 1
+		if (operandHandler2.isSymbolTableError())
+d257 2
+a258 2
+						memoryManager.setLocation(CURRENT_ADDRESS,operandHandler2.binaryStringToInteger(currentSubWord));
+						verboseStream.println("*A* "+"Assembled "+currentInstruction+" ( "+currentSubWord+" = "+operandHandler2.binaryStringToInteger(currentSubWord)+" = "+instructionTable2.getMonatomicInstruction(currentSubWord)+" ) + to location "+CURRENT_ADDRESS);
+@
+
+
+1.55
+log
+@*** empty log message ***
+@
+text
+@a47 4
+	// VERSION1
+	private InstructionTable instructionTable; //holds records of all the current instructions supported by this system
+
+	// VERSION2
+a48 1
+	private OperandHandler2 operandHandler2;
+d51 1
+a51 2
+	//VERSION1
+	private OperandHandler operandHandler;
+a73 1
+		instructionTable = new InstructionTable();	// create the instruction table by passing the xmlfilepath to the constructor
+a78 2
+		// create appropriate operand handler
+		operandHandler = new OperandHandler(symbolTable,toBeDoneTable,verbose);
+a79 2
+		// fill instruction tables with data
+		AssemblerXMLHandler.LoadTableFromXML(xmlFilePath,instructionTable,sm);
+a90 1
+		//VERSION2
+a92 1
+//		System.out.println(instructionTable2.printTable());
+a93 1
+		//VERSION2		
+a140 6
+
+				//version1
+/*
+				handleToBeDoneInstruction(address,instruction,lineNumber);
+*/
+				//version2
+d168 1
+a168 1
+		} else if (instructionTable.isInstruction(currentInstruction.getName())) {
+a171 5
+				//version1
+/*
+				handleGenericInstruction(currentInstruction,lineNumber);
+*/
+				//version2
+d219 2
+a220 2
+						memoryManager.setLocation(NEXT_TEXT_ADDRESS,operandHandler.binaryStringToInteger(currentSubWord));
+						verboseStream.println("*A* "+"Assembled "+currentInstruction+" ( "+currentSubWord+" = "+operandHandler.binaryStringToInteger(currentSubWord)+" = "+instructionTable2.getMonatomicInstruction(currentSubWord)+" ) + to location "+NEXT_TEXT_ADDRESS);
+a225 71
+	private void handleGenericInstruction(Instruction currentInstruction, int lineNumber) throws AssemblerException
+	{
+		String machineCode = "";
+		String extractedWord = "";
+		int overallWordType=0;
+		int extractedWordType=0;
+		boolean useOffsets = true;
+		String encodedWordsOfCurrentInstruction = "";
+		String currentSubWord = "";
+		machineCode = instructionTable.getMachineCodeRepresentation(currentInstruction.getName());
+		overallWordType=instructionTable.getType(machineCode);
+		if (overallWordType==5)	useOffsets = false;
+		for (int wordNumber=1; wordNumber<=numberOfWordsWithinWordString(machineCode, lineNumber, currentInstruction); wordNumber++)
+			{
+				extractedWord = extractWord(wordNumber,machineCode, lineNumber, currentInstruction);
+				extractedWordType = instructionTable.getType(extractedWord);
+				encodedWordsOfCurrentInstruction = operandHandler.encodeOperands(currentInstruction.getOperands(),NEXT_TEXT_ADDRESS,extractedWord,extractedWordType,currentInstruction,lineNumber,useOffsets);				
+				if (operandHandler.isSymbolTableError())
+					{
+						toBeDoneTable.add(NEXT_TEXT_ADDRESS,currentInstruction,lineNumber);
+						verboseStream.println("*A* "+"added "+currentInstruction+" line "+lineNumber+" at "+NEXT_TEXT_ADDRESS+" to2bdonetable");
+						NEXT_TEXT_ADDRESS = NEXT_TEXT_ADDRESS + (encodedWordsOfCurrentInstruction.length()/32)*4;
+					}
+				else
+					{
+						for (int subWordNumber = 1; subWordNumber<=numberOfWordsWithinWordString(encodedWordsOfCurrentInstruction, lineNumber, currentInstruction); subWordNumber++)
+							{
+								currentSubWord = extractWord(subWordNumber,encodedWordsOfCurrentInstruction, lineNumber, currentInstruction);
+								memoryManager.setLocation(NEXT_TEXT_ADDRESS,operandHandler.binaryStringToInteger(currentSubWord));
+								verboseStream.println("*A* "+"Assembled "+currentInstruction+" ( "+currentSubWord+" = "+operandHandler.binaryStringToInteger(currentSubWord)+" ) + to location "+NEXT_TEXT_ADDRESS);
+								NEXT_TEXT_ADDRESS = NEXT_TEXT_ADDRESS+4;									
+							}						
+					}				
+			}
+	}
+
+	public void handleToBeDoneInstruction(int address, Instruction currentInstruction, int lineNumber) throws AssemblerException
+	{
+		String machineCode = "";
+		String extractedWord = "";
+		int extractedWordType;
+		int overallWordType;
+		boolean useOffsets = true;
+		String encodedWordsOfCurrentInstruction = "";
+		String currentSubWord = "";
+		int THIS_ADDRESS = address;
+		machineCode = instructionTable.getMachineCodeRepresentation(currentInstruction.getName());
+		overallWordType=instructionTable.getType(machineCode);
+		if (overallWordType==5) useOffsets = false;
+		for (int wordNumber=1; wordNumber<=numberOfWordsWithinWordString(machineCode, lineNumber, currentInstruction); wordNumber++)
+			{
+				extractedWord = extractWord(wordNumber,machineCode, lineNumber, currentInstruction);
+				extractedWordType = instructionTable.getType(extractedWord);
+				encodedWordsOfCurrentInstruction = operandHandler.encodeOperands(currentInstruction.getOperands(),THIS_ADDRESS,extractedWord,extractedWordType,currentInstruction,lineNumber,useOffsets);				
+				if (operandHandler.isSymbolTableError())
+					{
+						throw new AssemblerException("Error A03 - Line "+lineNumber+": "+currentInstruction.getName()+" - SymbolTable Error: no such label on second pass through code");
+					}
+				else
+					{
+						for (int subWordNumber = 1; subWordNumber<=numberOfWordsWithinWordString(encodedWordsOfCurrentInstruction, lineNumber, currentInstruction); subWordNumber++)
+							{
+								currentSubWord = extractWord(subWordNumber,encodedWordsOfCurrentInstruction, lineNumber, currentInstruction);
+								verboseStream.println("*A* "+"Assembled "+currentInstruction+" ( "+currentSubWord+" = "+operandHandler.binaryStringToInteger(currentSubWord)+" ) + to location "+THIS_ADDRESS);
+								memoryManager.setLocation(THIS_ADDRESS,operandHandler.binaryStringToInteger(currentSubWord));						
+							}						
+					}				
+			}
+	}
+
+
+d259 2
+a260 2
+						memoryManager.setLocation(CURRENT_ADDRESS,operandHandler.binaryStringToInteger(currentSubWord));
+						verboseStream.println("*A* "+"Assembled "+currentInstruction+" ( "+currentSubWord+" = "+operandHandler.binaryStringToInteger(currentSubWord)+" = "+instructionTable2.getMonatomicInstruction(currentSubWord)+" ) + to location "+CURRENT_ADDRESS);
+d341 1
+a341 1
+//										else if 
+a387 44
+		/*
+						byte[] encodedString;
+						try {encodedString = str.getBytes("ASCII");}
+						catch (Exception e) {throw new AssemblerException("Error A10 - Line " + lineNumber + ": Cannot translate required string to ascii charset");}
+						int numberOfBytes = encodedString.length;
+				
+						for (int count = 0; count<numberOfBytes; count++)
+						{
+							Byte current = new Byte(encodedString[count]);
+							int thisByteValue = current.intValue();
+							if (data_mode)
+								{
+									memoryManager.setByte(NEXT_DATA_ADDRESS,thisByteValue);
+									verboseStream.println("Assembled "+currentDirective+" ( "+thisByteValue+" ) + to location "+NEXT_DATA_ADDRESS);							
+									NEXT_DATA_ADDRESS=NEXT_DATA_ADDRESS+1;		
+								}
+							else
+								{
+									memoryManager.setByte(NEXT_TEXT_ADDRESS,thisByteValue);
+									verboseStream.println("Assembled "+currentDirective+" ( "+thisByteValue+" ) + to location "+NEXT_TEXT_ADDRESS);							
+									NEXT_TEXT_ADDRESS= NEXT_TEXT_ADDRESS+1;
+								}
+						}
+						if (data_mode)
+							{
+								while (NEXT_DATA_ADDRESS%4!=0)
+																							{
+																								memoryManager.setByte(NEXT_TEXT_ADDRESS,0);
+																								verboseStream.println("Assembled "+currentDirective+" ( 0 ) + to location "+NEXT_DATA_ADDRESS);	
+																								NEXT_DATA_ADDRESS++;
+																							}
+							}
+						else
+							{
+								while (NEXT_TEXT_ADDRESS%4!=0)
+																							{
+																								memoryManager.setByte(NEXT_TEXT_ADDRESS,0);
+																								verboseStream.println("Assembled "+currentDirective+" (0) + to location "+NEXT_TEXT_ADDRESS);	
+																								NEXT_TEXT_ADDRESS++;						
+																							}
+							}
+		*/
+
+
+a546 3
+	//
+	// method from adam
+	//
+@
+
+
+1.54
+log
+@*** empty log message ***
+@
+text
+@d157 1
+a157 1
+
+d159 1
+a159 1
+/*
+a161 1
+*/
+d193 1
+a193 1
+
+d195 1
+a195 1
+/*
+a197 1
+*/
+@
+
+
+1.53
+log
+@*** empty log message ***
+@
+text
+@d105 1
+a105 1
+		System.out.println(instructionTable2.printTable());
+d155 1
+@
+
+
+1.52
+log
+@*** empty log message ***
+@
+text
+@d47 2
+a49 1
+	private GuiMap guiMap;
+d53 1
+d56 1
+d106 1
+d133 1
+d155 2
+d158 4
+d192 2
+d195 4
+d211 41
+d322 41
+d465 1
+a465 1
+								memoryManager.setByte(NEXT_TEXT_ADDRESS,0);
+d630 1
+a630 1
+								verboseStream.println("Assembled "+currentDirective+" ( "+n+" ) + to location "+NEXT_DATA_ADDRESS);							
+@
+
+
+1.51
+log
+@*** empty log message ***
+@
+text
+@d81 1
+@
+
+
+1.50
+log
+@*** empty log message ***
+@
+text
+@d50 3
+d81 1
+a81 1
+		
+d97 8
+@
+
+
+1.49
+log
+@*** empty log message ***
+@
+text
+@d96 12
+@
+
+
+1.48
+log
+@GUI updates Galore!
+@
+text
+@d108 1
+a108 1
+					guiMap.add(currentLine.getLineNumber(),NEXT_TEXT_ADDRESS);			
+d114 1
+a114 1
+					guiMap.add(currentLine.getLineNumber(),NEXT_TEXT_ADDRESS);								
+d133 3
+a135 3
+		if (data_mode)
+		{
+			symbolTable.add(currentLabel.getLabel(),NEXT_DATA_ADDRESS, lineNumber);			// nb dont increment here because the next assembler directive should indicate the size of memory to allocate
+d137 4
+a140 5
+			data_declaration_mode=true;																		//guiMap.add(lineNumber,NEXT_DATA_ADDRESS); to label data addresses in the gui map if we want			
+		}
+		else 
+		{
+			symbolTable.add(currentLabel.getLabel(),NEXT_TEXT_ADDRESS, lineNumber);			//dont increment text address as labels an instruction
+d147 21
+a167 10
+	private void handleInstruction(Instruction currentInstruction, int lineNumber) throws AssemblerException
+	{
+		
+		if (currentInstruction.getName().charAt(0)=='.')	handleDirective(currentInstruction,lineNumber);
+		else if (instructionTable.isInstruction(currentInstruction.getName()))
+		{
+				if (!data_mode) 	handleGenericInstruction(currentInstruction,lineNumber);
+				else 					throw new AssemblerException("Error A01 - Line "+lineNumber+": "+currentInstruction.getName()+" -  Instruction should not be within data section");
+		}
+		else	throw new AssemblerException("Error A02 - Line "+lineNumber+": "+currentInstruction.getName()+" -  Encountered keyword is not an instruction and has been identified by parser incorrectly");		
+@
+
+
+1.47
+log
+@*** empty log message ***
+@
+text
+@d555 6
+@
+
+
+1.46
+log
+@*** empty log message ***
+@
+text
+@d80 1
+a80 1
+		operandHandler = new OperandHandler(symbolTable,toBeDoneTable);
+@
+
+
+1.45
+log
+@*** empty log message ***
+@
+text
+@d6 1
+d66 3
+a68 1
+	public Assembler(String xmlFilePath, MemoryManagerInterface mm, StatisticsManagerInterface sm)
+d92 2
+d136 1
+a136 1
+			System.out.println("*A* "+currentLabel.getLabel()+" given address "+NEXT_DATA_ADDRESS);		
+d142 1
+a142 1
+			System.out.println("*A* "+currentLabel.getLabel()+" given address "+NEXT_TEXT_ADDRESS);		
+d180 1
+a180 1
+						System.out.println("*A* "+"added "+currentInstruction+" line "+lineNumber+" at "+NEXT_TEXT_ADDRESS+" to2bdonetable");
+d189 1
+a189 1
+								System.out.println("*A* "+"Assembled "+currentInstruction+" ( "+currentSubWord+" = "+operandHandler.binaryStringToInteger(currentSubWord)+" ) + to location "+NEXT_TEXT_ADDRESS);
+d223 1
+a223 1
+								System.out.println("*A* "+"Assembled "+currentInstruction+" ( "+currentSubWord+" = "+operandHandler.binaryStringToInteger(currentSubWord)+" ) + to location "+THIS_ADDRESS);
+d298 1
+a298 1
+								System.out.println("Picked up escape ");
+d302 1
+a302 1
+										System.out.println("Assigning escape ");
+d317 1
+a317 1
+								System.out.println("*A* Assembled "+currentDirective+" ( "+currentCharValue+" ) + to location "+NEXT_DATA_ADDRESS);							
+d323 1
+a323 1
+								System.out.println("*A* Assembled "+currentDirective+" ( "+currentCharValue+" ) + to location "+NEXT_TEXT_ADDRESS);							
+d333 1
+a333 1
+								System.out.println("*A* Assembled "+currentDirective+" ( 0 ) + to location "+NEXT_DATA_ADDRESS);	
+d342 1
+a342 1
+								System.out.println("Assembled "+currentDirective+" (0) + to location "+NEXT_TEXT_ADDRESS);	
+d365 1
+a365 1
+									System.out.println("Assembled "+currentDirective+" ( "+thisByteValue+" ) + to location "+NEXT_DATA_ADDRESS);							
+d371 1
+a371 1
+									System.out.println("Assembled "+currentDirective+" ( "+thisByteValue+" ) + to location "+NEXT_TEXT_ADDRESS);							
+d380 1
+a380 1
+																								System.out.println("Assembled "+currentDirective+" ( 0 ) + to location "+NEXT_DATA_ADDRESS);	
+d389 1
+a389 1
+																								System.out.println("Assembled "+currentDirective+" (0) + to location "+NEXT_TEXT_ADDRESS);	
+d401 1
+a401 1
+		System.out.println("Encountered DATA tag");
+d412 1
+a412 1
+				System.out.println("Changed NEXT_DATA_ADDRESS to "+NEXT_DATA_ADDRESS);											
+d445 1
+a445 1
+				System.out.println("Assigned space in memory for "+n+" bytes");
+d451 1
+a451 1
+				System.out.println("Assigned space in memory for "+n+" bytes");
+d457 1
+a457 1
+		System.out.println("Encountered TEXT directive");
+d479 1
+a479 1
+		System.out.println("Encountered WORD directive "+currentDirective);
+d491 1
+a491 1
+								System.out.println("Assembled "+currentDirective+" ( "+n+" ) + to location "+NEXT_DATA_ADDRESS);							
+d497 1
+a497 1
+								System.out.println("Assembled "+currentDirective+" ( "+n+" ) + to location "+NEXT_DATA_ADDRESS);							
+@
+
+
+1.44
+log
+@*** empty log message ***
+@
+text
+@d291 1
+a291 1
+						if (currentChar==92)
+d293 1
+d297 2
+d302 5
+a306 1
+								else currentCharValue= (int)str.charAt(currentChar-1);
+@
+
+
+1.43
+log
+@*** empty log message ***
+@
+text
+@d404 1
+a404 1
+				throw new AssemblerException("Error A10 - Line " + lineNumber + ": invalid argument for .data");
+d422 1
+a422 1
+						throw new AssemblerException("Error A11 - Line " + lineNumber + ": invalid argument for .space");
+d427 1
+a427 1
+			throw new AssemblerException("Error A12 - Line " + lineNumber + ": argument missing for .space");
+d460 1
+a460 1
+						throw new AssemblerException("Error A09 - Line " + lineNumber + ": invalid argument for .text");
+d491 1
+a491 1
+						throw new AssemblerException("Error A11 - Line " + lineNumber + ": invalid argument for .word");
+d504 1
+a504 1
+			throw new AssemblerException("Error A04 - Line " + lineNumber + ": .ascii found not in .data section");
+d517 1
+a517 1
+			throw new AssemblerException("Error A06 - Line " + lineNumber + ": .byte found not in .data section");
+@
+
+
+1.42
+log
+@*** empty log message ***
+@
+text
+@d314 1
+@
+
+
+1.41
+log
+@*** empty log message ***
+@
+text
+@a4 2
+
+import java.nio.charset.Charset;
+d101 10
+a110 3
+				handleLabel(currentLine.getLabel(), currentLine.getLineNumber());
+			if (currentLine.containsInstruction())
+				handleInstruction(currentLine.getInstruction(), currentLine.getLineNumber());
+a112 1
+		
+d131 1
+a131 1
+			System.out.println(currentLabel.getLabel()+" given address "+NEXT_DATA_ADDRESS);		
+d137 1
+a137 2
+			System.out.println(currentLabel.getLabel()+" given address "+NEXT_TEXT_ADDRESS);		
+//			guiMap.add(lineNumber,NEXT_TEXT_ADDRESS,lineNumber);			
+d146 1
+a146 4
+		if (currentInstruction.getName().charAt(0)=='.')
+		{
+			handleDirective(currentInstruction,lineNumber);
+		}
+d149 2
+a150 5
+			if (!data_mode) {
+				handleGenericInstruction(currentInstruction,lineNumber);
+			} else {
+				throw new AssemblerException("Error A50 - Line "+lineNumber+": "+currentInstruction.getName()+" -  Instruction should not be within data section");
+			}
+d152 1
+a152 4
+		else
+		{
+			throw new AssemblerException("Error A51 - Line "+lineNumber+": "+currentInstruction.getName()+" -  Encountered keyword is not an instruction and has been identified by parser incorrectly");
+		}		
+a156 1
+		//variables
+a163 2
+
+		guiMap.add(lineNumber,NEXT_TEXT_ADDRESS, lineNumber);
+d166 1
+a166 4
+		if (overallWordType==5)
+			{
+				useOffsets = false;
+			}
+d175 1
+a175 1
+						System.out.println("added"+currentInstruction+"line"+lineNumber+"at"+NEXT_TEXT_ADDRESS+"to2bdonetable");
+d184 1
+a184 1
+								System.out.println("Assembled "+currentInstruction+" ( "+operandHandler.binaryStringToInteger(currentSubWord)+" ) + to location "+NEXT_TEXT_ADDRESS);
+a192 1
+		//variables
+a200 1
+
+d203 1
+a203 5
+		if (overallWordType==5)
+			{
+				useOffsets = false;
+			}
+
+d211 1
+a211 1
+						throw new AssemblerException("Error A52 - Line "+lineNumber+": "+currentInstruction.getName()+" - SymbolTable Error: no such label on second pass through code");
+d218 1
+a218 1
+								System.out.println("Assembled "+currentInstruction+" ( "+operandHandler.binaryStringToInteger(currentSubWord)+" ) + to location "+THIS_ADDRESS);
+d233 1
+a233 1
+				throw new AssemblerException("Error 53 - Line "+lineNumber+": "+currentInstruction.getName()+" - Given word string ("+wordString+") doesnt have length of multiples of 32");
+d245 1
+a245 1
+				throw new AssemblerException("Error A54 - Line "+lineNumber+": "+currentInstruction.getName()+" - Requested word ("+wordNumber+") out of bounds for current instruction representation("+wordString+")");			}
+d272 1
+a272 1
+			throw new AssemblerException("Error A55 - Line "+lineNumber+": "+currentDirective.getName()+" -  Encountered keyword is not an assembler directive and has been identified by parser incorrectly");
+a285 1
+				System.out.println(str);
+d287 28
+a314 26
+				
+
+
+				byte[] encodedString;
+				try {//encodedString = str.getBytes(ASCII);
+						encodedString = str.getBytes("ASCII");}
+				catch (Exception e) {throw new AssemblerException("Error A10 - Line " + lineNumber + ": Cannot translate required string to ascii charset");}
+				int numberOfBytes = encodedString.length;
+				
+				for (int count = 0; count<numberOfBytes; count++)
+				{
+					Byte current = new Byte(encodedString[count]);
+					int thisByteValue = current.intValue();
+					if (data_mode)
+						{
+							memoryManager.setByte(NEXT_DATA_ADDRESS,thisByteValue);
+							System.out.println("Assembled "+currentDirective+" ( "+thisByteValue+" ) + to location "+NEXT_DATA_ADDRESS);							
+							NEXT_DATA_ADDRESS=NEXT_DATA_ADDRESS+1;		
+						}
+					else
+						{
+							memoryManager.setByte(NEXT_TEXT_ADDRESS,thisByteValue);
+							System.out.println("Assembled "+currentDirective+" ( "+thisByteValue+" ) + to location "+NEXT_TEXT_ADDRESS);							
+							NEXT_TEXT_ADDRESS= NEXT_TEXT_ADDRESS+1;
+						}
+				}
+d318 5
+a322 5
+																					{
+																						memoryManager.setByte(NEXT_TEXT_ADDRESS,0);
+																						System.out.println("Assembled "+currentDirective+" ( 0 ) + to location "+NEXT_DATA_ADDRESS);	
+																						NEXT_DATA_ADDRESS++;
+																					}
+d327 5
+a331 5
+																					{
+																						memoryManager.setByte(NEXT_TEXT_ADDRESS,0);
+																						System.out.println("Assembled "+currentDirective+" (0) + to location "+NEXT_TEXT_ADDRESS);	
+																						NEXT_TEXT_ADDRESS++;						
+																					}
+d336 1
+a336 1
+				throw new AssemblerException("Error A10 - Line " + lineNumber + ": invalid argument for .asciiz");
+d339 44
+a382 1
+		System.out.println("");
+@
+
+
+1.40
+log
+@*** empty log message ***
+@
+text
+@d166 3
+a168 1
+		int extractedWordType;
+d174 5
+d183 1
+a183 1
+				encodedWordsOfCurrentInstruction = operandHandler.encodeOperands(currentInstruction.getOperands(),NEXT_TEXT_ADDRESS,extractedWord,extractedWordType,currentInstruction,lineNumber);				
+d209 2
+d216 6
+d226 1
+a226 1
+				encodedWordsOfCurrentInstruction = operandHandler.encodeOperands(currentInstruction.getOperands(),THIS_ADDRESS,extractedWord,extractedWordType,currentInstruction,lineNumber);				
+d305 4
+d311 1
+a311 1
+						encodedString = str.getBytes();}
+d321 1
+a321 1
+							memoryManager.setLocation(NEXT_DATA_ADDRESS,thisByteValue);
+d327 1
+a327 1
+							memoryManager.setLocation(NEXT_TEXT_ADDRESS,thisByteValue);
+d336 2
+a337 1
+																						memoryManager.setLocation(NEXT_TEXT_ADDRESS,0);
+d345 2
+a346 1
+																						memoryManager.setLocation(NEXT_TEXT_ADDRESS,0);
+@
+
+
+1.39
+log
+@*** empty log message ***
+@
+text
+@d365 1
+a365 1
+		if (ops.size() > 1)
+@
+
+
+1.38
+log
+@*** empty log message ***
+@
+text
+@d221 1
+a221 1
+								System.out.println("Assembled "+currentInstruction+" ( "+operandHandler.binaryStringToInteger(currentSubWord)+" ) + to location "+NEXT_TEXT_ADDRESS);
+@
+
+
+1.37
+log
+@edited pseudoinstructions and changed to handle multiple operand occurrances
+@
+text
+@d67 1
+a67 1
+	public Assembler(String xmlFilePath, MemoryManagerInterface mm) throws AssemblerException
+d82 1
+a82 1
+		AssemblerXMLHandler.LoadTableFromXML(xmlFilePath,instructionTable);
+@
+
+
+1.36
+log
+@updated to deal with some other stuff
+@
+text
+@d67 1
+a67 1
+	public Assembler(String xmlFilePath, MemoryManagerInterface mm)
+@
+
+
+1.35
+log
+@updated stuff
+@
+text
+@d6 1
+d127 1
+d133 1
+d180 1
+d189 1
+a189 1
+								System.out.println("have written "+operandHandler.binaryStringToInteger(currentSubWord)+" to location "+NEXT_TEXT_ADDRESS);
+d211 1
+a211 1
+				encodedWordsOfCurrentInstruction = operandHandler.encodeOperands(currentInstruction.getOperands(),NEXT_TEXT_ADDRESS,extractedWord,extractedWordType,currentInstruction,lineNumber);				
+d221 2
+a222 2
+								memoryManager.setLocation(NEXT_TEXT_ADDRESS,operandHandler.binaryStringToInteger(currentSubWord));
+								NEXT_TEXT_ADDRESS = NEXT_TEXT_ADDRESS+4;									
+d292 1
+a292 1
+						encodedString = "test this".getBytes();}
+d303 2
+a304 2
+							System.out.println("have written "+thisByteValue+" to location "+NEXT_DATA_ADDRESS);
+							NEXT_DATA_ADDRESS=NEXT_DATA_ADDRESS+1;
+d309 1
+a309 1
+							System.out.println("have written "+thisByteValue+" to location "+NEXT_TEXT_ADDRESS);
+d313 16
+d341 1
+d352 1
+d385 1
+d391 1
+d397 1
+d419 1
+a419 1
+		
+d431 1
+d437 1
+@
+
+
+1.34
+log
+@updated to deal with strings
+@
+text
+@a247 79
+/* working version 26/11/2003
+
+	private void handleInstruction(Instruction currentInstruction, int lineNumber) throws AssemblerException
+	{
+		if (currentInstruction.getName().charAt(0)=='.')
+		{
+			handleDirective(currentInstruction,lineNumber);
+		}
+		else if (instructionTable.isInstruction(currentInstruction.getName()))
+		{
+			if (!data_mode)			{handleGeneralInstruction(currentInstruction,lineNumber);}
+			else								{throw new AssemblerException("Error A01 - Line "+lineNumber+": "+currentInstruction.getName()+" -  Instruction should not be within data section");}
+		}
+		else if  (specialInstructionTable.isInstruction(currentInstruction.getName()))
+			{
+				if (!data_mode)		{handleSpecificInstruction(currentInstruction,lineNumber);}
+				else							{throw new AssemblerException("Error A01 - Line "+lineNumber+": "+currentInstruction.getName()+" -  Instruction should not be within data section");}
+			}
+		else if (pseudoInstructionTable.isInstruction(currentInstruction.getName()))
+		{
+			handlePseudoInstruction(currentInstruction,lineNumber);
+		}
+		else
+		{
+			throw new AssemblerException("Error A02 - Line "+lineNumber+": "+currentInstruction.getName()+" -  Encountered keyword is not an instruction and has been identified by parser incorrectly");
+		}
+	}
+	
+
+	private void handleGeneralInstruction(Instruction currentInstruction, int lineNumber)
+	{
+		String translatedOperand=null;
+		String machineCode = instructionTable.getMachineCodeRepresentation(currentInstruction.getName());
+
+
+		for (int count = 0; count<currentInstruction.getOperands().size(); count++)
+		{			
+			translatedOperand = operandEncoder.handleOperand((Operand)currentInstruction.getOperands().get(count), currentInstruction, lineNumber);
+			machineCode = operandEncoder.replaceOperand(translatedOperand,machineCode,count);
+		}
+		
+		System.out.println("Stored " +machineCode+" as int "+binaryStringToInteger(machineCode)+" at location"+NEXT_TEXT_ADDRESS);
+
+		memoryManager.setLocation(NEXT_TEXT_ADDRESS,binaryStringToInteger(machineCode));		
+		guiMap.add(lineNumber,NEXT_TEXT_ADDRESS);
+		NEXT_TEXT_ADDRESS=NEXT_TEXT_ADDRESS+4;
+	}
+
+	private void handleSpecificInstruction(Instruction currentInstruction, int lineNumber)
+	{
+		String translatedOperand=null;
+//		String machineCode = specialInstructionTable.getInstruction(currentInstruction.getName()).getMachineCodeRepresentation();
+
+	}
+
+
+	private void handlePseudoInstruction(Instruction currentInstruction,int lineNumber)
+	{
+		String translatedOperand=null;
+		String machineCode = instructionTable.getMachineCodeRepresentation(currentInstruction.getName());
+		String[] codeInstructions = new String[machineCode.length()/32];
+						
+		for (int count = 0; count<currentInstruction.getOperands().size(); count++)
+		{			
+			translatedOperand = operandEncoder.handleOperand((Operand)currentInstruction.getOperands().get(count),currentInstruction,lineNumber);
+			for (int subcount = 0; subcount<codeInstructions.length; subcount++)
+			{
+				codeInstructions[subcount] = operandEncoder.replaceOperand(translatedOperand,codeInstructions[subcount],count);				
+			}
+		}
+		guiMap.add(lineNumber,NEXT_TEXT_ADDRESS);
+		for (int subcount = 0; subcount<codeInstructions.length; subcount++)
+		{
+			NEXT_TEXT_ADDRESS=NEXT_TEXT_ADDRESS+4;
+		}
+	}
+
+*/
+
+d285 1
+d287 2
+a288 1
+				try {encodedString = str.getBytes(ASCII);}
+d299 1
+d305 1
+d315 1
+@
+
+
+1.33
+log
+@updated stuff
+@
+text
+@d357 2
+a358 1
+		if (data_mode)
+d360 29
+a388 6
+			//TODO retreieve operands, should be a string, null terminate it and put it in memory, inc NEXT_DATA_ADDRESS by it's length
+
+		} 
+		else 
+		{
+			throw new AssemblerException("Error A05 - Line " + lineNumber + ": .asciiz found not in .data section");
+@
+
+
+1.32
+log
+@temporailiy fixed bug in updating guimap, needs proper work tho
+@
+text
+@d185 1
+d238 1
+a238 1
+		if (wordNumber*32<=wordString.length() && wordNumber>1)
+d240 1
+a240 1
+				return wordString.substring((wordNumber-1)*32,wordNumber*32-1);
+@
+
+
+1.31
+log
+@*** empty log message ***
+@
+text
+@d131 1
+a131 1
+			guiMap.add(lineNumber,NEXT_TEXT_ADDRESS,lineNumber);			
+d146 5
+a150 2
+			if (!data_mode)			{handleGenericInstruction(currentInstruction,lineNumber);}
+			else								{throw new AssemblerException("Error A50 - Line "+lineNumber+": "+currentInstruction.getName()+" -  Instruction should not be within data section");}
+@
+
+
+1.30
+log
+@Added the support for assembler directives except for .asciiz
+@
+text
+@a296 3
+	//TODO translate operands to get final output for code including address recalculation
+	//TODO add to memory the translated instruction
+
+a316 1
+			//TODO record values in array to address in memory, 					
+@
+
+
+1.29
+log
+@removed the code in the operand handler to avoid errors.
+@
+text
+@d41 1
+d347 1
+a352 53
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a354 38
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	private void handleAscii(Instruction currentDirective, int lineNumber) throws AssemblerException
+	{
+	// NOT REQUIRED FOR COMPILER LAB
+		String translatedOperand;
+		// data section, datadeclaration mode 
+		if (data_mode) {
+			//TODO retrieve operands, which should be a string, put it in memory and increase NEXT_DATA_ADDRESS by it's length
+
+		} else {
+			// ascii defined not in data mode (i.e. after a .text)
+			throw new AssemblerException("Error A04 - Line " + lineNumber + ": .ascii found not in .data section");
+
+		}
+	}
+	
+	
+	
+d357 2
+a358 1
+		if (data_mode) {
+d361 3
+a363 1
+		} else {
+a364 1
+
+d366 1
+a366 16
+	}
+	
+	
+	
+	private void handleByte(Instruction currentDirective, int lineNumber) throws AssemblerException
+	{
+	// NOT REQUIRED FOR COMPILER LAB
+		if (data_mode) {
+			//store successive operands in memory @@ next_data_address, increment appropriate amount, already stored label address in symbol table & null terminate it if has name
+			// once finished turn off data declaration mode
+			
+		} else {
+			throw new AssemblerException("Error A06 - Line " + lineNumber + ": .byte found not in .data section");
+		}
+	}
+	
+d375 2
+a376 1
+		if (ops.size() > 1) {
+d378 2
+a379 1
+			if (op instanceof ImmediateOperand) {
+d381 3
+a383 1
+			} else {
+a388 15
+	
+	
+	private void handleHalf(Instruction currentDirective, int lineNumber) throws AssemblerException
+	{
+	// NOT REQUIRED FOR COMPILER LAB
+		if (data_mode) {
+			//store successive 16 bit nums in memory halfwords @@ next_data_address, increment appropriate amount, already stored label address in symbol table & null terminate it if has name
+			// once finished turn off data declaration mode
+		} else {
+			throw new AssemblerException("Error A07 - Line " + lineNumber + ": .half found not in .data section");
+		}
+	}
+
+
+
+d393 11
+a403 6
+		if (ops.size() > 1) {
+			Operand op = (Operand)ops.get(0);
+			if (op instanceof ImmediateOperand) {
+				n = ((ImmediateOperand)op).getValue();
+			} else {
+				throw new AssemblerException("Error A11 - Line " + lineNumber + ": invalid argument for .space");
+d405 2
+a406 1
+		} else {
+d409 10
+a418 5
+		if (data_mode) {
+			NEXT_DATA_ADDRESS += n;
+		} else {
+			NEXT_TEXT_ADDRESS += n;
+		}
+a420 2
+	
+	
+d427 41
+a467 7
+		if (ops.size() > 1) {
+			Operand op = (Operand)ops.get(0);
+			if (op instanceof ImmediateOperand) {
+				NEXT_TEXT_ADDRESS = ((ImmediateOperand)op).getValue();
+			} else {
+				// parser should have picked up this error
+				throw new AssemblerException("Error A09 - Line " + lineNumber + ": invalid argument for .text");
+d469 36
+@
+
+
+1.28
+log
+@changed instruction file to only contain information on instructions
+@
+text
+@a101 1
+				
+@
+
+
+1.27
+log
+@revised method for assembling instructions
+@
+text
+@a45 1
+	private InstructionTable pseudoInstructionTable;
+a46 1
+	private InstructionTable specialInstructionTable;
+a49 1
+	private OperandEncoder operandEncoder;
+a73 2
+		pseudoInstructionTable = new InstructionTable();
+		specialInstructionTable = new InstructionTable();
+a76 3
+		
+		operandEncoder = new OperandEncoder(symbolTable,toBeDoneTable);
+
+d80 1
+a80 1
+		AssemblerXMLHandler.LoadTableFromXML(xmlFilePath,instructionTable,pseudoInstructionTable,specialInstructionTable);
+d121 1
+a121 1
+	private void handleLabel(Label currentLabel,int lineNumber)
+d125 1
+a125 1
+			symbolTable.add(currentLabel.getLabel(),NEXT_DATA_ADDRESS);			// nb dont increment here because the next assembler directive should indicate the size of memory to allocate
+d130 2
+a131 2
+			symbolTable.add(currentLabel.getLabel(),NEXT_TEXT_ADDRESS);			//dont increment text address as labels an instruction
+			guiMap.add(lineNumber,NEXT_TEXT_ADDRESS);			
+d147 1
+a147 1
+			else								{throw new AssemblerException("Error A01 - Line "+lineNumber+": "+currentInstruction.getName()+" -  Instruction should not be within data section");}
+d151 1
+a151 1
+			throw new AssemblerException("Error A02 - Line "+lineNumber+": "+currentInstruction.getName()+" -  Encountered keyword is not an instruction and has been identified by parser incorrectly");
+d155 1
+a155 1
+	private void handleGenericInstruction(Instruction currentInstruction, int lineNumber)
+d157 10
+a166 9
+		//set text address in gui map to this instruction (even if pseudo instruction or currently on the to do list);
+		guiMap.add(lineNumber,NEXT_TEXT_ADDRESS);
+	
+		String machineCode = instructionTable.getMachineCodeRepresentation(currentInstruction.getName());
+		String currentWord = "";
+		int currentType;
+		String returnedWords = "";
+		int wordNumber = 1;
+		while (wordNumber*32<=machineCode.length())
+d168 3
+a170 7
+				//extract the word from the returned machine code
+				currentWord = machineCode.substring((wordNumber-1)*32,wordNumber*32-1);
+				// get this particular representations type from the instruction table
+				currentType = instructionTable.getType(currentWord);
+				//pass to operand handler with the current set of operands
+				returnedWords = operandHandler.encodeOperands(currentInstruction.getOperands(),NEXT_TEXT_ADDRESS,currentWord,currentType,currentInstruction,lineNumber);				
+				// if label error shelve instruction to to do list
+a172 2
+						//symboltable error so shelve this entire instruction leaving space in memory to be added later
+						//TODO add to ToBeDoneList with NEXT_TEXT_ADDRESS;
+d174 1
+a174 1
+						NEXT_TEXT_ADDRESS = NEXT_TEXT_ADDRESS + (returnedWords.length()/32)*4;
+d178 1
+a178 4
+						//no symboltable error so store to memory at required text address
+						int subWordNumber = 1;
+						String currentSubWord = "";
+						while (subWordNumber*32<=returnedWords.length())
+d180 5
+a184 6
+								currentSubWord = machineCode.substring((subWordNumber-1)*32,subWordNumber*32-1);
+								memoryManager.setLocation(NEXT_TEXT_ADDRESS,binaryStringToInteger(currentSubWord));
+								NEXT_TEXT_ADDRESS = NEXT_TEXT_ADDRESS+4;	
+							}		
+					}
+				
+a185 1
+		
+d187 2
+a188 2
+	
+	public void handleToBeDoneInstruction(int address, Instruction currentInstruction, int lineNumber)
+d190 6
+a195 2
+		// already put entry in gui map so dont have to ths time
+		
+d197 3
+a199 7
+			
+		String machineCode = instructionTable.getMachineCodeRepresentation(currentInstruction.getName());
+		String currentWord = "";
+		int currentType;
+		String returnedWords = "";
+		int wordNumber = 1;
+		while (wordNumber*32<=machineCode.length())
+d201 3
+a203 7
+				//extract the word from the returned machine code
+				currentWord = machineCode.substring((wordNumber-1)*32,wordNumber*32-1);
+				// get this particular representations type from the instruction table
+				currentType = instructionTable.getType(currentWord);
+				//pass to operand handler with the current set of operands
+				returnedWords = operandHandler.encodeOperands(currentInstruction.getOperands(),THIS_ADDRESS,currentWord,currentType,currentInstruction,lineNumber);				
+				// if label error shelve instruction to to do list
+d206 1
+a206 1
+						//symbolTable error for 2nd time thus throw an error, this label doesnt exist within the text_segment
+d210 1
+a210 4
+						//no symboltable error so store to memory at required text address
+						int subWordNumber = 1;
+						String currentSubWord = "";
+						while (subWordNumber*32<=returnedWords.length())
+d212 5
+a216 5
+								currentSubWord = machineCode.substring((subWordNumber-1)*32,subWordNumber*32-1);
+								memoryManager.setLocation(THIS_ADDRESS,binaryStringToInteger(currentSubWord));
+								THIS_ADDRESS = THIS_ADDRESS+4;	
+							}		
+					}
+d220 1
+a220 1
+	private int binaryStringToInteger(String binaryString)
+d222 1
+a222 2
+
+		if (binaryString.charAt(0)=='1')
+d224 1
+a224 3
+				// is a negative number
+				// convert back to positive number
+				return -(binaryToPositiveInteger(operandHandler.toTwosComplement(binaryString)));
+d228 1
+a228 1
+				return binaryToPositiveInteger(operandHandler.toTwosComplement(binaryString));
+d230 1
+a230 2
+
+	}
+d232 1
+a232 1
+	private int binaryToPositiveInteger(String binaryString)
+d234 1
+a234 3
+		int value = 0;
+		int equivalent = 1;
+		for (int count = binaryString.length()-1; count>=0; count--)
+d236 1
+a236 2
+				if (binaryString.charAt(count)=='1') {value+=equivalent;}
+				equivalent=equivalent*2;
+d238 3
+a240 1
+		return value;
+d242 1
+a242 1
+	
+d349 1
+a349 1
+			throw new AssemblerException("Error A03 - Line "+lineNumber+": "+currentDirective.getName()+" -  Encountered keyword is not an assembler directive and has been identified by parser incorrectly");
+@
+
+
+1.26
+log
+@updated operand handler
+@
+text
+@a112 1
+				
+d117 2
+a118 1
+		/*
+d122 3
+a124 1
+				toBeDoneTable.get(count).
+a125 1
+		*/
+d144 18
+d163 113
+a300 12
+
+	private int binaryStringToInteger(String binaryString)
+	{
+		int value = 0;
+		int equivalent = 1;
+		for (int count = binaryString.length()-1; count>=0; count--)
+			{
+				if (binaryString.charAt(count)=='1') {value+=equivalent;}
+				equivalent=equivalent*2;
+			}
+		return value;
+	}
+d306 2
+a307 1
+		String machineCode = instructionTable.getInstruction(currentInstruction.getName()).getMachineCodeRepresentation();
+d325 1
+a325 1
+		String machineCode = specialInstructionTable.getInstruction(currentInstruction.getName()).getMachineCodeRepresentation();
+d336 1
+a336 1
+		String machineCode = instructionTable.getInstruction(currentInstruction.getName()).getMachineCodeRepresentation();
+d355 1
+a355 1
+
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@d53 1
+d84 2
+a85 1
+		
+d181 1
+d183 1
+a183 3
+
+	
+private void handleGeneralInstruction(Instruction currentInstruction, int lineNumber)
+a232 1
+
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d168 11
+d181 2
+a182 1
+	private void handleGeneralInstruction(Instruction currentInstruction, int lineNumber)
+d189 1
+a189 1
+			translatedOperand = operandEncoder.handleOperand((Operand)currentInstruction.getOperands().get(count));
+a199 12
+	private int binaryStringToInteger(String binaryString)
+	{
+		int value = 0;
+		int equivalent = 1;
+		for (int count = binaryString.length()-1; count>=0; count--)
+			{
+				if (binaryString.charAt(count)=='1') {value+=equivalent;}
+				equivalent=equivalent*2;
+			}
+		return value;
+	}
+
+d219 1
+a219 1
+			translatedOperand = operandEncoder.handleOperand((Operand)currentInstruction.getOperands().get(count));
+d232 3
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@d61 2
+d114 9
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d6 2
+d129 2
+d157 2
+d325 1
+a329 1
+			byte[] array = ((LabelOperand)currentDirective.getOperands().get(0)).getValue().getBytes();
+d355 1
+d361 1
+a361 1
+			
+d367 1
+a367 1
+	private void handleData(Instruction currentDirective, int lineNumber)
+d371 10
+a380 2
+		//TODO if has operand then set next data address to immediate value
+		//setNextDataAddress(value)
+d385 1
+a385 1
+	private void handleHalf(Instruction currentDirective, int lineNumber)
+d387 1
+d392 1
+a392 1
+			
+d398 1
+a398 1
+	private void handleSpace(Instruction currentDirective, int lineNumber)
+d400 12
+d413 1
+a413 2
+			//store n bytes of memory @@ next_data_address, increment appropriate amount, already stored label address in symbol table if has name
+			// once finished turn off data declaration mode
+d415 1
+a415 1
+			
+d421 1
+a421 1
+	private void handleText(Instruction currentDirective, int lineNumber)
+d425 11
+a435 2
+		//TODO if has operand then set next data address to immediate value
+		//setNextDataAddress(value)
+@
+
+
+1.21
+log
+@updated to include error throwing
+@
+text
+@d347 1
+a347 1
+	private void handleByte(Instruction currentDirective, int lineNumber)
+d370 1
+a370 1
+	private void handleDouble(Instruction currentDirective)
+d373 1
+a373 1
+			//store successive fp double precision nums in memory @@ next_data_address, increment appropriate amount, already stored label address in symbol table & null terminate it if has name
+d379 4
+a382 9
+	
+	
+	
+	private void handleFloat(Instruction currentDirective)
+	{
+		// NOWAY
+	}
+		
+	private void handleHalf(Instruction currentDirective)
+d385 1
+a385 1
+			//store successive 16 bit nums in memory halfwords @@ next_data_address, increment appropriate amount, already stored label address in symbol table & null terminate it if has name
+d388 1
+a390 16
+
+	private void handleSpace(Instruction currentDirective)
+	{
+		// data section, datadeclaration mode 
+		if (data_mode /*&& data_declaration_mode*/)
+			{
+				//store n bytes of memory @@ next_data_address, increment appropriate amount, already stored label address in symbol table if has name
+				// once finished turn off data declaration mode
+				setDataDeclarationMode(false);
+			}
+		else
+			{
+				if (data_mode) 	{/* errror -> not in data declaration, missing label for string*/}
+				//else						{/* errror -> not in data section, not good idea to declare in text area*/}
+			}
+	}
+d392 3
+a394 1
+	private void handleText(Instruction currentDirective)
+d401 1
+d403 2
+d407 4
+a410 4
+	private void handleGlobl(Instruction currentDirective) {/*NOWAY*/}
+	private void handleKdata(Instruction currentDirective) {/*NOWAY*/}
+	private void handleKtext(Instruction currentDirective) {/*NOWAY*/}
+	private void handleSet(Instruction currentDirective) {/*NOWAY*/}
+d412 1
+a412 1
+}@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d58 1
+a58 1
+	private int NEXT_DATA_ADDRESS;
+a96 1
+		//iterate through code
+d117 2
+a118 4
+			symbolTable.add(currentLabel.getLabel(),NEXT_DATA_ADDRESS);
+			// nb dont increment here because the next assembler directive should indicate the size of memory to allocate
+			data_declaration_mode=true;
+			//guiMap.add(lineNumber,NEXT_DATA_ADDRESS); to label data addresses in the gui map if we want			
+d122 1
+a122 2
+			symbolTable.add(currentLabel.getLabel(),NEXT_TEXT_ADDRESS);
+			//dont increment text address as labels an instruction
+d131 1
+a131 2
+			// if dot directive
+			handleDirective(currentInstruction);
+d135 2
+a136 9
+			if (!data_mode)
+			{
+				// is normal instruction & not in data section				
+				handleGeneralInstruction(currentInstruction,lineNumber);				
+			}
+			else
+			{
+				throw new AssemblerException("Error A01 - Line "+lineNumber+": "+currentInstruction.getName()+" -  Instruction should not be within data section");
+			}
+d140 2
+a141 11
+				if (!data_mode)
+				{
+					// is 'difficult' instruction & not in data section				
+					handleSpecificInstruction(currentInstruction,lineNumber);				
+				}
+				else
+				{
+					// is specific instruction but is in data section and shouldnt be
+					// TODO throw error
+				}
+				
+a144 1
+			// is normal instruction
+d149 1
+a149 1
+			// is not instruction, pseudoinstruction or assembler directive.
+a154 2
+		// retrieve the instruction representation
+		
+a157 2
+		// loop through and translate operands accordingly
+				
+a162 1
+		//TODO record value to address in memory, 
+a163 1
+		memoryManager.setLocation(NEXT_TEXT_ADDRESS,binaryStringToInteger(machineCode));		
+d166 1
+a184 2
+		// retrieve the instruction representation
+		
+d186 1
+a186 1
+		String machineCode = instructionTable.getInstruction(currentInstruction.getName()).getMachineCodeRepresentation();
+d188 2
+a189 8
+		// loop through and translate operands accordingly
+				
+		for (int count = 0; count<currentInstruction.getOperands().size(); count++)
+		{			
+			translatedOperand = operandEncoder.handleOperand((Operand)currentInstruction.getOperands().get(count));
+			machineCode = operandEncoder.replaceOperand(translatedOperand,machineCode,count);
+		}
+		//TODO record value to address in memory, 		
+a190 2
+		guiMap.add(lineNumber,NEXT_TEXT_ADDRESS);
+		NEXT_TEXT_ADDRESS=NEXT_TEXT_ADDRESS+4;
+a195 2
+		// retrieve the instruction representation
+		
+d199 1
+a199 4
+		
+
+		// loop through and translate operands accordingly, then replace the appropriat areas of the instructions
+				
+d211 1
+a211 1
+			//TODO record values to address in memory, 					
+d219 1
+a219 1
+	private void handleDirective(Instruction currentDirective)
+d221 15
+a235 16
+		// hard code directives
+		if (currentDirective.getName().equals(ALIGN)) 				{handleAlign(currentDirective);}
+		else if (currentDirective.getName().equals(ASCII))			{handleAscii(currentDirective);}
+		else if (currentDirective.getName().equals(ASCIIZ))		{handleAsciiz(currentDirective);}
+		else if (currentDirective.getName().equals(BYTE))			{handleByte(currentDirective);}
+		else if (currentDirective.getName().equals(DATA))			{handleData(currentDirective);}
+		else if (currentDirective.getName().equals(DOUBLE))	{handleDouble(currentDirective);}
+		else if (currentDirective.getName().equals(EXTERN))	{handleExtern(currentDirective);}
+		else if (currentDirective.getName().equals(FLOAT))		{handleFloat(currentDirective);}
+		else if (currentDirective.getName().equals(GLOBL))		{handleGlobl(currentDirective);}
+		else if (currentDirective.getName().equals(HALF))			{handleHalf(currentDirective);}
+		else if (currentDirective.getName().equals(KDATA))		{handleKdata(currentDirective);}
+		else if (currentDirective.getName().equals(KTEXT))		{handleKtext(currentDirective);}
+		else if (currentDirective.getName().equals(SET))			{handleSet(currentDirective);}
+		else if (currentDirective.getName().equals(SPACE))		{handleSpace(currentDirective);}
+		else if (currentDirective.getName().equals(TEXT))			{handleText(currentDirective);}
+d238 1
+a238 1
+			// is not directive -> error shouldve been picked up by the parser
+a239 2
+		// if eg ascii , turn off data declaration mode once handled
+		
+@
+
+
+1.19
+log
+@modified to include error control
+@
+text
+@d362 1
+a362 1
+	private void handleAscii(Instruction currentDirective)
+d366 9
+a374 12
+		if (data_mode /*&& data_declaration_mode*/)
+			{
+				byte[] array = ((LabelOperand)currentDirective.getOperands().get(0)).getValue().getBytes();
+				//store label operand as string in memory @@ next_data_address, increment appropriate amount, already stored label address in symbol table if has name
+				// once finished turn off data declaration mode
+				setDataDeclarationMode(false);
+			}
+		else
+			{
+				if (data_mode) 	{/* errror -> not in data declaration, missing label for string*/}
+				//else						{/* errror -> not in data section, not good idea to declare in text area*/}
+			}
+d377 3
+a379 1
+	private void handleAsciiz(Instruction currentDirective)
+d381 5
+a385 9
+		// data section, datadeclaration mode 
+		if (data_mode /*&& data_declaration_mode*/)
+			{
+/*				for (int count = 0; count<currentDirective.getOprands().size(); count++)
+					{
+						//store
+						(Operand)currentDirective.getOprands().get(count)
+					}
+*/
+d387 1
+a387 9
+				//store label operand as string in memory @@ next_data_address, increment appropriate amount, already stored label address in symbol table & null terminate it if has name
+				// once finished turn off data declaration mode
+				setDataDeclarationMode(false);
+			}
+		else
+			{
+				if (data_mode) 	{/* errror -> not in data declaration, missing label for string*/}
+				//else						{/* errror -> not in data section, not good idea to declare in text area*/}
+			}
+d390 3
+a392 1
+	private void handleByte(Instruction currentDirective)
+d394 7
+a400 12
+		// data section, datadeclaration mode 
+		if (data_mode /*&& data_declaration_mode*/)
+			{
+				//store successive operands in memory @@ next_data_address, increment appropriate amount, already stored label address in symbol table & null terminate it if has name
+				// once finished turn off data declaration mode
+				setDataDeclarationMode(false);
+			}
+		else
+			{
+				if (data_mode) 	{/* errror -> not in data declaration, missing label for string*/}
+				//else						{/* errror -> not in data section, not good idea to declare in text area*/}
+			}
+d403 3
+a405 1
+	private void handleData(Instruction currentDirective)
+d407 1
+a407 1
+		// is data directive, turn on data mode
+d409 1
+a409 1
+		// if has operand then set next data address to immediate value
+d413 2
+d417 6
+a422 12
+		// data section, datadeclaration mode 
+		if (data_mode /*&& data_declaration_mode*/)
+			{
+				//store successive fp double precision nums in memory @@ next_data_address, increment appropriate amount, already stored label address in symbol table & null terminate it if has name
+				// once finished turn off data declaration mode
+				setDataDeclarationMode(false);
+			}
+		else
+			{
+				if (data_mode) 	{/* errror -> not in data declaration, missing label for string*/}
+				//else						{/* errror -> not in data section, not good idea to declare in text area*/}
+			}
+d425 2
+d429 1
+a429 12
+		// data section, datadeclaration mode 
+		if (data_mode /*&& data_declaration_mode*/)
+			{
+				//store successive fp precision nums in memory @@ next_data_address, increment appropriate amount, already stored label address in symbol table & null terminate it if has name
+				// once finished turn off data declaration mode
+				setDataDeclarationMode(false);
+			}
+		else
+			{
+				if (data_mode) 	{/* errror -> not in data declaration, missing label for string*/}
+				//else						{/* errror -> not in data section, not good idea to declare in text area*/}
+			}
+d434 5
+a438 12
+		// data section, datadeclaration mode 
+		if (data_mode /*&& data_declaration_mode*/)
+			{
+				//store successive 16 bit nums in memory halfwords @@ next_data_address, increment appropriate amount, already stored label address in symbol table & null terminate it if has name
+				// once finished turn off data declaration mode
+				setDataDeclarationMode(false);
+			}
+		else
+			{
+				if (data_mode) 	{/* errror -> not in data declaration, missing label for string*/}
+				//else						{/* errror -> not in data section, not good idea to declare in text area*/}
+			}
+d459 1
+a459 1
+		// is a text directive, turn off data mode
+d461 1
+a461 1
+		// if has operand then set next data address to immediate value
+d465 2
+a466 2
+	private void handleAlign(Instruction currentDirective) {/*NOWAY*/}
+	private void handleExtern(Instruction currentDirective) {/*NOWAY*/}
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d94 1
+a94 1
+	public void assembleCode(LineList code)
+d131 1
+a131 1
+	private void handleInstruction(Instruction currentInstruction, int lineNumber)
+d147 1
+a147 2
+				// is normal instruction but is in data section and shouldnt be
+				// TODO throw error
+d287 75
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d351 1
+a351 1
+	}			
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@a6 1
+
+d96 1
+d102 7
+a108 1
+			identifyLine(code.getLine(thisLine));
+a112 16
+	
+	private void identifyLine(Line currentLine)
+	{
+		if (currentLine.containLabel())
+		{
+			handleLabel(currentLine.getLabel(),currentLine.getLineNumber());
+		}
+		if (currentLine.containsInstruction())
+		{
+			handleInstruction(currentLine.getInstruction(),currentLine.getLineNumber());
+		}
+		else
+		{
+			System.out.println("error -> empty line");
+		}
+	}
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@a93 20
+	public static void main(String[] argv)
+	{
+		Assembler a = new Assembler(argv[0],null);
+		a.testAssembler();
+	}
+
+	public void testAssembler()
+	{
+		//test code for loading the instruction table
+	
+		if (instructionTable.isInstruction("add"))
+			{
+				System.out.println(instructionTable.getInstruction("add").getName() + " " +
+												instructionTable.getInstruction("add").getMachineCodeRepresentation());			
+			}
+		else {System.out.println("false");}
+	
+		//test code to handle an instruction
+	}
+
+d107 1
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d58 1
+a58 1
+	private int NEXT_TEXT_ADDRESS = 400000;
+d232 1
+a232 1
+		for (int count = binaryString.length()-1; count==0; count--)
+@
+
+
+1.13
+log
+@updated handling of general instruction
+@
+text
+@d139 1
+a139 1
+			// error -> empty line
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d118 1
+a118 1
+		thisLine = 0;
+d120 1
+a120 1
+		while (thisLine<maxLine)
+@
+
+
+1.11
+log
+@added debugging code
+@
+text
+@a121 1
+			System.out.println("investigating line");
+a134 1
+			System.out.println("investigating instruction");
+d139 1
+a139 1
+			System.out.println("error -> empty line");
+a170 1
+				System.out.println("am in text section");
+d214 1
+a214 1
+		for (int count = 0; count<currentInstruction.getOprands().size(); count++)
+d216 1
+a216 1
+			translatedOperand = operandEncoder.handleOperand((Operand)currentInstruction.getOprands().get(count));
+d249 1
+a249 1
+		for (int count = 0; count<currentInstruction.getOprands().size(); count++)
+d251 1
+a251 1
+			translatedOperand = operandEncoder.handleOperand((Operand)currentInstruction.getOprands().get(count));
+d272 1
+a272 1
+		for (int count = 0; count<currentInstruction.getOprands().size(); count++)
+d274 1
+a274 1
+			translatedOperand = operandEncoder.handleOperand((Operand)currentInstruction.getOprands().get(count));
+d323 1
+a323 1
+				byte[] array = ((LabelOperand)currentDirective.getOprands().get(0)).getValue().getBytes();
+@
+
+
+1.10
+log
+@added ability to translate address and contents
+@
+text
+@d122 1
+d136 1
+d141 1
+a141 1
+			// error -> empty line
+d173 1
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@a2 3
+import java.nio.charset.Charset;
+import java.nio.charset.CharsetEncoder;
+
+d58 1
+a58 1
+	private int NEXT_TEXT_ADDRESS;
+d60 3
+d64 1
+a64 1
+	public Assembler(String xmlFilePath, MemoryManagerInterface memoryManager)
+d88 4
+d104 1
+a104 1
+		if (instructionTable.isInstruction("lui"))
+d106 2
+a107 2
+				System.out.println(instructionTable.getInstruction("lui").getName() + " " +
+												instructionTable.getInstruction("lui").getMachineCodeRepresentation());			
+d219 4
+a222 1
+		//TODO record value to address in memory, 		
+d226 12
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d111 1
+a111 1
+	private void assembleCode(LineList code)
+d123 1
+a123 1
+	public void identifyLine(Line currentLine)
+@
+
+
+1.7
+log
+@changed assembler.java to handle all directives, handlers not yet implemented
+@
+text
+@d123 1
+a123 1
+	private void identifyLine(Line currentLine)
+@
+
+
+1.6
+log
+@corrected typo
+@
+text
+@d3 3
+d28 4
+a31 1
+	private static String TEXT = ".text";
+d33 11
+d275 15
+a289 4
+		if (currentDirective.getName().equals(TEXT)) 		{handleText(currentDirective);}
+		else if (currentDirective.getName().equals(DATA))	{handleData(currentDirective);}
+		// list all the current directives here
+
+d292 1
+a292 1
+			// another directive
+d298 42
+a339 1
+	private void handleText(Instruction currentDirective)
+d341 12
+a352 2
+		// is a text directive, turn off data mode
+		setDataMode(false);
+d354 1
+a354 1
+
+d359 2
+d363 17
+a379 2
+	/* general template
+	private void handleADirective(Instruction currentDirective)
+d381 28
+a408 3
+		// 1 check whether mode is allowed
+		//    if so, handle
+		//    if not throw error
+d410 32
+a441 1
+	*/
+@
+
+
+1.5
+log
+@Corrected errors, now works
+@
+text
+@d195 1
+a195 1
+			translatedOperand = operandEncoder.handleOperand((Oprand)currentInstruction.getOprands().get(count));
+d215 1
+a215 1
+			translatedOperand = operandEncoder.handleOperand((Oprand)currentInstruction.getOprands().get(count));
+d238 1
+a238 1
+			translatedOperand = operandEncoder.handleOperand((Oprand)currentInstruction.getOprands().get(count));
+@
+
+
+1.4
+log
+@Updated the assembler and operand encoder to include assembler directives and
+the approproate operand classes
+@
+text
+@d73 6
+d279 1
+a279 1
+		setDataMode(true)
+@
+
+
+1.3
+log
+@Restructured the assembler jkm
+@
+text
+@d23 4
+a26 4
+
+	// assembler directives
+	private static String TEXT_DIRECTIVE = ".text";
+	private static String DATA_DIRECTIVE = ".data";
+d41 1
+d70 1
+a72 1
+
+d100 1
+a100 1
+	public void identifyLine(Line currentLine)
+d106 1
+a106 1
+		else if (currentLine.containsInstruction())
+d116 1
+a116 1
+	public void handleLabel(Label currentLabel,int lineNumber)
+d120 4
+a123 4
+			//guiMap.add(lineNumber,NEXT_DATA_ADDRESS); to label data addresses in the gui map if we want
+
+			//TODO read next section and work out how much memory to assign and how far to advance the memory location
+			
+d125 1
+a125 1
+		else
+d133 1
+a133 1
+	public void handleInstruction(Instruction currentInstruction, int lineNumber)
+d177 2
+a178 21
+	
+	public void handleDirective(Instruction currentDirective)
+	{
+		// hard code directives
+		if (currentDirective.getName().equals(TEXT_DIRECTIVE))
+		{
+			// is a text directive, turn off data mode
+			data_mode=false;
+		}
+		else if (currentDirective.getName().equals(DATA_DIRECTIVE))
+		{
+			// is data directive, turn on data mode
+			data_mode=true;
+		}
+		else
+		{
+			// another directive
+		}
+	}
+	
+	public void handleGeneralInstruction(Instruction currentInstruction, int lineNumber)
+d198 1
+a198 1
+	public void handleSpecificInstruction(Instruction currentInstruction, int lineNumber)
+d219 1
+a219 1
+	public void handlePseudoInstruction(Instruction currentInstruction,int lineNumber)
+d246 17
+d264 5
+d270 5
+d276 8
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d4 1
+d33 1
+d36 3
+d46 1
+a46 1
+	public Assembler(String xmlFilePath)
+d56 1
+d58 5
+d64 2
+a65 2
+		// fill instruction table with data
+		AssemblerXMLHandler.LoadTableFromXML(xmlFilePath,instructionTable,pseudoInstructionTable);
+d87 1
+a87 1
+	private void assembleCode(InstructionList code)
+a116 1
+		symbolTable.add(currentLabel.getLabel(),NEXT_TEXT_ADDRESS);
+d119 4
+a122 1
+			guiMap.add(lineNumber,NEXT_DATA_ADDRESS);
+d126 1
+d143 1
+a143 1
+				// is normal instruction & not in data section
+d152 14
+d176 1
+a176 1
+
+d207 2
+a208 2
+			translatedOperand = handleOperand((Oprand)currentInstruction.getOprands().get(count));
+			machineCode = replaceOperand(translatedOperand,machineCode,count);
+d216 1
+a216 1
+	public String replaceOperand(String translatedOperand, String machineCode, int operandNumber)
+d218 11
+a228 8
+		char oprep = alphaNumericOperandNumber(operandNumber);
+		int firstOccurrance = machineCode.indexOf(oprep);
+		int lastOccurrance = machineCode.lastIndexOf(oprep);
+		int substituteLength = lastOccurrance-firstOccurrance+1;
+		String replaceString = "";
+		for (int count = 0; count<substituteLength; count++)
+		{
+			replaceString = replaceString+oprep;
+d230 4
+a233 1
+		return machineCode.replaceAll(replaceString,translatedOperand);	
+a235 12
+	public char alphaNumericOperandNumber(int number)
+	{
+		switch (number)
+		{
+			case 1	:	{return 'a';}
+			case 2	:	{return 'b';}
+			case 3	:	{return 'c';}
+			case 4	:	{return 'd';}
+			case 5	:	{return 'e';}			
+		}
+		return 'z';
+	}
+d250 1
+a250 1
+			translatedOperand = handleOperand((Oprand)currentInstruction.getOprands().get(count));
+d253 1
+a253 1
+				codeInstructions[subcount] = replaceOperand(translatedOperand,codeInstructions[subcount],count);				
+d263 1
+d265 1
+a265 10
+	public String handleOperand(Oprand currentOperand)
+	{
+		if (currentOperand instanceof RegisterOprand) 					{return handleRegisterOperand((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof RegisterOprand)	 			{return handleImmediateOperand((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof RegisterOprand)				{return handleImmediateRegisterOperand((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof RegisterOprand)				{return handleLabelOperand((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof RegisterOprand)				{return handleLabelImmediate((RegisterOprand)currentOperand);}
+		else if (currentOperand instanceof RegisterOprand)				{return handleLabelImmediateRegister((RegisterOprand)currentOperand);}
+		else															{/*invalid operand - should have been checked*/return "";}		
+	}
+a266 35
+	public String handleRegisterOperand(RegisterOprand currentOperand)
+	{
+		return "";
+	}
+	
+	public String handleImmediateOperand(RegisterOprand currentOperand)
+	{
+		//ImmediateOprand
+		return "";
+	}
+
+	public String handleImmediateRegisterOperand(RegisterOprand currentOperand)
+	{
+		//ImmediateRegisterOprand 
+		return "";
+	}
+
+	public String handleLabelOperand(RegisterOprand currentOperand)
+	{
+		//LabelOprand
+		return "";
+	}
+
+	public String handleLabelImmediate(RegisterOprand currentOperand)
+	{
+		//LabelImmediateOprand 
+		return "";
+	}
+
+	public String handleLabelImmediateRegister(RegisterOprand currentOperand)
+	{
+		//LabelImmediateRegisterOprand 
+		return "";
+	}
+
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d3 4
+a6 1
+import java.util.Map;
+d8 1
+d23 4
+a27 1
+	private InstructionTable instructionTable; //holds records of all the current instructions supported by this system
+d30 3
+d35 5
+a39 3
+	boolean data_mode;
+	int line_number;
+	int max_line_number;
+d50 2
+d54 1
+a54 1
+		AssemblerXMLHandler.LoadTableFromXML(xmlFilePath,instructionTable);
+a57 2
+		line_number = 0;
+		max_line_number=0;
+d68 1
+a68 2
+												instructionTable.getInstruction("lui").getMachineCodeRepresentation() + " " +
+												instructionTable.getInstruction("lui").getInstructionType() + " ");			
+d76 1
+a76 1
+	private void assembleCode(Map instructionMap)
+d78 8
+a85 15
+		line_number=0;
+		max_line_number = instructionMap.size();
+		while (line_number<max_line_number)
+			{
+				handleNode((Instruction)instructionMap.get(new Integer(line_number)));
+				line_number++;
+			}
+		// continue to go through instructions while there are still some available within the instruction map
+		
+		int action_number=0;
+		int maximum_actions=toBeDoneTable.requiredActions();
+		while (action_number<maximum_actions)
+			{
+				carryOutAction(toBeDoneTable.get(action_number));
+			}
+d88 17
+a104 3
+	// first phase handlers
+
+	private void handleNode(Instruction currentInstruction)
+d106 11
+a116 1
+		//determines what type of node this program line is and passes responsibility to appropriate handlers
+d118 10
+a127 9
+		if (instructionTable.isInstruction(currentInstruction.getInstructionName()))
+			{
+				handleInstructionTag(currentInstruction);
+			}
+		else if (currentInstruction.getInstructionName().equals(AssemblerTags.DATA_TAG))
+			{
+				handleDataTag(currentInstruction);
+			}
+		else if (currentInstruction.getInstructionName().equals(AssemblerTags.TEXT_TAG))
+d129 2
+a130 1
+				handleTextTag(currentInstruction);
+d132 1
+a132 1
+		else if (isValidLabel(currentInstruction.getInstructionName()))
+d134 2
+a135 1
+				handleLabelTag(currentInstruction);
+d137 6
+d144 3
+a146 3
+			{
+				System.out.println("Error - this instruction is invalid, but should have been picked up by parser, possible source of error is label used is not valid");
+			}
+d149 1
+a149 1
+	private boolean isValidLabel(String label)
+d151 15
+a165 3
+		// checks whether the label provided is a valid label
+		// nb this should have been picked up by the parser function
+		return true;
+d167 7
+d175 14
+a188 1
+	private void handleDataTag(Instruction currentInstruction)
+d190 10
+a199 2
+		data_mode=true;
+		System.out.println("Encountered data tag, setting data section flag to true");
+d202 1
+a202 1
+	private void handleTextTag(Instruction currentInstruction)
+d204 9
+a212 2
+		data_mode=false;
+		System.out.println("Encountered text tag, setting data section tag to false");
+d215 15
+a229 4
+	private void handleLabelTag(Instruction currentInstruction)
+	{	
+		System.out.println("Encountered label tag, assembling");
+		if (data_mode)
+d231 1
+a231 7
+				//symbolTable.add this node with next_data_address
+			
+				// if next node = .word or other structure-> assign bytes, increment data addresses accordingly	
+			}
+		else 
+			{	
+				//symbolTable.add this node with next text address	
+d233 41
+d276 1
+a276 1
+	private void handleInstructionTag(Instruction currentInstruction)
+d278 2
+a279 1
+		System.out.println("Encountered instruction, assembling");
+d282 1
+a282 3
+	// secondphase handlers
+	
+	private void carryOutAction(ToBeDoneRow t)
+d284 2
+a285 1
+		System.out.println("Given a row update from TBDONE table to carry out");
+@
+

@@ -1,0 +1,240 @@
+head	1.8;
+access;
+symbols
+	yams-final-19-12-03:1.8
+	yams-release2-17-12-03:1.7
+	yams-release-17-12-03:1.7;
+locks; strict;
+comment	@# @;
+
+
+1.8
+date	2003.12.19.07.11.52;	author sw00;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.15.21.00.35;	author sw00;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.10.13.48.22;	author sw00;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.10.08.26.55;	author sw00;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.08.17.59.55;	author sw00;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.21.13.16.15;	author sw00;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.12.11.52.02;	author sw00;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.50;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.8
+log
+@javadoc
+@
+text
+@/*
+ * Created on 30-Oct-2003
+ *
+ */
+package yams.processor;
+import java.io.PrintStream;
+
+/**
+ * Interface for the cycle manager
+ * @@author sw00
+ *
+ */
+public interface CycleManagerInterface {
+	
+	/**
+	 * Start the processor
+	 */
+	public void start();
+ 
+	/**
+	 * Stop the processor after the current cycle finishes executing
+	 */
+	public void stop();
+
+	/**
+	 * When stopped, execute the next instruction 
+	 */
+	public void advance();
+	
+	/**
+	 * When stopped, skip the next instruction
+	 */
+	public void skip();
+	
+	/**
+	 * When stopped, jump to instruction at address
+	 * @@param address
+	 */
+	public void jump(int address);
+	
+	/**
+	 * Set breakpoint on instruction
+	 * @@param address of instruction
+	 */
+	public void setBreakpoint(int address);
+		
+	/**
+	 * Clear breakpoint on instruction
+	 * @@param address of instruction
+	 */
+	public void clearBreakpoint(int address);
+	
+	
+	/**
+	 * Indicates whether a syscall exit has been executed
+	 * @@return finished executing
+	 */
+	public boolean hasFinished();
+	
+	/**
+	 * Call when a syscall exit is been executed 
+	 */
+	public void finish();
+	
+	/**
+	 * Resets the finished executing flag
+	 */
+	public void resetFinished();
+	
+	/**
+	 * Reset the cycle manager flags
+	 */
+	public void reset();
+	
+
+	/**
+	 * Sets the verbose PrintStream
+	 * @@param verbose
+	 */
+	public void setVerbose(PrintStream verbose);
+	
+}
+@
+
+
+1.7
+log
+@added setVerbose(PrintStream)
+@
+text
+@d53 1
+d55 2
+a56 1
+	 * Returns true is a syscall exit has been executed 
+d75 5
+a79 1
+	/* Sets the verbose PrintStream */
+@
+
+
+1.6
+log
+@added reset
+@
+text
+@d6 1
+d72 3
+@
+
+
+1.5
+log
+@added method to clear finished flag
+@
+text
+@d67 5
+@
+
+
+1.4
+log
+@added finished methods
+@
+text
+@d62 5
+@
+
+
+1.3
+log
+@added breakpoint support
+@
+text
+@a24 5
+	 * Terminate the simulation after the current cycle finishes executing
+	 */
+	public void terminate();
+	
+	/**
+d51 10
+@
+
+
+1.2
+log
+@added javadoc comments
+@
+text
+@d44 13
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d8 1
+d14 3
+a17 1
+	// start the processor
+d19 3
+a22 1
+	// stop the processor after the current cycle finishes executing
+d24 3
+d28 4
+a31 3
+	// terminate the simulation after the current cycle finishes
+	//  executing
+
+a32 1
+	// when stopped, execute the next instruction
+d34 3
+a37 1
+	// when stopped, skip the next instruction
+d39 4
+a43 1
+	// when stopped, jump to address
+@
+

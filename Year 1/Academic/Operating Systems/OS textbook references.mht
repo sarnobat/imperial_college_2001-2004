@@ -1,0 +1,415 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: =?Windows-1252?Q?Stuff_we=92ve_covered_in_my_1/2:?=
+Date: Thu, 14 Mar 2002 16:36:41 -0000
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.doc.ic.ac.uk/~jamm/teaching/stuff.html
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4910.0300
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns=3D"http://www.w3.org/TR/REC-html40" xmlns:o =3D=20
+"urn:schemas-microsoft-com:office:office" xmlns:w =3D=20
+"urn:schemas-microsoft-com:office:word"><HEAD><TITLE>Stuff we=92ve =
+covered in my 1/2:</TITLE>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type>
+<META content=3DWord.Document name=3DProgId>
+<META content=3D"MSHTML 5.00.3502.4373" name=3DGENERATOR>
+<META content=3D"Microsoft Word 9" name=3DOriginator><LINK=20
+href=3D"./Stuff_files/filelist.xml" rel=3DFile-List><!--[if gte mso =
+9]><xml>
+ <o:DocumentProperties>
+  <o:Author>jamm</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>jamm</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>102</o:TotalTime>
+  <o:Created>2002-03-14T13:35:00Z</o:Created>
+  <o:LastSaved>2002-03-14T13:56:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>275</o:Words>
+  <o:Characters>1568</o:Characters>
+  <o:Company>DSE Group, Dept. of Computing, Imperial College</o:Company>
+  <o:Lines>13</o:Lines>
+  <o:Paragraphs>3</o:Paragraphs>
+  <o:CharactersWithSpaces>1925</o:CharactersWithSpaces>
+  <o:Version>9.4402</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<STYLE>@font-face {
+	font-family: Wingdings;
+}
+P.MsoNormal {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN: 0cm 0cm 0pt; =
+mso-style-parent: ""; mso-pagination: widow-orphan; =
+mso-fareast-font-family: "Times New Roman"
+}
+LI.MsoNormal {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN: 0cm 0cm 0pt; =
+mso-style-parent: ""; mso-pagination: widow-orphan; =
+mso-fareast-font-family: "Times New Roman"
+}
+DIV.MsoNormal {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 12pt; MARGIN: 0cm 0cm 0pt; =
+mso-style-parent: ""; mso-pagination: widow-orphan; =
+mso-fareast-font-family: "Times New Roman"
+}
+H1 {
+	FONT-FAMILY: Arial; FONT-SIZE: 16pt; MARGIN: 12pt 0cm 3pt; =
+mso-pagination: widow-orphan; mso-style-next: Normal; mso-outline-level: =
+1; mso-font-kerning: 16.0pt
+}
+H2 {
+	FONT-FAMILY: Arial; FONT-SIZE: 14pt; FONT-STYLE: italic; MARGIN: 12pt =
+0cm 3pt; mso-pagination: widow-orphan; mso-style-next: Normal; =
+mso-outline-level: 2
+}
+P.MsoBodyText {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10pt; MARGIN: 0cm 0cm 0pt; =
+TEXT-ALIGN: center; mso-pagination: widow-orphan; =
+mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt
+}
+LI.MsoBodyText {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10pt; MARGIN: 0cm 0cm 0pt; =
+TEXT-ALIGN: center; mso-pagination: widow-orphan; =
+mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt
+}
+DIV.MsoBodyText {
+	FONT-FAMILY: "Times New Roman"; FONT-SIZE: 10pt; MARGIN: 0cm 0cm 0pt; =
+TEXT-ALIGN: center; mso-pagination: widow-orphan; =
+mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt
+}
+DIV.Section1 {
+	page: Section1
+}
+OL {
+	MARGIN-BOTTOM: 0cm
+}
+UL {
+	MARGIN-BOTTOM: 0cm
+}
+</STYLE>
+</HEAD>
+<BODY lang=3DEN-GB style=3D"tab-interval: 36.0pt">
+<DIV class=3DSection1>
+<H1 align=3Dcenter style=3D"TEXT-ALIGN: center">Stuff we=92ve covered in =
+my part and=20
+<SPAN style=3D"COLOR: red">outline</SPAN> references to where you could =
+read to=20
+learn more:</H1>
+<P class=3DMsoBodyText>(<I><SPAN style=3D"COLOR: =
+red">get-out-clause</SPAN></I>:=20
+this is not an indication of what=92s coming up in an exam, nor will =
+limiting=20
+yourself to this guarantee you passing this exam)</P>
+<P class=3DMsoNormal><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=3DMsoNormal>Overview of Operating systems</P>
+<P class=3DMsoNormal><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l3 level1 =
+lfo2; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Important part is WHY bother? VM, resource =
+manager,=20
+security etc</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l3 level1 =
+lfo2; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Organisation of the OS</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l3 level1 =
+lfo2; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Protection etc <SPAN style=3D"COLOR: blue">(chap =
+4 Tan=92m=20
+p261)</SPAN></P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l3 level1 =
+lfo2; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>History, Layers, hierarchy, modules, =
+components</P>
+<P class=3DMsoNormal style=3D"MARGIN-LEFT: 216pt"><SPAN style=3D"COLOR: =
+red">Chapter 2=20
+of Stallings, </SPAN><SPAN style=3D"COLOR: fuchsia">chap 1 of =
+Nutt,</SPAN><SPAN=20
+style=3D"COLOR: blue"> (chap 1 Tan=92m)<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l3 level1 =
+lfo2; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"COLOR: fuchsia; FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Abstraction <SPAN style=3D"COLOR: =
+red">(Stallings 74 or=20
+there about, look up virtual machine) </SPAN><SPAN style=3D"COLOR: =
+fuchsia">(1.1=20
+of Nutt) </SPAN><SPAN style=3D"COLOR: blue">(chap 1 Tan=92m =
+p3)</SPAN><SPAN=20
+style=3D"COLOR: fuchsia"><o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=3DMsoNormal>Fetch Execute Cycle</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 90pt; TEXT-INDENT: -18pt; mso-list: l2 level1 =
+lfo4; tab-stops: list 90.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>With jumps and testing <SPAN style=3D"COLOR: =
+red">(14-20=20
+in Stallings) (</SPAN><SPAN style=3D"COLOR: fuchsia">74, 85, 89, 131=20
+Nutt</SPAN><SPAN style=3D"COLOR: red">)</SPAN><SPAN style=3D"COLOR: =
+blue"> (chap 1=20
+Tan=92m)</SPAN></P>
+<P class=3DMsoNormal><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=3DMsoNormal>Input/Output</P>
+<P class=3DMsoNormal><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l2 level1 =
+lfo4; tab-stops: list 72.0pt 90.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Memory mapped IO (<SPAN style=3D"COLOR: =
+fuchsia">93,=20
+101-102, 133, 591 in Nutt</SPAN>)<SPAN style=3D"COLOR: blue"> (chap 5 =
+Tan=92m=20
+272-276)</SPAN></P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l2 level1 =
+lfo4; tab-stops: list 72.0pt 90.0pt"><![if !supportLists]><SPAN=20
+style=3D"COLOR: red; FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Caching hierarchy (processor, memory) <SPAN=20
+style=3D"COLOR: red">(31-35, 559 in Stallings) (</SPAN><SPAN=20
+style=3D"COLOR: fuchsia">311-315 Nutt</SPAN><SPAN=20
+style=3D"COLOR: red">)<o:p></o:p></SPAN></P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l2 level1 =
+lfo4; tab-stops: list 72.0pt 90.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Direct Memory Access (DMA) (<SPAN=20
+style=3D"COLOR: red">pp477-480 Stallings</SPAN>) (<SPAN=20
+style=3D"COLOR: fuchsia">pp202-204 Nutt</SPAN>)<SPAN style=3D"COLOR: =
+blue"> (chap 5=20
+Tan=92m 276-279)</SPAN></P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l2 level1 =
+lfo4; tab-stops: list 72.0pt 90.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Polling (<SPAN style=3D"COLOR: red">p19 =
+Stallings</SPAN>)=20
+<SPAN style=3D"COLOR: blue">(chap 5 Tan=92m p285)</SPAN></P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l2 level1 =
+lfo4; tab-stops: list 72.0pt 90.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Interrupts <SPAN style=3D"COLOR: red">( pp19-27, =
+136=20
+Stallings</SPAN>) (<SPAN style=3D"COLOR: fuchsia">pp102-104, 85-100=20
+Nutt</SPAN>)<SPAN style=3D"COLOR: blue"> (chap 5 Tan=92m =
+279-282)</SPAN></P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l2 level1 =
+lfo4; tab-stops: list 72.0pt 90.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>How to write a device driver. (+read <SPAN=20
+style=3D"COLOR: red">p88 Stallings</SPAN>) (<SPAN style=3D"COLOR: =
+fuchsia">108-112=20
+Nutt</SPAN>)<SPAN style=3D"COLOR: blue"> (chap 5 Tan=92m 293)</SPAN></P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l2 level1 =
+lfo4; tab-stops: list 72.0pt 90.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Multiple devices (<SPAN style=3D"COLOR: =
+red">chap 11=20
+stallings</SPAN>) (<SPAN style=3D"COLOR: fuchsia">108-112 =
+Nutt</SPAN>)<SPAN=20
+style=3D"COLOR: blue"> (chap 5 Tan=92m) </SPAN>just a general read</P>
+<P class=3DMsoNormal><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=3DMsoNormal>Processes &amp; Concurrency (<SPAN style=3D"COLOR: =
+red">all of=20
+Part 2 in Stallings i.e. chap 3-6</SPAN>), (<SPAN style=3D"COLOR: =
+fuchsia">chap 8=20
+in Nutt</SPAN>)<SPAN style=3D"COLOR: blue"> (chap 2 Tan=92m, 2.1, 2.3,=20
+2.5)</SPAN></P>
+<P class=3DMsoNormal><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l0 level1 =
+lfo6; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>What is a process? Code, data and state!! </P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l0 level1 =
+lfo6; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>States!!</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l0 level1 =
+lfo6; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Non-determinism </P>
+<P class=3DMsoNormal style=3D"MARGIN-LEFT: 36pt"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l0 level1 =
+lfo6; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>What does concurrency entail?</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l0 level1 =
+lfo6; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Sharing resources/data</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l0 level1 =
+lfo6; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Synchronisation of processes</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l0 level1 =
+lfo6; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Communication between processes</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l0 level1 =
+lfo6; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Locks, semaphores and monitors</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l0 level1 =
+lfo6; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Deadlock</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l0 level1 =
+lfo6; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN><![endif]>Scheduling</P>
+<P class=3DMsoNormal style=3D"MARGIN-LEFT: 36pt"><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H2><SPAN style=3D"BACKGROUND: yellow; mso-highlight: yellow">1st years=20
+only</SPAN></H2>
+<P class=3DMsoNormal>Memory Management<SPAN style=3D"COLOR: blue"> (chap =
+4 Tan=92m 4.1=20
+to 4.6, 4.8)</SPAN></P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l1 level1 =
+lfo8; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=A8<SPAN=20
+style=3D"FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; =
+</SPAN></SPAN><![endif]>Store allocation</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l1 level1 =
+lfo8; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=A8<SPAN=20
+style=3D"FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; =
+</SPAN></SPAN><![endif]>Virtual addressing</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l1 level1 =
+lfo8; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=A8<SPAN=20
+style=3D"FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; =
+</SPAN></SPAN><![endif]>Swapping</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l1 level1 =
+lfo8; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=A8<SPAN=20
+style=3D"FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; =
+</SPAN></SPAN><![endif]>Virtual memory/paging</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l1 level1 =
+lfo8; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=A8<SPAN=20
+style=3D"FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; =
+</SPAN></SPAN><![endif]>Associative store</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l1 level1 =
+lfo8; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=A8<SPAN=20
+style=3D"FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; =
+</SPAN></SPAN><![endif]>Segmentation</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l1 level1 =
+lfo8; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=A8<SPAN=20
+style=3D"FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; =
+</SPAN></SPAN><![endif]>Data placement algorithms</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l1 level1 =
+lfo8; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=A8<SPAN=20
+style=3D"FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; =
+</SPAN></SPAN><![endif]>Replacement algorithms (just the ones we mention =
+in=20
+slides)</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l1 level1 =
+lfo8; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=A8<SPAN=20
+style=3D"FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; =
+</SPAN></SPAN><![endif]>Fetch policies</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l1 level1 =
+lfo8; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=A8<SPAN=20
+style=3D"FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; =
+</SPAN></SPAN><![endif]>Thrashing</P>
+<P class=3DMsoNormal=20
+style=3D"MARGIN-LEFT: 72pt; TEXT-INDENT: -18pt; mso-list: l1 level1 =
+lfo8; tab-stops: list 72.0pt"><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol">=A8<SPAN=20
+style=3D"FONT: 7pt 'Times New Roman'">&nbsp;&nbsp;&nbsp;&nbsp; =
+</SPAN></SPAN><![endif]>Working set (briefly)</P>
+<P=20
+class=3DMsoNormal><![if =
+!supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P></DIV></BODY></HTML>

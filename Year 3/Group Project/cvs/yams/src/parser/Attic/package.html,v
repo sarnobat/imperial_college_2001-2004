@@ -1,0 +1,48 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.11.10.10.57.51;	author qq01;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.08.17.39.26;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@Updated package structure.
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+</head>
+<body>
+Provides functions for parsing user program inputs, gives lexical and syntatic errors. Generates a <code>
+InstructionList</code>
+
+@@author Qian Qiao(qq01) & Sridhar Sarnobat(ss401)
+</body>
+</html>
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@@
+

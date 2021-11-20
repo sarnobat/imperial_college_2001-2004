@@ -1,0 +1,151 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><meta content="Website XSL Stylesheet V2.4.1" name="generator"><link rel="home" href="index.html" title="Welcome to DB2LaTeX"><link rel="up" href="index.html" title="Welcome to DB2LaTeX"><link rel="previous" href="using.html" title="Using DB2LaTeX"><link rel="next" href="" title="Reference"><link rel="first" href="whatis.html" title="What is DB2LaTeX?"><link rel="last" href="biblio.html" title="Bibliography"><link rel="icon" href="graphics/rarrow.gif" type="image/gif"><link href="db2latex.css" rel="stylesheet" type="text/css">
+    <title>Customizing the Stylesheets</title>
+    
+    
+  </head><body class="website" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="webpage"><a name="customize"></a><div class="navhead"><p><a href="index.html"><img border="0" align="left" src="graphics/db2latex_home.png" alt="Banner"></a> | <a href="whatis.html">What is DB2LaTeX?</a> | <a href="install.html">Installing the Stylesheets</a> | <a href="quickstart.html">QuickStart Using DB2LaTeX</a> | <a href="using.html">Using DB2LaTeX</a> | Customization <img border="0" src="graphics/navicons/triangle/current/pointer.gif" width="12" height="12" alt="*" align="middle" /> | <a href="reference/">Reference</a> | <a href="qanda.html">FAQ</a> | <a href="developer.html">Developer Information</a> | <a href="bugs.html">Known Bugs</a> | <a href="credits.html">Credits</a> | <a href="legalnotice.html">Copyright and Warranty</a> | <a href="biblio.html">Bibliography</a><br></p><hr></div><h1>Customizing the Stylesheets</h1><div class="sect1" lang="en"><div class="titlepage"><div><h2 class="title" style="clear: both"><a name="N400019"></a>Introduction</h2></div></div><p>By adding a XSL customization layer on top of DB2LaTeX, you can
+    tweak its behaviour to suit your needs. The steps to do this are the
+    following:</p><div class="procedure"><ol type="1"><li><p>Create an XSL file that imports the main DB2LaTeX
+        stylesheet.</p></li><li><p>Override XSL variables and XSL templates in your file.</p></li><li><p>Process your DocBook source document with your favourite XSL
+        processor.</p></li></ol></div><div class="sect2" lang="en"><div class="titlepage"><div><h3 class="title"><a name="N40002B"></a>Using an XML entity and URI resolver</h3></div></div><p>
+        The use of resolvers is beyond the scope of DB2LaTeX but can be
+        important for efficient use of XSLT. For most users, the two main
+        benefits are the ability to convert other people's file paths to
+        local file paths and to convert remote URLs to local file paths.
+      </p><p><b>References.&nbsp;</b><div class="itemizedlist"><ul type="disc"><li><a href="http://wwws.sun.com/software/xml/developers/resolver/article/" target="_top">Sun Developer Connection: XML Entity and URI Resolvers</a></li><li><a href="http://www.sagehill.net/xml/docbookxsl/Catalogs.html" target="_top">Using the DocBook XSL Stylesheets: XML catalogs</a></li></ul></div></p></div></div><div class="sect1" lang="en"><div class="titlepage"><div><h2 class="title" style="clear: both"><a name="N40003E"></a>Create a XSL file that imports the main DB2LaTeX
+      stylesheet</h2></div></div><p>Create a text file, e.g. 
+      <tt>mydb2latex.xsl</tt>, like this:</p><pre class="programlisting">
+&lt;?xml version='1.0'?&gt;
+&lt;xsl:stylesheet 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    version='1.0'&gt;
+
+    &lt;xsl:import href="/path/to/the/db2latex/xsl/docbook.xsl"/&gt;
+
+        &lt;!-- put your customizations here --&gt;
+
+&lt;/xsl:stylesheet&gt;
+</pre></div><div class="sect1" lang="en"><div class="titlepage"><div><h2 class="title" style="clear: both"><a name="N40004A"></a>A simple example</h2></div></div><p>In this first example, we will override DB2LaTeX default LaTeX
+    preamble to output our own :</p><pre class="programlisting">
+&lt;?xml version='1.0'?&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version='1.0'&gt;
+&lt;xsl:import href="path/to/db2latex/xsl/docbook.xsl"/&gt;
+&lt;xsl:output method="text" encoding="ISO-8859-1" indent="yes"/&gt;
+
+&lt;xsl:variable name="latex.override"&gt;
+&lt;xsl:text&gt;\documentclass[pdftex,english,a4paper,10pt]{article}&amp;#10;&lt;/xsl:text&gt;
+&lt;xsl:text&gt;\usepackage[pdftex,bookmarksnumbered,colorlinks,backref, bookmarks, breaklinks, linktocpage]{hyperref}&amp;#10;&lt;/xsl:text&gt;
+&lt;xsl:text&gt;\usepackage[pdftex]{graphicx}&amp;#10;&lt;/xsl:text&gt;
+&lt;xsl:text&gt;\usepackage{isolatin1}&amp;#10;&lt;/xsl:text&gt;
+&lt;xsl:text&gt;\pdfcompresslevel=9&amp;#10;&lt;/xsl:text&gt;
+&lt;/xsl:variable&gt;
+&lt;/xsl:stylesheet&gt;
+</pre><div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Warning"><tr><td valign="top" align="center" rowspan="2" width="25"><img alt="[Warning]" src="images/warning.gif"></td><th align="left">Warning</th></tr><tr><td valign="top" align="left" colspan="2"><p>You should not normally need or want to override the DB2LaTeX preamble.
+      Normally, it should be sufficient for you to override other parameters.</p></td></tr></table></div><p>
+      This simple example demonstrated the &ldquo;driver file&rdquo; syntax,
+      including import and override.
+      An excellent reference is Norman Walsh's <a href="http://docbook.sourceforge.net/release/xsl/current/doc/" target="_top">DocBook XSL stylesheets documentation</a>.
+    </p></div><div class="sect1" lang="en"><div class="titlepage"><div><h2 class="title" style="clear: both"><a name="N40005E"></a>Setting stylesheet variables</h2></div></div><p>
+      DB2LaTeX contains many parameters that simply indicate &ldquo;yes&rdquo; or &ldquo;no&rdquo;.
+      The unique value &ldquo;1&rdquo; is indicative of &ldquo;yes&rdquo;.
+      All other values (such as &ldquo;0&rdquo; or empty) mean &ldquo;no&rdquo;.
+    </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td valign="top" align="center" rowspan="2" width="25"><img alt="[Note]" src="images/note.gif"></td><th align="left">Note</th></tr><tr><td valign="top" align="left" colspan="2"><p>
+      This is different from Norman Walsh's DocBook XSL stylesheets. The difference exists because
+      &ldquo;1&rdquo; seems more resilient against typos and XSL style variation (e.g. resilient
+      against whether the variable value is a string or number or result tree fragment).
+      </p></td></tr></table></div><p>An example of this sort of &ldquo;toggle&rdquo; parameter is as follows:</p><pre class="programlisting">&lt;xsl:param name="latex.use.hyperref"&gt;1&lt;/xsl:param&gt;</pre><p>You could use any of the following examples to override it:</p><pre class="programlisting">&lt;xsl:variable name="latex.use.hyperref"&gt;0&lt;/xsl:variable&gt;
+&lt;xsl:variable name="latex.use.hyperref"&gt;&lt;/xsl:variable&gt;
+&lt;xsl:variable name="latex.use.hyperref"/&gt;
+&lt;xsl:variable name="latex.use.hyperref" select="0"/&gt;
+&lt;xsl:variable name="latex.use.hyperref" select="'0'"/&gt;</pre></div><div class="sect1" lang="en"><div class="titlepage"><div><h2 class="title" style="clear: both"><a name="N400088"></a>A more complex example</h2></div></div><p>You may as well override any DB2LaTeX XSL template (although a
+    better understanding of the inner works of DB2LaTeX and the XSLT language
+    may be recommended). For example, you may not like the default
+    Bibliography processing. You may require that your BiblioEntries should
+    be numbered using decimal notation, and the authors should appear before
+    the title
+    <sup>[<a href="#ftn.N40008D" name="N40008D">1</a>]</sup>.</p><pre class="programlisting">
+&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"&gt;
+  &lt;xsl:import href="path/to/db2latex/xsl/docbook.xsl"/&gt;
+  &lt;xsl:output method="text" encoding="ISO-8859-1" indent="yes"/&gt;
+  &lt;xsl:variable name="latex.math.support"&gt;1&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="latex.use.babel"&gt;0&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="latex.use.isolatin1"&gt;1&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="latex.use.hyperref"&gt;0&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="latex.use.fancyvrb"&gt;0&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="latex.use.fancyhdr"&gt;0&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="latex.use.subfigure"&gt;0&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="latex.use.times"&gt;0&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="latex.bibwidelabel"&gt;000&lt;/xsl:variable&gt;
+
+
+
+  &lt;xsl:template name="biblioentry.output"&gt;
+    &lt;xsl:variable name="biblioentry.tag"&gt;
+      &lt;xsl:choose&gt;
+        &lt;xsl:when test="@xreflabel"&gt;
+          &lt;xsl:value-of select="normalize-space(@xreflabel)"/&gt;
+        &lt;/xsl:when&gt;
+        &lt;xsl:when test="abbrev"&gt;
+          &lt;xsl:apply-templates select="abbrev" mode="bibliography.mode"/&gt;
+        &lt;/xsl:when&gt;
+        &lt;xsl:when test="@id"&gt;
+          &lt;xsl:value-of select="normalize-space(@id)"/&gt;
+        &lt;/xsl:when&gt;
+        &lt;xsl:otherwise&gt;
+          &lt;xsl:text&gt;UNKNOWN&lt;/xsl:text&gt;
+        &lt;/xsl:otherwise&gt;
+      &lt;/xsl:choose&gt;
+    &lt;/xsl:variable&gt;
+    &lt;xsl:text&gt;% -------------- biblioentry &lt;/xsl:text&gt;
+
+
+    &lt;xsl:text&gt;\bibitem&lt;/xsl:text&gt;
+    &lt;xsl:text&gt;{&lt;/xsl:text&gt;
+    &lt;xsl:value-of select="$biblioentry.tag"/&gt;
+    &lt;xsl:text&gt;}&lt;/xsl:text&gt;
+    &lt;xsl:apply-templates select="author|authorgroup" mode="bibliography.mode"/&gt;
+    &lt;xsl:value-of select="$biblioentry.item.separator"/&gt;
+    &lt;xsl:text&gt;\emph{&lt;/xsl:text&gt;
+    &lt;xsl:apply-templates select="title" mode="bibliography.mode"/&gt;
+    &lt;xsl:text&gt;}&lt;/xsl:text&gt;
+    &lt;xsl:for-each select="child::copyright|child::publisher|child::pubdate|child::pagenums|child::isbn"&gt;
+      &lt;xsl:value-of select="$biblioentry.item.separator"/&gt;
+      &lt;xsl:apply-templates select="." mode="bibliography.mode"/&gt;
+    &lt;/xsl:for-each&gt;
+    &lt;xsl:text&gt;. &lt;/xsl:text&gt;
+    &lt;xsl:call-template name="label.id"/&gt;
+    &lt;xsl:text&gt;&amp;#10;&lt;/xsl:text&gt;
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+</pre><p>In this case, you just need to override the named template 
+    <tt>biblioentry.output</tt>. The final output may look like
+    this:</p><pre class="programlisting">
+% -------------------------------------------
+%
+%  Bibliography
+%
+% -------------------------------------------
+\bibliography{''}
+\begin{thebibliography}{000}
+% -------------- biblioentry
+\bibitem{AhoSethiUllman96}Alfred V. Aho, Ravi Sethi, and Jeffrey D. Ullman, \emph{Compilers, Principles, Techniques, and Tools}, Addison-Wesley Publishing Company, Copyright \copyright{} 1996 Bell Telephone Laboratories, Inc., 0-201-10088-6. \label{id2773943}
+% -------------- biblioentry
+\bibitem{Kites75}Andrea Bahadur and Mark Shwarek, \emph{Kites}, Copyright \copyright{} 1974, 1975 Product Development International Holding N. V., 0-88459-021-6, Plenary Publications International, Inc., 988-999. \label{id2713446}
+% -------------- biblioentry
+\bibitem{Abbrev}AuthorFirstname AuthorSurname, \emph{A Really Full BiblioEntry}, Copyright \copyright{} 1998 Copyright holder, ISBN, PageNums, PubDate, PubPublisherNameAny StreetAnywhere, XX99999USA. \label{id2713011}
+% -------------- biblioentry
+\bibitem{Citation}, \emph{A Really Full BiblioEntry}. \label{id2712994}
+% -------------- biblioentry
+\bibitem{Walsh97}, \emph{}. \label{walsh97}
+
+\end{thebibliography}
+</pre></div><div class="sect1" lang="en"><div class="titlepage"><div><h2 class="title" style="clear: both"><a name="N40009D"></a>More Examples</h2></div></div><p>The directory 
+    <tt>$DB2LaTeX/xsl/sample</tt>contains several examples that
+    show simple (<tt>$DB2LaTeX/xsl/sample/test_minimal/*.xsl</tt>) and more
+    advanced (<tt>$DB2LaTeX/xsl/sample/test_fullblown/*.xsl</tt>) XSL
+    customization layers. You may check the Reference Guide in the
+    documentation to check which variables and templates you may want to
+    override.</p></div><div class="footnotes"><hr align="left" width="100"><div class="footnote"><p><sup>[<a href="#N40008D" name="ftn.N40008D">1</a>] </sup>In fact, one of my Ph.D. dissertation reviewers did not like
+    the way my Bibliography was rendered (DB2LaTeX default), and wrote this
+    into my final report. This motivated the present example
+    :-)</p></div></div><div class="navfoot"><hr><table summary="Footer navigation" border="0" width="100%"><tr><td align="left" width="33%"><span class="footdate">$Date: 2003/03/24 01:08:56 $</span></td><td align="center" width="34%"><span class="foothome"><a href="index.html">Home</a></span></td><td align="right" width="33%">&nbsp;<a href="http://sourceforge.net/projects/db2latex"><img src="http://sourceforge.net/sflogo.php?group_id=22450&amp;type=1" border="0" width="88" height="31" alt="Hosted at SourceForge." /></a> <a href="http://docbook.sourceforge.net/projects/website/"><img src="http://docbook.sourceforge.net/graphics/buttons/website-1.png" border="0" width="128" height="40" alt="Created with Website: a DocBook document type." /></a></td></tr><tr><td align="right" colspan="3"><span class="footcopy"><span class="copyright">Copyright &copy; 2000, 2001, 2002, 2003 Ramon Casellas. </span></span></td></tr></table></div></div></body></html>

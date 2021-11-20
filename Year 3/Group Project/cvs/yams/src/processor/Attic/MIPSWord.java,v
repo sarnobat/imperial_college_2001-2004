@@ -1,0 +1,232 @@
+head	1.6;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2003.11.10.10.57.52;	author qq01;	state dead;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.09.23.13.07;	author sw00;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.06.13.53.06;	author sw00;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.10.31.14.47.26;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.10.30.22.52.04;	author sw00;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.10.30.20.49.28;	author sw00;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 30-Oct-2003
+ *
+ */
+package processor;
+import exceptions.YAMSIllegalArgumentException;
+
+/**
+ * @@author sw00
+ *
+ */
+public class MIPSWord {
+
+	public static final int SIZE = 32;
+	private MIPSBitstring bitstring;
+
+	public MIPSWord() {
+		bitstring = new MIPSBitstring(SIZE);
+	}
+
+	public MIPSWord(int value) {
+		this();
+		// negative checking omitted
+		set(value);
+	}
+
+	public int get() {
+		return bitstring.toInt();
+	}
+
+	public void set(int value) {
+		// negative checking omitted
+		for(int i = 0; i < SIZE; i++) {
+			bitstring.setBit(i, (value >> i) & 1);
+		}
+	}	
+			
+	public int getBit(int bitnumber) {
+		if((bitnumber < 0) || (bitnumber > SIZE - 1)) {
+			// 0 .. SIZE - 1 are only permissible values for 'bitnumber'
+			throw new YAMSIllegalArgumentException("bitnumber out of range");
+		}
+		return bitstring.getBit(bitnumber); 
+	}
+	
+	public void setBit(int bitnumber, int value) {
+		if((bitnumber < 0) || (bitnumber > SIZE - 1)) {
+			// 0 .. SIZE - 1 are only permissible values for 'bitnumber'
+			throw new YAMSIllegalArgumentException("bitnumber out of range");
+		}
+		if((value < 0) || (value > 1)) {
+			// 0 or 1 are only permissible values for 'value'
+			throw new YAMSIllegalArgumentException("value out of range");
+		}
+		bitstring.setBit(bitnumber, value);				
+	}
+
+	public String toString() {
+		return bitstring.toString();
+	}
+
+}
+@
+
+
+1.5
+log
+@throws runtime exceptions
+@
+text
+@@
+
+
+1.4
+log
+@changed to bitstring wrapper
+@
+text
+@d6 1
+d9 1
+a9 1
+ * @@author sw00 Simon West
+d40 2
+a41 2
+			// TODO - throw an exception here, maybe YAMSIllegalArgumentException
+			// since 0 .. SIZE - 1 are only permissible values for 'bitnumber'
+d48 2
+a49 2
+			// TODO - throw an exception here, maybe YAMSIllegalArgumentException
+			// since 0 .. SIZE - 1 are only permissible values for 'bitnumber'
+d52 2
+a53 2
+			// TODO - throw an exception here, maybe YAMSIllegalArgumentException
+			// since 0 or 1 are only permissible values for 'value'
+@
+
+
+1.3
+log
+@fixed package typo
+@
+text
+@d7 4
+d13 6
+a18 1
+	private int mipsword;
+d21 3
+a23 1
+		mipsword = value;
+d27 1
+a27 1
+		return mipsword;
+d31 6
+a36 4
+		mipsword = value;
+	}
+	
+	
+d38 3
+a40 5
+		// TODO - check getBit works
+		
+		if((bitnumber < 0) || (bitnumber > 31)) {
+			// TODO - throw an exception here, maybe YAMSInvalidArgumentException
+			// 			since 0-31 are only permissible values for 'bitnumber'
+d42 1
+a42 1
+		return (mipsword >> bitnumber) & 1;
+a44 1
+	
+d46 3
+a48 5
+		// TODO - check setBit works
+		
+		if((bitnumber < 0) || (bitnumber > 31)) {
+			// TODO - throw an exception here, maybe YAMSInvalidArgumentException
+			// 			since 0-31 are only permissible values for 'bitnumber'
+d51 2
+a52 15
+			// TODO - throw an exception here, maybe YAMSInvalidArgumentException
+			// 			since 0 or 1 are only permissible values for 'value'
+		}
+				
+		if(value == 0) {
+			if(getBit(bitnumber) == 1) {
+				// clear the bit
+				mipsword -= 1 << bitnumber;
+			}
+		}
+		else if(value == 1) {
+			if(getBit(bitnumber) == 0) {
+				// set the bit
+				mipsword += 1 << bitnumber;
+			}
+d54 5
+@
+
+
+1.2
+log
+@added method bodies for MIPSWord.getBit and setBit  (Simon)
+@
+text
+@d5 1
+a5 1
+package src.processor;
+@
+
+
+1.1
+log
+@some processor interfaces and MIPS word class, added by Simon
+@
+text
+@d23 1
+d25 7
+a31 2
+		// TODO - get actual bit value
+		return 0;
+d34 1
+d36 23
+a58 1
+		// TODO - set actual bit value
+@
+

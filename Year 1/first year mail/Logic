@@ -1,0 +1,335 @@
+From MAILER-DAEMON Mon Jun 10 19:14:11 2002
+Date: 10 Jun 2002 19:14:11 +0100
+From: Mail System Internal Data <MAILER-DAEMON@mallard.doc.ic.ac.uk>
+Subject: DON'T DELETE THIS MESSAGE -- FOLDER INTERNAL DATA
+Message-ID: <1023732851@mallard.doc.ic.ac.uk>
+X-IMAP: 1006250429 0000000006
+Status: RO
+
+This text is part of the internal format of your mail folder, and is not
+a real message.  It is created automatically by the mail system software.
+If deleted, important folder data will be lost, and it will be re-created
+with the data reset to initial values.
+
+From imh@doc.ic.ac.uk Mon Nov 19 15:02:12 2001
+Return-path: <imh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 19 Nov 2001 15:02:13 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 165pvw-0007P9-00; Mon, 19 Nov 2001 15:02:04 +0000
+Received: from imh-g4.doc.ic.ac.uk ([146.169.29.133])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 165pvv-0005mv-00; Mon, 19 Nov 2001 15:02:03 +0000
+Mime-Version: 1.0
+X-Sender: imh@pop.doc.ic.ac.uk
+Message-Id: <f05100305b81ebd8011fd@[146.169.29.133]>
+Date: Mon, 19 Nov 2001 15:01:55 +0000
+To: cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+From: Ian Hodkinson <imh@doc.ic.ac.uk>
+Subject: pmt - logic sheet 7
+Cc: swm2@doc.ic.ac.uk, marko@doc.ic.ac.uk, 
+	gu1@doc.ic.ac.uk, cl16@doc.ic.ac.uk, xf1@doc.ic.ac.uk, 
+	iccp@doc.ic.ac.uk, mrh@doc.ic.ac.uk, pg@doc.ic.ac.uk, 
+	fs@doc.ic.ac.uk, cjh@doc.ic.ac.uk, scd@doc.ic.ac.uk, 
+	yg@doc.ic.ac.uk, ar3@doc.ic.ac.uk, pgh@doc.ic.ac.uk,
+ im@doc.ic.ac.uk, 
+	ix98@doc.ic.ac.uk, mjs@doc.ic.ac.uk, kb@doc.ic.ac.uk, 
+	br@doc.ic.ac.uk, xf1@doc.ic.ac.uk, klc@doc.ic.ac.uk, 
+	jak97@doc.ic.ac.uk, herbert@doc.ic.ac.uk, 
+	ae@doc.ic.ac.uk, ss1@doc.ic.ac.uk, ft@doc.ic.ac.uk, 
+	tgrand@doc.ic.ac.uk, svb@doc.ic.ac.uk,
+ maffeis@doc.ic.ac.uk
+Content-Type: multipart/alternative; boundary="============_-1205940376==_ma============"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 1
+
+--============_-1205940376==_ma============
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+
+Hi
+You'll find logic exercise sheets 6 and 7 on the web now, at the 
+usual place 
+http://www.doc.ic.ac.uk/~imh/teaching/140_logic/logic.html.  The 
+solutions to sheet 6 will be out on Friday.
+
+Regarding part c of Q6 on sheet 6: there seem to
+be some misunderstanding to what the question is asking for. Maybe 
+the question could be made clearer by rephrasing as:
+
+
+
+(c):
+(i) It is not possible to find structures M and N such that:
+--- M makes the first sentence in (a) true and the second sentence in 
+(a) false,
+--- N makes the first sentence in (a) false and the second sentence 
+in (a) true.
+Why?
+
+(ii) Repeat part c(i) using the sentences in (b) instead of those in (a).
+
+
+
+Any kind of clear and convincing explanation would be useful as an 
+answer.  The question is not asking for a formal proof.
+
+
+Ian H
+--============_-1205940376==_ma============
+Content-Type: text/html; charset="us-ascii"
+
+<!doctype html public "-//W3C//DTD W3 HTML//EN">
+<html><head><style type="text/css"><!--
+blockquote, dl, ul, ol, li { padding-top: 0 ; padding-bottom: 0 }
+ --></style><title>pmt - logic sheet 7</title></head><body>
+<div>Hi</div>
+<div>You'll find logic exercise sheets 6 and 7 on the web now, at the
+usual place
+http://www.doc.ic.ac.uk/~imh/teaching/140_logic/logic.html.&nbsp; The
+solutions to sheet 6 will be out on Friday.</div>
+<div><br></div>
+<div><b>Regarding part c of Q6 on sheet 6:</b> there seem to</div>
+<div>be some misunderstanding to what the question is asking for.
+Maybe the question could be made clearer by rephrasing as:</div>
+<div><br></div>
+<div><br></div>
+<div><br></div>
+<div>(c):</div>
+<div>(i) It is not possible to find structures M and N such
+that:</div>
+<div>--- M makes the first sentence in (a) true and the second
+sentence in (a) false,</div>
+<div>--- N makes the first sentence in (a) false and the second
+sentence in (a) true.</div>
+<div>Why?</div>
+<div><br></div>
+<div>(ii) Repeat part c(i) using the sentences in (b) instead of those
+in (a).</div>
+<div><br></div>
+<div><br></div>
+<div><br></div>
+<div>Any kind of clear and convincing explanation would be useful as
+an answer.&nbsp; The question is not asking for a formal proof.</div>
+<div><br></div>
+<div><br></div>
+<div>Ian H</div>
+</body>
+</html>
+--============_-1205940376==_ma============--
+
+From imh@doc.ic.ac.uk Mon Nov 26 12:27:07 2001
+Return-path: <imh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 26 Nov 2001 12:27:07 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 168Kqd-00009Y-00; Mon, 26 Nov 2001 12:26:55 +0000
+Received: from imh-g4.doc.ic.ac.uk ([146.169.29.133])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 168Kqc-0004Kn-00; Mon, 26 Nov 2001 12:26:54 +0000
+Mime-Version: 1.0
+X-Sender: imh@pop.doc.ic.ac.uk
+Message-Id: <f05100304b827e29fde58@[146.169.29.133]>
+Date: Mon, 26 Nov 2001 12:26:48 +0000
+To: swm2@doc.ic.ac.uk, marko@doc.ic.ac.uk, 
+	gu1@doc.ic.ac.uk, cl16@doc.ic.ac.uk, xf1@doc.ic.ac.uk, 
+	iccp@doc.ic.ac.uk, mrh@doc.ic.ac.uk, pg@doc.ic.ac.uk, 
+	fs@doc.ic.ac.uk, cjh@doc.ic.ac.uk, scd@doc.ic.ac.uk, 
+	yg@doc.ic.ac.uk, ar3@doc.ic.ac.uk, pgh@doc.ic.ac.uk,
+ im@doc.ic.ac.uk, 
+	ix98@doc.ic.ac.uk, mjs@doc.ic.ac.uk, kb@doc.ic.ac.uk, 
+	br@doc.ic.ac.uk, xf1@doc.ic.ac.uk, klc@doc.ic.ac.uk, 
+	jak97@doc.ic.ac.uk, herbert@doc.ic.ac.uk, 
+	ae@doc.ic.ac.uk, ss1@doc.ic.ac.uk, ft@doc.ic.ac.uk, 
+	tgrand@doc.ic.ac.uk, svb@doc.ic.ac.uk,
+ maffeis@doc.ic.ac.uk, 
+	cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+From: Ian Hodkinson <imh@doc.ic.ac.uk>
+Subject: logic
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 2
+
+Apologies, but the solution to logic sheet 6 question 4(e) contains 
+an error.  It is not true that there is only one assignment showing 
+the sentence to be false.  You can also take x=c, y=a.  This makes 
+the RHS true (since you can take z=b), but the LHS false (since P(c) 
+is false).
+
+This has now been corrected in the solutions on the web at 
+http://www.doc.ic.ac.uk/~imh/teaching/140_logic/ex6.pdf
+
+
+Re. sheet 7, Q2-4, I forgot to say that "-" (minus) is allowed as 
+well as +, x (and I used "-" in Q2).  - is interpreted in the natural 
+way, but the value of x-y when y>x is arbitrary (unpredictable).
+
+Ian H
+
+From ss401@mallard.doc.ic.ac.uk Fri Nov  2 15:37:02 2001 -0000
+>From imh@doc.ic.ac.uk Fri, 02 Nov 2001 07:38:53 -0800
+Received: from [146.169.1.47] by hotmail.com (3.2) with ESMTP id MHotMailBDAC089D00C94004379692A9012F083E0; Fri, 02 Nov 2001 07:37:02 -0800
+Received: from imh-g4.doc.ic.ac.uk ([146.169.29.133])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15zgNR-0001tk-00
+	for sarnobat@hotmail.com; Fri, 02 Nov 2001 15:37:01 +0000
+Mime-Version: 1.0
+X-Sender: imh@pop.doc.ic.ac.uk
+Message-Id: <f05010403b8086e0a0862@[146.169.29.133]>
+In-Reply-To: <OE30miG9zoateaa8mUF0000b5f6@hotmail.com>
+References: <OE30miG9zoateaa8mUF0000b5f6@hotmail.com>
+Date: Fri, 2 Nov 2001 15:36:49 +0000
+To: "Sridhar Sarnobat" <sarnobat@hotmail.com>
+From: Ian Hodkinson <imh@doc.ic.ac.uk>
+Subject: Re: Logic notes and exercise 4 sheet
+Content-Type: multipart/alternative; boundary="============_-1207407086==_ma============"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 3
+
+--============_-1207407086==_ma============
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+
+>(First year Logic course student)
+>
+>It seems as though I have lost my Logic folder containing my
+>exercise 4 and both sets of slides. Where can I print out a new copy
+>of these 3 items?
+>Thank You
+>Sridhar Sarnobat
+
+http://www.doc.ic.ac.uk/~imh/teaching/140_logic/logic.html
+
+Ian H
+--============_-1207407086==_ma============
+Content-Type: text/html; charset="us-ascii"
+
+<!doctype html public "-//W3C//DTD W3 HTML//EN">
+<html><head><style type="text/css"><!--
+blockquote, dl, ul, ol, li { margin-top: 0 ; margin-bottom: 0 }
+ --></style><title>Re: Logic notes and exercise 4
+sheet</title></head><body>
+<blockquote type="cite" cite><font face="Arial" size="-1">(First year
+Logic course student)</font></blockquote>
+<blockquote type="cite" cite>&nbsp;</blockquote>
+<blockquote type="cite" cite><font face="Arial" size="-1">It seems as
+though I have lost my Logic folder containing my exercise 4 and both
+sets of slides. Where can I print out a new copy of these 3
+items?</font></blockquote>
+<blockquote type="cite" cite><font face="Arial" size="-1">Thank
+You</font></blockquote>
+<blockquote type="cite" cite><font face="Arial" size="-1">Sridhar
+Sarnobat</font></blockquote>
+<div><br></div>
+<div>http://www.doc.ic.ac.uk/~imh/teaching/140_logic/logic.html</div>
+<div><br></div>
+<div>Ian H</div>
+</body>
+</html>
+--============_-1207407086==_ma============--
+
+From imh@doc.ic.ac.uk Mon Mar 18 20:09:15 2002
+Return-path: <imh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 18 Mar 2002 20:09:15 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16n3RO-00052K-00; Mon, 18 Mar 2002 20:09:10 +0000
+Received: from imh-g4.doc.ic.ac.uk ([146.169.29.133])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16n3RN-0007ZK-00; Mon, 18 Mar 2002 20:09:09 +0000
+Mime-Version: 1.0
+X-Sender: imh@pop.doc.ic.ac.uk
+Message-Id: <f05101402b8bbf2c04c8c@[146.169.29.133]>
+Date: Mon, 18 Mar 2002 19:44:46 +0000
+To: cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+From: Ian Hodkinson <imh@doc.ic.ac.uk>
+Subject: logic
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 5
+
+Hi
+To help revision, I have put some more solutions for the 57 predicate 
+nat deductions on the web at 
+http://www.doc.ic.ac.uk/~imh/teaching/140_logic/logic.html
+
+Please check this page from time to time.  There are links to some 
+sources that may help you.
+
+If you need help, I will be in college sporadically until end of 1st 
+week of April, and then rather less often until term starts (or maybe 
+just before).   Your pmt tutor, the course tutors perhaps, and other 
+students can also help.
+
+Good luck with revision.
+
+Ian H
+
+From imh@doc.ic.ac.uk Thu Mar 21 19:44:48 2002
+Return-path: <imh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 21 Mar 2002 19:44:48 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16o8US-0006ay-00
+	for ss401@doc.ic.ac.uk; Thu, 21 Mar 2002 19:44:48 +0000
+Received: from imh-g4.doc.ic.ac.uk ([146.169.29.133])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16o8UT-0003tm-00
+	for ss401@doc.ic.ac.uk; Thu, 21 Mar 2002 19:44:49 +0000
+Mime-Version: 1.0
+X-Sender: imh@pop.doc.ic.ac.uk
+Message-Id: <f0510140db8bfe5f28355@[146.169.29.133]>
+In-Reply-To: <000801c1cf5b$1b270480$b031a992@win.doc.ic.ac.uk>
+References: <000801c1cf5b$1b270480$b031a992@win.doc.ic.ac.uk>
+Date: Thu, 21 Mar 2002 19:33:45 +0000
+To: "Sridhar Sarnobat" <ss401@doc.ic.ac.uk>
+From: Ian Hodkinson <imh@doc.ic.ac.uk>
+Subject: Re: X-mas test answers
+Content-Type: multipart/alternative; boundary="============_-1195382609==_ma============"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 6
+
+--============_-1195382609==_ma============
+Content-Type: text/plain; charset="us-ascii" ; format="flowed"
+
+>Are sample solutions available for the first year Christmas test 
+>Logic question?
+>
+
+Sorry, Chris Hogger says not to publish them.  I put the questions up 
+on the web though!
+
+Ian H
+--============_-1195382609==_ma============
+Content-Type: text/html; charset="us-ascii"
+
+<!doctype html public "-//W3C//DTD W3 HTML//EN">
+<html><head><style type="text/css"><!--
+blockquote, dl, ul, ol, li { padding-top: 0 ; padding-bottom: 0 }
+ --></style><title>Re: X-mas test answers</title></head><body>
+<blockquote type="cite" cite><font face="Arial" size="-1">Are sample
+solutions available for the first year Christmas test Logic
+question?</font></blockquote>
+<blockquote type="cite" cite>&nbsp;</blockquote>
+<div><font face="Arial" size="-1"><br></font></div>
+<div><font face="Arial" size="-1">Sorry, Chris Hogger says not to
+publish them.&nbsp; I put the questions up on the web
+though!</font></div>
+<div><font face="Arial" size="-1"><br></font></div>
+<div><font face="Arial" size="-1">Ian H</font></div>
+</body>
+</html>
+--============_-1195382609==_ma============--
+

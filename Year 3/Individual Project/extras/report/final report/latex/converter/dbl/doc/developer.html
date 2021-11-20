@@ -1,0 +1,28 @@
+<html><head><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><meta content="Website XSL Stylesheet V2.4.1" name="generator"><link rel="home" href="index.html" title="Welcome to DB2LaTeX"><link rel="up" href="index.html" title="Welcome to DB2LaTeX"><link rel="previous" href="qanda.html" title="FAQ"><link rel="next" href="bugs.html" title="Known Bugs"><link rel="first" href="whatis.html" title="What is DB2LaTeX?"><link rel="last" href="biblio.html" title="Bibliography"><link rel="icon" href="graphics/rarrow.gif" type="image/gif"><link href="db2latex.css" rel="stylesheet" type="text/css">
+    <title>Developer Information</title>
+    
+  </head><body class="website" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="webpage"><a name="developer"></a><div class="navhead"><p><a href="index.html"><img border="0" align="left" src="graphics/db2latex_home.png" alt="Banner"></a> | <a href="whatis.html">What is DB2LaTeX?</a> | <a href="install.html">Installing the Stylesheets</a> | <a href="quickstart.html">QuickStart Using DB2LaTeX</a> | <a href="using.html">Using DB2LaTeX</a> | <a href="custom.html">Customization</a> | <a href="reference/">Reference</a> | <a href="qanda.html">FAQ</a> | Developer Information <img border="0" src="graphics/navicons/triangle/current/pointer.gif" width="12" height="12" alt="*" align="middle" /> | <a href="bugs.html">Known Bugs</a> | <a href="credits.html">Credits</a> | <a href="legalnotice.html">Copyright and Warranty</a> | <a href="biblio.html">Bibliography</a><br></p><hr></div><h1>Developer Information</h1><div class="sect1" lang="en"><div class="titlepage"><div><h2 class="title" style="clear: both"><a name="N400014"></a>Introduction</h2></div></div><p>The contents of this page apply if you are interested in the
+    internals of the DB2LaTeX XSL transformation stylesheets, or if you are
+    interested in becoming an active developer and mantainer of the DB2LaTeX
+    stylesheets, or just if you would like to be able to write your own XSL
+    customization layers.</p><p>the internals of the project, how are templates structured and
+    practical information regarding the stylesheets.</p></div><div class="sect1" lang="en"><div class="titlepage"><div><h2 class="title" style="clear: both"><a name="N40001B"></a>Getting the XSL stylesheets</h2></div></div><div class="sect2" lang="en"><div class="titlepage"><div><h3 class="title"><a name="N40001E"></a>Getting a stable distribution</h3></div></div><p>DB2LaTeX releases can be downloaded from the SourceForge web site
+      and its mirrors 
+      <a href="http://www.sourceforge.net/projects/db2latex" target="_top">
+      http://www.sourceforge.net/projects/db2latex</a></p></div><div class="sect2" lang="en"><div class="titlepage"><div><h3 class="title"><a name="N400026"></a>Getting CVS snapshot</h3></div></div><p>Another possibility is to download a snapshot of the CVS
+      repository. Unless you are a DB2LaTeX developer, only anonymous
+      (read-only) CVS access is allowed.</p></div><div class="sect2" lang="en"><div class="titlepage"><div><h3 class="title"><a name="N40002B"></a>Anonymous CVS Access</h3></div></div><p>Anonymous CVS read-only access is available for the DB2LaTeX
+      project. Follow the following instructions:</p><pre class="screen">baldrick(/opt/sgml/xsl)% cvs -z3
+      -d:pserver:anonymous@cvs.db2latex.sourceforge.net:/cvsroot/db2latex
+      login baldrick(/opt/sgml/xsl)% cvs -z3
+      -d:pserver:anonymous@cvs.db2latex.sourceforge.net:/cvsroot/db2latex co
+      db2latex baldrick(/opt/sgml/xsl)% cvs -z3
+      -d:pserver:anonymous@cvs.db2latex.sourceforge.net:/cvsroot/db2latex
+      logout (Logging out of anonymous@cvs.db2latex.sourceforge.net)</pre></div><div class="sect2" lang="en"><div class="titlepage"><div><h3 class="title"><a name="N400033"></a>Developer CVS Access</h3></div></div><p>Developer (full) CVS access is available for the DB2LaTeX project
+      upon request.</p><pre class="screen">baldrick(/opt/sgml/xsl)% export CVS_RSH=ssh
+      baldrick(/opt/sgml/xsl)% cvs -z3
+      -d:ext:rcasellas@cvs.db2latex.sourceforge.net:/cvsroot/db2latex co
+      db2latex rcasellas@cvs.db2latex.sourceforge.net's password: xxxxxyxxxx
+      cvs server: Updating db2latex...</pre><div class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Important"><tr><td valign="top" align="center" rowspan="2" width="25"><img alt="[Important]" src="images/important.gif"></td><th align="left">Important</th></tr><tr><td valign="top" align="left" colspan="2"><p>Do not forget to export (setenv in C-sh) the CVS_RSH variable.
+        Otherwise, sourceforge will close the connection without further
+        notice. (Yes, it happened to me too :)</p></td></tr></table></div></div></div><div class="navfoot"><hr><table summary="Footer navigation" border="0" width="100%"><tr><td align="left" width="33%"><span class="footdate">$Date: 2003/03/21 02:37:20 $</span></td><td align="center" width="34%"><span class="foothome"><a href="index.html">Home</a></span></td><td align="right" width="33%">&nbsp;<a href="http://sourceforge.net/projects/db2latex"><img src="http://sourceforge.net/sflogo.php?group_id=22450&amp;type=1" border="0" width="88" height="31" alt="Hosted at SourceForge." /></a> <a href="http://docbook.sourceforge.net/projects/website/"><img src="http://docbook.sourceforge.net/graphics/buttons/website-1.png" border="0" width="128" height="40" alt="Created with Website: a DocBook document type." /></a></td></tr><tr><td align="right" colspan="3"><span class="footcopy"><span class="copyright">Copyright &copy; 2000, 2001, 2002, 2003 Ramon Casellas. </span></span></td></tr></table></div></div></body></html>

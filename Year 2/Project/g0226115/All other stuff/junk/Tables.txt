@@ -1,0 +1,126 @@
+g0226115db=> SELECT * FROM game ;
+ game | playernum | turn | playing
+------+-----------+------+---------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM goods ;
+ playernum | resourcename | price | volume
+-----------+--------------+-------+--------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM mailbox ;
+ msgnum | dest
+--------+------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM messages ;
+ msgnum | game | sender | sent | message | subject
+--------+------+--------+------+---------+---------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM planets;
+ starnum | food | water | fuel | gold | titanium | industrial | mining | farming
+---------+------+-------+------+------+----------+------------+--------+---------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM players;
+ playernum | playername | playing | password | balance
+-----------+------------+---------+----------+---------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM ships;
+ shipnumber | name | food | water | fuel | gold | titanium | industrial | mining | farming
+------------+------+------+-------+------+------+----------+------------+--------+---------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM shipstate;
+ shipnumber | game | owner | x | y | z | fuelcontent | mileage
+------------+------+-------+---+---+---+-------------+---------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM shipstorage;
+ shipnum | game | volumeused | freespace
+---------+------+------------+-----------
+(0 rows)
+
+
+g0226115db=> SELECT * FROM starstate;
+ starnum | game | owner | civilisation
+---------+------+-------+--------------
+       1 |      |       | industrial
+       2 |      |       | mine
+       3 |      |       | industrial
+       4 |      |       | industrial
+       5 |      |       | agriculture
+       6 |      |       | agriculture
+       7 |      |       | industrial
+       8 |      |       | industrial
+       9 |      |       | industrial
+      10 |      |       | industrial
+      11 |      |       | industrial
+      12 |      |       | industrial
+      13 |      |       | agriculture
+      14 |      |       | agriculture
+      15 |      |       | agriculture
+      16 |      |       | agriculture
+      31 |      |       | agriculture
+      17 |      |       | industrial
+      18 |      |       | agriculture
+      19 |      |       | agriculture
+      20 |      |       | agriculture
+      21 |      |       | agriculture
+      22 |      |       | agriculture
+      23 |      |       | mine
+      24 |      |       | mine
+      25 |      |       | mine
+      26 |      |       | mine
+      27 |      |       | mine
+      28 |      |       | mine
+      29 |      |       | industrial
+      30 |      |       | industrial
+(31 rows)
+
+
+g0226115db=> SELECT * FROM universe;
+       star       | starnum |     x      |      y      |     z
+------------------+---------+------------+-------------+-----------
+ Sun              |       1 |    1.5e-05 |           0 |         0
+ Procione A       |       2 |  -0.435614 |     4.72827 | -0.909959
+ Proxima Cen      |       3 |   -2.99638 |    -2.41866 |  0.418553
+ Alpha Cen A      |       4 |   -2.99313 |  -0.0254794 |  0.724108
+ Alpha Cen B      |       5 |   -2.99323 | -0.00753013 |  0.724108
+ Barnards Star    |       6 |    1.39529 |    -1.10182 | -0.954628
+ Wolf 359         |       7 |    3.71408 |     4.55907 |  0.656987
+ Lalande 21186    |       8 |    1.77541 |    -1.40199 | -0.853405
+ UV Ceti A        |       9 |    1.78283 |     1.68784 |  0.957889
+ epsilon Eridani  |      10 |    10.3634 |     -1.8011 | -0.144273
+ Ross 248         |      11 |   -9.97803 |    -2.54813 |   0.11743
+ Kapteyn's Star   |      12 |   -5.17882 |     3.87855 | -0.856113
+ Sirus A          |      13 |   -4.90141 |    -4.29051 |  0.660915
+ Ross 128         |      14 |    4.82972 |    -8.27294 |  0.461779
+ 61 Cygni B       |      15 |   -6.84395 |     4.52167 |  0.682289
+ 61 Cygni A       |      16 |   -6.82123 |     4.55586 |  0.682289
+ Groombridge 34 B |      31 |    10.0993 |     4.88403 | 0.0177019
+ Groombridge 34 A |      17 |    10.0499 |     4.98478 | 0.0177019
+ BD +59h 1915 B   |      18 |    6.65213 |     8.35274 |  0.314815
+ BD +5h 1668      |      19 |    1.10191 |    -4.84876 |  -0.91406
+ Lacaille9352     |      20 |    -5.1689 |    -4.13569 |  0.814855
+ Procione B       |      21 |    -0.3883 |     4.73239 | -0.909959
+ BD +59h 1915 A   |      22 |    6.56819 |     8.41891 |  0.314815
+ YZ Ceti          |      23 |   -4.35995 |     6.28886 |  0.772035
+ G 51-15          |      24 | -0.0441328 |      2.8475 |  0.970491
+ epsilon Indi     |      25 |   -6.47096 |    -9.16011 | 0.0785854
+ UV Ceti B        |      26 |    1.97978 |    -1.45181 |  0.957889
+ Sirus B          |      27 |    4.76193 |      4.4448 |  0.660915
+ Ross 154         |      28 |  -0.602726 |    0.324076 |  0.997413
+ gamma Ceti       |      29 |   -7.26231 |    -8.56047 | -0.147424
+ Luyten789-6      |      30 |   -9.39881 |    -1.98358 | -0.503775
+(31 rows)

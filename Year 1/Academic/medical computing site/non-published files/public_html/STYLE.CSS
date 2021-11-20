@@ -1,0 +1,62 @@
+p
+{
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt
+}
+
+.mytext
+{
+	
+	COLOR: #000000;
+}
+
+.title
+{
+	text-align: center
+	COLOR: #000000;
+	FONT-SIZE: 21pt
+}
+
+.mainHeading
+{
+	text-align: center;
+	COLOR: #FFFFFF;
+	FONT-SIZE: 48pt;
+}
+
+
+h2
+{
+    COLOR: #0000AA;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 11pt
+}
+
+h3
+{
+    COLOR: #00AAAA;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 9pt
+}
+
+blockquote
+{
+     FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+li
+{
+	COLOR: #000000;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+   FONT-SIZE: 10pt
+
+}
+
+ol
+{
+	COLOR: #000000;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+   FONT-SIZE: 10pt
+
+}

@@ -1,0 +1,2753 @@
+From MAILER-DAEMON Mon Jun 10 18:34:56 2002
+Date: 10 Jun 2002 18:34:56 +0100
+From: Mail System Internal Data <MAILER-DAEMON@mallard.doc.ic.ac.uk>
+Subject: DON'T DELETE THIS MESSAGE -- FOLDER INTERNAL DATA
+Message-ID: <1023730496@mallard.doc.ic.ac.uk>
+X-IMAP: 1006250509 0000000056
+Status: RO
+
+This text is part of the internal format of your mail folder, and is not
+a real message.  It is created automatically by the mail system software.
+If deleted, important folder data will be lost, and it will be re-created
+with the data reset to initial values.
+
+From jw99@doc.ic.ac.uk Wed Jan 09 21:10:58 2002
+Return-path: <jw99@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 09 Jan 2002 21:10:58 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16OPxS-0001UL-00; Wed, 09 Jan 2002 21:08:26 +0000
+Received: from texel30.doc.ic.ac.uk ([146.169.49.79] ident=jw99)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16OPxE-0001ak-00
+	for all-doc@doc.ic.ac.uk; Wed, 09 Jan 2002 21:08:12 +0000
+Date: Wed, 9 Jan 2002 21:08:12 +0000 (GMT)
+From: Joseph Wilk <jw99@doc.ic.ac.uk>
+To: all-doc@doc.ic.ac.uk
+Subject: New DoC website Beta test
+Message-ID: <Pine.LNX.4.42.0201092107360.29229-100000@texel30.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 3
+
+Hi dudes,
+
+Our project group has spent the past 3 months redesigning the
+departments website. It has now come to the point where we feel it is
+ready for a beta test.
+
+The beta of the DoC site is up at:
+http://www.doc.ic.ac.uk/project/2001/ug3/g2001ug09/backend/rendered/
+
+We would appreciate any comments and bugs found, which can be submitted
+by the 'bug report' tab on the site.
+
+Important stuff for you to think about is what links you would like for
+your groups homepage. Only being CS3 students we don't really know what
+sort of stuff you other guys use most.
+
+The site attempts to automatically work out who you are by the computer
+you are using in labs. We expect this to still be a little buggy. If you
+have any problems with the site detecting you as the wrong person let us
+know. You can check who you are by going to the personalised timetable
+page.
+
+One more little point before we bore you to death :) We have implemented
+a wap version of the timetable and people search. You can view this at:
+
+http://www.doc.ic.ac.uk/project/2001/ug3/g2001ug09/backend/rendered/wapwork/index.wml
+
+Please let us know if you have any problems with the wap site and the
+make of your mobile.
+
+The site is for you so let us know what you think and improvements you
+think could be implemented.
+
+Enjoy
+
+Joseph Wilk (Project manager)
+
+(permission from Frank Kriwaczek for all Doc email)
+
+
+
+From paul@myitcv.org.uk Wed Jan 23 16:55:38 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 23 Jan 2002 16:55:38 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16TQeo-0002qK-00; Wed, 23 Jan 2002 16:53:54 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16TQel-0006m8-00
+	for docsoc-students@doc.ic.ac.uk; Wed, 23 Jan 2002 16:53:51 +0000
+Date: Wed, 23 Jan 2002 16:53:48 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: DoCSoc Event: Goldman Sachs Technology summer internship drop in
+Message-ID: <Pine.LNX.4.42.0201231647140.12005-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; CHARSET=US-ASCII
+Content-ID: <Pine.LNX.4.42.0201231647142.12005@ealing.doc.ic.ac.uk>
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 12
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear Second and Third Year Students,
+
+Representatives from the Technology division of Goldman Sachs will be
+visiting Imperial University on Tuesday 29th January to talk you informally
+about our 2002, 10 week Summer Internship Program.
+
+With a growing reliance on Technology in all its business areas, Goldman
+Sachs is recruiting a number of Summer Analysts to join its Technology
+division over the summer. As a Summer Analyst you will be working in an
+environment where IT specialists design, build and maintain sophisticated
+computer systems and telecommunications networks, that permit the immediate
+exchange and analysis of information and enable the firm to execute
+financial transactions around the clock. As a member of the Technology
+division you would work with traders, sales people, asset managers and other
+professionals from all the divisions to anticipate and meet their
+information requirements and ensure that effective, reliable processing and
+analytical tools are in place.
+
+Feel free to come at any time that suits you. We really look forward to
+meeting you, details as follows:
+
+
+Location: Room 218
+Date:  TUESDAY 29th JANUARY
+Time:  12.15 - 2.00 pm
+
+Dress: CASUAL
+Refreshments: LIGHT SNACKS AND DRINKS WILL BE PROVIDED
+
+For more about information Goldman Sachs and its Technology Division, visit
+our web site at <http://www.gs.com>
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+
+
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8Tuqe0YkfvYj92P4RAsGJAJ0R8B8oziwuX/i9bVW6/Cva2GkC7gCfYGTQ
+KAN0BHrxr14Kbs3jwNdyfwA=
+=wNxs
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Wed Jan 23 13:06:26 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 23 Jan 2002 13:06:26 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16TN1n-0005Qm-00; Wed, 23 Jan 2002 13:01:23 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16TN1g-0002GB-00
+	for docsoc-students@doc.ic.ac.uk; Wed, 23 Jan 2002 13:01:16 +0000
+Date: Wed, 23 Jan 2002 13:01:13 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Reminder: A Kick Up the Gurus!
+Message-ID: <Pine.LNX.4.42.0201231255220.8248-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 13
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+Just to remind you :-)
+
+Title: "A Kick Up the Gurus: Open Source in Investment Banking."
+
+Date:  Thursday 24th January
+Time:  12pm
+Venue: Clore Theatre, Huxley Building
+
+
+Following on from the lecture in November on e-commerce, you are
+invited to attend a technical lecture by Alistair Taylor and Kosh
+Podder of the IT Equities department of UBS Warburg. Both Alistair and
+Kosh are alumni from Imperial College and will be presenting on the use
+of open source software in the Bank.
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8TrQc0YkfvYj92P4RAp3IAKCECCEIKmjV1lV4VNJBr1jQRWC28wCfUPY0
++Kv6HMaozcEIeM/fYHyrax8=
+=npkS
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Wed Feb 06 09:39:23 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 06 Feb 2002 09:39:23 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16YOVn-0004Sm-00; Wed, 06 Feb 2002 09:37:07 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16YOVe-0001nG-00
+	for docsoc-students@doc.ic.ac.uk; Wed, 06 Feb 2002 09:36:58 +0000
+Date: Wed, 6 Feb 2002 09:36:55 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Elections; what elections?
+Message-ID: <Pine.LNX.4.42.0202052012380.17792-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 22
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+* What is an FSA?
+* What is ICU?
+* How do they affect you?
+* What does the DepRep do?
+
+Ash (DepRep) and I (that's me Paul, DoCSoc Chairman), will be holding a
+really informal meeting/talk this Friday 8th February, at 12:30pm in
+room 308. We will try and answer some of these questions as well as any
+you might care to bring along. We will discuss the upcoming elections,
+how they work, what the timetable is. I will talk about DoCSoc, news so
+far this year, how you can play a bigger role in the society, and
+discuss ways in which we can take the society forward. Ash will talk
+about being DepRep and how this role will change next year.
+
+We also want to know how you feel about DoC and about the Union. Have
+college done enough to explain what this new faculty business is about?
+Do you feel isolated from the Union and other aspects of college life;
+if so why?
+
+Everyone is welcome. It will be a really informal chat, with as many
+questions and answers as you care to ask. Anyone wishing to stand for
+positions within DoCSoc, the new faculty structure or the Union is
+welcome also; Ash and I will try and answer any questions you have.
+Please feel free to drop by, if only for a few minutes: we will not be
+offended if you walk out half way through :-)
+
+Summary details:
+
+	Friday 8th February, 2002
+	Room 308
+	12:30pm
+
+
+ON THE NOTE OF ELECTIONS I MUST INCLUDE THE FOLLOWING ANNOUNCEMENT:
+
+====================================
+
+Nomination papers for the City & Guilds / Faculty of Engineering
+elections have now been put up in all departments.
+
+The posts of President, VP (Activities), VP (Finance & Societies)
+HonSec, Inter-departmental Activities Officer, the Academic Affairs
+Officers and  the Dep Reps are now all open for election. Elections for
+DoCSoc positions are happening concurrently.
+
+In addition, because of the new faculty structure, you will have a
+chance to "elect" a new name for the Faculty of Engineering Students
+Association (City & Guilds College Union).
+
+Further details available from http://www.cgcu.net/elections/ or by
+contacting the returning officer, Mustafa Arif via president@cgcu.net
+
+=====================================
+
+Please, if any of the above is not clear, get back to me.
+
+Kind regards,
+
+
+
+Paul Jolly
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+
+
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8YPk60YkfvYj92P4RAnwXAKCXjMcX/mdhvEBEvjtjy2FDwFl0RACeNu6/
+9mlcmzGrN0HP0nezefvagGg=
+=K2IK
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Wed Feb 06 11:55:48 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 06 Feb 2002 11:55:48 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16YQfr-0006eE-00; Wed, 06 Feb 2002 11:55:39 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16YQfq-00045B-00
+	for all-first-year@doc.ic.ac.uk; Wed, 06 Feb 2002 11:55:38 +0000
+Date: Wed, 6 Feb 2002 11:55:35 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: all-first-year@doc.ic.ac.uk
+Subject: Friday: Topics vs Elections talk by Paul and Ash
+Message-ID: <Pine.LNX.4.42.0202061149480.29284-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 23
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+As you will have seen from my last mail, Ash and I will be giving a
+talk and answering questions about elections, DoC, faculties and ICU
+etc... this Friday 8th February at 12:30pm in room 308.
+
+It has been pointed out that this clashes with a topics lecture that
+you have. Please feel free to come along after the topics lecture. Ash
+and I will remain behind as long as there are questions :-)
+
+Can I take this  opportunity to encourage as many of you as possible to
+try and take an active role in DoCSoc, the Union, the faculty,
+whatever! It is really worth while, and is valuable experience. Better
+than that, it is really good fun :-)
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8YRm50YkfvYj92P4RAtFHAJ9GAAcPJpxjVDFxmoUyzQKDHqX9UwCfbzNM
+T5PhglQ+/mMkQZxg15pCX/w=
+=XtVD
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Thu Feb 07 13:37:03 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 07 Feb 2002 13:37:03 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16YoiP-0001HI-00; Thu, 07 Feb 2002 13:35:53 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16YoiN-0001ab-00
+	for docsoc-students@doc.ic.ac.uk; Thu, 07 Feb 2002 13:35:51 +0000
+Date: Thu, 7 Feb 2002 13:35:48 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: The Great Egg Race 2002
+Message-ID: <Pine.LNX.4.42.0202071323240.14596-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=ISO-8859-1
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 24
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+The Great Egg Race 2002 has finally been finalised (English usage
+interesting). It will take place next Wednesday, 13th February after
+Lunch from the Queens tower and Mech Eng.
+
+You have to construct a flying contraption to carry a single egg from
+The Queen's Tower to the safety of terra firma. Enter as a team of 5.
+Tools and materials are supplied.
+
+Entrance Forms
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Entrance forms can be collected from me, Paul, in CSG Systems 225 Huxley
+(don't worry, we don't bite (except Eion)). In return for an entrance
+form, you must hand over the princely sum of =A35.
+
+Alternatively, get the application form online:
+
+http://www.doc.ic.ac.uk/docsoc/index.php?page_name=3Degg_race_2002
+
+fill it out and bring it to me in Room 225 Huxley with you cash entry fee.
+
+
+* The Prizes *
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Apart from the FREE FOOD, there will be a very grand trophy for the
+winners. Plus, Felix will probably run an article (not sure whether that
+is a prize), and media machine Live! might grind into action.
+
+
+=2E... and afterwards?
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Afterwards there will be a Paper Dart competition, and the person who
+gets their paper dart to stay in the air the longest wins. (entry fee is
+=A31 per person for as many darts as you can make with materials
+provided).
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8YoK20YkfvYj92P4RAkD/AJ46RtAdlHNErMG7K5xYconEKSmJ/QCfe7Zu
+pTuz0T1sLORqM3l01Lz7zEg=3D
+=3DZZvw
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Fri Feb 08 10:56:57 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 08 Feb 2002 10:56:57 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16Z8gT-0000dn-00; Fri, 08 Feb 2002 10:55:13 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16Z8gN-00069c-00
+	for docsoc-students@doc.ic.ac.uk; Fri, 08 Feb 2002 10:55:07 +0000
+Date: Fri, 8 Feb 2002 10:55:04 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Elections; what elections?
+Message-ID: <Pine.LNX.4.42.0202081053330.3840-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 25
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+Just a reminder! This is today!!
+
+* What is an FSA?
+* What is ICU?
+* How do they affect you?
+* What does the DepRep do?
+
+Ash (DepRep) and I (that's me Paul, DoCSoc Chairman), will be holding a
+really informal meeting/talk this Friday 8th February, at 12:30pm in
+room 308. We will try and answer some of these questions as well as any
+you might care to bring along. We will discuss the upcoming elections,
+how they work, what the timetable is. I will talk about DoCSoc, news so
+far this year, how you can play a bigger role in the society, and
+discuss ways in which we can take the society forward. Ash will talk
+about being DepRep and how this role will change next year.
+
+We also want to know how you feel about DoC and about the Union. Have
+college done enough to explain what this new faculty business is about?
+Do you feel isolated from the Union and other aspects of college life;
+if so why?
+
+Everyone is welcome. It will be a really informal chat, with as many
+questions and answers as you care to ask. Anyone wishing to stand for
+positions within DoCSoc, the new faculty structure or the Union is
+welcome also; Ash and I will try and answer any questions you have.
+Please feel free to drop by, if only for a few minutes: we will not be
+offended if you walk out half way through :-)
+
+Summary details:
+
+	Friday 8th February, 2002
+	Room 308
+	12:30pm
+
+
+Please, if any of the above is not clear, get back to me.
+
+Kind regards,
+
+
+Paul Jolly
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD4DBQE8Y66K0YkfvYj92P4RApDVAJjHuvmvTA+ISv3RfdvVIVb/9RAxAJwOpjE1
+wqn5uVvFB7AuCXVO0VVBww==
+=vcpX
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Tue Feb 12 08:36:23 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 12 Feb 2002 08:36:23 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16aYOW-0003fu-00; Tue, 12 Feb 2002 08:34:32 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16aYLt-0002uf-00
+	for docsoc-students@doc.ic.ac.uk; Tue, 12 Feb 2002 08:31:49 +0000
+Date: Tue, 12 Feb 2002 08:31:46 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Careers after DoC, Free Food! Wed 13th February
+Message-ID: <Pine.LNX.4.42.0202120825460.5136-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 26
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+ - CGCA Alumni Talk (In conjunction with the CGCU Internship Centre)
+ - Wednesday 13th February, Rm 413 Huxley, 12.30pm - 2.00pm
+ - Speaker: Peter Chase, BBC Technology, and former DOC student. He
+ will be talking about his experiences choosing a career and also about
+ his job. Could prove invaluable advice for people looking for career
+ advice, especially as he was once at DOC so can see it from the same
+ perspective as you
+ - There will be some food too!!!
+ - And finally there will be short talks about the Internship Centre &
+ The CGCA
+
+Hope to see you all there, the room only has limited capacity so its first
+come first served!!
+
+Regards
+
+
+'Tunde Olanrewaju
+CGCA Rep
+
+=======================================================================
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8aNL10YkfvYj92P4RAvDJAKCNaxRpxUvQSRe9a/iBxu7NJx+wAQCeMzMt
+JsgYvL7gM39yK098bZ27308=
+=vloG
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Tue Feb 12 09:01:13 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 12 Feb 2002 09:01:13 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16aYn9-0004EJ-00; Tue, 12 Feb 2002 09:00:00 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16aYn3-0003bP-00
+	for docsoc-students@doc.ic.ac.uk; Tue, 12 Feb 2002 08:59:53 +0000
+Date: Tue, 12 Feb 2002 08:59:50 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Reminder
+Message-ID: <Pine.LNX.4.42.0202120858480.5136-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 27
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Imperial College is adopting a new faculty structure.
+>From August, your department will be part of the Faculty of Engineering.
+
+* How does this affect your course?
+* How does this affect your department?
+* Why is this happening?
+
+Prof John Perkins, the Principal of the Faculty of Engineering will be
+speaking to students at 1pm in the Clore Lecture Theatre (Huxley Building).
+
+All welcome
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8aNmJ0YkfvYj92P4RAnQ5AJ4u9AToMOtZCMk6AHypiTxc3G4zHACfZT+2
+libsBKdiaXFVQFMYrcV+U+U=
+=kJNG
+-----END PGP SIGNATURE-----
+
+
+From pbp00@doc.ic.ac.uk Tue Feb 12 13:29:23 2002
+Return-path: <pbp00@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 12 Feb 2002 13:29:23 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16aczn-0000xL-00; Tue, 12 Feb 2002 13:29:19 +0000
+Received: from moa.doc.ic.ac.uk ([146.169.1.39] ident=pbp00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16aczm-00007i-00
+	for cs-first-year@doc.ic.ac.uk; Tue, 12 Feb 2002 13:29:18 +0000
+Date: Tue, 12 Feb 2002 13:29:18 +0000 (GMT)
+From: Peter Benedict Parkinson <pbp00@doc.ic.ac.uk>
+To: cs-first-year@doc.ic.ac.uk
+Subject: free drink!
+Message-ID: <Pine.LNX.4.42.0202121325480.13007-100000@moa.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 28
+
+
+We need precisely eight volunteers to take part in the evaluation of a
+new computer system as part of our project. This will take no more than
+ten minutes, it will take placein 211 during wednesday/thursday
+lunchtime, and the successful applicants will be bought a drink.
+
+If you're interested, please email pbp00@doc.ic.ac.uk with "H" in the
+subject line.
+
+Peter Parkinson
+Chris Tickner.
+
+
+
+
+
+From paul@myitcv.org.uk Tue Feb 12 12:46:39 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 12 Feb 2002 12:46:39 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16acIs-0007j7-00; Tue, 12 Feb 2002 12:44:58 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16acIp-0007cn-00
+	for docsoc-students@doc.ic.ac.uk; Tue, 12 Feb 2002 12:44:55 +0000
+Date: Tue, 12 Feb 2002 12:44:52 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: The Great Egg Race 2002
+Message-ID: <Pine.LNX.4.42.0202121237210.4267-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=ISO-8859-1
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 29
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+
+Throw eggs off the Queen's Tower
+
+* C&G Egg Race is back on Wed 13 Feb
+* Build a flying contraption to carry an egg as far as possible
+* Starring Andy Chipling - world authority on paper aeroplanes from the
+Guinness Book of Records
+* =A35 for a team of 5 - FREE FOOD - all materials provided
+* Hurry to buy tickets from Waterstones, ICU Reception or the C&G
+office OR COME AND FIND ME (Room 225 CSG Systems)
+
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8aQ5G0YkfvYj92P4RArS/AJ9klETgD1Wgw6DYiwL2ZIJcHYuyuACfWx/O
+/sAEP29b4pT2Ld1ACLcfC6w=3D
+=3Dov8d
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Tue Feb 19 09:13:35 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 19 Feb 2002 09:13:35 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16d6Jb-0004u5-00; Tue, 19 Feb 2002 09:11:59 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16d6JV-0004sC-00
+	for docsoc-students@doc.ic.ac.uk; Tue, 19 Feb 2002 09:11:53 +0000
+Date: Tue, 19 Feb 2002 09:11:51 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Union Colours
+Message-ID: <Pine.LNX.4.42.0202190904500.14691-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 30
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+You may from now on, and until March 3rd, nominate anyone for colours.
+Colours are awarded to any person who has given service to the Union
+beyond that expected of any position they hold.
+
+To nominate someone for Union colours, email:
+
+nick.dalgiannakis@ic.ac.uk
+
+with the name of the nominee, the award and a citation of not more than
+200 words detailing the candidate's suitability for the award.
+
+Unfortunately, you cannot nominate yourself :-0
+
+For more information, please visit http://www.cgcu.net/union/reg10.php
+
+The Colours committee will meet on Wednesday, March 6th, to make
+decisions on the nominations.
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8chbZ0YkfvYj92P4RAoAgAJ0QQzc5ojE7Af6ZpBienFrfTL6CFACfaVGm
+sy5Jm89Iip+uA7vvUFj395c=
+=LJ7J
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Mon Feb 18 15:37:13 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 18 Feb 2002 15:37:13 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16cpow-0000Bz-00; Mon, 18 Feb 2002 15:35:14 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16cpos-0008FZ-00
+	for docsoc-students@doc.ic.ac.uk; Mon, 18 Feb 2002 15:35:10 +0000
+Date: Mon, 18 Feb 2002 15:35:08 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Past Exam Papers
+Message-ID: <Pine.LNX.4.42.0202181524520.14691-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 31
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear Exam Students,
+
+(Apologies if you are not an exam student, but I have not had time to
+sort out individual lists!!!)
+
+Please read the following pages to learn about DoCSoc's aim to produce
+booklets of past exam papers.
+
+https://www.doc.ic.ac.uk/~paj00/docsoc/pastPapers.cgi
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8cR8u0YkfvYj92P4RAh2lAJ0Z2Kj9W2mYziueblcGHtbZOR8/OQCfUEkF
+q5+kKTZOovNsRmo/INlavB4=
+=UKtT
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Tue Feb 19 16:24:31 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 19 Feb 2002 16:24:31 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16dD2f-0005vu-00; Tue, 19 Feb 2002 16:22:57 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16dD2Y-0006iO-00; Tue, 19 Feb 2002 16:22:50 +0000
+Date: Tue, 19 Feb 2002 16:22:47 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Quake III Tournament
+Message-ID: <Pine.LNX.4.42.0202191601380.14691-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=ISO-8859-1
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 32
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+We are running a Quake III Tournament this Saturday, 23rd February, 2pm,
+Room 206 (dynamic lab).
+
+Cost =A35. All proceeds go to RAG's charity for this year, Shooting Star
+Children's Hospice Appeal.
+
+** BRING YOUR OWN HEADPHONES **
+
+Winner gets a box of chocolates!
+
+More details:
+
+=09http://www.doc.ic.ac.uk/docsoc/frag4ragii
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8cnva0YkfvYj92P4RAmVNAJ46Wie6ziBXc+hNG2spDrQ8pYaz4gCdE+0K
+DUNqiQJjvhh+Bz2sHpwI9TM=3D
+=3DilRe
+-----END PGP SIGNATURE-----
+
+
+From ss401@mallard.doc.ic.ac.uk Fri Nov 16 12:28:53 2001 -0000
+>From paul@myitcv.org.uk Fri, 16 Nov 2001 04:29:27 -0800
+Received: from [146.169.1.47] by hotmail.com (3.2) with ESMTP id MHotMailBDBE5185008E40042A0F92A9012F0FB60; Fri, 16 Nov 2001 04:28:53 -0800
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 164i6l-000514-00; Fri, 16 Nov 2001 12:28:35 +0000
+Date: Fri, 16 Nov 2001 12:28:35 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: Paul J <paul@myitcv.org.uk>
+cc: Antoine Coudray <ac801@doc.ic.ac.uk>, Gareth Wilson <gw99@doc.ic.ac.uk>,
+     <sarnobat@hotmail.com>, Derek Pattanakriengkrai <dp99@doc.ic.ac.uk>,
+     <RaviSidhu@btsurftogether.fslife.co.uk>,
+     <james.e.ridgwick@uk.andersen.com>, Patrick O'Connell <po01@doc.ic.ac.uk>,
+    Shakib Mostafa <sm600@doc.ic.ac.uk>, Michael Sutton <ms901@doc.ic.ac.uk>
+Subject: Re: Football tournament
+In-Reply-To: <Pine.LNX.4.40.0111161206080.28726-100000@ealing.doc.ic.ac.uk>
+Message-ID: <Pine.LNX.4.40.0111161227310.31486-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 33
+
+Dear All,
+
+I am trying to get some dates and times. I realise that it is impossible
+for anyone to commit to the tournament if we don't know when it will
+happen :-0
+
+Cheers,
+
+
+Paul
+--
+CSG Technical Assistant, DoC, Imperial College
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+URL:	http://myitcv.org.uk/
+tel:   	+44 7748 105236
+
+
+From ss401@mallard.doc.ic.ac.uk Fri Nov 16 12:13:38 2001 -0000
+>From paul@myitcv.org.uk Fri, 16 Nov 2001 04:14:40 -0800
+Received: from [146.169.1.47] by hotmail.com (3.2) with ESMTP id MHotMailBDBE4DF1002D4004321292A9012F0EA60; Fri, 16 Nov 2001 04:13:38 -0800
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 164hsG-0004fB-00; Fri, 16 Nov 2001 12:13:36 +0000
+Date: Fri, 16 Nov 2001 12:13:36 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: Antoine Coudray <ac801@doc.ic.ac.uk>, Gareth Wilson <gw99@doc.ic.ac.uk>,
+     <sarnobat@hotmail.com>, Derek Pattanakriengkrai <dp99@doc.ic.ac.uk>,
+     <RaviSidhu@btsurftogether.fslife.co.uk>,
+     <james.e.ridgwick@uk.andersen.com>, Patrick O'Connell <po01@doc.ic.ac.uk>,
+    Shakib Mostafa <sm600@doc.ic.ac.uk>, Michael Sutton <ms901@doc.ic.ac.uk>
+Subject: Football tournament
+Message-ID: <Pine.LNX.4.40.0111161206080.28726-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 34
+
+Dear All,
+
+Thomas is away this weekend so I will try and fill you in on as many of
+the details as is possible.
+
+As yet we do not have any dates for the matches, however C&G have said
+that the first match should be over by the end of next week. C&G have
+asked that we find out how many teams we are likely to want to supply.
+Can you each let me know whether you have a team together already or
+are looking to join a team?
+
+Any questions, get back to me.
+
+Cheers,
+
+
+
+Paul
+--
+CSG Technical Assistant, DoC, Imperial College
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+URL:	http://myitcv.org.uk/
+tel:   	+44 7748 105236
+
+
+
+
+From paul@myitcv.org.uk Mon Dec 03 18:08:27 2001
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 03 Dec 2001 18:08:27 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16AxVA-0000Gf-00; Mon, 03 Dec 2001 18:07:36 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16AxV9-0000AT-00; Mon, 03 Dec 2001 18:07:35 +0000
+Date: Mon, 3 Dec 2001 18:07:32 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: all-second-year@doc.ic.ac.uk,  <all-third-year@doc.ic.ac.uk>, 
+     <all-first-year@doc.ic.ac.uk>
+Subject: Merrill Lynch Presentation
+Message-ID: <Pine.LNX.4.42.0112031803330.6708-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 35
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+
+Dear All
+
+Merrill Lynch are having a presentation in Chem Eng Lecture Theatre 1 on
+Tuesday lunchtime(4/12/2001), kick off will be 12.15 ish.  This talk is
+aimed at recruiting for internships next summer, so it is open to
+people from all years. There will be a free lunch as well.  Our lecture
+theatre can hold about 100 people, so the first 100 people to turn up
+will get in, the rest hard luck!
+
+Thanks
+
+Padraig
+
+
+========================================================================
+
+
+I was asked to forward the above mail to you all.
+
+Kind regards,
+
+
+Paul
+- --
+CSG Technical Assistant, DoC, Imperial College
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+URL:    http://myitcv.org.uk/
+tel:    +44 7748 105236
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8C79n0YkfvYj92P4RAuEpAJ9XxkmwT3nyaM2JnsW8y8C0pnrn7gCfXAeJ
+OQK+5aM6XKJ6vNxIb9Z3Xy4=
+=Z2yY
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Thu Jan 17 08:50:39 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 17 Jan 2002 08:50:39 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16R8EL-0001gf-00; Thu, 17 Jan 2002 08:49:05 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16R8EB-0000xq-00
+	for all-students@doc.ic.ac.uk; Thu, 17 Jan 2002 08:48:55 +0000
+Date: Thu, 17 Jan 2002 08:48:52 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: all-students@doc.ic.ac.uk
+Subject: A Kick Up the Gurus!
+Message-ID: <Pine.LNX.4.42.0201170841530.17333-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 36
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+Another DoCSoc event!
+
+Title: "A Kick Up the Gurus: Open Source in Investment Banking."
+
+Date:  Thursday 24th January
+Time:  12pm
+Venue: Clore Theatre, Huxley Building
+
+
+Following on from the lecture in November on e-commerce, you are
+invited to attend a technical lecture by Alistair Taylor and Kosh
+Podder of the IT Equities department of UBS Warburg. Both Alistair and
+Kosh are alumni from Imperial College and will be presenting on the use
+of open source software in the Bank.
+
+See you there!
+
+
+Paul
+- --
+CSG Technical Assistant, DoC, Imperial College
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+URL:	http://myitcv.org.uk/
+tel:   	+44 7748 105236
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8Ro/30YkfvYj92P4RAnuOAJ9dgg5oZQS46oqNoVlEe+Nr7gjoKACfRv6F
+RY1bo1WUcqwqZdLHm/sV+Lw=
+=lK6V
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Thu Jan 17 22:13:31 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 17 Jan 2002 22:13:31 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16RKkw-0004TP-00; Thu, 17 Jan 2002 22:11:34 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16RKkr-0006O2-00; Thu, 17 Jan 2002 22:11:29 +0000
+Date: Thu, 17 Jan 2002 22:11:25 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: all-students@doc.ic.ac.uk
+cc: Ashutosh Arya <aa400@doc.ic.ac.uk>, Darren Mcguinness <dm100@doc.ic.ac.uk>
+Subject: Credit Suisse First Boston's Technology Presentation
+Message-ID: <Pine.LNX.4.42.0201172208410.3878-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 37
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+
+INTERESTED IN TECHNOLOGY AND INVESTMENT BANKING?
+
+WANT TO FIND OUT MORE ABOUT IT FROM SOMEONE AT THE TOP?
+
+YES? Then come to Credit Suisse First Boston's Technology Presentation on
+Tuesday 22nd January in the Clore Lecture Theatre (Rm 213, Huxley) at 12:30pm.
+
+The talk will be given by the Chief Technology Director at CSFB who will
+be discussing the role of Technology within modern day Investment
+Banking.
+
+This talk will also be useful for those of you looking for careers
+and internships in Investment Banking.
+
+NO HALF MEASURES.
+
+NO FIXED IDEAS.
+
+NO CLOSED DOORS.
+
+NO STANDING STILL.
+
+NO BOUNDARIES.
+
+...CREDIT SUISSE FIRST BOSTON TECHONLOGY PRESENTATION
+
+TUESDAY 22nd JANUARY - 12:30pm - The Clore (Rm 213), Huxley
+
+[In association with DoCSoc]
+
+=====================================
+
+Ash Arya asked me to forward this to all on behalf of Darren Mcguinness.
+
+Kind regards,
+
+
+Paul
+- --
+CSG Technical Assistant, DoC, Imperial College
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+URL:	http://myitcv.org.uk/
+tel:   	+44 7748 105236
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8R0wQ0YkfvYj92P4RAglDAKCVg6u5T4Qj4yZ6T/l14oXPcnmMQACfSJIJ
+MANt/RSTLiNM3eHVnM3iTJU=
+=UATn
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Tue Nov 06 14:00:39 2001
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 06 Nov 2001 14:00:40 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 1616fk-0005sv-00; Tue, 06 Nov 2001 13:53:49 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 1616fP-0007gY-00
+	for all-doc@doc.ic.ac.uk; Tue, 06 Nov 2001 13:53:27 +0000
+Date: Tue, 6 Nov 2001 13:53:24 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: all-doc@doc.ic.ac.uk
+Subject: Lexis Exam Invigilation System
+Message-ID: <Pine.LNX.4.40.0111061130440.8382-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 38
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+How does DoC's online Exam system work? What security holes are there,
+and how could they be exploited to cheat in exams? Is it possible for
+computers to be more secure and reliable than pen and paper?
+
+Mike Wyer, systems programmer in CSG and main Lexis developer, discusses
+the issues and technologies involved in developing and deploying Lexis.
+This is a preview of the talk he will be presenting to the 15th LISA
+conference in San Diego in December.
+
+Date: Wednesday 14th November
+Time: 14:00
+Room: 308 Huxley
+
+For more details see the link below:
+
+http://www.doc.ic.ac.uk/docosoc/
+
+
+Kind regards,
+
+
+Paul J
+- --
+web:   http://myitcv.org.uk/
+email: paul@myitcv.org.uk
+tel:   +44 7748 105236
+finger paj00@doc.ic.ac.uk for PGP key
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE75+tW0YkfvYj92P4RAn/MAJ0XR+rmrQiQpbrwvj750k1acpo+jACfZCrn
+3M/npn1xygyzTYKXHM/eVyM=
+=0FYJ
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Wed Feb 27 17:50:55 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 27 Feb 2002 17:50:55 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16g8E5-000010-00; Wed, 27 Feb 2002 17:50:49 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16g8E5-0003YF-00; Wed, 27 Feb 2002 17:50:49 +0000
+Date: Wed, 27 Feb 2002 17:50:46 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: Undisclosed recipients: ;
+Subject: Exam Past Papers Ready
+Message-ID: <Pine.LNX.4.42.0202271715030.19882-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=ISO-8859-1
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 39
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+Past paper booklets are ready. Please bring your =A32 to room 225 (CSG
+Systems) and I will hand over the goods!!
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8fRx50YkfvYj92P4RApieAJ9BIR+zfDfhcMaB46tz9LGjBkEQRgCffUYa
+Ckbz1+qZeD4OcOpLHMdpWnA=3D
+=3DdxkE
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Thu Feb 28 12:34:29 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 28 Feb 2002 12:34:29 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16gPlQ-0006Pf-00; Thu, 28 Feb 2002 12:34:24 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16gPlQ-0003Z6-00; Thu, 28 Feb 2002 12:34:24 +0000
+Date: Thu, 28 Feb 2002 12:34:21 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: Undisclosed recipients: ;
+Subject: Important: Exam Past Papers
+Message-ID: <Pine.LNX.4.42.0202281227030.25010-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 40
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+Following quite large number of requests in 225 for exam past papers, I
+have decided to devote tomorrow lunchtime to handing over the papers.
+
+** PLEASE DO NOT COME TO 225 **
+
+Instead, come to room Room 308 between 13:00 and 14:00 tomorrow, Friday
+1st March.
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8fiPQ0YkfvYj92P4RAiN9AJ9jnMFF+8Vzw0HpQPYMYTPOZUwmygCglQah
+bzTGZOnnskh+vkqDXtXvHsY=
+=ZINl
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Thu Feb 28 13:50:52 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 28 Feb 2002 13:50:52 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16gQxL-0001ca-00; Thu, 28 Feb 2002 13:50:47 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16gQxL-0004yX-00; Thu, 28 Feb 2002 13:50:47 +0000
+Date: Thu, 28 Feb 2002 13:50:44 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: Undisclosed recipients: ;
+Subject: Important: Exam Past Papers Again
+Message-ID: <Pine.LNX.4.42.0202281348070.25010-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 41
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+I will be in the same place on Monday as well!!! Room 308, Monday 4th
+March, 13:00-14:00.
+
+Sorry for the confusion.
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8fjW20YkfvYj92P4RAl4jAJ0T6R0a1Us0ccH2OFPi3lsTWWNqmgCeKbJG
+EdYh9wruNxF81tbLA51Z6gY=
+=LdgL
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Thu Feb 28 15:12:33 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 28 Feb 2002 15:12:33 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16gSBT-0004m5-00; Thu, 28 Feb 2002 15:09:27 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16gApe-0008Um-00
+	for docsoc-students@doc.ic.ac.uk; Wed, 27 Feb 2002 20:37:46 +0000
+Date: Wed, 27 Feb 2002 20:37:43 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Go-Karting with CGCU
+Message-ID: <Pine.LNX.4.42.0202272030150.25010-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=ISO-8859-1
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 42
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+** GO KARTING ** YOU DO NEED TO REGISTER FOR THIS EVENT **
+
+Details:
+
+http://www.doc.ic.ac.uk/docsoc/gokart2002
+
+Date: Monday 18th March
+Time: 7pm (to be confirmed)
+Cost: =A318 (could be reduced further by DoCSoc subsidy!!!)
+Location: Battersea - Playscape Pro Racing
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8fUOa0YkfvYj92P4RAhcyAJ97BxQegLpun4JN2PvtwOn69kjrggCfbI30
+WzRrW4D07JjEaU1m78CaprM=3D
+=3DrhNf
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Thu Feb 28 15:14:19 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 28 Feb 2002 15:14:19 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16gSE5-0004xh-00; Thu, 28 Feb 2002 15:12:10 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16dzI0-0008Sd-00
+	for docsoc-students@doc.ic.ac.uk; Thu, 21 Feb 2002 19:54:00 +0000
+Date: Thu, 21 Feb 2002 19:53:57 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Exam Past Papers Update
+Message-ID: <Pine.LNX.4.42.0202211722210.14691-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 43
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear Exam Students,
+
+(Again sorry to non-exam students. Must create that list :-)
+
+Please register your interest BEFORE MONDAY 25th 9am! We need to
+finalise numbers so that we can send the booklets to Docunet. After
+next Monday, the only delay will be with Docunet; they are normally
+excellent. I will keep you updated.
+
+========================================================================
+
+Apologies for some students spamming the list earlier. Suitable measures
+have been taken to avoid this happening in the future :-)
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8dVBY0YkfvYj92P4RAjLoAJ4xjKUkb71gLl2U4bGhiMkCRaCr3QCfVcJ2
+8GMiZoQrJUZZsOI0covDWIk=
+=JvSE
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Thu Feb 28 15:14:47 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 28 Feb 2002 15:14:47 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16gSEg-000582-00; Thu, 28 Feb 2002 15:12:46 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16fh6x-0004TA-00
+	for docsoc-students@doc.ic.ac.uk; Tue, 26 Feb 2002 12:53:39 +0000
+Date: Tue, 26 Feb 2002 12:53:36 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Olympics and Sports Day 2002
+Message-ID: <Pine.LNX.4.42.0202261138090.19882-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 44
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+** CGCU Sports Day **
+
+Wednesday 13th March, from 2pm onwards @ Cobham Sports Ground
+
+
+For details:
+
+http://www.doc.ic.ac.uk/docsoc/sports_day_2002
+
+Sounds like it could be good fun!!
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8e4VS0YkfvYj92P4RAo6UAJ9fvC+icT2RCi5Jk691hxnaXF85hACdF9ez
+Jq7DYecaKGTaNMGsoS3A+D4=
+=iaNx
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Thu Feb 28 18:04:17 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 28 Feb 2002 18:04:17 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16gUre-0005yf-00; Thu, 28 Feb 2002 18:01:11 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16gUrZ-0001qH-00
+	for docsoc-students@doc.ic.ac.uk; Thu, 28 Feb 2002 18:01:05 +0000
+Date: Thu, 28 Feb 2002 18:01:02 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Exam Past Papers: Confusion reigns
+Message-ID: <Pine.LNX.4.42.0202281745470.25010-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 45
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All Exam Students,
+
+(Damn list, I stand by my promise I will fix this over the summer :-)
+
+I would seem that there has been a great deal of confusion over the
+DoCSoc exam past paper scheme. This mail tries to clear up the details.
+
+The docsoc-students mailing list was created so that people could
+un-subscribe should they not want to receive my rambling emails. This
+list was abused twice in one day by two students, so with the help of
+Mike Wyer, we closed the list. This move suffered some config file
+errors which caused some mails to back up on the server. This resulted
+in some people not receiving my first mail about registering for past
+papers. My second mail, an update on past papers, suffered similar
+problems and was delivered today, three days late. As the printers
+required numbers for the booklets, I had to close the registration
+period on Monday morning. Hence the confusion with the second mail
+arriving today.
+
+My sincere apologies for this confusion. It is partly my fault. The
+scheme was started very late this year and has not worked as smoothly as
+I would have liked. Next year, I intend to have the booklets ready
+before the beginning of the autumn term so that third years have the
+papers when they need them. The booklets will also be free, being funded
+by company sponsorship (of which I have some) and department subsidy
+(cause they should be contributing in any case).
+
+Once again, I am very sorry that people have been left out in this
+scheme.
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8fnBh0YkfvYj92P4RAsKQAJ9wmukyvD35axZppx7tulqniGvD3wCfSDmb
+ylAp1PVc6u73DWYn/Yt/eG4=
+=3rdX
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Fri Mar 01 20:00:36 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 01 Mar 2002 20:00:36 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16gtBC-0002Ax-00; Fri, 01 Mar 2002 19:58:58 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16gtB5-0005p5-00
+	for docsoc-students@doc.ic.ac.uk; Fri, 01 Mar 2002 19:58:51 +0000
+Date: Fri, 1 Mar 2002 19:58:48 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Exam Past Papers again
+Message-ID: <Pine.LNX.4.42.0203011912470.25010-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=ISO-8859-1
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 46
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+This is to clear up all the questions that people have. Not that I mind,
+but today I have received 50 emails from people asking fairly similar
+questions so here goes on clearing up the points they address.
+
+1. Registration for the past paper booklets has ended. This means that
+those who did not register via the web interface cannot be guaranteed a
+booklet. Those who did register, you are assured of a booklet. Sorry
+about all the confusion over this (as mentioned in my last mail); the
+rush job this year was not my ideal plan, but the department do not
+want to help / be a part of this scheme at all.
+
+2. For those who are now left without past papers, the ps files are
+available from the following location (DoC login only):
+
+https://www.doc.ic.ac.uk/docsoc/exams/
+
+This is the suggested format. These will work using lpr under Linux. For
+example:
+
+lpr -Predshift blah.ps
+
+However, if you want the pdf format:
+
+https://soroban.doc.ic.ac.uk/exams/
+
+Note that trying to print these files via lpr under Linux will result in
+much crap coming out of the printer. Either print from acrobat reader or
+acroread and you should be fine.
+
+3. For those who did register via the web interface, the papers are
+ready (well almost). For CS1, CS2, CS3, CS4, your papers can be
+collected on Monday 4th and Wednesday 6th March from room 308 between
+13:00 and 14:00. I  will mail ISE, JMC, MSc and MAC students
+individually (ie those who registered) giving details of when they can
+pick up the booklets. The cost, as stated previously, is =A32.
+
+4. The deadline for collecting the booklets will be Friday 8th March.
+People who do not collect booklets by 5pm on this day, will not be
+guaranteed booklets, even if you registered for them.
+
+5. If there are any papers left after the deadline, I will sell them on
+a first come first served basis. I will confirm numbers remaining in a
+mail after the deadline.
+
+Thanks for your patience.
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8f9170YkfvYj92P4RAvE6AKCUuPpRcRBeRBd07tKLU5ovTXGTIgCeP/VB
+maP5kpUcymq1dW9O6yUsrFg=3D
+=3D6Cyp
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Thu Mar 07 08:37:27 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 07 Mar 2002 08:37:27 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16itN2-00076h-00; Thu, 07 Mar 2002 08:35:28 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16itLf-0001d1-00
+	for docsoc-students@doc.ic.ac.uk; Thu, 07 Mar 2002 08:34:03 +0000
+Date: Thu, 7 Mar 2002 08:34:00 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: FoESA (C&G) + Dep Soc Elections - Vote Today 
+Message-ID: <Pine.LNX.4.42.0203070831320.2826-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 47
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+
+* Faculty of Engineering Students Association (C&G) Exec elections
+* Elections for YOUR Departmental Society
+* Elections for YOUR Academic Reps
+
+Voting: Thur 7 / Fri 8 March
+- - 10 am to 5pm in your department
+- - pls bring photo ID (swipe card)
+
+Results announced: Tue 12 March, 1pm in dB's (AGM)
+
+If you still want to stand for a post there are several positions elected
+at the AGM. See http://live.cgcu.net/news/?id=382 for a list.
+
+
+If you have any problems voting, please contact us ASAP.
+
+Mustafa Arif + Neil Madhvani
+Returning Officers
+mailto:elections@cgcu.net
+http://www.cgcu.net/elections/
+Hotline: 07748 751 688
+
+========================================================================
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8hyX60YkfvYj92P4RAjNzAJ44SLVs4p6s2/miR7Xp3H0YRfRrbQCffBag
+hg9i2NmgnQRUZF7kNpTmJSQ=
+=q8MS
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Fri Mar 08 08:45:19 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 08 Mar 2002 08:45:19 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16jFyV-0002dt-00; Fri, 08 Mar 2002 08:43:39 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16jFyO-0006fF-00
+	for docsoc-students@doc.ic.ac.uk; Fri, 08 Mar 2002 08:43:32 +0000
+Date: Fri, 8 Mar 2002 08:43:29 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Karting reminder
+Message-ID: <Pine.LNX.4.42.0203080833030.14915-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=ISO-8859-1
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 48
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+DoCSoc are off to Battersea Playscape Pro Racing. Details of the kind
+of race are as follows.
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Date: Monday 18th March
+
+Time: 7pm (to be confirmed)
+
+Cost: =A318 per head if a member of a team of 10 people or =A3180 per
+team (could be reduced further by DoCSoc subsidy!!!)
+
+Location: Battersea - Playscape Pro Racing
+
+Register: YOU NEED TO REGISTER FOR THIS EVENT! Register here:
+
+          https://www.doc.ic.ac.uk/~paj00/docsoc/karting.cgi
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Final date for registering is middle of next week ish! Vague I know :-)
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8iHm00YkfvYj92P4RAizuAJ4qrJWL+/lhsYenxtpHWfSeKWBNewCeLVF4
+wXFzJERYntDRhFy4kHg6uUQ=3D
+=3D6LEQ
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Fri Mar 08 14:24:11 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 08 Mar 2002 14:24:11 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16jLGO-0000tx-00; Fri, 08 Mar 2002 14:22:28 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16jLGH-00044g-00
+	for docsoc-students@doc.ic.ac.uk; Fri, 08 Mar 2002 14:22:21 +0000
+Date: Fri, 8 Mar 2002 14:22:18 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Mini Typo; Exam Past Papers and more
+Message-ID: <Pine.LNX.4.42.0203081325140.21699-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=ISO-8859-1
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 49
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Exam past papers
+- ----------------
+For those of you who do not have past paper booklets, I have some
+remaining. I will be selling the remaining booklets from room 308 on
+Monday, 13:00-14:00.
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+CGCU Olympics
+- -------------
+A reminder of the CGCU Olympics coming up next Wednesday. YOU NEED TO
+REGISTER SOON FOR THIS EVENT. Check out the following URL:
+
+http://www.doc.ic.ac.uk/docsoc/sports_day_2002
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Swanwick Air Traffic Control System
+- -----------------------------------
+Date:     Wednesday, 13th March 2002
+Time:     14:00 - 15:00
+Location: Room 308, Huxley Building
+Speaker:  Gary Gibson, Swanwick SIVV Manager, National Air Traffic
+Services Talk
+
+Check out the following URL for more details:
+
+http://www.doc.ic.ac.uk/docsoc/satcs
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Karting
+- -------
+DoCSoc are off to Battersea Playscape Pro Racing. Details of the kind
+of race are as follows.
+
+Date: Monday 18th March
+Time: 7pm (to be confirmed)
+Cost: =A318 per head if a member of a team of 10 people or =A3180 per
+team (could be reduced further by DoCSoc subsidy!!!)
+
+Location: Battersea - Playscape Pro Racing
+
+Register: YOU NEED TO REGISTER FOR THIS EVENT! Register here:
+
+          https://www.doc.ic.ac.uk/~paj00/docsoc/karting.cgi
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+For more details on DoCSoc, please visit:
+
+http://www.doc.ic.ac.uk/docsoc/
+
+or email docsoc@doc.ic.ac.uk for more details.
+
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8iMkd0YkfvYj92P4RAkECAJ9GKqxYOuThPc5ix+W77QS1mEpp8QCdGWPa
+1At4LB1t9hDHwuCiGEPWocg=3D
+=3DKiux
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Mon Mar 11 12:06:48 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 11 Mar 2002 12:06:48 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16kOXS-0004aP-00; Mon, 11 Mar 2002 12:04:26 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16kOXL-0007NK-00
+	for docsoc-students@doc.ic.ac.uk; Mon, 11 Mar 2002 12:04:19 +0000
+Date: Mon, 11 Mar 2002 12:04:15 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Another DoCSoc student2student talk
+Message-ID: <Pine.LNX.4.42.0203101531050.28516-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 50
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+Why read through the TV guide by hand when you can write a program to do
+it for you?  This talk outlines XMLTV, a project to develop a common
+XML-based format for TV listings and a set of tools to manage your
+viewing.
+
+Ed Avis is a fourth year computing student here in DoC and will be
+giving the talk in association with DoCSoc. Details as follows:
+
+Date: Thursday 14th March
+Time: 12:00 - 13:00pm
+Location: Studio A
+Talk title: Television + XML + Perl == XMLTV
+
+More information about the XMLTV project is at
+<http://www.doc.ic.ac.uk/~epa98/work/apps/xmltv/>.
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8jJ1C0YkfvYj92P4RAiMaAJ4uGsLt148OZj4YdnX+Ok47uxXl7ACfSXtS
+gXcHyx0IbrSqXWl/XgrcXLQ=
+=PVMd
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Tue Mar 12 14:44:19 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 12 Mar 2002 14:44:19 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16knTR-00024K-00; Tue, 12 Mar 2002 14:41:57 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16knUu-0006B8-00
+	for docsoc-students@doc.ic.ac.uk; Tue, 12 Mar 2002 14:43:28 +0000
+Date: Tue, 12 Mar 2002 14:41:51 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Air Traffic Safety; NUS debate
+Message-ID: <Pine.LNX.4.42.0203120825330.28516-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 51
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+
+Swanwick Air Traffic Control System Talk
+========================================
+Date:     Wednesday, 13th March 2002
+Time:     14:00 - 15:00
+Location: Room 308, Huxley Building
+Speaker:  Gary Gibson, Swanwick SIVV Manager, National Air Traffic
+          Services
+Title:    "An Overview of the new Swanwick Air Traffic Control
+          System". (New En-Route Centre, NERC)
+
+Abstract:
+The Swanwick Centre, when it opens, will be one of the world's most
+advanced Air Traffic Control Systems. The project has suffered technical
+and programme issues and has been delayed a number of times but cross
+training of the air traffic controllers has now started - a sign that it
+is soon to go Operational.
+
+
+NUS DEBATE
+==========
+Should the Imperial College Union (ICU) join the National Union of
+Students (NUS). YOU decide.
+
+The second (and final) debate on NUS affiliation takes place TODAY
+
+Date:     Today, Tuesday 12th March,
+Time:     7pm
+Location: Drewe Lecture Theatre, Reynold Building, Charing Cross
+          Medical School Campus.
+
+To find out how the NUS affects YOU see http://www.union.ic.ac.uk/nus/
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8jhOx0YkfvYj92P4RAhyLAJ9ty4P5yTEiTmf2hOPdFU+0nNKtBACghtBj
+Dn8pfG//Mqhh2ekuhM1PFGk=
+=FdY7
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Thu Mar 14 08:43:39 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 14 Mar 2002 08:43:39 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16lQo9-0001Hm-00; Thu, 14 Mar 2002 08:41:57 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16lQo5-0004z9-00
+	for docsoc-students@doc.ic.ac.uk; Thu, 14 Mar 2002 08:41:53 +0000
+Date: Thu, 14 Mar 2002 08:41:50 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: XML-TV; Election Results; NUS Referendum
+Message-ID: <Pine.LNX.4.42.0203140837220.3872-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 52
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+
+XML-TV Talk by Ed Avis
+======================
+Why read through the TV guide by hand when you can write a program to do
+it for you?  This talk outlines XMLTV, a project to develop a common
+XML-based format for TV listings and a set of tools to manage your
+viewing.
+
+Ed Avis is a fourth year computing student here in DoC and will be
+giving the talk in association with DoCSoc. Details as follows:
+
+Date: 		Today, Thursday 14th March
+Time: 		12:00 - 13:00pm
+Location: 	Studio A
+Talk title: 	Television + XML + Perl == XMLTV
+
+More information about the XMLTV project is at
+<http://www.doc.ic.ac.uk/~epa98/work/apps/xmltv/>.
+
+
+CGCU ELECTIONS 2001
+===================
+Results available online: http://www.cgcu.net/elections/
+
+
+NUS REFERENDUM
+==============
+Voting in all departments: Thur 14 / Fri 15 March
+
+See http://union.ic.ac.uk/nus/ for more details.
+
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8kGJQ0YkfvYj92P4RAgttAJ9fjqBnp6lPMUgrnpjq5NMzmZC5fQCeNS8e
+gTIZl30r/PiZSTQJmOMmoH4=
+=s8Cp
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Fri Mar 15 14:13:49 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 15 Mar 2002 14:13:49 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16lsQ8-0000M1-00; Fri, 15 Mar 2002 14:11:00 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16lsPx-00087V-00
+	for docsoc-students@doc.ic.ac.uk; Fri, 15 Mar 2002 14:10:49 +0000
+Date: Fri, 15 Mar 2002 14:10:45 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Internship Centre
+Message-ID: <Pine.LNX.4.42.0203151407490.3872-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 53
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+Just a reminder about the Internship Centre website:
+
+http://www.cgcu.net/internships
+
+There is a new Internship from UBS Warburg IT that people might be
+interested in.
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8kgDo0YkfvYj92P4RAj8eAJ0RewD6hD2fcZ6zA+RxznOyt2oQLQCcClOI
+5J1fDkX7k1WnIM0m84RxBu8=
+=T/tz
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Fri Mar 15 22:08:56 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 15 Mar 2002 22:08:56 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16lzpo-0004DO-00; Fri, 15 Mar 2002 22:06:01 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16lzoR-0007jB-00
+	for docsoc-students@doc.ic.ac.uk; Fri, 15 Mar 2002 22:04:35 +0000
+Date: Fri, 15 Mar 2002 22:04:32 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: NUS referendum results
+Message-ID: <Pine.LNX.4.42.0203152203180.3872-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 54
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear Student,
+
+Following the National Union of Students referendum held on Thursday 14th
+and Friday 15th, I invite you to the announcement of the results on Monday
+18th March in the Union Dining Hall at 12pm.
+
+All students are welcome to attend but please bear in mind that you will
+be admitted up to capacity on a first come-first serve basis.
+
+Thank you for your interest in the NUS referendum.
+
+David C. Rolls
+Returning Officer, NUS Referendum
+
+
+========================================================================
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8km/z0YkfvYj92P4RAluNAJ9vdJvYj09t2LddHtupKL9yL0urIACcDyYb
+tnsW9v566kuOuUljEeBmOsk=
+=38Be
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Fri Jun 07 07:00:07 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 07 Jun 2002 07:00:07 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 17GCku-0000QJ-00; Fri, 07 Jun 2002 06:57:48 +0100
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 17GCko-0004wM-00
+	for docsoc-students@doc.ic.ac.uk; Fri, 07 Jun 2002 06:57:42 +0100
+Date: Fri, 7 Jun 2002 06:57:38 +0100 (BST)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Theatre of Science comes to Imperial for RAG
+Message-ID: <Pine.LNX.4.42.0206070654540.24885-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=ISO-8859-1
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 55
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+WHAT'S THIS "THEATRE OF SCIENCE" MALARKEY THEN?
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Ex-Imperial physicist and author of Fermat's Last Theorem and The Code
+Book, Simon Singh, together with real life scientist and entertainer
+Richard Wiseman, brave the stage to bring you the "Theatre of Science!"
+Two fascinating talks bring the mathematics of gambling to life and
+investigate the psychology of deception for your entertainment...
+
+WHEN IS IT?
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Tuesday 11th June, 7pm, Lecture Theatre 1, Blackett Laboratory, Imperial
+College Physics Department, on the corner of Prince Consort Road and
+Queen's Gate
+
+WHERE CAN I BUY A TICKET?
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Just =A35 / =A33 students and concessions for some quality entertainment
+AVAILABLE FROM TOMORROW Union Reception, Beit Quad / Physics
+Undergraduate Office / RAG committee and DramSoc members
+
+MORE INFORMATION?
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+http://union.ic.ac.uk/dramsoc/?th=3D1
+
+THIS EVENT IS ORGANISED BY ICU DRAMSOC with all proceeds to the ICU
+RAG nominated charity, the Shooting Star Trust - building a hospice
+appeal for terminally ill children in West London
+
+NEWS FLASH
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+THE FIRST GENETICALLY MODIFIED STUDENT RAG MAG will be coming to a
+Department, Union, Shop or Bar near you soon! Just one english pound for
+a complete guide to avoiding revision and project work! All proceeds to
+charity...
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Kind regards,
+
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE9AEtW0YkfvYj92P4RArNcAJ9x4fjW9AnBR7j7Z8Rc028clGK0RACgkL7D
+8r9f/GQs5BoRm3BDLDec4JA=3D
+=3DQFZU
+-----END PGP SIGNATURE-----
+
+
+From paul@myitcv.org.uk Fri Jun 07 07:09:39 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 07 Jun 2002 07:09:39 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 17GCvT-00018E-00; Fri, 07 Jun 2002 07:08:43 +0100
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 17GCvP-00052o-00
+	for docsoc-students@doc.ic.ac.uk; Fri, 07 Jun 2002 07:08:39 +0100
+Date: Fri, 7 Jun 2002 07:08:36 +0100 (BST)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: Beit Quad Barbecue
+Message-ID: <Pine.LNX.4.42.0206070657550.24885-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 56
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+Date:      Thursday 13th June
+Location:  Beit Quad (Union)
+
+** NO TICKETS REQUIRED **
+
+C&G's own Catering team will be providing a high quality selection of
+burgers, hot dogs etc at ridiculously low prices - i.e. we aim to be a
+lot more price competitive than the ICU barbecues!  I'll send you an
+email confirming pricing soon.
+
+Everyone (I mean everyone!!!) is welcome to come along, and pay per item
+for food.  Drinks will be available from the Union Bar.
+
+... it's a great chance to celebrate the end of the exams of course!
+
+See you there!
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+
+
+
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE9AE3m0YkfvYj92P4RAtYzAJwIFsdekKTDuAxqAiVeDo21kQ7mPQCfSxgy
+pohxpczc06HIoCwU68ydgB0=
+=wgZ9
+-----END PGP SIGNATURE-----
+
+

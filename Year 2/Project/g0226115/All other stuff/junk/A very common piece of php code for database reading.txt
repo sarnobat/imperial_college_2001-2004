@@ -1,0 +1,18 @@
+When you are after a single value in an sql table, there are 4 stages:
+
+1. Save the query as a string.
+2. Execute the string and save the table in a variable "resultset".
+
+	$sql = "SELECT XXX FROM YYY WHERE ZZZ";
+	$resultset = pg_query($connection, $sql) or die("Error in query: $sql." .pg_last_error($connection));
+
+	$rows = pg_num_rows($resultset);  //if you got more than 1 row otherwise
+					  //$row = pg_fetch_object($resultset,0); and reference as before
+
+	for($i=0; $i<$rows; $i++)  //iterate through rows
+	{
+		$row = pg_fetch_object($resultset,$i); //fetch each row as an object
+		$myvariable = $row->XXX; //referenced using "->var_name"
+	}
+
+======================================================================================

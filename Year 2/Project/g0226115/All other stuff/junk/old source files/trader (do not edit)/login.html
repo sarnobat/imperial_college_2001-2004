@@ -1,0 +1,36 @@
+<script language = Javascript src = include/validateform.js></script>
+
+<!-- Login Form -->
+<form action = "login.php" method="post" onSubmit="return validateForm(this,1)">
+	<table>
+		<tr>
+			<td>Username</td> 
+			<td><input type = "text" name = username> </td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type = "password" name = password></td>
+		</tr>
+	</table>
+	<input type="submit" value = "Login">
+</form>
+
+<!--  Register Form -->
+<form action = "register.php" method="post" onSubmit="return validateForm(this,2)">
+	<table>
+		<tr>
+			<td>Username</td> 
+			<td><input type = "text" name = username></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type = "password" name = password></td>
+		</tr>
+		<tr>
+			<td>Confirm Password</td>
+			<td><input type = "password" name = confirm></td>
+		</tr>
+	</table>
+
+	<input type="submit" value="Register">
+</form>

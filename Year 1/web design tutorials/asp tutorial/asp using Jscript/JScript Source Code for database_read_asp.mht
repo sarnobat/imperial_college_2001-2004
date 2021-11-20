@@ -1,0 +1,604 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: The ASP Emporium - JScript Source Code for database_read.asp
+Date: Tue, 13 Aug 2002 16:19:22 +0100
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0000_01C242E5.2F6223A0";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4133.2400
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C242E5.2F6223A0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.aspemporium.com/aspEmporium/src/js_srcview.asp?source=database_read.asp
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>The ASP Emporium - JScript Source Code for =
+database_read.asp</TITLE>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type>
+<STYLE type=3Dtext/css>H3 {
+	COLOR: #cc3300
+}
+</STYLE>
+
+<META content=3D"MSHTML 5.00.3105.105" name=3DGENERATOR></HEAD>
+<BODY background=3Dhttp://www.aspemporium.com/aspEmporium/pix/bg.gif=20
+bgColor=3D#eeeeee>
+<TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD align=3Dleft vAlign=3Dtop width=3D"50%"><IMG alt=3D"The ASP =
+Emporium" border=3D0=20
+      height=3D36 =
+src=3D"http://www.aspemporium.com/aspEmporium/pix/emporium.gif"=20
+      width=3D283> <BR><FONT color=3D#cc3300 face=3Dverdana =
+size=3D-2><IMG=20
+      alt=3D"Free Active Server Applications and Examples by Bill =
+Gearhart"=20
+      border=3D0 height=3D25=20
+      src=3D"http://www.aspemporium.com/aspEmporium/pix/blurb.gif" =
+width=3D438>=20
+      </FONT></TD>
+    <TD align=3Dright vAlign=3Dtop width=3D"50%"><FONT face=3Darial =
+size=3D-1><IMG=20
+      alt=3D"Online since Friday January 7, 2000" border=3D0 height=3D30 =
+
+      src=3D"http://www.aspemporium.com/aspEmporium/pix/online.gif"=20
+      width=3D197><BR></FONT></TD></TR></TBODY></TABLE><BR>
+<TABLE bgColor=3D#60786b border=3D0 cellPadding=3D1 cellSpacing=3D1 =
+width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD bgColor=3D#60786b width=3D"20%"><IMG alt=3D"" border=3D0 =
+height=3D20=20
+      src=3D"http://www.aspemporium.com/aspEmporium/pix/location.gif" =
+width=3D195>=20
+    </TD>
+    <TD bgColor=3D#ffffee width=3D"80%"><FONT color=3D#60786b =
+face=3Darial=20
+      size=3D-1>&nbsp;<A=20
+      =
+href=3D"http://www.aspemporium.com/aspemporium/index.asp">home</A>&nbsp;&=
+gt;&nbsp;<A=20
+      =
+href=3D"http://www.aspemporium.com/aspemporium/examples/index.asp">exampl=
+e=20
+      scripts and apps</A>&nbsp;&gt;&nbsp;<A=20
+      =
+href=3D"http://www.aspemporium.com/aspemporium/examples/jscript/index.asp=
+">JScript=20
+      examples</A>&nbsp;&gt;&nbsp;<A=20
+      =
+href=3D"http://www.aspemporium.com/aspemporium/examples/jscript/database_=
+read.asp">database_read</A>&nbsp;&gt;&nbsp;View&nbsp;JScript&nbsp;Source&=
+nbsp;Code&nbsp;&gt;&nbsp;<A=20
+      =
+href=3D"http://www.aspemporium.com/aspEmporium/downloads/fileDependsEx.as=
+p?eg=3Ddatabase_read">download&nbsp;source</A>=20
+      </FONT></TD></TR></TBODY></TABLE><BR>
+<H3>JScript Source Code For database_read.asp</H3>
+<TABLE border=3D1>
+  <TBODY>
+  <TR>
+    <TH><SMALL>Source Code Legend:</SMALL></TH></TR>
+  <TR>
+    <TD><SMALL>Include Files (These should be removed)</SMALL><PRE =
+style=3D"FONT-SIZE: 9pt"><FONT style=3D"BACKGROUND: #999999; COLOR: =
+#ffffff">&lt;!--#include =
+virtual=3D"/aspEmporium/inc/quickNav.asp"--&gt;</FONT></PRE><SMALL>ASP=20
+      Source Code</SMALL><PRE style=3D"FONT-SIZE: 9pt"><FONT =
+style=3D"BACKGROUND: #ffffee; COLOR: #cc3300">&lt;%   some asp code   =
+%&gt;</FONT></PRE><SMALL>ASP=20
+      Comments</SMALL><PRE style=3D"FONT-SIZE: 9pt"><FONT =
+style=3D"BACKGROUND: #64f7f3; COLOR: #333333">/* a bunch of comments =
+*/</FONT></PRE><SMALL>HTML=20
+      Code</SMALL><PRE style=3D"FONT-SIZE: =
+9pt">&lt;sometag&gt;value&lt;/sometag&gt;</PRE></TD></TR></TBODY></TABLE>=
+<PRE style=3D"FONT-SIZE: 9pt"><FONT style=3D"BACKGROUND: #ffffee; COLOR: =
+#cc3300">&lt;%  @  Language =3D jscript  %&gt;</FONT>
+<FONT style=3D"BACKGROUND: #ffffee; COLOR: #cc3300">&lt;%
+	<FONT style=3D"BACKGROUND: #64f7f3; COLOR: #333333">// don't forget to =
+change the @ Language declaration</FONT>
+
+
+
+
+
+function JScriptDatabaseRead() {
+	<FONT style=3D"BACKGROUND: #64f7f3; COLOR: #333333">/*=20
+           declare variables
+	      JScript's var statement is roughly equivalent to VBScript's=20
+	      Dim statement. Except jscript allows variables to be declared
+	      and set on the same line.
+	*/</FONT>
+	var c, r, strOut =3D "";
+	var sql =3D "SELECT exampleName FROM examples WHERE exampleLanguage =3D =
+'jscript' ORDER BY exampleName;";
+	var cnstr =3D "";
+
+	<FONT style=3D"BACKGROUND: #64f7f3; COLOR: #333333">/*
+	   since vbCrLf doesn't exist in jscript, let's make one.
+	   vbCrLf is equivalent to chr(13) and chr(10) but there is
+	   no chr() function in jscript so you must use the=20
+	   fromCharCode Method...
+	*/</FONT>=20
+	var vbCrLf =3D String.fromCharCode( 13, 10 );
+
+	<FONT style=3D"BACKGROUND: #64f7f3; COLOR: #333333">/*
+	   jscript concatenates strings differently as well.
+	      usually in vbscript you would use syntax like x =3D x &amp; =
+"stuff"
+	      to concat... strings together. While jscript can concat strings
+	      that way too, they should really be done using the variable+=3D =
+"stuff"
+	      syntax. In otherwords, the variable cbstr below in vbscript would =
+be=20
+	      written this way:
+		cnstr =3D cnstr &amp; "Provider=3DMicrosoft.Jet ....."=20
+	      but in jscript it's like this:
+		cnstr+=3D "Provider ...."
+	*/</FONT>
+	cnstr+=3D "Provider=3DMicrosoft.Jet.OLEDB.4.0;";
+
+	<FONT style=3D"BACKGROUND: #64f7f3; COLOR: #333333">/*
+	   the \ character is special in jscript: It marks the next character
+	   as a non printing character. In order to make the \ character print
+	   in the string, you need 2 \'s in a row ...
+		cnstr+=3D "Data =
+Source=3Dc:\\projects\\aspemporium.com\\aspemporium\\mydata.mdb;";
+
+	   or you can use Server.Mappath()
+	*/</FONT>
+	cnstr+=3D "Data Source=3D" + Server.Mappath("/aspemporium/mydata.mdb");
+
+	<FONT style=3D"BACKGROUND: #64f7f3; COLOR: #333333">/*
+	   There is no such method as Server.CreateObject in jscript, instead =
+use
+	   the ActiveXObject() object, preceded by the "new" operator. The next
+	   statement is equivalent to the vbscript statement:
+		Set c =3D Server.CreateObject("ADODB.Connection")
+	*/</FONT>
+	c =3D new ActiveXObject("ADODB.Connection");
+
+	<FONT style=3D"BACKGROUND: #64f7f3; COLOR: #333333">// =
+c.Open(cnstr);</FONT>
+
+	c.Open( Application("dbConn"), Application("dbUsr"), =
+Application("dbPass") );
+
+	r =3D c.Execute(sql);
+
+	<FONT style=3D"BACKGROUND: #64f7f3; COLOR: #333333">/*
+	   The next statement is equivalent to the while...wend statement in =
+vbscript.
+	   Equivalent to :
+		While Not r.BOF and Not r.EOF
+		  ... statements
+		Wend
+
+	   The "!" operator is equivalent to "Not" and=20
+	   the "&amp;" operator is equivalent to "And"...
+	*/</FONT>
+	while (!r.BOF &amp; !r.EOF){
+		strOut+=3D r(0) + "&lt;BR&gt;" + vbCrLf;
+		r.MoveNext();
+	} <FONT style=3D"BACKGROUND: #64f7f3; COLOR: #333333">// end =
+while</FONT>
+
+
+	<FONT style=3D"BACKGROUND: #64f7f3; COLOR: #333333">/*
+	   Close and free variables. Notice that there is=20
+	   no equivalent to the "set r =3D Nothing" statement
+	   in jscript...
+	*/</FONT>
+	r.Close();
+	c.Close();
+=09
+	<FONT style=3D"BACKGROUND: #64f7f3; COLOR: #333333">/*
+	   The return Statement exits the function and returns a value.
+	      In this case, return outputs the name of every example in
+	      the ASP Emporium test database.
+	*/</FONT>
+	return(strOut);
+}
+%&gt;</FONT>
+
+
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;The ASP Emporium - JScript: Database Read&lt;/title&gt;
+  &lt;style type=3D"text/css"&gt;
+   h3 {color: #CC3300;}
+  &lt;/style&gt;
+ &lt;/head&gt;=20
+ &lt;body background=3D"/aspEmporium/pix/bg.gif" bgcolor=3D"#EEEEEE"&gt;
+&lt;table width=3D100% cellpadding=3D0 cellspacing=3D0 border=3D0&gt;
+ &lt;tr&gt;
+  &lt;td width=3D50% valign=3Dtop align=3Dleft&gt;
+  &lt;img width=3D283 height=3D36 border=3D0 =
+src=3D"/aspEmporium/pix/emporium.gif" border=3D0 alt=3D"The ASP =
+Emporium"&gt;
+  &lt;br&gt;
+  &lt;font face=3Dverdana size=3D-2 color=3D#CC3300&gt;
+  &lt;img width=3D438 height=3D25 border=3D0 =
+src=3D"/aspEmporium/pix/blurb.gif"=20
+alt=3D"Free Active Server Applications and Examples by Bill =
+Gearhart"&gt;
+  &lt;/font&gt;
+  &lt;/td&gt;
+  &lt;td width=3D50% valign=3Dtop align=3Dright&gt;
+  &lt;font size=3D-1 face=3Darial&gt;
+  &lt;img width=3D197 height=3D30 border=3D0 =
+src=3D"/aspEmporium/pix/online.gif"=20
+alt=3D"Online since Friday January 7, 2000"&gt;&lt;br&gt;
+  &lt;/font&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;table width=3D100% cellpadding=3D1 cellspacing=3D1 border=3D0 =
+bgcolor=3D#60786B&gt;
+ &lt;tr&gt;
+  &lt;td bgcolor=3D#60786B width=3D"20%"&gt;
+  &lt;img width=3D195 height=3D20 border=3D0 =
+src=3D"/aspEmporium/pix/location.gif" alt=3D""&gt;
+  &lt;/td&gt;
+  &lt;td bgcolor=3D#FFFFEE width=3D"80%"&gt;
+   &lt;font size=3D-1 color=3D#60786B face=3Darial&gt;
+    <FONT style=3D"BACKGROUND: #999999; COLOR: #ffffff">&lt;!--#include =
+file=3D"../../inc/quickNav3.asp"--&gt;</FONT>
+   &lt;/font&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt;
+  &lt;table width=3D100% cellpadding=3D2 cellspacing=3D0 border=3D0&gt;
+   &lt;tr&gt;
+    &lt;td valign=3Dtop&gt;<FONT style=3D"BACKGROUND: #999999; COLOR: =
+#ffffff">&lt;!--#include =
+file=3D"../../inc/sideMenu_js.asp"--&gt;</FONT>&lt;/td&gt;
+    &lt;td valign=3Dtop&gt;
+    &lt;font face=3D"arial, verdana, helvetiva, times new roman"&gt;
+
+&lt;h3&gt;Learning JScript: Reading From A Database&lt;/h3&gt;
+
+It is just as easy to read from a database with JScript as it is with =
+VBScript.
+It's just a matter of syntax and using the correct statements... Be sure =
+to visit the downloads
+area and pick up the JScript 5.5 reference from Microsoft.
+&lt;BR&gt;
+&lt;BR&gt;The output of this function is below.
+It simply gathers the titles of all jscript examples from the ASP =
+Emporium database's
+"examples" table using JScript instead of VBScript.
+&lt;BR&gt;
+&lt;BR&gt;
+
+
+<FONT style=3D"BACKGROUND: #ffffee; COLOR: #cc3300">&lt;%
+ <FONT style=3D"BACKGROUND: #64f7f3; COLOR: #333333">// call function =
+and write the results to the browser.</FONT>
+Response.Write (    JScriptDatabaseRead()    );
+%&gt;</FONT>
+
+
+
+
+
+
+
+    &lt;br&gt;
+    &lt;br&gt;
+    <FONT style=3D"BACKGROUND: #999999; COLOR: #ffffff">&lt;!--#include =
+file=3D"../../inc/jsexampleOptions.asp"--&gt;</FONT>
+    &lt;/font&gt;
+    &lt;/td&gt;
+   &lt;/tr&gt;
+  &lt;/table&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</PRE>
+<CENTER><A=20
+href=3D"http://www.aspemporium.com/aspEmporium/src/js_srcview.asp?source=3D=
+database_read.asp#top"><FONT=20
+face=3Darial size=3D-1>top of page</FONT></A></CENTER><BR>
+<CENTER><A=20
+href=3D"http://www.aspemporium.com/aspEmporium/misc/maps/bottomMap.map"><=
+IMG=20
+border=3D0 height=3D22 isMap=20
+src=3D"http://www.aspemporium.com/aspEmporium/pix/bottomMap.gif" =
+width=3D404></A>=20
+</CENTER></BODY></HTML>
+
+------=_NextPart_000_0000_01C242E5.2F6223A0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.aspemporium.com/aspEmporium/pix/emporium.gif
+
+R0lGODlhGwEkAPcAAGN7a2N7c2uEc3OMe3uMhISUjISclIyclJSlnJytpaW1ra21ra29tbXGvb3G
+xsbOxs4xAM7WztbW1tbe3t7n5+fv5+/v7///////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////yH5BAEAABcALAAAAAAbASQA
+AAj+AC8IHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuX
+MD9GMJAgJIUGCgoY0KmgQYWYQBFWmGAh6MUGDYJCWPoTooQGDBg0oHDBQoIDRS88WMq1K1eqRoNG
+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
+2hMJCAAAOw==
+
+------=_NextPart_000_0000_01C242E5.2F6223A0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.aspemporium.com/aspEmporium/pix/blurb.gif
+
+R0lGODlhtgEZAPcAAAAA/wgI/xAQ/xgY/yEh/zEx/0JC/0pK/1JS/2Nj/2N7a2tr/2uEc3Nz/3OM
+e3t7/3uMhISE/4SUjISclIyM/4yclJSU/5SlnJyc/5ytpaWl/6W1ra2t/621ra29tbW1/7XGvb29
+/73GxsbG/8bOxs4xAM45CM7O/87WztZCENZKIdZSKdZaMdbW1tbW/9be3t5jQt5rSt5zUt57Y97e
+/97n5+eMa+eUc+echOeljOfn/+fv5++tlO+1pe+9re/v7/fGtffOxvfWzvfe1vf39/f3///n5//v
+7///////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////yH5BAEAAEgALAAAAAC2ARkA
+AAj+AJEIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuX
+MGPKnEmzps2bOHPq3HnxyBCeIocYATqxiIsiRDvW2ABBgVMHF2oYJDGBRNKBP36oPAIkSFcgIHGU
+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
+
+------=_NextPart_000_0000_01C242E5.2F6223A0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.aspemporium.com/aspEmporium/pix/online.gif
+
+R0lGODlhxQAeAPcAAAAA/xAQ/yEh/ykp/zEx/0JC/0pK/1JS/2Nj/2tr/3Nz/4SEAISE/4yMEIyM
+IYyM/5SUKZSU/5ycMZycQqWlSqWl/62tUq2tY62t/7W1a7W13rW1/729c729hMbGjMbG/87OlM7O
+pc7O/9bWrdbW/97etd7exufnzufn/+/v1u/v5+/v//f37///////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////yH5BAEAAC0ALAAAAADFAB4A
+AAj+AFsIHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3FgxBIUJEzioeBhiwsiKKjiA5EBBRQYK
+HGPKnHlRwgIKHTg4WBBCoYoGPTMsONFxgYOcO09AaMDwhAmiNKNKzdhhgQmCFqy2YNHAg4oSLASW
+WDBiK9QOTJ8SLLHTQYmCXGGKXdBCxUkJFFiUOFkXwoK/EsK2QLtAAtSpiBPDbdDBoAMJLUwsmPC3
+AVHJV6sKnOBg5wILAiVTMEFhAd8WIUwPZDGhBUiBhRv87dli6VUTRwcv6DACggPFwBWPPTywql6j
+dh3AlPxWs+vduokqF8gCenG6Bl+3+GuCBQWmJxb+vBV4goWKBR7mXg3OnqbzgmNNjKUttEV83Zt/
+1919/kKHC36lN5AHqhWk3QIXCDSCVVWdhtpuHVCQVHsUxvQeQZhtt55mGTrXQWuwdTAWBBPgNN5A
+PzkQwmnaTdBYZOJdKFBVIF3gAXEV5miRcQYt+BZPAmXw21jNMTWYfud5IFlZdTlYV2kInlTiZgna
+NxSBfHWg5QKClafjlxbNZ1B9tVU5pWQ9qTTXSMO10AAELJzQAIgEpadCVXJBIKBOMzJ1Xl537hYe
+aKm9COahEXUmGHkOmAliA2+F19iUVr7lAQQCheCZAziONRAH2FnnHAUZZCrbAl0F+VdhiyLqKkP+
+kkHwFgshNNCAYCUwSRB0dlHXQavUlbBeQWj2ZaSXLZwgIFzCtvoVjq9Gm5AJfq16AbAGIRvmqqgO
+K+23UzkFFnCSfeUtuOim2xAKH2zQrgYIVVAACQZtYABGJCBQwL4KPICCugBXBMDABAMggEEJAEBv
+QQwA0NAHCjFQAAMMCDDwA+yR8G9FJHywcMAJfVDAAAKhsAEJGhOEwsctsEsCAwEMRMIGG5MAAMQb
+3NxQzjV7PBAKAfhL80ACYCwQAxuzu8HPLBtAgEADFEDQBgMQHAACGxuEggEEL90CCVwDYEDNYY8t
+ENgDm/1lwwVdvUEBWLMtUMIES90C3QAwIFD+AFI3nLVCOS+d88BPt/ABAAUMLMDCeQuUM8QkWGzw
+vw/crO8GlUMMgAIEFSCAu28rjNADASTwgQBSA33Ayny3HMDqJLSuOut26yi3zw1vPq/cCUfQMuqO
+L30AAP82LDLJDjVOAsYYAFBBCzkLsLIA9z4u0OFLo4B07Ai4DsAACCDNd+BTe93CAAcztG8LCASw
+sQIKIyC9QPDnO38L9a9d8L02d3+0wy3Y3EDW17IHMKACAMAYCgRQNb0lz4EVOCDwDvc8/DkMe47T
+meEY8AADxKwFXMtaBABAgPsZ5HAOXIgAurfCgRzudP6D3s1amEGI2e5m7hpI4/5nOA22YH3+QBMA
+Axp4vYGxbCGNI0AAFMA1uwHAa2yzXg8h1jAEwA+AchsIAQAQQ4Mo8W8Isd4OZYhCF95sjC/Un0HG
+CDMZeg0FUWtB5f6Fgh0CzX8fQFpBDmC+Oj7AZl6LYwArqICYpbEFCFzaEumHRQAOpGFHHMgIvZZH
+MJ4tAA4cIwJtlsJNalJ0NyyIHweigNR9DwUoGF7fAFjHCvpNIIm7F0HG+Dgpgg9q/iuALLnYMiLu
+UAHpa5/KroaQ5h1ggGIzCAYC8DyNGSB9LSAAyZ6pxWlCU5pggl9BYpc1XQqkeYSLo80M8IHh0euO
+MtNX2zgnkBLubQAbGKHRCBgAryVsAAGiQN+9PFiBDQRAlgZIAEFeaRAEDiBrKFAnQbhmAAVUzQCx
+IyfXIPfPD0z0axW96JcImJCUnc1nG/CavQqgRIHMkSACqOBAEsBMez3xbPpK3MJCepAIPo+mKCgl
+14xmEGIeZABqI5pKj7avAijAa/nSpQ2/pi9yplOphzJAFy+CyrMNFXpaQ8DA4HmQSEbEqya1JOBA
+RtaymvWsaE2rWtc6lYAAADs=
+
+------=_NextPart_000_0000_01C242E5.2F6223A0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.aspemporium.com/aspEmporium/pix/location.gif
+
+R0lGODlhwwAUAPcAAGN7a2uEc3OMe3uMhISUjIScjIyclJSlnJytpaW1ra21ra29tbXGvb3GxsbO
+xs7WztbW1tbe3t7n3ufv5+/v7/f39///////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////yH5BAEAAAAALAAAAADDABQA
+AAj+AAEIHEiwoMGDCBMqXMiwocOHECNKnGiQQACEAy5S3Mixo8ePEQ8kACnQAoODASw8IJkwgQQL
+MCEcYElzYAAKMCUsqNlwAEwCJC1MOBjBAgKeNl9OYLDgQU6NSD0GWCB0AoWJBBYsOAAVYoAHD7p2
+LDqgoAGhAgc4tUBhgcabIwcCBRCg7MKXDgh+rSAgrQW7dO1mLBhgLmEGOCcYGEhh5QCLBREnTHky
+4YGXFSYcFRjgJUy2MzkTMGyTQlzOgAM0wGmhgcYBFUaOVkigNcEBFCiUPbt0wQQLEQSePY3AAtCi
+ARBAeAB44AHgCxn8HehUYAUKUyG4pnpALYTFAIr+6vy9uHYDzxRCA6hNAXJFCzsRNhC6ADF8gUXd
+rqdQQfjn9DbNlwBgFAQHAG4VNLBAURVcRFUCrE3QXEFFzdWZBTMFkBlUTh1FlWFOlVXbby8ZSNBL
+pB0EgQUE5SYQVSTCd9NvE1TAIlV50WWBBOvBpBkCG873GUwNGDQcRirZ9JsAPhU5EAIrAbBAAwYA
+OQGTvw2pGwDQhTedQMUVSRVwBlAV3Fdh3SZUAAH8Flpxpx1om1N9CbTiQL+tJECdNrHFEAVDDdRl
+ShaMNNh8E7BZllVv/dbjl9IZ8EAEKyZgQAMQGPShfF8KlIBRmy70nKURIEpAAhEsZkGmKUXJ2FD+
+MNb5UmEwxTcQVQ/UqF6oggZXFEF3CjRfinJ1qZCxXLrqKEHF2ZpSBRE8YOOOPQbaY3y/JsRrQcEW
+uyCLCZW5QG1R1mZrSZmaS+GNJt1qHAAIJCCWlwC6myJ01Q3U7bYE1WZiQkn2qi+43hY7QQSljiuw
+QOoCkC9C/A5ckLndGjSfBFZ12bDAGwtU3cYR64UsAKMS9NxO2Qr0kr0I1ZbpQsamZGLKDN9X87kE
+Gdswctq+e9B8zc1XAM82uXVWlGbWXJmgRQoQMGfQgewzwP/Sxd9r1/UlnV2E2gU0QilddZfYJPsp
+kFUFlQw1j8IujdaLPn+KM0H83sSAvxoVx+P+p3GSFSq5jGHXJ7Y+t2lBebbZCe4CEMzN5csmwxTB
+S/UeHYAAWc5Vo0IoomSXdDvBBhPUrgrbqZcPEOCUtd069ZaNEjRm0KfgFRvcfBVAQGNZGsJHwAG/
+iXm4QCcPJF0FLz1mM247FpU4lyZSwDZOZOdcdVoNULoAn17CZJrND6h30HMSiGU4Z6wJ9SlQAkQw
+YX2EZQkcn90iq1q0xHYMgHROQhmtfmmRX72eZQAD2Kh2JEOYW6iSGgYgjAHNWdXN0qIwg4ysIQdY
+gLzgNSGFrA48AQDe8wKQgAVsBoAQecz7nHSgeSEkV8A5wGgOICRiHUSFZvlNZizgQtE45AFEm1lP
+Q54WlYIIaUiaKeJHGCC/IVVAfBwpoBIVMqApGiQ5WqmgFT/ymAIQoADc26IYx0jGMprxjGhMoxrX
+yMY2upElAQEAOw==
+
+------=_NextPart_000_0000_01C242E5.2F6223A0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.aspemporium.com/aspEmporium/pix/bottomMap.gif
+
+R0lGODlhlAEWAPcAAGN7a2N7c2uEc3OMe3uMhISUjISclIyclJSlnJytpaW1ra21ra29tbXGvb3G
+xsbOxs7WztbW1tbe3t7n5+fv5+/v7/f39///////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////yH5BAEAABcALAAAAACUARYA
+AAj+AC8IHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuX
+MGPKnEmzps2bOHPq3JmyQoULFSbwFPigQc6iMpGOrCDA6NCYE36mnCBBqEYBBS4wAGBVYwSpGIMK
+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
+
+------=_NextPart_000_0000_01C242E5.2F6223A0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.aspemporium.com/aspEmporium/pix/bg.gif
+
+R0lGODlhMgAyAPcAAM7e1u/v7///////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////yH5BAEAAAIALAAAAAAyADIA
+AAifAAMIHEiwoMGBAA4qXMiwIcGEDiNKXAhxokWLFS9qbJhxo0eDHT+KDBBypMeSJjWiTImR5ciV
+LiPCjMmR5kmbG2fiPKhzZ8GePhEGnQh0aNGgR30m3bkUZ1ObT38CmEq1qtWrWLNqrWoyakyvLsGy
+FJuSbNehEs2+RCuTrUO1IuF+lHvTLUO6Oe3e1UuRr0K8Kv3yFAyS8E/DDxELNRkQADs=
+
+------=_NextPart_000_0000_01C242E5.2F6223A0--

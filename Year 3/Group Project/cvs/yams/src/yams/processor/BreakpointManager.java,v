@@ -1,0 +1,101 @@
+head	1.2;
+access;
+symbols
+	yams-final-19-12-03:1.2
+	yams-release2-17-12-03:1.1
+	yams-release-17-12-03:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.12.19.07.05.27;	author sw00;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.21.13.12.55;	author sw00;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@javadoc
+@
+text
+@/*
+ * Created on 21-Nov-2003
+ *
+ */
+package yams.processor;
+import java.util.HashSet;
+import java.util.Set;
+import yams.exceptions.YAMSRuntimeException;
+
+/**
+ * Provides management of breakpoints.
+ * 
+ * @@author sw00
+ */
+public class BreakpointManager {
+
+	private Set bpSet;
+	
+	/**
+	 * Creates a new breakpoint manager.
+	 */
+	public BreakpointManager() {
+		bpSet = new HashSet();
+	}
+
+	/**
+	 * Returns whether there is a breakpoint at an address
+	 * @@param address
+	 * @@return true if a breakpoint at address
+	 */
+	public boolean isBreakpoint(int address) {
+		return bpSet.contains(new Integer(address));
+	}
+	
+	/**
+	 * Sets a breakpoint
+	 * @@param address
+	 */
+	public void setBreakpoint(int address) {
+		Integer intaddr = new Integer(address);
+		if(!bpSet.contains(intaddr)) {
+			bpSet.add(intaddr);
+		}
+	}
+	
+	/**
+	 * Clears a breakpoint
+	 * @@param address
+	 */
+	public void clearBreakpoint(int address) {
+		Integer intaddr = new Integer(address);
+		if(!bpSet.contains(intaddr)) {
+			throw new YAMSRuntimeException("Cannot clear non-existent breakpoint");			
+		}
+		bpSet.remove(intaddr);
+	}
+
+}
+@
+
+
+1.1
+log
+@added
+@
+text
+@d26 5
+d35 4
+d46 4
+@
+

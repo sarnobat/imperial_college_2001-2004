@@ -1,0 +1,376 @@
+
+#include <cgRender.h>
+
+//float *xPointsPtr;
+int pointCount;
+float xPoints[30000];
+float yPoints[30000];
+float zPoints[30000];
+float xTexPoints[30000];
+float yTexPoints[30000];
+float maxX,maxY,maxZ;
+float minX,minY,minZ;
+float centreX,centreY,centreZ;
+float cameraX,cameraY,cameraZ;
+float cameraXoriginal,cameraYoriginal,cameraZoriginal;
+float cameraUpX,cameraUpY,cameraUpZ;
+float cameraUpXOriginal,cameraUpYOriginal,cameraUpZOriginal;
+float angle = 0;
+char string[30];
+int dbn = 0; //Debug number
+int times = 0;
+GLubyte myImage[512][512][3];
+int textureApplied = 0;
+double viewportUnit = 0.1;
+double theta = 0;
+
+
+void debug(){
+	printf("Debug point %d\n",dbn);
+	dbn++;
+}
+
+void getPoints(){
+	FILE *file;
+	int i;
+	float x;
+	float y;
+	float z;
+
+
+	file = fopen("face.vtk", "r");
+	fseek (file, 73, SEEK_SET);
+	fscanf(file, "%d ",&pointCount);
+	fscanf(file, "%s",string);
+
+	i = 0;
+	while(i<pointCount)
+	{
+		//store points in file
+		fscanf(file, "%f %f %f",&x,&y,&z);
+		xPoints[i] = x;
+		yPoints[i] = y;
+		zPoints[i] = z;
+
+		//determine Bounding Box
+		if(x>maxX){maxX = x;}
+		if(x<minX){minX = x;}
+		if(y>maxY){maxY = y;}
+		if(y<minY){minY = y;}
+		if(z>maxZ){maxZ = z;}
+		if(z<minZ){minZ = z;}
+
+		//find mean point
+  		centreX = (centreX*i + x)/(i+1);
+		centreY = (centreY*i + y)/(i+1);
+		centreZ = (centreZ*i + z)/(i+1);
+
+  		i++;
+
+	}
+
+}
+void phongShading(void){
+	textureApplied = 0;
+	GLfloat LightPosition[] = {-1,1,1,0};
+	GLfloat LightAmbient[] = {1,0,0,1};
+	GLfloat LightDiffuse[] = {1,1,1,1};
+	GLfloat LightSpecular[] = {0.1,0.1,0.1,1};
+
+	GLfloat MaterialSpecular[] = {0.99,0.91,0.8,1};
+	GLfloat MaterialShininess[] = {57.8};
+
+ glShadeModel (GL_SMOOTH);
+
+ // Enable lighting
+ glEnable (GL_LIGHTING);
+ glEnable (GL_LIGHT0);
+ glLightfv(GL_LIGHT0, GL_POSITION, LightPosition);
+ glLightfv(GL_LIGHT0, GL_AMBIENT, LightAmbient);
+ glLightfv(GL_LIGHT0, GL_DIFFUSE, LightDiffuse);
+ glLightfv(GL_LIGHT0, GL_SPECULAR, LightSpecular);
+
+ // Set material parameters
+ glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, MaterialSpecular);
+ glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS, MaterialShininess);
+
+ // Enable Z-buffering
+ glEnable(GL_DEPTH_TEST);
+ 	glEnable(GL_NORMALIZE);
+
+}
+
+void readTextureValues(void){
+	int row,column,color = 0;
+	FILE *textureFile;
+	unsigned char number;
+
+	//the "rb" means reading a binary file
+	textureFile = fopen("face.ppm", "rb");
+	int i = 0;
+	//Skip to correct place in file
+	while(i<15){
+		fread(&number,1,1,textureFile);
+		i++;
+	}
+
+	// Go through the file and store the RGB triplets
+	for(row = 0;row<512;row++) {
+		for(column=0;column<512;column++) {
+			for(color=0;color<3;color++) {
+				fread(&number,1,1,textureFile);
+				myImage[row][column][color] = number;
+			}
+		}
+	}
+}
+
+void applyTexture(void){
+	textureApplied = 1;
+	int row,column,color;
+
+	glutSwapBuffers();
+
+}
+/********************************************************************************************************************/
+void readTexturePoints(){
+	FILE *fileTexPts;
+	float texX1,texY1,texX2,texY2,texX3,texY3;
+	int texturePointCount;
+	char string[30];
+	fileTexPts = fopen("face.vtk", "r");;
+	while(strcmp(string,"POINT_DATA")!=0){
+		fscanf(fileTexPts,"%s",&string);
+	}
+	fscanf(fileTexPts,"%d",&texturePointCount);
+	//printf("Number of texture points: %d\n",texturePointCount);
+	while(strcmp(string,"float")!=0){
+		fscanf(fileTexPts,"%s",&string);
+		//printf("%s ",string);
+	}
+	int i = 0;
+	while(i<texturePointCount) {
+		fscanf(fileTexPts,"%f %f\n",&texX1,&texY1);
+		xTexPoints[i] = texX1;
+		yTexPoints[i] = texY1;
+		i++;
+	}
+	//printf("Finished reading %d texture points\n",i);
+
+
+}
+void textureMapped() {
+	readTextureValues();
+	readTexturePoints();
+	applyTexture();
+
+	glEnable(GL_TEXTURE_2D);
+	//glTexImage2D(GL_TEXTURE_2D,0,3,512,512,0,GL_RGB,GL_UNSIGNED_BYTE,image);
+	glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,512,512,0,GL_RGB,GL_UNSIGNED_BYTE,myImage);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S,GL_CLAMP);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T,GL_CLAMP);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER,GL_NEAREST);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER,GL_NEAREST);
+}
+void init()
+{
+ glClearColor (0.0, 0.0, 0.0, 0.0);
+ cout << "init" << endl;
+
+	getPoints();
+	cameraX = -0.006000;
+	cameraY = -0.113300;
+	cameraZ = -0.016600;
+	cameraXoriginal = cameraX;
+	cameraYoriginal = cameraY;
+	cameraZoriginal = cameraZ;
+	cameraUpX = 0;
+	cameraUpY = 1;
+	cameraUpZ = 0;
+	cameraUpXOriginal = cameraUpX;
+	cameraUpYOriginal = cameraUpY;
+	cameraUpZOriginal = cameraUpZ;
+
+
+
+ 	//phongShading();
+	textureMapped();
+
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	gluLookAt(cameraX,cameraY,cameraZ,centreX,centreY,centreZ,cameraUpX,cameraUpY,cameraUpZ);
+
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	//glOrtho(-viewportUnit,viewportUnit,-viewportUnit,viewportUnit,0,1);
+	glutPostRedisplay();
+	//glScalef(6,6,6);
+}
+
+void display(void)
+{
+ glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+ cout << "display" << endl;
+
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	//gluLookAt(cameraX,cameraY,cameraZ,centreX,centreY,centreZ,cameraUpX,cameraUpY,cameraUpZ);
+	float r = 0.5;
+ 	glTranslatef(centreX,centreY,centreZ);
+	gluLookAt(-r * cos(theta),cameraY,r*sin(theta),0,0,0,cameraUpX,cameraUpY,cameraUpZ);
+	glTranslatef(-centreX,-centreY,-centreZ);
+	//printf("Camera: (%f,%f,%f)\n",cameraX,cameraY,cameraZ);
+
+	int p1,p2,p3;
+	float x1,y1,z1;
+	float x2,y2,z2;
+	float x3,y3,z3;
+ 	float texX1,texY1,texX2,texY2,texX3,texY3;
+	int polygonCount;
+	FILE *file;
+
+	file = fopen("face.vtk", "r");
+
+	char string[30];
+
+	fscanf(file,"%s",&string);
+	while(strcmp(string,"POLYGONS")!=0){
+		fscanf(file,"%s",&string);
+
+	}
+	fscanf(file,"%d %s",&polygonCount,&string);
+
+	int i = 0;
+
+	fscanf(file,"%*d %d %d %d",&p1,&p2,&p3);
+	x1 = xPoints[p1];
+	y1 = yPoints[p1];
+	z1 = zPoints[p1];
+
+	//plot the polygons
+	while(i<polygonCount)
+	{
+		fscanf(file,"%*d %d %d %d",&p1,&p2,&p3);
+  		x1 = xPoints[p1];
+		x2 = xPoints[p2];
+		x3 = xPoints[p3];
+		y1 = yPoints[p1];
+		y2 = yPoints[p2];
+		y3 = yPoints[p3];
+		z1 = zPoints[p1];
+		z2 = zPoints[p2];
+		z3 = zPoints[p3];
+
+		texX1 = xTexPoints[p1];
+		texX2 = xTexPoints[p2];
+		texX3 = xTexPoints[p3];
+		texY1 = yTexPoints[p1];
+		texY2 = yTexPoints[p2];
+		texY3 = yTexPoints[p3];
+
+		glBegin(GL_TRIANGLES);
+			glTexCoord2f(texX1,texY1);
+			glVertex3f(x1,y1,z1);
+			glTexCoord2f(texX2,texY2);
+			glVertex3f(x2,y2,z2);
+			glTexCoord2f(texX3,texY3);
+			glVertex3f(x3,y3,z3);
+		glEnd();
+
+		//The normal for phong shading
+		glNormal3f(	((x2-x1)*(y3-y1)) - ((x3-x1)*(y2-y1)) ,
+				-( ((x2-x1)*(z3-z1)) - ((x3-x1)*(z2-z1)) ) ,
+				((y2-y1)*(z3-z1)) - ((y3-y1)*(z2-z1))
+				);
+		i++;
+	}
+
+
+  glFlush ();
+}
+
+
+void reshape (int w, int h)
+{
+ cout << "reshape" << endl;
+
+ glViewport (0, 0, (GLsizei) w, (GLsizei) h);
+/*
+ glMatrixMode (GL_PROJECTION);
+ glLoadIdentity();
+ gluPerspective(fovy, aspect, near, far);
+ glMatrixMode (GL_MODELVIEW);
+ glLoadIdentity();
+ gluLookAt(eyex, eyey, eyez, centerx, centery, centerz, upx, upy, upz);
+ */
+}
+
+void test() {
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	gluLookAt(cameraX+1,cameraY+1,cameraZ+1,centreX,centreY,centreZ,cameraUpX,cameraUpY,cameraUpZ);
+
+}
+
+void keyboard(unsigned char key, int x, int y)
+{
+	float movement = 0.005;
+	float movement2 = 0.5;
+	cout << "keyboard" << endl;
+
+	printf("Key: %d, Angle: %f, Camera: (%f,%f,%f)\n",key,angle,cameraX,cameraY,cameraZ);
+ 	glMatrixMode(GL_MODELVIEW);
+ 	glLoadIdentity();
+ switch (key) {
+ 	case 32: {cameraX = cameraXoriginal,cameraY = cameraYoriginal,cameraZ = cameraZoriginal;break;} //SPACE
+	case 120: { cameraX += movement; break;} //X
+	case 115: { cameraX -= movement; break; } //S
+	case 117: { cameraY -= movement; break; } //U
+	case 121: { cameraY += movement; break; } //Y
+	case 122: { cameraZ += movement; break; } //Z
+	case 97: { cameraZ -= movement; break; } //A
+
+ break;
+ }
+
+ 	glTranslatef(centreX,centreY,centreZ);
+ 	glutPostRedisplay();
+	//display();
+
+}
+
+void idle(){
+	//cout << "idle" << endl;
+
+	theta += 0.1;
+
+	glutPostRedisplay();
+}
+
+int main(int argc, char** argv)
+{
+	readTextureValues();
+ // Initialize graphics window
+ glutInit(&argc, argv);
+ glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
+ glutInitWindowSize (500, 500);
+ glutInitWindowPosition (500, 500);
+ //glutCreateWindow (argv[0]);
+ glutCreateWindow ("Face");
+
+ // Initialize OpenGL
+ init();
+
+ // Initialize callback functions
+ glutDisplayFunc(display);
+ glutReshapeFunc(reshape);
+ glutKeyboardFunc(keyboard);
+ glutIdleFunc(idle);
+
+
+
+ // Start rendering
+ glutMainLoop();
+
+}
+

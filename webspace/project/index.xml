@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl"  href="home.xsl"?>
+<!-- -->
+<page>
+	<title>Project Homepage</title>
+	<project>Translating between XML and Relational Databases</project>
+	<name>Sridhar Sarnobat</name>
+	<email>ss401@doc.ic.ac.uk</email>
+	<update_list>
+		<!-- TEMPLATE:
+		<update>
+			<date></date>
+			<description> </description>
+		</update>
+		-->
+		<update>
+			<date>Thursday 17th June 2004</date>
+			<description>Submitted report with working application. Hereafter some time on extra coding, plus preparing Monday 21st June presentation.</description>
+		</update>
+		<update>
+			<date>Tuesday 18th May 2005</date>
+			<description>Resumed schema translation. Changed so that the XER model is build exactly, and not some hybrid between ER and XER.</description>
+		</update>
+		<update>
+			<date>Tuesday 18th May 2005</date>
+			<description>Met Khalil Amiri to inform current progress</description>
+		</update>
+		<update>
+			<date>Tuesday 11th May 2004</date>
+			<description>Resumed work on project following exams. During the next week I did a 1st pass coding of all areas of project: data importing, exporting, console interface (later scrapped), graphical user interface</description>
+		</update>
+		<update>
+			<date>Monday March 1st</date>
+			<description>Demonstrated application so far. Only gave some tables with primary keys and attributes (with some incorrect names, but not simple elements.</description>
+		</update>
+
+		<update>
+			<date>Tuesday 24th February</date>
+			<description>Threw away first attempt and began work on a more organized parsing framework.</description>
+		</update>
+		<update>
+			<date>Sunday 22nd February</date>
+			<description>With home directory not working, began to  write report.</description>
+		</update>
+		<update>
+			<date>Tuesday 17th February</date>
+			<description>Coding the translations</description>
+		</update>
+		<update>
+			<date>Saturday 14th February</date>
+			<description>Began to work out the theory of schema translation using XER.</description>
+		</update>
+		<update>
+			<date>Friday 13th February</date>
+			<description>Made a specific schedule.</description>
+		</update>
+		<update>
+			<date>Tuesday 11th February</date>
+			<description>Meeting with Khalil Amiri. Resumed coding. Rejected Xerces API in favour of Eclipse XSD Infomodel API</description>
+		</update>
+		<update>
+			<date>Week beginning Monday February 2nd</date>
+			<description>Writing 2nd marker's summary</description>
+		</update>
+		<update>
+			<date>Friday January 30th - ...</date>
+			<description>Learning XSLT for writing report and creating this page. Tried using DocBook and DB2Latex.</description>
+		</update>
+		<update>
+			<date>? - Friday 30th January 2004</date>
+			<description>Searched for papers and read a book regarding XML Schema to Relational structure conversion</description>
+		</update>
+		<update>
+			<update>
+				<date>???</date>
+				<description>Searched for APIs for XML Schema</description>
+			</update>
+			<date>Monday 19th January - ???</date>
+			<description>Investigated APIs available for processing XML</description>
+		</update>
+		<update>
+			<date>Christmas Break</date>
+			<description>Read papers</description>
+		</update>
+		<update>
+			<date>November/December</date>
+			<description>Read papers</description>
+		</update>
+		
+	</update_list>
+	<meeting_list>
+		<meeting>Monday 14th June (11h00)</meeting>
+		<meeting>Thursdat 3rd June (14h00)</meeting>
+		<meeting>Tuesday May 25th 2004 (17h00)</meeting>
+		<meeting>Monday May 17th 2004 (14h30)</meeting>
+		<meeting>March 19th 2003</meeting>
+		<meeting>March 5th 2003</meeting>
+		<meeting>Friday February 27th 2004 (17h00)</meeting>
+		<meeting>Friday February 13th 2004 (17h00)</meeting>
+		<meeting>Monday February 2nd 2004 (15h00)</meeting>
+		<meeting>23rd January 2004</meeting>
+		<meeting>16th January 2004 (brief)</meeting>		
+		<meeting>28th November 2003</meeting>
+		<meeting>21st November 2003</meeting>
+		<meeting>16th November 2003</meeting>
+		<meeting>14th November 2003</meeting>
+		
+	</meeting_list>
+</page>

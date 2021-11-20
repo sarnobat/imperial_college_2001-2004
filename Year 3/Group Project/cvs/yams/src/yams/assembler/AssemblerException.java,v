@@ -1,0 +1,194 @@
+head	1.8;
+access;
+symbols
+	yams-final-19-12-03:1.8
+	yams-release2-17-12-03:1.4
+	yams-release-17-12-03:1.4;
+locks; strict;
+comment	@# @;
+
+
+1.8
+date	2003.12.19.14.20.25;	author qq01;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.19.14.09.01;	author jkm01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.19.13.25.30;	author jkm01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.19.12.07.00;	author jkm01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.14.03.54.20;	author jkm01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.12.11.17.29.23;	author jkm01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.21.16.26.49;	author jkm01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.21.16.00.29;	author jkm01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.8
+log
+@updated javadoc
+@
+text
+@/*
+ * Created on 20-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+package yams.assembler;
+
+import yams.parser.Instruction;;
+
+/**
+ * Provides an Exception class that contains the line number and associated instruction which has caused 
+ * the exception to be thrown.	
+ * 
+ * @@author jkm01
+ */
+public class AssemblerException extends Exception {
+
+private int line;
+private Instruction instruction;
+
+/**
+ * When provided with an error message (String s) and a line number and associated instruction, it sets up this
+ * new exception with the appropriate variables.
+ * 
+ * @@param s Error Message provided with throw of exception
+ * @@param lineNumber
+ * @@param thisInstruction
+ */
+public AssemblerException(String s, int lineNumber, Instruction thisInstruction)
+{
+	super(s);
+	line=lineNumber;
+	instruction=thisInstruction;
+}
+
+/**
+ * Returns the MIPS line number where this exception was thrown.
+ * @@return Returns the integer line number where exception was thrown
+ */
+
+public int getLine() {return line;}
+/**
+ * Returns the MIPS instruction iteself which contained some error causing an exception to be thrown.
+ * @@return MIPS Instruction that is in error
+ */
+public Instruction getInstruction() {return instruction;}
+
+}
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@a11 1
+ *
+a15 1
+ *
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d41 1
+a41 1
+ * @@return
+d47 1
+a47 1
+ * @@return
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d43 1
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d12 4
+a17 2
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+d24 8
+d39 4
+d44 4
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d28 4
+@
+
+
+1.2
+log
+@modified to include error control
+@
+text
+@d9 2
+d19 4
+a22 1
+public AssemblerException(String s)
+d25 2
+a27 1
+
+@
+
+
+1.1
+log
+@added exception class to the project
+@
+text
+@d17 5
+@
+

@@ -1,0 +1,52 @@
+Return-path: <dfg@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 05 Nov 2001 15:09:08 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 160lMy-0002Ia-00; Mon, 05 Nov 2001 15:09:00 +0000
+Received: from duncang.doc.ic.ac.uk ([146.169.4.45] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 160lMy-00025f-00
+	for cs-first-year@doc.ic.ac.uk; Mon, 05 Nov 2001 15:09:00 +0000
+Message-ID: <3BE6ABF3.8916A99A@doc.ic.ac.uk>
+Date: Mon, 05 Nov 2001 15:10:43 +0000
+From: Duncan <dfg@doc.ic.ac.uk>
+Organization: Imperial College of Science technology and Medicine
+X-Mailer: Mozilla 4.06 [en] (WinNT; I)
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+Subject: Hardware Coursework Submission
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+This email is in reply to several asking the same question.
+
+The submission date for the coursework is the 9th November (as stated on
+the coursework handout) and not the 6th as stated on the web page.
+
+There are two things to be submitted:
+1. A wiring list in the format given in the handout. Don't forget to
+include your unique number in a comment.
+To do this name your file circuit1.txt, and at the linux prompt type:
+submit hw1
+
+2. A short report presenting your design, Karnaugh maps etc to be given
+in to the sgo.
+
+Good Luck,
+
+Duncan
+
+--
+Duncan Gillies
+Reader in Computer Vision and Graphics
+Department of Computing,
+Imperial College,
+180 Queen's Gate
+London SW7 2BZ
+
+020-7594-8317
+dfg@doc.ic.ac.uk
+http://www.doc.ic.ac.uk/~dfg
+
+

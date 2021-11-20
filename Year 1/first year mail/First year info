@@ -1,0 +1,4901 @@
+From MAILER-DAEMON Mon Jun 10 19:26:02 2002
+Date: 10 Jun 2002 19:26:02 +0100
+From: Mail System Internal Data <MAILER-DAEMON@mallard.doc.ic.ac.uk>
+Subject: DON'T DELETE THIS MESSAGE -- FOLDER INTERNAL DATA
+Message-ID: <1023733562@mallard.doc.ic.ac.uk>
+X-IMAP: 1003751362 0000000067
+Status: RO
+
+This text is part of the internal format of your mail folder, and is not
+a real message.  It is created automatically by the mail system software.
+If deleted, important folder data will be lost, and it will be re-created
+with the data reset to initial values.
+
+From psc@doc.ic.ac.uk Fri Oct 19 18:27:19 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 19 Oct 2001 18:27:19 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15udQO-0003sj-00; Fri, 19 Oct 2001 18:27:12 +0100
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15udQO-0003PY-00; Fri, 19 Oct 2001 18:27:12 +0100
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 15udQO-00014a-00; Fri, 19 Oct 2001 18:27:12 +0100
+To: cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+Subject: Re: First Year Lab
+Cc: psc@doc.ic.ac.uk
+Message-Id: <E15udQO-00014a-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Fri, 19 Oct 2001 18:27:12 +0100
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 1
+
+
+	I have put a copy of the spec for the next assessed lab
+	in the lab tray in the Student Common Room (room 342).  
+	Thanks,
+
+	Peter Cutler
+
+
+
+From cjh@doc.ic.ac.uk Mon Oct 22 12:32:47 2001
+Return-path: <cjh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 22 Oct 2001 12:32:47 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15vdJm-0002c0-00; Mon, 22 Oct 2001 12:32:30 +0100
+Received: from g3-cjh.doc.ic.ac.uk ([146.169.29.12])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15vdJl-00085h-00; Mon, 22 Oct 2001 12:32:29 +0100
+X-Sender: cjh@pop.doc.ic.ac.uk (Unverified)
+Message-Id: <l03102800b7f9c4305c50@[146.169.29.12]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Mon, 22 Oct 2001 12:43:06 +0000
+To: cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+From: chris hogger <cjh@doc.ic.ac.uk>
+Subject: Year 1 - news and reminders
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 2
+
+Dear Computing-1 and JMC-1 students,
+
+There are four matters raised in this email - please read and absorb them
+all carefully.
+
+1. 1st year Home Page
+---------------------
+
+This page - http://www.doc.ic.ac.uk/~cjh/Iyc/year1Coord.html - is
+frequently updated and is your primary source of information about what's
+happening in your course. Please consult it regularly, especially to keep
+up-to-date with your assessment schedules.
+
+2. Continuous Assessment Tracking Engine (CATE)
+-----------------------------------------------
+
+This system, called CATE, has recently been implemented to enable tutors
+and students to view the marks registered for your PMT/PPT submissions.
+You can view your own personal record at any time by going to the main CATE
+page - https://soroban.doc.ic.ac.uk/~cate/ - and following the appropriate
+links and actions.
+The main link just cited now appears on your 1st year Home Page.
+
+3. Haskell Mini-test in Week 5
+------------------------------
+
+In Week 5 you have a mini-test counting as assessed coursework for your
+course 120 Declarative Programming I. Comp1 students have already had a
+similar mini-test in Week 3.
+The Week 5 arrangements will be as follows:
+
+	Comp1 	31 Oct 10.00 am in Room 343
+	JMC1	02 Nov  3.00 pm in Room 145
+
+4. Haskell Driving Test in Week 6
+---------------------------------
+
+In Week 6 you have a Driving Test, sat in the labs, which also counts as
+assessed coursework for your course 120 Declarative Programming I.
+The Week 6 arrangements will be as follows:
+
+	Comp1 09 Nov 10.00-12.00
+	JMC1  06 Nov 15.00-17.00
+
+The Lab Coordinator will advise you about seating arrangements in the labs
+and about any other practical issues.
+
+The lecturers will advise you about the nature of the test and about
+whatever materials you may bring with you.
+
+The test begins with a phase of about 20 minutes for reading the question
+paper and planning your programs, followed by a phase of 90 minutes for
+implementing them.
+
+Regards,
+Chris.
+
+
+
+From psc@doc.ic.ac.uk Tue Oct 30 20:32:16 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 30 Oct 2001 20:32:16 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15yfVx-0007A6-00; Tue, 30 Oct 2001 20:29:38 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15yfVg-0002xD-00; Tue, 30 Oct 2001 20:29:20 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 15yfVg-0001vU-00; Tue, 30 Oct 2001 20:29:20 +0000
+To: all-doc@doc.ic.ac.uk, help@doc.ic.ac.uk
+Subject: Lab Exam
+Message-Id: <E15yfVg-0001vU-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Tue, 30 Oct 2001 20:29:20 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 3
+
+
+The CS1 and JMC1 students will be doing their lab tests next week
+and we will need exclusive use of the following labs while they are 
+doing their lab tests.
+
+We will need to use rooms 219/203 on Friday 9.11.01 between 
+10.00 and 12.00 for the CS1 lab test.
+
+We will need to use room 202 on Tuesday 6.11.01 between
+15.00 and 17.00 for the JMC1 lab test.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Tue Oct 30 20:59:04 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 30 Oct 2001 20:59:04 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15yfyL-00009f-00; Tue, 30 Oct 2001 20:58:57 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15yfyL-0003MM-00; Tue, 30 Oct 2001 20:58:57 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 15yfyK-0002mB-00; Tue, 30 Oct 2001 20:58:56 +0000
+To: cs-first-year@doc.ic.ac.uk
+Subject:  Driving Test (9.11.01)
+Cc: aem3@doc.ic.ac.uk, ajf@doc.ic.ac.uk, 
+	cjd99@doc.ic.ac.uk, cjh@doc.ic.ac.uk, dfg@doc.ic.ac.uk, 
+	dr@doc.ic.ac.uk, ecl1@doc.ic.ac.uk, frk@doc.ic.ac.uk, 
+	ids@doc.ic.ac.uk, jamm@doc.ic.ac.uk, jd@doc.ic.ac.uk, 
+	jj@doc.ic.ac.uk, jnm@doc.ic.ac.uk,
+    mrc@doc.ic.ac.uk, 
+	phjk@doc.ic.ac.uk, pjm@doc.ic.ac.uk, psc@doc.ic.ac.uk, 
+	rc3@doc.ic.ac.uk, rjc@doc.ic.ac.uk, smc@doc.ic.ac.uk, 
+	sue@doc.ic.ac.uk, wjk@doc.ic.ac.uk, wl@doc.ic.ac.uk
+Message-Id: <E15yfyK-0002mB-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Tue, 30 Oct 2001 20:58:56 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 4
+
+
+As you are doing your Haskell Driving Test next week you will
+not be doing a lab exercise next week.
+
+The next lab exercise will run from 12.11.01 to 19.11.01 and
+will be distributed on Friday 9.11.01 in the usual way.
+
+For the Driving Test you should come to room 219 or 203 
+at 10.00 on Friday 9.11.01.  The test will be distributed in the lab
+and you will have 20 minutes to read the question and plan an answer
+on paper.  You will then have 90 minutes to write and test your
+solution.
+
+You should not bring any materials with you when you do the test
+but copies of the prelude will be available at the test.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Fri Nov 02 16:44:32 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 02 Nov 2001 16:44:32 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15zhQf-0002ei-00; Fri, 02 Nov 2001 16:44:25 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15zhQd-00051h-00
+	for cs-first-year@doc.ic.ac.uk; Fri, 02 Nov 2001 16:44:23 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 15zhQe-0000am-00
+	for cs-first-year@doc.ic.ac.uk; Fri, 02 Nov 2001 16:44:24 +0000
+To: cs-first-year@doc.ic.ac.uk
+Subject:  Driving Test
+Message-Id: <E15zhQe-0000am-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Fri, 02 Nov 2001 16:44:24 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 5
+
+
+The next lab will be issued on Friday 9.11.01 so
+you will have no lab or lab workshop next week.
+
+The first lab workshop will be on Monday 12th November.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Fri Nov 09 13:29:15 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 09 Nov 2001 13:29:15 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 162BiZ-0002zZ-00; Fri, 09 Nov 2001 13:29:11 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 162BiY-0006XT-00; Fri, 09 Nov 2001 13:29:10 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 162BiY-0000bv-00; Fri, 09 Nov 2001 13:29:10 +0000
+To: cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+Subject: First Year Lab
+Message-Id: <E162BiY-0000bv-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Fri, 09 Nov 2001 13:29:10 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 6
+
+
+The specs for the next (Kenya/Java) lab are now
+available in the trays in the student common room.
+
+Thanks,
+
+Peter
+
+
+From cjh@doc.ic.ac.uk Wed Dec 05 16:40:51 2001
+Return-path: <cjh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 05 Dec 2001 16:40:51 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16Bf6E-00058a-00; Wed, 05 Dec 2001 16:40:46 +0000
+Received: from g3-cjh.doc.ic.ac.uk ([146.169.29.12])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16Bf6E-000354-01
+	for cs-first-year@doc.ic.ac.uk; Wed, 05 Dec 2001 16:40:46 +0000
+X-Sender: cjh@pop.doc.ic.ac.uk (Unverified)
+Message-Id: <l03102801b833ef2af02a@[146.169.29.12]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Wed, 5 Dec 2001 16:43:53 +0000
+To: cs-first-year@doc.ic.ac.uk
+From: chris hogger <cjh@doc.ic.ac.uk>
+Subject: Exam Regulations correction
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 7
+
+Dear Computing-1 students,
+
+The Departmental web pages showing your first-year regulations have, until
+today, indicated that to pass the first year you needed, among other
+things, to pass at least eight of your ten main examinations.
+
+At the beginning of the term, when I gave my introductory talk to you, I
+stated that you had to pass nine of them, since this was the common belief
+among those responsible for formulating the pass requirements.
+
+The Director of Studies has now confirmed that nine is indeed the correct
+number, and the Departmental Webpage Coordinator has accordingly been asked
+to amend the web pages.
+
+Regards,
+Chris.
+
+
+
+From mpg01@doc.ic.ac.uk Tue Nov 13 15:05:04 2001
+Return-path: <mpg01@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 13 Nov 2001 15:05:04 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 163f7N-0000DU-00; Tue, 13 Nov 2001 15:04:53 +0000
+Received: from active19.doc.ic.ac.uk
+	([146.169.50.19] helo=doc.ic.ac.uk ident=mpg01)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 163ezP-0005EE-00
+	for cs-first-year@doc.ic.ac.uk; Tue, 13 Nov 2001 14:56:39 +0000
+Sender: mpg01@doc.ic.ac.uk
+Message-ID: <3BF134A7.FEF462C0@doc.ic.ac.uk>
+Date: Tue, 13 Nov 2001 14:56:39 +0000
+From: Maria Pilar Guerra Arias <mpg01@doc.ic.ac.uk>
+X-Mailer: Mozilla 4.77 [en] (X11; U; Linux 2.4.10-4GB-SMP i686)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: First Year Computing Students <cs-first-year@doc.ic.ac.uk>
+Subject: Mathematical Methods and Graphics Coursework
+Content-Type: multipart/mixed;
+ boundary="------------10B6E339F8FD68EBAD99E295"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 8
+
+This is a multi-part message in MIME format.
+--------------10B6E339F8FD68EBAD99E295
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Dear All,
+This is what Luzzatto has to say about the coursework:
+--------------10B6E339F8FD68EBAD99E295
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Return-path: <stefano.luzzatto@ic.ac.uk>
+Envelope-to: mpg01@doc.ic.ac.uk
+Delivery-date: Tue, 13 Nov 2001 12:12:44 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 163cQm-0005jy-00; Tue, 13 Nov 2001 12:12:44 +0000
+Received: from mr4.cc.ic.ac.uk ([155.198.5.114])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 163cQm-0005SH-00; Tue, 13 Nov 2001 12:12:44 +0000
+Received: from icex7.cc.ic.ac.uk ([155.198.3.7])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 163cQm-0000px-04; Tue, 13 Nov 2001 12:12:44 +0000
+Received: from [155.198.192.70] (mane.ma.ic.ac.uk [155.198.192.70]) by icex7.cc.ic.ac.uk with SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2653.13)
+	id WGM0CRZT; Tue, 13 Nov 2001 12:12:43 -0000
+User-Agent: Microsoft-Entourage/9.0.2509
+Date: Tue, 13 Nov 2001 12:12:39 +0000
+Subject: Re: Coursework
+From: Stefano Luzzatto <stefano.luzzatto@ic.ac.uk>
+To: Maria Pilar Guerra Arias <mpg01@doc.ic.ac.uk>
+CC: Chris Hogger <cjh@doc.ic.ac.uk>
+Message-ID: <B816BEB7.1B61%stefano.luzzatto@ic.ac.uk>
+In-Reply-To: <3BF10871.99E490B5@doc.ic.ac.uk>
+Mime-version: 1.0
+Content-type: text/plain; charset="US-ASCII"
+Content-transfer-encoding: 7bit
+
+Dear Maria, 
+
+I apologize for the misunderstanding. Please forward the following email to
+the rest of the group.
+
+**************************************************
+To CS1 students. 
+
+Coursework for the "Mathematical Methods and Graphics" course will be
+handed out after the lecture on Friday the 16th November and is to be handed
+in on Tuesday the 27th of November.
+
+The coursework will cover topics discussed in the lecture up to and
+including Friday the 16th November.
+
+Please accept my apologies for the misunderstanding regarding the dates.
+
+Stefano Luzzatto
+
+
+
+
+--------------------------------------------------------------
+Stefano Luzzatto
+Mathematics Department          Tel: +44 20 759 48507
+Imperial College                       Fax  +44 870 1309532
+180 Queen's Gate                      Stefano.Luzzatto@ic.ac.uk
+London SW7 2BZ                        http://www.ma.ic.ac.uk/~luzzatto
+---------------------------------------------------------------
+
+*******************************************************************
+
+> From: Maria Pilar Guerra Arias <mpg01@doc.ic.ac.uk>
+> Date: Tue, 13 Nov 2001 11:48:01 +0000
+> To: Stefano.Luzzatto@ic.ac.uk
+> Subject: Coursework
+> 
+> Dear Mr Luzzatto,
+> As one of the first year computing representatives I would like to
+> clarify to the rest of the CS1 group the coursework submission date for
+> "Mathematical Methods and Graphics" coursework. This is due to a section
+> on the 1st year notice board advising us of coursework we haven't yet
+> been set to be handed in today.
+> 
+> Could you please send me a statement to forward to CS1 students about
+> when we shall receive and be expected to hand in coursework for your
+> first year Computing lectures on "Mathematical Methods and Graphics".
+> Thanks in advance.
+> Best wishes,
+> Maria Pilar Guerra-Arias
+
+
+--------------10B6E339F8FD68EBAD99E295--
+
+
+From mpg01@doc.ic.ac.uk Thu Nov 08 09:51:22 2001
+Return-path: <mpg01@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 08 Nov 2001 09:51:22 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 161lq9-0004BJ-00; Thu, 08 Nov 2001 09:51:17 +0000
+Received: from voxel07.doc.ic.ac.uk
+	([146.169.49.157] helo=doc.ic.ac.uk ident=mpg01)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 161lq9-0004Oa-00
+	for cs-first-year@doc.ic.ac.uk; Thu, 08 Nov 2001 09:51:17 +0000
+Sender: mpg01@doc.ic.ac.uk
+Message-ID: <3BEA5595.BA1CA47C@doc.ic.ac.uk>
+Date: Thu, 08 Nov 2001 09:51:17 +0000
+From: Maria Pilar Guerra Arias <mpg01@doc.ic.ac.uk>
+X-Mailer: Mozilla 4.77 [en] (X11; U; Linux 2.4.4-4GB i686)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: First Year Computing Students <cs-first-year@doc.ic.ac.uk>
+Subject: [Fwd: Computing Course Breakdown]
+Content-Type: multipart/mixed;
+ boundary="------------6D4FCE29570F076AA320E422"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 9
+
+This is a multi-part message in MIME format.
+--------------6D4FCE29570F076AA320E422
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Hi All,
+Some of you have been asking me how much the first year is worth out of
+the three or four years. Andonis has kindly searched around on the doc
+website and found the two following links. Happy hunting! 
+Pili
+--------------6D4FCE29570F076AA320E422
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Return-path: <azs01@doc.ic.ac.uk>
+Envelope-to: mpg01@doc.ic.ac.uk
+Delivery-date: Wed, 07 Nov 2001 19:11:15 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 161Y6V-0002wb-00
+	for mpg01@doc.ic.ac.uk; Wed, 07 Nov 2001 19:11:15 +0000
+Received: from mr4.cc.ic.ac.uk ([155.198.5.114])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 161Y6U-0001r9-00
+	for mpg01@doc.ic.ac.uk; Wed, 07 Nov 2001 19:11:14 +0000
+Received: from icex5.cc.ic.ac.uk ([155.198.3.5])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 161Y6U-00069R-04
+	for mpg01@doc.ic.ac.uk; Wed, 07 Nov 2001 19:11:14 +0000
+Received: from AZS01 ([129.31.36.39]) by icex5.cc.ic.ac.uk with SMTP (Microsoft Exchange Internet Mail Service Version 5.5.2653.13)
+	id WGLM1N04; Wed, 7 Nov 2001 19:11:11 -0000
+Message-ID: <001501c167c0$01a72ec0$27241f81@imperial>
+Reply-To: "Andonis Sakatis" <azs01@doc.ic.ac.uk>
+From: "Andonis Sakatis" <azs01@doc.ic.ac.uk>
+To: <mpg01@doc.ic.ac.uk>
+Subject: Computing Course Breakdown
+Date: Wed, 7 Nov 2001 19:11:30 -0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_01C167C0.01859D00"
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_01C167C0.01859D00
+Content-Type: text/plain;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Pili
+
+Just been checking out about the first year being worth 17%.=20
+
+So I've found the BEng and MEng course breakdown on the DOC web site. =
+The links are here:
+
+BEng:   =
+http://www.doc.ic.ac.uk/teaching/under/comp/nregulations/beng.html
+MEng:  =
+http://www.doc.ic.ac.uk/teaching/under/comp/nregulations/meng.html
+
+You may wanna forward this on to all of cs1 (being year rep-and-all) =
+cause this is the kinda infomation everyone should know about before =
+they think they can pass the first year and start working in the =
+second...
+
+Andonis Sakatis
+azs01@doc.ic.ac.uk
+
+
+------=_NextPart_000_0012_01C167C0.01859D00
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Dwindows-1252">
+<META content=3D"MSHTML 6.00.2600.0" name=3DGENERATOR>
+<STYLE></STYLE>
+</HEAD>
+<BODY bgColor=3D#ffffff>
+<DIV>
+<DIV><FONT size=3D2>Hi Pili</FONT></DIV>
+<DIV><FONT size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT size=3D2>Just been checking out about the first year being =
+worth=20
+17%.</FONT><FONT size=3D2> </FONT></DIV>
+<DIV><FONT size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT size=3D2>So I've found the BEng and MEng course breakdown on =
+the DOC=20
+web site. The links are here:</FONT></DIV>
+<DIV><FONT size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT size=3D2>BEng:&nbsp;&nbsp; <A=20
+href=3D"http://www.doc.ic.ac.uk/teaching/under/comp/nregulations/beng.htm=
+l">http://www.doc.ic.ac.uk/teaching/under/comp/nregulations/beng.html</A>=
+</FONT></DIV>
+<DIV><FONT size=3D2>MEng:&nbsp;&nbsp;<A=20
+href=3D"http://www.doc.ic.ac.uk/teaching/under/comp/nregulations/meng.htm=
+l">http://www.doc.ic.ac.uk/teaching/under/comp/nregulations/meng.html</A>=
+</FONT></DIV>
+<DIV><FONT size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT size=3D2>You may wanna forward&nbsp;this on to all of cs1 =
+(being year=20
+rep-and-all) cause this is the kinda infomation everyone should know =
+about=20
+before they think they can pass the first year and start working in the=20
+second...</FONT></DIV>
+<DIV><FONT size=3D2></FONT>&nbsp;</DIV>
+<DIV><FONT size=3D2>Andonis Sakatis</FONT></DIV>
+<DIV><FONT size=3D2><A=20
+href=3D"mailto:azs01@doc.ic.ac.uk">azs01@doc.ic.ac.uk</A></FONT></DIV>
+<DIV>&nbsp;</DIV></DIV></BODY></HTML>
+
+------=_NextPart_000_0012_01C167C0.01859D00--
+
+
+--------------6D4FCE29570F076AA320E422--
+
+
+From c.metcalfe@ic.ac.uk Fri Nov 30 15:43:20 2001
+Return-path: <c.metcalfe@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 30 Nov 2001 15:43:20 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 169pou-000307-00
+	for ss401@doc.ic.ac.uk; Fri, 30 Nov 2001 15:43:20 +0000
+Received: from mr4.cc.ic.ac.uk ([155.198.5.114])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 169pou-00075L-00
+	for ss401@doc.ic.ac.uk; Fri, 30 Nov 2001 15:43:20 +0000
+Received: from icex3.cc.ic.ac.uk ([155.198.3.3])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 169pou-0007MK-04
+	for sridhar.sarnobat@ic.ac.uk; Fri, 30 Nov 2001 15:43:20 +0000
+Received: by icex3.cc.ic.ac.uk with Internet Mail Service (5.5.2653.19)
+	id <X78GKBQP>; Fri, 30 Nov 2001 15:43:20 -0000
+Message-ID: <2EDAF6DC7CE9D4118D4C00508BAED3158065E6@icex3.cc.ic.ac.uk>
+From: "Metcalfe, Chris" <c.metcalfe@ic.ac.uk>
+To: "Sarnobat, Sridhar" <sridhar.sarnobat@ic.ac.uk>
+Subject: LEQ - make your voice heard 
+Date: Fri, 30 Nov 2001 15:43:19 -0000
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 14
+
+Dear fellow student 
+
+Many of you will have seen the article in FELIX reporting the arrival of the
+electronic Lecturer Evaluation Questionnaire (LEQ) and this email is to
+advise you that this is now a reality. From Monday 3 December until Sunday 9
+December you will have an opportunity to provide constructive feedback to
+your department on most of the lecturers who have delivered lecture courses
+over the past term. The LEQ site is viewable only via the College network
+and is currently supported on Internet Explorer version 4.x and above.  The
+Netscape v4.x browser is also supported but due to problems with the
+Netscape v6.x browser this is not supported.  The LEQ web site is available
+at the following url:
+
+http://www.leq.ic.ac.uk
+
+Your Username and password (which has been randomly generated) for use with
+the LEQ web site is shown below:
+
+Username:	ss401
+
+Password:	cq376189
+
+Please take some time to check out the site and complete the electronic
+survey forms. You have the chance to win a cash prize for participating.
+
+Remember this is your opportunity to make your voice heard.
+
+Kind regards
+
+Sen Ganesh, President IC Union
+David Francis, Deputy President (Education and Welfare)
+
+
+
+From kp@doc.ic.ac.uk Wed Dec 05 10:16:17 2001
+Return-path: <kp@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 05 Dec 2001 10:16:17 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16BZ5q-0006BC-00; Wed, 05 Dec 2001 10:15:59 +0000
+Received: from brigg.doc.ic.ac.uk ([146.169.5.107] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16BZ5o-0002WN-00; Wed, 05 Dec 2001 10:15:56 +0000
+Message-ID: <3C0DF456.9F4ECBBB@doc.ic.ac.uk>
+Date: Wed, 05 Dec 2001 10:17:58 +0000
+From: Katherine <kp@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: all-first-year@doc.ic.ac.uk, all-second-year@doc.ic.ac.uk,
+ 	all-third-year@doc.ic.ac.uk, all-fourth-year@doc.ic.ac.uk
+Subject: Electronic Lecture Evaluation Questionnaires
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 15
+
+Dear All
+
+You may already be aware that the Registry have set up a system to
+register Lecturer Evaluations on-line and your password to access the
+system should already have been emailed to you.  Please can I ask that
+you take a few minutes to register your assessments and email me with
+any comments/experiences of the on-line system this year so that I can
+pass these onto Registry so that they can make any necessary changes to
+the system.
+
+Many thanks for your help, it is much appreciated.
+
+Best wishes
+Katherine
+
+
+From cjh@doc.ic.ac.uk Fri Nov 23 11:49:24 2001
+Return-path: <cjh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 23 Nov 2001 11:49:24 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 167Epb-0001f9-00; Fri, 23 Nov 2001 11:49:19 +0000
+Received: from g3-cjh.doc.ic.ac.uk ([146.169.29.12])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 167Epb-000528-00; Fri, 23 Nov 2001 11:49:19 +0000
+X-Sender: cjh@pop.doc.ic.ac.uk
+Message-Id: <l03102800b823e889972f@[146.169.29.12]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Fri, 23 Nov 2001 11:51:58 +0000
+To: cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+From: chris hogger <cjh@doc.ic.ac.uk>
+Subject: Xmas Test : Java Driving Test : Haskell Examination
+Cc: sue@doc.ic.ac.uk, mrc@doc.ic.ac.uk, kp@doc.ic.ac.uk, iccp@doc.ic.ac.uk,
+ tjs@doc.ic.ac.uk, svb@doc.ic.ac.uk
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 16
+
+Dear Computing-1 and JMC-1 students,
+
+There are three matters raised in this email - please read and absorb them
+all carefully. The third one is especially important.
+
+1. Xmas Test in Week 11
+-----------------------
+
+This tests you on all Autumn Term computing courses except Haskell and Java.
+It is sat ONLY by Comp-1 students.
+
+(JMC-1 are expected to have a similar test on maths courses in January.)
+
+It takes place in rooms 308+311 on Thursday December 13th, 10.00-12.00.
+There will be 5 compulsory questions on the paper, one for each course,
+carrying equal weight. The marks contribute to your coursework total.
+
+Further details are set out on the page
+
+- http://www.doc.ic.ac.uk/~cjh/Iyc/xmastest.html
+
+
+2. Java Driving Test in Week 11
+-------------------------------
+
+This test will be similar to the Haskell one you have already taken.
+It tests you on the Programming I [Java] course, and is sat by
+both Comp-1 and JMC-1 students.
+
+It takes place in the labs on Thursday December 13th, 14.00-16.00.
+There will be about 20 minutes for reading/planning, then 90 minutes
+for implementation. The marks contribute to your labwork total.
+
+These details are also set out on the page
+
+- http://www.doc.ic.ac.uk/~cjh/Iyc/drivingtest.html
+
+
+3. Haskell Examination in 2002
+------------------------------
+
+This is the Haskell half of your formal examination on Declarative
+Programming. The second half, on Prolog, is not sat until the Summer Term.
+Declarative Programming is one of the 10 examinations you take in year 1,
+of which you need to pass at least 8 - so it is IMPORTANT.
+The passmark for each one is 30%.
+
+It will be sat in the labs in much the same way as your Driving Tests. A
+period of 30 minutes will be allowed for reading/planning, followed by 90
+minutes for implementation. As this is a formal examination, additional
+rules will apply to conduct during the sitting, of which you will be
+advised in due course.
+
+Provisionally, the anticipated date of the exam is Friday January 11th
+2002, and the anticipated time is 11.00-13.00. A formal announcement will
+soon be made which will either confirm or adjust these details.
+
+Regards,
+Chris.
+
+
+
+From mpg01@doc.ic.ac.uk Fri Dec 07 10:06:00 2001
+Return-path: <mpg01@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 07 Dec 2001 10:06:00 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16CHtD-0005ja-00; Fri, 07 Dec 2001 10:05:55 +0000
+Received: from sync16.doc.ic.ac.uk
+	([146.169.49.16] helo=doc.ic.ac.uk ident=mpg01)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16CHtC-0003UH-00
+	for cs-first-year@doc.ic.ac.uk; Fri, 07 Dec 2001 10:05:54 +0000
+Sender: mpg01@doc.ic.ac.uk
+Message-ID: <3C109482.BDD9E2AF@doc.ic.ac.uk>
+Date: Fri, 07 Dec 2001 10:05:54 +0000
+From: Maria Pilar Guerra Arias <mpg01@doc.ic.ac.uk>
+X-Mailer: Mozilla 4.77 [en] (X11; U; Linux 2.4.13-4GB-SMP i686)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: First Year Computing Students <cs-first-year@doc.ic.ac.uk>
+Subject: Christmas test Past paper answers
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 17
+
+Dear all,
+A couple of you approached me about answers to the past papers.
+Apparently there are no documented answers. Sorry! 
+
+Good luck with revision,
+
+Pili
+
+From sza@doc.ic.ac.uk Fri Dec 07 20:12:34 2001
+Return-path: <sza@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 07 Dec 2001 20:12:34 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16CRJw-0004Yz-00; Fri, 07 Dec 2001 20:10:08 +0000
+Received: from leo.doc.ic.ac.uk
+	([146.169.4.50] helo=doc.ic.ac.uk ident=sza)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16CRJd-0005SZ-00; Fri, 07 Dec 2001 20:09:49 +0000
+Sender: sza@doc.ic.ac.uk
+Message-ID: <3C112212.E764F537@doc.ic.ac.uk>
+Date: Fri, 07 Dec 2001 20:09:54 +0000
+From: Silvana Zappacosta <sza@doc.ic.ac.uk>
+Organization: Imperial College
+X-Mailer: Mozilla 4.77 [en] (X11; U; Linux 2.4.13-4GB-SMP i686)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: all-doc@doc.ic.ac.uk, help@doc.ic.ac.uk
+Subject: MAC Lab Exam
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 18
+
+The Advanced MSc students will have a Laboratory Exam on the 14th of December 2001
+(last day of term) and require exclusive use of room 219 from 10:00 am until 1:00 pm on
+that day (the first hour will be used for the set up of the machines, with view to start
+the exam at 11:00 am).
+
+Please take into consideration the unavailability of this room in the organisation of your
+
+work for the coming week.  It will be appreciated if noise levels in the adjacent
+corridors
+are kept to a minimum during the exam period, for the benefit of the students sitting the
+exam.
+
+Regards,
+    Silvana Zappacosta
+    (Advanced MSc. Lab Co-ordinator)
+
+
+
+From psc@doc.ic.ac.uk Fri Dec 07 13:35:55 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 07 Dec 2001 13:35:55 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16CLAN-0005kd-00; Fri, 07 Dec 2001 13:35:51 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16CLAN-0004jO-00; Fri, 07 Dec 2001 13:35:51 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16CLAN-0005lc-00; Fri, 07 Dec 2001 13:35:51 +0000
+To: cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+Subject: First Year Lab
+Message-Id: <E16CLAN-0005lc-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Fri, 07 Dec 2001 13:35:51 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 19
+
+
+To allow you time to prepare for the Kenya/Java driving test next
+week there is no lab exercise next week.  You should arrange to
+demonstrate your Owari program to your PPT at some time next week.
+
+As you will not be doing a lab there will be no lab workshop
+or scheduled lab sessions.
+
+Good luck in the test,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Fri Dec 07 13:04:10 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 07 Dec 2001 13:04:10 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16CKde-0001WH-00; Fri, 07 Dec 2001 13:02:02 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16CKdJ-0006Um-00; Fri, 07 Dec 2001 13:01:41 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16CKdM-0004gB-00; Fri, 07 Dec 2001 13:01:44 +0000
+To: all-doc@doc.ic.ac.uk
+Subject: Lab Exam
+Cc: help@doc.ic.ac.uk
+Message-Id: <E16CKdM-0004gB-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Fri, 07 Dec 2001 13:01:44 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 20
+
+
+The CS1 and JMC1 students will be doing a lab test next week
+and we will need exclusive use of the following labs while they are
+doing their lab test.
+
+We will need to use rooms 202/206/219 on Thursday 13.12.01 between
+13.30 and 16.30 for the CS1/JMC1 lab test.
+
+Could you please organise your use of the labs so that you can avoid
+using rooms 202/206/219 at the above times.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Mon Dec 10 13:34:38 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 10 Dec 2001 13:34:38 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16DQZl-0006fK-00; Mon, 10 Dec 2001 13:34:33 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16DQZl-00012V-00; Mon, 10 Dec 2001 13:34:33 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16DQZk-0007S5-00; Mon, 10 Dec 2001 13:34:32 +0000
+To: cs-first-year@doc.ic.ac.uk
+Subject: Driving Test (13.12.01)
+Cc: ids@doc.ic.ac.uk, psc@doc.ic.ac.uk
+Message-Id: <E16DQZk-0007S5-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Mon, 10 Dec 2001 13:34:32 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 21
+
+
+There is a change to the arrangements for the driving test.
+Could you go to either room 203 or 219 at the start of the 
+Driving Test.  We will not be using room 206.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Mon Dec 10 13:38:48 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 10 Dec 2001 13:38:48 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16DQY0-0006cE-00; Mon, 10 Dec 2001 13:32:44 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16DQXb-00058f-00
+	for all-doc@doc.ic.ac.uk; Mon, 10 Dec 2001 13:32:19 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16DQXb-0007Pi-00
+	for all-doc@doc.ic.ac.uk; Mon, 10 Dec 2001 13:32:19 +0000
+To: all-doc@doc.ic.ac.uk
+Subject: Lab Exam
+Message-Id: <E16DQXb-0007Pi-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Mon, 10 Dec 2001 13:32:19 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 22
+
+There is a change to the arrangements for the firstyear lab exam on
+Thursday 13.12.01.  We will be using rooms 202/203/219 and not
+rooms 202/206/219 as given in the original email.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Mon Dec 10 13:47:13 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 10 Dec 2001 13:47:13 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16DQlw-0007PZ-00; Mon, 10 Dec 2001 13:47:08 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16DQlw-0001Ny-00; Mon, 10 Dec 2001 13:47:08 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16DQlw-0007gp-00; Mon, 10 Dec 2001 13:47:08 +0000
+To: cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+Subject: O'Reilly Prize 2001
+Cc: ids@doc.ic.ac.uk, psc@doc.ic.ac.uk
+Message-Id: <E16DQlw-0007gp-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Mon, 10 Dec 2001 13:47:08 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 23
+
+
+If you are thinking of entering the Owari Programming
+Competition for 2001 we have had confirmation from
+O'Reilly books that they will be offering a prize of
+100 pounds worth of O'Reilly computing books for the
+winner of the competition.  This will be in addition
+to the department's prize of 25 pounds.
+
+Thanks,
+
+Peter
+
+
+
+From kp@doc.ic.ac.uk Wed Dec 12 10:00:31 2001
+Return-path: <kp@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 12 Dec 2001 10:00:31 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16E6Be-0006qD-00; Wed, 12 Dec 2001 10:00:26 +0000
+Received: from brigg.doc.ic.ac.uk ([146.169.5.107] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16E6Bd-0003dK-00; Wed, 12 Dec 2001 10:00:25 +0000
+Message-ID: <3C172B29.954633AA@doc.ic.ac.uk>
+Date: Wed, 12 Dec 2001 10:02:17 +0000
+From: Katherine <kp@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+CC: Margaret Cunningham <mrc@doc.ic.ac.uk>
+Subject: Last day of term 2001
+Content-Type: multipart/alternative;
+ boundary="------------B256DB37D5794069E9750C0F"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 24
+
+
+--------------B256DB37D5794069E9750C0F
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Dear All
+
+Chris Hogger (first year co-ordinator) has asked me to forward the mail
+below.
+
+  ------------------------------------------------------------------------
+
+Dear Comp-1 students,
+
+I am advised that the timetabled slots for Logic, Lab and Mathematical
+Methods will not be used this Friday by the teaching staff concerned
+with
+them.
+
+Therefore, provided you have no other obligations, you are free not to
+attend College on Friday.
+
+You may wish to note, however, that the (entirely voluntary) Owari
+competition will be held on Friday, and that Haskell Driving Test resit
+students have been required by Dr. Field to submit a Haskell program
+before the end of Friday.
+
+Regards,
+Chris.
+  ------------------------------------------------------------------------
+
+--------------B256DB37D5794069E9750C0F
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+Dear All
+<p>Chris Hogger (first year co-ordinator) has asked me to forward the mail
+below.
+<p>
+<hr WIDTH="100%">
+<br>Dear Comp-1 students,
+<p>I am advised that the timetabled slots for Logic, Lab and Mathematical
+Methods will not be used this Friday by the teaching staff concerned with
+<br>them.
+<p>Therefore, provided you have no other obligations, you are free not
+to attend College on Friday.
+<p>You may wish to note, however, that the (entirely voluntary) Owari competition
+will be held on Friday, and that Haskell Driving Test resit students have
+been required by Dr. Field to submit a Haskell program before the end of
+Friday.
+<p>Regards,
+<br>Chris.
+<br>
+<hr WIDTH="100%"></html>
+
+--------------B256DB37D5794069E9750C0F--
+
+
+From jd101@doc.ic.ac.uk Sun Dec 09 18:45:27 2001
+Return-path: <jd101@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Sun, 09 Dec 2001 18:45:27 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16D8x0-0003Hk-00; Sun, 09 Dec 2001 18:45:22 +0000
+Received: from [146.169.27.12] (helo=jamie)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16D8x0-0002vY-00
+	for cs-first-year@doc.ic.ac.uk; Sun, 09 Dec 2001 18:45:22 +0000
+From: "Jamie Denton" <jd101@doc.ic.ac.uk>
+To: "'Cs1'" <cs-first-year@doc.ic.ac.uk>
+Subject: RE: Test Topics
+Date: Sun, 9 Dec 2001 18:45:19 -0000
+Message-ID: <000701c180e1$a6d999c0$10251f81@jamie>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0008_01C180E1.A6D999C0"
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2616
+In-Reply-To: 
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+Importance: Normal
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 25
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0008_01C180E1.A6D999C0
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Logic will contain everything except predicate natural deduction.
+ 
+-----Original Message-----
+From: Jamie Denton [mailto:jd101@doc.ic.ac.uk] 
+Sent: 06 December 2001 20:55
+To: Cs1
+Subject: Test Topics
+ 
+Ok, my info so far on the content of the Christmas test,
+ 
+Discrete maths, everything but orderings
+ 
+Hardware, lectures 1-13 only
+ 
+Computer systems, everything up to and including memory, nanrakers
+assembly language will not be included.
+ 
+More info will follow as soon as I have it.
+ 
+Jamie
+ 
+ 
+
+------=_NextPart_000_0008_01C180E1.A6D999C0
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:st1=3D"urn:schemas-microsoft-com:office:smarttags" =
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii">
+
+
+<meta name=3DProgId content=3DWord.Document>
+<meta name=3DGenerator content=3D"Microsoft Word 10">
+<meta name=3DOriginator content=3D"Microsoft Word 10">
+<link rel=3DFile-List href=3D"cid:filelist.xml@01C180E1.A6AD59A0">
+<o:SmartTagType =
+namespaceuri=3D"urn:schemas-microsoft-com:office:smarttags"
+ name=3D"time"/>
+<o:SmartTagType =
+namespaceuri=3D"urn:schemas-microsoft-com:office:smarttags"
+ name=3D"date"/>
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:DoNotRelyOnCSS/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:DocumentKind>DocumentEmail</w:DocumentKind>
+  <w:EnvelopeVis/>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]>
+<style>
+st1\:*{behavior:url(#default#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+span.EmailStyle17
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:windowtext;}
+span.EmailStyle18
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:navy;}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	mso-style-noshow:yes;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:navy;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */=20
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=3DEN-US link=3Dblue vlink=3Dpurple =
+style=3D'tab-interval:36.0pt'>
+
+<div class=3DSection1>
+
+<p class=3DMsoNormal style=3D'margin-left:36.0pt'><font size=3D2 =
+color=3Dnavy
+face=3DArial><span =
+style=3D'font-size:10.0pt;font-family:Arial;color:navy'>Logic
+will contain everything except predicate natural =
+deduction.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:36.0pt'><font size=3D2 =
+color=3Dnavy
+face=3DArial><span =
+style=3D'font-size:10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p>=
+</span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D2 =
+face=3DTahoma><span
+style=3D'font-size:10.0pt;font-family:Tahoma'>-----Original =
+Message-----<br>
+<b><span style=3D'font-weight:bold'>From:</span></b> Jamie Denton
+[mailto:jd101@doc.ic.ac.uk] <br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> =
+</span></font><st1:date
+Month=3D"12" Day=3D"6" Year=3D"2001"><font size=3D2 face=3DTahoma><span =
+style=3D'font-size:
+ 10.0pt;font-family:Tahoma'>06 December =
+2001</span></font></st1:date><font
+size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;font-family:Tahoma'> </span></font><st1:time
+Hour=3D"20" Minute=3D"55"><font size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;
+ font-family:Tahoma'>20:55</span></font></st1:time><font size=3D2 =
+face=3DTahoma><span
+style=3D'font-size:10.0pt;font-family:Tahoma'><br>
+<b><span style=3D'font-weight:bold'>To:</span></b> Cs1<br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> Test =
+Topics</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D3
+face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D2 =
+face=3DArial><span
+lang=3DEN-GB =
+style=3D'font-size:10.0pt;font-family:Arial;mso-ansi-language:EN-GB'>Ok,
+my info so far on the content of the Christmas =
+test,<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D2 =
+face=3DArial><span
+lang=3DEN-GB =
+style=3D'font-size:10.0pt;font-family:Arial;mso-ansi-language:EN-GB'><o:p=
+>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D2 =
+face=3DArial><span
+lang=3DEN-GB =
+style=3D'font-size:10.0pt;font-family:Arial;mso-ansi-language:EN-GB'>Disc=
+rete
+maths, everything but orderings<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D2 =
+face=3DArial><span
+lang=3DEN-GB =
+style=3D'font-size:10.0pt;font-family:Arial;mso-ansi-language:EN-GB'><o:p=
+>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D2 =
+face=3DArial><span
+lang=3DEN-GB =
+style=3D'font-size:10.0pt;font-family:Arial;mso-ansi-language:EN-GB'>Hard=
+ware,
+lectures 1-13 only<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D2 =
+face=3DArial><span
+lang=3DEN-GB =
+style=3D'font-size:10.0pt;font-family:Arial;mso-ansi-language:EN-GB'><o:p=
+>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D2 =
+face=3DArial><span
+lang=3DEN-GB =
+style=3D'font-size:10.0pt;font-family:Arial;mso-ansi-language:EN-GB'>Comp=
+uter
+systems, everything up to and including memory, nanrakers assembly =
+language
+will not be included.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D2 =
+face=3DArial><span
+lang=3DEN-GB =
+style=3D'font-size:10.0pt;font-family:Arial;mso-ansi-language:EN-GB'><o:p=
+>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D2 =
+face=3DArial><span
+lang=3DEN-GB =
+style=3D'font-size:10.0pt;font-family:Arial;mso-ansi-language:EN-GB'>More=
+
+info will follow as soon as I have it.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D2 =
+face=3DArial><span
+lang=3DEN-GB =
+style=3D'font-size:10.0pt;font-family:Arial;mso-ansi-language:EN-GB'><o:p=
+>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D2 =
+face=3DArial><span
+lang=3DEN-GB =
+style=3D'font-size:10.0pt;font-family:Arial;mso-ansi-language:EN-GB'>Jami=
+e<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D2 =
+face=3DArial><span
+style=3D'font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></fo=
+nt></p>
+
+<p class=3DMsoNormal style=3D'margin-left:72.0pt'><font size=3D2 =
+face=3DArial><span
+lang=3DEN-GB =
+style=3D'font-size:10.0pt;font-family:Arial;mso-ansi-language:EN-GB'><o:p=
+>&nbsp;</o:p></span></font></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_000_0008_01C180E1.A6D999C0--
+
+
+From ncg01@doc.ic.ac.uk Sun Dec 23 19:15:11 2001
+Return-path: <ncg01@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Sun, 23 Dec 2001 19:15:11 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16IE5Q-00047Z-00; Sun, 23 Dec 2001 19:15:04 +0000
+Received: from [146.169.27.5] (helo=ncgwin2k)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16IE5P-000702-00
+	for cs-first-year@doc.ic.ac.uk; Sun, 23 Dec 2001 19:15:03 +0000
+From: "Neil Greatorex" <ncg01@doc.ic.ac.uk>
+To: <cs-first-year@doc.ic.ac.uk>
+Subject: CS1 Community - an alternative
+Date: Sun, 23 Dec 2001 19:14:54 -0000
+Organization: Department of Computing, Imperial College
+Message-ID: <000001c18be6$1b454cf0$0100a8c0@hor.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2627
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4807.1700
+Importance: Normal
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 26
+
+Hi everyone,
+
+I've put together an alternative to Charlee's MSN community in my DoC
+webspace for all you people who don't like giving your details to Mr
+Gates. It also will only let in members of CS1 (without me having to
+approve members) and it also identifies you automatically by name and
+picture whenever you post. It doesn't let any staff in either :-)
+
+Check it out at http://www.doc.ic.ac.uk/~ncg01/cs1/
+
+A brief summary of its features:
+
+ * Forums for you to discuss what's going on in the year, and anything
+else (within reason!)
+ * Automatic identification of posters by their login, including name
+and picture.
+ * A page of links to all the various lecture notes and slides etc.
+available on the web (thanks to Jamie Denton)
+ * News headlines from the UK and around the world.
+ * A 'now/next' bar showing where you should be now and where you should
+be next.
+
+The now/next bar isn't finished yet as I'm waiting for the final
+timetable for next term to come out before I enter it into the database.
+
+Feel free to use it! There may be a few bugs in it as I've been mostly
+editing someone else's code so if you find any let me know.
+
+Cheers,
+Neil Greatorex
+
+
+From dm901@doc.ic.ac.uk Fri Dec 21 15:19:15 2001
+Return-path: <dm901@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 21 Dec 2001 15:19:15 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16HRPC-00045k-00; Fri, 21 Dec 2001 15:16:14 +0000
+Received: from albatross.doc.ic.ac.uk ([146.169.1.12] ident=root)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16HRP3-0008E6-00
+	for all-students@doc.ic.ac.uk; Fri, 21 Dec 2001 15:16:05 +0000
+Received: (from wwwnot@localhost)
+	by albatross.doc.ic.ac.uk (8.11.6/8.8.8) id fBLFG5S25692
+	for all-students@doc.ic.ac.uk; Fri, 21 Dec 2001 15:16:05 GMT
+X-Authentication-Warning: albatross.doc.ic.ac.uk: wwwnot set sender to dm901@doc.ic.ac.uk using -f
+To: all-students@doc.ic.ac.uk
+Subject: lost..
+Message-ID: <1008947765.3c23523575ba6@albatross.doc.ic.ac.uk>
+Date: Fri, 21 Dec 2001 15:16:05 +0000 (GMT)
+From: dm901@doc.ic.ac.uk
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+User-Agent: IMP/PHP IMAP webmail program 2.2.4
+X-Originating-IP: 146.169.50.40
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 27
+
+hey,
+  I've kind of lost a silver sony discman last evening in the labs in room 202 
+(the one with the flatscreens)..
+  If anyone has seen is / nicked it (?) id REALLY appreciate it if you could 
+return it back to me.
+  Thanks.
+Mangal
+
+From jd101@doc.ic.ac.uk Fri Jan 11 10:35:37 2002
+Return-path: <jd101@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 11 Jan 2002 10:35:37 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16Oz24-0005TS-00; Fri, 11 Jan 2002 10:35:32 +0000
+Received: from [146.169.27.9] (helo=jamie)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16Oz24-0003ZU-00
+	for cs-first-year@doc.ic.ac.uk; Fri, 11 Jan 2002 10:35:32 +0000
+From: "Jamie Denton" <jd101@doc.ic.ac.uk>
+To: "Cs1" <cs-first-year@doc.ic.ac.uk>
+Subject: FW: Brown envelopes
+Date: Fri, 11 Jan 2002 10:35:33 -0000
+Message-ID: <000201c19a8b$b2eca770$10251f81@jamie>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2616
+Importance: Normal
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 28
+
+-----Original Message-----
+From: James Roland Blain Scott [mailto:jrs101@doc.ic.ac.uk] 
+Sent: 11 January 2002 10:30
+To: Jamie Denton
+Subject: Re: Brown envelopes
+
+It might be worth mentioning that almost none of them are in the correct
+
+pigeonholes :)
+
+James
+
+Jamie Denton wrote:
+
+> Just a quick reminder
+> 
+>  
+> 
+> For those of you who haven?t picked up the brown envelopes with you 
+> candidate number on it, go into the common room, where u get the lab 
+> specs, opposite the windows there are brown pgeonholes with sets of 
+> names on, yours will be on one of them (they're in alphabetical
+order).  
+> you will find a brown envelope with your name on it, open it, you need
+
+> the candidate number for the exam.
+> 
+>  
+> 
+>  
+> 
+> Jamie 
+> 
+>  
+> 
+
+
+
+
+
+From jd101@doc.ic.ac.uk Thu Jan 10 23:06:27 2002
+Return-path: <jd101@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 10 Jan 2002 23:06:27 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16OoH8-0000nO-00; Thu, 10 Jan 2002 23:06:22 +0000
+Received: from [146.169.27.1] (helo=jamie)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16OoH8-0004xy-00
+	for cs-first-year@doc.ic.ac.uk; Thu, 10 Jan 2002 23:06:22 +0000
+From: "Jamie Denton" <jd101@doc.ic.ac.uk>
+To: "Cs1" <cs-first-year@doc.ic.ac.uk>
+Subject:  Brown envelopes
+Date: Thu, 10 Jan 2002 23:06:23 -0000
+Message-ID: <000501c19a2b$6c46b910$10251f81@jamie>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0006_01C19A2B.6C46B910"
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2616
+Importance: Normal
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+In-Reply-To: 
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 29
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0006_01C19A2B.6C46B910
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Just a quick reminder
+ 
+For those of you who haven't picked up the brown envelopes with you
+candidate number on it, go into the common room, where u get the lab
+specs, opposite the windows there are brown pgeonholes with sets of
+names on, yours will be on one of them (they're in alphabetical order).
+you will find a brown envelope with your name on it, open it, you need
+the candidate number for the exam.
+ 
+ 
+Jamie 
+ 
+
+------=_NextPart_000_0006_01C19A2B.6C46B910
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii">
+
+
+<meta name=3DProgId content=3DWord.Document>
+<meta name=3DGenerator content=3D"Microsoft Word 10">
+<meta name=3DOriginator content=3D"Microsoft Word 10">
+<link rel=3DFile-List href=3D"cid:filelist.xml@01C19A2B.6BF8C020">
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:DoNotRelyOnCSS/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:DocumentKind>DocumentEmail</w:DocumentKind>
+  <w:EnvelopeVis/>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"MS Shell Dlg";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+span.EmailStyle17
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:windowtext;}
+span.EmailStyle18
+	{mso-style-type:personal-reply;
+	mso-style-noshow:yes;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:navy;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */=20
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=3DEN-US link=3Dblue vlink=3Dpurple =
+style=3D'tab-interval:36.0pt'>
+
+<div class=3DSection1>
+
+<p class=3DMsoNormal =
+style=3D'mso-layout-grid-align:none;text-autospace:none'><font
+size=3D2 color=3Dblack face=3DArial><span =
+style=3D'font-size:10.0pt;font-family:Arial;
+color:black'>Just a quick reminder<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal =
+style=3D'margin-left:36.0pt;mso-layout-grid-align:none;
+text-autospace:none'><font size=3D2 color=3Dblack face=3DArial><span
+style=3D'font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p=
+></span></font></p>
+
+<p class=3DMsoNormal =
+style=3D'text-indent:36.0pt;mso-layout-grid-align:none;
+text-autospace:none'><font size=3D2 color=3Dblack face=3DArial><span
+style=3D'font-size:10.0pt;font-family:Arial;color:black'>For those of =
+you who
+haven&#8217;t picked up the brown envelopes with you candidate number on =
+it, go
+into the common room, where u get the lab specs, opposite the windows =
+there are
+brown pgeonholes with sets of names on, yours will be on one of them =
+(they're
+in alphabetical order).<span style=3D'mso-spacerun:yes'>&nbsp; =
+</span>you will
+find a brown envelope with your name on it, open it, you need the =
+candidate
+number for the exam.</span></font><font size=3D2 face=3D"MS Shell =
+Dlg"><span
+style=3D'font-size:10.0pt;font-family:"MS Shell =
+Dlg"'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'margin-left:36.0pt'><font size=3D2 =
+face=3DArial><span
+style=3D'font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></fo=
+nt></p>
+
+<p class=3DMsoNormal style=3D'margin-left:36.0pt'><font size=3D2 =
+face=3DArial><span
+style=3D'font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></fo=
+nt></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial;mso-no-proof:yes'>Jamie</span></font><span =
+style=3D'mso-no-proof:
+yes'>&nbsp;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal style=3D'margin-left:36.0pt'><font size=3D3
+face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_000_0006_01C19A2B.6C46B910--
+
+
+From psc@doc.ic.ac.uk Thu Jan 10 20:21:25 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 10 Jan 2002 20:21:25 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16Olg8-00078y-00; Thu, 10 Jan 2002 20:20:00 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16Olg7-0002Vb-00; Thu, 10 Jan 2002 20:19:59 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16Olg7-0006y5-00; Thu, 10 Jan 2002 20:19:59 +0000
+To: cs-first-year@doc.ic.ac.uk
+Subject: First Year Lab
+Cc: cjh@doc.ic.ac.uk, dfg@doc.ic.ac.uk, dja@doc.ic.ac.uk, 
+	drb@doc.ic.ac.uk, ids@doc.ic.ac.uk, mrh@doc.ic.ac.uk, 
+	psc@doc.ic.ac.uk
+Message-Id: <E16Olg7-0006y5-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Thu, 10 Jan 2002 20:19:59 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 30
+
+
+The software labs for this term will start in week 4
+of term (28.1.02).  This will allow you to learn sufficient
+Java to do an introductory lab. 
+
+There will however be a hardware lab in the first two teaching 
+weeks of term (weeks 2 and 3).  This lab will be organised by 
+Dave Adams, Derek Brough and Duncan Gillies and will not be 
+marked or introduced by your PPTs.  
+
+The hardware lecturers will give you further details about the
+hardware lab in the lab workshop next week.
+
+You will need to arrange your first PPT meeting for the week beginning
+(28.1.02).  The first lab will be distributed on Friday 25.1.02.
+
+
+Thanks,
+
+Peter Cutler
+
+From president@ic.ac.uk Thu Jan 17 15:50:10 2002
+Return-path: <president@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 17 Jan 2002 15:50:10 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16REnl-0007Qs-00; Thu, 17 Jan 2002 15:50:05 +0000
+Received: from mr3.cc.ic.ac.uk ([155.198.5.113])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16REni-0000Af-00; Thu, 17 Jan 2002 15:50:02 +0000
+Received: from icex10.wye.ic.ac.uk ([195.194.230.19])
+	by mr3.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 16REni-0001sd-03; Thu, 17 Jan 2002 15:50:02 +0000
+Received: by icex10.wye.ic.ac.uk with Internet Mail Service (5.5.2653.19)
+	id <ZCLXDGC4>; Thu, 17 Jan 2002 15:49:56 -0000
+Message-ID: <1B5CCF924BCFD311BBB1009027DE7961054D5154@icex2.cc.ic.ac.uk>
+From: "Ganesh, Sen" <president@ic.ac.uk>
+To: IC Students <ic-students-dl@ic.ac.uk>
+Subject: Subject: Rector speaks to students - Friday 18th January
+Date: Thu, 17 Jan 2002 15:49:41 -0000
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: multipart/alternative;
+	boundary="----_=_NextPart_001_01C19F6E.93C98100"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 31
+
+This message is in MIME format. Since your mail reader does not understand
+this format, some or all of this message may not be legible.
+
+------_=_NextPart_001_01C19F6E.93C98100
+Content-Type: text/plain;
+	charset="iso-8859-1"
+
+The Rector will be giving a speech to all students about the future of
+Imperial College and how it affects you. The talk will start at 12.30 in the
+Great Hall, Sherfield Building on Friday 18th January. All are welcome. 
+
+
+Sen Ganesh 
+President, Imperial College Union
+
+
+------_=_NextPart_001_01C19F6E.93C98100
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Diso-8859-1">
+<META NAME=3D"Generator" CONTENT=3D"MS Exchange Server version =
+5.5.2653.12">
+<TITLE>Subject: Rector speaks to students - Friday 18th January</TITLE>
+</HEAD>
+<BODY>
+
+<P><FONT SIZE=3D2 FACE=3D"Arial">The Rector will be giving a speech to =
+all students about the future of Imperial College and how it affects =
+you. The talk will start at 12.30 in the Great Hall, Sherfield Building =
+on Friday 18th January. All are welcome. </FONT></P>
+<BR>
+
+<P><FONT SIZE=3D2 FACE=3D"Arial">Sen Ganesh </FONT>
+<BR><FONT SIZE=3D2 FACE=3D"Arial">President, Imperial College =
+Union</FONT>
+</P>
+
+</BODY>
+</HTML>
+------_=_NextPart_001_01C19F6E.93C98100--
+
+From psc@doc.ic.ac.uk Tue Jan 15 17:27:00 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 15 Jan 2002 17:27:00 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16QXMO-0000k3-00; Tue, 15 Jan 2002 17:26:56 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16QXMO-0005kI-00; Tue, 15 Jan 2002 17:26:56 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16QXMO-0006nA-00; Tue, 15 Jan 2002 17:26:56 +0000
+To: cs-first-year@doc.ic.ac.uk
+Subject: First Year Lab Workshop
+Cc: dfg@doc.ic.ac.uk, dja@doc.ic.ac.uk, drb@doc.ic.ac.uk, 
+	ids@doc.ic.ac.uk, im@doc.ic.ac.uk, psc@doc.ic.ac.uk
+Message-Id: <E16QXMO-0006nA-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Tue, 15 Jan 2002 17:26:56 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 32
+
+
+
+There has been a change of venue for the CS1 lab 
+workshop on Mondays at 14.00.  Originally it was 
+held in room 311 but from now on it will now be held
+in room 343.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Wed Oct 03 15:18:47 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 03 Oct 2001 15:18:47 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15omrC-0001GY-00; Wed, 03 Oct 2001 15:18:42 +0100
+Received: from diss.doc.ic.ac.uk ([146.169.40.22])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15omrC-0006hV-00; Wed, 03 Oct 2001 15:18:42 +0100
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 15omrC-0003bR-00; Wed, 03 Oct 2001 15:18:42 +0100
+To: cs-first-year@doc.ic.ac.uk
+Subject: First PPT Meeting
+Cc: ajf@doc.ic.ac.uk, cjh@doc.ic.ac.uk, 
+	dfg@doc.ic.ac.uk, dr@doc.ic.ac.uk, 
+	ecl1@doc.ic.ac.uk, frk@doc.ic.ac.uk, 
+	ids@doc.ic.ac.uk, jamm@doc.ic.ac.uk, 
+	jd@doc.ic.ac.uk, jj@doc.ic.ac.uk, 
+	jnm@doc.ic.ac.uk, mrc@doc.ic.ac.uk, 
+	phjk@doc.ic.ac.uk,
+    pjm@doc.ic.ac.uk, 
+	psc@doc.ic.ac.uk, rjc@doc.ic.ac.uk, 
+	smc@doc.ic.ac.uk, sue@doc.ic.ac.uk, 
+	wjk@doc.ic.ac.uk, wl@doc.ic.ac.uk
+Message-Id: <E15omrC-0003bR-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Wed, 03 Oct 2001 15:18:42 +0100
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 33
+
+
+You are due to meet your PPT for the first time this Thursday
+(4.10.01) at 17.00 in their office.  You should have details about 
+your PPT in your starter pack.  If you are uncertain about who your 
+PPT is or where their office is I have put the details on the lab web
+page at:
+
+http://www.doc.ic.ac.uk/lab/cs1
+
+(follow the links "PPT Room" - to find out your ppt's room 
+and "CS1 PPT List" - to find out who your PPT is)
+
+If your PPT has emailed you directly with details about the
+first PPT meeting then this information takes priority over the
+information given on the lab web page.
+
+Most of the PPT's rooms are in the Huxley building but some are in the
+William Penney Lab and this is found on the left hand side of the
+walkway opposite the Junior Common Room.
+
+I will put a paper copy of this information on the CS1 notice 
+board outside the Student General Office (room 345).
+
+You should now have the first two lab exercises.  Please note that the
+first lab exercise should be submitted before the end of Monday 8.10.01.
+You can submit your program as many times as you want. Each submission
+overwrites any previous submissions.  It is the last submission that is
+autotested and sent to your PPT.
+
+Thanks,
+
+Peter Cutler
+
+
+
+
+
+From seo01@doc.ic.ac.uk Fri Oct 05 13:05:39 2001
+Return-path: <seo01@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 05 Oct 2001 13:05:39 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15pTjQ-00003u-00; Fri, 05 Oct 2001 13:05:32 +0100
+Received: from sync06.doc.ic.ac.uk ([146.169.49.6] helo=there)
+	by diver.doc.ic.ac.uk with smtp (Exim 3.16 #7)
+	id 15pTjO-0002Hl-01; Fri, 05 Oct 2001 13:05:30 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15omrC-0001GY-00; Wed, 03 Oct 2001 15:18:42 +0100
+Received: from diss.doc.ic.ac.uk ([146.169.40.22])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15omrC-0006hV-00; Wed, 03 Oct 2001 15:18:42 +0100
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 15omrC-0003bR-00; Wed, 03 Oct 2001 15:18:42 +0100
+To: cs-first-year@doc.ic.ac.uk
+Subject: First PPT Meeting
+Cc: ajf@doc.ic.ac.uk,
+ cjh@doc.ic.ac.uk,
+ dfg@doc.ic.ac.uk,
+ dr@doc.ic.ac.uk,
+ ecl1@doc.ic.ac.uk,
+ frk@doc.ic.ac.uk,
+ ids@doc.ic.ac.uk,
+ jamm@doc.ic.ac.uk,
+ jd@doc.ic.ac.uk,
+ jj@doc.ic.ac.uk,
+ jnm@doc.ic.ac.uk,
+ mrc@doc.ic.ac.uk,
+ phjk@doc.ic.ac.uk,
+ pjm@doc.ic.ac.uk,
+ psc@doc.ic.ac.uk,
+ rjc@doc.ic.ac.uk,
+ smc@doc.ic.ac.uk,
+ sue@doc.ic.ac.uk,
+ wjk@doc.ic.ac.uk,
+ wl@doc.ic.ac.uk
+Message-Id: <E15omrC-0003bR-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Wed, 03 Oct 2001 15:18:42 +0100
+Content-Type: 
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 34
+
+
+You are due to meet your PPT for the first time this Thursday
+(4.10.01) at 17.00 in their office.  You should have details about 
+your PPT in your starter pack.  If you are uncertain about who your 
+PPT is or where their office is I have put the details on the lab web
+page at:
+
+http://www.doc.ic.ac.uk/lab/cs1
+
+(follow the links "PPT Room" - to find out your ppt's room 
+and "CS1 PPT List" - to find out who your PPT is)
+
+If your PPT has emailed you directly with details about the
+first PPT meeting then this information takes priority over the
+information given on the lab web page.
+
+Most of the PPT's rooms are in the Huxley building but some are in the
+William Penney Lab and this is found on the left hand side of the
+walkway opposite the Junior Common Room.
+
+I will put a paper copy of this information on the CS1 notice 
+board outside the Student General Office (room 345).
+
+You should now have the first two lab exercises.  Please note that the
+first lab exercise should be submitted before the end of Monday 8.10.01.
+You can submit your program as many times as you want. Each submission
+overwrites any previous submissions.  It is the last submission that is
+autotested and sent to your PPT.
+
+Thanks,
+
+Peter Cutler
+
+
+
+
+
+From psc@doc.ic.ac.uk Thu Oct 11 17:43:28 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 11 Oct 2001 17:43:28 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15rivd-0004Ii-00; Thu, 11 Oct 2001 17:43:25 +0100
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15rivb-0003Oy-00; Thu, 11 Oct 2001 17:43:23 +0100
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 15rivc-00047Q-00; Thu, 11 Oct 2001 17:43:24 +0100
+To: cs-first-year@doc.ic.ac.uk
+Subject: First Year Lab
+Cc: psc@doc.ic.ac.uk
+Message-Id: <E15rivc-00047Q-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Thu, 11 Oct 2001 17:43:24 +0100
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 35
+
+
+I have put a copy of the spec for the next assessed lab
+"Haskell LSystems" in the lab tray in the Student Common Room 
+(room 342).  The Student Common Room can be found on at the 
+end of the corridor with the noticeboards which runs between 
+rooms 340 and 343 in the Huxley building.
+
+The tray with the specs can be found at the far end of the
+bank of trays on the wall to the left of the windows as you 
+go into the main part of the Student Common Room.  The tray 
+is labelled "CS1 Lab Spec".  
+
+As a rule we will put the lab spec in the tray each Friday
+for you to collect.
+
+Please note that the official issue date for the lab is Monday
+of next week and we have let you have the lab early so that you
+can look at the next lab over the weekend (whilst you are
+completing the previous lab).
+
+Thanks,
+
+Peter Cutler
+
+
+
+
+
+
+From sp1@doc.ic.ac.uk Fri Feb 15 19:31:40 2002
+Return-path: <sp1@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 15 Feb 2002 19:31:40 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16bo1l-0005xC-00; Fri, 15 Feb 2002 19:28:13 +0000
+Received: from commapc1.doc.ic.ac.uk ([146.169.4.9] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16bo1h-0003Sd-00
+	for all-students@doc.ic.ac.uk; Fri, 15 Feb 2002 19:28:09 +0000
+Message-ID: <3C6D6212.9DBDF2C9@doc.ic.ac.uk>
+Date: Fri, 15 Feb 2002 19:31:30 +0000
+From: Shamima <sp1@doc.ic.ac.uk>
+X-Mailer: Mozilla 4.06 [en] (WinNT; I)
+MIME-Version: 1.0
+To: all-students@doc.ic.ac.uk
+Subject: Reservation of the labs 
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 36
+
+Hi Everyone,
+
+We are holding an SQL lab for the MSc Computing, JMC3, ISE3 taking the
+database V311 course.  The given labs are reserved during the following
+times *next week*:
+
+Wed 11-12:30     in 202/206
+Friday 12-1     in 219
+Friday 5-6    in 202/206
+Thursday 10-11    in rooms 202 and 206
+
+Please keep in mind these times in planning your deadlines next week.
+
+Regards
+Shamima
+
+--
+Shamima Paurobally
+Department of Computing, Imperial College,
+180 Queens Gate, London SW7 2BZ, UK
+tel +44 207 594 8194
+
+
+
+
+From jd101@doc.ic.ac.uk Wed Feb 13 16:33:28 2002
+Return-path: <jd101@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 13 Feb 2002 16:33:28 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16b2LQ-0005ik-00; Wed, 13 Feb 2002 16:33:20 +0000
+Received: from [146.169.27.3] (helo=jamie)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16b2LQ-0005vW-00; Wed, 13 Feb 2002 16:33:20 +0000
+From: "Jamie Denton" <jd101@doc.ic.ac.uk>
+To: "Cs1" <cs-first-year@doc.ic.ac.uk>,
+	<jmc-first-year@doc.ic.ac.uk>
+Cc: "'chris hogger'" <cjh@doc.ic.ac.uk>
+Subject: Java  Lecures - Urgent!
+Date: Wed, 13 Feb 2002 16:33:18 -0000
+Message-ID: <000101c1b4ac$248783c0$10251f81@jamie>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0002_01C1B4AC.248783C0"
+X-Priority: 1 (Highest)
+X-MSMail-Priority: High
+X-Mailer: Microsoft Outlook, Build 10.0.2616
+Importance: High
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+Status: RO
+X-Status: DA
+X-Keywords:               
+X-UID: 37
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0002_01C1B4AC.248783C0
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Hi,
+            Today was the termly Staff Student Committee meeting, and
+one issue that was raised that is relevant to both JMC 1 annd CS 1.
+There was a general consensus that the Programming II lectures had
+missed out on the basics of java and gone straight onto the advanced
+inheritance.  
+ 
+So, if there is enough demand, I have a 4th year who is willing to do
+some lectures on the basics of java, basic classes and syntax for anyone
+who needs it or is having trouble with the basic.
+ 
+            Can anyone who feels they would attend please e-mail me so I
+can get an idea of how many people would like this.  Please include any
+specific requests in the e-mails of what you are having difficulties
+with.
+ 
+Thanks
+ 
+Jamie (CS-1 rep) 
+---
+Don't play with hand grenades
+
+------=_NextPart_000_0002_01C1B4AC.248783C0
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii">
+
+
+<meta name=3DProgId content=3DWord.Document>
+<meta name=3DGenerator content=3D"Microsoft Word 10">
+<meta name=3DOriginator content=3D"Microsoft Word 10">
+<link rel=3DFile-List href=3D"cid:filelist.xml@01C1B4AC.245B43A0">
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:DoNotRelyOnCSS/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:DocumentKind>DocumentEmail</w:DocumentKind>
+  <w:EnvelopeVis/>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	mso-style-noshow:yes;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:windowtext;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */=20
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=3DEN-US link=3Dblue vlink=3Dpurple =
+style=3D'tab-interval:36.0pt'>
+
+<div class=3DSection1>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'>Hi,<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'><span =
+style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; </span>Today
+was the <span class=3DSpellE>termly</span> Staff Student Committee =
+meeting, and
+one issue that was raised that is relevant to both JMC 1 <span =
+class=3DSpellE>annd</span>
+CS 1. <span style=3D'mso-spacerun:yes'>&nbsp;</span>There was a general =
+consensus
+that the Programming II lectures had missed out on the basics of java =
+and gone
+straight onto the advanced inheritance.<span =
+style=3D'mso-spacerun:yes'>&nbsp;
+</span><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal style=3D'text-indent:36.0pt'><font size=3D2 =
+face=3DArial><span
+style=3D'font-size:10.0pt;font-family:Arial'>So, if there is enough =
+demand, I
+have a 4<sup>th</sup> year who is willing to do some lectures on the =
+basics of
+java, basic classes and syntax for anyone who needs it or is having =
+trouble
+with the basic.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'><span =
+style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; </span>Can
+anyone who feels they would attend please e-mail me so I can get an idea =
+of how
+many people would like this.<span style=3D'mso-spacerun:yes'>&nbsp; =
+</span>Please
+include any specific requests in the e-mails of what you are having
+difficulties with.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'>Thanks<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial;mso-no-proof:yes'>Jamie</span></font><span =
+style=3D'mso-no-proof:
+yes'> (CS-1 rep)&nbsp;<o:p></o:p></span></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>---</span></font><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'><o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>Don&#8217;t play with hand grenades<o:p></o:p></span></font></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_000_0002_01C1B4AC.248783C0--
+
+
+From jd101@doc.ic.ac.uk Wed Feb 13 17:02:07 2002
+Return-path: <jd101@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 13 Feb 2002 17:02:07 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16b2nA-0006KJ-00; Wed, 13 Feb 2002 17:02:00 +0000
+Received: from [146.169.27.3] (helo=jamie)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16b2n9-0006Ug-00; Wed, 13 Feb 2002 17:01:59 +0000
+From: "Jamie Denton" <jd101@doc.ic.ac.uk>
+To: "Cs1" <cs-first-year@doc.ic.ac.uk>
+Cc: "'chris hogger'" <cjh@doc.ic.ac.uk>,
+	<sue@doc.ic.ac.uk>
+Subject: FW: Staff-Student Committee Minutes
+Date: Wed, 13 Feb 2002 17:01:56 -0000
+Message-ID: <000c01c1b4b0$251dd380$10251f81@jamie>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_000D_01C1B4B0.251DD380"
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2616
+Importance: Normal
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 38
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_000D_01C1B4B0.251DD380
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Sorry to mail u again, but I thought it would be better to send this
+separately to just cs-1.
+ 
+Ok, as you know the SSC meeting was today and several issues were raised
+relevant to us.
+ 
+1.	Java lectures - see  my other mail
+2.	S.Luzzato replacing vector algebra with dynamic systems -
+S.Eisenbach agreed to help organize extra lectures to cover this topic
+as it can be on the exam.  Me and Pili will speak to her tomorrow to try
+get dates fixed.
+3.	VRML - S.Eisenbach agreed task was too hard, I am trying to
+either get proper lectures on it if anyone in the department knows it
+well enough, or and additional extension or a change to the assignment
+to simplify it.
+4.	Labs - S.Eisenbach has already spoken to Dr Russo to ensure
+future labs are more closely related to teaching.
+5.	S.Eisenbach expressed concern over lack of attendance at
+lectures in general and especially tutorials.  Come on people, if you're
+not attending lectures don't be surprised if the course is hard.  
+ 
+There were other items but I think those are the main ones.
+ 
+Below are the minutes for last terms meeting (which I only got recently
+myself).
+ 
+Jamie
+---
+Don't play with hand grenades
+ 
+-----Original Message-----
+From: Katherine [mailto:kp@doc.ic.ac.uk] 
+Sent: 08 February 2002 10:43
+To: Kulwant Bhatia; Jonathan Fisher; Ashutosh Arya; mpg01; jd101; ct200;
+jwa00; mb699; nim99; ipa98; henrik.grunditz; shunil.ohrie; jjs01; rp601;
+sv501; nad01; fo01; ds100; ctt99; rej99; Jeff Kramer; Susan Eisenbach;
+Margaret Cunningham; Wayne Luk; Fariba Sadri; klc@doc.ic.ac.uk;
+wjk@doc.ic.ac.uk
+Subject: Staff-Student Committee Minutes
+ 
+Dear All 
+Apologies for the delay in getting these minutes to you. 
+  _____  
+
+
+Department of Computing 
+Staff-Student Committee Meeting 
+12 November 2001 
+Present: A Arya, D Livesley, S Ohrie, H Grunditz, NA Danielsson, S
+Vertsetis, K Bhatia, R Jon, C Toffis, J Scotney, M Bader, F Oyeyinka, M
+Pilar, J Denton, R Parathyras, J Ashcroft-Leigh, C Tripp, I Angus, J
+Fisher, N Malik, M Guerra Arias, S Eisenbach, J Kramer, M Cunningham, K
+Clark, W Luk, F Sadri, K Pigott. 
+  
+4.2 Matters Arising from the minutes 
+SE told the committee that she had told Academic Committee of the
+students' recommendation for increased tutorials. 
+JK wished to address the staff-student committee before student reports
+commenced.  He told the committee that the departmental R.A.E. had
+passed off well.  He wished to raise the issue of the increasing problem
+of space in the department (mainly as a result of increased successful
+recruiting of RAs and securing of additional grants).  He told the
+committee that the space issue had been looked at and the department was
+developing a strategy for revamping the department's rooms. The first
+step was having building work done on 308, which would take 308 and 311
+out of action for the summer months.  He added that there were plans to
+convert 342, currently a space for student lockers and pigeon holes.  He
+was currently in negotiations with Maths to discuss the possible
+outcomes of this conversion.  The advantage of this conversion would be
+less cramped lecture theatres.  JK told the committee that the student
+reps should treat this news as a formal early warning, and as soon as he
+had a time frame for the changes to 342 he would let the committee know.
+He asked the departmental rep to disseminate this information to his
+student colleagues. 
+Action:  AA 
+Computing Year 4 (IA, JF) 
+IA said that there was a problem with applications for resources for
+individual projects.  SE said that a number of students asking for
+inappropriate resources had been turned down and SE asked that the
+students resubmit more realistic resource applications. 
+IA also wished to register a complaint about the teaching for Natural
+Language Processing.  SE stated that the best course of action would be
+to speak to the lecturer concerned directly. 
+Action IA, JF 
+Computing Year 3 (MB) 
+It was reported that some third year MEng students were unhappy with
+their timetables, especially those students which had chosen a
+humanities option, they felt that the exams timetable was excessively
+cramped.  SE asked the student reps to bring her the number of students
+with the timetable problems and she would see what she could do.  She
+said that if the cramped timetable affected several students she would
+be able to shuffle the timetable somewhat, this would not be the case if
+only one or two students were involved.  In the latter case shuffling
+the dates of tests could result in inconveniencing more students than it
+helped. 
+Action MB, NM, SE 
+Computing Year 2 (CT, JAL) 
+CT told the committee, that apart from the heavy course-work load the
+second year was fine. 
+Computing Year 1 (JD, MGA) 
+JD complained that the lecturer for 145 - Mathematical Methods and
+Graphics had been unprepared.  SE stated that she had spoken to the
+lecturer concerned and had understood from the first year students that
+the lecturer had improved.  JD acknowledged that the lecturer had
+improved somewhat but that there was still room for further improvement.
+He also stated that one of the lecturers in discrete maths had problems
+with her lecturing style.  SE suggested in both cases that the students
+approached the lecturer directly. 
+Action JD, MA 
+JMC4 (KB) 
+KB told the committee that although coursework submission sheets were
+now on the web, the task of printing them out was proving very
+frustrating to students.  JF wondered if the department could go back to
+their old system of AKR printing out the sheets and placing them in the
+student common room.  JK informed the committee that this printing
+difficulty was part of a wider printing problem and that the department
+was currently reviewing the printer situation.  JF then asked if there
+could be some notice posted on and around the photocopiers printers
+instructing students in appropriate printing protocol/etiquette.  He
+felt that this would be particularly useful for first year students and
+could include instructions on how to clear paper jams etc.  AA informed
+the committee that he had several discussions with CSG and that this was
+one of the proposals that they were prepared to instigate. 
+Action AA, CSG 
+JMC3 (RJ and CT) 
+RJ felt that JMC students were not adequately informed about the Maths
+projects available to them, most students ended up taking computing
+projects as a result.  SE answered in response to a direct question that
+year co-ordinators and MSc co-ordinators were responsible for putting
+course-work deadlines on the web. 
+JMC2 (DL) 
+DL felt that JMC suffered clustered deadlines as there did not seem to
+be co-ordination of these deadlines between maths and computing.  SE
+stated that Computing had tried to spread out the deadlines.  KLC
+suggested an alternative strategy would be to look at the handout dates.
+
+JMC1 (FO) 
+FO told the committee that he had been in frequent contact with MRC and
+so most problems had been sorted out at this stage in the term.  SE told
+the committee that as a consequence of changes to JMC regulations passed
+by the department last year, the current JMC1 was less strenuous this
+year. 
+ISE Departmental Reps (HG, SO) 
+They told the committee some ISE4  students were finding it difficult to
+submit resources requests by the deadline as not all students had had
+their project choices approved/finalised. 
+MSc Conversion (JS, RP) 
+The MSc Conversion students were fine. 
+MSc Advanced Computing (SV, ND) 
+Both the Reps felt that some of the courses were difficult to follow.
+SE suggested that they speak to the lecturers directly. 
+Action SV, ND 
+Computing Dep Rep 
+AA felt that there were not enough lockers and felt that some of them
+were being used by non-computing students.  JK said that he was looking
+into this matter.  AA also said that non-computing students were using
+computing printers.  JK said that AA should talk to CSG about enhancing
+security to ensure that this did not happen.   AA also wanted to take
+action to prevent students leaving their machines locked for the whole
+day whilst they were elsewhere. SE suggested that if AA wanted CSG to
+instigate an autotimeout facility that he should meet with them to
+discuss the possibilities. 
+SE asked the committee to report broken machines as and when they find
+them, this would prevent the pile up of broken machines in the labs. 
+AA also asked if anything could be done about the slow printing time of
+the examination papers currently on the web.  He said that many students
+had complained that they were unable to print the papers they needed due
+to a huge printer queue backlog.  He suggested that the SAO could sell
+photocopies of the papers for a nominal fee (this is what they currently
+do in the maths department).  SE said that she would look into the
+feasibility of the SAO printing the papers. 
+AA mentioned the upcoming electronic LEQs devised by Registry.  He asked
+if the forms were still the lengthy ones offered at the last attempt.
+JK suggested that they did not need to fill in all the boxes - just the
+most relevant information for each course. AA said that there would need
+to be feedback of the results if the operation was a success.  There
+then followed a brief discussion where the possibility  of offering
+departmental prizes for votes was discussed.  It was agreed that the
+reps would need to exert peer pressure on their fellow students in order
+to get high numbers of students to vote. 
+At the end of the meeting JK asked the Reps to pass on the message that
+students were to stop dismantling the lab chairs.  The Reps agreed to
+pass this message on. 
+Action SE, AA, CSG 
+  
+  
+  
+  
+  
+  
+ 
+
+------=_NextPart_000_000D_01C1B4B0.251DD380
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:st1=3D"urn:schemas-microsoft-com:office:smarttags" =
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii">
+
+
+<meta name=3DProgId content=3DWord.Document>
+<meta name=3DGenerator content=3D"Microsoft Word 10">
+<meta name=3DOriginator content=3D"Microsoft Word 10">
+<link rel=3DFile-List href=3D"cid:filelist.xml@01C1B4B0.24AE48D0">
+<link rel=3DEdit-Time-Data href=3D"cid:editdata.mso@01C1B4B0.24AE48D0">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><o:SmartTagType
+ namespaceuri=3D"urn:schemas-microsoft-com:office:smarttags" =
+name=3D"State"/>
+<o:SmartTagType =
+namespaceuri=3D"urn:schemas-microsoft-com:office:smarttags"
+ name=3D"City"/>
+<o:SmartTagType =
+namespaceuri=3D"urn:schemas-microsoft-com:office:smarttags"
+ name=3D"place"/>
+<o:SmartTagType =
+namespaceuri=3D"urn:schemas-microsoft-com:office:smarttags"
+ name=3D"time"/>
+<o:SmartTagType =
+namespaceuri=3D"urn:schemas-microsoft-com:office:smarttags"
+ name=3D"date"/>
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:DoNotRelyOnCSS/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DocumentKind>DocumentEmail</w:DocumentKind>
+  <w:EnvelopeVis/>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if !mso]>
+<style>
+st1\:*{behavior:url(#default#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.EmailStyle18
+	{mso-style-type:personal-reply;
+	mso-style-noshow:yes;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:navy;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:661272883;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-200528888 67698703 67698713 67698715 67698703 =
+67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */=20
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=3DEN-US link=3Dblue vlink=3Dpurple =
+style=3D'tab-interval:36.0pt'>
+
+<div class=3DSection1>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Sorry to mail u again, but I =
+thought it
+would be better to send this separately to just =
+cs-1.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Ok, as you know the SSC meeting was =
+today
+and several issues were raised relevant to =
+us.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<ol style=3D'mso-margin-top-alt:0cm' start=3D1 type=3D1>
+ <li class=3DMsoNormal style=3D'color:navy;mso-list:l0 level1 =
+lfo1;tab-stops:list 36.0pt'><font
+     size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:10.0pt;font-family:
+     Arial'>Java lectures &#8211; see <span
+     style=3D'mso-spacerun:yes'>&nbsp;</span>my other =
+mail<o:p></o:p></span></font></li>
+ <li class=3DMsoNormal style=3D'color:navy;mso-list:l0 level1 =
+lfo1;tab-stops:list 36.0pt'><font
+     size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:10.0pt;font-family:
+     Arial'>S.Luzzato replacing vector algebra with dynamic systems =
+&#8211; S.Eisenbach
+     agreed to help organize extra lectures to cover this topic as it =
+can be on
+     the exam. <span style=3D'mso-spacerun:yes'>&nbsp;</span>Me and Pili =
+will
+     speak to her tomorrow to try get dates =
+fixed.<o:p></o:p></span></font></li>
+ <li class=3DMsoNormal style=3D'color:navy;mso-list:l0 level1 =
+lfo1;tab-stops:list 36.0pt'><font
+     size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:10.0pt;font-family:
+     Arial'>VRML - S.Eisenbach agreed task was too hard, I am trying to =
+either
+     get proper lectures on it if anyone in the department knows it well =
+enough,
+     or and additional extension or a change to the assignment to =
+simplify it.<o:p></o:p></span></font></li>
+ <li class=3DMsoNormal style=3D'color:navy;mso-list:l0 level1 =
+lfo1;tab-stops:list 36.0pt'><font
+     size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:10.0pt;font-family:
+     Arial'>Labs &#8211; S.Eisenbach has already spoken to Dr Russo to =
+ensure
+     future labs are more closely related to =
+teaching.<o:p></o:p></span></font></li>
+ <li class=3DMsoNormal style=3D'color:navy;mso-list:l0 level1 =
+lfo1;tab-stops:list 36.0pt'><font
+     size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:10.0pt;font-family:
+     Arial'>S.Eisenbach expressed concern over lack of attendance at =
+lectures
+     in general and especially tutorials.<span =
+style=3D'mso-spacerun:yes'>&nbsp;
+     </span>Come on people, if you&#8217;re not attending lectures =
+don&#8217;t
+     be surprised if the course is hard.<span =
+style=3D'mso-spacerun:yes'>&nbsp;
+     </span><o:p></o:p></span></font></li>
+</ol>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>There were other items but I think =
+those
+are the main ones.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Below are the minutes for last =
+terms
+meeting (which I only got recently myself).<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Jamie<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>---<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'>Don&#8217;t play with hand =
+grenades<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 color=3Dnavy face=3DArial><span =
+style=3D'font-size:
+10.0pt;font-family:Arial;color:navy'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;
+font-family:Tahoma'>-----Original Message-----<br>
+<b><span style=3D'font-weight:bold'>From:</span></b> Katherine
+[mailto:kp@doc.ic.ac.uk] <br>
+<b><span style=3D'font-weight:bold'>Sent:</span></b> =
+</span></font><st1:date
+Month=3D"2" Day=3D"8" Year=3D"2002"><font size=3D2 face=3DTahoma><span =
+style=3D'font-size:
+ 10.0pt;font-family:Tahoma'>08 February =
+2002</span></font></st1:date><font
+size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;font-family:Tahoma'> </span></font><st1:time
+Hour=3D"10" Minute=3D"43"><font size=3D2 face=3DTahoma><span =
+style=3D'font-size:10.0pt;
+ font-family:Tahoma'>10:43</span></font></st1:time><font size=3D2 =
+face=3DTahoma><span
+style=3D'font-size:10.0pt;font-family:Tahoma'><br>
+<b><span style=3D'font-weight:bold'>To:</span></b> Kulwant Bhatia; =
+Jonathan
+Fisher; Ashutosh Arya; mpg01; jd101; ct200; jwa00; mb699; nim99; ipa98;
+henrik.grunditz; shunil.ohrie; jjs01; rp601; sv501; nad01; fo01; ds100; =
+ctt99;
+rej99; Jeff Kramer; Susan Eisenbach; Margaret Cunningham; Wayne Luk; =
+Fariba
+Sadri; klc@doc.ic.ac.uk; wjk@doc.ic.ac.uk<br>
+<b><span style=3D'font-weight:bold'>Subject:</span></b> Staff-Student =
+Committee
+Minutes</span></font></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'>Dear All <o:p></o:p></span></font></p>
+
+<p><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt'>Apologies
+for the delay in getting these minutes to you. =
+<o:p></o:p></span></font></p>
+
+<div class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><font =
+size=3D3
+face=3D"Times New Roman"><span style=3D'font-size:12.0pt'>
+
+<hr size=3D2 width=3D"100%" align=3Dcenter>
+
+</span></font></div>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><br>
+<b><span style=3D'font-weight:bold'>Department of Computing</span></b> =
+<br>
+<b><span style=3D'font-weight:bold'>Staff-Student Committee =
+Meeting</span></b> <br>
+</span></font><st1:date Month=3D"11" Day=3D"12" Year=3D"2001"><b><span
+ style=3D'font-weight:bold'>12 November 2001</span></b></st1:date> =
+<o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>Present: A Arya, D Livesley, S Ohrie, H Grunditz, NA
+Danielsson, S Vertsetis, K Bhatia, R Jon, C Toffis, J Scotney, M Bader, =
+F
+Oyeyinka, M Pilar, J Denton, R Parathyras, J Ashcroft-Leigh, C Tripp, I =
+Angus,
+J Fisher, N Malik, M Guerra Arias, S Eisenbach, J Kramer, M Cunningham, =
+K
+Clark, W Luk, F Sadri, K Pigott.</span></font></b> <br>
+&nbsp; <o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>4.2 Matters Arising from the minutes</span></font></b> =
+<br>
+SE told the committee that she had told Academic Committee of the =
+students'
+recommendation for increased tutorials. <o:p></o:p></p>
+
+<p><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt'>JK wished
+to address the staff-student committee before student reports =
+commenced.&nbsp;
+He told the committee that the departmental R.A.E. had passed off =
+well.&nbsp;
+He wished to raise the issue of the increasing problem of space in the
+department (mainly as a result of increased successful recruiting of RAs =
+and
+securing of additional grants).&nbsp; He told the committee that the =
+space
+issue had been looked at and the department was developing a strategy =
+for
+revamping the department's rooms. The first step was having building =
+work done
+on 308, which would take 308 and 311 out of action for the summer =
+months.&nbsp;
+He added that there were plans to convert 342, currently a space for =
+student
+lockers and pigeon holes.&nbsp; He was currently in negotiations with =
+Maths to
+discuss the possible outcomes of this conversion.&nbsp; The advantage of =
+this
+conversion would be less cramped lecture theatres.&nbsp; JK told the =
+committee
+that the student reps should treat this news as a formal early warning, =
+and as
+soon as he had a time frame for the changes to 342 he would let the =
+committee
+know.&nbsp; He asked the departmental rep to disseminate this =
+information to
+his student colleagues. <o:p></o:p></span></font></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>Action:&nbsp; AA</span></font></b> <o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>Computing Year 4 (IA, JF)</span></font></b> =
+<o:p></o:p></p>
+
+<p><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt'>IA said
+that there was a problem with applications for resources for individual
+projects.&nbsp; SE said that a number of students asking for =
+inappropriate
+resources had been turned down and SE asked that the students resubmit =
+more
+realistic resource applications. <o:p></o:p></span></font></p>
+
+<p><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt'>IA also
+wished to register a complaint about the teaching for Natural Language
+Processing.&nbsp; SE stated that the best course of action would be to =
+speak to
+the lecturer concerned directly. <o:p></o:p></span></font></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>Action IA, JF</span></font></b> <o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>Computing Year 3 (MB)</span></font></b> <br>
+It was reported that some third year MEng students were unhappy with =
+their
+timetables, especially those students which had chosen a humanities =
+option, they
+felt that the exams timetable was excessively cramped.&nbsp; SE asked =
+the
+student reps to bring her the number of students with the timetable =
+problems
+and she would see what she could do.&nbsp; She said that if the cramped
+timetable affected several students she would be able to shuffle the =
+timetable
+somewhat, this would not be the case if only one or two students were
+involved.&nbsp; In the latter case shuffling the dates of tests could =
+result in
+inconveniencing more students than it helped. <o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>Action MB, NM, SE</span></font></b> <o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>Computing Year 2 (CT, JAL)</span></font></b> =
+<o:p></o:p></p>
+
+<p><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt'>CT told
+the committee, that apart from the heavy course-work load the second =
+year was
+fine. <o:p></o:p></span></font></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>Computing Year 1 (JD, MGA)</span></font></b> <br>
+JD complained that the lecturer for 145 - Mathematical Methods and =
+Graphics had
+been unprepared.&nbsp; SE stated that she had spoken to the lecturer =
+concerned
+and had understood from the first year students that the lecturer had
+improved.&nbsp; JD acknowledged that the lecturer had improved somewhat =
+but
+that there was still room for further improvement.&nbsp; He also stated =
+that one
+of the lecturers in discrete maths had problems with her lecturing =
+style.&nbsp;
+SE suggested in both cases that the students approached the lecturer =
+directly. <o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>Action JD, MA</span></font></b> <o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>JMC4 (KB)</span></font></b> <o:p></o:p></p>
+
+<p><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt'>KB told
+the committee that although coursework submission sheets were now on the =
+web,
+the task of printing them out was proving very frustrating to =
+students.&nbsp;
+JF wondered if the department could go back to their old system of AKR =
+printing
+out the sheets and placing them in the student common room.&nbsp; JK =
+informed
+the committee that this printing difficulty was part of a wider printing
+problem and that the department was currently reviewing the printer
+situation.&nbsp; JF then asked if there could be some notice posted on =
+and
+around the photocopiers printers instructing students in appropriate =
+printing
+protocol/etiquette.&nbsp; He felt that this would be particularly useful =
+for
+first year students and could include instructions on how to clear paper =
+jams
+etc.&nbsp; AA informed the committee that he had several discussions =
+with CSG
+and that this was one of the proposals that they were prepared to =
+instigate. <o:p></o:p></span></font></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>Action AA, CSG</span></font></b> <o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>JMC3 (RJ and CT)</span></font></b> <o:p></o:p></p>
+
+<p><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt'>RJ felt
+that JMC students were not adequately informed about the Maths projects
+available to them, most students ended up taking computing projects as a =
+result.&nbsp;
+SE answered in response to a direct question that year co-ordinators and =
+MSc
+co-ordinators were responsible for putting course-work deadlines on the =
+web. <o:p></o:p></span></font></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>JMC2 (DL)</span></font></b> <br>
+DL felt that JMC suffered clustered deadlines as there did not seem to =
+be
+co-ordination of these deadlines between maths and computing.&nbsp; SE =
+stated
+that Computing had tried to spread out the deadlines.&nbsp; KLC =
+suggested an
+alternative strategy would be to look at the handout dates. =
+<o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>JMC1 (FO)</span></font></b> <br>
+FO told the committee that he had been in frequent contact with MRC and =
+so most
+problems had been sorted out at this stage in the term.&nbsp; SE told =
+the
+committee that as a consequence of changes to JMC regulations passed by =
+the
+department last year, the current JMC1 was less strenuous this year. =
+<o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>ISE Departmental Reps (HG, SO)</span></font></b> <br>
+They told the committee some ISE4&nbsp; students were finding it =
+difficult to
+submit resources requests by the deadline as not all students had had =
+their
+project choices approved/finalised. <o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>MSc Conversion (JS, RP)</span></font></b> <br>
+The MSc Conversion students were fine. <o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>MSc Advanced Computing =
+(</span></font></b><st1:place><st1:City><b><span
+  style=3D'font-weight:bold'>SV</span></b></st1:City><b><span =
+style=3D'font-weight:
+ bold'>, </span></b><st1:State><b><span =
+style=3D'font-weight:bold'>ND</span></b></st1:State></st1:place><b><span
+style=3D'font-weight:bold'>)</span></b> <br>
+Both the Reps felt that some of the courses were difficult to =
+follow.&nbsp; SE
+suggested that they speak to the lecturers directly. <o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>Action </span></font></b><st1:place><st1:City><b><span
+  style=3D'font-weight:bold'>SV</span></b></st1:City><b><span =
+style=3D'font-weight:
+ bold'>, </span></b><st1:State><b><span =
+style=3D'font-weight:bold'>ND</span></b></st1:State></st1:place>
+<o:p></o:p></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>Computing Dep Rep</span></font></b> <br>
+AA felt that there were not enough lockers and felt that some of them =
+were
+being used by non-computing students.&nbsp; JK said that he was looking =
+into
+this matter.&nbsp; AA also said that non-computing students were using
+computing printers.&nbsp; JK said that AA should talk to CSG about =
+enhancing
+security to ensure that this did not happen.&nbsp;&nbsp; AA also wanted =
+to take
+action to prevent students leaving their machines locked for the whole =
+day
+whilst they were elsewhere. SE suggested that if AA wanted CSG to =
+instigate an
+autotimeout facility that he should meet with them to discuss the
+possibilities. <o:p></o:p></p>
+
+<p><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt'>SE asked
+the committee to report broken machines as and when they find them, this =
+would
+prevent the pile up of broken machines in the labs. =
+<o:p></o:p></span></font></p>
+
+<p><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt'>AA also
+asked if anything could be done about the slow printing time of the =
+examination
+papers currently on the web.&nbsp; He said that many students had =
+complained
+that they were unable to print the papers they needed due to a huge =
+printer
+queue backlog.&nbsp; He suggested that the SAO could sell photocopies of =
+the
+papers for a nominal fee (this is what they currently do in the maths
+department).&nbsp; SE said that she would look into the feasibility of =
+the SAO
+printing the papers. <o:p></o:p></span></font></p>
+
+<p><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt'>AA
+mentioned the upcoming electronic LEQs devised by Registry.&nbsp; He =
+asked if
+the forms were still the lengthy ones offered at the last attempt.&nbsp; =
+JK
+suggested that they did not need to fill in all the boxes - just the =
+most
+relevant information for each course. AA said that there would need to =
+be
+feedback of the results if the operation was a success.&nbsp; There then
+followed a brief discussion where the possibility&nbsp; of offering
+departmental prizes for votes was discussed.&nbsp; It was agreed that =
+the reps
+would need to exert peer pressure on their fellow students in order to =
+get high
+numbers of students to vote. <o:p></o:p></span></font></p>
+
+<p><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt'>At the
+end of the meeting JK asked the Reps to pass on the message that =
+students were
+to stop dismantling the lab chairs.&nbsp; The Reps agreed to pass this =
+message
+on. <o:p></o:p></span></font></p>
+
+<p><b><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:12.0pt;
+font-weight:bold'>Action SE, AA, CSG</span></font></b> <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp;<o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_000_000D_01C1B4B0.251DD380--
+
+
+From owner-linstead-hall-list@ic.ac.uk Tue Feb 19 08:52:56 2002
+Return-path: <owner-linstead-hall-list@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 19 Feb 2002 08:52:56 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16d619-0004Ke-00; Tue, 19 Feb 2002 08:52:55 +0000
+Received: from tomatin.cc.ic.ac.uk ([155.198.5.58])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16d619-0004gs-00; Tue, 19 Feb 2002 08:52:55 +0000
+Received: from majordom by tomatin.cc.ic.ac.uk with local (Exim 2.12 #2)
+	id 16d617-0004kw-00; Tue, 19 Feb 2002 08:52:53 +0000
+Received: from mr4.cc.ic.ac.uk ([155.198.5.114])
+	by tomatin.cc.ic.ac.uk with esmtp (Exim 2.12 #2)
+	id 16d616-0004kk-00; Tue, 19 Feb 2002 08:52:52 +0000
+Received: from icex5.cc.ic.ac.uk ([155.198.3.5])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 16d60E-0003E9-04
+	for linstead-hall-list@ic.ac.uk; Tue, 19 Feb 2002 08:51:58 +0000
+Received: by icex5.cc.ic.ac.uk with Internet Mail Service (5.5.2653.19)
+	id <YN0S9AQG>; Tue, 19 Feb 2002 08:51:57 -0000
+Message-ID: <F5964EC6580BD2119C8400A0C9CFB966074F8E64@icex5.cc.ic.ac.uk>
+From: "Hamilton, Richard W" <rich.hamilton@ic.ac.uk>
+To: "Sartorius, Julien" <julien.sartorius@ic.ac.uk>, linstead-hall-list
+	 <linstead-hall-list@ic.ac.uk>
+Subject: RE: VIruses on the network !
+Date: Tue, 19 Feb 2002 08:51:53 -0000
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Sender: owner-linstead-hall-list@ic.ac.uk
+Precedence: bulk
+Reply-To: "Hamilton, Richard W" <rich.hamilton@ic.ac.uk>
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 39
+
+The college has a site license for Norton Anti-virus which also includes the
+home computers of students and staff, full instructions and download
+available at:
+
+http://www.cc.ic.ac.uk/shop/software/norton/index.htm
+
+cheers,
+
+Rich.
+
+Richard Hamilton
+Assistant Warden
+Linstead Hall
+Princes Gardens            Tel/Fax: +44 (0)20 7594 9441 (home)
+London    SW7  1LU                  +44 (0)20 7594 6758 (work)
+
+
+
+-----Original Message-----
+From: Sartorius, Julien [mailto:julien.sartorius@ic.ac.uk]
+Sent: 18 February 2002 8:38
+To: linstead-hall-list
+Subject: VIruses on the network !
+
+
+
+ Hi everyone!
+ 
+ This message is mainly addressed to people who have their computer on the
+network.
+
+About  24 hours ago only, I started sharing some documents on the
+network(until there, nothing special). In this really very short lapse of
+time somebody managed to put a virus on my computer- the well known W32
+nimda-
+So I would advise the few people who  visited the computer called Tempest on
+Monday evening to scan their hard-drive for viruses. 
+Apparently some people still ignore what a anti-virus software is and it is
+pretty annoying and appalling since it is very easy to find this type of
+software within the network or the Internet.
+
+Cheers
+
+Julien
+
+
+__
+To avoid spam only your IC email will be able to send messages to this list,
+please do not try to send messages from Hotmail, AOL etc.
+
+
+__
+To avoid spam only your IC email will be able to send messages to this list,
+please do not try to send messages from Hotmail, AOL etc.
+
+From owner-linstead-hall-list@ic.ac.uk Mon Feb 18 20:37:39 2002
+Return-path: <owner-linstead-hall-list@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 18 Feb 2002 20:37:39 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16cuXa-0007nh-00; Mon, 18 Feb 2002 20:37:38 +0000
+Received: from tomatin.cc.ic.ac.uk ([155.198.5.58])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16cuXa-0005R6-00; Mon, 18 Feb 2002 20:37:38 +0000
+Received: from majordom by tomatin.cc.ic.ac.uk with local (Exim 2.12 #2)
+	id 16cuXZ-00034x-00; Mon, 18 Feb 2002 20:37:37 +0000
+Received: from mr3.cc.ic.ac.uk ([155.198.5.113])
+	by tomatin.cc.ic.ac.uk with esmtp (Exim 2.12 #2)
+	id 16cuXX-00034p-00; Mon, 18 Feb 2002 20:37:35 +0000
+Received: from icex12.cc.ic.ac.uk ([155.198.3.12])
+	by mr3.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 16cuXX-0007m0-03
+	for linstead-hall-list@ic.ac.uk; Mon, 18 Feb 2002 20:37:35 +0000
+Received: by icex12.cc.ic.ac.uk with Internet Mail Service (5.5.2653.19)
+	id <C5ZCRJBW>; Mon, 18 Feb 2002 20:37:35 -0000
+Message-ID: <FF571C562EEBD51185F20002A53F7E334B8305@icex12.cc.ic.ac.uk>
+From: "Sartorius, Julien" <julien.sartorius@ic.ac.uk>
+To: linstead-hall-list <linstead-hall-list@ic.ac.uk>
+Subject: VIruses on the network !
+Date: Mon, 18 Feb 2002 20:37:34 -0000
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain
+Sender: owner-linstead-hall-list@ic.ac.uk
+Precedence: bulk
+Reply-To: "Sartorius, Julien" <julien.sartorius@ic.ac.uk>
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 40
+
+
+ Hi everyone!
+ 
+ This message is mainly addressed to people who have their computer on the
+network.
+
+About  24 hours ago only, I started sharing some documents on the
+network(until there, nothing special). In this really very short lapse of
+time somebody managed to put a virus on my computer- the well known W32
+nimda-
+So I would advise the few people who  visited the computer called Tempest on
+Monday evening to scan their hard-drive for viruses. 
+Apparently some people still ignore what a anti-virus software is and it is
+pretty annoying and appalling since it is very easy to find this type of
+software within the network or the Internet.
+
+Cheers
+
+Julien
+
+
+__
+To avoid spam only your IC email will be able to send messages to this list,
+please do not try to send messages from Hotmail, AOL etc.
+
+From br@doc.ic.ac.uk Thu Feb 21 17:09:54 2002
+Return-path: <br@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 21 Feb 2002 17:09:54 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16dwj8-0005Pf-00; Thu, 21 Feb 2002 17:09:50 +0000
+Received: from greta.doc.ic.ac.uk ([146.169.4.105] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16dwj8-0005WW-00
+	for cs-first-year@doc.ic.ac.uk; Thu, 21 Feb 2002 17:09:50 +0000
+Message-ID: <3C752AA3.8E03BBF6@doc.ic.ac.uk>
+Date: Thu, 21 Feb 2002 17:13:07 +0000
+From: Berc Rustem <br@doc.ic.ac.uk>
+X-Mailer: Mozilla 4.7 [en] (WinNT; I)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+Subject: topics Fri 22 Feb
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 41
+
+Tomorrow noon is your topics lecture "Quantitative computing,
+computational optimisation and decision making"
+
+The lecture is based on a set of notes downloadable from my web page:
+
+http://www.doc.ic.ac.uk/berc.html (see First Year Topics Lecture:
+Quantitative Computing, Computational Optimisation and Decision Making )
+
+I shall not distribute copes of the notes at the lecture. Please print
+the notes as required.
+
+
+--
+Professor Berc Rustem
+Department of Computing
+Imperial College of Science, Technology & Medicine
+180 Queen's Gate, London SW7 2BZ, UK
+Tel:  00 44 (0)20 7594 8345
+Fax: 00 44 (0)20 7581 8024
+E-mail: br@doc.ic.ac.uk
+
+
+
+From sumeet.bhalla@ic.ac.uk Mon Feb 25 14:06:34 2002
+Return-path: <sumeet.bhalla@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 25 Feb 2002 14:06:34 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16fLly-0000kF-00
+	for ss401@doc.ic.ac.uk; Mon, 25 Feb 2002 14:06:34 +0000
+Received: from mr4.cc.ic.ac.uk ([155.198.5.114])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16fLly-0001V8-00
+	for ss401@doc.ic.ac.uk; Mon, 25 Feb 2002 14:06:34 +0000
+Received: from hide.ee.ic.ac.uk ([155.198.120.14] helo=eecfsag2.ee.ic.ac.uk)
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 16fLly-0008Ab-04
+	for ss401@doc.ic.ac.uk; Mon, 25 Feb 2002 14:06:34 +0000
+Received: from caol ([155.198.114.71])
+	by eecfsag2.ee.ic.ac.uk with smtp (Exim 1.90 #1)
+	id 16fLlD-0004ix-00; Mon, 25 Feb 2002 14:05:47 +0000
+Message-Id: <3.0.6.32.20020225140629.009ab100@eecfsag2.ee.ic.ac.uk>
+X-Sender: skb00@eecfsag2.ee.ic.ac.uk
+X-Mailer: QUALCOMM Windows Eudora Light Version 3.0.6 (32)
+Date: Mon, 25 Feb 2002 14:06:29 +0000
+To: "Sridhar Sarnobat" <ss401@doc.ic.ac.uk>
+From: Sumeet Bhalla <sumeet.bhalla@ic.ac.uk>
+Subject: Re: Doc 6 eliminated. This is not fair
+In-Reply-To: <005601c1be02$aeee7640$0834a992@win.doc.ic.ac.uk>
+References: <3.0.6.32.20020224223719.009ce850@eecfsag2.ee.ic.ac.uk>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Status: RO
+X-Status: DA
+X-Keywords:               
+X-UID: 42
+
+My records show that you have been awarded 3 points for the match against
+Mech Eng 2. I also have an email from Materials stating that you failed to
+turn up to their match. Hence you won one match and lost one.
+
+Regards
+
+Sumeet Bhalla
+
+At 13:45 25/02/02 -0000, you wrote:
+>But Mech Eng 2 didn't even reply to our emails to arrange games so shouldn't
+>we get an extra 3 points (finishing top of the group)?????????? We've been
+>contacting them (and you) for weeks and nothing was done about it.
+>
+>When we had games fixtures we either turned up (and won) or replied asking
+>to reschedule our game.
+>
+>Please reply, as this is inconsistent.
+>
+>Regards,
+>Sridhar
+>
+>
+>> Group C:
+>> Winners    : Materials
+>> Runner up  : Mech Eng 2
+>>
+>> (Please note that since all points/goals numbers were equal for all three
+>> teams in Group C, according to FIFA rules the names should be drawn from a
+>> hat to determine winners/runners up. This is what was done, sorry DoC6)
+>
+>
+>
+Sumeet K Bhalla
+-----------------------------------------------------
+Electrical and Electronic Engineering with Management
+Imperial College - London
+Tel: +44 (O)7900690075
+-----------------------------------------------------
+
++-------------------------------------------------------------+
+| This message may contain confidential and/or privileged     |
+| information.  If you are not the addressee or authorized to |
+| receive this for the addressee, you must not use, copy,     |
+| disclose or take any action based on this message or any    |
+| information herein.  If you have received this message in   |
+| error, please advise the sender immediately by reply e-mail |
+| and delete this message.  Thank you for your cooperation.   |
++-------------------------------------------------------------+
+
+
+From cjh@doc.ic.ac.uk Mon Feb 25 15:50:43 2002
+Return-path: <cjh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 25 Feb 2002 15:50:43 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16fNOi-0005GI-00; Mon, 25 Feb 2002 15:50:40 +0000
+Received: from g3-cjh.doc.ic.ac.uk ([146.169.29.12])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16fNOi-0003Tn-00
+	for cs-first-year@doc.ic.ac.uk; Mon, 25 Feb 2002 15:50:40 +0000
+X-Sender: cjh@pop.doc.ic.ac.uk
+Message-Id: <l03102801b8a00ec7d4e4@[146.169.29.12]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Mon, 25 Feb 2002 15:56:12 +0000
+To: cs-first-year@doc.ic.ac.uk
+From: chris hogger <cjh@doc.ic.ac.uk>
+Subject: Formation of Topics groups
+Status: RO
+X-Status: DA
+X-Keywords:               
+X-UID: 43
+
+Dear Comp-1 students,
+
+For those of you taking the Topics option (rather than Foreign Language), I
+need soon to have you arranged in groups of 3 in readiness for next term's
+work.
+
+Each of you may or may not wish to indicate who you'd prefer to work with.
+
+If you have any preference to work with one or two others, then one of that
+group should inform me by email - giving the DoC logins of the others - no
+later than
+
+	Friday March 8th  [hard deadline]
+
+After that date, I will randomly group any still-single persons.
+
+Once the groups are fully determined, I will then prescribe which group
+takes which topic - this is not something you can influence yourselves.
+
+Regards,
+Chris.
+
+
+
+From cjh@doc.ic.ac.uk Tue Feb 26 13:42:19 2002
+Return-path: <cjh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 26 Feb 2002 13:42:19 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16fhs3-0001G7-00; Tue, 26 Feb 2002 13:42:19 +0000
+Received: from stalker.atlas.net.uk ([195.54.226.6] helo=atlas.net.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16fhs3-0003qd-00; Tue, 26 Feb 2002 13:42:19 +0000
+Received: from [195.54.226.7] (HELO stalker1.atlas.net.uk)
+  by atlas.net.uk (CommuniGate Pro SMTP 3.5.4)
+  with ESMTP id 1934593; Tue, 26 Feb 2002 13:42:19 +0000
+Received: from [195.54.228.122] ([195.54.228.118])
+	by stalker1.atlas.net.uk (8.12.2/8.11.2) with ESMTP id g1QDgAml024882;
+	Tue, 26 Feb 2002 13:42:17 GMT
+Date: Tue, 26 Feb 2002 13:42:17 GMT
+X-Sender: cjh@pop.doc.ic.ac.uk (Unverified)
+Message-Id: <l03110703b8a1404af5f6@[195.54.228.122]>
+In-Reply-To: <002601c1bec1$849b4b60$b231a992@win.doc.ic.ac.uk>
+References: <l03102801b8a00ec7d4e4@[146.169.29.12]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+To: srr01@doc.ic.ac.uk, jkd01@doc.ic.ac.uk, ss401@doc.ic.ac.uk
+From: Chris Hogger <cjh@doc.ic.ac.uk>
+Subject: Your Topics group
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 44
+
+>Sridhar Sarnobat wrote ...
+>
+>Here is a group which the three of us would like to work in for the topics
+>work next term:
+>
+>srr01@doc.ic.ac.uk
+>jkd01@doc.ic.ac.uk
+>ss401@doc.ic.ac.uk
+
+
+Acknowledged with thanks.
+Chris.
+
+
+
+From psc@doc.ic.ac.uk Tue Feb 26 19:02:46 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 26 Feb 2002 19:02:46 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16fms6-0007iy-00; Tue, 26 Feb 2002 19:02:42 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16fms6-0001j4-00; Tue, 26 Feb 2002 19:02:42 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16fms6-0001YW-00; Tue, 26 Feb 2002 19:02:42 +0000
+To: ah101@doc.ic.ac.uk, ajb101@doc.ic.ac.uk, 
+	amm01@doc.ic.ac.uk, aps201@doc.ic.ac.uk, 
+	av501@doc.ic.ac.uk, ayc01@doc.ic.ac.uk, 
+	dc401@doc.ic.ac.uk, dkd01@doc.ic.ac.uk, 
+	dt01@doc.ic.ac.uk,
+    dws01@doc.ic.ac.uk, 
+	dz01@doc.ic.ac.uk, fg01@doc.ic.ac.uk, fo01@doc.ic.ac.uk, 
+	fz01@doc.ic.ac.uk, gp01@doc.ic.ac.uk, gs01@doc.ic.ac.uk, 
+	hkb101@doc.ic.ac.uk, jga01@doc.ic.ac.uk, 
+	jkd01@doc.ic.ac.uk,
+    jpl01@doc.ic.ac.uk, 
+	jss101@doc.ic.ac.uk, jtl01@doc.ic.ac.uk, 
+	ka01@doc.ic.ac.uk, km101@doc.ic.ac.uk, 
+	ltf01@doc.ic.ac.uk, mb401@doc.ic.ac.uk, 
+	mql01@doc.ic.ac.uk, npg01@doc.ic.ac.uk,
+    qaa101@doc.ic.ac.uk, 
+	rf301@doc.ic.ac.uk, rlw01@doc.ic.ac.uk, 
+	rp401@doc.ic.ac.uk, rs201@doc.ic.ac.uk, 
+	sam01@doc.ic.ac.uk, sj01@doc.ic.ac.uk, 
+	so101@doc.ic.ac.uk, sp200@doc.ic.ac.uk,
+    srr01@doc.ic.ac.uk, 
+	srs01@doc.ic.ac.uk, ss401@doc.ic.ac.uk, 
+	ss501@doc.ic.ac.uk, ss601@doc.ic.ac.uk, 
+	ssl01@doc.ic.ac.uk, yjc01@doc.ic.ac.uk, 
+	yyl01@doc.ic.ac.uk, zam01@doc.ic.ac.uk
+Subject: Kenya/Java Driving Test Resit
+Cc: cjh@doc.ic.ac.uk, ids@doc.ic.ac.uk, mw@doc.ic.ac.uk, 
+	psc@doc.ic.ac.uk, sue@doc.ic.ac.uk
+Message-Id: <E16fms6-0001YW-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Tue, 26 Feb 2002 19:02:42 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 45
+
+
+The Kenya/Java driving test resit will take place on
+Friday 8th March 2002 in room 202 at 16.00.  The test
+will be run using the same rules as the previous 
+Kenya/Java driving test. Details of the rules can be 
+read at:
+
+http://www.doc.ic.ac.uk/%7Ecjh/Iyc/drivingtest.html
+
+Thanks,
+
+Peter Cutler
+
+From psc@doc.ic.ac.uk Mon Feb 25 15:41:03 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 25 Feb 2002 15:41:03 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16fNFI-0004s9-00; Mon, 25 Feb 2002 15:40:56 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16fNFI-0003HX-00; Mon, 25 Feb 2002 15:40:56 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16fNFI-0008Ah-00; Mon, 25 Feb 2002 15:40:56 +0000
+To: cs-first-year@doc.ic.ac.uk
+Subject: Correction to SQL Lab
+Cc: aem3@doc.ic.ac.uk, ajf@doc.ic.ac.uk, 
+	dfg@doc.ic.ac.uk, dr@doc.ic.ac.uk, ecl1@doc.ic.ac.uk, 
+	frk@doc.ic.ac.uk, igeozg@doc.ic.ac.uk, 
+	jamm@doc.ic.ac.uk, jd@doc.ic.ac.uk, jgfc@doc.ic.ac.uk, 
+	jj@doc.ic.ac.uk, jnm@doc.ic.ac.uk, mrc@doc.ic.ac.uk,
+    phjk@doc.ic.ac.uk, 
+	pjm@doc.ic.ac.uk, psc@doc.ic.ac.uk, rc3@doc.ic.ac.uk, 
+	rjc@doc.ic.ac.uk, smc@doc.ic.ac.uk, sue@doc.ic.ac.uk, 
+	wjk@doc.ic.ac.uk, wl@doc.ic.ac.uk
+Message-Id: <E16fNFI-0008Ah-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Mon, 25 Feb 2002 15:40:56 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 46
+
+
+As a result of a typo, the first and second SQL queries are the
+same in the spec.  The first query in fact should be:
+
+1) Show the film titles and directors of all films, sorted
+by director (1 mark).
+
+We have asked CSG to set up database accounts that will allow you
+to experiment with the psql system.  Unlike the films database
+that you will be using for your lab, you will be able to create
+and change tables in your own database account.
+
+To log in to your database account type:
+
+	psql YOUR_LOGIN 
+
+where YOUR_LOGIN is replaced by your actual login (abc101 or whatever).
+You will not need to type in a password.
+
+If you have been logged on to the system for some time you may
+have to authenticate your password by using the command:
+
+	kinit
+
+Please note this account is provided for your interest just 
+in case you would like to change a psql database as mentioned
+in the unassessed part of the exercise.  It is not needed for
+the assessed part of the exercise.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Fri Mar 01 13:50:23 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 01 Mar 2002 13:50:23 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16gnQP-0004NW-00; Fri, 01 Mar 2002 13:50:17 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16gnQP-00084b-00; Fri, 01 Mar 2002 13:50:17 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16gnQP-0005bA-00; Fri, 01 Mar 2002 13:50:17 +0000
+To: cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+Subject: First Year Lab
+Message-Id: <E16gnQP-0005bA-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Fri, 01 Mar 2002 13:50:17 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 47
+
+
+The spec for the next lab exercise will be distributed in
+the 'Reasoning About Programs' lecture this afternoon.
+
+You can also collect a copy directly from room 372.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Wed Mar 06 13:34:51 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 06 Mar 2002 13:34:51 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16ibX4-00032s-00; Wed, 06 Mar 2002 13:32:38 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16ibWr-0005mN-00; Wed, 06 Mar 2002 13:32:25 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16ibWq-00063I-00; Wed, 06 Mar 2002 13:32:24 +0000
+To: all-doc@doc.ic.ac.uk
+Subject: First Year Lab Test
+Cc: ehelp@doc.ic.ac.uk, ids@doc.ic.ac.uk, 
+	mw@doc.ic.ac.uk, psc@doc.ic.ac.uk
+Message-Id: <E16ibWq-00063I-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Wed, 06 Mar 2002 13:32:24 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 48
+
+
+Due to a first year lab test rooms 202 and 206 will
+not be available for general use this Friday (8/3/02) 
+from 3.45 pm to 6.15 pm.
+
+Could you please organise your time so that you can
+avoid using rooms 202 and 206 at the above times.
+
+Thanks,
+
+Peter Cutler
+
+
+
+From cjh@doc.ic.ac.uk Thu Mar 07 12:16:42 2002
+Return-path: <cjh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 07 Mar 2002 12:16:42 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16iwp1-0001Iq-00; Thu, 07 Mar 2002 12:16:35 +0000
+Received: from g3-cjh.doc.ic.ac.uk ([146.169.29.12])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16iwoz-0008NT-01
+	for cs-first-year@doc.ic.ac.uk; Thu, 07 Mar 2002 12:16:33 +0000
+X-Sender: cjh@pop.doc.ic.ac.uk
+Message-Id: <l03102801b8ad0bc31536@[146.169.29.12]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Thu, 7 Mar 2002 12:21:32 +0000
+To: cs-first-year@doc.ic.ac.uk
+From: chris hogger <cjh@doc.ic.ac.uk>
+Subject: Topics Groups reminder
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 49
+
+Dear Computing-1 students,
+
+Some of you have not yet given me your preferences about grouping for the
+Topics course. Since, as you know, I am a very soft-hearted person, I will
+extend my "hard" deadline of Friday March 8th to a "super-hard" deadline of
+Tuesday March 12th, and after that I really will have to decide the
+remaining groupings myself.
+
+Regards,
+Chris.
+
+
+
+From cjh@doc.ic.ac.uk Thu Mar 07 12:16:42 2002
+Return-path: <cjh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 07 Mar 2002 12:16:42 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16iwp1-0001Iv-00; Thu, 07 Mar 2002 12:16:35 +0000
+Received: from g3-cjh.doc.ic.ac.uk ([146.169.29.12])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16iwp0-0008NT-00
+	for cs-first-year@doc.ic.ac.uk; Thu, 07 Mar 2002 12:16:34 +0000
+X-Sender: cjh@pop.doc.ic.ac.uk
+Message-Id: <l03102802b8ad0bde1b9c@[146.169.29.12]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Thu, 7 Mar 2002 12:22:00 +0000
+To: cs-first-year@doc.ic.ac.uk
+From: chris hogger <cjh@doc.ic.ac.uk>
+Subject: students taking Foreign Language
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 50
+
+Dear Computing-1 students,
+
+Would each of you who has committed to taking the Foreign Language option
+please email me immediately to confirm this.
+
+Regards,
+Chris.
+
+
+
+From cjh@doc.ic.ac.uk Thu Mar 07 12:16:39 2002
+Return-path: <cjh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 07 Mar 2002 12:16:39 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16iwp0-0001In-00; Thu, 07 Mar 2002 12:16:34 +0000
+Received: from g3-cjh.doc.ic.ac.uk ([146.169.29.12])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16iwoz-0008NT-00
+	for cs-first-year@doc.ic.ac.uk; Thu, 07 Mar 2002 12:16:33 +0000
+X-Sender: cjh@pop.doc.ic.ac.uk
+Message-Id: <l03102800b8ad0bad1020@[146.169.29.12]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Thu, 7 Mar 2002 12:21:16 +0000
+To: cs-first-year@doc.ic.ac.uk
+From: chris hogger <cjh@doc.ic.ac.uk>
+Subject: Java Exam on Monday March 25th
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 51
+
+Dear Computing-1 students,
+
+On your 1st-year web noticeboard I have put a link
+
+http://www.doc.ic.ac.uk/~cjh/Iyc/javaexam.html
+
+to a page giving details of your forthcoming Java Exam on March 25th.
+
+Please read and absorb it carefully, as this is one of your 10 main
+examinations.
+
+Regards,
+Chris.
+
+
+
+From mpg01@doc.ic.ac.uk Mon Mar 11 10:32:57 2002
+Return-path: <mpg01@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 11 Mar 2002 10:32:57 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16kN6r-0000Uy-00; Mon, 11 Mar 2002 10:32:53 +0000
+Received: from albatross.doc.ic.ac.uk ([146.169.1.12] ident=root)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16kN6r-0002sp-00; Mon, 11 Mar 2002 10:32:53 +0000
+Received: (from wwwnot@localhost)
+	by albatross.doc.ic.ac.uk (8.11.6/8.8.8) id g2BAWrG21197;
+	Mon, 11 Mar 2002 10:32:53 GMT
+X-Authentication-Warning: albatross.doc.ic.ac.uk: wwwnot set sender to mpg01@doc.ic.ac.uk using -f
+To: cs-first-year@doc.ic.ac.uk
+Subject: Fwd: Kenya MSc Group Project
+Message-ID: <1015842773.3c8c87d557225@albatross.doc.ic.ac.uk>
+Date: Mon, 11 Mar 2002 10:32:53 +0000 (GMT)
+From: mpg01@doc.ic.ac.uk
+Cc: cag201@doc.ic.ac.uk
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+User-Agent: IMP/PHP IMAP webmail program 2.2.4
+X-Originating-IP: 129.31.33.16
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 52
+
+----- Forwarded message from Christopher Andrew Gale <cag201@doc.ic.ac.uk> ----
+-
+Date: Fri, 8 Mar 2002 13:43:03 +0000 (GMT)
+From: Christopher Andrew Gale <cag201@doc.ic.ac.uk>
+Reply-To: Christopher Andrew Gale <cag201@doc.ic.ac.uk>
+Subject: Kenya MSc Group Project
+To: mpg01@doc.ic.ac.uk
+
+Thanks to everyone who has contacted us re: testing out Kenya, we intend
+to start letting people have a play monday next week.  A couple of
+people have raised particular issues and suggestions & are about to be
+replied to personally.  It would be really great if the worthy people
+who have volunteered could give us a time to find them in labs, or even email
+us
+on the day to set it up for them.  Any other willing volunteers are
+welcome.....
+
+Thanks again folks,
+
+Chris Gale
+
+___________________________________________________________________
+
+
+From psc@doc.ic.ac.uk Mon Mar 11 13:01:35 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 11 Mar 2002 13:01:35 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16kPQg-0007ho-00; Mon, 11 Mar 2002 13:01:30 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16kPQg-00066I-00
+	for cs-first-year@doc.ic.ac.uk; Mon, 11 Mar 2002 13:01:30 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16kPQg-0005oU-00
+	for cs-first-year@doc.ic.ac.uk; Mon, 11 Mar 2002 13:01:30 +0000
+To: cs-first-year@doc.ic.ac.uk
+Subject: First Year Lab
+Message-Id: <E16kPQg-0005oU-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Mon, 11 Mar 2002 13:01:30 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 53
+
+
+If you did not get a copy of the current lab from
+the "Reasoning about Programming" class on Friday
+you can collect the spec at the lab workshop today at
+14.00. 
+
+Alternately you can collect one from our office 
+(room 372).
+
+Thanks,
+
+Peter Cutler 
+
+
+From kp@doc.ic.ac.uk Tue Mar 12 11:11:20 2002
+Return-path: <kp@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 12 Mar 2002 11:11:20 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16kkBE-0007fX-00; Tue, 12 Mar 2002 11:10:56 +0000
+Received: from brigg.doc.ic.ac.uk ([146.169.5.107] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16kkBC-00037z-00; Tue, 12 Mar 2002 11:10:54 +0000
+Message-ID: <3C8DE2E5.E7D6BEFA@doc.ic.ac.uk>
+Date: Tue, 12 Mar 2002 11:13:41 +0000
+From: Katherine <kp@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: all-cs@doc.ic.ac.uk, all-conv@doc.ic.ac.uk,
+ 	all-mac <all-mac@doc.ic.ac.uk>
+Subject: LEQ for the Autumn term
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 54
+
+ Dear All
+
+Please note that you can access LEQ results at the page below:
+ http://www.doc.ic.ac.uk/~kp/
+
+These are the results for Computing and JMC.
+
+Please let me know if you have any trouble accessing the pages.
+
+Best wishes
+Katherine
+
+
+From iccp@doc.ic.ac.uk Tue Mar 12 12:24:02 2002
+Return-path: <iccp@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 12 Mar 2002 12:24:02 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16klHK-0003G5-00; Tue, 12 Mar 2002 12:21:18 +0000
+Received: from santiago.doc.ic.ac.uk
+	([146.169.4.35] helo=doc.ic.ac.uk ident=iccp)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16klH5-0004mX-00
+	for all-doc@doc.ic.ac.uk; Tue, 12 Mar 2002 12:21:03 +0000
+Sender: iccp@doc.ic.ac.uk
+Message-ID: <3C8DF2AF.CAE0B96@doc.ic.ac.uk>
+Date: Tue, 12 Mar 2002 12:21:03 +0000
+From: Iain Phillips <iccp@doc.ic.ac.uk>
+X-Mailer: Mozilla 4.77 [en] (X11; U; Linux 2.4.4-4GB i686)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: all-doc@doc.ic.ac.uk
+Subject: [Fwd: Exam timetable]
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 55
+
+Iain Phillips wrote:
+> 
+> This is now published on the web:
+> 
+> http://www.doc.ic.ac.uk/examinations
+> 
+> and follow link.
+> 
+> Individual timetables are on your personal exam page.
+> 
+> Iain Phillips
+> Examinations Coordinator
+
+My thanks to those who emailed me to say that the data was unavailable. 
+It is back again now (we temporarily lost contact with another
+database).
+
+Iain Phillips
+
+From iccp@doc.ic.ac.uk Mon Mar 11 19:44:01 2002
+Return-path: <iccp@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 11 Mar 2002 19:44:01 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16kVgF-0003eR-00; Mon, 11 Mar 2002 19:41:59 +0000
+Received: from santiago.doc.ic.ac.uk
+	([146.169.4.35] helo=doc.ic.ac.uk ident=iccp)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16kVg9-000682-00
+	for all-doc@doc.ic.ac.uk; Mon, 11 Mar 2002 19:41:53 +0000
+Sender: iccp@doc.ic.ac.uk
+Message-ID: <3C8D0881.5C48B2B0@doc.ic.ac.uk>
+Date: Mon, 11 Mar 2002 19:41:53 +0000
+From: Iain Phillips <iccp@doc.ic.ac.uk>
+X-Mailer: Mozilla 4.77 [en] (X11; U; Linux 2.4.4-4GB i686)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: all-doc@doc.ic.ac.uk
+Subject: Exam timetable
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 56
+
+This is now published on the web:
+
+http://www.doc.ic.ac.uk/examinations
+
+and follow link.
+
+Individual timetables are on your personal exam page.
+
+Iain Phillips
+Examinations Coordinator
+
+From akr@doc.ic.ac.uk Mon Mar 18 12:01:23 2002
+Return-path: <akr@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 18 Mar 2002 12:01:23 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16mvpL-0005Uc-00; Mon, 18 Mar 2002 12:01:23 +0000
+Received: from nene.doc.ic.ac.uk ([146.169.5.169] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16mvpK-0004Bw-00; Mon, 18 Mar 2002 12:01:22 +0000
+Message-ID: <3C95D712.1030706@doc.ic.ac.uk>
+Date: Mon, 18 Mar 2002 12:01:22 +0000
+From: Angela Ragoopath <akr@doc.ic.ac.uk>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.7) Gecko/20011221
+X-Accept-Language: en-us
+MIME-Version: 1.0
+To: vsl99m@doc.ic.ac.uk, bp401@doc.ic.ac.uk, 
+	cht01@doc.ic.ac.uk, ss401@doc.ic.ac.uk, 
+	dws01@doc.ic.ac.uk, ngt01@doc.ic.ac.uk, 
+	rf301@doc.ic.ac.uk
+CC: Angela Ragoopath <akr@doc.ic.ac.uk>
+Subject: Coursework submission
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 57
+
+Please come to Room 345 urgently regarding your coursework.  Your 
+submission cannot be processed for marking until you do what is 
+necessary.  You will find your submissions on the counter.
+
+Thank you,
+
+
+Angela.
+
+
+From ss401@mallard.doc.ic.ac.uk Tue Jan 29 22:45:39 2002 -0000
+>From pjm@doc.ic.ac.uk Tue, 29 Jan 2002 14:46:00 -0800
+Received: from [62.30.134.77] by hotmail.com (3.2) with ESMTP id MHotMailBE207112007C4136E80F3E1E864D80360; Tue, 29 Jan 2002 14:45:39 -0800
+Received: from doc.ic.ac.uk (IDENT:zVPmmHMVzYaYBL7zxK5VplNtg9aX6YeZ@titan [1.0.129.20])
+	by beta.mcbrien.demon.co.uk (8.11.6/8.11.6) with ESMTP id g0TMcDD13668
+	for <sarnobat@hotmail.com>; Tue, 29 Jan 2002 22:44:31 GMT
+Message-ID: <3C57244E.3070308@doc.ic.ac.uk>
+Date: Tue, 29 Jan 2002 22:38:06 +0000
+From: Peter McBrien <pjm@doc.ic.ac.uk>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.4) Gecko/20011126 Netscape6/6.2.1
+X-Accept-Language: en-us
+MIME-Version: 1.0
+To: Sridhar Sarnobat <sarnobat@hotmail.com>
+Subject: Re: 1st year topics notes
+References: <OE61d3rOE9TuHZncJfK0000880c@hotmail.com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 58
+
+Dear Sridhar,
+
+The only dead link I found on the page was that pointing at the schedule
+(which has been fixed), but under that you should find an entry pointing
+at http://www.doc.ic.ac.uk/~pjm/db-int-lecture-notes.ps
+
+Regards
+Peter
+
+Sridhar Sarnobat wrote:
+
+> I am a first year computing student and I am looking for the notes
+> complementing your lecture a week ago today.
+>
+>
+>
+> The link appears to be 'dead'. How can I get hold of them?
+>
+>
+>
+> Many thanks,
+>
+> Sridhar Sarnobat
+>
+
+
+
+From ss401@mallard.doc.ic.ac.uk Fri Jan 25 20:29:14 2002 -0000
+>From phjk@sax.doc.ic.ac.uk Fri, 25 Jan 2002 12:30:25 -0800
+Received: from [146.169.1.47] by hotmail.com (3.2) with ESMTP id MHotMailBE1B0B19006F4004325892A9012F0B560; Fri, 25 Jan 2002 12:29:14 -0800
+Received: from sax.doc.ic.ac.uk ([146.169.1.20])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16UCyH-0003bn-00
+	for sarnobat@hotmail.com; Fri, 25 Jan 2002 20:29:13 +0000
+Received: (from phjk@localhost)
+	by sax.doc.ic.ac.uk (8.9.3/8.8.8) id UAA28934
+	for sarnobat@hotmail.com; Fri, 25 Jan 2002 20:29:13 GMT
+Date: Fri, 25 Jan 2002 20:29:13 GMT
+From: Paul Kelly <phjk@doc.ic.ac.uk>
+Message-Id: <200201252029.UAA28934@sax.doc.ic.ac.uk>
+To: sarnobat@hotmail.com
+Subject: Topics lecture
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 59
+
+The links are now fixed; you can find the powerpoint (which includes movies) at
+  http://www.doc.ic.ac.uk/~phjk/FirstYearTopics/
+
+There are probably still a few printed copies in 308.
+
+Paul K
+
+From psc@doc.ic.ac.uk Fri Mar 22 12:30:28 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 22 Mar 2002 12:30:28 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16oO9G-0001hK-00; Fri, 22 Mar 2002 12:27:58 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16oO96-0006na-00
+	for all-doc@doc.ic.ac.uk; Fri, 22 Mar 2002 12:27:48 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16oO95-0000lb-00
+	for all-doc@doc.ic.ac.uk; Fri, 22 Mar 2002 12:27:47 +0000
+To: all-doc@doc.ic.ac.uk
+Subject: First Year Lab Exam
+Message-Id: <E16oO95-0000lb-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Fri, 22 Mar 2002 12:27:47 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 60
+
+
+The first year computer students will be sitting a programming
+exam in the labs on the morning of Monday 25/03/02. The students 
+will work under exam conditions and require complete silence for
+the duration of the exam. 
+
+For this reason the first year computing students will need exclusive 
+use of the labs 202 and 219 on level 2 until 1.30 pm on Monday.
+
+For this reason could you please organise your time so that you can
+avoid using the labs at the above times.
+
+Thanks,
+
+Peter Cutler
+
+
+
+
+From cjh@doc.ic.ac.uk Fri Mar 22 13:11:14 2002
+Return-path: <cjh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 22 Mar 2002 13:11:14 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16oOp3-0004AZ-00; Fri, 22 Mar 2002 13:11:10 +0000
+Received: from g3-cjh.doc.ic.ac.uk ([146.169.29.12])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16oOp3-00038U-00
+	for cs-first-year@doc.ic.ac.uk; Fri, 22 Mar 2002 13:11:09 +0000
+X-Sender: cjh@pop.doc.ic.ac.uk
+Message-Id: <l03102800b8c0de7497fe@[146.169.29.12]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Date: Fri, 22 Mar 2002 13:14:02 +0000
+To: cs-first-year@doc.ic.ac.uk
+From: chris hogger <cjh@doc.ic.ac.uk>
+Subject: Various points ...
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 61
+
+Dear Computing-1 students,
+
+I have a few points to mention:
+
+1. You will, of course, know you have a Java exam on Monday:
+
+    http://www.doc.ic.ac.uk/~cjh/Iyc/javaexam.html
+
+   Arrive at the labs by 11.00. Bring your swipe card.
+
+2. I have assigned Topics subjects to Topics groups - see this page:
+
+    http://www.doc.ic.ac.uk/~cjh/Iyc/topics_groups.html
+
+3. I have given a sketch of the Summer-term work - see this page:
+
+    http://www.doc.ic.ac.uk/~cjh/Iyc/summerterm.html
+
+   from which you will see that Topics and Prolog have to be completed
+   in parallel during Weeks 4-6. You were to have had a mighty graphics
+   project to do at the same time as all this but I managed to get that
+   scrapped, otherwise you'd all have gone mad.
+
+   Regarding Topics, I would encourage you to keep in contact with your
+   group-colleagues during the vacation and perhaps do some preliminary
+   reading and planning on your assigned subject.
+
+Regards,
+Chris.
+
+
+
+From ss401@mallard.doc.ic.ac.uk Thu Apr 18 10:01:57 2002 +0100
+Return-path: <tjs@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 18 Apr 2002 10:02:31 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16y7nh-0001mK-00; Thu, 18 Apr 2002 10:01:57 +0100
+Received: from krakow.doc.ic.ac.uk ([146.169.5.114] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16y7ng-0000Fe-00; Thu, 18 Apr 2002 10:01:56 +0100
+Message-ID: <3CBE8C33.8B86D3F1@doc.ic.ac.uk>
+Date: Thu, 18 Apr 2002 10:04:51 +0100
+From: Teresa Sergot <tjs@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.6 [en-gb] (WinNT; I)
+X-Accept-Language: en-GB,en,en-*
+MIME-Version: 1.0
+To: all-ug@doc.ic.ac.uk
+Subject: Examinations - swipe cards
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 62
+
+Dear All,
+
+Please note the College exam instructions telling students they must
+have their swipe card with them in all exams.
+
+The Department would like students to display the cards on their desks
+during the exams.
+
+Please also bring with you your candidate number, which you need to
+state on all your exam scripts. Your candidate number should have been
+attached, as a label, to the timetable sent to you by Registry.
+
+Best wishes
+
+Teresa Sergot
+
+From ss401@mallard.doc.ic.ac.uk Thu Apr 18 17:12:29 2002 +0100
+Return-path: <tjs@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 18 Apr 2002 17:12:48 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16yEWL-00046z-00; Thu, 18 Apr 2002 17:12:29 +0100
+Received: from krakow.doc.ic.ac.uk ([146.169.5.114] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16yEWJ-0007vJ-00; Thu, 18 Apr 2002 17:12:27 +0100
+Message-ID: <3CBEF11A.374A2D38@doc.ic.ac.uk>
+Date: Thu, 18 Apr 2002 17:15:22 +0100
+From: Teresa Sergot <tjs@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.6 [en-gb] (WinNT; I)
+X-Accept-Language: en-GB,en,en-*
+MIME-Version: 1.0
+To: all-cs@doc.ic.ac.uk
+CC: akr@doc.ic.ac.uk
+Subject: [Fwd: Examinations - swipe cards]
+Content-Type: multipart/mixed;
+ boundary="------------BB733BB2FAD3984731D3654C"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 63
+
+This is a multi-part message in MIME format.
+--------------BB733BB2FAD3984731D3654C
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Dear All,
+
+I've just checked with Registry who tell me that timetables (plus
+candidate numbers) were sent to all undergraduate students in Computing
+to their pigeon holes (letter racks in 345) on March 25.
+
+If you have not collected your letter as yet, if at all possible, please
+could you collect it from the letter racks in 345 tomorrow, Friday, 19
+April between 9am and 5pm. If you are not back in time to do this
+tomorrow, anyone sitting the first exam on Monday, could you please
+collect your letter between 9 and 9:30am on Monday morning. Anyone not
+sitting exams on the first morning, could you please collect your letter
+later on in the morning (after 11am).
+
+Best wishes
+Teresa
+
+--------------BB733BB2FAD3984731D3654C
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+X-Mozilla-Status2: 00000000
+Message-ID: <3CBE8C33.8B86D3F1@doc.ic.ac.uk>
+Date: Thu, 18 Apr 2002 10:04:51 +0100
+From: Teresa Sergot <tjs@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.6 [en-gb] (WinNT; I)
+X-Accept-Language: en-GB,en,en-*
+MIME-Version: 1.0
+To: all-ug@doc.ic.ac.uk
+Subject: Examinations - swipe cards
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Dear All,
+
+Please note the College exam instructions telling students they must
+have their swipe card with them in all exams.
+
+The Department would like students to display the cards on their desks
+during the exams.
+
+Please also bring with you your candidate number, which you need to
+state on all your exam scripts. Your candidate number should have been
+attached, as a label, to the timetable sent to you by Registry.
+
+Best wishes
+
+Teresa Sergot
+
+
+--------------BB733BB2FAD3984731D3654C--
+
+From ss401@mallard.doc.ic.ac.uk Wed May  8 23:45:46 2002 +0100
+Return-path: <cjh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 08 May 2002 23:45:47 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 175aBu-00011N-00; Wed, 08 May 2002 23:45:46 +0100
+Received: from stalker.atlas.net.uk ([195.54.226.6] helo=atlas.net.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 175aBv-0000YL-00; Wed, 08 May 2002 23:45:47 +0100
+Received: from [195.54.228.51] (HELO [195.54.228.51])
+  by atlas.net.uk (CommuniGate Pro SMTP 4.0b1)
+  with ESMTP id 3567844; Wed, 08 May 2002 23:45:45 +0100
+X-Sender: cjh@pop.doc.ic.ac.uk
+Message-Id: <l03110703b8ff5fc6503c@[195.54.228.62]>
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+To: jkd01@doc.ic.ac.uk, srr01@doc.ic.ac.uk, ss401@doc.ic.ac.uk,
+ ada01@doc.ic.ac.uk, ncg01@doc.ic.ac.uk, uk01@doc.ic.ac.uk,
+ azs01@doc.ic.ac.uk, kl101@doc.ic.ac.uk, npg01@doc.ic.ac.uk,
+ dc401@doc.ic.ac.uk, dws01@doc.ic.ac.uk, syl01@doc.ic.ac.uk,
+ jf01@doc.ic.ac.uk, jga01@doc.ic.ac.uk, sih01@doc.ic.ac.uk
+From: Chris Hogger <cjh@doc.ic.ac.uk>
+Subject: Summer Term - Topics and Prolog
+Date: Wed, 08 May 2002 23:45:46 +0100
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 64
+
+Dear All,
+
+As you know, as soon as your exams have finished you have two more main
+tasks, namely Topics and Prolog. They are undertaken roughly in parallel. A
+summary of the term's schedule is given on the page:
+
+http://www.doc.ic.ac.uk/~cjh/Iyc/summerwork.html
+
+Note that, in association with Topics, you have a lecture about the web
+timetabled at 9.00 am next Wednesday (May 15th).
+
+The Topics work is undertaken wholly on your own initiative, and so you
+should soon look closely at the page describing it:
+
+http://www.doc.ic.ac.uk/~cjh/Iyc/topics.html
+
+Although most of the afternoons next week (Week 4) are consumed by the
+Prolog course, you should make use of the mornings in that week for your
+Topics work. Meet early on with the other members of your Topics group to
+begin planning your website and the division of responsibilities. The
+composition of the groups is set out on the page:
+
+http://www.doc.ic.ac.uk/~cjh/Iyc/topics_groups.html
+
+In each of Weeks 5 and 6 there will be an "open surgery" slot in which you
+can visit the tutor(s) responsible for your particular topic in order to
+discuss your work. The tutor(s) should advise you of this arrangement in
+due course. Their contact details are as follows:
+
+	Topic: Medical Computing
+	Lecturer: dr (Daniel Rueckert)
+	TA: apgs (Gabrielle Sinnadurai)
+
+Regards,
+Chris.
+
+
+From akr@doc.ic.ac.uk Thu May 23 14:01:27 2002
+Return-path: <akr@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 23 May 2002 14:01:27 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 17AsCv-0004Kk-00; Thu, 23 May 2002 14:00:41 +0100
+Received: from nene.doc.ic.ac.uk ([146.169.5.169] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 17AsCs-0003l3-00; Thu, 23 May 2002 14:00:39 +0100
+Message-ID: <3CECE7F6.8030300@doc.ic.ac.uk>
+Date: Thu, 23 May 2002 14:00:38 +0100
+From: Angela Ragoopath <akr@doc.ic.ac.uk>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.9) Gecko/20020311
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To:  all-jmc@doc.ic.ac.uk,  all-cs@doc.ic.ac.uk, all-conv
+ <all-conv@doc.ic.ac.uk>, all-mac <all-mac@doc.ic.ac.uk>
+Subject: End of Year Coursework Resubmission  (end of sweat and tears for
+ this year)
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 65
+
+Dear All,
+
+If you have collected all your assessed assignments, you may resubmit 
+your bundle of courseworks before the end of term - 21st June. 
+ Numerical order = as it appears on your Candidate Personal Page, so the 
+examiners can easily access any coursework, as necessary, from the bundle.  
+
+Please ignore this message, if you are an MEng 3 student who has already 
+resubmitted your courseworks.
+
+The Examiners' meeting will take place from June 25th to 28th June.  You 
+may collect your  bundles of courseworks from the first week of July.
+
+Thank you for your cooperation.
+
+
+Angela.
+
+
+From akr@doc.ic.ac.uk Wed May 22 12:27:08 2002
+Return-path: <akr@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 22 May 2002 12:27:08 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 17AUEo-0001Fa-00; Wed, 22 May 2002 12:25:03 +0100
+Received: from nene.doc.ic.ac.uk ([146.169.5.169] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 17AUEn-0004KQ-00; Wed, 22 May 2002 12:25:01 +0100
+Message-ID: <3CEB800D.2000605@doc.ic.ac.uk>
+Date: Wed, 22 May 2002 12:25:01 +0100
+From: Angela Ragoopath <akr@doc.ic.ac.uk>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.9) Gecko/20020311
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To:  all-jmc@doc.ic.ac.uk,  all-cs@doc.ic.ac.uk,  all-mac@doc.ic.ac.uk, 
+ all-conv <all-conv@doc.ic.ac.uk>
+CC: Angela Ragoopath <akr@doc.ic.ac.uk>, Margaret Cunningham
+ <mrc@doc.ic.ac.uk>
+Subject: End of Tear Coursework Resubmission
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 66
+
+Dear UGsand PGs,
+
+As in past years, you are required to resubmit all assessed 
+Lab/Courseworks to Room 345 for the Examiners' meeting in June.  Please 
+ensure that you have collected all your marked work as soon as possible.  
+
+Please printout your student page with the grades with all your assessed 
+submissions and put this page at the front/top of your coursework 
+bundle.  You may collect string and labels from Room 345  so that you 
+can tie up your courseworks in a neat bundle.  Please arrange your 
+courseworks in mumerical order.
+
+JMC students, please resubmit courseworks for Computing Courses NOT 
+Maths courses.
+
+Label as follows:
+
+Name::
+JMC Year:(1,2,3,4)
+DoC Year:(1,2,3,4, MSc or Mac.)
+Tutor/Supervisor:
+
+If you need any additional help, please let me know a s a p.
+
+Regards,
+
+
+Angela.
+
+
+
+
+
+
+From psc@doc.ic.ac.uk Thu May 30 16:33:33 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 30 May 2002 16:33:33 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 17DRsr-0000HE-00; Thu, 30 May 2002 16:30:37 +0100
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 17DRsf-0002y0-00; Thu, 30 May 2002 16:30:25 +0100
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 17DRsh-0004aR-00; Thu, 30 May 2002 16:30:27 +0100
+To: all-doc@doc.ic.ac.uk
+Subject: First Year Lab Exam
+Cc: cjh@doc.ic.ac.uk, help@doc.ic.ac.uk, 
+	ng2@doc.ic.ac.uk
+Message-Id: <E17DRsh-0004aR-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Thu, 30 May 2002 16:30:27 +0100
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 67
+
+
+Next Wednesday (5/6/02) there will be a lab exam for
+the CS1 students.  They will need exclusive use of rooms
+219 and 202 in the morning until 1.30 pm.  They will be 
+working under exam conditions which means that we will need 
+complete quiet in the lab area for the duration of the exam.
+
+Apart from the above, JMC1 students will be using room 206 from
+10.00 am to 1.00 pm for a Maple lab.  
+
+As 219/202/206 are being used during the morning on Wednesday it 
+would be best if you could organise your time to avoid using the 
+labs until after the exam has finished. 
+
+Thanks,
+
+Peter Cutler
+
+
+

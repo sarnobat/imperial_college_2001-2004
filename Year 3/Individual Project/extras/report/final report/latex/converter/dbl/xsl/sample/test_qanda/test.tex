@@ -1,0 +1,84 @@
+\documentclass[pdftex,english,a4paper,10pt]{article}
+\usepackage[pdftex,bookmarksnumbered,colorlinks,backref, bookmarks, breaklinks, linktocpage]{hyperref}
+\usepackage[pdftex]{graphicx}
+\usepackage{isolatin1}
+\usepackage{float}    %Required for QandADiv
+\usepackage{fancyvrb} %Required for ProgramListing
+\pdfcompresslevel=9
+\title{Title}
+\author{Ramon Casellas}
+\begin{document}
+
+\maketitle
+
+% ------------------------   
+% Section 
+\section{Introduction}
+\label{id2783543}\hypertarget{id2783543}{}%
+% -------------------------------------------------------------
+% QandASet                                                     
+% -------------------------------------------------------------
+\subsection*{First QandASet}
+\label{id2720185}
+% -----------
+% QandADiv   
+% -----------
+\subsubsection*{General Information}
+\label{id2708302}
+\floatstyle{ruled}
+\newfloat{qandadivtoc}{H}{qdtoc}
+\floatname{qandadivtoc}{Table of Contents}
+\begin{qandadivtoc}
+\caption{General Information}
+\noindent1.~{\bf Q : }{\em Adobe Systems, Inc.} \newline
+\noindent2.~{\bf Q : }{\em Agfa, Inc.} \newline
+\end{qandadivtoc}
+\vspace{0.25cm}
+\noindent1.~{\bf Q : }{\em Adobe Systems, Inc.} \newline
+\noindent{\bf A : }...\newline
+\vspace{0.25cm}
+
+
+\noindent2.~{\bf Q : }{\em Agfa, Inc.} \newline
+\noindent{\bf A : }...\newline
+\vspace{0.25cm}
+
+
+% -------------------------------------------------------------
+% QandASet                                                     
+% -------------------------------------------------------------
+\subsection*{F.A.Q.}
+\label{id2720265}
+% -----------
+% QandADiv   
+% -----------
+\subsubsection*{DB2LaTeX Meta-FAQ}
+\label{id2720268}
+\floatstyle{ruled}
+\newfloat{qandadivtoc}{H}{qdtoc}
+\floatname{qandadivtoc}{Table of Contents}
+\begin{qandadivtoc}
+\caption{DB2LaTeX Meta-FAQ}
+\noindent1.~{\bf Q : }{\em What is DB2LaTeX ?} \newline
+\noindent2.~{\bf Q : }{\em Where can I find DB2LaTeX ?} \newline
+\end{qandadivtoc}
+\vspace{0.25cm}
+\noindent1.~{\bf Q : }{\em What is DB2LaTeX ?} \newline
+\noindent{\bf A : } B2LaTeX are a set of XSLT stylesheets which generate high level LaTeX2e from your docbook document. They do not perform any FO transformation, the only thing they do is to map DocBook tags into more or less standard LaTeX (a recent installation of LaTeX 2e is required, with most common packages. However, in more stable releases, package dependencies will be completely managed with xsl variables, making it virtually compatible with basic LaTeX 2e installations). All the "styling" has to be done by modifying available xsl:variables, overriding and customizing templates, and in the last, by adding your "sty" files.More or less, they translate a \textless{}command\textgreater{} \textless{}/command\textgreater{}  into 
+\begin{Verbatim}[]
+\begin{command}
+\end{Verbatim}
+. Of course, there are a lot of other things to do, like tables, bibliography and so on... but this is the main idea.They are heavily based (that is, I started from a local copy and then start changing things here and there) on Norman Walsh XSL docbook stylesheets. These stylesheets are published here with Norman Walsh permission. Copyright and due credit is for Norman Walsh. Bugs are mine. However, bear in mind the fact that these stylesheets are NOT the XSL Docbook stylesheets. Thank you.They are "alpha". That means : it may work, it may not work. Your favourite feature may / may not be implemented. I will be glad to accept patches in form of XSL code or anything :). Many thanks to those who have already sent me patches and pointed out some bugs.\newline
+\vspace{0.25cm}
+
+
+\noindent2.~{\bf Q : }{\em Where can I find DB2LaTeX ?} \newline
+\noindent{\bf A : }You can find it \newline
+\vspace{0.25cm}
+
+
+
+% --------------------------------------------
+% End of document
+% --------------------------------------------
+\end{document}

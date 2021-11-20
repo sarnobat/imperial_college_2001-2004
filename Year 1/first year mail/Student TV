@@ -1,0 +1,376 @@
+From MAILER-DAEMON Mon Jun 10 18:50:41 2002
+Date: 10 Jun 2002 18:50:41 +0100
+From: Mail System Internal Data <MAILER-DAEMON@mallard.doc.ic.ac.uk>
+Subject: DON'T DELETE THIS MESSAGE -- FOLDER INTERNAL DATA
+Message-ID: <1023731441@mallard.doc.ic.ac.uk>
+X-IMAP: 1003853290 0000000002
+Status: RO
+
+This text is part of the internal format of your mail folder, and is not
+a real message.  It is created automatically by the mail system software.
+If deleted, important folder data will be lost, and it will be re-created
+with the data reset to initial values.
+
+From ss401@duck.doc.ic.ac.uk Mon Oct  8 18:52:56 2001 +0100
+>From stoic@ic.ac.uk Mon, 08 Oct 2001 10:53:23 -0700
+Received: from [155.198.5.114] by hotmail.com (3.2) with ESMTP id MHotMailBD8B32E800584004310F9BC60572B8840; Mon, 08 Oct 2001 10:52:56 -0700
+Received: from icex5.cc.ic.ac.uk ([155.198.3.5])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 15qeZk-0000eT-00; Mon, 08 Oct 2001 18:52:24 +0100
+Received: by icex5.cc.ic.ac.uk with Internet Mail Service (5.5.2653.19)
+	id <SWXCBKMB>; Mon, 8 Oct 2001 18:52:19 +0100
+Message-ID: <F5964EC6580BD2119C8400A0C9CFB9660156B749@icex5.cc.ic.ac.uk>
+From: stoic <stoic@ic.ac.uk>
+To: "Seegobin, Sara" <sara.seegobin@ic.ac.uk>, "Jones, Hannah"
+  <hannah.jones@ic.ac.uk>, "'emilyese@hotmail.com'" <emilyese@hotmail.com>,
+ "'samameera@yahoo.com'" <samameera@yahoo.com>, "Tam, Henry"
+  <henry.tam@ic.ac.uk>, "Lubrich, Daniel" <daniel.lubrich@ic.ac.uk>,
+ "'chrisyau@cyau.fsnet.co.uk'" <chrisyau@cyau.fsnet.co.uk>,
+ "'kmt_etak@hotmail.com'" <kmt_etak@hotmail.com>, "Martinetz, Anna"
+  <anna.martinetz@ic.ac.uk>, "Brooks, Elliott" <e.brooks@ic.ac.uk>,
+ "'lleong@scicomm.fsnet.co.uk'" <lleong@scicomm.fsnet.co.uk>,
+ "'iamlampshade@hotmail.com'" <iamlampshade@hotmail.com>,
+ "'kshah_83@yahoo.com'" <kshah_83@yahoo.com>, "'shaz134@hotmail.com'"
+  <shaz134@hotmail.com>, ma499 <mustafa1.arif@ic.ac.uk>,
+ "'amrita121@hotmail.com'"
+  <amrita121@hotmail.com>, "'beth_matthews@yahoo.co.uk'"
+  <beth_matthews@yahoo.co.uk>, "'joolee_lmc@hotmail.com'"
+  <joolee_lmc@hotmail.com>, "'timtomjames@hotmail.com'"
+  <timtomjames@hotmail.com>, "'ziridaki@hotmail.com'"
+  <ziridaki@hotmail.com>, "'ar_figueira@hotmail.com'"
+  <ar_figueira@hotmail.com>, "Wong, Dawn" <dawn.wong@ic.ac.uk>,
+ "'sajini60@hotmail.com'" <sajini60@hotmail.com>,
+ "'senitamountjoy@hotmail.com'" <senitamountjoy@hotmail.com>, adm00
+  <alexander.may@ic.ac.uk>,
+ "Hoar, Samantha" <samantha.hoar@ic.ac.uk>,
+ "'cmbema@talk21.com'" <cmbema@talk21.com>, "Ghosh, Laura"
+  <laura.ghosh@ic.ac.uk>, "Thornton, Elizabeth"
+  <elizabeth.thornton@ic.ac.uk>, "Wear, Lara" <lara.wear@ic.ac.uk>,
+ "'clairebraden@hotmail.com'" <clairebraden@hotmail.com>,
+ "Cracknell, Louise" <louise.cracknell@ic.ac.uk>, "Ellis, Claire"
+  <claire.ellis@ic.ac.uk>, "'r_chelvan@hotmail.com'"
+  <r_chelvan@hotmail.com>, "'anjahchandna83@hotmail.com'"
+  <anjahchandna83@hotmail.com>, "'puja420@hotmail.com'"
+  <puja420@hotmail.com>, "'tmatin8@hotmail.com'" <tmatin8@hotmail.com>,
+ "'lujing82@hotmail.com'" <lujing82@hotmail.com>, "Ryan, Katie"
+  <katie.ryan@ic.ac.uk>, "'mrsyb@hotmail.com'" <mrsyb@hotmail.com>,
+ "Wiffen, Timothy" <timothy.wiffen@ic.ac.uk>, "Lim, Hwei"
+  <hwei.lim@ic.ac.uk>, "'joodif0101@hotmail.com'" <joodif0101@hotmail.com>,
+ "'monika360@yahoo.com'" <monika360@yahoo.com>, "'voak83@hotmail.com'"
+  <voak83@hotmail.com>, mah99 <mohammad.homouda@ic.ac.uk>,
+ "'a_eftekhar@hotmail.com'"
+  <a_eftekhar@hotmail.com>, "Yeldon, David" <david.yeldon@ic.ac.uk>,
+ "'conor.beverland@windmillone.com'" <conor.beverland@windmillone.com>,
+ "'wingtsa@hotmail.com'" <wingtsa@hotmail.com>, mtu98 <maria.urwin@ic.ac.uk>,
+ "'stee22001@hotmail.com'" <stee22001@hotmail.com>, "Sands, Caroline"
+  <caroline.sands@ic.ac.uk>, "Wardrope, David" <david.wardrope@ic.ac.uk>,
+ "Beverly, Diana" <diana.beverly@ic.ac.uk>, "Calver, Adam"
+  <adam.calver@ic.ac.uk>, "'alexjewkes@hotmail.com'"
+  <alexjewkes@hotmail.com>, "Knights, Katherine"
+  <katherine.knights@ic.ac.uk>, "Driver, Alex" <alex.driver@ic.ac.uk>,
+ "Jackson, Samuel" <samuel.jackson@ic.ac.uk>, "'r_v@haveaniceday.co.uk'"
+  <r_v@haveaniceday.co.uk>, "'maitreydarrad@hotmail.com'"
+  <maitreydarrad@hotmail.com>, "Hickson, Anna" <anna.hickson@ic.ac.uk>,
+ "'frabuzin@hotmail.com'" <frabuzin@hotmail.com>, "'sasuppon@hotmail.com'"
+  <sasuppon@hotmail.com>, "'freiabladon@ic.ac.uk'" <freiabladon@ic.ac.uk>,
+ "Curtis, Annette" <annette.curtis@ic.ac.uk>, "Law, Katherine"
+  <katherine.law@ic.ac.uk>, "Huthwaite, Jane" <jane.huthwaite@ic.ac.uk>,
+ "Kane, Minna" <minna.kane@ic.ac.uk>, "Williams, Nicola"
+  <nicola.williams@ic.ac.uk>, "'neil@fatboyfat.co.uk'"
+  <neil@fatboyfat.co.uk>, "'macleodkc@hotmail.com'"
+  <macleodkc@hotmail.com>, "'jamie_denton@hotmail.com'"
+  <jamie_denton@hotmail.com>, "'geordierag@aol.com'" <geordierag@aol.com>,
+ "'gaurav.gharma@ic.ac.uk'" <gaurav.gharma@ic.ac.uk>,
+ "'plasticdinosaur@tesco.net'" <plasticdinosaur@tesco.net>,
+ "'andy_rose@another.com'" <andy_rose@another.com>,
+ "'jamesbarrett@beeb.net'" <jamesbarrett@beeb.net>,
+ "'simon.rawson@btinternet.com'" <simon.rawson@btinternet.com>,
+ "Callahan, George" <george.callahan@ic.ac.uk>, "'sklingner@virgin.net'"
+  <sklingner@virgin.net>, "'julin.ahmed@ic.ac.uk'" <julin.ahmed@ic.ac.uk>,
+ "Gomes, Anthony" <anthony.gomes@ic.ac.uk>, "'lady1600@aol.com'"
+  <lady1600@aol.com>, "Elliott, Christine" <christine.elliott@ic.ac.uk>,
+ "'johillier@lineone.net'" <johillier@lineone.net>,
+ "'shimshi_2000@yahoo.co.uk'" <shimshi_2000@yahoo.co.uk>,
+ "'liddynaturel@aol.com'" <liddynaturel@aol.com>, "Mckennan, Thomas"
+  <thomas.mckennan@ic.ac.uk>, "Christie, Stuart"
+  <stuart.christie@ic.ac.uk>, "'raheema@hotmail.com'"
+  <raheema@hotmail.com>, "'anna__hinds@hotmail.com'"
+  <anna__hinds@hotmail.com>, "Cassidy, Charles" <charles.cassidy@ic.ac.uk>,
+ "Kumar, Sunil" <sunil.kumar@ic.ac.uk>, "Bennett, Andrew"
+  <andrew.j.bennett@ic.ac.uk>, "'sarnobat@hotmail.com'"
+  <sarnobat@hotmail.com>, "'netia51@hotmail.com'" <netia51@hotmail.com>,
+ "'ykato_uk@yahoo.co.uk'" <ykato_uk@yahoo.co.uk>, jj99 <jeyanth.jeyakumar@ic.ac.uk>,
+ "'pili_12@yahoo.co.uk'" <pili_12@yahoo.co.uk>, "'butter_bagel@yahoo.com'"
+  <butter_bagel@yahoo.com>, "'c4scroller@aol.com'" <c4scroller@aol.com>,
+ "Price, Richard" <richard.price@ic.ac.uk>, "'akash112@hotmail.com'"
+  <akash112@hotmail.com>, "Cunningham, Matthew"
+  <matthew.cunningham@ic.ac.uk>, "'how-bout-some@sex-kitten.co.uk'"
+  <how-bout-some@sex-kitten.co.uk>, "Namin, Mahan" <mahan.namin@ic.ac.uk>,
+ "'t_addario@yahoo.com'" <t_addario@yahoo.com>, "Rasool, Nighat"
+  <nighat.rasool@ic.ac.uk>, "Parker, S" <s.parker@ic.ac.uk>,
+ "'casduffin@hotmail.com'" <casduffin@hotmail.com>,
+ "'comrade_jo@hotmail.com'" <comrade_jo@hotmail.com>, "Som, Robin"
+  <robin.som@ic.ac.uk>, "Malhan, Neeraj" <neeraj.malhan@ic.ac.uk>,
+ "Murphy, Cosmo" <cosmo.murphy@ic.ac.uk>, "O'Donovan, Oliver"
+  <oliver.odonovan@ic.ac.uk>, "'francis@loaded.net'" <francis@loaded.net>,
+ "'selectanet@yahoo.com'" <selectanet@yahoo.com>, "Gavin, Siobhan"
+  <siobhan.gavin@ic.ac.uk>, "'theepa.shanhkumnar@ic.ac.uk'"
+  <theepa.shanhkumnar@ic.ac.uk>, "'meteorical@hotmail.com'"
+  <meteorical@hotmail.com>, "'noodlenoggin90@hotmail.com'"
+  <noodlenoggin90@hotmail.com>, "Khan, Farhan" <farhan.khan@ic.ac.uk>,
+ "Robinson, James" <james.m.robinson@ic.ac.uk>
+Cc: "Gallagher, Andrew" <andrew.gallagher@ic.ac.uk>, "Gilbert, Roy J"
+  <roy.gilbert@ic.ac.uk>, "Mullen, Emily" <emily.mullen@ic.ac.uk>,
+ "Dunleavy, Andrew" <andrew.dunleavy@ic.ac.uk>, stoic <stoic@ic.ac.uk>
+Subject: Welcome to Student Television
+Date: Mon, 8 Oct 2001 18:52:12 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain;
+	charset="ISO-8859-1"
+Status: RO
+X-Status: DA
+X-Keywords:               
+X-UID: 1
+
+Hi,
+
+Thanks for your interest in student television and for coming to see us at
+the Freshers Fair last week. Whether you're interested in Presenting, Vision
+Mixing, Camera Operating, Sound Mixing, Floor Managing, Producing,
+Directing, Short Films, Technical Things or any other area of TV we're the
+society for you. You're probably wondering how to get involved with us and
+making TV well here's your chance....
+
+We're running a workshop (sort-of-thing) on Sunday 14th October (that's this
+Sunday coming) where you can all come along and have a go. We'll probably
+make two short (10 minute) magazine shows, depending on numbers. This will
+give you a chance to try your hand at a couple of different jobs and see how
+much fun it is to make a TV show and find out which bits you're most
+interested in doing. After we've made these shows we'll watch them back and
+discuss them before moving on to the bar where we'll answer any questions
+you have about stoic and discuss TV and what we plan to do in general.
+
+There is no charge for this workshop but we will be encouraging everyone who
+is interested to join afterwards although there is no obligation.
+
+The workshop starts at 1pm on Sunday 14th and will be held in stoic, in the
+new media centre. To find us go into the Beit Quad (the union) and as you
+get through the archway go left. When you reach the west side of the quad
+you'll see a set of wooden doors with "Biology" carved out of the stone
+above them. Swipe your way in and go down the stairs. At the bottom of the
+stairs turn right, go through the double doors and we're the first door on
+the left. It should be marked and/or propped open and you'll probably be
+able to hear us. If you're having any problems finding us then give us a
+ring and we'll try to help. Call 020 7594 8104 from an outside line or use
+an internal phone and dial 48104 to reach us.
+
+Everyone is welcome so bring a friend!
+
+I look forward to seeing as many of you as possible,
+
+Paul Wortley
+Station Manager.
+
+From ss401@duck.doc.ic.ac.uk Tue Oct 23 00:34:19 2001 +0100
+>From andrew.gallagher@ic.ac.uk Mon, 22 Oct 2001 16:34:31 -0700
+Received: from [155.198.5.114] by hotmail.com (3.2) with ESMTP id MHotMailBD9DF7F100A14004371F9BC60572C7AD0; Mon, 22 Oct 2001 16:34:19 -0700
+Received: from icex6.cc.ic.ac.uk ([155.198.3.6])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 15voWz-0007F5-04; Tue, 23 Oct 2001 00:30:53 +0100
+Received: by icex6.cc.ic.ac.uk with Internet Mail Service (5.5.2653.19)
+	id <SWXCR6DG>; Tue, 23 Oct 2001 00:30:51 +0100
+Message-ID: <B8E71A89E7E0D411B0E200A0C9D85B26A8EFCC@icex6.cc.ic.ac.uk>
+From: "Gallagher, Andrew" <andrew.gallagher@ic.ac.uk>
+To: "Seegobin, Sara" <sara.seegobin@ic.ac.uk>, "Jones, Hannah"
+  <hannah.jones@ic.ac.uk>, "'emilyese@hotmail.com '"
+  <emilyese@hotmail.com>, "'samameera@yahoo.com '" <samameera@yahoo.com>,
+ "Tam, Henry" <henry.tam@ic.ac.uk>, "Lubrich, Daniel"
+  <daniel.lubrich@ic.ac.uk>, "'chrisyau@cyau.fsnet.co.uk '"
+  <chrisyau@cyau.fsnet.co.uk>, "'kmt_etak@hotmail.com '"
+  <kmt_etak@hotmail.com>, "Martinetz, Anna" <anna.martinetz@ic.ac.uk>,
+ "Brooks, Elliott" <e.brooks@ic.ac.uk>, "'lleong@scicomm.fsnet.co.uk '"
+  <lleong@scicomm.fsnet.co.uk>, "'iamlampshade@hotmail.com '"
+  <iamlampshade@hotmail.com>, "'kshah_83@yahoo.com '" <kshah_83@yahoo.com>,
+ "'shaz134@hotmail.com '" <shaz134@hotmail.com>, ma499 <mustafa1.arif@ic.ac.uk>,
+ "'amrita121@hotmail.com '" <amrita121@hotmail.com>,
+ "'beth_matthews@yahoo.co.uk '" <beth_matthews@yahoo.co.uk>,
+ "'joolee_lmc@hotmail.com '" <joolee_lmc@hotmail.com>,
+ "'timtomjames@hotmail.com '" <timtomjames@hotmail.com>,
+ "'ziridaki@hotmail.com '" <ziridaki@hotmail.com>,
+ "'ar_figueira@hotmail.com '" <ar_figueira@hotmail.com>, "Wong, Dawn"
+  <dawn.wong@ic.ac.uk>, "'sajini60@hotmail.com '" <sajini60@hotmail.com>,
+ "'senitamountjoy@hotmail.com '" <senitamountjoy@hotmail.com>, adm00
+  <alexander.may@ic.ac.uk>,
+ "Hoar, Samantha" <samantha.hoar@ic.ac.uk>,
+ "'cmbema@talk21.com '" <cmbema@talk21.com>, "Ghosh, Laura"
+  <laura.ghosh@ic.ac.uk>, "Thornton, Elizabeth"
+  <elizabeth.thornton@ic.ac.uk>, "Wear, Lara" <lara.wear@ic.ac.uk>,
+ "'clairebraden@hotmail.com '" <clairebraden@hotmail.com>,
+ "Cracknell, Louise" <louise.cracknell@ic.ac.uk>, "Ellis, Claire"
+  <claire.ellis@ic.ac.uk>, "'r_chelvan@hotmail.com '"
+  <r_chelvan@hotmail.com>, "Chandra, Anjali" <anjali.chandra@ic.ac.uk>,
+ "'puja420@hotmail.com '" <puja420@hotmail.com>, "'tmatin8@hotmail.com '"
+  <tmatin8@hotmail.com>, "'lujing82@hotmail.com '" <lujing82@hotmail.com>,
+ "Ryan, Katie" <katie.ryan@ic.ac.uk>, "'mrsyb@hotmail.com '"
+  <mrsyb@hotmail.com>, "Wiffen, Timothy" <timothy.wiffen@ic.ac.uk>,
+ "Lim, Hwei" <hwei.lim@ic.ac.uk>, "'joodif0101@hotmail.com '"
+  <joodif0101@hotmail.com>, "'monika360@yahoo.com '" <monika360@yahoo.com>,
+ "'voak83@hotmail.com '" <voak83@hotmail.com>, mah99 <mohammad.homouda@ic.ac.uk>,
+ "'a_eftekhar@hotmail.com '" <a_eftekhar@hotmail.com>, "Yeldon, David"
+  <david.yeldon@ic.ac.uk>, "Beverland, Connor" <connor.beverland@ic.ac.uk>,
+ "'wingtsa@hotmail.com '" <wingtsa@hotmail.com>, mtu98 <maria.urwin@ic.ac.uk>,
+ "Murray, James" <james.murray@ic.ac.uk>, "Sands, Caroline"
+  <caroline.sands@ic.ac.uk>, "Wardrope, David" <david.wardrope@ic.ac.uk>,
+ "Beverly, Diana" <diana.beverly@ic.ac.uk>, "Calver, Adam"
+  <adam.calver@ic.ac.uk>, "'alexjewkes@hotmail.com '"
+  <alexjewkes@hotmail.com>, "Knights, Katherine"
+  <katherine.knights@ic.ac.uk>, "Driver, Alex" <alex.driver@ic.ac.uk>,
+ "Jackson, Samuel" <samuel.jackson@ic.ac.uk>, "'r_v@haveaniceday.co.uk '"
+  <r_v@haveaniceday.co.uk>, "'maitreydarrad@hotmail.com '"
+  <maitreydarrad@hotmail.com>, "Hickson, Anna" <anna.hickson@ic.ac.uk>,
+ "'frabuzin@hotmail.com '" <frabuzin@hotmail.com>,
+ "'sasuppon@hotmail.com '" <sasuppon@hotmail.com>, "Bladon, Freia"
+  <freia.bladon@ic.ac.uk>, "Curtis, Annette" <annette.curtis@ic.ac.uk>,
+ "Law, Katherine" <katherine.law@ic.ac.uk>, "Huthwaite, Jane"
+  <jane.huthwaite@ic.ac.uk>, "Kane, Minna" <minna.kane@ic.ac.uk>,
+ "Williams, Nicola" <nicola.williams@ic.ac.uk>, "'shagamuffin@bolt.com '"
+  <shagamuffin@bolt.com>, "Allen, Judith" <judith.allen@ic.ac.uk>,
+ "'sarahlobb2@yahoo.co.uk '" <sarahlobb2@yahoo.co.uk>,
+ "Mitchell, Alexander" <alexander.mitchell@ic.ac.uk>,
+ "'neil@fatboyfat.co.uk '" <neil@fatboyfat.co.uk>,
+ "'macleodkc@hotmail.com '" <macleodkc@hotmail.com>,
+ "'jamie_denton@hotmail.com '" <jamie_denton@hotmail.com>,
+ "'geordierag@aol.com '" <geordierag@aol.com>, "Sharma, Gaurav"
+  <gaurav.sharma@ic.ac.uk>, "'plasticdinosaur@tesco.net '"
+  <plasticdinosaur@tesco.net>, "'andy_rose@another.com '"
+  <andy_rose@another.com>, "'jamesbarrett@beeb.net '"
+  <jamesbarrett@beeb.net>, "'simon.rawson@btinternet.com '"
+  <simon.rawson@btinternet.com>, "Hinds, Anna" <anna.hinds@ic.ac.uk>,
+ "Callahan, George" <george.callahan@ic.ac.uk>, "Klingner, Samuel"
+  <samuel.klingner@ic.ac.uk>, "Ahmed, Julian" <julian.ahmed@ic.ac.uk>,
+ "Gomes, Anthony" <anthony.gomes@ic.ac.uk>, "'lady1600@aol.com '"
+  <lady1600@aol.com>, "Elliott, Christine" <christine.elliott@ic.ac.uk>,
+ "'johillier@lineone.net '" <johillier@lineone.net>,
+ "'shimshi_2000@yahoo.co.uk '" <shimshi_2000@yahoo.co.uk>,
+ "'liddynaturel@aol.com '" <liddynaturel@aol.com>, "Mckennan, Thomas"
+  <thomas.mckennan@ic.ac.uk>, "Christie, Stuart"
+  <stuart.christie@ic.ac.uk>, "'raheema@hotmail.com '"
+  <raheema@hotmail.com>, "'anna__hinds@hotmail.com '"
+  <anna__hinds@hotmail.com>, "Cassidy, Charles" <charles.cassidy@ic.ac.uk>,
+ "Kumar, Sunil" <sunil.kumar@ic.ac.uk>, "Bennett, Andrew"
+  <andrew.j.bennett@ic.ac.uk>, "Waldock, Joanna" <joanna.waldock@ic.ac.uk>,
+ "'sarnobat@hotmail.com '" <sarnobat@hotmail.com>,
+ "'netia51@hotmail.com '" <netia51@hotmail.com>, "'ykato_uk@yahoo.co.uk '"
+  <ykato_uk@yahoo.co.uk>, jj99 <jeyanth.jeyakumar@ic.ac.uk>,
+ "'pili_12@yahoo.co.uk '"
+  <pili_12@yahoo.co.uk>, "'butter_bagel@yahoo.com '"
+  <butter_bagel@yahoo.com>, "'c4scroller@aol.com '" <c4scroller@aol.com>,
+ "Price, Richard" <richard.price@ic.ac.uk>, "'akash112@hotmail.com '"
+  <akash112@hotmail.com>, "Cunningham, Matthew"
+  <matthew.cunningham@ic.ac.uk>, "'how-bout-some@sex-kitten.co.uk '"
+  <how-bout-some@sex-kitten.co.uk>, "Namin, Mahan" <mahan.namin@ic.ac.uk>,
+ "'t_addario@yahoo.com '" <t_addario@yahoo.com>, "Rasool, Nighat"
+  <nighat.rasool@ic.ac.uk>, "Parker, S" <s.parker@ic.ac.uk>,
+ "'casduffin@hotmail.com '" <casduffin@hotmail.com>, "Wimpory, Robert C"
+  <r.wimpory@ic.ac.uk>, "'comrade_jo@hotmail.com '"
+  <comrade_jo@hotmail.com>, "Som, Robin" <robin.som@ic.ac.uk>,
+ "Malhan, Neeraj" <neeraj.malhan@ic.ac.uk>, "Barrett, James"
+  <james.p.barrett@ic.ac.uk>, "Murphy, Cosmo" <cosmo.murphy@ic.ac.uk>,
+ "O'Donovan, Oliver" <oliver.odonovan@ic.ac.uk>, "'francis@loaded.net '"
+  <francis@loaded.net>, "'selectanet@yahoo.com '" <selectanet@yahoo.com>,
+ "Robinson, James" <james.m.robinson@ic.ac.uk>, "Gavin, Siobhan"
+  <siobhan.gavin@ic.ac.uk>, "Shantikumar, Theepa"
+  <theepa.shantikumar@ic.ac.uk>, "Kane, Karle" <karle.kane@ic.ac.uk>,
+ "'noodlenoggin90@hotmail.com '" <noodlenoggin90@hotmail.com>,
+ "Khan, Farhan" <farhan.khan@ic.ac.uk>, "Robinson, James"
+  <james.m.robinson@ic.ac.uk>, "'leisure303@yahoo.com '"
+  <leisure303@yahoo.com>, "'simon.millar@ic.ac.uk '"
+  <simon.millar@ic.ac.uk>, "Mills, Elena" <elena.mills@ic.ac.uk>,
+ "Guest, Peter" <peter.guest@ic.ac.uk>, "Teh, Yik" <yik.teh@ic.ac.uk>,
+ "'ruaridharrow@hotmail.com '" <ruaridharrow@hotmail.com>, "'ic.ac.uk '"
+  <Phillylondongirl@aol.comadam.calver>, "Mitchell, Alexander"
+  <alexander.mitchell@ic.ac.uk>, "'andy_rose@another.com '"
+  <andy_rose@another.com>, "Hinds, Anna" <anna.hinds@ic.ac.uk>,
+ "Barrett, James" <james.p.barrett@ic.ac.uk>, "'luying82@hotmail.com '"
+  <luying82@hotmail.com>, "Yeldon, David" <david.yeldon@ic.ac.uk>,
+ "'shagamuffin@bolt.com '" <shagamuffin@bolt.com>, jj99 <jeyanth.jeyakumar@ic.ac.uk>,
+ "Waldock, Joanna" <joanna.waldock@ic.ac.uk>, "Allen, Judith"
+  <judith.allen@ic.ac.uk>, "'lady1600@aol.com '" <lady1600@aol.com>,
+ "Kane, Minna" <minna.kane@ic.ac.uk>, "'sarahlobb2@yahoo.co.uk '"
+  <sarahlobb2@yahoo.co.uk>
+Cc: stoic-talk <stoic-talk@ic.ac.uk>
+Subject: MFL (stoic music show)
+Date: Tue, 23 Oct 2001 00:30:45 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain
+Status: RO
+X-Status: DA
+X-Keywords:               
+X-UID: 2
+
+Hi all, sorry this email has taken a long time to come out but I've
+been quite busy recently.
+If you've got two copies, this is because I've sent it out to everyone
+who put their name down at Fresher's Fair as interested in stoic and
+also everyone who put their name down for the show at the Fresher's
+Workshop last weekend so I didn't miss anyone out.  When the show gets
+going, I won't bother people who don't want to be.
+
+If you're interested, read on!
+
+I've attached my ideas for the format of the show, any comments or
+ideas are welcome.  I'm doing a fortnightly show for the time being
+because of the sheer production effort, we may be able to manage a
+weekly one later on.
+
+And now for the bit you've all been waiting for,
+
+At the moment there are two gigs on the plate in the next couple of
+weeks.  I'm looking for somebody to go to the gig, for free (though
+I'm afraid you have to pay your own travel), in order to review it and
+probably interview the band as well.  If there's an interview, then
+I'm also looking for somebody new to operate the camera.  We'll send
+along somebody experienced as well in case the camera decides to throw
+a fit, and also because we like getting free entry to gigs too.
+
+So the gigs are:
+The Bush, the Tree and Me this Friday, supporting the Divine Comedy (I
+think there's an interview (with the support band) but I'm not sure.
+I can confirm/deny this in the next couple of days. But hey, you'd get
+to see the Divine Comedy for nothing)
+
+Fuzz Light Years on 31st October, that's next Wednesday.  Again
+there's an interview for this one but it's very late to book so if you
+want to do it I need to know NOW - I've told our contact that I can
+confirm if we want to do it this Wednesday.
+
+If this isn't what you're into, we can also get 100 Reasons and System
+of a Down in late November/December; I'll advertise these nearer the
+time.
+
+If you haven't heard them before but are interested, I'll be in stoic
+Tuesday lunchtime so you can come down and listen to the Cds that we
+have of them. (To get there, go in through the archway to Beit, turn
+left, swipe through the door marked 'West Basements', go down the
+stairs, turn right again, through the double doors and we're the 1st
+door on the left.  Don't worry, it's signposted).  I'll also be in
+wiring on Wednesday, so it's not the best time, but you can still come
+and listen to the Cds.  I can be about Thursday as well, but I'll have
+confirmed Fuzz Light Years by then and probably the other one as well.
+
+If you want to do it, email me back ASAP as I have to run this
+first-come-first-serve.  We can help prepare interview questions and
+stuff.
+
+Cheers
+
+Andy Gallager (MFL Producer)
+
+
+P.S.  If you're not at all interested and don't want to get any more
+emails about the show, then just reply and ask me not to bother you.
+
+
+

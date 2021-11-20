@@ -1,0 +1,1384 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: Web Design Group's RGB Values Page
+Date: Thu, 29 May 2003 12:14:22 +0100
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0000_01C325DB.D679ADF0";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4910.0300
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C325DB.D679ADF0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.htmlhelp.com/cgi-bin/color.cgi?rgb=FFFFFF
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML lang=3Den-us><HEAD><TITLE>Web Design Group's RGB Values =
+Page</TITLE>
+<META content=3D"text/html; charset=3Diso-8859-1" =
+http-equiv=3DContent-Type><LINK=20
+href=3D"mailto:liam@htmlhelp.com" rev=3DMade><LINK href=3D"/" =
+rel=3DHome><LINK=20
+href=3D"/index.htm" rel=3DIndex><LINK href=3D"/glossary/glossary.html"=20
+rel=3DGlossary><LINK href=3D"/copyright.html" rel=3DCopyright><LINK=20
+href=3D"http://www.htmlhelp.com/style.css" rel=3DStyleSheet =
+type=3Dtext/css><LINK=20
+href=3D"http://www.htmlhelp.com/aural.css" media=3Daural =
+rel=3DStyleSheet=20
+type=3Dtext/css>
+<META content=3D"Liam Quinn" name=3DAuthor>
+<META=20
+content=3D"This page illustrates various RGB colors for use in Web =
+authoring."=20
+name=3Ddescription>
+<META=20
+content=3D"web design group, wdg, rgb colors, colours, color, colour, =
+bgcolor, hex, hexadecimal values, names"=20
+name=3Dkeywords>
+<META content=3Dtext/css http-equiv=3DContent-Style-Type>
+<STYLE type=3Dtext/css>BODY {
+	BACKGROUND: #ffffff; COLOR: #000000
+}
+A:link {
+	BACKGROUND: #ffffff; COLOR: #0000ff
+}
+A:visited {
+	BACKGROUND: #ffffff; COLOR: #800080
+}
+</STYLE>
+<!-- STYLE attribute included in BODY to workaround bug in MSIE -->
+<META content=3D"MSHTML 5.00.3516.2800" name=3DGENERATOR></HEAD>
+<BODY aLink=3D#000080 bgColor=3D#ffffff link=3D#0000ff=20
+style=3D"BACKGROUND: #ffffff; COLOR: #000000" text=3D#000000 =
+vLink=3D#800080>
+<H2><IMG alt=3D"The Web Design Group presents:" height=3D83=20
+src=3D"http://www.htmlhelp.com/icon/wdglogo1.gif" width=3D250></H2>
+<H1 align=3Dcenter>RGB Color Values</H1>
+<HR SIZE=3D3 width=3D"75%">
+
+<P>This chart illustrates some of the different RGB color values that =
+authors=20
+may use for font color and background. Note that the color names are =
+only given=20
+as an aid; when authoring pages, one should always use the hexadecimal =
+color=20
+codes instead of color names for all <STRONG class=3Dhtml><A=20
+href=3D"http://www.htmlhelp.com/reference/wilbur/body/body.html">BODY</A>=
+</STRONG>=20
+attributes. The following color names may safely be used with the =
+<STRONG=20
+class=3Dhtml><A=20
+href=3D"http://www.htmlhelp.com/reference/wilbur/special/font.html">FONT<=
+/A></STRONG>=20
+element and in a <A =
+href=3D"http://www.htmlhelp.com/reference/css/">Cascading=20
+Style Sheet</A>: <STRONG><SPAN=20
+style=3D"BACKGROUND: white; COLOR: aqua">aqua</SPAN></STRONG>, =
+<STRONG><SPAN=20
+style=3D"BACKGROUND: white; COLOR: black">black</SPAN></STRONG>, =
+<STRONG><SPAN=20
+style=3D"BACKGROUND: white; COLOR: blue">blue</SPAN></STRONG>, =
+<STRONG><SPAN=20
+style=3D"BACKGROUND: white; COLOR: fuchsia">fuchsia</SPAN></STRONG>, =
+<STRONG><SPAN=20
+style=3D"BACKGROUND: white; COLOR: gray">gray</SPAN></STRONG>, =
+<STRONG><SPAN=20
+style=3D"BACKGROUND: white; COLOR: green">green</SPAN></STRONG>, =
+<STRONG><SPAN=20
+style=3D"BACKGROUND: white; COLOR: lime">lime</SPAN></STRONG>, =
+<STRONG><SPAN=20
+style=3D"BACKGROUND: white; COLOR: maroon">maroon</SPAN></STRONG>, =
+<STRONG><SPAN=20
+style=3D"BACKGROUND: white; COLOR: navy">navy</SPAN></STRONG>, =
+<STRONG><SPAN=20
+style=3D"BACKGROUND: white; COLOR: olive">olive</SPAN></STRONG>, =
+<STRONG><SPAN=20
+style=3D"BACKGROUND: white; COLOR: purple">purple</SPAN></STRONG>, =
+<STRONG><SPAN=20
+style=3D"BACKGROUND: white; COLOR: red">red</SPAN></STRONG>, =
+<STRONG><SPAN=20
+style=3D"BACKGROUND: white; COLOR: silver">silver</SPAN></STRONG>, =
+<STRONG><SPAN=20
+style=3D"BACKGROUND: white; COLOR: teal">teal</SPAN></STRONG>, =
+<STRONG><SPAN=20
+style=3D"BACKGROUND: silver; COLOR: white">white</SPAN></STRONG>, and=20
+<STRONG><SPAN=20
+style=3D"BACKGROUND: silver; COLOR: yellow">yellow</SPAN></STRONG>.</P>
+<P class=3Dnote>If you choose to use <STRONG class=3Dhtml><A=20
+href=3D"http://www.htmlhelp.com/reference/wilbur/special/font.html">FONT<=
+/A></STRONG>,=20
+you should first be aware of its <A=20
+href=3D"http://www.mcsr.olemiss.edu/~mudws/font.html">disadvantages</A>.<=
+/P>
+<FORM action=3D/cgi-bin/color.cgi method=3Dget>
+<P>You can also try a different background color for this page by =
+entering an=20
+RGB hexadecimal triplet: <INPUT maxLength=3D6 name=3Drgb size=3D6 =
+value=3DFFFFFF> <INPUT type=3Dsubmit value=3D"Try it!"></P></FORM>
+<CENTER>
+<TABLE align=3Dcenter border=3D1>
+  <CAPTION>RGB Color Values</CAPTION>
+  <THEAD>
+  <TR align=3Dmiddle>
+    <TH>
+      <P>Color </P></TH>
+    <TH>Hex Code </TH>
+    <TH>Color </TH>
+    <TH>Hex Code </TH>
+    <TH>Color </TH>
+    <TH>Hex Code </TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #f0f8ff">
+      <P><FONT color=3D#f0f8ff>Alice blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#f0f8ff=20
+      style=3D"BACKGROUND: #f0f8ff; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#F0F8FF</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #faebd7">
+      <P><FONT color=3D#faebd7>Antique white</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#faebd7=20
+      style=3D"BACKGROUND: #faebd7; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FAEBD7</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #00ffff">
+      <P><FONT color=3D#00ffff>Aqua</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#00ffff=20
+      style=3D"BACKGROUND: #00ffff; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#00FFFF</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #7fffd4">
+      <P><FONT color=3D#7fffd4>Aquamarine</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#7fffd4=20
+      style=3D"BACKGROUND: #7fffd4; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#7FFFD4</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #f0ffff">
+      <P><FONT color=3D#f0ffff>Azure</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#f0ffff=20
+      style=3D"BACKGROUND: #f0ffff; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#F0FFFF</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #f5f5dc">
+      <P><FONT color=3D#f5f5dc>Beige</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#f5f5dc=20
+      style=3D"BACKGROUND: #f5f5dc; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#F5F5DC</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffe4c4">
+      <P><FONT color=3D#ffe4c4>Bisque</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffe4c4=20
+      style=3D"BACKGROUND: #ffe4c4; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFE4C4</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #000000">
+      <P><FONT color=3D#000000>Black</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#000000=20
+      style=3D"BACKGROUND: #000000; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#000000</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffebcd">
+      <P><FONT color=3D#ffebcd>Blanche dalmond</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffebcd=20
+      style=3D"BACKGROUND: #ffebcd; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFEBCD</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #0000ff">
+      <P><FONT color=3D#0000ff>Blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#0000ff=20
+      style=3D"BACKGROUND: #0000ff; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#0000FF</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #8a2be2">
+      <P><FONT color=3D#8a2be2>Blue violet</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#8a2be2=20
+      style=3D"BACKGROUND: #8a2be2; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#8A2BE2</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #a52a2a">
+      <P><FONT color=3D#a52a2a>Brown</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#a52a2a=20
+      style=3D"BACKGROUND: #a52a2a; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#A52A2A</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #deb887">
+      <P><FONT color=3D#deb887>Burlywood</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#deb887=20
+      style=3D"BACKGROUND: #deb887; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#DEB887</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #5f9ea0">
+      <P><FONT color=3D#5f9ea0>Cadet blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#5f9ea0=20
+      style=3D"BACKGROUND: #5f9ea0; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#5F9EA0</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #7fff00">
+      <P><FONT color=3D#7fff00>Chartreuse</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#7fff00=20
+      style=3D"BACKGROUND: #7fff00; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#7FFF00</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #d2691e">
+      <P><FONT color=3D#d2691e>Chocolate</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#d2691e=20
+      style=3D"BACKGROUND: #d2691e; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#D2691E</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ff7f50">
+      <P><FONT color=3D#ff7f50>Coral</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ff7f50=20
+      style=3D"BACKGROUND: #ff7f50; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FF7F50</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #6495ed">
+      <P><FONT color=3D#6495ed>Cornflower blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#6495ed=20
+      style=3D"BACKGROUND: #6495ed; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#6495ED</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #fff8dc">
+      <P><FONT color=3D#fff8dc>Cornsilk</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#fff8dc=20
+      style=3D"BACKGROUND: #fff8dc; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFF8DC</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #dc143c">
+      <P><FONT color=3D#dc143c>Crimson</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#dc143c=20
+      style=3D"BACKGROUND: #dc143c; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#DC143C</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #00ffff">
+      <P><FONT color=3D#00ffff>Cyan</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#00ffff=20
+      style=3D"BACKGROUND: #00ffff; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#00FFFF</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #00008b">
+      <P><FONT color=3D#00008b>Dark blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#00008b=20
+      style=3D"BACKGROUND: #00008b; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#00008B</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #008b8b">
+      <P><FONT color=3D#008b8b>Dark cyan</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#008b8b=20
+      style=3D"BACKGROUND: #008b8b; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#008B8B</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #b8860b">
+      <P><FONT color=3D#b8860b>Dark goldenrod</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#b8860b=20
+      style=3D"BACKGROUND: #b8860b; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#B8860B</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #a9a9a9">
+      <P><FONT color=3D#a9a9a9>Dark gray</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#a9a9a9=20
+      style=3D"BACKGROUND: #a9a9a9; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#A9A9A9</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #006400">
+      <P><FONT color=3D#006400>Dark green</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#006400=20
+      style=3D"BACKGROUND: #006400; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#006400</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #bdb76b">
+      <P><FONT color=3D#bdb76b>Dark khaki</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#bdb76b=20
+      style=3D"BACKGROUND: #bdb76b; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#BDB76B</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #8b008b">
+      <P><FONT color=3D#8b008b>Dark magenta</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#8b008b=20
+      style=3D"BACKGROUND: #8b008b; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#8B008B</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #556b2f">
+      <P><FONT color=3D#556b2f>Dark olive green</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#556b2f=20
+      style=3D"BACKGROUND: #556b2f; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#556B2F</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ff8c00">
+      <P><FONT color=3D#ff8c00>Dark orange</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ff8c00=20
+      style=3D"BACKGROUND: #ff8c00; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FF8C00</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #9932cc">
+      <P><FONT color=3D#9932cc>Dark orchid</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#9932cc=20
+      style=3D"BACKGROUND: #9932cc; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#9932CC</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #8b0000">
+      <P><FONT color=3D#8b0000>Dark red</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#8b0000=20
+      style=3D"BACKGROUND: #8b0000; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#8B0000</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #e9967a">
+      <P><FONT color=3D#e9967a>Dark salmon</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#e9967a=20
+      style=3D"BACKGROUND: #e9967a; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#E9967A</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #8dbc8f">
+      <P><FONT color=3D#8dbc8f>Dark seagreen</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#8dbc8f=20
+      style=3D"BACKGROUND: #8dbc8f; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#8DBC8F</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #483d8b">
+      <P><FONT color=3D#483d8b>Dark slate blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#483d8b=20
+      style=3D"BACKGROUND: #483d8b; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#483D8B</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #2f4f4f">
+      <P><FONT color=3D#2f4f4f>Dark slate gray</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#2f4f4f=20
+      style=3D"BACKGROUND: #2f4f4f; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#2F4F4F</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #00ded1">
+      <P><FONT color=3D#00ded1>Dark turquoise</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#00ded1=20
+      style=3D"BACKGROUND: #00ded1; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#00DED1</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #9400d3">
+      <P><FONT color=3D#9400d3>Dark violet</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#9400d3=20
+      style=3D"BACKGROUND: #9400d3; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#9400D3</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ff1493">
+      <P><FONT color=3D#ff1493>Deep pink</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ff1493=20
+      style=3D"BACKGROUND: #ff1493; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FF1493</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #00bfff">
+      <P><FONT color=3D#00bfff>Deep sky blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#00bfff=20
+      style=3D"BACKGROUND: #00bfff; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#00BFFF</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #696969">
+      <P><FONT color=3D#696969>Dim gray</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#696969=20
+      style=3D"BACKGROUND: #696969; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#696969</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #1e90ff">
+      <P><FONT color=3D#1e90ff>Dodger blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#1e90ff=20
+      style=3D"BACKGROUND: #1e90ff; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#1E90FF</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #b22222">
+      <P><FONT color=3D#b22222>Firebrick</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#b22222=20
+      style=3D"BACKGROUND: #b22222; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#B22222</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #fffaf0">
+      <P><FONT color=3D#fffaf0>Floral white</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#fffaf0=20
+      style=3D"BACKGROUND: #fffaf0; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFFAF0</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #228b22">
+      <P><FONT color=3D#228b22>Forest green</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#228b22=20
+      style=3D"BACKGROUND: #228b22; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#228B22</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ff00ff">
+      <P><FONT color=3D#ff00ff>Fuchsia</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ff00ff=20
+      style=3D"BACKGROUND: #ff00ff; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FF00FF</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #dcdcdc">
+      <P><FONT color=3D#dcdcdc>Gainsboro</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#dcdcdc=20
+      style=3D"BACKGROUND: #dcdcdc; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#DCDCDC</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #f8f8ff">
+      <P><FONT color=3D#f8f8ff>Ghost white</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#f8f8ff=20
+      style=3D"BACKGROUND: #f8f8ff; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#F8F8FF</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffd700">
+      <P><FONT color=3D#ffd700>Gold</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffd700=20
+      style=3D"BACKGROUND: #ffd700; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFD700</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #daa520">
+      <P><FONT color=3D#daa520>Goldenrod</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#daa520=20
+      style=3D"BACKGROUND: #daa520; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#DAA520</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #808080">
+      <P><FONT color=3D#808080>Gray</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#808080=20
+      style=3D"BACKGROUND: #808080; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#808080</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #008000">
+      <P><FONT color=3D#008000>Green</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#008000=20
+      style=3D"BACKGROUND: #008000; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#008000</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #adff2f">
+      <P><FONT color=3D#adff2f>Green yellow</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#adff2f=20
+      style=3D"BACKGROUND: #adff2f; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#ADFF2F</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #f0fff0">
+      <P><FONT color=3D#f0fff0>Honeydew</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#f0fff0=20
+      style=3D"BACKGROUND: #f0fff0; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#F0FFF0</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ff69b4">
+      <P><FONT color=3D#ff69b4>Hot pink</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ff69b4=20
+      style=3D"BACKGROUND: #ff69b4; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FF69B4</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #cd5c5c">
+      <P><FONT color=3D#cd5c5c>Indian red</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#cd5c5c=20
+      style=3D"BACKGROUND: #cd5c5c; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#CD5C5C</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #4b0082">
+      <P><FONT color=3D#4b0082>Indigo</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#4b0082=20
+      style=3D"BACKGROUND: #4b0082; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#4B0082</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #fffff0">
+      <P><FONT color=3D#fffff0>Ivory</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#fffff0=20
+      style=3D"BACKGROUND: #fffff0; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFFFF0</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #f0e68c">
+      <P><FONT color=3D#f0e68c>Khaki</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#f0e68c=20
+      style=3D"BACKGROUND: #f0e68c; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#F0E68C</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #e6e6fa">
+      <P><FONT color=3D#e6e6fa>Lavender</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#e6e6fa=20
+      style=3D"BACKGROUND: #e6e6fa; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#E6E6FA</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #fff0f5">
+      <P><FONT color=3D#fff0f5>Lavender blush</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#fff0f5=20
+      style=3D"BACKGROUND: #fff0f5; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFF0F5</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #7cfc00">
+      <P><FONT color=3D#7cfc00>Lawngreen</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#7cfc00=20
+      style=3D"BACKGROUND: #7cfc00; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#7CFC00</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #fffacd">
+      <P><FONT color=3D#fffacd>Lemon chiffon</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#fffacd=20
+      style=3D"BACKGROUND: #fffacd; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFFACD</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #add8e6">
+      <P><FONT color=3D#add8e6>Light blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#add8e6=20
+      style=3D"BACKGROUND: #add8e6; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#ADD8E6</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #f08080">
+      <P><FONT color=3D#f08080>Light coral</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#f08080=20
+      style=3D"BACKGROUND: #f08080; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#F08080</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #e0ffff">
+      <P><FONT color=3D#e0ffff>Light cyan</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#e0ffff=20
+      style=3D"BACKGROUND: #e0ffff; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#E0FFFF</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #fafad2">
+      <P><FONT color=3D#fafad2>Light goldenrod yellow</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#fafad2=20
+      style=3D"BACKGROUND: #fafad2; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FAFAD2</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #90ee90">
+      <P><FONT color=3D#90ee90>Light green</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#90ee90=20
+      style=3D"BACKGROUND: #90ee90; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#90EE90</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #d3d3d3">
+      <P><FONT color=3D#d3d3d3>Light grey</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#d3d3d3=20
+      style=3D"BACKGROUND: #d3d3d3; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#D3D3D3</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffb6c1">
+      <P><FONT color=3D#ffb6c1>Light pink</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffb6c1=20
+      style=3D"BACKGROUND: #ffb6c1; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFB6C1</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffa07a">
+      <P><FONT color=3D#ffa07a>Light salmon</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffa07a=20
+      style=3D"BACKGROUND: #ffa07a; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFA07A</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #20b2aa">
+      <P><FONT color=3D#20b2aa>Light seagreen</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#20b2aa=20
+      style=3D"BACKGROUND: #20b2aa; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#20B2AA</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #87cefa">
+      <P><FONT color=3D#87cefa>Light sky blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#87cefa=20
+      style=3D"BACKGROUND: #87cefa; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#87CEFA</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #778899">
+      <P><FONT color=3D#778899>Light slate gray</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#778899=20
+      style=3D"BACKGROUND: #778899; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#778899</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #b0c4de">
+      <P><FONT color=3D#b0c4de>Light steel blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#b0c4de=20
+      style=3D"BACKGROUND: #b0c4de; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#B0C4DE</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffffe0">
+      <P><FONT color=3D#ffffe0>Light yellow</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffffe0=20
+      style=3D"BACKGROUND: #ffffe0; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFFFE0</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #00ff00">
+      <P><FONT color=3D#00ff00>Lime</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#00ff00=20
+      style=3D"BACKGROUND: #00ff00; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#00FF00</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #32cd32">
+      <P><FONT color=3D#32cd32>Lime green</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#32cd32=20
+      style=3D"BACKGROUND: #32cd32; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#32CD32</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #faf0e6">
+      <P><FONT color=3D#faf0e6>Linen</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#faf0e6=20
+      style=3D"BACKGROUND: #faf0e6; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FAF0E6</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ff00ff">
+      <P><FONT color=3D#ff00ff>Magenta</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ff00ff=20
+      style=3D"BACKGROUND: #ff00ff; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FF00FF</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #800000">
+      <P><FONT color=3D#800000>Maroon</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#800000=20
+      style=3D"BACKGROUND: #800000; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#800000</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #66cdaa">
+      <P><FONT color=3D#66cdaa>Medium aquamarine</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#66cdaa=20
+      style=3D"BACKGROUND: #66cdaa; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#66CDAA</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #0000cd">
+      <P><FONT color=3D#0000cd>Medium blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#0000cd=20
+      style=3D"BACKGROUND: #0000cd; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#0000CD</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ba55d3">
+      <P><FONT color=3D#ba55d3>Medium orchid</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ba55d3=20
+      style=3D"BACKGROUND: #ba55d3; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#BA55D3</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #9370db">
+      <P><FONT color=3D#9370db>Medium purple</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#9370db=20
+      style=3D"BACKGROUND: #9370db; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#9370DB</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #3cb371">
+      <P><FONT color=3D#3cb371>Medium sea green</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#3cb371=20
+      style=3D"BACKGROUND: #3cb371; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#3CB371</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #7b68ee">
+      <P><FONT color=3D#7b68ee>Medium slate blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#7b68ee=20
+      style=3D"BACKGROUND: #7b68ee; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#7B68EE</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #00fa9a">
+      <P><FONT color=3D#00fa9a>Medium spring green</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#00fa9a=20
+      style=3D"BACKGROUND: #00fa9a; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#00FA9A</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #48d1cc">
+      <P><FONT color=3D#48d1cc>Medium turquoise</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#48d1cc=20
+      style=3D"BACKGROUND: #48d1cc; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#48D1CC</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #c71585">
+      <P><FONT color=3D#c71585>Medium violet red</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#c71585=20
+      style=3D"BACKGROUND: #c71585; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#C71585</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #191970">
+      <P><FONT color=3D#191970>Midnight blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#191970=20
+      style=3D"BACKGROUND: #191970; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#191970</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #f5fffa">
+      <P><FONT color=3D#f5fffa>Mint cream</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#f5fffa=20
+      style=3D"BACKGROUND: #f5fffa; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#F5FFFA</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffe4e1">
+      <P><FONT color=3D#ffe4e1>Misty rose</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffe4e1=20
+      style=3D"BACKGROUND: #ffe4e1; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFE4E1</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffe4b5">
+      <P><FONT color=3D#ffe4b5>Moccasin</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffe4b5=20
+      style=3D"BACKGROUND: #ffe4b5; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFE4B5</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffdead">
+      <P><FONT color=3D#ffdead>Navajo white</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffdead=20
+      style=3D"BACKGROUND: #ffdead; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFDEAD</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #000080">
+      <P><FONT color=3D#000080>Navy</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#000080=20
+      style=3D"BACKGROUND: #000080; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#000080</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #fdf5e6">
+      <P><FONT color=3D#fdf5e6>Old lace</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#fdf5e6=20
+      style=3D"BACKGROUND: #fdf5e6; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FDF5E6</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #6b8e23">
+      <P><FONT color=3D#6b8e23>Olive drab</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#6b8e23=20
+      style=3D"BACKGROUND: #6b8e23; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#6B8E23</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffa500">
+      <P><FONT color=3D#ffa500>Orange</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffa500=20
+      style=3D"BACKGROUND: #ffa500; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFA500</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ff4500">
+      <P><FONT color=3D#ff4500>Orange red</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ff4500=20
+      style=3D"BACKGROUND: #ff4500; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FF4500</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #da70d6">
+      <P><FONT color=3D#da70d6>Orchid</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#da70d6=20
+      style=3D"BACKGROUND: #da70d6; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#DA70D6</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #eee8aa">
+      <P><FONT color=3D#eee8aa>Pale goldenrod</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#eee8aa=20
+      style=3D"BACKGROUND: #eee8aa; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#EEE8AA</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #98fb98">
+      <P><FONT color=3D#98fb98>Pale green</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#98fb98=20
+      style=3D"BACKGROUND: #98fb98; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#98FB98</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #afeeee">
+      <P><FONT color=3D#afeeee>Pale turquoise</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#afeeee=20
+      style=3D"BACKGROUND: #afeeee; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#AFEEEE</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #db7093">
+      <P><FONT color=3D#db7093>Pale violet red</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#db7093=20
+      style=3D"BACKGROUND: #db7093; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#DB7093</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffefd5">
+      <P><FONT color=3D#ffefd5>Papaya whip</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffefd5=20
+      style=3D"BACKGROUND: #ffefd5; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFEFD5</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffdab9">
+      <P><FONT color=3D#ffdab9>Peach puff</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffdab9=20
+      style=3D"BACKGROUND: #ffdab9; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFDAB9</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #cd853f">
+      <P><FONT color=3D#cd853f>Peru</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#cd853f=20
+      style=3D"BACKGROUND: #cd853f; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#CD853F</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffc8cb">
+      <P><FONT color=3D#ffc8cb>Pink</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffc8cb=20
+      style=3D"BACKGROUND: #ffc8cb; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFC8CB</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #dda0dd">
+      <P><FONT color=3D#dda0dd>Plum</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#dda0dd=20
+      style=3D"BACKGROUND: #dda0dd; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#DDA0DD</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #b0e0e6">
+      <P><FONT color=3D#b0e0e6>Powder blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#b0e0e6=20
+      style=3D"BACKGROUND: #b0e0e6; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#B0E0E6</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #800080">
+      <P><FONT color=3D#800080>Purple</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#800080=20
+      style=3D"BACKGROUND: #800080; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#800080</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ff0000">
+      <P><FONT color=3D#ff0000>Red</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ff0000=20
+      style=3D"BACKGROUND: #ff0000; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FF0000</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #bc8f8f">
+      <P><FONT color=3D#bc8f8f>Rosy brown</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#bc8f8f=20
+      style=3D"BACKGROUND: #bc8f8f; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#BC8F8F</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #4169e1">
+      <P><FONT color=3D#4169e1>Royal blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#4169e1=20
+      style=3D"BACKGROUND: #4169e1; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#4169E1</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #8b4513">
+      <P><FONT color=3D#8b4513>Saddle brown</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#8b4513=20
+      style=3D"BACKGROUND: #8b4513; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#8B4513</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #fa8072">
+      <P><FONT color=3D#fa8072>Salmon</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#fa8072=20
+      style=3D"BACKGROUND: #fa8072; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FA8072</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #f4a460">
+      <P><FONT color=3D#f4a460>Sandy brown</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#f4a460=20
+      style=3D"BACKGROUND: #f4a460; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#F4A460</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #2e8b57">
+      <P><FONT color=3D#2e8b57>Sea green</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#2e8b57=20
+      style=3D"BACKGROUND: #2e8b57; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#2E8B57</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #fff5ee">
+      <P><FONT color=3D#fff5ee>Sea shell</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#fff5ee=20
+      style=3D"BACKGROUND: #fff5ee; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFF5EE</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #a0522d">
+      <P><FONT color=3D#a0522d>Sienna</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#a0522d=20
+      style=3D"BACKGROUND: #a0522d; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#A0522D</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #c0c0c0">
+      <P><FONT color=3D#c0c0c0>Silver</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#c0c0c0=20
+      style=3D"BACKGROUND: #c0c0c0; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#C0C0C0</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #87ceeb">
+      <P><FONT color=3D#87ceeb>Sky blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#87ceeb=20
+      style=3D"BACKGROUND: #87ceeb; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#87CEEB</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #6a5acd">
+      <P><FONT color=3D#6a5acd>Slate blue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#6a5acd=20
+      style=3D"BACKGROUND: #6a5acd; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#6A5ACD</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #fffafa">
+      <P><FONT color=3D#fffafa>Snow</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#fffafa=20
+      style=3D"BACKGROUND: #fffafa; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFFAFA</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #00ff7f">
+      <P><FONT color=3D#00ff7f>Spring green</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#00ff7f=20
+      style=3D"BACKGROUND: #00ff7f; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#00FF7F</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #4682b4">
+      <P><FONT color=3D#4682b4>Steelblue</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#4682b4=20
+      style=3D"BACKGROUND: #4682b4; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#4682B4</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #d2b48c">
+      <P><FONT color=3D#d2b48c>Tan</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#d2b48c=20
+      style=3D"BACKGROUND: #d2b48c; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#D2B48C</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #008080">
+      <P><FONT color=3D#008080>Teal</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#008080=20
+      style=3D"BACKGROUND: #008080; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#008080</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #d8bfd8">
+      <P><FONT color=3D#d8bfd8>Thistle</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#d8bfd8=20
+      style=3D"BACKGROUND: #d8bfd8; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#D8BFD8</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ff6347">
+      <P><FONT color=3D#ff6347>Tomato</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ff6347=20
+      style=3D"BACKGROUND: #ff6347; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FF6347</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #40e0d0">
+      <P><FONT color=3D#40e0d0>Turquoise</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#40e0d0=20
+      style=3D"BACKGROUND: #40e0d0; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#40E0D0</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ee82ee">
+      <P><FONT color=3D#ee82ee>Violet</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ee82ee=20
+      style=3D"BACKGROUND: #ee82ee; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#EE82EE</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #f5deb3">
+      <P><FONT color=3D#f5deb3>Wheat</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#f5deb3=20
+      style=3D"BACKGROUND: #f5deb3; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#F5DEB3</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffffff">
+      <P><FONT color=3D#ffffff>White</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffffff=20
+      style=3D"BACKGROUND: #ffffff; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFFFFF</FONT></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #f5f5f5">
+      <P><FONT color=3D#f5f5f5>Whitesmoke</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#f5f5f5=20
+      style=3D"BACKGROUND: #f5f5f5; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#F5F5F5</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #ffff00">
+      <P><FONT color=3D#ffff00>Yellow</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#ffff00=20
+      style=3D"BACKGROUND: #ffff00; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#FFFF00</FONT></TD>
+    <TD bgColor=3D#ffffff style=3D"BACKGROUND: #ffffff; COLOR: #9acd32">
+      <P><FONT color=3D#9acd32>Yellow green</FONT> </P></TD>
+    <TD align=3Dmiddle bgColor=3D#9acd32=20
+      style=3D"BACKGROUND: #9acd32; COLOR: #ffffff"><FONT=20
+      color=3D#ffffff>#9ACD32</FONT></TD></TR></TBODY></TABLE></CENTER>
+<HR SIZE=3D3 width=3D"75%">
+<!-- WEB DESIGN GROUP SIGNATURE v2.5 -->
+<P align=3Dcenter><A href=3D"http://www.htmlhelp.com/">Home</A>, <A=20
+href=3D"http://www.htmlhelp.com/bbs/">Questions</A>, <A=20
+href=3D"http://www.htmlhelp.com/reference/">Reference</A>, <A=20
+href=3D"http://www.htmlhelp.com/tools/">Tools</A>, <A=20
+href=3D"http://www.htmlhelp.com/links/">Links</A>, <A=20
+href=3D"http://www.htmlhelp.com/design/">Design</A> </P>
+<P align=3Dcenter><A =
+href=3D"http://www.htmlhelp.com/copyright.html">Copyright =A9</A>=20
+1996-98. <IMG align=3Dmiddle alt=3D"Web Design Group" height=3D40=20
+src=3D"http://www.htmlhelp.com/icon/wdglogo-small.gif" width=3D105> All =
+rights=20
+reserved.</P><!-- Copyright (C) 1996-98 Web Design Group. All rights =
+reserved. --></BODY></HTML>
+
+------=_NextPart_000_0000_01C325DB.D679ADF0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.htmlhelp.com/icon/wdglogo1.gif
+
+R0lGODlh+gBTAPf/AP///xAQEBgYGCkpKTExMUJCQkpKSlJSUlpaWmNjY2tra3Nzc3t7e4SEhIyM
+jJSUlJycnKWlpa2trbW1tb29vcbGxs7OztbW1t7e3ufn5+/v7/f3997W1rWtrca9vYyEhHtzc/fn
+5/fe3kpCQu/Ozt69ve+9vee1teeMjN6EhNZ7e9Zra95ra9ZjY85aWs5SUs5CQsY5OcYxMb0pKb0h
+Ib0YGKUAAN5jWsZCOcYxKeeMhNZ7c9ZjWueclNZaSu+9te+1reetped7a/fOxvfGve+cjOeUhN6E
+c8YxGP/e1vfWzu+tnOellP/n3v/WxvfWxv/v5//37///95yclHuEe1pjWkJ7UjlzYzljWoSMjHuE
+hDlrczFrc0Jrc2uMlDlzhHOMlGuEjClaa3OEjClKWilzlCFSaxhKY87n96XO52OMpSlaezlac0Jz
+nDFjjHuEjNbn91Jjc0pjeylCWufv987e78bW56W1xsbe973W77XO56XG52N7lISlxjlSazFKYzFS
+cylSe5S13oyt1nucxmuMtVp7pUprlLXG3pSlvbXO76W93py11pStzoylxoScvXuUtWuEpWN7nFpz
+lEJaezljnL3O55ytxq3O/2OEtVp7rUprnFKEzq291py13nuUvUpac2uErVpznFJrlEpjjCk5UjlS
+ezFKc97n94Sl3kJahGOM1ufv/6WtvYSMnLXG56W11pytzoycvXOEpWNzlFJjhHOMvUJSc0pjlDFC
+Y0JajCk5WlJztTlShCExUjFKeylCc9be77W9zoyUpXOMxjlSjEJjraW13nOErWuExkJSe3OU5yk5
+Y97n/3uEnFpje8bO55SctWtzjGNrhEJKYyEpQik5a4yUte/v962ttZSUnISEjM7O3sbG1oyMnDEx
+ObW11tbO79bO3q2lraWcpb2tvd7G3ta91s69xt69zs6tvYxze/fW3s6tta2MlMZKWr0xQt6MlNaE
+jLUYKbUQIa0AEM5SWs5KUsZCSr05QsY5Qr0pMbUIEK0ACAAAAMDAwCH5BAEAAP8ALAAAAAD6AFMA
+QAj/ADMIHEiwoMGDCBMqXMiwocOHECNKnEixYkQNFwZi2ACgo8ePIEOKHPmRo0mSKFOqXMmypcuX
+MGPKnGkBQoSbBDXMrMBgAkeUDxAwGKqFQYOhIL59QJlBggIDByjMnEq1qtWrWEXWvBkhZ0wFBRYY
+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
+
+------=_NextPart_000_0000_01C325DB.D679ADF0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.htmlhelp.com/icon/wdglogo-small.gif
+
+R0lGODdhaQAoAPcAAP///wgICBAQEBgYGCEhISkpKTExMTk5OUJCQkpKSlJSUlpaWmNjY2tra3Nz
+c3t7e4SEhIyMjJSUlJycnKWlpa2trbW1tb29vcbGxs7OztbW1t7e3ufn5+/v7/f3962lpbWtrZyU
+lIyEhHtzc3Nra4R7e2tjY1pSUmNaWlJKSkpCQkI5ObWcnDEpKb29tWNjWlJSSoyUjHuEe+/39/f/
+/97n54yUlJScnJylpYSMjO///3uEhFJra0pjYzlSUkJjYzFSUkp7hFJ7hGOEjM7n72uEjFqElFJ7
+jEpzhN7v99bn75SlrXuMlHOEjGuMnGOElKW1vYSUnLXW50JSWnucrc7e57XO3nOMnIytxlp7lHuE
+jN7v/7XG1pytvXOElIylvefv9+/3/4yUnM7e78bW5629zqW1xoycrYSUpbXO56W91py1zmNzhJSt
+xqXG52N7lEJSY3ucvVpzjHOUtWuMrVJzlDlSa0JjhJScpUprlDlahLXG3pSlvZy11pStzoScvXOM
+rWuEpWN7nFpzlFJrjEpjhGOMxjlSczFKaylCY73O55ytxnuMpYSl1nuczmOEtVp7rUJjlDlajM7e
+98bW76291qW1zoyctbXO92t7lGNzjJy13oylznuUvXOMtWuErUJSazlSezFKczljpb3G1pyltXuE
+lIScxmN7pUJahFp7taWtvb3O76293qW11pytzoycvYSUtXuMrXOEpVprjISczlJjhHOMvWN7rTlK
+a1JrnEpjlGOExjFCY0JajCk5WiExUjFKeylCc87W5621xlpzrVJrpa2955yt1oSUvXuMtaW993OE
+rWt7pVJjjEpahEJSezlKcyk5Y5ylvXuEnDFCc87W78bO5621zqWtxpSctWNzpUJShCk5a73G587W
+96211nN7nEpSczE5Y4yUxvf3/87O1oSEjL29zkpKUqWlvbW11rWtzpSMrdbO56WctZyUpa2ltca1
+1rWttaWcpXtze+fW51pSWkI5QrWctda9zs69xpSEjO/O1ufGzgAAACwAAAAAaQAoAAAI/wABCBxI
+sGBBDx4MKlzIsKHDhxAjOuRQgsGCBhIzatzIMaIHCAwcNDhwoaPJkygfgrj3AAKEBC9SypyJ8gGD
+EjtKjNygkAMHmkBRbohQsuAFBg9y7nigAELCgRw+MDDBM6jVjBwioFBgYoLPDxEajIDQsgTZEwsk
+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
+Afhs6EYrxAMWqAAF4uToqwQEADs=
+
+------=_NextPart_000_0000_01C325DB.D679ADF0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.htmlhelp.com/style.css
+
+BODY {
+	BACKGROUND: white; COLOR: black
+}
+H1 {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #c33; =
+FONT-WEIGHT: bold; TEXT-ALIGN: center
+}
+H2 {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #00008b; =
+FONT-WEIGHT: bold
+}
+H3 {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #006400; =
+FONT-WEIGHT: bold; MARGIN-LEFT: 4%; MARGIN-RIGHT: 4%
+}
+H4 {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 6%; MARGIN-RIGHT: 6%
+}
+H5 {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 6%; MARGIN-RIGHT: 6%
+}
+UL {
+	MARGIN-LEFT: 6%; MARGIN-RIGHT: 6%
+}
+OL {
+	MARGIN-LEFT: 6%; MARGIN-RIGHT: 6%
+}
+DL {
+	MARGIN-LEFT: 6%; MARGIN-RIGHT: 6%
+}
+P {
+	MARGIN-LEFT: 6%; MARGIN-RIGHT: 6%
+}
+UL UL {
+	MARGIN-LEFT: 1.2em; MARGIN-RIGHT: 1%; PADDING-LEFT: 0px
+}
+TABLE OL {
+	MARGIN-LEFT: 1.2em; MARGIN-RIGHT: 1%; PADDING-LEFT: 0px
+}
+TABLE UL {
+	MARGIN-LEFT: 1.2em; MARGIN-RIGHT: 1%; PADDING-LEFT: 0px
+}
+DL OL {
+	MARGIN-LEFT: 1.2em; MARGIN-RIGHT: 1%; PADDING-LEFT: 0px
+}
+DL UL {
+	MARGIN-LEFT: 1.2em; MARGIN-RIGHT: 1%; PADDING-LEFT: 0px
+}
+PRE {
+	MARGIN-LEFT: 10%; WHITE-SPACE: pre
+}
+TABLE CAPTION {
+	FONT-SIZE: larger; FONT-WEIGHT: bolder
+}
+TABLE P {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+TABLE DL {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+OL P {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+UL P {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+DL P {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+BLOCKQUOTE P {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+.note P {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+.note UL {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+.note OL {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+.note DL {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+LI PRE {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+DD PRE {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+P.top {
+	MARGIN-LEFT: 1%; MARGIN-RIGHT: 1%
+}
+BLOCKQUOTE {
+	BORDER-BOTTOM: #dc143c thin ridge; BORDER-LEFT: #dc143c thin ridge; =
+BORDER-RIGHT: #dc143c thin ridge; BORDER-TOP: #dc143c thin ridge; =
+MARGIN-LEFT: 8%; MARGIN-RIGHT: 8%
+}
+BLOCKQUOTE PRE {
+	MARGIN-LEFT: 1%; MARGIN-RIGHT: 1%
+}
+DT A {
+	FONT-WEIGHT: bold; MARGIN-TOP: 0.8em
+}
+A:link {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #00f
+}
+A:visited {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #800080
+}
+A:active {
+	BACKGROUND: #ffd700; COLOR: green
+}
+.html {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000080
+}
+.css {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #800000
+}
+.javascript {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #008000
+}
+.example {
+	MARGIN-LEFT: 10%
+}
+DFN {
+	FONT-STYLE: normal; FONT-WEIGHT: bolder
+}
+VAR SUB {
+	FONT-STYLE: normal
+}
+.note {
+	FONT-SIZE: 85%; MARGIN-LEFT: 10%
+}
+.SMA {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: fuchsia; =
+FONT-FAMILY: Kids, "Comic Sans MS", Jester
+}
+.oops {
+	FONT-FAMILY: Jester, "Comic Sans MS"
+}
+.author {
+	FONT-STYLE: italic
+}
+.copyright {
+	CLEAR: right; FONT-SIZE: smaller; TEXT-ALIGN: right
+}
+.toolbar {
+	TEXT-ALIGN: center
+}
+.toolbar IMG {
+	FLOAT: right
+}
+.error {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #dc143c; =
+TEXT-DECORATION: none
+}
+.warning {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #ff4500; =
+TEXT-DECORATION: none
+}
+.error STRONG {
+	BACKGROUND: #ffd700; COLOR: #dc143c; TEXT-DECORATION: none
+}
+.warning STRONG {
+	BACKGROUND: #ffd700; COLOR: #ff4500; TEXT-DECORATION: none
+}
+.warning A:link {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #ff4500; =
+TEXT-DECORATION: underline
+}
+.warning A:visited {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #ff4500; =
+TEXT-DECORATION: underline
+}
+.warning A:active {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #ff4500; =
+TEXT-DECORATION: underline
+}
+.error A:link {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #dc143c; =
+TEXT-DECORATION: underline
+}
+.error A:visited {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #dc143c; =
+TEXT-DECORATION: underline
+}
+.error A:active {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #dc143c; =
+TEXT-DECORATION: underline
+}
+.error STRONG A:link {
+	BACKGROUND: #ffd700; COLOR: #dc143c
+}
+.error STRONG A:visited {
+	BACKGROUND: #ffd700; COLOR: #dc143c
+}
+.error STRONG A:active {
+	BACKGROUND: #ffd700; COLOR: #dc143c
+}
+.warning STRONG A:link {
+	BACKGROUND: #ffd700; COLOR: #ff4500
+}
+.warning STRONG A:visited {
+	BACKGROUND: #ffd700; COLOR: #ff4500
+}
+.warning STRONG A:active {
+	BACKGROUND: #ffd700; COLOR: #ff4500
+}
+COLGROUP.entity {
+	TEXT-ALIGN: center
+}
+.default {
+	FONT-STYLE: normal; TEXT-DECORATION: underline
+}
+.required {
+	FONT-WEIGHT: bold
+}
+TD LI.transitional {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #696969; =
+FONT-WEIGHT: lighter
+}
+.elements LI.transitional {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #696969; =
+FONT-WEIGHT: lighter
+}
+TD LI.frameset {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #808080; =
+FONT-WEIGHT: lighter
+}
+.elements LI.frameset {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #808080; =
+FONT-WEIGHT: lighter
+}
+.footer {
+	BORDER-TOP: black thin solid; MARGIN-TOP: 2em; PADDING-TOP: 1em
+}
+.checkedDocument {
+	BORDER-TOP: black thin solid; MARGIN-TOP: 2em; PADDING-TOP: 1em
+}
+STRONG.legal {
+	FONT-WEIGHT: normal; TEXT-TRANSFORM: uppercase
+}
+
+@media Print   =20
+{
+INPUT#toggler {
+	DISPLAY: none
+}
+.toolbar {
+	DISPLAY: none
+}
+
+}
+
+------=_NextPart_000_0000_01C325DB.D679ADF0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+Content-Location: http://www.htmlhelp.com/aural.css
+
+abbr {
+	speak: normal
+}
+ACRONYM {
+	speak: normal
+}
+abbr.initialism {
+	speak: spell-out
+}
+.note {
+	cue-before: url(sounds/beep_kind_warning.au); pause-after: 100%
+}
+.SMA {
+	voice-family: child
+}
+.oops {
+	voice-family: child
+}
+.author {
+	volume: 40%
+}
+SMALL {
+	volume: 40%
+}
+TD LI.transitional {
+	volume: 40%
+}
+.elements LI.transitional {
+	volume: 40%
+}
+TD LI.frameset {
+	volume: 35%
+}
+.elements LI.frameset {
+	volume: 35%
+}
+.copyright {
+	volume: soft
+}
+.error {
+	cue-before: url(sounds/beep_jazz_piano.au)
+}
+.warning {
+	cue-before: url(sounds/beep_kind_warning.au)
+}
+.error STRONG {
+	volume: 65%
+}
+.warning STRONG {
+	volume: 65%
+}
+.congratulations {
+	play-during: url(sounds/applause.au)
+}
+.congratulations STRONG {
+	volume: loud
+}
+
+------=_NextPart_000_0000_01C325DB.D679ADF0--

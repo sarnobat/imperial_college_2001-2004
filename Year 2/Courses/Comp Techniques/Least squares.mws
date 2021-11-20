@@ -1,0 +1,56 @@
+{VERSION 5 0 "IBM INTEL NT" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 
+0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 13 "with(linalg);" }}{PARA 0 "> " 0 "" {MPLTEXT 
+1 0 34 "A := array([[2,3],[1,-1],[2,-4]]):" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#7^r%.BlockDiagonalG%,GramSchmidtG%,JordanBlockG%)LUdeco
+mpG%)QRdecompG%*WronskianG%'addcolG%'addrowG%$adjG%(adjointG%&angleG%(
+augmentG%(backsubG%%bandG%&basisG%'bezoutG%,blockmatrixG%(charmatG%)ch
+arpolyG%)choleskyG%$colG%'coldimG%)colspaceG%(colspanG%*companionG%'co
+ncatG%%condG%)copyintoG%*crossprodG%%curlG%)definiteG%(delcolsG%(delro
+wsG%$detG%%diagG%(divergeG%(dotprodG%*eigenvalsG%,eigenvaluesG%-eigenv
+ectorsG%+eigenvectsG%,entermatrixG%&equalG%,exponentialG%'extendG%,ffg
+ausselimG%*fibonacciG%+forwardsubG%*frobeniusG%*gausselimG%*gaussjordG
+%(geneqnsG%*genmatrixG%%gradG%)hadamardG%(hermiteG%(hessianG%(hilbertG
+%+htransposeG%)ihermiteG%*indexfuncG%*innerprodG%)intbasisG%(inverseG%
+'ismithG%*issimilarG%'iszeroG%)jacobianG%'jordanG%'kernelG%*laplacianG
+%*leastsqrsG%)linsolveG%'mataddG%'matrixG%&minorG%(minpolyG%'mulcolG%'
+mulrowG%)multiplyG%%normG%*normalizeG%*nullspaceG%'orthogG%*permanentG
+%&pivotG%*potentialG%+randmatrixG%+randvectorG%%rankG%(ratformG%$rowG%
+'rowdimG%)rowspaceG%(rowspanG%%rrefG%*scalarmulG%-singularvalsG%&smith
+G%,stackmatrixG%*submatrixG%*subvectorG%)sumbasisG%(swapcolG%(swaprowG
+%*sylvesterG%)toeplitzG%&traceG%*transposeG%,vandermondeG%*vecpotentG%
+(vectdimG%'vectorG%*wronskianG" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 28 "b := array([[9],[-13],[5]]);" }}{PARA 0 "> " 0 "" {MPLTEXT 1 
+0 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"bG-%'matrixG6#7%7#\"\"*7#
+!#87#\"\"&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "ATA := evalm(
+transpose(A) &* A);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$ATAG-%'matri
+xG6#7$7$\"\"*!\"$7$F+\"#E" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+14 "cholesky(ATA);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%'matrixG6#7$7$
+\"\"$\"\"!7$!\"\"\"\"&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "L
+ := cholesky(ATA);" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>%\"LG-%'matrixG6#7$7$\"\"$\"\"!7$!\"\"\"\"&" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "ATb := evalm(transpose(A) &
+* b);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$ATbG-%'matrixG6#7$7#\"#:7#
+\"#?" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 30 "y := evalm(inverse(L) &* ATb);" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#>%\"yG-%'matrixG6#7$7#\"\"&F)" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 39 "x := evalm(inverse(transpose(L)) &* y);" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"xG-%'matrixG6#7$7#\"\"#7#\"\"\"
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 20 "br := evalm(A &* x);" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#brG-%'matrixG6#7%7#\"\"(7#\"\"\"7#
+\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "bn := evalm(b-br);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#bnG-%'matrixG6#7%7#\"\"#7#!#97#
+\"\"&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "evalm(transpose(bn
+) &* br);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%'matrixG6#7#7#\"\"!" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}
+{MARK "1 1 0" 34 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 
+2 33 1 1 }

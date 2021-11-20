@@ -1,0 +1,98 @@
+(NOTE: MAKE SURE ALL QUESTION MARKS ARE REMOVED!)
+
+The YAMS class creates a new YAMSGui object and invokes its 'start'.
+
+The 'start' method initially attempts to read in a list of files which should be displayed in the file selector window. 'SetupGui' is then called which creates and initializes various groups of swing components. These groups are formed by their logical roles within the application. The initialization and functionality of each of them is explained below. 
+
+Each group is encapsulated in a 'YAMSPanel', a subclass of Swing's JPanel class. And each has its own suitable layout defined using Java's Layout Managers. Also, they all need to have access to each other. To avoid passing substantial numbers of parameters between classes, the YAMSGui itself is passed and the necessary interactions can done via it.
+
+File Selector
+-------------
+A JList is used to display all files the user wishes to have open. The actual storage of these files is in a list of type 'DefaultListModel'. A ScrollPane is required for this JList should the user have more files open than can be displayed in a single view.
+
+A sub-panel ('buttonPanel') is required for the 4 buttons associated with manipulation of the files. These are JButtons.
+
+Some of the buttons' functionalities are not applicable to the initial state of the application, and are thus disabled on creation. However, a ListController listens for any changes and enables/disables the buttons accordingly.
+
+The public methods 'addFile' and 'initFileList' are indirectly invoked (i.e. via the YAMSGui's public methods) by the ButtonController in the event of a button click. 
+
+
+Statistics Reporter
+-------------------
+
+Jlabels are created for each of the statistics of interest. A public method 'update' is called whenever it is appropriate to update these statistics. Since there is a separate set of statistics for every program being run, it is necessary to change the LineList to that associated with the particular program. This is possible using the 'setSourceCode' method.
+
+Also included is a JButton which launches the graphs window (see below). Rather than have a separate class for handling clicks of this button, the StatisticsPanel class itself implements the ActionListener.
+
+Graphs Popup Window
+-------------------
+
+Two panels are created and added to this JFrame, and the JTabbedPane controls the mutually exclusive visibility of them. Both panels contain a JEditorPane. The JEditorPane has the advantage of the ability to render HTML text, unlike JTextArea. Thus bar charts can be displayed using simple image tags with dimensions which reflect the statistics of interest.
+
+The Register Graphs panel is passed the processor itself as a parameter on creation as it needs to obtain data from both the Statistics Manager and Register Manager, both of which are accessible via the processor. The 'render' method accumulates the html code generated and this is set as the JEditorPane text at the end of the constructor.
+
+The Line Access Graph Panel is also passed the processor, but also requires access to the individual instructions of a program and so is passed the LineList corresponding to that program. The 'render' method iterates through the LineList and generates the code of an HTML table with bars reflecting the execution frequency of each line. Note that directives, a subclass of an instruction in our implementation, are omitted as they are of no interest to the user when it comes to compiler optimization.
+
+
+
+Program code
+-------------
+
+This panel consists of two JPanels and one JLabel.
+
+The label simply indicates whether the processor is active or idle. This is changed using the 'setProcessorStatus' method.
+
+The first sub panel is to hold the buttons which control execution of a program. Again, the buttons must be disabled until a program is loaded. Each button has the 'ProgramCodeButtonController' action listener associated with it. This listener invokes processor operations via the processor handler, accessed through the YAMSGui controller itself. The panel also contains the JSlider, with a 'SlideController' subscribing to it. When this slider is moved, its new value is set also via the YAMSGui and has the consequence of the processor running with a greater/lesser intra-instruction delay.
+
+Only when the 'setSourcecode' method is called does the second panel become populated with a JTable of instructions and breakpoints. The internal modelling of the table is handled by the BreakPointTable class, an extension of the AbstractTableModel given in the Swing package. Breakpoint setting is handled by 'BreakPointTableController' which listens for changes to the state of the group of checkboxes. On checking or unchecking any of the boxes, the BreakPointTable is updated. This  panel requires a JScrollPane so that all lines of a long program can be viewed.
+
+
+
+Register contents
+-----------------
+
+Very little is done on creation of the Registers panel, as it can only display information when the processor has been initialized (which takes place later in YAMSGui.
+
+When it is necessary to initialize the panel, a new sub-panel is created and holds a JTable and JScrollPane. Again, it is necessary to have an internal model of the table.
+
+The table is notified of changes to any registers when the 'regChanged' method is called.
+
+Data segment
+-------------
+
+Much like the Registers panel, little can be displayed here until a processor has been created.
+
+Unlike anywhere else in the application, an existing set of classes is used to visualize the data segment. These classes are found in the sub-package GUI.hexTable.
+
+The 'memoryChanged' method updates the values both in the internal table model and the visual table itself.
+
+
+Console
+-------
+
+A new JTextArea area is created, with a JScrollPane attached.
+
+External classes may only write to this JTextArea by accessing the 'ConsoleStream' (an extension of Java's OutputStream class) which is available through the public access method 'getPrintStream', and calling its public method 'write'.
+
+
+Other panels
+------------
+
+A JMenuBar is created with 3 categories: a 'File' menu for simple file operations and exiting the application; a 'Processor' menu for changing the processor state and visualizing it; and a 'Help' menu for accessing information of interest to the user.
+
+The 'MenuHandler' action listener, and inner class of YAMSGui, invokes the necessary actions when any of these menu items are selected.
+
+
+Having created these panels, set their size and positioned them appropriately within the root JFrame the YAMSGui, as mentioned, is responsible for managing ongoing activities throughout the application instance's lifetime. These include user input activities such as adding, removing and loading files, adding/removing breakpoints as well as controlling the processor's actions. As interactions with the processor are more complex, they are delegated to another class, the 'ProcessorHandler'.
+
+Processor Handler
+-------------
+
+This is a thread which is run in parallel to the underlying processor of the application. The thread runs in an infinite loop, each time checking whether the user has changed anything in the GUI and instructing the processor accordingly. It may tell the processor to run an instruction, skip an instruction, set a delay between instruction execution and determine the state of the processor.
+
+
+
+
+
+
+

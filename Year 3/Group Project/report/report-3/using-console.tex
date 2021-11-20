@@ -1,0 +1,153 @@
+\section{Using YAMS - Console Version}
+\subsection{Command Line Options}
+You can run YAMS from the command line by navigating to the directory where the executable is held, and typing  YAMS -console, along with the following options:
+
+\begin{verbatim}
+YAMS [OPTIONS] [FILENAMES]
+\end{verbatim}
+
+\begin{verbatim}
+[Options]
+\end{verbatim}
+
+\begin{verbatim}
+-s, --stats
+\end{verbatim}Outputs statistics from the run of the program
+
+\begin{verbatim}
+-o, --output <filename>
+\end{verbatim}Outputs statistics to a specified file
+
+\begin{verbatim}
+-v, --verbose
+\end{verbatim}Runs the program in verbose mode. Recommended only for advanced users or debugging as this can output a lot of text.
+
+\begin{verbatim}
+-if <file>	
+\end{verbatim}Input a list of files - the proceeding filenamevis a text file containing a list of files that should be executed by the simulator.
+
+\begin{verbatim}
+[Filenames]
+\end{verbatim}Input files - One or more input files can be specified to be run by YAMS. If more than one is specified, they will be run in turn and the output for each displayed in the console window.
+
+
+
+Examples:
+\begin{verbatim}
+YAMS -console --stats -if filelist.txt
+YAMS -console file1.asm file2.asm
+\end{verbatim}
+
+\subsubsection{Handy Hint}
+If there is too much text output on the screen, you can redirect the output to go to a seperate file so you can look at it in a text editor instead. Do this by using the output redirect character '>'.  In the example above, this would be:
+
+\begin{verbatim}
+YAMS -console --stats -if filelist.txt > outputfile.txt
+\end{verbatim}
+
+\subsection{Interpreting the Output}
+\subsubsection{Standard Mode}
+When running in the console mode on a single file, YAMS will first parse the file to make sure it is syntactically correct and all the instructions are valid.  If an error is encountered, the type of error and line number in the assembly program where it was found are reported on the screen.  For example:
+
+\begin{verbatim}
+=====STARTING NEW FILE=====
+Input File: square.asm
+Parser Error:Parse error at line: 14
+Unsupported Instruction 'lkj'
+\end{verbatim}
+
+If no errors are found, the output by YAMS will just be the same as the output of the program. An example run is shown below:
+
+\begin{verbatim}
+=====STARTING NEW FILE=====
+Input File: square.asm
+1111111111
+0111111111
+0011111111
+0001111111
+0000111111
+0000011111
+0000001111
+0000000111
+0000000011
+0000000001
+0000000000
+\end{verbatim}
+
+\subsubsection{Statistics Mode}
+When the statistics option is turned on, YAMS will also output the following statistics after the file has been executed :
+- How many times each line of the program was executed
+- How many times each instruction was used
+- How many times each register was used
+- The total number of CPU cycles required
+- The total memory required.
+
+An example of the output is show below:
+
+\begin{verbatim}
+=====STARTING NEW FILE=====
+Input File: EvalExpr.asm
+1234		<--Output of the program
+
+==============
+  STATISTICS
+==============
+
+------------LINES EXECUTED------------
+
+Line                                  Count   
+9    li $t0,10:                         1
+10    sw $t0,_x:                        1
+11    li $t6,1:                         1
+12    lw $t7,_x:                        1
+13    mul $t5,$t6,$t7:                  1
+14    li $t6,2:                         1
+15    add $t4,$t5,$t6:                  1
+16    lw $t5,_x:                        1         Number of
+17    mul $t3,$t4,$t5:                  1    <--  times each
+18    li $t4,3:                         1         line executed
+19    add $t2,$t3,$t4:                  1
+20    lw $t3,_x:                        1
+21    mul $t1,$t2,$t3:                  1
+22    li $t2,4:                         1
+23    add $t0,$t1,$t2:                  1
+24    sw $t0,_x:                        1
+25    lw $a0,_x:                        1
+26    li $v0,1:                         1
+27    syscall:                          1
+28    la $a0,_newline:                  1
+29    li $v0,4:                         1
+30    syscall:                          1
+31   # exit call to Stop the program
+32    li $v0,10:                        1
+33    syscall:                          1
+
+
+-----------INSTRUCTIONS USED-----------
+
+Instr   Count
+ADD:    2
+ADDI:   9
+BEQ:    5                    Number of
+BNE:    3               <--  times each
+LUI:    1                    instruction used.
+LW:     7
+ORI:    6
+SW:     3
+
+------------REGISTERS USED------------
+
+Reg   Count
+$0:   27
+$1:   4              Number of
+$2:   4         <--  times each
+$4:   4              register used
+$8:   2
+$9:   8
+$10:  2
+
+CPU CYCLES: 313
+
+MEMORY USED: 65 WORDS
+\end{verbatim}
+

@@ -1,0 +1,92 @@
+goalState = [[1,2,3],[8,h,4],[7,6,5]]
+InitialState = [ [2, 8, 3], [1, 6, 4], [7, h, 5] ]
+Paths = [[(0,[[2,8,3],[1,6,4],[7,h,5]])]]
+
+start_search(TestNo, Heuristic, MaxDepth ) :-
+  initial(TestNo, InitialState ),
+  goal( GoalState ),
+  initial_tree( depth,[ [2, 8, 3], [1, 6, 4], [7, h, 5] ], Paths ),  % for you to write
+ search( depth, 3, 0, [[(0,[[2,8,3],[1,6,4],[7,h,5]])]], [[1,2,3],[8,h,4],[7,6,5]], Solution, TotalNodes ),
+  displaySolution(Solution, TotalNodes).
+
+search( depth, 3, 0, [[(0,[[2,8,3],[1,6,4],[7,h,5]])]], [[1,2,3],[8,h,4],[7,6,5]], Solution, TotalNodes ),
+search( Heuristic, MaxDepth, NodesSoFar, [FirstPath|Paths], Goal, SolutionPath,
+  TotalNodes ) :-
+  extend( Heuristic, 3, [(0,[[2,8,3],[1,6,4],[7,h,5]])], ChildPaths, [[1,2,3],[8,h,4],[7,6,5]]),
+  merge( [[(-3,[[2,8,3],[1,6,4],[h,7,5]]),[[2,8,3],[1,6,4],[7,h,5]]],[(-2,[[2,8,3],[1,h,4],[7,6,5]]),[[2,8,3],[1,6,4],[7,h,5]]],[(-1,[[2,8,3],[1,6,4],[7,5,h]]),[[2,8,3],[1,6,4],[7,h,5]]]],[],NewPaths),
+  NodeCount is NodesSoFar + 1,
+  write_extension( [(0,[[2,8,3],[1,6,4],[7,h,5]])], ChildPaths ),
+  search(depth, 3, 1, [[(-3,[[2,8,3],[1,6,4],[h,7,5]]),[[2,8,3],[1,6,4],[7,h,5]]],[(-2,[[2,8,3],[1,h,4],[7,6,5]]),[[2,8,3],[1,6,4],[7,h,5]]],[(-1,[[2,8,3],[1,6,4],[7,5,h]]),[[2,8,3],[1,6,4],[7,h,5]]]], [[1,2,3],[8,h,4],[7,6,5]], SolutionPath,TotalNodes ).
+
+
+
+breadthMap(4,1).
+breadthMap(3,2).
+breadthMap(2,3).
+breadthMap(1,4).
+
+constantBreadthMap(ParentScore,Constant)	:-
+%This function works out the base of the scores of the children to ParentScore
+%for breadth first search
+	Constant1 is ParentScore-1,
+	Constant2 is Constant1 * 4,
+	Constant is Constant2 + ParentScore + 4 - ParentScore.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+extend(Heuristic,MaxDepth,[(Score,FirstPos)|FirstPathRest],ChildPaths,Goal)	:-
+	count([(Score,FirstPos)|FirstPathRest],PathDepth),
+	PathDepth < MaxDepth,
+	findall(X,X one_step_extension_of [(Score,FirstPos)|FirstPathRest],ChildPaths),
+	addscore(Heuristic,ChildPaths,Score).
+extend(Heuristic,MaxDepth,APath,ChildPaths,Goal)	:-
+	count(APath,MaxDepth1),
+	MaxDepth1 is MaxDepth-1.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+misplaced([[4,3,2],[8,h,1],[7,6,5]],X).
+
+initial_tree(tiles_misplaced,[[4,3,2],[8,h,1],[7,6,5]],A).
+
+
+addscore(tiles_misplaced,[[(A,[[2,8,3],[1,6,4],[h,7,5]]),[[2,8,3],[1,6,4],[7,h,5]]]],_).
+
+extend(tiles_misplaced,9,[(A,[[2,8,3],[1,h,4],[7,6,5]]),[[2,8,3],[1,6,4],[7,h,5]]],ChildPaths,_ ).
+
+[
+	[(3,[[2,8,3],[h,1,4],[7,6,5]]),[[2,8,3],[1,h,4],[7,6,5]],[[2,8,3],[1,6,4],[7,h,5]]],
+	[(3,[[2,h,3],[1,8,4],[7,6,5]]),[[2,8,3],[1,h,4],[7,6,5]],[[2,8,3],[1,6,4],[7,h,5]]],
+	[(4,[[2,8,3],[1,4,h],[7,6,5]]),[[2,8,3],[1,h,4],[7,6,5]],[[2,8,3],[1,6,4],[7,h,5]]]
+]
+
+start_search(TestNo, Heuristic, MaxDepth ) :-
+  initial(TestNo, [[1,2,3],[8,4,h],[7,6,5]] ),
+  goal( [[1,2,3],[8,h,4],[7,6,5]] ),
+  initial_tree( tiles_misplaced, [[1,2,3],[8,4,h],[7,6,5]], Paths ),  % for you to write
+  search( tiles_misplaced, 9, 0,  [[(1,[[1,2,3],[8,4,h],[7,6,5]])]], [[1,2,3],[8,h,4],[7,6,5]], Solution, TotalNodes ),
+  displaySolution(Solution, TotalNodes).
+
+search( tiles_misplaced, 9, 0,  [[(1,[[1,2,3],[8,4,h],[7,6,5]])]], [[1,2,3],[8,h,4],[7,6,5]], Solution, TotalNodes ),
+search( Heuristic, MaxDepth, NodesSoFar, [FirstPath|Paths], Goal, SolutionPath,
+  TotalNodes ) :-
+  extend(tiles_misplaced, 9, [(1,[[1,2,3],[8,4,h],[7,6,5]])], ChildPaths, [[1,2,3],[8,h,4],[7,6,5]]),% for you to write
+  merge(
+	[
+		[(0,[[1,2,3],[8,h,4],[7,6,5]])],
+		[(2,[[1,2,h],[8,4,3],[7,6,5]])],
+		[(2,[[1,2,3],[8,4,5],[7,6,h]])]
+	],[],NewPaths). NodeCount is NodesSoFar + 1,
+  write_extension( FirstPath, ChildPaths ),
+  search(Heuristic, MaxDepth, NodeCount, NewPaths, Goal, SolutionPath,
+  TotalNodes ).
+
+
+
+
+
+
+
+
+Pos = ,
+	man_dist(1,Pos,Dist1),
+	man_dist(2,[[2,1,3],[4,h,8],[7,6,5]],Dist2)
+
+addscore(manhattan,[[(A,[[2,8,3],[1,6,4],[h,7,5]]),[[2,8,3],[1,6,4],[7,h,5]]]],_).

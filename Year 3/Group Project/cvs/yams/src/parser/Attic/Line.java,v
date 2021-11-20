@@ -1,0 +1,232 @@
+head	1.4;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.4
+date	2003.11.10.10.57.51;	author qq01;	state dead;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.08.02.40.41;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.06.18.00.15;	author ss401;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.06.17.04.29;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 06-Nov-2003
+ */
+package parser;
+
+/**
+ * Models a line of code in a MIPS program that is input to the program. 
+ * A line consists of a line number, an optional Label and an optional Instruction.
+ * The latter two are optional because the line could be blank by the user's decision
+ * 
+ * @@author qq01
+ */
+public class Line {
+	private Label label;
+	private int lineNumber;
+	private Instruction instruction;
+
+	/**
+	 * Creates a Line with no label or instruction
+	 * 
+	 * @@param lineNumber line number of the line
+	 */
+	public Line(int lineNumber) {
+		this.lineNumber = lineNumber;
+	}
+
+	/**
+	 * Creates a Line with a label only
+	 * 
+	 * @@param lineNumber line number of the line
+	 * @@param label the label
+	 */
+	public Line(int lineNumber, Label label) {
+		this.lineNumber = lineNumber;
+		this.label = label;
+	}
+	
+	/**
+	 * Creates a line with an instruction only
+	 * 
+	 * @@param lineNumber line number of the line
+	 * @@param instruction the instruction
+	 */
+	public Line(int lineNumber, Instruction instruction) {
+			this.lineNumber = lineNumber;
+			this.instruction = instruction;
+	}
+
+	/**
+	 * creates a Line with a label AND an instruction. Note that in theory it is possible that a line
+	 * has both a label and a instruction.
+	 * 
+	 * @@param lineNumber the line number
+	 * @@param label the label
+	 * @@param instruction the instruction
+	 */
+	public Line(int lineNumber, Label label, Instruction instruction) {
+		this.lineNumber = lineNumber;
+		this.label = label;
+		this.instruction = instruction;
+	}
+
+	
+
+	/** 
+	 * @@return the instruction in this line
+	 */
+	public Instruction getInstruction() {
+		return instruction;
+	}
+
+	/**
+	 * @@return the line number of the line
+	 */
+	public int getLineNumber() {
+		return lineNumber;
+	}
+
+	/**
+	 * Returns the label object. Note that a <code>null</code> is returned if no label is present
+	 * 
+	 * @@return the label
+	 */
+	public Label getLabel() {
+		return label;
+	}
+
+	/**
+	 * whether this line contains a label
+	 * 
+	 * @@return <code>true</code> if contails a label, <code>false</code> if not
+	 */
+	public boolean containLabel() {
+		return label == null;
+	}
+	
+	/**
+	 * whether this line contains an instruction
+	 * 
+	 * @@return <code>true</code> it contains an instruction, <code>false</code> if it doesn't
+	 */
+	public boolean containsInstruction(){
+		return instruction == null;
+	}
+
+}
+@
+
+
+1.3
+log
+@updated documentation of this class
+@
+text
+@@
+
+
+1.2
+log
+@6/11/03 - Simple methods implemented and javadocked
+@
+text
+@d10 1
+d20 2
+a21 1
+	 * @@param lineNumber
+d29 3
+a31 2
+	 * @@param lineNumber
+	 * @@param l
+d33 1
+a33 1
+	public Line(int lineNumber, Label l) {
+d35 1
+a35 1
+		this.label = l;
+d40 3
+a42 2
+	 * @@param lineNumber
+	 * @@param i
+d44 1
+a44 1
+	public Line(int lineNumber, Instruction i) {
+d46 1
+a46 1
+			this.instruction = i;
+d50 6
+a55 4
+	 * Creates a Line with a label AND an instruction
+	 * @@param lineNumber
+	 * @@param l
+	 * @@param i
+d57 1
+a57 1
+	public Line(int lineNumber, Label l, Instruction i) {
+d59 2
+a60 2
+		this.label = l;
+		this.instruction = i;
+d65 2
+a66 2
+	/**
+	 * @@return
+d73 1
+a73 1
+	 * @@return
+d80 3
+a82 2
+	 * Returns the label object. Note that a null is returned if no label is present
+	 * @@return
+d88 5
+d96 6
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d7 3
+d17 4
+d25 5
+d34 10
+d45 6
+d57 1
+a57 4
+	public Line(int lineNumber, Instruction i) {
+		this.lineNumber = lineNumber;
+		this.instruction = i;
+	}
+d74 1
+d83 3
+@
+

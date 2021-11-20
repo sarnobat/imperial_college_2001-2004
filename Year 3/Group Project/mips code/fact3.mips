@@ -1,0 +1,25 @@
+# fact3.mips
+# Given a number n in $1, calculate n!.
+# Return the result in $1.
+# No other registers are modified.
+#
+# Register Usage:
+# $1 - Accumulates result
+# $2 - Counter of current value to multiply
+
+.globl fact3
+
+fact3:  addi $30, $30, -4
+        sw $2, 0($30)
+
+        add $2, $1, $0     # Copy n to $2
+        addi $1, $0, 1     # Initialize result to 1
+        beq $0, $2, done   # If none left, finish
+loop:   mult $1, $2        # Multiply result by counter
+        mflo $1            # Get product from Lo register
+        addi $2, $2, -1    # Decrement counter
+        bne $0, $2, loop   # If more to do, loop
+
+done:   lw $2, 0($30)
+        addi $30, $30, 4
+        jr $31             # Return to caller

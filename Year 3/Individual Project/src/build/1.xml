@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ps_db>
+  <part colour="red" price="30.0" pno="100" />
+  <part colour="green" price="10.0" pno="103" />
+  <supplier sno="50J" />
+</ps_db>
+

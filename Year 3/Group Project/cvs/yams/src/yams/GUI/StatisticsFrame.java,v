@@ -1,0 +1,465 @@
+head	1.16;
+access;
+symbols
+	yams-final-19-12-03:1.16
+	yams-release2-17-12-03:1.16
+	yams-release-17-12-03:1.16;
+locks; strict;
+comment	@# @;
+
+
+1.16
+date	2003.12.16.15.39.57;	author ss401;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.12.16.02.07.03;	author ajb101;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.12.15.19.46.40;	author ss401;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.12.15.15.43.51;	author ajb101;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.14.19.10.36;	author ss401;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.13.15.39.16;	author ss401;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.12.18.44.10;	author ss401;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.11.20.04.18;	author ss401;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.10.03.02.45;	author ajb101;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.02.14.42.54;	author ajb101;	state dead;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.30.17.17.38;	author ajb101;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.29.20.12.27;	author ajb101;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.29.18.43.32;	author ss401;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.23.20.54.27;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.23.15.47.46;	author ss401;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.21.17.55.58;	author ss401;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@package yams.GUI;
+
+import java.awt.Dimension;
+
+import javax.swing.*;
+
+//import yams.GUI.graphs.InstructionUsageGraphs;
+import yams.GUI.graphs.InstructionUsageGraphPanel;
+import yams.GUI.graphs.LineAccessGraphPanel;
+import yams.GUI.graphs.RegisterGraphPanel;
+import yams.parser.LineList;
+import yams.processor.*;
+
+/**
+ * Separate window containing two graphs, separated by tabbed panels  
+ */
+public class StatisticsFrame extends JFrame {
+
+	// window elements
+	private JTabbedPane tabbedPane;
+	private JPanel registerPanel;
+	private JPanel lineAccessPanel;
+	private JPanel instructionUsagePanel;
+	
+	// bar colors
+	public static final String RED = "D03100";
+	public static final String GREEN = "88BE00";
+	public static final String BLUE = "0082FC";
+	public static final String ORANGE = "FE6600";
+	public static final String PURPLE = "B98CFC";
+	public static final String YELLOW = "E9D042";
+
+	public final int WINDOW_HEIGHT = 330;
+	//public final int HEIGHT_BUFFER = 300;
+	public final int WINDOW_WIDTH = 300;
+	//public final int WIDTH_BUFFER = 100;
+	public String preAmble =
+		"<head><STYLE TYPE=text/css>.regname{valign: top;}td{padding:0px; text-align: center}body{ font-size: 10px}</STYLE></head>";
+
+	public StatisticsFrame(Processor p, LineList l) {
+
+		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
+		tabbedPane = new JTabbedPane();
+		registerPanel = new RegisterGraphPanel(this, p);
+		lineAccessPanel = new LineAccessGraphPanel(this, p, l);
+		instructionUsagePanel = new InstructionUsageGraphPanel(this, p);
+
+		tabbedPane.addTab("Register Usage", registerPanel);
+		tabbedPane.add("Line Access Frequency", lineAccessPanel);
+		tabbedPane.addTab("Instruction Usage", instructionUsagePanel);
+
+		this.setTitle("Statistics Graphs");
+		this.setResizable(false);
+		//this.setSize(new Dimension(WINDOW_WIDTH + WIDTH_BUFFER, WINDOW_HEIGHT + HEIGHT_BUFFER));
+		this.setSize(new Dimension(WINDOW_WIDTH, WINDOW_HEIGHT));
+
+		this.getContentPane().add(tabbedPane);
+
+		this.pack();
+
+		this.show();
+
+	}
+
+}
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d8 3
+a10 2
+import yams.GUI.graphs.LineAccessGraphs;
+import yams.GUI.graphs.RegisterGraphs;
+d25 8
+d34 1
+a34 1
+	public final int HEIGHT_BUFFER = 300;
+d36 5
+a40 2
+	public final int WIDTH_BUFFER = 100; 
+	public String preAmble = "<head><STYLE TYPE=text/css>.regname{valign: top;}td{padding:0px; text-align: center}body{ font-size: 10px}</STYLE></head>";
+a41 2
+	public StatisticsFrame(Processor p,LineList l) {
+				
+d43 1
+a43 1
+		
+d45 4
+a48 4
+		registerPanel = new RegisterGraphs(this,p);
+		lineAccessPanel = new LineAccessGraphs(this,p,l);
+//		instructionUsagePanel = new InstructionUsageGraphs(this,p);
+		
+d51 2
+a52 2
+		tabbedPane.addTab("Instruction Usage",instructionUsagePanel);
+		
+d55 3
+a57 2
+		this.setSize(new Dimension(WINDOW_WIDTH+WIDTH_BUFFER,WINDOW_HEIGHT+HEIGHT_BUFFER));
+		
+d59 1
+a59 1
+		
+d61 1
+a61 1
+		
+d63 1
+a63 1
+		
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d7 1
+a7 1
+import yams.GUI.graphs.InstructionUsageGraphs;
+d37 1
+a37 1
+		instructionUsagePanel = new InstructionUsageGraphs(this,p);
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d7 1
+d21 2
+a22 1
+	private JPanel instructionPanel;
+d36 2
+a37 1
+		instructionPanel = new LineAccessGraphs(this,p,l);
+d39 3
+a41 2
+		tabbedPane.addTab("Registers", registerPanel);
+		tabbedPane.add("Instructions", instructionPanel);
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d13 1
+a13 4
+ * 
+ * @@author ss401
+ * Separate window containing two graphs, separated by
+ * tabbed panels  
+a49 1
+
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d32 1
+a32 5
+		
+		//TODO: Can't remember what this is for
+		/*p.statisticsManager.getLineCount(5);
+		l.getLine(5).getOriginal();*/
+		
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d12 6
+d27 1
+a27 1
+	public final int WINDOW_WIDTH = 400;
+d29 1
+a29 1
+	public String preAmble = "<head><STYLE TYPE=text/css>td{padding:0px; text-align: center}body{ font-size: 10px}</STYLE></head>";
+a31 1
+		//TODO: get statistics manager from p
+d33 1
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d23 1
+a23 1
+	public String preAmble = "<head><STYLE TYPE=text/css>td{padding:0px}body{ font-size: 10px}</STYLE></head>";
+@
+
+
+1.8
+log
+@yet more work on gui - including addition of a HexTable
+@
+text
+@d3 2
+d7 3
+d18 6
+d25 5
+a29 1
+	public StatisticsFrame(Processor p) {
+d34 2
+a35 2
+		registerPanel = new JPanel();
+		instructionPanel = new JPanel();
+d37 2
+a38 1
+		// TODO: create graphs on these panels
+d40 3
+a42 2
+		tabbedPane.addTab("Registers", registerPanel);
+		tabbedPane.addTab("Instructions", instructionPanel);
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@a0 6
+/*
+ * Created on 21-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+d3 1
+a3 2
+import javax.swing.BoxLayout;
+import javax.swing.JLabel;
+a4 1
+import yams.*;
+d7 26
+a32 37
+/**
+ * @@author ss401
+ *
+ */
+public class StatisticsFrame extends YamsInternalFrame {
+
+	public StatisticsFrame(int width,int height, YAMSGui controller){
+		super(width,height,controller);
+		setTitle("Statistics");
+		
+		int time = 5;
+		int instructionCount = 20000;
+		int regCount = 45;
+		
+		//TODO: Can you have a JLabel that spans multiple lines?
+		/*JLabel l = new JLabel(
+			"Time for program to run = " + time + " light years\n" +
+			"\nNumber of instructions = " + instructionCount + 
+			"\nRegisters used = " + regCount+
+			"Conclusion: get a new compiler.");*/
+		
+		/*JLabel l1 = new JLabel("Time for program to run = " + time + " light years");
+		JLabel l2 = new JLabel("Number of instructions = " + instructionCount);
+		JLabel l3 = new JLabel("Registers used = " + regCount);
+		JLabel l4 = new JLabel("Conclusion: get a new compiler.");
+			
+		getContentPane().setLayout(new BoxLayout(getContentPane(),BoxLayout.Y_AXIS));
+		getContentPane().add(l1);
+		getContentPane().add(l2);
+		getContentPane().add(l3);
+		getContentPane().add(l4);*/
+		
+		String display = "<html><table>" +					"<tr><td>Time for program to run</td><td><font color=green>" + time + " light years</font></td></tr>" +					"<tr><td>Number of instructions</td><td><font color=green>" + instructionCount + "</font></td></tr>" +
+					"<tr><td>Registers used</td><td><font color=green>" + regCount + "</font></td></tr>"+
+				"</table></html>";
+		JLabel l1 = new JLabel(display);
+		getContentPane().add(l1); 
+d34 1
+@
+
+
+1.6
+log
+@passed controller to each frame instead of processor, and updated the console version
+@
+text
+@@
+
+
+1.5
+log
+@added passing a reference to the processor to each internal frame, and added buttons to the file list
+@
+text
+@d12 1
+d21 2
+a22 2
+	public StatisticsFrame(int width,int height, Processor processor){
+		super(width,height,processor);
+@
+
+
+1.4
+log
+@Added progress marker to Program Code frame; added event handler for Execution control
+@
+text
+@d12 1
+d20 2
+a21 2
+	public StatisticsFrame(int width,int height){
+		super(width,height);
+@
+
+
+1.3
+log
+@fixed packages
+@
+text
+@d34 1
+a34 1
+		JLabel l1 = new JLabel("Time for program to run = " + time + " light years");
+d43 7
+a49 1
+		getContentPane().add(l4);
+@
+
+
+1.2
+log
+@Added several components to internal frames
+@
+text
+@d7 1
+a7 1
+package yams.src.yams.GUI;
+@
+
+
+1.1
+log
+@created new classes for each internal window
+@
+text
+@d9 3
+d22 22
+@
+

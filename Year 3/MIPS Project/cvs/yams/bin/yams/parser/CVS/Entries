@@ -1,0 +1,26 @@
+/AddressingOperand.java/1.5/Tue Dec  2 13:34:03 2003//
+/Directive.java/1.2/Tue Dec  2 13:34:04 2003//
+/ImmediateOperand.java/1.5/Tue Dec  2 13:34:03 2003//
+/JInstruction.java/1.9/Tue Dec  2 13:34:04 2003//
+/Label.java/1.3/Tue Dec  2 13:34:03 2003//
+/LabelOperand.java/1.8/Tue Dec  2 13:34:04 2003//
+/LexerException.java/1.3/Tue Dec  2 13:34:03 2003//
+/LineList.java/1.4/Tue Dec  2 13:34:03 2003//
+/Operand.java/1.7/Tue Dec  2 13:34:03 2003//
+/ParseException.java/1.5/Tue Dec  2 16:53:25 2003//
+/RegisterOperand.java/1.5/Tue Dec  2 13:34:03 2003//
+/package.html/1.1/Mon Nov 10 10:57:49 2003//
+/registers.xml/1.1/Tue Nov 11 15:23:00 2003//
+D/Schemas////
+D/xml////
+D/xslt////
+/IInstruction.java/1.15/Tue Dec  9 17:09:22 2003//
+/Lexer.java/1.18/Tue Dec  9 17:09:22 2003//
+/Line.java/1.9/Tue Dec  9 17:09:22 2003//
+/StringOperand.java/1.3/Tue Dec  9 17:09:23 2003//
+/My.uml2/1.1/Wed Dec 10 12:54:05 2003/-kb/
+/parser.ucd/1.1/Wed Dec 10 12:54:05 2003/-kb/
+/Instruction.java/1.25/Mon Dec 15 19:39:01 2003//
+/Parser.java/1.37/Wed Dec 17 14:43:22 2003//
+/RInstruction.java/1.9/Wed Dec 17 14:43:22 2003//
+/Token.java/1.4/Wed Dec 17 14:43:22 2003//

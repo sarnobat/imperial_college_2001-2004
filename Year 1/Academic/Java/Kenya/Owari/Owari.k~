@@ -1,0 +1,198 @@
+const int  numberOfBowls = 12;
+const int  numberOfStones = 4;
+
+const int totalNumberOfStones = 48;
+const int winningNumber =  24;
+const int bowlsOnOneSide = 6;
+
+/////////////////Initialize Board/////////////////
+
+int [ ] InitialiseBoard(int [ ] board)
+{
+// Sets up board at start of game
+    int i;
+    for (i = 0 ; i < numberOfBowls; i++)
+    {
+    board [i] = numberOfStones;
+    }
+    return board;
+}
+
+/////////////////Receive move/////////////////
+
+int GetMove()
+{
+// returns a move input from keyboard
+//assertion statement making sure GetMove is between 1 and 12
+int move = readInt();
+println (move);
+return move;
+}
+
+/////////////////Print Move/////////////////
+
+void PutMove (int player, int bowlChosen)
+{
+// displays a move
+println ("Player: " + player + " has chosen bowl " + bowlChosen);
+}
+
+/////////////////Display Scores and board/////////////////
+
+void DisplayScoreAndBoard ( int [ ] board, int [ ] player )
+{
+// displays board and scores
+int i;
+println ("Player 2: " + player [1] + " stones taken");
+
+for (i = numberOfBowls -1; i >=  numberOfBowls / 2; i--)
+{
+    print (" " + board [i] + "\t" );
+}
+println("");
+for (i = numberOfBowls ; i >  numberOfBowls / 2; i--)
+{
+    print ( "(" +i  + ")" + "\t");
+}
+println("");
+println("");
+for (i = 1; i <= numberOfBowls / 2; i++)
+{
+    print ( "(" + i + ")" + "\t");
+}
+println("");
+for (i = 0; i < numberOfBowls / 2; i++)
+{
+    print (" " +  board [i] + "\t" );
+}
+println("");
+
+println ("Player 1: " + player [0] + " stones taken");
+}
+
+
+
+///////////////Can Player Move?//////////////////
+
+boolean CanMove (int player, int [ ] board)
+{
+	if (player == 1)
+	{
+		int i;
+		for (i = 0; i <(board.length)/2; i++)
+		{
+			if (board[i] != 0)
+			{
+				return true;
+			}
+		}
+	}
+
+	else
+	{
+		if (player == 2)
+			{
+				int j;
+				for (j=(board.length)/2;j<board.length;j++)
+				{
+					if (board[j] != 0)
+					{
+						return true;
+					}
+				}
+			}
+	}
+	return false;
+}
+
+///////////Switch Player///////////
+
+int SwitchPlayer (int player)
+{
+	player = player%2 + 1;
+	return player;
+}
+
+/////////////////DoMove/////////////////
+
+int DoMove (int [ ] board,int bowl,int playerno)
+
+{
+//put an assertion statements in here
+//to avoid selecting empty bowls
+	int stonespickedup = board[bowl];
+	board[bowl-1] = 0;
+
+	boolean capturable [12];
+	int k;
+	for (k=0;k<capturable.length;k++)
+	{
+		capturable[k] = false;
+	}
+
+	int j;
+	for (j=0;j<board.length;j++)
+	{
+		if (board[j]==1)
+		{
+			capturable[j] = true;
+		}
+
+	}
+
+	int stoneswon = 0;
+
+	int i;
+	for (i=bowl;i<bowl+stonespickedup;i++)
+	{
+
+		if (i > 12)
+		{
+			i = i%12-1;
+		}
+
+		board[i] = board[i] + 1;
+
+		if (capturable[i])
+		{
+			stoneswon = stoneswon + board[i];
+		}
+	}
+
+	return stoneswon;
+
+}
+
+/////////////////////////////////////////////////////////////////
+
+void main()
+{
+	int aBoard [numberOfBowls];
+	aBoard = InitialiseBoard(aBoard);
+	int [ ] playerscores  = {0,0};
+	DisplayScoreAndBoard(aBoard,playerscores);
+	int playerno = 2;
+
+	while (playerscores[0]<24 && playerscores[1]<24)
+	{
+		int bowl;
+		int oneplayerscore;
+		playerno = SwitchPlayer(playerno);
+		if (!CanMove(playerno,aBoard))
+		{
+			SwitchPlayer(playerno);	
+		}
+		println("Player " + playerno + ": Please make a move -> ");
+		bowl = GetMove();
+		PutMove(playerno,bowl);
+		playerscores[playerno-1] = playerscores[playerno-1] + DoMove(aBoard,bowl,playerno);
+		DisplayScoreAndBoard(aBoard,playerscores);
+	}
+	println("Player " + playerno + " wins");
+
+
+}
+
+/////////////////////////////////////////////////////////////////
+
+main();

@@ -1,0 +1,7 @@
+perm :: Int -> Int -> Int
+--pre:arguments must be positive
+perm n r
+	|r == 0 = 1
+	|r > n = error "r cannot be greater than n"
+	|n == n-r = 1
+	|otherwise = n * (perm (n-1) (r-1))

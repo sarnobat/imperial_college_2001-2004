@@ -1,0 +1,612 @@
+head	1.6;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2003.12.08.12.42.53;	author qq01;	state dead;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.15.18.00.39;	author qq01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.15.16.57.10;	author qq01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.15.03.40.01;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.12.01.33.34;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.49;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@deleted deprecated classes
+@
+text
+@/*
+ * Created on 2003-11-15
+ */
+package yams.parser;
+
+import java.util.Vector;
+
+/**
+ * @@author Qian Qiao(qq01)
+ * @@deprecated Replaced by class <code>Lexer</code>.
+ */
+public class MIPSLexer {
+
+	/**
+		 * colon token
+		 */
+		public static final int COLON = 0;
+
+		/**
+		 * comma token
+		 */
+		public static final int COMMA = 1;
+
+		/**
+		 * dollar token
+		 */
+		public static final int DOLLAR = 2;
+		/**
+		 * end of file
+		 */
+		public static final int EOF = 3;
+		/**
+		 * identifier Token
+		 */
+		public static final int IDENTIFIER = 4;
+
+		/**
+		 * integer token
+		 */
+		public static final int INTEGER = 5;
+
+		/**
+		 * left bracket
+		 */
+		public static final int LEFT_PAR = 6;
+
+		/**
+		 * minus sign
+		 */
+		public static final int MINUS = 7;
+
+		/**
+		 * new line
+		 */
+		public static final int NEWLINE = 8;
+
+		/**
+		 * right bracket
+		 */
+		public static final int RIGHT_PAR = 9;
+
+		private int currentIndex = -1;
+
+		private Token currentToken = null;
+
+		private int currentTokenIndex = 0;
+
+		private int lineNumber = 1;
+
+		private String program;
+
+		private Vector tokens;
+
+		public MIPSLexer(String program) throws LexerException {
+			this.program = program;
+		}
+
+		public Token getCurrentToken() {
+			return currentToken;
+		}
+
+		/**
+		 * gives the current number 
+		 * 
+		 * @@return current line number of source program
+		 */
+		public int getLineNumber() {
+			return lineNumber;
+		}
+
+		private Token getNextToken() throws LexerException {
+			if (currentIndex >= program.length() - 1) {
+				return new Token(EOF, "EOF");
+			}
+
+			char sym;
+			while (isWhiteSpace(sym = nextSymbol())) {
+			}
+
+			if (sym == ';') {
+				while ((sym = nextSymbol()) != '\n') {
+				}
+			}
+
+			StringBuffer buffer = new StringBuffer();
+
+			if (isAlpha(sym)) {
+				buffer.append(sym);
+				while ((sym = nextSymbol()) != (char) - 1
+					&& isAlpha(sym)
+					|| isNumber(sym)) {
+					buffer.append(sym);
+				}
+				pushCharBack();
+				return new Token(IDENTIFIER, buffer.toString());
+
+			} else if (isNumber(sym)) {
+				buffer.append(sym);
+				while (isNumber(sym = nextSymbol())) {
+					buffer.append(sym);
+				}
+				pushCharBack();
+				return new Token(INTEGER, buffer.toString());
+			} else if (sym == '$') {
+				return new Token(DOLLAR, "$");
+			} else if (sym == ',') {
+				return new Token(COMMA, ",");
+			} else if (sym == '-') {
+				return new Token(MINUS, "-");
+			} else if (sym == ':') {
+				return new Token(COLON, ":");
+			} else if (sym == '(') {
+				return new Token(LEFT_PAR, "(");
+			} else if (sym == ')') {
+				return new Token(RIGHT_PAR, ")");
+			} else if (sym == '\n') {
+				lineNumber++;
+				return new Token(NEWLINE, "\\n");
+			}
+			throw new LexerException(sym, lineNumber);
+		}
+
+		private boolean isAlpha(char c) {
+			return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c == '_');
+		}
+
+		private boolean isNumber(char c) {
+			return c >= '0' && c <= '9';
+		}
+
+		private boolean isWhiteSpace(char c) {
+			switch (c) {
+				case ' ' :
+				case '\r' :
+				case '\t' :
+					{
+						return true;
+					}
+			}
+			return false;
+		}
+
+		private char nextSymbol() {
+			if (currentIndex >= program.length() - 1) {
+				return (char) - 1;
+			}
+			return program.charAt(++currentIndex);
+		}
+
+		public Token nextToken() throws LexerException {
+			currentToken = getNextToken();
+			return currentToken;
+		}
+
+		private void pushCharBack() {
+			if (currentIndex != program.length()) {
+				currentIndex--;
+			}
+		}
+
+		private void pushTokenBack() {
+		}
+}
+@
+
+
+1.5
+log
+@Replaced MIPSLexer class with the new class Lexer.
+@
+text
+@@
+
+
+1.4
+log
+@Added a replacement of the MIPSLexer class that supports token
+pushback and StringBuffer input.
+@
+text
+@d2 1
+a2 1
+ * Created on 2003-11-1
+d9 2
+a10 3
+ * Lexer class. Breaks users program into lexical tokens for the parser to do further check.
+ * 
+ * @@author Qian Qiao <a href="mailto:qq01@@doc.ic.ac.uk">qq01@@doc.ic.ac.uk</a>
+d15 3
+a17 3
+	 * colon token
+	 */
+	public static final int COLON = 0;
+d19 4
+a22 4
+	/**
+	 * comma token
+	 */
+	public static final int COMMA = 1;
+d24 12
+a35 12
+	/**
+	 * dollar token
+	 */
+	public static final int DOLLAR = 2;
+	/**
+	 * end of file
+	 */
+	public static final int EOF = 3;
+	/**
+	 * identifier Token
+	 */
+	public static final int IDENTIFIER = 4;
+d37 4
+a40 4
+	/**
+	 * integer token
+	 */
+	public static final int INTEGER = 5;
+d42 4
+a45 4
+	/**
+	 * left bracket
+	 */
+	public static final int LEFT_PAR = 6;
+d47 4
+a50 4
+	/**
+	 * minus sign
+	 */
+	public static final int MINUS = 7;
+d52 4
+a55 4
+	/**
+	 * new line
+	 */
+	public static final int NEWLINE = 8;
+d57 4
+a60 4
+	/**
+	 * right bracket
+	 */
+	public static final int RIGHT_PAR = 9;
+d62 1
+a62 1
+	private int currentIndex = -1;
+d64 1
+a64 1
+	private Token currentToken = null;
+d66 1
+a66 1
+	private int currentTokenIndex = 0;
+d68 1
+a68 1
+	private int lineNumber = 1;
+d70 1
+a70 1
+	private String program;
+d72 1
+a72 1
+	private Vector tokens;
+d74 3
+a76 3
+	public MIPSLexer(String program) throws LexerException {
+		this.program = program;
+	}
+d78 3
+a80 3
+	public Token getCurrentToken() {
+		return currentToken;
+	}
+d82 8
+a89 8
+	/**
+	 * gives the current number 
+	 * 
+	 * @@return current line number of source program
+	 */
+	public int getLineNumber() {
+		return lineNumber;
+	}
+d91 4
+a94 4
+	private Token getNextToken() throws LexerException {
+		if (currentIndex >= program.length() - 1) {
+			return new Token(EOF, "EOF");
+		}
+d96 3
+a98 3
+		char sym;
+		while (isWhiteSpace(sym = nextSymbol())) {
+		}
+d100 3
+a102 2
+		if (sym == ';') {
+			while ((sym = nextSymbol()) != '\n') {
+a103 1
+		}
+d105 11
+a115 1
+		StringBuffer buffer = new StringBuffer();
+d117 1
+a117 5
+		if (isAlpha(sym)) {
+			buffer.append(sym);
+			while ((sym = nextSymbol()) != (char) - 1
+				&& isAlpha(sym)
+				|| isNumber(sym)) {
+d119 20
+d140 6
+a145 2
+			pushCharBack();
+			return new Token(IDENTIFIER, buffer.toString());
+d147 12
+a158 4
+		} else if (isNumber(sym)) {
+			buffer.append(sym);
+			while (isNumber(sym = nextSymbol())) {
+				buffer.append(sym);
+d160 1
+a160 37
+			pushCharBack();
+			return new Token(INTEGER, buffer.toString());
+		} else if (sym == '$') {
+			return new Token(DOLLAR, "$");
+		} else if (sym == ',') {
+			return new Token(COMMA, ",");
+		} else if (sym == '-') {
+			return new Token(MINUS, "-");
+		} else if (sym == ':') {
+			return new Token(COLON, ":");
+		} else if (sym == '(') {
+			return new Token(LEFT_PAR, "(");
+		} else if (sym == ')') {
+			return new Token(RIGHT_PAR, ")");
+		} else if (sym == '\n') {
+			lineNumber++;
+			return new Token(NEWLINE, "\\n");
+		}
+		throw new LexerException(sym, lineNumber);
+	}
+
+	private boolean isAlpha(char c) {
+		return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c == '_');
+	}
+
+	private boolean isNumber(char c) {
+		return c >= '0' && c <= '9';
+	}
+
+	private boolean isWhiteSpace(char c) {
+		switch (c) {
+			case ' ' :
+			case '\r' :
+			case '\t' :
+				{
+					return true;
+				}
+a161 2
+		return false;
+	}
+d163 5
+a167 3
+	private char nextSymbol() {
+		if (currentIndex >= program.length() - 1) {
+			return (char) - 1;
+a168 2
+		return program.charAt(++currentIndex);
+	}
+d170 4
+a173 4
+	public Token nextToken() throws LexerException {
+		currentToken = getNextToken();
+		return currentToken;
+	}
+d175 4
+a178 3
+	private void pushCharBack() {
+		if (currentIndex != program.length()) {
+			currentIndex--;
+a179 1
+	}
+d181 2
+a182 2
+	private void pushTokenBack() {
+	}
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d6 2
+d67 2
+d73 3
+a75 1
+	public MIPSLexer(String program) {
+a91 32
+	private boolean isAlpha(char c) {
+		return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c == '_');
+	}
+
+	private boolean isNumber(char c) {
+		return c >= '0' && c <= '9';
+	}
+
+	private boolean isWhiteSpace(char c) {
+		switch (c) {
+			case ' ' :
+			case '\r' :
+			case '\t' :
+				{
+					return true;
+				}
+		}
+		return false;
+	}
+
+	private char nextSymbol() {
+		if (currentIndex >= program.length() - 1) {
+			return (char) - 1;
+		}
+		return program.charAt(++currentIndex);
+	}
+
+	public Token nextToken() throws LexerException {
+		currentToken = getNextToken();
+		return currentToken;
+	}
+
+d115 1
+a115 1
+			pushback();
+d123 1
+a123 1
+			pushback();
+d144 33
+a176 1
+	private void pushback() {
+d180 3
+@
+
+
+1.2
+log
+@updated parser files
+@
+text
+@d16 1
+a16 1
+	public static final int COLON = 4;
+d21 1
+a21 1
+	public static final int COMMA = 2;
+d26 1
+a26 1
+	public static final int DOLLAR = 3;
+d30 1
+a30 1
+	public static final int EOF = 42;
+d34 1
+a34 1
+	public static final int IDENTIFIER = 0;
+d39 1
+a39 1
+	public static final int INTEGER = 1;
+d44 1
+a44 1
+	public static final int LEFT_PAR = 5;
+d49 1
+a49 1
+	public static final int MINUS = 8;
+d54 1
+a54 1
+	public static final int NEWLINE = 7;
+d59 1
+a59 14
+	public static final int RIGHT_PAR = 6;
+
+	//	public static void main(String[] args) {
+	//		try {
+	//			MIPSLexer l = new MIPSLexer("LW $t1, a65520($zero)\n");
+	//			Token t = l.nextToken();
+	//			while (t.getType() != EOF) {
+	//				System.out.println("Symbol( " + t.getType() + "," + t.getValue() + " )");
+	//				t = l.nextToken();
+	//			}
+	//		} catch (LexerException e) {
+	//			System.out.println(e.getMessage());
+	//		}
+	//	}
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d61 12
+a72 12
+//	public static void main(String[] args) {
+//		try {
+//			MIPSLexer l = new MIPSLexer("LW $t1, a65520($zero)\n");
+//			Token t = l.nextToken();
+//			while (t.getType() != EOF) {
+//				System.out.println("Symbol( " + t.getType() + "," + t.getValue() + " )");
+//				t = l.nextToken();
+//			}
+//		} catch (LexerException e) {
+//			System.out.println(e.getMessage());
+//		}
+//	}
+d77 1
+a77 1
+	
+d127 1
+a127 1
+		currentToken = nextToken1();
+d131 1
+a131 1
+	public Token nextToken1() throws LexerException {
+d135 1
+a135 1
+		
+d137 3
+a139 2
+		while (isWhiteSpace(sym = nextSymbol())) {}
+		
+d141 2
+a142 1
+			while ((sym = nextSymbol()) != '\n') {}
+d144 1
+a144 1
+		
+d146 1
+a146 1
+		
+d156 1
+a156 1
+			
+@
+

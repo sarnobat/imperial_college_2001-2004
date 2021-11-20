@@ -1,0 +1,72 @@
+<!-- ===========Element========== -->
+	<xsd:element name="players_db" type="players_db"/>
+	
+	<!-- ===========Types============ -->
+	<xsd:complexType name="players_db">
+		<xsd:sequence>
+			<xsd:element name="player" type="player" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="player"/>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<player>
+		<!--<name>
+			<common>Yordi</common>
+			<first>Jorge</first>
+			<middle>Diaz</middle>
+			<last>Gonzalez</last>
+		</name>
+		<date_of_birth>09-14-1974</date_of_birth>
+		<club>Real Zaragoza</club>
+		<career_history>
+			<contract>
+				<type>permanent</type>
+				<club>Real Zaragoza</club>
+			</contract>
+			<contract>
+				<type>loan</type>
+				<club>Blackburn Rovers</club>
+			</contract>
+		</career_history>-->
+	</player>
+	<!--	<player>ghshgfshgsf
+		<name>
+			<common>Rivaldo</common>
+			<first></first>
+			<middle></middle>
+			<last></last>
+		</name>
+		<date_of_birth></date_of_birth>
+		<club>no club</club>
+		<career_history>
+			<contract>
+				<type>permanent</type>
+				<club>AC Milan</club>
+			</contract>
+			<contract>
+				<type>permanent</type>
+				<club>Barcelona</club>
+			</contract>
+		</career_history>
+	</player>-->

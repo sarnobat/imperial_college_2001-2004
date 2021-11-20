@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form style="Swing" ide="eclipse" builder="jigloo" version="1.0.0">
+	<Component class="javax.swing.JInternalFrame" name="JInternalFrame">
+		<Constraints>
+			<LayoutConstraint/>
+		</Constraints>
+		<Layout class="Border">
+			<Property name="vgap" type="int" value="0"/>
+			<Property name="hgap" type="int" value="0"/>
+		</Layout>
+		<Events>
+		</Events>
+		<Properties>
+			<Property name="visible" type="boolean" value="true"/>
+			<Property name="preferredSize" type="Dimension">
+				<Dimension value="[342, 242]"/>
+			</Property>
+			<Property name="bounds" type="Rectangle">
+				<Rectangle value="[0, 0, 342, 242]"/>
+			</Property>
+		</Properties>
+	</Component>
+</Form>

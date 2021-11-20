@@ -1,0 +1,483 @@
+head	1.19;
+access;
+symbols
+	yams-final-19-12-03:1.19
+	yams-release2-17-12-03:1.19
+	yams-release-17-12-03:1.19;
+locks; strict;
+comment	@# @;
+
+
+1.19
+date	2003.12.15.18.48.10;	author bmc01;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2003.12.11.19.06.27;	author bmc01;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2003.12.10.03.02.45;	author ajb101;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.12.09.19.49.59;	author bmc01;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.12.05.10.32.42;	author bmc01;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.12.05.10.27.11;	author bmc01;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.12.04.19.08.55;	author bmc01;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.04.18.53.55;	author bmc01;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.04.18.50.25;	author bmc01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.04.18.42.25;	author sw00;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.04.18.34.36;	author bmc01;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.04.17.12.59;	author bmc01;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.02.15.58.31;	author bmc01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.02.14.26.50;	author jkm01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.02.14.20.56;	author bmc01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.29.21.54.01;	author sw00;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.14.14.55.16;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.14.14.35.42;	author bmc01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.49;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@/*
+ * Created on 26-Oct-2003
+ *
+ */
+package yams.processor;
+
+import yams.assembler.GuiMap;
+import yams.parser.LineList;
+
+public interface StatisticsManagerInterface {
+
+	/**
+	 * Increments the usage count for the specified register
+	 * @@param regid The name of the register
+	 */
+	public void regUsed(String regid);
+	
+	/**
+	 * Prints the statistics held in the statistics manager
+	 * @@param lines The line list for the original code
+	 */
+	public void printStats(LineList lines);
+	
+	/**
+	 * Adds an instruction name to the instruction count list
+	 * @@param instrName The name of the instruction
+	 */
+	public void addInstruction(String instrName);
+	
+	/**
+	 * Increments the count when an instruction is used
+	 * @@param instr The name of the instruction
+	 */
+	public void instructionUsed(String instr);
+	
+	/**
+	 * Resets the variables in the statistics manager ready for the next program to run
+	 */
+	public void reset();
+	
+	/**
+	 * Increments the CPU Cycle count for the program being executed
+	 */
+	public void cycle();
+	
+	/**
+	 * Sets the line map object in the statistics manager
+	 * @@param gm The line map - maps memory addresses to line numbers in the program
+	 */
+	public void setLineMap(GuiMap gm);
+	
+	/**
+	 * Increments the count for the amount of times the line has been executed
+	 * @@param address The address where the line is stored
+	 */
+	public void lineUsed(int address);
+	
+	/**
+	 * Returns the number of CPU cycles used by the program so far
+	 * @@return Number of CPU cycles
+	 */
+	public int getCycles();
+	
+	/**
+	 * Returns the total number of CPU cycles used by all of the files run so far
+	 * @@return Total number of CPU cycles
+	 */
+	public int getTotalCycles();
+	
+	/**
+	 * Returns the total memory used by the program
+	 * @@return Memory used
+	 */
+	public int getMemoryUsed();
+	
+	/**
+	 * Returns the usage count for the specified register
+	 * @@param regid The name of the register
+	 * @@return Usage count for the specified register
+	 */
+	public int getRegCount(String regid);
+	
+	/**
+	 * Returns usage count for the specified register
+	 * @@param regid Number of the register
+	 * @@return Usage count for the specified register
+	 */
+	public int getRegCount(int regid);
+	
+	/**
+	 * Returns the usage count for the specified line of the program
+	 * @@param line Number of the line
+	 * @@return Usage count for the line specified
+	 */
+	public int getLineCount(int line);
+	
+	/**
+	 * Returns an array of all the instructions used in the program
+	 * @@return Array of instructions
+	 */
+	public String[] getInstr();
+	
+	/**
+	 * Array of usage counts for the instructions used in the program (used with getInstr() )
+	 * @@return Array of usage counts
+	 */
+	public Integer[] getInstrCount();
+	
+	
+}
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d13 2
+a14 1
+	 * @@param regid
+d16 1
+a16 1
+	public void regUsed(String regid); //throws UnknownRegisterNameException;
+d19 2
+a20 1
+	 * Prints the statistics held in the Statistics Manager
+d24 4
+d30 4
+d36 3
+d41 3
+d46 4
+d52 4
+d58 4
+d64 4
+d70 4
+d76 5
+d83 5
+d90 5
+d96 12
+@
+
+
+1.17
+log
+@yet more work on gui - including addition of a HexTable
+@
+text
+@d8 1
+d20 1
+a20 1
+	public void printStats();
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d33 1
+a33 1
+	public String getCycles();
+d35 1
+a35 1
+	public String getTotalCycles();
+d37 1
+a37 1
+	public String getMemoryUsed();
+d39 1
+a39 1
+	public String getRegCount(String regid);
+d41 1
+a41 1
+	public String getRegCount(int regid);
+d43 1
+a43 1
+	public String getLineCount(int line);
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d31 2
+d39 1
+a39 1
+	public String regCount(String regid);
+d41 1
+a41 1
+	public String regCount(int regid);
+d43 1
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d37 4
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d33 2
+d36 3
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d30 4
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d7 2
+d29 1
+a29 1
+	public void setLineMap();
+@
+
+
+1.10
+log
+@instExecuted removed (cycle supercedes it)
+@
+text
+@d26 2
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@a14 5
+	 * Increases the count of instructions executed
+	 */
+	public void instructionExecuted();
+
+	/**
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d29 2
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d27 2
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d26 1
+a26 1
+	public void instructionUsed(int instr);
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d24 1
+a24 1
+	public void addInstruction(String instrName, int instr);
+@
+
+
+1.4
+log
+@added method for counting instructions executed
+@
+text
+@d23 4
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d1 23
+a23 18
+/*
+ * Created on 26-Oct-2003
+ *
+ */
+package yams.processor;
+
+public interface StatisticsManagerInterface {
+
+	/**
+	 * @@param regid
+	 */
+	public void regUsed(String regid); //throws UnknownRegisterNameException;
+
+	/**
+	 * Prints the statistics held in the Statistics Manager
+	 */
+	public void printStats();
+}
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d5 1
+a5 1
+package processor;
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d1 18
+a18 11
+/*
+ * Created on 26-Oct-2003
+ *
+ */
+package yams.processor;
+
+public interface StatisticsManagerInterface {
+
+	public void regUsed(int regid);
+
+}
+@
+

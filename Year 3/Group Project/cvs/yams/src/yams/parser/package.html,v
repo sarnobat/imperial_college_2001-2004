@@ -1,0 +1,58 @@
+head	1.2;
+access;
+symbols
+	yams-final-19-12-03:1.2
+	yams-release2-17-12-03:1.1
+	yams-release-17-12-03:1.1
+	cleanup:1.1.0.2
+	Root_cleanup:1.1
+	stable-13-12-2003:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.12.19.13.22.17;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.49;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@Removed test file
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+</head>
+<body>
+Examines the phrase structure of the input. Provides functions for parsing user program inputs, gives
+lexical and syntatic errors. Generates a <code>LineList</code>.
+
+@@author Qian Qiao(qq01) & Sridhar Sarnobat(ss401)
+</body>
+</html>
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d6 2
+a7 2
+Provides functions for parsing user program inputs, gives lexical and syntatic errors. Generates a <code>
+InstructionList</code>
+@
+

@@ -1,0 +1,84 @@
+ <script language = Javascript src = validateform.js></script>
+
+<!-- Login Form -->
+<h2>Login</h2>
+<form action = "login.cgi" method="post" onSubmit="return validateForm(this,1)">
+	<table>
+		<tr>
+			<td>Username</td> 
+			<td><input type = "text" name = username> </td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type = "password" name = password></td>
+		</tr>
+		<tr>
+		<td>
+		</td>
+		<td>
+		<br>
+			<input type="submit" value = "Login">
+		</td>
+		</tr>	
+	</table>
+	
+</form>
+<hr width=50%>
+<!--  Register Form -->
+<h2>Register</h2>
+<form action = "register.cgi" method="post" onSubmit="return validateForm(this,2)">
+	<table>
+		<tr>
+			<td>Username</td> 
+			<td><input type = "text" name=username></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type = "password" name=password></td>
+		</tr>
+		<tr>
+			<td>Confirm Password</td>
+			<td><input type = "password" name=confirm></td>
+		</tr>
+		<tr>
+			<td>Email address</td> 
+			<td><input type = "text" name = email></td>
+		</tr>
+			<tr>
+			<td>
+			</td>
+			<td>
+			<br>
+	<input type="submit" value="Register">
+	</td></tr>	</table>
+</form>
+<hr width=50%>
+
+<!--  Request password to be emailed -->
+<h2>Password reminder</h2>
+<form action = "email.cgi" method="post" onSubmit="return validatepasswordrequest(this)">
+Forgotten your password?<br>Enter the email address you provided when you registered,
+to have your username and password sent to.
+<br>
+<br>
+
+	<table>
+		<tr>
+		</tr>
+		<tr>
+			<td>Email address</td> 
+			<td><input type = "text" name = email></td>
+		</tr>
+
+		<tr>
+			<td>
+			</td>
+			<td>
+			<br>
+			<input type="submit" value="Remind me">
+			</td>
+		</tr>
+	</table>
+
+
+</form>

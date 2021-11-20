@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN" "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<article lang="en">
+  <articleinfo>
+    <title><filename>contrib_wiedmann_m/revhistory.xml</filename></title>
+    <subtitle>Tests XSL template and <?latex \?>LaTeX<?latex {}?> mapping</subtitle>
+    <authorgroup>
+      <author>
+        <firstname>James</firstname>
+        <surname>Devenish</surname>
+      </author>
+    </authorgroup>
+    <revhistory>
+      <revision>
+        <revnumber>1.2</revnumber>
+        <date>1-2-5</date>
+        <authorinitials>JD</authorinitials>
+        <revremark>The quick brown fox jumps over the lazy dog.</revremark>
+      </revision>
+      <revision>
+        <date>1-2-4</date>
+        <revremark>Pack my box with five dozen liquor jugs.</revremark>
+      </revision>
+      <revision>
+        <revnumber>1.0</revnumber>
+        <date>1-2-3</date>
+        <authorinitials>JD</authorinitials>
+        <revremark>The five boxing wizards jump quickly.</revremark>
+      </revision>
+    </revhistory>
+  </articleinfo>
+  <sect1>
+    <title>Introduction</title>
+	<para>Blah.</para>
+  </sect1>
+</article>

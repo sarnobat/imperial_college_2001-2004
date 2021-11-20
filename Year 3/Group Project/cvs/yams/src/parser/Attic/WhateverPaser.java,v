@@ -1,0 +1,2335 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.10.31.14.34.33;	author qq01;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.10.30.18.24.07;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@// $ANTLR : "lexrules.g" -> "WhateverPaser.java"$
+
+import antlr.TokenBuffer;
+import antlr.TokenStreamException;
+import antlr.TokenStreamIOException;
+import antlr.ANTLRException;
+import antlr.LLkParser;
+import antlr.Token;
+import antlr.TokenStream;
+import antlr.RecognitionException;
+import antlr.NoViableAltException;
+import antlr.MismatchedTokenException;
+import antlr.SemanticException;
+import antlr.ParserSharedInputState;
+import antlr.collections.impl.BitSet;
+
+public class WhateverPaser extends antlr.LLkParser       implements WhateverLexerTokenTypes
+ {
+
+protected WhateverPaser(TokenBuffer tokenBuf, int k) {
+  super(tokenBuf,k);
+  tokenNames = _tokenNames;
+}
+
+public WhateverPaser(TokenBuffer tokenBuf) {
+  this(tokenBuf,1);
+}
+
+protected WhateverPaser(TokenStream lexer, int k) {
+  super(lexer,k);
+  tokenNames = _tokenNames;
+}
+
+public WhateverPaser(TokenStream lexer) {
+  this(lexer,1);
+}
+
+public WhateverPaser(ParserSharedInputState state) {
+  super(state,1);
+  tokenNames = _tokenNames;
+}
+
+	public final void goal() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			stmtList();
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_0);
+		}
+	}
+	
+	public final void stmtList() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			stmt();
+			{
+			switch ( LA(1)) {
+			case IDENTIFIER:
+			case DECIMAL:
+			case 23:
+			case 25:
+			case 26:
+			case 27:
+			case 28:
+			case 29:
+			case 30:
+			case 31:
+			case SetDir:
+			case SegmentDir:
+			case AlignDir:
+			case SymbolDir:
+			case BlockDir:
+			case CompilerDir:
+			case LITERAL_abs:
+			case LITERAL_add:
+			{
+				stmtList();
+				break;
+			}
+			case EOF:
+			{
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_0);
+		}
+	}
+	
+	public final void stmt() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			stat();
+			{
+			switch ( LA(1)) {
+			case 12:
+			{
+				match(12);
+				break;
+			}
+			case EOF:
+			case IDENTIFIER:
+			case DECIMAL:
+			case 23:
+			case 25:
+			case 26:
+			case 27:
+			case 28:
+			case 29:
+			case 30:
+			case 31:
+			case SetDir:
+			case SegmentDir:
+			case AlignDir:
+			case SymbolDir:
+			case BlockDir:
+			case CompilerDir:
+			case LITERAL_abs:
+			case LITERAL_add:
+			{
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_1);
+		}
+	}
+	
+	public final void stat() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case LITERAL_abs:
+			case LITERAL_add:
+			{
+				instruction();
+				break;
+			}
+			case 23:
+			case 25:
+			case 26:
+			case 27:
+			case 28:
+			case 29:
+			case 30:
+			case 31:
+			{
+				data();
+				break;
+			}
+			case SetDir:
+			case SegmentDir:
+			case AlignDir:
+			case SymbolDir:
+			case BlockDir:
+			case CompilerDir:
+			{
+				directive();
+				break;
+			}
+			default:
+				if ((LA(1)==IDENTIFIER||LA(1)==DECIMAL)) {
+					label();
+					instruction();
+				}
+				else if ((LA(1)==IDENTIFIER||LA(1)==DECIMAL)) {
+					label();
+					data();
+				}
+				else if ((LA(1)==IDENTIFIER||LA(1)==DECIMAL)) {
+					label();
+				}
+				else if ((LA(1)==IDENTIFIER)) {
+					symDef();
+				}
+			else {
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_2);
+		}
+	}
+	
+	public final void label() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case IDENTIFIER:
+			{
+				match(IDENTIFIER);
+				match(COLON);
+				break;
+			}
+			case DECIMAL:
+			{
+				match(DECIMAL);
+				match(COLON);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_2);
+		}
+	}
+	
+	public final void instruction() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			opCode();
+			{
+			switch ( LA(1)) {
+			case Operand:
+			{
+				match(Operand);
+				{
+				switch ( LA(1)) {
+				case 14:
+				{
+					match(14);
+					match(Operand);
+					{
+					switch ( LA(1)) {
+					case 14:
+					{
+						match(14);
+						match(Operand);
+						break;
+					}
+					case EOF:
+					case IDENTIFIER:
+					case DECIMAL:
+					case 12:
+					case 23:
+					case 25:
+					case 26:
+					case 27:
+					case 28:
+					case 29:
+					case 30:
+					case 31:
+					case SetDir:
+					case SegmentDir:
+					case AlignDir:
+					case SymbolDir:
+					case BlockDir:
+					case CompilerDir:
+					case LITERAL_abs:
+					case LITERAL_add:
+					{
+						break;
+					}
+					default:
+					{
+						throw new NoViableAltException(LT(1), getFilename());
+					}
+					}
+					}
+					break;
+				}
+				case EOF:
+				case IDENTIFIER:
+				case DECIMAL:
+				case 12:
+				case 23:
+				case 25:
+				case 26:
+				case 27:
+				case 28:
+				case 29:
+				case 30:
+				case 31:
+				case SetDir:
+				case SegmentDir:
+				case AlignDir:
+				case SymbolDir:
+				case BlockDir:
+				case CompilerDir:
+				case LITERAL_abs:
+				case LITERAL_add:
+				{
+					break;
+				}
+				default:
+				{
+					throw new NoViableAltException(LT(1), getFilename());
+				}
+				}
+				}
+				break;
+			}
+			case EOF:
+			case IDENTIFIER:
+			case DECIMAL:
+			case 12:
+			case 23:
+			case 25:
+			case 26:
+			case 27:
+			case 28:
+			case 29:
+			case 30:
+			case 31:
+			case SetDir:
+			case SegmentDir:
+			case AlignDir:
+			case SymbolDir:
+			case BlockDir:
+			case CompilerDir:
+			case LITERAL_abs:
+			case LITERAL_add:
+			{
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_2);
+		}
+	}
+	
+	public final void data() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case 27:
+			case 28:
+			case 29:
+			case 30:
+			case 31:
+			{
+				dataMode();
+				dataList();
+				break;
+			}
+			case 23:
+			{
+				match(23);
+				match(STRING);
+				break;
+			}
+			case 25:
+			{
+				match(25);
+				match(STRING);
+				break;
+			}
+			case 26:
+			{
+				match(26);
+				match(Expr);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_2);
+		}
+	}
+	
+	public final void symDef() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			match(IDENTIFIER);
+			match(EQUAL);
+			match(Expr);
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_2);
+		}
+	}
+	
+	public final void directive() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case SetDir:
+			{
+				match(SetDir);
+				break;
+			}
+			case SegmentDir:
+			{
+				match(SegmentDir);
+				break;
+			}
+			case AlignDir:
+			{
+				match(AlignDir);
+				break;
+			}
+			case SymbolDir:
+			{
+				match(SymbolDir);
+				break;
+			}
+			case BlockDir:
+			{
+				match(BlockDir);
+				break;
+			}
+			case CompilerDir:
+			{
+				match(CompilerDir);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_2);
+		}
+	}
+	
+	public final void opCode() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case LITERAL_abs:
+			{
+				match(LITERAL_abs);
+				break;
+			}
+			case LITERAL_add:
+			{
+				match(LITERAL_add);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_3);
+		}
+	}
+	
+	public final void operand() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case DOLLAR:
+			case LITERAL_at:
+			case LITERAL_zero:
+			case 97:
+			case 98:
+			case 99:
+			case 100:
+			case 101:
+			case 102:
+			case 103:
+			case 104:
+			case 105:
+			case 106:
+			case 107:
+			case 108:
+			case 109:
+			case 110:
+			case 111:
+			case 112:
+			case 113:
+			case 114:
+			case 115:
+			case 116:
+			case 117:
+			case 118:
+			case 119:
+			case 120:
+			case 121:
+			case 122:
+			case LITERAL_gp:
+			case LITERAL_sp:
+			case 125:
+			case LITERAL_fp:
+			case LITERAL_ra:
+			case 128:
+			case 129:
+			case 130:
+			case 131:
+			case 132:
+			case 133:
+			case 134:
+			case 135:
+			case 136:
+			case 137:
+			case 138:
+			case 139:
+			case 140:
+			case 141:
+			case 142:
+			case 143:
+			case 144:
+			case 145:
+			case 146:
+			case 147:
+			case 148:
+			case 149:
+			case 150:
+			case 151:
+			case 152:
+			case 153:
+			case 154:
+			case 155:
+			case 156:
+			case 157:
+			case 158:
+			case 159:
+			case 160:
+			{
+				register();
+				break;
+			}
+			case 15:
+			{
+				match(15);
+				register();
+				match(16);
+				break;
+			}
+			case DOLLAR_F_DECIMAL:
+			{
+				floatRegister();
+				break;
+			}
+			case IDENTIFIER:
+			case Expr:
+			case DECIMAL_B:
+			case DECIMAL_F:
+			case 22:
+			{
+				addrImmed();
+				{
+				switch ( LA(1)) {
+				case 15:
+				{
+					match(15);
+					register();
+					match(16);
+					break;
+				}
+				case EOF:
+				{
+					break;
+				}
+				default:
+				{
+					throw new NoViableAltException(LT(1), getFilename());
+				}
+				}
+				}
+				break;
+			}
+			case FLOAT:
+			{
+				match(FLOAT);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_0);
+		}
+	}
+	
+	public final void register() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case DOLLAR:
+			{
+				match(DOLLAR);
+				match(DECIMAL);
+				break;
+			}
+			case LITERAL_at:
+			case LITERAL_zero:
+			case 97:
+			case 98:
+			case 99:
+			case 100:
+			case 101:
+			case 102:
+			case 103:
+			case 104:
+			case 105:
+			case 106:
+			case 107:
+			case 108:
+			case 109:
+			case 110:
+			case 111:
+			case 112:
+			case 113:
+			case 114:
+			case 115:
+			case 116:
+			case 117:
+			case 118:
+			case 119:
+			case 120:
+			case 121:
+			case 122:
+			case LITERAL_gp:
+			case LITERAL_sp:
+			case 125:
+			case LITERAL_fp:
+			case LITERAL_ra:
+			{
+				registerName();
+				break;
+			}
+			case 128:
+			case 129:
+			case 130:
+			case 131:
+			case 132:
+			case 133:
+			case 134:
+			case 135:
+			case 136:
+			case 137:
+			case 138:
+			case 139:
+			case 140:
+			case 141:
+			case 142:
+			case 143:
+			case 144:
+			case 145:
+			case 146:
+			case 147:
+			case 148:
+			case 149:
+			case 150:
+			case 151:
+			case 152:
+			case 153:
+			case 154:
+			case 155:
+			case 156:
+			case 157:
+			case 158:
+			case 159:
+			case 160:
+			{
+				dollarRegisterName();
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_4);
+		}
+	}
+	
+	public final void floatRegister() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			match(DOLLAR_F_DECIMAL);
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_0);
+		}
+	}
+	
+	public final void addrImmed() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case IDENTIFIER:
+			case DECIMAL_B:
+			case DECIMAL_F:
+			case 22:
+			{
+				labelExpr();
+				{
+				switch ( LA(1)) {
+				case 17:
+				case 18:
+				{
+					{
+					switch ( LA(1)) {
+					case 17:
+					{
+						match(17);
+						break;
+					}
+					case 18:
+					{
+						match(18);
+						break;
+					}
+					default:
+					{
+						throw new NoViableAltException(LT(1), getFilename());
+					}
+					}
+					}
+					match(Expr);
+					break;
+				}
+				case EOF:
+				case 15:
+				{
+					break;
+				}
+				default:
+				{
+					throw new NoViableAltException(LT(1), getFilename());
+				}
+				}
+				}
+				break;
+			}
+			case Expr:
+			{
+				match(Expr);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_5);
+		}
+	}
+	
+	public final void registerName() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case LITERAL_zero:
+			{
+				match(LITERAL_zero);
+				break;
+			}
+			case LITERAL_at:
+			{
+				match(LITERAL_at);
+				break;
+			}
+			case 97:
+			{
+				match(97);
+				break;
+			}
+			case 98:
+			{
+				match(98);
+				break;
+			}
+			case 99:
+			{
+				match(99);
+				break;
+			}
+			case 100:
+			{
+				match(100);
+				break;
+			}
+			case 101:
+			{
+				match(101);
+				break;
+			}
+			case 102:
+			{
+				match(102);
+				break;
+			}
+			case 103:
+			{
+				match(103);
+				break;
+			}
+			case 104:
+			{
+				match(104);
+				break;
+			}
+			case 105:
+			{
+				match(105);
+				break;
+			}
+			case 106:
+			{
+				match(106);
+				break;
+			}
+			case 107:
+			{
+				match(107);
+				break;
+			}
+			case 108:
+			{
+				match(108);
+				break;
+			}
+			case 109:
+			{
+				match(109);
+				break;
+			}
+			case 110:
+			{
+				match(110);
+				break;
+			}
+			case 111:
+			{
+				match(111);
+				break;
+			}
+			case 112:
+			{
+				match(112);
+				break;
+			}
+			case 113:
+			{
+				match(113);
+				break;
+			}
+			case 114:
+			{
+				match(114);
+				break;
+			}
+			case 115:
+			{
+				match(115);
+				break;
+			}
+			case 116:
+			{
+				match(116);
+				break;
+			}
+			case 117:
+			{
+				match(117);
+				break;
+			}
+			case 118:
+			{
+				match(118);
+				break;
+			}
+			case 119:
+			{
+				match(119);
+				break;
+			}
+			case 120:
+			{
+				match(120);
+				break;
+			}
+			case 121:
+			{
+				match(121);
+				break;
+			}
+			case 122:
+			{
+				match(122);
+				break;
+			}
+			case LITERAL_gp:
+			{
+				match(LITERAL_gp);
+				break;
+			}
+			case LITERAL_sp:
+			{
+				match(LITERAL_sp);
+				break;
+			}
+			case 125:
+			{
+				match(125);
+				break;
+			}
+			case LITERAL_fp:
+			{
+				match(LITERAL_fp);
+				break;
+			}
+			case LITERAL_ra:
+			{
+				match(LITERAL_ra);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_4);
+		}
+	}
+	
+	public final void dollarRegisterName() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case 128:
+			{
+				match(128);
+				break;
+			}
+			case 129:
+			{
+				match(129);
+				break;
+			}
+			case 130:
+			{
+				match(130);
+				break;
+			}
+			case 131:
+			{
+				match(131);
+				break;
+			}
+			case 132:
+			{
+				match(132);
+				break;
+			}
+			case 133:
+			{
+				match(133);
+				break;
+			}
+			case 134:
+			{
+				match(134);
+				break;
+			}
+			case 135:
+			{
+				match(135);
+				break;
+			}
+			case 136:
+			{
+				match(136);
+				break;
+			}
+			case 137:
+			{
+				match(137);
+				break;
+			}
+			case 138:
+			{
+				match(138);
+				break;
+			}
+			case 139:
+			{
+				match(139);
+				break;
+			}
+			case 140:
+			{
+				match(140);
+				break;
+			}
+			case 141:
+			{
+				match(141);
+				break;
+			}
+			case 142:
+			{
+				match(142);
+				break;
+			}
+			case 143:
+			{
+				match(143);
+				break;
+			}
+			case 144:
+			{
+				match(144);
+				break;
+			}
+			case 145:
+			{
+				match(145);
+				break;
+			}
+			case 146:
+			{
+				match(146);
+				break;
+			}
+			case 147:
+			{
+				match(147);
+				break;
+			}
+			case 148:
+			{
+				match(148);
+				break;
+			}
+			case 149:
+			{
+				match(149);
+				break;
+			}
+			case 150:
+			{
+				match(150);
+				break;
+			}
+			case 151:
+			{
+				match(151);
+				break;
+			}
+			case 152:
+			{
+				match(152);
+				break;
+			}
+			case 153:
+			{
+				match(153);
+				break;
+			}
+			case 154:
+			{
+				match(154);
+				break;
+			}
+			case 155:
+			{
+				match(155);
+				break;
+			}
+			case 156:
+			{
+				match(156);
+				break;
+			}
+			case 157:
+			{
+				match(157);
+				break;
+			}
+			case 158:
+			{
+				match(158);
+				break;
+			}
+			case 159:
+			{
+				match(159);
+				break;
+			}
+			case 160:
+			{
+				match(160);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_4);
+		}
+	}
+	
+	public final void labelExpr() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			labelRef();
+			{
+			if ((LA(1)==18)) {
+				match(18);
+				labelRef();
+			}
+			else if ((_tokenSet_6.member(LA(1)))) {
+			}
+			else {
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_6);
+		}
+	}
+	
+	public final void labelRef() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case DECIMAL_B:
+			{
+				match(DECIMAL_B);
+				break;
+			}
+			case DECIMAL_F:
+			{
+				match(DECIMAL_F);
+				break;
+			}
+			case IDENTIFIER:
+			{
+				match(IDENTIFIER);
+				break;
+			}
+			case 22:
+			{
+				match(22);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_6);
+		}
+	}
+	
+	public final void dataMode() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case 27:
+			{
+				match(27);
+				break;
+			}
+			case 28:
+			{
+				match(28);
+				break;
+			}
+			case 29:
+			{
+				match(29);
+				break;
+			}
+			case 30:
+			{
+				match(30);
+				break;
+			}
+			case 31:
+			{
+				match(31);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_7);
+		}
+	}
+	
+	public final void dataList() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			dataExpr();
+			{
+			_loop3819:
+			do {
+				if ((LA(1)==14)) {
+					match(14);
+					dataList();
+				}
+				else {
+					break _loop3819;
+				}
+				
+			} while (true);
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_8);
+		}
+	}
+	
+	public final void dataExpr() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case Expr:
+			{
+				match(Expr);
+				{
+				switch ( LA(1)) {
+				case 32:
+				{
+					match(32);
+					match(Expr);
+					break;
+				}
+				case EOF:
+				case IDENTIFIER:
+				case DECIMAL:
+				case 12:
+				case 14:
+				case 23:
+				case 25:
+				case 26:
+				case 27:
+				case 28:
+				case 29:
+				case 30:
+				case 31:
+				case SetDir:
+				case SegmentDir:
+				case AlignDir:
+				case SymbolDir:
+				case BlockDir:
+				case CompilerDir:
+				case LITERAL_abs:
+				case LITERAL_add:
+				{
+					break;
+				}
+				default:
+				{
+					throw new NoViableAltException(LT(1), getFilename());
+				}
+				}
+				}
+				break;
+			}
+			case FLOAT:
+			{
+				match(FLOAT);
+				{
+				switch ( LA(1)) {
+				case 32:
+				{
+					match(32);
+					match(FLOAT);
+					break;
+				}
+				case EOF:
+				case IDENTIFIER:
+				case DECIMAL:
+				case 12:
+				case 14:
+				case 23:
+				case 25:
+				case 26:
+				case 27:
+				case 28:
+				case 29:
+				case 30:
+				case 31:
+				case SetDir:
+				case SegmentDir:
+				case AlignDir:
+				case SymbolDir:
+				case BlockDir:
+				case CompilerDir:
+				case LITERAL_abs:
+				case LITERAL_add:
+				{
+					break;
+				}
+				default:
+				{
+					throw new NoViableAltException(LT(1), getFilename());
+				}
+				}
+				}
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_8);
+		}
+	}
+	
+	public final void setDir() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			match(39);
+			setDirArgs();
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_0);
+		}
+	}
+	
+	public final void setDirArgs() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case LITERAL_volatile:
+			{
+				match(LITERAL_volatile);
+				break;
+			}
+			case LITERAL_novolatile:
+			{
+				match(LITERAL_novolatile);
+				break;
+			}
+			case LITERAL_reorder:
+			{
+				match(LITERAL_reorder);
+				break;
+			}
+			case LITERAL_noreorder:
+			{
+				match(LITERAL_noreorder);
+				break;
+			}
+			case LITERAL_at:
+			{
+				match(LITERAL_at);
+				break;
+			}
+			case LITERAL_noat:
+			{
+				match(LITERAL_noat);
+				break;
+			}
+			case LITERAL_macro:
+			{
+				match(LITERAL_macro);
+				break;
+			}
+			case LITERAL_nomacro:
+			{
+				match(LITERAL_nomacro);
+				break;
+			}
+			case LITERAL_bopt:
+			{
+				match(LITERAL_bopt);
+				break;
+			}
+			case LITERAL_nobopt:
+			{
+				match(LITERAL_nobopt);
+				break;
+			}
+			case LITERAL_move:
+			{
+				match(LITERAL_move);
+				break;
+			}
+			case LITERAL_nomove:
+			{
+				match(LITERAL_nomove);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_0);
+		}
+	}
+	
+	public final void segmentDir() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case 52:
+			{
+				match(52);
+				break;
+			}
+			case 53:
+			{
+				match(53);
+				break;
+			}
+			case 54:
+			{
+				match(54);
+				break;
+			}
+			case 55:
+			{
+				match(55);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_0);
+		}
+	}
+	
+	public final void alignDir() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			match(56);
+			match(Expr);
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_0);
+		}
+	}
+	
+	public final void symbolDir() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case 57:
+			{
+				match(57);
+				match(IDENTIFIER);
+				break;
+			}
+			case 58:
+			{
+				match(58);
+				match(IDENTIFIER);
+				match(14);
+				match(Constant);
+				break;
+			}
+			case 60:
+			{
+				match(60);
+				match(IDENTIFIER);
+				match(14);
+				match(Constant);
+				break;
+			}
+			case 61:
+			{
+				match(61);
+				match(IDENTIFIER);
+				match(14);
+				match(Constant);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_0);
+		}
+	}
+	
+	public final void blockDir() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case 62:
+			{
+				match(62);
+				match(IDENTIFIER);
+				{
+				switch ( LA(1)) {
+				case 14:
+				{
+					match(14);
+					match(Constant);
+					break;
+				}
+				case EOF:
+				{
+					break;
+				}
+				default:
+				{
+					throw new NoViableAltException(LT(1), getFilename());
+				}
+				}
+				}
+				break;
+			}
+			case 63:
+			{
+				match(63);
+				match(IDENTIFIER);
+				match(14);
+				match(Constant);
+				break;
+			}
+			case 64:
+			{
+				match(64);
+				match(Expr);
+				match(14);
+				match(Expr);
+				break;
+			}
+			case 65:
+			{
+				match(65);
+				match(Expr);
+				match(14);
+				match(Expr);
+				break;
+			}
+			case 66:
+			{
+				match(66);
+				match(Register);
+				match(14);
+				match(Expr);
+				match(14);
+				match(Register);
+				break;
+			}
+			case 68:
+			{
+				match(68);
+				{
+				switch ( LA(1)) {
+				case IDENTIFIER:
+				{
+					match(IDENTIFIER);
+					break;
+				}
+				case EOF:
+				{
+					break;
+				}
+				default:
+				{
+					throw new NoViableAltException(LT(1), getFilename());
+				}
+				}
+				}
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_0);
+		}
+	}
+	
+	public final void compilerDir() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case 69:
+			{
+				match(69);
+				match(Register);
+				match(14);
+				match(Register);
+				break;
+			}
+			case 70:
+			{
+				match(70);
+				match(Expr);
+				break;
+			}
+			case 71:
+			{
+				match(71);
+				match(Expr);
+				break;
+			}
+			case 72:
+			{
+				match(72);
+				match(Constant);
+				match(STRING);
+				break;
+			}
+			case 73:
+			{
+				match(73);
+				break;
+			}
+			case 74:
+			{
+				match(74);
+				break;
+			}
+			case 75:
+			{
+				match(75);
+				break;
+			}
+			case 76:
+			{
+				match(76);
+				match(IDENTIFIER);
+				break;
+			}
+			case 77:
+			{
+				match(77);
+				match(Expr);
+				match(14);
+				match(Expr);
+				break;
+			}
+			case 78:
+			{
+				match(78);
+				match(Register);
+				match(14);
+				match(Register);
+				break;
+			}
+			case 79:
+			{
+				match(79);
+				match(LITERAL_flag);
+				break;
+			}
+			case 81:
+			{
+				match(81);
+				match(Constant);
+				match(Constant);
+				break;
+			}
+			case 82:
+			{
+				match(82);
+				match(Expr);
+				match(14);
+				match(Expr);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_0);
+		}
+	}
+	
+	public final void expr() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			match(Term);
+			expr_();
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_9);
+		}
+	}
+	
+	public final void expr_() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			{
+			_loop3837:
+			do {
+				if ((_tokenSet_10.member(LA(1)))) {
+					binaryOp();
+					expr();
+					expr_();
+				}
+				else {
+					break _loop3837;
+				}
+				
+			} while (true);
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_9);
+		}
+	}
+	
+	public final void binaryOp() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case 84:
+			{
+				match(84);
+				break;
+			}
+			case 85:
+			{
+				match(85);
+				break;
+			}
+			case 86:
+			{
+				match(86);
+				break;
+			}
+			case 17:
+			{
+				match(17);
+				break;
+			}
+			case 18:
+			{
+				match(18);
+				break;
+			}
+			case 88:
+			{
+				match(88);
+				break;
+			}
+			case 89:
+			{
+				match(89);
+				break;
+			}
+			case 90:
+			{
+				match(90);
+				break;
+			}
+			default:
+				if ((LA(1)==LITERAL_)) {
+					match(LITERAL_);
+				}
+				else if ((LA(1)==LITERAL_)) {
+					match(LITERAL_);
+				}
+			else {
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_11);
+		}
+	}
+	
+	public final void term() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case 17:
+			case 18:
+			case 91:
+			case 92:
+			{
+				unaryOp();
+				term();
+				break;
+			}
+			case IDENTIFIER:
+			case DECIMAL:
+			case 15:
+			case HEXADECIMAL:
+			case OCTAL:
+			case CHARACTER:
+			{
+				primary();
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_0);
+		}
+	}
+	
+	public final void unaryOp() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case 17:
+			{
+				match(17);
+				break;
+			}
+			case 18:
+			{
+				match(18);
+				break;
+			}
+			case 91:
+			{
+				match(91);
+				break;
+			}
+			case 92:
+			{
+				match(92);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_12);
+		}
+	}
+	
+	public final void primary() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case IDENTIFIER:
+			case DECIMAL:
+			case HEXADECIMAL:
+			case OCTAL:
+			case CHARACTER:
+			{
+				constant();
+				break;
+			}
+			case 15:
+			{
+				match(15);
+				expr();
+				match(16);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_0);
+		}
+	}
+	
+	public final void constant() throws RecognitionException, TokenStreamException {
+		
+		
+		try {      // for error handling
+			switch ( LA(1)) {
+			case DECIMAL:
+			{
+				match(DECIMAL);
+				break;
+			}
+			case HEXADECIMAL:
+			{
+				match(HEXADECIMAL);
+				break;
+			}
+			case OCTAL:
+			{
+				match(OCTAL);
+				break;
+			}
+			case CHARACTER:
+			{
+				match(CHARACTER);
+				break;
+			}
+			case IDENTIFIER:
+			{
+				match(IDENTIFIER);
+				break;
+			}
+			default:
+			{
+				throw new NoViableAltException(LT(1), getFilename());
+			}
+			}
+		}
+		catch (RecognitionException ex) {
+			reportError(ex);
+			consume();
+			consumeUntil(_tokenSet_0);
+		}
+	}
+	
+	
+	public static final String[] _tokenNames = {
+		"<0>",
+		"EOF",
+		"<2>",
+		"NULL_TREE_LOOKAHEAD",
+		"IDENTIFIER",
+		"COLON",
+		"DOLLAR",
+		"EQUAL",
+		"DECIMAL",
+		"POINT",
+		"FLOAT",
+		"DOLLAR_F_DECIMAL",
+		"\";\"",
+		"Operand",
+		"\",\"",
+		"\"(\"",
+		"\")\"",
+		"\"+\"",
+		"\"-\"",
+		"Expr",
+		"DECIMAL_B",
+		"DECIMAL_F",
+		"\".\"",
+		"\".ascii\"",
+		"STRING",
+		"\".asciiz\"",
+		"\".space\"",
+		"\".byte\"",
+		"\".half\"",
+		"\".word\"",
+		"\".float\"",
+		"\".double\"",
+		"\":\"",
+		"SetDir",
+		"SegmentDir",
+		"AlignDir",
+		"SymbolDir",
+		"BlockDir",
+		"CompilerDir",
+		"\".set\"",
+		"\"volatile\"",
+		"\"novolatile\"",
+		"\"reorder\"",
+		"\"noreorder\"",
+		"\"at\"",
+		"\"noat\"",
+		"\"macro\"",
+		"\"nomacro\"",
+		"\"bopt\"",
+		"\"nobopt\"",
+		"\"move\"",
+		"\"nomove\"",
+		"\".text\"",
+		"\".data\"",
+		"\".rdata\"",
+		"\".sdata\"",
+		"\".align\"",
+		"\".globl\"",
+		"\".extern\"",
+		"Constant",
+		"\".comm\"",
+		"\".lcomm\"",
+		"\".ent\"",
+		"\".aent\"",
+		"\".mask\"",
+		"\".fmask\"",
+		"\".frame\"",
+		"Register",
+		"\".end\"",
+		"\".alias\"",
+		"\".bgnb\"",
+		"\".endb\"",
+		"\".file\"",
+		"\".galive\"",
+		"\".gjaldef\"",
+		"\".gjrlive\"",
+		"\".lab\"",
+		"\".livereg\"",
+		"\".noalias\"",
+		"\".option\"",
+		"\"flag\"",
+		"\".verstamp\"",
+		"\".vreg\"",
+		"Term",
+		"\"*\"",
+		"\"/\"",
+		"\"%\"",
+		"\"\"",
+		"\"&\"",
+		"\"^\"",
+		"\"| \"",
+		"\"~\"",
+		"\"!\"",
+		"HEXADECIMAL",
+		"OCTAL",
+		"CHARACTER",
+		"\"zero\"",
+		"\"v0\"",
+		"\"v1\"",
+		"\"a0\"",
+		"\"a1\"",
+		"\"a2\"",
+		"\"a3\"",
+		"\"t0\"",
+		"\"t1\"",
+		"\"t2\"",
+		"\"t3\"",
+		"\"t4\"",
+		"\"t5\"",
+		"\"t6\"",
+		"\"t7\"",
+		"\"s0\"",
+		"\"s1\"",
+		"\"s2\"",
+		"\"s3\"",
+		"\"s4\"",
+		"\"s5\"",
+		"\"s6\"",
+		"\"s7\"",
+		"\"t8\"",
+		"\"t9\"",
+		"\"k0\"",
+		"\"k1\"",
+		"\"gp\"",
+		"\"sp\"",
+		"\"s8\"",
+		"\"fp\"",
+		"\"ra\"",
+		"\"$zero\"",
+		"\"$at\"",
+		"\"$v0\"",
+		"\"$v1\"",
+		"\"$a0\"",
+		"\"$a1\"",
+		"\"$a2\"",
+		"\"$a3\"",
+		"\"$t0\"",
+		"\"$t1\"",
+		"\"$t2\"",
+		"\"$t3\"",
+		"\"$t4\"",
+		"\"$t5\"",
+		"\"$t6\"",
+		"\"$t7\"",
+		"\"$s0\"",
+		"\"$s1\"",
+		"\"$s2\"",
+		"\"$s3\"",
+		"\"$s4\"",
+		"\"$s5\"",
+		"\"$s6\"",
+		"\"$s7\"",
+		"\"$t8\"",
+		"\"$t9\"",
+		"\"$k0\"",
+		"\"$k1\"",
+		"\"$gp\"",
+		"\"$sp\"",
+		"\"$s8\"",
+		"\"$fp\"",
+		"\"$ra\"",
+		"\"abs\"",
+		"\"add\""
+	};
+	
+	private static final long[] mk_tokenSet_0() {
+		long[] data = { 2L, 0L, 0L};
+		return data;
+	}
+	public static final BitSet _tokenSet_0 = new BitSet(mk_tokenSet_0());
+	private static final long[] mk_tokenSet_1() {
+		long[] data = { 545435681042L, 0L, 25769803776L, 0L, 0L, 0L};
+		return data;
+	}
+	public static final BitSet _tokenSet_1 = new BitSet(mk_tokenSet_1());
+	private static final long[] mk_tokenSet_2() {
+		long[] data = { 545435685138L, 0L, 25769803776L, 0L, 0L, 0L};
+		return data;
+	}
+	public static final BitSet _tokenSet_2 = new BitSet(mk_tokenSet_2());
+	private static final long[] mk_tokenSet_3() {
+		long[] data = { 545435693330L, 0L, 25769803776L, 0L, 0L, 0L};
+		return data;
+	}
+	public static final BitSet _tokenSet_3 = new BitSet(mk_tokenSet_3());
+	private static final long[] mk_tokenSet_4() {
+		long[] data = { 65538L, 0L, 0L};
+		return data;
+	}
+	public static final BitSet _tokenSet_4 = new BitSet(mk_tokenSet_4());
+	private static final long[] mk_tokenSet_5() {
+		long[] data = { 32770L, 0L, 0L};
+		return data;
+	}
+	public static final BitSet _tokenSet_5 = new BitSet(mk_tokenSet_5());
+	private static final long[] mk_tokenSet_6() {
+		long[] data = { 425986L, 0L, 0L};
+		return data;
+	}
+	public static final BitSet _tokenSet_6 = new BitSet(mk_tokenSet_6());
+	private static final long[] mk_tokenSet_7() {
+		long[] data = { 525312L, 0L, 0L};
+		return data;
+	}
+	public static final BitSet _tokenSet_7 = new BitSet(mk_tokenSet_7());
+	private static final long[] mk_tokenSet_8() {
+		long[] data = { 545435701522L, 0L, 25769803776L, 0L, 0L, 0L};
+		return data;
+	}
+	public static final BitSet _tokenSet_8 = new BitSet(mk_tokenSet_8());
+	private static final long[] mk_tokenSet_9() {
+		long[] data = { 458752L, 133169152L, 0L, 0L};
+		return data;
+	}
+	public static final BitSet _tokenSet_9 = new BitSet(mk_tokenSet_9());
+	private static final long[] mk_tokenSet_10() {
+		long[] data = { 393216L, 133169152L, 0L, 0L};
+		return data;
+	}
+	public static final BitSet _tokenSet_10 = new BitSet(mk_tokenSet_10());
+	private static final long[] mk_tokenSet_11() {
+		long[] data = { 0L, 524288L, 0L, 0L};
+		return data;
+	}
+	public static final BitSet _tokenSet_11 = new BitSet(mk_tokenSet_11());
+	private static final long[] mk_tokenSet_12() {
+		long[] data = { 426256L, 4160749568L, 0L, 0L};
+		return data;
+	}
+	public static final BitSet _tokenSet_12 = new BitSet(mk_tokenSet_12());
+	
+	}
+@
+
+
+1.1
+log
+@Test parser
+@
+text
+@@
+

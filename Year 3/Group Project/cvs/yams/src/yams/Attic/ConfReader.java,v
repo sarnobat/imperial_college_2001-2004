@@ -1,0 +1,71 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.12.05.17.09.46;	author qq01;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.05.17.04.39;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@Moved ConfReader to FileReader in the util package
+@
+text
+@/*
+ * Created on 2003-12-5
+ */
+package yams;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+
+/**
+ * @@author Qian Qiao(qq01)
+ */
+public class ConfReader {
+	public InputStream readFile(String file) throws FileNotFoundException {
+		File f = new File(file);
+
+		if (f.exists()) {
+			return new FileInputStream(f);
+		} else {
+			return ClassLoader.getSystemResourceAsStream(file);
+		}
+	}
+
+	public static void main(String args[]) {
+		ConfReader cf = new ConfReader();
+		try {
+			InputStream is = cf.readFile("Instruction_file.xml");
+			System.out.println(is.toString());
+		} catch (FileNotFoundException e) {
+			System.out.println(e.toString());
+		}
+	}
+}
+@
+
+
+1.1
+log
+@Added configuration file reader
+@
+text
+@@
+

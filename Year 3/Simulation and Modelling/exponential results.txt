@@ -1,0 +1,96 @@
+Time finished: 100000.90572039086
+Utilisation = 0.0
+Mean queue length = 0.02689345864492012
+Mean response time = 0.015129816219393695
+Throughput = 1.777513900694151
+
+Observations = 177753   Mean = 0.01513   Variance = 0.00023
+Histogram is empty
+Average number of Documents waiting in buffer = 0.02689345864492012
+Variance = 0.027581270171917947
+e = 0.0010293456554246252
+Average time taken for document to be transmitted having been placed in buffer = 0.015129816219393695
+Variance = 2.2892078890765751E-4
+e = 9.377708342844173E-5
+===========================================================================================================================
+
+
+Time finished: 100000.41491851048
+Utilisation = 0.0
+Mean queue length = 0.02683588652718693
+Mean response time = 0.01516612198807981
+Throughput = 1.7694626581718953
+
+Observations = 176947   Mean = 0.01517   Variance = 0.00023
+Histogram is empty
+Average number of Documents waiting in buffer = 0.02683588652718693
+Variance = 0.027609366015166396
+e = 0.0010298723241544913
+Average time taken for document to be transmitted having been placed in buffer = 0.01516612198807981
+Variance = 2.299252365230314E-4
+e = 9.398282416200272E-5
+
+
+
+
+
+
+===========================================================================================================================
+
+
+Time finished: 100000.00641563056
+Utilisation = 0.0
+Mean queue length = 0.0268301542481323
+Mean response time = 0.01509092523170925
+Throughput = 1.7778998859365116
+
+Observations = 177790   Mean = 0.01509   Variance = 0.00023
+Histogram is empty
+Average number of Documents waiting in buffer = 0.0268301542481323
+Variance = 0.027590749733111077
+e = 0.0010295271602761375
+Average time taken for document to be transmitted having been placed in buffer = 0.01509092523170925
+Variance = 2.2843731710071348E-4
+e = 9.367842553506059E-5
+
+
+
+
+
+===========================================================================================================================
+
+
+
+Time finished: 100000.77563883101
+Utilisation = 0.0
+Mean queue length = 0.026911558116049946
+Mean response time = 0.015149609802153076
+Throughput = 1.776386221658676
+
+Observations = 177640   Mean = 0.01515   Variance = 0.00023
+Histogram is empty
+Average number of Documents waiting in buffer = 0.026911558116049946
+Variance = 0.02765633230010252
+e = 0.0010307460506659952
+Average time taken for document to be transmitted having been placed in buffer = 0.015149609802153076
+Variance = 2.2716584050485897E-4
+e = 9.341699653107809E-5
+
+
+
+===========================================================================================================================
+
+Time finished: 100001.2448099653
+Utilisation = 0.0
+Mean queue length = 0.026901556374090915
+Mean response time = 0.015149593832096568
+Throughput = 1.7757278955621996
+
+Observations = 177575   Mean = 0.01515   Variance = 0.00023
+Histogram is empty
+Average number of Documents waiting in buffer = 0.026901556374090915
+Variance = 0.027658637607938387
+e = 0.0010307865909000367
+Average time taken for document to be transmitted having been placed in buffer = 0.015149593832096568
+Variance = 2.2734210275324486E-4
+e = 9.345301228060946E-5

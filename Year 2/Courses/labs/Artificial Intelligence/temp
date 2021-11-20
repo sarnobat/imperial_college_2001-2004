@@ -1,0 +1,338 @@
+%I think this only works for depth first
+%use mergesort for the others if the sublists are sorted (not sure they will be)
+%	countPaths(ChildPaths,NumChildPaths),
+%	forall(	member([(Score,Latest)|Rest],Paths),
+%		member([(NewScore,Latest)|Rest],ShiftedPaths)),
+%	NewScore is Score+NumChildPaths,
+%	append(ChildPaths,ShifterPaths,Newpaths).
+
+
+
+forall(P,Q)	:-
+	\+ (P,\+Q).
+
+
+countPaths([],0).
+countPaths([H|T],N)	:-
+	countPaths(T,N1),
+	N is N1 +1.
+
+
+shift(ShiftedPaths) :-
+	forall(member([(Score,Latest)|Rest],[	[	(2,	[[2,2,2],[2,2,2],[2,2,2]]),
+							[[3,3,3],[3,3,3],[3,3,3]]
+						],
+						[	(6,	[[6,6,6],[6,6,6],[6,6,6]]),
+							[[9,9,9],[9,9,9],[9,9,9]]
+						]
+					]	),
+	member([(Score,Latest)|Rest],ShiftedPaths)).
+	%Score2 is Score+2.
+
+
+[
+	[(_A,
+		[
+ 			[2,8,3],
+			[1,6,4],
+			[h,7,5]
+		]),
+		[
+			[2,8,3],
+			[1,6,4],
+			[7,h,5]
+		]
+	],
+
+	[(_B,
+		[
+			[2,8,3],
+			[1,h,4],
+			[7,6,5]
+		]),
+		[
+			[2,8,3],
+			[1,6,4],
+			[7,h,5]
+		]
+	],
+
+	[(_C,	[
+			[2,8,3],
+			[1,6,4],
+			[7,5,h]
+		]),
+		[
+			[2,8,3],
+			[1,6,4],
+			[7,h,5]
+		]
+	]
+]
+
+
+
+
+extend(depth,4,[(0,[	[2,8,3],
+			[1,6,4],
+			[7,h,5]		])],ChildPaths,_).
+
+findall(X,X one_step_extension_of [(0,[[2,8,3],[1,6,4],[7,h,5]])],ChildPaths1).
+
+addscore(depth,THE BIT BELOW ,0).
+[
+	[
+		(_A,	[
+				[2,8,3],
+				[1,6,4],
+				[h,7,5]
+			]),
+
+		[
+			[2,8,3],
+			[1,6,4],
+			[7,h,5]
+		]
+	],
+
+	[
+		(_B,	[
+				[2,8,3],
+				[1,h,4],
+				[7,6,5]
+			]
+		),
+
+		[
+			[2,8,3],
+			[1,6,4],
+			[7,h,5]
+		]
+	],
+
+
+	[(_C,[[2,8,3],[1,6,4],[7,5,h]]),[[2,8,3],[1,6,4],[7,h,5]]]]
+
+
+addscore(depth,[
+			[
+				(A,	[
+						[2,8,3],
+						[1,6,4],
+						[h,7,5]
+					]
+				),
+				[
+					[2,8,3],
+					[1,6,4],
+					[7,h,5]
+				]
+			],
+
+			[
+				(B,	[
+						[2,8,3],
+						[1,h,4],
+						[7,6,5]
+					]
+				),
+				[
+					[2,8,3],
+					[1,6,4],
+					[7,h,5]
+				]
+			],
+
+
+			[
+				(C,	[
+						[2,8,3],
+						[1,6,4],
+						[7,5,h]
+					]
+				),
+				[
+					[2,8,3],
+					[1,6,4],
+					[7,h,5]
+				]
+			]
+		]
+,0).
+
+
+
+addscore(depth,[
+			[
+				(A,	[
+						[2,8,3],
+						[1,6,4],
+						[h,7,5]
+					]
+				),
+				[
+					[2,8,3],
+					[1,6,4],
+					[7,h,5]
+				]
+			],
+
+			[
+				(B,	[
+						[2,8,3],
+						[1,h,4],
+						[7,6,5]
+					]
+				),
+				[
+					[2,8,3],
+					[1,6,4],
+					[7,h,5]
+				]
+			],
+
+
+			[
+				(C,	[
+						[2,8,3],
+						[1,6,4],
+						[7,5,h]
+					]
+				),
+				[
+					[2,8,3],
+					[1,6,4],
+					[7,h,5]
+				]
+			]
+		]
+,0).
+
+
+
+
+
+
+
+
+
+
+
+
+%FAILED ATTEMPT TO TEST MERGE WORKS
+mergeTest(ChildPaths,Paths,NewPaths) :-
+	extend(depth,4,[(0,[	[2,8,3],
+				[1,6,4],
+				[7,h,5]		])],ChildPaths,_),
+	Paths =		[
+				[(2,
+					[
+						[2,2,2],
+						[2,2,2],
+						[2,2,2]
+					]),
+					[
+						[22,22,22],
+						[22,22,22],
+						[22,22,22]
+					]
+				],
+
+				[(3,
+					[
+						[3,3,3],
+						[3,3,3],
+						[3,3,3]
+					]),
+					[
+						[33,33,33],
+						[33,33,33],
+						[33,33,33]
+					]
+				]
+			],
+	merge(ChildPaths,Paths,NewPaths).
+
+
+
+merge([[(1,[[2,8,3],[1,6,4],[h,7,5]]),[[2,8,3],[1,6,4],[7,h,5]]],[(2,[[2,8,3],[1,h,4],[7,6,5]]),[[2,8,3],[1,6,4],[7,h,5]]],[(3,[[2,8,3],[1,6,4],[7,5,h]]),[[2,8,3],[1,6,4],[7,h,5]]]],
+[[(2,[[2,2,2],[2,2,2],[2,2,2]]),[[22,22,22],[22,22,22],[22,22,22]]],[(3,[[3,3,3],[3,3,3],[3,3,3]]),[[33,33,33],[33,33,33],[33,33,33]]]],X).
+
+append([	[(1,	[[2,8,3],[1,6,4],[h,7,5]])	]	],
+	[	[(2,	[[2,2,2],[2,2,2],[2,2,2]])	]	],Newpaths).
+
+countPaths([(1,[[2,8,3],[1,6,4],[h,7,5]])],NumChildPaths),
+forall(	member([(Score,Latest)|Rest],[[(2,[[2,2,2],[2,2,2],[2,2,2]])]]),
+	member([(Score+2,Latest)|Rest],ShiftedPaths)),
+append(ChildPaths,ShifterPaths,Newpaths).
+
+forall(	member([(Score,Latest)|Rest],[[	(2,	[[2,2,2],[2,2,2],[2,2,2]]),
+						[[3,3,3],[3,3,3],[3,3,3]]	]]	),
+	member([(Score,Latest)|Rest],ShiftedPaths)).
+
+member([(Score,Latest)|Rest],[[	(2,[[2,2,2],[2,2,2],[2,2,2]]),
+			[[3,3,3],[3,3,3],[3,3,3]]	]	]),
+
+shift(ShiftedPaths) :-
+	member([(Score,Latest)|Rest],[[	(2,	[[2,2,2],[2,2,2],[2,2,2]]),
+						[[3,3,3],[3,3,3],[3,3,3]]	]]	),
+	member([(Score,Latest)|Rest],ShiftedPaths)).
+
+
+
+insert(		[(4,[[2,8,3],[1,6,4],[7,5,h]])]		,
+	[	[(2,	[[2,2,2],[2,2,2],[2,2,2]])],[(5,[[2,8,3],[1,6,4],[7,5,h]])]	],X).
+
+
+merge(		[[(4,[[2,8,3],[1,6,4],[7,5,h]])],[(6,[[2,8,3],[1,6,4],[7,5,h]])],[(7,[[2,8,3],[1,6,4],[7,5,h]])]]		,
+[	[(2,	[[2,2,2],[2,2,2],[2,2,2]])],[(8,[[2,8,3],[1,6,4],[7,5,h]])]	],X).
+
+
+start_search(1, depth, 4 )
+
+
+extend(depth,4,[(0,[ [1, 2, 3], [8, h, 4], [7, 6, 5] ])],ChildPaths,[ [1, 2, 3], [8, h, 4], [7, 6, 5] ]).
+
+start_search(2,depth,4).
+start_search(TestNo, Heuristic, MaxDepth ) :-
+  initial(2, InitialState ),
+  goal( GoalState ),
+  initial_tree( depth,  [[8,1,3],[2,h,4],[7,6,5]], Paths ),  % for you to write
+  search( depth, 4, 0, [[(0,[[8,1,3],[2,h,4],[7,6,5]])]],  [[1,2,3],[8,h,4],[7,6,5]], Solution, TotalNodes ),
+  displaySolution(Solution, TotalNodes).
+
+
+search( depth, 4, 0, [[(0,[[8,1,3],[2,h,4],[7,6,5]])]],  [[1,2,3],[8,h,4],[7,6,5]], Solution, TotalNodes )
+search( Heuristic, MaxDepth, NodesSoFar, [FirstPath|Paths], Goal, SolutionPath,
+  TotalNodes ) :-
+  extend( depth, 4, [(0,[[8,1,3],[2,h,4],[7,6,5]])], ChildPaths, Goal),% for you to write
+  merge( [[(-4,[[8,1,3],[h,2,4],[7,6,5]]),[[8,1,3],[2,h,4],[7,6,5]]],[(-3,[[8,h,3],[2,1,4],[7,6,5]]),[[8,1,3],[2,h,4],[7,6,5]]],[(-2,[[8,1,3],[2,4,h],[7,6,5]]),[[8,1,3],[2,h,4],[7,6,5]]],[(-1,[[8,1,3],[2,6,4],[7,h,5]]),[[8,1,3],[2,h,4],[7,6,5]]]]
+  	,[],NewPaths),
+  NodeCount is NodesSoFar + 1,
+  write_extension( FirstPath, ChildPaths ),
+  search(Heuristic, MaxDepth, NodeCount, NewPaths, Goal, SolutionPath,
+  TotalNodes ).
+
+		(2,depth,9)
+start_search	(TestNo, Heuristic, MaxDepth ) :-
+  initial(2, InitialState ),
+  goal( GoalState ),
+  initial_tree( depth, [[8,1,3],[2,h,4],[7,6,5]], Paths ),  % for you to write
+  search( depth, 9, 0, [[(0,[[8,1,3],[2,h,4],[7,6,5]])]], [[1,2,3],[8,h,4],[7,6,5]], Solution, TotalNodes ),
+  displaySolution(Solution, TotalNodes).
+
+
+search( depth, 		9, 	0, [[(0,[[8,1,3],[2,h,4],[7,6,5]])]], [[1,2,3],[8,h,4],[7,6,5]], Solution, TotalNodes ),
+search( Heuristic, MaxDepth, NodesSoFar, [FirstPath|Paths], Goal, SolutionPath,
+  TotalNodes ) :-
+  extend( depth, 9, [(0,[[8,1,3],[2,h,4],[7,6,5]])], ChildPaths, Goal),
+  merge(ChildPaths,Paths,NewPaths), NodeCount is NodesSoFar + 1,
+  write_extension( FirstPath, ChildPaths ),
+  search(Heuristic, MaxDepth, NodeCount, NewPaths, [[1,2,3],[8,h,4],[7,6,5]], SolutionPath,
+  TotalNodes ).
+
+extend(depth,MaxDepth,[(Score,FirstPos)|FirstPathRest],ChildPaths,Goal)	:-
+	count([(Score,FirstPos)|FirstPathRest],MaxDepth-1),
+	PathDepth =< MaxDepth,
+	findall(X,X one_step_extension_of [(Score,FirstPos)|FirstPathRest],ChildPaths),
+	addscore(Heuristic,ChildPaths,99999).

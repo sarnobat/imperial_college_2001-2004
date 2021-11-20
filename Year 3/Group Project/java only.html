@@ -1,0 +1,1917 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><title>Undergraduate Proposals List</title>
+</head><body bgcolor="#FFFFFF"><CENTER>
+<H2>Undergraduate Proposals List</H2><HR><BR>
+</CENTER><BR>
+<!-- about to run query "SELECT Ref,Supervisor,Title,LastModified FROM project WHERE Display='Y' AND (Level='Undergraduate' OR Level='Both' OR Level='Any student')  AND (  (  Objective ~* 'java'  )   OR  (  Description ~* 'java'  )  )  ORDER BY LastModified Desc"-->
+<CENTER><H2>A Bottleneck Search Tool</H2></CENTER>
+<B>Supervisor:</B>Tony Field and Andy Cheadle<BR>
+<B>Room No.:</B>376<BR>
+<B>E-mail:</B><A HREF="mailto:ajf@doc.ic.ac.uk">ajf@doc.ic.ac.uk</A><BR>
+<HR><BR><BR>
+<HR><BR>
+
+Understanding the performance characteristics of application software is becoming
+
+increasingly important, particularly as software size and complexity increases along
+
+with the supporting compilers, run-time systems and underlying system architecture.
+
+
+
+Many tools exist that assist in or automate the search for performance bottlenecks and
+
+no matter whether sample-based (stop the PC at fixed intervals and tell me where you
+
+are) or instrumentation-based (tell me every time you reach this point in the program),
+
+the amount of diagnostic data created is often overwhelming. In addition, the tools
+
+available for the analysis of the data are often primitive or language- architecture- or
+even window-manager dependent.
+
+
+<BR><BR>
+The aim of this project is to create a generic framework for the collection and
+
+visualisation of a range of performance metrics from a range of bottleneck search
+
+tools, with an emphasis on scalability and data presentation. The system will ideally
+
+be capable of processing traces generated a priori (offline) and interactively (online),
+
+handling sample- and instrumentation-based metrics, displaying program callgraphs,
+
+updating histogram and scatter plots in real time, aggregating data and creating
+
+summary statistics. The model should be of a client generating a trace that is fed to a
+
+server that will do the trace analysis and visualisation.  The communication between
+
+client and server will require a generic data exchange format that is simple and
+
+efficient and that can be used to collect data from such tools as JVMPI, JUDI,
+
+TaskGraph, gprof, hprof, cachegrind/valgrind, PAPI and Rabbit.  The metrics
+
+collected must not however be limited to time, memory usage or cache metrics.
+
+
+
+A well designed and developed solution would potentially make use of the following
+
+technologies:
+
+
+
+*  Java for portability and GUI construction (this is not a simple GUI; it must be slick,
+
+fast and scalable!)
+
+
+
+*  Networking protocols (must you use TCP or is UDP an option?) and client-server
+
+communication.
+
+
+
+Extensions might include:
+
+
+
+*  Data stream compression techniques
+
+
+
+*  Callgraph construction from Java class files
+
+
+
+*  Bytecode rewriting for instrumentation insertion
+
+
+
+To demonstrate the generic applicability of the tool and ease of integration, you
+
+should aim to have working interfaces for perhaps JVMPI, PAPI and h/gprof.
+
+
+
+To wet your appetite, look at the slickness of Kcachegrind and Calltree, could you
+
+better it in Java?
+
+
+
+
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Flexible Execution for Java</H2></CENTER>
+<B>Supervisor:</B>Sophia Drossopoulou<BR>
+<B>Room No.:</B>559<BR>
+<B>E-mail:</B><A HREF="mailto:scd@doc.ic.ac.uk">scd@doc.ic.ac.uk</A><BR>
+<HR><BR>To produce more flexible execution of Java, which defer linking to an even later stage than currently done.<BR>
+<HR><BR><p align="justify">
+Java compilation  is less flexible than Java linking, because
+compilation takes place in the context of some classes, which
+however may be different form the classes in which execution
+(and thus also linking will take place), cf a sequence of
+examples given in
+<a href="http://joint.org/use2002/sub/drossopoulou-Manifestations.pdf">http://joint.org/use2002/sub/drossopoulou-Manifestations.pdf</a>
+</p>
+
+<p align="justify">
+The expectations from used classes are hard coded in the
+compiled class by the compiler. Thus e.g., if we compile
+</p>
+
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new A().m( new B(). f)
+</p>
+
+<p>
+in an environment where class A has a method m which expects
+an argument of class D, and class B has a field f of class D,
+then these expectations will be hard coded in the code, and will not
+allow the code to run in an environment where class A has a method m 
+which expects an argument of class C, and class B has a field f of class C.
+</p>
+
+<p align="justify">
+These issues are discussed in work in progress in
+<a href=" http://www.doc.ic.ac.uk/~scd/PermissiveSepCompi/PermissiveCompilation2.pdf"> http://www.doc.ic.ac.uk/~scd/PermissiveSepCompi/PermissiveCompilation2.pdf</a>
+</p>
+
+<p align="justify">
+
+The aim of the  project would be to develop a prototype
+for such a permissive JVM, which
+links in the classes as lazily as possible. This could be
+done either by writing  JVM from scratch, or by
+modifying the SUN  JVM.
+</p>
+<p> As an extension, the student could also develop the corresponding Java compiler.
+<p>
+The ideas are currently under development. The student
+ would have the opportunity to contribute to thair development
+- if they want to.
+<p>
+The project is a mixture of implementation and research.<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Automatic  Wrapper Induction: Automatic Spider Training for Information Extraction from Web Sources</H2></CENTER>
+<B>Supervisor:</B>Moustafa M Ghanem<BR>
+<B>Room No.:</B>358<BR>
+<B>E-mail:</B><A HREF="mailto:mmg@doc.ic.ac.uk">mmg@doc.ic.ac.uk</A><BR>
+<HR><BR>Design and implement a trainable tool that automatically extracts specified information from multiple web pages.<BR>
+<HR><BR>Imagine you need to do a comparative study between different products 
+(Shares (Stocks), Cars, Books, Restaurants or anything really). 
+Your aim is to compare the specs, features and prices. 
+<br><br>
+Most of this information is publically available over the web through an html interface on many sites. This is good for display purposes, but not for automatic information extraction, where you may want to collect information from these different web sources and put it in a structured form for automatic analysis.
+<br><br>
+You can collect the information manually, going to each web page and cutting and pasting the required information. With a lot of information to cut and past, you may decide to write some specialised spider that autoamtically downloads the pages and extract the required information. This is typically a couple just a few parsing rules in terms of the html structure of document. --- But with a large number of web sites to connect to and extract information from, you have to hand tune the spider (or effectively re-writing it) for each new source. 
+<br><br>
+Imagine this scenario: You go to the web page and click on the text on the screen and label them ("Product Name", "Description", "Price", etc). Your repeat this process over a couple of pages to train the system, which can now generate the parsing rules automatically and thus generating spider code for you.
+<br><br>
+
+Skills: Java, XML
+
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Interactive GIS / Data Mining for Air Pollution Data</H2></CENTER>
+<B>Supervisor:</B>Moustafa M Ghanem<BR>
+<B>Room No.:</B>358<BR>
+<B>E-mail:</B><A HREF="mailto:mmg@doc.ic.ac.uk">mmg@doc.ic.ac.uk</A><BR>
+<HR><BR>Design and develop an integrated GIS/data mining system for Air Pollution Data Mining<BR>
+<HR><BR>Interactive map systems (Geographic Information Systems) are a useful tool for the displaying data arising in many scientific applications. Integrating GIS with data mining systems allows users to analyze and identify complex dependencies and patterns in their data sets and display them in the context of a map, and also allows them to use the map as front-end for driving complex data mining procedures. In many cases the data to be analyzed is not held centrally but distributed over the Internet either in public databases or remote proprietary databases.
+<br><br>
+Examples of such scientific applications are environmental modeling where air pollution data and traffic patterns are co-analyzed over a map. Examples also include geo-hazard prediction are integrating a map, satellite & radar images and information about landslides. Other examples arise in epidemiology for identifying disease patterns and studying their causing factors. 
+<br><br>
+In this project you will design an integrated and scalable GIS data-mining system allowing users to access, display and analyze data from various sources on a map. Your design should include methods for intelligently managing and structuring the data when drilling up/down a map and overlaying it with satellite/radar images. You will also investigate integrating the map system with various data mining algorithms.
+<br><br>
+You will be provided with various libraries and classes at the beginning of the project including a basic map viewer and various data mining algorithms.
+<br><br>
+Skills: Java
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Integrated Data Analysis of Biological Data using Co-training and Validation</H2></CENTER>
+<B>Supervisor:</B>Moustafa M Ghanem<BR>
+<B>Room No.:</B>358<BR>
+<B>E-mail:</B><A HREF="mailto:mmg@doc.ic.ac.uk">mmg@doc.ic.ac.uk</A><BR>
+<HR><BR>Develop tools to validate patterns in one data set (e.g. gene expression data) by using reference information contained in other data sets (e.g. metabolic pathway data, Medline abstracts, etc) <BR>
+<HR><BR>The aim of this project is to build tools and case studies that will allow the validation of patterns found in experimental gene expression data. <br><br>
+
+The approach aims for the integrated analysis of gene expression obtained from experimental results in conjunction with  publically available data sets. By applying standard data analysis techniques to experimental gene expression data, relationships between different genes can be found, e.g. which genes are expressed in each cell line - what are their levels of expression - which gene groups are expressed at the same level - which gene groups display similar variations in expression levels in response to an external stimulus.
+
+<br><br>
+
+Having found these patterns, a researcher is typically interesting in assessing their significance and possibly finding a biological explanation for such patterns. This can be achieved by referencing and analysing information about these genes that is contained in public data set. 
+
+<br><br>
+
+This approach falls nicely within the wider concept in machine learning known as co-training. This project aims to automate the framework and to provide interactive tools that would allow the user to define the required workflow and interaction between the data sets and databases of interest.
+
+<br><br>
+Skills Needed: Java. 
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects.
+
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>PPI: Protein-protein interactions</H2></CENTER>
+<B>Supervisor:</B>Moustafa M Ghanem<BR>
+<B>Room No.:</B>358<BR>
+<B>E-mail:</B><A HREF="mailto:mmg@doc.ic.ac.uk">mmg@doc.ic.ac.uk</A><BR>
+<HR><BR><BR>
+<HR><BR><p>The aim of this project is to produce a browser that searches the web for PPIs given a single protein as input. It will go to chosen web servers, and return a list of proteins known or conjectured to interact with that protein. Then the user will be able to query every PPI, and return to the source HTML (or text) page to review the associated data. Every protein in a living cell will interact with a variety of others, and the network of proteins functions like the parts of a car, each with its own function. The list of PPIs will be incomplete for some time to come, but accessing the available data for proteins as they occur in different organisms is crucial to our current understanding of disease and normal cell processes.</p>
+
+<p><b>Required:</b> Java, GET and POST CGI scripting desirable</p>
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Interactive graphical user interface for the analysis of data from petroleum data wells</H2></CENTER>
+<B>Supervisor:</B>Moustafa M Ghanem<BR>
+<B>Room No.:</B>358<BR>
+<B>E-mail:</B><A HREF="mailto:mmg@doc.ic.ac.uk">mmg@doc.ic.ac.uk</A><BR>
+<HR><BR>The aim of this project is to develop a graphical user interface for
+an existing C program which analyzes well test data from petroleum
+wells. The interface should run on both Windows 2000/XP and Linux and
+should allow display and graphical editing of data and analysis and allow the user to intutively drive the parameter settings of the program.<BR>
+<HR><BR>This project is co-supervised with Thomas von Schroeter from the Earths Sciences Department.
+<br><br>
+When hydrocarbons are produced from a reservoir at constant flow rate,
+the reservoir pressure drops over time in a fashion characteristic of
+the geometry and material properties of the reservoir and fluid. The
+analysis of this pressure behaviour is routinely used in Petroleum
+Engineering in order to characterize the dynamic properties of a
+reservoir.
+<br>
+In practice, it is rarely possible or desirable to produce a
+reservoir at constant rate. Instead, one records the flow rate and the
+pressure over time, and computes from these two signals an estimate of
+what the pressure signal would have been had the reservoir been
+produced at constant rate. This is roughly what the C program already
+does. (Mathematically speaking, this is a deconvolution problem.)
+<br>
+The quality of the estimate can be assessed in various ways. The most
+important one is to graphically compare the measured pressure signal
+with the one obtained from the model estimate. There are also various
+ways to estimate bias and variance of the result.
+<br>
+The main task of the project is the development of a user interface
+with the functionality to carry out all these steps interactively and
+repeatedly, and display the results in a meaningful way. In
+particular, it is important that the input data can be edited in
+graphical mode in order to remove outliers, insert missing rate
+periods, etc. This is also desirable for the solution, in order to allow the
+user to restart the algorithm with an initial guess different from the
+default. 
+<br>
+Ideas for extensions include implementing a set of model type curves
+based on specific reservoir geometries, and algorithms which fit their
+parameters to the data as well as to the response estimate. 
+<br>
+The resulting software must be well documented in order to allow
+future modifications. 
+<br>
+<br>
+Required:Java,C/C++ for extensions,Maths/Physics background desirable
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Automatic Information Extraction from Text Documents Challenge</H2></CENTER>
+<B>Supervisor:</B>Moustafa M Ghanem<BR>
+<B>Room No.:</B>358<BR>
+<B>E-mail:</B><A HREF="mailto:mmg@doc.ic.ac.uk">mmg@doc.ic.ac.uk</A><BR>
+<HR><BR>Investigate and Implement algorithms for automatic information extraction from text documents<BR>
+<HR><BR>What is required is simply described as can you extract useful information from unstructured text documents and put it into a structured form? Example can you automatically browse car ads and populate a database with the car make, type, colour, price and contact detail information. Can you extract information about protein interactions or drug-disease efects by scanning medical publications.
+<br><br>
+If you are interested in the topic and are a very good student check for the our entry in the KDD CUP competition 2002.
+<br>
+You will be expected to improve on our results.
+<br><br>
+
+The project will be involve using a mixture of NLP, text parsing and statistical techniques.
+<br><br>
+Skills: Java
+
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects.<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Automatic Text Classification Challenge</H2></CENTER>
+<B>Supervisor:</B>Moustafa M Ghanem<BR>
+<B>Room No.:</B>358<BR>
+<B>E-mail:</B><A HREF="mailto:mmg@doc.ic.ac.uk">mmg@doc.ic.ac.uk</A><BR>
+<HR><BR>Investigate and Implement Automatic Text Classification Algorithms<BR>
+<HR><BR>Automatic Text Classification is an important research area that goes beyond information retrieval. Whereas the concept behind the approach may be simple and so is providing an initial prototype, providing a scalable implementation with acceptable run-time performance is challenging. 
+<br><br>
+If you are interested in the topic and are a very good student check for the our entry in the KDD CUP competition 2002.
+<br>
+You will be expected to improve on our results.
+<br><br>
+The project aims to implement a robust and accurate text classifiers. Emphasis is one the software engineering aspects of designing this tool, as well as on their accuracy.
+
+<br><br>
+Skills: Java
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects.
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Text Mining over Protein Databases</H2></CENTER>
+<B>Supervisor:</B>Moustafa M Ghanem<BR>
+<B>Room No.:</B>358<BR>
+<B>E-mail:</B><A HREF="mailto:mmg@doc.ic.ac.uk">mmg@doc.ic.ac.uk</A><BR>
+<HR><BR>Developing Text Mining Tools for Protein Databases<BR>
+<HR><BR>Biological research proceeds on the basis of a body of knowledge. Much of a researcher’s time is spend surfing the web (PubMed particularly) and reading papers about proteins that s/he is working on, and protein systems related by function, prior research or even simply on location (the new emphasis is that proteins work in connection with the complete environment in which they are found, and this includes a range of proteins).
+<br><br>
+This project involves designing a text-mining engine that assimilates paragraphs of data from the published literature, for one protein (others may be included in the search). Maintain tags to the URLs, and permit drilling deeper into the data. If there is time, supply a simple graphical output of all of the proteins found, so that the researcher may have an overview of the results of the text search (initially this can be a list in HTML).
+<br><br>
+Skills Needed: Java, XML
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects.
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Constraint-guided Enterprise Portal</H2></CENTER>
+<B>Supervisor:</B>Frank Kriwaczek<BR>
+<B>Room No.:</B>431<BR>
+<B>E-mail:</B><A HREF="mailto:frk@doc.ic.ac.uk">frk@doc.ic.ac.uk</A><BR>
+<HR><BR>The project involves building tools in a principled fashion for communicating with, analysing and displaying information from a logic-based and constraint-guided workspace portal.<BR>
+<HR><BR>The work would build upon and integrate with earlier developments by Hogger, Kriwaczek and Ahmed. The technology would include Prolog and CLP, and might also involve Java or Visual Basic for imploementing the interface. 
+
+This project is suitable for a 4th year MEng or a MAC student.<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Use of Eclipse to Generate Security for Existing Programs</H2></CENTER>
+<B>Supervisor:</B>Morris Sloman<BR>
+<B>Room No.:</B>572<BR>
+<B>E-mail:</B><A HREF="mailto:mss@doc.ic.ac.uk">mss@doc.ic.ac.uk</A><BR>
+<HR><BR>To investigate the Aspect Oriented Programming features of Eclipse as a means of retrofitting security in terms of access control and authentication into existing programs. <BR>
+<HR><BR>This could make use of existing certificate libraries and Java security or implement a authorisation server which interprets Ponder policies.  
+
+Onlys sutable for an MENG student.    
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Runtime optimisation of Java JDBC calls using a Virtual JVM</H2></CENTER>
+<B>Supervisor:</B>Paul Kelly<BR>
+<B>Room No.:</B>423<BR>
+<B>E-mail:</B><A HREF="mailto:phjk@doc.ic.ac.uk">phjk@doc.ic.ac.uk</A><BR>
+<HR><BR>Improve performance of Java applications that use the JDBC database interface. 
+The idea is you run the application under a special "virtual" JVM layer, which intercepts JDBC calls and optimises it uses classical JDBC performance tricks. <BR>
+<HR><BR>JDBC is Java's binding to SQL databases, and is very widely used.  Poor use of JDBC can be the source of many performance problems, and fixing this chews up a lot of development time.  The goal of this project is to develop an automatic optimisation tool which looks at the client's use of JDBC, and automatically rearranges the code to expose optimisation opportunities.
+<p> 
+To do this we propose to use the "Veneer" Virtual JVM.  This is a prototype tool for implementing "domain-specific" optimisations at runtime in Java.  Veneer is a Java application that executes Java applications, but each time application bytecode is loaded it modifies the bytecode to intercept the flow of control.  We have used this successfully to optimise RMI.  The plan is to do it for JDBC.  The basic idea is to defer JDBC calls as much as possible, then, when forced to execute them, we can look at a whole sequence of calls together.
+<p>
+Then we can use whatever performance tricks we can find - stored procedures, prepared statements, and perhaps more - to optimise the aggregated call set.
+<p>
+Your task is to figure out how to get Veneer to do this, select a database and JDBC implementation, and write the code needed to make it work.  The goal is to write a report that shows the potential for these ideas on realistic applications, so a crucial issue is to identify a selection of benchmarks which you can use for testing from an early stage.
+<p>
+This is a research-level project with enormous potential.  You need fairly deep knowledge of Java, some experience of JDBC and its applications, and, above all, a talent for getting complicated code to work.<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Simulating the Container Transport System</H2></CENTER>
+<B>Supervisor:</B>Tony Field<BR>
+<B>Room No.:</B>376<BR>
+<B>E-mail:</B><A HREF="mailto:ajf@doc.ic.ac.uk">ajf@doc.ic.ac.uk</A><BR>
+<HR><BR>To build middleware that will enable an existing Java model of the international container shipping system to be turned into a service, with model integration happening on high-performance compute clusters and model configuration, job control and data visualisation happening via a web browser<BR>
+<HR><BR>The vast majority of world import and export goods are now shipped by container. It's a multi-billion-pound business involving shippers (e.g. Sainsbury's), ports (e.g. Southampton), shipping lines (e.g. P&O), road and rail hauliers (e.g. Securicor-Omega, Freightliner) and third-party logistics organisations.  <BR><BR>
+To help the container business organisations plan for the future, and to help the U.K. Government to explore the implications of transport policies such as road charging, a simulation model of the business is being developed here at Imperial. This is a big research project funded by the DTI through EPSRC.  <BR><BR>
+The project described here will focus on the international trade model, which models port-port and door-port container volume based upon historical data and scenarios for future growth. It's in Java and it works!  Currently, however, the model is very cumbersome to use: the user (one of the industrial partners) has to install a raft of software on their desktop machine, follow low-level instructions for driving the model, keep track of various intermediate files generated by the model, apply manual filtering of output data and then invoke a tool such as Excel to produce reports, time series etc.  It's all very 'yucky'<BR><BR>
+
+Ideally, what we would like is a system that enables the user to configure a model, integrate the model (solve it), and analyse its output remotely via a web browser. For computationally complex queries, e.g. draw a graph of ship capacities at Felixstowe as global trade volumes increase from 1 through 20%, it would be nice to exploit a high-performance cluster on the server side, such as those provide by ICPC. <BR><BR> Initially, to get things started, the project could focus on providing visualisation tools for a pre-computed data set. <BR><BR>
+This is not an ultra high-risk project, although the cluster-based computing problems (e.g. using ICENI) will present some interesting challenges if you get that far. The project is initially about delivering useful tools that really work.  The project will give you a chance to work alongside research assistants who are developing the various models and industry partners who will be using them.
+<BR><BR> You need to be interested in client-server programming, Java, middleware etc. an interest in modelling would be nice, but is not essential.  You should have done some web-based programming before.<BR><BR>
+
+It may be better from our point of view to offer this to an MEng student for the simple reason that we would ideally like some early deliverables (early January).  This will prove more difficult for BEng Computing students, but they will not be excluded from consideration.<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Investigations into C-sharp</H2></CENTER>
+<B>Supervisor:</B>Sophia Drossopoulou<BR>
+<B>Room No.:</B><BR>
+<B>E-mail:</B><A HREF="mailto:scd@doc.ic.ac.uk">scd@doc.ic.ac.uk</A><BR>
+<HR><BR>The investigate the  novel features of C-sharp, 
+with particular interest in linking and separate compilation.<BR>
+<HR><BR>C-sharp is a new language developed by Microsoft, to be used
+as the high level for the .net platform. It is meant to combine the
+experience from java and C++. It has a very powerful type
+system, and interesting ideas with regards to linking.
+<p>
+The project could concentrate on all, or some of the following:
+<li>develop a semantcis and type system for a subset
+</li><li>
+develop a sequrence of test programs which demonstrate language 
+features
+</li>
+<li>
+investigate dynamic linking and compare with that in Java
+</li>
+<p>
+A very interesting question in C-sharp is the support of
+versioning, more at 
+<a href="http://www.doc.ic.ac.uk/~mcs98//SLURP.cgi?PrelimVers"> a discussion wiki</a>. 
+<p>
+The student would investigate the features by means of studying the
+language description, developing a sequence of examples, and then
+formalizing the semantics in the style of L2, as in 
+<a href="http://www.doc.ic.ac.uk/~scd/Teaching/AdvOO.html"> the
+course Advanced Issues in
+Object Oriented Languages</a>, or, in a more axiomatic presentation,
+by means of equations,
+as in the paper <a href=http://www-dse.doc.ic.ac.uk/projects/slurp/pubs.html#lics">
+A Fragment Calculus ? towards a model of Separate Compilation, Linking and Binary Compatibility</a>
+</a>
+<p>
+<p>
+
+
+Students' suggestions welcome. Enthusiasm a prerequisite.<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Java Semantics Visualization</H2></CENTER>
+<B>Supervisor:</B>Sophia Drossopoulou<BR>
+<B>Room No.:</B>559<BR>
+<B>E-mail:</B><A HREF="mailto:scd@doc.ic.ac.uk">scd@doc.ic.ac.uk</A><BR>
+<HR><BR>A simulator and animator for the Java Operational Semantics,
+as described in a formal semantics developed by
+Sophia Drossopoulou and Susan Eisenbach.<BR>
+<HR><BR>The tool should run on the web, and should highlight execution
+of a term, and its effect on the state. Of course, only a
+subset of the language Java can be modelled.
+</p>
+
+<p align="justify">
+
+Attendance of Operational Semantics course a prerequisite.
+</p>
+
+<p align="justify">
+The following paper describes the Java operational semantics:
+</p>
+
+<p>
+<a href="http://www-dse.doc.ic.ac.uk/projects/slurp/pubs.html#tapos">Is the Java Type System Sound?</a>
+<br>
+by  Sophia Drossopoulou, Susan Eisenbach and Sarfraz Khurshid.
+</p><BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Formalization of GJ</H2></CENTER>
+<B>Supervisor:</B>Sophia Drossopoulou<BR>
+<B>Room No.:</B>559<BR>
+<B>E-mail:</B><A HREF="mailto:scd@doc.ic.ac.uk">scd@doc.ic.ac.uk</A><BR>
+<HR><BR>To extend the description of the language L2 (from the course Advances Issues in OO Languages), so that it includes a formalization og GJ.<BR>
+<HR><BR>GJ is an extension of Java, which supports generic classes, i.e. class parameterization. GJ has been introduced into version 1.5 of Java, c.f. <a href="http://www.research.avayalabs.com/user/wadler/gj/index.html#jan03"> The GJ Description</a>. The language has been formalized for a functional setting in
+<a href="http://www.sato.kuis.kyoto-u.ac.jp/~igarashi/papers/fj.html"> Featherweight Java, a minimal core calculus for Java and GJ</a>.
+<p>
+The aim of this project is to formalize GJ for an imperative setting.
+<p>
+The project has a high research potential, and requires enthusiasm. <BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Beat the Theorem Prover</H2></CENTER>
+<B>Supervisor:</B>Simon Colton<BR>
+<B>Room No.:</B>407<BR>
+<B>E-mail:</B><A HREF="mailto:sgc@doc.ic.ac.uk">sgc@doc.ic.ac.uk</A><BR>
+<HR><BR>To generate theorems which are difficult for automated theorem provers to solve.<BR>
+<HR><BR><html>
+<title>Beat the Theorem Prover</title>
+<body background="../../../images/greenministripe.gif" text="black">
+<table width=600 border=0>
+<tr>
+<td>
+<center>
+<font face='comic sans MS'>
+<h2>Beat the Theorem Prover</h2>
+</font>
+</center>
+<p align=justify>
+Automated theorem proving is an important area of Artificial
+Intelligence. To show advances in the area it is important to keep
+testing theorem provers with new theorems and non-theorems. There is a
+competition every year:
+
+<p>
+<center>
+<a href="http://www.cs.miami.edu/~tptp/CASC/">The CADE ATP System Competition
+</a>
+</center>
+
+<p align=justify>
+in which the leading state of the art first order theorem provers
+battle it out to be crowned supreme champion. 
+<p align=justify>
+The theorems selected for the competition are taken from the:
+
+<p>
+<center>
+<a href="http://www.cs.miami.edu/~tptp/index.html">
+The TPTP Problem Library
+</a>
+</center>
+
+<p align=justify>
+We have previously used our HR program to generate theorems for this
+library. HR is a theory formation program which can generate tens of
+thousands of theorems given just the axioms of a mathematical domain
+such as group theory. However, the generation was done in a
+brute-force way, without using any of the (masses of) intelligence in
+the program. To show you how bad it is, out of 46,000 theorems in
+group theory, only 184 were accepted into the TPTP library.
+
+<p align=justify>
+This project will involve using HR to generate theorems more
+intelligently in different algebraic domains. Various methods will be
+used and appraised and improvements to the system will be made. These
+improvements will be implemented into the (Java) program underlying
+HR. The aims of this project are to (a) generate lots of theorems at
+just the right level of difficulty and (b) determine how (and
+implement ways) to get HR to produce more theorems like this.
+
+<tr>
+<td align=center>
+<p>
+<hr>
+&copy; Simon Colton 2002
+<hr>
+<p>
+</td>
+</tr>
+</table>
+</body>
+</html><BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>An Online Java Interpreter #2</H2></CENTER>
+<B>Supervisor:</B>Simon Colton<BR>
+<B>Room No.:</B>407<BR>
+<B>E-mail:</B><A HREF="mailto:sgc@doc.ic.ac.uk">sgc@doc.ic.ac.uk</A><BR>
+<HR><BR>To continue and appraise the development of the open-source RJCE system, which allows a user to modify the code for any Java method for any particular object at run-time.<BR>
+<HR><BR><html>
+<title>An Online Java Interpreter #2</title>
+<body background="../../../images/greenministripe.gif" text="black">
+<table width=600 border=0>
+<tr>
+<td>
+<center>
+<font face='comic sans MS'>
+<h2>An Online Java Interpreter #2</h2>
+</font>
+</center>
+<p align=justify>
+Compiled languages such as Java have certain drawbacks. For instance,
+if you've ran your program for hours and want to extract information
+from its results, but the code you've written to do this isn't up to
+scratch (has a bug, doesn't do what you wanted it to do, etc.), then
+it's likely you'll have to quit, re-program, re-compile and re-run the
+program! Hence, in some situations, it's good to have aspects of an
+interpreted language.
+
+<p align=justify>
+For his MSc. project, James Bloom has put together the <a
+href="http://www.doc.ic.ac.uk/~jdb197/links.html">RJCE</a> system,
+which uses the Beanshell Java interpreter to enable the user to change
+the code of any method for any particular object at run-time. It
+performs pre-processing of the user's Java code to insert
+re-directions which can be enabled at run-time. The re-directions take
+the program flow through some interpreted code, hence simulating the
+change of underlying code at run-time. The system is extremely useful,
+and we already have applications in mind in education, debugging and
+automatic (e.g., genetic) programming.
+
+<p align=justify>
+This project will continue the development of RJCE and perform an
+analysis of alternatives. In particular, we want to look at whether an
+approach based on <a href="http://eclipse.org/aspectj/">ASPECTS</a>
+would be a good idea. Another possibility is to use <a
+href="http://koala.ilog.fr/djava/">Dynamic Java</a> as the underlying
+interpreter, rather than Beanshell. We also want to look at possible
+ways to integrate this with the Veneer virtual JVM developed in the
+department. This is an important chance to become an early developer
+of an open-source system which may affect the way in which people
+program Java in future.
+
+<tr>
+<td align=center>
+<p>
+<hr>
+&copy; Simon Colton 2002
+<hr>
+<p>
+</td>
+</tr>
+</table>
+</body>
+</html>
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Anomaly Detection in Musical Analysis</H2></CENTER>
+<B>Supervisor:</B>Simon Colton<BR>
+<B>Room No.:</B>407<BR>
+<B>E-mail:</B><A HREF="mailto:sgc@doc.ic.ac.uk">sgc@doc.ic.ac.uk</A><BR>
+<HR><BR>To perform experiments using machine learning tools to identify anomalies in pieces of music.<BR>
+<HR><BR><html>
+<title>Anomaly Detection in Musical Analysis</title>
+<body background="../../../images/greenministripe.gif" text="black">
+<table width=600 border=0>
+<tr>
+<td>
+<center>
+<font face='comic sans MS'>
+<h2>Anomaly Detection in Musical Analysis</h2>
+</font>
+</center>
+<p align=justify>
+Whenever a new manuscript is found (a novel, a piece of music, etc.),
+which may have been written by someone like Shakespeare, Beethoven,
+etc. then computational techniques can be used to compare the new
+piece to those known to be written by the famous person, and they can
+be authenticated. Such techniques include simple but effective things
+like n-gram analysis. For instance, it may be that the distribution of
+triples of letters in a new manuscript is completely different to the
+average for a Shakespeare play, so it's unlikely to be written by him.
+While such techniques can give high accuracy in determining
+authorship, they can be quite unsatisfying. It would be more
+interesting, for example, if the analysis pointed out that Beethoven
+never used a particular cadence, whereas the new piece has 10 of these
+cadences.
+
+<p align=justify>
+In his MSc. project, Ben Vine showed that our HR system can be used
+for musical analysis. He also showed that, given some Bach chorale
+melodies and a carousal melody, HR points out that the carousal is an
+anomaly, and gave reasons for this judgement. For instance, HR pointed
+out that the carousal was one of only three melodies which had a
+quaver followed by a semi-quaver. One possible application of this
+kind of analysis might be in education. When composing, harmonising,
+etc., music students follow rules, and try to imitate certain styles,
+such as harmonising a chorale in the style of Bach. While they may
+stay within the rules, a student's piece might be somewhat lacking
+musically. An analysis of the type performed by HR could tell them
+that they have more (or less) of something than Bach typically has,
+and point out other anomalies. It would also be interesting to see
+where the great composers bent the rules.
+
+<p align=justify>
+This project will involve continuing this study into anomaly detection
+in music. It will involve getting hold of music data and carrying out
+experiments to test the hypothesis that HR can be used to identify
+anomalies in music. As with all projects with HR, there will be much
+scope to improve the underlying (Java) program, by analysing where the
+program fails and implementing solutions.
+<tr>
+<td align=center>
+<p>
+<hr>
+&copy; Simon Colton 2002
+<hr>
+<p>
+</td>
+</tr>
+</table>
+</body>
+</html>
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Feature Detection for Artistic Purposes</H2></CENTER>
+<B>Supervisor:</B>Simon Colton<BR>
+<B>Room No.:</B>407<BR>
+<B>E-mail:</B><A HREF="mailto:sgc@doc.ic.ac.uk">sgc@doc.ic.ac.uk</A><BR>
+<HR><BR>To perform image analysis to identify the location of objects such as trees, people, cars, etc. <BR>
+<HR><BR><html>
+<title>Feature Detection for Artistic Purposes</title>
+<body background="../../../images/greenministripe.gif" text="black">
+<table width=600 border=0>
+<tr>
+<td>
+<center>
+<font face='comic sans MS'>
+<h2>Feature Detection for Artistic Purposes</h2>
+</font>
+</center>
+<p align=justify>
+Programs such as Photoshop can produce stunning artistic effects using
+sophisticated filters and transformations. However, it is difficult to
+project any level of creativity onto these programs. Part of the
+reason for this is that such programs cannot recognise the objects in
+the image they are transforming. If they could, then they might be
+able to apply different filters to different parts of the image, for
+example treating a person differently to a tree.
+
+<p align=justify>
+This project will be to write and use feature detection algorithms to
+suggest image processing methods for particular areas of an input
+image. Such algorithms can use colour histograms or edge detection, or
+can involve machine learning techniques such as neural network
+learning and ontologies. This will form part of the ThreeCreate
+initiative, which aims to produce a creative visual arts
+program. Hence, many of the algorithms for loading and finding bitmap
+information from images are available (in Java).
+
+<tr>
+<td align=center>
+<p>
+<hr>
+&copy; Simon Colton 2002
+<hr>
+<p>
+</td>
+</tr>
+</table>
+</body>
+</html>
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Bioinformatics for the Web #2</H2></CENTER>
+<B>Supervisor:</B>Simon Colton<BR>
+<B>Room No.:</B>407<BR>
+<B>E-mail:</B><A HREF="mailto:sgc@doc.ic.ac.uk">sgc@doc.ic.ac.uk</A><BR>
+<HR><BR>To produce online applets for the demonstration of some bioinformatics sequence matching algorithms (for educational purposes).<BR>
+<HR><BR><html>
+<title>Bioinformatics for the Web</title>
+<body background="../../../images/greenministripe.gif" text="black">
+<table width=600 border=0>
+<tr>
+<td>
+<center>
+<font face='comic sans MS'>
+<h2>Bioinformatics for the Web</h2>
+</font>
+</center>
+
+<p align=justify>
+Many bioinformatics algorithms have been designed to analyse and
+compare these sequences. For example, there are <i>sequence matching
+and alignment</i> algorithms which test how closely two sequences
+match. These are useful for building <i>phylogenetic trees</i> which
+describe which genes evolved from which others. There is a nice
+example on page 27 of <a
+href="http://www.oup.co.uk/isbn/0-19-925196-7"> this book</a> where
+they use such tests to see whether the (now extinct) Siberian mammoth
+was more closely related to African or Indian elephants.
+
+<p align=justify>
+Bioinformatics students are usually taught to write Perl scripts for
+analysing these sequences, as this is the perfect tool for playing
+around with what are essentially strings of letters. However, for
+some of the fairly routine tasks such as sequence matching, it would
+be nice to have a Java applet online into which you simply cut and
+paste some sequences, click a button and get an answer.
+
+<p align=justify>
+The purpose of this project is to write such a program and put
+it onto the web. There is potential for such a program to be quite
+popular with people wanting to carry out quick tests. Also,
+it may be useful as a teaching aid: we could use it to demonstrate the
+bioinformatics algorithms at work.
+
+<p align=justify>
+The project can be as difficult as you make it: if you offer more
+functionality (more bioinformatics algorithms) in your program,
+then this will be a more difficult project. I would expect undergraduates
+to get the program online with some functionality. I would expect
+masters students to include some statistical routines to check 
+whether the results the program returned were statistically 
+significant. A really good project would connect to online bioinformatics
+databases to return information relating to the user's input.
+
+<tr>
+<td align=center>
+<p>
+<hr>
+&copy; Simon Colton 2002
+<hr>
+<p>
+</td>
+</tr>
+</table>
+</body>
+</html>
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Automatic Generation of Number Theory Exercises</H2></CENTER>
+<B>Supervisor:</B>Simon Colton<BR>
+<B>Room No.:</B>407<BR>
+<B>E-mail:</B><A HREF="mailto:sgc@doc.ic.ac.uk">sgc@doc.ic.ac.uk</A><BR>
+<HR><BR>To use the HR system to produce exercises for undergraduate number theory
+students.<BR>
+<HR><BR><html>
+<title>Automatic Generation of Number Theory Exercises</title>
+<body background="../../../images/greenministripe.gif" text="black">
+<table width=600 border=0>
+<tr>
+<td>
+<center>
+<font face='comic sans MS'>
+
+<h2>Automatic Generation of Number Theory Exercises</h2>
+</font>
+</center>
+<p align=justify>
+Maths students need exercises in order to test their understanding of
+a domain and their skill in applying the results they have
+studied. Ordinarily, mathematics lecturers produce exercises without
+the help of computers. We aim to help them in the task by providing
+them with conjecture making support from the HR program. As described
+in this paper:
+
+<p align=center>
+<a href="http://www.doc.ic.ac.uk/~sgc/html_papers/colton_radm02.html">
+Automated Theory Formation for Tutoring Tasks in Pure Mathematics</a>
+
+<p align=justify>
+we have used HR previously as an aid to setting exercises in group
+theory. We want to extend this study to number theory. The project
+will involve looking through number theory course notes to extract the
+functions used in them (such as phi, tau, sigma, etc.), then turning
+these into code for the Maple computer algebra system. Following this,
+you will use the HOMER system, which uses HR and Maple to form
+conjectures about the Maple functions, then you will prove as many of
+these theorems and assess whether they could be used as exercises on a
+course. As with all projects with HR, there will be plenty of scope
+for improving the underlying (Java) program.
+
+<p align=justify>
+HOMER is described here:
+
+<p align=center>
+<a href="http://www.doc.ic.ac.uk/~sgc/html_papers/colton_cade03.html">
+The Homer System</a>
+
+
+<tr>
+<td align=center>
+<p>
+<hr>
+&copy; Simon Colton 2002
+<hr>
+<p>
+</td>
+</tr>
+</table>
+</body>
+</html>
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Morton order layout for two-dimensional arrays</H2></CENTER>
+<B>Supervisor:</B>Paul Kelly<BR>
+<B>Room No.:</B>423<BR>
+<B>E-mail:</B><A HREF="mailto:phjk@doc.ic.ac.uk">phjk@doc.ic.ac.uk</A><BR>
+<HR><BR>Change the way the world stores arrays<BR>
+<HR><BR>Everyone knows the way you store a 2d array is as a 1d array of rows (row-major) or a 1d array of columns (column-major).  But this leads to a common pitfall - programmers traverse a row-major array in column-major order.  This leads to a performance hit of 3 to 10 times.
+<p>
+This is shoddy: quality tools shouldn't have such precipitate pitfalls.
+<p>
+Preliminary research here at Imperial (<a href="www.doc.ic.ac.uk/~phjk/Publications/ImprovingMorton-LCPC2003.pdf">see here</a>) has shown there is a good alternative - a compromise between row-major and column-major with performance almost as good as either.
+<p>
+The idea is to use the Morton Z order - one of a family of quadtree-based "space-filling curves".  The address of A[i,j] is calculated as D1[i] + D0[j], where D0 is a lookup table that maps j to a bitwise-dilated representation with a zero between (to the left of) each binary digit.  D1 is same but with the zeroes to the right (D0[jjjj]=0j0j0j0j, D1[i]=i0i0i0i0).
+<p>
+You need a couple more tricks - careful alignment, and aligned unrolling - to get the performance.
+<p>
+Your job is to implement this scheme for a realistic programming language such as Fortran or C# (C and Java are no good as they don't have first-class multidimensional arrays).
+<p>
+One way to do it is using SUIF, the Stanford University Intermediate Form <a href="http://suif.stanford.edu/">see here</a>.  This should work pretty well.
+<P>
+Another idea might conceivably be to use Rotor or Mono - should work, but there isn't much code to test it out with.
+<p>
+Once you have got it to work, you need to evaluate it on a number of different CPUs using a variety of different full-scale application examples.
+<p>
+This is a project for someone who likes compiler technology and wants to change the world.<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Multistage programming and domain-specific optimisation by metaprogramming (Java or .Net?)</H2></CENTER>
+<B>Supervisor:</B>Paul Kelly<BR>
+<B>Room No.:</B>423<BR>
+<B>E-mail:</B><A HREF="mailto:phjk@doc.ic.ac.uk">phjk@doc.ic.ac.uk</A><BR>
+<HR><BR>Build a tool, preferably a library rather than a compiler, which supports multistage programming - programs which generate code at runtime.
+<BR>
+<HR><BR>Multistage languages support runtime code generation as a first-class functionality.  This can be useful for performance optimisation - you can specialise code for particular runtime values.  It also makes it easy to build domain-specific languages.  Finally, it offers the potential for an extreme form of reflection - replacing or augmenting your (or another) application's code on the fly.
+<p>
+Your job is to implement it.  With some specific objectives:
+<ul><li>as a library (not as a new compiler or preprocessor) (This is tough but we've done in a C++ prototype, the TaskGraph Library)
+<li>with really good-quality generated code.  This is easy if you're not in a hurry - for the TaskGraph library we generate C source then fork gcc
+<li>really fast - using gcc takes about 100ms.  It should be possible to generate good-quality code much faster than that, but good tools are rare.  One idea might be to use .Net's support for runtime code generation - see eg  http://www.dina.dk/~sestoft/rtcg/
+<li>With type safety - so a correctly-typed program can't generate a program with a type error.
+<li>The long-term plan for this work is to support metaprogramming - once you have constructed a piece of code (eg as an AST), we want to be able to manipulate it - unroll/interchange loops, inline, etc.
+</ul>
+For background have a look at our work on the TaskGraph library, google "multi-stage programming" (with hyphen).  See also Don Batory's "Jak".
+<p>
+We have a prototype implemented in C++ which lacks type safety and uses gcc.  A bytecode-based implementation exists for OCaml.  We can discuss what language to base it on but both C# and Java look promising.  See Kawa and ikvm.  You could perhaps consider modifying the IBM Research JVM to get more explicit control over code generation/optimisation.
+<p>
+It is essential that the project plan include evaluation and demonstration.  
+<p>
+This is a challenging project and you need a talent for getting complicated code to work.  The payoff is that if it works it should be very cute!<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Aspect-oriented instrumentation and bottleneck analysis for Java by runtime binary patching</H2></CENTER>
+<B>Supervisor:</B>Paul Kelly<BR>
+<B>Room No.:</B>423<BR>
+<B>E-mail:</B><A HREF="mailto:phjk@doc.ic.ac.uk">phjk@doc.ic.ac.uk</A><BR>
+<HR><BR>Use a dynamic instrumentation (= dynamic aspect weaving) tool for Java to construct a powerful general-purpose tool for debugging and performance analysis.
+Use it to search automatically for performance "anti-patterns".<BR>
+<HR><BR>We have built a prototype Java utility for dynamic instrumentation.  This allows you to connect to a running Java application,
+browse its classes and methods, and insert instrumentation code at
+essentially any chosen point - on the fly.
+<p>
+The goal of this project is to turn this into a powerful
+general-purpose tool for debugging and performance analysis.
+<p>
+In particular, we'd like:
+<ul>
+<li>To have a general-purpose plug-in architecture for adding new
+    instrument types to the system.  An instrument is essentially
+    the combination of one or more instrumentation code fragments,
+    a strategy for applying them, a database schema for the
+    data generated by the instrument, and a data analysis tool for
+    visualising the output and combining it with data from other
+    instruments.
+<li>To have a general-purpose instrumentation database.  We want
+    to design an extensible framework for storing the results from
+    performance instrumentation.  We need a flexible way of querying
+    this database.  The idea is that you can construct queries
+    which allow you to identify and prioritise patterns of
+    behaviour which are characteristic of a fixable performance
+    problem, or, for that matter, a bug.
+<li>To experiment with programmatic application of instruments.
+    You can think of this as dynamic aspect weaving (ie applying
+    aspect-oriented programming ideas at run-time).  Another
+    point of reference is the automatic bottleneck search
+    used in the Performance Consultant component of the Paradyn
+    tool.
+</ul>
+Performance analysis commonly involves studying whole program
+behaviour, in terms of the main APIs on which the application is
+built.  Instrumentation plug-ins can be specialised to search for
+performance issues ("anti-patterns") special to the particular APIs being used.
+<p>
+This is a challenging project with potential both to create a really
+useful tool, and to contribute to research.
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Perfect Developer (2)</H2></CENTER>
+<B>Supervisor:</B>Krysia Broda and Gabrielle Sinnadurai<BR>
+<B>Room No.:</B>378/540<BR>
+<B>E-mail:</B><A HREF="mailto:{kb,apgs}@doc.ic.ac.uk">{kb,apgs}@doc.ic.ac.uk</A><BR>
+<HR><BR>To apply Perfect Developer to a case study (the Cold Stream RailRoad)<BR>
+<HR><BR>Perfect Developer is a product of Escher technology and is a tool for producing correct programs. It is based around the ideas introduced in program reasoning and has a hybrid language incorporating both logic and imperative structures. It supports classes.
+
+It is possible to specify a system and to derive a Java program from it using Perfect. In this project, the particular system is a specification of the control system for the Cold Stream RailRoad (part of a rail system in Canada). Using this case study Perfect will be evaluated for a reasonably large scale application.<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Object-Z to Perfect Developer </H2></CENTER>
+<B>Supervisor:</B>Krysia Broda and Alessandra Russo<BR>
+<B>Room No.:</B>378/564<BR>
+<B>E-mail:</B><A HREF="mailto:{kb,ar3}@doc.ic.ac.uk">{kb,ar3}@doc.ic.ac.uk</A><BR>
+<HR><BR>To develop a translator from Object-Z (eg XML notation) to Perfect Developer, a specification tool that proves programs correct (or not).<BR>
+<HR><BR>Object-Z is a formal specification language/notation, which is an extension
+of Z to incorporate object-oriented notions. Perfect Developer is a new
+formal reasoning system in which one can write specifications and
+implementations and have them checked by the system. That is, the system
+proves correctness (just as in the "reasoning about programs" course ). 
+The system produces a Java or C++ program or a program outline for correct
+specifications.
+<p>
+The project is to take an object-Z specification and convert it into a
+perfect specification. Perfect would then be used to check its correctness.
+<p>
+This project is probably most suitable for an MEng student or MSc student. However, the main criterion is that you should feel comfortable with writing formal specifications. 
+<p>
+Perfect Developer is developed by Escher Technologies. Their webpage is www.eschertech.com. Take a look at it!
+
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Tools for Modelling Managed Systems</H2></CENTER>
+<B>Supervisor:</B>Arosha Bandara and Emil Lupu<BR>
+<B>Room No.:</B>553<BR>
+<B>E-mail:</B><A HREF="mailto:bandara@doc.ic.ac.uk">bandara@doc.ic.ac.uk</A><BR>
+<HR><BR>To develop/adapt a UML state chart editor that can be integrated into a formal approach for analysing systems management policies.<BR>
+<HR><BR>Policy based management is a very flexible approach to managing distributed systems that allows the rules governing the behaviour of the system to be separated from the underlying functionality provided by the system.  Types of policies that could be specified include positive authorisations (permitted operations), negative authorisations (denied operations), obligations (operations that should be performed) and refrains (operations that should not be performed).  There is an existing language, Ponder, which supports specification of such policies.  For more information about Ponder and policy-based systems management see <a href="http://www-dse.doc.ic.ac.uk/policies/"> http://www-dse.doc.ic.ac.uk/policies/</a>.
+<br><br>
+Managing real-world systems will involve writing a large number of policies and it is critical that the policy specifications are free from conflicts and inconsistencies.  Conflicts could arise in a policy specification when two policies are specified using the same operations but have opposite modality (e.g. one policy permits a user to change a firewall rules table whilst another policy prohibits the same user from doing the same thing).  Ongoing research in the department has identified a formal approach for detecting conflicts in policy specifications that is based on Event Calculus.  This approach requires that, in addition to having a model of the policies themselves, it is necessary to model the behaviour of the system being managed.  However, the formal notation is quite verbose and not really suitable for users to interact with directly.
+<br><br>
+Therefore, it would be very useful to be able to define the behaviour of the managed system using UML state charts and then translate these state charts into the Event Calculus notation automatically.  The primary objective of this project is to develop a tool that will support this process.  Students may investigate existing UML modelling tools (e.g. ArgoUML) and adapt on of these to meet the requirements.  The final tool should integrate with the Prolog-based policy analysis system that has already been developed.
+<br><br>
+This project would be suitable for MEng/BEng (ISE/Comp) students who are interested in developing interactive graphical applications using Java.
+<BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<CENTER><H2>Tool Support for Policy Analysis</H2></CENTER>
+<B>Supervisor:</B>Emil Lupu and Arosha Bandara<BR>
+<B>Room No.:</B>564H / 553H<BR>
+<B>E-mail:</B><A HREF="mailto:ecl1@doc; bandara@doc">ecl1@doc; bandara@doc</A><BR>
+<HR><BR>To develop an interactive tool that will support the partial automation of policy analysis together with a means of visualising the complex output of the analysis process.<BR>
+<HR><BR>Policy based management is a very flexible approach to managing distributed systems that allows the rules governing the behaviour of the system to be separated from the underlying functionality provided by the system.  Types of policies that could be specified include positive authorisations (permitted operations), negative authorisations (denied operations), obligations (operations that should be performed) and refrains (operations that should not be performed).  There is an existing language, Ponder, which supports specification of such policies.  For more information about Ponder and policy-based systems management see <A href="http://www-dse.doc.ic.ac.uk/policies/"> http://www-dse.doc.ic.ac.uk/policies/</a>.
+<br><br>
+Managing real-world systems will involve writing a large number of policies and it is critical that the policy specifications are free from conflicts and inconsistencies.  Conflicts could arise in a policy specification when two policies are specified using the same operations but have opposite modality (e.g. one policy permits a user to change a firewall rules table whilst another policy prohibits the same user from doing the same thing).  Alternatively, policy specification could be considered inconsistent if there are policies that specify operations that cannot be performed (e.g. one policy obliges a firewall to log all changes to the rules but there is no mechanism for maintaining a log file).  At present, it is the responsibility of the administrators who specify the policies to ensure that conflicts and inconsistencies do not arise.   However, in large, distributed systems this can quickly become an onerous, if not impossible, task.  Therefore, there is a critical need for analysis techniques that can, at least partially, automate the task of detecting conflicts and inconsistencies in policy specifications. 
+<br><br>
+The overall objective of this project is to develop an interactive tool that will support the partial automation of policy analysis.  The tool will need to provide a means of visualising the complex output that will be generated by the analysis process – may involve using animation to illustrate the time varying nature of the output.  There is scope for students to develop new analysis techniques for detecting conflicts and inconsistencies in policy specifications; but it also possible make use of techniques already being developed as part of ongoing research.  It is expected that the tool will be integrated into the existing Ponder Policy Management Toolkit, which was developed using Java.  Some of the challenges of this project include designing an intuitive UI that supports specification of the system behaviour and the display of the analysis results, generating Prolog code from Ponder and interfacing to a commercial Prolog engine (Sicstus-3.9).
+<br><br>
+This project would be suitable for MEng (ISE/Comp) students who are interested in developing interactive graphical applications using Java.
+
+<BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<CENTER><H2>Hierarchical Image and Video Browser over the Web</H2></CENTER>
+<B>Supervisor:</B>Stefan Rueger<BR>
+<B>Room No.:</B>379<BR>
+<B>E-mail:</B><A HREF="mailto:srueger@doc.ic.ac.uk">srueger@doc.ic.ac.uk</A><BR>
+<HR><BR>The objective of this project is to build a "photo album" or "image gallery"
+viewable over the web. It should be screen-aware, bandwidth-aware, dynamic and context aware.<BR>
+<HR><BR>Although it is relatively easy to generate a simple
+static browser of an image database, this project is more challenging.
+
+<P>The Image Browser is expected to be screen-aware (ie utilise the full
+physical screen of the user), band-width aware (ie, decrease resolution
+for slow connections and pre-load/cache the images which are likely to be
+viewed next), dynamic (so that results from  an image search engine can be
+viewed), context-aware (so that annotations, if any, can be displayed
+along with the images).
+
+We have several pure image collections of up to 32,000 images which are
+partially annotated. There exist backend image search engines which can be
+integrated into the browsing process.
+
+<P>Video Browsing should initially be the same as image browsing, ie, one can
+expect that a video has been dissected into "shots" each of which is
+represented by a key-frame image. When one clicks on a key-frame, the clip
+should be played in this window.
+
+We have some 100 hours of videos dissected into shots and key-frames with
+annotations from speech recognition or teletext subtitles for these
+collections.
+
+<P>You should have good programming skills and know graphic libraries, preferably in Java, perl/cgi or similar.<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Digital circuit schematic entry and simulation in an object-oriented language</H2></CENTER>
+<B>Supervisor:</B>Ian Moor<BR>
+<B>Room No.:</B>355<BR>
+<B>E-mail:</B><A HREF="mailto:iwm@doc.ic.ac.uk">iwm@doc.ic.ac.uk</A><BR>
+<HR><BR>To implement a easily-used and portable circuit simulator. <BR>
+<HR><BR>
+The project would consist of developing an object-oriented scheme for describing circuit components and their
+interconnection and implementing a  schematic editor and circuit simulator in an objected-oriented language such as Java, C++.<BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<CENTER><H2>An Annotation Assistant for  the Static Checker for C Splint </H2></CENTER>
+<B>Supervisor:</B>Ian Moor<BR>
+<B>Room No.:</B>355<BR>
+<B>E-mail:</B><A HREF="mailto:iwm@doc.ic.ac.uk">iwm@doc.ic.ac.uk</A><BR>
+<HR><BR>To make Splint more user friendly by particularly by generating the annotations 
+for   programs to be checked by splint. <BR>
+<HR><BR><p>
+Splint is a static C source checker, producing warnings for possible  use of null pointers, undefined variables and array bound errors. Annotations are often needed to override Splint's default assumptions and ambiguous properies in C .
+For example using a pointer referencing an undefined location as an  argument to  a function is reported 
+as an error, but it might  an output argument  of the function
+<p>
+ Annotations are written  as  specially formatted comments recognised by splint
+to add information for the checking, for example  in a function argument declaration:
+<pre>
+  void   question(/*@out@*/ char * result) {
+     ..
+     *result = '?';
+     ..
+  } 
+</pre>
+  /*@out@*/  indicates that the argument is an output argument and a warning is only generated
+ if *result is used before it is given a value.
+<p>  
+Manually adding annotations is difficult unless the user understands Splint  and 
+what the program  is meant to do, but without annotations many of the warnings 
+from Splint are useless.
+<p>
+ ESC/Java is a similar static checker for Java also using annotations. To reduce the time and effort of writing
+annotations for ESC/Java the program 'Houdini'  an annotation assistant can be used to infer suitable annotations
+for  Java programs.
+Houdini  generates a  set of candidate annotations for a program and  uses ESC/Java as a subroutine to verify or refute 
+the  annotations, removing invalid annotations. ESC/Java is finally run with the valid annotations and the result
+is shown to the user.  
+<p>
+An program with the same purpose as Houdini should be constructed foe Splint.
+<p>
+<a href="http://www.splint.org"> Splint home page </a>    <br>    
+<a href="http://research.compaq.com/SRC/esc/">ESC/Java  home page: </a> <br>
+<a   href="http://gatekeeper.research.compaq.com/pub/DEC/SRC/technical-notes/abstracts/src-tn-2000-003.html">
+Houdini report:</a>
+
+
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Upgrading Java Programs (or .NET Programs) safely</H2></CENTER>
+<B>Supervisor:</B>Susan Eisenbach<BR>
+<B>Room No.:</B>569<BR>
+<B>E-mail:</B><A HREF="mailto:sue@doc.ic.ac.uk">sue@doc.ic.ac.uk</A><BR>
+<HR><BR>To enable a programmer to make changes to components and to ensure that the code will still do what the client of the components wanted it to do.<BR>
+<HR><BR>Java code can be changed and the new code if it will link will be executed. Other than checking whether code will link (which has been done successfully in another project) how do you check that the code actually does what you wish it to do?
+
+This is a currently active area of research and there are also implementation possibilities for a limited number of tests. The work focusses on invariant and pre/post condition checking.<BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<CENTER><H2>Mobile Agents API</H2></CENTER>
+<B>Supervisor:</B>Susan Eisenbach<BR>
+<B>Room No.:</B>569<BR>
+<B>E-mail:</B><A HREF="mailto:sue@doc.ic.ac.uk">sue@doc.ic.ac.uk</A><BR>
+<HR><BR>Implement an API for Java or C# that gives a process algebra model (CSP, CCS, Pi, other) to Java. <BR>
+<HR><BR><p>In the 1970s theoreticians came up with threads as a formal model for concurrency. In 1995 Java was released with threads as part of the programming language.</p>
+
+<p>In the 1980s (and onwards until now) theoreticians came up with a variety of process algebras for modelling concurrency. So far no programming language has taken this model for its concurrency constructs. In this project you would implement an api for at least one of the process algebra models.</p>
+
+<p>Build a system that uses the api. If you would like make it graphical.</p>
+
+There is plenty of work to extend this to deal with mobility or to compare with other concurrent models.
+
+Should be taking Models of Concurrency course. For a background paper there has been plenty of work on process algebras for dealing with mobility and distribution.<BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<CENTER><H2>Performance Engineering of Java Programs using State Models</H2></CENTER>
+<B>Supervisor:</B>Tony Field and Jeff Magee<BR>
+<B>Room No.:</B>376<BR>
+<B>E-mail:</B><A HREF="mailto:ajf@doc.ic.ac.uk">ajf@doc.ic.ac.uk</A><BR>
+<HR><BR>To extend a stochastic version of the Kramer/Magee LTSA system to generate and solve analytical performance models.<BR>
+<HR><BR>Correctness and performance are two of the most important engineering issues in the development of complex software. The huge increase in the number of distributed applications, brought about by the presence of the internet, has served to highlight these issues. Ensuring that a program does what it is supposed to do and that it performs acceptably in terms of response time, scalability etc. have historically been treated as two separate issues.  Typically software engineers have tackled the former and independent performance analysts the latter.  This project is about unifying these activities through process algebra, with particular emphasis on the development of tools for predicting the performance of a distributed program.
+<BR><BR>
+An exciting way to tackle issue of correctness is to build a *model* of the software which describes in some abstract way the behaviour of the code in terms of allowable transitions in a state transition system.  Many tools have been developed to build and analyse such transition systems - the one many of you may have encountered is the LTSA system from the second-year distributed systems course, and the subject of Jeff Kramer and Jeff Magee's book 'State Models and Java Programs'.  A recent extension of the system (a Distinguished Project from 2002 - see http://www.doc.ic.ac.uk/~ajf/Teaching/Projects/DistProjects.html) allows the programmer to annotate an FSP program with both probabilities (e.g. on average the program will go this way 20% of the time and that way 80% of the time) and time delays (e.g. on average this action takes 20ms in the chosen platform).  From these annotations we now have a tool that will construct a discrete-event simulation model of the system, which is essentially a program that explicitly traverses the state space using random sampling.  The role of the simulation is to estimate performance properties of the application such as the mean response time or the average occupancy of a request buffer.  <BR><BR>
+The simulation tool is very general, but can be slow for some systems as it involves walking over potentially very large state spaces until the performance estimates are within specified confidence intervals. The next stage in the LTSA development is to generate*analytical* models from the transition system when the appropriate conditions hold.  This project is about building and solving Markov Chains (themselves state transition systems), specifically in cases where the state holding times are all exponentially distributed.  Various methods exist for encoding probabilistic choice in Markov Chains and they can be solved to yield the equilibrium state probabilities using established algorithms.  All this can be explored, but possibly the best way to proceed is to interface LTSA with the DNAMICA system developed by William Knottenbelt which, give or take, holds the world record for the largest Markov Chain every solved!  DNAMICA takes a text input file describing a state transition system and the required performance measures etc. It then uses parallel processing to both build and solve the Markov Chain.  Evaluation of the tool with respect to a realistic case study will also add value to the project - there is considerable scope for publication of the proposed work.
+<BR><BR>
+Ideally you will have taken the second-year Concurrent Programming course.  It will also be beneficial if you have taken, or intend to take the third year course in Simulation and Modelling and/or Performance Analysis.<BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<CENTER><H2>Simulation of the Ocean Plankton Ecosystem</H2></CENTER>
+<B>Supervisor:</B>Tony Field and John Woods<BR>
+<B>Room No.:</B>376<BR>
+<B>E-mail:</B><A HREF="mailto:ajf@doc.ic.ac.uk">ajf@doc.ic.ac.uk</A><BR>
+<HR><BR><BR>
+<HR><BR>Phytoplankton are unicellular plants which, the hours of daylight, absorb carbon dioxide and release oxygen through photosynthesis.  About 70% of the world's carbon dioxide is converted by them.  As well as being essential organisms in this respect they also have an interesting life cycle.  Becase they cannot swim their movement is dictated entirely by sea currents. Their depth in the ocean is determined by turbulence which in turn depends on local phenomena such as air temperature and wind speed and their lateral motion by ocean currents.  If the conditions are right, in terms of nutrient and energy, the phytoplankton can reproduce, increasing the population. At the same time they are grazed by small marine animals (zooplankton) with the opposite effect. They themselves are prey to species higher up the food chain such as fish larvae. 
+<BR><BR>
+Plankton populations are very hard to observe in the oceans and the only way that the population dynamics can be studied is by computer simulation.  This has already been done for a 1D model which you can think of as representing a water column which drifts around a given ocean circuit trajectory.  Inside the column are millions of particles each representing a sub-population of plankton of specifoed type.  These interact with their local environment and among themselves as the column drifts and as turbulence mixes them within the column. <BR><BR>
+ Previous work by Computing students in this department has improved the basic model in a number of ways, for example: parallellisation of the code, support for phytoplankton size variability and epidemiological modelling tools. This work is already enabling exciting new science in biological oceanography with the promise of a great deal more to come.
+<BR><BR>
+There are numerous projects that I can offer in this area. Here is a taster; if the subject interests you but none of these appeals, come and talk to me...
+<BR> <BR>
+PROJECT 1:  Particle Management<BR>
+As plankton populations increase (e.g. the spring phytoplankton 'bloom') the subpopulations grow rapidly in size and there is a significant increase in the sub-population variance over all particles.  This introduces biases, where big particles dominate small particles in the overall statistics. To reduce the variance we would like to split, and later re-combine, particles.  However splitting introduces more particles and therefore more computation.  Re-combining is fiddly because it is hard to know how to combine two dissimilar groups of individuals.  What we really need is a flexible particle management tool that will allow particle sizes to grow or shrink within user-specified bounds.  We also need to evaluate various strategies for recombination, in particular assessing the effect they have in comparison with the non-combining (but more expensive) approach.  It's all about trading off computation time for demographic noise (population variance measured over many runs).  This project will build on earlier work by an MSc student and will implement, refine and evaluate the particle management rules proposed specifically with a view to measuring the time/noise tradeoff. 
+<BR><BR>
+PROJECT 2:  Biodiversity and Stability<BR>
+If you model a number of phytoplankton size groups at a fixed location you find that the climate at that location suits some 'bugs' better than others.  One size class is favoured abover the rest and the outliers are very gradually driven to extinction. Now the fun: in reality the water is constantly in motion, driven by large-scale currents (e.g. Atlantic Drift etc.)  So in reality the bugs are subjected to a constantly changing climate.  We would therefore reasonably expect that as the climate changes so the 'optimal' size class changes - perhaps colder water favours small bugs and warmer water big bugs, or vice versa.  So imagine an extreme case of motion - one where the water moves barotropically (upright) in a *closed* circuit and where the circuit spans a wide range of climatic conditions. It seems plausible that instead of some size classes being driven to extinction, the fluctuating conditions may instead move them into and out of 'favour', in other words leading to a system which is completely stable across all size classes around the circuit by virtue of changing geography and associated climate. Curiously the extinction rate in the fixed model is of the order of 100 years; the circulation time is typically of the order of 10 years - the stability story might be true! The aim of this project is to enhance the existing code to simulate biodiversity in a 'Geographically Lagrangian' system, i.e. a system with a moving water column, and investigate the population dynamics and stability of the drifting population.  There is a strong computing component to this project coupled with genuine scope for new and exciting scientific results in biological oceanography. 
+<BR><BR>
+PROJECT 3: Interfacing the model with the Grid via ICENI. The computational complexity of the simulation is arbitrarily large!  In practice there are far more plankton in the oceans than we could possibly imagine simulating as individuals.  We therefore work with sub-populations which helps, but the more particles (subpopulations) we have the better the results in terms of statistical noise. One way to do more in the same time is to exploit several processors.  There are two things we can do:  1. run identical experiments but with different random numbers on separate computers; 2. parallelise the code and distribute a single run over several different computers.  We could even combine the two. The latter involves parallelising a Java program.  How is this best done?  There may be a separate project here!
+<BR><BR>
+Interests:  You need to be interested in the idea of environmental modelling, although no prior expertise in either is required. An interest in 'using computers to do interesting science' is a definite plus.  The projects are not easy, however, so are best suited to students looking for more adventurous topics. The new version of the model and supporting system is in Java - you *must* be a proficient Java programmer!<BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<CENTER><H2>Optimisation of Multi-threaded Java Programs</H2></CENTER>
+<B>Supervisor:</B>Tony Field<BR>
+<B>Room No.:</B>376<BR>
+<B>E-mail:</B><A HREF="mailto:ajf@doc.ic.ac.uk">ajf@doc.ic.ac.uk</A><BR>
+<HR><BR>To transform Java co-routines into a single-threaded program as a vehicle for reducing program execution time<BR>
+<HR><BR>Co-routines are processes (or threads) with explicit methods to sleep the process for a given (or even unbounded) length of time, and to activate other processes. However, the rule is that only one process can be running at any time, even though several may be in the 'active' (or runnable) state.  Implicitly, therefore, there is a sequential flow of control among the co-routines since control flow is, in some sense, explicit.  
+
+The objective of this project is to perform automatic transformation of multi-threaded Java byte code programs to produce a semantically equivalent program with a single thread.  The idea is to use continuations - the program is fragmented around yield points and the code that needs to be executed on return to a yield point is packaged as a method (the continuation).  The trick is to ensure that the correct methods are called with the correct environments.  This optimisation can yield speed-ups of around an order of magnitude in some process-oriented simulations, which make heavy use of Java's thread library.  There are, however, many other classes of application which can benefit.
+
+Ideally, you should have done, or be doing, the Simulation and Modelling course which introduces co-routines in the context of discrete-event simulation and the Java class library which will be the target of the transformation tool.
+
+There are some papers which point at the same idea but they're ad-hoc. Here we want to cast the optimisation in a continuation/fragmentation framework and possibly deliver more generic fragmentation tools as a result.  A successful implementation would produce at least publishable software and possibly also an accompanying research paper, suitable for a performance engineering tools conference or journal.<BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<CENTER><H2>Predicting the Performance of Java Programs</H2></CENTER>
+<B>Supervisor:</B>Tony Field<BR>
+<B>Room No.:</B>376<BR>
+<B>E-mail:</B><A HREF="mailto:ajf@doc.ic.ac.uk">ajf@doc.ic.ac.uk</A><BR>
+<HR><BR>To build a tool that will compute an estimate of the execution time of a Java program<BR>
+<HR><BR>Predicting the execution time of a program is crucial in any resource-sharing system when we want to compute for example an optimal schedule of jobs on a collection of resources.  The emerging computational grid is a good example - we need to schedule jobs taking account of many factors, e.g. completion time, resource requirements, cost etc. 
+
+Imperial College is at the forefront of grid middleware technology and the integration of that technology with component-based scientific software. Currently the performance of a program is estimated by composing performance models of the individual components.  These models are currently entirely empirical - they are essentially look-up tables mapping problem size (parameters) to execution times on specific platforms based on execution time measurement. The approach is costly (pilot run time) and is infeasible for more than one or two parameters because of the size of the parameter space.  We'd like to be able to build simple mathematical models which, properly parameterised, will give a reasonable estimate of execution time, scalability etc.
+
+The objective of this project is to build performance models of Java programs *automatically*  based on both compile-time analysis of the byte code and instrumentation of the running program.  The project will initially focus on the former, using the SOOT tools (http://www.sable.mcgill.ca/soot/) to walk the byte code.
+
+This is a hard problem and it certainly won't work for all programs.  JIT compilers may also complicate the analysis. The objective is to see how far we can get using initially simple ideas.  More complexity can be added later.
+
+This project is fairly high risk in the sense that the accuracy and applicability of generated models is very hard to predict ahead of time.  This is *not* a "safe implementation project!" but it *is* doable.  You need to be a competant software engineer and be comfortable working with other people's tools (SOOT in particular).  It is a good opportunity to learn more about the factors affecting Java program performance.<BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<CENTER><H2>Adaptive webserver for serving dynamic resources</H2></CENTER>
+<B>Supervisor:</B>Julie A. McCann<BR>
+<B>Room No.:</B>557<BR>
+<B>E-mail:</B><A HREF="mailto:jamm@doc.ic.ac.uk">jamm@doc.ic.ac.uk</A><BR>
+<HR><BR>To build and experiement with an adaptive webserver.<BR>
+<HR><BR>Adaptive and self-adaptive systems are becoming more prevalent methods of building computing systems today. This project requires the student to build an adaptive system for serving dynamic webpages. In this project, the dynamic resources will be servlets and JSP served by the open source Java based Apache Tomcat. The student will have to build an adaptation engine, which will be driven by rules defined using XML. The Patia project uses similar rules expressed in BNF and the student can port the latter to XML. The student is expected to eventually run experiments to investigate the performance of the XML based adaptation engine. For this purpose, a testbed made up of 8 PCs running Linux is available in a 100 Mbps switched Ethernet. In order to carry out this project, the student is expected to be proficient in Java. Knowledge of the following will be picked up in the course of the project:
+
+[a] Understanding of how Apache Tomcat works in order to write the adaptation engine to interface with it.
+[b] Servlet and JSP specifications
+[c] XML
+[d] Linux (a basic understanding of Linux will be helpful in setting up the testbed)
+
+All the documentation and resources required for this project are open source and readily available.
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Java for Beginners IV </H2></CENTER>
+<B>Supervisor:</B>Susan Eisenbach         <BR>
+<B>Room No.:</B>569, Huxley <BR>
+<B>E-mail:</B><A HREF="mailto:sue@doc.ic.ac.uk">sue@doc.ic.ac.uk</A><BR>
+<HR><BR>take the first year programming IDE and make it better (add reasoning capabilities into it) note successful projects will be used by at least 150 students in the following year<BR>
+<HR><BR><p>Introductory imperative programming is aimed at teaching beginners how to solve small (e.g. 100 lines) problems using appropriate control and data structures. Although Java is a language that everyone wants to know it lacks simplicity, so it isn't an ideal language to teach basic imperative constructs. Students however would like to learn Java as early as possible. The aim of this project is to reconcile this conflict.</p>
+ 
+<p>
+The HelloWorld program in Java is</p>
+class HelloWorld{</p>
+  public static void main(String[] args){</p>
+  System.out.println("Hello World");</p>
+  }</p>
+}</p>
+
+whereas in Turing it is</p>
+put "Hello World"</p>
+<p>
+Input in Java makes output look straightforward.</p>
+<p>
+This is the fourth year this project is running. The first year this project produced an IDE and language called Kenya that we used in first year teaching. The next year's project produced an interpreter for the language so students could single step through their Kenya programs, set breakpoints, look at variables, etc. Last year's project wass to improve the debugger (e.g. put single step backwards).
+</p>
+<p>This year's project is to extend the intepreter with support for Program Reasoning such as support for pre and post conditions and loop invariants.
+system.</p>
+<p>This is an area of active research. Your work will also be of use to others if you are successful.</p>
+<BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<CENTER><H2>Compiler Tools for C#</H2></CENTER>
+<B>Supervisor:</B>Susan Eisenbach<BR>
+<B>Room No.:</B>569<BR>
+<B>E-mail:</B><A HREF="mailto:sue@doc.ic.ac.uk">sue@doc.ic.ac.uk</A><BR>
+<HR><BR><BR>
+<HR><BR><h4>Motivation</h4>
+
+I have run projects written in C# for a few years. Java programmers seem to really like C# because they can write Java-like code but get the advantages of a faster development/run-time system. They also like that the graphics provided compared with Swing. C++ programmers prefer it to Java, saying it is much less restrictive.
+<p> 
+There are many compiler tools (and APIs for walking over Abstract Syntax trees) available for Java but these don't seem to be available for C#. The lack of these tools restricts the development of of a certain class of projects
+</p>
+
+<h4>Objective</h4>
+C# programs, when compiled produce an AST like structure called CodeDom. The aim of this project is to make the information held in CodeDom available in a useful way.
+
+<h4>What you might do</h4>
+<ol>
+<li>Investigate the world of compiler tools.</li>
+<li>Choose what you are going to implement.</li>
+<li>Design and implement what you would like.</li>
+<li>Design a small application that uses your API to see how it works.</li>
+<li>Improve your API in the light of what you learnt when you used your it.</li>
+</ol>
+<h4>Person Specification</h4>
+This project requires an confident programmer who likes compiler technology and would like to work in C#. The courses Advanced Issues in Object Oriented Programming and Program Analysis should be taken. Depending on what is implemented this could be a research/implementation project or a straight implementation project.
+<p>
+If you would like to do something similar to this but not what I have described, I would be happy to discuss your ideas for a project.
+</p> <BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<CENTER><H2>Code Comprehension Tools (for Eclipse)</H2></CENTER>
+<B>Supervisor:</B>Susan Eisenbach<BR>
+<B>Room No.:</B>569<BR>
+<B>E-mail:</B><A HREF="mailto:sue@doc.ic.ac.uk">sue@doc.ic.ac.uk</A><BR>
+<HR><BR><BR>
+<HR><BR><h4>Motivation</h4>
+
+In 2003 a former Imperial student (MEng + Ph.D.) Diomidis Spinellis published a book called <i>Code Reading: The Open Source Perspective</i>. Diomidis when at Imperial showed himself to be an outstanding programmer. One of his skills was the ability to read and understand other people's code. Given the amount of time most people spend in trying to understanding other people's code (and for some people their own code) any help is welcome.
+</p>
+<p>
+Last year there was a distinguished project on Code Comprehension. The student, Russ Wood built a framework for code comprehension tools and populated it with a variety of tools. There were many advantages to his approach, but in the length of time of an individual project useful tools for a large language could not possibly be written. 
+</p>
+
+<h4>Objective</h4>
+For Java programmers an IDE of choice seems to be IBM's Eclipse system. Eclipse has a plugin architecture. Open source developers can write tools that can be used within the Eclipse environment. Eclipse has many tools already that make the programming (and probably the understanding process) easier. So it seems useful to try to provide a code comprehension plugin for Java programmers who use Eclipse.
+
+<h4>What you might do</h4>
+<ol>
+<li>Read what other people have done.</li>
+<li>Learn how Eclipse works.</li>
+<li>Decide what capabilities you would like to have in your plugin. Many of these may come from ideas based in the Program Analysis course.</li>
+<li>Design and implement your plugin.</li>
+<li>Design a small maintenance problem to test your system.</li>
+<li>Evaluate your plugin by running an experiment where some people make the changes using Eclipse without your plugin and some people make the same changes using your plugin.</li>
+</ol>
+<h4>Person Specification</h4>
+This project requires a confident Java programmer who likes compiler technology. The courses Advanced Issues in Object Oriented Programming and Program Analysis should be taken. Depending on what is implemented this could be a research/implementation project or a straight implementation project.
+<p>
+If you would like to do something similar to this but not what I have described, I would be happy to discuss your ideas for a project.
+</p><BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<CENTER><H2>Influence Diagrams</H2></CENTER>
+<B>Supervisor:</B>Frank Kriwaczek<BR>
+<B>Room No.:</B>431<BR>
+<B>E-mail:</B><A HREF="mailto:frk@doc.ic.ac.uk">frk@doc.ic.ac.uk</A><BR>
+<HR><BR>To build a tool for entering and solving decision problems, expressed as influence diagrams.<BR>
+<HR><BR>Influence diagrams are an alternative to decision trees for expressing sequential problems of decision making under risk.
+
+There are several commercial programs, such as Netica (http://www.norsys.com/download.html), but none of these are ideal for teaching purposes. I'd like a tool that explicitly shows the steps that the system takes in solving the decision problem.
+
+The system could be implemented in Java or C, for the ambitious, or Visual Basic (perhaps in Excel) for the fainthearted.<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>3D Geometry for Schools</H2></CENTER>
+<B>Supervisor:</B>Frank Kriwaczek<BR>
+<B>Room No.:</B>431<BR>
+<B>E-mail:</B><A HREF="mailto:frk@doc.ic.ac.uk">frk@doc.ic.ac.uk</A><BR>
+<HR><BR>To produce a computer-based applicationto help teachers demonstrate and to allow pupils to discover elementary ideas in 3D Geometry.<BR>
+<HR><BR>The Royal Society recently published a report (http://www.royalsoc.ac.uk/files/statfiles/document-154.pdf) bemoaning the fact that geometry was not given sufficient prominence in Maths teaching in schools and emphasising the importance of some understanding of 3D geometry in a wide range of areas, including physics and biology.
+
+Although there is some excellent software for discovery in plane geometry, there is little available in the 3D area. 
+
+This project would aim to produce a tool, perhaps in Java - although not necessarily an applet, that would encourage experimentation and discovery of some of the important ideas in elementary 3D geometry. The software would not be just an ad hoc collection of tools, but would be an application created in a principle fashion, cognaisant of previous work in the area.<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>C# for Beginners</H2></CENTER>
+<B>Supervisor:</B>Susan Eisenbach<BR>
+<B>Room No.:</B>569<BR>
+<B>E-mail:</B><A HREF="mailto:sue@doc.ic.ac.uk">sue@doc.ic.ac.uk</A><BR>
+<HR><BR>to take the the introductory programming IDE and make it suitable for C# rather than Java<BR>
+<HR><BR><p>Introductory imperative programming is aimed at teaching beginners how to solve small (e.g. 100 lines) problems using appropriate control and data structures. Although C# is a language that students want to know it lacks simplicity, so it isn't an ideal language to teach basic imperative constructs. Students however would like to learn it as early as possible. The aim of this project is to reconcile this conflict.</p>
+ 
+<p>
+The HelloWorld program in C# is</p>
+public class HelloWorld{</p>
+  public static void main(string[] args){</p>
+  Console.output.WriteLine("Hello World");</p>
+  }</p>
+}</p>
+
+whereas in Turing it is</p>
+put "Hello World"</p>
+<p>
+Input in C# makes output look straightforward.</p>
+<p>
+<BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<CENTER><H2> Typed JavaScript  Compiler</H2></CENTER>
+<B>Supervisor:</B>Chrostopher Anderson and Sophia Drossopoulou<BR>
+<B>Room No.:</B>559<BR>
+<B>E-mail:</B><A HREF="mailto:cla97@doc.ic.ac.uk">cla97@doc.ic.ac.uk</A><BR>
+<HR><BR>Implement a compiler for a new object based language, BabyJ,
+which is a typed version of a subset of JavaScript.<BR>
+<HR><BR>We have recently created a new language, BabyJ, similar to JavaScript with the novel feature in that programs can be incrementally typed. This means the programmer can prototype ideas then gradually add type annotations until the program is fully typed.
+<p>
+At <a href="http://www.doc.ic.ac.uk/~cla97/BabyJ.ps">BabyJ description<a> you can find our more. 
+<p>
+We would like to develop a compiler that given a fully typed BabyJ program converts it to a  corresponding Java program. We have a translation schema, but naturally if you think you can do it better then go ahead!
+<p> 
+A project with a similar theme, for a different language can be found <a href="http://www.doc.ic.ac.uk/~ajf/Teaching/Projects/DistProjects.html">here</a>
+<p> 
+ 
+A knowledge of compiler construction will be required and ideally we would like the compiler written in Java.
+ 
+ 
+ <BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Typed Javascipt Development Environment</H2></CENTER>
+<B>Supervisor:</B>Christopher Anderson and Sophia Drossopoulou<BR>
+<B>Room No.:</B>558c<BR>
+<B>E-mail:</B><A HREF="mailto:cla97@doc.ic.ac.uk">cla97@doc.ic.ac.uk</A><BR>
+<HR><BR>To develop a graphical environment for the incremental typing
+of a typed version of a subset of JavaScipt. <BR>
+<HR><BR>We have recently created a new language, BabyJ, similar to JavaScript with the novel feature in that programs can be incrementally typed. This means the programmer can prototype ideas then gradually add type annotations until the program is fully typed.
+ <p>
+At <a href="http://www.doc.ic.ac.uk/~cla97/BabyJ.ps">BabyJ description<a> you can find our more.
+<p>
+We would like to develop a graphical environment for the incremental typing. We imagine
+a code browser that allows the programmer to annotate selected parts of the program. Typing errors could be  highlighted. 
+<p>
+This project has a lot of scope, in particular,  the environment could try to infer types for the program  via some type inference algorithm.
+<p>
+A basic knowledge of type systems will be needed (as eg taught in the Semantics, the Type System course, or the Advanced Issues in Object Orieted Languages course). We would prefer the tool written in Java.  <BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>A Programmer's Apprentice</H2></CENTER>
+<B>Supervisor:</B>Ian Moor<BR>
+<B>Room No.:</B>326<BR>
+<B>E-mail:</B><A HREF="mailto:iwm@doc.ic.ac.uk">iwm@doc.ic.ac.uk</A><BR>
+<HR><BR>To design and implement a programmer's appentice supporting a 
+language such as Java.<BR>
+<HR><BR>A programmer's apprentice understands a users's program well enough
+to cooperate in the design, implementation, and maintenance of the program.
+(This definition is taken from a paper printed in 1979). The apprentice 
+may help an experienced programmer by checking the program and help a
+beginner by suggesting programming and data structures; it should be able
+to explain its output.
+
+The project should make use of modern design schemes ( for example patterns,
+refactoring).   <BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>BioML Browser and tools</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR>Create a BioML Browser for display of biological information<BR>
+<HR><BR>External Collaborator: Helen Field
+<br><br>
+Background for BioML (www.bioml.com)
+<br><br>
+BioML is an XML file formatted hierarchically by a zoologist. It was designed to contain all data pertaining to one biomolecule (e.g. insulin, chromosome, tissue, animal etc.). XML files may be readily interpreted: a browser, BioBrowser, is available. BioBrowser displays each field of the BioML file in a different way: protein sequence, DNA sequence, and text, or literature may be displayed. Key to its utility is the capability of taking the user straight to the URL from which the data was derived. The BioML project is open source (Fenyo 1997). The BioBrowser displays different kinds of information in different ways, and always permits the user to return to the original URL data source. Each data entry type tells BioBrowser how to display it. When developing BioML or BioBrowser, it is crucial to maintain URLs and tags, for one-click access to source, and for display, respectively.
+<br><br>
+A series of projects can be structured around BioML to cover one or more of the following areas
+<OL>
+<LI>Developing a java-based BioML browser: The BioBrowser is currently written in Visual C++, and requires rewriting in Java. Given the concepts displayed by the current version of BioBrowser, create a new application in Java, and show that Genbank files may be downloaded and displayed by the Java BioBrowser. Visual C++ files are available as guidelines.
+
+<LI>Developing an Editor for BioML: The BioBrowser displays different kinds of information in different ways, and always permits the user to return to the original URL data source. Each data entry type tells BioBrowser how to display it. When developing BioML or BioBrowser, it is crucial to maintain URLs and tags, for one-click access to source, and for display, respectively
+
+<LI>Developing parsers and tools for a selection of important biological databases, and creating a BioML XML DTD capable of logically combining the resulting fields. Currently BioML is limited to the fields outlined in the DTD. However, it was designed to combine new fields as they arise in different databases. Options include designing a GUI XML editor that allows a biological (naïve i.e. non-computer literate) user to review the current structure of BioML, and to add duplicate, named fields as required. Novel fields may also be added, however, the basic structure of the BioML DTD should be maintained. Bear in mind that the BioBrowser can display certain types of information and the kinds of fields displayed should be tagged appropriately. BioML has been tested on GenBank data. Since that time, there has been no emergent technology permitting a rapid data mining of all data pertaining to one biomolecule: BioML is a file format that can be sent to a colleague. The project should select around 5 important databases (e.g. Swiss Prot, EMBL or Genbank (they are synchronized), Proteome Analysis Database, Stanford Genome Database or MIPS (for yeast and some other organisms)), examine the data from each database, and design a DTD based on the original BioML and duplicating fields where necessary, that can combine all of the data. Then create parsers that create the unified BioML files from the databases.
+</OL>
+
+Skills Needed: Java, XML
+<br><br>
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects.
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Metabolic Pathways Representation for Drug Discovery</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR>Design and Implement graph visualization system to represent and query metabolic pathway information and their relationship to other experimental data.<BR>
+<HR><BR>Metabolic pathway resources are playing an increasingly important role in the interpretation of genomic data. Metabolic pathways represent chemical processes that occur naturally in living organisms, for example the digestion of alcohol, or how the cells of an organism react to a particular drug. Studying such processes is very important for understanding the relationship between diseases, drugs and the genetic make-up of an organism. Typically, metabolic pathways are studies in conjunction with data from gene expression analysis, proteomic studies, etc. 
+<br><br>
+This project involves designing and implementing a graph visualization system to represent pathway information and its relationship to data about proteins, genes, drugs and diseases. 
+<br><br>
+Skills Needed: Java. 
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects.
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Correspondence Analysis for Biological Data</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR>Implement a "Correspondence Analysis Technique" system to find associations between variables in biological data.<BR>
+<HR><BR>The aim of this project is to build tools and case studies for finding associations between variables in biological data. One approach is Correspondence Analysis, which is a multivariate statistical technique for exploring an unknown dataset. Its aim it to find associations between variables in experimental results, for example those obtained from Micro-Array (Gene Chips) technology, which has produced a large amount of data relating to the expression of genes given a specific stimulus. 
+<br><br>
+The goal of this project is to implement a Correspondence Analysis system which should include a general purpose correspondence analysis components with an associate visualization mechanism (extension of an existing scatter plot visualizer) 
+<br><br>
+Skills Needed: Java 
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects.
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Protein Sequence Analysis Pipeline</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR>Build tools and case studies for protein sequence analysis on the web<BR>
+<HR><BR>External Collaborator: John Sgouros
+<br><br>
+This project aims to develop the tools that capture and automate protein analysis workflows using existing public databases and services and provide interactive tools for displaying the results. By gathering information using this tool, researchers can form new hypotheses about the role of a protein within a cell
+<br><br>
+A protein sequence, if known and well characterized, can be screened for domains using the PFAM database. PFAM is a collection of HMMs (Hidden Markov Models) and multiple sequence alignments representing many common domains of proteins, domains are structural units with functional characteristics (for example DNA binding). The data structures for each domain centre around:
+<br><br>
+<OL>
+<LI>
+Seed alignment: hand edited multiple sequence alignment representing the domain
+<LI>
+HMM: derived from the seed alignment, which can be used to find new members of the domain family and also to realign a set of sequences to the model, 
+<LI>
+Full alignment: an automated alignment of all the examples of the domain.
+<LI>
+Full alignment: an automated alignment of all the examples of the domain.
+</OL>
+
+A protein sequence can be submitted to PFAM to see if it contains any well-characterized domains. These are described in terms of where they lie within the sequence and any annotation about the domain(s). Results are classified into domains present within a statistical confidence range, and potential domain matches at a lower level of significance (low stringency results). Links are provided to PROSITE for good annotation of domains, and SCOP (structural classification of proteins) database so that the structures for a particular family can be viewed (there are often many structural variants for the same domain). 
+<br><br>
+For proteins with SWISSPROT entries (known proteins), the PFAM data is pre-computed and can be accessed by the SWISSPROT ID. Diagrams of domain occurrence over sequence length are produced and HTML links provided to their annotation. PFAM results generally give information on other proteins sharing features in common with the protein of interest.
+<br><br>
+If the search is fruitful, then using a mask and BLAST procedure may be useful in identifying other similar proteins not identified as significant in a PFAM like search. The presence of a particular domain in a protein sequence may bias BLAST results towards proteins containing that domain. If that particular domain knowledge is not of interest to the researcher, they may wish to eliminate that region of the sequence but still look for similar protein sequences. This is known as masking. 
+<br><br>
+Results of interest will then be selected from BLAST output and viewed as multiple alignments or evaluated as a multiple alignments using tools such as CLUSTALX/W. The information obtained will indicate the closeness of relationships between sequences and when and where they show regions of homology. Structural domain knowledge can indicate how and what a protein may bind to and how it may fold. It may be that the protein sequence belongs to a particular family of sequences that has known structural and functional roles. By gathering this information, researchers can form new hypotheses about the role of a protein within a cell. 
+<br><br>
+Skills Needed: Java. 
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects.
+
+
+
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Applications of Pattern Recognition to High Throughput Mass Spectrometry Data</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR>Implement a pattern matching and prediction tools to analyse Mass Spectrometry Data<BR>
+<HR><BR>External Collaborator: Helen Field
+<br><br>
+Mass Spectrometry (MS) techniques can be used to analyse chemical compounds and proteins. Recently, MS of proteins has become very important, since tiny quantities of protein can be positively identified. MS of proteins is now as important as DNA sequencing, because it will allows determining which proteins bind which other biomolecules in a cell. In living cells, proteins are processed by adding additional biomolecules (e.g. carbohydrates, which may increase solubility). These post-translational modifications are highly varied and may not occupy the same site in a population of proteins. Still, some proteins maintain a sufficiently high population of carbohydrates to create patterns in MS.
+<br><br>
+Mass spectrometric identification of proteins proceeds by cleaving the proteins into smaller peptides with a biological protease, which cuts at a specific target defined by the protein sequence itself. MS heats the peptides up, and detects the resulting ions based on their mass/charge ratio (a protein spectrum is a spectrum of ions from its peptides, from peptides having carbohydrates or other modifications, and from impurities.
+<br><br>
+This project aims to investigate and compare the use of existing methods for analysing MS data patterns in general, and those arising from carbohydrate modifications of proteins as an example, and to develop new specialized algorithms covering one or more of the following areas:
+<OL>
+<LI>Return an estimate of which carbohydrates are returned from a given spectrum (D.J. Harvey, U. Oxford papers), and possibly provide a graphical output of the carbohydrates determined, based on those representations you see in the papers. Percentage of each structure in a population may be useful also.
+<br><br>
+<LI>
+Develop pattern recognition techniques that can be used and to investigate indexing and retrieval of proteins and chemical compounds from large databases.
+</OL>
+Skills Needed: Java. 
+<br><br>
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects.
+
+
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Multivariate Data Analysis Toolkit for Biological Data</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR>Implement multivariate data analysis toolkit. <BR>
+<HR><BR>Multivariate statistical approaches can be used to discern significant patterns in complex data sets and are particularly appropriate in situations in which there are more variables than samples in the data set. Multivariate techniques can help researchers summarize data and reduce the number of variables in that data. Examples of these techniques include factor analysis, multidimensional scaling and cluster analysis. These tools can be used for developing taxonomies or systems of classification, investigating useful ways to conceptualise or group items, generating hypotheses and testing hypotheses.
+<br><br>
+This project aims to developing a toolkit of these techniques and their associated visualization tools and applying them to data from genomic and proteomic experiments. 
+<br><br>
+Skills Needed: Java. 
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects.<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Web-based tools for Gene Expression Analysis</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR>Develop a web-based application for the analysis of gene expression data.<BR>
+<HR><BR>The exponential increase in the amount of DNA sequences available in the public databases has resulted in the transformation of biology to an information science. Furthermore, the use of micro arrays for has become a widely used technique for analysing the behaviour of various genes and their functions. The computational analysis of genomic data complements laboratory work by generating new  hypotheses that can guide the design of experiments towards the elucidation of gene function. Whereas the comparison of DNA and protein sequences provides a static picture of the living cell, the analysis of gene expression data can reveal interactions between groups of genes and give hints about the biochemical pathways underlying cell processes such as malignant transformation. Gene expression analysis techniques address the following questions using gene expression data from different cell lines: - Which genes are expressed in each cell line - What are their levels of expression - Which gene groups are expressed at the same level - Which gene groups display similar variations in expression levels in response to an external stimulus, e.g. the addition of a drug Based on existing knowledge about the functions of these genes (extracted from the public databases), it is possible to classify the gene groups of interest by cellular role (e.g. peptide signalling), functional class (e.g. growth factor receptor) and chromosomal location.
+<br><br>
+The project involves creating a web-based application using the Kensington Data Mining Engine and Servlets to create an interface for carrying out the common techniques used for analysing gene expression data. The project involves developing several generic analysis templates that can be applied to the different data to extract and present different features in graphical charts.
+<br><br>
+
+There are several well know ways of analysing gene expression data, for example, one is Fold Change Analysis. This analysis is easily achievable in many data mining tools. The logic for this process can be encoded into a servlet and be used to generate a data-mining process that can be sent to a data-mining engine and the results returned and graphically visualised. This tool allows analysts to formulate repeatable tasks and quickly check results to see if they warrant further analysis in a more rigours investigation.
+<br><br>
+
+Skills: Java Servlets, XML
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects.
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>DNA and Protein Homology Analysis Visualization Tools</H2></CENTER>
+<B>Supervisor:</B>Moustafa M Ghanem<BR>
+<B>Room No.:</B>355<BR>
+<B>E-mail:</B><A HREF="mailto:mmg@doc.ic.ac.uk">mmg@doc.ic.ac.uk</A><BR>
+<HR><BR>Implement DNA and protein homology analysis visualization tools and apply them to a homology case study <BR>
+<HR><BR>This project aims towards developing flexible and interactive visualization tools for the analysis of similarities in DNA sequences (e.g. as returned from blast-n searches) and protein sequence (e.g. as returned from blast-p). 
+<br><br>
+Access to an existing BLAST visualization tool and its source code is available. However, one of the objectives of this project is to provide an interface that allows integrating information retrieved by the BLAST search engine with other sources of information on the relationship of gene or protein sequences. A possible case study in this field might be, for instance, to combine the analysis of differential gene expression data derived from DNA micro-arrays with the analysis of sequence alignment data with the objective of exploring the structural and functional relationship of genes.
+<br><br>
+
+Skills Needed: Java. 
+
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects.
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Applications of Pattern Recognition Technology to the Analysis of NMR Data </H2></CENTER>
+<B>Supervisor:</B>Moustafa M Ghanem<BR>
+<B>Room No.:</B>355<BR>
+<B>E-mail:</B><A HREF="mailto:mmg@doc.ic.ac.uk">mmg@doc.ic.ac.uk</A><BR>
+<HR><BR>Implement a pattern matching tools to analyse NMR data. <BR>
+<HR><BR>External Collaborator: Jeremy Nicholson 
+<br><br>
+This project aims to pattern recognition methods that can be used to analyse NMR spectra.
+<br><br>
+NMR spectra can be used to classify biological samples as being normal or abnormal, classify target-organ toxicity and the site and mechanism of action within the organ; identify biomarkers of toxic effect; and evaluate the time course of the effect. The information that is derived from the NMR spectra can be maximized using appropriate chemo-metric and multivariate analytical strategies.  
+<br><br>
+
+This project aims to investigate and compare the use of existing methods such as principal components analysis (PCA), clustering algorithms (k-means, and hierarchical clustering) and classification algorithms (SVM, Bayesian methods and decisions trees) to such data and develop new specialized pattern recognition techniques.
+
+<br><br>
+Skills Needed Java
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects.
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>A Network Management Scenario with JMX and Ponder</H2></CENTER>
+<B>Supervisor:</B>Emil Lupu<BR>
+<B>Room No.:</B>564<BR>
+<B>E-mail:</B><A HREF="mailto:ecl1@doc.ic.ac.uk">ecl1@doc.ic.ac.uk</A><BR>
+<HR><BR>To integrate the implementations of Ponder and JMX and apply to a distributed management scenario. <BR>
+<HR><BR><p><font face="Arial, Helvetica, sans-serif">Managing large distributed 
+        systems is a continuous problem which despite numerous years of research 
+        still poses significant problems. Policies attempt to reduce complexity 
+        by defining the management actions that have to be performed by a set 
+        of managers on the managed resources when certain events such as failures, 
+        performance degradations or intrusions occur. Management agents interpret 
+        the policies and perform the actions. The definition of which management 
+        actions are possible is frequently included in an Information Model such 
+        as <a href="http://www.dmtf.org/standards/standard_cim.php">CIM</a>.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif">Up to now different groups 
+        within both industry and academia have worked on different aspects of 
+        such frameworks: Sun have defined and provided a reference implementation 
+        for the Java Management Extensions (JMX), various standards organisations 
+        have been working on the definition of CIM and its implementation and 
+        other groups have been working on Policy Languages. The aim of the project 
+        is to integrate these various aspects in a consistent management framework 
+        and to apply it to a concrete scenario. </font></p>
+    <BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>A Web-based animation for an abstract machine</H2></CENTER>
+<B>Supervisor:</B>Steffen van Bakel<BR>
+<B>Room No.:</B>425, Huxley<BR>
+<B>E-mail:</B><A HREF="mailto:svb@doc.ic.ac.uk">svb@doc.ic.ac.uk</A><BR>
+<HR><BR>To develop a Web based teaching tool.<BR>
+<HR><BR>The fourth edition of Tanenbaum's textbook "Structured Computer Architecture" provides a micro-programmed implementation of a subset of the Java Virtual Machine (IJVM). AN interface should be developed, using the flow-of-control diagram for the CPU as occurs in the book. The interface should be able to show on demand, by means of a graphical animation, all that happens in the circuitry of the hardware during a clock cycle, possibly allowing to zoom on details of particular interest.<BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<CENTER><H2>Support Vector Machines Classifiers for High Dimensional Sparse Data</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR>Develop a data analysis system based on the Support Vector Machine Approach<BR>
+<HR><BR>Support Vector Machine (SVM) classification are based on finding hyper-planes that optimally separate data into distinct classes. By finding these hyper-planes in transformed feature spaces, SVM classifiers are able to easily partition data points that were non-linearly separable in the original feature space.
+<br><br>The aim of this project is to implement a scalable support vector machine classifier. This will form the basis of investigating the performance and accuracy of support vector machines in classifying high dimensional sparse data, i.e. where the number of columns is huge in comparison to the number of training instances.
+<br><br>
+Skills: Implementation must be in C/C++ or Java, Candidate should have an excellent grasp of linear algebra and differential calculus
+<br><br>
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects
+
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Correspondence Analysis for Biological Data</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR>Implement a "Correspondance Analysis Technique" system to find associations between variables in biological data<BR>
+<HR><BR>Correspondence Analysis is a multivariate statistical technique for exploring an unknown dataset. Its aim it to find associations between variables. Recently Micro-Array (Gene Chips) technology has produced a large amount of data relating to the expression of genes given a specific stimulus. 
+<br><br>
+The goal of this project it to implement a Correspondence Analysis system which should include a general purpose correspondence analysis components with an associate visualization mechanism (extension of an existing scatter plot visualizer)
+<br><br>
+Skills: Java
+Student: Any 
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects
+
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Visualization tool for Self Organizing Maps (SOM)</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR>Develop a novel visualization tool for SOM<BR>
+<HR><BR>Self-Organizing Map (SOM), is the most popular artificial neural network algorithm in the unsupervised learning category. Self-Organizing Map (SOM),  with its variants, is the most popular artificial neural network algorithm in the unsupervised learning category. Although SOM is widely applicable, the method of visualization the "map" is primitive.
+<br><br>This project will address this need by
+
+<OL>
+<LI>	Building a new but generic visualisation for viewing models and data in a two dimensional map.
+<LI>	Use topology and shapes to encode information such as data clusters and values.
+<LI>	Employ intelligent zoom in/zoom out technique for viewing large scale data (ie. allow users to view overall shape of the map and then zoom in for details)
+<LI>	Applying your results to a real-life example using data from the bioinformatic area.
+<LI>	Extending this concept to support browsing of external but related data.
+</OL>
+Skills: Java, Java Advanced Imaging (JAI) package, Java2D
+<br><br>
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects
+
+
+
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Meta-mining: Data mining over data mining procedures</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR><BR>
+<HR><BR>Data mining is the process of finding non-trivial actionable patterns from large volumes of data. Data mining practitioners go through different stages of data preparation, modeling and model evaluation in order to find so called 'nuggets' of knowledge. In addition to finding these 'nuggets' analysts are usually interested in understanding and analyzing the processes that led to finding these nuggets. Meta-mining: applying data mining technology to analyze how data mining procedures are conducted. This is a useful, yet underused resource in its own right.
+
+
+<br><br>This project involves investigating how the process of discovery can itself be mined to gain useful insight. Possible avenues of exploration:
+<UL>
+<LI>what feature vectors are useful to extract from data mining project descriptions for association rules, clustering, classification analysis
+
+<LI>what useful knowledge can be found from the way user collaborate
+
+<UL>
+
+
+<br><br>
+Visualization may also play a useful part in this kind of analysis.
+<br><br>
+Technology: Java, XML
+<br><br>
+Type: Meng/  MAC / MSc
+ 
+
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Active reporting for e-Science applications</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR><BR>
+<HR><BR>E-science applications require multiple users to share the analysis and results of scientific data sets across distributed locations. Typical existing methods are based on creating static reports that have limited interactivity. This project involves creating active web-based reports incorporating applets to enable for more interactive presentation of data, models and results for scientific data analysis.
+<br><br>
+This project will include designing a system to 
+<UL>
+<LI>	Organize the presentation of scientific data, models and results
+<LI>	Transform data analysis and project descriptions in different ways (different HTML output   styles) 
+<LI>	Develop interactive applets for visualizing the, models and results and to enable interaction between multiple users.
+</UL>
+Technology: Java, XML, XSLT
+<br><br>
+Type: Any
+
+
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Visualization of Large data sets using a Client-Server approach</H2></CENTER>
+<B>Supervisor:</B>Peter Au<BR>
+<B>Room No.:</B><BR>
+<B>E-mail:</B><A HREF="mailto:aktp@doc.ic.ac.uk">aktp@doc.ic.ac.uk</A><BR>
+<HR><BR>The objective of the project is to design, develop and investigate the performance of a distributed architecture for interactively visualizing large data set.<BR>
+<HR><BR>Visualizing large data is a big challenge, especially when there is a need to conduct interactive data analysis and data mining. The fundamental problem is that the number of data points to be interactively analyzed can be much larger than can be stored in the memory of a desktop machine.
+<br><br>
+This research project aims to investigate how a client-server approach to the interactive visualization of large data sets can be efficiently implemented. For example, the whole data set can be stored only on a server machine, which can have more memory than available on the client machine than is available on a thin client. In this case, the client needs only to display either a summary of the whole data or the segment of the sub-set of the data in a currently zoomed in area. Both the client and server need to communicate to exchange information about context, data selections and the data currently displayed.
+<br><br>
+An extension to the project can deal with the more important challenge arising visualizing giga bytes and tera bytes of data. Clearly, even a large server may not have enough memory available to keep such data sets in its memory. In this case, the server implementation needs to be more scalable by using methods that do not load the whole data set in its memory, e.g. by performing the required operations directly on data stored on database or in a file.  
+<br><br>
+Programming tools: Java and RMI
+<br><br>
+Level: Any student
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects
+
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Text Mining Tool kit</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR>Develop a toolkit for text mining<BR>
+<HR><BR>The increasing amount of available information is well documented. Unfortunately tools to analyze this information are limited to very specific tasks. To gain understanding about large quantities of text "Text Mining" tools can be used. Text mining products can use simple assumptions about text that is not valid in all cases. 
+<br><br>
+This project aims to build a component based toolkit that can analyze text in a variety of different ways  to support the different tasks found text mining.
+<UL>
+<LI>	Initial Features includes:
+<LI>	Character spectrum
+<LI>	Bag of words model
+<LI>	NGramm model
+<LI>	Stemming and Stopping/Accepting words
+</UL>
+Skills: Java/C++
+<br>
+<br>
+Type of student: Any
+
+<br><br>
+Check <a href="http://ruby.doc.ic.ac.uk/student_projects/">Data Mining Group
+Projects</a> for related projects
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Image Mining Tool kit</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR>Design and develop data mining tools for analysisng images<BR>
+<HR><BR>If a picture speaks a thousand words - what are the words and can we mine them?. The goal of this project is to be able to transform a set of images from the image domain to a form suitable for data mining. Then data mining tools can be used to extract new nuggets of information from a set of images.
+<br><br>
+Initial Feaures can include
+<UL>
+<LI>	Colour Intensity plot.
+<LI>    Spectral Plots
+<LI>	Extraction of Edge and Corner 
+</UL>
+Skills: Java/C++
+<br><br>
+Type of student: Any
+ 
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Advanced Signal Analysis in Data Mining</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR>Design and develop data mining tools for signal analysis<BR>
+<HR><BR>Spectral Transforms have been applied successfully in many fields of data analysis. But they have so far been underused in data mining. This project involves the application of wavelets and other spectral analysis methods in data mining in the analysis of time series. Using Financial Time series as the raw data it is proposed that wavelets can be used to extract interesting and comparable features so that different stocks can be related and behavior understood.
+<br><br>
+Skills: Java/C++
+<br><br>
+Type of student: Any
+
+<BR>
+<HR><B>Level:</B>Any student<BR>
+<HR>
+<CENTER><H2>Soundness of the C++ Type System</H2></CENTER>
+<B>Supervisor:</B>Sophia Drossopoulou<BR>
+<B>Room No.:</B>559<BR>
+<B>E-mail:</B><A HREF="mailto:scd@doc.ic.ac.uk">scd@doc.ic.ac.uk</A><BR>
+<HR><BR>Model a substantial subset of
+ C++  and prove soundness of its type system.<BR>
+<HR><BR>C++ has a powerful and complex type system, which allows for dynamic binding, polymorphism, licit type conversions,
+references and pointers, and combines these with type checking and efficient programming support. The aim of the project
+is to produce a formal proof of the soundness of the type system; ie that in a type correct program at run run-time all
+variables would contain values of the type predicted by the compiler. The
+C++ type system is especially interesting in what concerns the use of
+pointers and arrays.
+<p>
+Proving soundness of C++ is a relavant, and non-trivial aim: for
+example, the type system of Eiffel, a highly successful and relatively simple oo programming language, has been
+discovered not to be sound, a couple of years after the development of the language. 
+<p>
+The project would start with the
+selection of an appropriate subset of C++ to reflect the important issues to do with typing and binding. This would be
+expressed in an appropriate object calculus (several object calculi to describe oo programming have been developed
+recently) to describe the operational semantics of this C++ subset. 
+Then aim to prove the soundness theorem, stating that
+evaluation of C++ terms yields objects of a subclass of the class predicted by the type checker. 
+<p>
+Good mathematical skills
+and enthusiasm are prerequisite. Attendance to the Semantics course and knowledge of C++ would be helpful but not
+indispensable. 
+<p>
+A paper, dealing with the Java type system, can serve as initial guidance: Sophia Drossopoulou and Susan
+Eisenbach: Is the Java Type System Sound?,
+and can be found  
+<a href="http://www-dse.doc.ic.ac.uk/projects/slurp/pubs.html">
+at http://www-dse.doc.ic.ac.uk/projects/slurp/pubs.html<a>.
+Also, at <a href="http://www.doc.ic.ac.uk/~scd/Teaching/AdvOO.html">
+Sophia's teaching page</a> there is some relvant material for that
+topic. This project has been attempted by an MSc student from 2000-2001.<BR>
+<HR><B>Level:</B>Both<BR>
+<HR>
+<CENTER><H2>Visualisation for medical data analysis</H2></CENTER>
+<B>Supervisor:</B>Yike Guo<BR>
+<B>Room No.:</B>375, Huxley<BR>
+<B>E-mail:</B><A HREF="mailto:yg@doc.ic.ac.uk">yg@doc.ic.ac.uk</A><BR>
+<HR><BR>Develop visualisation tool for analysing medical data<BR>
+<HR><BR>The aim of the project is to develop a new and innovative visualisation module
+for analysing cancer-related medical data. Student will gain experience in 
+genome data analysis and will work closely with researchers from the Imperial Cancer Research Fund. 
+	
+The best starting point is to extend a popular tool called "parallel coordinates".
+(see http://atkosoft.com/parcovi1.htm)
+	
+Programming tools: Java<BR>
+<HR><B>Level:</B>Both<BR>
+<HR>
+<CENTER><H2>Java, Databases, ODBC and everything!</H2></CENTER>
+<B>Supervisor:</B>Stuart Cox<BR>
+<B>Room No.:</B>357, Huxley<BR>
+<B>E-mail:</B><A HREF="mailto:smc@doc.ic.ac.uk">smc@doc.ic.ac.uk</A><BR>
+<HR><BR>To explore the implementation, peformance and practicalities of implementing a variety of front ends to a high performance database.<BR>
+<HR><BR>High performance, robust SQL databases are one of the biggest commercial uses of computing. Extracting, displaying and modifying the data is usually (but not always) done through Front End applications running on remote machines, possibly very remote! This project examines a number of important issues with regard to distributing information in this way.
+
+In essence, the student(s) will be required to implement a realistically large database on some suitable SQL engine. Front ends using a variety of techniques will then be constructed to demonstrate the technology and to provide a framework for establishing performance metrics. In particular, Java (through JDBC and ODBC), Web based (again through JDBC), Office (Access & Excel through ODBC) and "other" (ie C++ or Delphi) front ends will be built and tested.
+
+If you want a project "relevant to the commercial world" this is it! BUT be warned, this is NOT for the faint hearted!!!!<BR>
+<HR><B>Level:</B>Undergraduate<BR>
+<HR>
+<A HREF="/~sjn5/docpp/">Back to main page</A><BR><A HREF="http://www.doc.ic.ac.uk/~sjn5/docpp/cgi-bin/listall.cgi?level=Undergraduate">New Search</A>
+</body></html>

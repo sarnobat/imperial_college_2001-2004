@@ -1,0 +1,14 @@
+GUI
+---
+
+- Unable to highlight new register contents after being written to, as it would reflect the machine code rather than the MIPS code. This would confuse the user
+
+Parser
+------ 
+
+- Originally intended to generate parser via ANTLR. Ambiguity removal from MIPS BNF grammar proved difficult. After realizing that all input would be linear (i.e. no nested constructs), it was decided that this was not necessary.
+
+Processor
+---------
+
+- Originally intended to have ALU class with static methods taking ints and returning ints, performing various logical and arithmetic operations. Sadly because MIPS has a RISC architecture there is very little code that can be common to multiple instructions, so the ALU class was dropped. Also the idea of having hard-coded static methods did not really appeal when the project started down the route of using an XML instruction repository.

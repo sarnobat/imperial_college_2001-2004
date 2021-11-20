@@ -1,0 +1,61 @@
+	/**
+	* Returns null if the type isn't defined as part of the schema's default namespace OR the type definition isn't global
+	* @param typeName
+	* @return
+	*/
+	public Element getTypeDefinitionElement(String typeName) {
+		// Attempt to find a global type declaration of 'typeName'
+		XSDTypeDefinition domTypeDefElement = getTypeDefinition(typeName);
+		
+		if (domTypeDefElement != null) {
+			// Global type declartation found; return it
+			Element jDomTypeDefElement = JDomUtilities.convertToJDomElement(domTypeDefElement.getElement());
+			return jDomTypeDefElement;
+		}
+		else {
+			// Look for a local definition of the type
+			
+			//logger.debug("No type definition element for " + typeName + ". Returning null.");
+			return null;
+		}
+	}
+	
+	/*public Element getTypeDefinitionElement(Element element){
+		element.getChildren()
+		if()
+		//return JDomUtilities.convertToJDomElement();
+	}*/
+	
+	/*private XSDTypeDefinition getTypeDefinition(Element element){
+		return null;
+	}*/
+	private Element getComponent(String componentType,String attribute,String attributeValue){
+		return null;
+	}
+
+	/**
+	 * Returns null if the type isn't declared in this XML schema.  It could be that the 
+	 * type definition isn't global OR it's not part of the default namespace 
+	 * (e.g. 'xsd:string' isn't part of the default namespace)
+	 * @param typeName - The name of a type
+	 * @return - the XSD type definition object for 'typeName'
+	 */
+	/*public XSDTypeDefinition getTypeDefinition(String typeName) {
+
+		//TODO: Need to check if the type name is part of this namespace. 
+		// It's no use looking for the type definition of XSD string for example
+
+		EList typeDefs = xsdSchema.getTypeDefinitions();
+		// Try to find a global type definition
+		for (Iterator iter = typeDefs.iterator(); iter.hasNext();) {
+			XSDTypeDefinition typeDef = (XSDTypeDefinition) iter.next();
+			if (typeDef.getName().equals(typeName)) {
+				return typeDef;
+			}
+		}
+		
+		// No global type definition, so try to find a local type defnition
+		//TODO:
+		//logger.warn("no type definition found for '" + typeName + "'.");
+		return null;
+	}*/

@@ -1,0 +1,21 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1           688            688        Start Button
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Start Button                      0             0
+Animation                         0             0
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Click-me Button                 170           103
+circle                            0             0
+triangle                          0             0
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+Arial Bold                    284         CEIKLM

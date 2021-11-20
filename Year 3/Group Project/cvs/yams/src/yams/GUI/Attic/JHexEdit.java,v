@@ -1,0 +1,71 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.12.09.21.03.12;	author ajb101;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.09.21.00.21;	author ajb101;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@moved HexTable files into package
+@
+text
+@/*
+ * Created on 09-Dec-2003
+ *
+ * To change the template for this generated file go to
+ * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+ */
+package yams.GUI;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class JHexEdit extends JPanel {
+//	public JHexEdit(File file) throws IOException {
+//		this(new HexFile(file));
+//	}
+
+	HexTableModel model;
+	JTable table;
+
+	public JHexEdit(HexData data) {
+		model = new HexTableModel(data);
+		table = new HexTable(model);
+		setBorder(BorderFactory.createEmptyBorder(4, 4, 4, 4));
+		setLayout(new GridLayout());
+		add(new JScrollPane(table));
+		setPreferredSize(
+			new Dimension(table.getPreferredSize().width + 8, 400));
+	}
+	
+	public void dataChanged(int row, int col) {
+		model.fireModelChangeEvent(row, col);
+	}
+	
+}
+@
+
+
+1.1
+log
+@updated data panel
+@
+text
+@@
+

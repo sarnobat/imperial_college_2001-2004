@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="questions.xsl"?>
+
+<question_list>
+	<question>Should I work on any usability issues in the implementation to make it easier to use, or only things that can be shown in the presentation?</question>
+	<!--
+	<question>?</question>
+	-->
+</question_list>
+
+
+
+
+
+
+
+
+<!--	OLD QUESTIONS WHICH I NEVER ASKED
+		<question>How big a problem is it supposed to be that XML Schema can covey the same structure in different ways?</question>
+
+		<question> Is there only a subset of XML Schemas I should have to deal with? For example, the FindMissingTypesFacets.xsd doesn't seem to correspond to a database schema.</question>
+
+-->

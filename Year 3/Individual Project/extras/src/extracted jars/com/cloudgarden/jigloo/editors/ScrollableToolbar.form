@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form style="SWT" ide="eclipse" builder="jigloo" version="1.0.0">
+	<Component class="org.eclipse.swt.widgets.Composite" name="ScrollableToolbar" style="0">
+		<Constraints>
+			<LayoutConstraint/>
+		</Constraints>
+		<Layout class="Grid">
+			<Property name="marginHeight" type="int" value="0"/>
+			<Property name="verticalSpacing" type="int" value="0"/>
+			<Property name="horizontalSpacing" type="int" value="0"/>
+			<Property name="marginWidth" type="int" value="0"/>
+			<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+			<Property name="numColumns" type="int" value="3"/>
+		</Layout>
+		<Events>
+		</Events>
+		<Properties>
+			<Property name="size" type="Dimension">
+				<Dimension value="[329, 25]"/>
+			</Property>
+		</Properties>
+		<SubComponents>
+			<Component class="com.cloudgarden.jigloo.editors.CButton" name="leftArrow" style="0">
+				<Constraints>
+					<Constraint class="org.eclipse.swt.layout.GridData"/>
+					<LayoutConstraint class="org.eclipse.swt.layout.GridData">
+						<Property name="verticalAlignment" type="int" value="4"/>
+						<Property name="horizontalAlignment" type="int" value="1"/>
+						<Property name="widthHint" type="int" value="14"/>
+						<Property name="heightHint" type="int" value="-1"/>
+						<Property name="horizontalIndent" type="int" value="0"/>
+						<Property name="horizontalSpan" type="int" value="1"/>
+						<Property name="verticalSpan" type="int" value="1"/>
+						<Property name="grabExcessHorizontalSpace" type="boolean" value="false"/>
+						<Property name="grabExcessVerticalSpace" type="boolean" value="true"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Layout class="Absolute">
+				</Layout>
+				<Events>
+					<EventHandler event="mouseDown" listener="org.eclipse.swt.events.MouseListener" handler="leftArrowMouseDown"/>
+				</Events>
+				<Properties>
+					<Property name="image" type="Image">
+						<Image name="\com\cloudgarden\jigloo\images\left_arrow.gif"/>
+					</Property>
+					<Property name="text" type="String" value=""/>
+					<Property name="size" type="Dimension">
+						<Dimension value="[14, 223]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[0, 0, 14, 25]"/>
+					</Property>
+					<Property name="visible" type="boolean" value="true"/>
+				</Properties>
+			</Component>
+			<Component class="org.eclipse.swt.widgets.Composite" name="composite1" style="0">
+				<Constraints>
+					<LayoutConstraint class="org.eclipse.swt.layout.GridData">
+						<Property name="verticalAlignment" type="int" value="4"/>
+						<Property name="horizontalAlignment" type="int" value="4"/>
+						<Property name="widthHint" type="int" value="-1"/>
+						<Property name="heightHint" type="int" value="-1"/>
+						<Property name="horizontalIndent" type="int" value="0"/>
+						<Property name="horizontalSpan" type="int" value="1"/>
+						<Property name="verticalSpan" type="int" value="1"/>
+						<Property name="grabExcessHorizontalSpace" type="boolean" value="true"/>
+						<Property name="grabExcessVerticalSpace" type="boolean" value="true"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Events>
+				</Events>
+				<Properties>
+					<Property name="size" type="Dimension">
+						<Dimension value="[273, 25]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[14, 0, 273, 25]"/>
+					</Property>
+				</Properties>
+				<SubComponents>
+					<Component class="org.eclipse.swt.widgets.Composite" name="toolbar" style="0">
+						<Constraints>
+							<Constraint class="org.eclipse.swt.layout.GridData"/>
+							<LayoutConstraint/>
+						</Constraints>
+						<Layout class="Row">
+							<Property name="spacing" type="int" value="0"/>
+							<Property name="pack" type="boolean" value="true"/>
+							<Property name="type" type="int" value="256"/>
+							<Property name="marginRight" type="int" value="0"/>
+							<Property name="marginLeft" type="int" value="0"/>
+							<Property name="marginTop" type="int" value="0"/>
+							<Property name="marginBottom" type="int" value="0"/>
+							<Property name="wrap" type="boolean" value="false"/>
+							<Property name="justify" type="boolean" value="false"/>
+						</Layout>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="size" type="Dimension">
+								<Dimension value="[7, 25]"/>
+							</Property>
+							<Property name="bounds" type="Rectangle">
+								<Rectangle value="[0, 0, 7, 25]"/>
+							</Property>
+							<Property name="visible" type="boolean" value="true"/>
+						</Properties>
+					</Component>
+				</SubComponents>
+			</Component>
+			<Component class="com.cloudgarden.jigloo.editors.CButton" name="rightArrow" style="0">
+				<Constraints>
+					<Constraint class="org.eclipse.swt.layout.GridData"/>
+					<LayoutConstraint class="org.eclipse.swt.layout.GridData">
+						<Property name="verticalAlignment" type="int" value="4"/>
+						<Property name="horizontalAlignment" type="int" value="1"/>
+						<Property name="widthHint" type="int" value="14"/>
+						<Property name="heightHint" type="int" value="-1"/>
+						<Property name="horizontalIndent" type="int" value="0"/>
+						<Property name="horizontalSpan" type="int" value="1"/>
+						<Property name="verticalSpan" type="int" value="1"/>
+						<Property name="grabExcessHorizontalSpace" type="boolean" value="false"/>
+						<Property name="grabExcessVerticalSpace" type="boolean" value="true"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Layout class="Absolute">
+				</Layout>
+				<Events>
+					<EventHandler event="mouseDown" listener="org.eclipse.swt.events.MouseListener" handler="rightArrowMouseDown"/>
+				</Events>
+				<Properties>
+					<Property name="image" type="Image">
+						<Image name="\com\cloudgarden\jigloo\images\right_arrow.gif"/>
+					</Property>
+					<Property name="text" type="String" value=""/>
+					<Property name="size" type="Dimension">
+						<Dimension value="[14, 223]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[315, 0, 14, 25]"/>
+					</Property>
+					<Property name="visible" type="boolean" value="true"/>
+				</Properties>
+			</Component>
+		</SubComponents>
+	</Component>
+</Form>

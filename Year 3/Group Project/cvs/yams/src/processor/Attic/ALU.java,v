@@ -1,0 +1,426 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2003.11.10.10.57.52;	author qq01;	state dead;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.09.23.01.08;	author sw00;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.06.13.46.22;	author sw00;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 02-Nov-2003
+ *
+ */
+package processor;
+
+/**
+ * @@author sw00
+ *
+ */
+public abstract class ALU {
+
+	// not sure if any of these require implementing here, rather than
+	// in XML's instruction Java code
+	
+	public static int abs(int src1) {
+		return Math.abs(src1);
+	}
+
+	public static int add(int src1, int src2) {
+		return src1 + src2;
+	}
+
+	public static int add_without_overflow(int src1, int src2) {
+		// TODO - add_without_overflow
+		return 0;
+	}
+
+	public static int and(int src1, int src2) {
+		return src1 & src2;
+	}
+
+	public static void div(
+		int src1,
+		int src2,
+		int desthi,
+		int destlo) {
+		// TODO - div
+	}
+
+	public static void div_unsigned(
+		int src1,
+		int src2,
+		int desthi,
+		int destlo) {
+		// TODO - div_unsigned
+	}
+
+	public static void div_with_overflow(
+		int src1,
+		int src2,
+		int desthi,
+		int destlo) {
+		// TODO - div_with_overflow
+	}
+
+	public static void div_unsigned_with_overflow(
+		int src1,
+		int src2,
+		int desthi,
+		int destlo) {
+		// TODO - div_unsigned_with_overflow
+	}
+
+	public static int mul(int src1, int src2) {
+		// TODO - mul
+		return 0;
+	}
+
+	public static int mul_with_overflow(int src1, int src2) {
+		// TODO - mul_with_overflow
+		return 0;
+	}
+
+	public static int mul_unsigned_with_overflow(int src1, int src2) {
+		// TODO - mul_unsigned_with_overflow
+		return 0;
+	}
+
+	public static void mult(
+		int src1,
+		int src2,
+		int desthi,
+		int destlo) {
+		// TODO - mult
+
+	}
+
+	public static void mult_unsigned(
+		int src1,
+		int src2,
+		int desthi,
+		int destlo) {
+		// TODO - mult_unsigned
+
+	}
+
+	public static int neg(int src) {
+		// TODO - neg
+		return 0;
+	}
+
+	public static int neg_without_overflow(int src) {
+		// TODO - neg_without_overflow
+		return 0;
+	}
+
+	public static int nor(int src1, int src2) {
+		// TODO - nor
+		return 0;
+	}
+
+	public static int not(int src) {
+		// TODO - not
+		return 0;
+	}
+
+	public static int or(int src1, int src2) {
+		// TODO - or
+		return 0;
+	}
+
+	public static int rem(int src1, int src2) {
+		// TODO - rem
+		return 0;
+	}
+
+	public static int rem_unsigned(int src1, int src2) {
+		// TODO - rem_unsigned
+		return 0;
+	}
+
+	public static int rol(int src1, int src2) {
+		// TODO - rol
+		return 0;
+	}
+
+	public static int ror(int src1, int src2) {
+		// TODO - ror
+		return 0;
+	}
+
+	public static int sll(int src1, int src2) {
+		// TODO - sll
+		return 0;
+	}
+
+	public static int sllv(int src1, int src2) {
+		// TODO - sllv
+		return 0;
+	}
+
+	public static int sra(int src1, int src2) {
+		// TODO - sra
+		return 0;
+	}
+
+	public static int srav(int src1, int src2) {
+		// TODO - srav
+		return 0;
+	}
+
+	public static int srl(int src1, int src2) {
+		// TODO - srl
+		return 0;
+	}
+
+	public static int srlv(int src1, int src2) {
+		// TODO - srlv
+		return 0;
+	}
+
+	public static int sub(int src1, int src2) {
+		// TODO - sub
+		return 0;
+	}
+
+	public static int sub_without_overflow(int src1) {
+		// TODO - sub_without_overflow
+		return 0;
+	}
+
+	public static int xor(int src1, int src2) {
+		// TODO - xor
+		return 0;
+	}
+
+	public static boolean isEqual(int src1, int src2) {
+		// TODO - isEqual
+		return false;
+	}
+
+	public static boolean isGreaterThanEqual(int src1, int src2) {
+		// TODO - isGreaterThanEqual
+		return false;
+	}
+
+	public static boolean isGreaterThanEqual_unsigned(int src1, int src2) {
+		// TODO - isGreaterThanEqual_unsigned
+		return false;
+	}
+
+	public static boolean isGreaterThan(int src1, int src2) {
+		// TODO - isGreaterThan
+		return false;
+	}
+
+	public static boolean isGreaterThan_unsigned(int src1, int src2) {
+		// TODO - isGreaterThan_unsigned
+		return false;
+	}
+
+	public static boolean isLessThanEqual(int src1, int src2) {
+		// TODO - isLessThanEqual
+		return false;
+	}
+
+	public static boolean isLessThanEqual_unsigned(int src1, int src2) {
+		// TODO - isLessThanEqual_unsigned
+		return false;
+	}
+
+	public static boolean isLessThan(int src1, int src2) {
+		// TODO - isLessThan
+		return false;
+	}
+
+	public static boolean isLessThan_unsigned(int src1, int src2) {
+		// TODO - isLessThan_unsigned
+		return false;
+	}
+
+	public static boolean isNotEqual(int src1, int src2) {
+		// TODO - isNotEqual
+		return false;
+	}
+	
+	
+
+}
+@
+
+
+1.2
+log
+@changed to static methods, many to be removed
+@
+text
+@@
+
+
+1.1
+log
+@added by Simon
+@
+text
+@d8 1
+a8 1
+ * @@author sw00 Simon West
+d11 1
+a11 1
+public class ALU implements ALUInterface {
+d13 4
+a16 4
+	public ALU() {
+	}
+
+	public int abs(int src1) {
+d20 1
+a20 1
+	public int add(int src1, int src2) {
+d24 1
+a24 1
+	public int add_without_overflow(int src1, int src2) {
+d29 1
+a29 4
+	public int and(int src1, int src2) {
+		//for(int i = 0; i < 31; i++) {
+		//	word.setBit(i, src1.getBit(i) & src2.getBit(i));
+		//}
+d33 1
+a33 1
+	public void div(
+d41 1
+a41 1
+	public void div_unsigned(
+d49 1
+a49 1
+	public void div_with_overflow(
+d57 1
+a57 1
+	public void div_unsigned_with_overflow(
+d65 1
+a65 1
+	public int mul(int src1, int src2) {
+d70 1
+a70 1
+	public int mul_with_overflow(int src1, int src2) {
+d75 1
+a75 1
+	public int mul_unsigned_with_overflow(int src1, int src2) {
+d80 1
+a80 1
+	public void mult(
+d89 1
+a89 1
+	public void mult_unsigned(
+d98 1
+a98 1
+	public int neg(int src) {
+d103 1
+a103 1
+	public int neg_without_overflow(int src) {
+d108 1
+a108 1
+	public int nor(int src1, int src2) {
+d113 1
+a113 1
+	public int not(int src) {
+d118 1
+a118 1
+	public int or(int src1, int src2) {
+d123 1
+a123 1
+	public int rem(int src1, int src2) {
+d128 1
+a128 1
+	public int rem_unsigned(int src1, int src2) {
+d133 1
+a133 1
+	public int rol(int src1, int src2) {
+d138 1
+a138 1
+	public int ror(int src1, int src2) {
+d143 1
+a143 1
+	public int sll(int src1, int src2) {
+d148 1
+a148 1
+	public int sllv(int src1, int src2) {
+d153 1
+a153 1
+	public int sra(int src1, int src2) {
+d158 1
+a158 1
+	public int srav(int src1, int src2) {
+d163 1
+a163 1
+	public int srl(int src1, int src2) {
+d168 1
+a168 1
+	public int srlv(int src1, int src2) {
+d173 1
+a173 1
+	public int sub(int src1, int src2) {
+d178 1
+a178 1
+	public int sub_without_overflow(int src1) {
+d183 1
+a183 1
+	public int xor(int src1, int src2) {
+d188 1
+a188 1
+	public boolean isEqual(int src1, int src2) {
+d193 1
+a193 1
+	public boolean isGreaterThanEqual(int src1, int src2) {
+d198 1
+a198 1
+	public boolean isGreaterThanEqual_unsigned(int src1, int src2) {
+d203 1
+a203 1
+	public boolean isGreaterThan(int src1, int src2) {
+d208 1
+a208 1
+	public boolean isGreaterThan_unsigned(int src1, int src2) {
+d213 1
+a213 1
+	public boolean isLessThanEqual(int src1, int src2) {
+d218 1
+a218 1
+	public boolean isLessThanEqual_unsigned(int src1, int src2) {
+d223 1
+a223 1
+	public boolean isLessThan(int src1, int src2) {
+d228 1
+a228 1
+	public boolean isLessThan_unsigned(int src1, int src2) {
+d233 1
+a233 1
+	public boolean isNotEqual(int src1, int src2) {
+d237 2
+@
+

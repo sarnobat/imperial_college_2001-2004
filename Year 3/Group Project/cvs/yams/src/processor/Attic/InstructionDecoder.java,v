@@ -1,0 +1,92 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2003.11.10.10.57.52;	author qq01;	state dead;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.09.23.02.38;	author sw00;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.06.13.48.29;	author sw00;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 02-Nov-2003
+ *
+ */
+package processor;
+
+/**
+ * @@author sw00
+ *
+ */
+public class InstructionDecoder implements InstructionDecoderInterface {
+
+	private InstructionHandlerInterface instructionHandler;
+	private InstructionHandlerInterface syscallHandler;
+	
+	public InstructionDecoder(InstructionHandlerInterface instructionHandler,
+								InstructionHandlerInterface syscallHandler) {
+		this.instructionHandler = instructionHandler;
+		this.syscallHandler = syscallHandler;
+	}
+
+	public boolean handle(int instruction) {
+		InstructionHandlerInterface handler = instructionHandler;
+		MIPSWord inst = new MIPSWord(instruction);
+		MIPSBitstring op = MIPSBitstring.extract(inst, 26, 31);
+		
+		if(op.toInt() == 0) {
+			// an R type instruction
+			MIPSBitstring func = MIPSBitstring.extract(inst, 0, 5);
+			if(func.toInt() == 0xC) {
+				// a syscall instruction
+				handler = syscallHandler;
+			}
+		}
+		
+		return handler.execute(instruction);		
+	}
+
+}
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.1
+log
+@added, should work straight off
+@
+text
+@d8 1
+a8 1
+ * @@author sw00 Simon West
+@
+

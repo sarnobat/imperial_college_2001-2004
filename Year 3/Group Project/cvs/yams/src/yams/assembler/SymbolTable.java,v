@@ -1,0 +1,251 @@
+head	1.8;
+access;
+symbols
+	yams-final-19-12-03:1.8
+	yams-release2-17-12-03:1.5
+	yams-release-17-12-03:1.5;
+locks; strict;
+comment	@# @;
+
+
+1.8
+date	2003.12.19.14.20.25;	author qq01;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.19.14.09.01;	author jkm01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.19.13.25.30;	author jkm01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.11.18.26.17;	author jkm01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.09.18.52.57;	author jkm01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.12.04.17.58.35;	author jkm01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.27.17.05.14;	author jkm01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.51;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.8
+log
+@updated javadoc
+@
+text
+@package yams.assembler;
+
+import java.util.TreeMap;
+/*
+ * Created on 04-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+
+/**
+ * The SymbolTable is designed to store maps of symbols (e.g. a label within the Text segment OR a variable name in the Data segment) to their absolute addresses within memory.
+ * 
+ * @@author jkm01
+ */
+public class SymbolTable {
+	
+	private TreeMap table;
+	
+	// this class will hold addresses of memory locations assigned to a label
+	public SymbolTable()
+	{
+		table = new TreeMap();
+	}
+	
+	/**
+	 * Clears all entries of labels -> addresses within the symbol table
+	 */
+	public void resetSymbolTable()
+	{
+		table.clear();
+	}
+	
+	/**
+	 * 
+	 * Returns true if the given symbol / label is contained within the SymbolTable as a key, false if not.
+	 * 
+	 * @@param label
+	 * @@return true if symbol table contains the label
+	 */
+	public boolean containsLabel(String label) {return table.containsKey(label);}
+	
+	/**
+	 * 
+	 * Returns true if the SymbolTable contains the given memory address.
+	 * 
+	 * @@param address
+	 * @@return returns true if the symbol table contains required address
+	 */
+	public boolean containsAddress(int address) {return table.containsValue(new Integer(address));}
+	
+	/**
+	 * Returns the integer address value allocated to the provided label, by examining the SymbolTable.
+	 * 
+	 * @@param label
+	 * @@return returns the integer value absolute address of give label
+	 */
+	public int returnAddress(String label) {return ((Integer)table.get(label)).intValue();}
+	
+	/**
+	 * Adds a given label, to a given address (ie adds a mapping of label -> address within the TreeMap, throwing an
+	 * exception when that symbol / address is already existing within the SysmbolTable.
+	 * 
+	 * @@param label
+	 * @@param address
+	 * @@param lineNumber
+	 * @@throws AssemblerException
+	 */
+	public void add(String label, int address, int lineNumber) throws AssemblerException
+	{
+		if (!containsLabel(label))
+			{
+				table.put(label,new Integer(address));
+			}
+		else
+			{
+				throw new AssemblerException("[Error A37] Current label ("+label+") already used within assembler",lineNumber,null);
+			}			
+	}
+}@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d12 2
+a14 2
+ *
+ * The SymbolTable is designed to store maps of symbols (e.g. a label within the Text segment OR a variable name in the Data segment) to their absolute addresses within memory.
+d56 1
+a56 1
+	 * @@returnreturns the integer value absolute address of give label
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d39 1
+a39 1
+	 * @@return
+d48 1
+a48 1
+	 * @@return
+d56 1
+a56 1
+	 * @@return
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 2
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+a20 1
+	
+d25 4
+d33 8
+d42 8
+d51 7
+d59 10
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@a3 1
+
+d42 1
+a42 1
+				throw new AssemblerException("Error A87 - Line "+lineNumber+": - current label ("+label+") already used within assembler");
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d28 4
+a31 1
+	
+@
+
+
+1.2
+log
+@changed instruction file to only contain information on instructions
+@
+text
+@d36 1
+a36 8
+				if (!containsAddress(address))
+					{
+						table.put(label,new Integer(address));
+					}
+				else
+					{
+						throw new AssemblerException("Error A86 - Line "+lineNumber+": - current address ("+address+") for label ("+label+") already assembled to");
+					}
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d32 1
+a32 1
+	public void add(String label, int address)
+d42 1
+a42 1
+						System.out.println("Error current address already assembled to");
+d47 1
+a47 1
+				System.out.println("Error current label already used within assembler");
+@
+

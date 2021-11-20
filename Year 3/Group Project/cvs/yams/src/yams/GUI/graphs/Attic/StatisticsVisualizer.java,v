@@ -1,0 +1,122 @@
+head	1.4;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.4
+date	2003.12.12.18.49.22;	author ss401;	state dead;
+branches;
+next	1.3;
+
+1.3
+date	2003.12.10.21.12.35;	author ss401;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.12.10.21.09.36;	author ss401;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.10.20.47.01;	author ss401;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@package yams.GUI.graphs;
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTabbedPane;
+
+/*
+ * Created on 10-Dec-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+
+/**
+ * @@author ss401
+ *
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+public class StatisticsVisualizer {
+	
+	//All sizes of components should automatically adjust to match these dimensions,
+	//so these dimensions may be changed at no risk
+	public static final int WINDOW_HEIGHT = 330;
+	public static final int HEIGHT_BUFFER = 300;
+	public static final int WINDOW_WIDTH = 400;
+	public static final int WIDTH_BUFFER = 100; 
+	public static String preAmble = "<head><STYLE TYPE=text/css>td{padding:0px}body{ font-size: 10px}</STYLE></head>";
+	
+	public static void open(){
+		JFrame f = new JFrame("Graphs");
+		//the height addition is for the text to fit on the page
+		
+		
+		
+		JTabbedPane tabbedPane = new JTabbedPane();
+		
+		LineAccessGraph l = new LineAccessGraph();
+		RegisterGraphs r = new RegisterGraphs();
+		tabbedPane.addTab("Register usage",r);
+		tabbedPane.addTab("Line execution count",l);
+		tabbedPane.add(new JScrollPane(l));
+		//f.getContentPane().add(new JScrollPane(l));
+		f.getContentPane().add(tabbedPane);
+
+		f.setVisible(true);
+		f.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		f.setResizable(false);
+		f.setSize(new Dimension(WINDOW_WIDTH+WIDTH_BUFFER,WINDOW_HEIGHT+HEIGHT_BUFFER));
+		
+	}
+}
+@
+
+
+1.3
+log
+@Updated graphs button handler
+@
+text
+@@
+
+
+1.2
+log
+@added package declarations
+@
+text
+@a3 1
+import javax.swing.JComponent;
+a4 2
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+@
+
+
+1.1
+log
+@Added graphs package with 3 java files
+@
+text
+@d1 1
+@
+

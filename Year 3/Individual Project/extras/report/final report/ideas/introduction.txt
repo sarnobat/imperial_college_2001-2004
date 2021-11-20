@@ -1,0 +1,43 @@
+********************************************************
+A good summary of the whole project:
+
+"XML documents are organized as tree structures. Relational databases organize data in a tabular, or grid-like fashion, and use relational linking in order to expose hierarchical constraints on the data. Unfortunately, while it's generally very easy to map relational data into XML, trying to map XML, which can be very complex and freeform, into relational data can be incredibly difficult and lossy."
+
+(http://xml.apache.org/xindice/faq.html#faq-N1002B)
+********************************************************
+A reason for abolishing a project early on:
+
+In most [software] projects, the first system is barely usable. It may be too slow, too big, awkward to use, or all three. There is no alternative but to start again, smarting but smarter, and build a redesigned version in which these problems are solved.... Delivering the throwaway to customers buys time, but it does so only at the cost of agony for the user, distraction for the builders while they do the redesign, and a bad reputation for the product that the best redesign will find hard to live down. Hence, plan to throw one away; you will, anyhow.
+
+(http://www.robelle.com/library/smugbook/manmonth.html)
+********************************************************
+XML is more expressive than Relational Modellling because xml supports concepts form Object Oriented modelling such as types, inheritance (see XML Databases book - can't remember the page though)
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************

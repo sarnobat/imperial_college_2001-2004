@@ -1,0 +1,3029 @@
+head	1.48;
+access;
+symbols
+	yams-final-19-12-03:1.48
+	yams-release2-17-12-03:1.48
+	yams-release-17-12-03:1.47;
+locks; strict;
+comment	@# @;
+
+
+1.48
+date	2003.12.17.15.19.34;	author ajb101;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2003.12.16.18.40.33;	author ajb101;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2003.12.16.02.07.24;	author ajb101;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2003.12.15.21.41.01;	author sw00;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2003.12.15.15.43.51;	author ajb101;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2003.12.15.04.05.45;	author ajb101;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2003.12.14.22.30.20;	author ajb101;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2003.12.14.03.59.37;	author ajb101;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2003.12.12.16.08.21;	author ajb101;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2003.12.12.04.23.31;	author ajb101;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2003.12.11.20.04.17;	author ss401;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2003.12.11.03.17.02;	author ajb101;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2003.12.10.17.03.57;	author ajb101;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2003.12.10.15.14.31;	author ajb101;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2003.12.09.21.00.21;	author ajb101;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2003.12.09.15.26.50;	author ajb101;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2003.12.09.05.02.48;	author ajb101;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2003.12.08.19.44.13;	author ajb101;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2003.12.08.01.15.17;	author ajb101;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2003.12.04.19.15.07;	author ajb101;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2003.12.04.19.13.01;	author ajb101;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2003.12.04.18.48.01;	author ajb101;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2003.12.04.18.47.01;	author ajb101;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2003.12.04.18.27.23;	author ajb101;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2003.12.04.16.37.13;	author ajb101;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2003.12.04.02.48.12;	author ajb101;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2003.12.03.16.59.34;	author ajb101;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2003.12.03.13.51.14;	author ajb101;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2003.12.03.13.37.36;	author sw00;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2003.12.03.01.59.34;	author ajb101;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2003.12.02.15.05.08;	author ss401;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2003.12.02.15.02.56;	author ajb101;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.12.02.14.51.06;	author ajb101;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.12.01.11.49.22;	author ajb101;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.12.01.02.20.49;	author ajb101;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.11.30.23.17.35;	author ajb101;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.11.30.17.17.38;	author ajb101;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.11.30.03.31.00;	author ajb101;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.11.29.21.25.08;	author ss401;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.11.29.20.27.49;	author ajb101;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.11.29.20.14.07;	author ajb101;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.29.18.42.20;	author ss401;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.26.15.02.41;	author ajb101;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.23.21.03.25;	author ajb101;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.23.20.55.46;	author ajb101;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.21.17.56.53;	author ss401;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.21.16.21.31;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.16.23.35.40;	author ajb101;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.48
+log
+@fixed file command line argument bug
+@
+text
+@
+package yams;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+import java.io.*;
+import java.util.*;
+
+import yams.GUI.*;
+import yams.assembler.*;
+import yams.processor.*;
+import yams.parser.*;
+
+
+public class YAMSGui extends YAMSController {
+	
+	// window elements
+	
+	private JFrame mainFrame;
+	private FileSelectorPanel files;
+	private StatisticsPanel stats;
+	private RegistersPanel regs;
+	private DataPanel data;
+	private DialogPanel dialog;
+	private ProgramCodePanel code;
+	
+	private JMenuBar menuBar;
+	// FILE MENU
+	private JMenu mnuFile;
+	private JMenuItem mnuItemAddFile;
+	private JMenuItem mnuItemAddFileList;
+	private JMenuItem mnuItemRemoveFile;
+	private JMenuItem mnuItemLoadFile;
+	private JMenuItem mnuItemExit;
+	// PROCESSOR MENU
+	private JMenu mnuProcessor;
+	private JMenuItem mnuItemReloadFile;
+	private JMenuItem mnuItemResetBreakpoints;
+	private JMenuItem mnuItemDisplayStats;
+	private JCheckBoxMenuItem mnuItemVerbose;
+	// HELP MENU
+	private JMenu mnuHelp;
+	private JMenuItem mnuItemAbout;
+
+	// other useful stuff
+	
+	protected Assembler asm;
+	protected Processor processor;
+	protected Parser parser;
+	private ProcessorHandler processorHandler;
+	private LineList instrList = null;
+
+	
+	private boolean fileLoaded = false;
+	private File currentFile;
+	private boolean running = false;
+	
+	private String currentDirectory = System.getProperty("user.dir");
+	
+
+	public void start(String[] args) {
+
+		boolean verbose = false;
+
+		// set up GUI
+		setUpGui();
+
+		// create processor, depending on verbose option
+		if (verbose) {
+			processor = new Processor(this, System.in, dialog.getPrintStream(), dialog.getPrintStream());
+		} else {
+			processor = new Processor(this, System.in, dialog.getPrintStream(), new PrintStream(new NullStream()));
+		}
+		
+		// create assembler
+		asm = new Assembler("Instruction_file.xml", processor.memoryManager, processor.statisticsManager, new PrintStream(new NullStream()));
+
+		// parse command line arguments
+		for (int i = 1; i < args.length; i++) {
+			
+			if (args[i].equalsIgnoreCase("-if")) {
+				// next argument is an input file containing a list of files
+				if (i == args.length - 1) {
+					// but no more options
+					System.err.println("-if needs an argument");
+					continue;
+				} else {
+					i++;
+					loadFileList(new File(args[i]));
+
+				}
+				
+			} else if (args[i].equalsIgnoreCase("-v")) {
+				verboseOutput(true);
+
+			} else {
+				// assume it's a file
+				files.addFile(new File(args[i]));
+
+			}
+		}
+		
+		// initalise data panel and registers panel
+		// (must be done after procesor has been created)
+		this.data.init();
+		this.regs.init();
+		
+	}
+	
+	
+	private void setUpGui() {
+		try {
+			UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+		}
+		catch (Exception e) {
+		}
+		
+		// create main frame
+		mainFrame = new JFrame("Yet Another MIPS Simulator");
+		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		// add menu bar
+		MenuHandler menuHandler = new MenuHandler(this);
+		JMenuBar menuBar = new JMenuBar();
+		
+		// FILE MENU
+		mnuFile = new JMenu("File");
+		
+		mnuItemAddFile = new JMenuItem("Add File...");
+		mnuItemAddFile.addActionListener(menuHandler);
+		mnuFile.add(mnuItemAddFile);
+		
+		mnuItemAddFileList = new JMenuItem("Add File List...");
+		mnuItemAddFileList.addActionListener(menuHandler);
+		mnuFile.add(mnuItemAddFileList);
+		
+		mnuItemRemoveFile = new JMenuItem("Remove File");
+		mnuItemRemoveFile.addActionListener(menuHandler);
+		mnuItemRemoveFile.setEnabled(false);
+		mnuFile.add(mnuItemRemoveFile);
+		
+		mnuItemLoadFile = new JMenuItem("Load File");
+		mnuItemLoadFile.addActionListener(menuHandler);
+		mnuItemLoadFile.setEnabled(false);
+		mnuFile.add(mnuItemLoadFile);
+		
+		mnuFile.addSeparator();
+		
+		mnuItemExit = new JMenuItem("Exit");
+		mnuItemExit.addActionListener(menuHandler);
+		mnuFile.add(mnuItemExit);
+		
+		// PROCESSOR MENU
+		mnuProcessor = new JMenu("Processor");
+		
+		mnuItemReloadFile = new JMenuItem("Reload File");
+		mnuItemReloadFile.addActionListener(menuHandler);
+		mnuProcessor.add(mnuItemReloadFile);
+		
+		mnuItemResetBreakpoints = new JMenuItem("Reset Breakpoints");
+		mnuItemResetBreakpoints.addActionListener(menuHandler);
+		mnuProcessor.add(mnuItemResetBreakpoints);
+		
+		mnuItemDisplayStats = new JMenuItem("Display Statistics");
+		mnuItemDisplayStats.addActionListener(menuHandler);
+		mnuProcessor.add(mnuItemDisplayStats);
+		
+		mnuProcessor.addSeparator();
+		
+		mnuItemVerbose = new JCheckBoxMenuItem("Verbose Output");
+		mnuItemVerbose.addItemListener(menuHandler);
+		mnuProcessor.add(mnuItemVerbose);
+		
+		// HELP MENU
+		mnuHelp = new JMenu("Help");
+		
+		mnuItemAbout = new JMenuItem("About...");
+		mnuItemAbout.addActionListener(menuHandler);
+		mnuHelp.add(mnuItemAbout);
+		
+		
+		menuBar.add(mnuFile);
+		menuBar.add(mnuProcessor);
+		menuBar.add(mnuHelp);
+		mainFrame.setJMenuBar(menuBar);
+		
+
+		// create panels
+		files = new FileSelectorPanel(this);
+		stats = new StatisticsPanel(this);
+		code = new ProgramCodePanel(this);
+		data = new DataPanel(this);
+		dialog = new DialogPanel(this);
+		regs = new RegistersPanel(this);
+		
+		GridBagConstraints c = new GridBagConstraints();
+		c.fill = GridBagConstraints.BOTH;
+		
+		// set preferred sizes
+		files.setPreferredSize(new Dimension(230, Integer.MAX_VALUE));
+		regs.setPreferredSize(new Dimension(200, Integer.MAX_VALUE));
+		stats.setPreferredSize(new Dimension(200,150));
+		dialog.setPreferredSize(new Dimension(Integer.MAX_VALUE, 150));
+		
+		// create main panels
+		JPanel mainPanel = new JPanel();
+		mainPanel.setLayout(new BorderLayout());
+		
+		JPanel codeData = new JPanel();
+		codeData.setMaximumSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
+
+		codeData.setLayout(new GridBagLayout());
+		c.weightx = 0.5;
+		c.weighty = 1;
+		c.gridx = 1;
+		c.gridy = 1;
+		codeData.add(code,c);
+		c.weightx = 0.5;
+		c.weighty = 0.5;
+		c.gridx = 1;
+		c.gridy = 2;
+		codeData.add(data,c);
+		
+		JPanel statsDialog = new JPanel();
+		statsDialog.setLayout(new GridBagLayout());
+		c.weightx = 0;
+		c.gridx = 0;
+		c.gridy = 0;
+		statsDialog.add(stats,c);
+		c.weightx = 1;
+		c.gridx = 1;
+		c.gridy = 0;
+		statsDialog.add(dialog,c);
+		
+		mainPanel.add(files, BorderLayout.LINE_START);
+		mainPanel.add(codeData, BorderLayout.CENTER);
+		mainPanel.add(regs, BorderLayout.LINE_END);
+		mainPanel.add(statsDialog, BorderLayout.PAGE_END);
+
+		mainFrame.getContentPane().add(mainPanel);
+		
+		mainFrame.setSize(800,600);
+		mainFrame.show();
+	}
+	
+	
+	//
+	// Below are all the general GUI controller functions
+	//
+	
+	// Event handlers
+	
+	/**
+	 * Opens dialog to select a file and adds it to the list
+	 */
+	public void addFile() {
+		// open a dialog to add a file to the list
+		JFileChooser fc = new JFileChooser(currentDirectory);
+		int returnVal = fc.showOpenDialog(mainFrame);
+		
+		// if they clicked open, add the chosen file to the list
+		if ( returnVal == JFileChooser.APPROVE_OPTION ) {
+			currentDirectory  = fc.getSelectedFile().getPath();
+			files.addFile(fc.getSelectedFile());
+		}
+	}
+	
+	
+	/**
+	 * Opens dialog select a filelist file and adds files listed in it
+	 */
+	public void addFileList() {
+		// open a dialog to add a list of files
+		JFileChooser fc = new JFileChooser(currentDirectory);
+		int returnVal = fc.showOpenDialog(mainFrame);
+			
+		// if they clicked open, read from the chosen file and add contents to the list
+		if ( returnVal == JFileChooser.APPROVE_OPTION ) {
+			currentDirectory  = fc.getSelectedFile().getPath();
+			loadFileList(fc.getSelectedFile());
+		}
+	}
+	
+	
+	/**
+	 * Removes currently selected file from list
+	 */
+	public void removeFile() {
+		// remove file from the list
+		int index = files.lstFileList.getSelectedIndex();
+		files.fileList.remove(index);
+			
+		// reset current slection to something
+		if ( index == files.fileList.getSize() )
+			index--;
+		files.lstFileList.setSelectedIndex(index);
+		files.lstFileList.ensureIndexIsVisible(index);
+			
+		// if list is empty, disable button
+		if ( files.fileList.getSize() == 0 ) {
+			files.butRemFile.setEnabled(false);
+		}
+	}
+	
+	
+	/**
+	 * Loads currently selected file in list 
+	 */
+	public void loadFile() {
+		// if there is a program running, ask whether we should stop it
+		if (processorHandler != null) {
+			if (processorHandler.isRunning()) {
+				int r = JOptionPane.showConfirmDialog(mainFrame, "Cancel running program?", "YAMS", JOptionPane.YES_NO_OPTION);
+				if (r == JOptionPane.NO_OPTION) {
+					return;
+				} else {
+					processorHandler.processorStop();
+				}
+			}
+		}
+		// load file into parser, assembler and processor
+		int index = files.lstFileList.getSelectedIndex();
+		loadFile((File)files.fileList.elementAt(index));
+	}
+	
+	
+	/**
+	 * Exits the program
+	 */
+	public void exit() {
+		System.exit(0);
+	}
+	
+	/**
+	 * Reloads the currently loaded file
+	 */
+	public void reloadFile() {
+		// check if a program is running, and if so, prompt to cancel it
+		if (processorHandler != null) {
+			if (processorHandler.isRunning()) {
+				int r = JOptionPane.showConfirmDialog(mainFrame, "Cancel running program?", "YAMS", JOptionPane.YES_NO_OPTION);
+				if (r == JOptionPane.NO_OPTION) {
+					return;
+				} else {
+					processorHandler.processorStop();
+				}
+			}
+		}		
+		loadFile(currentFile);
+	}
+	
+	
+	/**
+	 * Removes all breakpoints
+	 */
+	public void resetBreakpoints() {
+		code.resetBreakpoints();
+	}
+	
+	
+	/**
+	 * Displays graphical statistics window
+	 */
+	public void displayStats() {
+		// if a file has been loaded, then display stats
+		if (fileLoaded) {
+			stats.displayGraphs(instrList);
+		} else {
+			JOptionPane.showMessageDialog(mainFrame, "No file loaded." + '\n' + "Cannot draw graphs.", "YAMS Warning", JOptionPane.WARNING_MESSAGE);
+		}
+	}
+	
+	
+	/**
+	 * Sets verbose mode
+	 * @@param value true causes verbose output from the processor to be displayed
+	 * 				false hides it
+	 */
+	public void verboseOutput(boolean value) {
+		if (value) {
+			processor.setVerbose(dialog.getPrintStream());
+		} else {
+			processor.setVerbose(new PrintStream(new NullStream()));
+		}
+		mnuItemVerbose.setState(value);
+	}
+	
+	
+	/**
+	 * Displays 'About' window
+	 */
+	public void about() {
+		// TODO: create about window
+	}
+	
+	
+	/**
+	 * Start the processor running
+	 */
+	public void processorStart() {
+		processorHandler.processorStart();
+	}
+	
+	
+	/**
+	 * Stop the processor running
+	 */
+	public void processorStop() {
+		processorHandler.processorStop();
+	}
+	
+	
+	/**
+	 * Step to the next line
+	 */
+	public void processorStep() {
+		// execute one instruction
+		processorHandler.runOne();
+	}
+	
+	
+	/**
+	 * Skip the next line
+	 */
+	public void processorSkip() {
+		// skip next line
+		processorHandler.runSkip();
+	}
+	
+	
+	
+	// General Methods
+	
+	// Methods to do with file list
+	
+	/**
+	 * Unloads any currently loaded file, and parses, assembles and sets up the
+	 * processor ready to execute the new file
+	 * @@ param file The file to load
+	 */
+	public void loadFile(File file) {
+		PrintStream out = dialog.getPrintStream();
+		boolean error = false;
+		// set file loaded to false
+		setFileLoaded(false);
+		currentFile = null;
+		
+		// UNLOAD old file
+		// reset memory manager, register manager, statistics manager, cycleManager
+		//   assembler, programCode panel and data panel
+		processor.reset();
+		asm.resetAssembler();
+		code.reset();
+		data.reset();
+		
+		// destroy old processor handler thread (if it exists)
+		if (processorHandler != null) {
+			processorHandler.destroy();
+		}
+		
+		// LOAD new file
+		parser = new Parser();
+		StringBuffer programCode;
+		try {
+			// load, parse and assemble
+			programCode = loadCode(file);
+			instrList = parser.parse(programCode);
+			asm.assembleCode(instrList);
+		}
+		catch (FileNotFoundException e) {
+			out.println("File Not Found: " + file.getName());
+			error = true;
+		}
+		catch (LexerException e) {
+			out.println("Lexer Error: " + e.toString());
+			error = true;
+		}
+		catch (ParseException e) {
+			out.println("Parse Error: " + e.toString());
+			error = true;
+		}
+		catch (AssemblerException e) {
+			out.println("Assembler Error: " + e.toString());
+			error = true;
+		}
+		
+		if (!error) {
+			// UPDATE display
+			dialog.clearText();
+			processor.cycleManager.jump(0x400000);
+			setFileLoaded(true);
+			currentFile = file;
+			processorHandler = new ProcessorHandler(this, processor);
+			processorHandler.start();
+			code.setSourceCode(instrList);
+			updateBreakPointPanel();
+		}
+	}
+	
+	
+	
+	/**
+	 * Loads all the valid existing files from the files described in fileName
+	 */
+	public void loadFileList(File fileName) {
+		FileReader file;
+		BufferedReader input = null;
+		String path = (fileName.getPath()).substring(0, fileName.getPath().length() - fileName.getName().length());
+		try {
+			file = new FileReader(fileName);
+			input = new BufferedReader(file);
+		} catch (FileNotFoundException ee){
+			System.err.println("Input file list not found: " + fileName.getName());
+			return;
+		}
+		String line = "";
+		try {
+			File temp;
+			while ((line = input.readLine()) != null) {
+				temp = new File(path + line);
+				if (temp.exists()) {
+					files.addFile(temp);
+				} else {
+					System.err.println("File does not exist: " + temp.getName());
+				}
+			}
+		} catch (IOException ee) {
+			// error reading from file
+			JOptionPane.showMessageDialog(mainFrame, "Error reading from file: " + line, "YAMS Error", JOptionPane.ERROR);
+		}
+	}
+	
+	/**
+	 * Sets whether remove/load is allowed (changes enabled state of menu and buttons)
+	 */
+	public void setRemoveLoadStatus(boolean value) {
+		files.butLoadFile.setEnabled(value);
+		files.butRemFile.setEnabled(value);
+		mnuItemLoadFile.setEnabled(value);
+		mnuItemRemoveFile.setEnabled(value);
+	}
+
+
+
+	
+	// Methods to do with processor
+	
+	/**
+	 * Returns a handle to the processor (and hence to the classes within the processor)
+	 */
+	public Processor getProcessor() {
+		return processor;
+	}
+	
+	
+	/**
+	 * Updates the Processor Status message
+	 * @@param message The message to display
+	 */
+	public void updateProcessorStatus(String message) {
+		code.setProcessorStatus(message);
+	}
+	
+	
+	/**
+	 * Set the speed of the processor
+	 * @@param speed Delay between instructions in milliseconds
+	 */
+	public void setProcessorSpeed(int speed) {
+		// processor handler may not exist yet
+		if (processorHandler != null) {
+			processorHandler.setDelay(speed);
+		}
+	}
+	
+	
+	/**
+	 * Get the speed of the processor from the processor
+	 * @@return Returns the delay between instructions in milliseconds
+	 */
+	public int getProcessorSpeedFromProcessor() {
+		return processorHandler.getDelay();
+	}
+	
+	
+	/**
+	 * Get the speed setting of the processor from the slider in the GUI
+	 * @@return Returns the current selection of the slider
+	 */
+	public int getProcessorSpeedFromGUI() {
+		return code.getSpeed();
+	}
+	
+	
+	
+	
+	// Methods to do with Program Flow/Breakpoint window
+	
+	/**
+	 * Enable the program execution buttons
+	 */
+	public void enableProgramCodeButtons() {
+		code.butRun.setEnabled(true);
+		code.butStep.setEnabled(true);
+		code.butSkipNext.setEnabled(true);
+		code.butStop.setEnabled(true);
+	}
+	
+	
+	/**
+	 * disable the program execution buttons (e.g. when the program has finished)
+	 */
+	public void disableProgramCodeButtons() {
+		code.butRun.setEnabled(false);
+		code.butStep.setEnabled(false);
+		code.butSkipNext.setEnabled(false);
+		code.butStop.setEnabled(false);
+	}
+	
+	
+	/**
+	 * Work out the current line pointed to by the Program Counter
+	 * @@return Current line, or -1 if in the middle of a pseudo instruction
+	 */
+	public int getCurrentLine () {
+		int regPC = processor.registerManager.getRegOnly("PC");
+		if (asm.getGUIMap().containsAddress(regPC)) {
+			return asm.getGUIMap().returnLine(regPC);
+		} else {
+			return -1;
+		}
+	}
+	
+	
+	/**
+	 * Selects the 'currentLine' in the breakpoint window
+	 */
+	public void updateBreakPointPanel() {
+		int currentLine = getCurrentLine();
+		if (currentLine != -1) {
+			code.setCurrentLine(currentLine);
+		}
+	}
+	
+	
+	/**
+	 * Finds whether the current line has a break point set
+	 * @@return true if a breakpoint is set, false if not
+	 */
+	public boolean currentLineHasBreakPoint() {
+		int currentLine = getCurrentLine();
+		if (currentLine == -1) {
+			return false;
+		} else {
+			return code.getBreakPoint(currentLine);
+		}
+	}
+	
+	
+	
+	
+	// Misc update methods
+	
+	/**
+	 * Causes the statistics panel to update
+	 */
+	public void updateStatistics() {
+		stats.update();
+	}
+	
+	
+	/**
+	 * Updates the approiate register in the GUI
+	 */
+	public void regChanged(String regID) {
+		regs.regChanged(regID);
+	}
+	
+	
+	/**
+	 * Updates the approiate cells in the data panel
+	 */
+	public void memoryChanged(int address) {
+		// update data panel
+		data.memoryChanged(address);
+	}
+	
+	
+	/**
+	 * Sets status of whether a file is loaded and enabled/disabled buttons accordingly
+	 * @@param value true if a file is loaded, false otherwise
+	 */
+	private void setFileLoaded(boolean value) {
+		if (value) {
+			// set fileLoaded to true and enable execution control buttons
+			fileLoaded = true;
+			enableProgramCodeButtons();
+		} else {
+			// set fileLoaded to false and disable execution control buttons
+			fileLoaded = false;
+			disableProgramCodeButtons();
+		}
+	}
+	
+	
+	/**
+	 * @@return Returns whether a file is currently loaded or not
+	 */
+	public boolean getFileLoaded() {
+		return fileLoaded;
+	}
+	
+	
+	/**
+	 * @@return Returns a refrence to the main frame
+	 */
+	public JFrame getMainFrame() {
+		return mainFrame;
+	}
+	
+}
+
+
+/**
+ * A null-output stream used for disabling verbose output from the processor
+ */
+class NullStream extends OutputStream {
+	NullStream() {}
+	public void write(int b) {}
+} 
+
+
+/**
+ * A menu handler for our menu
+ */
+class MenuHandler implements ActionListener, ItemListener {
+	
+	YAMSGui controller;
+	
+	MenuHandler(YAMSGui c) {
+		controller = c;
+	}
+	
+	public void actionPerformed(ActionEvent e) {
+		JMenuItem source = (JMenuItem)e.getSource();
+		
+		if (source.getText().equals("Add File...")) {
+			controller.addFile();
+			
+		} else if (source.getText().equals("Add File List...")) {
+			controller.addFileList();
+			
+		} else if (source.getText().equals("Remove File")) {
+			controller.removeFile();
+			
+		} else if (source.getText().equals("Load File")) {
+			controller.loadFile();
+			
+		} else if (source.getText().equals("Reload File")) {
+			controller.reloadFile();
+			
+		} else if (source.getText().equals("Exit")) {
+			controller.exit();
+			
+		} else if (source.getText().equals("Reset Breakpoints")) {
+			controller.resetBreakpoints();
+			
+		} else if (source.getText().equals("Display Statistics")) {
+			controller.displayStats();
+			
+		} else if (source.getText().equals("About")) {
+			controller.about();
+			
+		}
+	}
+	
+	public void itemStateChanged(ItemEvent e) {
+		JCheckBoxMenuItem source = (JCheckBoxMenuItem)e.getSource();
+		controller.verboseOutput(source.getState());
+	}
+	
+}
+@
+
+
+1.47
+log
+@*** empty log message ***
+@
+text
+@a64 1
+		LinkedList files = new LinkedList();
+d100 1
+a100 1
+				files.add(new File(args[i]));
+@
+
+
+1.46
+log
+@*** empty log message ***
+@
+text
+@d79 1
+a79 1
+		asm = new Assembler("Instruction_file.xml", processor.memoryManager, processor.statisticsManager, System.out);
+@
+
+
+1.45
+log
+@calls processor.setVerbose(PrintStream)
+@
+text
+@d69 1
+a69 1
+		setUpGui(verbose);
+a105 4
+		
+		// add files to FileSelectorFrame
+		// this.files.initFileList(files);
+		
+d114 1
+a114 1
+	private void setUpGui(boolean verbose) {
+a174 1
+		mnuItemVerbose.setState(verbose);
+d193 1
+a193 1
+		stats = new StatisticsPanel("Program Statistics",this);
+d195 1
+a195 1
+		data = new DataPanel("Data Segment",this);
+d197 1
+a197 1
+		regs = new RegistersPanel("Register Values",this);
+d214 1
+a214 3
+		//codeData.setLayout(new GridLayout(2,1));
+		//codeData.add(code);
+		//codeData.add(data);
+a248 80
+
+
+
+
+
+
+
+	
+	public void loadFile(File file) {
+		PrintStream out = dialog.getPrintStream();
+		boolean error = false;
+		// set file loaded to false
+		setFileLoaded(false);
+		currentFile = null;
+		
+		// UNLOAD old file
+		// reset memory manager, register manager, statistics manager, cycleManager
+		//   assembler, programCode panel and data panel
+		processor.reset();
+		asm.resetAssembler();
+		code.reset();
+		data.reset();
+		
+		// destroy old processor handler thread (if it exists)
+		if (processorHandler != null) {
+			processorHandler.destroy();
+		}
+		
+		// LOAD new file
+		parser = new Parser();
+		StringBuffer programCode;
+		try {
+			// load, parse and assemble
+			programCode = loadCode(file);
+			instrList = parser.parse(programCode);
+			asm.assembleCode(instrList);
+		}
+		catch (FileNotFoundException e) {
+			out.println("File Not Found: " + file.getName());
+			error = true;
+		}
+		catch (LexerException e) {
+			out.println("Lexer Error: " + e.toString());
+			error = true;
+		}
+		catch (ParseException e) {
+			out.println("Parse Error: " + e.toString());
+			error = true;
+		}
+		catch (AssemblerException e) {
+			out.println("Assembler Error: " + e.toString());
+			error = true;
+		}
+		
+		if (!error) {
+			// UPDATE display
+			dialog.clearText();
+			processor.cycleManager.jump(0x400000);
+			setFileLoaded(true);
+			currentFile = file;
+			processorHandler = new ProcessorHandler(this, processor);
+			processorHandler.start();
+			code.setSourceCode(instrList);
+			updateBreakPointPanel();
+		}
+	}
+	
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+d368 6
+a373 1
+		stats.displayGraphs(instrList);
+d388 1
+a388 1
+		// TODO: ensure menu item is ticked/not-ticked accordingly
+d400 33
+d439 65
+a564 34
+	}
+	
+	
+	/**
+	 * Start the processor running
+	 */
+	public void processorStart() {
+		processorHandler.processorStart();
+	}
+	
+	
+	/**
+	 * Stop the processor running
+	 */
+	public void processorStop() {
+		processorHandler.processorStop();
+	}
+	
+	
+	/**
+	 * Step to the next line
+	 */
+	public void processorStep() {
+		// execute one instruction
+		processorHandler.runOne();
+	}
+	
+	
+	/**
+	 * Skip the next line
+	 */
+	public void processorSkip() {
+		// skip next line
+		processorHandler.runSkip();
+@
+
+
+1.44
+log
+@*** empty log message ***
+@
+text
+@d465 5
+a469 1
+		// TODO: change processor verbose printstream
+@
+
+
+1.43
+log
+@more updates and bug fixes, including a weird one with the processorHandler thread
+@
+text
+@d53 2
+a286 1
+		LineList instrList = null;
+a318 1
+			stats.setSourceCode(instrList);
+d455 1
+a455 1
+		stats.displayGraphs();
+d685 1
+a685 1
+		stats.update(processor);
+@
+
+
+1.42
+log
+@lovely beautiful code
+@
+text
+@d277 5
+d400 11
+d428 11
+d447 1
+a447 1
+		// TODO: this
+@
+
+
+1.41
+log
+@*** empty log message ***
+@
+text
+@a1 6
+/*
+ * Created on 21-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+d3 1
+d52 2
+a53 1
+
+d55 1
+a59 3
+	private ProcessorHandler processorHandler;
+
+
+d66 13
+d95 1
+a95 1
+				verbose = true;
+a103 12
+		// set up GUI
+		setUpGui(verbose);
+		
+		// create processor, depending on verbose option
+		if (verbose) {
+			processor = new Processor(this, System.in, dialog.getPrintStream(), dialog.getPrintStream());
+		} else {
+			processor = new Processor(this, System.in, dialog.getPrintStream(), new PrintStream(new NullStream()));
+		}
+		
+		// create assembler
+		asm = new Assembler("Instruction_file.xml", processor.memoryManager, processor.statisticsManager, System.out);
+d106 1
+a106 1
+		this.files.initFileList(files);
+d267 1
+d309 1
+d412 1
+a412 1
+		
+d420 1
+a420 1
+		
+d439 1
+d464 1
+d469 2
+a470 1
+			// do we need code here?
+d476 1
+a476 1
+				temp = new File(line);
+@
+
+
+1.40
+log
+@*** empty log message ***
+@
+text
+@d24 2
+a33 9
+	protected Assembler asm;
+	protected Processor processor;
+	protected Parser parser;
+
+	private boolean fileLoaded = false;
+	private boolean running = false;
+	
+	private ProcessorHandler processorHandler;
+	
+d52 14
+d83 1
+a83 19
+					// open file and read filenames
+					FileReader file;
+					BufferedReader input = null;
+					try {
+						file = new FileReader(args[i]);
+						input = new BufferedReader(file);
+					} catch (FileNotFoundException e) {
+						System.err.println("Unable to find input file: " + args[i]);
+						continue;
+					}
+					try {
+						String line;
+						while ((line = input.readLine()) != null) {
+							files.add(new File(line));
+						}
+					} catch (IOException e) {
+						// some other error
+						e.printStackTrace();
+					}
+d346 1
+a346 1
+		JFileChooser fc = new JFileChooser();
+d348 1
+a348 1
+			
+d351 1
+d362 1
+a362 1
+		JFileChooser fc = new JFileChooser();
+d367 2
+a368 17
+			FileReader file;
+			BufferedReader input = null;
+			try {
+				file = new FileReader(fc.getSelectedFile());
+				input = new BufferedReader(file);
+			} catch (FileNotFoundException ee){
+				// do we need code here?
+			}
+			String line = "";
+			try {
+				while ((line = input.readLine()) != null) {
+					files.addFile(new File(line));
+				}
+			} catch (IOException ee) {
+				// error reading from file
+				JOptionPane.showMessageDialog(mainFrame, "Error reading from file: " + line, "YAMS Error", JOptionPane.ERROR);
+			}
+d458 30
+@
+
+
+1.39
+log
+@LOADS of gui changes
+@
+text
+@d63 1
+d97 3
+d109 1
+a109 1
+		setUpGui();
+d111 6
+a116 3
+		// create processor, giving it the dialog frame for output
+		// TODO : handle verbose option
+		processor = new Processor(this, System.in, dialog.getPrintStream(), System.out);
+d132 1
+a132 1
+	private void setUpGui() {
+d193 1
+d225 1
+d274 2
+a275 6
+	public JFrame getMainFrame() {
+		return mainFrame;
+	}
+	public Processor getProcessor() {
+		return processor;
+	}
+d334 1
+a334 3
+	public void processorStart() {
+		processorHandler.processorStart();
+	}
+d336 1
+a336 3
+	public void processorStop() {
+		processorHandler.processorStop();
+	}
+d338 1
+d340 1
+d342 1
+a342 92
+	public void processorStep() {
+		// execute one instruction
+		processorHandler.runOne();
+	}
+	
+	
+	
+	public void processorSkip() {
+		// skip next line
+		processorHandler.runSkip();
+	}
+	
+	public void setProcessorSpeed(int speed) {
+		// processor handler may not exist yet
+		if (processorHandler != null) {
+			processorHandler.setDelay(speed);
+		}
+	}
+	
+	public int getProcessorSpeedFromProcessor() {
+		return processorHandler.getDelay();
+	}
+	
+	public int getProcessorSpeedFromGUI() {
+		return code.getSpeed();
+	}
+	
+	public void updateBreakPointPanel() {
+		int currentLine = getCurrentLine();
+		if (currentLine != -1) {
+			code.setCurrentLine(currentLine);
+		}
+	}
+	
+	public boolean currentLineHasBreakPoint() {
+		int currentLine = getCurrentLine();
+		if (currentLine == -1) {
+			return false;
+		} else {
+			return code.getBreakPoint(currentLine);
+		}
+	}
+	
+	public int getCurrentLine () {
+		int regPC = processor.registerManager.getRegOnly("PC");
+		if (asm.getGUIMap().containsAddress(regPC)) {
+			return asm.getGUIMap().returnLine(regPC);
+		} else {
+			return -1;
+		}
+	}
+	
+	public void regChanged(String regID) {
+		regs.regChanged(regID);
+	}
+	
+	public void memoryChanged(int address) {
+		// update data panel
+		data.memoryChanged(address);
+	}
+	
+	private void setFileLoaded(boolean value) {
+		if (value) {
+			// set fileLoaded to true and enable execution control buttons
+			fileLoaded = true;
+			enableProgramCodeButtons();
+		} else {
+			// set fileLoaded to false and disable execution control buttons
+			fileLoaded = false;
+			disableProgramCodeButtons();
+		}
+	}
+	
+	public void enableProgramCodeButtons() {
+		code.butRun.setEnabled(true);
+		code.butStep.setEnabled(true);
+		code.butSkipNext.setEnabled(true);
+		code.butStop.setEnabled(true);
+	}
+	
+	public void disableProgramCodeButtons() {
+		code.butRun.setEnabled(false);
+		code.butStep.setEnabled(false);
+		code.butSkipNext.setEnabled(false);
+		code.butStop.setEnabled(false);
+	}
+	
+	
+	
+	public boolean getFileLoaded() {
+		return fileLoaded;
+	}
+a362 3
+			
+			// TODO: fix this bug
+			files.butRemFile.setEnabled(true);
+d474 1
+a474 1
+		
+d478 2
+d482 2
+d493 12
+d517 133
+d655 51
+d709 8
+d718 3
+@
+
+
+1.38
+log
+@*** empty log message ***
+@
+text
+@d10 1
+a10 1
+
+d41 18
+a58 1
+	private static int REALLY_BIG_SIZE = 500000;
+d137 1
+d140 2
+a141 3
+		// file menu
+		JMenu mnuFile = new JMenu("File");
+		menuBar.add(mnuFile);
+d143 2
+a144 1
+		JMenuItem mnuItemAddFile = new JMenuItem("Add File...");
+d146 8
+a153 1
+		JMenuItem mnuItemRemoveFile = new JMenuItem("Remove File");
+d155 4
+a158 1
+		JMenuItem mnuItemLoadFile = new JMenuItem("Load File");
+d160 5
+a164 1
+		JMenuItem mnuItemExit = new JMenuItem("Exit");
+d167 32
+a200 2
+		// TODO: listener for the menu
+
+d214 2
+a215 2
+		files.setPreferredSize(new Dimension(200, 500));
+		regs.setPreferredSize(new Dimension(200, 500));
+d223 15
+a237 3
+		codeData.setLayout(new GridLayout(2,1));
+		codeData.add(code);
+		codeData.add(data);
+d340 2
+a341 5
+		processor.cycleManager.advance();
+		if (processor.cycleManager.hasFinished()) {
+			// program finished
+		}
+		updateBreakPointPanel();
+d344 2
+d347 8
+a354 3
+		processor.cycleManager.skip();
+		if (processor.cycleManager.hasFinished()) {
+			// program finished
+a355 1
+		updateBreakPointPanel();
+d358 6
+a363 6
+	public void processorAdvance() {
+		processor.cycleManager.advance();
+		if (processor.cycleManager.hasFinished()) {
+			//program finished
+		}
+		updateBreakPointPanel();
+d367 3
+a369 8
+		int regPC;
+		regPC = processor.registerManager.getRegOnly("PC");
+		System.out.println("regPC: " + regPC);
+		// check PC is in GuiMap
+		if (asm.getGUIMap().containsAddress(regPC)) {
+			// get current line
+			int curLine = asm.getGUIMap().returnLine(regPC);
+			code.setCurrentLine(curLine);
+a370 1
+
+d374 10
+a383 2
+		int regPC;
+		regPC = processor.registerManager.getRegOnly("PC");
+d385 1
+a385 2
+			int curLine = asm.getGUIMap().returnLine(regPC);
+			return code.getBreakPoint(curLine);
+d387 1
+a387 1
+			return false;
+d404 1
+a404 4
+			code.butRun.setEnabled(true);
+			code.butStep.setEnabled(true);
+			code.butSkipNext.setEnabled(true);
+			code.butStop.setEnabled(true);
+d408 1
+a408 4
+			code.butRun.setEnabled(false);
+			code.butStep.setEnabled(false);
+			code.butSkipNext.setEnabled(false);
+			code.butStop.setEnabled(false);
+d412 14
+d430 215
+@
+
+
+1.37
+log
+@*** empty log message ***
+@
+text
+@d248 1
+@
+
+
+1.36
+log
+@finished layout of gui? :)
+@
+text
+@d206 1
+a206 1
+		// reset memory manager, register manager, statistics manager
+d208 2
+a209 7
+		processor.memoryManager.reset();
+		processor.registerManager.reset();
+		// TODO: reset assembler
+		asm = new Assembler("Instruction_file.xml", processor.memoryManager, processor.statisticsManager, System.out);
+		// reset statistics manager
+		processor.statisticsManager.reset();
+		// reset programCode panel
+d211 1
+a211 1
+		// TODO: reset data panel (or does memory manager trigger this?)
+a242 1
+			// TODO: update data panel (or does memory manager trigger this?)
+a296 3
+			
+			// TODO: remove debug code
+			System.out.println("    PC: " + regPC + "  Line Number:" + curLine);
+@
+
+
+1.35
+log
+@*** empty log message ***
+@
+text
+@d148 2
+a149 3
+		// set sizes of items
+		files.setMinimumSize(new Dimension(100,0));
+		files.setMaximumSize(new Dimension(100,REALLY_BIG_SIZE));
+d151 4
+a154 2
+		stats.setMaximumSize(new Dimension(100, REALLY_BIG_SIZE));
+		dialog.setMaximumSize(new Dimension(REALLY_BIG_SIZE, REALLY_BIG_SIZE));
+d158 1
+a158 1
+		mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.PAGE_AXIS));
+d160 2
+a161 7
+		JPanel topPanel = new JPanel();
+		topPanel.setLayout(new BoxLayout(topPanel, BoxLayout.LINE_AXIS));
+		
+		JPanel bottomPanel = new JPanel();
+		bottomPanel.setLayout(new GridLayout());
+		
+		JPanel codeData = new JPanel(new FlowLayout());
+d165 16
+a180 57
+		// add sub-subpanels to subpanels
+		topPanel.add(files);
+		topPanel.add(codeData);
+		topPanel.add(regs);
+		bottomPanel.add(stats);
+		bottomPanel.add(dialog);
+		
+		// add subpanels to main panel
+		mainPanel.add(topPanel);
+		mainPanel.add(bottomPanel);
+		
+//		JPanel mainPanel = new JPanel(new GridBagLayout());
+//		
+//		// grid is 4 by 12
+//		GridBagConstraints c = new GridBagConstraints();
+//		c.fill = GridBagConstraints.BOTH;
+//		
+//		c.weightx = 0.5;
+//		c.weighty = 0.5;
+//		
+//
+//		c.gridx = 0;
+//		c.gridy = 0;
+//		c.gridheight = 9;
+//		c.gridwidth = 1;
+//		mainPanel.add(files, c);
+//		
+//		c.gridx = 0;
+//		c.gridy = 9;
+//		c.gridheight = 3;
+//		c.gridwidth = 1;
+//		mainPanel.add(stats, c);
+//		
+//		c.gridx = 1;
+//		c.gridy = 0;
+//		c.gridheight = 4;
+//		c.gridwidth = 2;
+//		mainPanel.add(code, c);
+//		
+//		c.gridx = 1;
+//		c.gridy = 4;
+//		c.gridheight = 4;
+//		c.gridwidth = 2;
+//		mainPanel.add(data, c);
+//		
+//		c.gridx = 1;
+//		c.gridy = 8;
+//		c.gridheight = 4;
+//		c.gridwidth = 3;
+//		mainPanel.add(dialog, c);
+//
+//		c.gridx = 3;
+//		c.gridy = 0;
+//		c.gridheight = 8;
+//		c.gridwidth = 1;
+//		mainPanel.add(regs, c);
+		
+a181 1
+		
+@
+
+
+1.34
+log
+@updated data panel
+@
+text
+@d41 1
+d138 3
+a140 10
+		
+		JPanel mainPanel = new JPanel(new GridBagLayout());
+		
+		// grid is 4 by 12
+		GridBagConstraints c = new GridBagConstraints();
+		c.fill = GridBagConstraints.BOTH;
+		
+		c.weightx = 0.5;
+		c.weighty = 0.5;
+		
+d147 78
+a224 36
+
+		c.gridx = 0;
+		c.gridy = 0;
+		c.gridheight = 9;
+		c.gridwidth = 1;
+		mainPanel.add(files, c);
+		
+		c.gridx = 0;
+		c.gridy = 9;
+		c.gridheight = 3;
+		c.gridwidth = 1;
+		mainPanel.add(stats, c);
+		
+		c.gridx = 1;
+		c.gridy = 0;
+		c.gridheight = 4;
+		c.gridwidth = 2;
+		mainPanel.add(code, c);
+		
+		c.gridx = 1;
+		c.gridy = 4;
+		c.gridheight = 4;
+		c.gridwidth = 2;
+		mainPanel.add(data, c);
+		
+		c.gridx = 1;
+		c.gridy = 8;
+		c.gridheight = 4;
+		c.gridwidth = 3;
+		mainPanel.add(dialog, c);
+
+		c.gridx = 3;
+		c.gridy = 0;
+		c.gridheight = 8;
+		c.gridwidth = 1;
+		mainPanel.add(regs, c);
+@
+
+
+1.33
+log
+@*** empty log message ***
+@
+text
+@d99 3
+a101 1
+		// initalise registers panel (must be done after procesor has been created)
+d335 4
+@
+
+
+1.32
+log
+@*** empty log message ***
+@
+text
+@d146 6
+a157 1
+		stats = new StatisticsPanel("Program Statistics",this);
+a163 1
+		regs = new RegistersPanel("Register Values",this);
+d168 1
+a168 1
+		mainPanel.add(regs, c);
+a169 1
+		data = new DataPanel("Data Segment",this);
+a175 1
+		dialog = new DialogPanel(this);
+d181 1
+a181 2
+		
+		code = new ProgramCodePanel(this);
+d186 1
+a186 1
+		mainPanel.add(code, c);
+a198 18
+//	public ProgramCodePanel getCodeFrame() {
+//		return code;
+//	}
+//	public DialogPanel getDialogFrame() {
+//		return dialog;
+//	}
+//	public DataPanel getDataFrame() {
+//		return data;
+//	}
+//	public RegistersPanel getRegsFrame() {
+//		return regs;
+//	}
+//	public StatisticsPanel getStatsFrame() {
+//		return stats;
+//	}
+//	public FileSelectorPanel getFileSelectorFrame() {
+//		return files;
+//	}
+d280 3
+d288 3
+d296 3
+@
+
+
+1.31
+log
+@*** empty log message ***
+@
+text
+@a295 1
+		// TODO: catch processor exception
+a300 1
+		// TODO: catch processorexception
+a305 1
+		// TODO: catch processor exception
+@
+
+
+1.30
+log
+@GUI updates Galore!
+@
+text
+@d323 2
+a324 1
+			// TODO: if line is breakpointed, stop the processor
+d327 11
+@
+
+
+1.29
+log
+@*** empty log message ***
+@
+text
+@d37 3
+d198 18
+a215 18
+	public ProgramCodePanel getCodeFrame() {
+		return code;
+	}
+	public DialogPanel getDialogFrame() {
+		return dialog;
+	}
+	public DataPanel getDataFrame() {
+		return data;
+	}
+	public RegistersPanel getRegsFrame() {
+		return regs;
+	}
+	public StatisticsPanel getStatsFrame() {
+		return stats;
+	}
+	public FileSelectorPanel getFileSelectorFrame() {
+		return files;
+	}
+d239 2
+a240 1
+		// TODO: reset programCode panel
+d246 1
+a246 1
+		LineList instrList;
+a273 1
+			// TODO: update program code panel
+d276 4
+d286 1
+a286 1
+		processor.cycleManager.start();
+d290 1
+a290 1
+		processor.cycleManager.stop();
+d293 2
+d296 1
+d298 1
+d302 3
+a304 1
+		processor.cycleManager.skip();	
+d308 1
+d310 16
+@
+
+
+1.28
+log
+@*** empty log message ***
+@
+text
+@d294 3
+d308 1
+a308 1
+			code.butRunComplete.setEnabled(true);
+d315 1
+a315 1
+			code.butRunComplete.setEnabled(false);
+@
+
+
+1.27
+log
+@*** empty log message ***
+@
+text
+@d88 1
+a88 1
+		processor = new Processor(this, System.in, dialog.getPrintStream(), dialog.getPrintStream());
+d234 2
+a235 1
+		// TODO: reset statistics manager
+@
+
+
+1.26
+log
+@*** empty log message ***
+@
+text
+@d233 1
+a233 1
+		asm = new Assembler("Instruction_file.xml", processor.memoryManager, processor.statisticsManager);
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@d91 1
+a91 1
+		asm = new Assembler("Instruction_file.xml", processor.memoryManager, processor.statisticsManager);
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d267 1
+@
+
+
+1.23
+log
+@lots of gooey updates
+@
+text
+@a29 1
+	private ExecutionControlsPanel exec;
+a82 1
+		
+d87 1
+a87 1
+		// TODO : use a different print stream for verbose
+d96 3
+a197 3
+	public ExecutionControlsPanel getExecFrame() {
+		return exec;
+	}
+d292 4
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@a9 1
+import java.awt.event.*;
+d19 1
+d24 1
+d35 1
+a88 1
+		// TODO: give processor dialog frame for output
+d90 1
+a90 1
+		processor = new Processor(this, System.in, System.out, System.out);
+a93 1
+
+d109 2
+a110 2
+		JFrame frame = new JFrame("Yet Another MIPS Simulator");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+d128 1
+a128 1
+		frame.setJMenuBar(menuBar);
+d141 1
+a141 1
+		files = new FileSelectorPanel("File Selector",this);
+d169 1
+a169 1
+		dialog = new DialogPanel("Program Output",this);
+d173 1
+a173 1
+		c.gridwidth = 2;
+d176 1
+a176 1
+		exec = new ExecutionControlsPanel("Execution Controls",this);
+d179 1
+a179 8
+		c.gridheight = 1;
+		c.gridwidth = 1;
+		mainPanel.add(exec, c);
+		
+		code = new ProgramCodePanel("Breakpoints",this);
+		c.gridx = 3;
+		c.gridy = 3;
+		c.gridheight = 9;
+d183 1
+a183 1
+		frame.getContentPane().add(mainPanel);
+d186 2
+a187 2
+		frame.setSize(800,600);
+		frame.show();
+d215 3
+d224 2
+d227 1
+a227 1
+		fileLoaded = false;
+d230 2
+d233 3
+d241 3
+d245 12
+a256 2
+			// TODO: parse file
+			// TODO: assemble file
+d258 7
+a264 2
+		catch (Exception e) {
+			// catch exceptions
+d267 25
+a291 5
+		// UPDATE display
+		// TODO: update data panel (or does memory manager trigger this?)
+		// TODO: update program code panel
+		
+		fileLoaded = true;
+d295 1
+d300 4
+a303 1
+			// TODO: enable execution control buttons
+d307 4
+a310 1
+			// TODO: disable execution control buttons
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d179 1
+a179 1
+		c.gridheight = 3;
+@
+
+
+1.20
+log
+@added verbose printstream
+@
+text
+@d141 1
+a141 1
+		files = new FileSelectorPanel(0,0,this);
+d148 1
+a148 1
+		stats = new StatisticsPanel(0,0,this);
+d155 1
+a155 1
+		regs = new RegistersPanel(0,0,this);
+d162 1
+a162 1
+		data = new DataPanel(0,0,this);
+d169 1
+a169 1
+		dialog = new DialogPanel(0,0,this);
+d176 1
+a176 1
+		exec = new ExecutionControlsPanel(0,0,this);
+d183 1
+a183 1
+		code = new ProgramCodePanel(0,0,this);
+@
+
+
+1.19
+log
+@lots of new GUI stuff :)
+@
+text
+@d88 2
+a89 1
+		processor = new Processor(this, System.in, System.out);
+@
+
+
+1.18
+log
+@removed assembler initialization conflict
+@
+text
+@d24 7
+a30 25
+	private static int leftWidth = 200;
+	private static int centreWidth = 200;
+	private static int rightWidth = 200;
+	private int width = leftWidth + centreWidth + rightWidth;
+	private int height = 600;
+
+	//height of root window = 600
+	private static int fileListHeight = 400;
+	private static int statisticsHeight = 200;
+
+	private static int registersHeight = 200;
+	private static int dataHeight = 200;
+	private static int dialogHeight = 200;
+
+	private static int execControlHeight = 200;
+	private static int codeHeight = 4;
+
+	private static FileSelectorPanel files;
+	private static StatisticsPanel stats;
+	private static RegistersPanel regs;
+	private static DataPanel data;
+	private static DialogPanel dialog;
+	private static ExecutionControlsPanel exec;
+	private static ProgramCodePanel code;
+	
+d35 1
+d84 1
+a84 1
+		setUpGui2();
+a90 1
+
+d100 1
+a100 1
+	private void setUpGui2() {
+d108 18
+a125 1
+		// YAMSFrame frame = new YAMSFrame();
+d127 1
+a127 1
+		JFrame frame = new JFrame("Yet Another MIPS Simulator");
+d129 1
+d140 1
+a140 1
+		FileSelectorPanel fileSelector = new FileSelectorPanel(200,400,this);
+d145 1
+a145 1
+		mainPanel.add(fileSelector, c);
+d147 1
+a147 1
+		StatisticsPanel statistics = new StatisticsPanel(200,200,this);
+d152 1
+a152 1
+		mainPanel.add(statistics, c);
+d154 1
+a154 1
+		JButton register = new JButton("Register");
+d159 1
+a159 1
+		mainPanel.add(register, c);
+d161 1
+a161 1
+		JButton data = new JButton("Data");
+d168 1
+a168 1
+		JButton dialog = new JButton("Dialog");
+d175 1
+a175 1
+		JButton executionControl = new JButton("Execution Control");
+d180 1
+a180 1
+		mainPanel.add(executionControl, c);
+d182 1
+a182 1
+		JButton programCode = new JButton("Program Code");
+d187 1
+a187 1
+		mainPanel.add(programCode, c);
+d192 1
+a192 1
+		frame.pack();
+a193 3
+		
+		
+		
+a196 15
+	
+	
+	private void setUpGui() {
+		try {
+			UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+		}
+		catch (Exception e) {
+			//System.out.println("Couldn't set look and feel. Default will be used." + e);
+		}
+
+		if (!(fileListHeight + statisticsHeight == height)
+			&& (registersHeight + dataHeight + dialogHeight == height && (execControlHeight + codeHeight == height))) {
+			System.out.println("inconsistent height dimensions; each column should total to height " + height);
+			System.exit(-1);
+		}
+a197 38
+		// create main window
+		JFrame frame = new JFrame("Yet Another MIPS Simulator");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container c = frame.getContentPane();
+		c.setLayout(new BoxLayout(c, BoxLayout.X_AXIS));
+
+		// create menu
+		frame.setJMenuBar(getMenu());
+
+		JPanel left = addPanel(c);
+		JPanel centre = addPanel(c);
+		JPanel right = addPanel(c);
+
+		// create internal windows
+		files = new FileSelectorPanel(leftWidth, fileListHeight, this);
+		stats = new StatisticsPanel(leftWidth, statisticsHeight, this);
+		regs = new RegistersPanel(centreWidth, registersHeight, this);
+		data = new DataPanel(centreWidth, dataHeight, this);
+		dialog = new DialogPanel(centreWidth, dialogHeight, this);
+		exec = new ExecutionControlsPanel(rightWidth, execControlHeight, this);
+		code = new ProgramCodePanel(rightWidth, codeHeight, this);
+		
+		// initalise with extra variables if needed
+		files.init(asm);
+
+		// add them to their panels
+		left.add(files);
+		left.add(stats);
+		centre.add(regs);
+		centre.add(data);
+		centre.add(dialog);
+		right.add(exec);
+		right.add(code);
+
+		// add panels to main container
+		c.add(left);
+		c.add(centre);
+		c.add(right);
+a198 5
+		frame.setSize(width, height);
+		//frame.pack();
+		frame.show();
+
+	}
+d200 1
+a200 36
+	
+	private static JPanel addPanel(Container c) {
+		JPanel p = new JPanel();
+
+		p.setLayout(new BoxLayout(p, BoxLayout.Y_AXIS));
+		c.add(p);
+		return p;
+
+	}
+	
+	
+	private static JMenuBar getMenu() {
+		JMenuBar menuBar = new JMenuBar();
+
+		/*menu.add(new JLabel("File"));
+		menu.add(new JLabel("View"));
+		menu.add(new JLabel("Help"));*/
+
+		JMenu fileMenu = new JMenu("File");
+		menuBar.add(fileMenu);
+		JMenuItem open = new JMenuItem("Open");
+		fileMenu.add(open);
+		/*OpenListener ol = new OpenListener();
+		open.addActionListener(ol);*/
+		JMenuItem close = new JMenuItem("Close");
+		fileMenu.add(close);
+		JMenuItem exit = new JMenuItem("Exit");
+		fileMenu.add(exit);
+		JMenuItem preferences = new JMenuItem("Preferences");
+		fileMenu.add(preferences);
+
+		return menuBar;
+
+	}
+
+	public static ProgramCodePanel getCodeFrame() {
+d203 1
+a203 1
+	public static ExecutionControlsPanel getExecFrame() {
+d206 1
+a206 1
+	public static DialogPanel getDialogFrame() {
+d209 1
+a209 1
+	public static DataPanel getDataFrame() {
+d212 1
+a212 1
+	public static RegistersPanel getRegsFrame() {
+d215 1
+a215 1
+	public static StatisticsPanel getStatsFrame() {
+d218 1
+a218 1
+	public static FileSelectorPanel getFileSelectorFrame() {
+d225 37
+a261 3
+	/*class OpenListener implements ActionListener{
+		public void actionPerformed(ActionEvent a){
+			System.out.println("Selected Open");
+d263 2
+a264 1
+	}*/
+d267 2
+a268 5
+	public void loadFile(File file) {
+		// resets all frames
+		// parses the file given
+		// assembles the file
+		// waits for the ExecutionControlFrame to do stuff
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d108 1
+d110 1
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d108 1
+a108 6
+		try {
+			asm = new Assembler("Instruction_file.xml", processor.memoryManager);
+		}
+		catch (AssemblerException e) {
+			// do nothing
+		}
+d112 1
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d41 7
+a47 7
+	private static FileSelectorFrame files;
+	private static StatisticsFrame stats;
+	private static RegistersFrame regs;
+	private static DataFrame data;
+	private static DialogFrame dialog;
+	private static ExecutionControlsFrame exec;
+	private static ProgramCodeFrame code;
+d108 6
+a113 1
+		asm = new Assembler("Instruction_file.xml", processor.memoryManager);
+d129 1
+d142 1
+a142 1
+		JButton fileSelector = new JButton("File Selector");
+d149 1
+a149 1
+		JButton statistics = new JButton("Statistics");
+d232 7
+a238 7
+		files = new FileSelectorFrame(leftWidth, fileListHeight, this);
+		stats = new StatisticsFrame(leftWidth, statisticsHeight, this);
+		regs = new RegistersFrame(centreWidth, registersHeight, this);
+		data = new DataFrame(centreWidth, dataHeight, this);
+		dialog = new DialogFrame(centreWidth, dialogHeight, this);
+		exec = new ExecutionControlsFrame(rightWidth, execControlHeight, this);
+		code = new ProgramCodeFrame(rightWidth, codeHeight, this);
+d298 1
+a298 1
+	public static ProgramCodeFrame getCodeFrame() {
+d301 1
+a301 1
+	public static ExecutionControlsFrame getExecFrame() {
+d304 1
+a304 1
+	public static DialogFrame getDialogFrame() {
+d307 1
+a307 1
+	public static DataFrame getDataFrame() {
+d310 1
+a310 1
+	public static RegistersFrame getRegsFrame() {
+d313 1
+a313 1
+	public static StatisticsFrame getStatsFrame() {
+d316 1
+a316 1
+	public static FileSelectorFrame getFileSelectorFrame() {
+@
+
+
+1.14
+log
+@exploring new way of doing GUI
+@
+text
+@d123 70
+a192 1
+		YAMSFrame frame = new YAMSFrame();
+@
+
+
+1.13
+log
+@random updates
+@
+text
+@d9 6
+a14 17
+import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.BoxLayout;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+import javax.swing.UIManager;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+d25 8
+a32 8
+	private static int centreWidth = 400;
+	private static int rightWidth = 300;
+	private static int width = leftWidth + centreWidth + rightWidth;
+	private static int height = 800;
+
+	//height of root window = 800
+	private static int fileListHeight = 500;
+	private static int statisticsHeight = 300;
+d34 1
+a34 1
+	private static int registersHeight = 400;
+d39 1
+a39 1
+	private static int codeHeight = 600;
+d101 1
+a101 1
+		setUpGui();
+d113 14
+@
+
+
+1.12
+log
+@passed controller to each frame instead of processor, and updated the console version
+@
+text
+@d78 1
+a78 1
+					System.exit(1);
+d89 1
+a89 1
+						System.exit(1);
+d111 5
+d117 2
+a120 2
+		setUpGui();
+		
+d140 1
+d146 1
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@a59 3
+	private static JLabel help;
+
+	
+d61 2
+a62 2
+	private Assembler asm;
+	private Processor processor;
+d117 1
+a117 4
+		Iterator it = files.iterator();
+		while(it.hasNext()) {
+			this.files.addFile(it.next());
+		}
+d147 7
+a153 7
+		files = new FileSelectorFrame(leftWidth, fileListHeight, processor);
+		stats = new StatisticsFrame(leftWidth, statisticsHeight, processor);
+		regs = new RegistersFrame(centreWidth, registersHeight, processor);
+		data = new DataFrame(centreWidth, dataHeight, processor);
+		dialog = new DialogFrame(centreWidth, dialogHeight, processor);
+		exec = new ExecutionControlsFrame(rightWidth, execControlHeight, processor);
+		code = new ProgramCodeFrame(rightWidth, codeHeight, processor);
+a171 6
+		leftCentreRight.add(left);
+		leftCentreRight.add(centre);
+		leftCentreRight.add(right);
+		helpPanel.add(help = new JLabel("dfasklhgdakljgksjdakldasjklfjdasl;"));
+
+
+d234 3
+d243 9
+@
+
+
+1.10
+log
+@Added some GUI interaction
+@
+text
+@a11 1
+import java.io.File;
+a13 1
+import javax.swing.JFileChooser;
+a14 1
+import javax.swing.JLabel;
+a17 1
+import javax.swing.JOptionPane;
+d21 7
+d59 1
+d62 4
+d67 1
+d71 2
+d74 42
+d117 1
+a117 2
+		Processor processor = new Processor(this, System.in, System.out);
+		Assembler asm = new Assembler("Instruction_file.xml", processor.memoryManager);
+d119 5
+a123 1
+		setUpGui(processor, asm);
+d127 1
+a127 1
+	private void setUpGui(Processor processor, Assembler assembler) {
+a142 1
+		
+d144 1
+a144 8
+		JPanel helpPanel = new JPanel();
+		JPanel leftCentreRight = new JPanel();
+		
+		c.setLayout(new BoxLayout(c, BoxLayout.Y_AXIS));
+		c.add(leftCentreRight);
+		c.add(helpPanel);
+		
+		leftCentreRight.setLayout(new BoxLayout(leftCentreRight, BoxLayout.X_AXIS));
+d148 29
+a176 11
+		JPanel left = addPanel(leftCentreRight);
+		JPanel centre = addPanel(leftCentreRight);
+		JPanel right = addPanel(leftCentreRight);
+
+		left.add(new FileSelectorFrame(leftWidth,fileListHeight,processor));
+		left.add(new StatisticsFrame(leftWidth,statisticsHeight,processor));
+		centre.add(new RegistersFrame(centreWidth,registersHeight,processor));
+		centre.add(new DataFrame(centreWidth,dataHeight,processor));
+		centre.add(new DialogFrame(centreWidth,dialogHeight,processor));
+		right.add(new ExecutionControlsFrame(rightWidth,execControlHeight,processor));
+		right.add(new ProgramCodeFrame(rightWidth,codeHeight,processor));
+d183 1
+d190 1
+d199 2
+d212 2
+a213 2
+		OpenListener ol = new OpenListener();
+		open.addActionListener(ol);
+a220 5
+		JMenu viewMenu = new JMenu("View");
+		menuBar.add(viewMenu);
+		JMenuItem fs = new JMenuItem("File Selector");
+		viewMenu.add(fs);
+
+a245 3
+	public static JLabel getHelpPanel() {
+			return help;
+		}
+d247 1
+a247 1
+	static class OpenListener implements ActionListener{
+a249 11
+			JFileChooser fc = new JFileChooser();
+			//fc.setVisible(true);
+			int returnVal = fc.showOpenDialog(regs);
+
+			if(returnVal == JFileChooser.APPROVE_OPTION) {
+				File file = fc.getSelectedFile();
+				int status = files.addFile(file);
+				if(status==-1){
+					fc.showOpenDialog(regs);
+				}
+			}				
+d251 1
+a251 1
+	}
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d12 1
+d15 1
+d17 1
+d21 1
+d56 1
+d87 1
+d89 8
+a96 1
+		c.setLayout(new BoxLayout(c, BoxLayout.X_AXIS));
+d100 3
+a102 3
+		JPanel left = addPanel(c);
+		JPanel centre = addPanel(c);
+		JPanel right = addPanel(c);
+d112 4
+a115 3
+		c.add(left);
+		c.add(centre);
+		c.add(right);
+d142 2
+a143 2
+		/*OpenListener ol = new OpenListener();
+		open.addActionListener(ol);*/
+d151 5
+d181 3
+d185 1
+a185 1
+	/*class OpenListener implements ActionListener{
+d188 11
+d200 1
+a200 1
+	}*/
+@
+
+
+1.8
+log
+@added passing a reference to the processor to each internal frame, and added buttons to the file list
+@
+text
+@d53 1
+a53 3
+	public static void main(String args[]) {
+		setUpGui();
+	}
+d95 1
+a95 1
+		centre.add(new DialogFrame(centreWidth,errorsHeight,processor));
+@
+
+
+1.7
+log
+@Added an execution progress marker to program code
+@
+text
+@d21 3
+a23 13
+import yams.GUI.DataFrame;
+import yams.GUI.DialogFrame;
+import yams.GUI.ExecutionControlsFrame;
+import yams.GUI.FileSelectorFrame;
+import yams.GUI.ProgramCodeFrame;
+import yams.GUI.RegistersFrame;
+import yams.GUI.StatisticsFrame;
+
+/**
+ * @@author ss401
+ *
+ */
+public class YAMSGui { //extends YAMSController {
+d25 3
+d60 5
+a64 2
+
+		setUpGui();
+d66 3
+a68 3
+
+	private static void setUpGui() {
+
+d93 7
+a99 7
+		left.add(files = new FileSelectorFrame(leftWidth, fileListHeight));
+		left.add(stats = new StatisticsFrame(leftWidth, statisticsHeight));
+		centre.add(regs = new RegistersFrame(centreWidth, registersHeight));
+		centre.add(data = new DataFrame(centreWidth, dataHeight));
+		centre.add(dialog = new DialogFrame(centreWidth, dialogHeight));
+		right.add(exec = new ExecutionControlsFrame(rightWidth, execControlHeight));
+		right.add(code = new ProgramCodeFrame(rightWidth, codeHeight));
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@a0 1
+package yams;
+d8 1
+a8 1
+
+d10 2
+d15 1
+a15 1
+import javax.swing.JLabel;
+d17 1
+d21 13
+a33 1
+import yams.GUI.*;
+a34 2
+public class YAMSGui extends YAMSController {
+	
+d37 4
+a40 2
+	private static int rightWidth = 200;
+	
+d42 3
+a44 3
+	private static int fileListHeight =  500;
+	private static int statisticsHeight =  300;
+	
+d46 3
+a48 3
+	private static int dataHeight =  200;
+	private static int errorsHeight =  200;
+	
+d52 12
+d65 1
+a65 1
+		
+d67 1
+a67 2
+		
+		
+d70 3
+a72 3
+	
+	
+	private void setUpGui() {
+d79 7
+d91 1
+a91 5
+		JMenuBar menu = new JMenuBar();
+		menu.add("File", new JLabel("File2"));
+		menu.add("View", new JLabel("View2"));
+		menu.add("Help", new JLabel("Help2"));
+		frame.setJMenuBar(menu);
+d97 7
+a103 7
+		left.add(new FileSelectorFrame(leftWidth,fileListHeight));
+		left.add(new StatisticsFrame(leftWidth,statisticsHeight));
+		centre.add(new RegistersFrame(centreWidth,registersHeight));
+		centre.add(new DataFrame(centreWidth,dataHeight));
+		centre.add(new DialogFrame(centreWidth,errorsHeight));
+		right.add(new ExecutionControlsFrame(rightWidth,execControlHeight));
+		right.add(new ProgramCodeFrame(rightWidth,codeHeight));
+d109 1
+a109 1
+		frame.setSize(600, 600);
+d114 1
+a114 3
+	
+	
+	
+d123 51
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@a20 4
+/**
+ * @@author ss401
+ *
+ */
+d39 9
+d86 3
+@
+
+
+1.4
+log
+@fixed packages
+@
+text
+@d25 1
+a25 1
+public class YAMSGui {
+d42 1
+a42 1
+	public static void main(String[] args) {
+@
+
+
+1.3
+log
+@Updated code in YAMSGui to use new classes.
+@
+text
+@d1 1
+a1 1
+package yams.src.yams;
+d19 1
+a19 7
+import yams.src.yams.GUI.DataFrame;
+import yams.src.yams.GUI.DialogFrame;
+import yams.src.yams.GUI.ExecutionControlsFrame;
+import yams.src.yams.GUI.FileSelectorFrame;
+import yams.src.yams.GUI.ProgramCodeFrame;
+import yams.src.yams.GUI.RegistersFrame;
+import yams.src.yams.GUI.StatisticsFrame;
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+package yams;
+d3 6
+a8 1
+import yams.GUI.*;
+a10 1
+import java.awt.Dimension;
+a13 1
+import javax.swing.JInternalFrame;
+d19 28
+a46 1
+public class YAMSGui extends YAMSController {
+d48 1
+a48 1
+	public void start(String args[]) {
+d50 3
+a52 3
+			UIManager.setLookAndFeel(
+				"com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+		} catch (Exception e) {
+a54 1
+
+d70 7
+a76 8
+		left.add(new FileSelectorFrame());
+
+		addFrame(left, "Statistics");
+		addFrame(centre, "Registers");
+		addFrame(centre, "Data");
+		addFrame(centre, "Dialog");
+		addFrame(right, "Execution Controls");
+		addFrame(right, "Program Code");
+a86 1
+
+a94 18
+
+	private static void addFrame(Container c, String label) {
+
+		JInternalFrame l1 = new JInternalFrame(label);
+		l1.setPreferredSize(new Dimension(100, 300));
+		l1.setClosable(true);
+
+		l1.setResizable(true);
+		l1.setMaximizable(true);
+
+		l1.setEnabled(true);
+		l1.setIconifiable(true); //Enables minimize button in window
+
+		l1.show();
+		c.add(l1);
+
+	}
+
+@
+
+
+1.1
+log
+@modified controller structure
+@
+text
+@d3 12
+d17 1
+a17 1
+	
+d19 39
+a57 1
+		// do some stuff	
+d59 27
+a85 1
+	
+@
+

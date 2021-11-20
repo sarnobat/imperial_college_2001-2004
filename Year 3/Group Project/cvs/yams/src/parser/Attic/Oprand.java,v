@@ -1,0 +1,71 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2003.11.10.10.57.50;	author qq01;	state dead;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.08.23.18.58;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.06.17.05.03;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 06-Nov-2003
+ */
+package parser;
+
+/**
+ * @@author qq01
+ */
+public abstract class Oprand {
+	
+	/**
+	 * Returns a string representation of the object.
+	 * 
+	 * @@return a string representation of the object.
+	 */
+	public String toString(){
+		return null;
+	}
+
+}
+@
+
+
+1.2
+log
+@Updated some methods and documentation of the methods
+@
+text
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d10 9
+@
+

@@ -1,0 +1,1153 @@
+From MAILER-DAEMON Mon Jun 10 18:51:24 2002
+Date: 10 Jun 2002 18:51:24 +0100
+From: Mail System Internal Data <MAILER-DAEMON@mallard.doc.ic.ac.uk>
+Subject: DON'T DELETE THIS MESSAGE -- FOLDER INTERNAL DATA
+Message-ID: <1023731484@mallard.doc.ic.ac.uk>
+X-IMAP: 1003144769 0000000007
+Status: RO
+
+This text is part of the internal format of your mail folder, and is not
+a real message.  It is created automatically by the mail system software.
+If deleted, important folder data will be lost, and it will be re-created
+with the data reset to initial values.
+
+From gonzaio.martinez-de-azagra@ic.ac.uk Fri Oct 12 11:41:44 2001
+Return-path: <gonzaio.martinez-de-azagra@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 12 Oct 2001 11:41:44 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15rzl9-0002qA-00; Fri, 12 Oct 2001 11:41:43 +0100
+Received: from mr3.cc.ic.ac.uk ([155.198.5.113])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15rzl8-0000Tp-00; Fri, 12 Oct 2001 11:41:42 +0100
+Received: from hide.ee.ic.ac.uk ([155.198.120.14] helo=eecfsag2.ee.ic.ac.uk)
+	by mr3.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 15rzl7-0000Go-00; Fri, 12 Oct 2001 11:41:41 +0100
+Received: from flora ([155.198.115.76])
+	by eecfsag2.ee.ic.ac.uk with smtp (Exim 1.90 #1)
+	id 15rzl4-0007RF-00; Fri, 12 Oct 2001 11:41:38 +0100
+Message-Id: <3.0.6.32.20011012114539.008efb80@eecfsag2.ee.ic.ac.uk>
+X-Sender: gm99@eecfsag2.ee.ic.ac.uk
+X-Mailer: QUALCOMM Windows Eudora Light Version 3.0.6 (32)
+Date: Fri, 12 Oct 2001 11:45:39 +0100
+To: "Martinez De Azagra, Gonzaio" <gonzaio.martinez-de-azagra@ic.ac.uk>,,
+ Adrian Fernandez <hellmech@hotmail.com>,"Ahmed, Omar"@ic.ac.uk,
+ <omar.ahmed1@ic.ac.uk>,"Alastruey Arimon, Jordi"@ic.ac.uk,
+ <jordi.alastruey-arimon@ic.ac.uk>,"Arancibia, Lorena"@ic.ac.uk,
+ <lorena.arancibia@ic.ac.uk>,"Arrese, Miguel" <miguel.arrese@ic.ac.uk>,,
+ "Atteck, James" <james.atteck@ic.ac.uk>,"Baland, Regis"@ic.ac.uk,
+ <regis.baland@ic.ac.uk>,"Baldanza, Olivier" <olivier.baldanza@ic.ac.uk>,
+ ,"Baudrand, Matthieu" <matthieu.baudrand@ic.ac.uk>,
+ "Berghout, Christian"@ic.ac.uk,
+	<christian.berghout@ic.ac.uk>,
+ "Bluhme, Sarah" <sarah.bluhme@ic.ac.uk>,,
+ "Boccara, Gillian" <gillian.boccara@ic.ac.uk>,"Booth, Dominic"@ic.ac.uk,
+ <dominic.booth@ic.ac.uk>,"Buadi, Amanda" <amanda.buadi@ic.ac.uk>,,
+ "Bulpe Sasaki, Elena" <elena.bulpe-sasaki@ic.ac.uk>,"Burulkara, Deniz"@ic.ac.uk,
+ <deniz.burulkara@ic.ac.uk>,"Candela Pokorna, Pablo"@ic.ac.uk,
+ <pablo.candela-pokorna@ic.ac.uk>,Cham Sunny <tacchan14@hotmail.com>,,
+ "Chauvin, Martin" <martin.chauvin@ic.ac.uk>,"Chicano Catalan, Marta"@ic.ac.uk,
+ <marta.chicano-catalan@ic.ac.uk>,"Chinthapalli, Vamsi"@ic.ac.uk,
+ <vamsi.chinthapalli@ic.ac.uk>,"Coates, Andrew" <andrew.coates@ic.ac.uk>,
+ ,"Dar, Naheela" <naheela.dar@ic.ac.uk>,"Dattani, Meera"@ic.ac.uk,
+ <meera.dattani@ic.ac.uk>,"D'Cruz, Rachel" <rachel.dcruz@ic.ac.uk>,,
+ "De La Cruz, Mehrunnissa" <mehrunnissa.de-la-cruz@ic.ac.uk>,,
+ "Diaz Merino, Carlos" <carlos.diaz-merino@ic.ac.uk>,,
+ "Donini Ferretti, Lorenzo" <lorenzo.donini-ferretti@ic.ac.uk>,,
+ "Doran, Aoife" <aoife.doran@ic.ac.uk>,"Elbadri, Siadat"@ic.ac.uk,
+ <siadat.elbadri@ic.ac.uk>,Eric Borlang <e_borlang@hotmail.com>,,
+ "Eve, Samantha" <samantha.eve@ic.ac.uk>,"Feilhaber, Marcela"@ic.ac.uk,
+ <marceia.feilhaber@ic.ac.uk>,"Figueiredo-Ribeiro, Dora"@ic.ac.uk,
+ <dora.figueiredo-ribeiro@ic.ac.uk>,"Foulquie, Rafael"@ic.ac.uk,
+ <rafael.foulquie@ic.ac.uk>,"Gallo, Michele D" <michele.gallo@ic.ac.uk>,,
+ "Garcia de la Fuent, Carlos" <carlos.garcia@ic.ac.uk>,,
+ "Gaudemet, Edouard" <edouard.gaudemet@ic.ac.uk>,"Gaynon, Michael"@ic.ac.uk,
+ <michael.gaynon@ic.ac.uk>,"George, Angela" <angela.george@ic.ac.uk>,,
+ "Girard, Thibaut" <thibaut.girard@ic.ac.uk>,"Guerra Arias, Maria"@ic.ac.uk,
+ <maria.guerra-arias@ic.ac.uk>,"Haigh, Jennifer"@ic.ac.uk,
+ <jennifer.haigh@ic.ac.uk>,"Hakim, Razia" <razia.hakim@ic.ac.uk>,,
+ "Hall, Gillian" <gillian.m.hall1@ic.ac.uk>,"Ibanez Garcia, Delisa"@ic.ac.uk,
+ <delisa.ibanez-garcia@ic.ac.uk>,"Isgren, Carl" <carl.isgren@ic.ac.uk>,,
+ J Machor <jamachor@hotmail.com>,Jaime Mateus <zzaime@hotmail.com>,,
+ Jake Lenson <lenson007@hotmail.com>,"Jasiewicz, Dorota"@ic.ac.uk,
+ <dorota.jasiewicz@ic.ac.uk>,"Jimenez Iglesias, Pilar"@ic.ac.uk,
+ <pilar.jimenez-iglesias@ic.ac.uk>,"jose.mortera-blanco"@ic.ac.uk,
+ <jose.mortera-blanco@ic.ac.uk>,"Kaparias, Ioannis"@ic.ac.uk,
+ <ioannis.kaparias@ic.ac.uk>,"Kirk, Paul" <paul.kirk@ic.ac.uk>,,
+ "Lazaro, Jorge" <jorge.lazaro@ic.ac.uk>,"Lewis, James"@ic.ac.uk,
+ <james.lewis@ic.ac.uk>,"Lopez-Jimenez, Lidia"@ic.ac.uk,
+ <lidia.lopez-jimenez@ic.ac.uk>,"Lubrich, Daniel"@ic.ac.uk,
+ <daniel.lubrich@ic.ac.uk>,"Maniati, Margarita"@ic.ac.uk,
+ <margarita.maniati@ic.ac.uk>,"Marcaida Lopez, Jose"@ic.ac.uk,
+ <jose.marcaida-lopez@ic.ac.uk>,"Marion, Claude"@ic.ac.uk,
+ <claude.marion@ic.ac.uk>,"Martinez Gomez, Alberto"@ic.ac.uk,
+ <alberto.martinez-gomez@ic.ac.uk>,"Mataix-Cols, David"@ic.ac.uk,
+ <d.mataix@ic.ac.uk>,"Mataix-Pastor, Vicente"@ic.ac.uk,
+ <vicente.mataix-pastor@ic.ac.uk>,"Mehta, Payal" <payal.mehta@ic.ac.uk>,,
+ "Meilmann, Yphat" <yphat.meilmann@ic.ac.uk>,"Moloney, Susan"@ic.ac.uk,
+ <susan.moloney@ic.ac.uk>,"Momen, Goldie" <goldie.momen@ic.ac.uk>,,
+ "Moscovici, Adrien" <adrien.moscovici@ic.ac.uk>,"Munoz, Lucas"@ic.ac.uk,
+ <lucas.munoz@ic.ac.uk>,"Nicolas, Brieuc" <brieuc.nicolas@ic.ac.uk>,,
+ "Nouri, Selim" <selim.nouri@ic.ac.uk>,"Novas, Antonio"@ic.ac.uk,
+ <antonio.novas@ic.ac.uk>,"Odeniran, Oluwadamilola"@ic.ac.uk,
+ <damilola.odeniran@ic.ac.uk>,"Oknayan, Shant" <shant.oknayan@ic.ac.uk>,,
+ "Papatheodorou, Irene V" <i.papatheodorou@ic.ac.uk>,"Parras, Luis"@ic.ac.uk,
+ <luis.parras@ic.ac.uk>,"Paul, Danielle M" <d.paul@ic.ac.uk>,,
+ "Pearse, Owen" <owen.pearse@ic.ac.uk>,"Pierobon, Paolo"@ic.ac.uk,
+ <paolo.pierobon@ic.ac.uk>,"Prieto Ortega, Javier"@ic.ac.uk,
+ <javier.prieto-ortega@ic.ac.uk>,"Puerto Gimenez, Irene"@ic.ac.uk,
+ <irene.o.puerto-gimenez@ic.ac.uk>,"Punjani, Jesal"@ic.ac.uk,
+ <jesal.punjani@ic.ac.uk>,"Quaranta, Luis" <luis.quaranta@ic.ac.uk>,,
+ "Quinones, Ignacio" <ignacio.quinones@ic.ac.uk>,"Ramos, Raul"@ic.ac.uk,
+ <raul.ramos@ic.ac.uk>,"Rao, Sharmila" <sharmila.rao@ic.ac.uk>,,
+ "Read, L A" <l.read@ic.ac.uk>,"Reynolds, Simon"@ic.ac.uk,
+ <simon.reynolds@ic.ac.uk>,"Richardson, Jenny"@ic.ac.uk,
+ <jenny.richardson@ic.ac.uk>,"Romera-Garcia, Jose"@ic.ac.uk,
+ <jose.romera-garcia@ic.ac.uk>,"Sacristan, Francisco"@ic.ac.uk,
+ <francisco.sacristan@ic.ac.uk>,Sarah Monelus <smonelus@excite.com>,,
+ "Sarnobat, Sridhar" <sridhar.sarnobat@ic.ac.uk>,"Schneeweiss, Astrid"@ic.ac.uk,
+ <astrid.schneeweiss@ic.ac.uk>,"Sen, Sudipto" <sudipto.sen@ic.ac.uk>,,
+ "Sharma, Aarti" <aarti.sharma@ic.ac.uk>,"Sim, Victoria"@ic.ac.uk,
+ <victoria.sim@ic.ac.uk>,"Skaliotis, Alexandros"@ic.ac.uk,
+ <alexandros.skaliotis@ic.ac.uk>,"Sohn Lee, Joonsik"@ic.ac.uk,
+ <joonsik.sohn-lee@ic.ac.uk>,"Spachis, Elisabeth"@ic.ac.uk,
+ <elisabeth.spachis@ic.ac.uk>,"Trachtman, Tal" <tal.trachtman@ic.ac.uk>,,
+ "Trifunovic, Aleksandar" <aleksandar.trifunovic@ic.ac.uk>,,
+ "Tufet-Bayona, Marta" <marta.tufet-bayona@ic.ac.uk>,"Tzircotis, George"@ic.ac.uk,
+ <george.tzircotis@ic.ac.uk>,"Urrestarazu, Victoria"@ic.ac.uk,
+ <victoria.urrestarazu@ic.ac.uk>,"Uttamchandani, Manish"@ic.ac.uk,
+ <manish.uttamchandani@ic.ac.uk>,"Volikos, Emmanuel"@ic.ac.uk,
+ <emmanuel.volikos@ic.ac.uk>,"Whittaker, Carly"@ic.ac.uk,
+ <carly.whittaker@ic.ac.uk>,"Windisch, David" <david.windisch@ic.ac.uk>,,
+ "Witton-Dauris, Julia" <julia.witton-dauris@ic.ac.uk>,"Wood, Caroline"@ic.ac.uk,
+ <caroline.wood@ic.ac.uk>,"Yustres Real, Angel"@ic.ac.uk,
+ <angel.yustres-real@ic.ac.uk>,Zahera Ghazoui <yahoozahera@hotmail.com>,,
+ "Zaki, Hind" <hind.zaki@ic.ac.uk>,"Hariton Korizis"@ic.ac.uk,
+	<hariton.korizis@ic.ac.uk>
+From: Gonzalo <gonzaio.martinez-de-azagra@ic.ac.uk>
+Subject: Welcome!!!!!!!
+Mime-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 1
+
+Bienvenidos!!!Welcome!!!
+
+EVENTS FOR THIS YEAR:
+
+ --STARTING NEXT WEEK*
+
+* Films & Food(We'll have a film every 1 or 2 weeks,BIG ARSE SCREEN)=
+ Subtitled
+* Tapas(FOOD) & Whine Day(We will give you your membership Card)
+* 4-aside Football Tournament
+Spanish Society "Anual" Party ( 1st Organised, LSE & UCL involved) BIG
+Spanish Football @ Southside(Tv, Food & Barcelona vs. Real Madrid, etc.)
+International Night
+Party @ GON's place @ the end of the year(which is me)
+Dinners at Blanco's & La Rueda , Spanish Restaurants
+
+OTHER EVENTS WE CAN ORGANISE:
+Paintballing
+Karting
+Trip to Alton Towers
+
+CHECK OUT WHAT A SOCIETY CAN DO
+
+Ex.
+Paintballing=20
+Original Price: =A317.50 Entrance ,gun & Protection 9 a.m.-4:30 p.m.
+Discount Price: =A316.50 "all of the  above" + BBQ +100 balls (worth =A36)
+Society  Price: =A314.04 "plus all of the above"
+
+so =A317.50 --> =A3(14.04 -6.00)(balls) + BBQ + Discount Extra Balls
+=20
+Not bad Eh!!!
+
+All we need from you is to come and pay the membership fee =A33.00 sometime
+next week
+
+We will be in the JCR from 12:00-2:00 on monday,tuesday & thursday.
+
+See ya there,
+
+
+Gonzalo Martinez de Azagra
+" The Boss"
+
+P.D.
+We'll do what our members want, so send us your suggestions for events,
+etc..
+
+
+From lidia.lopez-jimenez@ic.ac.uk Thu Oct 11 15:54:08 2001
+Return-path: <lidia.lopez-jimenez@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 11 Oct 2001 15:54:08 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15rhDr-0001UR-00; Thu, 11 Oct 2001 15:54:07 +0100
+Received: from mr4.cc.ic.ac.uk ([155.198.5.114])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15rhDr-00011k-00; Thu, 11 Oct 2001 15:54:07 +0100
+Received: from icex6.cc.ic.ac.uk ([155.198.3.6])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 15rhDr-0002N0-00; Thu, 11 Oct 2001 15:54:07 +0100
+Received: by icex6.cc.ic.ac.uk with Internet Mail Service (5.5.2653.19)
+	id <SWXCPFHA>; Thu, 11 Oct 2001 15:54:07 +0100
+Message-ID: <B8E71A89E7E0D411B0E200A0C9D85B26A405EA@icex6.cc.ic.ac.uk>
+From: "Lopez-Jimenez, Lidia" <lidia.lopez-jimenez@ic.ac.uk>
+To: "Martinez De Azagra, Gonzaio" <gonzaio.martinez-de-azagra@ic.ac.uk>, 
+	Adrian Fernandez <hellmech@hotmail.com>, "Ahmed, Omar"
+	 <omar.ahmed1@ic.ac.uk>, "Alastruey Arimon, Jordi"
+	 <jordi.alastruey-arimon@ic.ac.uk>, "Arancibia, Lorena"
+	 <lorena.arancibia@ic.ac.uk>, "Arrese, Miguel" <miguel.arrese@ic.ac.uk>, 
+	"Atteck, James" <james.atteck@ic.ac.uk>, "Baland, Regis"
+	 <regis.baland@ic.ac.uk>, "Baldanza, Olivier" <olivier.baldanza@ic.ac.uk>, 
+	"Baudrand, Matthieu" <matthieu.baudrand@ic.ac.uk>, "Berghout, Christian"
+	 <christian.berghout@ic.ac.uk>, "Bluhme, Sarah" <sarah.bluhme@ic.ac.uk>, 
+	"Boccara, Gillian" <gillian.boccara@ic.ac.uk>, "Booth, Dominic"
+	 <dominic.booth@ic.ac.uk>, "Buadi, Amanda" <amanda.buadi@ic.ac.uk>, 
+	"Bulpe Sasaki, Elena" <elena.bulpe-sasaki@ic.ac.uk>, "Burulkara, Deniz"
+	 <deniz.burulkara@ic.ac.uk>, "Candela Pokorna, Pablo"
+	 <pablo.candela-pokorna@ic.ac.uk>, Cham Sunny <tacchan14@hotmail.com>, 
+	"Chauvin, Martin" <martin.chauvin@ic.ac.uk>, "Chicano Catalan, Marta"
+	 <marta.chicano-catalan@ic.ac.uk>, "Chinthapalli, Vamsi"
+	 <vamsi.chinthapalli@ic.ac.uk>, "Coates, Andrew" <andrew.coates@ic.ac.uk>, 
+	"Dar, Naheela" <naheela.dar@ic.ac.uk>, "Dattani, Meera"
+	 <meera.dattani@ic.ac.uk>, "D'Cruz, Rachel" <rachel.dcruz@ic.ac.uk>, 
+	"De La Cruz, Mehrunnissa" <mehrunnissa.de-la-cruz@ic.ac.uk>, 
+	"Diaz Merino, Carlos" <carlos.diaz-merino@ic.ac.uk>, 
+	"Donini Ferretti, Lorenzo" <lorenzo.donini-ferretti@ic.ac.uk>, 
+	"Doran, Aoife" <aoife.doran@ic.ac.uk>, "Elbadri, Siadat"
+	 <siadat.elbadri@ic.ac.uk>, Eric Borlang <e_borlang@hotmail.com>, 
+	"Eve, Samantha" <samantha.eve@ic.ac.uk>, "Feilhaber, Marcela"
+	 <marceia.feilhaber@ic.ac.uk>, "Figueiredo-Ribeiro, Dora"
+	 <dora.figueiredo-ribeiro@ic.ac.uk>, "Foulquie, Rafael"
+	 <rafael.foulquie@ic.ac.uk>, "Gallo, Michele D" <michele.gallo@ic.ac.uk>, 
+	"Garcia de la Fuent, Carlos" <carlos.garcia@ic.ac.uk>, 
+	"Gaudemet, Edouard" <edouard.gaudemet@ic.ac.uk>, "Gaynon, Michael"
+	 <michael.gaynon@ic.ac.uk>, "George, Angela" <angela.george@ic.ac.uk>, 
+	"Girard, Thibaut" <thibaut.girard@ic.ac.uk>, "Guerra Arias, Maria"
+	 <maria.guerra-arias@ic.ac.uk>, "Haigh, Jennifer"
+	 <jennifer.haigh@ic.ac.uk>, "Hakim, Razia" <razia.hakim@ic.ac.uk>, 
+	"Hall, Gillian" <gillian.m.hall1@ic.ac.uk>, "Ibanez Garcia, Delisa"
+	 <delisa.ibanez-garcia@ic.ac.uk>, "Isgren, Carl" <carl.isgren@ic.ac.uk>, 
+	J Machor <jamachor@hotmail.com>, Jaime Mateus <zzaime@hotmail.com>, 
+	Jake Lenson <lenson007@hotmail.com>, "Jasiewicz, Dorota"
+	 <dorota.jasiewicz@ic.ac.uk>, "Jimenez Iglesias, Pilar"
+	 <pilar.jimenez-iglesias@ic.ac.uk>, "jose.mortera-blanco"
+	 <jose.mortera-blanco@ic.ac.uk>, "Kaparias, Ioannis"
+	 <ioannis.kaparias@ic.ac.uk>, "Kirk, Paul" <paul.kirk@ic.ac.uk>, 
+	"Lazaro, Jorge" <jorge.lazaro@ic.ac.uk>, "Lewis, James"
+	 <james.lewis@ic.ac.uk>, "Lopez-Jimenez, Lidia"
+	 <lidia.lopez-jimenez@ic.ac.uk>, "Lubrich, Daniel"
+	 <daniel.lubrich@ic.ac.uk>, "Maniati, Margarita"
+	 <margarita.maniati@ic.ac.uk>, "Marcaida Lopez, Jose"
+	 <jose.marcaida-lopez@ic.ac.uk>, "Marion, Claude"
+	 <claude.marion@ic.ac.uk>, "Martinez Gomez, Alberto"
+	 <alberto.martinez-gomez@ic.ac.uk>, "Mataix-Cols, David"
+	 <d.mataix@ic.ac.uk>, "Mataix-Pastor, Vicente"
+	 <vicente.mataix-pastor@ic.ac.uk>, "Mehta, Payal" <payal.mehta@ic.ac.uk>, 
+	"Meilmann, Yphat" <yphat.meilmann@ic.ac.uk>, "Moloney, Susan"
+	 <susan.moloney@ic.ac.uk>, "Momen, Goldie" <goldie.momen@ic.ac.uk>, 
+	"Moscovici, Adrien" <adrien.moscovici@ic.ac.uk>, "Munoz, Lucas"
+	 <lucas.munoz@ic.ac.uk>, "Nicolas, Brieuc" <brieuc.nicolas@ic.ac.uk>, 
+	"Nouri, Selim" <selim.nouri@ic.ac.uk>, "Novas, Antonio"
+	 <antonio.novas@ic.ac.uk>, "Odeniran, Oluwadamilola"
+	 <damilola.odeniran@ic.ac.uk>, "Oknayan, Shant" <shant.oknayan@ic.ac.uk>, 
+	"Papatheodorou, Irene V" <i.papatheodorou@ic.ac.uk>, "Parras, Luis"
+	 <luis.parras@ic.ac.uk>, "Paul, Danielle M" <d.paul@ic.ac.uk>, 
+	"Pearse, Owen" <owen.pearse@ic.ac.uk>, "Pierobon, Paolo"
+	 <paolo.pierobon@ic.ac.uk>, "Prieto Ortega, Javier"
+	 <javier.prieto-ortega@ic.ac.uk>, "Puerto Gimenez, Irene"
+	 <irene.o.puerto-gimenez@ic.ac.uk>, "Punjani, Jesal"
+	 <jesal.punjani@ic.ac.uk>, "Quaranta, Luis" <luis.quaranta@ic.ac.uk>, 
+	"Quinones, Ignacio" <ignacio.quinones@ic.ac.uk>, "Ramos, Raul"
+	 <raul.ramos@ic.ac.uk>, "Rao, Sharmila" <sharmila.rao@ic.ac.uk>, 
+	"Read, L A" <l.read@ic.ac.uk>, "Reynolds, Simon"
+	 <simon.reynolds@ic.ac.uk>, "Richardson, Jenny"
+	 <jenny.richardson@ic.ac.uk>, "Romera-Garcia, Jose"
+	 <jose.romera-garcia@ic.ac.uk>, "Sacristan, Francisco"
+	 <francisco.sacristan@ic.ac.uk>, Sarah Monelus <smonelus@excite.com>, 
+	"Sarnobat, Sridhar" <sridhar.sarnobat@ic.ac.uk>, "Schneeweiss, Astrid"
+	 <astrid.schneeweiss@ic.ac.uk>, "Sen, Sudipto" <sudipto.sen@ic.ac.uk>, 
+	"Sharma, Aarti" <aarti.sharma@ic.ac.uk>, "Sim, Victoria"
+	 <victoria.sim@ic.ac.uk>, "Skaliotis, Alexandros"
+	 <alexandros.skaliotis@ic.ac.uk>, "Sohn Lee, Joonsik"
+	 <joonsik.sohn-lee@ic.ac.uk>, "Spachis, Elisabeth"
+	 <elisabeth.spachis@ic.ac.uk>, "Trachtman, Tal" <tal.trachtman@ic.ac.uk>, 
+	"Trifunovic, Aleksandar" <aleksandar.trifunovic@ic.ac.uk>, 
+	"Tufet-Bayona, Marta" <marta.tufet-bayona@ic.ac.uk>, "Tzircotis, George"
+	 <george.tzircotis@ic.ac.uk>, "Urrestarazu, Victoria"
+	 <victoria.urrestarazu@ic.ac.uk>, "Uttamchandani, Manish"
+	 <manish.uttamchandani@ic.ac.uk>, "Volikos, Emmanuel"
+	 <emmanuel.volikos@ic.ac.uk>, "Whittaker, Carly"
+	 <carly.whittaker@ic.ac.uk>, "Windisch, David" <david.windisch@ic.ac.uk>, 
+	"Witton-Dauris, Julia" <julia.witton-dauris@ic.ac.uk>, "Wood, Caroline"
+	 <caroline.wood@ic.ac.uk>, "Yustres Real, Angel"
+	 <angel.yustres-real@ic.ac.uk>, Zahera Ghazoui <yahoozahera@hotmail.com>, 
+	"Zaki, Hind" <hind.zaki@ic.ac.uk>
+Subject: 
+Date: Thu, 11 Oct 2001 15:53:55 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 2
+
+
+
+From gonzaio.martinez-de-azagra@ic.ac.uk Thu Oct 18 14:04:50 2001
+Return-path: <gonzaio.martinez-de-azagra@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 18 Oct 2001 14:04:50 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15uCqw-0001Zt-00; Thu, 18 Oct 2001 14:04:50 +0100
+Received: from mr4.cc.ic.ac.uk ([155.198.5.114])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15uCqo-0000cj-00; Thu, 18 Oct 2001 14:04:50 +0100
+Received: from hide.ee.ic.ac.uk ([155.198.120.14] helo=eecfsag2.ee.ic.ac.uk)
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 15uCqo-0004le-04; Thu, 18 Oct 2001 14:04:42 +0100
+Received: from brook ([155.198.115.88])
+	by eecfsag2.ee.ic.ac.uk with smtp (Exim 1.90 #1)
+	id 15uCqg-0001J6-00; Thu, 18 Oct 2001 14:04:34 +0100
+Message-Id: <3.0.6.32.20011018140841.00958e70@eecfsag2.ee.ic.ac.uk>
+X-Sender: gm99@eecfsag2.ee.ic.ac.uk
+X-Mailer: QUALCOMM Windows Eudora Light Version 3.0.6 (32)
+Date: Thu, 18 Oct 2001 14:08:41 +0100
+To: "Martinez De Azagra, Gonzaio" <gonzaio.martinez-de-azagra@ic.ac.uk>,,
+ Adrian Fernandez <hellmech@hotmail.com>,"Ahmed, Omar"@ic.ac.uk,
+ <omar.ahmed1@ic.ac.uk>,"Alastruey Arimon, Jordi"@ic.ac.uk,
+ <jordi.alastruey-arimon@ic.ac.uk>,"Arancibia, Lorena"@ic.ac.uk,
+ <lorena.arancibia@ic.ac.uk>,"Arrese, Miguel" <miguel.arrese@ic.ac.uk>,,
+ "Atteck, James" <james.atteck@ic.ac.uk>,"Baland, Regis"@ic.ac.uk,
+ <regis.baland@ic.ac.uk>,"Baldanza, Olivier" <olivier.baldanza@ic.ac.uk>,
+ ,"Baudrand, Matthieu" <matthieu.baudrand@ic.ac.uk>,
+ "Berghout, Christian"@ic.ac.uk,
+	<christian.berghout@ic.ac.uk>,
+ "Bluhme, Sarah" <sarah.bluhme@ic.ac.uk>,,
+ "Boccara, Gillian" <gillian.boccara@ic.ac.uk>,"Booth, Dominic"@ic.ac.uk,
+ <dominic.booth@ic.ac.uk>,"Buadi, Amanda" <amanda.buadi@ic.ac.uk>,,
+ "Bulpe Sasaki, Elena" <elena.bulpe-sasaki@ic.ac.uk>,"Burulkara, Deniz"@ic.ac.uk,
+ <deniz.burulkara@ic.ac.uk>,"Candela Pokorna, Pablo"@ic.ac.uk,
+ <pablo.candela-pokorna@ic.ac.uk>,Cham Sunny <tacchan14@hotmail.com>,,
+ "Chauvin, Martin" <martin.chauvin@ic.ac.uk>,"Chicano Catalan, Marta"@ic.ac.uk,
+ <marta.chicano-catalan@ic.ac.uk>,"Chinthapalli, Vamsi"@ic.ac.uk,
+ <vamsi.chinthapalli@ic.ac.uk>,"Coates, Andrew" <andrew.coates@ic.ac.uk>,
+ ,"Dar, Naheela" <naheela.dar@ic.ac.uk>,"Dattani, Meera"@ic.ac.uk,
+ <meera.dattani@ic.ac.uk>,"D'Cruz, Rachel" <rachel.dcruz@ic.ac.uk>,,
+ "De La Cruz, Mehrunnissa" <mehrunnissa.de-la-cruz@ic.ac.uk>,,
+ "Diaz Merino, Carlos" <carlos.diaz-merino@ic.ac.uk>,,
+ "Donini Ferretti, Lorenzo" <lorenzo.donini-ferretti@ic.ac.uk>,,
+ "Doran, Aoife" <aoife.doran@ic.ac.uk>,"Elbadri, Siadat"@ic.ac.uk,
+ <siadat.elbadri@ic.ac.uk>,Eric Borlang <e_borlang@hotmail.com>,,
+ "Eve, Samantha" <samantha.eve@ic.ac.uk>,"Feilhaber, Marcela"@ic.ac.uk,
+ <marceia.feilhaber@ic.ac.uk>,"Figueiredo-Ribeiro, Dora"@ic.ac.uk,
+ <dora.figueiredo-ribeiro@ic.ac.uk>,"Foulquie, Rafael"@ic.ac.uk,
+ <rafael.foulquie@ic.ac.uk>,"Gallo, Michele D" <michele.gallo@ic.ac.uk>,,
+ "Garcia de la Fuent, Carlos" <carlos.garcia@ic.ac.uk>,,
+ "Gaudemet, Edouard" <edouard.gaudemet@ic.ac.uk>,"Gaynon, Michael"@ic.ac.uk,
+ <michael.gaynon@ic.ac.uk>,"George, Angela" <angela.george@ic.ac.uk>,,
+ "Girard, Thibaut" <thibaut.girard@ic.ac.uk>,"Guerra Arias, Maria"@ic.ac.uk,
+ <maria.guerra-arias@ic.ac.uk>,"Haigh, Jennifer"@ic.ac.uk,
+ <jennifer.haigh@ic.ac.uk>,"Hakim, Razia" <razia.hakim@ic.ac.uk>,,
+ "Hall, Gillian" <gillian.m.hall1@ic.ac.uk>,"Ibanez Garcia, Delisa"@ic.ac.uk,
+ <delisa.ibanez-garcia@ic.ac.uk>,"Isgren, Carl" <carl.isgren@ic.ac.uk>,,
+ J Machor <jamachor@hotmail.com>,Jaime Mateus <zzaime@hotmail.com>,,
+ Jake Lenson <lenson007@hotmail.com>,"Jasiewicz, Dorota"@ic.ac.uk,
+ <dorota.jasiewicz@ic.ac.uk>,"Jimenez Iglesias, Pilar"@ic.ac.uk,
+ <pilar.jimenez-iglesias@ic.ac.uk>,"jose.mortera-blanco"@ic.ac.uk,
+ <jose.mortera-blanco@ic.ac.uk>,"Kaparias, Ioannis"@ic.ac.uk,
+ <ioannis.kaparias@ic.ac.uk>,"Kirk, Paul" <paul.kirk@ic.ac.uk>,,
+ "Lazaro, Jorge" <jorge.lazaro@ic.ac.uk>,"Lewis, James"@ic.ac.uk,
+ <james.lewis@ic.ac.uk>,"Lopez-Jimenez, Lidia"@ic.ac.uk,
+ <lidia.lopez-jimenez@ic.ac.uk>,"Lubrich, Daniel"@ic.ac.uk,
+ <daniel.lubrich@ic.ac.uk>,"Maniati, Margarita"@ic.ac.uk,
+ <margarita.maniati@ic.ac.uk>,"Marcaida Lopez, Jose"@ic.ac.uk,
+ <jose.marcaida-lopez@ic.ac.uk>,"Marion, Claude"@ic.ac.uk,
+ <claude.marion@ic.ac.uk>,"Martinez Gomez, Alberto"@ic.ac.uk,
+ <alberto.martinez-gomez@ic.ac.uk>,"Mataix-Cols, David"@ic.ac.uk,
+ <d.mataix@ic.ac.uk>,"Mataix-Pastor, Vicente"@ic.ac.uk,
+ <vicente.mataix-pastor@ic.ac.uk>,"Mehta, Payal" <payal.mehta@ic.ac.uk>,,
+ "Meilmann, Yphat" <yphat.meilmann@ic.ac.uk>,"Moloney, Susan"@ic.ac.uk,
+ <susan.moloney@ic.ac.uk>,"Momen, Goldie" <goldie.momen@ic.ac.uk>,,
+ "Moscovici, Adrien" <adrien.moscovici@ic.ac.uk>,"Munoz, Lucas"@ic.ac.uk,
+ <lucas.munoz@ic.ac.uk>,"Nicolas, Brieuc" <brieuc.nicolas@ic.ac.uk>,,
+ "Nouri, Selim" <selim.nouri@ic.ac.uk>,"Novas, Antonio"@ic.ac.uk,
+ <antonio.novas@ic.ac.uk>,"Odeniran, Oluwadamilola"@ic.ac.uk,
+ <damilola.odeniran@ic.ac.uk>,"Oknayan, Shant" <shant.oknayan@ic.ac.uk>,,
+ "Papatheodorou, Irene V" <i.papatheodorou@ic.ac.uk>,"Parras, Luis"@ic.ac.uk,
+ <luis.parras@ic.ac.uk>,"Paul, Danielle M" <d.paul@ic.ac.uk>,,
+ "Pearse, Owen" <owen.pearse@ic.ac.uk>,"Pierobon, Paolo"@ic.ac.uk,
+ <paolo.pierobon@ic.ac.uk>,"Prieto Ortega, Javier"@ic.ac.uk,
+ <javier.prieto-ortega@ic.ac.uk>,"Puerto Gimenez, Irene"@ic.ac.uk,
+ <irene.o.puerto-gimenez@ic.ac.uk>,"Punjani, Jesal"@ic.ac.uk,
+ <jesal.punjani@ic.ac.uk>,"Quaranta, Luis" <luis.quaranta@ic.ac.uk>,,
+ "Quinones, Ignacio" <ignacio.quinones@ic.ac.uk>,"Ramos, Raul"@ic.ac.uk,
+ <raul.ramos@ic.ac.uk>,"Rao, Sharmila" <sharmila.rao@ic.ac.uk>,,
+ "Read, L A" <l.read@ic.ac.uk>,"Reynolds, Simon"@ic.ac.uk,
+ <simon.reynolds@ic.ac.uk>,"Richardson, Jenny"@ic.ac.uk,
+ <jenny.richardson@ic.ac.uk>,"Romera-Garcia, Jose"@ic.ac.uk,
+ <jose.romera-garcia@ic.ac.uk>,"Sacristan, Francisco"@ic.ac.uk,
+ <francisco.sacristan@ic.ac.uk>,Sarah Monelus <smonelus@excite.com>,,
+ "Sarnobat, Sridhar" <sridhar.sarnobat@ic.ac.uk>,"Schneeweiss, Astrid"@ic.ac.uk,
+ <astrid.schneeweiss@ic.ac.uk>,"Sen, Sudipto" <sudipto.sen@ic.ac.uk>,,
+ "Sharma, Aarti" <aarti.sharma@ic.ac.uk>,"Sim, Victoria"@ic.ac.uk,
+ <victoria.sim@ic.ac.uk>,"Skaliotis, Alexandros"@ic.ac.uk,
+ <alexandros.skaliotis@ic.ac.uk>,"Sohn Lee, Joonsik"@ic.ac.uk,
+ <joonsik.sohn-lee@ic.ac.uk>,"Spachis, Elisabeth"@ic.ac.uk,
+ <elisabeth.spachis@ic.ac.uk>,"Trachtman, Tal" <tal.trachtman@ic.ac.uk>,,
+ "Trifunovic, Aleksandar" <aleksandar.trifunovic@ic.ac.uk>,,
+ "Tufet-Bayona, Marta" <marta.tufet-bayona@ic.ac.uk>,"Tzircotis, George"@ic.ac.uk,
+ <george.tzircotis@ic.ac.uk>,"Urrestarazu, Victoria"@ic.ac.uk,
+ <victoria.urrestarazu@ic.ac.uk>,"Uttamchandani, Manish"@ic.ac.uk,
+ <manish.uttamchandani@ic.ac.uk>,"Volikos, Emmanuel"@ic.ac.uk,
+ <emmanuel.volikos@ic.ac.uk>,"Whittaker, Carly"@ic.ac.uk,
+ <carly.whittaker@ic.ac.uk>,"Windisch, David" <david.windisch@ic.ac.uk>,,
+ "Witton-Dauris, Julia" <julia.witton-dauris@ic.ac.uk>,"Wood, Caroline"@ic.ac.uk,
+ <caroline.wood@ic.ac.uk>,"Yustres Real, Angel"@ic.ac.uk,
+ <angel.yustres-real@ic.ac.uk>,Zahera Ghazoui <yahoozahera@hotmail.com>,,
+ "Zaki, Hind" <hind.zaki@ic.ac.uk>,"Hariton Korizis"@ic.ac.uk,
+	<hariton.korizis@ic.ac.uk>,
+ waiwaitong@hotmail.com;,manuel.rivero@ic.ac.uk;,
+ helder_da_rosa@hotmail.com;,bilal.mannaa@ic.ac.uk;,
+ chrisden@hotmail.com;,alex.bateman@ic.ac.uk;,arnaud.pujol@ic.ac.uk;,
+ karen.ng@ic.ac.uk;,iago.martinez@ic.ac.uk;,piers.ingram@ic.ac.uk;,
+ christopher.kemp@ic.ac.uk;,john.noel@ic.ac.uk;,vivian.serfaty@ic.ac.uk;,
+ neelun@hotmail.com;,chiara.baggio@ic.ac.uk;,mustafa.ilyas@ic.ac.uk;,
+ zayd.armanazi@ic.ac.uk;,stefanos.pandoulas@ic.ac.uk;,
+ demelza.north@ic.ac.uk;,miguel.de-luna-gomez@ic.ac.uk;,
+ kilian.keaney@ic.ac.uk;,l.bouvier@ic.ac.uk;,jonathan.clarke@ic.ac.uk;,
+ francesca.harris@ic.ac.uk;,alexandros.lambrou@ic.ac.uk;,
+ d.douglas@nhm.ac.uk;,tarek.mouganie@ic.ac.uk;,
+ carolos.georgallis@ic.ac.uk;,jay.amarshi@ic.ac.uk;,
+ nicholas.dragatsis@ic.ac.uk;,eva.haden@ic.ac.uk;,
+ thomas.holliday@ic.ac.uk;,eleanore.king@ic.ac.uk;,v.sakai@ic.ac.uk;,
+ joao.paixao-moreira@ic.ac.uk;,matthias.bader@ic.ac.uk;,
+ alexia.paolinelis@ic.ac.uk;,tom.waterfall@ic.ac.uk;,
+ clare.sutcliffe@ic.ac.uk;,laure.dubly@ic.ac.uk;,daniel.heesch@ic.ac.uk;,
+ r.wang@ic.ac.uk;,a.rana@ic.ac.uk;,aurelie.brulant@ic.ac.uk;,
+ tania.kapoor@ic.ac.uk;,astrid.schneeweiss@ic.ac.uk,
+ "Max Werner" <maximilian.werner@ic.ac.uk>,
+ "Matthieu Baudrand"       <matthieu.baudrand@ic.ac.uk>,
+ "Ron Ng"                  <ronald.ng@ic.ac.uk>,
+ "Carlos Diaz"             <carlos.diaz@ic.ac.uk>,
+ "Dominic Booth"           <dominic.booth@ic.ac.uk>,
+ "Lorenzo Donini Ferretti" <lelondf@yahoo.com>,
+ "Victoria Urrestarazu"    <victoria.urrestarazu@ic.ac.uk>,
+ "Roger Choi"              <rrrrr12345@yahoo.com>,
+ "Jo Harper"               <joseph.harper@ic.ac.uk>,
+ "Raul J. Ramos"           <raul.ramos@ic.ac.uk>,
+ "Joonsik Suhn, Como escribiste todo en mayuscula no sabia donde separar el,apellido y el nombre, avisame si me he equivocado" <joon_s@hanmail.net>,
+ hk499@ic.ac.uk;,maximilian.werner@ic.ac.uk;,mu01@doc.ic.ac.uk;,
+ pilar.jimemez@ic.ac.uk;,javier.prito-ortega@ic.ac.uk;,jjp00@ic.ac.uk;,
+ antonio.novas@ic.ac.uk;,delisagarcia@yahoo.com;,luis.parras@ic.ac.uk;,
+ lidia.lopez-jimenez@ic.ac.uk;,marta.tufet-bayona@ic.ac.uk;,
+ luquis@eresmas.com;
+From: Gonzalo <gonzaio.martinez-de-azagra@ic.ac.uk>
+Subject: FREE CINEMA TOMORROW 408 EEDep 5:00PM, SPANSOC
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 3
+
+FREE CINEMA TOMORROW, ROOM 408 Electrical & Electronic Dep. 5:00PM
+
+
+Film: The day of the Beast
+Subtitled: Yes !
+Genre:Dark Comedy(F.cking Funny)
+Proyector: YES
+
+Come Tomorrow FRIDAY 19th!!!!!!!!!!!!!
+
+Gonzalo Martinez de Azagra
+Spanish Society President
+
+
+
+
+From gonzaio.martinez-de-azagra@ic.ac.uk Thu Oct 18 14:07:58 2001
+Return-path: <gonzaio.martinez-de-azagra@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 18 Oct 2001 14:07:59 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15uCty-0001d5-00; Thu, 18 Oct 2001 14:07:58 +0100
+Received: from mr4.cc.ic.ac.uk ([155.198.5.114])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15uCty-0000hL-00; Thu, 18 Oct 2001 14:07:58 +0100
+Received: from hide.ee.ic.ac.uk ([155.198.120.14] helo=eecfsag2.ee.ic.ac.uk)
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 15uCtx-0004z3-04; Thu, 18 Oct 2001 14:07:57 +0100
+Received: from brook ([155.198.115.88])
+	by eecfsag2.ee.ic.ac.uk with smtp (Exim 1.90 #1)
+	id 15uCtt-0001SN-00; Thu, 18 Oct 2001 14:07:53 +0100
+Message-Id: <3.0.6.32.20011018141200.008ff440@eecfsag2.ee.ic.ac.uk>
+X-Sender: gm99@eecfsag2.ee.ic.ac.uk
+X-Mailer: QUALCOMM Windows Eudora Light Version 3.0.6 (32)
+Date: Thu, 18 Oct 2001 14:12:00 +0100
+To: "Martinez De Azagra, Gonzaio" <gonzaio.martinez-de-azagra@ic.ac.uk>,,
+ Adrian Fernandez <hellmech@hotmail.com>,"Ahmed, Omar"@ic.ac.uk,
+ <omar.ahmed1@ic.ac.uk>,"Alastruey Arimon, Jordi"@ic.ac.uk,
+ <jordi.alastruey-arimon@ic.ac.uk>,"Arancibia, Lorena"@ic.ac.uk,
+ <lorena.arancibia@ic.ac.uk>,"Arrese, Miguel" <miguel.arrese@ic.ac.uk>,,
+ "Atteck, James" <james.atteck@ic.ac.uk>,"Baland, Regis"@ic.ac.uk,
+ <regis.baland@ic.ac.uk>,"Baldanza, Olivier" <olivier.baldanza@ic.ac.uk>,
+ ,"Baudrand, Matthieu" <matthieu.baudrand@ic.ac.uk>,
+ "Berghout, Christian"@ic.ac.uk,
+	<christian.berghout@ic.ac.uk>,
+ "Bluhme, Sarah" <sarah.bluhme@ic.ac.uk>,,
+ "Boccara, Gillian" <gillian.boccara@ic.ac.uk>,"Booth, Dominic"@ic.ac.uk,
+ <dominic.booth@ic.ac.uk>,"Buadi, Amanda" <amanda.buadi@ic.ac.uk>,,
+ "Bulpe Sasaki, Elena" <elena.bulpe-sasaki@ic.ac.uk>,"Burulkara, Deniz"@ic.ac.uk,
+ <deniz.burulkara@ic.ac.uk>,"Candela Pokorna, Pablo"@ic.ac.uk,
+ <pablo.candela-pokorna@ic.ac.uk>,Cham Sunny <tacchan14@hotmail.com>,,
+ "Chauvin, Martin" <martin.chauvin@ic.ac.uk>,"Chicano Catalan, Marta"@ic.ac.uk,
+ <marta.chicano-catalan@ic.ac.uk>,"Chinthapalli, Vamsi"@ic.ac.uk,
+ <vamsi.chinthapalli@ic.ac.uk>,"Coates, Andrew" <andrew.coates@ic.ac.uk>,
+ ,"Dar, Naheela" <naheela.dar@ic.ac.uk>,"Dattani, Meera"@ic.ac.uk,
+ <meera.dattani@ic.ac.uk>,"D'Cruz, Rachel" <rachel.dcruz@ic.ac.uk>,,
+ "De La Cruz, Mehrunnissa" <mehrunnissa.de-la-cruz@ic.ac.uk>,,
+ "Diaz Merino, Carlos" <carlos.diaz-merino@ic.ac.uk>,,
+ "Donini Ferretti, Lorenzo" <lorenzo.donini-ferretti@ic.ac.uk>,,
+ "Doran, Aoife" <aoife.doran@ic.ac.uk>,"Elbadri, Siadat"@ic.ac.uk,
+ <siadat.elbadri@ic.ac.uk>,Eric Borlang <e_borlang@hotmail.com>,,
+ "Eve, Samantha" <samantha.eve@ic.ac.uk>,"Feilhaber, Marcela"@ic.ac.uk,
+ <marceia.feilhaber@ic.ac.uk>,"Figueiredo-Ribeiro, Dora"@ic.ac.uk,
+ <dora.figueiredo-ribeiro@ic.ac.uk>,"Foulquie, Rafael"@ic.ac.uk,
+ <rafael.foulquie@ic.ac.uk>,"Gallo, Michele D" <michele.gallo@ic.ac.uk>,,
+ "Garcia de la Fuent, Carlos" <carlos.garcia@ic.ac.uk>,,
+ "Gaudemet, Edouard" <edouard.gaudemet@ic.ac.uk>,"Gaynon, Michael"@ic.ac.uk,
+ <michael.gaynon@ic.ac.uk>,"George, Angela" <angela.george@ic.ac.uk>,,
+ "Girard, Thibaut" <thibaut.girard@ic.ac.uk>,"Guerra Arias, Maria"@ic.ac.uk,
+ <maria.guerra-arias@ic.ac.uk>,"Haigh, Jennifer"@ic.ac.uk,
+ <jennifer.haigh@ic.ac.uk>,"Hakim, Razia" <razia.hakim@ic.ac.uk>,,
+ "Hall, Gillian" <gillian.m.hall1@ic.ac.uk>,"Ibanez Garcia, Delisa"@ic.ac.uk,
+ <delisa.ibanez-garcia@ic.ac.uk>,"Isgren, Carl" <carl.isgren@ic.ac.uk>,,
+ J Machor <jamachor@hotmail.com>,Jaime Mateus <zzaime@hotmail.com>,,
+ Jake Lenson <lenson007@hotmail.com>,"Jasiewicz, Dorota"@ic.ac.uk,
+ <dorota.jasiewicz@ic.ac.uk>,"Jimenez Iglesias, Pilar"@ic.ac.uk,
+ <pilar.jimenez-iglesias@ic.ac.uk>,"jose.mortera-blanco"@ic.ac.uk,
+ <jose.mortera-blanco@ic.ac.uk>,"Kaparias, Ioannis"@ic.ac.uk,
+ <ioannis.kaparias@ic.ac.uk>,"Kirk, Paul" <paul.kirk@ic.ac.uk>,,
+ "Lazaro, Jorge" <jorge.lazaro@ic.ac.uk>,"Lewis, James"@ic.ac.uk,
+ <james.lewis@ic.ac.uk>,"Lubrich, Daniel"@ic.ac.uk,
+	<daniel.lubrich@ic.ac.uk>,
+ "Maniati, Margarita"@ic.ac.uk,
+	<margarita.maniati@ic.ac.uk>,
+ "Marcaida Lopez, Jose"@ic.ac.uk,
+	<jose.marcaida-lopez@ic.ac.uk>,"Marion, Claude"@ic.ac.uk,
+ <claude.marion@ic.ac.uk>,"Martinez Gomez, Alberto"@ic.ac.uk,
+ <alberto.martinez-gomez@ic.ac.uk>,"Mataix-Cols, David"@ic.ac.uk,
+ <d.mataix@ic.ac.uk>,"Mataix-Pastor, Vicente"@ic.ac.uk,
+ <vicente.mataix-pastor@ic.ac.uk>,"Mehta, Payal" <payal.mehta@ic.ac.uk>,,
+ "Meilmann, Yphat" <yphat.meilmann@ic.ac.uk>,"Moloney, Susan"@ic.ac.uk,
+ <susan.moloney@ic.ac.uk>,"Momen, Goldie" <goldie.momen@ic.ac.uk>,,
+ "Moscovici, Adrien" <adrien.moscovici@ic.ac.uk>,"Munoz, Lucas"@ic.ac.uk,
+ <lucas.munoz@ic.ac.uk>,"Nicolas, Brieuc" <brieuc.nicolas@ic.ac.uk>,,
+ "Nouri, Selim" <selim.nouri@ic.ac.uk>,"Novas, Antonio"@ic.ac.uk,
+ <antonio.novas@ic.ac.uk>,"Odeniran, Oluwadamilola"@ic.ac.uk,
+ <damilola.odeniran@ic.ac.uk>,"Oknayan, Shant" <shant.oknayan@ic.ac.uk>,,
+ "Papatheodorou, Irene V" <i.papatheodorou@ic.ac.uk>,"Parras, Luis"@ic.ac.uk,
+ <luis.parras@ic.ac.uk>,"Paul, Danielle M" <d.paul@ic.ac.uk>,,
+ "Pearse, Owen" <owen.pearse@ic.ac.uk>,"Pierobon, Paolo"@ic.ac.uk,
+ <paolo.pierobon@ic.ac.uk>,"Prieto Ortega, Javier"@ic.ac.uk,
+ <javier.prieto-ortega@ic.ac.uk>,"Puerto Gimenez, Irene"@ic.ac.uk,
+ <irene.o.puerto-gimenez@ic.ac.uk>,"Punjani, Jesal"@ic.ac.uk,
+ <jesal.punjani@ic.ac.uk>,"Quaranta, Luis" <luis.quaranta@ic.ac.uk>,,
+ "Quinones, Ignacio" <ignacio.quinones@ic.ac.uk>,"Ramos, Raul"@ic.ac.uk,
+ <raul.ramos@ic.ac.uk>,"Rao, Sharmila" <sharmila.rao@ic.ac.uk>,,
+ "Read, L A" <l.read@ic.ac.uk>,"Reynolds, Simon"@ic.ac.uk,
+ <simon.reynolds@ic.ac.uk>,"Richardson, Jenny"@ic.ac.uk,
+ <jenny.richardson@ic.ac.uk>,"Romera-Garcia, Jose"@ic.ac.uk,
+ <jose.romera-garcia@ic.ac.uk>,"Sacristan, Francisco"@ic.ac.uk,
+ <francisco.sacristan@ic.ac.uk>,Sarah Monelus <smonelus@excite.com>,,
+ "Sarnobat, Sridhar" <sridhar.sarnobat@ic.ac.uk>,"Schneeweiss, Astrid"@ic.ac.uk,
+ <astrid.schneeweiss@ic.ac.uk>,"Sen, Sudipto" <sudipto.sen@ic.ac.uk>,,
+ "Sharma, Aarti" <aarti.sharma@ic.ac.uk>,"Sim, Victoria"@ic.ac.uk,
+ <victoria.sim@ic.ac.uk>,"Skaliotis, Alexandros"@ic.ac.uk,
+ <alexandros.skaliotis@ic.ac.uk>,"Sohn Lee, Joonsik"@ic.ac.uk,
+ <joonsik.sohn-lee@ic.ac.uk>,"Spachis, Elisabeth"@ic.ac.uk,
+ <elisabeth.spachis@ic.ac.uk>,"Trachtman, Tal" <tal.trachtman@ic.ac.uk>,,
+ "Trifunovic, Aleksandar" <aleksandar.trifunovic@ic.ac.uk>,,
+ "Tufet-Bayona, Marta" <marta.tufet-bayona@ic.ac.uk>,"Tzircotis, George"@ic.ac.uk,
+ <george.tzircotis@ic.ac.uk>,"Urrestarazu, Victoria"@ic.ac.uk,
+ <victoria.urrestarazu@ic.ac.uk>,"Uttamchandani, Manish"@ic.ac.uk,
+ <manish.uttamchandani@ic.ac.uk>,"Volikos, Emmanuel"@ic.ac.uk,
+ <emmanuel.volikos@ic.ac.uk>,"Whittaker, Carly"@ic.ac.uk,
+ <carly.whittaker@ic.ac.uk>,"Windisch, David" <david.windisch@ic.ac.uk>,,
+ "Witton-Dauris, Julia" <julia.witton-dauris@ic.ac.uk>,"Wood, Caroline"@ic.ac.uk,
+ <caroline.wood@ic.ac.uk>,"Yustres Real, Angel"@ic.ac.uk,
+ <angel.yustres-real@ic.ac.uk>,Zahera Ghazoui <yahoozahera@hotmail.com>,,
+ "Zaki, Hind" <hind.zaki@ic.ac.uk>,"Hariton Korizis"@ic.ac.uk,
+	<hariton.korizis@ic.ac.uk>,
+ waiwaitong@hotmail.com;,manuel.rivero@ic.ac.uk;,
+ helder_da_rosa@hotmail.com;,bilal.mannaa@ic.ac.uk;,
+ chrisden@hotmail.com;,alex.bateman@ic.ac.uk;,arnaud.pujol@ic.ac.uk;,
+ karen.ng@ic.ac.uk;,iago.martinez@ic.ac.uk;,piers.ingram@ic.ac.uk;,
+ christopher.kemp@ic.ac.uk;,john.noel@ic.ac.uk;,vivian.serfaty@ic.ac.uk;,
+ neelun@hotmail.com;,chiara.baggio@ic.ac.uk;,mustafa.ilyas@ic.ac.uk;,
+ zayd.armanazi@ic.ac.uk;,stefanos.pandoulas@ic.ac.uk;,
+ demelza.north@ic.ac.uk;,miguel.de-luna-gomez@ic.ac.uk;,
+ kilian.keaney@ic.ac.uk;,l.bouvier@ic.ac.uk;,jonathan.clarke@ic.ac.uk;,
+ francesca.harris@ic.ac.uk;,alexandros.lambrou@ic.ac.uk;,
+ d.douglas@nhm.ac.uk;,tarek.mouganie@ic.ac.uk;,
+ carolos.georgallis@ic.ac.uk;,jay.amarshi@ic.ac.uk;,
+ nicholas.dragatsis@ic.ac.uk;,eva.haden@ic.ac.uk;,
+ thomas.holliday@ic.ac.uk;,eleanore.king@ic.ac.uk;,v.sakai@ic.ac.uk;,
+ joao.paixao-moreira@ic.ac.uk;,matthias.bader@ic.ac.uk;,
+ alexia.paolinelis@ic.ac.uk;,tom.waterfall@ic.ac.uk;,
+ clare.sutcliffe@ic.ac.uk;,laure.dubly@ic.ac.uk;,daniel.heesch@ic.ac.uk;,
+ r.wang@ic.ac.uk;,a.rana@ic.ac.uk;,aurelie.brulant@ic.ac.uk;,
+ tania.kapoor@ic.ac.uk;,astrid.schneeweiss@ic.ac.uk,
+ "Max Werner" <maximilian.werner@ic.ac.uk>,
+ "Matthieu Baudrand"       <matthieu.baudrand@ic.ac.uk>,
+ "Ron Ng"                  <ronald.ng@ic.ac.uk>,
+ "Carlos Diaz"             <carlos.diaz@ic.ac.uk>,
+ "Dominic Booth"           <dominic.booth@ic.ac.uk>,
+ "Lorenzo Donini Ferretti" <lelondf@yahoo.com>,
+ "Victoria Urrestarazu"    <victoria.urrestarazu@ic.ac.uk>,
+ "Roger Choi"              <rrrrr12345@yahoo.com>,
+ "Jo Harper"               <joseph.harper@ic.ac.uk>,
+ "Raul J. Ramos"           <raul.ramos@ic.ac.uk>,
+ "Joonsik Suhn, Como escribiste todo en mayuscula no sabia donde separar el,apellido y el nombre, avisame si me he equivocado" <joon_s@hanmail.net>,
+ hk499@ic.ac.uk;,maximilian.werner@ic.ac.uk;,mu01@doc.ic.ac.uk;,
+ pilar.jimemez@ic.ac.uk;,javier.prito-ortega@ic.ac.uk;,jjp00@ic.ac.uk;,
+ antonio.novas@ic.ac.uk;,delisagarcia@yahoo.com;,
+ lidia.lopez-jimenez@ic.ac.uk;,marta.tufet-bayona@ic.ac.uk;,
+ luquis@eresmas.com;
+From: Gonzalo <gonzaio.martinez-de-azagra@ic.ac.uk>
+Subject: Those who received my email twice simply reply this email
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 4
+
+ So that we can fix it.
+
+Gonzalo
+
+
+From ronald.ng@ic.ac.uk Tue Oct 23 17:03:38 2001
+Return-path: <ronald.ng@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 23 Oct 2001 17:03:38 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15w41i-0007AV-00; Tue, 23 Oct 2001 17:03:38 +0100
+Received: from mr4.cc.ic.ac.uk ([155.198.5.114])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15w41g-00081p-00; Tue, 23 Oct 2001 17:03:36 +0100
+Received: from hide.ee.ic.ac.uk ([155.198.120.14] helo=eecfsag2.ee.ic.ac.uk)
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 15w41g-0006ZS-04; Tue, 23 Oct 2001 17:03:36 +0100
+Received: from furze ([155.198.115.112])
+	by eecfsag2.ee.ic.ac.uk with smtp (Exim 1.90 #1)
+	id 15w41b-0005Xp-00; Tue, 23 Oct 2001 17:03:31 +0100
+Message-Id: <3.0.6.32.20011023170743.009c5d90@hide.ee.ic.ac.uk>
+X-Sender: rn299@hide.ee.ic.ac.uk
+X-Mailer: QUALCOMM Windows Eudora Light Version 3.0.6 (32)
+Date: Tue, 23 Oct 2001 17:07:43 +0100
+To: "Martinez De Azagra, Gonzaio" <gonzaio.martinez-de-azagra@ic.ac.uk>,,
+ Adrian Fernandez <hellmech@hotmail.com>,"Ahmed, Omar"@ic.ac.uk,
+ <omar.ahmed1@ic.ac.uk>,"Alastruey Arimon, Jordi"@ic.ac.uk,
+ <jordi.alastruey-arimon@ic.ac.uk>,"Arancibia, Lorena"@ic.ac.uk,
+ <lorena.arancibia@ic.ac.uk>,"Arrese, Miguel" <miguel.arrese@ic.ac.uk>,,
+ "Atteck, James" <james.atteck@ic.ac.uk>,"Baland, Regis"@ic.ac.uk,
+ <regis.baland@ic.ac.uk>,"Baldanza, Olivier" <olivier.baldanza@ic.ac.uk>,
+ ,"Baudrand, Matthieu" <matthieu.baudrand@ic.ac.uk>,
+ "Berghout, Christian"@ic.ac.uk,
+	<christian.berghout@ic.ac.uk>,
+ "Bluhme, Sarah" <sarah.bluhme@ic.ac.uk>,,
+ "Boccara, Gillian" <gillian.boccara@ic.ac.uk>,"Booth, Dominic"@ic.ac.uk,
+ <dominic.booth@ic.ac.uk>,"Buadi, Amanda" <amanda.buadi@ic.ac.uk>,,
+ "Bulpe Sasaki, Elena" <elena.bulpe-sasaki@ic.ac.uk>,"Burulkara, Deniz"@ic.ac.uk,
+ <deniz.burulkara@ic.ac.uk>,"Candela Pokorna, Pablo"@ic.ac.uk,
+ <pablo.candela-pokorna@ic.ac.uk>,Cham Sunny <tacchan14@hotmail.com>,,
+ "Chauvin, Martin" <martin.chauvin@ic.ac.uk>,"Chicano Catalan, Marta"@ic.ac.uk,
+ <marta.chicano-catalan@ic.ac.uk>,"Chinthapalli, Vamsi"@ic.ac.uk,
+ <vamsi.chinthapalli@ic.ac.uk>,"Coates, Andrew" <andrew.coates@ic.ac.uk>,
+ ,"Dar, Naheela" <naheela.dar@ic.ac.uk>,"Dattani, Meera"@ic.ac.uk,
+ <meera.dattani@ic.ac.uk>,"D'Cruz, Rachel" <rachel.dcruz@ic.ac.uk>,,
+ "De La Cruz, Mehrunnissa" <mehrunnissa.de-la-cruz@ic.ac.uk>,,
+ "Diaz Merino, Carlos" <carlos.diaz-merino@ic.ac.uk>,,
+ "Donini Ferretti, Lorenzo" <lorenzo.donini-ferretti@ic.ac.uk>,,
+ "Doran, Aoife" <aoife.doran@ic.ac.uk>,"Elbadri, Siadat"@ic.ac.uk,
+ <siadat.elbadri@ic.ac.uk>,Eric Borlang <e_borlang@hotmail.com>,,
+ "Eve, Samantha" <samantha.eve@ic.ac.uk>,"Feilhaber, Marcela"@ic.ac.uk,
+ <marceia.feilhaber@ic.ac.uk>,"Figueiredo-Ribeiro, Dora"@ic.ac.uk,
+ <dora.figueiredo-ribeiro@ic.ac.uk>,"Foulquie, Rafael"@ic.ac.uk,
+ <rafael.foulquie@ic.ac.uk>,"Gallo, Michele D" <michele.gallo@ic.ac.uk>,,
+ "Garcia de la Fuent, Carlos" <carlos.garcia@ic.ac.uk>,,
+ "Gaudemet, Edouard" <edouard.gaudemet@ic.ac.uk>,"Gaynon, Michael"@ic.ac.uk,
+ <michael.gaynon@ic.ac.uk>,"George, Angela" <angela.george@ic.ac.uk>,,
+ "Girard, Thibaut" <thibaut.girard@ic.ac.uk>,"Guerra Arias, Maria"@ic.ac.uk,
+ <maria.guerra-arias@ic.ac.uk>,"Haigh, Jennifer"@ic.ac.uk,
+ <jennifer.haigh@ic.ac.uk>,"Hakim, Razia" <razia.hakim@ic.ac.uk>,,
+ "Hall, Gillian" <gillian.m.hall1@ic.ac.uk>,"Ibanez Garcia, Delisa"@ic.ac.uk,
+ <delisa.ibanez-garcia@ic.ac.uk>,"Isgren, Carl" <carl.isgren@ic.ac.uk>,,
+ J Machor <jamachor@hotmail.com>,Jaime Mateus <zzaime@hotmail.com>,,
+ Jake Lenson <lenson007@hotmail.com>,"Jasiewicz, Dorota"@ic.ac.uk,
+ <dorota.jasiewicz@ic.ac.uk>,"Jimenez Iglesias, Pilar"@ic.ac.uk,
+ <pilar.jimenez-iglesias@ic.ac.uk>,"jose.mortera-blanco"@ic.ac.uk,
+ <jose.mortera-blanco@ic.ac.uk>,"Kaparias, Ioannis"@ic.ac.uk,
+ <ioannis.kaparias@ic.ac.uk>,"Kirk, Paul" <paul.kirk@ic.ac.uk>,,
+ "Lazaro, Jorge" <jorge.lazaro@ic.ac.uk>,"Lewis, James"@ic.ac.uk,
+ <james.lewis@ic.ac.uk>,"Lopez-Jimenez, Lidia"@ic.ac.uk,
+ <lidia.lopez-jimenez@ic.ac.uk>,"Lubrich, Daniel"@ic.ac.uk,
+ <daniel.lubrich@ic.ac.uk>,"Maniati, Margarita"@ic.ac.uk,
+ <margarita.maniati@ic.ac.uk>,"Marcaida Lopez, Jose"@ic.ac.uk,
+ <jose.marcaida-lopez@ic.ac.uk>,"Marion, Claude"@ic.ac.uk,
+ <claude.marion@ic.ac.uk>,"Martinez Gomez, Alberto"@ic.ac.uk,
+ <alberto.martinez-gomez@ic.ac.uk>,"Mataix-Cols, David"@ic.ac.uk,
+ <d.mataix@ic.ac.uk>,"Mataix-Pastor, Vicente"@ic.ac.uk,
+ <vicente.mataix-pastor@ic.ac.uk>,"Mehta, Payal" <payal.mehta@ic.ac.uk>,,
+ "Meilmann, Yphat" <yphat.meilmann@ic.ac.uk>,"Moloney, Susan"@ic.ac.uk,
+ <susan.moloney@ic.ac.uk>,"Momen, Goldie" <goldie.momen@ic.ac.uk>,,
+ "Moscovici, Adrien" <adrien.moscovici@ic.ac.uk>,"Munoz, Lucas"@ic.ac.uk,
+ <lucas.munoz@ic.ac.uk>,"Nicolas, Brieuc" <brieuc.nicolas@ic.ac.uk>,,
+ "Nouri, Selim" <selim.nouri@ic.ac.uk>,"Novas, Antonio"@ic.ac.uk,
+ <antonio.novas@ic.ac.uk>,"Odeniran, Oluwadamilola"@ic.ac.uk,
+ <damilola.odeniran@ic.ac.uk>,"Oknayan, Shant" <shant.oknayan@ic.ac.uk>,,
+ "Papatheodorou, Irene V" <i.papatheodorou@ic.ac.uk>,"Parras, Luis"@ic.ac.uk,
+ <luis.parras@ic.ac.uk>,"Paul, Danielle M" <d.paul@ic.ac.uk>,,
+ "Pearse, Owen" <owen.pearse@ic.ac.uk>,"Pierobon, Paolo"@ic.ac.uk,
+ <paolo.pierobon@ic.ac.uk>,"Prieto Ortega, Javier"@ic.ac.uk,
+ <javier.prieto-ortega@ic.ac.uk>,"Puerto Gimenez, Irene"@ic.ac.uk,
+ <irene.o.puerto-gimenez@ic.ac.uk>,"Punjani, Jesal"@ic.ac.uk,
+ <jesal.punjani@ic.ac.uk>,"Quaranta, Luis" <luis.quaranta@ic.ac.uk>,,
+ "Quinones, Ignacio" <ignacio.quinones@ic.ac.uk>,"Ramos, Raul"@ic.ac.uk,
+ <raul.ramos@ic.ac.uk>,"Rao, Sharmila" <sharmila.rao@ic.ac.uk>,,
+ "Read, L A" <l.read@ic.ac.uk>,"Reynolds, Simon"@ic.ac.uk,
+ <simon.reynolds@ic.ac.uk>,"Richardson, Jenny"@ic.ac.uk,
+ <jenny.richardson@ic.ac.uk>,"Romera-Garcia, Jose"@ic.ac.uk,
+ <jose.romera-garcia@ic.ac.uk>,"Sacristan, Francisco"@ic.ac.uk,
+ <francisco.sacristan@ic.ac.uk>,Sarah Monelus <smonelus@excite.com>,,
+ "Sarnobat, Sridhar" <sridhar.sarnobat@ic.ac.uk>,"Schneeweiss, Astrid"@ic.ac.uk,
+ <astrid.schneeweiss@ic.ac.uk>,"Sen, Sudipto" <sudipto.sen@ic.ac.uk>,,
+ "Sharma, Aarti" <aarti.sharma@ic.ac.uk>,"Sim, Victoria"@ic.ac.uk,
+ <victoria.sim@ic.ac.uk>,"Skaliotis, Alexandros"@ic.ac.uk,
+ <alexandros.skaliotis@ic.ac.uk>,"Sohn Lee, Joonsik"@ic.ac.uk,
+ <joonsik.sohn-lee@ic.ac.uk>,"Spachis, Elisabeth"@ic.ac.uk,
+ <elisabeth.spachis@ic.ac.uk>,"Trachtman, Tal" <tal.trachtman@ic.ac.uk>,,
+ "Trifunovic, Aleksandar" <aleksandar.trifunovic@ic.ac.uk>,,
+ "Tufet-Bayona, Marta" <marta.tufet-bayona@ic.ac.uk>,"Tzircotis, George"@ic.ac.uk,
+ <george.tzircotis@ic.ac.uk>,"Urrestarazu, Victoria"@ic.ac.uk,
+ <victoria.urrestarazu@ic.ac.uk>,"Uttamchandani, Manish"@ic.ac.uk,
+ <manish.uttamchandani@ic.ac.uk>,"Volikos, Emmanuel"@ic.ac.uk,
+ <emmanuel.volikos@ic.ac.uk>,"Whittaker, Carly"@ic.ac.uk,
+ <carly.whittaker@ic.ac.uk>,"Windisch, David" <david.windisch@ic.ac.uk>,,
+ "Witton-Dauris, Julia" <julia.witton-dauris@ic.ac.uk>,"Wood, Caroline"@ic.ac.uk,
+ <caroline.wood@ic.ac.uk>,"Yustres Real, Angel"@ic.ac.uk,
+ <angel.yustres-real@ic.ac.uk>,Zahera Ghazoui <yahoozahera@hotmail.com>,,
+ "Zaki, Hind" <hind.zaki@ic.ac.uk>,"Hariton Korizis"@ic.ac.uk,
+	<hariton.korizis@ic.ac.uk>,
+ waiwaitong@hotmail.com;,manuel.rivero@ic.ac.uk;,
+ helder_da_rosa@hotmail.com;,bilal.mannaa@ic.ac.uk;,
+ chrisden@hotmail.com;,alex.bateman@ic.ac.uk;,arnaud.pujol@ic.ac.uk;,
+ karen.ng@ic.ac.uk;,iago.martinez@ic.ac.uk;,piers.ingram@ic.ac.uk;,
+ christopher.kemp@ic.ac.uk;,john.noel@ic.ac.uk;,vivian.serfaty@ic.ac.uk;,
+ neelun@hotmail.com;,chiara.baggio@ic.ac.uk;,mustafa.ilyas@ic.ac.uk;,
+ zayd.armanazi@ic.ac.uk;,stefanos.pandoulas@ic.ac.uk;,
+ demelza.north@ic.ac.uk;,miguel.de-luna-gomez@ic.ac.uk;,
+ kilian.keaney@ic.ac.uk;,l.bouvier@ic.ac.uk;,jonathan.clarke@ic.ac.uk;,
+ francesca.harris@ic.ac.uk;,alexandros.lambrou@ic.ac.uk;,
+ d.douglas@nhm.ac.uk;,tarek.mouganie@ic.ac.uk;,
+ carolos.georgallis@ic.ac.uk;,jay.amarshi@ic.ac.uk;,
+ nicholas.dragatsis@ic.ac.uk;,eva.haden@ic.ac.uk;,
+ thomas.holliday@ic.ac.uk;,eleanore.king@ic.ac.uk;,v.sakai@ic.ac.uk;,
+ joao.paixao-moreira@ic.ac.uk;,matthias.bader@ic.ac.uk;,
+ alexia.paolinelis@ic.ac.uk;,tom.waterfall@ic.ac.uk;,
+ clare.sutcliffe@ic.ac.uk;,laure.dubly@ic.ac.uk;,daniel.heesch@ic.ac.uk;,
+ r.wang@ic.ac.uk;,a.rana@ic.ac.uk;,aurelie.brulant@ic.ac.uk;,
+ tania.kapoor@ic.ac.uk;,astrid.schneeweiss@ic.ac.uk,
+ "Max Werner" <maximilian.werner@ic.ac.uk>,
+ "Matthieu Baudrand"       <matthieu.baudrand@ic.ac.uk>,
+ "Ron Ng"                  <ronald.ng@ic.ac.uk>,
+ "Carlos Diaz"             <carlos.diaz@ic.ac.uk>,
+ "Dominic Booth"           <dominic.booth@ic.ac.uk>,
+ "Lorenzo Donini Ferretti" <lelondf@yahoo.com>,
+ "Victoria Urrestarazu"    <victoria.urrestarazu@ic.ac.uk>,
+ "Roger Choi"              <rrrrr12345@yahoo.com>,
+ "Jo Harper"               <joseph.harper@ic.ac.uk>,
+ "Raul J. Ramos"           <raul.ramos@ic.ac.uk>,
+ "Joonsik Suhn, Como escribiste todo en mayuscula no sabia donde separar el
+From: ronald.ng@ic.ac.uk
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 5
+
+"@ic.ac.uk
+From: ronald.ng@ic.ac.uk
+
+apellido y el nombre, avisame si me he equivocado" <joon_s@hanmail.net>
+From: Ron Ng <rn299@ic.ac.uk>
+Subject: Spanish tapas buffet This THURS 12.30pm @Level 12, EEE 
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+
+************************************************
+		SPANISH TAPAS BUFFET
+*************************************************
+Spanish society are hosting a tapas buffet, where all of you can come and
+try the taste of spanish cuisine and drink. Food is supplied by renowned
+spanish restaurant Blancos, so the quality should be good. Lots of people
+will be there especially non spanish so come and join the fun.
+
+This is also a chance to sign up to spanish society if u havent yet. 
+Spanish society membership is a very privileged thing, so don't regret it
+we become booked up.
+
+Thursday 25th october, 12.30pm @Level 12, EEE
+Free for Spanish soc members
+
+
+Thanks, and i'll see you there,
+
+Gonzalo and ROn
+
+
+
+
+
+
+From carlos.garcia@ic.ac.uk Thu Oct 25 15:58:33 2001
+Return-path: <carlos.garcia@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 25 Oct 2001 15:58:33 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15wlxo-0000Qi-00; Thu, 25 Oct 2001 15:58:32 +0100
+Received: from mr4.cc.ic.ac.uk ([155.198.5.114])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15wlxo-0002aL-00; Thu, 25 Oct 2001 15:58:32 +0100
+Received: from icex11.cc.ic.ac.uk ([155.198.3.11])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 15wlxo-0000Pz-04; Thu, 25 Oct 2001 15:58:32 +0100
+Received: by icex11.cc.ic.ac.uk with Internet Mail Service (5.5.2653.19)
+	id <TCY9JPR3>; Thu, 25 Oct 2001 15:58:32 +0100
+Message-ID: <91326A1A487FD411A59500508BAEDD9E0294ACFA@icex11.cc.ic.ac.uk>
+From: "Garcia de la Fuent, Carlos" <carlos.garcia@ic.ac.uk>
+To: "Diaz Merino, Carlos" <carlos.diaz-merino@ic.ac.uk>, 
+	"Donini Ferretti, Lorenzo" <lorenzo.donini-ferretti@ic.ac.uk>, 
+	"Doran, Aoife" <aoife.doran@ic.ac.uk>, "Elbadri, Siadat"@ic.ac.uk, 
+	"Elbadri, Siadat" <siadat.elbadri@ic.ac.uk>, Eric Borlang
+	 <e_borlang@hotmail.com>, "Eve, Samantha" <samantha.eve@ic.ac.uk>, 
+	"Feilhaber, Marcela"@ic.ac.uk, "Feilhaber, Marcela"
+	 <marceia.feilhaber@ic.ac.uk>, "Figueiredo-Ribeiro, Dora"@ic.ac.uk, 
+	"Figueiredo-Ribeiro, Dora" <dora.figueiredo-ribeiro@ic.ac.uk>, 
+	"Foulquie, Rafael"@ic.ac.uk, "Foulquie, Rafael"
+	 <rafael.foulquie@ic.ac.uk>, "Gallo, Michele D" <michele.gallo@ic.ac.uk>, 
+	"Garcia de la Fuent, Carlos" <carlos.garcia@ic.ac.uk>, 
+	"Gaudemet, Edouard" <edouard.gaudemet@ic.ac.uk>, 
+	"Gaynon, Michael"@ic.ac.uk, "Gaynon, Michael" <michael.gaynon@ic.ac.uk>, 
+	"George, Angela" <angela.george@ic.ac.uk>, "Girard, Thibaut"
+	 <thibaut.girard@ic.ac.uk>, "Guerra Arias, Maria"@ic.ac.uk, 
+	"Guerra Arias, Maria" <maria.guerra-arias@ic.ac.uk>, 
+	"Haigh, Jennifer"@ic.ac.uk, "Haigh, Jennifer" <jennifer.haigh@ic.ac.uk>, 
+	"Hakim, Razia" <razia.hakim@ic.ac.uk>, "Hall, Gillian"
+	 <gillian.m.hall1@ic.ac.uk>, "Ibanez Garcia, Delisa"@ic.ac.uk, 
+	"Ibanez Garcia, Delisa" <delisa.ibanez-garcia@ic.ac.uk>, "Isgren, Carl"
+	 <carl.isgren@ic.ac.uk>, J Machor <jamachor@hotmail.com>, Jaime Mateus
+	 <zzaime@hotmail.com>, Jake Lenson <lenson007@hotmail.com>, 
+	"Jasiewicz, Dorota"@ic.ac.uk, "Jasiewicz, Dorota"
+	 <dorota.jasiewicz@ic.ac.uk>, "Jimenez Iglesias, Pilar"@ic.ac.uk, 
+	"Jimenez Iglesias, Pilar" <pilar.jimenez-iglesias@ic.ac.uk>, 
+	"jose.mortera-blanco"@ic.ac.uk, "jose.mortera-blanco"
+	 <jose.mortera-blanco@ic.ac.uk>, "Kaparias, Ioannis"@ic.ac.uk, 
+	"Kaparias, Ioannis" <ioannis.kaparias@ic.ac.uk>, "Kirk, Paul"
+	 <paul.kirk@ic.ac.uk>, "Lazaro, Jorge" <jorge.lazaro@ic.ac.uk>, 
+	"Lewis, James"@ic.ac.uk, "Lewis, James" <james.lewis@ic.ac.uk>, 
+	"Lopez-Jimenez, Lidia"@ic.ac.uk, "Lopez-Jimenez, Lidia"
+	 <lidia.lopez-jimenez@ic.ac.uk>, "Lubrich, Daniel"@ic.ac.uk, 
+	"Lubrich, Daniel" <daniel.lubrich@ic.ac.uk>, 
+	"Maniati, Margarita"@ic.ac.uk, "Maniati, Margarita"
+	 <margarita.maniati@ic.ac.uk>, "Marcaida Lopez, Jose"@ic.ac.uk, 
+	"Marcaida Lopez, Jose" <jose.marcaida-lopez@ic.ac.uk>, 
+	"Marion, Claude"@ic.ac.uk, "Marion, Claude" <claude.marion@ic.ac.uk>, 
+	"Martinez Gomez, Alberto"@ic.ac.uk, "Martinez Gomez, Alberto"
+	 <alberto.martinez-gomez@ic.ac.uk>, "Mataix-Cols, David"@ic.ac.uk, 
+	"Mataix-Cols, David" <d.mataix@ic.ac.uk>, 
+	"Mataix-Pastor, Vicente"@ic.ac.uk, "Mataix-Pastor, Vicente"
+	 <vicente.mataix-pastor@ic.ac.uk>, "Mehta, Payal" <payal.mehta@ic.ac.uk>, 
+	"Meilmann, Yphat" <yphat.meilmann@ic.ac.uk>, "Moloney, Susan"@ic.ac.uk, 
+	"Moloney, Susan" <susan.moloney@ic.ac.uk>, "Momen, Goldie"
+	 <goldie.momen@ic.ac.uk>, "Moscovici, Adrien" <adrien.moscovici@ic.ac.uk>, 
+	"Munoz, Lucas"@ic.ac.uk, "Munoz, Lucas" <lucas.munoz@ic.ac.uk>, 
+	"Nicolas, Brieuc" <brieuc.nicolas@ic.ac.uk>, "Nouri, Selim"
+	 <selim.nouri@ic.ac.uk>, "Novas, Antonio"@ic.ac.uk, "Novas, Antonio"
+	 <antonio.novas@ic.ac.uk>, "Odeniran, Oluwadamilola"@ic.ac.uk, 
+	"Odeniran, Oluwadamilola" <damilola.odeniran@ic.ac.uk>, "Oknayan, Shant"
+	 <shant.oknayan@ic.ac.uk>, "Papatheodorou, Irene V"
+	 <i.papatheodorou@ic.ac.uk>, "Parras, Luis"@ic.ac.uk, "Parras, Luis"
+	 <luis.parras@ic.ac.uk>, "Paul, Danielle M" <d.paul@ic.ac.uk>, 
+	"Pearse, Owen" <owen.pearse@ic.ac.uk>, "Pierobon, Paolo"@ic.ac.uk, 
+	"Pierobon, Paolo" <paolo.pierobon@ic.ac.uk>, 
+	"Prieto Ortega, Javier"@ic.ac.uk, "Prieto Ortega, Javier"
+	 <javier.prieto-ortega@ic.ac.uk>, "Puerto Gimenez, Irene"@ic.ac.uk, 
+	"Puerto Gimenez, Irene" <irene.o.puerto-gimenez@ic.ac.uk>, 
+	"Punjani, Jesal"@ic.ac.uk, "Punjani, Jesal" <jesal.punjani@ic.ac.uk>, 
+	"Quaranta, Luis" <luis.quaranta@ic.ac.uk>, "Quinones, Ignacio"
+	 <ignacio.quinones@ic.ac.uk>, "Ramos, Raul"@ic.ac.uk, "Ramos, Raul"
+	 <raul.ramos@ic.ac.uk>, "Rao, Sharmila" <sharmila.rao@ic.ac.uk>, 
+	"Read, L A" <l.read@ic.ac.uk>, "Reynolds, Simon"@ic.ac.uk, 
+	"Reynolds, Simon" <simon.reynolds@ic.ac.uk>, "Richardson, Jenny"@ic.ac.uk, 
+	"Richardson, Jenny" <jenny.richardson@ic.ac.uk>, 
+	"Romera-Garcia, Jose"@ic.ac.uk, "Romera-Garcia, Jose"
+	 <jose.romera-garcia@ic.ac.uk>, "Sacristan, Francisco"@ic.ac.uk, 
+	"Sacristan, Francisco" <francisco.sacristan@ic.ac.uk>, Sarah Monelus
+	 <smonelus@excite.com>, "Sarnobat, Sridhar" <sridhar.sarnobat@ic.ac.uk>, 
+	"Schneeweiss, Astrid"@ic.ac.uk, "Schneeweiss, Astrid"
+	 <astrid.schneeweiss@ic.ac.uk>, "Sen, Sudipto" <sudipto.sen@ic.ac.uk>, 
+	"Sharma, Aarti" <aarti.sharma@ic.ac.uk>, "Sim, Victoria"@ic.ac.uk, 
+	"Sim, Victoria" <victoria.sim@ic.ac.uk>, "Skaliotis, Alexandros"@ic.ac.uk, 
+	"Skaliotis, Alexandros" <alexandros.skaliotis@ic.ac.uk>, 
+	"Sohn Lee, Joonsik"@ic.ac.uk, "Sohn Lee, Joonsik"
+	 <joonsik.sohn-lee@ic.ac.uk>, "Spachis, Elisabeth"@ic.ac.uk, 
+	"Spachis, Elisabeth" <elisabeth.spachis@ic.ac.uk>, "Trachtman, Tal"
+	 <tal.trachtman@ic.ac.uk>, "Trifunovic, Aleksandar"
+	 <aleksandar.trifunovic@ic.ac.uk>, "Tufet-Bayona, Marta"
+	 <marta.tufet-bayona@ic.ac.uk>, "Tzircotis, George"@ic.ac.uk, 
+	"Tzircotis, George" <george.tzircotis@ic.ac.uk>, 
+	"Urrestarazu, Victoria"@ic.ac.uk, "Urrestarazu, Victoria"
+	 <victoria.urrestarazu@ic.ac.uk>, "Uttamchandani, Manish"@ic.ac.uk, 
+	"Uttamchandani, Manish" <manish.uttamchandani@ic.ac.uk>, 
+	"Volikos, Emmanuel"@ic.ac.uk, "Volikos, Emmanuel"
+	 <emmanuel.volikos@ic.ac.uk>, "Whittaker, Carly"@ic.ac.uk, 
+	"Whittaker, Carly" <carly.whittaker@ic.ac.uk>, "Windisch, David"
+	 <david.windisch@ic.ac.uk>, "Witton-Dauris, Julia"
+	 <julia.witton-dauris@ic.ac.uk>
+Subject: SPANSOC: Film and Mus competition!
+Date: Thu, 25 Oct 2001 15:58:28 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Status: RO
+X-Status: DA
+X-Keywords:               
+X-UID: 6
+
+Some of you came last Friday to see "El d=EDa de la bestia", although =
+it was
+cancelled in the last minute due to technical problems. For those who =
+came,
+and for those who didn't but want to, the same film will be put =
+tomorrow.
+Here are the details:
+
+
+FREE CINEMA TOMORROW (26/10), ROOM 408 Electrical & Electronic Dep. =
+5:00PM
+
+Film: 		The Day of the Beast
+Subtitled: 	Yes !
+Genre:		Dark Comedy(F.cking Funny)
+Proyector: 	YES
+
+
+Also, the society is now organising a competition of the most common =
+Spanish
+Card Games, Mus! The details of when / how cannot be set already, since =
+we
+need to know before the rough amount of participants in it! This is why =
+I
+ask all the interested in this to email me about it, whether is their =
+name
+alone or with the partner they would like to play with! I hope that in =
+a
+short time this should be able to start!
+
+Finally, tomorrow is a chance for all those who haven't confirmed their
+inscription to the society (either because they couldn't come last week =
+to
+the JCR or because they haven't been able to pay the necessary =A3 3) =
+to
+confirm such inscription!
+
+Hope to see you all there!
+
+Carlos Garc=EDa de la Fuente
+
+From gonzaio.martinez-de-azagra@ic.ac.uk Fri Oct 26 16:54:52 2001
+Return-path: <gonzaio.martinez-de-azagra@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 26 Oct 2001 16:54:52 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15x9Jr-0004qM-00; Fri, 26 Oct 2001 16:54:51 +0100
+Received: from mr4.cc.ic.ac.uk ([155.198.5.114])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15x9Jr-00060b-00; Fri, 26 Oct 2001 16:54:51 +0100
+Received: from hide.ee.ic.ac.uk ([155.198.120.14] helo=eecfsag2.ee.ic.ac.uk)
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 15x9Jr-0003QR-04; Fri, 26 Oct 2001 16:54:51 +0100
+Received: from davida ([155.198.115.64])
+	by eecfsag2.ee.ic.ac.uk with smtp (Exim 1.90 #1)
+	id 15x9Jl-0002IR-00; Fri, 26 Oct 2001 16:54:45 +0100
+Message-Id: <3.0.6.32.20011026165901.00900240@eecfsag2.ee.ic.ac.uk>
+X-Sender: gm99@eecfsag2.ee.ic.ac.uk
+X-Mailer: QUALCOMM Windows Eudora Light Version 3.0.6 (32)
+Date: Fri, 26 Oct 2001 16:59:01 +0100
+To: "Martinez De Azagra, Gonzaio" <gonzaio.martinez-de-azagra@ic.ac.uk>,,
+ Adrian Fernandez <hellmech@hotmail.com>,"Ahmed, Omar"@ic.ac.uk,
+ <omar.ahmed1@ic.ac.uk>,"Alastruey Arimon, Jordi"@ic.ac.uk,
+ <jordi.alastruey-arimon@ic.ac.uk>,"Arancibia, Lorena"@ic.ac.uk,
+ <lorena.arancibia@ic.ac.uk>,"Arrese, Miguel" <miguel.arrese@ic.ac.uk>,,
+ "Atteck, James" <james.atteck@ic.ac.uk>,"Baland, Regis"@ic.ac.uk,
+ <regis.baland@ic.ac.uk>,"Baldanza, Olivier" <olivier.baldanza@ic.ac.uk>,
+ ,"Baudrand, Matthieu" <matthieu.baudrand@ic.ac.uk>,
+ "Berghout, Christian"@ic.ac.uk,
+	<christian.berghout@ic.ac.uk>,
+ "Bluhme, Sarah" <sarah.bluhme@ic.ac.uk>,,
+ "Boccara, Gillian" <gillian.boccara@ic.ac.uk>,"Booth, Dominic"@ic.ac.uk,
+ <dominic.booth@ic.ac.uk>,"Buadi, Amanda" <amanda.buadi@ic.ac.uk>,,
+ "Bulpe Sasaki, Elena" <elena.bulpe-sasaki@ic.ac.uk>,"Burulkara, Deniz"@ic.ac.uk,
+ <deniz.burulkara@ic.ac.uk>,"Candela Pokorna, Pablo"@ic.ac.uk,
+ <pablo.candela-pokorna@ic.ac.uk>,Cham Sunny <tacchan14@hotmail.com>,,
+ "Chauvin, Martin" <martin.chauvin@ic.ac.uk>,"Chicano Catalan, Marta"@ic.ac.uk,
+ <marta.chicano-catalan@ic.ac.uk>,"Chinthapalli, Vamsi"@ic.ac.uk,
+ <vamsi.chinthapalli@ic.ac.uk>,"Coates, Andrew" <andrew.coates@ic.ac.uk>,
+ ,"Dar, Naheela" <naheela.dar@ic.ac.uk>,"Dattani, Meera"@ic.ac.uk,
+ <meera.dattani@ic.ac.uk>,"D'Cruz, Rachel" <rachel.dcruz@ic.ac.uk>,,
+ "De La Cruz, Mehrunnissa" <mehrunnissa.de-la-cruz@ic.ac.uk>,,
+ "Diaz Merino, Carlos" <carlos.diaz-merino@ic.ac.uk>,,
+ "Donini Ferretti, Lorenzo" <lorenzo.donini-ferretti@ic.ac.uk>,,
+ "Doran, Aoife" <aoife.doran@ic.ac.uk>,"Elbadri, Siadat"@ic.ac.uk,
+ <siadat.elbadri@ic.ac.uk>,Eric Borlang <e_borlang@hotmail.com>,,
+ "Eve, Samantha" <samantha.eve@ic.ac.uk>,"Feilhaber, Marcela"@ic.ac.uk,
+ <marceia.feilhaber@ic.ac.uk>,"Figueiredo-Ribeiro, Dora"@ic.ac.uk,
+ <dora.figueiredo-ribeiro@ic.ac.uk>,"Foulquie, Rafael"@ic.ac.uk,
+ <rafael.foulquie@ic.ac.uk>,"Gallo, Michele D" <michele.gallo@ic.ac.uk>,,
+ "Garcia de la Fuent, Carlos" <carlos.garcia@ic.ac.uk>,,
+ "Gaudemet, Edouard" <edouard.gaudemet@ic.ac.uk>,"Gaynon, Michael"@ic.ac.uk,
+ <michael.gaynon@ic.ac.uk>,"George, Angela" <angela.george@ic.ac.uk>,,
+ "Girard, Thibaut" <thibaut.girard@ic.ac.uk>,"Guerra Arias, Maria"@ic.ac.uk,
+ <maria.guerra-arias@ic.ac.uk>,"Haigh, Jennifer"@ic.ac.uk,
+ <jennifer.haigh@ic.ac.uk>,"Hakim, Razia" <razia.hakim@ic.ac.uk>,,
+ "Hall, Gillian" <gillian.m.hall1@ic.ac.uk>,"Ibanez Garcia, Delisa"@ic.ac.uk,
+ <delisa.ibanez-garcia@ic.ac.uk>,"Isgren, Carl" <carl.isgren@ic.ac.uk>,,
+ J Machor <jamachor@hotmail.com>,Jaime Mateus <zzaime@hotmail.com>,,
+ Jake Lenson <lenson007@hotmail.com>,"Jasiewicz, Dorota"@ic.ac.uk,
+ <dorota.jasiewicz@ic.ac.uk>,"Jimenez Iglesias, Pilar"@ic.ac.uk,
+ <pilar.jimenez-iglesias@ic.ac.uk>,"jose.mortera-blanco"@ic.ac.uk,
+ <jose.mortera-blanco@ic.ac.uk>,"Kaparias, Ioannis"@ic.ac.uk,
+ <ioannis.kaparias@ic.ac.uk>,"Kirk, Paul" <paul.kirk@ic.ac.uk>,,
+ "Lazaro, Jorge" <jorge.lazaro@ic.ac.uk>,"Lewis, James"@ic.ac.uk,
+ <james.lewis@ic.ac.uk>,"Lubrich, Daniel"@ic.ac.uk,
+	<daniel.lubrich@ic.ac.uk>,
+ "Maniati, Margarita"@ic.ac.uk,
+	<margarita.maniati@ic.ac.uk>,
+ "Marcaida Lopez, Jose"@ic.ac.uk,
+	<jose.marcaida-lopez@ic.ac.uk>,"Marion, Claude"@ic.ac.uk,
+ <claude.marion@ic.ac.uk>,"Martinez Gomez, Alberto"@ic.ac.uk,
+ <alberto.martinez-gomez@ic.ac.uk>,"Mataix-Cols, David"@ic.ac.uk,
+ <d.mataix@ic.ac.uk>,"Mataix-Pastor, Vicente"@ic.ac.uk,
+ <vicente.mataix-pastor@ic.ac.uk>,"Mehta, Payal" <payal.mehta@ic.ac.uk>,,
+ "Meilmann, Yphat" <yphat.meilmann@ic.ac.uk>,"Moloney, Susan"@ic.ac.uk,
+ <susan.moloney@ic.ac.uk>,"Momen, Goldie" <goldie.momen@ic.ac.uk>,,
+ "Moscovici, Adrien" <adrien.moscovici@ic.ac.uk>,"Munoz, Lucas"@ic.ac.uk,
+ <lucas.munoz@ic.ac.uk>,"Nicolas, Brieuc" <brieuc.nicolas@ic.ac.uk>,,
+ "Nouri, Selim" <selim.nouri@ic.ac.uk>,"Novas, Antonio"@ic.ac.uk,
+ <antonio.novas@ic.ac.uk>,"Odeniran, Oluwadamilola"@ic.ac.uk,
+ <damilola.odeniran@ic.ac.uk>,"Oknayan, Shant" <shant.oknayan@ic.ac.uk>,,
+ "Papatheodorou, Irene V" <i.papatheodorou@ic.ac.uk>,"Parras, Luis"@ic.ac.uk,
+ <luis.parras@ic.ac.uk>,"Paul, Danielle M" <d.paul@ic.ac.uk>,,
+ "Pearse, Owen" <owen.pearse@ic.ac.uk>,"Pierobon, Paolo"@ic.ac.uk,
+ <paolo.pierobon@ic.ac.uk>,"Prieto Ortega, Javier"@ic.ac.uk,
+ <javier.prieto-ortega@ic.ac.uk>,"Puerto Gimenez, Irene"@ic.ac.uk,
+ <irene.o.puerto-gimenez@ic.ac.uk>,"Punjani, Jesal"@ic.ac.uk,
+ <jesal.punjani@ic.ac.uk>,"Quaranta, Luis" <luis.quaranta@ic.ac.uk>,,
+ "Quinones, Ignacio" <ignacio.quinones@ic.ac.uk>,"Ramos, Raul"@ic.ac.uk,
+ <raul.ramos@ic.ac.uk>,"Rao, Sharmila" <sharmila.rao@ic.ac.uk>,,
+ "Read, L A" <l.read@ic.ac.uk>,"Reynolds, Simon"@ic.ac.uk,
+ <simon.reynolds@ic.ac.uk>,"Richardson, Jenny"@ic.ac.uk,
+ <jenny.richardson@ic.ac.uk>,"Romera-Garcia, Jose"@ic.ac.uk,
+ <jose.romera-garcia@ic.ac.uk>,"Sacristan, Francisco"@ic.ac.uk,
+ <francisco.sacristan@ic.ac.uk>,Sarah Monelus <smonelus@excite.com>,,
+ "Sarnobat, Sridhar" <sridhar.sarnobat@ic.ac.uk>,"Schneeweiss, Astrid"@ic.ac.uk,
+ <astrid.schneeweiss@ic.ac.uk>,"Sen, Sudipto" <sudipto.sen@ic.ac.uk>,,
+ "Sharma, Aarti" <aarti.sharma@ic.ac.uk>,"Sim, Victoria"@ic.ac.uk,
+ <victoria.sim@ic.ac.uk>,<alexandros.skaliotis@ic.ac.uk>,
+ "Sohn Lee, Joonsik"@ic.ac.uk,
+	<joonsik.sohn-lee@ic.ac.uk>,"Spachis, Elisabeth"@ic.ac.uk,
+ <elisabeth.spachis@ic.ac.uk>,"Trachtman, Tal" <tal.trachtman@ic.ac.uk>,,
+ "Trifunovic, Aleksandar" <aleksandar.trifunovic@ic.ac.uk>,,
+ "Tufet-Bayona, Marta" <marta.tufet-bayona@ic.ac.uk>,"Tzircotis, George"@ic.ac.uk,
+ <george.tzircotis@ic.ac.uk>,"Urrestarazu, Victoria"@ic.ac.uk,
+ <victoria.urrestarazu@ic.ac.uk>,"Uttamchandani, Manish"@ic.ac.uk,
+ <manish.uttamchandani@ic.ac.uk>,"Volikos, Emmanuel"@ic.ac.uk,
+ <emmanuel.volikos@ic.ac.uk>,"Whittaker, Carly"@ic.ac.uk,
+ <carly.whittaker@ic.ac.uk>,"Windisch, David" <david.windisch@ic.ac.uk>,,
+ "Witton-Dauris, Julia" <julia.witton-dauris@ic.ac.uk>,"Wood, Caroline"@ic.ac.uk,
+ <caroline.wood@ic.ac.uk>,"Yustres Real, Angel"@ic.ac.uk,
+ <angel.yustres-real@ic.ac.uk>,Zahera Ghazoui <yahoozahera@hotmail.com>,,
+ "Zaki, Hind" <hind.zaki@ic.ac.uk>,"Hariton Korizis"@ic.ac.uk,
+	<hariton.korizis@ic.ac.uk>,
+ waiwaitong@hotmail.com;,manuel.rivero@ic.ac.uk;,
+ helder_da_rosa@hotmail.com;,bilal.mannaa@ic.ac.uk;,
+ chrisden@hotmail.com;,alex.bateman@ic.ac.uk;,arnaud.pujol@ic.ac.uk;,
+ karen.ng@ic.ac.uk;,iago.martinez@ic.ac.uk;,piers.ingram@ic.ac.uk;,
+ christopher.kemp@ic.ac.uk;,john.noel@ic.ac.uk;,vivian.serfaty@ic.ac.uk;,
+ neelun@hotmail.com;,chiara.baggio@ic.ac.uk;,mustafa.ilyas@ic.ac.uk;,
+ zayd.armanazi@ic.ac.uk;,stefanos.pandoulas@ic.ac.uk;,
+ demelza.north@ic.ac.uk;,miguel.de-luna-gomez@ic.ac.uk;,
+ kilian.keaney@ic.ac.uk;,l.bouvier@ic.ac.uk;,jonathan.clarke@ic.ac.uk;,
+ francesca.harris@ic.ac.uk;,alexandros.lambrou@ic.ac.uk;,
+ d.douglas@nhm.ac.uk;,tarek.mouganie@ic.ac.uk;,
+ carolos.georgallis@ic.ac.uk;,jay.amarshi@ic.ac.uk;,
+ nicholas.dragatsis@ic.ac.uk;,eva.haden@ic.ac.uk;,
+ thomas.holliday@ic.ac.uk;,eleanore.king@ic.ac.uk;,v.sakai@ic.ac.uk;,
+ joao.paixao-moreira@ic.ac.uk;,matthias.bader@ic.ac.uk;,
+ alexia.paolinelis@ic.ac.uk;,tom.waterfall@ic.ac.uk;,
+ clare.sutcliffe@ic.ac.uk;,laure.dubly@ic.ac.uk;,daniel.heesch@ic.ac.uk;,
+ r.wang@ic.ac.uk;,a.rana@ic.ac.uk;,aurelie.brulant@ic.ac.uk;,
+ tania.kapoor@ic.ac.uk;,astrid.schneeweiss@ic.ac.uk,
+ "Max Werner" <maximilian.werner@ic.ac.uk>,
+ "Matthieu Baudrand"       <matthieu.baudrand@ic.ac.uk>,
+ "Ron Ng"                  <ronald.ng@ic.ac.uk>,
+ "Carlos Diaz"             <carlos.diaz@ic.ac.uk>,
+ "Dominic Booth"           <dominic.booth@ic.ac.uk>,
+ "Lorenzo Donini Ferretti" <lelondf@yahoo.com>,
+ "Victoria Urrestarazu"    <victoria.urrestarazu@ic.ac.uk>,
+ "Roger Choi"              <rrrrr12345@yahoo.com>,
+ "Raul J. Ramos"           <raul.ramos@ic.ac.uk>,
+ "Joonsik Suhn, Como escribiste todo en mayuscula no sabia donde separar el,apellido y el nombre, avisame si me he equivocado" <joon_s@hanmail.net>,
+ hk499@ic.ac.uk;,maximilian.werner@ic.ac.uk;,mu01@doc.ic.ac.uk;,
+ pilar.jimemez@ic.ac.uk;,javier.prito-ortega@ic.ac.uk;,jjp00@ic.ac.uk;,
+ antonio.novas@ic.ac.uk;,delisagarcia@yahoo.com;,
+ lidia.lopez-jimenez@ic.ac.uk;,marta.tufet-bayona@ic.ac.uk;,
+ luquis@eresmas.com;,paolo.pierobon@ic.ac.uk
+From: Gonzalo <gonzaio.martinez-de-azagra@ic.ac.uk>
+Subject: Come to the Cinema NOW!! FREE
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Status: RO
+X-Status: DA
+X-Keywords:               
+X-UID: 7
+
+Level 4, room 408 Lecture Theathre, Electrical & Electronic Dep.
+
+@ 5  , El dia de la Bestia
+
+Subtitled
+
+

@@ -1,0 +1,68 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Medical Image Visualization and Analysis</title>
+<link rel="stylesheet" href="file:///I:/style.css">
+</head>
+
+<body>
+<b><p class="title" align="center">Medical Image Visualization and Analysis</p></b>
+<p>
+With advances in technology of medical imaging, the display and analysis of medical images is becoming more and more important. Medical imaging is becoming one of the most important sources of information for medical practitioners and as a result techniques of image visualization and analysis have to be sophisticated.
+</p>
+
+<p><h2>Visualization techniques</h2>
+<p>
+See visulization in <a href ="">imaging</a> for further information</p>
+<p>
+Research is done in this area to develop visualization allowing optimal (usually 3D) representation of images.  The use of virtual and augmented reality is also becoming increasingly important in this field.
+</p>
+<p>
+As different imaging modalities are being developed, visualization of multi-parameter medical image data sets is becoming more important.  It is usually desirable to map all these data sets into a single gray-scale image.  For this purpose the Self Organizing-map (SOM) visualization technique is used. This is a neural network that maps data from n-dimensional space into a lattice of nodes where each node represents a reference vector.  Maps can be of any dimensions less than n, though usually SOM applications use two-dimensional maps.   
+</p>
+<p>
+The SOM can in fact be thought of as an ordered array of nodes.  A gray scale can thus be mapped along it, hence generating a single image which combines information of all component images.
+</p>
+
+<p>
+<h2>Segmentation</h2>
+<p>See segmentation in <a href ="">imaging</a> for further information</p>
+<h3>Manual Segmentation</h3>
+<blockquote>
+<li type = "circle">What is most usual but not always suitable</li>
+<li type = "circle">Problems arise when there are many organs identified in an image.</li>
+<li type = "circle">Amount of work is greatly increased and there is poor reproducibility of results.</li>
+</blockquote>
+<p align = "center">
+<img src = "segmented_abdomen.jpg" width="275" height="328">
+</p>
+<p align = "center"> A complete segmented 3D model of a female abdomen </p>
+
+<p>
+<li><h3>Automatic Segmentation</h3>
+This technique is more useful the manual segmentation.  In earlier years, it was done based on the assumption that radiological images were self-contained, which is not true.  As a result the technique worked in only limited applications because in fact radiologists use related knowledge in different fields to analyse an image.  Research is being done to find ways to code and use such knowledge for image segmentation.
+
+<p>
+<li><h3>More generic solutions</h3>
+
+Automatic segmentation generally works only for a narrow range of radiological data.  More generic platforms are desirable and these can be expected by developing interactive 3-dimensional segmentation systems which allow cooperation between image analysis algorithms and human operators.
+
+<p>
+<h2>MIPAV – Medical Image Processing Analysis and Visualization</h2>
+
+This is a program developed to process image data from most medical imaging modalities.  It has the following properties:
+<blockquote>
+<ol>1.	N-dimensional</ol>
+<ol>2.	Platform independent</ol>
+<ol>3.	It can process data from most medical image modalities</ol>
+<ol>4.	It can function as an end-user application or as an Application Programming Interface (API).</ol>
+<ol>5.	It is written in JAVA and is modular in design.</ol>
+<ol>6.	Its data-type buffer can store and process images of up to four dimensions.</ol>
+<ol>7.	One of its modules contains over 20 image processing and analysis tools.</ol> 
+</blockquote>
+</body>
+
+</html>

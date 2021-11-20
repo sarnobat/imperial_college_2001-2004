@@ -1,0 +1,257 @@
+
+\documentclass[pdftex,french,english,a4paper,10pt,twoside,openright,]{report}
+\label{book}
+\usepackage[pdftex]{graphicx}
+\pdfcompresslevel=9
+\usepackage{anysize}
+\marginsize{3cm}{2cm}{1.25cm}{1.25cm}
+% ---------------------- 
+% Most Common Packages   
+% ---------------------- 
+\usepackage{makeidx} 
+\usepackage{varioref}         
+\usepackage{latexsym}         
+\usepackage{enumerate}         
+\usepackage{fancybox}      
+\usepackage{float}       
+\usepackage{ragged2e}       
+\usepackage[french]{babel} 
+\usepackage{isolatin1}         
+\usepackage{rotating}         
+\usepackage{tabularx}         
+\usepackage{url}         
+\usepackage{fancyhdr}         
+% ---------------
+% Document Font  
+% ---------------
+\usepackage{palatino}
+% --------------------------------------------
+% Math support                                
+% --------------------------------------------
+\usepackage{amsmath,amsthm, amsfonts, amssymb, amsxtra,amsopn}
+ \theoremstyle{plain}
+ \newtheorem{thm}{Thérème}[section]
+ \newtheorem{cor}{Corollaire}[section]
+ \newtheorem{lem}{Lemme}[section]
+ \newtheorem{prop}{Proposition}[section]
+ \newtheorem{ax}{Axiome}[section]
+ \theoremstyle{remark}
+ \newtheorem{rem}{Remarque}[section]
+ \newtheorem{exm}{Exemple}[section]
+ \newtheorem{notation}{Notation}[section]
+ \theoremstyle{definition}
+ \newtheorem{defn}{Définition}[section]
+
+ \newcommand{\ntt}{\normalfont\ttfamily}
+ \newcommand{\thmref}[1]{Théoème~\ref{#1}}
+ \newcommand{\secref}[1]{\S\ref{#1}}
+ \newcommand{\lemref}[1]{Lemme~\ref{#1}}
+ \newcommand{\bysame}{\mbox{\rule{3em}{.4pt}}\,}
+ \newcommand{\A}{\mathcal{A}}
+ \newcommand{\B}{\mathcal{B}}
+ \newcommand{\XcY}{{(X,Y)}}
+ \newcommand{\SX}{{S_X}}
+ \newcommand{\SY}{{S_Y}}
+ \newcommand{\SXY}{{S_{X,Y}}}
+ \newcommand{\SXgYy}{{S_{X|Y}(y)}}
+ \newcommand{\Cw}[1]{{\hat C_#1(X|Y)}}
+ \newcommand{\G}{{G(X|Y)}}
+ \newcommand{\PY}{{P_{\mathcal{Y}}}}
+ \newcommand{\X}{\mathcal{X}}
+ \newcommand{\wt}{\widetilde}
+ \newcommand{\wh}{\widehat}
+ \DeclareMathOperator{\per}{per}
+ \DeclareMathOperator{\cov}{cov}
+ \DeclareMathOperator{\cf}{cf}
+ \DeclareMathOperator{\add}{add}
+ \DeclareMathOperator{\Cham}{Cham}
+ \DeclareMathOperator{\IM}{Im}
+ \DeclareMathOperator{\esssup}{ess\,sup}
+ \DeclareMathOperator{\essinf}{ess\,inf}
+ \DeclareMathOperator{\meas}{meas}
+ \DeclareMathOperator{\seg}{seg}
+ \DeclareMathOperator{\avg}{avg}
+ \DeclareMathOperator{\non}{non}
+
+\newcommand{\href}[1]{{}}
+\newcommand{\hyperlink}[1]{{}}
+\newcommand{\hypertarget}[2]{#2}
+% --------------------------------------------
+% Commands to manage/style/create floats      
+% figures, tables, algorithms, examples, eqn  
+% --------------------------------------------
+ \floatstyle{ruled}
+ \restylefloat{figure}
+ \floatstyle{ruled}
+ \restylefloat{table}
+ \floatstyle{ruled}
+ \newfloat{program}{ht}{lop}[section]
+ \floatstyle{ruled}
+ \newfloat{example}{ht}{loe}[section]
+ \floatname{example}{Example}
+ \floatstyle{ruled}
+ \newfloat{dbequation}{ht}{loe}[section]
+ \floatname{dbequation}{Equation}
+ \floatstyle{boxed}
+ \newfloat{algorithm}{ht}{loa}[section]
+ \floatname{algorithm}{Algorithm}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\newcommand{\docbooktolatexalignrl}{\protect\ifvmode\raggedleft\else\hfill\fi}
+\newcommand{\docbooktolatexalignrr}{\protect}
+\newcommand{\docbooktolatexalignll}{\protect\ifvmode\raggedright\else\fi}
+\newcommand{\docbooktolatexalignlr}{\protect\ifvmode\else\hspace*\fill\fi}
+\newcommand{\docbooktolatexaligncl}{\protect\ifvmode\centering\else\hfill\fi}
+\newcommand{\docbooktolatexaligncr}{\protect\ifvmode\else\hspace*\fill\fi}
+\title{\bfseries Theorems}
+\author{John Doe \and Ramon Casellas}
+% --------------------------------------------
+\makeindex
+\makeglossary
+% --------------------------------------------
+
+\setcounter{tocdepth}{4}
+
+\setcounter{secnumdepth}{4}
+\begin{document}
+
+\InputIfFileExists{title}{\typeout{WARNING: Using cover pagetitle}}{\pagestyle{empty}\maketitle\pagestyle{fancy}}
+
+% -------------------------------------------------------------
+% Chapter Chapter1 
+% ------------------------------------------------------------- 	
+\chapter{Chapter1}
+\label{id2715721}\hypertarget{id2715721}{}%
+
+% ------------------------   
+% Section 
+\section{Section}
+\label{id2708871}\hypertarget{id2708871}{}%
+
+
+        \index{HTML!XML vs.}
+        \index{Hypertext Markup Language|see{HTML}}
+        \index{SGML!HTML vs.}
+      
+
+% -------------------------------------------------------------
+% Chapter Chapter2 
+% ------------------------------------------------------------- 	
+\chapter{Chapter2}
+\label{id2715709}\hypertarget{id2715709}{}%
+
+% ------------------------   
+% Section 
+\section{Section}
+\label{id2716425}\hypertarget{id2716425}{}%
+
+
+        \index{HTML!XML vs.}
+        \index{Hypertext Markup Language|see{HTML}}
+        \index{SGML!HTML vs.}
+      
+
+% -------------------------------------------------------------
+% Chapter Chapter3 
+% ------------------------------------------------------------- 	
+\chapter{Chapter3}
+\label{id2716316}\hypertarget{id2716316}{}%
+
+% ------------------------   
+% Section 
+\section{Section}
+\label{id2716324}\hypertarget{id2716324}{}%
+
+
+        \index{HTML!XML vs.}
+        \index{Hypertext Markup Language|see{HTML}}
+        \index{SGML!HTML vs.}
+      
+
+% -------------------------------------------------------------
+% Chapter Chapter4 
+% ------------------------------------------------------------- 	
+\chapter{Chapter4}
+\label{id2718066}\hypertarget{id2718066}{}%
+
+% ------------------------   
+% Section 
+\section{Section}
+\label{id2718071}\hypertarget{id2718071}{}%
+
+
+        \index{HTML!XML vs.}
+        \index{Hypertext Markup Language|see{HTML}}
+        \index{SGML!HTML vs.}
+      
+
+% -------------------------------------------------------------
+% Chapter Chapter5 
+% ------------------------------------------------------------- 	
+\chapter{Chapter5}
+\label{id2718119}\hypertarget{id2718119}{}%
+
+% ------------------------   
+% Section 
+\section{Section}
+\label{id2718126}\hypertarget{id2718126}{}%
+
+
+        \index{HTML!XML vs.}
+        \index{Hypertext Markup Language|see{HTML}}
+        \index{SGML!HTML vs.}
+      
+
+% -------------------------------------------------------------
+% Chapter Chapter6 
+% ------------------------------------------------------------- 	
+\chapter{Chapter6}
+\label{id2718172}\hypertarget{id2718172}{}%
+
+% ------------------------   
+% Section 
+\section{Section}
+\label{id2718178}\hypertarget{id2718178}{}%
+
+
+        \index{HTML!XML vs.}
+        \index{Hypertext Markup Language|see{HTML}}
+        \index{SGML!HTML vs.}
+      
+
+% -------------------------------------------------------------
+% Chapter Chapter7 
+% ------------------------------------------------------------- 	
+\chapter{Chapter7}
+\label{id2718226}\hypertarget{id2718226}{}%
+
+% ------------------------   
+% Section 
+\section{Section}
+\label{id2718233}\hypertarget{id2718233}{}%
+
+
+        \index{HTML!XML vs.}
+        \index{Hypertext Markup Language|see{HTML}}
+        \index{SGML!HTML vs.}
+      
+
+% -------------------------------------------------------------
+% Chapter Chapter8 
+% ------------------------------------------------------------- 	
+\chapter{Chapter8}
+\label{id2718280}\hypertarget{id2718280}{}%
+
+% ------------------------   
+% Section 
+\section{Section}
+\label{id2718287}\hypertarget{id2718287}{}%
+
+
+        \index{HTML!XML vs.}
+        \index{Hypertext Markup Language|see{HTML}}
+        \index{SGML!HTML vs.}
+      
+\label{index}\printindex
+
+\end{document}
+

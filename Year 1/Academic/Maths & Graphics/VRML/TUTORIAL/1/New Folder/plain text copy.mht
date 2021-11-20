@@ -1,0 +1,245 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: 
+Date: Mon, 4 Feb 2002 13:38:13 -0000
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://philliphansel.com/shrine.txt
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4910.0300
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type>
+<META content=3D"MSHTML 5.00.3502.4373" name=3DGENERATOR></HEAD>
+<BODY><XMP>#VRML V2.0 utf8
+# Mr. Phillip (C)1998  mr.phillip@home.com
+# http://www.geocities.com/BourbonStreet/1855
+=20
+NavigationInfo {
+	                                    =20
+	avatarSize       [ 0.25, 1.6, 0.75 ]=20
+	headlight        TRUE               =20
+	speed            1.0                =20
+	type             ["WALK","ANY"]  =20
+	visibilityLimit  0.0               =20
+	                                    =20
+}
+
+DirectionalLight {
+	direction -0.2 -0.6 -0.8
+}
+
+DEF World Viewpoint {
+    position	0 1.65 15
+    description	"Shrine"
+}           =20
+
+Viewpoint {
+	fieldOfView 0.75
+	orientation 0.11 -0.991 0.066 0.97
+	position -41.  2  28=20
+	description "Shrine2"
+}
+
+
+
+
+Background {  groundAngle  1.5708 =20
+groundColor  [ 0.1 0.1 0.09,	 0.48 0.48 0.45 ]
+backUrl      []
+bottomUrl    []
+frontUrl     []
+leftUrl      []
+rightUrl     []
+topUrl       []
+skyAngle     [ 0.05, 0.1, 1, 1.5708 ]
+skyColor     [ 1 1 0.8, 1 1 0.5, 0.125 0.125 0.5, 0.3 0.3 0.55, 0.64 =
+0.734 0.844 ]}
+
+
+
+	Transform {
+translation 0 3.25 0=20
+    children [
+
+	Transform {   # shrine sphere with my smiling face #
+       translation 0 0 0
+        children
+          Shape {
+            appearance Appearance {
+			  texture ImageTexture {=20
+			  url     [ "newfacet.gif" ]      }
+			}
+            geometry Sphere { radius .4 }
+          }=09
+      }
+      Transform {   # shrine top #
+       translation 0 2 0
+        children
+          Shape {
+    appearance DEF MAT1 Appearance {
+			material Material {
+			emissiveColor     0 0 1   =20
+			#ambientIntensity  0.6           =20
+			#diffuseColor      0.0 0.0 0.0    	      =20
+			#shininess         0.5          =20
+			#specularColor     0 0 .2        =20
+			#transparency      0             =20
+		            }
+		        }      =20
+					=09
+            geometry Box { size 8.25 0.25 8.25 }
+          }
+      }
+  Transform {   # shrine top next #
+       translation 0 2.25 0
+        children
+          Shape { geometry Box { size 6 0.25 6 }
+            appearance  USE MAT1 }
+                       }
+              =20
+     =20
+  Transform {   # shrine top most #
+       translation 0 2.5 0
+        children
+          Shape {
+            appearance  USE MAT1
+            geometry Box { size 4 0.5 4 }
+          }
+      }
+  Transform {   # shrine stacked base #
+       translation 0 -2 0
+        children
+          Shape {
+            appearance  USE MAT1
+            geometry Box { size 5 0.2 5 }
+          }
+      }
+  Transform {   # shrine mo base #
+       translation 0 -2.2 0
+        children
+          Shape {
+            appearance USE MAT1
+            geometry Box { size 5.5 0.3 5.5 }
+          }
+      }
+  Transform {   # shrine mo mo base #
+       translation 0 -2.5 0
+        children
+          Shape {
+            appearance USE MAT1
+            geometry Box { size 6 0.25 6 }
+          }
+      }
+  Transform {   # shrine even mo base #
+       translation 0 -2.75 0
+        children
+          Shape {
+            appearance USE MAT1
+            geometry Box { size 9 0.5 9 }
+          }
+      }
+	 Transform {   # da ground #
+       translation 0 -2.75 0
+        children
+          Shape {
+					 appearance Appearance {
+			material Material {
+			#emissiveColor     0 1 0   =20
+			#ambientIntensity  0.6           =20
+		  diffuseColor      0.0 1.0 0.0    	      =20
+			#shininess         0.5          =20
+			#specularColor     0 0 .2        =20
+			#transparency      0             =20
+		            }
+		        }      =20
+          =20
+            geometry Box { size 100 0.25 100 }
+          }
+      }
+		=09
+  Transform {   # first 1 pillar #
+       translation -2 0 -2
+        children
+          DEF pillar Shape {
+            appearance USE MAT1
+            geometry Cylinder { height 4 radius .4 }
+          }
+      }
+  Transform {   # another 2 pillar
+       translation 2 0 2
+        children USE pillar
+      }
+  Transform {   # another 3 pillar
+       translation -2 0 2
+        children USE pillar
+      }
+  Transform {   # another 4 pillar
+       translation 2 0 -2
+        children USE pillar
+      }
+  Transform {   # another 5 pillar
+       translation 2 0 0
+        children USE pillar
+      }
+  Transform {   # another 6 pillar
+       translation -2 0 0
+        children USE pillar
+      }
+  Transform {   # another 7 pillar
+       translation 0 0 2
+        children USE pillar
+      }
+  Transform {   # another 8 pillar
+       translation 0 0 -2
+        children USE pillar
+      }
+
+  Transform {   # second row of 1 pillars #
+       translation 3.5 -.5 3.5
+        children
+          DEF pillar2 Shape {
+            appearance USE MAT1
+            geometry Cylinder { height 5 radius .5 }
+          }
+      }
+  Transform {   # another 2 pillar
+       translation 3.5 -.5 3.5
+        children USE pillar2
+      }
+  Transform {   # another 2 pillar
+       translation -3.5 -.5 -3.5
+        children USE pillar2
+      }
+  Transform {   # another 3 pillar
+       translation -3.5 -.5 3.5
+        children USE pillar2
+      }
+  Transform {   # another 4 pillar
+       translation 3.5 -.5 -3.5
+        children USE pillar2
+      }
+  Transform {   # another 5 pillar
+       translation 3.5 -.5 0
+        children USE pillar2
+      }
+  Transform {   # another 6 pillar
+       translation -3.5 -.5 0
+        children USE pillar2
+      }
+  Transform {   # another 7 pillar
+       translation 0 -.5 3.5
+        children USE pillar2
+      }
+  Transform {   # another 8 pillar
+       translation 0 -.5 -3.5
+        children USE pillar2
+      }
+
+    ] # End of root Transform's children
+ } # End of root Transform
+=20
+
+</XMP></BODY></HTML>

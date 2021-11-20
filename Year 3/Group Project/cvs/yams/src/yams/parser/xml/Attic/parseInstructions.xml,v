@@ -1,0 +1,51 @@
+head	1.2;
+access;
+symbols
+	yams-release2-17-12-03:1.1
+	yams-release-17-12-03:1.1
+	cleanup:1.1.0.2
+	Root_cleanup:1.1
+	stable-13-12-2003:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.12.19.14.08.14;	author qq01;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.14.16.51.44;	author ss401;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@deleted deprecated files
+@
+text
+@<?xml version="1.0" encoding="ISO-8859-1"?>
+<instructions>
+	<instr>
+		<name>add</name>
+		<type>R</type>
+		<argument>reg</argument>
+		<argument>reg</argument>
+		<argument>reg</argument>
+	</instr>	
+</instructions>@
+
+
+1.1
+log
+@Added XSLT parser files
+@
+text
+@@
+

@@ -1,0 +1,95 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2003.11.10.10.57.50;	author qq01;	state dead;
+branches;
+next	1.2;
+
+1.2
+date	2003.10.31.14.48.17;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.10.30.20.52.19;	author sw00;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 30-Oct-2003
+ *
+ */
+package exceptions;
+
+public class YAMSException extends Exception {
+
+	/**
+	 * 
+	 */
+	public YAMSException() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @@param message
+	 */
+	public YAMSException(String message) {
+		super(message);
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @@param message
+	 * @@param cause
+	 */
+	public YAMSException(String message, Throwable cause) {
+		super(message, cause);
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @@param cause
+	 */
+	public YAMSException(Throwable cause) {
+		super(cause);
+		// TODO Auto-generated constructor stub
+	}
+
+}
+@
+
+
+1.2
+log
+@typo
+@
+text
+@@
+
+
+1.1
+log
+@added by Simon
+@
+text
+@d5 1
+a5 1
+package src.exceptions;
+@
+

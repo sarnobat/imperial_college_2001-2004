@@ -1,0 +1,112 @@
+This is pdfTeX, Version 3.14159-1.10b (Web2C 7.4.5) (format=pdflatex 2003.3.13)  11 JUN 2004 15:03
+**finalReport.tex
+(./finalReport.tex{/usr/share/texmf/pdftex/config/pdftex.cfg}
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, b
+asque, italian, portuges, russian, spanish, nohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/report.cls
+Document Class: report 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size10.clo
+File: size10.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2001/08/31 v1.1 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 80.
+
+(/usr/share/texmf/tex/latex/graphics/pdftex.def
+File: pdftex.def 2002/06/19 v0.03k graphics/color for pdftex
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+) (./finalReport.aux)
+\openout1 = `finalReport.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+
+(/usr/share/texmf/tex/context/base/supp-pdf.tex
+(/usr/share/texmf/tex/context/base/supp-mis.tex
+loading : Context Support Macros / Missing
+\protectiondepth=\count89
+\scratchcounter=\count90
+\scratchtoks=\toks15
+\scratchdimen=\dimen105
+\scratchskip=\skip43
+\scratchmuskip=\muskip10
+\scratchbox=\box26
+\scratchread=\read1
+\scratchwrite=\write3
+\zeropoint=\dimen106
+\minusone=\count91
+\thousandpoint=\dimen107
+\emptytoks=\toks16
+\nextbox=\box27
+\nextdepth=\dimen108
+\everyline=\toks17
+\!!counta=\count92
+\!!countb=\count93
+\recursecounter=\count94
+)
+loading : Context Support Macros / PDF
+\nofMPsegments=\count95
+\nofMParguments=\count96
+\everyMPtoPDFconversion=\toks18
+)
+Chapter 1.
+(./01Introduction/introduction.tex) [1
+
+
+{/usr/share/texmf/dvips/config/pdftex.map}] (./finalReport.aux) ) 
+Here is how much of TeX's memory you used:
+ 894 strings out of 95386
+ 10693 string characters out of 1186005
+ 56303 words of memory out of 4000001
+ 3951 multiletter control sequences out of 10000+50000
+ 4553 words of font info for 17 fonts, out of 500000 for 1000
+ 26 hyphenation exceptions out of 1000
+ 25i,4n,19p,206b,172s stack positions out of 3000i,1500n,5000p,200000b,15000s
+ 10 PDF objects out of 300000
+ 0 named destinations out of 131072
+ 0 words of extra memory for PDF output out of 65536
+{/usr/share/te
+xmf/dvips/tetex/f7b6d320.enc}</usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb
+></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb>
+Output written on finalReport.pdf (1 page, 10067 bytes).

@@ -1,0 +1,51 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: The Transform Node
+Date: Tue, 5 Feb 2002 12:32:43 -0000
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://web.inc.bme.hu/~csonka/csg/oktat/www/wrl/tutorial/tut10.html
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4910.0300
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>The Transform Node</TITLE>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type>
+<META content=3D"MSHTML 5.00.3502.4373" name=3DGENERATOR></HEAD>
+<BODY aLink=3D#ff0000 bgColor=3D#ffffff link=3D#0000ee text=3D#000000 =
+vLink=3D#551a8b>
+<H3 align=3Dcenter>The Transform Node</H3>
+<P><FONT size=3D+1>Other keywords in this node include translation, =
+scaleFactor,=20
+and center. Since we know that the center of the cube is at (-45, 30, 0) =
+we=20
+would add the line: center -45 30 0. The rotation would then occur about =
+the=20
+y-axis of the point we specified. </FONT></P><PRE>      DEF Cube1 =
+Separator {
+
+            Transform {
+                        rotation 0 1 0 .7
+                } #Transform
+               =20
+            Translation {
+                        translation -45 30 0
+                } #Translation
+    } #Separator   =20
+</PRE>
+<HR>
+<B><FONT size=3D+1><A=20
+href=3D"http://web.inc.bme.hu/~csonka/csg/oktat/www/wrl/tutorial/tut10.wr=
+l">
+<P>+ Transformed cube</A> </FONT></B></P>
+<HR>
+<A =
+href=3D"http://web.inc.bme.hu/~csonka/csg/oktat/www/wrl/tutorial/tut11.ht=
+ml">
+<P>Next</A> <A=20
+href=3D"http://web.inc.bme.hu/~csonka/csg/oktat/www/wrl/tutorial/start.ht=
+ml">Table=20
+of contents</A> </P>
+<HR>
+</BODY></HTML>

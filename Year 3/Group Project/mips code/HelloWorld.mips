@@ -1,0 +1,72 @@
+# Hello World!
+# Ima X Traterrestrial
+# ixterres
+# 
+# Implement everyone's favourite first program:
+# Output the string "Hello World!" to standard output
+
+# Registers
+#   $1 -- number of characters left to print
+#   $2 -- the address of the Size "variable"
+#   $3 -- address of the next character in the array
+#   $4 -- the ascii value of the charac ter to output
+
+.globl Hello
+
+Hello:
+# Preserve registers on the stack
+        addi    $30, $30, -20   # make room on the stack
+        sw      $1, 0($30)      # save $1
+        sw      $2, 4($30)      # save $2
+        sw      $3, 8($30)      # save $3
+        sw      $4, 12($30)     # save $4
+        sw      $31, 16($30)    # save $31
+
+# initialize the registers to read the Size and Text variables
+        add     $4, $0, $0      # initialize $4
+        llo     $2, Size        # get size of the string
+        lhi     $2, Size
+        llo     $3, Text        # get starting address
+        lhi     $3, Text
+
+        lw      $1, 0($2)       # load the Size value
+
+loop:   beq     $1, $0, done    # if string is empty, exit
+        addi    $1, $1, -1      # decrement character count
+        lw      $4, 0($3)       # load array value 
+        trap    101             # output the character
+        addi    $3, $3, 4       # increment the string pointer
+        j       loop            # do it again
+
+# restore registers and stack, then return to calling procedure
+done:   lw      $1, 0($30)      # restore register 1
+        lw      $2, 4($30)      # restore register 2
+        lw      $3, 8($30)      # restore register 3
+        lw      $4, 12($30)     # restore register 4
+        lw      $31, 16($30)    # restore register 31
+        addi    $30, $30, 20    # free space on stack
+
+        jr      $31             # return to calling procedure
+
+# Values of variables in memory
+
+Size:   .word   13      # the integer variable for the size of Text
+
+# the Text string/character array:
+Text:   .word   72      # H
+        .word   101     # e
+        .word   108     # l
+        .word   108     # l
+        .word   111     # o
+        .word   32      # <space> 
+        .word   87      # W
+        .word   111     # o
+        .word   114     # r
+        .word   108     # l
+        .word   100     # d
+        .word   33      # !
+        .word   10      # \n
+
+        .align  4       # just for safety
+
+

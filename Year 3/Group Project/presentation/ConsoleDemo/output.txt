@@ -1,0 +1,4 @@
+ADAMDiv.asm,18
+JAMESDiv.asm,18
+LABDiv.asm,14
+Total Cycles,50

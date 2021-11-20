@@ -1,0 +1,22 @@
+MINUTES - PROJECT MEETING
+=============================================
+Date: 10/11/03
+Time: 1000
+Location: Blueshift Lab
+
+Present: Adam, James, Ben, Qian, Sridhar, Simon
+----------------------------------------------------
+
+Progress made so far:
+
+- The parser is now working with a few instructions, but not integrated with the XML yet.  Returns a tree
+
+- Ben hopes to finish his part of the processor bit by middle of this week
+
+- XML can be done in parallel with the GUI as long as the parser is working with a few instructions
+
+- Directives are best treated as instructions, but have to be treated differently in the assembler
+
+- SPIM only supports a subset of these directives, so we should aim for this.
+
+- Adam will come up with a draft for the report which is due in this friday.. each of us can then add to our individual parts, including diagrams..

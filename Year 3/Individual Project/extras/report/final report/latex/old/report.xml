@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<article id="ArticleId">
+	<articleinfo>
+		<title>Translating between XML and Relational Databases</title>
+		<authorgroup>
+			<author>
+				<surname>Sarnobat</surname>
+				<firstname>Sridhar</firstname>
+			</author>
+			<corpauthor>Imperial College London</corpauthor>
+		</authorgroup>
+	</articleinfo>
+	<abstract>
+		<para>XML has received considerable attention as a standard for data interchange on the Internet. Since much data held by organisations is held in relational databases (RDBMS), an issue of research and development has been on how information can be converted between XML and relational models. Most RDBMS vendors now support to some extent the importing and exporting of XML from RDBMS, but approaches tend to be inflexible and there are no standards in use. 
+</para>
+<para>
+This project involves the study of how XML data, restricted by DTD or XML Schemas, may be stored in a RDBMS, and also study of the reverse process, i.e. extracting an XML representation of information held in RBDMS. Issues concerning object-relational databases could also be addressed. 
+</para>
+	</abstract>
+	<sect1>
+		<title>Introduction</title>
+		<para> This paper.... the purpose of this work... highlights...
+Extensive simulations.... Numerical Results ...
+</para>
+	</sect1>
+	<sect1>
+		<title> Mathematical Model</title>
+		<para> The model proposed is as follows ... most ... simplicity...
+analytical....
+</para>
+	</sect1>
+	<sect1>
+		<title>Numerical Results</title>
+		<para> To illustrate the main purpose of this paper ... </para>
+	</sect1>
+	<sect1>
+		<title>Conclusion and future work</title>
+		<para>This paper has given an insight ... </para>
+	</sect1>
+	<bibliography>
+		<title>Bibliographie</title>
+		<biblioentry id="PimPum" xreflabel="PimPum">
+			<abbrev>PimPum</abbrev>
+			<title>" Pim Pam Pum"</title>
+			<authorgroup>
+				<author>
+					<firstname>James</firstname>
+					<surname>Pim</surname>
+				</author>
+				<author>
+					<firstname>Robert</firstname>
+					<surname>Pum</surname>
+				</author>
+			</authorgroup>
+			<publisher>
+				<publishername>Get a Life International Editions. ISBN 0-XS-xsxs-1</publishername>
+			</publisher>
+			<pubdate>2001</pubdate>
+		</biblioentry>
+	</bibliography>
+</article>

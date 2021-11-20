@@ -1,0 +1,148 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2003.11.21.16.21.31;	author ajb101;	state dead;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.21.15.57.45;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.21.15.11.12;	author ss401;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@/*
+ * Created on 20-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+package yams.GUI;
+
+import java.awt.Container;
+import java.awt.Dimension;
+
+import javax.swing.BoxLayout;
+import javax.swing.JFrame;
+import javax.swing.JInternalFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenuBar;
+import javax.swing.JPanel;
+import javax.swing.UIManager;
+
+/**
+ * @@author ss401
+ *
+ */
+public class YamsGUI {
+
+	public static void main(String[] args) {
+		try {
+			UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+		}
+		catch (Exception e) {
+			//System.out.println("Couldn't set look and feel. Default will be used." + e);
+		}
+
+		JFrame frame = new JFrame("Yet Another MIPS Simulator");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container c = frame.getContentPane();
+		c.setLayout(new BoxLayout(c, BoxLayout.X_AXIS));
+		
+		JMenuBar menu = new JMenuBar();
+		menu.add("File", new JLabel("File2"));
+		menu.add("View", new JLabel("View2"));
+		menu.add("Help", new JLabel("Help2"));
+		frame.setJMenuBar(menu);
+		
+		
+		
+
+
+		JPanel left = addPanel(c);
+		JPanel centre = addPanel(c);
+		JPanel right = addPanel(c);
+
+		addFrame(left, "File Selector");
+		addFrame(left, "Statistics");
+		addFrame(centre, "Registers");
+		addFrame(centre, "Data");
+		addFrame(centre, "Dialog");
+		addFrame(right, "Execution Controls");
+		addFrame(right, "Program Code");
+
+		c.add(left);
+		c.add(centre);
+		c.add(right);
+
+		frame.setSize(600, 600);
+		//frame.pack();
+		frame.show();
+	}
+
+	private static JPanel addPanel(Container c) {
+		JPanel p = new JPanel();
+
+		p.setLayout(new BoxLayout(p, BoxLayout.Y_AXIS));
+		c.add(p);
+		return p;
+
+	}
+
+
+	private static void addFrame(Container c, String label) {
+
+		JInternalFrame l1 = new JInternalFrame(label);
+		l1.setPreferredSize(new Dimension(100, 300));
+		l1.setClosable(true);
+
+		l1.setResizable(true);
+		l1.setMaximizable(true);
+
+		l1.setEnabled(true);
+		l1.setIconifiable(true); //Enables minimize button in window
+
+		l1.show();
+		c.add(l1);
+	}
+}
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.1
+log
+@Added GUI file
+@
+text
+@d7 1
+a7 1
+package yams.src.yams.GUI;
+@
+

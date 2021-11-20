@@ -1,0 +1,57 @@
+<!DOCTYPE web-app 
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" 
+    "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+
+<web-app>
+
+    <!-- General description of your web application -->
+
+    <display-name>JDBC Examples</display-name>
+    <description>
+    	aardvark.
+    </description>
+
+
+    <context-param>
+      <param-name>webmaster</param-name>
+      <param-value>dcw@doc.ic.ac.uk</param-value>
+      <description>
+        The EMAIL address of the administrator to whom questions
+        and comments about this application should be addressed.
+      </description>
+    </context-param>
+
+    <servlet>
+      <servlet-name>servlet_mssql</servlet-name>
+      <servlet-class>Servlet_MSSQL</servlet-class>
+      <!-- Load this servlet at server startup time -->
+      <load-on-startup>5</load-on-startup>
+    </servlet>
+
+    <servlet>
+      <servlet-name>servlet_postgres</servlet-name>
+      <servlet-class>Servlet_Postgres</servlet-class>
+      <!-- Load this servlet at server startup time -->
+      <load-on-startup>5</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+      <servlet-name>servlet_mssql</servlet-name>
+      <url-pattern>/Servlet_MSSQL</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+      <servlet-name>servlet_postgres</servlet-name>
+      <url-pattern>/Servlet_Postgres</url-pattern>
+    </servlet-mapping>
+
+    <!-- Define the default session timeout for your application,
+         in minutes.  From a servlet or JSP page, you can modify
+         the timeout for a particular session dynamically by using
+         HttpSession.getMaxInactiveInterval(). -->
+
+    <session-config>
+      <session-timeout>30</session-timeout>    <!-- 30 minutes -->
+    </session-config>
+
+</web-app>

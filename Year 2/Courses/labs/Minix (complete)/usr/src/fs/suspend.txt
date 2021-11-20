@@ -1,0 +1,32 @@
+device.c:	 * request. The caller will do the revive for the process.
+device.c:	revive(local_m.REP_PROC_NR, local_m.REP_STATUS);
+device.c:	revive(mess_ptr->REP_PROC_NR, mess_ptr->REP_STATUS);
+lock.c: *   lock_revive: revive processes when a lock is released
+lock.c:  if (unlocking) lock_revive();
+lock.c: *				lock_revive				     *
+lock.c:PUBLIC void lock_revive()
+lock.c: * revive them all.  The ones that are still blocked will block again when 
+lock.c:		revive( (int) (fptr - fproc), 0);
+main.c:		if (rp->fp_revived == REVIVING) {
+main.c:			rp->fp_revived = NOT_REVIVING;
+main.c:	panic("get_work couldn't revive anyone", NO_NUM);
+main.c:  /* Normal case.  No one to revive. */
+misc.c: *   do_revive:	  revive a process that was waiting for something (e.g. TTY)
+misc.c: *				do_revive				     *
+misc.c:PUBLIC int do_revive()
+misc.c: * in revive().
+misc.c:  revive(m.REP_PROC_NR, m.REP_STATUS);
+open.c: *  it suspends the caller, otherwise it revives all other blocked
+open.c:  } else if (susp_count > 0) {/* revive blocked processes */
+open.c:  if (nr_locks < lock_count) lock_revive();	/* lock released */
+pipe.c: * process can't continue it is suspended, and revived later when it is able
+pipe.c: *   revive:	  mark a suspended process as able to run again
+pipe.c:			rp->fp_revived == NOT_REVIVING &&
+pipe.c:		revive((int)(rp - fproc), 0);
+pipe.c: *				revive					     *
+pipe.c:PUBLIC void revive(proc_nr, bytes)
+pipe.c:int proc_nr;			/* process to revive */
+pipe.c:  if (proc_nr < 0 || proc_nr >= NR_PROCS) panic("revive err", proc_nr);
+pipe.c:  if (rfp->fp_suspended == NOT_SUSPENDED || rfp->fp_revived == REVIVING)return;
+pipe.c:	rfp->fp_revived = REVIVING;
+table.c:	do_revive,	/* 67 = REVIVE	*/

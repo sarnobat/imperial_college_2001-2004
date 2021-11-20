@@ -1,0 +1,2245 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: Appendix A - Node Reference
+Date: Mon, 4 Feb 2002 13:33:31 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0080_01C1AD80.898812E0";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4910.0300
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file://D:\VRML%20tutorial\Appendix%20A%20-%20Node%20Reference.htm
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from =
+url=3D(0059)http://www.agocg.ac.uk/train/vrml2rep/appendix/appxanod.htm =
+--><HTML><HEAD><TITLE>Appendix A - Node Reference</TITLE>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type>
+<META content=3D"MSHTML 5.00.3502.4373" name=3DGENERATOR></HEAD>
+<BODY background=3D"" bgColor=3Dwhite link=3D#0000ff text=3Dblack =
+vLink=3D#800080>
+<TABLE border=3D0 cellSpacing=3D10 width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD width=3D160><IMG alt=3D"AGOCG logo" height=3D64=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/agocgs.gif"=20
+      width=3D150></TD>
+    <TD></TD>
+    <TD align=3Dright width=3D400>
+      <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D400>
+        <TBODY>
+        <TR>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/graphics.htm"><IMG =
+alt=3DGraphics=20
+            border=3D0 height=3D25=20
+            =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/graphics.gif"=20
+            width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/mmedia.htm"><IMG =
+alt=3DMultimedia=20
+            border=3D0 height=3D25=20
+            =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/mmedia.gif"=20
+            width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/virtual.htm"><IMG alt=3DVR =
+border=3D0=20
+            height=3D25=20
+            =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/virtual.gif"=20
+            width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/visual.htm"><IMG =
+alt=3DVisualisation=20
+            border=3D0 height=3D25=20
+            =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/vis.gif"=20
+            width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/cdroot.htm"><IMG =
+alt=3DContents border=3D0=20
+            height=3D25=20
+            =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/contents.gif"=20
+            width=3D80></A></TD></TR>
+        <TR>
+          <TD colSpan=3D4 height=3D13 width=3D320><IMG border=3D0 =
+height=3D13=20
+            =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/baro.gif"=20
+            width=3D320></TD>
+          <TD align=3Dright height=3D13 width=3D80><IMG border=3D0 =
+height=3D13=20
+            =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/bari.gif"=20
+            width=3D78></TD></TR></TR>
+        <TR>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/virtual.htm#train"><IMG =
+alt=3DTraining=20
+            border=3D0 height=3D25=20
+            =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/traino.gif"=20
+            width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/virtual.htm#reports"><IMG =
+alt=3DReports=20
+            border=3D0 height=3D25=20
+            =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/reporto.gif"=20
+            width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/virtual.htm#workshop"><IMG=20
+            alt=3DWorkshops border=3D0 height=3D25=20
+            =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/wshopo.gif"=20
+            width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/virtual.htm#briefings"><IMG=20
+            alt=3DBriefings border=3D0 height=3D25=20
+            =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/briefo.gif"=20
+            width=3D80></A></TD>
+          <TD height=3D25 width=3D80 cellpadding=3D"0"><A=20
+            href=3D"http://www.agocg.ac.uk/index.htm"><IMG alt=3DIndex =
+border=3D0=20
+            height=3D25=20
+            =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/index.gif"=20
+            =
+width=3D80></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE bgColor=3D#800000 border=3D0 cellSpacing=3D0 width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD><FONT color=3D#ffffff>&nbsp;<I>Appendix A: <B>Node=20
+      Reference</B></I></FONT>=20
+    <TD align=3Dright><A=20
+      =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/appendix/appxafie.htm"><IMG=
+=20
+      alt=3Dprevious border=3D0=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/rprev.gif"></A><IMG=20
+      border=3D0=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/rline.gif"><A=20
+      href=3D"http://www.agocg.ac.uk/train/vrml2rep/contents.htm"><IMG=20
+      alt=3Dcontents border=3D0=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/rcont.gif"></A><IMG=20
+      border=3D0=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/rline.gif"><A=20
+      =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/appendix/appxa.htm"><IMG=20
+      alt=3Dstart border=3D0=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/rstart.gif"></A><IMG=20
+      border=3D0=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/rline.gif"><A=20
+      href=3D"http://www.agocg.ac.uk/train/vrml2rep/cover.htm"><IMG =
+alt=3Dnext=20
+      border=3D0=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/rnext.gif"></A>=20
+    </TD></TR></TBODY></TABLE>
+<H1>Node Reference</H1>
+<BLOCKQUOTE>This section lists all the VRML nodes and their fields. Each =
+
+  definition contains:=20
+  <UL>
+    <LI>the node's name (e.g. <TT><B>Sphere</B></TT>)<BR>
+    <LI>each field name (e.g. <TT><B>radius</B></TT>)<BR>
+    <LI>default value for each field (e.g. <TT><B>1</B></TT>)<BR>
+    <LI>the field type (e.g. <TT>field</TT>)<BR>
+    <LI>field value type (e.g. <TT>SFFloat)</TT><BR>
+    <LI>the range of acceptable values (e.g. <TT>(0,<IMG=20
+    =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)=20
+    </TT><I>indicates that the value must be greater than zero but less =
+than=20
+    infinity, square brackets indicate an inclusive boundary, e.g.=20
+    </I><TT>[0,1]</TT><I> means</I> 0 &lt;=3D <I>value </I>&lt;=3D 1) =
+</LI></UL>
+  <P>EventIn and eventOut fields cannot be set when writing a VRML node, =
+so are=20
+  shown in a light type. The symbols on the left of each node name, =
+indicate the=20
+  type and properties of that node.=20
+  <P>
+  <TABLE border=3D1>
+    <TBODY>
+    <TR>
+      <TD><IMG=20
+        =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/group.gif">=20
+
+      <TD colSpan=3D2>Grouping node that has a field containing children =
+nodes.=20
+    <TR>
+      <TD><IMG=20
+        =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif">=20
+
+      <TD colSpan=3D2>Child node. Typical functions:=20
+    <TR>
+      <TD>
+      <TD><IMG=20
+        =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/light.gif">=20
+
+      <TD>light source=20
+    <TR>
+      <TD>
+      <TD><IMG=20
+        =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/sensor.gif">=20
+
+      <TD>sensor<BR>
+    <TR>
+      <TD>
+      <TD><IMG=20
+        =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/interpol.gif">=20
+
+      <TD>interpolator (for key-frame animation) <BR>
+    <TR>
+      <TD>
+      <TD><IMG=20
+        =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/time.gif">=20
+
+      <TD>time dependent node (activate and deactivate at specific =
+times)<BR>
+    <TR>
+      <TD>
+      <TD><IMG=20
+        =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/bind.gif">=20
+
+      <TD>bindable node (only one node of each type can be bound at a=20
+time)<BR>
+    <TR>
+      <TD><IMG=20
+        =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif">=20
+
+      <TD colSpan=3D2>Property node, used in particular fields of child=20
+        nodes.<BR>
+    <TR>
+      <TD>
+      <TD><IMG=20
+        =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geometry.gif">=20
+
+      <TD>node appears in the <TT><B>geometry</B></TT> field of the=20
+        <TT><B>Shape</B></TT> node<BR>
+    <TR>
+      <TD>
+      <TD><IMG=20
+        =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/appearan.gif">=20
+
+      <TD>node used within one of the fields of the =
+<TT><B>Appearance</B></TT>=20
+        node<BR>
+    <TR>
+      <TD>
+      <TD><IMG=20
+        =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geomprop.gif">=20
+
+      <TD>geometric property node, used within geometry nodes.=20
+  </TD></TR></TBODY></TABLE></P></BLOCKQUOTE>
+<P>
+<TABLE width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD vAlign=3Dtop width=3D30><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/group.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/sensor.gif">=20
+
+    <TD><PRE><B>Anchor { </B>
+  addChildren                 # eventIn       MFNode  =20
+  removeChildren              # eventIn       MFNode  =20
+  <B>children        []</B>          # exposedField  MFNode  =20
+  <B>description     ""</B>          # exposedField  SFString =20
+  <B>parameter       []</B>          # exposedField  MFString=20
+  <B>url             []</B>          # exposedField  MFString=20
+  <B>bboxCenter      0 0 0</B>       # field         SFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>bboxSize        -1 -1 -1</B>    # field         SFVec3f   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">) or -1,-1,-1
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif">=20
+
+    <TD><PRE><B>Appearance { </B>
+  <B>material         NULL</B>       # exposedField  SFNode=20
+  <B>texture          NULL</B>       # exposedField  SFNode=20
+  <B>textureTransform NULL</B>       # exposedField  SFNode=20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/time.gif">=20
+
+    <TD><PRE><B>AudioClip { </B>
+  <B>description      ""</B>         # exposedField  SFString=20
+  <B>loop             FALSE</B>      # exposedField  SFBool  =20
+  <B>pitch            1.0</B>        # exposedField  SFFloat   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>startTime        0</B>          # exposedField  SFTime    (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>stopTime         0</B>          # exposedField  SFTime    (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>url              []</B>         # exposedField  MFString=20
+  duration_changed            # eventOut      SFTime  =20
+  isActive                    # eventOut      SFBool  =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/bind.gif">=20
+
+    <TD><PRE><B>Background { </B>
+  set_bind                    # eventIn       SFBool  =20
+  <B>groundAngle     []</B>          # exposedField  MFFloat   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/pi.gif">/2]
+  <B>groundColor     []</B>          # exposedfield  MFColor   [0,1]
+  <B>backUrl         []</B>          # exposedField  MFString=20
+  <B>bottomUrl       []</B>          # exposedField  MFString=20
+  <B>frontUrl        []</B>          # exposedField  MFString=20
+  <B>leftUrl         []</B>          # exposedField  MFString=20
+  <B>rightUrl        []</B>          # exposedField  MFString=20
+  <B>topUrl          []</B>          # exposedField  MFString=20
+  <B>skyAngle        []</B>          # exposedField  MFFloat   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/pi.gif">]
+  <B>skyColor        [ 0 0 0 ]</B>   # exposedField  MFColor   [0,1]
+  isBound                     # eventOut      SFBool  =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/group.gif">=20
+
+    <TD><PRE><B>Billboard { </B>
+  addChildren                 # eventIn       MFNode  =20
+  removeChildren              # eventIn       MFNode  =20
+  <B>axisOfRotation   0 1 0</B>      # exposedField  SFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>children         []</B>         # exposedField  MFNode  =20
+  <B>bboxCenter       0 0 0</B>      # field         SFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>bboxSize         -1 -1 -1</B>   # field         SFVec3f   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">) or -1,-1,-1
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geometry.gif">=20
+
+    <TD><PRE><B>Box { </B>
+  <B>size            2 2 2</B>       # field         SFVec3f   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/group.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/sensor.gif">=20
+
+    <TD><PRE><B>Collision { </B>
+  addChildren                 # eventIn       MFNode  =20
+  removeChildren              # eventIn       MFNode  =20
+  <B>children        []</B>          # exposedField  MFNode  =20
+  <B>collide         TRUE</B>        # exposedField  SFBool  =20
+  <B>bboxCenter      0 0 0</B>       # field         SFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>bboxSize        -1 -1 -1</B>    # field         SFVec3f   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">) or -1,-1,-1
+  <B>proxy           NULL</B>        # field         SFNode  =20
+  collideTime                 # eventOut      SFTime  =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geomprop.gif">=20
+
+    <TD><PRE><B>Color { </B>
+  <B>color           []</B>          # exposedField  MFColor   [0,1]
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/interpol.gif">=20
+
+    <TD><PRE><B>ColorInterpolator { </B>
+  set_fraction                # eventIn       SFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>key             []</B>          # exposedField  MFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>keyValue        []</B>          # exposedField  MFColor   [0,1]
+  value_changed               # eventOut      SFColor=20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geometry.gif">=20
+
+    <TD><PRE><B>Cone { </B>
+  <B>bottomRadius    1</B>           # field         SFFloat   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>height          2</B>           # field         SFFloat   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>side            TRUE</B>        # field         SFBool   =20
+  <B>bottom          TRUE</B>        # field         SFBool   =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geomprop.gif">=20
+
+    <TD><PRE><B>Coordinate { </B>
+  <B>point           []</B>          # exposedField  MFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/interpol.gif">=20
+
+    <TD><PRE><B>CoordinateInterpolator { </B>
+  set_fraction                # eventIn       SFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>key             []</B>          # exposedField  MFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>keyValue        []</B>          # exposedField  MFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  value_changed               # eventOut      MFVec3f=20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geometry.gif">=20
+
+    <TD><PRE><B>Cylinder { </B>
+  <B>bottom          TRUE</B>        # field         SFBool   =20
+  <B>height          2</B>           # field         SFFloat   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>radius          1</B>           # field         SFFloat   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>side            TRUE</B>        # field         SFBool   =20
+  <B>top             TRUE</B>        # field         SFBool   =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/sensor.gif">=20
+
+    <TD><PRE><B>CylinderSensor { </B>
+  <B>autoOffset      TRUE</B>        # exposedField  SFBool    =20
+  <B>diskAngle       0.262</B>       # exposedField  SFFloat   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/pi.gif">/2)
+  <B>enabled         TRUE</B>        # exposedField  SFBool    =20
+  <B>maxAngle        -1</B>          # exposedField  SFFloat   [-2<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/pi.gif">,2<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/pi.gif">]
+  <B>minAngle        0</B>           # exposedField  SFFloat   [-2<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/pi.gif">,2<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/pi.gif">]
+  <B>offset          0</B>           # exposedField  SFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  isActive                    # eventOut      SFBool    =20
+  rotation_changed            # eventOut      SFRotation=20
+  trackPoint_changed          # eventOut      SFVec3f   =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/light.gif">=20
+
+    <TD><PRE><B>DirectionalLight { </B>
+  <B>ambientIntensity  0</B>         # exposedField  SFFloat   [0,1]
+  <B>color             1 1 1</B>     # exposedField  SFColor   [0,1]
+  <B>direction         0 0 -1</B>    # exposedField  SFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>intensity         1</B>         # exposedField  SFFloat   [0,1]
+  <B>on                TRUE</B>      # exposedField  SFBool =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geometry.gif">=20
+
+    <TD><PRE><B>ElevationGrid { </B>
+  set_height                  # eventIn       MFFloat =20
+  <B>color             NULL</B>      # exposedField  SFNode  =20
+  <B>normal            NULL</B>      # exposedField  SFNode  =20
+  <B>texCoord          NULL</B>      # exposedField  SFNode  =20
+  <B>height            []</B>        # field         MFFloat   (-,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>ccw               TRUE</B>      # field         SFBool  =20
+  <B>colorPerVertex    TRUE</B>      # field         SFBool  =20
+  <B>creaseAngle       0</B>         # field         SFFloat   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">]
+  <B>normalPerVertex   TRUE</B>      # field         SFBool  =20
+  <B>solid             TRUE</B>      # field         SFBool  =20
+  <B>xDimension        0</B>         # field         SFInt32   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>xSpacing          1.0</B>       # field         SFFloat   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>zDimension        0</B>         # field         SFInt32   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>zSpacing          1.0</B>       # field         SFFloat   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geometry.gif">=20
+
+    <TD><PRE><B>Extrusion { </B>
+  set_crossSection            # eventIn       MFVec2f   =20
+  set_orientation             # eventIn       MFRotation=20
+  set_scale                   # eventIn       MFVec2f   =20
+  set_spine                   # eventIn       MFVec3f   =20
+  <B>beginCap        TRUE</B>        # field         SFBool    =20
+  <B>ccw             TRUE</B>        # field         SFBool    =20
+  <B>convex          TRUE</B>        # field         SFBool    =20
+  <B>creaseAngle     0</B>           # field         SFFloat   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>crossSection    [ 1 1, 1 -1, -1 -1, -1 1, 1 1 ]</B>  =20
+                              # field         MFVec2f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>endCap          TRUE</B>        # field         SFBool    =20
+  <B>orientation     0 0 1 0</B>     # field         MFRotation =
+[-1,1],(-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>scale           1 1</B>         # field         MFVec2f   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>solid           TRUE</B>        # field         SFBool    =20
+  <B>spine           [ 0 0 0, 0 1 0 ]</B>  # field   MFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/bind.gif">=20
+
+    <TD><PRE><B>Fog { </B>
+  <B>color           1 1 1</B>       # exposedField  SFColor   [0,1]
+  <B>fogType         "LINEAR"</B>    # exposedField  SFString=20
+  <B>visibilityRange 0</B>           # exposedField  SFFloat   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  set_bind                    # eventIn       SFBool  =20
+  isBound                     # eventOut      SFBool  =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif">=20
+
+    <TD><PRE><B>FontStyle { </B>
+  <B>family          ["SERIF"]</B>   # field         MFString=20
+  <B>horizontal      TRUE</B>        # field         SFBool  =20
+  <B>justify         "BEGIN"</B>     # field         MFString=20
+  <B>language        ""</B>          # field         SFString=20
+  <B>leftToRight     TRUE</B>        # field         SFBool  =20
+  <B>size            1.0</B>         # field         SFFloat   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>spacing         1.0</B>         # field         SFFloat   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>style           "PLAIN"</B>     # field         SFString=20
+  <B>topToBottom     TRUE</B>        # field         SFBool  =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/group.gif">=20
+
+    <TD><PRE><B>Group { </B>
+  addChildren                 # eventIn       MFNode =20
+  removeChildren              # eventIn       MFNode =20
+  <B>children        []</B>          # exposedField  MFNode =20
+  <B>bboxCenter      0 0 0</B>       # field         SFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>bboxSize        -1 -1 -1</B>    # field         SFVec3f   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">) or -1,-1,-1
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/appearan.gif">=20
+
+    <TD><PRE><B>ImageTexture { </B>
+  <B>url             []</B>          # exposedField  MFString=20
+  <B>repeatS         TRUE</B>        # field         SFBool  =20
+  <B>repeatT         TRUE</B>        # field         SFBool  =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geometry.gif">=20
+
+    <TD><PRE><B>IndexedFaceSet { </B>
+  set_colorIndex              # eventIn       MFInt32=20
+  set_coordIndex              # eventIn       MFInt32=20
+  set_normalIndex             # eventIn       MFInt32=20
+  set_texCoordIndex           # eventIn       MFInt32=20
+  <B>color           NULL</B>        # exposedField  SFNode =20
+  <B>coord           NULL</B>        # exposedField  SFNode =20
+  <B>normal          NULL</B>        # exposedField  SFNode =20
+  <B>texCoord        NULL</B>        # exposedField  SFNode =20
+  <B>ccw             TRUE</B>        # field         SFBool =20
+  <B>colorIndex      []</B>          # field         MFInt32   [-1,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>colorPerVertex  TRUE</B>        # field         SFBool =20
+  <B>convex          TRUE</B>        # field         SFBool =20
+  <B>coordIndex      []</B>          # field         MFInt32   [-1,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>creaseAngle     0</B>           # field         SFFloat   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>normalIndex     []</B>          # field         MFInt32   [-1,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>normalPerVertex TRUE</B>        # field         SFBool =20
+  <B>solid           TRUE</B>        # field         SFBool =20
+  <B>texCoordIndex   []</B>          # field         MFInt32   [-1,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geometry.gif">=20
+
+    <TD><PRE><B>IndexedLineSet { </B>
+  set_colorIndex              # eventIn       MFInt32=20
+  set_coordIndex              # eventIn       MFInt32=20
+  <B>color           NULL</B>        # exposedField  SFNode =20
+  <B>coord           NULL</B>        # exposedField  SFNode =20
+  <B>colorIndex      []</B>          # field         MFInt32   [-1,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>colorPerVertex  TRUE</B>        # field         SFBool =20
+  <B>coordIndex      []</B>          # field         MFInt32   [-1,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/group.gif">=20
+
+    <TD><PRE><B>Inline { </B>
+  <B>url             []</B>          # exposedField  MFString=20
+  <B>bboxCenter      0 0 0</B>       # field         SFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>bboxSize        -1 -1 -1</B>    # field         SFVec3f   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">) or -1,-1,-1
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/group.gif">=20
+
+    <TD><PRE><B>LOD { </B>
+  <B>level           []</B>          # exposedField  MFNode =20
+  <B>center          0 0 0</B>       # field         SFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>range           []</B>          # field         MFFloat   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/appearan.gif">=20
+
+    <TD><PRE><B>Material { </B>
+  <B>ambientIntensity 0.2</B>        # exposedField  SFFloat   [0,1]
+  <B>diffuseColor    0.8 0.8 0.8</B> # exposedField  SFColor   [0,1]
+  <B>emissiveColor   0 0 0</B>       # exposedField  SFColor   [0,1]
+  <B>shininess       0.2</B>         # exposedField  SFFloat   [0,1]
+  <B>specularColor   0 0 0</B>       # exposedField  SFColor   [0,1]
+  <B>transparency    0</B>           # exposedField  SFFloat   [0,1]
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/appearan.gif">=20
+
+    <TD><PRE><B>MovieTexture { </B>
+  <B>loop            FALSE</B>       # exposedField  SFBool  =20
+  <B>speed           1.0</B>         # exposedField  SFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>startTime       0</B>           # exposedField  SFTime    (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>stopTime        0</B>           # exposedField  SFTime    (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>url             []</B>          # exposedField  MFString=20
+  <B>repeatS         TRUE</B>        # field         SFBool  =20
+  <B>repeatT         TRUE</B>        # field         SFBool  =20
+  duration_changed            # eventOut      SFTime  =20
+  isActive                    # eventOut      SFBool  =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/bind.gif">=20
+
+    <TD><PRE><B>NavigationInfo { </B>
+  set_bind                          # eventIn       SFBool  =20
+  <B>avatarSize      [0.25, 1.6, 0.75]</B> # exposedField  MFFloat  =
+[0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>headlight       TRUE</B>              # exposedField  SFBool  =20
+  <B>speed           1.0</B>               # exposedField  SFFloat  =
+[0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>type            ["WALK", "ANY"]</B>   # exposedField  MFString=20
+  <B>visibilityLimit 0.0</B>               # exposedField  SFFloat  =
+[0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  isBound                           # eventOut      SFBool  =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geomprop.gif">=20
+
+    <TD><PRE><B>Normal { </B>
+  <B>vector          []</B>          # exposedField  MFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/interpol.gif">=20
+
+    <TD><PRE><B>NormalInterpolator { </B>
+  set_fraction                # eventIn       SFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>key             []</B>          # exposedField  MFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>keyValue        []</B>          # exposedField  MFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  value_changed               # eventOut      MFVec3f=20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/interpol.gif">=20
+
+    <TD><PRE><B>OrientationInterpolator { </B>
+  set_fraction                # eventIn       SFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>key             []</B>          # exposedField  MFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>keyValue        []</B>          # exposedField  MFRotation =
+[-1,1],(-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  value_changed               # eventOut      SFRotation=20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif">=20
+
+    <TD><PRE><B>PixelTexture { </B>
+  <B>image           0 0 0</B>       # exposedField  SFImage=20
+  <B>repeatS         TRUE        </B># field         SFBool  =20
+  <B>repeatT         TRUE</B>        # field         SFBool  =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/sensor.gif">=20
+
+    <TD><PRE><B>PlaneSensor { </B>
+  <B>autoOffset      TRUE</B>        # exposedField  SFBool =20
+  <B>enabled         TRUE</B>        # exposedField  SFBool =20
+  <B>maxPosition     -1 -1</B>       # exposedField  SFVec2f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>minPosition     0 0</B>         # exposedField  SFVec2f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>offset          0 0 0</B>       # exposedField  SFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  isActive                    # eventOut      SFBool =20
+  trackPoint_changed          # eventOut      SFVec3f=20
+  translation_changed         # eventOut      SFVec3f=20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/light.gif">=20
+
+    <TD><PRE><B>PointLight { </B>
+  <B>ambientIntensity  0</B>         # exposedField  SFFloat   [0,1]
+<B>  attenuation       1 0 0</B>     # exposedField  SFVec3f   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>color             1 1 1</B>     # exposedField  SFColor   [0,1]
+  <B>intensity         1</B>         # exposedField  SFFloat   [0,1]
+  <B>location          0 0 0</B>     # exposedField  SFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>on                TRUE</B>      # exposedField  SFBool =20
+  <B>radius            100</B>       # exposedField  SFFloat   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geometry.gif">=20
+
+    <TD><PRE><B>PointSet { </B>
+  <B>color           NULL</B>        # exposedField  SFNode =20
+  <B>coord           NULL</B>        # exposedField  SFNode =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/interpol.gif">=20
+
+    <TD><PRE><B>PositionInterpolator { </B>
+  set_fraction                # eventIn       SFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>key             []</B>          # exposedField  MFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>keyValue        []</B>          # exposedField  MFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  value_changed               # eventOut      SFVec3f=20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/sensor.gif">=20
+
+    <TD><PRE><B>ProximitySensor { </B>
+  <B>center          0 0 0</B>       # exposedField  SFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>size            0 0 0</B>       # exposedField  SFVec3f   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>enabled         TRUE</B>        # exposedField  SFBool =20
+  isActive                    # eventOut      SFBool    =20
+  position_changed            # eventOut      SFVec3f   =20
+  orientation_changed         # eventOut      SFRotation=20
+  enterTime                   # eventOut      SFTime    =20
+  exitTime                    # eventOut      SFTime    =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/interpol.gif">=20
+
+    <TD><PRE><B>ScalarInterpolator { </B>
+  set_fraction                # eventIn       SFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>key             []</B>          # exposedField  MFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>keyValue        []</B>          # exposedField  MFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  value_changed               # eventOut      SFFloat=20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif">=20
+
+    <TD><PRE><B>Script { </B>
+  <B>url             []</B>              # exposedField  MFString=20
+  <B>directOutput    FALSE</B>           # field         SFBool  =20
+  <B>mustEvaluate    FALSE</B>           # field         SFBool  =20
+  # And any number of:
+  eventName                       # eventIn       eventType=20
+  <B>fieldName       initialValue</B>    # field         fieldType=20
+  eventName                       # eventOut      eventType=20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif">=20
+
+    <TD><PRE><B>Shape { </B>
+  <B>appearance      NULL</B>        # exposedField  SFNode=20
+  <B>geometry        NULL</B>        # exposedField  SFNode=20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif">=20
+
+    <TD><PRE><B>Sound { </B>
+  <B>direction       0 0 1</B>       # exposedField  SFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>intensity       1</B>           # exposedField  SFFloat   [0,1]
+  <B>location        0 0 0</B>       # exposedField  SFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>maxBack         10</B>          # exposedField  SFFloat   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>maxFront        10</B>          # exposedField  SFFloat   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>minBack         1</B>           # exposedField  SFFloat   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>minFront        1</B>           # exposedField  SFFloat   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>priority        0</B>           # exposedField  SFFloat   [0,1]
+  <B>source          NULL</B>        # exposedField  SFNode  =20
+  <B>spatialize      TRUE</B>        # field         SFBool  =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geometry.gif">=20
+
+    <TD><PRE><B>Sphere { </B>
+  <B>radius          1</B>           # field         SFFloat   (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/sensor.gif">=20
+
+    <TD><PRE><B>SphereSensor { </B>
+<B>  autoOffset      TRUE</B>        # exposedField  SFBool    =20
+  <B>enabled         TRUE</B>        # exposedField  SFBool    =20
+  <B>offset          0 1 0 0</B>     # exposedField  SFRotation =
+[-1,1],(-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  isActive                    # eventOut      SFBool    =20
+  rotation_changed            # eventOut      SFRotation=20
+  trackPoint_changed          # eventOut      SFVec3f   =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/light.gif">=20
+
+    <TD><PRE><B>SpotLight { </B>
+  <B>ambientIntensity  0</B>               # exposedField  SFFloat [0,1]
+  <B>attenuation       1 0 0</B>           # exposedField  SFVec3f =
+[0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>beamWidth         1.570796</B>        # exposedField  SFFloat =
+(0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/pi.gif">/2]
+  <B>color             1 1 1</B>           # exposedField  SFColor [0,1]
+  <B>cutOffAngle       0.785398</B>        # exposedField  SFFloat =
+(0,/2]
+  <B>direction         0 0 -1</B>          # exposedField  SFVec3f =
+(-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>intensity         1</B>               # exposedField  SFFloat [0,1]
+  <B>location          0 0 0</B>           # exposedField  SFVec3f =
+(-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>on                TRUE</B>            # exposedField  SFBool =20
+  <B>radius            100</B>             # exposedField  SFFloat =
+[0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/group.gif">=20
+
+    <TD><PRE><B>Switch { </B>
+  <B>choice          []</B>          # exposedField  MFNode =20
+  <B>whichChoice     -1</B>          # exposedField  SFInt32   [-1,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geometry.gif">=20
+
+    <TD><PRE><B>Text { </B>
+  <B>string          []</B>          # exposedField  MFString=20
+  <B>fontStyle       NULL</B>        # exposedField  SFNode  =20
+  <B>length          []</B>          # exposedField  MFFloat   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>maxExtent       0.0</B>         # exposedField  SFFloat   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/geomprop.gif">=20
+
+    <TD><PRE><B>TextureCoordinate { </B>
+  <B>point           []</B>          # exposedField  MFVec2f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/property.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/appearan.gif">=20
+
+    <TD><PRE><B>TextureTransform { </B>
+  <B>center          0 0</B>         # exposedField  SFVec2f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>rotation        0</B>           # exposedField  SFFloat   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>scale           1 1</B>         # exposedField  SFVec2f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>translation     0 0</B>         # exposedField  SFVec2f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/time.gif">=20
+
+    <TD><PRE><B>TimeSensor { </B>
+  <B>cycleInterval   1</B>           # exposedField  SFTime    (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>enabled         TRUE</B>        # exposedField  SFBool  =20
+  <B>loop            FALSE</B>       # exposedField  SFBool  =20
+  <B>startTime       0</B>           # exposedField  SFTime    (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>stopTime        0</B>           # exposedField  SFTime    (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  cycleTime                   # eventOut      SFTime  =20
+  fraction_changed            # eventOut      SFFloat =20
+  isActive                    # eventOut      SFBool  =20
+  time                        # eventOut      SFTime  =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/sensor.gif">=20
+
+    <TD><PRE><B>TouchSensor { </B>
+  <B>enabled         TRUE</B>        # exposedField  SFBool =20
+  hitNormal_changed           # eventOut      SFVec3f=20
+  hitPoint_changed            # eventOut      SFVec3f=20
+  hitTexCoord_changed         # eventOut      SFVec2f=20
+  isActive                    # eventOut      SFBool =20
+  isOver                      # eventOut      SFBool =20
+  touchTime                   # eventOut      SFTime =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/group.gif">=20
+
+    <TD><PRE><B>Transform { </B>
+  addChildren                 # eventIn       MFNode     =20
+  removeChildren              # eventIn       MFNode     =20
+  <B>center            0 0 0</B>     # exposedField  SFVec3f     (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>children          []</B>        # exposedField  MFNode     =20
+  <B>rotation          0 0 1 0</B>   # exposedField  SFRotation  =
+[-1,1],(-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>scale             1 1 1</B>     # exposedField  SFVec3f     (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>scaleOrientation  0 0 1 0</B>   # exposedField  SFRotation  =
+[-1,1],(-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>translation       0 0 0</B>     # exposedField  SFVec3f     (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>bboxCenter        0 0 0</B>     # field         SFVec3f     (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>bboxSize          -1 -1 -1</B>  # field         SFVec3f     (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">) or -1,-1,-1
+<B>}</B> =20
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/bind.gif">=20
+
+    <TD><PRE><B>Viewpoint { </B>
+  set_bind                    # eventIn       SFBool    =20
+  <B>fieldOfView     0.785398</B>    # exposedField  SFFloat    (0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/pi.gif">)
+  <B>jump            TRUE</B>        # exposedField  SFBool    =20
+  <B>orientation     0 0 1 0</B>     # exposedField  SFRotation =
+[-1,1],(-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>position        0 0 10</B>      # exposedField  SFVec3f    (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>description     ""</B>          # field         SFString  =20
+  bindTime                    # eventOut      SFTime    =20
+  isBound                     # eventOut      SFBool    =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif"><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/sensor.gif">=20
+
+    <TD><PRE><B>VisibilitySensor { </B>
+  <B>center          0 0 0</B>       # exposedField  SFVec3f   (-<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  <B>enabled         TRUE</B>        # exposedField  SFBool =20
+  <B>size            0 0 0</B>       # exposedField  SFVec3f   [0,<IMG =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/infinity.gif">)
+  enterTime                   # eventOut      SFTime =20
+  exitTime                    # eventOut      SFTime =20
+  isActive                    # eventOut      SFBool =20
+<B>}</B>
+</PRE>
+  <TR>
+    <TD vAlign=3Dtop><IMG=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/child.gif">=20
+
+    <TD><PRE><B>WorldInfo { </B>
+  <B>info            []</B>          # field         MFString=20
+  <B>title           ""</B>          # field         SFString=20
+<B>}</B>
+</PRE></TD></TR></TBODY></TABLE>
+<P></P>
+<P>
+<TABLE bgColor=3D#800000 border=3D0 cellSpacing=3D0 width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD><FONT color=3D#ffffff>&nbsp;</FONT>=20
+    <TD align=3Dright><A=20
+      =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/appendix/appxafie.htm"><IMG=
+=20
+      alt=3Dprevious border=3D0=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/rprev.gif"></A><IMG=20
+      border=3D0=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/rline.gif"><A=20
+      href=3D"http://www.agocg.ac.uk/train/vrml2rep/contents.htm"><IMG=20
+      alt=3Dcontents border=3D0=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/rcont.gif"></A><IMG=20
+      border=3D0=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/rline.gif"><A=20
+      =
+href=3D"http://www.agocg.ac.uk/train/vrml2rep/appendix/appxa.htm"><IMG=20
+      alt=3Dstart border=3D0=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/rstart.gif"></A><IMG=20
+      border=3D0=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/rline.gif"><A=20
+      href=3D"http://www.agocg.ac.uk/train/vrml2rep/cover.htm"><IMG =
+alt=3Dnext=20
+      border=3D0=20
+      =
+src=3D"file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_fil=
+es/rnext.gif"></A>=20
+    </TD></TR></TBODY></TABLE>
+<P align=3Dcenter><FONT size=3D-1><A=20
+href=3D"http://www.agocg.ac.uk/graphics.htm">Graphics</A>&nbsp;=20
+&nbsp;&nbsp;&nbsp;<A=20
+href=3D"http://www.agocg.ac.uk/mmedia.htm">Multimedia</A>&nbsp; =
+&nbsp;&nbsp;&nbsp;=20
+<A href=3D"http://www.agocg.ac.uk/virtual.htm">Virtual =
+Environments</A>&nbsp;=20
+&nbsp;&nbsp;&nbsp; <A=20
+href=3D"http://www.agocg.ac.uk/visual.htm">Visualisation</A>&nbsp;=20
+&nbsp;&nbsp;&nbsp; <A =
+href=3D"http://www.agocg.ac.uk/contents.htm">Contents</A>=20
+</FONT></P></BODY></HTML>
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/agocgs.gif
+
+R0lGODlhlgA/APf/AAAAAAAAEAAIEAgAAAgACAgICA0FChgICBAIEBgIEBgQEBwQFBQeJiUeIAlI
+WAB7nCkpKSkxKTEhITMjJjovL0Y3N1dEQmVOaZcpfoBJhcARd7QshXxkYIl0caGAfbmTjgCErQCM
+rQCMtRGAoQSVxASlzhSSxxWfzgCl1gCl3gCt1gCt3gic1git1hig1hSt1jJ2rl9mpi2Uw1ybuIpf
+pZOSp6WlpYuxyrqDsK2lpbWzr7q2yLXGvcDGwMbGxsbOxgil3git3gCt5wit5wC13gC15wC95wi1
+4gi93hCl3hCt3hC13hC15xit3hi13iG13iG15yG94im34Sm95zG13jG15zG93jHB5zm93jm95znG
+4kK93kK950fD3kTI50rO61a93lLK51rF4nO13lfQ72TS7WvO73DQ7HnJ5HPW73vW74TW73vi84Te
+74zW74ze757M6JTe75ze76Xe75rk9aXn96nr863n98bO57ni77Xn98Hn97Xv973v98bv98bv/9gJ
+ddoUf84YhNIchOsAa+wCeO0Mf+Mdhf8Ac/8Ae/8Ie/8IhPcQhP8QhPcchP8YiNYtkO8piO8xjO85
+lPcplPcxjO85nPc9mP8hjP8pjP8plP8xlP8xnP85lP85nP9ClM5SpeZKpfdSpfNkrfdrtf9CnP9C
+pf9KnP9Kpf9Spf9Srf9apf9arf9jrf9jtf9rrf9rtedztf9ztf9zvf97tf97vc6Evd6Evc6poNCa
+u/+Evf+Jw+yizv+Uyv+gzv+l1t6txt61ree1xue93s7Oxs7O1u+93trWzu/G3u/O3ve11v+t1v+1
+1v+13v+91v+93s7n797O5+fW597e6/fG5+/S6+fn5/Pa7/fe7//G3v/G5//O5//W5//W7//e5//e
+7+fn7+/n7//n7/fn9//n987v7+fv787v99bv997v9+/v9/fv9//v987v//f3787399b399739+f3
+9//39873/9b3/973/+f3/+/3//f3///3/97//+f//+////f//////yH5BAEAAP8ALAAAAACWAD8A
+QAj/AP8JHEiwoMGDCBMqXMiw4UB/0PTE8+ewosWEFC9q3MjxXx4xQVo8kYOvo8mTBdPJkYJiyZly
+BucJTIfuzpw1a85gCdliRZMgQ1qkEIqiBdEgKJy8kLJFjFMxYMTMkedwHrotPYOEbIIGJkqL5boM
+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
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/graphics.gif
+
+R0lGODlhUAAZAPcAAAAAAAgICBAQEBghISEpKSkxMTFCQjlKSkJSUkpjY1Jra1pzc2OEhGuMjHOU
+lISlpYytrZS1tZTW3pzGxqXOzq3W1rXn573v78b/787//+//9+////f/////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gD/Cfyn
+YYPBgwgTKlzIsKHDhwoHCuQAsaLFixgRauAw8GCGDRhCihxJsqTJkyhTptyQQQLLDRz/IcxAs6bN
+mzhz6tzJsycGmhJcGqRo0ObPoxmQKk3KdKnTplCfSoVa82dQkB5p/uzJtavXrluTYpBA82DYqGin
+qk3LdirTtzWvgtx69qvduzrpan0rF2nbv2sDA4ab06rQujstJBgAQECCC3hpPlBwc7LXp1r7DrZA
+4ICFDBYOEBjslIEBqBEeCC4c93BXBqNrWhBQIcOECgwmgG7A4MFnC7d70zRdoYFv0BRoWuBde3fu
+vX6bal5LoEFhAAUYNIgAYAGDAQUy/nwnwEAA5fLkBxwQf3qC4wUAIsw+sGCAA5xnxwr1CkB3hgoT
+RDDBZwA8QJMD92XAnXgAQDZBg+V9BgEA7GVAwAIHOvAgZAhW5eFW07FFU3+SGWCAAAxkEF9NDyxg
+AGMVjjiBizQ9WCGJNhEAwAEGGoWfZjttVd1NBqSIo2i5PUChaTX1x6SCS56Go00RLCDAaT76FeJS
+ez0wwGc1kaeifzgysKQAn0UgQIw2MnnhgQZEgECNFO51k2EGIWZnTQgMsN0DBdA2Jk0FkIdAAGdm
+J8B9T7Z5GgXvDeCbAAd8R1mWVW0JV3QTJGDAAQ2AyUBzFjzQG264GTDBc7YliFurV8rxlpxzEPjo
+YVJA2nprZE9G5tOtclEF3a539errnW/ll2t0hOWn67G+aulaXWFFV22ywkL74bDOLostsoTlBZad
+elHLWmb7NcstuX8Jy+W3zsYLb1ABAQA7
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/mmedia.gif
+
+R0lGODlhUAAZAPcAAAAAAAgICBAQEBghGCEpISkxKSn/ITFCMTlKOUJSQkpjSlJrUlpzWmOEY2uM
+a3OUc4SlhIytjJS1lJzGnKXOpaXWpa3WrbXntb3vvcb3xs7/xs7/zuf/5/f/9///////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gD/CeRA
+kMOGggQPIlRYkGFChAYhOoy4UKLFigQFanyo8CBDjw0pRvwoEiTHkCRTogzJQeM/kRk2bIg5UybN
+DDRr5oy5s6ZNnzplBv3Zc6fIDgMV4hT6E6jQm02h+pRKNarVqT8rRHyp9CnQokzD5mzqlelYp2jP
+5pxAMENBnk7Hyg06FyxRr3aH6o2p1e1BtWa/hg0MOLDhsojJNp1QQSsHqHnJwoVLGK/lu5j3Am3M
+dvBVzZ71Kk4rtvThrI4hIy5Ml3Reyppf+6xAoW3cDQAAYBAaAcCBsjEb/L7AYMMEAINZKz5uHLnn
+s4wNmsYdAEJNBQF+oxW+gfuFCa0z/sOOKQE5Bgl3525obFswAAUKbA5Q8FuC9QwXGnQ/YOHAAAgW
+6DcBBBEcoAAGwh0oUwQIHPCAUBMggAAEyAUo0wT0IYDeV+wlJxQAEQggUwUFcMddc/td4B8EzDUg
+QAMTDBAAjPNtEMF/EhSAQHMECoAcc8dBIEEDAFxAVgVsPbYaABFKkAEDD5ioXXn7VUllAwPI1AAB
+Wv5GAAQxXVAkfDI58CNyF4C5gZgT9NThargNGN8AAf52Yot2/oZnl3zm5ieTB+i3AZVUIngAAAMw
+GRV7ShrGpAUCWJCllBciR+mV2p3IHQAbCnVAcSgytwABExip6Fi02SZVnBsQoEBxv9w5kOUGDFia
+J4qaZvobAgVcOEAGWBqJwJkbfCrTA4p6haR0S4JHpAVVQjoAAbVaCUACe+4X3HAEDHBoBDIVMEAB
+BCBHqG8EFMDpUIyuGlOpG2AA3gYWQHuhBfLSa68FpYJXr0z/6isUv0YOXMF38W54HrQV2PvUm9OF
+JvHEFEdssWWpNipYeBV3HFpPn4FMU6qHrWpYVZMNJfLGIUsGYWolW2YyWs8BF/NZpDHFqAHuJuYh
+WCm7LHRlLWfQWEAAADs=
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/virtual.gif
+
+R0lGODlhUAAZAPcAAAAAABAQCCEYECkhGDEpIUIxIUo5KVJCMWNKOWtSQnNaQoRjSoxrUpRzWqWE
+Y7WUa8acc9ate96tY+e1hOe9e++9jP/OnP/nzv//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gD/Cfx3
+oaDBgwgTKlzIsKFDhAMjEixogaLFCxUxXszIcaNHjSA7hvwosqBEgxUtqFzJsqXLlzBjypSJ0qTA
+jS4rtNTJkudKnyqBWhBKdKfRnxYkQKA4ESXSnkefSg0alSrUq1MrSJCAsCJPoGCvhs1qtexQsVjP
+rtwa4SBMn2Orxk07lyxSrVsxon1Z12xftX75xtzKVW9MoYJnVlUMOCfSvBe+Wv27WDHimX8hXz48
+2bFayYE/l637VXPntGaHCojAcgGCqwUAyAYwgHVjwHOFQpY5Fu5KBQp+DnhwuwCElQ0ELN48Nq/n
+yi4nBAg6QblU4ywBTL29+edu7qFxvask4EAlggV8DTR4AOGBAQKJ36Y1zVixgwIWpE9IXWCAAQEB
+LADaZQTu9N1dp4n3UwWrOQAfVthNMJxl0K3FFWr1AXYeealZUABxFkQQwH7h2XWWTgfupeBtEQD4
+k21BYafSAgaoBOJtjXVHX4fyXXUAeipF8JpPCsBogQH74WdUbrjthlhvz1WIGWeKOSclgtBB2Z1v
+Uap1IJQ4btddYqBlCJST9Q1YYZl/cUkaZIalNqaYYc6JIY9JSRAQAAA7
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/vis.gif
+
+R0lGODlhUAAZAPcAAAAAABAQECEYGCkhITEpKUIxMUo5OVJCQmNKSmtSUnNaWoRjY4xra5Rzc6WE
+hK2MjLWUlMacnM6lpdatree1te+9vdqPj//OnP/Ozv/nzv/v7///////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gD/Cfyn
+oaDBgwgTKlzIsKFDhAMjEnxIsaLFiwYlIsTAsaPHjyBDihxJcqTCgQdLqlzJsmVHCxBTupxJk6YF
+mAlr6typ8ibOghl4Ch3q0afBC0STCjWqQanTnTcLPp06M2pTDAIYfDSAYEEBngAiQADQMoIDDF6r
+4uTIQIDHCQAmyAULoUKElgUWYJjr0ipHuHc5LnBrFgMFrwbuTtAreMJeBQUKaMUQdjEGBwoWaIbw
+OLJWCAIKiD2L4YEByRwhOHhQAIGEl2s5cu2YFe1XBAMiJAhglyzHsBUCIFAd4GzYCGQdaD4AoK5w
+4g4ihI6Q1oGA1QMOoA2wIEKBAbCl/nJ8IIACBuSO0xow4JhBhbEdw1KYXGGA3rDwOVIQoL3CZAr2
+YZCXbVhNJgEAh7mFQX4Y+NVRcRggYIBgX00gAAADnMVgWJcVEEAAAtwnlm8YEAAeRw54KAB3AuqV
+Foe/UffVeSQ6yJECA1TQHIUdSbBAccjFF8EDAUBg3oD4+ZZAeeMVeaReA77ImWFhpbVgjbH9BQAC
+AXSUFgENcDQAA3CZhxx1Jx4oYpAOxOVlmgBA6eJX63HUQJdWBsmRjWICoICXX7VZgAA5YjBAAAUw
+F8EEAQyg4p9JYgBiZAUkYGFoIP65WwNpAUhoAOnNyCCfe0VQQUd8vedYj47VxZFYNIa1WsF750Eg
+1qKvckbBqhFIwNdeU+61Kq17ZknVsSSRiuyyRRnL7LMNOgvtsspOe+xNAQEAOw==
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/contents.gif
+
+R0lGODlhUAAZAPcAAAAAAAgIEBAQGBAQIRgYKSEhMSEhOSkpQjExSjExUjk5Wjk5c0JCY0JCa0pK
+c1JSe1pahFpajGNjlGtrnGtrpXNzrXt7tYSExt7e7/f/9///////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gD/CfyH
+oaDBgwgTKlzIsKHDhAMjPpxIsaLFgxEJHrzAsaPHjyBDihxJsiTCDAI3llzJsqVLjwczqHxJs6ZN
+hTZz6myJcKfPnyAXzARKVOeCowWLKs15VCiGkhYQBAAggEFOCTUrVKDZNOlICwIAIGBAAMCBmgQK
+0IwQAOvLrk9HIgAwoSMBARY4UmDAgEJHCVoZPNALgIDbvQ22XqiA9QGDrVEBONi6l0GEknBJChAg
+kkHhsFYvfC57tgCA0xcgfA7g13PaqRQknAbAQPVdAApIZh4JQC1ICmY5HgDgF0CAvGE59uYYgMAF
+sGc9W31A+4JnrKbrNrg8crfI5SCvx3OMUB28aeVqZQsoUGCqdQBYZVsV79k4grrdkcYVWTYvRwQH
+7AUfRxOU59t5oqXXG198vRdfdeJdMAECYQGgWEjehUTeAVs5QNUFwJ11gWnFHQgAes8VtlgBEDh4
+gXwuNiBihBjqV1J9p7H232fVJcgRgmEVIAF1d+koHozUCYCAauupmJ9TK1XQgGD+6cWXXxwJxpFj
+HFXAV16VKSbBY4sx4JZjl1XG3ZNeLeVmSxm+KadIcc5pZ0d13mlnnnrKyWefbjYVEAAAOw==
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/baro.gif
+
+R0lGODlhkAENAPcAADGMazmMc3vOtYTWvd6tY//OnP/nzv//////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAkAENAAAI0QANCBxI
+sKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatxYcQDHjyBDihxJsqTJkyhLCiBQoKXLlzBjypxJs6bN
+mzhz6tzJs6fPn0CDCh1KtKjRnwRYHl3KtKnTp1CjSp1KFWrSqlizat3KtavXrzavgh1LtqzZs2ix
+ik3Ltq3bt3DLro1Lt67du3hzzs3Lt6/fv2P3Ah5MuLBhoYIPK17MWPHVAEkjS55MubLly5gza97M
+ubPnz6BDix5NurTp06hTjwagurXr17Bjy55Nu7Zt2gEBADs=
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/bari.gif
+
+R0lGODlhTgANAPcAADk5c4SExt7e7///////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAATgANAAAIZQAFCBxI
+sKDBgwgTKlzIsKHDhxAjCgAAIIDFixgzatzIsaPHjx0pVgRJsqTJkxhFolzJsmUAlS5jyuQIc6bN
+mTVv6mSZc6fPkj1/Cg1JcahRjyKTKl3KtKnTp1CjSp1KtapVpwEBADs=
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/traino.gif
+
+R0lGODlhUAAZAPcAAAAAABAQCCEYECkhGDEpIUIxIUo5KWNKOWtSQnNaQoRjSoxzUpR7WqWEY62M
+a7WUa8acc86le9athN6tY+e1jO+9jP/OnP/nzv//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gAvCBxI
+sKDBgwgTKlzIsKHDhxAjGpwg0ILFixgzatzIsaPHjx4nULwAsqTJkyg1iqyYsqXLlxZWkoRJs2ZH
+mTZz6ow50iSAn0ABQPgIAQBHBQV2YsSJUqhJCkM3UpCg9CLTk04tNnBg4ICFCAcKGHhggYICCxC2
+FjhAFQIDCw0gIE1QweKCtQ7eorzqM6qFAgEeMIgAgIFcAFCNKgigAEKBARaQ/hWwVUACCwwCMwCQ
+dG/Ppn4LXC6rl4LQopEFWEQtea1FyQMaWDTQ+STfkln/nrVQASkAAacVd2adtMBuyVkle2aJNfRu
+BAMg1A0eebhw3a+TJq9t8jbI3MYtiYq2uBkC8dXXw1e3YMAAbwHcS3r/CH73A84DBgB4cB5t+uNJ
+URDAAAIQEB9I83kk3UUSUHBRBRBQ1SBUZVHF21BTWdCgRRk2AJVZ7i03U1U0QefAA4GllCCJJ5kl
+FlkqfsbijB+tSOONNt44Y446kiiTSEAGKeSQRBZp5JFIJkmRkkw26eSTQQYEADs=
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/reporto.gif
+
+R0lGODlhUAAZAPcAAAAAABAQCCEYECkhGDEpIUIxIUo5KVJCMWNKOWtSQnNaQoRjSoxzUpR7WqWE
+Y62Ma7WUa8acc86le9athN6tY+e1jO+9jPfGlP/OnP/nzv//////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gAzCBxI
+sKDBgwgTKlzIsKHDhxAjGqQgEIPFixgzatzIsaPHjx4pUMwAsqTJkyg1iqyYsqXLlxhWkoRJs2ZH
+mTZz6ow5MiWAnz8FLNiJQYIDmjhRAohwUQIACTsLDIWZ9ORSjFItQjBQgIHFCA4aFEBgweIEBAUU
+lK3QYIFUAQWYOihQ4OjJqiavWqwQ4CiEvhEGHMCwIMCBwAQwTAiwIIKBARYiADgAoQFcsAEgOHh6
+t6fSAXQLTLY4wG4FABUK70WNwMBFwADKYsjKQMAEDA5um8RbEkADzA0uAgUawa3wCFktSpV8MasF
+AgCEyi7JG6TeCQAgWMye0TgGCwAmqqS9OKAxgOZTMVRwIABBZ5ZWmVosXNZA4qICLiwIj8Eyhtpl
+YTcBc8oN1ZpFCri2m2fxYTSAaxYMABcADxAmAGgByHdAAKJVSCAGCQTQwGIDDBCAbtQxaFIE06kn
+n2IszldAZC1WEON3L2IQgW4R5JgifETJGCRI1e3kQAJDflRkkkyqpGKTUGa0ZJRNTkllkjKJpOWW
+XHbp5ZdghinmmBSRaeaZaKa5ZUAAADs=
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/wshopo.gif
+
+R0lGODlhUAAZAPcAAAAAABAQCCEYECkhGDEpIUIxIUo5KVJCMWNKOWtSQnNaQoRjSoxzUpR7WqWE
+Y62Ma7WUa8acc86le9athN6tY+e1jO+9jPfGlP/OnP/nzv//////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gAzCBxI
+sKDBgwgTKlzIsKHDhxAjGqQgEIPFixgzatzIsaPHjx4pUMwAsqTJkyg1iqyYsqXLlxhWkoRJs2ZH
+mTZz6ow5cqdPmDg3CnBwkQGACRcRIAAJIILHCAB+BtWo9OKAAgouDmXqtCNUqT03OhBgsUKACWQx
+VABQAcMEBFgtqG2woABUpxAWXKhQ14AEDFAlGDAAwaIFBQUQIMWwIIKBAoVDhtW4Vi6DpQKQQiA7
+IUBjAwMsQD0AYUJTBwAeYEAwIEKCAKIBtE4AwIKFAQYiLDiLAYAACA0A/L05WeOAwscxKMi6fLWB
+iwEcQJXbm7ZqDIPbMojdtncEBwEu+RpYCoCBxarEWW5cbiG82wEYkhdYcHH+V4sA8i9GK5vofe91
+XRRgUxYFmN5MG0FQgANLWSSABLVhgJVVjUWFXwMIEIDRBLtJZyGA8FmEmHciPndgRxYAQNhFCoBm
+EQMCyGXaBP81ZVYDGBCAY3wM1BjBjBhYIIB5Kga51YkdDfChWwBkZdEBARSQGmAfEgieBQ8AUIAA
+ofmIAWoFBHAAfgMMIICJSHI0wWIXRdBdWRFQV0FXgFHnplo/GkZnnHq+2dSaIE31k08EliTooDoV
+wOZHhyLqKEeNPirpRZFOKqlMImWq6aacdurpp6CGKipFo5Zq6qmoahoQAAA7
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/briefo.gif
+
+R0lGODlhUAAZAPcAAAAAABAQCCEYECkhGDEpIUIxIUo5KVJCMWNKOWtSQnNaQoRjSoxzUpR7WqWE
+Y62Ma7WUa8acc86le9athN6tY+e1jO+9jP/OnP/nzv//////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gAxCBxI
+sKDBgwgTKlzIsKHDhxAjGqQg8ILFixgzatzIsaPHjx4pUMQAsqTJkyg1iqyYsqXLlxdWkoRJs2ZH
+mTZz6ow5cqdPmDhLAhgKIAACCxkjAOi4YOiCAj8zBgUJIILFCgMWZKxglSMACBcqTIiKcerHqhef
+XojgAIGBCFovTEBQQAHSpggiRGhwwQHcukgvMCiAwIGDsE8NSDBp1iPasFkvNG3QQGnYAAsiHBhg
+Ae/fCwUEOHggQMGFBgEgNAAAFcGACAkCBP7YuCPRobIlD7BoWQGCi6IvoFVL2KLaAYcvGIBqwEAF
+wc9B1vba1YIBApKhrl1a4DYArcOhvhaIq/ax2gkCACBn3FNo1+3ZeXM3nTE8aPJQzWuXuyBActrt
+UfXeAgLEBx8DuWFllX3jGcecAWEJABUBfF0wAAMlTbeRegUUMEAAY6kF3wUHBFBAAAdYxCB+lw0g
+AAFQPcCaAJxlGOBHeuV4kVhXvcdVdGs9x+ME0fHowI8LQBhWBGOxxxJZKSUwwAMQpPaShlB6VEFi
+YF15Y5ZgSvVlmGRiSSZZMomk5ppstunmm3DGKeecFNFp55145rlmQAAAOw==
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/index.gif
+
+R0lGODlhUAAZAPcAAAAAAAAACAgIEBAQGBAQIRgYKSEhMSEhOTExSjExUjk5Wjk5c0JCY0JCa0pK
+c1JSe1pajGNjlGtrnGtrpXNzrXt7tYSExt7e7///////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAUAAZAAAI/gAvCBxI
+sKDBgwgTKlzIsKHDhxAjGlwg0ILFixgzatzIsaPHjx4XULwAsqTJkyg1iqyYsqXLlxZWkoRJs2ZH
+mTZz6ow5kiYAAyUjAGCw82ZPmD+DDi3KESdSoBEYUEBg4MHFBwYQPFhqAcIBAw4sPmAwoSsDCTCd
+vkzKAEABBgQAQLDQtoCCAUshADjQVoEFoQUoCBhQIe3RtUDbWtVLlIAAiw2WFhhgUQGAwpYBAEBr
+mCViugAi/F2adDRRzahDW6gQ1y9NtS7ZqhZ6uoBFxhbcRtgdobBQAAQKd575ua1o2hYQbK5QYOkB
+ABQqCDiw2rFl6sN9Jp69lLlmA93jVwIYQCE5AKvN576E3TJCWQq9V0cob9H9X/oWKEAQvttihfnZ
+MSUgSuwNaGBThx2ooEoJLuggT5496GCBEhook0gYZqjhhhx26OGHIIZIkYgklmjiiRkGBAA7
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/rprev.gif
+
+R0lGODdhOgASAOMAAAAAAIAAAIAAAICAAAAAgIAAgACAgMDAwICAgP8AAAD/AP//AAAA//8A/wD/
+/////ywAAAAAOgASAAAEb1DISau9OOvNu/9gKI7fQ55oqq6a+byTawovTFduXMfUTO8438x24/kk
+uSJyyVM6ncOeVBmFMplHy7GKrNmE2OlWhxlbL8mi2UzGiada6lUNr/+a7HMY387fgE9ebk0/RIVU
+gIQsi0+MKlmOkZIhEQA7
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/rline.gif
+
+R0lGODdhDQASAOMAAAAAAIAAAIAAAICAAAAAgIAAgACAgMDAwICAgP8AAAD/AP//AAAA//8A/wD/
+/////ywAAAAADQASAAAEHFDISau9OL88NxceF2ofWI4YeqkWW7kU3J3lFQEAOw==
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/rcont.gif
+
+R0lGODdhOQASAOMAAAAAAIAAAIAAAICAAAAAgIAAgACAgMDAwICAgP8AAAD/AP//AAAA//8A/wD/
+/////ywAAAAAOQASAAAEbFDISau9OOvNu/9gKI5kaQrPmJ7cGrraI8Ozm85SneM5Ku8/X7A3WdF2
+RSKKYrQpj0qmdJmkWqlQ5wVWJWaLNeOUxr12sePzWVwZmqNsrxoenV7j6KpWrl8zeUB7WEE6dEKB
+LImKi4yNjo8aEQA7
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/rstart.gif
+
+R0lGODdhIQASAOMAAAAAAIAAAIAAAICAAAAAgIAAgACAgMDAwICAgP8AAAD/AP//AAAA//8A/wD/
+/////ywAAAAAIQASAAAER1DISau9OOvNu//g9YCjV5rYo5Yru05jq1anwMKUi1v1zku1HqxHfNly
+mhkQuTz6MrdmMyhinq5RKc1oU76yXWFoTC6bz5sIADs=
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/rnext.gif
+
+R0lGODdhHwASAOMAAAAAAIAAAIAAAICAAAAAgIAAgACAgMDAwICAgP8AAAD/AP//AAAA//8A/wD/
+/////ywAAAAAHwASAAAEQlDISau9OOvNu/+g94TdaI1PSqWqYE5sC7/m60o0ftn1Ct+6k88V4w0r
+RuDuyOwtc8KfEgi1SYPElhUlI3m/4LA4AgA7
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/infinity.gif
+
+R0lGODlhFQAKAPQAAJSUlJKSkkdHR0VFRYuLi4mJiYeHhz09PTs7O7W1tbGxsebm5uHh4enp6VJS
+UqioqHd3d21tbdjY2MvLy6Ojo3p6evb29mlpabi4uDMzM////////////////////////yH5BAEA
+ABoALAAAAAAVAAoARAVSoCaOZGmSR/qYaUpi2VRGWRaV9WghdY1YIgev9xMtMpdR4pLBFBAVZUZB
+avQYjWqgBsiOciJKTUIzyDSTDEEEO48EYFIc0qsNgBp6E5bBn/4lIQA7
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/group.gif
+
+R0lGODdhGQAPAPAAAP8AAP///yH5BAEAAAEALAAAAAAZAA8AAAIwjI+pa+DPYgCJyurw28ze1iHb
+SGbg+U3i4X2t1V4xnKJgLOEUHul8qDCleKWi8FAAADs=
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/child.gif
+
+R0lGODdhEgAPAPAAAACAAP///yH5BAEAAAEALAAAAAASAA8AAAIkjI+pB+3LnARw2mVbeCjr/UFK
+KCZUOaLmaXgnF11w7FV1eSUFADs=
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/light.gif
+
+R0lGODdhEgAPAPAAAACAAP///yH5BAEAAAEALAAAAAASAA8AAAIijI+pywzQ0AtztgepdSlztXUf
+uHjkWZpGiFLRganX+tZGAQA7
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/sensor.gif
+
+R0lGODdhEgAPAPAAAACAAP///yH5BAEAAAEALAAAAAASAA8AAAIjjG+Ay9nv4AKUyqhCfrvDjYBJ
+ZY0kI0aNp67YpZ1wO6eXbRQAOw==
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/interpol.gif
+
+R0lGODdhEgAPAPAAAACAAP///yH5BAEAAAEALAAAAAASAA8AAAIljI+pywr5GohnskcNdnr6mGWS
+1nBiCZYVAn5WcG4sfInvBal6AQA7
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/time.gif
+
+R0lGODdhEgAPAPAAAACAAP///yH5BAEAAAEALAAAAAASAA8AAAIrjA+Zx7wBzGuw2hhbRlpvK32f
+RG0jyIWdY5YTeKbo662UzI3YDWV+zFLcCgA7
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/bind.gif
+
+R0lGODdhGQAPAPAAAACAAP///yH5BAEAAAEALAAAAAAZAA8AAAItjI+py+0PEZhvgnVNxmdryXhi
+4nWkCZVgR52hZQUw3JSXXaGy7sRSGwkKh4ECADs=
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/property.gif
+
+R0lGODdhEgAPAPAAAAAA/////yH5BAEAAAEALAAAAAASAA8AAAImjI+pAe2/WASTPUpXVjvhK2mV
+eGFVGXKjinaIe8DGB8mpN5UOUgAAOw==
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/geometry.gif
+
+R0lGODdhEgAPAPAAAAAA/////yH5BAEAAAEALAAAAAASAA8AAAImjI+ZwO2OnmwRqIqvYVnz83kW
+OIrdFQapkq5LqcIs7J7TVN1QUAAAOw==
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/appearan.gif
+
+R0lGODdhEgAPAPAAAAAA/////yH5BAEAAAEALAAAAAASAA8AAAIdjI+py+0Hopxg0WvvzDry/mkh
+pnTSSKFbaVZPUwAAOw==
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/geomprop.gif
+
+R0lGODdhEgAPAPAAAAAA/////yH5BAEAAAEALAAAAAASAA8AAAImjI+pCbDf2mNRzlNvcMbuFSkh
+UnFdhqHnmJotmGKaepXuRM/3UQAAOw==
+
+------=_NextPart_000_0080_01C1AD80.898812E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///D:/VRML%20tutorial/Appendix%20A%20-%20Node%20Reference_files/pi.gif
+
+R0lGODlhDAAKAPAAAEZGRv///yH5BAEAAAEALAAAAAAMAAoAAAIYjI8Hy2wNwZs0yYpu0FmlrUnh
+opAPZwYFADs=
+
+------=_NextPart_000_0080_01C1AD80.898812E0--

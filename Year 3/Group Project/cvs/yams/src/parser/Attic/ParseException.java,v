@@ -1,0 +1,157 @@
+head	1.4;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.4
+date	2003.11.10.10.57.50;	author qq01;	state dead;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.08.17.39.26;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.08.16.28.26;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.03.01.26.21;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 2003-11-1
+ */
+package parser;
+
+
+/**
+ * Exception to be thrown the parser finds an error in the users file.
+ * 
+ * @@author Qian Qiao <a href="mailto:qq01@@doc.ic.ac.uk">qq01@@doc.ic.ac.uk</a>
+ */
+public class ParseException extends Exception {
+	private int line;
+
+	public ParseException(String message, int line) {
+		super(message);
+		this.line = line;
+	}
+
+	public ParseException(Token actual, int expected, int line) {
+		this(
+			getString(expected) + " expected, not '" + actual.getValue() + "'",
+			line);
+	}
+
+	private static String getString(int expected) {
+		switch (expected) {
+			case MIPSLexer.IDENTIFIER :
+				{
+					return "identifier";
+				}
+			case MIPSLexer.INTEGER :
+				{
+					return "integer";
+				}
+			case MIPSLexer.COMMA :
+				{
+					return "','";
+				}
+			case MIPSLexer.DOLLAR :
+				{
+					return "'$'";
+				}
+			case MIPSLexer.COLON :
+				{
+					return "':'";
+				}
+			case MIPSLexer.LEFT_PAR :
+				{
+					return "'('";
+				}
+			case MIPSLexer.RIGHT_PAR :
+				{
+					return "')'";
+				}
+			case MIPSLexer.NEWLINE :
+				{
+					return "\\n";
+				}
+			case MIPSLexer.MINUS :
+				{
+					return "-";
+				}
+			case MIPSLexer.EOF :
+				{
+					return "EOF";
+				}
+		}
+		throw new RuntimeException(
+			"Internal error: MIPSParseException::getString() : Unknown token type:"
+				+ expected);
+	}
+
+	public ParseException(int line) {
+		super();
+		this.line = line;
+	}
+
+	public int getLine() {
+		return line;
+	}
+
+	public String toString() {
+		String message = getMessage() == null ? "" : getMessage();
+		return "Parse error at line: " + line + "\n" + message;
+	}
+}
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@a5 1
+import parser.Token;
+d8 2
+@
+
+
+1.1
+log
+@ParserException class added
+@
+text
+@d6 2
+d21 1
+a21 1
+			getString(expected) + " expected, not '" + actual.value + "'",
+@
+

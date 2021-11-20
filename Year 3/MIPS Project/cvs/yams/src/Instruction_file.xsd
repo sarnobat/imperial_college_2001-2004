@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Qian Qiao (private) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Instructions">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Instruction" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Name" type="xs:string"/>
+							<xs:element name="OperandTypes" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="Javacode" type="xs:string" minOccurs="0"/>
+							<xs:element name="Type">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="fixedRt" type="xs:boolean"/>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="CoreMachineCode" type="xs:string" minOccurs="0"/>
+							<xs:element name="MachineCodeRepresentations">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Representation" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="OperandsCoding" type="xs:string"/>
+													<xs:element name="MachineCode" type="xs:string"/>
+													<xs:element name="Operands" minOccurs="0">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="Op" minOccurs="0" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="Number" type="xs:int"/>
+																			<xs:element name="Type" type="xs:string"/>
+																			<xs:element name="Mask" type="xs:double"/>
+																			<xs:element name="EncodeBits" type="xs:int"/>
+																			<xs:element name="OutputBits" type="xs:int"/>
+																			<xs:element name="OffSetMode" type="xs:int"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Help" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="FullName" type="xs:string"/>
+										<xs:element name="Format" type="xs:string"/>
+										<xs:element name="Description" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

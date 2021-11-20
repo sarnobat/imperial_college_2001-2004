@@ -1,0 +1,36 @@
+MINUTES - PROJECT MEETING
+=============================================
+Date: 23/10/03
+Time: 1500
+Location: Blueshift Lab
+
+Present: Adam, James, Ben, Qian, Sridar, Simon
+----------------------------------------------------
+
+- Everyone needs to keep a log of amount of hours spent on the project and outline of things acheived for that week
+
+- BEN will then enter this into the project spreadsheet 
+
+Tasks to be done:
+- Specify the interfaces for each of the sections
+	James - Stats manager and instr decoder
+	Ben - Memory manager, reg manager
+	Simon - Cycle manager, ALU
+	Sridar - GUI
+	Jo - XML spec
+	Adam - Assembler, Loader
+
+- Timeline - see Timeline.xls
+
+Division of Work:
+- Sridar and Jo on the assembler
+- Adam and James on the assembler
+- Ben and Simon on the CPU
+
+
+
+
+
+
+
+

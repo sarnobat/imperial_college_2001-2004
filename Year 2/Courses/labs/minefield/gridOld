@@ -1,0 +1,133 @@
+
+		/*if (row-1>-1)
+		{
+			if (col-1 >-1);// && (g[row-1] [col-1]).isField())
+			{
+    				(g[row-1] [col-1]).reveal();//row-1,col-1);
+			}
+			//if ((g[row-1] [col]).isField())
+			//{
+				(g[row-1] [col]).reveal();
+			//}
+			if (col+1 < SIZE);// && (g[row-1] [col+1]).isField())
+			{
+				(g[row-1] [col+1]).reveal();//row-1,col+1);
+			}
+		}
+		if (col-1 >-1);// && (g[row] [col-1]).isField())
+		{
+			(g[row] [col-1]).reveal();//row,col-1);
+		}
+		if (col+1 < SIZE);// && (g[row] [col+1]).isField())
+		{
+			(g[row] [col+1]).reveal();//row,col+1);
+		}
+		if (row+1<SIZE)
+		{
+			if (col-1 >-1);// && (g[row+1] [col-1]).isField())
+			{
+				(g[row+1] [col-1]).reveal();//row+1,col-1);
+			}
+			//if ((g[row-1] [col-1]).isField())
+			//{
+				(g[row+1] [col]).reveal();//row+1,col);
+			//}
+
+			if (col+1 < SIZE);// && (g[row+1] [col+1]).isField())
+			{
+				(g[row+1] [col+1]).reveal();//row+1,col+1);
+			}
+		}*/
+
+
+	/*JLabel com;
+
+	Grid g = new Grid(); //remember that Grid extends JPanel
+
+	JPanel controls; // for the control buttons
+	JButton def = new JButton("Default Bombs");
+	JButton ran = new JButton("Randomize");
+	ButtonController bc;
+
+	public void init()
+	{
+		com = new JLabel("You win/lose",javax.swing.SwingConstants.CENTER);
+
+		//g = new Grid();
+		bc = new ButtonController();
+		ran.addMouseListener(bc);
+
+
+		controls = new JPanel();
+		controls.add(def);
+		controls.add(ran);
+
+
+	}
+
+	public void start()
+	{
+		Container c = getContentPane();
+		c.add(com,BorderLayout.NORTH);
+		c.add(controls,BorderLayout.SOUTH);
+		c.add(g,BorderLayout.CENTER);
+
+	}
+
+	class ButtonController extends MouseAdapter
+	{
+		public void MouseClicked(MouseEvent e)
+		{
+			if (SwingUtilities.isLeftMouseButton(e))
+			{
+				JButton b = (JButton) e.getSource();
+
+				if (b == ran)
+				{
+					b.setText("!!!!!");
+					g = new Grid(1);
+					init();
+					start();
+				}
+			}
+		}
+	}*/
+
+
+
+
+
+
+
+
+		// REMOVE EVENTUALLY			f.displayCount(bombCount);
+
+
+
+    		/*g[0] [0] = new Bomb(this,0,0);
+  		g[0] [1] = new Bomb(this,0,1);
+  		g[0] [2] = new Bomb(this,0,2);
+  		g[0] [3] = new Bomb(this,0,3);
+  		g[0] [4] = new Bomb(this,0,4);
+  		g[0] [5] = new Bomb(this,0,5);
+
+		g[5] [0] = new Bomb(this,5,0);
+  		g[5] [1] = new Bomb(this,5,1);
+  		g[5] [2] = new Bomb(this,5,2);
+  		g[5] [3] = new Bomb(this,5,3);
+  		g[5] [4] = new Bomb(this,5,4);
+  		g[5] [5] = new Bomb(this,5,5);
+
+		g[0] [0] = new Bomb(this,0,0);
+  		g[1] [0] = new Bomb(this,1,0);
+  		g[2] [0] = new Bomb(this,2,0);
+  		g[3] [0] = new Bomb(this,3,0);
+  		g[4] [0] = new Bomb(this,4,0);
+  		g[5] [0] = new Bomb(this,5,0);
+
+		g[0] [5] = new Bomb(this,0,5);
+  		g[1] [5] = new Bomb(this,1,5);
+  		g[2] [5] = new Bomb(this,2,5);
+  		g[3] [5] = new Bomb(this,3,5);
+  		g[4] [5] = new Bomb(this,4,5);
+  		g[5] [5] = new Bomb(this,5,5);*/

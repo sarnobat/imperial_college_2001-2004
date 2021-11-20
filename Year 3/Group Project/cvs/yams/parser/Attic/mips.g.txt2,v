@@ -1,0 +1,73 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.11.08.02.58.09;	author qq01;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.10.29.16.41.53;	author ajb101;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@
+IDENTIFIER_COLON : IDENTIFIER ':' ;
+
+IDENTIFIER : (CHARACTER) (CHARACTER|DIGIT)? ;
+
+CHARACTER : ('a'..'z' | 'A'..'Z');
+
+DECIMAL_COLON : (DIGIT)+ ':' ;
+
+DIGIT : ('0'..'9') ;
+
+FLOAT : (DIGIT)+ '.' (DIGIT)+ ;
+
+DOLLAR_DECIMAL : '$' (DIGIT)+ ;
+
+DOLLAR_F_DECIMAL : '$' 'f' (DIGIT)+ ;
+
+DECIMAL_B : DIGIT ;
+
+DECIMAL_F : DIGIT ;
+
+STRING : '\"' (CHARACTER|DIGIT|OTHERCHAR)* '\"'
+
+OTHERCHAR : '`' | '¬' | '!' | '£' | '$' | '%' | '^'
+          | '&' | '*' | '(' | ')' | '+' | '-' | '_'
+		  | '=' | '[' | '{' | ']' | '}' | ';' | ':'
+		  | '@@' | '#' | '~' | '<' | '>' | ',' | '.'
+		  | '?' | '|' ;
+
+IDENTIFIER_EQUAL : IDENTIFIER '=' ;
+
+HEXADECMIAL : '0x' (HEXDIGIT)+ ;
+
+HEXDIGIT : (DIGIT|'a'..'f'|'A'..'F') ;
+
+OCTAL : '0' (DIGIT)+ ;
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@@
+

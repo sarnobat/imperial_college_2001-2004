@@ -1,0 +1,297 @@
+head	1.7;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.7
+date	2003.12.02.14.42.54;	author ajb101;	state dead;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.30.17.17.38;	author ajb101;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.29.20.12.27;	author ajb101;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.29.18.43.32;	author ss401;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.23.20.54.27;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.23.15.47.46;	author ss401;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.21.17.55.58;	author ss401;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@/*
+ * Created on 21-Nov-2003
+ *
+ */
+package yams.GUI;
+
+import java.awt.Dimension;
+
+import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.JCheckBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+import yams.*;
+import yams.processor.*;
+
+/**
+ * @@author ss401
+ *
+ */
+public class ProgramCodeFrame extends YamsInternalFrame {
+
+	int width;
+	int height;
+	int scrollbaWidth = 50;
+	int leftWidth = 17;
+	int rightWidth = 17;
+	int centreWidth;
+	
+	JLabel l;
+	String codePosition = "";
+	String marker = "*";
+	String fakeProgramCode = "";
+	/**
+	 * 
+	 */
+	public ProgramCodeFrame(int width,int height, YAMSGui controller) {
+		super(width,height,controller);
+		this.width = width;
+		this.height = height;
+		centreWidth = width - leftWidth - rightWidth-scrollbaWidth;
+
+		
+		//TODO: This should also give the name of the file 
+		setTitle("Program Code");
+
+		JPanel root = new JPanel();
+		getContentPane().add(root);
+		root.setLayout(new BoxLayout(root, BoxLayout.X_AXIS));
+
+		root.add(getRadioBoxColumn());
+		root.add(getCheckBoxColumn());
+		root.add(getProgramCodeTextArea());
+
+
+		getContentPane().add(new JScrollPane(root));
+
+	}
+	private JPanel getProgramCodeTextArea() {
+		JPanel centre = new JPanel();
+		
+		JTextArea codeArea = new JTextArea(fakeProgramCode);
+		codeArea.setPreferredSize(new Dimension(centreWidth, height));
+		codeArea.setMinimumSize(new Dimension(centreWidth, height));
+		codeArea.setMaximumSize(new Dimension(centreWidth, height));
+		codeArea.setVisible(true);
+		codeArea.setEditable(false);
+		centre.add(codeArea);
+		
+		return centre;
+
+	}
+	/**
+	 * Creates the panel to specify where to place a breakpoint
+	 * @@return
+	 */
+	private JPanel getCheckBoxColumn() {
+		JPanel left = new JPanel();
+		left.setPreferredSize(new Dimension(leftWidth, height));
+		left.setMaximumSize(new Dimension(leftWidth, height));
+		left.setMinimumSize(new Dimension(leftWidth, height));
+
+		left.setLayout(new BoxLayout(left, BoxLayout.Y_AXIS));
+		//left.add(Box.createRigidArea(new Dimension(0,4)));
+		for (int i = 0; i < 20; i++) {
+			JCheckBox l = new JCheckBox();
+			left.add(Box.createRigidArea(new Dimension(0, 3)));
+			left.add(l);
+			fakeProgramCode += "instruction\n";
+		}
+
+		return left;
+
+	}
+	/**
+	 * Creates the panel to indicate at what point in the program the simulation is
+	 * @@return
+	 */
+	private JPanel getRadioBoxColumn(){
+		JPanel right = new JPanel();
+		right.setPreferredSize(new Dimension(leftWidth, height));
+		right.setMaximumSize(new Dimension(leftWidth, height));
+		right.setMinimumSize(new Dimension(leftWidth, height));
+
+		/*right.setLayout(new BoxLayout(right, BoxLayout.Y_AXIS));
+		//left.add(Box.createRigidArea(new Dimension(0,4)));
+		ButtonGroup g = new ButtonGroup();
+		for (int i = 0; i < 20; i++) {
+			JRadioButton l = new JRadioButton();
+			l.set
+			right.add(Box.createRigidArea(new Dimension(0, 3)));
+			g.add(l);
+			right.add(l);
+		}*/
+		
+		l = new JLabel();
+		refreshPosition();
+		right.add(l);
+		
+
+		return right;
+	}
+	public void stepForward(){
+		//TODO: Need to check if we've reached the end of the program; unless this cannot be called in such a case
+		codePosition += "<br>";
+		refreshPosition();
+	}
+	public void refreshPosition(){
+		l.setText("<html>"+ codePosition + marker +"<html>");		
+	}
+
+}
+@
+
+
+1.6
+log
+@passed controller to each frame instead of processor, and updated the console version
+@
+text
+@@
+
+
+1.5
+log
+@added passing a reference to the processor to each internal frame, and added buttons to the file list
+@
+text
+@d17 1
+d40 2
+a41 2
+	public ProgramCodeFrame(int width,int height, Processor processor) {
+		super(width,height,processor);
+@
+
+
+1.4
+log
+@Added progress marker to Program Code frame; added event handler for Execution control
+@
+text
+@d17 2
+d39 2
+a40 2
+	public ProgramCodeFrame(int width, int height) {
+		super(width, height);
+d45 1
+@
+
+
+1.3
+log
+@fixed packages
+@
+text
+@a7 2
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+d9 1
+d12 1
+d14 1
+d23 11
+d37 6
+a42 2
+	public ProgramCodeFrame(int width,int height) {
+		super(width,height);
+d45 15
+d61 16
+a76 1
+		getContentPane().setLayout(new GridLayout(1,1));
+d78 21
+d100 14
+a113 5
+		getContentPane().add(left);
+		getContentPane().add(right);
+		//left.setPreferredSize(new Dimension(10,60));
+		left.setMaximumSize(new Dimension(5,600));
+		right.setMinimumSize(new Dimension(width-5,600));
+d115 3
+a117 13
+		JTextArea t = new JTextArea("instruction\ninstruction\ninstruction\ninstruction\ninstruction\ninstruction\ninstruction\n");
+		t.setVisible(true);
+		t.setPreferredSize(new Dimension(width-5,height-5));
+		//t.setWrapStyleWord(true);
+		right.add(t);
+		
+		//left.setLayout(new BoxLayout(left,BoxLayout.Y_AXIS));
+		left.setLayout(new FlowLayout());
+		for (int i = 0; i < 10; i++) {
+			JCheckBox l = new JCheckBox();
+		left.add(l);
+		}
+		//pack();
+d119 10
+@
+
+
+1.2
+log
+@Added several components to internal frames
+@
+text
+@d5 1
+a5 1
+package yams.src.yams.GUI;
+@
+
+
+1.1
+log
+@created new classes for each internal window
+@
+text
+@a3 2
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+d7 9
+a26 1
+		
+d29 23
+@
+

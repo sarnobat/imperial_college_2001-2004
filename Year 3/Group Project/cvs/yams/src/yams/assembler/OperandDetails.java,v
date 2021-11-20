@@ -1,0 +1,179 @@
+head	1.6;
+access;
+symbols
+	yams-final-19-12-03:1.6
+	yams-release2-17-12-03:1.4
+	yams-release-17-12-03:1.4;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2003.12.19.14.20.25;	author qq01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.19.13.25.30;	author jkm01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.12.16.11.50;	author jkm01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.12.10.14.38.21;	author jkm01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.12.10.01.00.42;	author jkm01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.09.18.55.24;	author jkm01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@updated javadoc
+@
+text
+@/*
+ * Created on 08-Dec-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+package yams.assembler;
+
+/**
+ * Contained as objects within a TreeMap in the Representation object, this class stores information on specific operands e.g. immediates etc.
+ * 
+ * @@author jkm01
+ */
+public class OperandDetails
+{
+	private int operandNumber;
+	private String operandType;
+	/*
+	* 0 Immediate   	mask,num
+	* 1 Register		
+	* 2 Label				mask,num,offset
+	* 3 Addressing	offset
+	* 4 Addressing Immediate
+	* 5 Addressing Immediate(register)
+	* 6 Addressing Label
+	* 7 Addressing Label immediate
+	* 8 Addressing Label Immediate Register
+	* 9 Addressing Register
+	*/
+	private String mask;
+	private int encodeBits;
+	private int outputBits;
+	private int offsetMode;
+
+	public OperandDetails(int num, String t, String m, int e, int out, int off)
+	{
+		operandNumber = num; operandType = t; mask = m; encodeBits = e; outputBits = out; offsetMode = off;
+	}
+	public String printOperand()
+	{
+		return "       number: "+operandNumber+" type: "+operandType+" mask: "+mask+" encodeBits: "+encodeBits+" outputBits: "+outputBits+" offsetMode: "+offsetMode+"\n";
+	}
+	public String getType() {return operandType;}
+	public String getMask() {return mask;}
+	public int getEncodeBits() {return encodeBits;}
+	public int getOutputBits() {return outputBits;}
+	public int getOffset() {return offsetMode;}
+	public int getNumber() {return operandNumber;}
+}
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d10 2
+a12 2
+ *
+ * Contained as objects within a TreeMap in the Representation object, this class stores information on specific operands e.g. immediates etc.
+a13 2
+
+
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d12 1
+a12 2
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d19 1
+d38 1
+a38 1
+	public OperandDetails(String t, String m, int e, int out, int off)
+d40 1
+a40 1
+		operandType = t; mask = m; encodeBits = e; outputBits = out; offsetMode = off;
+d44 1
+a44 1
+		return "        type: "+operandType+" mask: "+mask+" encodeBits: "+encodeBits+" outputBits: "+outputBits+" offsetMode: "+offsetMode+"\n";
+d51 1
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d37 1
+a37 1
+	public OperandDetails(String t, String m, int e, int o, int off)
+d39 1
+a39 1
+		operandType = t; mask = m; encodeBits = e; outputBits = o; offsetMode = o;
+@
+
+
+1.1
+log
+@added extra files
+@
+text
+@d19 1
+a19 1
+	private int operandType;
+d37 1
+a37 1
+	public OperandDetails(int t, String m, int e, int o, int off)
+d41 5
+a45 1
+	public int getType() {return operandType;}
+d49 1
+@
+

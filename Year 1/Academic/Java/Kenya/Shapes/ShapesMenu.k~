@@ -1,0 +1,161 @@
+println ("***********Shapes Menu****************");
+println ("1. Square");
+println ("2. SWTriangle");
+println ("3. NWTrianlge");
+println ("4. NETriangle");
+println ("5. Hollow squares");
+println ("");
+println ("*****enter your choice (1 to 5):******");
+
+void processMenu(int reply){
+assert(1<= reply && reply <= 5): "must be a number between 1 and 5";
+	switch (reply){
+		case 1:	{putSquare(); break;}
+		case 2: {putSWTriangle(); break;}
+		case 3: {putNWTriangle(); break;}
+		case 4: {putNETriangle(); break;}
+		case 5: {putHSquareSeries(); break;}
+	}
+}
+
+processMenu (readInt());
+
+////////////////////////////////////////////////////////
+/////////////////////// SQUARE /////////////////////////
+////////////////////////////////////////////////////////
+
+void putSquare (){
+	int row; int col; int n;
+		print ("What size of square would you like? --> ");
+		n = readInt();
+		for (row = 0; row < n;  row ++){
+			for (col = 0; col <n; col ++){
+					print ("* ");
+			}
+			println ("");
+	}
+}
+
+
+
+////////////////////////////////////////////////////////
+/////////////////// SWTRIANGLE /////////////////////////
+////////////////////////////////////////////////////////
+
+void putSWTriangle (){
+	int row; int col; int n;
+		print ("What size of SWTriangle would you like? --> ");
+		n = readInt();
+		for (row = 0; row < n; row ++){
+				for (col = 0; col < row+1; col ++){
+					print ("* ");
+				}
+				println ("");
+		}
+}
+
+
+////////////////////////////////////////////////////////
+/////////////////// NWTRIANGLE /////////////////////////
+////////////////////////////////////////////////////////
+
+void putNWTriangle (){
+	int row; int col; int n;
+		print ("What size of NWTriangle would you like? --> ");
+		n = readInt();
+		for (row = 0; row < n; row ++){
+				for (col = 0; col < n-row; col ++){
+					print ("* ");
+				}
+				println ("");
+		}
+}
+
+
+////////////////////////////////////////////////////////
+//////////////////// NETRIANGLE ////////////////////////
+////////////////////////////////////////////////////////
+
+void putNETriangle (){
+	int row; int col; int n;
+		print ("What size of NETriangle would you like? --> ");
+		n = readInt();
+		for (row = 0; row < n; row ++){
+					for (col = 0; col < row; col ++){
+					print ("  ");
+					}					
+					for (col = 0; col < n-row; col ++){
+					print ("* ");
+					}
+					println ("");
+		}
+}
+
+
+
+////////////////////////////////////////////////////////
+/////////////////// SERIES OF HOLLOW SQUARES ///////////
+////////////////////////////////////////////////////////
+
+void putHSquareSeries (){
+	int p; int q; int first; int last;
+	print ("Enter the square range you wish to print --> ");
+	first = readInt(); last = readInt();
+	for (q = first; q <= last; q++){
+		hsquare (last-q,q);
+		println ("");
+		println ("");
+	}
+}
+
+
+/////////////////// SINGLE HOLLOW SQUARE  //////////////
+
+void hsquare (int m,int n){
+int row; int col;
+//post: deals with row zero
+	for (row = 0; row < 1; row ++){
+		for (col = 0; col < m; col ++){
+			print ("  ");
+		}
+		for (col = m; col < n+m; col ++){
+			print ("* ");
+		}
+	println ("");
+	}
+/////////the following deals with row 1 to row n-1 ///////////
+
+	for	(row = 1; row < n-1; row ++){
+		for (col = 0; col < m; col ++){
+			print ("  ");
+		}
+		for (col = m; col <m+1; col++){
+			print ("* ");
+		}
+		for (col = m+1; col < n-1+m; col ++){
+			print ("  ");
+		}
+		for  (col = n-1+m; col < n+m; col++){
+			print ("* ");
+		}
+	println ("");
+	}
+//////////// the following deals with last row ////////////////
+	for (row = n-1; row < n; row ++){
+		for (col = 0; col < m; col ++){
+			print ("  ");
+		}
+		for (col = m; col < n+m; col ++){
+			print ("* ");
+		}
+	}
+}
+
+////////////////////////////////////////////////////////
+//////////// (end of helper function hsquare) //////////
+////////////////////////////////////////////////////////
+
+
+
+
+/////////////// (end of case functions) ////////////////

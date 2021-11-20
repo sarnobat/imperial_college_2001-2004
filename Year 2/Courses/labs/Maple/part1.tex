@@ -1,0 +1,445 @@
+%% Created by Maple 7.00 (IBM INTEL LINUX)
+%% Source Worksheet: part1.mws
+%% Generated: Sun Mar  2 19:31:22 2003
+\documentclass{article}
+\usepackage{maple2e}
+ \def\emptyline{\vspace{12pt}}
+\DefineParaStyle{Maple Output}
+\DefineCharStyle{2D Math}
+\DefineCharStyle{2D Output}
+\begin{document}
+\pagestyle{empty}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{SRIDHAR SARNOBAT (ss401)}{%
+}
+\end{mapleinput}
+
+\begin{mapleinput}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{recfib := n ->}{%
+}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{   if n=0 then 0}{%
+}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{   elif n=1 then 1}{%
+}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{   else recfib(n-1) + recfib(n-2)}{%
+}
+\end{mapleinput}
+
+\begin{mapleinput}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{   end if;}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{recfib := proc (n) options operator, arrow; if n = 0 then 0 elif n =
+1 then 1 else recfib(n-1)+recfib(n-2) end if end proc;}{%
+\maplemultiline{
+\mathit{recfib} := \textbf{proc} (n) \\
+\textbf{option} \,\mathit{operator}, \,\mathit{arrow}; \\
+\mapleIndent{1} \textbf{if} \,n=0\,\textbf{then} \,0\,\textbf{
+elif} \,n=1\,\textbf{then} \,1\,\textbf{else} \,\mathrm{recfib}(n
+ - 1) + \mathrm{recfib}(n - 2)\,\textbf{end if}  \\
+\textbf{end proc}  }
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{linrecfib := (n,a,b) ->}{%
+}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{   if n=0 then a}{%
+}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{   else linrecfib(n-1,b,a+b)}{%
+}
+\end{mapleinput}
+
+\begin{mapleinput}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{   end if;}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{linrecfib := proc (n, a, b) options operator, arrow; if n = 0 then a
+else linrecfib(n-1,b,a+b) end if end proc;}{%
+\maplemultiline{
+\mathit{linrecfib} := \textbf{proc} (n, \,a, \,b) \\
+\textbf{option} \,\mathit{operator}, \,\mathit{arrow}; \\
+\mapleIndent{1} \textbf{if} \,n=0\,\textbf{then} \,a\,\textbf{
+else} \,\mathrm{linrecfib}(n - 1, \,b, \,a + b)\,\textbf{end if} 
+ \\
+\textbf{end proc}  }
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{linrecfib(5,0,1);}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{15;}{%
+\[
+15
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{flushleft}
+TESTS:
+\end{flushleft}
+
+\begin{mapleinput}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{map(recfib,[0,1,2,3,4,5,6,7,8,9,10]);}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55];}{%
+\[
+[0, \,1, \,1, \,2, \,3, \,5, \,8, \,13, \,21, \,34, \,55]
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{map(n->linrecfib(n,0,1),[0,1,2,3,4,5,6,7,8,9,10]);}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55];}{%
+\[
+[0, \,1, \,1, \,2, \,3, \,5, \,8, \,13, \,21, \,34, \,55]
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{root(8,2);}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{2*sqrt(2);}{%
+\[
+2\,\sqrt{2}
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{p := root(5,2);}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{p := sqrt(5);}{%
+\[
+p := \sqrt{5}
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{nonrecfib := n -> evalf((((1+root(5,2))/2)^n -
+((1-root(5,2))/2)^n)/root(5,2));}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{nonrecfib := proc (n) options operator, arrow;
+evalf(((1/2+1/2*root(5,2))^n-(1/2-1/2*root(5,2))^n)/root(5,2)) end
+proc;}{%
+\[
+\mathit{nonrecfib} := n\rightarrow \mathrm{evalf} \left(  \! 
+{\displaystyle \frac {({\displaystyle \frac {1}{2}}  + 
+{\displaystyle \frac {1}{2}} \,\mathrm{root}(5, \,2))^{n} - (
+{\displaystyle \frac {1}{2}}  - {\displaystyle \frac {1}{2}} \,
+\mathrm{root}(5, \,2))^{n}}{\mathrm{root}(5, \,2)}}  \!  \right) 
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{nonrecfib(7);}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{13.00000002;}{%
+\[
+13.00000002
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\emptyline
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{(map(nonrecfib,[1,2,3,4,5,6,7,8,9,10]));}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{[1., 1.000000000, 2.000000002, 3.000000002, 5.000000002, 8.000000010,
+13.00000002, 21.00000002, 34.00000006, 55.00000012];}{%
+\maplemultiline{
+[1., \,1.000000000, \,2.000000002, \,3.000000002, \,5.000000002, 
+\,8.000000010, \,13.00000002,  \\
+21.00000002, \,34.00000006, \,55.00000012] }
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\begin{mapleinput}
+\end{mapleinput}
+
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{flushleft}
+PROFILES
+\end{flushleft}
+
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{13.00000002;}{%
+\[
+13.00000002
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{profile(recfib,linrecfib,nonrecfib);}{%
+}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{recfib(20);}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{6765;}{%
+\[
+6765
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{linrecfib(20,0,1);}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{6765;}{%
+\[
+6765
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{nonrecfib(20);}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{6765.000020;}{%
+\[
+6765.000020
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{showprofile(bytes);}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplettyout}
+function           depth    calls     time    time%         bytes  
+bytes%
+\end{maplettyout}
+
+\begin{maplettyout}
+----------------------------------------------------------------------
+-----
+\end{maplettyout}
+
+\begin{maplettyout}
+nonrecfib              1        1    0.000     0.00          7884     
+.08
+\end{maplettyout}
+
+\begin{maplettyout}
+linrecfib             21       21    0.000     0.00         10208     
+.10
+\end{maplettyout}
+
+\begin{maplettyout}
+recfib                20    21891     .950   100.00      10352616   
+99.83
+\end{maplettyout}
+
+\begin{maplettyout}
+----------------------------------------------------------------------
+-----
+\end{maplettyout}
+
+\begin{maplettyout}
+total:                42    21913     .950   100.00      10370708  
+100.00
+\end{maplettyout}
+
+\emptyline
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{unprofile(recfib,linrecfib,nonrecfib);}{%
+}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\begin{flushleft}
+WHICH I S THE LEAST EFFICIENT?       recfib
+\end{flushleft}
+
+\begin{flushleft}
+WHICH I S THE MOST EFFICIENT?       nonrecfib
+\end{flushleft}
+
+\begin{flushleft}
+DOES THE MOST EFFICIENT ONE HAVE ANY DISADVANTAGES?   It uses more
+complex operations like square root, power etc.
+\end{flushleft}
+
+\end{maplegroup}
+\end{document}
+%% End of Maple 7.00 Output

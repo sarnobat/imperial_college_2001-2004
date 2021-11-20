@@ -1,0 +1,1185 @@
+From MAILER-DAEMON Mon Jun 10 19:14:53 2002
+Date: 10 Jun 2002 19:14:53 +0100
+From: Mail System Internal Data <MAILER-DAEMON@mallard.doc.ic.ac.uk>
+Subject: DON'T DELETE THIS MESSAGE -- FOLDER INTERNAL DATA
+Message-ID: <1023732893@mallard.doc.ic.ac.uk>
+X-IMAP: 1003144868 0000000024
+Status: RO
+
+This text is part of the internal format of your mail folder, and is not
+a real message.  It is created automatically by the mail system software.
+If deleted, important folder data will be lost, and it will be re-created
+with the data reset to initial values.
+
+From sov_data@ic.ac.uk Fri Oct 12 10:06:40 2001
+Return-path: <sov_data@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 12 Oct 2001 10:06:40 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15ryHA-0007B1-00
+	for ss401@doc.ic.ac.uk; Fri, 12 Oct 2001 10:06:40 +0100
+Received: from mr4.cc.ic.ac.uk ([155.198.5.114])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15ryHB-0006xp-00
+	for ss401@doc.ic.ac.uk; Fri, 12 Oct 2001 10:06:41 +0100
+Received: from icex1.cc.ic.ac.uk ([155.198.3.1])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 15ryHA-00078x-00
+	for sridhar.sarnobat@ic.ac.uk; Fri, 12 Oct 2001 10:06:40 +0100
+Received: by icex1.cc.ic.ac.uk with Internet Mail Service (5.5.2653.19)
+	id <SWXBMKPV>; Fri, 12 Oct 2001 10:06:40 +0100
+Message-ID: <A0F836836670D41183A800508BAF190B02BF7EC5@icex1.cc.ic.ac.uk>
+From: CCS User Information <sov_data@ic.ac.uk>
+To: "Sarnobat, Sridhar" <sridhar.sarnobat@ic.ac.uk>
+Subject: Your ATHENS username and password
+Date: Fri, 12 Oct 2001 10:06:32 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 1
+
+Dear Sridhar Sarnobat
+
+You will receive an ATHENS username and password from the sender "Sybase".
+Please do not delete this.  It is vital for finding information on your
+subject.
+
+Every member of the College is issued with a personal ATHENS username and
+password. These may be used to access various web based library resources
+eg: Web of Science http://wos.mimas.ac.uk and Cambridge Scientific Abstracts
+http://www.csa1.co.uk/.  (For lists of library electronic resources see
+http://www.lib.ic.ac.uk/nwdata.htm and
+http://www.lib.ic.ac.uk/ejournals/ejnls.htm .)
+
+Please do not delete the message with your ATHENS details as you will
+require them for literature searching.
+
+Your ATHENS username and password are linked to your Imperial College email
+username. You will receive your ATHENS username via email from "Sybase", 2-3
+weeks after receiving your College email address. Enquiries about your
+ATHENS username and password should be directed to department/campus library
+staff or emailed to Electronic Information Services at eis@ic.ac.uk. 
+
+Mrs. Mano Jacob
+ATHENS Domain Administrator
+Central Library
+Imperial College of Science Technology and Medicine
+London
+SW7 2AZ
+Tel: +44-(0)20-7594-8822
+Fax:+44-(0)20-7584-3763
+Email: mano.jacob@ic.ac.uk
+
+
+
+From automated@athens.ac.uk Sat Oct 13 06:32:42 2001
+Return-path: <automated@athens.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Sat, 13 Oct 2001 06:32:42 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15sHPe-0000zh-00
+	for ss401@doc.ic.ac.uk; Sat, 13 Oct 2001 06:32:42 +0100
+Received: from mr1.cc.ic.ac.uk ([155.198.5.111])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15sHPd-00044q-00
+	for ss401@doc.ic.ac.uk; Sat, 13 Oct 2001 06:32:41 +0100
+Received: from kidney.niss.ac.uk ([193.63.76.80])
+	by mr1.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 15sHPd-0006MB-00
+	for sridhar.sarnobat@ic.ac.uk; Sat, 13 Oct 2001 06:32:41 +0100
+Received: from athens by kidney.niss.ac.uk with local (Exim 3.16 #1)
+	id 15sHSf-0004LV-00
+	for sridhar.sarnobat@ic.ac.uk; Sat, 13 Oct 2001 06:35:49 +0100
+to:sridhar.sarnobat@ic.ac.uk
+Reply-to: ebh@doc.ic.ac.uk
+X-Errors-to:ebh@doc.ic.ac.uk
+Subject: ATHENS Personal Account created
+Message-Id: <E15sHSf-0004LV-00@kidney.niss.ac.uk>
+From: automated@athens.ac.uk
+Date: Sat, 13 Oct 2001 06:35:49 +0100
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 2
+
+The following ATHENS Personal Account has been created for you by your local ATHENS
+administrator (E Haigh, 0171-594-8831, ebh@doc.ic.ac.uk).
+
+Please make a note of the above details.
+Should you have any problems with your account you will need to contact your
+administrator who has access to your details.
+
+Please login at the URL below to check your details and notify your
+administrator of any errors.  You may use this WWW page to view and connect
+to the list of information resources your account is entitled to access.  It
+is recommended that you change your password and you can also use this WWW
+location to do that.
+
+        Username: iclss401
+        Password: DgFZc3230
+
+Your full ATHENS account details can be viewed using a WWW browser at:
+http://admin.athens.ac.uk/myathens
+
+The resources you are entitled to access with this account are:
+BioMed Medline
+Emerald Reviews
+FAME on the Internet
+ingentaJournals Full Text Service
+ISI JCR Social Sciences Edition
+MIMAS ISI Current Contents Connect
+CrossFire Service (PLUSABGM)
+EDINA Palmer's Index
+JUSTIS CELEX
+JUSTIS Official Journal C
+BIDS IBSS Service
+ESDU Data
+UK JSTOR Mirror Service
+BioMed Mental Health Collection
+CrossFire Service (EXCEL)
+ZETOC - BL Electronic Table of Contents
+NeLH Cochrane Library
+CrossFire Service (AUTONOM)
+CSA Internet Database Service
+National Electronic Site Licence Initiat
+BioMed Biomedical Collection 2
+EDINA Digimap
+BioMed Biomedical Collection 3
+BIDS EMBASE Service
+ISI Web of Science Service for UK Educat
+BioMed Biomedical Collection 4
+BioMed Nursing Collection
+BioMed Core Biomedical Collection
+CrossFire FirePower L&T modules
+BIDS Silver Platter INSPEC service
+Chadwyck-Healey KnowUK Database
+NISS OVID PsycINFO Service
+EDINA Compendex
+ISI JCR Science Edition
+EDINA EconLit
+EDINA Ulrichs
+
+Please keep your account details secure (particularly your username
+and password). Delete this mail message immediately!
+
+IMPORTANT: This service is for personal account holders only.
+If you are not the registered user of this account you MUST
+NOT attempt to login and you MUST NOT share your account details
+with anyone else. All login attempts are recorded and monitored.
+Any abuse of the service may lead to the withdrawal of access.
+
+From ebh@doc.ic.ac.uk Tue Oct 23 14:24:55 2001
+Return-path: <ebh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 23 Oct 2001 14:24:55 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15w1Vn-0002Zi-00; Tue, 23 Oct 2001 14:22:31 +0100
+Received: from ccc-lib01.lib.ic.ac.uk ([155.198.4.76] helo=ccc-lib01)
+	by duck.doc.ic.ac.uk with smtp (Exim 3.16 #7)
+	id 15w1Vb-0004l1-00; Tue, 23 Oct 2001 14:22:19 +0100
+Message-Id: <3.0.6.32.20011023142221.00deb150@pop.doc.ic.ac.uk>
+X-Sender: ebh@pop.doc.ic.ac.uk
+X-Mailer: QUALCOMM Windows Eudora Light Version 3.0.6 (32)
+Date: Tue, 23 Oct 2001 14:22:21 +0100
+To: doc-staff@doc.ic.ac.uk,all-students@doc.ic.ac.uk
+From: Ellen B Haigh <ebh@doc.ic.ac.uk>
+Subject: Fw: Site licence for Reference Manager and EndNote
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 3
+
+Dear Staff and Students,
+
+Below is a forwarded message from the Central Library.
+
+Regards,
+Ellen
+
+
+>>
+>> Dear colleagues
+>>
+>> Following Janet Evans' email back in August, we will announce the
+>> availability of the service this morning.  I am forwarding the following
+>> email, which is being circulated college-wide as part of the publicity,
+>for
+>> your information.  In case you get enquiries about Reference Manager or
+>> EndNote, please refer them to EIS at eis@ic.ac.uk or myself
+>> f.afshari@ic.ac.uk
+>>
+>> Regards
+>>
+>> Fereshteh Afshari
+>>
+>****************************************************************************
+>> **********************************
+>>
+>> Three-year site licence for Reference Manager and EndNote
+>>
+>> The library has purchased a three-year site licence for Reference Manager
+>> and EndNote bibliographic management software, and offers support and
+>> training in their use.
+>>
+>> Use of the software eases the burden of researching and writing.  These
+>> programs are designed to enable you to create your own personalised
+>> databases by extracting references from major databases such as
+>> Medline/PubMed, ISI Web of Science, INSPEC, etc.  An extensive range of
+>> pre-defined output formats, such as Harvard or approved styles of academic
+>> journals, are built into the software.  EndNote and Reference Manager are
+>> already widely used in College and interest in their availability and use
+>is
+>> growing.
+>>
+>> You may download the latest versions of the software, Reference Manager
+>9.5
+>> and EndNote 5, from the ICT, IT Services (previously CCS) website at
+>> <http://www.ict.ic.ac.uk/softwareshop/> for which you will be required to
+>> enter your IC username and password.  The software may be installed on any
+>> IC-owned or operated machine but users must complete a registration form,
+>> before downloading the software.
+>>
+>> Those who already use these packages and wish to upgrade to the latest
+>> version may visit the same website and follow the procedures.
+>>
+>> The library has organised training sessions for the Windows versions of
+>> Reference Manager and EndNote starting November 2001. For more details
+>about
+>> downloading the software, training timetable and other supporting
+>documents
+>> look at <http://www.lib.ic.ac.uk/bibsoft/>
+>>
+>>
+>
+>
+****************************************************************************
+*********************
+- 
+  Ellen B. Haigh, Librarian                       Email: ebh@doc.ic.ac.uk
+  Computing Collection		Telephone:  +44 020 7594 6182
+  Central Library, Imperial College  	 Fax: +44 020  7584 3763
+  London SW7 2AZ
+  England
+  England 
+
+****************************************************************************
+*********************              
+
+
+From ebh@doc.ic.ac.uk Tue Oct 23 14:24:56 2001
+Return-path: <ebh@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 23 Oct 2001 14:24:56 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15w1X8-0002ay-00; Tue, 23 Oct 2001 14:23:54 +0100
+Received: from ccc-lib01.lib.ic.ac.uk ([155.198.4.76] helo=ccc-lib01)
+	by duck.doc.ic.ac.uk with smtp (Exim 3.16 #7)
+	id 15w1X3-0004ms-00; Tue, 23 Oct 2001 14:23:49 +0100
+Message-Id: <3.0.6.32.20011023142351.00deb150@pop.doc.ic.ac.uk>
+X-Sender: ebh@pop.doc.ic.ac.uk
+X-Mailer: QUALCOMM Windows Eudora Light Version 3.0.6 (32)
+Date: Tue, 23 Oct 2001 14:23:51 +0100
+To: doc-staff@doc.ic.ac.uk,all-students@doc.ic.ac.uk
+From: Ellen B Haigh <ebh@doc.ic.ac.uk>
+Subject: Reference Manager training sessions
+Mime-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 4
+
+Dear Gang,
+A forwarded message from the Central Library regarding training.
+
+Regards,
+Ellen
+
+>
+>
+>		*****************************************
+>		Reference Manager half-day hands-on sessions
+>		http://www.lib.ic.ac.uk/bibsoft/rm.html
+>
+>		The library has now organised the following Reference
+>Manager hands-on sessions 
+>			Dates:
+>					Wednesday 7 November		9.30
+>am - 1.00 pm
+>					Tuesday 13 November		9.30
+>am - 1.00 pm 
+>					Thursday 22 November		9.30
+>am - 1.00 pm 
+>					Tuesday 4 December 		9.30
+>am - 1.00 pm
+>			Location: 
+>					Room2, Level 5, Central Library,
+>South Kensington
+>
+>		If you would like to attend any of the above sessions,
+>please make a booking by emailing Fereshteh Afshari at f.afshari@ic.ac.uk
+>
+>		If you would like us to organise campus-based training
+>sessions, please contact Fereshteh Afshari at f.afshari@ic.ac.uk
+>		*********************************
+>
+>
+>
+****************************************************************************
+*********************
+- 
+  Ellen B. Haigh, Librarian                       Email: ebh@doc.ic.ac.uk
+  Computing Collection		Telephone:  +44 020 7594 6182
+  Central Library, Imperial College  	 Fax: +44 020  7584 3763
+  London SW7 2AZ
+  England
+  England 
+
+****************************************************************************
+*********************              
+
+
+From ss401@duck.doc.ic.ac.uk Mon Nov  5 04:10:45 2001 -0000
+>From sirsi@ic.ac.uk Sun, 04 Nov 2001 20:12:32 -0800
+Received: from [155.198.5.113] by hotmail.com (3.2) with ESMTP id MHotMailBDAF5C4400754004319F9BC60571CFF20; Sun, 04 Nov 2001 20:10:45 -0800
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr3.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 160b5w-0001mw-03
+	for sarnobat@hotmail.com; Mon, 05 Nov 2001 04:10:44 +0000
+Date: Mon, 5 Nov 2001 04:12:07 GMT
+Message-Id: <29985.200111050412@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 5
+
+Monday, 5 November, 2001
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:51 HAR (SHORT)                            ID:2404594922
+     Handbook of mathematics and computational science / John W. Harris, Horst
+     Stocker.
+     Harris, John W.
+     due:7/11/2001,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Sat Jan  5 04:11:17 2002 -0000
+>From sirsi@ic.ac.uk Fri, 04 Jan 2002 20:11:48 -0800
+Received: from [155.198.5.114] by hotmail.com (3.2) with ESMTP id MHotMailBDFFC7E4002B4004314F9BC6057291A10; Fri, 04 Jan 2002 20:11:17 -0800
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 16MiAu-0001tG-04
+	for sarnobat@hotmail.com; Sat, 05 Jan 2002 04:11:16 +0000
+Date: Sat, 5 Jan 2002 04:12:50 GMT
+Message-Id: <7044.200201050412@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 6
+
+Saturday, 5 January, 2002
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:518.1 COO (STANDARD)                      ID:30209011416477
+     Computer mathematics / D.J. Cooke and H.E. Bez.
+     Cooke, D. J.
+     due:9/1/2002,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Sat Jan  5 04:03:48 2002 -0000
+>From sirsi@ic.ac.uk Fri, 04 Jan 2002 20:04:23 -0800
+Received: from [155.198.5.114] by hotmail.com (3.2) with ESMTP id MHotMailBDFFC6230052400431089BC60572DA250; Fri, 04 Jan 2002 20:03:48 -0800
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 16Mi3f-00005H-04
+	for sarnobat@hotmail.com; Sat, 05 Jan 2002 04:03:47 +0000
+Date: Sat, 5 Jan 2002 04:05:21 GMT
+Message-Id: <1551.200201050405@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 7
+
+Saturday, 5 January, 2002
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:518.1 KOL (LONGLOAN)                      ID:2400523528
+     Discrete mathematical structures for computer science / Bernard Kolman,
+     Robert C. Busby.
+     Kolman, Bernard, 1932-
+     due:11/1/2002,22:10
+
+  2  call number:518.1 LIP (LONGLOAN)                      ID:2401536466
+     Schaum's outline of theory and problems of discrete mathematics / by
+     Seymour Lipschutz.
+     Lipschutz, Seymour.
+     due:11/1/2002,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Sat Jan 26 04:06:15 2002 -0000
+>From sirsi@ic.ac.uk Fri, 25 Jan 2002 20:07:22 -0800
+Received: from [155.198.5.114] by hotmail.com (3.2) with ESMTP id MHotMailBE1B763600084004318E9BC60572B3390; Fri, 25 Jan 2002 20:06:15 -0800
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 16UK6Z-00027v-04
+	for sarnobat@hotmail.com; Sat, 26 Jan 2002 04:06:15 +0000
+Date: Sat, 26 Jan 2002 04:07:52 GMT
+Message-Id: <22784.200201260407@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 8
+
+Saturday, 26 January, 2002
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:51:5 ENG (STANDARD)                       ID:2400731229
+     Mathematical methods for engineering and science students / M.J.
+     Englefield.
+     Englefield, M. J.
+     due:30/1/2002,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Sun Feb 10 04:11:16 2002 -0000
+>From sirsi@ic.ac.uk Sat, 09 Feb 2002 20:11:32 -0800
+Received: from [155.198.5.113] by hotmail.com (3.2) with ESMTP id MHotMailBE2F3DE40020400437699BC60571A8F70; Sat, 09 Feb 2002 20:11:16 -0800
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr3.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 16ZlKd-0005xU-03
+	for sarnobat@hotmail.com; Sun, 10 Feb 2002 04:11:15 +0000
+Date: Sun, 10 Feb 2002 04:12:57 GMT
+Message-Id: <2146.200202100412@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 9
+
+Sunday, 10 February, 2002
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:D.4.0 NUT (SHORT)                         ID:2405382592
+     Operating systems : a modern perspective / Gary J. Nutt.
+     Nutt, Gary J.
+     due:12/2/2002,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Sun Feb 17 04:22:12 2002 -0000
+>From sirsi@ic.ac.uk Sat, 16 Feb 2002 20:22:33 -0800
+Received: from [155.198.5.113] by hotmail.com (3.2) with ESMTP id MHotMailBE387AF3009A400431249BC60571D57B0; Sat, 16 Feb 2002 20:22:12 -0800
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr3.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 16cIq3-0000qI-03
+	for sarnobat@hotmail.com; Sun, 17 Feb 2002 04:22:11 +0000
+Date: Sun, 17 Feb 2002 04:12:15 GMT
+Message-Id: <5954.200202170412@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 10
+
+Sunday, 17 February, 2002
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:D.4.0 NUT (SHORT)                         ID:2405382592
+     Operating systems : a modern perspective / Gary J. Nutt.
+     Nutt, Gary J.
+     due:19/2/2002,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Sat Nov 17 04:05:35 2001 -0000
+>From sirsi@ic.ac.uk Fri, 16 Nov 2001 20:06:09 -0800
+Received: from [155.198.5.114] by hotmail.com (3.2) with ESMTP id MHotMailBDBF2D0E00A04004374C9BC6057294980; Fri, 16 Nov 2001 20:05:35 -0800
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 164wjV-0000AG-04
+	for sarnobat@hotmail.com; Sat, 17 Nov 2001 04:05:33 +0000
+Date: Sat, 17 Nov 2001 04:06:58 GMT
+Message-Id: <406.200111170406@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 11
+
+Saturday, 17 November, 2001
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:518.1 COO (STANDARD)                      ID:30209011416477
+     Computer mathematics / D.J. Cooke and H.E. Bez.
+     Cooke, D. J.
+     due:21/11/2001,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Wed Oct 10 03:11:07 2001 -0000
+>From sirsi@ic.ac.uk Tue, 09 Oct 2001 20:11:08 -0700
+Received: from [155.198.5.113] by hotmail.com (3.2) with ESMTP id MHotMailBD8D074A00754004319F9BC60571CDA90; Tue, 09 Oct 2001 20:11:07 -0700
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr3.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 15r9kT-0002j1-00
+	for sarnobat@hotmail.com; Wed, 10 Oct 2001 04:09:33 +0100
+Date: Wed, 10 Oct 2001 04:10:50 +0100 (BST)
+Message-Id: <11151.200110100310@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 12
+
+Wednesday, 10 October, 2001
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:D.1.1 THO (SHORT)                         ID:2404268811
+     Haskell : the craft of functional programming / Simon Thompson.
+     Thompson, Simon.
+     due:12/10/2001,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Wed Dec 19 03:25:46 2001 -0000
+>From sirsi@ic.ac.uk Tue, 18 Dec 2001 19:26:35 -0800
+Received: from [155.198.5.114] by hotmail.com (3.2) with ESMTP id MHotMailBDE953B900B7400437159BC605729FB10; Tue, 18 Dec 2001 19:25:46 -0800
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 16GXMX-0007wu-04
+	for sarnobat@hotmail.com; Wed, 19 Dec 2001 03:25:45 +0000
+Date: Wed, 19 Dec 2001 03:27:17 GMT
+Message-Id: <5279.200112190327@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 13
+
+Wednesday, 19 December, 2001
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+      FIRST OVERDUE NOTICE
+
+The following items are now overdue from the library below.  Please return
+or renew them as soon as possible.  Loans may be renewed through the library's
+Unicorn system (http://www.lib.ic.ac.uk/catalogue/cataccess.htm) via the
+'Renew Loans' option.
+
+     Computer mathematics / D.J. Cooke and H.E. Bez.
+     Cooke, D. J.
+  1  call number:518.1 COO (STANDARD)                      ID:30209011416477
+     due:12/12/2001,22:10
+
+^^^ THE ITEMS ABOVE WERE BORROWED FROM:
+^^^ CENTRAL LIBRARY
+    Tel: 020 7594 8810
+
+To receive library notices via email, add your email address to your user record
+using the 'ADD EMAIL' feature on the library's Unicorn system
+(http://www.lib.ic.ac.uk/catalogue/cataccess.htm).
+
+
+From ss401@mallard.doc.ic.ac.uk Fri Feb 22 04:04:05 2002 -0000
+>From sirsi@ic.ac.uk Thu, 21 Feb 2002 20:04:21 -0800
+Received: from [155.198.5.113] by hotmail.com (3.2) with ESMTP id MHotMailBE3F0E3400A24136E8099BC60571E5510; Thu, 21 Feb 2002 20:04:05 -0800
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr3.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 16e6yJ-0002lu-03
+	for sarnobat@hotmail.com; Fri, 22 Feb 2002 04:06:11 +0000
+Date: Fri, 22 Feb 2002 04:07:18 GMT
+Message-Id: <3115.200202220407@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 14
+
+Friday, 22 February, 2002
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:D.4.0 STA (STANDARD)                      ID:2401017105
+     Operating systems / William Stallings.
+     Stallings, William.
+     due:26/2/2002,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Sat Mar 16 04:14:53 2002 -0000
+>From sirsi@ic.ac.uk Fri, 15 Mar 2002 20:16:38 -0800
+Received: from [155.198.5.113] by hotmail.com (3.2) with ESMTP id MHotMailBE5C11BD007A4004388C9BC60571C4460; Fri, 15 Mar 2002 20:14:53 -0800
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr3.cc.ic.ac.uk with esmtp (Exim 3.35 #1)
+	id 16m5Yo-0003kl-03
+	for sarnobat@hotmail.com; Sat, 16 Mar 2002 04:12:50 +0000
+Date: Sat, 16 Mar 2002 04:14:33 GMT
+Message-Id: <29396.200203160414@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 17
+
+Saturday, 16 March, 2002
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:D.4.0 TAN (SHORT)                         ID:2401016807
+     Modern operating systems / Andrew S. Tanenbaum.
+     Tanenbaum, Andrew S.
+     due:18/3/2002,22:10
+
+  2  call number:D.4.0 NUT (SHORT)                         ID:2405382592
+     Operating systems : a modern perspective / Gary J. Nutt.
+     Nutt, Gary J.
+     due:18/3/2002,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Sat Mar 16 04:05:22 2002 -0000
+>From sirsi@ic.ac.uk Fri, 15 Mar 2002 20:06:37 -0800
+Received: from [155.198.5.113] by hotmail.com (3.2) with ESMTP id MHotMailBE5C0F820018400432579BC60571BF290; Fri, 15 Mar 2002 20:05:22 -0800
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr3.cc.ic.ac.uk with esmtp (Exim 3.35 #1)
+	id 16m5RZ-0003UD-03
+	for sarnobat@hotmail.com; Sat, 16 Mar 2002 04:05:21 +0000
+Date: Sat, 16 Mar 2002 04:07:05 GMT
+Message-Id: <20033.200203160407@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 18
+
+Saturday, 16 March, 2002
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:H.2.0 DAT (STANDARD)                      ID:2403151969
+     An introduction to database systems / C.J.Date. Vol.2
+     Date, C. J.
+     due:20/3/2002,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Thu Apr 18 04:27:19 2002 +0100
+>From sirsi@ic.ac.uk Wed, 17 Apr 2002 20:28:20 -0700
+Received: from [155.198.5.114] by hotmail.com (3.2) with ESMTP id MHotMailBE8787E400134004311D9BC60572D35E21; Wed, 17 Apr 2002 20:27:19 -0700
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.35 #1)
+	id 16y2QB-0008Q5-04
+	for sarnobat@hotmail.com; Thu, 18 Apr 2002 04:17:19 +0100
+Date: Thu, 18 Apr 2002 04:19:03 +0100 (BST)
+Message-Id: <12801.200204180319@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 19
+
+Thursday, 18 April, 2002
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:518.1 BAA (STANDARD)                      ID:2401017099
+     Computer algorithms : introduction to design and analysis / Sara Baase.
+     Baase, Sara.
+     due:22/4/2002,22:10
+
+  2  call number:H.2.0 DAT (STANDARD)                      ID:2403151969
+     An introduction to database systems / C.J.Date. Vol.2
+     Date, C. J.
+     due:22/4/2002,22:10
+
+  3  call number:D.4.0 STA (STANDARD)                      ID:2401017105
+     Operating systems / William Stallings.
+     Stallings, William.
+     due:22/4/2002,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Sat Mar  9 05:12:38 2002 +0100
+>From sirsi@ic.ac.uk Fri, 08 Mar 2002 20:13:21 -0800
+Received: from [155.198.5.114] by hotmail.com (3.2) with ESMTP id MHotMailBE52D6B6003B400432639BC60572C9F60; Fri, 08 Mar 2002 20:12:38 -0800
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 16jYDl-0007b1-04
+	for sarnobat@hotmail.com; Sat, 09 Mar 2002 04:12:37 +0000
+Date: Sat, 9 Mar 2002 04:14:22 GMT
+Message-Id: <17468.200203090414@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 20
+
+Saturday, 9 March, 2002
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:D.4.0 TAN (SHORT)                         ID:2401016807
+     Modern operating systems / Andrew S. Tanenbaum.
+     Tanenbaum, Andrew S.
+     due:11/3/2002,22:10
+
+  2  call number:D.4.0 NUT (SHORT)                         ID:2405382592
+     Operating systems : a modern perspective / Gary J. Nutt.
+     Nutt, Gary J.
+     due:11/3/2002,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Mon Mar  4 05:10:59 2002 +0100
+>From sirsi@ic.ac.uk Sun, 03 Mar 2002 20:12:17 -0800
+Received: from [155.198.5.113] by hotmail.com (3.2) with ESMTP id MHotMailBE4C3ED20037400438D19BC60571CC7E0; Sun, 03 Mar 2002 20:10:59 -0800
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr3.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 16hjoQ-0003xS-03
+	for sarnobat@hotmail.com; Mon, 04 Mar 2002 04:10:58 +0000
+Date: Mon, 4 Mar 2002 04:12:41 GMT
+Message-Id: <12150.200203040412@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 21
+
+Monday, 4 March, 2002
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:D.4.0 TAN (SHORT)                         ID:2401016807
+     Modern operating systems / Andrew S. Tanenbaum.
+     Tanenbaum, Andrew S.
+     due:6/3/2002,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Wed Feb 27 05:04:10 2002 +0100
+>From sirsi@ic.ac.uk Tue, 26 Feb 2002 20:05:34 -0800
+Received: from [155.198.5.113] by hotmail.com (3.2) with ESMTP id MHotMailBE45A5B9002F4004376F9BC60571D0CF0; Tue, 26 Feb 2002 20:04:10 -0800
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr3.cc.ic.ac.uk with esmtp (Exim 3.31 #1)
+	id 16fvPO-0000UU-03
+	for sarnobat@hotmail.com; Wed, 27 Feb 2002 04:09:38 +0000
+Date: Wed, 27 Feb 2002 04:11:22 GMT
+Message-Id: <24897.200202270411@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 22
+
+Wednesday, 27 February, 2002
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:D.4.0 TAN (SHORT)                         ID:2401016807
+     Modern operating systems / Andrew S. Tanenbaum.
+     Tanenbaum, Andrew S.
+     due:1/3/2002,22:10
+
+  2  call number:D.4.0 NUT (SHORT)                         ID:2405382592
+     Operating systems : a modern perspective / Gary J. Nutt.
+     Nutt, Gary J.
+     due:1/3/2002,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Sat Apr 20 04:28:57 2002 +0100
+>From sirsi@ic.ac.uk Fri, 19 Apr 2002 20:30:08 -0700
+Received: from [155.198.5.113] by hotmail.com (3.2) with ESMTP id MHotMailBE8A2B5D0027400431CF9BC60571DCB59; Fri, 19 Apr 2002 20:28:57 -0700
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr3.cc.ic.ac.uk with esmtp (Exim 3.35 #1)
+	id 16ylMC-000775-03
+	for sarnobat@hotmail.com; Sat, 20 Apr 2002 04:16:12 +0100
+Date: Sat, 20 Apr 2002 04:17:55 +0100 (BST)
+Message-Id: <13647.200204200317@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 23
+
+Saturday, 20 April, 2002
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:D.4.0 NUT (SHORT)                         ID:2405382592
+     Operating systems : a modern perspective / Gary J. Nutt.
+     Nutt, Gary J.
+     due:22/4/2002,22:10
+
+
+From ss401@mallard.doc.ic.ac.uk Sat Apr 27 04:12:22 2002 +0100
+>From sirsi@ic.ac.uk Fri, 26 Apr 2002 20:13:21 -0700
+Received: from [155.198.5.114] by hotmail.com (3.2) with ESMTP id MHotMailBE9362150042400431A19BC60572B7680; Fri, 26 Apr 2002 20:12:22 -0700
+Received: from unicorn.lib.ic.ac.uk ([155.198.4.20])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.35 #1)
+	id 171IdF-0004Mh-04
+	for sarnobat@hotmail.com; Sat, 27 Apr 2002 04:12:17 +0100
+Date: Sat, 27 Apr 2002 04:14:00 +0100 (BST)
+Message-Id: <10862.200204270314@unicorn.lib.ic.ac.uk>
+To: sarnobat@hotmail.com
+From: library-notices@ic.ac.uk
+Reply-To: library-notices@ic.ac.uk
+Subject: Library Notice
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 24
+
+Saturday, 27 April, 2002
+
+          MR. SRIDHAR SARNOBAT
+          UNDERGRADUATE
+          YEAR 1
+          COMPUTING (4YC:MENG)
+          Department of Computing
+
+Dear MR. SARNOBAT:
+             REMINDER
+
+Our records show that the items below will soon be due back from loan.  If you
+still need the items, please renew them either in the library or via the web
+catalogue at http://www.lib.ic.ac.uk/catalogue/cataccess.htm
+
+If you have finished using the items, please return them to the library no later
+than the due date indicated in the book.
+
+Thank you.
+
+  1  call number:D.4.0 TAN (SHORT)                         ID:2401016807
+     Modern operating systems / Andrew S. Tanenbaum.
+     Tanenbaum, Andrew S.
+     due:29/4/2002,22:10
+
+  2  call number:F.3.1 REA (SHORT)                         ID:2403455839
+     Reasoned programming / K. Broda ... [et al.]
+     Broda, Krysia, 1949-
+     due:29/4/2002,22:10
+
+

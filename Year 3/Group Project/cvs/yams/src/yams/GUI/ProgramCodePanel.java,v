@@ -1,0 +1,1021 @@
+head	1.16;
+access;
+symbols
+	yams-final-19-12-03:1.16
+	yams-release2-17-12-03:1.16
+	yams-release-17-12-03:1.16;
+locks; strict;
+comment	@# @;
+
+
+1.16
+date	2003.12.16.02.07.03;	author ajb101;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.12.15.15.43.51;	author ajb101;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.12.15.04.05.45;	author ajb101;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.12.14.19.10.35;	author ss401;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.12.04.23.31;	author ajb101;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.11.20.18.14;	author ajb101;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.11.03.17.02;	author ajb101;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.09.05.02.48;	author ajb101;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.08.19.44.14;	author ajb101;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.08.13.27.44;	author ajb101;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.08.01.15.17;	author ajb101;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.04.19.13.01;	author ajb101;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.04.02.48.12;	author ajb101;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.12.03.13.51.14;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.12.03.01.59.34;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.02.14.47.15;	author ajb101;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@
+package yams.GUI;
+
+import java.util.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.*;
+import javax.swing.event.*;
+import javax.swing.table.*;
+
+import yams.*;
+import yams.parser.*;
+
+
+public class ProgramCodePanel extends YamsPanel {
+
+
+	// window elements
+	private JPanel buttonPanel;
+	private JPanel tablePanel;
+	
+	private JLabel lblStatus;
+	
+	public JButton butRun;
+	public JButton butStep;
+	public JButton butStop;
+	public JButton butSkipNext;
+	
+	private JSlider slideSpeed;
+	
+	private JTable breakPointTable;
+	private JScrollPane scrollPane;
+	
+	private Vector breakPoints = new Vector();
+	
+	
+	public ProgramCodePanel(YAMSGui controller) {
+		super(controller);
+		
+		// create boxlayout
+		this.setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
+		GridBagConstraints c = new GridBagConstraints();
+		
+		// create status label
+		lblStatus = new JLabel("Processor Stopped");
+		lblStatus.setHorizontalAlignment(JLabel.CENTER);
+		
+		// create buttonPanel
+		buttonPanel = new JPanel();
+		buttonPanel.setLayout(new GridBagLayout());
+		buttonPanel.setBorder(BorderFactory.createTitledBorder("Program Code Execution"));
+		
+		buttonPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE,80));
+		
+		c.weightx = 0.5;
+		c.weighty = 0.5;
+		
+		c.fill = GridBagConstraints.BOTH;
+		c.gridx = 1;
+		c.gridy = 1;
+		c.gridheight = 1;
+		c.gridwidth = 2;
+		buttonPanel.add(lblStatus,c);
+		
+		c.gridheight = 1;
+		c.gridwidth = 1;
+		// add some buttons
+		butRun = new JButton("Run");
+		butStep = new JButton("Step");
+		butStop = new JButton("Stop");
+		butSkipNext = new JButton("Skip Next Instruction");
+		
+		// buttons initially disabled
+		butRun.setEnabled(false);
+		butStep.setEnabled(false);
+		butStop.setEnabled(false);
+		butSkipNext.setEnabled(false);
+		
+		// add listeners to buttons
+		ProgramCodeButtonController buttonController = new ProgramCodeButtonController(this);
+		butRun.addActionListener(buttonController);
+		butStep.addActionListener(buttonController);
+		butStop.addActionListener(buttonController);
+		butSkipNext.addActionListener(buttonController);
+		
+		// add to panel
+		c.gridx = 1;
+		c.gridy = 2;
+		buttonPanel.add(butRun,c);
+		c.gridx = 2;
+		c.gridy = 2;
+		buttonPanel.add(butStep,c);
+		c.gridx = 1;
+		c.gridy = 3;
+		buttonPanel.add(butStop,c);
+		c.gridx = 2;
+		c.gridy = 3;
+		buttonPanel.add(butSkipNext,c);
+
+		slideSpeed = new JSlider(JSlider.HORIZONTAL, 0,1000,300);
+		slideSpeed.addChangeListener(new SlideController(controller));
+		slideSpeed.setMajorTickSpacing(100);
+		slideSpeed.setMinorTickSpacing(10);
+		slideSpeed.setPaintTicks(true);
+		slideSpeed.setPaintLabels(true);
+		
+		c.gridx = 1;
+		c.gridy = 4;
+		c.gridwidth = 2;
+		buttonPanel.add(slideSpeed,c);
+		
+		this.add(buttonPanel);
+		
+		// create table panel
+		tablePanel = new JPanel();
+		tablePanel.setLayout(new GridLayout(1,1));
+		tablePanel.setBorder(BorderFactory.createTitledBorder("Breakpoints"));
+		
+		this.add(tablePanel);
+	}
+	
+	/**
+	 * Creates a new Table for the program whose LineList has
+	 * just been loaded
+	 * @@param source
+	 */
+	public void setSourceCode(LineList source) {
+		// initalise breakpoint vector
+		breakPoints = new Vector();
+		for(int i=0; i < source.totalLines(); i++) {
+			breakPoints.add(new Boolean(false));
+		}
+		
+		// create a new table
+		breakPointTable = new JTable(new BreakPointTable(controller, source, breakPoints));
+		TableColumn column = breakPointTable.getColumnModel().getColumn(0);
+		column.setMaxWidth(70);
+		column.setMinWidth(70);
+		
+		scrollPane = new JScrollPane(breakPointTable);
+		tablePanel.add(scrollPane);
+		
+		controller.getMainFrame().show();
+	}
+	
+	/**
+	 * Reset the breakpoint table ready for a new one to be loaded
+	 */
+	public void reset() {
+		// if the scroll pane exists, remove it
+		try {
+			tablePanel.remove(scrollPane);
+		}
+		catch (Exception e) {}
+	}
+	
+	/**
+	 * Returns the current value the slider is pointing to
+	 * @@return slider value
+	 */
+	public int getSpeed() {
+		return slideSpeed.getValue();
+	}
+	
+	/**
+	 * Highlights a particular row of the table
+	 * @@param currentLine
+	 */
+	public void setCurrentLine(int currentLine) {
+		breakPointTable.getSelectionModel().setSelectionInterval(currentLine-1,currentLine-1);
+	}
+	
+	
+	/**
+	 * Adds or removes a breakpoint from the list of breakpoints
+	 * @@param line The line which the user has requested to break on
+	 * @@param value Whether the user wishes to select or unselect a breakpoint
+	 */
+	public void setBreakPoint(int line, boolean value) {
+		breakPoints.set(line-1, new Boolean(value));
+	}
+	
+	/**
+	 * Determines whether the given line has a breakpoint enabled
+	 * @@param line
+	 * @@return true if a breakpoint is set, false otherwise
+	 */
+	public boolean getBreakPoint(int line) {
+		return ((Boolean)breakPoints.get(line-1)).booleanValue();
+	}
+	
+	/**
+	 * Resets all breakpoints to false
+	 *
+	 */
+	public void resetBreakpoints() {
+		for(int i=0; i< breakPoints.size(); i++) {
+			breakPoints.set(i, new Boolean(false));
+		}
+	}
+	
+	/**
+	 * Sets the text of the label of the processor status to the
+	 * supplied string
+	 * @@param message
+	 */
+	public void setProcessorStatus(String message) {
+		lblStatus.setText(message);
+	}
+	
+
+
+}
+
+
+
+/**
+ * Action Listener which handles clicks on execution control buttons
+ *
+ */
+class ProgramCodeButtonController implements ActionListener {
+	
+	private static ProgramCodePanel codePanel;
+	
+	ProgramCodeButtonController(ProgramCodePanel p) {
+		codePanel = p;
+	}
+	
+	public void actionPerformed(ActionEvent e) {
+		JButton source = (JButton)e.getSource();
+		
+		if (source == codePanel.butRun) {
+			codePanel.controller.processorStart();
+		} else if (source == codePanel.butStep) {
+			codePanel.controller.processorStep();
+		} else if (source == codePanel.butSkipNext) {
+			codePanel.controller.processorSkip();
+		} else if (source == codePanel.butStop) {
+			codePanel.controller.processorStop();
+		}
+		
+		
+	}
+	
+}
+
+/**
+ * Listens to state changes of the JSlider in the specified YAMSGui
+ */
+class SlideController implements ChangeListener {
+
+	YAMSGui controller;
+	
+	SlideController(YAMSGui c) {
+		controller = c;
+	}
+
+	public void stateChanged(ChangeEvent e) {
+		// update processor handler speed
+		JSlider slide = (JSlider)e.getSource();
+		controller.setProcessorSpeed(slide.getValue());
+	}
+	
+}
+
+
+/**
+ * Table model for the Breakpoint tablea
+ */
+class BreakPointTable extends AbstractTableModel {
+	private String[] columnNames = {"Breakpoint", "Instruction"};
+		
+	YAMSGui controller;
+	LineList data;
+	Vector breakPoints;
+	
+	BreakPointTable(YAMSGui c, LineList source, Vector b) {
+		controller = c;
+		data = source;
+		breakPoints = b;
+		this.addTableModelListener(new BreakPointTableController(controller, breakPoints));
+	}
+		
+	public int getColumnCount() {
+		return columnNames.length;
+	}
+
+	public int getRowCount() {
+		return data.totalLines();
+	}
+
+	public String getColumnName(int col) {
+		return columnNames[col];
+	}
+
+	public Object getValueAt(int row, int col) {
+		if (col == 0) {
+			return breakPoints.get(row);
+		} else {
+			return data.getLine(row+1).getOriginal();
+		}
+	}
+		
+	public void setValueAt(Object value, int row, int col) {
+		if (col == 0) {
+			breakPoints.setElementAt(value, row);
+			fireTableCellUpdated(row, col);
+		}
+	}
+
+	public Class getColumnClass(int c) {
+		return getValueAt(0,c).getClass();
+	}
+		
+	public boolean isCellEditable(int row, int col) {
+		if (col == 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+}
+
+
+
+/**
+ * Listens for any changes to the internal table model, and updates
+ * the JTable display to reflect these changes 
+ */
+class BreakPointTableController implements TableModelListener {
+	
+	YAMSGui controller;
+	Vector breakpoints;
+	
+	BreakPointTableController(YAMSGui c, Vector b) {
+		controller = c;
+		breakpoints = b;
+	}
+
+	
+	public void tableChanged(TableModelEvent e) {
+		// ensure currently executing line is re-selected
+		controller.updateBreakPointPanel();
+	}
+	
+}@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 4
+/*
+ * Created on 21-Nov-2003
+ *
+ */
+a172 1
+		// TODO: make sure currect selection is visible
+@
+
+
+1.14
+log
+@more updates and bug fixes, including a weird one with the processorHandler thread
+@
+text
+@d152 1
+a152 2
+	 * Removes the scroll pane from the table panel
+	 *
+d164 1
+a164 1
+	 * @@return
+d181 1
+a181 2
+	 * Adds a new item to the Vector containing the list of breakpoints,
+	 * in the correct position 
+d192 1
+a192 1
+	 * @@return
+a224 1
+ * @@author ss401
+a253 2
+ * 
+ * @@author ss401
+d272 1
+d274 1
+a274 4
+ * 
+ * @@author ss401
+ * Listens for any changes to the internal table model, and updates
+ * the JTable display to reflect these changes 
+a275 20
+class BreakPointTableController implements TableModelListener {
+	
+	YAMSGui controller;
+	Vector breakpoints;
+	
+	BreakPointTableController(YAMSGui c, Vector b) {
+		controller = c;
+		breakpoints = b;
+	}
+
+	
+	public void tableChanged(TableModelEvent e) {
+		// ensure currently executing line is re-selected
+		controller.updateBreakPointPanel();
+	}
+	
+}
+
+
+
+d281 1
+a281 1
+	Vector breakPoints = new Vector();
+d329 24
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d201 10
+@
+
+
+1.12
+log
+@LOADS of gui changes
+@
+text
+@d127 5
+a131 1
+	
+d151 4
+a154 1
+	
+d163 4
+d171 4
+a174 1
+	
+d181 6
+d191 5
+d200 5
+d215 5
+a219 1
+
+d246 5
+a250 1
+
+d267 6
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d34 2
+d47 1
+d50 1
+a50 1
+		lblStatus = new JLabel("Processor Ready...");
+d58 1
+a58 2
+		// TODO: make this bit nicer?
+		buttonPanel.setMaximumSize(new Dimension(5000000,80));
+d60 2
+a61 1
+		GridBagConstraints c = new GridBagConstraints();
+d64 2
+a65 2
+		c.gridx = 0;
+		c.gridy = 0;
+d93 1
+a93 1
+		c.gridy = 1;
+d96 1
+a96 1
+		c.gridy = 1;
+d99 1
+a99 1
+		c.gridy = 2;
+d102 1
+a102 1
+		c.gridy = 2;
+d104 12
+a117 1
+
+d136 1
+a136 1
+		breakPointTable = new JTable(new BreakPointTable(source, breakPoints));
+d156 4
+d175 3
+a178 50
+	class BreakPointTable extends AbstractTableModel {
+		private String[] columnNames = {"Breakpoint", "Instruction"};
+		
+		LineList data;
+		Vector breakPoints = new Vector();
+		
+		BreakPointTable(LineList source, Vector b) {
+			data = source;
+			breakPoints = b;
+			this.addTableModelListener(new BreakPointTableController(controller, breakPoints));
+		}
+		
+		public int getColumnCount() {
+			return columnNames.length;
+		}
+
+		public int getRowCount() {
+			return data.totalLines();
+		}
+
+		public String getColumnName(int col) {
+			return columnNames[col];
+		}
+
+		public Object getValueAt(int row, int col) {
+			if (col == 0) {
+				return breakPoints.get(row);
+			} else {
+				return data.getLine(row+1).getOriginal();
+			}
+		}
+		
+		public void setValueAt(Object value, int row, int col) {
+			if (col == 0) {
+				breakPoints.setElementAt(value, row);
+				fireTableCellUpdated(row, col);
+			}
+		}
+
+		public Class getColumnClass(int c) {
+			return getValueAt(0,c).getClass();
+		}
+		
+		public boolean isCellEditable(int row, int col) {
+			if (col == 0) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+a179 1
+	}
+d200 1
+a200 1
+			codePanel.controller.processorAdvance();
+d213 16
+d247 56
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d27 2
+d46 4
+d52 1
+a52 1
+		buttonPanel.setLayout(new GridLayout(2,2));
+d58 11
+d89 12
+a100 4
+		buttonPanel.add(butRun);
+		buttonPanel.add(butStep);
+		buttonPanel.add(butStop);
+		buttonPanel.add(butSkipNext);
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@a118 1
+		// TODO: change colour of highlighted line perhaps?
+d129 1
+a129 1
+		return ((Boolean)breakPoints.get(line)).booleanValue();
+d142 1
+a142 1
+			this.addTableModelListener(new BreakPointTableController(breakPoints));
+d220 1
+d223 2
+a224 1
+	BreakPointTableController(Vector b) {
+d230 2
+a231 1
+		// System.out.println("  TABLE CHANGED row: " + e.getFirstRow());
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@a19 3
+// TODO: handle adding removing of breakpoints
+
+
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d13 1
+a20 1
+// TODO: add methods to change colour of a line (TableCellRenderer)
+a26 1
+	
+d38 2
+d93 6
+d100 1
+a100 1
+		breakPointTable = new JTable(new BreakPointTable(source));
+d122 1
+d128 9
+d143 1
+a143 1
+		BreakPointTable(LineList source) {
+d145 2
+a146 3
+			for(int i=0; i<getRowCount(); i++) {
+				breakPoints.add(i, new Boolean(false));
+			}
+d168 7
+d217 16
+@
+
+
+1.6
+log
+@GUI updates Galore!
+@
+text
+@d115 1
+a115 1
+		breakPointTable.getSelectionModel().setSelectionInterval(currentLine,currentLine);
+d149 1
+a149 3
+				// TODO: getOriginalLine needs to be implemented
+				// return data.getLine(row).getOriginalLine();
+				return "A Line Of Code";
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d7 2
+d16 1
+d27 4
+d36 3
+d47 1
+a47 1
+		JPanel buttonPanel = new JPanel();
+d83 1
+a83 1
+		JPanel tablePanel = new JPanel();
+d87 7
+a93 1
+		JTable breakPointTable = new JTable(new BreakPointTable());
+d98 1
+a98 1
+		JScrollPane scrollPane = new JScrollPane(breakPointTable);
+d101 16
+a116 1
+		this.add(tablePanel);
+d123 9
+a131 3
+		private Object[][] data = {
+			{new Boolean(false), "ADD n to x"},
+			{new Boolean(true), "Adam is a God"} };
+d138 1
+a138 1
+			return data.length;
+d146 7
+a152 1
+			return data[row][col];
+a166 6
+		public void setValueAt(Object value, int row, int col) {
+			data[row][col] = value;
+			fireTableCellUpdated(row, col);
+		}
+
+		
+a187 1
+			// remove breakpoints
+@
+
+
+1.4
+log
+@lots of gooey updates
+@
+text
+@d25 1
+a25 1
+	public JButton butRunComplete;
+d46 1
+a46 1
+		butRunComplete = new JButton("Run to Completion");
+d52 1
+a52 1
+		butRunComplete.setEnabled(false);
+d59 1
+a59 1
+		butRunComplete.addActionListener(buttonController);
+d65 1
+a65 1
+		buttonPanel.add(butRunComplete);
+d150 1
+a150 1
+		} else if (source == codePanel.butRunComplete) {
+d152 1
+a152 1
+			codePanel.controller.processorStart();
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d8 1
+d14 1
+a14 1
+import yams.processor.*;
+d23 53
+a75 2
+	public ProgramCodePanel(String windowName, YAMSGui controller) {
+		super(windowName, controller);
+a76 2
+		// create table
+		this.setLayout(new GridLayout(1,1));
+d83 1
+d85 1
+a85 1
+		this.add(scrollPane);
+d132 3
+d136 26
+d163 1
+@
+
+
+1.2
+log
+@lots of new GUI stuff :)
+@
+text
+@d22 2
+a23 2
+	public ProgramCodePanel(int width, int height, YAMSGui controller) {
+		super(width, height, controller);
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d7 1
+a7 1
+import java.awt.Dimension;
+d9 2
+a10 7
+import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.JCheckBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+d15 2
+a16 5
+/**
+ * @@author ss401
+ *
+ */
+public class ProgramCodePanel extends YamsPanel {
+a17 31
+	int width;
+	int height;
+	int scrollbaWidth = 50;
+	int leftWidth = 17;
+	int rightWidth = 17;
+	int centreWidth;
+	
+	JLabel l;
+	String codePosition = "";
+	String marker = "*";
+	String fakeProgramCode = "";
+	/**
+	 * 
+	 */
+	public ProgramCodePanel(int width,int height, YAMSGui controller) {
+		super(width,height,controller);
+		this.width = width;
+		this.height = height;
+		centreWidth = width - leftWidth - rightWidth-scrollbaWidth;
+
+		
+		//TODO: This should also give the name of the file 
+//		setTitle("Program Code");
+
+		JPanel root = new JPanel();
+		this.add(root);
+		root.setLayout(new BoxLayout(root, BoxLayout.X_AXIS));
+
+		root.add(getRadioBoxColumn());
+		root.add(getCheckBoxColumn());
+		root.add(getProgramCodeTextArea());
+d19 1
+a20 1
+		this.add(new JScrollPane(root));
+d22 13
+d36 4
+a39 2
+	private JPanel getProgramCodeTextArea() {
+		JPanel centre = new JPanel();
+d41 3
+a43 7
+		JTextArea codeArea = new JTextArea(fakeProgramCode);
+		codeArea.setPreferredSize(new Dimension(centreWidth, height));
+		codeArea.setMinimumSize(new Dimension(centreWidth, height));
+		codeArea.setMaximumSize(new Dimension(centreWidth, height));
+		codeArea.setVisible(true);
+		codeArea.setEditable(false);
+		centre.add(codeArea);
+d45 7
+a51 1
+		return centre;
+d53 2
+a54 18
+	}
+	/**
+	 * Creates the panel to specify where to place a breakpoint
+	 * @@return
+	 */
+	private JPanel getCheckBoxColumn() {
+		JPanel left = new JPanel();
+		left.setPreferredSize(new Dimension(leftWidth, height));
+		left.setMaximumSize(new Dimension(leftWidth, height));
+		left.setMinimumSize(new Dimension(leftWidth, height));
+
+		left.setLayout(new BoxLayout(left, BoxLayout.Y_AXIS));
+		//left.add(Box.createRigidArea(new Dimension(0,4)));
+		for (int i = 0; i < 20; i++) {
+			JCheckBox l = new JCheckBox();
+			left.add(Box.createRigidArea(new Dimension(0, 3)));
+			left.add(l);
+			fakeProgramCode += "instruction\n";
+d57 3
+a59 1
+		return left;
+d61 3
+a63 25
+	}
+	/**
+	 * Creates the panel to indicate at what point in the program the simulation is
+	 * @@return
+	 */
+	private JPanel getRadioBoxColumn(){
+		JPanel right = new JPanel();
+		right.setPreferredSize(new Dimension(leftWidth, height));
+		right.setMaximumSize(new Dimension(leftWidth, height));
+		right.setMinimumSize(new Dimension(leftWidth, height));
+
+		/*right.setLayout(new BoxLayout(right, BoxLayout.Y_AXIS));
+		//left.add(Box.createRigidArea(new Dimension(0,4)));
+		ButtonGroup g = new ButtonGroup();
+		for (int i = 0; i < 20; i++) {
+			JRadioButton l = new JRadioButton();
+			l.set
+			right.add(Box.createRigidArea(new Dimension(0, 3)));
+			g.add(l);
+			right.add(l);
+		}*/
+		
+		l = new JLabel();
+		refreshPosition();
+		right.add(l);
+d65 7
+d73 6
+a78 9
+		return right;
+	}
+	public void stepForward(){
+		//TODO: Need to check if we've reached the end of the program; unless this cannot be called in such a case
+		codePosition += "<br>";
+		refreshPosition();
+	}
+	public void refreshPosition(){
+		l.setText("<html>"+ codePosition + marker +"<html>");		
+d80 1
+@
+

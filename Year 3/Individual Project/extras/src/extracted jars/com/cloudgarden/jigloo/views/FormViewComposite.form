@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form style="SWT" ide="eclipse" builder="jigloo" version="1.0.0">
+	<Component class="org.eclipse.swt.widgets.Composite" name="FormViewComposite" style="0">
+		<Constraints>
+			<LayoutConstraint/>
+		</Constraints>
+		<Layout class="Stack">
+			<Property name="marginHeight" type="int" value="0"/>
+			<Property name="topControl" type="String" value="cTabFolder"/>
+			<Property name="marginWidth" type="int" value="0"/>
+		</Layout>
+		<Events>
+		</Events>
+		<Properties>
+			<Property name="size" type="Dimension">
+				<Dimension value="[336, 162]"/>
+			</Property>
+			<Property name="bounds" type="Rectangle">
+				<Rectangle value="[0, 0, 336, 162]"/>
+			</Property>
+		</Properties>
+		<SubComponents>
+			<Component class="org.eclipse.swt.custom.SashForm" name="sashForm" style="0">
+				<Constraints>
+					<LayoutConstraint/>
+				</Constraints>
+				<Layout class="Absolute">
+				</Layout>
+				<Events>
+				</Events>
+				<Properties>
+					<Property name="size" type="Dimension">
+						<Dimension value="[60, 30]"/>
+					</Property>
+					<Property name="visible" type="boolean" value="true"/>
+				</Properties>
+			</Component>
+			<Component class="org.eclipse.swt.custom.CTabFolder" name="cTabFolder" style="0">
+				<Constraints>
+					<LayoutConstraint/>
+				</Constraints>
+				<Layout class="Absolute">
+				</Layout>
+				<Events>
+				</Events>
+				<Properties>
+					<Property name="size" type="Dimension">
+						<Dimension value="[60, 30]"/>
+					</Property>
+					<Property name="visible" type="boolean" value="true"/>
+				</Properties>
+				<SubComponents>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="propTabItem" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="Properties"/>
+						</Properties>
+						<SubComponents>
+							<Component class="org.eclipse.swt.widgets.Composite" name="propsComposite" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Fill">
+									<Property name="type" type="int" value="256"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+									<Property name="visible" type="boolean" value="true"/>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="layoutTabItem" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="Layout"/>
+						</Properties>
+						<SubComponents>
+							<Component class="org.eclipse.swt.widgets.Composite" name="layoutComposite" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Fill">
+									<Property name="type" type="int" value="256"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+									<Property name="visible" type="boolean" value="true"/>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="eventTabItem" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="Events"/>
+						</Properties>
+						<SubComponents>
+							<Component class="org.eclipse.swt.widgets.Composite" name="eventComposite" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Fill">
+									<Property name="type" type="int" value="256"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+									<Property name="visible" type="boolean" value="true"/>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+				</SubComponents>
+			</Component>
+		</SubComponents>
+	</Component>
+</Form>

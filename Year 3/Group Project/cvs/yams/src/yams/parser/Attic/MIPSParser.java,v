@@ -1,0 +1,547 @@
+head	1.12;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.12
+date	2003.12.08.12.42.53;	author qq01;	state dead;
+branches;
+next	1.11;
+
+1.11
+date	2003.11.24.01.26.20;	author qq01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.11.21.15.12.26;	author ajb101;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.11.18.13.59.26;	author qq01;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.11.16.17.52.33;	author ajb101;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.15.18.00.39;	author qq01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.14.16.09.36;	author qq01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.14.15.29.38;	author qq01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.14.14.54.55;	author qq01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.12.01.33.34;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.10.20.24.33;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.49;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.12
+log
+@deleted deprecated classes
+@
+text
+@/*
+ * Created on 2003-11-15
+ */
+package yams.parser;
+
+/**
+ * @@author Qian Qiao
+ * @@deprecated Replaced by class <code>Parser</code>.
+ */
+public class MIPSParser {
+
+	private LineList lineList;
+	private Token currentToken;
+	private int instructionCount;
+
+	private void match(MIPSLexer lexer, int expected)
+		throws ParseException, LexerException {
+		if (currentToken.getType() == expected) {
+			currentToken = lexer.nextToken();
+		} else {
+			throw new ParseException(
+				currentToken,
+				expected,
+				lexer.getLineNumber());
+		}
+	}
+
+	/**
+	 * Parses the program, returns a <code>InstructionList</code> object representing
+	 * the user's program.
+	 * 
+	 * @@param sourceProgram the source program
+	 * @@return a <code>InstructionList</code> object representing user's program.
+	 * @@throws LexerException
+	 * @@throws ParseException
+	 */
+	public LineList parseProgram(String sourceProgram)
+		throws LexerException, ParseException {
+		MIPSLexer lexer = new MIPSLexer(sourceProgram);
+		lineList = new LineList();
+
+		currentToken = lexer.nextToken();
+		instructionCount = 0;
+
+		while (currentToken.getType() != Lexer.EOF) {
+			if (currentToken.getType() == Lexer.NEWLINE) {
+				match(lexer, Lexer.NEWLINE);
+			} else {
+				try {
+					lineList.appendLine(
+						new Line(
+							lexer.getLineNumber(),
+							parseInstruction(lexer)));
+					currentToken = lexer.nextToken();
+				} catch (ParseException e) {
+					Label label = parseLabel(lexer);
+					currentToken = lexer.nextToken();
+					if (currentToken.getType() == Lexer.NEWLINE) {
+						lineList.appendLine(
+							new Line(lexer.getLineNumber(), label));
+					} else {
+						Instruction inst = parseInstruction(lexer);
+						lineList.appendLine(
+							new Line(lexer.getLineNumber(), label, inst));
+						currentToken = lexer.nextToken();
+					}
+				}
+				match(lexer, Lexer.NEWLINE);
+				instructionCount++;
+			}
+		}
+
+		return lineList;
+	}
+
+	private Label parseLabel(MIPSLexer lexer)
+		throws LexerException, ParseException {
+		String temp = new String(currentToken.getValue());
+		match(lexer, Lexer.IDENTIFIER);
+		if (currentToken.getType() == Lexer.COLON) {
+			return new Label(temp);
+		} else {
+			throw new ParseException("Miss colon", lexer.getLineNumber());
+		}
+	}
+
+	//	/**
+	//	 * @@param sourceProgram
+	//	 * @@return
+	//	 * @@throws LexerException
+	//	 * @@throws ParseException
+	//	 * @@deprecated
+	//	 */
+	//	public Instruction[] parseProgram1(String sourceProgram)
+	//		throws LexerException, ParseException {
+	//		MIPSLexer lexer = new MIPSLexer(sourceProgram);
+	//		instructions = new Vector();
+	//		currentToken = lexer.nextToken();
+	//		instructionCount = 0;
+	//		while (currentToken.getType() != MIPSLexer.EOF) {
+	//			if (currentToken.getType() == MIPSLexer.NEWLINE) {
+	//				match(lexer, MIPSLexer.NEWLINE);
+	//				continue;
+	//			}
+	//			instructions.addElement(parseInstruction(lexer));
+	//			currentToken = lexer.nextToken();
+	//			match(lexer, MIPSLexer.NEWLINE);
+	//			instructionCount++;
+	//		}
+	//		Instruction[] result = new Instruction[instructions.size()];
+	//		for (int i = result.length; --i >= 0;) {
+	//			result[i] = (Instruction) instructions.elementAt(i);
+	//		}
+	//		return result;
+	//	}
+
+	private Instruction parseInstruction(MIPSLexer lexer)
+		throws ParseException, LexerException {
+		/*
+		 * parse supported instructions, these if-else statements
+		 * should be populated by a XSLT transformation of the XML
+		 * instruction file.
+		 */
+		if (currentToken.getValue().toLowerCase().equals("add")) {
+			// made change so project will compile
+			// return new RInstruction("add", lexer, 3);
+			return null;
+		} else {
+			//none of the above, so test if it is a label.
+			throw new ParseException(
+				"Unsupported Instruction",
+				lexer.getLineNumber());
+		}
+	}
+
+	//	private Instruction parseInstruction1(MIPSLexer lexer)
+	//		throws ParseException, LexerException {
+	//		if (currentToken.getValue().equals("ADDI")) {
+	//			return new ADDI(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("ANDI")) {
+	//			return new ANDI(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("AND")) {
+	//			return new AND(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("BEQ")) {
+	//			return new BEQ(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("BNE")) {
+	//			return new BNE(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("LUI")) {
+	//			return new LUI(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("JAL")) {
+	//			return new JAL(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("J")) {
+	//			return new J(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("JR")) {
+	//			return new JR(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("LW")) {
+	//			return new LW(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("ORI")) {
+	//			return new ORI(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("OR")) {
+	//			return new OR(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("SLL")) {
+	//			return new SLL(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("SRL")) {
+	//			return new SRL(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("SLTI")) {
+	//			return new SLTI(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("SLT")) {
+	//			return new SLT(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("STOP")) {
+	//			return new STOP(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("SUBI")) {
+	//			return new SUBI(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("SUB")) {
+	//			return new SUB(lexer, instructionCount);
+	//		} else if (currentToken.value.equals("SW")) {
+	//			return new SW(lexer, instructionCount);
+	//		}
+	//		// none of the above - try equ and equr
+	//		String temp = currentToken.value;
+	//		int tempLine = lexer.getLineNumber();
+	//		Token tok1 = currentToken;
+	//		match(lexer, MIPSLexer.IDENTIFIER);
+	//		if (currentToken.value.equals("EQUR")) {
+	//			return new EQUR(instructionCount, tok1.value, lexer);
+	//		} else if (currentToken.value.equals("EQU")) {
+	//			return new EQU(instructionCount, tok1.value, lexer);
+	//		} else if (currentToken.type == MIPSLexer.COLON) {
+	//			Instruction instr;
+	//			try {
+	//				instr = parseInstruction(lexer);
+	//			} catch (Exception e) {
+	//				instr = new NOP(instructionCount);
+	//			}
+	//			instr.setLabel(temp);
+	//			return instr;
+	//
+	//		}
+	//		/*
+	//		Instruction instr = parseLabelledInstruction( lexer );
+	//		if( instr != null )
+	//		{
+	//			return instr;
+	//		}
+	//		*/
+	//		throw new ParseException("Unknown mnemonic:" + temp, tempLine);
+	//	}
+
+	//		private Instruction parseLabelledInstruction(MIPSLexer lexer)
+	//			throws ParseException, LexerException {
+	//			String temp = currentToken.getValue();
+	//			match(lexer, MIPSLexer.IDENTIFIER);
+	//			if (currentToken.getType() == MIPSLexer.COLON) {
+	//				Instruction instr;
+	//				try {
+	//					instr = parseInstruction(lexer);
+	//				} catch (Exception e) {
+	//					instr = new NOP(instructionCount);
+	//				}
+	//				instr.setLabel(temp);
+	//				return instr;
+	//			}
+	//			return null;
+	//		}
+
+	//	public static void main(String[] args) {
+	//		MIPSParser parser = new MIPSParser();
+	//		try {
+	//			parser.parseProgram("LW $t1, a65520($zero)\n");
+	//		} catch (Exception e) {
+	//			System.out.println(e);
+	//		}
+	//	}
+}
+@
+
+
+1.11
+log
+@Updated javadoc comments
+@
+text
+@@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+ * @@deprecated
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d125 3
+a127 1
+			return new RInstruction("add", lexer, 3);
+@
+
+
+1.8
+log
+@fixed type in MIPSParser, and changing layout of controller classes
+@
+text
+@d2 1
+a2 1
+ * Created on 2003-11-1
+a5 2
+//import java.util.Vector;
+
+d7 2
+a8 3
+ * Parses the users file. Invokes the <code>MIPSLexer</code> automatically.
+ * 
+ * @@author Qian Qiao <a href="qq01@@doc.ic.ac.uk">qq01@@doc.ic.ac.uk</a>
+d11 1
+d16 1
+a16 1
+	private void match(Lexer lexer, int expected)
+d37 1
+a37 1
+	public LineList parseProgram(StringBuffer sourceProgram)
+d39 1
+a39 1
+		Lexer lexer = new Lexer(sourceProgram);
+d76 1
+a76 1
+	private Label parseLabel(Lexer lexer)
+d117 1
+a117 1
+	private Instruction parseInstruction(Lexer lexer)
+d207 16
+a222 16
+//	private Instruction parseLabelledInstruction(MIPSLexer lexer)
+//		throws ParseException, LexerException {
+//		String temp = currentToken.getValue();
+//		match(lexer, MIPSLexer.IDENTIFIER);
+//		if (currentToken.getType() == MIPSLexer.COLON) {
+//			Instruction instr;
+//			try {
+//				instr = parseInstruction(lexer);
+//			} catch (Exception e) {
+//				instr = new NOP(instructionCount);
+//			}
+//			instr.setLabel(temp);
+//			return instr;
+//		}
+//		return null;
+//	}
+@
+
+
+1.7
+log
+@Replaced MIPSLexer class with the new class Lexer.
+@
+text
+@d39 1
+a39 1
+	public LineList parseProgram(String sourceProgram)
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d18 1
+a18 1
+	private void match(MIPSLexer lexer, int expected)
+d41 1
+a41 1
+		MIPSLexer lexer = new MIPSLexer(sourceProgram);
+d47 3
+a49 3
+		while (currentToken.getType() != MIPSLexer.EOF) {
+			if (currentToken.getType() == MIPSLexer.NEWLINE) {
+				match(lexer, MIPSLexer.NEWLINE);
+d60 1
+a60 1
+					if (currentToken.getType() == MIPSLexer.NEWLINE) {
+d70 1
+a70 1
+				match(lexer, MIPSLexer.NEWLINE);
+d78 1
+a78 1
+	private Label parseLabel(MIPSLexer lexer)
+d81 2
+a82 2
+		match(lexer, MIPSLexer.IDENTIFIER);
+		if (currentToken.getType() == MIPSLexer.COLON) {
+d119 1
+a119 1
+	private Instruction parseInstruction(MIPSLexer lexer)
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d126 2
+a127 2
+		if (currentToken.getValue().equals("ADD")) {
+			return new RInstruction("ADD", lexer, 3);
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+	private LineList instructionList;
+d42 1
+a42 1
+		instructionList = new LineList();
+d52 1
+a52 1
+					instructionList.appendLine(
+d61 1
+a61 1
+						instructionList.appendLine(
+d65 1
+a65 1
+						instructionList.appendLine(
+d75 1
+a75 1
+		return instructionList;
+@
+
+
+1.3
+log
+@updated parser files
+@
+text
+@a13 1
+	//	private Vector instructions;
+d51 19
+a69 3
+				instructionList.appendLine(
+					new Line(lexer.getLineNumber(), parseInstruction(lexer)));
+				currentToken = lexer.nextToken();
+d78 11
+d130 3
+a132 1
+			return null;
+d209 16
+a224 16
+	private Instruction parseLabelledInstruction(MIPSLexer lexer)
+		throws ParseException, LexerException {
+		String temp = currentToken.getValue();
+		match(lexer, MIPSLexer.IDENTIFIER);
+		if (currentToken.getType() == MIPSLexer.COLON) {
+			Instruction instr;
+			try {
+				instr = parseInstruction(lexer);
+			} catch (Exception e) {
+				instr = new NOP(instructionCount);
+			}
+			instr.setLabel(temp);
+			return instr;
+		}
+		return null;
+	}
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d95 5
+d103 1
+a111 2
+	//		} else if (currentToken.value.equals("ADD")) {
+	//			return new ADD(lexer, instructionCount);
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d15 1
+a15 1
+	private InstructionList instructionList;
+d40 1
+a40 1
+	public InstructionList parseProgram(String sourceProgram)
+d43 1
+a43 1
+		instructionList = new InstructionList();
+@
+

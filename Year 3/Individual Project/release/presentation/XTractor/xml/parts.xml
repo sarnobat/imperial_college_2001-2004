@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="no"?>
+
+<ps_db	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				xsi:schemaLocation="http://www.w3.org/2001/XMLSchema ss.xsd">
+	<?sql insert?>
+
+	<part pno="100" colour="red" price="20"/>
+	<part pno="101" colour="red" price="22"/>
+	<part pno="102" colour="yellow" price="11"/>
+
+	<?sql update?>
+	
+	<supplier sno="20I" town="London"><!--My favourite-->
+		<name>I<sup>2</sup> electronics</name>
+		<supplies>100</supplies>
+		<supplies>102</supplies>
+	</supplier>
+
+	<supplier sno="50J" town="Oslo">
+		<name>J &amp; S</name>
+		<supplies>100</supplies>
+		<supplies>101</supplies>
+	</supplier>
+	
+	<supplier sno="63H" town="Paris">
+		<name><![CDATA[<HTML> SA]]></name>
+	</supplier>
+</ps_db>

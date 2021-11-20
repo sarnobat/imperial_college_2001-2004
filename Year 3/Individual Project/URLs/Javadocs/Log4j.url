@@ -1,0 +1,5 @@
+[DEFAULT]
+BASEURL=http://logging.apache.org/log4j/docs/documentation.html
+[InternetShortcut]
+URL=http://logging.apache.org/log4j/docs/api/index.html
+Modified=2027C59D1039C401B7

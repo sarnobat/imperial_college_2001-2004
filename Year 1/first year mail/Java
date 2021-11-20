@@ -1,0 +1,2214 @@
+From MAILER-DAEMON Mon Jun 10 19:16:07 2002
+Date: 10 Jun 2002 19:16:07 +0100
+From: Mail System Internal Data <MAILER-DAEMON@mallard.doc.ic.ac.uk>
+Subject: DON'T DELETE THIS MESSAGE -- FOLDER INTERNAL DATA
+Message-ID: <1023732967@mallard.doc.ic.ac.uk>
+X-IMAP: 1006250572 0000000034
+Status: RO
+
+This text is part of the internal format of your mail folder, and is not
+a real message.  It is created automatically by the mail system software.
+If deleted, important folder data will be lost, and it will be re-created
+with the data reset to initial values.
+
+From jd101@doc.ic.ac.uk Sat Nov 24 21:33:49 2001
+Return-path: <jd101@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Sat, 24 Nov 2001 21:33:49 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 167kQh-0001VE-00; Sat, 24 Nov 2001 21:33:43 +0000
+Received: from owl.doc.ic.ac.uk ([146.169.1.44] ident=jd101)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 167kQh-0001da-00; Sat, 24 Nov 2001 21:33:43 +0000
+Date: Sat, 24 Nov 2001 21:33:43 +0000 (GMT)
+From: Jamie Denton <jd101@doc.ic.ac.uk>
+To:  <cs-first-year@doc.ic.ac.uk>
+cc:  <sue@doc.ic.ac.uk>
+Subject: kenya system (fwd)
+Message-ID: <Pine.LNX.4.33.0111242129480.16190-100000@owl.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 2
+
+The link below I believe should help aleviate some of the problems
+people have been having with kenya on their own machines, just follow
+the link and you will find more detailed instructions as to how to
+install kenya on your own systems.
+
+http://www.doc.ic.ac.uk/~sue/121/index.html
+
+Jamie
+
+
+
+From jd101@doc.ic.ac.uk Sun Nov 25 13:45:54 2001
+Return-path: <jd101@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Sun, 25 Nov 2001 13:45:54 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 167zbO-0005xn-00; Sun, 25 Nov 2001 13:45:46 +0000
+Received: from owl.doc.ic.ac.uk ([146.169.1.44] ident=jd101)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 167zbO-0000YO-00
+	for cs-first-year@doc.ic.ac.uk; Sun, 25 Nov 2001 13:45:46 +0000
+Date: Sun, 25 Nov 2001 13:45:46 +0000 (GMT)
+From: Jamie Denton <jd101@doc.ic.ac.uk>
+To:  <cs-first-year@doc.ic.ac.uk>
+Subject: RE: kenya system (fwd)
+Message-ID: <Pine.LNX.4.33.0111251344220.24229-100000@owl.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 3
+
+ok, looks like ashley brown found some mistakes on that page, see the
+attached mail for details:-
+
+Jamie
+
+---------- Forwarded message ----------
+Date: Sat, 24 Nov 2001 21:39:51 -0000
+From: Ashley Brown <ashley@ashleybrown.co.uk>
+To: Jamie Denton <jd101@doc.ic.ac.uk>
+Cc: sue@doc.ic.ac.uk
+Subject: RE: kenya system (fwd)
+
+Just a couple of corrections to that page:
+
+For example in the config file on my laptop I have the line
+java.location = c:\\Progra~1\\jdk1.4\\bin\\javac -source 1.4
+
+Should read:
+
+For example in the config file on my laptop I have the line
+javac.location = c:\\Progra~1\\jdk1.4\\bin\\javac -source 1.4
+
+and
+
+For example in the config file on my laptop I have the line
+java.loacation = c:\\Progra~1\\jdk1.4\\bin\\java -ea
+
+Should read
+
+For example in the config file on my laptop I have the line
+java.location = c:\\Progra~1\\jdk1.4\\bin\\java -ea
+
+-----Original Message-----
+From: Jamie Denton [mailto:jd101@doc.ic.ac.uk]
+Sent: 24 November 2001 21:34
+To: cs-first-year@doc.ic.ac.uk
+Cc: sue@doc.ic.ac.uk
+Subject: kenya system (fwd)
+
+
+The link below I believe should help aleviate some of the problems
+people have been having with kenya on their own machines, just follow
+the link and you will find more detailed instructions as to how to
+install kenya on your own systems.
+
+http://www.doc.ic.ac.uk/~sue/121/index.html
+
+Jamie
+
+
+
+
+
+From jd101@doc.ic.ac.uk Sun Nov 25 17:03:22 2001
+Return-path: <jd101@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Sun, 25 Nov 2001 17:03:22 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 1682gW-0006rR-00; Sun, 25 Nov 2001 17:03:16 +0000
+Received: from owl.doc.ic.ac.uk ([146.169.1.44] ident=jd101)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 1682gW-0007Gr-00
+	for cs-first-year@doc.ic.ac.uk; Sun, 25 Nov 2001 17:03:16 +0000
+Date: Sun, 25 Nov 2001 17:03:16 +0000 (GMT)
+From: Jamie Denton <jd101@doc.ic.ac.uk>
+To:  <cs-first-year@doc.ic.ac.uk>
+Subject: RE: kenya system (fwd)
+Message-ID: <Pine.LNX.4.33.0111251701410.17300-100000@owl.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 4
+
+Yet another suggestion, read the attached message :-
+
+Jamie
+
+p.s. if anyone else has any bright ideas, send them round urself, I
+don't need to vet your msgs
+
+---------- Forwarded message ----------
+Date: Sun, 25 Nov 2001 14:14:52 -0000
+From: Thomas Timbul <tt101@doc.ic.ac.uk>
+Reply-To: thomas.timbul@ic.ac.uk
+To: 'Jamie Denton' <jd101@doc.ic.ac.uk>
+Subject: RE: kenya system (fwd)
+
+I reckon u should tell ppl as well, what the shortcut to place on their
+desktops should look like since there is no executable-like in the
+package...
+
+The one I use on my system is as follows:
+
+"C:\Program Files\JavaSoft\JRE\1.3.1\bin\java.exe" -cp
+"c:\Downloads\DoC\Kenya\kenya.jar" Kenya -config
+"c:\Downloads\DoC\Kenya\config"
+
+that's all meant to be in a single line
+and its run in C:\Program Files\JavaSoft\JRE\1.3.1\bin obviously....
+
+I guess that might be the main problem ppl encounter, unless java 1.4
+lets u run .jar files straight away, coz 1.31 doesn't
+
+Regards
+Thomas
+
+-----Original Message-----
+From: Jamie Denton [mailto:jd101@doc.ic.ac.uk]
+Sent: Sonntag, 25. November 2001 13:46
+To: cs-first-year@doc.ic.ac.uk
+Subject: RE: kenya system (fwd)
+
+ok, looks like ashley brown found some mistakes on that page, see the
+attached mail for details:-
+
+Jamie
+
+---------- Forwarded message ----------
+Date: Sat, 24 Nov 2001 21:39:51 -0000
+From: Ashley Brown <ashley@ashleybrown.co.uk>
+To: Jamie Denton <jd101@doc.ic.ac.uk>
+Cc: sue@doc.ic.ac.uk
+Subject: RE: kenya system (fwd)
+
+Just a couple of corrections to that page:
+
+For example in the config file on my laptop I have the line
+java.location = c:\\Progra~1\\jdk1.4\\bin\\javac -source 1.4
+
+Should read:
+
+For example in the config file on my laptop I have the line
+javac.location = c:\\Progra~1\\jdk1.4\\bin\\javac -source 1.4
+
+and
+
+For example in the config file on my laptop I have the line
+java.loacation = c:\\Progra~1\\jdk1.4\\bin\\java -ea
+
+Should read
+
+For example in the config file on my laptop I have the line
+java.location = c:\\Progra~1\\jdk1.4\\bin\\java -ea
+
+-----Original Message-----
+From: Jamie Denton [mailto:jd101@doc.ic.ac.uk]
+Sent: 24 November 2001 21:34
+To: cs-first-year@doc.ic.ac.uk
+Cc: sue@doc.ic.ac.uk
+Subject: kenya system (fwd)
+
+
+The link below I believe should help aleviate some of the problems
+people have been having with kenya on their own machines, just follow
+the link and you will find more detailed instructions as to how to
+install kenya on your own systems.
+
+http://www.doc.ic.ac.uk/~sue/121/index.html
+
+Jamie
+
+
+
+
+
+
+
+From ashley.brown@ic.ac.uk Tue Nov 27 00:12:57 2001
+Return-path: <ashley.brown@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 27 Nov 2001 00:12:57 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 168Vrm-0007KM-00; Tue, 27 Nov 2001 00:12:50 +0000
+Received: from [146.169.27.4] (helo=ashley)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 168Vrl-0005cc-00; Tue, 27 Nov 2001 00:12:50 +0000
+Received: from ashley ([127.0.0.1]) by ashley with Microsoft SMTPSVC(5.0.2195.2966);
+	 Tue, 27 Nov 2001 00:12:19 +0000
+From: "Ashley Brown" <ashley.brown@ic.ac.uk>
+To: <cs-first-year@doc.ic.ac.uk>
+Cc: <sue@doc.ic.ac.uk>
+Subject: Kenya -> Java Translation --- Global Arrays
+Date: Tue, 27 Nov 2001 00:12:19 -0000
+Message-ID: <NCBBILEEELOAODIMHOJMAEKFCIAA.ashley.brown@ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+Importance: Normal
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4522.1200
+X-OriginalArrivalTime: 27 Nov 2001 00:12:19.0599 (UTC) FILETIME=[2DC519F0:01C176D8]
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 5
+
+Hi All,
+
+Just another "feature" of Kenya you might want to watch out for (I've seen
+this 3 times today).
+
+Many of you are trying to do something like this:
+
+int Marks[11];
+void getMarks()
+{
+	// stuff
+	// assign something to the array ...
+		Marks[something] = ....
+}
+
+// Do stuff, call it
+getMarks();  // This reads in the marks to "Marks"
+
+
+Kenya will translate this quite happily, however it won't compile. This is
+because of the way Kenya translates to Java.
+
+You can use a global array, however make sure that any helper functions take
+the array as arguments. So, for example:
+
+int Marks[11];
+void getMarks(int[] Marks)
+{
+	// stuff
+	// assign something to the array ...
+		Marks[something] = ....
+}
+
+// Do stuff, call it
+getMarks(Marks);  // This reads in the marks
+
+Why doesn't the first example work? If you're an experienced programmer or
+know what's going on, look below. Otherwise -- just take a look anyway. If
+you don't get it, forget it :).
+
+Roughly, Kenya translates the code into:
+
+public static void main(String args[])
+{
+	int Marks[] = new Marks[11];  /***** THE ARRAY IS NOW INSIDE THE main
+METHOD   *****/
+	// Do stuff, call it
+	getMarks();  // This reads in the marks
+}
+
+public static void GetMarks()
+{
+	// stuff
+	// assign something to the array ...
+	Marks[something] = ....
+}
+
+As you can see, the array ends up within the "main" method, so GetMarks
+doesn't know about it. This is why you must pass the array as a parameter.
+
+Unless of course, there's another workaround I've missed... Any questions
+about this, feel free to ask :).
+
+Ashley
+
+
+From psc@doc.ic.ac.uk Mon Dec 03 14:38:48 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 03 Dec 2001 14:38:48 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16AuEy-0001Wp-00; Mon, 03 Dec 2001 14:38:40 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16AuEy-00045Q-00; Mon, 03 Dec 2001 14:38:40 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16AuEy-00047c-00; Mon, 03 Dec 2001 14:38:40 +0000
+To: cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+Subject: Owari Tournament
+Cc: aem3@doc.ic.ac.uk, ajf@doc.ic.ac.uk, 
+	cjd99@doc.ic.ac.uk, dfg@doc.ic.ac.uk, dr@doc.ic.ac.uk, 
+	drb@doc.ic.ac.uk, ecl1@doc.ic.ac.uk, frk@doc.ic.ac.uk, 
+	ids@doc.ic.ac.uk, igeozg@doc.ic.ac.uk, 
+	ih@doc.ic.ac.uk, jamm@doc.ic.ac.uk,
+    jd@doc.ic.ac.uk, 
+	jj@doc.ic.ac.uk, jnm@doc.ic.ac.uk, mrc@doc.ic.ac.uk, 
+	mss@doc.ic.ac.uk, ncd@doc.ic.ac.uk, nd@doc.ic.ac.uk, 
+	phjk@doc.ic.ac.uk, pjm@doc.ic.ac.uk, psc@doc.ic.ac.uk, 
+	rc3@doc.ic.ac.uk, rjc@doc.ic.ac.uk, smc@doc.ic.ac.uk, 
+	sue@doc.ic.ac.uk,
+    wjk@doc.ic.ac.uk, 
+	wl@doc.ic.ac.uk
+Message-Id: <E16AuEy-00047c-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Mon, 03 Dec 2001 14:38:40 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 6
+
+
+As mentioned in the Owari Spec there will be a programming
+competition at the end of term.
+
+To enter you will need to modify your Owari program so that
+it takes the active role of player and generates moves.
+
+The full rules are given on the sheet which we have put
+in the tray marked "Owari Contest" in the student common 
+room (next to the lab tray).
+
+The tournament will take place on Friday 14th December and
+will start at 10.00 with the final taking place at 12.00.
+The prize will be a £25.00 book token.  We also hope to 
+have an additional prize from O'Reilly books and we will give
+details when we have them.
+
+Thanks,
+
+Peter Cutler
+
+
+
+From psc@doc.ic.ac.uk Fri Dec 07 13:12:16 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 07 Dec 2001 13:12:16 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16CKnR-0002W3-00; Fri, 07 Dec 2001 13:12:09 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16CKnQ-0004CL-00; Fri, 07 Dec 2001 13:12:08 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16CKnQ-0004uO-00; Fri, 07 Dec 2001 13:12:08 +0000
+To: cs-first-year@doc.ic.ac.uk
+Subject: Driving Test (13.12.01)
+Cc: ajf@doc.ic.ac.uk, dfg@doc.ic.ac.uk, dr@doc.ic.ac.uk, 
+	ecl1@doc.ic.ac.uk, frk@doc.ic.ac.uk, help@doc.ic.ac.uk, 
+	ids@doc.ic.ac.uk, jamm@doc.ic.ac.uk, jd@doc.ic.ac.uk, 
+	jj@doc.ic.ac.uk, jnm@doc.ic.ac.uk, mrc@doc.ic.ac.uk, 
+	phjk@doc.ic.ac.uk,
+    pjm@doc.ic.ac.uk, 
+	psc@doc.ic.ac.uk, rjc@doc.ic.ac.uk, smc@doc.ic.ac.uk, 
+	sue@doc.ic.ac.uk, wjk@doc.ic.ac.uk, wl@doc.ic.ac.uk
+Message-Id: <E16CKnQ-0004uO-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Fri, 07 Dec 2001 13:12:08 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 7
+
+
+Next week you will be doing your Kenya/Java driving test.
+
+For the Driving Test you should come to room 206 or 219
+at 14.00 on Thursday 13.12.01.  The test will be distributed in the lab
+and you will have 20 minutes to read the question and plan an answer
+on paper.  You will then have 90 minutes to write and test your
+solution.
+
+During the test you will be allowed to refer to an A4 reference sheet
+that you can prepare and take to the test with you. There are no restrictions
+as to what you can include on the A4 reference sheet.
+
+For full details see:
+http://www.doc.ic.ac.uk/%7Ecjh/Iyc/drivingtest.html
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Thu Dec 06 17:00:42 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 06 Dec 2001 17:00:42 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16C1st-0002aO-00; Thu, 06 Dec 2001 17:00:31 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16C1q0-0007b8-00; Thu, 06 Dec 2001 16:57:32 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16C1ss-0003u9-00; Thu, 06 Dec 2001 17:00:30 +0000
+To: cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+Subject: First Year Lab
+Cc: aem3@doc.ic.ac.uk, ajf@doc.ic.ac.uk, 
+	cjd99@doc.ic.ac.uk, cjh@doc.ic.ac.uk, dfg@doc.ic.ac.uk, 
+	dr@doc.ic.ac.uk, drb@doc.ic.ac.uk, ecl1@doc.ic.ac.uk, 
+	frk@doc.ic.ac.uk, ids@doc.ic.ac.uk, igeozg@doc.ic.ac.uk, 
+	ih@doc.ic.ac.uk,
+    jamm@doc.ic.ac.uk, 
+	jd@doc.ic.ac.uk, jj@doc.ic.ac.uk, jnm@doc.ic.ac.uk, 
+	mrc@doc.ic.ac.uk, mss@doc.ic.ac.uk, ncd@doc.ic.ac.uk, 
+	nd@doc.ic.ac.uk, phjk@doc.ic.ac.uk, pjm@doc.ic.ac.uk, 
+	psc@doc.ic.ac.uk, rc3@doc.ic.ac.uk, rjc@doc.ic.ac.uk, 
+	smc@doc.ic.ac.uk,
+    sue@doc.ic.ac.uk, 
+	wjk@doc.ic.ac.uk, wl@doc.ic.ac.uk
+Message-Id: <E16C1ss-0003u9-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Thu, 06 Dec 2001 17:00:30 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 8
+
+
+Due to the system failure on Thursday afternoon the
+submission date for the Owari lab will be extended
+from Monday 10.12.01 to Tuesday 11.12.01.
+
+The submission deadline for the Owari lab is now
+midnight on Tuesday 11.12.01.
+
+There will be no further extensions.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Fri Dec 14 15:00:22 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 14 Dec 2001 15:00:22 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16Etot-0005Im-00; Fri, 14 Dec 2001 15:00:15 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16Etos-00040U-00; Fri, 14 Dec 2001 15:00:14 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16Etos-0005dE-00; Fri, 14 Dec 2001 15:00:14 +0000
+To: cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+Subject: Owari Programming Competition
+Cc: aem3@doc.ic.ac.uk, ajf@doc.ic.ac.uk, 
+	cjd99@doc.ic.ac.uk, cjh@doc.ic.ac.uk, dfg@doc.ic.ac.uk, 
+	dr@doc.ic.ac.uk, drb@doc.ic.ac.uk, ecl1@doc.ic.ac.uk, 
+	frk@doc.ic.ac.uk, ids@doc.ic.ac.uk, igeozg@doc.ic.ac.uk, 
+	ih@doc.ic.ac.uk,
+    jamm@doc.ic.ac.uk, 
+	jd@doc.ic.ac.uk, jj@doc.ic.ac.uk, jnm@doc.ic.ac.uk, 
+	martin@oreilly.co.uk, mrc@doc.ic.ac.uk, 
+	mss@doc.ic.ac.uk, ncd@doc.ic.ac.uk, nd@doc.ic.ac.uk, 
+	phjk@doc.ic.ac.uk,
+    pjm@doc.ic.ac.uk, 
+	psc@doc.ic.ac.uk, rc3@doc.ic.ac.uk, rjc@doc.ic.ac.uk, 
+	smc@doc.ic.ac.uk, sue@doc.ic.ac.uk, svb@doc.ic.ac.uk, 
+	wjk@doc.ic.ac.uk, wl@doc.ic.ac.uk
+Message-Id: <E16Etos-0005dE-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Fri, 14 Dec 2001 15:00:14 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 9
+
+
+There were 11 students who had written programs to enter
+the 2001 DoC/O'Reilly Owari Programming Contest:
+
+aa901   Anders Aaltonen
+dc301   David Collis
+ph201   Philip Howson
+cl201   Charalambos Lazanitis
+zl01    Zhujin Lin
+jil01   Jonathan Israel Love
+seo01   Simon E Overell
+tw201   Thibaut Weise
+jew01   Jonas Emanuel Wolf
+wkw01   Wai Kean Wallace Wong
+ty101   Tony Yum
+
+After a lively contest with 3 initial rounds the final
+was between Anders Aaaltonen and Wallace Wong.
+
+The winner was Anders Aaltonen, from JMC1.  
+
+Well done Anders.
+
+Wishing you all a happy and restful Christmas and see you in
+the new year,
+
+Peter Cutler
+Iain Stewart
+
+
+From psc@doc.ic.ac.uk Thu Jan 24 16:05:27 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 24 Jan 2002 16:05:27 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16TmNJ-0002NU-00; Thu, 24 Jan 2002 16:05:18 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16TmNJ-0005Fq-00
+	for cs-first-year@doc.ic.ac.uk; Thu, 24 Jan 2002 16:05:17 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16TmNJ-0008Da-00
+	for cs-first-year@doc.ic.ac.uk; Thu, 24 Jan 2002 16:05:17 +0000
+To: cs-first-year@doc.ic.ac.uk
+Subject: First Year Lab
+Message-Id: <E16TmNJ-0008Da-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Thu, 24 Jan 2002 16:05:17 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 10
+
+
+The first Java lab for the term is now available in the
+Student Common Room for you to collect.  The lab workshop
+for this lab will be on Monday 28.1.02 in room 343 at 2.00 pm.
+You should also arrange to restart your PPT meetings from next
+week.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Mon Jan 21 13:11:29 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 21 Jan 2002 13:11:29 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16SeEK-0002rD-00; Mon, 21 Jan 2002 13:11:20 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16SeEK-0003AW-00; Mon, 21 Jan 2002 13:11:20 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16SeEK-00036d-00; Mon, 21 Jan 2002 13:11:20 +0000
+To: cs-first-year@doc.ic.ac.uk
+Subject: First Year Lab
+Cc: aem3@doc.ic.ac.uk, ajf@doc.ic.ac.uk, 
+	cjd99@doc.ic.ac.uk, dfg@doc.ic.ac.uk, dr@doc.ic.ac.uk, 
+	ecl1@doc.ic.ac.uk, frk@doc.ic.ac.uk, ids@doc.ic.ac.uk, 
+	igeozg@doc.ic.ac.uk, jamm@doc.ic.ac.uk, 
+	jd@doc.ic.ac.uk, jj@doc.ic.ac.uk,
+    jnm@doc.ic.ac.uk, 
+	mrc@doc.ic.ac.uk, phjk@doc.ic.ac.uk, pjm@doc.ic.ac.uk, 
+	psc@doc.ic.ac.uk, rc3@doc.ic.ac.uk, rjc@doc.ic.ac.uk, 
+	smc@doc.ic.ac.uk, sue@doc.ic.ac.uk, wjk@doc.ic.ac.uk, 
+	wl@doc.ic.ac.uk
+Message-Id: <E16SeEK-00036d-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Mon, 21 Jan 2002 13:11:20 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 11
+
+
+The first CS1 Java lab will be issued this Friday (25.1.02)
+via the pigeon holes in the student common room. 
+
+The lab workshop for this lab will be held on Monday (28.1.02).
+
+>From next week the software labs will follow a regular pattern
+and run from Monday to Monday as last term.
+
+You should arrange regular PPT meetings from next week, if you
+have not done so already.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Thu Jan 31 12:54:28 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 31 Jan 2002 12:54:28 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16WGjM-00035A-00; Thu, 31 Jan 2002 12:54:20 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16WGjM-00064A-00; Thu, 31 Jan 2002 12:54:20 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16WGjM-0003sO-00; Thu, 31 Jan 2002 12:54:20 +0000
+To: all-first-year@doc.ic.ac.uk
+Subject: First Year Lab
+Cc: ids@doc.ic.ac.uk, psc@doc.ic.ac.uk
+Message-Id: <E16WGjM-0003sO-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Thu, 31 Jan 2002 12:54:20 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 12
+
+
+For the current lab "Java CourseSort" you are asked to copy
+in a main program "CourseSort.java" and a class to be
+extended "Student.java".  You should not change either of
+these two files when you write your program. 
+
+The lab exercise requires you to write two classes, Course and
+CompStudent and when you submit, only the two files (Course.java
+and CompStudent.java) will be collected.
+
+Your main program class imports and creates a Course object
+which contains an array of CompStudent and an integer recording
+how many CompStudent have been read in as well as the methods
+getCourse, putCourse and sortCourse.
+
+Your class CompStudent extends (or inherits from) Student and
+contains the additional integer attributes Quota and Usage as well
+as the methods described in the spec.
+
+The exercise also introduces packages and this requires you to
+create a subdirectory called student and to place your files,
+Student.java, CompStudent.java and Course.java into this subdirectory.
+You should not copy your main program CourseSort.java into this
+subdirectory and you should compile your program in the main directory
+containing CourseSort.java, using "javac -source 1.4 CourseSort.java"
+as described in the spec.
+
+If you are typing your input at the keyboard, you should indicate
+that you are the end of file by typing in control-D (ie press the
+control key and the d key simultaneously) at the keyboard.
+
+Thanks,
+
+Peter Cutler
+
+From psc@doc.ic.ac.uk Fri Feb 01 14:00:50 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 01 Feb 2002 14:00:50 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16WeF8-0004qz-00; Fri, 01 Feb 2002 14:00:42 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16WeF7-0003Vs-00; Fri, 01 Feb 2002 14:00:41 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16WeF7-0004BH-00; Fri, 01 Feb 2002 14:00:41 +0000
+To: ah101@doc.ic.ac.uk, ajb101@doc.ic.ac.uk, 
+	amm01@doc.ic.ac.uk, aps201@doc.ic.ac.uk, 
+	av501@doc.ic.ac.uk, ayc01@doc.ic.ac.uk, 
+	dc401@doc.ic.ac.uk, dkd01@doc.ic.ac.uk, 
+	dt01@doc.ic.ac.uk,
+    dws01@doc.ic.ac.uk, 
+	dz01@doc.ic.ac.uk, fg01@doc.ic.ac.uk, fo01@doc.ic.ac.uk, 
+	fz01@doc.ic.ac.uk, goe01@doc.ic.ac.uk, 
+	gp01@doc.ic.ac.uk, gs01@doc.ic.ac.uk, hkb101@doc.ic.ac.uk, 
+	jga01@doc.ic.ac.uk,
+    jkd01@doc.ic.ac.uk, 
+	jpl01@doc.ic.ac.uk, jss101@doc.ic.ac.uk, 
+	jtl01@doc.ic.ac.uk, ka01@doc.ic.ac.uk, 
+	km101@doc.ic.ac.uk, ltf01@doc.ic.ac.uk, 
+	mb401@doc.ic.ac.uk, mql01@doc.ic.ac.uk,
+    npg01@doc.ic.ac.uk, 
+	qaa101@doc.ic.ac.uk, rf301@doc.ic.ac.uk, 
+	rlg01@doc.ic.ac.uk, rlw01@doc.ic.ac.uk, 
+	rp401@doc.ic.ac.uk, rs201@doc.ic.ac.uk, 
+	sam01@doc.ic.ac.uk, sj01@doc.ic.ac.uk,
+    so101@doc.ic.ac.uk, 
+	sp200@doc.ic.ac.uk, srr01@doc.ic.ac.uk, 
+	srs01@doc.ic.ac.uk, ss301@doc.ic.ac.uk, 
+	ss401@doc.ic.ac.uk, ss501@doc.ic.ac.uk, 
+	ss601@doc.ic.ac.uk, tt101@doc.ic.ac.uk,
+    wkw01@doc.ic.ac.uk, 
+	yjc01@doc.ic.ac.uk, yyl01@doc.ic.ac.uk, 
+	zam01@doc.ic.ac.uk
+Subject: Extra Java Classes
+Cc: aarkhan_uk@yahoo.co.uk, aem3@doc.ic.ac.uk, 
+	ajf@doc.ic.ac.uk, ark@doc.ic.ac.uk, cjd99@doc.ic.ac.uk, 
+	cjh@doc.ic.ac.uk, dfg@doc.ic.ac.uk, dr@doc.ic.ac.uk, 
+	drb@doc.ic.ac.uk,
+    ecl1@doc.ic.ac.uk, 
+	frk@doc.ic.ac.uk, ids@doc.ic.ac.uk, igeozg@doc.ic.ac.uk, 
+	ih@doc.ic.ac.uk, jamm@doc.ic.ac.uk, jd@doc.ic.ac.uk, 
+	jj@doc.ic.ac.uk, jnm@doc.ic.ac.uk, mrc@doc.ic.ac.uk, 
+	mss@doc.ic.ac.uk, ncd@doc.ic.ac.uk, nd@doc.ic.ac.uk,
+    phjk@doc.ic.ac.uk, 
+	pjm@doc.ic.ac.uk, psc@doc.ic.ac.uk, rc3@doc.ic.ac.uk, 
+	rjc@doc.ic.ac.uk, smc@doc.ic.ac.uk, sue@doc.ic.ac.uk, 
+	wjk@doc.ic.ac.uk, wl@doc.ic.ac.uk
+Message-Id: <E16WeF7-0004BH-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Fri, 01 Feb 2002 14:00:41 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 13
+
+
+As you have got less than 50 precent in the Kenya/Java
+Driving test you will be doing a resit later this term.
+We will let you know the date of the resit in due course.
+
+In the meantime we have arranged additional programming
+problem classes in Java which you are strongly advised to
+attend as these classes will enable you to practice and
+improve your driving test/exam technique.
+
+The classes will take place on Wednesdays starting on the
+6th February and will be run by Amir Khan a PhD student
+here.  The classes will take place in room 346 on Wednesdays 
+at 12.00 midday.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Fri Feb 01 13:29:13 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 01 Feb 2002 13:29:13 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16Wdkb-0004NY-00; Fri, 01 Feb 2002 13:29:09 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16Wdkb-0000nN-00
+	for cs-first-year@doc.ic.ac.uk; Fri, 01 Feb 2002 13:29:09 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16Wdkb-00034g-00
+	for cs-first-year@doc.ic.ac.uk; Fri, 01 Feb 2002 13:29:09 +0000
+To: cs-first-year@doc.ic.ac.uk
+Subject: First Year lab
+Message-Id: <E16Wdkb-00034g-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Fri, 01 Feb 2002 13:29:09 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 14
+
+
+The lab spec for the second Java lab exercise is now
+available in the trays in the student common room.
+
+Thanks,
+
+Peter Cutler
+
+
+From ids@doc.ic.ac.uk Fri Feb 01 18:06:41 2002
+Return-path: <ids@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 01 Feb 2002 18:06:41 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16Wi4z-0001BA-00; Fri, 01 Feb 2002 18:06:29 +0000
+Received: from clare.doc.ic.ac.uk
+	([146.169.4.199] helo=doc.ic.ac.uk ident=ids)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16Wi4y-0005x2-00; Fri, 01 Feb 2002 18:06:28 +0000
+Sender: ids@doc.ic.ac.uk
+Message-ID: <3C5AD923.93DEDD81@doc.ic.ac.uk>
+Date: Fri, 01 Feb 2002 18:06:27 +0000
+From: Iain Stewart <ids@doc.ic.ac.uk>
+Organization: Department of Computing, Imperial College, London SW7 2AZ, U.K.
+X-Mailer: Mozilla 4.77 [en] (X11; U; Linux 2.4.17 i686)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: all-first-year@doc.ic.ac.uk
+CC: Derek R Brough <drb@doc.ic.ac.uk>,
+ 	Stuart M Cox <smc@doc.ic.ac.uk>,
+ 	Margaret R Cunningham <mrc@doc.ic.ac.uk>,
+ 	R Jim Cunningham <rjc@doc.ic.ac.uk>,
+ 	John Darlington <jd@doc.ic.ac.uk>,
+ 	Naranker Dulay <nd@doc.ic.ac.uk>,
+ 	Susan Eisenbach <sue@doc.ic.ac.uk>,
+ 	Tony J Field <ajf@doc.ic.ac.uk>,
+ 	Duncan F Gillies <dfg@doc.ic.ac.uk>, Ian Harries <ih@doc.ic.ac.uk>,
+ 	James Jacobson <jj@doc.ic.ac.uk>, Paul Kelly <phjk@doc.ic.ac.uk>,
+ 	William Knottenbelt <wjk@doc.ic.ac.uk>,
+ 	Frank R Kriwaczek <frk@doc.ic.ac.uk>, Wayne Luk <wl@doc.ic.ac.uk>,
+ 	Emil C Lupu <ecl1@doc.ic.ac.uk>, Jeff Magee <jnm@doc.ic.ac.uk>,
+ 	Peter J McBrien <pjm@doc.ic.ac.uk>,
+ 	Julie McCann <jamm@doc.ic.ac.uk>,
+ 	Daniel Rueckert <dr@doc.ic.ac.uk>,
+ 	Morris S Sloman <mss@doc.ic.ac.uk>,
+ 	Raghavendra Chandrashekaran <rc3@doc.ic.ac.uk>,
+ 	Nicodemos Damianou <ncd@doc.ic.ac.uk>,
+ 	Gabriel Figueiredo <cjd99@doc.ic.ac.uk>,
+ 	Ioannis Georgiadis <igeozg@doc.ic.ac.uk>,
+ 	Anthony E Mayer <aem3@doc.ic.ac.uk>,
+ 	Chris Hogger <cjh@doc.ic.ac.uk>, Peter Cutler <psc@doc.ic.ac.uk>,
+ 	help@doc.ic.ac.uk
+Subject: further points about the current first year Java lab, following on from 
+ Peter's message... (was Re: First Year Lab)
+References: <E16WGjM-0003sO-00@diss.doc.ic.ac.uk>
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 15
+
+Hello... You'll have recently received an e-mail from Peter Cutler about
+the current Java lab, explaining various subtleties of the file and
+directory structure expected by Java, and how to compile your program and
+similar matters. (I've reproduced it below for reference.) This e-mail
+reflected the situation as we [Peter and I] thought we understood it
+yesterday. But, wouldn't you know, some further surprises about the
+behaviour of the Java system at our site have come to light in this
+morning's (CS1) and afternoon's (JMC1) labs, which I thought I'd better
+explain.
+
+First and most important: it's not always true that you can compile your
+whole multi-file program code by the command "javac -source 1.4
+CourseSort.java" in the top-level directory as stated. To be precise:
+it's true the *first* time you use this command - the Java compiler will
+be clever enough to work out for itself that the CourseSort class refers
+to the Course class, which in turn mentions the CompStudent class, which
+in turn(!) is an extension of the Student class; and it'll take the
+initiative of compiling all four (that is, it'll generate the .class Java
+bytecode files shadowing the various .java Java source code files).
+However, any *subsequent* time you use that command, it'll not notice if
+you've edited any of the subsidiary Java files in the "student/"
+subdirectory - it'll only pay attention to any changes in CourseSort.java
+itself (which of course there won't ever be, since that's one of the ones
+we supplied in a read-only state as "done for you" and not for you to
+edit). Thus at run-time you'll then still be unwittingly running the
+first, earlier version of your code.
+
+The Java compiler manual page (obtainable by typing "man javac" at your
+Linux prompt) claims there's the following option to javac:
+
+>        -depend
+>               Makes the compiler consider recompiling class files
+>               which are referenced from other class  files.  Nor­
+>               mally,  it  only  recompiles missing or out-of-date
+>               class files that are referred to from source  code.
+
+Thus, you'd think from this that the problem above could be solved by
+adding the "-depend" option to the command, giving "javac -depend -source
+1.4  CourseSort.java" altogether. Unfortunately, at our site the
+"-depend" flag is missing! (You get a complaint message "javac: invalid
+flag: -depend".) [And I'm not, to be honest, quite sure that the
+description of it quoted above *does* mean "work out what else needs
+compiling, a la what it's clever enough to do the first time"! It sort of
+sounds like it, but...]
+
+(To our systems folk: is it a worry that the manual page disagrees with
+the command in this way? Is one older or newer than the other perhaps -
+have they drifted out of sync somehow? Of course, they might very well
+have already got into this state as shipped by Sun!)
+
+It seems, then, that the only way to be really sure each recompilation
+you do is definitely recompiling everything is to explicitly ask for
+everything in sight to be [re-]compiled. Assuming you've laid out your
+Java files in the way specified, the command to achieve that is as
+follows:
+
+    javac -source 1.4 CourseSort.java student/*.java
+
+In principle, if you could remember which Java files you've most recently
+edited and which not, you could presumably choose to recompile the exact
+subset you've changed on each occasion; but on balance, human memory
+being fallible and so forth, it's probably best to just always type that
+comprehensive command, and put the machine through its paces as it were,
+recompiling everything there is to compile.
+
+Secondly (and finally!), a subtlety about the way Java interprets single
+and double quotes. To print the quota and usage in the CompStudent class,
+you'll presumably be including a statement along the lines of:
+
+    System.out.println("\t" + quota + "\t" + usage);
+
+This works fine with double quotes around the tab characters. If on the
+other hand you use single quotes, Java seems to take that as a sign that
+it should pretend the tab characters are integers - the ascii value 9
+each, to be precise - and add everything in the println statement up! So
+what gets printed is the sum of the quota and usage, plus 18 extra for
+good measure contributed by the two tabs. Not what you want at all! So,
+in summary: use double quotes, not single quotes, in circumstances of
+this sort.
+
+There! I hope this is of some help in clearing up the rather baffling
+Java system behaviour some of you have been encountering in recent labs.
+
+All the best,
+
+  Iain.
+
+
+(Peter's e-mail, reproduced here for reference:)
+
+Peter Cutler <psc@doc.ic.ac.uk> wrote:
+
+> For the current lab "Java CourseSort" you are asked to copy
+> in a main program "CourseSort.java" and a class to be
+> extended "Student.java".  You should not change either of
+> these two files when you write your program.
+>
+> The lab exercise requires you to write two classes, Course and
+> CompStudent and when you submit, only the two files (Course.java
+> and CompStudent.java) will be collected.
+>
+> Your main program class imports and creates a Course object
+> which contains an array of CompStudent and an integer recording
+> how many CompStudent have been read in as well as the methods
+> getCourse, putCourse and sortCourse.
+>
+> Your class CompStudent extends (or inherits from) Student and
+> contains the additional integer attributes Quota and Usage as well
+> as the methods described in the spec.
+>
+> The exercise also introduces packages and this requires you to
+> create a subdirectory called student and to place your files,
+> Student.java, CompStudent.java and Course.java into this subdirectory.
+> You should not copy your main program CourseSort.java into this
+> subdirectory and you should compile your program in the main directory
+> containing CourseSort.java, using "javac -source 1.4 CourseSort.java"
+> as described in the spec.
+>
+> If you are typing your input at the keyboard, you should indicate
+> that you are the end of file by typing in control-D (ie press the
+> control key and the d key simultaneously) at the keyboard.
+>
+> Thanks,
+>
+> Peter Cutler
+
+
+From psc@doc.ic.ac.uk Tue Feb 05 16:33:34 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 05 Feb 2002 16:33:34 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16Y8XB-0002J5-00; Tue, 05 Feb 2002 16:33:29 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16Y8XB-0004q4-00; Tue, 05 Feb 2002 16:33:29 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16Y8XB-0007Cn-00; Tue, 05 Feb 2002 16:33:29 +0000
+To: cs-first-year@doc.ic.ac.uk
+Subject: First Year Lab
+Cc: ids@doc.ic.ac.uk, psc@doc.ic.ac.uk
+Message-Id: <E16Y8XB-0007Cn-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Tue, 05 Feb 2002 16:33:29 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 16
+
+
+Some students have asked about the method "ShowStep" provided
+in the interface "MazeTemplate".  This method was originally used
+for debugging purposes for recording the number of steps taken
+to solve the maze.  You do not need to implement this for your
+solution to the exercise and you do not need to call ShowStep() 
+in your main program.  So you can implement ShowStep()as a stub
+which simply returns zero.
+
+On the other hand you can if you want call ShowStep() each time
+you solve the maze to report the number of steps taken and print
+the number out after you have displayed the maze.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Mon Feb 11 17:11:01 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 11 Feb 2002 17:11:01 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16aJyi-0005Ou-00; Mon, 11 Feb 2002 17:10:56 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16aJyh-0007d3-00; Mon, 11 Feb 2002 17:10:55 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16aJyh-0000Ts-00; Mon, 11 Feb 2002 17:10:55 +0000
+To: cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+Subject: First Year Lab
+Message-Id: <E16aJyh-0000Ts-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Mon, 11 Feb 2002 17:10:55 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 17
+
+
+There has been a change to the InputReader class which
+means that you will need to recompile your java programs
+before you run them again.  
+
+If you are writing and compiling a Java program for the
+first time there should be no problems with the compilation.
+
+Thanks,
+
+Peter Cutler
+
+
+From paul@myitcv.org.uk Mon Feb 18 08:45:38 2002
+Return-path: <paul@myitcv.org.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 18 Feb 2002 08:45:38 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16cjP0-0004oU-00; Mon, 18 Feb 2002 08:44:02 +0000
+Received: from ealing.doc.ic.ac.uk ([146.169.5.142] ident=paj00)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16cjOs-0002Y3-00
+	for docsoc-students@doc.ic.ac.uk; Mon, 18 Feb 2002 08:43:54 +0000
+Date: Mon, 18 Feb 2002 08:43:51 +0000 (GMT)
+From: Paul J <paul@myitcv.org.uk>
+X-X-Sender: paj00@ealing.doc.ic.ac.uk
+To: docsoc-students@doc.ic.ac.uk
+Subject: OptimalJ and Java Central
+Message-ID: <Pine.LNX.4.42.0202180840011.14691-100000@ealing.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; CHARSET=US-ASCII
+Content-ID: <Pine.LNX.4.42.0202180840013.14691@ealing.doc.ic.ac.uk>
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 18
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Dear All,
+
+Some good news for you Java fans:
+
+========================================================================
+
+Java Central is a fantastic online resource, designed specifically for the
+needs of Java developers.  It offers:
+ - FAQ's
+ - White papers and technical information
+ - Discussion forums offering developers the opportunity to share their
+knowledge with other developers and throw their questions open to the
+entire community for feedback
+
+OptimalJ is an advanced model-based development environment, which is very
+easy to use, so even inexperienced Java developers can produce reliable
+applications quickly.  It uses sophisticated patterns to implement
+accepted best practices for coding J2EE specifications, so advanced
+developers are free to focus on the creative aspects of Java development
+rather than get bogged down in repetitive coding tasks.
+It also includes an application server and web server to allow developers
+to run, test and debug their applications on the same PC they develop on.
+
+Compuware recognises the importance of making the academic community aware
+of these Java resources and we would therefore like to offer students and
+research academics studying J2EE development, FREE membership to Java
+Central and FREE copies of OptimalJ.
+
+Java Central and the FREE download of the Community Edition of OptimalJ
+can be accessed at
+
+http://www.compuware.co.uk/optimaljforstudents/
+
+========================================================================
+
+If people can give me some feedback on this software is, CSG can
+consider distributing it to the labs.
+
+Kind regards,
+
+
+Paul
+- --
+DoCSoc Chairman - http://www.doc.ic.ac.uk/docsoc/
+
+**********************************************************
+TO CHANGE SUBSCRIPTION OPTIONS FOR THE DOCSOC LISTS VISIT:
+
+   https://www.doc.ic.ac.uk/~paj00/docsoc/listPrefs.cgi
+**********************************************************
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.0.6 (GNU/Linux)
+Comment: For info see http://www.gnupg.org
+
+iD8DBQE8cL7K0YkfvYj92P4RAipRAJ9lZJhdxYavz5pMd4FECckZ7q4cFgCfTgBO
+nkxn9vupsR5TF1Yq7FTn18c=
+=ixG4
+-----END PGP SIGNATURE-----
+
+
+From psc@doc.ic.ac.uk Thu Feb 21 19:29:49 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 21 Feb 2002 19:29:49 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16dyuX-00037i-00; Thu, 21 Feb 2002 19:29:45 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16dyuX-0005ke-00; Thu, 21 Feb 2002 19:29:45 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16dyuX-0001Ya-00; Thu, 21 Feb 2002 19:29:45 +0000
+To: ah101@doc.ic.ac.uk, ajb101@doc.ic.ac.uk, 
+	amm01@doc.ic.ac.uk, aps201@doc.ic.ac.uk, 
+	av501@doc.ic.ac.uk, ayc01@doc.ic.ac.uk, 
+	dc401@doc.ic.ac.uk, dkd01@doc.ic.ac.uk, 
+	dt01@doc.ic.ac.uk,
+    dws01@doc.ic.ac.uk, 
+	dz01@doc.ic.ac.uk, fg01@doc.ic.ac.uk, fo01@doc.ic.ac.uk, 
+	fz01@doc.ic.ac.uk, goe01@doc.ic.ac.uk, 
+	gp01@doc.ic.ac.uk, gs01@doc.ic.ac.uk, hkb101@doc.ic.ac.uk, 
+	jga01@doc.ic.ac.uk,
+    jkd01@doc.ic.ac.uk, 
+	jpl01@doc.ic.ac.uk, jss101@doc.ic.ac.uk, 
+	jtl01@doc.ic.ac.uk, ka01@doc.ic.ac.uk, 
+	km101@doc.ic.ac.uk, ltf01@doc.ic.ac.uk, 
+	mb401@doc.ic.ac.uk, mql01@doc.ic.ac.uk,
+    npg01@doc.ic.ac.uk, 
+	qaa101@doc.ic.ac.uk, rf301@doc.ic.ac.uk, 
+	rlw01@doc.ic.ac.uk, rp401@doc.ic.ac.uk, 
+	rs201@doc.ic.ac.uk, sam01@doc.ic.ac.uk, 
+	sj01@doc.ic.ac.uk, so101@doc.ic.ac.uk,
+    sp200@doc.ic.ac.uk, 
+	srr01@doc.ic.ac.uk, srs01@doc.ic.ac.uk, 
+	ss401@doc.ic.ac.uk, ss501@doc.ic.ac.uk, 
+	ss601@doc.ic.ac.uk, ssl01@doc.ic.ac.uk, 
+	yjc01@doc.ic.ac.uk, yyl01@doc.ic.ac.uk, 
+	zam01@doc.ic.ac.uk
+Subject: Extra Java classes
+Cc: aarkhan_uk@yahoo.co.uk, ark@doc.ic.ac.uk, 
+	ids@doc.ic.ac.uk, psc@doc.ic.ac.uk
+Message-Id: <E16dyuX-0001Ya-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Thu, 21 Feb 2002 19:29:45 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 19
+
+
+Due to the JMC1 68000 architecture course there will
+have to be a change in the timing of the extra Java
+class taught by Amir Khan.
+
+The class will now take place on Mondays at 12.00
+midday from next week until the end of term.  The
+first class at the new time will take place on Monday
+(25.2.02)
+
+We will arrange a room for the class and let you
+know tomorrow.
+
+The Kenya driving test resit will take place on Friday
+March 8th at 16.00 and I will let you have the details
+as soon as the arrangements are made.
+
+Thanks,
+
+Peter Cutler
+
+From psc@doc.ic.ac.uk Fri Feb 22 13:06:43 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 22 Feb 2002 13:06:43 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16eFPM-000557-00; Fri, 22 Feb 2002 13:06:40 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16eFPM-0002IK-00; Fri, 22 Feb 2002 13:06:40 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16eFPL-0001HR-00; Fri, 22 Feb 2002 13:06:39 +0000
+To: ah101@doc.ic.ac.uk, ajb101@doc.ic.ac.uk, amm01@doc.ic.ac.uk,
+    aps201@doc.ic.ac.uk, av501@doc.ic.ac.uk, ayc01@doc.ic.ac.uk,
+    dc401@doc.ic.ac.uk, dkd01@doc.ic.ac.uk, dt01@doc.ic.ac.uk,
+    dws01@doc.ic.ac.uk, dz01@doc.ic.ac.uk, fg01@doc.ic.ac.uk,
+    fo01@doc.ic.ac.uk, fz01@doc.ic.ac.uk, goe01@doc.ic.ac.uk,
+    gp01@doc.ic.ac.uk, gs01@doc.ic.ac.uk, hkb101@doc.ic.ac.uk,
+    jga01@doc.ic.ac.uk, jkd01@doc.ic.ac.uk, jpl01@doc.ic.ac.uk,
+    jss101@doc.ic.ac.uk, jtl01@doc.ic.ac.uk, ka01@doc.ic.ac.uk,
+    km101@doc.ic.ac.uk, ltf01@doc.ic.ac.uk, mb401@doc.ic.ac.uk,
+    mql01@doc.ic.ac.uk, npg01@doc.ic.ac.uk, psc@doc.ic.ac.uk,
+    qaa101@doc.ic.ac.uk, rf301@doc.ic.ac.uk, rlw01@doc.ic.ac.uk,
+    rp401@doc.ic.ac.uk, rs201@doc.ic.ac.uk, sam01@doc.ic.ac.uk,
+    sj01@doc.ic.ac.uk, so101@doc.ic.ac.uk, sp200@doc.ic.ac.uk,
+    srr01@doc.ic.ac.uk, srs01@doc.ic.ac.uk, ss401@doc.ic.ac.uk,
+    ss501@doc.ic.ac.uk, ss601@doc.ic.ac.uk, ssl01@doc.ic.ac.uk,
+    yjc01@doc.ic.ac.uk, yyl01@doc.ic.ac.uk, zam01@doc.ic.ac.uk
+Subject: Re: Extra Java classes
+Cc: aarkhan_uk@yahoo.co.uk, ark@doc.ic.ac.uk, ids@doc.ic.ac.uk
+Message-Id: <E16eFPL-0001HR-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Fri, 22 Feb 2002 13:06:39 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 20
+
+I have booked room 145 for the Java problem solving class on
+Monday at 12.00 midday.  Those doing the Kenya/Java driving 
+test resit on March 8th are strongly recommended to attend.
+
+Thanks,
+
+Peter Cutler
+
+
+From aarkhan_uk@yahoo.co.uk Mon Feb 25 09:47:55 2002
+Return-path: <aarkhan_uk@yahoo.co.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 25 Feb 2002 09:47:55 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16fHje-0002i7-00
+	for ss401@doc.ic.ac.uk; Mon, 25 Feb 2002 09:47:54 +0000
+Received: from web12902.mail.yahoo.com ([216.136.174.69])
+	by duck.doc.ic.ac.uk with smtp (Exim 3.16 #7)
+	id 16fHjd-0005B8-00
+	for ss401@doc.ic.ac.uk; Mon, 25 Feb 2002 09:47:54 +0000
+Message-ID: <20020225094752.16699.qmail@web12902.mail.yahoo.com>
+Received: from [195.92.168.166] by web12902.mail.yahoo.com via HTTP; Mon, 25 Feb 2002 09:47:52 GMT
+Date: Mon, 25 Feb 2002 09:47:52 +0000 (GMT)
+From: =?iso-8859-1?q?Amir=20Abdur=20Rehman=20Khan?= <aarkhan_uk@yahoo.co.uk>
+Subject: Re: Extra Java classes
+To: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>, ah101@doc.ic.ac.uk,
+  ajb101@doc.ic.ac.uk, amm01@doc.ic.ac.uk, aps201@doc.ic.ac.uk,
+  av501@doc.ic.ac.uk, ayc01@doc.ic.ac.uk, dc401@doc.ic.ac.uk,
+  dkd01@doc.ic.ac.uk, dt01@doc.ic.ac.uk, dws01@doc.ic.ac.uk,
+  dz01@doc.ic.ac.uk, fg01@doc.ic.ac.uk, fo01@doc.ic.ac.uk, fz01@doc.ic.ac.uk,
+  goe01@doc.ic.ac.uk, gp01@doc.ic.ac.uk, gs01@doc.ic.ac.uk,
+  hkb101@doc.ic.ac.uk, jga01@doc.ic.ac.uk, jkd01@doc.ic.ac.uk,
+  jpl01@doc.ic.ac.uk, jss101@doc.ic.ac.uk, jtl01@doc.ic.ac.uk,
+  ka01@doc.ic.ac.uk, km101@doc.ic.ac.uk, ltf01@doc.ic.ac.uk,
+  mb401@doc.ic.ac.uk, mql01@doc.ic.ac.uk, npg01@doc.ic.ac.uk,
+  qaa101@doc.ic.ac.uk, rf301@doc.ic.ac.uk, rlw01@doc.ic.ac.uk,
+  rp401@doc.ic.ac.uk, rs201@doc.ic.ac.uk, sam01@doc.ic.ac.uk,
+  sj01@doc.ic.ac.uk, so101@doc.ic.ac.uk, sp200@doc.ic.ac.uk,
+  srr01@doc.ic.ac.uk, srs01@doc.ic.ac.uk, ss401@doc.ic.ac.uk,
+  ss501@doc.ic.ac.uk, ss601@doc.ic.ac.uk, ssl01@doc.ic.ac.uk,
+  yjc01@doc.ic.ac.uk, yyl01@doc.ic.ac.uk, zam01@doc.ic.ac.uk
+Cc: aarkhan_uk@yahoo.co.uk, ark@doc.ic.ac.uk, ids@doc.ic.ac.uk
+In-Reply-To: <E16eFPL-0001HR-00@diss.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 21
+
+Quick reminder, JAVA CLASS is TODAY 12PM  ***IN*ROOM*145***
+
+Those who wish to attend, please be on time, we have a lot to get
+through.
+
+
+Thanks,
+
+Amir.
+
+PS Peter, many thanks for the room booking and notification.
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+From aarkhan_uk@yahoo.co.uk Mon Mar 04 11:40:42 2002
+Return-path: <aarkhan_uk@yahoo.co.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 04 Mar 2002 11:40:42 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16hqpd-0005A2-00
+	for ss401@doc.ic.ac.uk; Mon, 04 Mar 2002 11:40:41 +0000
+Received: from web12906.mail.yahoo.com ([216.136.174.73])
+	by diver.doc.ic.ac.uk with smtp (Exim 3.16 #7)
+	id 16hqpc-0001xS-00
+	for ss401@doc.ic.ac.uk; Mon, 04 Mar 2002 11:40:41 +0000
+Message-ID: <20020304114038.46706.qmail@web12906.mail.yahoo.com>
+Received: from [195.92.194.16] by web12906.mail.yahoo.com via HTTP; Mon, 04 Mar 2002 11:40:38 GMT
+Date: Mon, 4 Mar 2002 11:40:38 +0000 (GMT)
+From: =?iso-8859-1?q?Amir=20Abdur=20Rehman=20Khan?= <aarkhan_uk@yahoo.co.uk>
+Subject: Re: Extra Java classes
+To: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>, ah101@doc.ic.ac.uk,
+  ajb101@doc.ic.ac.uk, amm01@doc.ic.ac.uk, aps201@doc.ic.ac.uk,
+  av501@doc.ic.ac.uk, ayc01@doc.ic.ac.uk, dc401@doc.ic.ac.uk,
+  dkd01@doc.ic.ac.uk, dt01@doc.ic.ac.uk, dws01@doc.ic.ac.uk,
+  dz01@doc.ic.ac.uk, fg01@doc.ic.ac.uk, fo01@doc.ic.ac.uk, fz01@doc.ic.ac.uk,
+  goe01@doc.ic.ac.uk, gp01@doc.ic.ac.uk, gs01@doc.ic.ac.uk,
+  hkb101@doc.ic.ac.uk, jga01@doc.ic.ac.uk, jkd01@doc.ic.ac.uk,
+  jpl01@doc.ic.ac.uk, jss101@doc.ic.ac.uk, jtl01@doc.ic.ac.uk,
+  ka01@doc.ic.ac.uk, km101@doc.ic.ac.uk, ltf01@doc.ic.ac.uk,
+  mb401@doc.ic.ac.uk, mql01@doc.ic.ac.uk, npg01@doc.ic.ac.uk,
+  qaa101@doc.ic.ac.uk, rf301@doc.ic.ac.uk, rlw01@doc.ic.ac.uk,
+  rp401@doc.ic.ac.uk, rs201@doc.ic.ac.uk, sam01@doc.ic.ac.uk,
+  sj01@doc.ic.ac.uk, so101@doc.ic.ac.uk, sp200@doc.ic.ac.uk,
+  srr01@doc.ic.ac.uk, srs01@doc.ic.ac.uk, ss401@doc.ic.ac.uk,
+  ss501@doc.ic.ac.uk, ss601@doc.ic.ac.uk, ssl01@doc.ic.ac.uk,
+  yjc01@doc.ic.ac.uk, yyl01@doc.ic.ac.uk, zam01@doc.ic.ac.uk
+Cc: aarkhan_uk@yahoo.co.uk, ark@doc.ic.ac.uk, ids@doc.ic.ac.uk
+In-Reply-To: <E16eFPL-0001HR-00@diss.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 22
+
+CLASS TODAY CANCELLED!
+
+My apologies, but I have had to return home from the station
+having found the train service suspended when I got there...
+
+I have arranged for someone to place a sign in 145 saying the
+class is cancelled, unfortunately.
+
+If I am able to arrange with Peter to book a replacement
+session perhaps tomorrow afternoon at 12pm I will email
+to let you know.
+
+
+Apologies once more,
+
+Amir.
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+From aarkhan_uk@yahoo.co.uk Mon Mar 04 15:34:20 2002
+Return-path: <aarkhan_uk@yahoo.co.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 04 Mar 2002 15:34:20 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16huTk-0001dW-00
+	for ss401@doc.ic.ac.uk; Mon, 04 Mar 2002 15:34:20 +0000
+Received: from web12907.mail.yahoo.com ([216.136.174.74])
+	by duck.doc.ic.ac.uk with smtp (Exim 3.16 #7)
+	id 16huTj-0003Je-00
+	for ss401@doc.ic.ac.uk; Mon, 04 Mar 2002 15:34:19 +0000
+Message-ID: <20020304153415.78176.qmail@web12907.mail.yahoo.com>
+Received: from [195.92.168.170] by web12907.mail.yahoo.com via HTTP; Mon, 04 Mar 2002 15:34:15 GMT
+Date: Mon, 4 Mar 2002 15:34:15 +0000 (GMT)
+From: =?iso-8859-1?q?Amir=20Abdur=20Rehman=20Khan?= <aarkhan_uk@yahoo.co.uk>
+Subject: Java class tomorrow!
+To: Amir Abdur Rehman Khan <aarkhan_uk@yahoo.co.uk>,
+  "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>, ah101@doc.ic.ac.uk,
+  ajb101@doc.ic.ac.uk, amm01@doc.ic.ac.uk, aps201@doc.ic.ac.uk,
+  av501@doc.ic.ac.uk, ayc01@doc.ic.ac.uk, dc401@doc.ic.ac.uk,
+  dkd01@doc.ic.ac.uk, dt01@doc.ic.ac.uk, dws01@doc.ic.ac.uk,
+  dz01@doc.ic.ac.uk, fg01@doc.ic.ac.uk, fo01@doc.ic.ac.uk, fz01@doc.ic.ac.uk,
+  goe01@doc.ic.ac.uk, gp01@doc.ic.ac.uk, gs01@doc.ic.ac.uk,
+  hkb101@doc.ic.ac.uk, jga01@doc.ic.ac.uk, jkd01@doc.ic.ac.uk,
+  jpl01@doc.ic.ac.uk, jss101@doc.ic.ac.uk, jtl01@doc.ic.ac.uk,
+  ka01@doc.ic.ac.uk, km101@doc.ic.ac.uk, ltf01@doc.ic.ac.uk,
+  mb401@doc.ic.ac.uk, mql01@doc.ic.ac.uk, npg01@doc.ic.ac.uk,
+  qaa101@doc.ic.ac.uk, rf301@doc.ic.ac.uk, rlw01@doc.ic.ac.uk,
+  rp401@doc.ic.ac.uk, rs201@doc.ic.ac.uk, sam01@doc.ic.ac.uk,
+  sj01@doc.ic.ac.uk, so101@doc.ic.ac.uk, sp200@doc.ic.ac.uk,
+  srr01@doc.ic.ac.uk, srs01@doc.ic.ac.uk, ss401@doc.ic.ac.uk,
+  ss501@doc.ic.ac.uk, ss601@doc.ic.ac.uk, ssl01@doc.ic.ac.uk,
+  yjc01@doc.ic.ac.uk, yyl01@doc.ic.ac.uk, zam01@doc.ic.ac.uk
+Cc: aarkhan_uk@yahoo.co.uk, ark@doc.ic.ac.uk, ids@doc.ic.ac.uk
+In-Reply-To: <20020304114038.46706.qmail@web12906.mail.yahoo.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 23
+
+There will be an extra Java class TOMORROW (TUESDAY) at 12pm in
+ROOM 343, to replace the cancelled class today.  I will
+be completing the BigInt example for those who wish
+to attend.
+
+Thanks,
+
+Amir.
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+From psc@doc.ic.ac.uk Wed Mar 06 17:27:12 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 06 Mar 2002 17:27:12 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16ifC1-0005gy-00; Wed, 06 Mar 2002 17:27:09 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16ifC0-000258-00; Wed, 06 Mar 2002 17:27:08 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16ifC0-00029X-00; Wed, 06 Mar 2002 17:27:08 +0000
+To: jkd01@doc.ic.ac.uk, psc@doc.ic.ac.uk
+Subject: Re: First Year Lab Test
+Cc: amm01@doc.ic.ac.uk, av501@doc.ic.ac.uk, ayc01@doc.ic.ac.uk,
+    fw01@doc.ic.ac.uk, gja01@doc.ic.ac.uk, gp01@doc.ic.ac.uk,
+    hkb101@doc.ic.ac.uk, ids@doc.ic.ac.uk, 
+	ka01@doc.ic.ac.uk, ltf01@doc.ic.ac.uk,
+    mrc@doc.ic.ac.uk, 
+	npg01@doc.ic.ac.uk, qaa101@doc.ic.ac.uk, rp401@doc.ic.ac.uk,
+    rs201@doc.ic.ac.uk, sam01@doc.ic.ac.uk, sj01@doc.ic.ac.uk,
+    srr01@doc.ic.ac.uk, ss401@doc.ic.ac.uk, ss601@doc.ic.ac.uk, sue@doc.ic.ac.uk,
+    yy101@doc.ic.ac.uk, zam01@doc.ic.ac.uk
+Message-Id: <E16ifC0-00029X-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Wed, 06 Mar 2002 17:27:08 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 24
+
+
+Thanks for your email.  I have consulted about the possibility
+of postponing the Kenya/Java driving test until next week but
+have decided that it would be best if it took place this Friday 
+(8/3/02) as originally scheduled.  
+
+At the end of term you will be doing a lab exam in Kenya/Java
+and this will cover the same material as the driving test resit.
+Doing the resit now will allow you to get an idea of your strengths
+and weaknesses and so plan your revision for the lab exam.  The
+lab exam is much more important than the driving test resit and the
+driving test resit will help you with the exam.
+
+I can understand that you have a lot of coursework to do but the
+driving test should not require a great deal of revision.  You
+will be tested on the first part of your programming course 
+ie arrays and simple types, programming constructs and method
+calls.  Since the driving test you have had a lot of practice
+writing Java programs and so you should find the question relatively
+straightforward.
+
+So for educational reasons you should do the test this Friday.
+You should not worry too much about it but see the test as an
+important tool for your preparation for the lab exam at the end
+of term.  
+
+Thanks,
+
+Peter Cutler
+
+From jkd01@doc.ic.ac.uk Wed Mar 06 14:08:42 2002
+Return-path: <jkd01@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 06 Mar 2002 14:08:42 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16ic5x-0004vm-00; Wed, 06 Mar 2002 14:08:41 +0000
+Received: from voxel28.doc.ic.ac.uk ([146.169.49.178] ident=jkd01)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16ic5x-0002yH-00; Wed, 06 Mar 2002 14:08:41 +0000
+Date: Wed, 6 Mar 2002 14:08:37 +0000 (GMT)
+From: Jaspreet Kaur Deol <jkd01@doc.ic.ac.uk>
+To: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+cc: zam01@doc.ic.ac.uk,  <ka01@doc.ic.ac.uk>,  <qaa101@doc.ic.ac.uk>, 
+     <rs201@doc.ic.ac.uk>,  <av501@doc.ic.ac.uk>,  <gp01@doc.ic.ac.uk>, 
+     <sam01@doc.ic.ac.uk>,  <srr01@doc.ic.ac.uk>,  <npg01@doc.ic.ac.uk>, 
+     <ss401@doc.ic.ac.uk>,  <sj01@doc.ic.ac.uk>,  <ltf01@doc.ic.ac.uk>, 
+     <ss601@doc.ic.ac.uk>,  <fw01@doc.ic.ac.uk>,  <gja01@doc.ic.ac.uk>, 
+     <ayc01@doc.ic.ac.uk>,  <amm01@doc.ic.ac.uk>,  <yy101@doc.ic.ac.uk>, 
+     <hkb101@doc.ic.ac.uk>,  <jkd01@doc.ic.ac.uk>,  <rp401@doc.ic.ac.uk>
+Subject: Re: First Year Lab Test
+In-Reply-To: <E16ibWq-00063I-00@diss.doc.ic.ac.uk>
+Message-ID: <Pine.LNX.4.42.0203061337500.5156-100000@voxel28.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 25
+
+
+Hello
+
+Although we have emailed this late..... is it possible for the resit  kenya driving
+ test to be  postponed due to too much coursework this week. This week we have to do
+the databases, operating systems, discrete maths, java lab and
+reasoning. It would be more convenient if the test is done next week and
+we would have had another help class Amir. I apologise for the
+inconvenient timing of this request.
+
+
+
+
+
+
+From psc@doc.ic.ac.uk Wed Mar 06 13:46:54 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 06 Mar 2002 13:46:54 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16ibko-00043y-00; Wed, 06 Mar 2002 13:46:50 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16ibko-0002ZF-00; Wed, 06 Mar 2002 13:46:50 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16ibko-0006cP-00; Wed, 06 Mar 2002 13:46:50 +0000
+To: ah101@doc.ic.ac.uk, amm01@doc.ic.ac.uk, 
+	aps201@doc.ic.ac.uk, av501@doc.ic.ac.uk, 
+	ayc01@doc.ic.ac.uk, dc401@doc.ic.ac.uk, 
+	dkd01@doc.ic.ac.uk, dt01@doc.ic.ac.uk, 
+	dws01@doc.ic.ac.uk, dz01@doc.ic.ac.uk,
+    fg01@doc.ic.ac.uk, 
+	fo01@doc.ic.ac.uk, fz01@doc.ic.ac.uk, gp01@doc.ic.ac.uk, 
+	gs01@doc.ic.ac.uk, hkb101@doc.ic.ac.uk, 
+	jga01@doc.ic.ac.uk, jkd01@doc.ic.ac.uk, 
+	jpl01@doc.ic.ac.uk, jss101@doc.ic.ac.uk,
+    jtl01@doc.ic.ac.uk, 
+	ka01@doc.ic.ac.uk, km101@doc.ic.ac.uk, 
+	ltf01@doc.ic.ac.uk, mb401@doc.ic.ac.uk, 
+	mql01@doc.ic.ac.uk, npg01@doc.ic.ac.uk, 
+	qaa101@doc.ic.ac.uk, rf301@doc.ic.ac.uk,
+    rlw01@doc.ic.ac.uk, 
+	rp401@doc.ic.ac.uk, rs201@doc.ic.ac.uk, 
+	sam01@doc.ic.ac.uk, sj01@doc.ic.ac.uk, 
+	so101@doc.ic.ac.uk, sp200@doc.ic.ac.uk, 
+	srr01@doc.ic.ac.uk, srs01@doc.ic.ac.uk, 
+	ss401@doc.ic.ac.uk,
+    ss501@doc.ic.ac.uk, 
+	ss601@doc.ic.ac.uk, ssl01@doc.ic.ac.uk, 
+	yjc01@doc.ic.ac.uk, yyl01@doc.ic.ac.uk, 
+	zam01@doc.ic.ac.uk
+Subject: Kenya/Java Driving Test (8/3/02)
+Cc: ids@doc.ic.ac.uk, psc@doc.ic.ac.uk
+Message-Id: <E16ibko-0006cP-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Wed, 06 Mar 2002 13:46:50 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 26
+
+
+This email is to remind you that you will be sitting the
+Kenya/Java Driving test resit this Friday at 4.00 pm.
+
+The resit will test the same material as the original
+driving test (ie the first term Kenya/Java programming
+course).  The resit can also be treated as vital revision
+for the lab exam that you will be doing at the end of term.
+
+Please come to room 202 at 4.00 pm this Friday (8/3/02) to
+do the resit.
+
+Thanks,
+
+Peter Cutler
+
+
+From psc@doc.ic.ac.uk Thu Mar 07 12:54:40 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 07 Mar 2002 12:54:40 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16ixPn-000305-00; Thu, 07 Mar 2002 12:54:35 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16ixPn-0000m1-00; Thu, 07 Mar 2002 12:54:35 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16ixPn-0004mW-00; Thu, 07 Mar 2002 12:54:35 +0000
+To: ajb101@doc.ic.ac.uk, psc@doc.ic.ac.uk
+Subject: Re: First Year Lab Test
+Cc: cs-first-year@doc.ic.ac.uk, jmc-first-year@doc.ic.ac.uk
+Message-Id: <E16ixPn-0004mW-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Thu, 07 Mar 2002 12:54:35 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 27
+
+
+Just a note on my previous email which some of you have
+been asking about.  The test that I mentioned in my previous 
+email is the resit for the first Kenya/Java driving test which 
+took place in December.  
+
+I have emailed the students who are doing the resit
+separately and so if you are doing the resit you will
+have already received an email telling you about it.
+
+Hence unless you have received an email telling you
+to come to do the test you don't need to come on
+Friday.
+
+Sorry for any confusion caused.
+
+Thanks,
+
+Peter Cutler
+
+From aarkhan_uk@yahoo.co.uk Mon Mar 11 10:37:26 2002
+Return-path: <aarkhan_uk@yahoo.co.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 11 Mar 2002 10:37:26 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16kNBF-0000jo-00
+	for ss401@doc.ic.ac.uk; Mon, 11 Mar 2002 10:37:25 +0000
+Received: from web12904.mail.yahoo.com ([216.136.174.71])
+	by diver.doc.ic.ac.uk with smtp (Exim 3.16 #7)
+	id 16kNBB-0005b0-00
+	for ss401@doc.ic.ac.uk; Mon, 11 Mar 2002 10:37:21 +0000
+Message-ID: <20020311103719.43192.qmail@web12904.mail.yahoo.com>
+Received: from [195.92.168.170] by web12904.mail.yahoo.com via HTTP; Mon, 11 Mar 2002 10:37:19 GMT
+Date: Mon, 11 Mar 2002 10:37:19 +0000 (GMT)
+From: =?iso-8859-1?q?Amir=20Abdur=20Rehman=20Khan?= <aarkhan_uk@yahoo.co.uk>
+Subject: Java class today
+To: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>, ah101@doc.ic.ac.uk,
+  ajb101@doc.ic.ac.uk, amm01@doc.ic.ac.uk, aps201@doc.ic.ac.uk,
+  av501@doc.ic.ac.uk, ayc01@doc.ic.ac.uk, dc401@doc.ic.ac.uk,
+  dkd01@doc.ic.ac.uk, dt01@doc.ic.ac.uk, dws01@doc.ic.ac.uk,
+  dz01@doc.ic.ac.uk, fg01@doc.ic.ac.uk, fo01@doc.ic.ac.uk, fz01@doc.ic.ac.uk,
+  goe01@doc.ic.ac.uk, gp01@doc.ic.ac.uk, gs01@doc.ic.ac.uk,
+  hkb101@doc.ic.ac.uk, jga01@doc.ic.ac.uk, jkd01@doc.ic.ac.uk,
+  jpl01@doc.ic.ac.uk, jss101@doc.ic.ac.uk, jtl01@doc.ic.ac.uk,
+  ka01@doc.ic.ac.uk, km101@doc.ic.ac.uk, ltf01@doc.ic.ac.uk,
+  mb401@doc.ic.ac.uk, mql01@doc.ic.ac.uk, npg01@doc.ic.ac.uk,
+  qaa101@doc.ic.ac.uk, rf301@doc.ic.ac.uk, rlw01@doc.ic.ac.uk,
+  rp401@doc.ic.ac.uk, rs201@doc.ic.ac.uk, sam01@doc.ic.ac.uk,
+  sj01@doc.ic.ac.uk, so101@doc.ic.ac.uk, sp200@doc.ic.ac.uk,
+  srr01@doc.ic.ac.uk, srs01@doc.ic.ac.uk, ss401@doc.ic.ac.uk,
+  ss501@doc.ic.ac.uk, ss601@doc.ic.ac.uk, ssl01@doc.ic.ac.uk,
+  yjc01@doc.ic.ac.uk, yyl01@doc.ic.ac.uk, zam01@doc.ic.ac.uk
+Cc: aarkhan_uk@yahoo.co.uk, ark@doc.ic.ac.uk, ids@doc.ic.ac.uk
+In-Reply-To: <E16eFPL-0001HR-00@diss.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 28
+
+For those who wish to attend, I plan to do part of an exam question
+and then move to classes in Kenya and do a large example 
+demonstrating their use.
+
+Time is 12pm, room 145 (trains permitting!)
+
+
+Amir.
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+
+From psc@doc.ic.ac.uk Tue Mar 12 14:30:51 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 12 Mar 2002 14:30:51 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16knId-0001Wv-00; Tue, 12 Mar 2002 14:30:47 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16knIc-0007ZL-00
+	for cs-first-year@doc.ic.ac.uk; Tue, 12 Mar 2002 14:30:46 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16knIc-0006OG-00
+	for cs-first-year@doc.ic.ac.uk; Tue, 12 Mar 2002 14:30:46 +0000
+To: cs-first-year@doc.ic.ac.uk
+Subject: First Year Lab
+Message-Id: <E16knIc-0006OG-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Tue, 12 Mar 2002 14:30:46 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 29
+
+
+The version of the file "DatabaseInterface.java" in the
+lab area on and before Monday was out of date and was missing 
+the "package database" line.  It also referred to the method
+"Add" when it should have referred to "add", etc.
+
+We updated the file when we discovered the error on Monday
+afternoon.  However if you copied the file before Monday 
+afternoon you will have the out of date version.
+
+In this case you should type "exercise 16" again at your Linux prompt
+to copy in the correct version of the program files.
+
+Sorry for any inconvenience,
+
+Peter Cutler
+
+
+From mw@doc.ic.ac.uk Thu Mar 14 11:56:58 2002
+Return-path: <mw@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 14 Mar 2002 11:56:58 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16lTqs-000044-00; Thu, 14 Mar 2002 11:56:58 +0000
+Received: from kungfu.doc.ic.ac.uk ([146.169.6.1] ident=mw)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16lTqs-0008JM-00; Thu, 14 Mar 2002 11:56:58 +0000
+Date: Thu, 14 Mar 2002 11:56:57 +0000 (GMT)
+From: Mike Wyer <mw@doc.ic.ac.uk>
+To: Sridhar Sarnobat <ss401@doc.ic.ac.uk>
+cc: Margaret Cunningham <mrc@doc.ic.ac.uk>, Peter Cutler <psc@doc.ic.ac.uk>, 
+    Iain Stewart <ids@doc.ic.ac.uk>
+Subject: Lexis problem solved (everything is ok)
+Message-ID: <Pine.LNX.4.42.0203141142580.13419-100000@kungfu.doc.ic.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 30
+
+Hi,
+
+First of all, sorry for the problem with the Lexis system and your
+driving test resit. All your data was received correctly, and is now
+with the TA's for marking.
+
+As you may know, Lexis takes automatic backups of the exam working area
+every five minutes. All of these dumps are kept safe on the main server.
+At the end of the test, a final dump is taken and then the /exam area is
+removed. In this case, there were some problems during this final stage,
+so we ran the exam shutdown again. This meant that a second final dump
+was taken of the now-empty /exam area.
+
+The script that processes the dumps and provides the TAs with the final
+submissions only saw this last empty dump and so it thought that the
+machine (dynamic30) had not been used. I've now removed the extra empty
+dump and sent your real final submission for marking.
+
+The Lexis code has now been fixed to prevent duplicate final dumps and
+also to fix the other problems that happened.
+
+I hope this explains what went wrong, and why you received a warning
+about not taking the resit. It was not your fault, and I'm sorry for the
+inconvenience caused.
+
+Regards,
+Mike Wyer
+-- 
+Mike Wyer <mw@doc.ic.ac.uk>  Systems Programmer
+Computing Support Group,
+Computing Department,
+Imperial College       http://www.doc.ic.ac.uk/
+
+
+From ar3@doc.ic.ac.uk Thu Mar 14 17:03:35 2002
+Return-path: <ar3@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 14 Mar 2002 17:03:35 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16lYdT-0004XP-00; Thu, 14 Mar 2002 17:03:27 +0000
+Received: from acrocantho.doc.ic.ac.uk ([146.169.14.31] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16lYdQ-0006zz-00; Thu, 14 Mar 2002 17:03:24 +0000
+Message-ID: <3C90D88B.586EE95@doc.ic.ac.uk>
+Date: Thu, 14 Mar 2002 17:06:19 +0000
+From: Alessandra Russo <ar3@doc.ic.ac.uk>
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: jmc-first-year@doc.ic.ac.uk, cs-first-year@doc.ic.ac.uk
+CC: ar3@doc.ic.ac.uk
+Subject: Programmings' Lecture Notes updated on the Web
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 31
+
+Dear students,
+
+Today's lecture note  (i.e. Unit 8 : the ADT Heaps) are now available on
+the Web. I have corrected the  mistake on slide  7, and also added a
+label (HR) and (Del) on the little arrows blue and green for you to
+properly follow the sequence of steps on a black and white print out.
+Please do get them from the Web.
+
+Regards,
+Alessandra
+--
+----------------------------------------------------------------
+Dr. Alessandra Russo
+Department of Computing,
+Imperial College,
+180, Queen's Gate,
+London SW7 2BZ,
+U.K.
+
+tel:   +44 20 75948312
+email: ar3@doc.ic.ac.uk
+URL:   http://www.doc.ic.ac.uk/~ar3
+----------------------------------------------------------------
+
+
+
+From jd101@doc.ic.ac.uk Thu Mar 14 19:04:33 2002
+Return-path: <jd101@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 14 Mar 2002 19:04:33 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16laWa-0001nK-00; Thu, 14 Mar 2002 19:04:29 +0000
+Received: from [146.169.27.22] (helo=jamie)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16laWa-0008H4-00
+	for cs-first-year@doc.ic.ac.uk; Thu, 14 Mar 2002 19:04:28 +0000
+From: "Jamie Denton" <jd101@doc.ic.ac.uk>
+To: "Cs1" <cs-first-year@doc.ic.ac.uk>
+Subject: Lab Spec 17
+Date: Thu, 14 Mar 2002 19:04:28 -0000
+Message-ID: <000001c1cb8b$10c01140$10251f81@jamie>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0001_01C1CB8B.10C01140"
+X-Priority: 3 (Normal)
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook, Build 10.0.2616
+Importance: Normal
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 32
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0001_01C1CB8B.10C01140
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Just to point out to everyone that the latest lab spec, 17, the spell
+checker, is due next Friday, not a week on Monday as would normally be
+the case.  So you have 3 days less than usual.
+ 
+Jamie
+ 
+Signature :: Option -> EmailAddress
+Signature choice
+|choice == ADVICE = "Don't Play With Hand Grenades"
+|choice == MSN = "jd101@doc.ic.ac.uk" 
+|otherwise = "Jamie_Denton@Hotmail.com"
+ 
+
+------=_NextPart_000_0001_01C1CB8B.10C01140
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dus-ascii">
+
+
+<meta name=3DProgId content=3DWord.Document>
+<meta name=3DGenerator content=3D"Microsoft Word 10">
+<meta name=3DOriginator content=3D"Microsoft Word 10">
+<link rel=3DFile-List href=3D"cid:filelist.xml@01C1CB8B.108181A0">
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:DoNotRelyOnCSS/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:DocumentKind>DocumentEmail</w:DocumentKind>
+  <w:EnvelopeVis/>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	mso-style-noshow:yes;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:windowtext;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */=20
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=3DEN-US link=3Dblue vlink=3Dpurple =
+style=3D'tab-interval:36.0pt'>
+
+<div class=3DSection1>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'>Just to point out to everyone that the latest lab =
+spec, 17,
+the spell checker, is due next Friday, not a week on Monday as would =
+normally
+be the case.<span style=3D'mso-spacerun:yes'>&nbsp; </span>So you have 3 =
+days less
+than usual.<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'>Jamie<o:p></o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></font></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial;mso-no-proof:yes'>Signature :: Option -&gt; =
+EmailAddress</span></font><span
+style=3D'mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial;mso-no-proof:yes'>Signature choice</span></font><span
+style=3D'mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial;mso-no-proof:yes'>|choice =3D=3D ADVICE =3D =
+&quot;Don't Play With
+Hand Grenades&quot;</span></font><span =
+style=3D'mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial;mso-no-proof:yes'>|choice =3D=3D MSN =3D =
+&quot;jd101@doc.ic.ac.uk&quot;
+</span></font><span style=3D'mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=3DMsoNormal><font size=3D2 face=3DArial><span =
+style=3D'font-size:10.0pt;
+font-family:Arial;mso-no-proof:yes'>|otherwise =3D
+&quot;Jamie_Denton@Hotmail.com&quot;</span></font><o:p></o:p></p>
+
+<p class=3DMsoNormal><font size=3D3 face=3D"Times New Roman"><span =
+style=3D'font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></font></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_000_0001_01C1CB8B.10C01140--
+
+
+From psc@doc.ic.ac.uk Fri Mar 15 12:37:36 2002
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 15 Mar 2002 12:37:36 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16lqxf-0003x6-00; Fri, 15 Mar 2002 12:37:31 +0000
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16lqxf-00062b-00; Fri, 15 Mar 2002 12:37:31 +0000
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 16lqxf-0001X8-00; Fri, 15 Mar 2002 12:37:31 +0000
+To: cs-first-year@doc.ic.ac.uk
+Subject: First Year Lab
+Cc: ids@doc.ic.ac.uk, psc@doc.ic.ac.uk
+Message-Id: <E16lqxf-0001X8-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Fri, 15 Mar 2002 12:37:31 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 33
+
+
+I have put a copy of the spec for your final lab exercise
+in the lab tray in the SGO for you to collect if you have not
+picked up a copy already.
+
+The lab tray can be found near the bottom left of the bank of trays 
+that are on your right as you go into the SGO.
+
+The handin date for the final exercise is Friday 22nd March.  This
+is to allow you time to revise for the exam on Monday 25th March.
+
+Thanks,
+
+Peter Cutler
+
+
+From ss401@mallard.doc.ic.ac.uk Mon Mar 25 10:15:52 2002 +0100
+Return-path: <aarkhan_uk@yahoo.co.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 25 Mar 2002 09:15:52 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16pQa0-0000Yy-00
+	for ss401@doc.ic.ac.uk; Mon, 25 Mar 2002 09:15:52 +0000
+Received: from web12901.mail.yahoo.com ([216.136.174.68])
+	by diver.doc.ic.ac.uk with smtp (Exim 3.16 #7)
+	id 16pQZy-0004fM-00
+	for ss401@doc.ic.ac.uk; Mon, 25 Mar 2002 09:15:51 +0000
+Message-ID: <20020325091549.55218.qmail@web12901.mail.yahoo.com>
+Received: from [195.92.194.19] by web12901.mail.yahoo.com via HTTP; Mon, 25 Mar 2002 09:15:49 GMT
+Date: Mon, 25 Mar 2002 09:15:49 +0000 (GMT)
+From: =?iso-8859-1?q?Amir=20Abdur=20Rehman=20Khan?= <aarkhan_uk@yahoo.co.uk>
+Subject: Java class today CANCELLED
+To: Amir Abdur Rehman Khan <aarkhan_uk@yahoo.co.uk>,
+  "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>, ah101@doc.ic.ac.uk,
+  ajb101@doc.ic.ac.uk, amm01@doc.ic.ac.uk, aps201@doc.ic.ac.uk,
+  av501@doc.ic.ac.uk, ayc01@doc.ic.ac.uk, dc401@doc.ic.ac.uk,
+  dkd01@doc.ic.ac.uk, dt01@doc.ic.ac.uk, dws01@doc.ic.ac.uk,
+  dz01@doc.ic.ac.uk, fg01@doc.ic.ac.uk, fo01@doc.ic.ac.uk, fz01@doc.ic.ac.uk,
+  goe01@doc.ic.ac.uk, gp01@doc.ic.ac.uk, gs01@doc.ic.ac.uk,
+  hkb101@doc.ic.ac.uk, jga01@doc.ic.ac.uk, jkd01@doc.ic.ac.uk,
+  jpl01@doc.ic.ac.uk, jss101@doc.ic.ac.uk, jtl01@doc.ic.ac.uk,
+  ka01@doc.ic.ac.uk, km101@doc.ic.ac.uk, ltf01@doc.ic.ac.uk,
+  mb401@doc.ic.ac.uk, mql01@doc.ic.ac.uk, npg01@doc.ic.ac.uk,
+  qaa101@doc.ic.ac.uk, rf301@doc.ic.ac.uk, rlw01@doc.ic.ac.uk,
+  rp401@doc.ic.ac.uk, rs201@doc.ic.ac.uk, sam01@doc.ic.ac.uk,
+  sj01@doc.ic.ac.uk, so101@doc.ic.ac.uk, sp200@doc.ic.ac.uk,
+  srr01@doc.ic.ac.uk, srs01@doc.ic.ac.uk, ss401@doc.ic.ac.uk,
+  ss501@doc.ic.ac.uk, ss601@doc.ic.ac.uk, ssl01@doc.ic.ac.uk,
+  yjc01@doc.ic.ac.uk, yyl01@doc.ic.ac.uk, zam01@doc.ic.ac.uk
+Cc: aarkhan_uk@yahoo.co.uk, ark@doc.ic.ac.uk, ids@doc.ic.ac.uk
+In-Reply-To: <20020304153415.78176.qmail@web12907.mail.yahoo.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 34
+
+Unfortunately I am quite ill today and unable to teach
+the Java class.  It is unlikely that I will be able to
+do another class before your coming exam.  My apologies
+for this.  In the meantime, do continue to practise
+exam questions, under timed conditions after you've got
+some confidence, bearing in mind the guidelines I pointed
+out in the previous two classes.
+
+Good luck!
+
+
+Amir.
+
+PS Please tell other students who come to the class and may
+not have read this message before noon.  Thanks.
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.com
+

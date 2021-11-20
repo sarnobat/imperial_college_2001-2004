@@ -1,0 +1,392 @@
+head	1.12;
+access;
+symbols
+	yams-final-19-12-03:1.12
+	yams-release2-17-12-03:1.9
+	yams-release-17-12-03:1.9;
+locks; strict;
+comment	@# @;
+
+
+1.12
+date	2003.12.19.14.20.25;	author qq01;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.19.14.09.00;	author jkm01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.19.13.25.30;	author jkm01;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.11.18.26.17;	author jkm01;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.09.18.52.57;	author jkm01;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.01.17.53.11;	author jkm01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.27.17.05.14;	author jkm01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.27.12.04.42;	author jkm01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.25.15.57.13;	author ajb101;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.11.21.16.23;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.11.09.40.39;	author jkm01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.51;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.12
+log
+@updated javadoc
+@
+text
+@/*
+ * Created on 04-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+package yams.assembler;
+
+import java.util.TreeMap;
+import yams.parser.Instruction;
+
+
+/**
+ *The assembler will be reading and assembling the provided user code “line by line,? therefore there 
+ *will be occasions where an instruction cannot be immediately translated into machine code. For example,
+ * if we encounter a ‘j _location? (JUMP to _location) MIPS instruction and _location does not appear till 
+ * some later line in the program, the assembler will not be able to work out the offset to assign the 
+ * corresponding target jump instruction in binary. Therefore the translation of this instruction must be left 
+ * till a later time, and the ToBeDone table contains a list of these instructions that need implementing 
+ * along with the addresses to which they need assembling in memory.
+ * 
+ * @@author jkm01
+ */
+
+public class ToBeDoneTable 
+{
+	//table contains all the entries that need to be updated in the second phase of assembling
+	
+	private TreeMap table;
+		
+	public ToBeDoneTable()
+	{
+		table = new TreeMap();
+	}
+	
+	/**
+	 * Resets the entries in the ToBeDoneTable by clearing the TreeMap of all entries.
+	 */
+	public void resetToBeDoneTable()
+	{
+		table.clear();
+	}
+	
+	/**
+	 * Allows an instruction with a destination address to be added to the ToBeDoneTable.
+	 * <BR><BR>
+	 * @@param a		Address for future assembly
+	 * @@param i		Instruction to be added
+	 * @@param lineNumber Start Address of where to begin reencoding the instruction from.
+	 */
+	public void add(int a, Instruction i, int lineNumber) {table.put(new Integer(table.size()),new ToBeDoneRow(a,i,lineNumber));}
+	
+	/**
+	 * 
+	 * Returns the number of required actions that need to be taken care of in the ToBeDoneTable.
+	 * 
+	 * @@return returns size of table.
+	 */
+	public int requiredActions() {return table.size();}
+	
+	/**
+	 * Returns a ToBeDoneRow object (see ToBeDoneRow structure) when a given index line is given. The instruction to be handled
+	 * can be retrieved from this object.
+	 * 
+	 * @@param i Index Number to retrieve from.
+	 * @@return returns the Row object containing the things that need to be done
+	 * @@throws AssemblerException
+	 */
+	public ToBeDoneRow get(int i) throws AssemblerException
+	{
+		if (i>=0)
+			{
+				if (i<table.size())
+					{
+						return (ToBeDoneRow)table.get(new Integer(i));
+					}
+				else
+					{
+						throw new AssemblerException("Error A38 - This row number ("+i+") already exists within the symbol table, addition aborted",-1,null);
+					}
+			}
+		else
+			{
+				throw new AssemblerException("Error A39 - This row number is 0, addition to symbol table aborted",-1,null);
+			}
+	}
+	
+	/**
+	 * 
+	 * Returns the size of the ToBeDoneTable.
+	 * 
+	 * @@return returns size of table
+	 */
+	public int size() {return table.size();}
+
+	/**
+	 *
+	 * This class encapulates all the information needed for a specific instruction to be encoded on the second assembler pass.
+	 *
+	 * @@author Administrator
+	 * 
+	 */
+	public class ToBeDoneRow
+	{
+		private int next_text_address;
+		private Instruction instruction;
+		private int lineNumber;
+		
+		/**
+		 * 
+		 * Creates a new row, containing an address for future assembly, an associated instruction to be handled on the second pass, and the line number in the original MIPS code that is the source of this instruction.
+		 * The methods within this class are simply get / set methods for retrieving information stored within it.
+		 * 
+		 * @@param a
+		 * @@param i
+		 * @@param lN
+		 */
+		public ToBeDoneRow(int a, Instruction i, int lN)
+		{
+			next_text_address=a; instruction = i; lineNumber = lN;
+		}
+		public int getAddress() {return next_text_address;}
+		public Instruction getInstruction() {return instruction;}
+		public int getLineNumber() {return lineNumber;}
+	}
+
+}@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 3
+ * @@author jkm01
+ *
+ *The assembler will be reading and assembling the provided user code “line by line,” therefore there 
+d16 1
+a16 1
+ * if we encounter a ‘j _location’ (JUMP to _location) MIPS instruction and _location does not appear till 
+d21 2
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d57 1
+a57 1
+	 * @@return
+d66 1
+a66 1
+	 * @@return
+d92 1
+a92 1
+	 * @@return
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d16 7
+a22 2
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+d35 4
+d43 8
+d52 7
+d60 9
+d87 7
+d96 7
+d109 9
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d46 1
+a46 1
+						throw new AssemblerException("Error A88 - This row number ("+i+") already exists within the symbol table, addition aborted");
+d51 1
+a51 1
+				throw new AssemblerException("Error A89 - This row number is 0, addition to symbol table aborted");
+@
+
+
+1.7
+log
+@updated to deal with some other stuff
+@
+text
+@d30 4
+a33 1
+	
+@
+
+
+1.6
+log
+@changed instruction file to only contain information on instructions
+@
+text
+@d31 1
+a31 1
+	public void add(int a, Instruction i, int lineNumber) {table.put(new Integer(table.size()+1),new ToBeDoneRow(a,i,lineNumber));}
+@
+
+
+1.5
+log
+@revised method for assembling instructions
+@
+text
+@d33 1
+a33 1
+	public ToBeDoneRow get(int i)
+d43 1
+a43 1
+						System.out.println("This row number already exists within the symbol table, addition aborted");
+d48 1
+a48 1
+				System.out.println("This row number is 0, addition to symbol table aborted");
+a49 1
+		return null;
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d10 2
+a11 1
+import yams.parser.Operand;
+d31 1
+a31 1
+	public void add(int a, Operand o, char t) {table.put(new Integer(table.size()+1),new ToBeDoneRow(a,t,o));}
+d56 3
+a58 4
+		private int address;
+		private char type;
+		private	Operand operand;
+
+d60 1
+a60 1
+		public ToBeDoneRow(int a, char t, Operand o)
+d62 1
+a62 1
+			address=a; operand = o; type=t;
+d64 3
+a66 3
+		public int getAddress() {return address;}
+		public Operand getOperand() {return operand;}
+		public char getType() {return type;}
+@
+
+
+1.3
+log
+@corrected typo
+@
+text
+@d51 1
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d10 1
+a10 1
+import yams.parser.Oprand;
+d30 1
+a30 1
+	public void add(int a, Oprand o, char t) {table.put(new Integer(table.size()+1),new ToBeDoneRow(a,t,o));}
+d56 1
+a56 1
+		private	Oprand operand;
+d59 1
+a59 1
+		public ToBeDoneRow(int a, char t, Oprand o)
+d64 1
+a64 1
+		public Oprand getOperand() {return operand;}
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d10 1
+d30 1
+a30 1
+	public void add(int a, int op, String l, String t) {table.put(new Integer(table.size()+1),new ToBeDoneRow(a,op,l,t));}
+d50 16
+@
+

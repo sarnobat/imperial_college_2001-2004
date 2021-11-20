@@ -1,0 +1,4 @@
+setenv PGUSER lab
+setenv PGPASSWORD lab
+setenv PGPORT 5432
+setenv PGHOST db

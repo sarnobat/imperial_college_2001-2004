@@ -1,0 +1,58 @@
+%define Name docbook-style-xsl-db2latex
+# RCASVERSION WILL BE REPLACED
+%define Version 0.7pre3
+
+Name        	: %{Name}
+Version     	: %{Version}
+Release     	: 1
+Group       	: Publishing
+Summary     	: DB2LaTeX XSLT Stylesheets, by Ramon Casellas.
+Copyright   	: Distributable
+URL         	: http://db2latex.sourceforge.net
+
+Requires	: docbook-dtds
+Requires	: xml-common >= 0.6 
+
+BuildRoot   	: %{_tmppath}/%{name}-buildroot 
+BuildArch	: noarch
+
+Source0		: http://belnet.dl.sourceforge.net/sourceforge/db2latex/db2latex-0.7pre3.tar.gz
+
+%define docbookbase %{_prefix}/share/sgml/docbook
+
+%Description
+These XSL stylesheets allow to convert any DocBook document to LaTeX
+
+
+%Prep
+
+%Build
+
+
+%Install
+# Hang them on Norm's  dir.
+DESTDIR=$RPM_BUILD_ROOT
+mkdir -p $DESTDIR/%{docbookbase}/db2latex-%{Version}
+cp -dpRf $RPM_BUILD_DIR/db2latex-%{Version} $DESTDIR/%{docbookbase}
+
+%Clean
+DESTDIR=$RPM_BUILD_ROOT
+rm -rf $DESTDIR
+
+
+%Files
+%defattr (-,root,root)
+#%doc BUGS TODO README VERSION
+#%doc ChangeLog WhatsNew
+#%doc doc/
+%dir %{docbookbase}/db2latex-%{Version}
+%{docbookbase}/db2latex-%{Version}
+
+
+%changelog
+
+* Sat Mar 15 2003 Ramon Casellas <casellas@infres.enst.fr> 20030315
+- New RPM for 0.7 version
+ 
+* Tue Feb 12 2001 Ramon Casellas <casellas@infres.enst.fr> 20010214
+- New

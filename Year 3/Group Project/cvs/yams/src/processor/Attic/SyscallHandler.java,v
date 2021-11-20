@@ -1,0 +1,88 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2003.11.10.10.57.51;	author qq01;	state dead;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.09.23.14.15;	author sw00;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.06.13.53.42;	author sw00;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 03-Nov-2003
+ *
+ */
+package processor;
+import YAMS;
+
+/**
+ * @@author sw00
+ *
+ */
+public class SyscallHandler implements InstructionHandlerInterface {
+	// this is a dummy implementation
+	
+	private RegisterManagerInterface regs;
+	private MemoryManagerInterface mem;
+	private YAMS controller;
+	
+	public SyscallHandler(RegisterManagerInterface registerManager,
+								MemoryManagerInterface memoryManager,
+								YAMS controller) {
+		regs = registerManager;
+		mem = memoryManager;
+		this.controller = controller;
+	}
+
+	public boolean execute(int instruction) {
+		return true;
+	}
+
+}
+@
+
+
+1.2
+log
+@updated constructor
+@
+text
+@@
+
+
+1.1
+log
+@added, empty syscall handler
+@
+text
+@d6 1
+d9 1
+a9 1
+ * @@author sw00 Simon West
+d15 10
+a24 1
+	public SyscallHandler() {
+@
+

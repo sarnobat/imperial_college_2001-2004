@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry excluding="tests/" kind="src" path=""/>
+    <classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+    <classpathentry exported="true" kind="lib" path="H:/project/src/jars/jdom.jar"/>
+    <classpathentry exported="true" kind="lib" path="H:/project/src/jars/log4j-1.2.8.jar"/>
+    <classpathentry exported="true" kind="lib" path="H:/project/src/jars/emf.jar"/>
+    <classpathentry exported="true" kind="lib" path="H:/project/src/jars/xsd.jar"/>
+    <classpathentry kind="lib" path="H:/project/src/jars/unknown/codegen.ecore.jar"/>
+    <classpathentry kind="output" path="build"/>
+</classpath>

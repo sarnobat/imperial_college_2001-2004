@@ -1,0 +1,866 @@
+#VRML V2.0 utf8
+
+NavigationInfo {
+headlight FALSE
+type [ "WALK" ]
+}
+Viewpoint {
+fieldOfView 1.2
+orientation 0 1 0 0
+position 16 2 34
+description "Entry"
+}
+
+#DEF AreYouDressed ProximitySensor{
+#center 16 12 34
+#size 3 3 3
+#}
+Background {
+skyColor [
+0 0 0 .4 .4 .8 0 0 0
+]
+skyAngle [
+1.309 1.571
+]
+groundColor [
+0 0 0 .4 .4 .8 0 0 0
+]
+groundAngle [
+1.309 1.571
+]
+}
+Sound {
+intensity 1
+direction 1 1 1
+maxBack 400
+maxFront 400
+minBack 5
+minFront 5
+spatialize FALSE
+source AudioClip {
+loop TRUE
+url "sounds/helicopter.wav"
+}
+}
+Sound {
+direction 1 1 1
+maxBack 1000
+maxFront 1000
+minBack 2
+minFront 2
+spatialize FALSE
+source AudioClip {
+loop TRUE
+url "sounds/spymusic.wav"
+}
+}
+Group {
+children [
+DEF Rotor Transform {
+children [
+DEF RotorSpot SpotLight {
+cutOffAngle .25
+beamWidth 12
+}
+SpotLight {
+location 1.27 5.15 -94.07
+direction -.04 -.34 .94
+}
+]
+}
+DEF Timer TimeSensor {
+loop TRUE
+cycleInterval 10
+}
+DEF RotOrient OrientationInterpolator {
+key [
+0 .5 1
+]
+keyValue [
+0 1 0 -1.3 0 1 0 1.3 0 1 0 -1.3
+]
+}
+DEF Col ColorInterpolator {
+key [
+0 .5 1
+]
+keyValue [
+.5 .5 .5 .75 .75 .75 1 1 1
+]
+}
+]
+ROUTE Timer.fraction_changed TO RotOrient.set_fraction
+ROUTE RotOrient.value_changed TO Rotor.set_rotation
+ROUTE Timer.fraction_changed TO Col.set_fraction
+ROUTE Col.value_changed TO RotorSpot.set_color
+}
+DEF Blocks Group {
+children [
+DEF Block Group {
+children [
+Transform {
+translation .5 1.98 -.5
+rotation -.707 0 0 1.57
+scale 4.67 4.67 1.89
+children [
+Shape {
+geometry IndexedFaceSet {
+ccw FALSE
+colorPerVertex FALSE
+convex FALSE
+coord Coordinate {
+point [
+-1 -1 -1, -1 -1 1, 1 -1 -1, 1 -1 1, -1 1 -1, 1 1 -1, 1 1 1,
+-1 1 1, -.961 .961 -1, .961 .961 -1, .961 -.961 -1, -.961 -.961 -1,
+-.961 -.961 .861, .961 -.961 .861, .961 .961 .861, -.961 .961 .861,
+-.697 -1 .322, -.697 -.961 .322, -.697 .961 .322, -.697 1 .322,
+-.504 -1 .322, -.504 -.961 .322, -.504 .961 .322, -.504 1 .322,
+-.504 -1 -.482, -.504 -.961 -.482, -.504 .961 -.482, -.504 1 -.482,
+-.697 1 -.482, -.697 .961 -.482, -.697 -.961 -.482, -.697 -1 -.482,
+.311 -1 .322, .311 -.961 .322, .311 .961 .322, .311 1 .322,
+.503 -1 .322, .503 -.961 .322, .503 .961 .322, .503 1 .322,
+.503 -1 -.482, .503 -.961 -.482, .503 .961 -.482, .503 1 -.482,
+.311 1 -.482, .311 .961 -.482, .311 -.961 -.482, .311 -1 -.482,
+-1 .464 .41, -.961 .464 .41, .961 .464 .41, 1 .464 .41, 1 .464 -.362,
+.961 .464 -.362, -.961 .464 -.362, -1 .464 -.362, -1 .249 .41,
+-.961 .249 .41, .961 .249 .41, 1 .249 .41, 1 .249 -.362, .961 .249 -.362,
+-.961 .249 -.362, -1 .249 -.362, -1 -.443 .41, -.961 -.443 .41,
+.961 -.443 .41, 1 -.443 .41, 1 -.443 -.362, .961 -.443 -.362,
+-.961 -.443 -.362, -1 -.443 -.362, -1 -.658 .41, -.961 -.658 .41,
+.961 -.658 .41, 1 -.658 .41, 1 -.658 -.362, .961 -.658 -.362,
+-.961 -.658 -.362, -1 -.658 -.362, .00695 .961 -1, .00695 1 -1,
+.00695 -1 -1, .00695 -.961 -1, -.221 1 -1, -.221 .961 -1,
+-.221 -.961 -1, -.221 -1 -1, -.221 -1 .0916, -.221 -.961 .0916,
+-.221 .961 .0916, -.221 1 .0916, .00695 -1 .0916, .00695 -.961 .0916,
+.00695 .961 .0916, .00695 1 .0916,
+]
+}
+coordIndex [
+75 3 6 -1, 76 3 75 -1, 2 3 76 -1, 2 76 68 -1, 67 75 6 -1, 59 67 6 -1, 68 67
+59 -1, 60 68 59 -1, 2 68 60 -1, 2 60 52 -1, 51 59 6 -1, 52 51 6 -1, 5 52 6
+-1, 5 2 52 -1, 7 6 3 1 -1, 64 7 1 -1, 72 64 1 -1, 79 72 1 -1, 0 79 1 -1, 56
+48 7 -1, 64 56 7 -1, 63 56 64 -1, 71 63 64 -1, 0 63 71 -1, 0 71 79 -1, 55
+7 48 -1, 4 7 55 -1, 4 55 63 -1, 0 4 63 -1, 66 14 13 -1, 74 66 13 -1, 77 74
+13 -1, 10 77 13 -1, 58 50 14 -1, 66 58 14 -1, 61 58 66 -1, 69 61 66 -1, 10
+61 69 -1, 10 69 77 -1, 53 14 50 -1, 9 14 53 -1, 9 53 61 -1, 10 9 61 -1, 13
+14 15 12 -1, 73 12 15 -1, 78 12 73 -1, 11 12 78 -1, 11 78 70 -1, 65 73 15
+-1, 57 65 15 -1, 70 65 57 -1, 62 70 57 -1, 11 70 62 -1, 11 62 54 -1, 49 57
+15 -1, 54 49 15 -1, 8 54 15 -1, 8 11 54 -1, 84 4 0 87 86 11 8 85 -1, 17 30
+31 16 -1, 21 17 16 20 -1, 19 28 29 18 -1, 23 19 18 22 -1, 30 25 24 31 -1,
+25 21 20 24 -1, 28 27 26 29 -1, 27 23 22 26 -1, 33 46 47 32 -1, 37 33 32 36
+-1, 44 43 42 45 -1, 35 44 45 34 -1, 39 35 34 38 -1, 46 41 40 47 -1, 41 37
+36 40 -1, 43 39 38 42 -1, 62 57 56 63 -1, 57 49 48 56 -1, 54 62 63 55 -1,
+49 54 55 48 -1, 60 59 58 61 -1, 59 51 50 58 -1, 52 60 61 53 -1, 51 52 53 50
+-1, 78 73 72 79 -1, 73 65 64 72 -1, 70 78 79 71 -1, 65 70 71 64 -1, 76 75
+74 77 -1, 75 67 66 74 -1, 68 76 77 69 -1, 67 68 69 66 -1, 80 9 10 83 82 2
+5 81 -1, 36 3 2 -1, 40 36 2 -1, 47 40 2 -1, 82 47 2 -1, 82 92 47 -1, 24 20
+87 -1, 31 24 87 -1, 0 31 87 -1, 32 3 36 -1, 92 32 47 -1, 92 3 32 -1, 88 3
+92 -1, 20 88 87 -1, 20 3 88 -1, 16 3 20 -1, 1 3 16 -1, 1 16 31 -1, 0 1 31
+-1, 41 10 13 -1, 46 10 41 -1, 93 46 33 -1, 83 10 46 -1, 83 46 93 -1, 30 86
+25 -1, 11 86 30 -1, 11 30 17 -1, 37 41 13 -1, 33 37 13 -1, 93 33 13 -1, 89
+93 13 -1, 25 86 89 -1, 21 25 89 -1, 21 89 13 -1, 17 21 13 -1, 12 17 13 -1,
+12 11 17 -1, 38 14 9 -1, 42 38 9 -1, 45 42 9 -1, 80 45 9 -1, 26 22 85 -1,
+29 26 85 -1, 8 29 85 -1, 34 14 38 -1, 80 34 45 -1, 94 34 80 -1, 94 14 34 -1,
+90 14 94 -1, 22 90 85 -1, 22 14 90 -1, 18 14 22 -1, 15 14 18 -1, 15 18 29
+-1, 8 15 29 -1, 43 5 6 -1, 44 5 43 -1, 95 44 35 -1, 81 5 44 -1, 81 44 95 -1,
+28 84 27 -1, 4 84 28 -1, 4 28 19 -1, 39 43 6 -1, 35 39 6 -1, 95 35 6 -1, 91
+95 6 -1, 27 84 91 -1, 23 27 91 -1, 23 91 6 -1, 19 23 6 -1, 7 19 6 -1, 7 4
+19 -1, 92 82 83 93 -1, 87 88 89 86 -1, 94 80 81 95 -1, 85 90 91 84 -1, 88
+92 93 89 -1, 90 94 95 91 -1,
+]
+}
+appearance Appearance {
+material Material {
+diffuseColor .6 .6 .6
+specularColor .1 .1 .1
+emissiveColor .15 .15 .15
+shininess 0
+}
+}
+}
+]
+}
+Transform {
+translation .5 3.94 -.5
+rotation -.707 0 0 1.57
+scale 5.16 5.16 .0649
+children [
+Shape {
+geometry IndexedFaceSet {
+ccw FALSE
+colorPerVertex FALSE
+convex FALSE
+coord Coordinate {
+point [
+-1 -1 -1, -.00389 -.00389 39.9, 1 -1 -1, .00388 -.00389 39.9,
+-1 1 -1, 1 1 -1, .00388 .00388 39.9, -.00389 .00388 39.9,
+1 -1 1, 1 1 1, -1 1 1, -1 -1 1,
+]
+}
+coordIndex [
+11 1 3 8 -1, 2 5 4 0 -1, 8 3 6 9 -1, 1 7 6 3 -1, 9 6 7 10 -1, 10 7 1 11 -1,
+9 5 2 8 -1, 10 4 5 9 -1, 11 0 4 10 -1, 8 2 0 11 -1,
+]
+}
+appearance DEF Black Appearance {
+material Material {
+diffuseColor .6 .6 .6
+specularColor .81 .81 .81
+shininess 0
+}
+}
+}
+]
+}
+Transform {
+translation 0 1.16 -5.09
+rotation -.707 0 0 1.57
+scale .571 .116 1.06
+children [
+DEF Door Shape {
+geometry IndexedFaceSet {
+ccw FALSE
+colorPerVertex FALSE
+convex FALSE
+coord Coordinate {
+point [
+-1 -1 -1, -1 -1 1, 1 -1 -1, 1 -1 1, -1 1 -1, 1 1 -1, 1 1 1,
+-1 1 1, .825 1 -1, -.84 1 -1, .825 -1 -1, -.84 -1 -1, -.84 -1 .904,
+-.84 1 .904, .825 -1 .904, .825 1 .904,
+]
+}
+coordIndex [
+10 2 5 8 -1, 2 3 6 5 -1, 3 1 7 6 -1, 4 7 1 0 -1, 13 15 8 5 6 7 4 9 -1, 14
+12 11 0 1 3 2 10 -1, 9 4 0 11 -1, 15 14 10 8 -1, 11 12 13 9 -1, 12 14 15 13
+-1,
+]
+}
+appearance USE Black
+}
+]
+}
+Transform {
+translation .00518 1.16 4.11
+rotation -.707 0 0 1.57
+scale .571 .116 1.06
+children [
+USE Door
+]
+}
+Group {
+children [
+Transform {
+translation -2.31 1.83 -5.09
+rotation -.707 0 0 1.57
+scale .443 0.001 .76
+children [
+DEF MainWindow Shape {
+geometry IndexedFaceSet {
+ccw FALSE
+colorPerVertex FALSE
+convex FALSE
+coord Coordinate {
+point [
+-1 -1 -1, -1 -1 1, 1 -1 -1, 1 -1 1, -1 1 -1, 1 1 -1, 1 1 1,
+-1 1 1, .106 -1 .905, .106 1 .905, .887 -1 .905, .887 1 .905,
+.887 -1 .0292, .887 1 .0292, .106 1 .0292, .106 -1 .0292,
+.104 -1 -.0438, .104 1 -.0438, .886 -1 -.0438, .886 1 -.0438,
+.886 -1 -.92, .886 1 -.92, .104 1 -.92, .104 -1 -.92, -.849 -1 -.0438,
+-.849 1 -.0438, -.0672 -1 -.0438, -.0672 1 -.0438, -.0672 -1 -.92,
+-.0672 1 -.92, -.849 1 -.92, -.849 -1 -.92, -.849 -1 .905,
+-.849 1 .905, -.0672 -1 .905, -.0672 1 .905, -.0672 -1 .0292,
+-.0672 1 .0292, -.849 1 .0292, -.849 -1 .0292,
+]
+}
+coordIndex [
+36 34 23 -1, 26 36 23 -1, 39 36 26 -1, 24 39 26 -1, 0 39 24 -1, 0 24 31 -1,
+8 3 10 -1, 16 8 15 -1, 34 16 23 -1, 34 8 16 -1, 34 3 8 -1, 32 3 34 -1, 1 3
+32 -1, 1 32 39 -1, 0 1 39 -1, 10 3 2 -1, 12 10 2 -1, 18 12 2 -1, 20 18 2 -1,
+23 20 2 -1, 28 26 23 -1, 28 23 2 -1, 31 28 2 -1, 0 31 2 -1, 15 12 18 -1, 16
+15 18 -1, 0 2 5 4 -1, 2 3 6 5 -1, 3 1 7 6 -1, 11 13 6 -1, 9 11 6 -1, 37 17
+9 -1, 35 37 9 -1, 35 9 6 -1, 33 35 6 -1, 7 33 6 -1, 7 4 33 -1, 19 21 13 -1,
+14 19 13 -1, 17 19 14 -1, 17 14 9 -1, 27 29 17 -1, 37 27 17 -1, 25 27 37 -1,
+38 25 37 -1, 4 25 38 -1, 4 38 33 -1, 13 5 6 -1, 21 5 13 -1, 22 5 21 -1, 29
+22 17 -1, 29 5 22 -1, 30 5 29 -1, 4 5 30 -1, 4 30 25 -1, 4 7 1 0 -1, 15 8
+9 14 -1, 8 10 11 9 -1, 12 15 14 13 -1, 10 12 13 11 -1, 23 16 17 22 -1, 16
+18 19 17 -1, 20 23 22 21 -1, 18 20 21 19 -1, 31 24 25 30 -1, 24 26 27 25 -1,
+28 31 30 29 -1, 26 28 29 27 -1, 39 32 33 38 -1, 32 34 35 33 -1, 36 39 38 37
+-1, 34 36 37 35 -1,
+]
+}
+appearance USE Black
+}
+]
+}
+Transform {
+translation 2.4 1.83 -5.09
+rotation -.707 0 0 1.57
+scale .443 0.001 .76
+children [
+USE MainWindow
+]
+}
+Transform {
+translation -2.31 1.83 4.07
+rotation -.707 0 0 1.57
+scale .443 0.001 .76
+children [
+USE MainWindow
+]
+}
+Transform {
+translation 2.4 1.83 4.1
+rotation -.707 0 0 1.57
+scale .443 0.001 .76
+children [
+USE MainWindow
+]
+}
+Transform {
+translation -4.09 2.02 -2.17
+rotation -.5 .5 .5 2.09
+scale .498 0.001 .724
+children [
+USE MainWindow
+]
+}
+Transform {
+translation -4.09 2.02 2.08
+rotation -.5 .5 .5 2.09
+scale .498 0.001 .724
+children [
+USE MainWindow
+]
+}
+Transform {
+translation 5.11 2.02 -2.17
+rotation -.5 .5 .5 2.09
+scale .498 0.001 .724
+children [
+USE MainWindow
+]
+}
+Transform {
+translation 5.08 2.02 2.08
+rotation -.5 .5 .5 2.09
+scale .498 0.001 .724
+children [
+USE MainWindow
+]
+}
+]
+}
+Transform {
+rotation -.707 0 0 1.57
+scale 13 13 .0565
+children [
+Shape {
+geometry IndexedFaceSet {
+ccw FALSE
+colorPerVertex FALSE
+convex FALSE
+coord Coordinate {
+point [
+-1 -1 -1, -1 -1 1, 1 -1 -1, 1 -1 1, -1 1 -1, 1 1 -1, 1 1 1,
+-1 1 1,
+]
+}
+coordIndex [
+2 0 1 3 -1, 4 0 2 5 -1, 5 2 3 6 -1, 6 3 1 7 -1, 4 5 6 7 -1, 0 4 7 1 -1,
+]
+}
+appearance Appearance {
+material Material {
+ambientIntensity .25
+diffuseColor 1 1 1
+specularColor .48 .48 .48
+emissiveColor .2 .2 .2
+shininess 0
+}
+}
+}
+]
+}
+Transform {
+translation 0 -.113 0
+rotation -.707 0 0 1.57
+scale 16 16 0.001
+children [
+Shape {
+geometry IndexedFaceSet {
+ccw FALSE
+colorPerVertex FALSE
+convex FALSE
+coord Coordinate {
+point [
+-1 -1 -1, -1 -1 1, 1 -1 -1, 1 -1 1, -1 1 -1, 1 1 -1, 1 1 1,
+-1 1 1,
+]
+}
+coordIndex [
+2 0 1 3 -1, 4 0 2 5 -1, 5 2 3 6 -1, 6 3 1 7 -1, 4 5 6 7 -1, 0 4 7 1 -1,
+]
+}
+appearance Appearance {
+material Material {
+ambientIntensity .1
+diffuseColor .824 .824 .824
+specularColor .81 .81 .81
+emissiveColor .1 .1 .1
+shininess 0
+}
+}
+}
+]
+}
+Transform {
+translation -13 .05 13
+rotation 0 1 0 -2
+children [
+Transform {
+translation .349 3.5 0
+rotation -.707 0 0 1.57
+scale .125 .125 .125
+children [
+Shape {
+geometry Sphere {
+}
+appearance Appearance {
+material Material {
+ambientIntensity 1
+diffuseColor 1 1 1
+specularColor 1 1 1
+emissiveColor 1 1 1
+shininess 1
+}
+}
+}
+]
+}
+Collision {
+collide FALSE
+children [
+Transform {
+translation .349 2.52 -.00414
+rotation -.707 0 0 1.57
+children [
+Shape {
+geometry IndexedFaceSet {
+creaseAngle 3.14
+ccw FALSE
+colorPerVertex FALSE
+convex FALSE
+coord Coordinate {
+point [
+-1.82 -1.82 -2.5, -.286 -.286 1, 1.82 -1.82 -2.5, .286 -.286 1,
+-1.82 1.82 -2.5, 1.82 1.82 -2.5, .286 .286 1, -.286 .286 1,
+]
+}
+coordIndex [
+2 0 1 3 -1, 4 0 2 5 -1, 5 2 3 6 -1, 6 3 1 7 -1, 4 5 6 7 -1, 0 4 7 1 -1,
+]
+}
+appearance Appearance {
+material Material {
+ambientIntensity 1
+diffuseColor 1 1 1
+specularColor 1 1 1
+emissiveColor 1 1 1
+shininess 0
+transparency .9
+}
+}
+}
+]
+}
+]
+}
+Shape {
+appearance Appearance {
+material Material {
+ambientIntensity .1
+diffuseColor 1 1 1
+emissiveColor .3 .3 .3
+}
+}
+geometry Extrusion {
+beginCap FALSE
+creaseAngle .42219
+crossSection [
+-.053061 .051852 .051059 .051852 .051059 -.050265 -.053061 -.050265 -.053061
+.051852
+]
+scale [
+2.1129 2.1129 2.1129 2.1129 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+1 1 1 1 1 1.9145 1.9145 6 6 6 6
+]
+spine [
+-.5488 .001253 0 -.5488 .031504 0 -.5488 .034961 0 -.53525 4.7744 0 -.48969
+4.8843 0 -.4173 4.9788 0 -.32281 5.0514 0 -.21282 5.0967 0 -.09478 5.1121
+0 .023129 5.0966 0 .13312 5.0511 0 .22754 4.9787 0 .30002 4.8843 0 .34557
+4.7744 0 .3611 4.6564 0 .36291 3.8434 0 .36291 3.6946 0 .36291 3.5705 0 .36291
+3.5209 0
+]
+}
+}
+]
+}
+DEF MainWall Transform {
+rotation -.707 0 0 1.57
+children [
+Transform {
+translation 5.97 9.02 .814
+rotation 0 0 .707 1.57
+scale .112 3.79 .753
+children [
+DEF Wall Shape {
+geometry IndexedFaceSet {
+ccw FALSE
+colorPerVertex FALSE
+convex FALSE
+texCoord TextureCoordinate {
+point [
+1 0, 0 0, 0 1, 1 1,
+]
+}
+coord Coordinate {
+point [
+-1 -1 -1, -1 -1 1, 1 -1 -1, 1 -1 1, -1 1 -1, 1 1 -1, 1 1 1,
+-1 1 1,
+]
+}
+coordIndex [
+2 0 1 3 -1, 4 0 2 5 -1, 5 2 3 6 -1, 6 3 1 7 -1, 4 5 6 7 -1, 0 4 7 1 -1,
+]
+texCoordIndex [
+0 1 2 3 -1, 3 0 1 2 -1, 0 1 2 3 -1, 1 2 3 0 -1, 0 1 2 3 -1, 0 1 2 3 -1,
+]
+}
+appearance Appearance {
+material Material {
+ambientIntensity .23
+diffuseColor 1 1 1
+specularColor .3 .3 .3
+emissiveColor .5 .5 .5
+shininess 0
+}
+textureTransform TextureTransform {
+scale 8 4
+}
+texture ImageTexture {
+url "images/brick.jpg"
+}
+}
+}
+]
+}
+Transform {
+translation -5.9 9.02 .814
+rotation 0 0 .707 1.57
+scale .112 3.79 .753
+children [
+USE Wall
+]
+}
+Group {
+children [
+Group {
+children [
+Group {
+children [
+DEF MainPost Group {
+children [
+Transform {
+children [
+Transform {
+translation 10 9.05 2.77
+rotation 0 0 .707 1.57
+scale .335 .37 .335
+children [
+Shape {
+geometry Sphere {
+}
+appearance Appearance {
+material Material {
+ambientIntensity .23
+diffuseColor 1 1 1
+emissiveColor .1 .1 .1
+shininess 0
+}
+}
+}
+]
+}
+Transform {
+translation 10 9.07 2.36
+rotation 1 0 0 1.57
+scale .0625 .0691 .0938
+children [
+Shape {
+geometry Cylinder {
+}
+appearance Appearance {
+material Material {
+ambientIntensity .23
+diffuseColor 1 1 1
+emissiveColor .1 .1 .1
+shininess 0
+}
+}
+}
+]
+}
+Transform {
+translation 10 9.07 1.13
+rotation 0 0 .707 1.57
+scale .223 .247 1.13
+children [
+Shape {
+geometry IndexedFaceSet {
+ccw FALSE
+colorPerVertex FALSE
+convex FALSE
+texCoord TextureCoordinate {
+point [
+1 0, -3.58e-007 0, -3.58e-007 1, 1 1, 1 -3.58e-007, -3.58e-007 -3.58e-007,
+]
+}
+coord Coordinate {
+point [
+-1 -1 -1, -1 -1 1, 1 -1 -1, 1 -1 1, -1 1 -1, 1 1 -1, 1 1 1,
+-1 1 1,
+]
+}
+coordIndex [
+2 0 1 3 -1, 4 0 2 5 -1, 5 2 3 6 -1, 6 3 1 7 -1, 4 5 6 7 -1, 0 4 7 1 -1,
+]
+texCoordIndex [
+0 1 2 3 -1, 3 4 5 2 -1, 0 1 2 3 -1, 5 2 3 4 -1, 0 1 2 3 -1, 0 1 2 3 -1,
+]
+}
+appearance Appearance {
+material Material {
+ambientIntensity .1
+diffuseColor 1 1 1
+specularColor .3 .3 .3
+emissiveColor .5 .5 .5
+shininess 0
+}
+textureTransform TextureTransform {
+scale .75 5
+}
+texture ImageTexture {
+url "images/brick.jpg"
+}
+}
+}
+]
+}
+]
+}
+]
+}
+]
+}
+Transform {
+translation -8.08 .0147 0
+children [
+USE MainPost
+]
+}
+]
+}
+Transform {
+translation -11.9 .0147 0
+children [
+USE MainPost
+]
+}
+]
+}
+]
+}
+Transform {
+translation .945 0 .852
+rotation 0 1 0 4.71
+children [
+USE MainWall
+]
+}
+Transform {
+translation .0929 0 1.8
+rotation 0 1 0 3.14
+children [
+USE MainWall
+]
+}
+Transform {
+translation -.853 0 .939
+rotation 0 1 0 1.57
+children [
+USE MainWall
+]
+}
+]
+}
+Transform {
+translation 31.9 0 0
+children [
+USE Block
+]
+}
+Transform {
+translation 63.8 0 0
+children [
+USE Block
+]
+}
+Transform {
+translation -31.9 0 0
+children [
+USE Block
+]
+}
+]
+}
+Transform {
+translation 0 0 31.9
+children [
+USE Blocks
+]
+}
+Transform {
+translation 0 0 -31.9
+children [
+USE Blocks
+]
+}
+Transform {
+translation 0 0 -63.8
+children [
+USE Blocks
+]
+}
+Transform {
+rotation 0 1 0 .3
+scale 4 4 4
+children [
+Inline {
+url [
+"spotlights.wrl"
+]
+}
+]
+}
+Transform {
+rotation 0 1 0 .3
+scale 4 4 4
+translation 50 0 -50
+children [
+Inline {
+url [
+"spotlights.wrl"
+]
+}
+]
+}
+Transform {
+rotation 0 1 0 .3
+scale 4 4 4
+translation 0 0 -50
+children [
+Inline {
+url [
+"spotlights.wrl"
+]
+}
+]
+}
+Transform {
+rotation 0 1 0 .3
+scale 4 4 4
+translation 50 0 0
+children [
+Inline {
+url [
+"spotlights.wrl"
+]
+}
+]
+}
+Transform {
+rotation 0 1 0 -1.57
+translation 36 1.5 28
+children [
+Inline {
+url [
+"safe.wrl"
+]
+}
+]
+}
+Transform {
+translation 16 1 -16
+rotation -.707 0 0 1.57
+scale 64 64 1
+children [
+Shape {
+geometry IndexedFaceSet {
+creaseAngle .559
+ccw FALSE
+colorPerVertex FALSE
+convex FALSE
+texCoord TextureCoordinate {
+point [
+.625 .486, .625 .514, .875 .514, .875 .486, .125 .486, .375 .486,
+-.125 .486, -.375 .486, -.625 .486, -.125 .514, .125 .514, -.375 .514,
+-.625 .514, .375 .514,
+]
+}
+coord Coordinate {
+point [
+-1 -1 -1, -1 -1 1, 1 -1 -1, 1 -1 1, -1 1 -1, 1 1 -1, 1 1 1,
+-1 1 1, -.987 .988 1, -.987 .988 -1, .987 .988 1, .987 .988 -1,
+.987 -.988 1, .987 -.988 -1, -.987 -.988 -1, -.987 -.988 1,
+]
+}
+coordIndex [
+0 1 3 2 -1, 13 5 11 -1, 2 5 13 -1, 2 13 14 -1, 0 2 14 -1, 11 5 4 -1, 9 11
+4 -1, 14 9 4 -1, 0 14 4 -1, 2 3 6 5 -1, 10 8 6 -1, 12 10 6 -1, 3 12 6 -1,
+3 1 12 -1, 8 7 6 -1, 15 7 8 -1, 1 7 15 -1, 1 15 12 -1, 5 6 7 4 -1, 4 7 1 0
+-1, 9 14 15 8 -1, 14 13 12 15 -1, 11 9 8 10 -1, 13 11 10 12 -1,
+]
+texCoordIndex [
+0 1 2 3 -1, 6 4 4 -1, 3 4 6 -1, 3 6 7 -1, 0 3 7 -1, 4 4 5 -1, 8 4 5 -1, 7
+8 5 -1, 0 7 5 -1, 6 9 10 4 -1, 10 13 10 -1, 2 10 10 -1, 9 2 10 -1, 9 11 2
+-1, 13 12 10 -1, 1 12 13 -1, 11 12 1 -1, 11 1 2 -1, 4 10 13 5 -1, 5 13 1 0
+-1, 5 0 1 13 -1, 0 3 2 1 -1, 4 5 13 10 -1, 6 4 10 9 -1,
+]
+}
+appearance Appearance {
+material Material {
+ambientIntensity .23
+diffuseColor 1 1 1
+specularColor .3 .3 .3
+emissiveColor .5 .5 .5
+shininess 0
+}
+textureTransform TextureTransform {
+scale 300 100
+}
+texture ImageTexture {
+url "images/brick.jpg"
+}
+}
+}
+]
+}
+
+#DEF ProxSensor_beam-SCRIPT1 Script {
+#mustEvaluate TRUE
+#eventIn SFTime onEnterTime
+#field MFString url_string ["entry/spyavatars.wrl"]
+#field MFString param_string ["scene=entry/contact.bxx"]
+#url "javascript: function onEnterTime(val,ts) { Browser.loadURL(url_string,param_string); } "
+#}
+#ROUTE AreYouDressed.enterTime TO ProxSensor_beam-SCRIPT1.onEnterTime

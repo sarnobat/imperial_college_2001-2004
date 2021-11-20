@@ -1,0 +1,506 @@
+head	1.13;
+access;
+symbols
+	yams-final-19-12-03:1.13
+	yams-release2-17-12-03:1.10
+	yams-release-17-12-03:1.10;
+locks; strict;
+comment	@# @;
+
+
+1.13
+date	2003.12.19.14.20.25;	author qq01;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.19.14.09.01;	author jkm01;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.19.13.25.30;	author jkm01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.11.18.26.16;	author jkm01;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.10.13.15.48;	author bmc01;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.10.12.15.46;	author bmc01;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.09.18.52.57;	author jkm01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.08.01.15.17;	author ajb101;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.04.17.56.46;	author jkm01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.01.14.41.59;	author jkm01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.29.14.19.51;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.27.17.05.14;	author jkm01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.11.13.46.01;	author jkm01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.13
+log
+@updated javadoc
+@
+text
+@/*
+ * Created on 10-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+ */
+package yams.assembler;
+
+import java.util.TreeMap;
+import yams.parser.Instruction;
+
+/**
+ * The GUIMap component is a table whose existence is pertinent from the GUI point of view. It maps the line numbers of the original MIPS file to their assembled locations within memory, and can be used in the GUI to keep track of which line is being executed during a run of the program. 
+ *
+ * @@author jkm01
+ */
+public class GuiMap {
+	
+	private TreeMap table;
+	
+	/**
+	 * Constructor creates a new table into which Key,Value pairs can be added.
+	 */
+	// this class will hold addresses of memory locations assigned to a label
+	public GuiMap() {
+		table = new TreeMap();
+	}
+	
+	/**
+	 * Method to clear all the information within the GUIMap table TreeMap in this class
+	 */
+	public void resetGuiMap()
+	{
+		table.clear();
+	}
+	
+	/**
+	 * 
+	 * Returns true if the line number is contained within the stored TreeMap (ie has an associated address)
+	 * 
+	 * @@param line Requested Line Number
+	 * @@return true if contains requested line number -> address mapping
+	 */
+	public boolean containsLine(int line) {
+		return table.containsValue(new Integer(line));
+	}
+	
+	
+	/**
+
+	 * Returns true if the address is contained within the stored TreeMap (ie has an associated line number)
+	 * @@param address
+	 * @@return true if contains requested address
+	 */
+	public boolean containsAddress(int address) {
+		return table.containsKey(new Integer(address));
+	}
+	
+	
+	/**
+	 * 
+	 * Returns the line number within the MIPS code of the given memory address.
+	 * 
+	 * @@param address
+	 * @@return returns line number of the given memory address
+	 */
+	public int returnLine(int address) {
+		return ((Integer)table.get(new Integer(address))).intValue();
+	}
+	
+	/**
+	 * 
+	 * Returns the very last line number that has been assembled to a location
+	 * 
+	 * @@return returns the integer number of the last line assembled
+	 */
+	public int returnLastLine()
+	{
+		return ((Integer)table.get((Integer)table.lastKey())).intValue();
+	}
+	
+	
+	/**
+	 * 
+	 * Allows a line number within the MIPS code to be added to the GUIMap with a given address, and thus instantiates
+	 * the mapping within the TreeMap table.
+	 * 
+	 * @@param line
+	 * @@param address
+	 * @@param currentInstruction
+	 * @@throws AssemblerException
+	 */
+	public void add(int line, int address, Instruction currentInstruction) throws AssemblerException
+	{
+		if (!containsLine(line))
+			{
+				if (!containsAddress(address))
+					{
+						table.put(new Integer(address), new Integer(line));
+					}
+			}
+		else throw new AssemblerException("[Error A16] Line already used within assembler",line,currentInstruction);		
+	}
+}@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@a12 2
+ * @@author Administrator
+ *
+d15 1
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d43 1
+a43 1
+	 * @@return
+d54 1
+a54 1
+	 * @@return
+d66 1
+a66 1
+	 * @@return
+d76 1
+a76 1
+	 * @@return
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d11 1
+d15 2
+a16 2
+ * To change the template for this generated type comment go to
+ * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+a17 1
+
+d22 3
+a25 1
+	
+d29 4
+d38 7
+d50 6
+d61 7
+d72 6
+d84 10
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d10 1
+d52 1
+a52 1
+	public void add(int line, int address) throws AssemblerException
+d61 1
+a61 4
+		else
+			{
+				throw new AssemblerException("Error A57 - Line "+line+": - current line ("+line+") already used within assembler");
+			}			
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d47 1
+a47 1
+		return ((Integer)table.lastKey()).intValue();
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d45 5
+@
+
+
+1.6
+log
+@GUI updates Galore!
+@
+text
+@d26 4
+a29 1
+	
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d1 55
+a55 43
+/*
+ * Created on 10-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+ */
+package yams.assembler;
+
+import java.util.TreeMap;
+/**
+ * @@author Administrator
+ *
+ * To change the template for this generated type comment go to
+ * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+ */
+
+public class GuiMap {
+	
+	private TreeMap table;
+	
+	// this class will hold addresses of memory locations assigned to a label
+	
+	public GuiMap()
+	{
+		table = new TreeMap();
+	}
+	
+	public boolean containsLine(int line) {return table.containsKey(new Integer(line));}
+	public boolean containsAddress(int address) {return table.containsValue(new Integer(address));}
+	public int returnAddress(int line) {return ((Integer)table.get(new Integer(line))).intValue();}
+	public void add(int line, int address) throws AssemblerException
+	{
+		if (!containsLine(line))
+			{
+				if (!containsAddress(address))
+					{
+						table.put(new Integer(line),new Integer(address));
+					}
+			}
+		else
+			{
+				throw new AssemblerException("Error A57 - Line "+line+": - current line ("+line+") already used within assembler");
+			}			
+@
+
+
+1.4
+log
+@updated stuff
+@
+text
+@d31 1
+a31 1
+	public void add(int line, int address, int lineNumber) throws AssemblerException
+a38 5
+/*				else
+					{
+						throw new AssemblerException("Error A56 - Line "+lineNumber+": - current address ("+address+") already assembled to");
+					}
+*/
+d42 1
+a42 1
+				throw new AssemblerException("Error A57 - Line "+lineNumber+": - current line ("+line+") already used within assembler");
+@
+
+
+1.3
+log
+@changed layout to make it easier to read
+@
+text
+@d1 48
+a48 53
+/*
+ * Created on 10-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+ */
+package yams.assembler;
+
+import java.util.TreeMap;
+/**
+ * @@author Administrator
+ *
+ * To change the template for this generated type comment go to
+ * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+ */
+
+public class GuiMap {
+
+	private TreeMap table;
+
+	// this class will hold addresses of memory locations assigned to a label
+
+	public GuiMap() {
+		table = new TreeMap();
+	}
+
+	public boolean containsLine(int line) {
+		return table.containsKey(new Integer(line));
+	}
+	
+	
+	public boolean containsAddress(int address) {
+		return table.containsValue(new Integer(address));
+	}
+	
+	
+	public int returnAddress(int line) {
+		return ((Integer)table.get(new Integer(line))).intValue();
+	}
+	
+	
+	public void add(int line, int address, int lineNumber) throws AssemblerException {
+		if (!containsLine(line)) {
+			if (!containsAddress(address)) {
+				table.put(new Integer(line), new Integer(address));
+			} else {
+				throw new AssemblerException(
+					"Error A56 - Line " + lineNumber + ": - current address (" + address + ") already assembled to");
+			}
+		} else {
+			throw new AssemblerException(
+				"Error A57 - Line " + lineNumber + ": - current line ("	+ line + ") already used within assembler");
+		}
+@
+
+
+1.2
+log
+@changed instruction file to only contain information on instructions
+@
+text
+@d1 54
+a54 48
+/*
+ * Created on 10-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+ */
+package yams.assembler;
+
+import java.util.TreeMap;
+/**
+ * @@author Administrator
+ *
+ * To change the template for this generated type comment go to
+ * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+ */
+
+public class GuiMap {
+	
+	private TreeMap table;
+	
+	// this class will hold addresses of memory locations assigned to a label
+	
+	public GuiMap()
+	{
+		table = new TreeMap();
+	}
+	
+	public boolean containsLine(int line) {return table.containsKey(new Integer(line));}
+	public boolean containsAddress(int address) {return table.containsValue(new Integer(address));}
+	public int returnAddress(int line) {return ((Integer)table.get(new Integer(line))).intValue();}
+	public void add(int line, int address, int lineNumber) throws AssemblerException
+	{
+		if (!containsLine(line))
+			{
+				if (!containsAddress(address))
+					{
+						table.put(new Integer(line),new Integer(address));
+					}
+				else
+					{
+						throw new AssemblerException("Error A56 - Line "+lineNumber+": - current address ("+address+") already assembled to");
+					}
+			}
+		else
+			{
+				throw new AssemblerException("Error A57 - Line "+lineNumber+": - current line ("+line+") already used within assembler");
+			}			
+	}
+@
+
+
+1.1
+log
+@Restructured the assembler jkm
+@
+text
+@d31 1
+a31 1
+	public void add(int line, int address)
+d41 1
+a41 1
+						System.out.println("Error current address already assembled to");
+d46 1
+a46 1
+				System.out.println("Error current label already used within assembler");
+@
+

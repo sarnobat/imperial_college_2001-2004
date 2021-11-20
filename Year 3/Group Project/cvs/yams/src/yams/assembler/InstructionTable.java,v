@@ -1,0 +1,539 @@
+head	1.14;
+access;
+symbols
+	yams-final-19-12-03:1.14
+	yams-release2-17-12-03:1.11
+	yams-release-17-12-03:1.11;
+locks; strict;
+comment	@# @;
+
+
+1.14
+date	2003.12.19.14.20.25;	author qq01;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.12.19.14.09.00;	author jkm01;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.19.13.25.30;	author jkm01;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.11.18.26.16;	author jkm01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.11.16.40.21;	author jkm01;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.11.16.15.20;	author jkm01;	state dead;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.04.15.40.41;	author jkm01;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.03.17.46.44;	author ajb101;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.03.16.59.36;	author ajb101;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.03.13.54.22;	author jkm01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.30.02.54.26;	author jkm01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.27.12.04.42;	author jkm01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.11.09.40.39;	author jkm01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.51;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.14
+log
+@updated javadoc
+@
+text
+@/*
+ * Created on 03-Dec-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+
+package yams.assembler;
+import java.util.TreeMap;
+import java.util.Set;
+import java.util.Iterator;
+import yams.parser.Instruction;
+
+/**
+ * The InstructionTable is designed to store the data read from the “Instruction_file.xml? by the AssemblerXMLHandler in a predefined object structure which can be easily read by the Assembler.
+ * NB also contains a further mapping of machine code values to instruction names, used for debugging.
+ *
+ * @@author jkm01
+ */
+
+public class InstructionTable
+{
+	TreeMap instructionMap;	
+	TreeMap machineCodeMap;
+
+	public InstructionTable()
+	{
+		instructionMap = new TreeMap();
+		machineCodeMap = new TreeMap();
+	}
+	
+	/**
+	 * Method returns a string, but calls all the substructures it contains to build up a string representation of all
+	 * the information it contains as a result of being built from the XML file.
+	 * 
+	 * @@return returns a String containing all the information in the table
+	 */
+	public String printTable()
+	{
+		String outputString="";
+		Set instructionSet = instructionMap.keySet();
+		Iterator instructionSetIterator = instructionSet.iterator();
+		while (instructionSetIterator.hasNext())
+		{
+			String currentKey = (String)instructionSetIterator.next();
+			InstructionTableRow currentRow= (InstructionTableRow)instructionMap.get(currentKey);
+			outputString+= currentRow.printRow();
+		}
+		return outputString;
+	}
+	
+	/**
+	 * 
+	 * Method resets the tables that store the instruction name -> InstructionTableRow and machine code -> instruction name.
+	 * 
+	 */
+	public void resetInstructionTable2()
+	{
+		instructionMap.clear();
+		machineCodeMap.clear();
+	}
+	
+	/**
+	 *
+	 * Adds a new instruction to the InstructionTable, requiring the new instruction name as well as a precreated InstructionTableRow structure.
+	 * 
+	 * @@param instructionName
+	 * @@param r
+	 * @@throws AssemblerException
+	 */
+	public void addInstruction(String instructionName, InstructionTableRow r) throws AssemblerException
+	{
+		instructionMap.put(instructionName, r);
+		
+		// for debugging add mapping from code to monatomic instructions
+		String machineCode;
+		if (r.getType().equals("Regular"))
+			{
+				Representation thisRepresentation;
+				Iterator i = r.getRepresentationsIterator();
+				while (i.hasNext())
+					{
+						String key = (String)i.next();
+						thisRepresentation = r.getRepresentation(key);	
+						machineCode=thisRepresentation.getMachineCode();
+						if (machineCode.length()==32)
+							{
+								if (machineCode.substring(0,6).equals("000000"))
+									{
+										machineCodeMap.put(machineCode.substring(0,6)+machineCode.substring(26,32),instructionName);														
+									}
+								else
+									{
+										machineCodeMap.put(machineCode.substring(0,6), instructionName);														
+									}
+							}
+					}
+			}
+		else if (r.getType().equals("Extended"))
+			{
+				machineCode = r.getCoreMachineCode();
+				if (machineCode.substring(0,6).equals("000000"))
+					{
+						machineCodeMap.put(machineCode.substring(0,6)+machineCode.substring(26,32),instructionName);														
+					}
+				else
+					{
+						machineCodeMap.put(machineCode.substring(0,6), instructionName);														
+					}
+			}
+	}
+	
+	/**
+	 * Returns true if the instruction name given is in the InstructionTable.
+	 * 
+	 * @@param instructionName
+	 * @@return returns true if the instruction is present
+	 */
+	public boolean isInstruction(String instructionName)
+	{
+		return instructionMap.containsKey(instructionName);
+	}
+	
+	/**
+	 * Returns the InstructionTableTow entry within the InstructionTable for the give instruction name string.
+	 * 
+	 * @@param instructionName
+	 * @@param line
+	 * @@param currentInstruction
+	 * @@return Returns the row associated with the instruction name
+	 * @@throws AssemblerException
+	 */
+	public InstructionTableRow getInstruction(String instructionName, int line, Instruction currentInstruction) throws AssemblerException
+	{
+		if (isInstruction(instructionName))	return (InstructionTableRow)instructionMap.get(instructionName);
+		else								throw new AssemblerException("[Error A17] Instruction "+instructionName+" doesnt exist in instructionfile",line,currentInstruction);
+	}
+	
+	/**
+	 * 
+	 * Retrieves the corresponding instruction name of a given machine code representation. It must therefore check various parts of the machine code to achieve this. NB this method is only used for debugging.
+	 * 
+	 * @@param machineCode
+	 * @@param line
+	 * @@param currentInstruction
+	 * @@return returns the name of a given machine code representation
+	 * @@throws AssemblerException
+	 */
+	public String getMonatomicInstruction(String machineCode, int line, Instruction currentInstruction) throws AssemblerException
+	{
+		String name="";
+		if (machineCode.length()==32)
+			{
+				if (machineCode.substring(0,6).equals("000000"))
+					{
+						name = (String)machineCodeMap.get(machineCode.substring(0,6)+machineCode.substring(26,32));														
+					}
+				else
+					{
+						name = (String)machineCodeMap.get(machineCode.substring(0,6));														
+					}				
+			}
+		if (name=="") throw new AssemblerException("[Error A18] Instruction "+machineCode+" doesnt exist as monatomic instruction in instructionfile",line, currentInstruction);
+		else return name;
+	}	
+	
+}@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d15 1
+a15 3
+ * @@author jkm01
+ *
+ * The InstructionTable is designed to store the data read from the “Instruction_file.xml” by the AssemblerXMLHandler in a predefined object structure which can be easily read by the Assembler.
+d18 1
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d37 1
+a37 1
+	 * @@return
+d118 1
+a118 1
+	 * @@return
+d131 1
+a131 1
+	 * @@return
+d147 1
+a147 1
+	 * @@return
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d13 1
+d17 3
+a19 2
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+d32 7
+d52 6
+d63 9
+d113 7
+d124 10
+d139 11
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d12 1
+d93 1
+a93 1
+	public InstructionTableRow getInstruction(String instructionName) throws AssemblerException
+d96 1
+a96 1
+		else								throw new AssemblerException("Error - instruction "+instructionName+" doesnt exist in instructionfile");
+d98 1
+a98 1
+	public String getMonatomicInstruction(String machineCode) throws AssemblerException
+d112 1
+a112 1
+		if (name=="") throw new AssemblerException("Error - instruction "+machineCode+" doesnt exist as monatomic instruction in instructionfile");
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d2 1
+a2 1
+ * Created on 04-Nov-2003
+d8 4
+d19 1
+a19 4
+package yams.assembler;
+import java.util.TreeMap;
+
+public class InstructionTable 
+d21 2
+a22 2
+	private TreeMap instructionTable;
+	private TreeMap typeTable;
+d26 2
+a27 2
+		instructionTable = new TreeMap();
+		typeTable = new TreeMap();
+d29 19
+a47 2
+
+	public void add(String name, String machineCode,int type)
+d49 5
+a53 2
+		instructionTable.put(name,machineCode);
+		if (machineCode.substring(0,6).equals("000000"))
+d55 19
+a73 1
+				typeTable.put((machineCode.substring(0,6)+machineCode.substring(26,32)),new Integer(type));
+d75 1
+a75 1
+		else
+d77 24
+a100 9
+				typeTable.put((machineCode.substring(0,6)),new Integer(type));				
+			}		
+//		System.out.println("added "+machineCode+"for name "+name);
+	}
+	public boolean isInstructionTyped(String machineCode) {return typeTable.containsKey(machineCode);}
+	public int getType(String machineCode) {
+		Integer i;
+//		System.out.println("trying to get type"+machineCode);
+		if (machineCode.substring(0,6).equals("000000"))
+d102 8
+a109 1
+				i = (Integer)typeTable.get((machineCode.substring(0,6)+machineCode.substring(26,32)));
+d111 5
+a115 10
+		else
+			{
+				i = (Integer)typeTable.get((machineCode.substring(0,6)));				
+			}		
+		return i.intValue();
+	}
+	public String getMachineCodeRepresentation(String name) {return (String)instructionTable.get(name);}
+	public boolean isInstruction(String name)	{return instructionTable.containsKey(name);}
+}
+
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d45 1
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d40 1
+a40 1
+		System.out.println("added "+machineCode+"for name "+name);
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d32 9
+a40 1
+		typeTable.put(machineCode,new Integer(type));
+d44 9
+a52 1
+		Integer i = (Integer)typeTable.get(machineCode);
+@
+
+
+1.4
+log
+@updated stuff
+@
+text
+@a32 3
+		
+		System.out.println("have put"+name+" "+machineCode+" in instruction table");
+		System.out.println("have put"+machineCode+" "+type+" in type table");
+@
+
+
+1.3
+log
+@revised method for assembling instructions
+@
+text
+@d37 5
+a41 1
+	public int getType(String machineCode) {return ((Integer)typeTable.get(machineCode)).intValue();}
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d20 2
+a21 2
+
+	private TreeMap table;
+d25 2
+a26 1
+		table = new TreeMap();	
+d29 1
+a29 1
+	public void add(String name, String machineCode)
+d31 3
+a33 1
+		table.put(name,new InstructionTableRow(name,machineCode));
+d35 1
+d37 3
+a39 26
+
+	public void remove(String name) {table.remove(name);}
+	public InstructionTableRow getInstruction(String name) {return (InstructionTableRow)table.get(name);}
+	public boolean isInstruction(String name)	{return table.containsKey(name);}
+
+	public class InstructionTableRow
+	{
+	//this class constitutes a single row in the instruction table
+	
+		String instructionName;
+		String machineCode;
+	
+		public InstructionTableRow(String name, String codeRepresentation)
+		{
+			// instruction name, machine code representation, and instruction type Register/Jump/I
+		
+			instructionName = name;
+			machineCode = codeRepresentation;
+		}
+		
+		// get methods for the Instruction table components
+
+		public String getName() {return instructionName;}
+		public String getMachineCodeRepresentation() {return machineCode;}
+	}
+
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d28 1
+a28 1
+	public void add(String name, String machineCode, String type)
+d30 2
+a31 2
+		table.put(name,new InstructionTableRow(name,machineCode,type));
+		System.out.println("have put"+name+" "+machineCode+" "+type);
+a43 1
+		String type;
+d45 1
+a45 1
+		public InstructionTableRow(String name, String codeRepresentation, String t)
+a50 1
+			type=t;
+a56 1
+		public String getInstructionType() {return type;}
+d59 2
+a60 1
+}@
+

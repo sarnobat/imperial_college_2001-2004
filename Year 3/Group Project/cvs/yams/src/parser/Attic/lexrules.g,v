@@ -1,0 +1,317 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2003.11.08.02.29.01;	author qq01;	state dead;
+branches;
+next	1.2;
+
+1.2
+date	2003.10.31.14.34.33;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.10.30.18.19.35;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@class TestLexer extends Lexer;
+
+options{
+	k = 3;
+}
+
+IDENTIFIER	:	('a'..'z'|'A'..'Z')+
+			;
+
+COLON		:	':'
+			;
+			
+DOLLAR		:	'$'
+			;
+			
+EQUAL		:	'='
+			;
+			
+DECIMAL		:	('0'..'9')+
+			;
+			
+POINT		:	'.'
+			;		
+
+FLOAT		:	DECIMAL POINT DECIMAL
+			;
+			
+NEWLINE		:	'\n'
+			;
+/*DOLLAR_F_DECIMAL : DOLLAR DECIMAL;*/
+			
+class TestPaser extends Parser;
+
+options{
+	buildAST = true;
+	k = 3;
+}
+
+goal	:	stmtList
+		;
+		
+stmtList	:	stmt ( stmtList )? 
+		;
+
+stmt	:	stat ( ";" )? 
+		;
+		
+stat	:	label instruction 
+		| label data 
+		| label 
+		| instruction 
+		| data 
+		| symDef 
+		| directive 
+ 		;
+ 		
+label	:	IDENTIFIER COLON 
+		| DECIMAL COLON 
+		;
+		
+instruction	:	opCode ( Operand ( "," Operand ( "," Operand )? )? )? NEWLINE
+		;
+
+operand	:	register 
+		| "(" register ")" 
+		| floatRegister 
+		| addrImmed ( "(" register ")" )? 
+		| FLOAT 
+		;
+		
+register	:	DOLLAR DECIMAL 
+		| registerName 
+		| dollarRegisterName 
+			;
+		
+floatRegister	:	DOLLAR_F_DECIMAL ;
+addrImmed	:	labelExpr ( ( "+"		| "-" ) Expr )? 
+		| Expr
+				; 
+labelExpr	:	labelRef ( "-" labelRef )? 
+				; 
+labelRef	:	DECIMAL_B 
+		| DECIMAL_F 
+		| IDENTIFIER 
+		| "."
+						;  
+data	:	dataMode dataList 
+		| ".ascii" STRING 
+		| ".asciiz" STRING 
+			| ".space" Expr 
+				;
+dataMode	:	".byte" 
+			| ".half" 
+			| ".word" 
+			| ".float" 
+			| ".double" 
+							; 
+dataList	:	dataExpr ( "," dataList )* 
+				; 
+dataExpr	:	Expr ( ":" Expr )? 
+			| FLOAT ( ":" FLOAT )? 
+				; 
+symDef	:	IDENTIFIER EQUAL Expr 
+				; 
+directive	:	SetDir 
+			| SegmentDir 
+			| AlignDir 
+			| SymbolDir 
+			| BlockDir 
+			| CompilerDir 
+				; 
+setDir	:	".set" setDirArgs 
+				; 
+setDirArgs	:	"volatile" 
+			| "novolatile" 
+			| "reorder" 
+			| "noreorder" 
+			| "at" 
+			| "noat" 
+			| "macro" 
+			| "nomacro" 
+			| "bopt" 
+			| "nobopt" 
+			| "move" 
+			| "nomove"
+			; 
+segmentDir	:	".text" 
+			| ".data" 
+			| ".rdata" 
+			| ".sdata"
+				;  
+alignDir	:	".align" Expr ;
+symbolDir	:	".globl" IDENTIFIER 
+			| ".extern" IDENTIFIER "," Constant 
+			| ".comm" IDENTIFIER "," Constant 
+			| ".lcomm" IDENTIFIER "," Constant ;
+blockDir	:	".ent" IDENTIFIER ( "," Constant )? 
+			| ".aent" IDENTIFIER "," Constant 
+			| ".mask" Expr "," Expr 
+			| ".fmask" Expr "," Expr 
+			| ".frame" Register "," Expr "," Register 
+			| ".end" ( IDENTIFIER )? ;
+compilerDir	:	".alias" Register "," Register 
+			| ".bgnb" Expr 
+			| ".endb" Expr 
+			| ".file" Constant STRING 
+			| ".galive" 
+			| ".gjaldef" 
+			| ".gjrlive" 
+			| ".lab" IDENTIFIER 
+			| ".livereg" Expr "," Expr 
+			| ".noalias" Register "," Register 
+			| ".option" "flag" 
+			| ".verstamp" Constant Constant 
+			| ".vreg" Expr "," Expr ;
+expr	:	Term expr_ ;
+expr_	:	( binaryOp expr expr_ )* ;
+term	:	unaryOp term 
+			| primary; 
+primary	:	constant 
+			| "(" expr ")" ;
+binaryOp	:	"*" 
+			| "/" 
+			| "%" 
+			| "+" 
+			| "-"  
+			| "&" 
+			| "^" 
+			| "| " ;
+unaryOp	:	"+" 
+			| "-" 
+			| "~" 
+			| "!"; 
+constant	:	DECIMAL 
+			| HEXADECIMAL 
+			| OCTAL 
+			| CHARACTER 
+			| IDENTIFIER ;
+registerName	:	"zero" 
+			| "at" 
+			| "v0" 
+			| "v1" 
+			| "a0" 
+			| "a1" 
+			| "a2" 
+			| "a3" 
+			| "t0" 
+			| "t1" 
+			| "t2" 
+			| "t3" 
+			| "t4" 
+			| "t5" 
+			| "t6" 
+			| "t7" 
+			| "s0" 
+			| "s1" 
+			| "s2" 
+			| "s3" 
+			| "s4" 
+			| "s5" 
+			| "s6" 
+			| "s7" 
+			| "t8" 
+			| "t9" 
+			| "k0" 
+			| "k1" 
+			| "gp" 
+			| "sp" 
+			| "s8" 
+			| "fp" 
+			| "ra" 
+			;
+dollarRegisterName	:	"$zero" 
+			| "$at" 
+			| "$v0" 
+			| "$v1" 
+			| "$a0" 
+			| "$a1" 
+			| "$a2" 
+			| "$a3" 
+			| "$t0" 
+			| "$t1" 
+			| "$t2" 
+			| "$t3" 
+			| "$t4" 
+			| "$t5" 
+			| "$t6" 
+			| "$t7" 
+			| "$s0" 
+			| "$s1" 
+			| "$s2" 
+			| "$s3" 
+			| "$s4" 
+			| "$s5" 
+			| "$s6" 
+			| "$s7" 
+			| "$t8" 
+			| "$t9" 
+			| "$k0" 
+			| "$k1" 
+			| "$gp" 
+			| "$sp" 
+			| "$s8" 
+			| "$fp" 
+			| "$ra" 
+			;
+opCode	:	"abs" 
+			| "add" 
+		;@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.1
+log
+@First test version of the parser
+@
+text
+@d1 1
+a1 1
+class WhateverLexer extends Lexer;
+d4 1
+a4 1
+	k = 5;
+a26 1
+DOLLAR_F_DECIMAL : DOLLAR DECIMAL;
+d28 10
+a37 1
+class WhateverPaser extends Parser;
+d61 1
+a61 1
+instruction	:	opCode ( Operand ( "," Operand ( "," Operand )? )? )? 
+d166 1
+a166 3
+			| "-" 
+			| "" 
+			| "" 
+@
+

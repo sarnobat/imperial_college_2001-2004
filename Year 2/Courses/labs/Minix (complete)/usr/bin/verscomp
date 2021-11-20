@@ -1,0 +1,83 @@
+#!/bin/sh
+cd $1
+echo "\section{include}"
+cd include
+for I in *.h
+do
+echo ""
+echo "\subsection{"
+echo $I
+echo "}"
+echo "\begin{verbatim}"
+diff $I  $2/include/$I
+echo "\end{verbatim}"
+done
+
+echo ""
+echo "\section{include/minix}"
+cd minix
+for I in *.h
+do
+echo ""
+echo "\subsection{"
+echo $I
+echo "}"
+echo "\begin{verbatim}"
+diff $I  $2/include/minix/$I
+echo "\end{verbatim}"
+done
+
+cd ..
+
+echo ""
+echo "\section{include/sys}"
+cd sys
+for I in *.h
+do
+echo ""
+echo "\subsection{"
+echo $I
+echo "}"
+echo "\begin{verbatim}"
+diff $I  $2/include/sys/$I
+echo "\end{verbatim}"
+done
+
+cd ../..
+
+echo ""
+echo "\section{src/lib}"
+cd src/lib
+for I in posix syscall
+do
+echo ""
+echo "\subsection{"
+echo $I
+echo "/Makefile}"
+echo "\begin{verbatim}"
+diff $I/Makefile $2/src/lib/$I/Makefile
+echo "\end{verbatim}"
+done
+
+cd ..
+
+for I in kernel mm fs 
+do
+cd $I
+echo ""
+echo "\section{"
+echo $I
+echo "}"
+for J in *.h *.c
+do
+echo ""
+echo "\subsection{"
+echo $J
+echo "}"
+echo "\begin{verbatim}"
+diff $J $2/src/$I/$J
+echo "\end{verbatim}"
+done
+cd ..
+done
+

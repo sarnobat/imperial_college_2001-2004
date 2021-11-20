@@ -1,0 +1,105 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.11.10.20.24.34;	author qq01;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.49;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@package yams.parser;
+/*
+ * Created on 06-Nov-2003
+ *
+ */
+
+import java.util.Map;
+import java.util.TreeMap;
+
+/**
+ * the sequence of users instructions.
+ * 
+ * @@author qq01
+ */
+public class InstructionList {
+	private Map lines;
+	private int currentLine;
+	
+	/**
+	 * points to the last line of the list, can also act as a total line count.
+	 */
+	private int lastLine;
+
+	public InstructionList() {
+		lines = new TreeMap();
+		currentLine = 0;
+		lastLine = 0;
+	}
+
+	/**
+	 * gets a specific line
+	 * 
+	 * @@param lineNumber specify the line number
+	 * @@return the <code>Line</code> object
+	 */
+	public Line getLine(int lineNumber) {
+		return (Line) lines.get(new Integer(lineNumber));
+	}
+
+	/**
+	 * gets the next line is the users instruction file
+	 * 
+	 * @@return the <code>Line<code> object
+	 */
+	public Line nextLine() {
+		currentLine++;
+		return (Line) lines.get(new Integer(currentLine));
+	}
+
+	/**
+	 * appends a line at the end of the list of instructions
+	 * 
+	 * @@param line the <code>Line</code> to be appended at the end of the list
+	 */
+	public void appendLine(Line line) {
+		lastLine++;
+		lines.put(new Integer(lastLine), line);
+	}
+	
+	/**
+	 * gives a total line count
+	 * 
+	 * @@return total line count
+	 */
+	public int totalLines(){
+		return lastLine;
+	}
+}
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@@
+

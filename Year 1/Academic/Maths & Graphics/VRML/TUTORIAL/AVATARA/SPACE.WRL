@@ -1,0 +1,2277 @@
+#VRML V2.0 utf8
+# This World belongs to the original residents of "PointWorld".
+# Created and first put on-line by blaxxun interactive in February of 1996.
+# Viva le AVATARS..!!
+
+DEF duration Script{
+eventIn SFTime durationchanged
+eventOut SFTime startsound
+url "javascript:
+function durationchanged(val,time){
+if(val)
+startsound=time;
+}
+"
+}
+
+Sound {
+location -1 1.85 120
+source DEF Zoomin
+AudioClip {
+url "http://www.pointworlds.com/vrml/sounds/init.wav"
+}
+intensity 1
+}
+
+Background
+{
+backUrl ["http://www.pointworlds.com/vrml/images/stars.gif"]
+frontUrl ["http://www.pointworlds.com/vrml/images/eclipse2.gif"]
+leftUrl ["http://www.pointworlds.com/vrml/images/stars.gif"]
+rightUrl ["http://www.pointworlds.com/vrml/images/stars.gif"]
+topUrl ["http://www.pointworlds.com/vrml/images/stars.gif"]
+bottomUrl ["http://www.pointworlds.com/vrml/images/stars.gif"]
+}
+
+Transform
+{
+children [
+Viewpoint
+{
+position -1 1.85 120
+fieldOfView 1.4
+}
+NavigationInfo
+{
+avatarSize 1.85
+visibilityLimit 1000
+headlight FALSE
+}
+PointLight
+{
+location 0 2.57918 0
+}
+Transform
+{
+rotation .696659 .476515 -.536283 4.47145
+children [
+DirectionalLight
+{
+direction 10.7126 1.36135 -4.1671
+}
+]
+}
+Transform
+{
+rotation .400372 -.624292 .670791 3.95411
+children [
+DirectionalLight
+{
+direction -10.6043 .838895 4.86721
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -40.2786 0 2.98551
+children [
+DEF chsl_1 Transform
+{
+children [
+DEF chsl_2 Shape
+{
+appearance
+DEF chsl_3 Appearance
+{
+material
+Material
+{
+ambientIntensity .1
+diffuseColor 1 .512953 0
+}
+}
+geometry
+IndexedFaceSet
+{
+coord
+Coordinate
+{
+point [ 11.6853 -20.7542 4.37077 33.3828 -37.4643 9.05078 33.4755 -37.1784
+9.79602 11.778 -20.4682 5.11601 37.2475 -32.8218 5.77321 37.3401 -32.5358
+6.51845 15.6426 -15.8256 1.83844 15.55 -16.1116 1.0932 ] }
+coordIndex [ 0 1 2 3 -1 4 5 2 1 -1 3 6 7 0 -1 5 4 7 6 -1 1 0 7 4 -1 6 3 2 5
+-1 ]
+creaseAngle -4.31602e+008
+}
+}
+]
+}
+]
+}
+Transform
+{
+translation -40.2786 0 2.98551
+children [
+DEF chsl_4 Transform
+{
+children [
+Shape
+{
+appearance
+DEF chsl_5 Appearance
+{
+material
+Material
+{
+ambientIntensity .1
+diffuseColor .185803 .205919 .22
+specularColor .5 .5 .5
+}
+}
+geometry
+IndexedFaceSet
+{
+coord
+Coordinate
+{
+point [ 26.3327 -25.4586 -2.99153 25.7798 -24.6312 -2.99153 25.7798 -24.6312
+8.83035 26.3327 -25.4586 8.83035 24.9757 -25.1298 -2.99153 24.9757 -25.1298
+8.83035 25.5286 -25.9571 -2.99153 25.5286 -25.9571 8.83035 ] }
+coordIndex [ 0 1 2 3 -1 2 1 4 5 -1 6 7 5 4 -1 5 7 3 2 -1 3 7 6 0 -1 ]
+creaseAngle -4.31602e+008
+}
+}
+]
+}
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -28.7179 -37.2502 2.98551
+rotation 0 0 1 1.00182
+children [
+DEF chsl_6 Transform
+{
+children [
+Transform
+{
+translation 4.3576 -.348251 18.2982
+rotation .605623 .785179 -.129282 .530913
+children [
+USE chsl_2
+]
+}
+]
+}
+]
+}
+Transform
+{
+translation -28.7179 -37.2502 2.98551
+rotation 0 0 1 1.00182
+children [
+USE chsl_4
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -27.2682 -28.2634 2.98551
+rotation 0 0 1 1.1397
+children [
+USE chsl_6
+]
+}
+Transform
+{
+translation -27.2682 -28.2634 2.98551
+rotation 0 0 1 1.1397
+children [
+USE chsl_4
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -43.6999 -.156699 3.02946
+rotation .006131 .000872 .999981 .282748
+children [
+USE chsl_1
+]
+}
+Transform
+{
+translation -43.6999 -.156699 3.02946
+rotation .006131 .000872 .999981 .282748
+children [
+USE chsl_4
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 -161 .425323
+scale 1 3.15709 1
+children [
+Anchor
+{
+url "http://www.pointworlds.com/vrml/home/contact.htm"
+parameter["target=_top"]
+description "Pointworlds Home World"
+children [
+Transform
+{
+rotation 0 0 1 3.14159
+scale 1 .994814 1
+children [
+Shape
+{
+appearance
+Appearance
+{
+material
+Material
+{
+diffuseColor 0 0 0
+specularColor .5 .5 .5
+}
+}
+geometry
+IndexedFaceSet
+{
+coord
+Coordinate
+{
+point [ .999005 -1.01561 -.422643 .999005 .984392 -.422643 -.007704 .984392
+1.72288 -.007704 -1.01561 1.72288 -1.01442 -1.01561 -.422643 -1.01442 .984392
+-.422643 ] }
+coordIndex [ 0 1 2 3 -1 4 5 1 0 -1 4 0 3 -1 3 2 5 4 -1 ]
+creaseAngle -4.31602e+008
+}
+}
+]
+}
+]
+}
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -11 -22 .157726
+rotation -.145039 -.126399 .981319 .941721
+scale 1.33289 1.33289 1.82111
+children [
+Anchor
+{
+url "http://www.avatara.com/vrml/easter/contact.htm"
+parameter ["target=_top"]
+description "Avatara's Easter Island"
+children [
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+DEF chsl_7 Appearance
+{
+texture
+ImageTexture
+{
+url "images/easter.jpg"
+}
+}
+geometry
+DEF chsl_8 IndexedFaceSet
+{
+coord
+Coordinate
+{
+point [ 1.49999 -6.43551e-006 -.598231 1.49999 -6.43551e-006 1.99983 -.749991
+-1.29904 1.99983 -.749991 -1.29904 -.598231 ] }
+coordIndex [ 0 1 2 3 -1 ] texCoord
+DEF chsl_9 TextureCoordinate
+{ point [ 1 0 1 1 0 1 0 0 ] } texCoordIndex
+[ 0 1 2 3 -1 ]
+creaseAngle -4.31602e+008
+}
+}
+]
+}
+]
+}
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+USE chsl_7 geometry
+DEF chsl_10 IndexedFaceSet
+{
+coord
+Coordinate
+{
+point [ -.750003 -1.29903 -.598231 -.750003 -1.29903 1.99983 -.750003 1.29903
+1.99983 -.750003 1.29903 -.598231 ] }
+coordIndex [ 0 1 2 3 -1 ] texCoord
+USE chsl_9
+texCoordIndex
+[ 0 1 2 3 -1 ]
+creaseAngle -4.31602e+008
+}
+}
+]
+}
+]
+}
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+USE chsl_7 geometry
+DEF chsl_11 IndexedFaceSet
+{
+coord
+Coordinate
+{
+point [ -.749991 1.29904 -.598231 -.749991 1.29904 1.99983 1.49999 6.43551e-006
+1.99983 1.49999 6.43551e-006 -.598231 ] }
+coordIndex [ 0 1 2 3 -1 ] texCoord
+USE chsl_9
+texCoordIndex
+[ 0 1 2 3 -1 ]
+creaseAngle -4.31602e+008
+}
+}
+]
+}
+]
+}
+DEF chsl_12 Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+Appearance
+{
+material
+Material
+{
+ambientIntensity .054471
+diffuseColor .043137 .051765 .15098
+}
+}
+geometry
+IndexedFaceSet
+{
+coord
+Coordinate
+{
+point [ -.749991 -1.29904 1.99983 1.49999 -6.43551e-006 1.99983 -.749991 1.29904
+1.99983 ] }
+coordIndex [ 0 1 2 -1 ]
+creaseAngle -4.31602e+008
+}
+}
+]
+}
+]
+}
+]
+}
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 9 34 .118295
+rotation -.243149 .455144 .856576 .645356
+scale 1.33289 1.33289 1.82111
+children [
+DEF chsl_13 Anchor
+{
+url "http://www.avatara.com/vrml/giza/contact.htm"
+parameter ["target=_top"]
+description "Avatara's Giza World"
+children [
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+DEF chsl_14 Appearance
+{
+texture
+ImageTexture
+{
+url "images/giza.jpg"
+}
+}
+geometry
+USE chsl_8
+}
+]
+}
+]
+}
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+USE chsl_14 geometry
+USE chsl_10
+}
+]
+}
+]
+}
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+USE chsl_14 geometry
+USE chsl_11
+}
+]
+}
+]
+}
+USE chsl_12
+]
+}
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -15 26 0
+rotation .27316 .22563 .935133 5.39634
+scale 1.33289 1.33289 1.82111
+children [
+DEF chsl_15 Anchor
+{
+url "http://www.avatara.com/vrml/radio/contact.htm"
+parameter ["target=_top"]
+description "Avatara's Radio World"
+children [
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+DEF chsl_16 Appearance
+{
+texture
+ImageTexture
+{
+url "images/radio.jpg"
+}
+}
+geometry
+USE chsl_8
+}
+]
+}
+]
+}
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+USE chsl_16 geometry
+USE chsl_10
+}
+]
+}
+]
+}
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+USE chsl_16 geometry
+USE chsl_11
+}
+]
+}
+]
+}
+USE chsl_12
+]
+}
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 5 22 .276021
+rotation .085397 -.2425 .966386 .698899
+scale 1.33289 1.33289 1.82111
+children [
+DEF chsl_17 Anchor
+{
+url "http://www.avatara.com/vrml/stone/contact.htm"
+parameter ["target=_top"]
+description "Avatara's Stonehenge"
+children [
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+DEF chsl_18 Appearance
+{
+texture
+ImageTexture
+{
+url "images/stone.jpg"
+}
+}
+geometry
+USE chsl_8
+}
+]
+}
+]
+}
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+USE chsl_18 geometry
+USE chsl_10
+}
+]
+}
+]
+}
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+USE chsl_18 geometry
+USE chsl_11
+}
+]
+}
+]
+}
+USE chsl_12
+]
+}
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -7 14 .276021
+rotation .012372 .179931 .983601 5.204
+scale 1.33289 1.33289 1.82111
+children [
+DEF chsl_19 Anchor
+{
+url "http://www.avatara.com/vrml/taj/contact.htm"
+parameter ["target=_top"]
+description "Avatara's Taj Mahal"
+children [
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+DEF chsl_20 Appearance
+{
+texture
+ImageTexture
+{
+url "images/taj.jpg"
+}
+}
+geometry
+USE chsl_8
+}
+]
+}
+]
+}
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+USE chsl_20 geometry
+USE chsl_10
+}
+]
+}
+]
+}
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+USE chsl_20 geometry
+USE chsl_11
+}
+]
+}
+]
+}
+USE chsl_12
+]
+}
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 9 -2 -.039431
+rotation .130087 -.082108 .988097 1.94633
+scale 1.33289 1.33289 1.82111
+children [
+Anchor
+{
+url "http://www.avatara.com/vrml/temple/contact.htm"
+parameter ["target=_top"]
+description "Avatara's Temple World"
+children [
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+DEF chsl_21 Appearance
+{
+texture
+ImageTexture
+{
+url "images/temple.jpg"
+}
+}
+geometry
+USE chsl_8
+}
+]
+}
+]
+}
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+USE chsl_21 geometry
+USE chsl_10
+}
+]
+}
+]
+}
+Transform
+{
+translation 0 0 .274558
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+USE chsl_21 geometry
+USE chsl_11
+}
+]
+}
+]
+}
+USE chsl_12
+]
+}
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 25 -6 0
+rotation .001687 -.080518 .996752 5.04477
+scale 1.33289 1.33289 1.82111
+children [
+USE chsl_19
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 13 -14 .315452
+rotation -.179606 .187641 .965677 5.69479
+scale 1.33289 1.33289 1.82111
+children [
+USE chsl_17
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -11 -6 .157726
+rotation -.340135 .263049 .902836 .605963
+scale 1.33289 1.33289 1.82111
+children [
+USE chsl_15
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -23 -14 -.039431
+rotation .400414 -.17124 .900192 5.80645
+scale 1.33289 1.33289 1.82111
+children [
+USE chsl_13
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 11 -40 0
+children [
+DEF K Transform {
+children [
+Transform
+{
+scale 8 8 8
+children [
+Shape
+{
+appearance
+Appearance
+{
+texture
+DEF chsl_22 ImageTexture
+{
+url "http://www.pointworlds.com/vrml/images/bod10.jpg"
+}
+textureTransform
+TextureTransform
+{
+scale 2 2
+}
+}
+geometry
+DEF chsl_23 IndexedFaceSet
+{
+coord
+Coordinate
+{
+point [ .5 -.5 0 .5 .5 0 -.5 .5 0 -.5 -.5 0 ] }
+coordIndex [ 0 1 2 3 -1 ] texCoord
+USE chsl_9
+texCoordIndex
+[ 0 1 2 3 -1 ]
+creaseAngle -4.31602e+008
+}
+}
+]
+}
+]
+}
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 19 -40 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -13 -40 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -21 -40 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -13 -48 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 11 -48 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 35 2 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 35 -6 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 35 10 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 17 36 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -41 -6 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -41 2 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 9 42 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 1 42 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 1 34 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -7 34 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -7 42 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 1 50 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -15 36 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -23 36 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -15 44 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -7 50 0
+children [
+USE K
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -3 -2 0
+scale 68 68 64
+children [
+Shape
+{
+appearance
+Appearance
+{
+texture
+USE chsl_22 textureTransform
+TextureTransform
+{
+scale 17 17
+}
+}
+geometry
+USE chsl_23
+}
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -15 26 .04711
+children [
+DEF L Transform {
+children [
+Transform
+{
+scale 8 8 8
+children [
+Shape
+{
+appearance
+Appearance
+{
+texture
+DEF chsl_24 ImageTexture
+{
+url "http://www.pointworlds.com/vrml/images/bod11.jpg"
+}
+}
+geometry
+USE chsl_23
+}
+]
+}
+]
+}
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -7 14 .04711
+children [
+USE L
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 9 34 .04711
+children [
+USE L
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -11 -6 .04711
+children [
+USE L
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -23 -14 .04711
+children [
+USE L
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 9 -2 .04711
+children [
+USE L
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 25 -6 .04711
+children [
+USE L
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 13 -14 .04711
+children [
+USE L
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -11 -22 .04711
+children [
+USE L
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 5 22 .04711
+children [
+USE L
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation -1 540 -.04711
+scale 16 128 8
+children [
+Shape
+{
+appearance
+Appearance
+{
+texture
+USE chsl_24 textureTransform
+TextureTransform
+{
+scale 2 16
+}
+}
+geometry
+IndexedFaceSet
+{
+coord
+Coordinate
+{
+point [ .5 -5.5 .005888 .5 -4.5 .005888 -.5 -4.5 .005888 -.5 -5.5 .005888
+] }
+coordIndex [ 0 1 2 3 -1 ] texCoord
+USE chsl_9
+texCoordIndex
+[ 0 1 2 3 -1 ]
+creaseAngle -4.31602e+008
+}
+}
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+DEF W Transform {
+children [
+Transform
+{
+translation -40.2786 0 2.98551
+children [
+Transform
+{
+children [
+Shape
+{
+appearance
+USE chsl_3 geometry
+IndexedFaceSet
+{
+coord
+Coordinate
+{
+point [ 6.05337 -13.5998 .647269 4.73374 13.7584 2.95841 4.43802 13.6446 3.32644
+5.75764 -13.7136 1.01529 -1.68613 13.7136 1.33984 -1.98185 13.5998 1.70786
+-.662227 -13.7584 -.603281 -.366504 -13.6446 -.971305 ] }
+coordIndex [ 0 1 2 3 -1 4 5 2 1 -1 3 6 7 0 -1 5 4 7 6 -1 1 0 7 4 -1 6 3 2 5
+-1 ]
+creaseAngle -4.31602e+008
+}
+}
+]
+}
+]
+}
+Transform
+{
+translation -40.2786 0 2.98551
+children [
+Shape
+{
+appearance
+USE chsl_5 geometry
+IndexedFaceSet
+{
+coord
+Coordinate
+{
+point [ -.175815 .624338 -2.98848 -.468186 -.331967 -2.98848 -.468186 -.331967
+2.84956 -.175815 .624338 2.84956 .488118 -.624338 -2.98848 .488118 -.624338
+2.84956 .78049 .331967 -2.98848 .78049 .331967 2.84956 ] }
+coordIndex [ 0 1 2 3 -1 2 1 4 5 -1 6 7 5 4 -1 5 7 3 2 -1 3 7 6 0 -1 ]
+creaseAngle -4.31602e+008
+}
+}
+]
+}
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 30 0
+rotation 0 0 1 5.75959
+scale .401007 1 17.4494
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 29 0
+rotation 0 0 1 5.14873
+scale .41341 1 15.8631
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 28 0
+rotation 0 0 1 4.53786
+scale .426196 1 14.421
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 27 0
+rotation 0 0 1 3.92699
+scale .439377 1 13.11
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 26 0
+rotation 0 0 1 3.31613
+scale .452966 1 11.9182
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 25 0
+rotation 0 0 1 2.70526
+scale .466975 1 10.8347
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 24 0
+rotation 0 0 1 2.0944
+scale .481418 1 9.84974
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 23 0
+rotation 0 0 1 1.48353
+scale .496307 1 8.95431
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 22 0
+rotation 0 0 1 .872664
+scale .511656 1 8.14028
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 21 0
+rotation 0 0 1 .261799
+scale .527481 1 7.40025
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 20 0
+rotation 0 0 1 5.93412
+scale .543795 1 6.7275
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 19 0
+rotation 0 0 1 5.32325
+scale .560613 1 6.11591
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 18 0
+rotation 0 0 1 4.71239
+scale .577952 1 5.55992
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 17 0
+rotation 0 0 1 4.10152
+scale .595826 1 5.05447
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 16 0
+rotation 0 0 1 3.49066
+scale .614254 1 4.59497
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 15 0
+rotation 0 0 1 2.87979
+scale .633251 1 4.17725
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 14 0
+rotation 0 0 1 2.26893
+scale .652837 1 3.7975
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 11 0
+rotation 0 0 1 .436332
+scale .715302 1 2.85312
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 10 0
+rotation 0 0 1 6.10865
+scale .737424 1 2.59374
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 9 0
+rotation 0 0 1 5.49779
+scale .760231 1 2.35795
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 8 0
+rotation 0 0 1 4.88693
+scale .783744 1 2.14359
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 7 0
+rotation 0 0 1 4.27606
+scale .807983 1 1.94872
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 6 0
+rotation 0 0 1 3.66519
+scale .832972 1 1.77156
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 5 0
+rotation 0 0 1 3.05433
+scale .858734 1 1.61051
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+rotation 1 0 0 4.71239
+children [
+Transform
+{
+children [
+Transform
+{
+translation 0 4 0
+rotation 0 0 1 2.44346
+scale .885293 1 1.4641
+children [
+USE W
+]
+}
+]
+}
+]
+}
+Transform
+{
+translation 0 -3.61999e-006 -1
+rotation .913318 -.287968 -.287967 4.62184
+scale .97 1 1.1
+children [
+USE W
+]
+}
+]
+}
+
+ROUTE Zoomin.duration_changed TO duration.durationchanged
+ROUTE duration.startsound TO Zoomin.set_startTime
+

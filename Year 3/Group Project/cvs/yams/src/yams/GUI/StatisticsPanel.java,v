@@ -1,0 +1,480 @@
+head	1.13;
+access;
+symbols
+	yams-final-19-12-03:1.13
+	yams-release2-17-12-03:1.13
+	yams-release-17-12-03:1.13;
+locks; strict;
+comment	@# @;
+
+
+1.13
+date	2003.12.16.02.07.03;	author ajb101;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.15.15.43.51;	author ajb101;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.14.22.30.20;	author ajb101;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.12.04.23.31;	author ajb101;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.11.20.20.19;	author ajb101;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.11.20.18.14;	author ajb101;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.11.20.04.18;	author ss401;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.10.21.15.26;	author ss401;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.10.03.02.45;	author ajb101;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.09.05.02.48;	author ajb101;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.12.04.02.48.12;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.12.03.13.51.14;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.02.14.47.15;	author ajb101;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@package yams.GUI;
+
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+import yams.*;
+import yams.parser.*;
+import yams.processor.*;
+
+/**
+ * Panel to display statistics (cycles and memory used) and provide a button
+ * to display graphs
+ */
+public class StatisticsPanel extends YamsPanel implements ActionListener {
+	
+	// window elements
+	JLabel lblCycles;
+	JLabel lblMemory;
+	JButton butGraphs;
+
+	public StatisticsPanel(YAMSGui controller){
+		super(controller);
+		setTitle("Statistics");
+		
+		this.setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
+		
+		lblCycles = new JLabel();
+		lblCycles.setAlignmentX(Component.CENTER_ALIGNMENT);
+		lblCycles.setText("Number of Cycles: ");
+		
+		lblMemory = new JLabel();
+		lblMemory.setAlignmentX(Component.CENTER_ALIGNMENT);
+		lblMemory.setText("Memory Used: ");
+		
+		butGraphs = new JButton("Graphs");
+		butGraphs.setAlignmentX(Component.CENTER_ALIGNMENT);
+		butGraphs.addActionListener(this);
+		
+		this.add(lblCycles);
+		this.add(Box.createRigidArea(new Dimension(0,15)));
+		this.add(lblMemory);
+		this.add(Box.createRigidArea(new Dimension(0,15)));
+		this.add(butGraphs);
+	}
+	
+	/**
+	 * Update the statistics
+	 */
+	public void update() {
+		// update statistics labels
+		Processor p = controller.getProcessor();
+		int cycles = p.statisticsManager.getCycles();
+		int memory = p.statisticsManager.getMemoryUsed();
+		lblCycles.setText("Number of Cycles: " + cycles);
+		lblMemory.setText("Memory Used: " + memory);
+	}
+	
+	/**
+	 * Display graphs window
+	 * @@param source LineList containing the source code from which to generate the graph
+	 */
+	public void displayGraphs(LineList source) {
+		StatisticsFrame sf = new StatisticsFrame(controller.getProcessor(), source);
+	}
+	
+	// Button Handler
+	public void actionPerformed(ActionEvent e) {
+		controller.displayStats();
+	}
+	
+}
+
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d22 1
+a22 1
+	public StatisticsPanel(String windowName, YAMSGui controller){
+@
+
+
+1.11
+log
+@lovely beautiful code
+@
+text
+@d11 4
+a14 1
+
+a20 1
+	LineList source;
+d47 4
+a50 1
+	public void update(Processor p) {
+d52 1
+d59 5
+a63 5
+	public void setSourceCode(LineList l) {
+			source = l;
+	}
+	
+	public void displayGraphs() {
+d71 1
+@
+
+
+1.10
+log
+@LOADS of gui changes
+@
+text
+@d39 1
+d41 1
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@a7 1
+import yams.GUI.graphs.StatisticsVisualizer;
+d9 1
+a10 1
+import yams.processor.*;
+d12 1
+a12 1
+public class StatisticsPanel extends YamsPanel {
+a23 2
+		// TODO: layout this nicer
+		
+a25 2
+		// TODO: display results: cycles/memory used??
+		
+d28 1
+a28 1
+		lblCycles.setText("Number of Cycles: " + 12);
+d32 1
+a32 1
+		lblMemory.setText("Memory Used: " + 42);
+d36 1
+a36 1
+		butGraphs.addActionListener(new StatsButtonController(controller.getProcessor()));
+d43 1
+a43 1
+	public void update() {
+d45 4
+a48 1
+		
+d55 3
+a57 11
+	class StatsButtonController implements ActionListener {
+	
+		Processor processor;
+	
+		StatsButtonController(Processor p) {
+			processor = p;
+		}
+	
+		public void actionPerformed(ActionEvent e) {
+			StatisticsFrame sf = new StatisticsFrame(processor, source);
+		}
+d59 3
+a62 1
+
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@a55 5
+
+}
+
+
+class StatsButtonController implements ActionListener {
+d57 7
+a63 1
+	Processor processor;
+d65 3
+a67 3
+	StatsButtonController(Processor p) {
+		processor = p;
+	}
+a68 2
+	public void actionPerformed(ActionEvent e) {
+		StatisticsFrame sf = new StatisticsFrame(processor, source);
+d70 1
+a70 1
+	
+d72 1
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d3 1
+d8 1
+d10 1
+d16 2
+a17 1
+	JLabel lblResults;
+d29 1
+a29 3
+		// TODO: display results: cycles/memory used/total cycles??
+		
+		lblResults = new JLabel();
+d31 7
+d40 1
+d43 2
+a44 1
+		this.add(lblResults);
+d48 5
+d54 1
+a54 1
+		source = l;
+d56 5
+d62 1
+d64 3
+d68 3
+a70 12
+	class StatsButtonController implements ActionListener {
+	
+		Processor processor;
+	
+		StatsButtonController(Processor p) {
+			processor = p;
+		}
+	
+		public void actionPerformed(ActionEvent e) {
+			StatisticsFrame sf = new StatisticsFrame(processor, source);
+		
+		}
+a71 2
+	}
+
+a72 3
+
+
+
+@
+
+
+1.6
+log
+@added graphs button handler
+@
+text
+@d7 1
+a7 1
+import yams.GUI.graphs.StatisticsVisualizer;
+d15 1
+a35 5
+
+}
+
+
+class StatsButtonController implements ActionListener {
+d37 13
+a49 1
+	Processor processor;
+d51 4
+a54 3
+	StatsButtonController(Processor p) {
+		processor = p;
+	}
+a55 3
+	public void actionPerformed(ActionEvent e) {
+		//StatisticsFrame sf = new StatisticsFrame(processor);
+		StatisticsVisualizer.open();
+d57 1
+a57 1
+	
+d59 3
+@
+
+
+1.5
+log
+@yet more work on gui - including addition of a HexTable
+@
+text
+@d7 1
+d48 2
+a49 1
+		StatisticsFrame sf = new StatisticsFrame(processor);
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d4 1
+a8 2
+// TODO: DO THIS!
+
+d10 4
+d17 10
+a26 1
+//		setTitle("Statistics");
+d28 5
+a32 27
+		int time = 5;
+		int instructionCount = 20000;
+		int regCount = 45;
+		
+		//TODO: Can you have a JLabel that spans multiple lines?
+		/*JLabel l = new JLabel(
+			"Time for program to run = " + time + " light years\n" +
+			"\nNumber of instructions = " + instructionCount + 
+			"\nRegisters used = " + regCount+
+			"Conclusion: get a new compiler.");*/
+		
+		/*JLabel l1 = new JLabel("Time for program to run = " + time + " light years");
+		JLabel l2 = new JLabel("Number of instructions = " + instructionCount);
+		JLabel l3 = new JLabel("Registers used = " + regCount);
+		JLabel l4 = new JLabel("Conclusion: get a new compiler.");
+			
+		getContentPane().setLayout(new BoxLayout(getContentPane(),BoxLayout.Y_AXIS));
+		getContentPane().add(l1);
+		getContentPane().add(l2);
+		getContentPane().add(l3);
+		getContentPane().add(l4);*/
+		
+		String display = "<html><table>" +					"<tr><td>Time for program to run</td><td><font color=green>" + time + " light years</font></td></tr>" +					"<tr><td>Number of instructions</td><td><font color=green>" + instructionCount + "</font></td></tr>" +
+					"<tr><td>Registers used</td><td><font color=green>" + regCount + "</font></td></tr>"+
+				"</table></html>";
+		JLabel l1 = new JLabel(display);
+		this.add(l1); 
+d35 15
+@
+
+
+1.3
+log
+@lots of gooey updates
+@
+text
+@a0 6
+/*
+ * Created on 21-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+d3 1
+a3 2
+import javax.swing.BoxLayout;
+import javax.swing.JLabel;
+d8 2
+a9 4
+/**
+ * @@author ss401
+ *
+ */
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d22 1
+a22 1
+		super(windowName,controller);
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d21 2
+a22 2
+	public StatisticsPanel(int width,int height, YAMSGui controller){
+		super(width,height,controller);
+@
+

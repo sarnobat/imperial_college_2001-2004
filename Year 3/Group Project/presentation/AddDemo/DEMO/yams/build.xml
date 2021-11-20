@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="yams" default="all">
+	<property name="classpath" location="${java.class.path}"/>
+	<property name="src" location="src"/>
+	<property name="conf" location="src"/>
+	<property name="build" location="build"/>
+	<property name="bin" location="bin"/>
+	<property name="docdir" location="doc"/>
+	
+	<target name="clean">
+		<delete dir="${build}"/>
+		<delete dir="${bin}"/>
+	</target>
+	
+	<target name="init" depends="clean">
+		<mkdir dir="${build}"/>
+		<mkdir dir="${bin}"/>
+	</target>
+	
+	<target name="compile" depends="init, generate">
+		<javac srcdir="${src}" destdir="${bin}" classpath="${classpath}"/>
+		<copy file="${conf}/Instruction_file.xml" todir="${bin}"/>
+	</target>
+
+    <target name="javadoc">
+        <javadoc destdir="${docdir}/javadoc" access="public" source="1.4" use="true"
+            notree="false" nonavbar="false" noindex="false"
+            splitindex="true" author="true" version="true"
+            nodeprecatedlist="false" nodeprecated="false"
+            packagenames="yams.exceptions,yams.parser,yams.processor,yams.assembler,yams.GUI, yams.GUI.graphs, yams.GUI.hexTable"
+            sourcepath="${src}" classpath="bin"/>
+    </target>
+    
+    <target name="jar" depends="compile">
+    	<jar destfile="${build}/YAMS.jar" basedir="${bin}">
+    	 	 <manifest>
+ 		  	<attribute name="Main-Class" value="YAMS"/>
+ 		 </manifest>
+    	</jar>
+    </target>
+
+    <target name="generate_parser">
+    	<delete file="${src}/yams/parser/Parser.java"/>
+        <xslt in="${src}/Instruction_file.xml" out="${src}/yams/parser/Parser.java" style="${src}/yams/parser/xslt/parser.xslt"/>
+    </target>
+    
+    <target name="generate_handlers">
+    	<delete file="${src}/yams/processor/InstructionHandler.java"/>
+	<delete file="${src}/yams/processor/SyscallHandler.java"/>
+        <xslt in="${src}/Instruction_file.xml" out="${src}/yams/processor/InstructionHandler.java" style="${src}/yams/auto/xslt/instructionHandler.xslt"/>
+        <xslt in="${src}/Instruction_file.xml" out="${src}/yams/processor/SyscallHandler.java" style="${src}/yams/auto/xslt/syscallHandler.xslt"/>
+    </target>
+
+    <target name="generate" depends="generate_parser, generate_handlers"/>
+    
+    <target name="all" depends="jar, javadoc"/>
+</project>

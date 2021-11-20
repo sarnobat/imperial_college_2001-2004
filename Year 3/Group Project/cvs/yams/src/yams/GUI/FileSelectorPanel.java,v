@@ -1,0 +1,492 @@
+head	1.10;
+access;
+symbols
+	yams-final-19-12-03:1.10
+	yams-release2-17-12-03:1.10
+	yams-release-17-12-03:1.10;
+locks; strict;
+comment	@# @;
+
+
+1.10
+date	2003.12.16.02.07.03;	author ajb101;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.15.15.43.51;	author ajb101;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.15.10.07.59;	author ss401;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.14.19.10.35;	author ss401;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.12.04.23.31;	author ajb101;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.08.19.44.14;	author ajb101;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.04.02.48.12;	author ajb101;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.12.03.13.51.14;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.12.03.01.59.34;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.02.14.47.15;	author ajb101;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@package yams.GUI;
+
+import java.awt.*;
+import javax.swing.*;
+import javax.swing.event.*;
+import java.awt.event.*;
+
+import yams.*;
+
+import java.io.*;
+
+/**
+ * Panel listing files of a user's choice which could be run
+ */
+public class FileSelectorPanel extends YamsPanel {
+
+	// list of File objects, as stored in the JList window
+	public DefaultListModel fileList = new DefaultListModel();
+	
+	// window elements
+	public JList lstFileList;
+	public JButton butAddFile;
+	public JButton butAddFileList;
+	public JButton butRemFile;
+	public JButton butLoadFile;
+
+	public FileSelectorPanel(YAMSGui controller) {
+		super(controller);
+		setTitle("File Selector");
+		
+		this.setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));		
+		
+		// Add the JList to this frame 
+		lstFileList = new JList(fileList);
+		lstFileList.setVisible(true);
+		lstFileList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		lstFileList.addListSelectionListener(new ListController(controller));
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.getViewport().setView(lstFileList);
+		this.add(scrollPane);
+		
+		// create a panel for the buttons
+		JPanel buttonPanel = new JPanel();
+		buttonPanel.setLayout(new GridLayout(2,2));
+		
+		buttonPanel.setMinimumSize(new Dimension(0,80));
+		buttonPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE,80));
+		
+		// add some buttons
+		butAddFile = new JButton("Add File...");
+		butAddFileList = new JButton("Add File List...");
+		butRemFile = new JButton("Remove File");
+		butLoadFile = new JButton("Load File");
+		// initially, LoadFile and RemoveFile are false
+		butRemFile.setEnabled(false);
+		butLoadFile.setEnabled(false);
+		
+		buttonPanel.add(butAddFile);
+		buttonPanel.add(butAddFileList);
+		buttonPanel.add(butRemFile);
+		buttonPanel.add(butLoadFile);
+		
+		this.add(buttonPanel);
+		
+		// add button listeners
+		ButtonController buttonController = new ButtonController(this,controller);
+		butAddFile.addActionListener(buttonController);
+		butAddFileList.addActionListener(buttonController);
+		butRemFile.addActionListener(buttonController);
+		butLoadFile.addActionListener(buttonController);
+		
+	}
+	
+	/**
+	 * Adds a file to the visible lsit of files
+	 * @@param file
+	 */
+	public void addFile(File file) {
+		// adds a file to the list, and to the file list
+		fileList.addElement(file);
+	}
+	
+
+}
+
+
+
+
+/**
+ * Listens for changes to the file list. This is 
+ * necessary when determining whether to enable/disable
+ * buttons
+ */
+class ListController implements ListSelectionListener {
+	
+	private YAMSGui controller;
+	
+	ListController(YAMSGui c) {
+		controller = c;
+	}
+	
+	public void valueChanged(ListSelectionEvent e) {
+		if(e.getValueIsAdjusting() == false ) {
+			if ( ((JList)e.getSource()).getSelectedIndex()== -1 ) {
+				// nothing slected, disable load file
+				controller.setRemoveLoadStatus(false);
+			} else {
+				controller.setRemoveLoadStatus(true);
+			}
+		}
+	}
+	
+}
+
+
+
+/**
+ * Listens for button clicks and calls the appropriate method
+ */
+class ButtonController implements ActionListener {
+	
+	private FileSelectorPanel filePanel;
+	private YAMSGui controller;
+	
+	ButtonController(FileSelectorPanel f, YAMSGui c) {
+		filePanel = f;
+		controller = c;
+	}
+	
+	public void actionPerformed(ActionEvent e) {
+		JButton source = (JButton)e.getSource();
+		
+		if (source == filePanel.butAddFile){
+			controller.addFile();
+			
+		} else if (source == filePanel.butAddFileList) {
+			controller.addFileList();
+			
+		} else if (source == filePanel.butRemFile){
+			controller.removeFile();
+			
+		} else if (source == filePanel.butLoadFile){
+			controller.loadFile();
+			
+		}
+	}
+	
+}
+
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@a9 1
+import java.util.*;
+a71 10
+	}
+	
+	/**
+	 * Adds each file in the supplied list to the displayed list of files
+	 * @@param file
+	 */
+	public void initFileList(LinkedList file) {
+		Iterator i = file.iterator();
+		while( i.hasNext())
+			addFile((File)i.next());
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 4
+ * 
+ * @@author ss401
+ * Panel listing files of a user's choice which could
+ * be run
+d66 1
+a66 1
+		// add button listener
+a100 1
+ * @@author ss401
+d129 1
+a129 4
+ * 
+ * @@author ss401
+ * Listens for button clicks and calls the appropriate
+ * method
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d103 6
+a108 1
+
+d132 6
+a137 1
+
+@
+
+
+1.6
+log
+@LOADS of gui changes
+@
+text
+@d13 6
+a18 1
+
+d78 4
+d88 4
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@a12 1
+// TODO: double click file to load it/
+d17 1
+a17 1
+	protected DefaultListModel fileList = new DefaultListModel();
+d20 5
+a24 5
+	protected JList lstFileList;
+	protected JButton butAddFile;
+	protected JButton butRemFile;
+	protected JButton butLoadFile;
+	protected JButton butLoadAllFiles;
+d36 1
+a36 1
+		lstFileList.addListSelectionListener(new ListController(this));
+a44 1
+		// TODO: make this bit nicer?
+d46 1
+a46 1
+		buttonPanel.setMaximumSize(new Dimension(5000000,80));
+d50 1
+a52 1
+		butLoadAllFiles = new JButton("Load All");
+d58 1
+a60 1
+		buttonPanel.add(butLoadAllFiles);
+d65 1
+a65 1
+		ButtonController buttonController = new ButtonController(this);
+d67 1
+a69 1
+		butLoadAllFiles.addActionListener(buttonController);
+d93 1
+a93 1
+	private FileSelectorPanel fileFrame;
+d95 2
+a96 2
+	ListController(FileSelectorPanel fileFrame) {
+		this.fileFrame = fileFrame;
+d103 1
+a103 2
+				fileFrame.butLoadFile.setEnabled(false);
+				fileFrame.butRemFile.setEnabled(false);
+d105 1
+a105 2
+				fileFrame.butLoadFile.setEnabled(true);
+				fileFrame.butRemFile.setEnabled(true);
+d117 2
+a118 1
+	private static FileSelectorPanel fileFrame;
+d120 3
+a122 2
+	ButtonController(FileSelectorPanel fFrame) {
+		fileFrame = fFrame;
+a126 1
+		String button = source.getText();
+d128 2
+a129 4
+		if (source == fileFrame.butAddFile){
+			// open a dialog to add a file to the list
+			JFileChooser fc = new JFileChooser();
+			int returnVal = fc.showOpenDialog(fileFrame);
+d131 2
+a132 18
+			// if they clicked open, add the chosen file to the list
+			if ( returnVal == JFileChooser.APPROVE_OPTION ) {
+				fileFrame.addFile(fc.getSelectedFile());
+				//fileFrame.fileList.addElement(fc.getSelectedFile());
+				fileFrame.butRemFile.setEnabled(true);
+			}
+			
+			
+		} else if (source == fileFrame.butRemFile){
+			// remove file from the list
+			int index = fileFrame.lstFileList.getSelectedIndex();
+			fileFrame.fileList.remove(index);
+			
+			// reset current slection to something
+			if ( index == fileFrame.fileList.getSize() )
+				index--;
+			fileFrame.lstFileList.setSelectedIndex(index);
+			fileFrame.lstFileList.ensureIndexIsVisible(index);
+d134 2
+a135 4
+			// if list is empty, disable button
+			if ( fileFrame.fileList.getSize() == 0 ) {
+				fileFrame.butRemFile.setEnabled(false);
+			}
+d137 2
+a138 5
+		
+		} else if (source == fileFrame.butLoadFile){
+			// load file into parser, assembler and processor
+			int index = fileFrame.lstFileList.getSelectedIndex();
+			fileFrame.controller.loadFile((File)fileFrame.fileList.elementAt(index));
+a140 2
+		
+		
+@
+
+
+1.4
+log
+@lots of gooey updates
+@
+text
+@d13 1
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@a8 1
+import yams.assembler.*;
+d26 3
+a28 2
+	public FileSelectorPanel(String windowName, YAMSGui controller) {
+		super(windowName, controller);
+@
+
+
+1.2
+log
+@lots of new GUI stuff :)
+@
+text
+@d25 1
+d27 2
+a28 2
+	public FileSelectorPanel(int width, int height, YAMSGui controller) {
+		super(width, height, controller);
+a37 1
+		scrollPane.setSize(new Dimension(width, height));
+d43 1
+a43 1
+		buttonPanel.setLayout(new GridLayout(1,3));
+d46 2
+a47 2
+		buttonPanel.setMinimumSize(new Dimension(0,40));
+		buttonPanel.setMaximumSize(new Dimension(5000000,40));
+d53 1
+d61 1
+d70 1
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@a14 6
+/**
+ * @@author ajb101
+ *
+ * To change the template for this generated type comment go to
+ * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+ */
+a16 2
+	private Assembler asm;
+	
+a27 1
+	//	setTitle("File Selector");
+d29 1
+a29 1
+		this.setLayout(new FlowLayout());		
+a34 2
+		lstFileList.setPreferredSize(new Dimension(width, height));
+		lstFileList.setMaximumSize(new Dimension(width, height));
+d41 8
+d53 9
+a61 3
+		this.add(butAddFile);
+		this.add(butRemFile);
+		this.add(butLoadFile);
+a70 4
+	public void init(Assembler asm) {
+		this.asm = asm;
+	}
+	
+a79 1
+		butRemFile.setEnabled(true);
+d102 1
+d105 1
+d134 2
+a135 1
+				fileFrame.fileList.addElement(fc.getSelectedFile());
+@
+

@@ -1,0 +1,3 @@
+To create pdf file:
+
+java LatexTransform docbooktest.xml docbooklatex/xsl/docbook.xsl  out.tex

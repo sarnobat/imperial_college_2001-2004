@@ -1,0 +1,42 @@
+# Evaluluate a polynomial
+# All coefficients are hard-coded
+# 	result 	= a*x^2 + b*x^1 + c*x^0
+#		= 10*2^2 + 5*2^1 + 1*2^0
+
+# Work backwards -- c + b*x + a*x*x
+# Store sum in r1 (this will become the result)
+# Store x, x*x in $2
+# Store products in $4
+
+.globl main
+
+# store x in $2
+main:   addi    $2, $0, 2
+
+
+# Add c to $1
+        addi    $1, $0, 1
+
+# Add b to $4
+        addi    $4, $0, 5       # place 5 in $4
+
+# calculate b * x
+        mult    $2, $4          # b*x
+        mfhi    $4              # Place results of multiplication in $4
+        mflo    $4
+        add     $1, $1, $4      # c + b*x
+
+# Add a to $4
+        addi    $4, $0, 10
+
+# calculate a * x * x
+        mult    $2, $2          # x*x
+        mfhi    $2              # Place result in $2
+        mflo    $2
+        mult    $4, $2          # a * x * x
+        mfhi    $4              # Place result in $4
+        mflo    $4
+        add     $1, $1, $4      # c + b*x + a*x*x
+
+        trap    4       # print result
+        trap    10      # stop

@@ -1,0 +1,120 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Teleradiology</title>
+<link rel="stylesheet" href="file:///I:/style.css">
+</head>
+
+<body>
+
+<b><p class = "title" align = "center">Teleradiology</p></b>
+
+<p>
+Teleradiology is the transmission of radiological images from one location to another for the purpose of interpretation or consultation.
+</p>
+<p>
+<h2>Description of a basic teleradiological system</h2>
+
+A basic teleradiological system has three major components:
+<ol>1. An image sending station</ol>
+<ol>2. A transmission network (which connects the two other components)</ol>
+<ol>3. A receiving/image review station</ol>
+</p>
+<p>
+<h3>Image Sending Station</h3>
+
+This consists of:
+<p><li>An image digitizer.</li></p>
+<p>
+Usually there are three general categories:
+</p>
+<blockquote>
+<p>
+<li type = "circle">camera digitizers</li>
+<li type = "circle">Charged Coupled Device scanner digitizers</li>
+<li type = "circle">Laser scanner digitizers</li>
+</blockquote>
+</p>
+<p>
+<li>Network interface device</li></p>
+</p>
+<p>
+<h3>Transmission Network</h3>
+
+This can be wire, fibre optics or microwave.  Usually the network is made of both wire and fibre optics.  If there is only one sending station a single wire or fibre-optic cable is used as a transmission network.  Sometimes there is more than one sending station and in these cases, a Local Area Network (LAN) connection is used.  Multiple sending stations are connected through the network.   
+<p>
+An extension of the LAN is the Wide Area Network (WAN) which can be imagined as an interconnected set of LAN.  This is illustrated in the diagram below:
+</p></p>
+<p align = "center">
+<img src = "network.jpg" >
+</p>
+		 
+
+
+
+
+
+
+<p>
+<h3>Receiving/Image viewing station</h3>
+<p>
+This consists of:
+<p>
+<ol>1.	A network interface (modem)</ol>
+<ol>2.	Computer hard disc as a storage medium</ol>
+<ol>3.	TV monitors</ol>
+<ol>4.	Hard copy device printer (optional)</ol>
+</p>
+</p>
+<p>
+The modem receives electrical impulses from the transmission network and converts them to digital image data which is sent to computer disc for storage.  The image can now be displayed on the TV monitor.  The TV monitors usually have resolutions ranging from about 512 by 512 to 2048 by 2048 pixels and sizes ranging from 14 to 21 inches.  Split screen capability is required so that different images can be displayed on the monitor at the same time.
+</p>
+<p>
+Hard copy images can be printed if a printer is available.
+</p>
+<p>
+The image can be enhanced by software manipulation functions like magnification image enhancement, colour and gray scale mapping, positive-negative reversal, annotation, minification, edge enhancement, image flip/rotate.  The use of these features depends on the types of images viewed and requirements of the radiologists.
+</p>
+</p>
+<p>
+<h2>Teleradiology in 3D</h2>
+
+Usually images transmitted are in 2D or as video streams.  However, some workstations, e.g. the TeleInVivo workstation, facilitate the transmission of volumetric models created from 3D ultrasound data.
+
+<h3>The Virtual Reality Modelling Language</h3>
+
+The Virtual Reality Modelling Language (VRML) is used as a platform independent, 3D scene description language with interaction by the user.  Since VRML browsers are usually incorporated as a plug-in to an Internet browser like Microsoft’s Internet Explorer or Netscape’s Communicator, VRML worlds can be published on the Internet in a similar way to HTTP pages.  
+<p>
+Most VRML applications developed to date are single user applications.  However in a teleradiology application a multi-user VRML world is required so that different users can access the world at the same time and interact with each other.  Three such VRML applications are the Vnet, Contact/Community Server and DeepMatrix.  In these applications each user has an avatar, i.e. a 3D object in the browser to represent them.  As the user moves around the scene, his avatar moves with him.  A chat mechanism is also enabled so that users can send messages to one another.
+</p>
+<h3>A 3D Teleradiology Session</h3>
+<p>
+When a 3D teleradiology session is initiated, a script is run and this starts the server applet which is configured to make the VRML world with the 3D object available for collaboration.  This 3D object is contained in a Group node.
+</p>
+<li>The Viewing Tool</li>
+<p> 
+All users should view the object from the same position so that they can all discuss the same view.  The 3D object can be rotated and examined as desired.  A SphereSensor node enables rotation of the 3D object.
+</p>
+<p>
+<li>The Annotation Tool</li>
+<p>This is required to enable users to draw or mark out regions of interest on the 3D object.</p>
+<p>  
+In the most basic case, a touchSensor is grouped with the model and when active the user every time the user moves his mouse whilst the mouse button is depressed, an event is generated.  At every event, information about the position of the mouse, the normal vector of this point and the time user clicked on the object is obtained.  This information can be used to draw a line between the points using the IndexedLineSet.
+</p>
+</p>
+Other mechanisms are usually used to refine the line. 
+</p>
+<p>
+<h2>Consequences and uses:</h2>
+
+<li>Timely interpretation of radiological images</li>
+<li>Greater access to secondary consultations</li>
+<li>Improved continuing education</li>
+<li>Users in different locations can simultaneously view images</li>
+</p>
+</body>
+
+</html>

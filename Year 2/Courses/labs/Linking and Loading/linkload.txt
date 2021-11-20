@@ -1,0 +1,43 @@
+/* Sridhar Sarnobat ss401@doc.ic.ac.uk COMP 2 */
+
+1. From the line:
+
+	  Idx Name        Size      VMA       LMA       File off  Algn
+	0 .text         00000020  00000000  00000000  00000034  2**2
+
+   it can be seen that the size is 20 (hex), which is 32 bytes.
+
+2. There is 1 relocation record, namely:
+
+	RELOCATION RECORDS FOR [.text]:
+	OFFSET   TYPE              VALUE
+	0000000b R_386_32          message
+
+3. No relocations records remain.
+
+4. If you use the linker on cversion, you get the following:
+
+	sync01% ld -N cversion.o -o cversion
+	ld: warning: cannot find entry symbol _start; defaulting to 0804808.
+	cversion.o: In function `main':
+	cversion.o(.text+0x13): undefined reference to `write'
+	cversion.o(.text+0x20): undefined reference to `exit'
+
+   When you try to list the symbols, you get the following:
+
+   	sync01% nm cversion.o
+        	 U exit
+	00000000 t gcc2_compiled.
+	00000000 T main
+	00000000 D message
+	         U write
+
+   Basically, there is no compiled version or the 'write' and 'exit' methods   
+   within access from the caller.
+
+5. When cversion.c is compiled, it is assumed that this method might be a 		   
+   callee within a more complex c program. When its code has been executed,    
+   there may be more instructions from another file to be executed. So rather  
+   than exit the program back to the command prompt, it only signifies         
+   completion of the current method.
+

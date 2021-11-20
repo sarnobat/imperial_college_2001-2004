@@ -1,0 +1,297 @@
+head	1.7;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.7
+date	2003.11.10.10.57.50;	author qq01;	state dead;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.08.17.39.30;	author qq01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.05.15.32.29;	author jkm01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.05.14.08.45;	author jkm01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.04.23.06.50;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.04.19.38.46;	author jkm01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.03.21.41.08;	author ajb101;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.7
+log
+@Updated package structure.
+@
+text
+@package assembler;
+
+import java.util.Map;
+/*
+ * Created on 04-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+
+/**
+ * @@author jkm01
+ *
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+public class Assembler {
+
+	//tables
+	private InstructionTable instructionTable; //holds records of all the current instructions supported by this system
+	private SymbolTable symbolTable; // holds all the symbol -> address mappings
+	private ToBeDoneTable  toBeDoneTable; // holds all the information on items that need to be reassembled in the second phase
+
+	//Assembler read_modes & current line numbers
+	boolean data_mode;
+	int line_number;
+	int max_line_number;
+
+	public Assembler(String xmlFilePath)
+	{
+		// constructor takes the xmlfilepath so that the various substructures can build up their information
+
+		//create all the tables required for the system
+	
+		instructionTable = new InstructionTable();	// create the instruction table by passing the xmlfilepath to the constructor
+		symbolTable = new SymbolTable(); // create the new symbol table
+		toBeDoneTable = new ToBeDoneTable();
+
+		// fill instruction table with data
+		AssemblerXMLHandler.LoadTableFromXML(xmlFilePath,instructionTable);
+	
+		//initialise assembler modes and line numbers
+		data_mode = false;
+		line_number = 0;
+		max_line_number=0;
+	}
+
+
+	public void testAssembler()
+	{
+		//test code for loading the instruction table
+	
+		if (instructionTable.isInstruction("lui"))
+			{
+				System.out.println(instructionTable.getInstruction("lui").getName() + " " +
+												instructionTable.getInstruction("lui").getMachineCodeRepresentation() + " " +
+												instructionTable.getInstruction("lui").getInstructionType() + " ");			
+			}
+		else {System.out.println("false");}
+	
+		//test code to handle an instruction
+	}
+
+
+	private void assembleCode(Map instructionMap)
+	{
+		line_number=0;
+		max_line_number = instructionMap.size();
+		while (line_number<max_line_number)
+			{
+				handleNode((Instruction)instructionMap.get(new Integer(line_number)));
+				line_number++;
+			}
+		// continue to go through instructions while there are still some available within the instruction map
+		
+		int action_number=0;
+		int maximum_actions=toBeDoneTable.requiredActions();
+		while (action_number<maximum_actions)
+			{
+				carryOutAction(toBeDoneTable.get(action_number));
+			}
+	}
+
+	// first phase handlers
+
+	private void handleNode(Instruction currentInstruction)
+	{
+		//determines what type of node this program line is and passes responsibility to appropriate handlers
+	
+		if (instructionTable.isInstruction(currentInstruction.getInstructionName()))
+			{
+				handleInstructionTag(currentInstruction);
+			}
+		else if (currentInstruction.getInstructionName().equals(AssemblerTags.DATA_TAG))
+			{
+				handleDataTag(currentInstruction);
+			}
+		else if (currentInstruction.getInstructionName().equals(AssemblerTags.TEXT_TAG))
+			{
+				handleTextTag(currentInstruction);
+			}
+		else if (isValidLabel(currentInstruction.getInstructionName()))
+			{
+				handleLabelTag(currentInstruction);
+			}
+		else
+			{
+				System.out.println("Error - this instruction is invalid, but should have been picked up by parser, possible source of error is label used is not valid");
+			}
+	}
+
+	private boolean isValidLabel(String label)
+	{
+		// checks whether the label provided is a valid label
+		// nb this should have been picked up by the parser function
+		return true;
+	}
+
+	private void handleDataTag(Instruction currentInstruction)
+	{
+		data_mode=true;
+		System.out.println("Encountered data tag, setting data section flag to true");
+	}
+
+	private void handleTextTag(Instruction currentInstruction)
+	{
+		data_mode=false;
+		System.out.println("Encountered text tag, setting data section tag to false");
+	}
+
+	private void handleLabelTag(Instruction currentInstruction)
+	{	
+		System.out.println("Encountered label tag, assembling");
+		if (data_mode)
+			{
+				//symbolTable.add this node with next_data_address
+			
+				// if next node = .word or other structure-> assign bytes, increment data addresses accordingly	
+			}
+		else 
+			{	
+				//symbolTable.add this node with next text address	
+			}
+	}
+
+	private void handleInstructionTag(Instruction currentInstruction)
+	{
+		System.out.println("Encountered instruction, assembling");
+	}
+
+	// secondphase handlers
+	
+	private void carryOutAction(ToBeDoneRow t)
+	{
+		System.out.println("Given a row update from TBDONE table to carry out");
+	}
+
+}@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.5
+log
+@Modified assembler
+@
+text
+@d3 1
+a3 1
+import java.util.*;
+@
+
+
+1.4
+log
+@Modified XML handler to be static method and added XML Instruction File
+@
+text
+@a18 6
+	//constants
+	private static String DATA_TAG = ".data";
+	private static String TEXT_TAG = ".text";
+
+
+
+d94 1
+a94 1
+		else if (currentInstruction.getInstructionName().equals(DATA_TAG))
+d98 1
+a98 1
+		else if (currentInstruction.getInstructionName().equals(TEXT_TAG))
+@
+
+
+1.3
+log
+@adding assembler calls to YAMS.java
+@
+text
+@a29 4
+	//XMLHandler to fill tables with required contents
+	private AssemblerXMLHandler xmlHandler;
+
+
+d44 3
+a46 2
+	
+		xmlHandler = new AssemblerXMLHandler(xmlFilePath,instructionTable);
+@
+
+
+1.2
+log
+@Updated the Assembler.java file as well as adding 6 other related classes
+
+James
+@
+text
+@a56 5
+	public static void main(String argsv[])
+	{
+		Assembler a = new Assembler(argsv[0]);
+		a.testAssembler();
+	}
+@
+
+
+1.1
+log
+@adding assembler file
+@
+text
+@d3 14
+d18 26
+d45 128
+a172 1
+}
+@
+

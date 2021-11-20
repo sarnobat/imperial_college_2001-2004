@@ -1,0 +1,23 @@
+Evaluation
+
+Successes
+
+The YAMS project accomplished all that was set out in our original specification to achieve. In short, this was to produce a MIPS simulator that could be used for the second year compiler Lab. The simulator was to have both a console and GUI versions. The YAMS simulator is a unification of the two, depending on the option the simulator is started with, it runs the console version or the version extended with a GUI.
+
+The console version has many command line options, to execute a list of files, printing statistics and logging to a file being a few examples. The GUI-enabled simulation has a very intuitive and easy-to-use interface, which is vastly superior to that offered by the current MIPS simulator of choice Spim, and XSpim.
+
+The development and integration of the components that made up YAMS was extremely rapid. By using numerous well-defined Java interfaces, the parser, assembler and processor meshed from the first integration build. The GUI was produced extremely quickly on top of the simulator, this was made possible by the use of JTables and the existing provision of the interaction between the simulator components and a GUI, through the use of listeners and a ProcessorHandler thread.
+
+
+Failures (or missed opportunities)
+
+In the GUI, it was decided that YAMS would not highlight registers that were being read from or written to. This was because the register highlighting would be confusing when pseudoinstructions were executed, since they are seemingly atomic to users of the simulator but in fact contain many smaller, regular MIPS instructions.
+
+It was originally intended to use ANTLR to generate the parser, however ambiguity removal from MIPS BNF grammar proved difficult. After realizing that all input would be linear (i.e. no nested constructs), it was decided that use of ANTLR would not be necessary.
+
+The Processor was originally intended to have an ALU class with static methods performing various logical and arithmetic operations. Sadly because MIPS has a RISC architecture there is very little code that can be common to multiple instructions, so the ALU class was torpedoed. Also the idea of having hard-coded static methods did not really appeal when YAMS started down the extension of using an XML instruction repository.
+
+Testing
+
+The YAMS simulator was tested against the specification throughout development to ensure a quality end product. The release build of the simulator was used in place of Spim to test four separate sets of Compiler Lab outputs. One of the these was the Lab compiler's output, the other three were produced by student-written DEC(M2) to MIPS compilers. For each file, YAMS simulated the execution correctly, and printed the correct output '1234'.
+

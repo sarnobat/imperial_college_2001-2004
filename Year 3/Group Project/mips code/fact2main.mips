@@ -1,0 +1,26 @@
+# fact2main.mips
+# Read a number n from standard input, then print n!
+# (n factorial) on standard output.  Uses fact2
+# to calculate the factorial.
+#
+# Register Usage:
+# $1 - I/O, pass information to/from fact2
+# $2 - Standard input value
+# $4 - Argument for trap
+
+.globl main
+
+main:   trap 5          # Get n into $2
+        add $1, $0, $2  # Copy n into $1
+
+        jal fact2       # Calculate n! in $1
+
+        add $4, $0, $1  # Copy result to $4
+        trap 1          # Print result (in $4)
+
+        
+        addi $4, $0, 10
+        trap 101        # Print newline character
+
+        trap 10         # Quit program
+

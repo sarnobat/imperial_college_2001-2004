@@ -1,0 +1,2833 @@
+head	1.37;
+access;
+symbols
+	yams-final-19-12-03:1.37
+	yams-release2-17-12-03:1.37
+	yams-release-17-12-03:1.37
+	cleanup:1.33.0.2
+	Root_cleanup:1.33
+	stable-13-12-2003:1.33;
+locks; strict;
+comment	@# @;
+
+
+1.37
+date	2003.12.16.18.40.33;	author ajb101;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2003.12.16.15.15.59;	author qq01;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2003.12.14.03.54.20;	author jkm01;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2003.12.13.23.54.45;	author jkm01;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2003.12.12.16.11.53;	author jkm01;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2003.12.08.12.41.46;	author qq01;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2003.12.04.16.34.34;	author qq01;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2003.12.04.02.48.12;	author ajb101;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2003.12.03.17.25.12;	author qq01;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2003.12.03.17.13.08;	author qq01;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2003.12.03.17.08.34;	author qq01;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2003.12.03.17.07.18;	author qq01;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2003.12.03.16.59.38;	author ajb101;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2003.12.03.16.55.11;	author qq01;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2003.12.03.16.54.25;	author qq01;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2003.12.02.19.20.25;	author qq01;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2003.12.02.16.53.25;	author ajb101;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2003.12.02.15.02.57;	author ajb101;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2003.12.02.12.32.44;	author qq01;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2003.12.02.12.28.40;	author qq01;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2003.12.01.16.26.52;	author qq01;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.12.01.14.42.05;	author jkm01;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.12.01.10.50.35;	author qq01;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.11.30.20.11.47;	author qq01;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.11.30.20.03.39;	author qq01;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.11.28.18.02.07;	author qq01;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.11.28.17.55.32;	author qq01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.11.28.17.01.27;	author qq01;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.11.28.16.53.08;	author qq01;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.11.28.14.52.36;	author ajb101;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.27.21.21.01;	author qq01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.27.21.10.55;	author qq01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.24.23.17.18;	author qq01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.24.00.04.35;	author qq01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.23.23.22.35;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.23.22.51.03;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.18.13.59.34;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.37
+log
+@*** empty log message ***
+@
+text
+@
+/*
+ * Created on 2003-11-1
+ */
+package yams.parser;
+
+//Generated version.
+
+/**
+ * Parses the users file. Invokes the Lexer automatically.
+ * 
+ * @@author Qian Qiao qq01@@doc.ic.ac.uk
+ */
+public class Parser {
+private Token currentToken;
+
+	private int instructionCount = 0;
+
+	private LineList lineList;
+	private StringBuffer program;
+
+	/**
+	 * Constructs a new parser. If a parser is constructed this way, then the method
+	 * parse(StringBuffer Program) should be used.
+	 */
+	public Parser() {
+		lineList = new LineList();
+	}
+
+	/**
+	 * Constructs a parser that parses the program.
+	 * 
+	 * @@param program the input program
+	 */
+	public Parser(StringBuffer program) {
+		this.program = program;
+		lineList = new LineList();
+	}
+
+	private void match(Lexer lexer, int expected)
+		throws ParseException, LexerException {
+		if (currentToken.getType() == expected) {
+			currentToken = lexer.nextToken();
+		} else {
+			throw new ParseException(
+				currentToken,
+				expected,
+				lexer.getLineNumber());
+		}
+	}
+
+	/**
+	 * Parses the program.
+	 * 
+	 * @@return a collection of the Line that represents the user's input program.
+	 * @@throws LexerException if the lexer finds an error
+	 * @@throws ParseException if the parser finds an error
+	 */
+	public LineList parse() throws LexerException, ParseException {
+
+		Lexer lexer = new Lexer(program);
+
+		currentToken = lexer.nextToken();
+
+		Label label = null;
+
+		Instruction instruction = null;
+
+		Directive directive = null;
+
+		boolean lineHasLabel = false;
+
+		boolean lineHasInstruction = false;
+
+		boolean lineHasDirective = false;
+
+		while (currentToken.getType() != Lexer.EOF) {
+			if (currentToken.getType() == Lexer.NEWLINE) {
+
+				lineList.appendLine(
+					new Line(
+						lineList.totalLines() + 1,
+						lexer.getOriginalLine()));
+
+			} else {
+				currentToken = lexer.nextToken();
+				if (currentToken.getType() == Lexer.COLON) {
+
+					lexer.pushTokenBack();
+					lexer.pushTokenBack();
+					currentToken = lexer.currentToken();
+					lexer.nextToken();
+
+					label = parseLabel(lexer);
+
+					lineHasLabel = true;
+
+				} else {
+
+					lexer.pushTokenBack();
+					lexer.pushTokenBack();
+					currentToken = lexer.currentToken();
+					lexer.nextToken();
+				}
+
+				if (currentToken.getType() == Lexer.DOT) {
+
+					directive = parseDirective(lexer);
+
+					currentToken = lexer.currentToken();
+					lexer.nextToken();
+
+					lineHasDirective = true;
+
+				} else if (currentToken.getType() == Lexer.IDENTIFIER) {
+
+					instruction = parseInstruction(lexer);
+
+					currentToken = lexer.currentToken();
+					lexer.nextToken();
+
+					lineHasInstruction = true;
+
+				}
+
+				if (lineHasLabel) {
+					if (lineHasDirective) {
+						lineList.appendLine(
+							new Line(
+								lineList.totalLines() + 1,
+								lexer.getOriginalLine(),
+								label,
+								directive));
+					} else if (lineHasInstruction) {
+						lineList.appendLine(
+							new Line(
+								lineList.totalLines() + 1,
+								lexer.getOriginalLine(),
+								label,
+								instruction));
+					} else {
+						lineList.appendLine(
+							new Line(
+								lineList.totalLines() + 1,
+								lexer.getOriginalLine(),
+								label));
+					}
+				} else {
+					if (lineHasDirective) {
+						lineList.appendLine(
+							new Line(
+								lineList.totalLines() + 1,
+								lexer.getOriginalLine(),
+								directive));
+					} else if (lineHasInstruction) {
+						lineList.appendLine(
+							new Line(
+								lineList.totalLines() + 1,
+								lexer.getOriginalLine(),
+								instruction));
+					}
+				}
+			}
+			lineHasLabel = false;
+			lineHasInstruction = false;
+			lineHasDirective = false;
+
+			match(lexer, Lexer.NEWLINE);
+
+			instructionCount++;
+		}
+		return lineList;
+	}
+
+	private Directive parseDirective(Lexer lexer)
+		throws ParseException, LexerException {
+
+		match(lexer, Lexer.DOT);
+
+		if (currentToken.getValue().toLowerCase().equals("asciiz")) {
+
+			return new Directive(
+				".asciiz",
+				lexer,
+				new int[] { Operand.TYPE_STRING });
+		} else if (currentToken.getValue().toLowerCase().equals("text")) {
+			lexer.mark();
+
+			return new Directive(".text", lexer, new int[] {});
+
+		} else if (currentToken.getValue().toLowerCase().equals("data")) {
+
+			return new Directive(".data", lexer, new int[] {});
+
+		} else if (currentToken.getValue().toLowerCase().equals("globl")) {
+
+			return new Directive(
+				".globl",
+				lexer,
+				new int[] { Operand.TYPE_LABEL });
+
+		} else if (currentToken.getValue().toLowerCase().equals("space")) {
+			return new Directive(
+				".space",
+				lexer,
+				new int[] { Operand.TYPE_IMMEDIATE });
+
+		} else {
+			throw new ParseException(
+				"Unsupported Directive '" + currentToken.getValue() + "'",
+				lexer.getLineNumber());
+		}
+	}
+
+	private Instruction parseInstruction(Lexer lexer)
+		throws ParseException, LexerException {
+
+	
+			if (currentToken.getValue().toLowerCase().equals("add")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"add",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_REGISTER });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"add",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'add'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("addu")) {
+
+				return new RInstruction(
+					"addu",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_REGISTER });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("addi")) {
+
+				return new RInstruction(
+					"addi",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("sub")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"sub",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_REGISTER });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"sub",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'sub'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("mul")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"mul",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_REGISTER });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"mul",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'mul'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("div")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"div",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_REGISTER });
+	
+	}catch(ParseException pe3){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"div",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"div",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'div'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("neg")) {
+
+				return new RInstruction(
+					"neg",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("lui")) {
+
+				return new RInstruction(
+					"lui",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("li")) {
+
+				return new RInstruction(
+					"li",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("b")) {
+
+				return new RInstruction(
+					"b",
+					lexer,
+					new int[] { Operand.TYPE_LABEL });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("beq")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"beq",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"beq",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'beq'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("bgez")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"bgez",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"bgez",
+					lexer,
+					new int[] { Operand.TYPE_IMMEDIATE, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'bgez'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("bgtz")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"bgtz",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"bgtz",
+					lexer,
+					new int[] { Operand.TYPE_IMMEDIATE, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'bgtz'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("blez")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"blez",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"blez",
+					lexer,
+					new int[] { Operand.TYPE_IMMEDIATE, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'blez'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("bltz")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"bltz",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"bltz",
+					lexer,
+					new int[] { Operand.TYPE_IMMEDIATE, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'bltz'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("bne")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"bne",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"bne",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'bne'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("beqz")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"beqz",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"beqz",
+					lexer,
+					new int[] { Operand.TYPE_IMMEDIATE, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'beqz'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("bge")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"bge",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"bge",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'bge'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("bgt")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"bgt",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"bgt",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'bgt'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("ble")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"ble",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"ble",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'ble'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("blt")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"blt",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"blt",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'blt'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("bnez")) {
+			lexer.mark();
+			
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"bnez",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe2){
+	
+	lexer.rewind();
+	try{
+		return new RInstruction(
+					"bnez",
+					lexer,
+					new int[] { Operand.TYPE_IMMEDIATE, Operand.TYPE_LABEL });
+	
+	}catch(ParseException pe1){
+	
+		throw new ParseException(
+			"Failed to parse 'bnez'",
+			lineList.totalLines() + 1);
+	
+	}
+
+	}
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("j")) {
+
+				return new RInstruction(
+					"j",
+					lexer,
+					new int[] { Operand.TYPE_LABEL });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("jal")) {
+
+				return new RInstruction(
+					"jal",
+					lexer,
+					new int[] {  });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("syscall")) {
+
+				return new RInstruction(
+					"syscall",
+					lexer,
+					new int[] {  });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("la")) {
+
+				return new RInstruction(
+					"la",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("lw")) {
+
+				return new RInstruction(
+					"lw",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("sw")) {
+
+				return new RInstruction(
+					"sw",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("move")) {
+
+				return new RInstruction(
+					"move",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("mflo")) {
+
+				return new RInstruction(
+					"mflo",
+					lexer,
+					new int[] {  });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("ori")) {
+
+				return new RInstruction(
+					"ori",
+					lexer,
+					new int[] {  });
+
+			}
+		
+			if (currentToken.getValue().toLowerCase().equals("muli")) {
+
+				return new RInstruction(
+					"muli",
+					lexer,
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE, Operand.TYPE_IMMEDIATE });
+
+			}
+		
+	
+		else{
+			throw new ParseException(
+				"Unsupported Instruction '" + currentToken.getValue() + "'",
+				lineList.totalLines() + 1);
+		}
+	}
+	
+	private Label parseLabel(Lexer lexer)
+		throws LexerException, ParseException {
+		String label = new String(currentToken.getValue());
+		match(lexer, Lexer.IDENTIFIER);
+		match(lexer, Lexer.COLON);
+		return new Label(label);
+	}
+
+	/**
+	 * Parses the program given by the argument.
+	 * 
+	 * @@param program the program input.
+	 * @@return a collection of the Line that represents the user's input program.
+	 * @@throws LexerException if the lexer finds an error
+	 * @@throws ParseException if the parser finds an error
+	 */
+	public LineList parse(StringBuffer program)
+		throws LexerException, ParseException {
+		this.program = program;
+		return parse();
+	}
+	
+}
+@
+
+
+1.36
+log
+@Updated Instruction file for autogeneration
+@
+text
+@d1 1
+d7 1
+a7 1
+//import java.util.Vector;
+d10 1
+a10 1
+ * Parses the users file. Invokes the <code>Lexer</code> automatically.
+d12 1
+a12 1
+ * @@author Qian Qiao <a href="qq01@@doc.ic.ac.uk">qq01@@doc.ic.ac.uk</a>
+d15 1
+a15 17
+
+	/**
+	 * Dummy method for debugging.
+	 * 
+	 * @@param args arguments
+	 */
+	public static void main(String[] args) {
+		Parser parser = new Parser(new StringBuffer("causing error"));
+		try {
+			LineList lineList = parser.parse();
+			System.out.println(lineList.toString());
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+	private Token currentToken;
+d24 1
+a24 1
+	 * <code>parse(StringBuffer Program)</code> should be used.
+d31 1
+a31 1
+	 * Constructs a parser that parses the <code>program</code>.
+d55 1
+a55 1
+	 * @@return a collection of the <code>Line</code> that represents the user's input program.
+d217 3
+a219 6
+		/*
+		 * parse supported instructions, these if-else statements
+		 * should be populated by a XSLT transformation of the XML
+		 * instruction file.
+		 */
+		if (currentToken.getValue().toLowerCase().equals("add")) {
+d221 13
+a233 2
+			try {
+				return new RInstruction(
+d236 16
+a251 6
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER });
+			} catch (ParseException pe) {
+				lexer.rewind();
+d253 1
+a253 1
+					"add",
+d255 2
+a256 5
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_IMMEDIATE });
+					
+d258 7
+d266 3
+a268 1
+		} else if (currentToken.getValue().toLowerCase().equals("sub")) {
+d270 4
+a273 2
+			try {
+				return new RInstruction(
+d276 7
+a282 7
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER });
+			} catch (ParseException pe) {
+				lexer.rewind();
+				return new RInstruction(
+d285 12
+a296 4
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_IMMEDIATE });
+d298 2
+a299 1
+		} else if (currentToken.getValue().toLowerCase().equals("mul")) {
+d301 13
+a313 2
+			try {
+				return new RInstruction(
+d316 15
+a330 15
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER });
+			} catch (ParseException pe) {
+				lexer.rewind();
+					return new RInstruction(
+						"mul",
+						lexer,
+						new int[] {
+							Operand.TYPE_REGISTER,
+							Operand.TYPE_REGISTER,
+							Operand.TYPE_IMMEDIATE });
+				}
+		} else if (currentToken.getValue().toLowerCase().equals("div")) {
+d332 51
+a382 1
+			try {
+d384 1
+a384 1
+					"div",
+d386 2
+a387 29
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER });
+			} catch (ParseException pe) {
+				lexer.rewind();
+				try {
+					return new RInstruction(
+						"div",
+						lexer,
+						new int[] {
+							Operand.TYPE_REGISTER,
+							Operand.TYPE_REGISTER,
+							Operand.TYPE_IMMEDIATE });
+				} catch (ParseException pe1) {
+					lexer.rewind();
+					try {
+						return new RInstruction(
+							"div",
+							lexer,
+							new int[] {
+								Operand.TYPE_REGISTER,
+								Operand.TYPE_REGISTER });
+					} catch (ParseException pe2) {
+						throw new ParseException(
+							"Failed to parse 'div'",
+							lineList.totalLines() + 1);
+					}
+				}
+a388 3
+		}else if(currentToken.getValue().toLowerCase().equals("muli")){
+			
+			return new IInstruction("muli", lexer, new int[]{Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE, Operand.TYPE_IMMEDIATE}); 
+d390 1
+a390 1
+		}else if (currentToken.getValue().toLowerCase().equals("neg")) {
+d392 8
+a399 4
+			return new RInstruction(
+				"neg",
+				lexer,
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER });
+d401 4
+a404 5
+		} else if (currentToken.getValue().toLowerCase().equals("b")) {
+			return new JInstruction(
+				"b",
+				lexer,
+				new int[] { Operand.TYPE_LABEL });
+d406 3
+a408 1
+		} else if (currentToken.getValue().toLowerCase().equals("beq")) {
+d410 4
+a413 2
+			try {
+				return new JInstruction(
+d416 7
+a422 7
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_LABEL });
+			} catch (ParseException pe1) {
+				lexer.rewind();
+				return new JInstruction(
+d425 12
+a436 4
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_IMMEDIATE,
+						Operand.TYPE_LABEL });
+d438 2
+a439 1
+		} else if (currentToken.getValue().toLowerCase().equals("beqz")) {
+d441 5
+a445 3
+			try {
+				return new JInstruction(
+					"beqz",
+d448 7
+a454 4
+			} catch (ParseException pe1) {
+				lexer.rewind();
+				return new JInstruction(
+					"beqz",
+d457 10
+a466 1
+			}
+a467 19
+		} else if (currentToken.getValue().toLowerCase().equals("bne")) {
+			lexer.mark();
+			try {
+				return new JInstruction(
+					"bne",
+					lexer,
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_LABEL });
+			} catch (ParseException pe1) {
+				lexer.rewind();
+				return new JInstruction(
+					"bne",
+					lexer,
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_IMMEDIATE,
+						Operand.TYPE_LABEL });
+d469 2
+a470 1
+		} else if (currentToken.getValue().toLowerCase().equals("bnez")) {
+d472 5
+a476 3
+			try {
+				return new JInstruction(
+					"bnez",
+d479 7
+a485 4
+			} catch (ParseException pe1) {
+				lexer.rewind();
+				return new JInstruction(
+					"bnez",
+d488 11
+d500 2
+a501 1
+		} else if (currentToken.getValue().toLowerCase().equals("bgt")) {
+d503 5
+a507 3
+			try {
+				return new JInstruction(
+					"bgt",
+d509 8
+a516 8
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_LABEL });
+			} catch (ParseException pe1) {
+				lexer.rewind();
+				return new JInstruction(
+					"bgt",
+d518 9
+a526 5
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_IMMEDIATE,
+						Operand.TYPE_LABEL });
+			}
+d528 1
+d530 3
+a532 1
+		} else if (currentToken.getValue().toLowerCase().equals("bgtz")) {
+d534 5
+a538 3
+			try {
+				return new JInstruction(
+					"bgtz",
+d541 7
+a547 4
+			} catch (ParseException pe1) {
+				lexer.rewind();
+				return new JInstruction(
+					"bgtz",
+d550 11
+d562 2
+a563 1
+		} else if (currentToken.getValue().toLowerCase().equals("bge")) {
+d565 14
+a578 3
+			try {
+				return new JInstruction(
+					"bge",
+d580 15
+a594 17
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_LABEL });
+				
+				
+			} catch (ParseException pe1) {
+				lexer.rewind();
+					return new JInstruction(
+						"bge",
+					lexer,
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_IMMEDIATE,
+						Operand.TYPE_LABEL });
+				}
+		} else if (currentToken.getValue().toLowerCase().equals("bgez")) {
+d596 5
+a600 3
+			try {
+				return new JInstruction(
+					"bgez",
+d603 7
+a609 4
+			} catch (ParseException pe1) {
+				lexer.rewind();
+				return new JInstruction(
+					"bgez",
+d612 11
+d624 2
+a625 1
+		} else if (currentToken.getValue().toLowerCase().equals("blt")) {
+d627 5
+a631 3
+			try {
+				return new JInstruction(
+					"blt",
+d633 8
+a640 8
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_LABEL });
+			} catch (ParseException pe1) {
+				lexer.rewind();
+				return new JInstruction(
+					"blt",
+d642 12
+a653 4
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_IMMEDIATE,
+						Operand.TYPE_LABEL });
+d655 2
+a656 1
+		} else if (currentToken.getValue().toLowerCase().equals("bltz")) {
+d658 5
+a662 3
+			try {
+				return new JInstruction(
+					"bltz",
+d664 8
+a671 5
+					new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+			} catch (ParseException pe1) {
+				lexer.rewind();
+				return new JInstruction(
+					"bltz",
+d673 12
+a684 1
+					new int[] { Operand.TYPE_IMMEDIATE, Operand.TYPE_LABEL });
+d686 2
+a687 1
+		} else if (currentToken.getValue().toLowerCase().equals("ble")) {
+d689 4
+a692 2
+			try {
+				return new JInstruction(
+d695 7
+a701 7
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_LABEL });
+			} catch (ParseException pe1) {
+				lexer.rewind();
+				return new JInstruction(
+d704 43
+a746 4
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_IMMEDIATE,
+						Operand.TYPE_LABEL });
+d748 2
+a749 1
+		} else if (currentToken.getValue().toLowerCase().equals("blez")) {
+d751 5
+a755 3
+			try {
+				return new JInstruction(
+					"blez",
+d758 7
+a764 4
+			} catch (ParseException pe1) {
+				lexer.rewind();
+				return new JInstruction(
+					"blez",
+d767 11
+d779 2
+a780 1
+		} else if (currentToken.getValue().toLowerCase().equals("li")) {
+d782 17
+a798 4
+			return new IInstruction(
+				"li",
+				lexer,
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE });
+d800 4
+a803 1
+		} else if (currentToken.getValue().toLowerCase().equals("lui")) {
+d805 3
+a807 4
+			return new IInstruction(
+				"lui",
+				lexer,
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE });
+d809 4
+a812 1
+		} else if (currentToken.getValue().toLowerCase().equals("la")) {
+d814 3
+a816 4
+			return new IInstruction(
+				"la",
+				lexer,
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING });
+d818 4
+a821 1
+		} else if (currentToken.getValue().toLowerCase().equals("lw")) {
+d823 3
+a825 4
+			return new IInstruction(
+				"lw",
+				lexer,
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING });
+d827 4
+a830 1
+		} else if (currentToken.getValue().toLowerCase().equals("sw")) {
+d832 3
+a834 4
+			return new IInstruction(
+				"sw",
+				lexer,
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING });
+d836 4
+a839 1
+		} else if (currentToken.getValue().toLowerCase().equals("move")) {
+d841 3
+a843 4
+			return new RInstruction(
+				"move",
+				lexer,
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER });
+d845 4
+a848 1
+		} else if (currentToken.getValue().toLowerCase().equals("j")) {
+d850 3
+a852 4
+			return new JInstruction(
+				"j",
+				lexer,
+				new int[] { Operand.TYPE_LABEL });
+d854 4
+a857 6
+			//		} else if (currentToken.getValue().toLowerCase().equals("jal")) {
+			//
+			//					return new JInstruction(
+			//						"b",
+			//						lexer,
+			//						new int[] { Operand.TYPE_LABEL });
+d859 3
+a861 1
+		} else if (currentToken.getValue().toLowerCase().equals("syscall")) {
+d863 4
+a866 1
+			return new RInstruction("syscall", lexer, new int[] {});
+d868 4
+a871 1
+		} else {
+d877 1
+a877 1
+
+d890 1
+a890 1
+	 * @@return a collection of the <code>Line</code> that represents the user's input program.
+d899 1
+@
+
+
+1.35
+log
+@*** empty log message ***
+@
+text
+@a457 8
+
+/*
+			lexer.mark();
+			try {
+			} catch (ParseException pe1) {
+				lexer.rewind();
+			}
+*/
+@
+
+
+1.34
+log
+@*** empty log message ***
+@
+text
+@d260 19
+a278 8
+			return new RInstruction(
+				"sub",
+				lexer,
+				new int[] {
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER });
+
+a346 1
+
+d353 19
+a371 9
+
+			return new JInstruction(
+				"beq",
+				lexer,
+				new int[] {
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_LABEL });
+
+d373 13
+a385 5
+
+			return new JInstruction(
+				"beqz",
+				lexer,
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+d388 19
+a406 9
+
+			return new JInstruction(
+				"bne",
+				lexer,
+				new int[] {
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_LABEL });
+
+d408 13
+a420 6
+
+			return new JInstruction(
+				"bnez",
+				lexer,
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+
+d422 19
+a441 7
+			return new JInstruction(
+				"bgt",
+				lexer,
+				new int[] {
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_LABEL });
+d444 13
+a456 6
+
+			return new JInstruction(
+				"bgtz",
+				lexer,
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+
+d459 28
+a486 8
+			return new JInstruction(
+				"bge",
+				lexer,
+				new int[] {
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_LABEL });
+
+d488 13
+a500 6
+
+			return new JInstruction(
+				"bgez",
+				lexer,
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+
+d502 19
+a520 9
+
+			return new JInstruction(
+				"blt",
+				lexer,
+				new int[] {
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_LABEL });
+
+d522 13
+a534 6
+
+			return new JInstruction(
+				"bltz",
+				lexer,
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+
+d536 19
+a554 9
+
+			return new JInstruction(
+				"ble",
+				lexer,
+				new int[] {
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_LABEL });
+
+d556 13
+a568 6
+
+			return new JInstruction(
+				"blez",
+				lexer,
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+
+@
+
+
+1.33
+log
+@*** empty log message ***
+@
+text
+@d238 20
+a257 8
+
+			return new RInstruction(
+				"add",
+				lexer,
+				new int[] {
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER });
+d269 19
+a287 9
+
+			return new RInstruction(
+				"mul",
+				lexer,
+				new int[] {
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER });
+
+@
+
+
+1.32
+log
+@Now the parser puts the original user program into the Line object
+@
+text
+@d302 5
+a306 1
+		} else if (currentToken.getValue().toLowerCase().equals("neg")) {
+@
+
+
+1.31
+log
+@*** empty log message ***
+@
+text
+@d95 4
+a98 1
+				lineList.appendLine(new Line(lineList.totalLines() + 1));
+d146 1
+d153 1
+d158 4
+a161 1
+							new Line(lineList.totalLines() + 1, label));
+d166 4
+a169 1
+							new Line(lineList.totalLines() + 1, directive));
+d172 4
+a175 1
+							new Line(lineList.totalLines() + 1, instruction));
+d196 1
+a196 1
+			
+d204 1
+a204 2
+			return new Directive(".text", lexer, new int[] {
+			});
+d208 1
+a208 2
+			return new Directive(".data", lexer, new int[] {
+			});
+d476 1
+a476 2
+			return new RInstruction("syscall", lexer, new int[] {
+			});
+@
+
+
+1.30
+log
+@lots of gooey updates
+@
+text
+@d182 1
+d188 1
+@
+
+
+1.29
+log
+@fixed parser
+@
+text
+@d250 1
+a250 1
+					Operand.TYPE_IMMEDIATE });
+@
+
+
+1.28
+log
+@*** empty log message ***
+@
+text
+@d253 1
+d263 24
+a286 1
+				return null;
+@
+
+
+1.27
+log
+@*** empty log message ***
+@
+text
+@d127 1
+a127 1
+				} else if(currentToken.getType() == Lexer.IDENTIFIER){
+d188 2
+a189 1
+			return new Directive(".text", lexer, new int[] {});
+d193 2
+a194 1
+			return new Directive(".data", lexer, new int[] {});
+d253 11
+a263 7
+			return new RInstruction(
+				"div",
+				lexer,
+				new int[] {
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER });
+d381 1
+a381 1
+		
+d385 2
+a386 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE } );
+				
+d388 1
+a388 1
+			
+d392 2
+a393 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE } );
+		
+d395 1
+a395 1
+			
+d399 2
+a400 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING } );
+				
+d402 1
+a402 1
+		
+d406 2
+a407 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING } );
+			
+d409 1
+a409 1
+		
+d413 2
+a414 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING } );
+			
+d416 1
+a416 1
+		
+d420 1
+a420 1
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER } );
+d437 3
+a439 5
+			
+			return new RInstruction(
+				"syscall",
+				lexer,
+				new int[] { } );
+@
+
+
+1.26
+log
+@*** empty log message ***
+@
+text
+@d127 1
+a127 1
+				} else if (currentToken.getType() == Lexer.IDENTIFIER) {
+d188 1
+a188 2
+			return new Directive(".text", lexer, new int[] {
+			});
+d192 1
+a192 2
+			return new Directive(".data", lexer, new int[] {
+			});
+d251 7
+a257 22
+			lexer.mark();
+			try {
+				return new IInstruction(
+					"div",
+					lexer,
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_IMMEDIATE });
+			} catch (ParseException pe) {
+				try {
+					lexer.rewind();
+					return new RInstruction(
+						"div",
+						lexer,
+						new int[] {
+							Operand.TYPE_REGISTER,
+							Operand.TYPE_REGISTER });
+				}catch(ParseException pe1){
+					throw new ParseException("Failed to parse instruction div", lineList.totalLines());
+				}
+			}
+d375 1
+a375 1
+
+d379 2
+a380 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE });
+
+d382 1
+a382 1
+
+d386 2
+a387 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE });
+
+d389 1
+a389 1
+
+d393 2
+a394 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING });
+
+d396 1
+a396 1
+
+d400 2
+a401 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING });
+
+d403 1
+a403 1
+
+d407 2
+a408 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING });
+
+d410 1
+a410 1
+
+d414 1
+a414 1
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER });
+d431 5
+a435 3
+
+			return new RInstruction("syscall", lexer, new int[] {
+			});
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@d127 1
+a127 1
+				} else if(currentToken.getType() == Lexer.IDENTIFIER){
+d188 2
+a189 1
+			return new Directive(".text", lexer, new int[] {});
+d193 2
+a194 1
+			return new Directive(".data", lexer, new int[] {});
+d253 22
+a274 7
+			return new RInstruction(
+				"div",
+				lexer,
+				new int[] {
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER,
+					Operand.TYPE_REGISTER });
+d392 1
+a392 1
+		
+d396 2
+a397 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE } );
+				
+d399 1
+a399 1
+			
+d403 2
+a404 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_IMMEDIATE } );
+		
+d406 1
+a406 1
+			
+d410 2
+a411 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING } );
+				
+d413 1
+a413 1
+		
+d417 2
+a418 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING } );
+			
+d420 1
+a420 1
+		
+d424 2
+a425 2
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING } );
+			
+d427 1
+a427 1
+		
+d431 1
+a431 1
+				new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER } );
+d448 3
+a450 5
+			
+			return new RInstruction(
+				"syscall",
+				lexer,
+				new int[] { } );
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d248 1
+a248 1
+					Operand.TYPE_REGISTER });
+d374 42
+d429 7
+@
+
+
+1.23
+log
+@fixed parser
+@
+text
+@d127 1
+a127 1
+				} else if (currentToken.getType() == Lexer.IDENTIFIER) {
+d188 1
+a188 2
+			return new Directive(".text", lexer, new int[] {
+			});
+d192 1
+a192 2
+			return new Directive(".data", lexer, new int[] {
+			});
+a387 25
+		} else if (currentToken.getValue().toLowerCase().equals("div")) {
+			lexer.mark();
+			try {
+				return new IInstruction(
+					"div",
+					lexer,
+					new int[] {
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_REGISTER,
+						Operand.TYPE_IMMEDIATE });
+			} catch (ParseException pe) {
+				try {
+					lexer.rewind();
+					return new IInstruction(
+						"div",
+						lexer,
+						new int[] {
+							Operand.TYPE_REGISTER,
+							Operand.TYPE_REGISTER });
+				} catch (ParseException pe2) {
+					throw new ParseException(
+						"Failed to parse instruction div",
+						lineList.totalLines() + 1);
+				}
+			}
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d127 1
+a127 1
+				} else if(currentToken.getType() == Lexer.IDENTIFIER){
+d188 2
+a189 1
+			return new Directive(".text", lexer, new int[] {});
+d193 2
+a194 1
+			return new Directive(".data", lexer, new int[] {});
+d390 25
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d80 12
+a96 4
+			} else if (currentToken.getType() == Lexer.DOT) {
+				lineList.appendLine(
+					new Line(lineList.totalLines() + 1, parseDirective(lexer)));
+				currentToken = lexer.nextToken();
+d100 1
+a104 1
+					Label label = parseLabel(lexer);
+d106 34
+a139 1
+					if (currentToken.getType() == Lexer.NEWLINE) {
+d141 10
+a150 1
+							new Line(lineList.totalLines() + 1, label));
+a151 1
+						Instruction inst = parseInstruction(lexer);
+d153 1
+a153 2
+							new Line(lineList.totalLines() + 1, label, inst));
+						currentToken = lexer.nextToken();
+d156 7
+a162 9
+					lexer.pushTokenBack();
+					lexer.pushTokenBack();
+					currentToken = lexer.currentToken();
+					lexer.nextToken();
+					lineList.appendLine(
+						new Line(
+							lineList.totalLines() + 1,
+							parseInstruction(lexer)));
+					currentToken = lexer.nextToken();
+d165 4
+d170 1
+a172 1
+
+d188 1
+a188 2
+			return new Directive(".text", lexer, new int[] {
+			});
+d192 1
+a192 2
+			return new Directive(".data", lexer, new int[] {
+			});
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d148 10
+a157 2
+			return new Directive(".globl", lexer, new int[] {
+			});
+@
+
+
+1.19
+log
+@Changed a method in parser. Just to make it look more OO.
+@
+text
+@d138 2
+a139 1
+			return new Directive(".text", lexer, new int[] {});
+d143 7
+a149 1
+			return new Directive(".data", lexer, new int[] {});
+@
+
+
+1.18
+log
+@Fixed typo in the parser file
+@
+text
+@a32 1
+	private StringBuffer program;
+d35 1
+d37 4
+d126 25
+a331 25
+	private Directive parseDirective(Lexer lexer)
+		throws ParseException, LexerException {
+
+		match(lexer, Lexer.DOT);
+
+		if (currentToken.getValue().toLowerCase().equals("asciiz")) {
+			return new Directive(
+				".asciiz",
+				lexer,
+				new int[] { Operand.TYPE_STRING });
+		} else if (currentToken.getValue().toLowerCase().equals("text")) {
+
+			return new Directive(".text", lexer, new int[] {});
+
+		} else if (currentToken.getValue().toLowerCase().equals("data")) {
+
+			return new Directive(".data", lexer, new int[] {});
+
+		} else {
+			throw new ParseException(
+				"Unsupported Directive '" + currentToken.getValue() + "'",
+				lexer.getLineNumber());
+		}
+	}
+
+d348 1
+a348 1
+	public LineList parseProgram(StringBuffer program)
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d200 1
+a200 1
+				"b",
+d210 1
+a210 1
+				"b",
+d217 1
+a217 1
+				"b",
+d227 1
+a227 1
+				"b",
+d234 1
+a234 1
+				"b",
+d244 1
+a244 1
+				"b",
+d251 1
+a251 1
+				"b",
+d261 1
+a261 1
+				"b",
+d268 1
+a268 1
+				"b",
+d278 1
+a278 1
+				"b",
+d285 1
+a285 1
+				"b",
+@
+
+
+1.16
+log
+@updated stuff
+@
+text
+@d230 1
+a230 1
+				
+d233 8
+a240 5
+					return new JInstruction(
+						"b",
+						lexer,
+						new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+						
+d243 5
+a247 5
+					return new JInstruction(
+						"b",
+						lexer,
+						new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+						
+d250 8
+a257 5
+					return new JInstruction(
+						"b",
+						lexer,
+						new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+						
+d260 5
+a264 5
+					return new JInstruction(
+						"b",
+						lexer,
+						new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+						
+d267 8
+a274 5
+					return new JInstruction(
+						"b",
+						lexer,
+						new int[] { Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+						
+d277 5
+a281 5
+					return new JInstruction(
+						"b",
+						lexer,
+						new int[] { Operand.TYPE_REGISTER, Operand.TYPE_LABEL });
+						
+d284 11
+a294 11
+					return new JInstruction(
+						"b",
+						lexer,
+						new int[] { Operand.TYPE_LABEL });
+						
+//		} else if (currentToken.getValue().toLowerCase().equals("jal")) {
+//
+//					return new JInstruction(
+//						"b",
+//						lexer,
+//						new int[] { Operand.TYPE_LABEL });
+@
+
+
+1.15
+log
+@Added instructions for the compiler lab.
+@
+text
+@d299 1
+a299 1
+		if (currentToken.getValue().toLowerCase().equals("ascii")) {
+d301 1
+a301 1
+				".ascii",
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d21 1
+a21 3
+		Parser parser =
+			new Parser(
+				new StringBuffer("\n\n\n"));
+a79 1
+				//currentToken = lexer.nextToken();
+a113 27
+				//				try {
+				//					lineList.appendLine(
+				//						new Line(
+				//							lexer.getLineNumber(),
+				//							parseInstruction(lexer)));
+				//					currentToken = lexer.nextToken();
+				//				} catch (ParseException e) {
+				//					try {
+				//						Label label = parseLabel(lexer);
+				//						if (currentToken.getType() == Lexer.NEWLINE) {
+				//							lineList.appendLine(
+				//								new Line(lexer.getLineNumber() - 1, label));
+				//						} else {
+				//							Instruction inst = parseInstruction(lexer);
+				//							lineList.appendLine(
+				//								new Line(lexer.getLineNumber(), label, inst));
+				//							currentToken = lexer.nextToken();
+				//						}
+				//					} catch (ParseException e2) {
+				//						throw new ParseException(
+				//							"Neither an instruction nor a label.\nError when trying to parse as Instruction:\n"
+				//								+ e.toString()
+				//								+ "\n\nError when trying to parse as Label:\n"
+				//								+ e2.toString(),
+				//							lexer.getLineNumber());
+				//					}
+				//				}
+d130 1
+d138 42
+a179 3
+			//		} else if(currentToken.getType()== Lexer.DOT) {
+			//			currentToken = lexer.nextToken();
+			//			return new Directive();
+d181 1
+d188 99
+a286 1
+					Operand.TYPE_ADDRESSING });
+a287 1
+			//none of the above, so test if it is a label.
+d305 1
+d307 1
+d309 1
+d311 1
+@
+
+
+1.13
+log
+@Fixed parser, should now pass all the addressing modes correctly
+@
+text
+@d23 1
+a23 1
+				new StringBuffer(".text \n stop: \n start: add $a1, $a2, $a3 \n add $a1, $a2, $a3 \n beq $a1, $a2, start+200\n beq $a1, $a2, start \n beq $a1, $a2, ($a5)\n beq $a1, $a2, -200($a5)\n beq $a1, $a2, start-200($a5)\n beq $a1, $a2, 200"));
+d82 1
+a82 1
+				currentToken = lexer.nextToken();
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d21 3
+a23 1
+		Parser parser = new Parser(new StringBuffer("causing error"));
+d25 2
+a26 2
+			LineList l = parser.parse();
+			System.out.println(l.toString());
+d37 5
+a41 1
+	public Parser() {}
+d50 1
+a72 1
+		LineList lineList = new LineList();
+d81 1
+a81 1
+				lineList.appendLine(new Line(lexer.getLineNumber() - 1));
+d85 2
+a86 1
+				lineList.appendLine(new Line(lexer.getLineNumber(), parseDirective(lexer)));
+d99 1
+a99 1
+							new Line(lexer.getLineNumber() - 1, label));
+d103 2
+a104 2
+							new Line(lexer.getLineNumber() - 1, label, inst));
+							currentToken = lexer.nextToken();
+d113 1
+a113 1
+							lexer.getLineNumber(),
+d146 1
+a146 1
+							instructionCount++;
+d182 1
+a182 1
+				lexer.getLineNumber());
+d190 1
+a190 1
+		
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d186 1
+a186 1
+				"ascii",
+d190 1
+a190 1
+			return new Directive("text", lexer, new int[] {});
+d192 1
+a192 1
+			return new Directive("data", lexer, new int[] {});
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d80 1
+a82 1
+
+d85 3
+d97 1
+d101 3
+a136 2
+				match(lexer, Lexer.NEWLINE);
+				instructionCount++;
+d138 2
+d183 1
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d78 3
+a80 1
+			} else if (currentToken.getType() == Lexer.DOT) {} else {
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d34 2
+a35 3
+	
+	public Parser(){
+	}
+d78 17
+a94 3
+			} else {
+System.out.println("Here now");
+				try {
+a99 20
+				} catch (ParseException e) {
+					try {
+						Label label = parseLabel(lexer);
+						if (currentToken.getType() == Lexer.NEWLINE) {
+							lineList.appendLine(
+								new Line(lexer.getLineNumber() - 1, label));
+						} else {
+							Instruction inst = parseInstruction(lexer);
+							lineList.appendLine(
+								new Line(lexer.getLineNumber(), label, inst));
+							currentToken = lexer.nextToken();
+						}
+					} catch (ParseException e2) {
+						throw new ParseException(
+							"Neither an instruction nor a label.\nError when trying to parse as Instruction:\n"
+								+ e.toString()
+								+ "\n\nError when trying to parse as Label:\n"
+								+ e2.toString(),
+							lexer.getLineNumber());
+					}
+d101 27
+a142 1
+		 System.out.println(currentToken.getValue());
+d144 7
+a150 1
+			return new RInstruction("add", lexer, 3);
+d155 7
+a161 2
+			System.out.println("I am here");
+			return new JInstruction("beq", lexer, new int[] {Operand.TYPE_REGISTER, Operand.TYPE_REGISTER, Operand.TYPE_ADDRESSING});
+d166 20
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d80 1
+d123 1
+d129 3
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d34 3
+d38 5
+d59 7
+a88 1
+						currentToken = lexer.nextToken();
+d124 4
+a127 4
+//		} else if(currentToken.getType()== Lexer.DOT) {
+//			currentToken = lexer.nextToken();
+//			return new Directive();
+		}else{
+d137 1
+a137 1
+		String temp = new String(currentToken.getValue());
+d139 2
+a140 7
+		if (currentToken.getType() == Lexer.COLON) {
+			return new Label(temp);
+		} else {
+			throw new ParseException(
+				"Miss colon after '" + temp + "'",
+				lexer.getLineNumber());
+		}
+d143 8
+@
+
+
+1.5
+log
+@Added parsing directives, unfinished
+@
+text
+@a13 1
+	private StringBuffer program;
+d15 14
+a28 1
+	private int instructionCount = 0;
+d32 3
+d39 12
+a100 31
+	public LineList parseProgram(StringBuffer program)
+		throws LexerException, ParseException {
+		this.program = program;
+		return parse();
+	}
+
+	private Label parseLabel(Lexer lexer)
+		throws LexerException, ParseException {
+		String temp = new String(currentToken.getValue());
+		match(lexer, Lexer.IDENTIFIER);
+		if (currentToken.getType() == Lexer.COLON) {
+			return new Label(temp);
+		} else {
+			throw new ParseException(
+				"Miss colon after '" + temp + "'",
+				lexer.getLineNumber());
+		}
+	}
+
+	private void match(Lexer lexer, int expected)
+		throws ParseException, LexerException {
+		if (currentToken.getType() == expected) {
+			currentToken = lexer.nextToken();
+		} else {
+			throw new ParseException(
+				currentToken,
+				expected,
+				lexer.getLineNumber());
+		}
+	}
+
+d121 10
+a130 12
+	/**
+	 * Dummy method for debugging.
+	 * 
+	 * @@param args arguments
+	 */
+	public static void main(String[] args) {
+		Parser parser = new Parser(new StringBuffer("causing error"));
+		try {
+			LineList l = parser.parse();
+			System.out.println(l.toString());
+		} catch (Exception e) {
+			System.out.println(e);
+d132 6
+@
+
+
+1.4
+log
+@Dummy main() method added. This is to help eclipse to test run and debug it.
+@
+text
+@d114 4
+a117 1
+		} else {
+@
+
+
+1.3
+log
+@Parsing labels is now done.
+@
+text
+@d127 9
+a135 9
+	//	public static void main(String[] args) {
+	//		Parser parser = new Parser(new StringBuffer("causing error"));
+	//		try {
+	//			LineList l = parser.parse();
+	//			System.out.println(l.toString());
+	//		} catch (Exception e) {
+	//			System.out.println(e);
+	//		}
+	//	}
+@
+
+
+1.2
+log
+@Now working with empty lines.
+@
+text
+@a32 1
+				//match(lexer, Lexer.NEWLINE);
+d36 1
+d45 2
+a46 9
+					Label label = parseLabel(lexer);
+					currentToken = lexer.nextToken();
+					if (currentToken.getType() == Lexer.NEWLINE) {
+						lineList.appendLine(
+							new Line(lexer.getLineNumber(), label));
+					} else {
+						Instruction inst = parseInstruction(lexer);
+						lineList.appendLine(
+							new Line(lexer.getLineNumber(), label, inst));
+d48 16
+d87 3
+a89 1
+			throw new ParseException("Miss colon", lexer.getLineNumber());
+d117 1
+a117 1
+				"Unsupported Instruction",
+d122 14
+a135 11
+	public static void main(String[] args) {
+		Parser parser =
+			new Parser(
+				new StringBuffer("add $1, $2, $3\n \n \n\n\n\n\n\n\n\n\n\nadd $3, $4, $5"));
+		try {
+			LineList l = parser.parse();
+			System.out.println(l.toString());
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+ * Parses the users file. Invokes the <code>MIPSLexer</code> automatically.
+a15 2
+	private LineList lineList = new LineList();
+
+d25 2
+d33 4
+a36 1
+				match(lexer, Lexer.NEWLINE);
+d108 12
+@
+

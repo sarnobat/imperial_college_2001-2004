@@ -1,0 +1,217 @@
+/* This file contains a debugger.
+ * Debbuging of user programs is started by the command 'debug fn'  
+ * which results in a message to this driver with type "START"
+ */
+
+#include "kernel.h"
+#include <stdlib.h>
+#include <signal.h>
+#include <minix/callnr.h>
+#include <minix/com.h>
+#include "proc.h"
+ 
+#if ENABLE_DEBUGGING
+
+#define BREAKPOINT_LENGTH 1	/* # of bytes for a breakpoint */
+#define PROC_LENGTH sizeof (struct proc)
+
+PRIVATE char break_code = 0xCC; /* this code causes an interrupt */
+PRIVATE char store_code;	/* to save the code that was originally
+				 * in the byte */
+
+typedef struct {
+	int proc_nr;
+	int defined;
+	char *address;
+	phys_bytes vir;
+	struct proc *rp;
+} users;
+
+PRIVATE users parent, child;
+
+FORWARD _PROTOTYPE( void do_cancel, (message *cancel_m)			);
+FORWARD _PROTOTYPE( void do_start, (message *instr_m)			);
+FORWARD _PROTOTYPE( void do_interrupt, (void)				);
+FORWARD _PROTOTYPE( void do_mourn, (message *mourn_m)			);
+FORWARD _PROTOTYPE( void do_evaluate, (message *instr_m)		);
+
+FORWARD _PROTOTYPE( void do_resume, (message *instr_m)			);
+FORWARD _PROTOTYPE( void do_step, (message *instr_m)			);
+FORWARD _PROTOTYPE( void do_breakpnt, (message *instr_m)		);
+FORWARD _PROTOTYPE( void do_procadm, (message *instr_m)			);
+
+FORWARD _PROTOTYPE( void breakpoint_int, (void)				); 
+FORWARD _PROTOTYPE( void step_int, (void)				);
+
+FORWARD _PROTOTYPE( void init_debug, (void)				); 
+
+/*==========================================================================*
+ *				 debug_task				    *
+ *==========================================================================*/
+PUBLIC void debug_task()
+{
+/* Main routine of the debugger. Here messages are received and handled. 
+ * CANCEL	The termination of either the process to be debugged or 
+ *		the parent.
+ * CHILD_DIED	MM informs that the child has terminated.
+ * DEBUG_START	MM informs the the child has done an exec. 
+ * HARD_INT	Hardware received an interrupt.
+ * INSTRUCTION	The parent sent a message. 
+ */
+
+  init_debug();
+
+  while(TRUE) {
+	receive(ANY, &debug_m);
+	switch(debug_m.m_type){
+	case CANCEL:		do_cancel(&debug_m);	break;
+	case CHILD_DIED:	do_mourn(&debug_m);	break;
+	case DEBUG_START:	do_start(&debug_m);	break;
+	case HARD_INT:		do_interrupt();		break;
+	case INSTRUCTION:	do_evaluate(&debug_m);	break;
+	default: 
+		if (debug_m.m_source == FS_PROC_NR) 
+			fs_reply (TASK_REPLY, debug_m.PROC_NR, ENOSYS);
+		else mm_reply (ENOSYS);
+} }	}
+
+/*==========================================================================*
+ *				 do_cancel				    *
+ *==========================================================================*/
+PRIVATE void do_cancel(message *cancel_m)
+{
+/* Deal with the arrival of a CANCEL message */
+
+}
+
+/*==========================================================================*
+ *				 do_start				    *
+ *==========================================================================*/
+PRIVATE void do_start (message *start_m)
+{
+/* By use of the system call debug a request has been made to debug a
+ * program, with the effect that a bit was raised in the flags.
+ * This program then called exec; this was caught by MM, which sent a 
+ * message to DEBUGGER.
+ * If the parent is already known to the system, send the child's process
+ * descriptor over; otherwise, do nothing now.
+ * Reply to caller (MM) that everything went well. 
+ */
+
+} 
+
+/*==========================================================================*
+ *				 do_mourn				    *
+ *==========================================================================*/
+PRIVATE void do_mourn (message *mourn_m)
+{
+/* MM has reported the death of the child. Wake up the parent. */
+
+}
+
+/*==========================================================================*
+ *				do_evaluate				    *
+ *==========================================================================*/
+PRIVATE void do_evaluate (message *instr_m)
+{
+/* Evaluate the INSTRUCTION that arrived from the parent */
+
+}
+
+/*==========================================================================*
+ *				do_resume				    *
+ *==========================================================================*/
+PRIVATE void do_resume (message *resume_m)	/* resume execution */
+{
+/* Let the child run to completion; the parent will terminate as well
+   because it calls wait_pid (it is supposed to) */
+
+}
+
+/*==========================================================================*
+ *				   do_step				    *
+ *==========================================================================*/
+PRIVATE void do_step (message *step_m) 
+{ 
+/* set trace bit */
+
+}
+
+/*==========================================================================*
+ *				 do_breakpnt				    *
+ *==========================================================================*/
+PRIVATE void do_breakpnt (message *break_m)	/* set a breakpoint */
+{
+/* Place a breakpoint at the break_m->POSITION in the user space */
+
+}
+
+/*==========================================================================*
+ *				do_procadm				    *
+ *==========================================================================*/
+PRIVATE void do_procadm (message *proc_m)
+{
+/* The parent makes contact for the first time; if the child is known, copy 
+ * the process administration of the child to the parent */
+
+}
+
+/*==========================================================================*
+ *				do_interrupt				    *
+ *==========================================================================*/
+PRIVATE void do_interrupt()
+{
+/* An interrupt has occurred. Figure out what has happened, and act
+ * accordingly. */
+
+}
+
+/*==========================================================================*
+ *				breakpoint_int				    *
+ *==========================================================================*/
+PRIVATE void breakpoint_int(void)
+{
+/* The process to be debugged has reached an breakpoint. Restore the 
+ * original code and reset the program counter. Inform the parent. */
+
+}
+
+/*==========================================================================*
+ *				 step_int				    *
+ *==========================================================================*/
+PRIVATE void step_int(void)
+{
+/* The process to be debugged has performed an assembler instruction.
+ * Inform the parent. */
+
+}
+
+/*==========================================================================*
+ *				breakpoint				    *
+ *==========================================================================*/
+PUBLIC int breakpoint()
+{
+/* The program that is debugged has reached an breakpoint. Stop the 
+ * execution of the process and inform the debugger */
+
+}
+
+/*==========================================================================*
+ *				  single_step				    *
+ *==========================================================================*/
+PUBLIC int single_step()
+{
+/* The program that is debugged has reached a step interrupt. 
+ * Stop the execution of the process and inform the debugger */
+
+}
+
+/*==========================================================================*
+ *				  init_debug				    *
+ *==========================================================================*/
+PRIVATE void init_debug()
+{
+
+}
+
+#endif /* ENABLE_DEBUGGING */

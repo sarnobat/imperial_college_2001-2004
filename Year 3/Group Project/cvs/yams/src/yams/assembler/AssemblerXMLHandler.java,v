@@ -1,0 +1,856 @@
+head	1.22;
+access;
+symbols
+	yams-final-19-12-03:1.22
+	yams-release2-17-12-03:1.18
+	yams-release-17-12-03:1.18;
+locks; strict;
+comment	@# @;
+
+
+1.22
+date	2003.12.19.14.20.25;	author qq01;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2003.12.19.14.09.00;	author jkm01;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2003.12.19.13.25.30;	author jkm01;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2003.12.19.12.07.00;	author jkm01;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2003.12.14.23.35.08;	author jkm01;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2003.12.12.16.11.50;	author jkm01;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.12.11.18.26.16;	author jkm01;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.12.11.16.40.21;	author jkm01;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.12.11.16.15.20;	author jkm01;	state dead;
+branches;
+next	1.13;
+
+1.13
+date	2003.12.10.14.56.03;	author jkm01;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.05.19.37.21;	author jkm01;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.04.18.45.32;	author jkm01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.03.12.31.26;	author jkm01;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.02.14.44.40;	author jkm01;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.02.14.26.48;	author jkm01;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.02.14.21.22;	author jkm01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.02.13.41.14;	author jkm01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.27.17.05.14;	author jkm01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.27.12.04.42;	author jkm01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.11.13.46.01;	author jkm01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.11.09.40.39;	author jkm01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.51;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.22
+log
+@updated javadoc
+@
+text
+@/*
+ * Created on 03-Dec-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+package yams.assembler;
+
+import yams.processor.*;
+
+import java.io.IOException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+
+/**
+ * This component is designed to read from the “Instruction_file.xml? instruction repository, 
+ * by parsing through an internal representation of the file at runtime. It searches for 
+ * expected tags and builds up a table of data on the instructions stored within the repository 
+ * (table is InstructionTable object).
+ * 
+ * @@author jkm01
+ */
+public class AssemblerXMLHandler {
+
+	private static String INSTRUCTIONS_TAG = "Instructions";
+	private static String INSTRUCTION_TAG = "Instruction";
+	private static String INSTRUCTION_TYPE_TAG = "Type";
+	private static String CORE_TAG = "CoreMachineCode";
+	private static String NAME_TAG = "Name";
+	private static String MACHINE_CODE_REPRESENTATION_TAG = "MachineCodeRepresentations";	
+	private static String OPERANDS_TYPE_TAG = "Type";
+	private static String MACHINE_CODE_TAG = "MachineCode";
+	private static String OPERANDS_NUMBER_TAG = "Number";
+	private static String OPERANDS_CODING_TAG = "OperandsCoding";
+	private static String OPERANDS_ENCODE_BITS_TAG = "EncodeBits";
+	private static String OPERANDS_OUTPUT_BITS_TAG = "OutputBits";
+	private static String OPERANDS_MASK_TAG = "Mask";
+	private static String OPERANDS_OFFSET_MODE_TAG = "OffSetMode";
+	private static String OPERANDS_TAG = "Operands";
+	private static String OPERAND_TAG = "Op";
+	private static String REPRESENTATION_TAG = "Representation";
+
+
+	
+	/**
+	 * 
+	 * This public method is called at creation by the Assembler to begin a single parse of the XML file and create the
+	 * Instruction Table and its required substructures to represent all of the details in the "Instruction_file.xml"
+	 * <BR><BR>
+	 * It takes an XML File Path to the Instruction Repository, an empty InstructionTable and a reference to the Statistics Manager
+	 * so that this can also be updated with the information retrieved from the file.
+	 * <BR><BR>
+	 * This method uses a try / catch statement to DOM parse the XML file and then call a series of handlers provided
+	 * in the other private methods within the same class.
+	 * <BR><BR>
+	 * @@param xmlFilePath
+	 * @@param instructionTable
+	 * @@param sm
+	 */
+	public static void LoadTableFromXML(String xmlFilePath, InstructionTable instructionTable, StatisticsManagerInterface sm)
+	{
+		// take the xml file path and parse through the xml loading appropriate data into respective tables
+		
+		DocumentBuilderFactory factory =
+			DocumentBuilderFactory.newInstance();
+		//factory.setValidating(true);
+		//factory.setNamespaceAware(true);
+		try {
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			yams.util.FileReader fr = new yams.util.FileReader();
+			Document document = builder.parse(fr.readFile(xmlFilePath));
+
+			NodeList children = document.getChildNodes();
+
+			for (int i = 0; i <children.getLength(); i++)
+			{
+				Node currentNode =children.item(i);
+//				System.out.println(i+" "+currentNode.getNodeName() + " " + currentNode.getNodeType() + " " +currentNode.getNodeValue());
+				if ((currentNode.getNodeName()).equals(INSTRUCTIONS_TAG))
+				{
+					handleInstructions(instructionTable, sm, currentNode);
+				}
+			}
+			instructionTable.printTable();
+
+		} catch (SAXException sxe) {
+			// Error generated during parsing)
+			Exception  x = sxe;
+			if (sxe.getException() != null)
+			x = sxe.getException();
+			x.printStackTrace();
+
+		} catch (ParserConfigurationException pce) {
+			// Parser with specified options can't be built
+			pce.printStackTrace();
+
+		} catch (IOException ioe) {
+			// I/O error
+			ioe.printStackTrace();
+		} catch (AssemblerException ae) {
+			ae.printStackTrace();
+		}	
+		
+	}
+
+	/**
+	 * This handler iterates through the current node level looking for Instruction tags, and calling an Instruction handler when it finds them.
+	 * 
+	 * @@param instructionTable
+	 * @@param sm
+	 * @@param currentNode	The current node that has been navigated to so far.
+	 * @@throws AssemblerException
+	 */
+	private static void handleInstructions(InstructionTable instructionTable, StatisticsManagerInterface sm, Node currentNode) throws AssemblerException
+	{
+//		System.out.println("Instructions");
+		NodeList instructionNodes = currentNode.getChildNodes();
+		for (int i = 0; i<instructionNodes.getLength(); i++)
+		{
+			if (instructionNodes.item(i).getNodeName().equals(INSTRUCTION_TAG))
+				{
+					InstructionTableRow currentRow = new InstructionTableRow();
+					if (handleInstruction(instructionTable, sm, instructionNodes.item(i), currentRow))
+					{
+						instructionTable.addInstruction(currentRow.getName(),currentRow);
+					}
+				}
+		}
+	}
+
+	/**
+	 * This handler iterates through the current node level looking for MachineCodeRepresentation tags, and calling an Representations handler  to deal with the many representations when it finds them.
+
+	 * @@param instructionTable
+	 * @@param sm
+	 * @@param currentNode The current node level being examined
+	 * @@param currentRow The current row in the InstructionTable entry that can have Representations added to
+	 * @@return true if the current instruction tag contains a name for the instruction
+	 * @@throws AssemblerException
+	 */
+	private static boolean handleInstruction(InstructionTable instructionTable, StatisticsManagerInterface sm, Node currentNode, InstructionTableRow currentRow) throws AssemblerException
+	{
+//		System.out.println("Instruction");
+		NodeList instructionNodes = currentNode.getChildNodes();
+		String instructionName =getChildValue(NAME_TAG,currentNode);
+		if (instructionName==null) return false;
+		String instructionType =getChildValue(INSTRUCTION_TYPE_TAG,currentNode);		
+		String coreCode =getChildValue(CORE_TAG,currentNode);
+		currentRow.setInstructionName(instructionName);
+		currentRow.setInstructionType(instructionType);
+		currentRow.setCoreMachineCode(coreCode);
+		
+//		System.out.println(instructionName);
+		sm.addInstruction(instructionName.toUpperCase());
+
+		for (int i = 0; i<instructionNodes.getLength(); i++)
+		{
+			if (instructionNodes.item(i).getNodeName().equals(MACHINE_CODE_REPRESENTATION_TAG))
+				{
+					handleMachineCodeRepresentation(instructionTable,instructionNodes.item(i),currentRow);
+				}
+		}
+		return true;
+	}
+	
+	/**
+	 * 
+	 * Handler to search for Representation tags at the current node level, and pass on functionality to another handler.
+	 * 
+	 * @@param instructionTable
+	 * @@param currentNode
+	 * @@param currentRow
+	 */
+	private static void handleMachineCodeRepresentation(InstructionTable instructionTable, Node currentNode, InstructionTableRow currentRow)
+	{
+//		System.out.println("MachineCodeRepresentations");
+
+		NodeList instructionNodes = currentNode.getChildNodes();
+		for (int i = 0; i<instructionNodes.getLength(); i++)
+		{
+			if (instructionNodes.item(i).getNodeName().equals(REPRESENTATION_TAG))
+				{
+					Representation currentRepresentation = new Representation();
+					handleRepresentation(instructionTable,instructionNodes.item(i),currentRepresentation);
+					currentRow.addRepresentation(currentRepresentation.getEncoding(),currentRepresentation);
+				}
+		}
+	}
+
+	/**
+	 * Handler to search for Operands tags at the current node level, and pass on functionality to another handler.
+	 * @@param instructionTable
+	 * @@param currentNode
+	 * @@param currentRepresentation The current representation within the InstructionTable for this current instruction
+	 */
+	private static void handleRepresentation(InstructionTable instructionTable, Node currentNode, Representation currentRepresentation)
+	{
+//		System.out.println("Representation");
+
+		NodeList instructionNodes = currentNode.getChildNodes();
+		String operandsCoding =getChildValue(OPERANDS_CODING_TAG,currentNode);
+		String machineCode=getChildValue(MACHINE_CODE_TAG,currentNode);
+		currentRepresentation.setOperandsEncoding(operandsCoding);
+		currentRepresentation.setMachineCode(machineCode);
+		for (int i = 0; i<instructionNodes.getLength(); i++)
+		{
+			if (instructionNodes.item(i).getNodeName().equals(OPERANDS_TAG))
+				{
+					handleOperands(instructionTable,instructionNodes.item(i),currentRepresentation);
+				}
+		}
+	}
+	
+	/**
+	 * Handler to search for Operand tags at the current node level, and fill in OperandDetails objects with the correct data from the subtags below it, before adding this to the
+	 * InstructionTable for the correct representation.
+
+	 * @@param instructionTable
+	 * @@param currentNode
+	 * @@param currentRepresentation
+	 */
+	private static void handleOperands(InstructionTable instructionTable, Node currentNode, Representation currentRepresentation)
+	{
+//		System.out.println("Operands");
+
+		NodeList instructionNodes = currentNode.getChildNodes();
+		for (int i = 0; i<instructionNodes.getLength(); i++)
+		{
+			if (instructionNodes.item(i).getNodeName().equals(OPERAND_TAG))
+				{	
+					
+//					System.out.println("Operand");					
+
+					int number = Integer.parseInt(getChildValue(OPERANDS_NUMBER_TAG,instructionNodes.item(i)));
+//					System.out.println("Number"+number);
+					String type =getChildValue(OPERANDS_TYPE_TAG,instructionNodes.item(i));
+//					System.out.println("1"+type);
+					String mask =getChildValue(OPERANDS_MASK_TAG,instructionNodes.item(i));
+//					System.out.println("2"+mask);
+					int encode =Integer.parseInt(getChildValue(OPERANDS_ENCODE_BITS_TAG,instructionNodes.item(i)));
+//					System.out.println("3"+encode);
+					int output =Integer.parseInt(getChildValue(OPERANDS_OUTPUT_BITS_TAG,instructionNodes.item(i)));
+//					System.out.println("4"+output);
+					int offset =Integer.parseInt(getChildValue(OPERANDS_OFFSET_MODE_TAG,instructionNodes.item(i)));
+//					System.out.println("5"+offset);
+					OperandDetails currentOperand = new OperandDetails(number, type,mask,encode,output,offset);
+
+					currentRepresentation.addOperand(currentOperand.getNumber(),currentOperand);
+				}
+		}
+	}
+
+	/**
+	 * Given a tag name and a current node, this method will retrieve the VALUE contained within the XML TAG NAME and return it to the user.
+	 * <BR><BR>
+	 * The TAG NAME must be a chile node of the current node, else no return value will be given.
+	 * 
+	 * @@param name	Required Tag Name
+	 * @@param node	Current Node
+	 * @@return A string returned with the value of the requested tag under the given node
+	 */
+	private static String getChildValue(String name, Node node)
+	{
+		try
+		{
+
+			NodeList childNodes = node.getChildNodes();
+			int i = 0;
+			while (i<childNodes.getLength() && !childNodes.item(i).getNodeName().equals(name))
+			{
+				i++;
+			}
+			if (i<childNodes.getLength())
+			{
+				return childNodes.item(i).getFirstChild().getNodeValue();
+			}
+			else
+			{
+				return null;
+			}
+		}
+		catch (NullPointerException e) {return null;}
+	}
+}
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d24 1
+a24 3
+ * @@author jkm01
+ *
+ * This component is designed to read from the “Instruction_file.xml” instruction repository, 
+d28 2
+a29 1
+ *
+a30 1
+
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d148 1
+a148 1
+	 * @@return
+d270 1
+a270 1
+	 * @@return
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@d59 1
+a59 1
+	 * 
+d62 1
+a62 1
+	 * 
+d65 1
+a65 1
+	 * 
+d265 1
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d26 5
+a30 2
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+d55 15
+d116 8
+d141 10
+d176 8
+d200 6
+d224 8
+d263 8
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d107 4
+a110 2
+					handleInstruction(instructionTable, sm, instructionNodes.item(i), currentRow);
+					instructionTable.addInstruction(currentRow.getName(),currentRow);
+d115 1
+a115 1
+	private static void handleInstruction(InstructionTable instructionTable, StatisticsManagerInterface sm, Node currentNode, InstructionTableRow currentRow) throws AssemblerException
+d120 1
+d137 1
+d207 1
+a207 4
+		
+		NodeList childNodes = node.getChildNodes();
+		int i = 0;
+		while (i<childNodes.getLength() && !childNodes.item(i).getNodeName().equals(name))
+d209 15
+a223 9
+			i++;
+		}
+		if (i<childNodes.getLength())
+		{
+			return childNodes.item(i).getFirstChild().getNodeValue();
+		}
+		else
+		{
+			return null;
+d225 1
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d40 1
+d118 1
+a118 1
+		String instructionType =getChildValue(INSTRUCTION_TYPE_TAG,currentNode);
+d179 5
+a183 1
+//					System.out.println("Operand");
+d194 3
+a196 2
+					OperandDetails currentOperand = new OperandDetails(type,mask,encode,output,offset);
+					currentRepresentation.addOperand(currentOperand.getType(),currentOperand);
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@a63 10
+//			Document document = builder.parse( new File(xmlFilePath) );
+
+			// document now contains the xml file
+
+//			Node rootNode = document.getFirstChild();
+
+			//	System.out.println(MIPS_root_Node.getNodeType());
+			//	System.out.println(MIPS_root_Node.getNodeName());
+
+//			NodeList children = rootNode.getChildNodes();
+a65 2
+			
+
+a69 1
+
+a74 1
+
+a113 1
+		// take the instruction node from the xml and fill the required information into the tables
+a114 2
+
+
+a138 1
+		// take the instruction node from the xml and fill the required information into the tables
+a152 1
+		// take the instruction node from the xml and fill the required information into the tables
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d2 1
+a2 1
+ * Created on 04-Nov-2003
+a6 8
+
+/**
+ * @@author jkm01
+ *
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+
+d10 1
+d23 7
+d34 2
+d37 13
+a49 2
+	private static String MACHINE_CODE_REPRESENTATION_TAG = "MachineCodeRepresentation";	
+	private static String TYPE_TAG = "AddressingType";
+a60 1
+//			Document document = builder.parse( new File(xmlFilePath) );
+d64 2
+d76 2
+d89 2
+d113 1
+d119 3
+a121 1
+					handleInstruction(instructionTable, sm, instructionNodes.item(i));
+d126 1
+a126 1
+	private static void handleInstruction(InstructionTable instructionTable, StatisticsManagerInterface sm, Node currentNode) throws AssemblerException
+d129 4
+d134 7
+a140 6
+		String machineCode = getChildValue(MACHINE_CODE_REPRESENTATION_TAG,currentNode);
+//		if (machineCode.length()%32!=0)
+//			{
+//				throw new AssemblerException("Error, the XML is badly formatted for "+instructionName);
+//			}
+		instructionTable.add(instructionName,machineCode,Integer.parseInt(getChildValue(TYPE_TAG,currentNode)));
+d142 70
+d216 1
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@a17 3
+import yams.util.*;
+
+import java.io.File;
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d18 1
+d51 3
+a53 1
+			Document document = builder.parse( new File(xmlFilePath) );
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d65 1
+a65 1
+				System.out.println(i+" "+currentNode.getNodeName() + " " + currentNode.getNodeType() + " " +currentNode.getNodeValue());
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d38 1
+a38 1
+	private static String TYPE_TAG = "Type";
+d54 1
+a54 1
+			Node rootNode = document.getFirstChild();
+d59 2
+a60 1
+			NodeList children = rootNode.getChildNodes();
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d109 4
+a112 4
+		if (machineCode.length()%32!=0)
+			{
+				throw new AssemblerException("Error, the XML is badly formatted for "+instructionName);
+			}
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d107 3
+a109 1
+		if (getChildValue(MACHINE_CODE_REPRESENTATION_TAG,currentNode).length()%32!=0)
+d111 1
+a111 1
+				throw new AssemblerException("Error, the XML is badly formatted for "+getChildValue(NAME_TAG,currentNode));
+d113 2
+a114 1
+		instructionTable.add(getChildValue(NAME_TAG,currentNode),getChildValue(MACHINE_CODE_REPRESENTATION_TAG,currentNode),		Integer.parseInt(getChildValue(TYPE_TAG,currentNode)));
+@
+
+
+1.6
+log
+@edited pseudoinstructions and changed to handle multiple operand occurrances
+@
+text
+@d17 2
+d40 1
+a40 1
+	public static void LoadTableFromXML(String xmlFilePath, InstructionTable instructionTable) throws AssemblerException
+d68 1
+a68 1
+					handleInstructions(instructionTable, currentNode);
+d86 2
+d89 1
+d92 1
+a92 1
+	private static void handleInstructions(InstructionTable instructionTable, Node currentNode) throws AssemblerException
+d99 1
+a99 1
+					handleInstruction(instructionTable, instructionNodes.item(i));
+d104 1
+a104 1
+	private static void handleInstruction(InstructionTable instructionTable, Node currentNode) throws AssemblerException
+@
+
+
+1.5
+log
+@changed instruction file to only contain information on instructions
+@
+text
+@d38 1
+a38 1
+	public static void LoadTableFromXML(String xmlFilePath, InstructionTable instructionTable)
+d87 1
+a87 1
+	private static void handleInstructions(InstructionTable instructionTable, Node currentNode)
+d99 1
+a99 1
+	private static void handleInstruction(InstructionTable instructionTable, Node currentNode)
+d102 4
+@
+
+
+1.4
+log
+@revised method for assembling instructions
+@
+text
+@a33 4
+	private static String PSEUDOINSTRUCTIONS_TAG = "PseudoInstructions";
+	private static String PSEUDOINSTRUCTION_TAG = "PseudoInstruction";
+	private static String SPECIFIC_INSTRUCTIONS_TAG = "SpecificInstructions";
+	private static String SPECIFIC_INSTRUCTION_TAG = "SpecificInstruction";
+d38 1
+a38 1
+	public static void LoadTableFromXML(String xmlFilePath, InstructionTable instructionTable, InstructionTable pseudoInstructionTable, InstructionTable specialInstructionTable)
+a67 8
+				else if ((currentNode.getNodeName()).equals(PSEUDOINSTRUCTIONS_TAG))
+				{
+					handleInstructions(pseudoInstructionTable, currentNode);
+				}
+				else if ((currentNode.getNodeName()).equals(SPECIFIC_INSTRUCTIONS_TAG))
+				{
+					handleInstructions(pseudoInstructionTable, currentNode);
+				}
+a92 8
+				{
+					handleInstruction(instructionTable, instructionNodes.item(i));
+				}
+			else if (instructionNodes.item(i).getNodeName().equals(PSEUDOINSTRUCTION_TAG))
+				{
+					handleInstruction(instructionTable, instructionNodes.item(i));
+				}
+			else if (instructionNodes.item(i).getNodeName().equals(SPECIFIC_INSTRUCTION_TAG))
+@
+
+
+1.3
+log
+@Restructured the assembler jkm
+@
+text
+@d40 1
+d122 1
+a122 1
+		instructionTable.add(getChildValue(NAME_TAG,currentNode),getChildValue(MACHINE_CODE_REPRESENTATION_TAG,currentNode));
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d36 2
+d41 1
+a41 1
+	public static void LoadTableFromXML(String xmlFilePath, InstructionTable instructionTable, InstructionTable pseudoInstructionTable)
+d75 4
+d108 4
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d34 2
+d37 1
+a37 2
+	private static String MACHINE_CODE_REPRESENTATION_TAG = "MachineCodeRepresentation";
+	private static String TYPE_TAG = "Type";	
+d39 1
+a39 2
+	
+	public static void LoadTableFromXML(String xmlFilePath, InstructionTable instrTable)
+a42 3
+		InstructionTable instructionTable = instrTable;
+
+
+d69 4
+d101 4
+d111 1
+a111 1
+		instructionTable.add(getChildValue(NAME_TAG,currentNode),getChildValue(MACHINE_CODE_REPRESENTATION_TAG,currentNode),getChildValue(TYPE_TAG,currentNode));
+a130 2
+
+	
+@
+

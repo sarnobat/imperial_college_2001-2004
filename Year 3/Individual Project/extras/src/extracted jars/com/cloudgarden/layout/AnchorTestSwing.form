@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form style="Swing" ide="eclipse" builder="jigloo" version="1.0.0">
+	<Component class="javax.swing.JPanel" name="AnchorTestSwing">
+		<Constraints>
+			<LayoutConstraint/>
+		</Constraints>
+		<Layout class="Absolute">
+			<Property name="axis" type="int" value="0"/>
+		</Layout>
+		<Events>
+		</Events>
+		<Properties>
+			<Property name="preferredSize" type="Dimension">
+				<Dimension value="[329, 223]"/>
+			</Property>
+			<Property name="size" type="Dimension">
+				<Dimension value="[329, 223]"/>
+			</Property>
+		</Properties>
+		<SubComponents>
+			<Component class="javax.swing.JButton" name="button1">
+				<Constraints>
+					<Constraint tabTitle="button1"/>
+					<LayoutConstraint/>
+				</Constraints>
+				<Layout class="Overlay">
+				</Layout>
+				<Events>
+				</Events>
+				<Properties>
+					<Property name="text" type="String" value="button1"/>
+					<Property name="visible" type="boolean" value="true"/>
+					<Property name="preferredSize" type="Dimension">
+						<Dimension value="[96, 50]"/>
+					</Property>
+					<Property name="size" type="Dimension">
+						<Dimension value="[96, 50]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[23, 23, 96, 50]"/>
+					</Property>
+				</Properties>
+			</Component>
+			<Component class="javax.swing.JButton" name="button2">
+				<Constraints>
+					<Constraint tabTitle="button2"/>
+					<LayoutConstraint/>
+				</Constraints>
+				<Layout class="Overlay">
+				</Layout>
+				<Events>
+				</Events>
+				<Properties>
+					<Property name="text" type="String" value="button2"/>
+					<Property name="visible" type="boolean" value="true"/>
+					<Property name="preferredSize" type="Dimension">
+						<Dimension value="[78, 47]"/>
+					</Property>
+					<Property name="size" type="Dimension">
+						<Dimension value="[78, 47]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[174, 38, 78, 47]"/>
+					</Property>
+				</Properties>
+			</Component>
+			<Component class="javax.swing.JButton" name="button3">
+				<Constraints>
+					<Constraint tabTitle="button3"/>
+					<LayoutConstraint/>
+				</Constraints>
+				<Layout class="Overlay">
+				</Layout>
+				<Events>
+				</Events>
+				<Properties>
+					<Property name="text" type="String" value="button3"/>
+					<Property name="visible" type="boolean" value="true"/>
+					<Property name="preferredSize" type="Dimension">
+						<Dimension value="[84, 48]"/>
+					</Property>
+					<Property name="size" type="Dimension">
+						<Dimension value="[84, 48]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[38, 105, 84, 48]"/>
+					</Property>
+				</Properties>
+			</Component>
+			<Component class="javax.swing.JButton" name="button4">
+				<Constraints>
+					<Constraint tabTitle="button4"/>
+					<LayoutConstraint/>
+				</Constraints>
+				<Layout class="Overlay">
+				</Layout>
+				<Events>
+				</Events>
+				<Properties>
+					<Property name="text" type="String" value="button4"/>
+					<Property name="visible" type="boolean" value="true"/>
+					<Property name="preferredSize" type="Dimension">
+						<Dimension value="[85, 53]"/>
+					</Property>
+					<Property name="size" type="Dimension">
+						<Dimension value="[85, 53]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[179, 117, 85, 53]"/>
+					</Property>
+				</Properties>
+			</Component>
+		</SubComponents>
+	</Component>
+</Form>

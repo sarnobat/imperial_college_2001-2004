@@ -1,0 +1,43 @@
+MINUTES - PROJECT MEETING
+=============================================
+Date: 17/10/03
+Time: 0900
+Location: Blueshift Lab
+
+Present: Adam, James, Ben, Qian, Sridar, Simon
+----------------------------------------------------------
+
+Summary of topics discussed:
+
+- The GUI should be better than the current SPIM and be user friendly
+
+- The use of a parser generator will be made - ANTLR
+
+- Instruction should be stored seperately in the system in an instruction handler.
+
+- The CPU should be in a seperate module in the system, running one instruction at a time
+
+- First step will be scan the file - this will be part of the parser
+
+- The tokens and AST are formed in the internal representation
+
+- The CPU should consist of the following features:
+	- Memory manager
+	- Register manager
+	- ALU executer
+
+- The possibility of putting this internal representation into XML was raised
+
+- Statistics needed to output
+	- Size of the MIPS code
+	- Number of registers used
+	- Time to run (number of clock ticks in the CPU, so not actual time)
+
+- We should aim to have a working version of the code regulary, say once a week.  i.e. Make code releases.
+
+- The main parts of the program are as follows:
+	- Grammer generator, parser generator, parsing, internal representation
+	- Assembling, loading into memory
+	- Executing the program in the CPU
+	- The GUI part of the program
+

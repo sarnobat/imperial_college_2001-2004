@@ -1,0 +1,414 @@
+head	1.10;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.10
+date	2003.12.16.15.59.15;	author ss401;	state dead;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.16.13.53.48;	author ss401;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.16.02.07.03;	author ajb101;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.15.19.46.42;	author ss401;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.15.19.19.10;	author ss401;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.13.18.36.21;	author ss401;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.13.18.28.52;	author ss401;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.12.13.16.08.58;	author ss401;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.12.13.15.39.19;	author ss401;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.12.18.46.13;	author ss401;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@package yams.GUI.graphs;
+import java.awt.*;
+import javax.swing.*;
+import yams.GUI.StatisticsFrame;
+import yams.parser.Directive;
+import yams.parser.Instruction;
+import yams.parser.LineList;
+import yams.processor.Processor;
+/*
+ * Created on 10-Dec-2003
+ *
+ */
+/**
+ * @@author ss401
+ * Panel displaying a horizontal bar chart of line access counts 
+ */
+public class LineAccessGraphs extends JPanel {
+
+	/*
+	 * Dimension data
+	 */
+	private int windowHeight;
+	private int windowWidth;
+	
+	private String content = "";
+
+	private JEditorPane textPane;
+	private int totalRegisters;
+	private Processor p;
+	private LineList l;
+
+	public LineAccessGraphs(StatisticsFrame sf, Processor p, LineList l) {
+		this.setLayout(new GridLayout(1, 1));
+		this.windowHeight = sf.WINDOW_HEIGHT;
+		this.windowWidth = sf.WINDOW_WIDTH;
+		this.setPreferredSize(new Dimension(windowWidth, windowHeight));
+		this.p = p;
+		this.l = l;
+		totalRegisters = p.registerManager.getTotalNumberOfRegisters();
+
+		this.textPane = new JEditorPane("text/html", "");
+		render();
+		this.textPane.setText(sf.preAmble + content);
+		this.textPane.setEditable(false);
+
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.getViewport().setView(textPane);
+		this.add(scrollPane);
+	}
+
+	/**
+	 * The generation of the html body takes place here.
+	 * It is accumulated in the String 'content'
+	 */
+	private void render() {
+		int maxCount = max();
+		content += "<table><tr><td><b>Line Number</b></td><td><b>Instruction</b></td><td><b>Exectution Count</b></td></tr>";
+		for (int i = 1; i <= l.totalLines(); i++) {
+			int count = p.statisticsManager.getLineCount(i);
+			int width = 0;
+			if (maxCount != 0) {
+				width = windowWidth * count / maxCount;
+			}
+			Instruction instr = l.getLine(i).getInstruction();
+			if (instr == null || instr instanceof Directive) {
+				continue;
+			}
+			content += "<tr>"
+				+ "<td width=10 valign=center>"
+				+ (i + 1)
+				+ "</td>"
+				+ "<td width=100 valign=center>"
+				+ l.getLine(i).getOriginal()
+				+ "</td>"
+				+ "<td valign=center>"
+				+ "<div bgcolor=blue height=1 width="+ width+ "></div>"
+				+ "</td>"
+				+ "<td valign=center>&nbsp;"
+				+ count
+				+ "</td>"
+				+ "</tr><tr><div></div></tr>";
+		}
+		content += "</table>";
+		
+	}
+
+	/**
+	 * Returns the number of times the most freqeuently 
+	 * executed line has been executed
+	 * @@return
+	 */
+	private int max() {
+		int max = 0;
+		for (int i = 1; i <= l.totalLines(); i++) {
+			if (p.statisticsManager.getLineCount(i) > max) {
+				max = p.statisticsManager.getLineCount(i);
+			}
+		}
+		return max;
+	}
+}
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@a48 1
+		System.out.println(textPane.getText());
+a55 1
+		//content += "<font size=7><table><tr><td><b>Line Number</b></td><td><b>Instruction</b></td><td><b>Execution Count</b></td></tr>";
+a67 8
+			/*content += "<tr><td>" + (i + 1) + "</td><td>" + l.getLine(i).getOriginal() + "</td><td align=left>";
+			if (maxCount > 0 && (windowWidth * count / maxCount) > 0) {
+				//content += "<img src=" + imageURL + " width=" + (windowWidth * count / maxCount) + " height=" + barHeight + ">&nbsp;" + count;
+				content += "<table><tr><td><table height=1%><tr><td></td></tr></table><table width=100%><tr><td width="+width+" bgcolor=blue></td><td>"+count+"</td></tr></table><table height=1%><tr><td></td></tr></table></td></tr></table>";
+			}
+			content += "</td></tr>";*/
+			//content += "<tr><td padding=8><table width=100%><tr><td width=10>" +(i+1)+"</td><td width=100>"+l.getLine(i).getOriginal()+"</td><td bgcolor=blue width="+width+"></td><td>"+count+"</td></tr></table></td></tr>";
+			//content += "<table width=100%><tr><td width=10>" +(i+1)+"</td><td width=60>"+l.getLine(i).getOriginal()+"</td><td></td><td>"+count+"</td></tr></table>";
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d62 4
+a65 1
+			int width = windowWidth * count / maxCount;
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@a2 1
+import java.io.File;
+d24 1
+a24 2
+	private int barHeight = 8;
+
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d19 1
+a19 1
+	
+d26 1
+a26 1
+	
+d28 2
+a29 3
+	private String imageURL;
+	
+	private JEditorPane text;
+d33 1
+a33 1
+	
+d42 2
+a43 6
+		
+		//set the image file to be used for the bars
+		File f = new File("src\\yams\\GUI\\graphs\\blue.jpg");
+		this.imageURL = "file:///" + f.getAbsolutePath();
+		
+		text = new JEditorPane("text/html", "");
+d45 3
+a47 2
+		text.setText(sf.preAmble + content);
+		
+d49 1
+a49 1
+		scrollPane.getViewport().setView(text);
+d51 1
+d53 1
+a53 1
+	
+d59 1
+a59 1
+		content += "<table><tr><td><b>Line Number</b></td><td><b>Instruction</b></td><td><b>Execution Count</b></td></tr>";
+d61 1
+d64 1
+d69 1
+a69 1
+			content += "<tr><td>" + (i + 1) + "</td><td>" + l.getLine(i).getOriginal() + "</td><td align=left>";
+d71 2
+a72 1
+				content += "<img src=" + imageURL + " width=" + (windowWidth * count / maxCount) + " height=" + barHeight + ">&nbsp;" + count;
+d74 17
+a90 1
+			content += "</td></tr>";
+d93 1
+d95 1
+a95 1
+	
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@a3 1
+
+a4 1
+
+a9 1
+
+a13 1
+
+d19 1
+a19 1
+
+d29 1
+a30 1
+	
+d43 5
+a47 1
+
+a54 5
+		
+		//set the image file to be used for the bars
+		File f = new File("src\\yams\\GUI\\graphs\\blue.jpg");
+		this.imageURL = "file:///" + f.getAbsolutePath();
+
+d56 1
+d67 1
+a67 1
+			if (instr == null || instr instanceof Directive){
+d70 1
+a70 1
+			content += "<tr><td>" + (i + 1) + "</td><td>" +l.getLine(i).getOriginal()+ "</td><td align=left>";
+a74 1
+
+a85 1
+
+a92 1
+
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d3 1
+d24 3
+a26 1
+	String content = "";
+d30 3
+a32 1
+	private String imageURL = "http://www.doc.ic.ac.uk/~ss401/mips/blue.jpg";
+a33 1
+
+a40 2
+
+		text = new JEditorPane("text/html", "");
+d45 1
+d47 2
+a48 1
+		this.l = l;
+d51 1
+a51 1
+
+a53 1
+
+d55 4
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@a6 2
+import yams.GUI.graphs.dummy.DummyLineList;
+import yams.GUI.graphs.dummy.DummyProcessor;
+a33 2
+	//private DummyProcessor p = new DummyProcessor();
+	//private DummyLineList l = new DummyLineList();
+a34 1
+
+d55 2
+a56 2
+	 * The generation of the html body takes place here
+	 *
+d68 1
+a68 1
+			if ((windowWidth * count / maxCount) > 0) {
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d7 4
+d21 1
+a21 1
+ * This panel displays a bar graph of line access counts in a vertical list 
+a24 1
+	//int[] lineCounts = { 21, 3, 5, 43, 21, 6, 43, 642, 43, 21, 6, 43, 642 , 43, 21, 6, 43, 642 , 642 , 43, 21, 6, 43, 642 , 43, 21, 6, 43, 642 , 43, 21, 6, 43, 642 , 43, 21, 6, 43, 642 , 43, 21, 6, 43 };
+d32 1
+a32 1
+	private LineList l;
+d35 4
+d59 4
+d64 1
+a64 1
+		content += "<table><tr><td><b>Line Number</b></td><td><b>Execution Count</b></td></tr>";
+d66 1
+a66 1
+		for (int i = 0; i < l.totalLines(); i++) {
+d68 5
+a72 1
+			content += "<tr><td>" + (i + 1) + " (" + count + ")</td><td align=left>";
+d74 1
+a74 1
+				content += "<img src=" + imageURL + " width=" + (windowWidth * count / maxCount) + " height=" + barHeight + ">";
+a79 1
+		System.out.println(content);
+d81 6
+@
+

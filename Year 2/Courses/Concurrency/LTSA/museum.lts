@@ -1,0 +1,35 @@
+const N = 3
+range R = 0..N
+
+DIRECTOR 			=		(open -> close -> empty -> DIRECTOR).
+EAST 				=		(enter -> EAST).
+WEST 				=		(exit -> WEST).
+
+CONTROLLER			=		CONTROLLER[0],
+CONTROLLER[r:R]		=		(open ->	OPEN[r]),
+OPEN[r:R]			=		(when r<N enter -> OPEN[r+1] |
+							when r>0 exit -> OPEN[r-1]	|
+							close -> CLOSED[r]),
+CLOSED[r:R]			=		(when r==0 empty -> CONTROLLER[0] |
+							when r>0 exit -> CLOSED[r-1]).
+
+TEST 				= 		(open -> enter -> close -> TEST | enter -> ERROR).
+
+/* Suggestions by Jeff
+TEST = CLOSED,
+CLOSED = (open -> OPENED | close -> CLOSED | enter -> ERROR),
+OPENED = (open -> OPENED | close -> CLOSED | enter -> OPENED).
+
+
+property TEST = (open -> OPENED),
+OPENED = (enter->OPENED | close -> TEST).
+*/
+
+
+P = STOP + {exit}.
+
+||MUSEUM 			= 		(EAST||WEST||DIRECTOR||CONTROLLER).
+
+||MUSEUMTEST 			= 		(MUSEUM||TEST).
+
+||MUSEUMSAFETY 			= 		(MUSEUM||P).

@@ -1,0 +1,101 @@
+head	1.4;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.4
+date	2003.11.11.21.16.22;	author qq01;	state dead;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.11.01.28.39;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.10.19.21.10;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.49;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@corrected typo
+@
+text
+@/*
+ * Created on 06-Nov-2003
+ */
+package yams.parser;
+
+/**
+ * Oprand of instructions. This class has subclasses that model different types of oprands.
+ * 
+ * @@author qq01
+ */
+public abstract class Oprand {
+	/**
+	 * Instruction needing immediate values as it's oprands.
+	 */
+	public static final int TYPE_IMMEDIATE = 1;
+
+	/**
+	 * Instruction needing register as it's oprands.
+	 */
+	public static final int TYPE_REGISTER = 0;
+
+	/**
+	 * Returns a string representation of the object.
+	 * 
+	 * @@return a string representation of the object.
+	 */
+	public String toString() {
+		return null;
+	}
+
+}
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d7 2
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d10 10
+a19 1
+	
+d25 1
+a25 1
+	public String toString(){
+@
+

@@ -1,0 +1,185 @@
+<HTML>
+<HEAD>
+<TITLE>CNET - Web Building - Programming &amp; Scripting - Intro to ASP</TITLE>
+<div align="center">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (window.focus) self.focus();
+// -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--// to get unique timestamps
+if (document.images) {
+var cGif=new Image();
+cGif.src='http://gserv.zdnet.com/clear/builder.gif' + '?' + new Date().getTime();
+}
+//-->
+</SCRIPT>
+<noscript>
+<img src="http://gserv.zdnet.com/clear/builder.gif?0000000" height=1 width=1>
+</noscript>
+</HEAD>
+<body bgcolor="#ffffff" marginwidth=0 marginheight=0 style="margin:0px">
+<map name="cnetlink">
+<area shape="circle" coords="28,27,21" href="/" target="opener">
+</map>
+<table width="100%" border=0 cellspacing=0 cellpadding=0 bgcolor="#ffcc00">
+<tr><td><img src="/Images/Headers/0-3880-title-sm.gif" width=370 height=55 border=0 alt="" usemap="#cnetlink"></td>
+<td align="right"><font face="Arial, Helvetica" size="-2"><b><a href="javascript:self.close()">Close this window</a>&nbsp;&nbsp;</b></font></td></tr>
+<tr><td colspan=2 bgcolor="#cc9900"><img border=0 src="/webbuilding/pages/Images/bump.gif" width=1 height=1 hspace=0 vspace=0 border=0 alt=""></td></tr>
+<tr><td colspan=2 bgcolor="#996600"><img border=0 src="/webbuilding/pages/Images/bump.gif" width=1 height=1 hspace=0 vspace=0 border=0 alt=""></td></tr>
+<tr><td colspan=2 bgcolor="#663300"><img border=0 src="/webbuilding/pages/Images/bump.gif" width=1 height=1 hspace=0 vspace=0 border=0 alt=""></td></tr>
+
+<IFRAME WIDTH="728" HEIGHT="105" MARGINWIDTH="0" MARGINHEIGHT="0"  FRAMEBORDER="0" SCROLLING="no" NAME="flashframe" SRC="http://remotead.cnet.com/nonpage/1,20001,,00.html?ads=area=001:00:100.cnet.1:3880:3881:,site=CN,clickid=00022163e7a6e2f800000000,htmlfile=Ads/Media/Generic/22352.ca,frame=_top,prehtml=%3c!--+--%3e,posthtml=%3c!--+--%3e"></IFRAME>
+
+
+<font face="MS Sans serif, Geneva" size=-1>
+<br>
+<table cellpadding="10" cellspacing="0" border="0" align="center" width="100%"><tr><td>
+
+<FONT face="Arial, Helvetica" size=+1 color"#333333"><b>Recordset</b></font><br>
+<FONT face="Arial, Helvetica" size=-1 color"#333333">
+A <I>recordset</I> is a collection of all the information stored in a specific database table. So, all the rows and columns in the table are available when you open the recordset. You need to open the recordset just as you needed to open the database connection. The commands are similar:
+<p>
+
+<blockquote>
+<font color="#006600" class="bCode">
+    Set objRec = Server.CreateObject ("ADODB.Recordset")<br>
+    objRec.Open "downloadable", strConnect, 0,1,2<br>
+</font>
+</blockquote>
+
+<p>
+This creates a recordset (<font color="#006600" class="iCode">objRec</font>) of the table named <I>downloadable</I> that sits in the <I>products</I> database defined in <font color="#006600" class="iCode">strConnect</font>. With the <font color="#006600" class="iCode">Recordset open</font>, we can loop through the table and write all the contents to the screen. Or, we can test for specific contents and only write the data that matches our criteria to the screen.
+<p>
+Every column represents a field. So, if the database table looks something like this:
+<p>
+<table cellpadding=0 cellspacing=0 width="60%" border=1>
+<tr>
+<td width="15%" height="19"><FONT face="Arial, Helvetica" size=-1 color"#333333">&nbsp;Product ID</font></td>
+<td width="15%" height="19"><FONT face="Arial, Helvetica" size=-1 color"#333333">&nbsp;SKU</font></td>
+<td width="15%" height="19"><FONT face="Arial, Helvetica" size=-1 color"#333333">&nbsp;Name</font></td>
+<td width="15%" height="19"><FONT face="Arial, Helvetica" size=-1 color"#333333">&nbsp;File</font></td>
+</tr>
+<tr valign=top>
+<td width="15%" height="19"><FONT face="Arial, Helvetica" size=-1 color"#333333">&nbsp;1</font></td>
+<td width="15%" height="19"><FONT face="Arial, Helvetica" size=-1 color"#333333">&nbsp;PR12345</font></td>
+<td width="15%" height="19"><FONT face="Arial, Helvetica" size=-1 color"#333333">&nbsp;Product A</font></td>
+<td width="15%" height="19"><FONT face="Arial, Helvetica" size=-1 color"#333333">&nbsp;install_a.exe</font></td>
+</tr>
+<tr valign=top>
+<td width="15%" height="19"><FONT face="Arial, Helvetica" size=-1 color"#333333">&nbsp;2</font></td>
+<td width="15%" height="19"><FONT face="Arial, Helvetica" size=-1 color"#333333">&nbsp;PR12346</font></td>
+<td width="15%" height="19"><FONT face="Arial, Helvetica" size=-1 color"#333333">&nbsp;Product B</font></td>
+<td width="15%" height="19"><FONT face="Arial, Helvetica" size=-1 color"#333333">&nbsp;Install_b.exe</font></td>
+</tr>
+</table>
+
+<p>
+Then we have the following fields: ProductID, SKU, Name, and File. Your table would likely have many additional fields for everything from price to description. But this schematic lets you hook into the concept of the database table.
+<p>
+<FONT face="Arial, Helvetica" size=+1 color"#333333"><b>Writing the Recordset Contents</b></font><br>
+It's really easy to work with a recordset. If you wanted to loop through the database and print all the information to the screen, you could do this:
+
+<blockquote>
+
+<font color="#006600" class="bCode">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While NOT objRec.EOF <br>
+' says to do this as long as we haven't reached the end of the file<br>
+&nbsp;&nbsp;Response.Write objRec("ProductID") & ", " <br>
+&nbsp;&nbsp;Response.Write objRec("SKU") & ", " <br>
+&nbsp;&nbsp;Response.Write objRec("Name") & ", " <br>
+&nbsp;&nbsp;Response.Write objRec("File") & "&lt;BR&gt;" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;objRec.MoveNext<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wend<br>
+</font>
+</blockquote>
+
+Even if you haven't used a loop like this before, you can probably tell by looking that this prints the information in a comma-delimited string and starts a new row for each new row in the table. You could use this same technique to write the data to an HTML table. Just insert your <font color="#006600" class="iCode">TABLE</font> tags appropriately using <font color="#006600" class="iCode">Response.Write</font> and keep a few things in mind:
+<p>
+<ol>
+<li>Your HTML tags and content go in quote marks.
+<li>If your tag or content uses quote marks, double them:<br>
+<font color="#006600" class="iCode">
+ &lt;FONT SIZE=""+2"">.
+</font>
+<li>Concatenate the variables and HTML/content information with ampersands.
+</ol>
+<p>
+<FONT face="Arial, Helvetica" size=+1 color"#333333"><b>Picking and Choosing Within the Recordset</b></font><br>
+Imagine our products database also contains a field called <I>OS</I> for, you guessed it, a platform delimiter. Let's also imagine that the data stored in that field can only be one of the following values: Windows NT, Windows 95, Windows 98, Windows, Mac, Unix, or Linux.
+<p>
+We then could specify which records we wanted to write to the screen and ignore the others. Or, we could choose to format some results one way and others another--in different colors, for example.
+<p>
+A simple If...Then loop will quickly give us more control over the database. Let's first print out the records that are tagged as Windows NT products:
+
+<blockquote>
+<font color="#006600" class="bCode">
+&lt;TABLE BORDER=0 WIDTH=600&gt;
+<p>
+&lt;TR&gt;&lt;TD COLSPAN=4 ALIGN=CENTER&gt;&lt;FONT SIZE="+1"&lt;&lt;B&gt;Windows NT Products&lt;/B&gt;&lt;/FONT&gt;&lt;/TD&gt;&lt;/TR&gt;
+<p>
+&lt;%<br>
+&nbsp;&nbsp;While NOT objRec.EOF 
+<p>
+&nbsp;&nbsp;If objRec("OS") = "Windows NT" THEN  ' specifies the criteria
+<p>
+Response.Write "&lt;TR&gt;&lt;TD BGCOLOR=""#FFFF66""&gt;" & objRec("ProductID") & "&lt;/TD&gt;"<br>
+Response.Write "&lt;TD&gt;" & objRec("SKU") & "&lt;/TD&gt;" <br>
+Response.Write "&lt;TD&gt;" & objRec("Name") & "&lt;/TD&gt;" <br>
+Response.Write "&lt;TD&gt;" & objRec("File") & "&lt;/TD&gt;&lt;/TR&gt;" <br>
+<p>
+&nbsp;&nbsp;end if <br>
+&nbsp;&nbsp;objRec.MoveNext<br>
+&nbsp;&nbsp;Wend<br>
+<p>
+%&gt;<br>
+&lt;/TABLE&gt;<br>
+</font>
+</blockquote>
+
+<FONT face="Arial, Helvetica" size=+1 color"#333333"><b>Adding a Record</b></font><br>
+Once you start working with the recordset and ASP, you'll soon be itching to add to a database via the Web. Adding is important whether you want your site visitors to be able to add comments or if you want to be able to make administrative updates.
+<p>
+The following code opens the recordset for a table that holds a list of books and their authors. You've seen this before, but this time the last three specifications defining the cursor type are different: <font color="#006600" class="iCode">adOpenStatic</font>, <font color="#006600" class="iCode">adLockOptimistic</font>, <font color="#006600" class="iCode">adCmdTable</font>:
+<p>
+
+<blockquote>
+<font color="#006600" class="bCode">
+&lt;%
+&nbsp;&nbsp;' database connection already made; code not shown here<br>
+Set objRec = Server.CreateObject ("ADODB.Recordset")<br>
+&nbsp;&nbsp;objRec.Open "books", bookdb, adOpenStatic, adLockOptimistic, adCmdTable<br>
+%&gt;
+</font>
+</blockquote>
+
+(If you are not using a copy of adovbs.inc, the line would be: <font color="#006600" class="iCode">objRec.Open "books", bookdb, 3,3,2</font>).
+<p>
+The recordset is now ready to accept data. You just need to tell it what to add. In this case, let's assume we have pulled variables from a form: <font color="#006600" class="iCode">strBookTitle</font> and <font color="#006600" class="iCode">strBookAuthor</font>. Our table, <I>books,</I> has two fields, called Title and Author, so we can add a new record by doing this:
+
+<blockquote>
+<font color="#006600" class="bCode">
+&lt;%<br>
+objRec.AddNew<br>
+&nbsp;&nbsp;ObjRec("Title") = strBookTitle<br>
+&nbsp;&nbsp;objRec("Author") = strBookAuthor<br>
+&nbsp;&nbsp;objRec.Update<br>
+%&gt;<br>
+</font>
+</blockquote>
+
+<font color="#006600" class="iCode">strBookTitle</font> and <font color="#006600" class="iCode">strBookAuthor</font> represent values, possibly entered by a user in a form. If you just want to test the <font color="#006600" class="iCode">add</font> function, you can slot in a title and author in place of the variables--just remember to use quote marks. The first few times you try it, you'll probably want to open your database immediately to ensure that the update happened. 
+<p>
+<FONT face="Arial, Helvetica" size=+1 color"#333333"><b>Recordset Types</b></font><br>
+In the sample <font color="#006600" class="iCode">objRec.Open</font> statement shown, you'll see the 0,1,2 at the end. These numbers stand for various cursor types. The <I>type</I> you use depends on what you are going to do. For example, if you're not going to add or edit any records, you use one <I>Lock</I> type. You'll use a different type when you plan to make changes or updates to the database.
+<p>
+0,1,2 actually stands for:
+<p>
+<font color="#006600" class="iCode">adOpenForwardOnly</font>, <font color="#006600" class="iCode">adLockReadOnly</font>, <font color="#006600" class="iCode">adCmdTable</font>
+<p>
+You can use the words rather than the numbers if you have a copy of <a href="http://www.activeserverpages.com/adovbs.inc">adovbs.inc</a> stored on your server. It contains a list of these constants and many others. <a href="http://www.activeserverpages.com/learn/adocursortypes.asp" target="opener" onClick="setTimeout('self.close()',1000)">ADO Cursor Types</a> is also a useful reference.
+
+</font>
+</td></tr></table>
+

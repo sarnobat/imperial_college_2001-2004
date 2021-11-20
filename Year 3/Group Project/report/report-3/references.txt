@@ -1,0 +1,37 @@
+(*******FORMAT SHOULD BE:
+			"NAME" (SOURCE) - USAGE
+						    ******************
+***************(PLEASE FILL IN BLANKS WHERE POSSIBLE******************)
+
+
+GUI
+---
+
+- "HEX Table" (????) - Basis of Data Segment Panel
+
+
+Parser
+------
+
+
+Assembler
+---------
+
+
+Processor
+---------
+
+- "Assemblers, Linkers, and the SPIM Simulator" (James L. Larus, U Wisconsin-Madison) - 
+  from http://www.cs.wisc.edu/~larus/spim.html
+- "MIPS Instruction Reference" (James F. Frenzel, University of Idaho )
+  http://www.mrc.uidaho.edu/mrc/people/jff/digital/MIPSir.html
+- "MIPS ISA Programming" (Charles Lin, University of Maryland)
+  http://www.cs.umd.edu/class/spring2003/cmsc311/Notes/
+
+
+General
+-------
+
+- "Computer Organisation & Design" (Hennessy & Patterson, Morgan Kaufmann, 1993)
+- Eclipse (www.eclipse.org) - Development environment for the project
+- Java Sun (java.sun.com)   - Help for java references

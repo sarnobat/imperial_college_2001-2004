@@ -1,0 +1,56 @@
+
+% -----------------------
+\documentclass{report}
+% ------------------------ 
+
+
+\title{Translating between XML and Relational Databases (An in-progress review)}
+\author{Sridhar Sarnobat}
+\begin{document}
+
+\maketitle
+
+% ------------------------   
+% Section 
+\section{Objectives}
+
+\begin{itemize}
+\item develop techniques for: 
+\begin{itemize}
+\item converting an XML Schema to a Relational Database Schema
+\item importing data from an XML Document (constrained by an XML Schema or DTD) into a Relational Database 
+\item exporting data from a Relational Database to an XML Document
+\end{itemize}
+\item implement tools in Java supporting the these techniques
+\end{itemize}
+
+
+% ------------------------   
+% Section 
+\section{Progress So Far}
+
+
+\begin{itemize}
+\item I have read research papers about the relationship between XML and Relational Databases
+\item I have been experimenting with various APIs for manipulating XML documents and schemas, as well as other Java libraries that are likely to be required by the application I wish to build (e.g. GUI toolkits, Database Viewers)
+\item Having no previous experience of using XML Schemas, I am in the process of learning the constructs through books and online tutorials
+\end{itemize}
+
+
+% ------------------------   
+% Section 
+\section{Aims for remainder of project}
+
+There are 3 main areas to the project once the researching phase has been completed:
+\begin{itemize}
+\item Creating axioms for translating an XML Schema to an Entity Relationship Model as well as axioms for translating XML data to Relational Database data
+\item Implementing these transformations in Java code which will use XML APIs to read in XML Schemas and data, and also use JDBC to output Database Schemas and import data into the database. Similar work is necessary for the reverse procedure of generating XML data from Relational Database data.
+\item Developing a GUI to allow users to carry out these transformations
+\end{itemize}
+
+
+
+% --------------------------------------------
+% End of document
+% --------------------------------------------
+\end{document}

@@ -1,0 +1,45 @@
+head	1.2;
+access;
+symbols
+	yams-release2-17-12-03:1.1
+	yams-release-17-12-03:1.1
+	cleanup:1.1.0.2
+	Root_cleanup:1.1
+	stable-13-12-2003:1.1;
+locks; strict;
+comment	@# @;
+expand	@b@;
+
+
+1.2
+date	2003.12.19.14.08.53;	author qq01;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.10.12.54.05;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@deleted deprecated files
+@
+text
+@<?xml version="1.0" encoding="ASCII"?>
+<org.eclipse.uml2:Class xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.uml2="http:///org/eclipse/uml2.ecore" xmi:id="WtHZ0SsGEdi5ucV1kqHPGw=="/>
+@
+
+
+1.1
+log
+@Added UML diagrams for parser
+@
+text
+@@
+

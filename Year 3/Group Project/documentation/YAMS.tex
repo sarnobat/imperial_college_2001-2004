@@ -1,0 +1,323 @@
+\documentclass[12pt]{report}
+\usepackage{times}
+\begin{document}
+
+\chapter{Using the Software}
+
+\section{Requirements For All Versions of YAMS}
+
+YAMS is written in Java. Hence it requires a JRE (Java Runtime
+Environment) to run.
+
+If you are unsure if you have one, type in console and fingers
+crossed:
+
+\texttt{\$ java -version}
+
+If you don't get something like \texttt{Command not found}, YAMS
+should run happily on your machine.
+
+Otherwise, you'll need to download and install a JRE from sun at:
+http://java.sun.com.
+
+\section{Requirement For GUI Version}
+
+\begin{itemize}
+
+\item Microsoft Windows Users will not need to do any additional
+configuration
+
+\item Unix/Linux users will need to start a X-Window session in
+order to use the GUI version.
+
+\end{itemize}
+
+\chapter{Building YAMS}
+
+As mentioned in the YAMS spec. YAMS is built in such a way the
+adding and removing instructions can be done without modifying any
+YAMS' program code.
+
+You'll, obviously, need to get the source code bundle.
+
+\section{Software Requirement}
+
+Apache Ant is required for building YAMS.
+
+To check whether Ant is installed on the system, type in
+console:
+
+\texttt{\$ ant -version}
+
+If you see something similar to:
+
+\texttt{Apache Ant version 1.5.3 compiled on April 16 2003}
+
+You are good to go on and start the build, otherwise, please
+obtain Ant from http://ant.apache.org, follow their instructions,
+and install ant.
+
+\section{Modifying the XML Instruction File}
+
+Simon and I will fill this in.
+
+\section{Doing the build}
+
+Running the following command in the root directory or the YAMS
+distribution (that is, where the \texttt{build.xml} locates) will
+build a YAMS.jar file in the build directory:
+
+\texttt{\$ ant}
+
+Simple as that, your new customized YAMS is there waiting to be
+run.
+
+\chapter{Using Yams}
+
+\section{Welcome to YAMS!}
+
+YAMS is a simulator for the MIPS processor, which runs a RISC (Reduced Instruction Set Chip) architecture.  As a simulator, it's main task is to correctly simulate a given set of assembler instructions and produce any necessary output.  In addition, there are many features that let you see exactly what is happening as each instruction is executed, such as register and memory contents.  YAMS also includes a comprehensive statistics module so you can see just how efficient the assmebly code is.
+
+The YAMS package will work in two formats - in a console that will run from a command line, and in a user friendly graphical version, so you can see clearly what is happening inside the processor as the assmebly program is being executed.
+
+\section{Using YAMS - Console Version}
+\subsection{Command Line Options}
+You can run YAMS from the command line by navigating to the directory where the executable is held, and typing  YAMS -console, along with the following options:
+
+\begin{verbatim}
+YAMS [OPTIONS] [FILENAMES]
+\end{verbatim}
+
+\begin{verbatim}
+[Options]
+\end{verbatim}
+
+\begin{verbatim}
+-s, --stats
+\end{verbatim}
+Outputs statistics from the run of the program
+
+\begin{verbatim}
+-v, --verbose
+\end{verbatim}Runs the program in verbose mode. Recommended only for advanced users or debugging as this can output a lot of text.
+
+\begin{verbatim}
+-if <file>	
+\end{verbatim}Input a list of files - the proceeding filenamevis a text file containing a list of files that should be executed by the simulator.
+
+\begin{verbatim}
+[Filenames]
+\end{verbatim}Input files - One or more input files can be specified to be run by YAMS. If more than one is specified, they will be run in turn and the output for each displayed in the console window.
+
+
+
+Examples:
+\begin{verbatim}
+YAMS -console --stats -if filelist.txt
+YAMS -console file1.asm file2.asm
+\end{verbatim}
+
+\subsubsection{Handy Hint}
+If there is too much text output on the screen, you can redirect the output to go to a seperate file so you can look at it in a text editor instead. Do this by using the output redirect character '>'.  In the example above, this would be:
+
+\begin{verbatim}
+YAMS -console --stats -if filelist.txt > outputfile.txt
+\end{verbatim}
+
+\subsection{Interpreting the Output}
+\subsubsection{Standard Mode}
+When running in the console mode on a single file, YAMS will first parse the file to make sure it is syntactically correct and all the instructions are valid.  If an error is encountered, the type of error and line number in the assembly program where it was found are reported on the screen.  For example:
+
+\begin{verbatim}
+=====STARTING NEW FILE=====
+Input File: square.asm
+Parser Error:Parse error at line: 14
+Unsupported Instruction 'lkj'
+\end{verbatim}
+
+If no errors are found, the output by YAMS will just be the same as the output of the program. An example run is shown below:
+
+\begin{verbatim}
+=====STARTING NEW FILE=====
+Input File: square.asm
+1111111111
+0111111111
+0011111111
+0001111111
+0000111111
+0000011111
+0000001111
+0000000111
+0000000011
+0000000001
+0000000000
+\end{verbatim}
+
+\subsubsection{Statistics Mode}
+When the statistics option is turned on, YAMS will also output the following statistics after the file has been executed :
+- How many times each line of the program was executed
+- How many times each instruction was used
+- How many times each register was used
+- The total number of CPU cycles required
+- The total memory required.
+
+An example of the output is show below:
+
+\begin{verbatim}
+=====STARTING NEW FILE=====
+Input File: EvalExpr.asm
+1234
+
+==============
+  STATISTICS
+==============
+
+------------LINES EXECUTED------------
+
+Line                                  Count
+9    li $t0,10:                         1
+10    sw $t0,_x:                        1
+11    li $t6,1:                         1
+12    lw $t7,_x:                        1
+13    mul $t5,$t6,$t7:                  1
+14    li $t6,2:                         1
+15    add $t4,$t5,$t6:                  1
+16    lw $t5,_x:                        1
+17    mul $t3,$t4,$t5:                  1
+18    li $t4,3:                         1
+19    add $t2,$t3,$t4:                  1
+20    lw $t3,_x:                        1
+21    mul $t1,$t2,$t3:                  1
+22    li $t2,4:                         1
+23    add $t0,$t1,$t2:                  1
+24    sw $t0,_x:                        1
+25    lw $a0,_x:                        1
+26    li $v0,1:                         1
+27    syscall:                          1
+28    la $a0,_newline:                  1
+29    li $v0,4:                         1
+30    syscall:                          1
+31   # exit call to Stop the program
+32    li $v0,10:                        1
+33    syscall:                          1
+
+
+-----------INSTRUCTIONS USED-----------
+
+Instr   Count
+ADD:    2
+ADDI:   9
+BEQ:    5
+BNE:    3
+LUI:    1
+LW:     7
+ORI:    6
+SW:     3
+
+------------REGISTERS USED------------
+
+Reg   Count
+$0:   27
+$1:   4
+$2:   4
+$4:   4
+$8:   2
+$9:   8
+$10:  2
+
+CPU CYCLES: 313
+
+MEMORY USED: 65 WORDS
+\end{verbatim}
+
+
+\section{Using YAMS - GUI Version}
+
+\subsection{Command Line Options}
+To use the GUI version of YAMS, navigate to the directory where the executable is held, and type  YAMS -gui, along with the following options:
+
+\begin{verbatim}
+YAMS -gui [-if <file>] | [FILENAMES]
+\end{verbatim}
+
+\begin{verbatim}
+-if <file>
+\end{verbatim}
+Input a list of files - the proceeding filename	is a text file containing a list of files that should be executed by the simulator.
+
+\begin{verbatim}
+[Filenames]
+\end{verbatim}
+Input files - One or more input files can be specified to be run by YAMS.  If more than one is specified, they will be run in turn and the output for each displayed in the console window.
+
+
+
+The graphical interface will then launch and show the screen below:
+
+\subsection{Adding Files to the File Selector Box}
+If input files were specified at the command line, they will be displayed in the File Selector Box. Otherwise, files can be added to the File Selector Box by clicking Add File and then using the dialogue box to add a file.
+
+Here you can select an assembly file to load into the simulator.
+
+To add a list of files, click the 'Add Filelist' button, and select the file that contains the list of assembly files you wish to load.  The filelist should contain the file names of the assembly files, one per line.
+
+If you wish to remove a file from the list, select it in the list box, then click the Remove File button below.
+
+
+\subsection{Loading a File}
+Once you have chosen the file you wish YAMS to simulate, you can then load the file by pressing the 'Load File' button.
+
+The program code, memory locations and register contents are shown once the file is loaded, as can be seen below, with the first line of code highlighted.
+
+
+\subsection{Adding Breakpoints}
+Adding a breakpoint to the program is simple.  Just use the checkbox that is next to the line you where you wish to pause execution.  When the simulator reaches here, you can examine  the contents of the register and memory locations.
+
+\subsection{Controlling Execution}
+\subsubsection{Speed}
+The speed of the processor can be controlled by the slider bar - a larger value means a longer gap between each instruction so you are able to execute the program in 'slow motion'.  
+
+\subsubsection{Run}
+Press the Run button to begin the execution of the assembly program.  The execution of the program is done slowly line by line so that you can see each line being executed individually and the contents of the registers and memory changing.  The current line being executed is shown by the highlighted line in the program code.
+
+\subsubsection{Stop}
+To Stop the execution of the program, press the 'Stop' button.  The instruction that is currently being executed will remain highlighted.  From here, it is possible to resume the execution of the program by pressing 'Run', run just the next instruction by pressing 'Step' or skip the next instruction by pressing the 'Skip Next Instruction' button.
+
+\subsubsection{Single Step}
+If you wish to single step each line of the program, first of all, press the Stop button which will pause the programs execution.  It is then possible to use the Step button to execute each instruction one at a time.  Note that one line of assembly code can be made up of several processor operations, so pressing Step will not always move to the next instruction, but will execute the next processor operation for that line.
+
+\subsubsection{Skip}
+Pressing 'Skip Next Instruction' will ignore the next insturction that is to be executed.  It is recommended that this feature is used while in stepping mode so that it can be seen clearly which instruction is to be skipped.
+
+
+\subsection{Interpreting Output}
+
+
+\subsubsection{Console Output}
+The Console I/O box is used for 2 things:
+- Error messages from the parser - if an error was encountered while parsing the assmebly file, the type of error and related line number are displayed.  Correct the error then try loading the file again.
+
+- Output of the program - during the execution of the program, any output is displayed in the Console I/O box.
+
+\subsubsection{Statistics}
+Statistics for the run of the program are available in the Statistics Panel of the interface.  This shows the number of CPU cycles required so far for the program executing, and the total amount of memory used by the program.  These are updated constantly as the program is executed.
+
+
+Pressing the 'Graph' button will display a window with 2 tabs:
+- How many times each register was used
+- How many times each line was executed
+
+This can be useful in seeing where loops are in the program as the lines in the loop are executed more often than the rest of the instructions.
+
+\section{Adding Instructions}
+
+YAMS uses XML technology which makes it incredibly easy and flexible to add new instructions to the instruction set.  To add an instruction, all you have to do is....
+Help me jimmie!
+
+
+\section{Notes for the Compiler Lab}
+
+
+
+
+\end{document}

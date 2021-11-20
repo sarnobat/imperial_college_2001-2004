@@ -1,0 +1,237 @@
+head	1.6;
+access;
+symbols
+	yams-final-19-12-03:1.6
+	yams-release2-17-12-03:1.6
+	yams-release-17-12-03:1.6
+	cleanup:1.5.0.2
+	Root_cleanup:1.5
+	stable-13-12-2003:1.5;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2003.12.17.15.00.06;	author qq01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.02.16.53.25;	author ajb101;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.02.13.34.03;	author qq01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.24.23.16.51;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.15.18.00.39;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.49;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@Updated lexer to fix the bug with trailing space and = sign
+@
+text
+@/*
+ * Created on 2003-11-1
+ */
+package yams.parser;
+
+/**
+ * Exception to be thrown the parser finds an error in the users file.
+ * 
+ * @@author Qian Qiao <a href="mailto:qq01@@doc.ic.ac.uk">qq01@@doc.ic.ac.uk</a>
+ */
+public class ParseException extends Exception {
+	private int line;
+
+	public ParseException(String message, int line) {
+		super(message);
+		this.line = line;
+	}
+
+	public ParseException(Token actual, int expected, int line) {
+		this(
+			getString(expected) + " expected, not '" + actual.getValue() + "'",
+			line);
+	}
+
+	private static String getString(int expected) {
+		switch (expected) {
+			case Lexer.IDENTIFIER :
+				{
+					return "identifier";
+				}
+			case Lexer.INTEGER :
+				{
+					return "integer";
+				}
+			case Lexer.COMMA :
+				{
+					return "','";
+				}
+			case Lexer.DOLLAR :
+				{
+					return "'$'";
+				}
+			case Lexer.COLON :
+				{
+					return "':'";
+				}
+			case Lexer.LEFT_PAR :
+				{
+					return "'('";
+				}
+			case Lexer.RIGHT_PAR :
+				{
+					return "')'";
+				}
+			case Lexer.NEWLINE :
+				{
+					return "\\n";
+				}
+			case Lexer.MINUS :
+				{
+					return "-";
+				}
+			case Lexer.EOF :
+				{
+					return "EOF";
+				}
+			case Lexer.DOT :
+				{
+					return ".";
+				}
+			case Lexer.PLUS :
+				{
+					return "+";
+				}
+			case Lexer.QUOTE :
+				{
+					return "\"";
+				}
+			case Lexer.ESCAPED_CHAR :
+				{
+					return "escaped character";
+				}
+			case Lexer.EQUALS :
+				{
+					return "=";
+				}
+		}
+		throw new RuntimeException(
+			"Internal error: MIPSParseException::getString() : Unknown token type:"
+				+ expected);
+	}
+
+	public ParseException(int line) {
+		super();
+		this.line = line;
+	}
+
+	public int getLine() {
+		return line;
+	}
+
+	public String toString() {
+		String message = getMessage() == null ? "" : getMessage();
+		return "Parse error at line: " + line + "\n" + message;
+	}
+}
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d83 4
+@
+
+
+1.4
+log
+@Updated javadoc
+@
+text
+@d79 4
+@
+
+
+1.3
+log
+@Updated error messages
+@
+text
+@d75 4
+@
+
+
+1.2
+log
+@Replaced MIPSLexer class with the new class Lexer.
+@
+text
+@a5 1
+
+d66 8
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d28 1
+a28 1
+			case MIPSLexer.IDENTIFIER :
+d32 1
+a32 1
+			case MIPSLexer.INTEGER :
+d36 1
+a36 1
+			case MIPSLexer.COMMA :
+d40 1
+a40 1
+			case MIPSLexer.DOLLAR :
+d44 1
+a44 1
+			case MIPSLexer.COLON :
+d48 1
+a48 1
+			case MIPSLexer.LEFT_PAR :
+d52 1
+a52 1
+			case MIPSLexer.RIGHT_PAR :
+d56 1
+a56 1
+			case MIPSLexer.NEWLINE :
+d60 1
+a60 1
+			case MIPSLexer.MINUS :
+d64 1
+a64 1
+			case MIPSLexer.EOF :
+@
+

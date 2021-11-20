@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry excluding="don&apos;t build/" kind="src" path=""/>
+    <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+    <classpathentry kind="lib" path="H:/project/src/bin/emf.jar"/>
+    <classpathentry kind="lib" path="H:/project/src/bin/jdom.jar"/>
+    <classpathentry kind="lib" path="H:/project/src/bin/jgrapht-0.5.2.jar"/>
+    <classpathentry kind="lib" path="H:/project/src/bin/log4j-1.2.8.jar"/>
+    <classpathentry kind="lib" path="H:/project/src/bin/pg73jdbc3.jar"/>
+    <classpathentry kind="lib" path="H:/project/src/bin/xsd.jar"/>
+    <classpathentry kind="output" path="build"/>
+</classpath>

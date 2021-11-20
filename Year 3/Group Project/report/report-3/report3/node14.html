@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Program code</TITLE>
+<META NAME="description" CONTENT="Program code">
+<META NAME="keywords" CONTENT="report3">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="report3.css">
+
+<LINK REL="next" HREF="node15.html">
+<LINK REL="previous" HREF="node13.html">
+<LINK REL="up" HREF="node10.html">
+<LINK REL="next" HREF="node15.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html268"
+  HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html264"
+  HREF="node10.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html258"
+  HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html266"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html269"
+  HREF="node15.html">Register contents</A>
+<B> Up:</B> <A NAME="tex2html265"
+  HREF="node10.html">Graphical User Interface</A>
+<B> Previous:</B> <A NAME="tex2html259"
+  HREF="node13.html">Graphs Popup Window</A>
+ &nbsp; <B>  <A NAME="tex2html267"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00444000000000000000">
+Program code</A>
+</H2>
+
+<P>
+This panel consists of two JPanels and one JLabel.
+
+<P>
+The label simply indicates whether the processor is active or idle. This is changed using the 'setProcessorStatus' method.
+
+<P>
+The first sub panel is to hold the buttons which control execution of a program. Again, the buttons must be disabled until a program is loaded. Each button has the 'ProgramCodeButtonController' action listener associated with it. This listener invokes processor operations via the processor handler, accessed through the YAMSGui controller itself. The panel also contains the JSlider, with a 'SlideController' subscribing to it. When this slider is moved, its new value is set also via the YAMSGui and has the consequence of the processor running with a greater/lesser intra-instruction delay.
+
+<P>
+Only when the 'setSourcecode' method is called does the second panel become populated with a JTable of instructions and breakpoints. The internal modelling of the table is handled by the BreakPointTable class, an extension of the AbstractTableModel given in the Swing package. Breakpoint setting is handled by 'BreakPointTableController' which listens for changes to the state of the group of checkboxes. On checking or unchecking any of the boxes, the BreakPointTable is updated. This  panel requires a JScrollPane so that all lines of a long program can be viewed.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html268"
+  HREF="node15.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html264"
+  HREF="node10.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html258"
+  HREF="node13.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html266"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html269"
+  HREF="node15.html">Register contents</A>
+<B> Up:</B> <A NAME="tex2html265"
+  HREF="node10.html">Graphical User Interface</A>
+<B> Previous:</B> <A NAME="tex2html259"
+  HREF="node13.html">Graphs Popup Window</A>
+ &nbsp; <B>  <A NAME="tex2html267"
+  HREF="node1.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Benjamin Michael Cotter
+2003-12-15
+</ADDRESS>
+</BODY>
+</HTML>

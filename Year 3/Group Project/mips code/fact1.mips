@@ -1,0 +1,26 @@
+# fact1.mips
+# Read a number n from standard input, then print n!
+# (n factorial) on standard output.
+#
+# Register Usage:
+# $1 - Accumulates result
+# $2 - Counter of current value to multiply
+# $4 - Used for output
+
+.globl main
+
+main:   trap 5           # Get integer into $2
+        addi $1, $0, 1   # Initialize result to 1
+        beq $0, $2, done # If none left, finish
+loop:   mult $1, $2      # Multiply result by counter
+        mflo $1          # Get product from Lo register
+        addi $2, $2, -1  # Decrement counter
+        bne $0, $2, loop # If more to do, loop
+done:   add $4, $0, $1   # Copy result into $4
+        trap 1           # Print result (in $4)
+
+        addi $4, $0, 10
+        trap 101         # Print newline character
+
+        trap 10          # Quit program
+

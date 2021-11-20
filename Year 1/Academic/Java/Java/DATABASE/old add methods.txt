@@ -1,0 +1,91 @@
+/*	if (n == null)
+		{//if database is empty
+System.out.println("Here");
+			n = new DatabaseNode(name,tins);
+		}
+		
+		else if (IsIn(name,n))
+		{
+			System.out.println(name + " already exists. Delete current record first");
+		}
+
+
+		else
+		{//create a new node with the required info
+			DatabaseNode newNode = new DatabaseNode(name,tins);
+
+			if (name.compareTo(n.getName()) < 0)
+			{//if the name is alphabetically smaller than the that of the current node
+
+				if (n.getLeft() == null)
+				{//if the left node on the lower level is not in use
+					n.setLeft(newNode);
+				}
+				else
+				{//left reference is already in use
+					addNode(name,tins,n.getLeft());
+				}
+			}
+
+			else
+			{//if the name is alphabetically greater than the that of the current node
+				if (n.getRight() == null)
+				{
+					n.setRight(newNode);
+
+				}
+				else
+				{//right reference is already in use
+// DIAGNOSTIC: System.out.println("addNode (" + name + ","+ tins + "," + temp + ")");
+					addNode(name,tins,n.getRight());
+
+				}
+
+			}
+		}
+		
+		if (IsIn(name,db.root)
+		{
+			System.out.println(name + " already exists. Delete current record first");
+		}
+
+
+		else
+		{//create a new node with the required info
+			DatabaseNode newNode = new DatabaseNode(name,tins);
+
+			if (name.compareTo(db.getRoot().getName()) < 0)
+			{//if the left node on the lower level is not in use
+
+				if (db.root.getLeft() == null)
+				{
+					db.root.setLeft(newNode);
+				}
+				else
+				{//right reference is already in use
+					Database dbtempL = new Database();
+					dbtempL.setRoot(db.getRoot().getLeft());
+					addNode(name,tins,dbtempL);
+				}
+			}
+
+			else
+			{//if the name is alphabetically greater than the that of the current node
+				if (db.root.getRight() == null)
+				{
+					db.getRoot().setRight(newNode);
+
+				}
+				else
+				{//right reference is already in use
+					Database dbtempR = new Database();
+					dbtempR.setRoot(db.getRoot().getRight());
+					String temp = new String();
+					temp = (dbtempR.getRoot()).getName();
+// DIAGNOSTIC: System.out.println("addNode (" + name + ","+ tins + "," + temp + ")");
+					addNode(name,tins,dbtempR);
+
+				}
+
+			}
+		}*/

@@ -1,0 +1,2485 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: VRML Interactive Tutorial @ Lighthouse 3D
+Date: Wed, 6 Feb 2002 13:44:04 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0000_01C1AF14.57CA5890";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4910.0300
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/index.shtml?intex
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>VRML Interactive Tutorial @ Lighthouse 3D</TITLE>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type>
+<META content=3D"Antonio Ramires Fernandes" name=3DAuthor>
+<META=20
+content=3D"The VRML Interactive Tutorial. A tutorial with hands on =
+experience"=20
+name=3DDescription>
+<META content=3D"VRML, VRML97, VRML2.0, Tutorial, Interactive" =
+name=3DKeyWords>
+<STYLE type=3Dtext/css>PRE {
+	FONT-FAMILY: "Arial"; FONT-SIZE: 10pt
+}
+TD {
+	FONT-FAMILY: "Arial"; FONT-SIZE: 10pt
+}
+</STYLE>
+
+<SCRIPT language=3DJavaScript type=3Dtext/javascript>=0A=
+<!--=0A=
+=0A=
+function affiliatetarget() {=0A=
+=0A=
+  if (document.cookie.indexOf("AffiliateTargetPopups") =3D=3D -1) {=0A=
+    var expdate =3D new Date((new Date()).getTime() + 45400000);=0A=
+    document.cookie=3D"AffiliateTargetPopups; expires=3D" + =
+expdate.toGMTString() + "; path=3D/;";=0A=
+    =
+win=3Dwindow.open("http://www.affiliatetarget.com/popup/pop.cgi?ajbrf",'A=
+ffiliateTargetPopups','width=3D600,height=3D600,left=3D10000,top=3D10000,=
+location=3D0,menubar=3D0,statusbar=3D0,locationbar=3D0,scrollbars=3D0,res=
+izable=3D0');=0A=
+    if (!win.opener) { win.opener=3Dself; }=0A=
+  }=0A=
+=0A=
+}=0A=
+=0A=
+//-->=0A=
+</SCRIPT>
+
+<META content=3D"MSHTML 5.00.3502.4373" name=3DGENERATOR></HEAD>
+<BODY bgColor=3D#ffffff onunload=3Daffiliatetarget()>
+<CENTER>
+<TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0>
+  <TBODY>
+  <TR>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D40></TD>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D6></TD>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D48></TD>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D43></TD>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D28></TD>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D58></TD>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D4></TD>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D90></TD>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D3></TD>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D49></TD>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D52></TD>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D64></TD>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D26></TD>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D45></TD>
+    <TD><IMG height=3D1=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif"=20
+    width=3D35></TD></TR>
+  <TR>
+    <TD colSpan=3D2 rowSpan=3D2><IMG height=3D30=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_01.gif"=20
+    width=3D46></TD>
+    <TD colSpan=3D2><A=20
+      href=3D"http://www.lighthouse3d.com/opengl/index.shtml"><IMG =
+alt=3DOpenGL=20
+      border=3D0 height=3D27=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_02.gif"=20
+      width=3D91></A></TD>
+    <TD colSpan=3D3><IMG alt=3DVRML border=3D0 height=3D27=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_03.gif"=20
+      width=3D90></A></TD>
+    <TD><A href=3D"http://www.lighthouse3d.com/w3d/index.shtml"><IMG=20
+      alt=3D"Shockwave 3D" border=3D0 height=3D27=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_04.gif"=20
+      width=3D90></A></TD>
+    <TD colSpan=3D7><IMG height=3D27=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_05.gif"=20
+    width=3D274></TD></TR>
+  <TR>
+    <TD colSpan=3D12><IMG height=3D3=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_06.gif"=20
+    width=3D510></TD>
+    <TD rowSpan=3D2><IMG height=3D26=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_07.gif"=20
+    width=3D35></TD></TR>
+  <TR>
+    <TD><IMG height=3D23=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_08.gif"=20
+    width=3D40></TD>
+    <TD colSpan=3D2><A =
+href=3D"http://www.lighthouse3d.com/vrml/index.shtml"><IMG=20
+      alt=3DHome border=3D0 height=3D23=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_09.gif"=20
+      width=3D54></A></TD>
+    <TD colSpan=3D2><A=20
+      href=3D"http://www.lighthouse3d.com/vrml/tutorials.shtml"><IMG =
+alt=3DTutorials=20
+      border=3D0 height=3D23=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_10.gif"=20
+      width=3D71></A></TD>
+    <TD><A href=3D"http://www.lighthouse3d.com/vrml/books.shtml"><IMG =
+alt=3DBooks=20
+      border=3D0 height=3D23=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_11.gif"=20
+      width=3D58></A></TD>
+    <TD colSpan=3D3><A =
+href=3D"http://www.lighthouse3d.com/vrml/apps.shtml"><IMG=20
+      alt=3DApplications border=3D0 height=3D23=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_12.gif"=20
+      width=3D97></A></TD>
+    <TD><A href=3D"http://www.lighthouse3d.com/vrml/tools.shtml"><IMG =
+alt=3DTools=20
+      border=3D0 height=3D23=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_13.gif"=20
+      width=3D49></A></TD>
+    <TD><A href=3D"http://www.lighthouse3d.com/vrml/docs.shtml"><IMG =
+alt=3DDocs=20
+      border=3D0 height=3D23=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_14.gif"=20
+      width=3D52></A></TD>
+    <TD><A href=3D"http://www.lighthouse3d.com/vrml/models.shtml"><IMG=20
+      alt=3DModels border=3D0 height=3D23=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_15.gif"=20
+      width=3D64></A></TD>
+    <TD colSpan=3D2><A=20
+      href=3D"http://www.lighthouse3d.com/vrml/textures.shtml"><IMG =
+alt=3DTextures=20
+      border=3D0 height=3D23=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_16.gif"=20
+      width=3D71></A></TD></TR>
+  <TR>
+    <TD><IMG height=3D1=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_17.gif"=20
+    width=3D40></TD>
+    <TD colSpan=3D2><IMG height=3D1=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_18.gif"=20
+    width=3D54></TD>
+    <TD colSpan=3D2><IMG height=3D1=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_19.gif"=20
+    width=3D71></TD>
+    <TD><IMG height=3D1=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_20.gif"=20
+    width=3D58></TD>
+    <TD colSpan=3D3><IMG height=3D1=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_21.gif"=20
+    width=3D97></TD>
+    <TD colSpan=3D4><IMG height=3D1=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_22.gif"=20
+    width=3D191></TD>
+    <TD colSpan=3D2><IMG height=3D1=20
+      src=3D"http://www.lighthouse3d.com/vrml/images/vrmlyellow_23.gif"=20
+    width=3D80></TD></TR></TBODY></TABLE></CENTER>
+<P>
+<P>
+<P>
+<DL>
+  <DT>
+  <CENTER><A href=3D"http://ads.ad-up.com/cgi-bin/click.cgi/749/1"=20
+  target=3D_blank><IMG alt=3D"Please &#13;&#10;CLICK Here" border=3D0=20
+  src=3D"http://ads.ad-up.com/cgi-bin/view.cgi/749/1"></A><FONT =
+size=3D-1><BR><A=20
+  href=3D"http://www.ad-up.com/adup_services_linked.html" =
+target=3D_blank>Banner=20
+  Advertising, Internet Advertising &amp; Web Marketing, and Promotion=20
+  Information</A></FONT></CENTER></DT></DL>
+<P>
+<TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD =
+background=3Dhttp://www.lighthouse3d.com/vrml/tutorial/images/middlec.gif=
+=20
+    colSpan=3D3 height=3D53 width=3D160><IMG border=3D0 height=3D53=20
+      src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/leftc.gif" =
+
+    width=3D42></TD>
+    <TD colSpan=3D3 height=3D53 width=3D32><IMG border=3D0 height=3D53=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/rightc.gif"=20
+    width=3D32></TD>
+    <TD=20
+    =
+background=3Dhttp://www.lighthouse3d.com/vrml/tutorial/images/horfiller.g=
+if=20
+    height=3D53 width=3D4000><IMG border=3D0 height=3D53=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/horfiller.gif"=20
+      width=3D35></TD>
+    <TD=20
+    =
+background=3Dhttp://www.lighthouse3d.com/vrml/tutorial/images/horfiller.g=
+if=20
+    height=3D53 width=3D39><IMG border=3D0 height=3D1=20
+      src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/dummy.gif" =
+
+    width=3D1></TD>
+    <TD height=3D53 width=3D35><IMG border=3D0 height=3D53=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/horfiller.gif"=20
+      width=3D35></TD>
+    <TD height=3D53 width=3D47><A =
+href=3D"mailto:ajbrf@yahoo.com?subject=3Dintex"><IMG=20
+      alt=3D"Send me bugs and suggestions, please" border=3D0 =
+height=3D53=20
+      src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/bugs.gif"=20
+      width=3D47></A></TD>
+    <TD height=3D53 width=3D252><IMG border=3D0 height=3D53=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/vrmltut.gif"=20
+      width=3D252></TD></TR>
+  <TR>
+    <TD =
+background=3Dhttp://www.lighthouse3d.com/vrml/tutorial/images/left.gif=20
+    noWrap width=3D9><IMG border=3D0 height=3D1=20
+      src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/dummy.gif" =
+
+    width=3D1></TD>
+    <TD bgColor=3D#cccccc noWrap width=3D3><IMG border=3D0 height=3D1=20
+      src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/dummy.gif" =
+
+    width=3D1></TD>
+    <TD bgColor=3D#cccccc noWrap vAlign=3Dtop width=3D148><FONT =
+size=3D1><FONT=20
+      face=3DArial,Helvetica,sans-serif><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/script.shtml?script">VR=
+ML=20
+      Script Tutorial</A><BR><A=20
+      href=3D"http://www.lighthouse3d.com/vrml/tutorials.shtml">Full =
+list</A><BR>
+      <P><FONT size=3D2>VRML Interactive Tutorial</FONT>
+      <P><FONT size=3D1><FONT face=3D"Arial, Helvetica, sans-serif"><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?intro">Intr=
+oduction</A>=20
+      <BR><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?fstruct">VR=
+ML=20
+      File Structure</A> <BR><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?shape">Draw=
+ing:=20
+      Shape node</A> <BR><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?bshape">Geo=
+metry=20
+      Nodes:</A></FONT></FONT>=20
+      <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD width=3D20 font-size=3D"8" font-face=3D"Arial"></TD>
+          <TD font-size=3D"8" font-face=3D"Arial"><FONT size=3D1><FONT=20
+            face=3D"Arial, Helvetica, sans-serif"><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?box">Box</A=
+>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?sphere">Sph=
+ere</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?cone">Cone<=
+/A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?cylin">Cyli=
+nder</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?ps">PointSe=
+t</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?indls">Inde=
+xedLineSet</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?indfs">Inde=
+xedFaceSet</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?extru">Extr=
+usion</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?elevg">Elev=
+ationGrid</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?egex">Examp=
+le:=20
+            Chessboard</A> <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?text">Text<=
+/A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?fonts">Font=
+Style</A></FONT></FONT></TD></TR></TBODY></TABLE><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?appea">Appe=
+arance</A>=20
+
+      <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD width=3D20 font-size=3D"8" font-face=3D"Arial"></TD>
+          <TD font-size=3D"8" font-face=3D"Arial"><FONT size=3D1><FONT=20
+            face=3D"Arial, Helvetica, sans-serif"><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?material">M=
+aterial</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?tex">Textur=
+es</A>=20
+
+            <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 =
+width=3D"100%">
+              <TBODY>
+              <TR>
+                <TD width=3D20 font-size=3D"8" font-face=3D"Arial"></TD>
+                <TD font-size=3D"8" font-face=3D"Arial"><FONT =
+size=3D1><FONT=20
+                  face=3D"Arial, Helvetica, sans-serif"><A=20
+                  =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?imagetex">I=
+mage=20
+                  Texture</A> <BR><A=20
+                  =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?movietex">M=
+ovie=20
+                  Texture</A> <BR><A=20
+                  =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?pixeltex">P=
+ixel=20
+                  Texture</A></FONT></FONT></TD></TR></TBODY></TABLE><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?texco">Text=
+ure=20
+            Coordinate</A> <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?textr">Text=
+ure=20
+            Transform</A></FONT></FONT></TD></TR></TBODY></TABLE><FONT =
+size=3D1><FONT=20
+      face=3D"Arial, Helvetica, sans-serif"><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?light">Let =
+
+      there be Light</A></FONT></FONT>=20
+      <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD width=3D20 font-size=3D"8" font-face=3D"Arial"></TD>
+          <TD font-size=3D"8" font-face=3D"Arial"><FONT size=3D1><FONT=20
+            face=3D"Arial, Helvetica, sans-serif"><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?dlight">Dir=
+ectional=20
+            Light</A> <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?plight">Poi=
+nt=20
+            Light</A> <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?slight">Spo=
+t=20
+            Light</A></FONT></FONT></TD></TR></TBODY></TABLE><FONT =
+size=3D1><FONT=20
+      face=3D"Arial, Helvetica, sans-serif"><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?colmt">Mate=
+rials=20
+      with Colored Lights</A> <BR><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?grouping">H=
+ierarchical=20
+      Node Structures</A></FONT></FONT>=20
+      <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD width=3D20 font-size=3D"8" font-face=3D"Arial"></TD>
+          <TD font-size=3D"8" font-face=3D"Arial"><FONT size=3D1><FONT=20
+            face=3D"Arial, Helvetica, sans-serif"><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?group">Grou=
+p</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?trans">Tran=
+sform</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?colli">Coll=
+ision</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?anchor">Anc=
+hor</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?billb">Bill=
+board</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?switch">Swi=
+tch</A></FONT></FONT></TD></TR></TBODY></TABLE><FONT=20
+      size=3D1><FONT face=3D"Arial, Helvetica, sans-serif"><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?inline">Inl=
+ining=20
+      Files</A> <BR><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?defuse">Def=
+ining=20
+      and Instancing Nodes</A> <BR><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?lod">Defini=
+ng=20
+      Levels of Detail</A> <BR><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?event">Even=
+ts=20
+      in VRML</A></FONT></FONT>=20
+      <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD width=3D20 font-size=3D"8" font-face=3D"Arial"></TD>
+          <TD font-size=3D"8" font-face=3D"Arial"><FONT size=3D1><FONT=20
+            face=3D"Arial, Helvetica, sans-serif"><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?route">Crea=
+ting=20
+            Paths between events: ROUTE</A> <BR>Generating Events based =
+on=20
+            Timers or User Actions=20
+            <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 =
+width=3D"100%">
+              <TBODY>
+              <TR>
+                <TD width=3D20 font-size=3D"8" font-face=3D"Arial"></TD>
+                <TD font-size=3D"8" font-face=3D"Arial"><FONT =
+size=3D1><FONT=20
+                  face=3D"Arial, Helvetica, sans-serif"><A=20
+                  =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?timer">Time=
+rs</A>=20
+                  <BR><A=20
+                  =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?touch">Touc=
+h=20
+                  Sensor</A> <BR><A=20
+                  =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?visib">Visi=
+bility=20
+                  Sensor</A> <BR><A=20
+                  =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?drag">Dragg=
+ing=20
+                  Sensors</A>=20
+                  <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 =
+width=3D"100%">
+                    <TBODY>
+                    <TR>
+                      <TD width=3D20 font-size=3D"8" =
+font-face=3D"Arial"></TD>
+                      <TD font-size=3D"8" font-face=3D"Arial"><FONT =
+size=3D1><FONT=20
+                        face=3D"Arial, Helvetica, sans-serif"><A=20
+                        =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?plase">Plan=
+e=20
+                        Sensor</A> <BR><A=20
+                        =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?sphse">Sphe=
+re=20
+                        Sensor</A> <BR><A=20
+                        =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?cylse">Cyli=
+nder=20
+                        =
+Sensor</A></FONT></FONT></TD></TR></TBODY></TABLE><A=20
+                  =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?proxi">Prox=
+imity=20
+                  Sensors</A></FONT></FONT></TD></TR></TBODY></TABLE><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?psex">Examp=
+le:=20
+            Proximity =
+sensor</A></FONT></FONT></TD></TR></TBODY></TABLE><FONT=20
+      size=3D1><FONT face=3D"Arial, Helvetica, sans-serif"><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?inter">Inte=
+rpolators</A></FONT></FONT>=20
+
+      <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD width=3D20 font-size=3D"8" font-face=3D"Arial"></TD>
+          <TD font-size=3D"8" font-face=3D"Arial"><FONT size=3D1><FONT=20
+            face=3D"Arial, Helvetica, sans-serif"><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?clint">Colo=
+r</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?coint">Coor=
+dinate</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?normaint">N=
+ormal</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?orienint">O=
+rientation</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?positint">P=
+osition</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?scalaint">S=
+calar</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?intex">Exam=
+ple</A></FONT></FONT></TD></TR></TBODY></TABLE>Let=20
+      the Music Play=20
+      <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD width=3D20 font-size=3D"8" font-face=3D"Arial"></TD>
+          <TD font-size=3D"8" font-face=3D"Arial"><FONT size=3D1><FONT=20
+            face=3D"Arial, Helvetica, sans-serif"><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?sound">Soun=
+d</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?audio">Audi=
+oClip</A></FONT></FONT></TD></TR></TBODY></TABLE><FONT=20
+      size=3D1><FONT face=3D"Arial, Helvetica, sans-serif"><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?bind">Binda=
+ble=20
+      Nodes</A></FONT></FONT>=20
+      <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD width=3D20 font-size=3D"8" font-face=3D"Arial"></TD>
+          <TD font-size=3D"8" font-face=3D"Arial"><FONT size=3D1><FONT=20
+            face=3D"Arial, Helvetica, sans-serif">Who Am I: <A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?navig">Navi=
+gationInfo</A>=20
+            <BR>Where Am I: <A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?view">ViewP=
+oint</A></FONT></FONT></TD></TR></TBODY></TABLE>Adding=20
+      Realism to the world=20
+      <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD width=3D20 font-size=3D"8" font-face=3D"Arial"></TD>
+          <TD font-size=3D"8" font-face=3D"Arial"><FONT size=3D1><FONT=20
+            face=3D"Arial, Helvetica, sans-serif"><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?back">Backg=
+round</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?fog">Fog</A=
+></FONT></FONT></TD></TR></TBODY></TABLE>Information=20
+      about your world=20
+      <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD width=3D20 font-size=3D"8" font-face=3D"Arial"></TD>
+          <TD font-size=3D"8" font-face=3D"Arial"><FONT size=3D1><FONT=20
+            face=3D"Arial, Helvetica, sans-serif"><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?worldinf">W=
+orldInfo</A></FONT></FONT></TD></TR></TBODY></TABLE>Definition=20
+      for Auxiliary Nodes=20
+      <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD width=3D20 font-size=3D"8" font-face=3D"Arial"></TD>
+          <TD font-size=3D"8" font-face=3D"Arial"><FONT size=3D1><FONT=20
+            face=3D"Arial, Helvetica, sans-serif"><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?coord">Coor=
+dinate</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?color">Colo=
+r</A>=20
+            <BR><A=20
+            =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?norma">Norm=
+al</A></FONT></FONT></TD></TR></TBODY></TABLE></FONT></FONT></P></TD>
+    <TD bgColor=3D#cccccc noWrap width=3D1><IMG border=3D0 height=3D1=20
+      src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/dummy.gif" =
+
+    width=3D1></TD>
+    <TD =
+background=3Dhttp://www.lighthouse3d.com/vrml/tutorial/images/right.gif=20
+    noWrap width=3D7><IMG border=3D0 height=3D1=20
+      src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/dummy.gif" =
+
+    width=3D1></TD>
+    <TD noWrap width=3D24><IMG border=3D0 height=3D1=20
+      src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/dummy.gif" =
+
+    width=3D1></TD>
+    <TD colSpan=3D5 vAlign=3Dtop width=3D600><FONT=20
+      face=3D"Arial, Helvetica, sans-serif" size=3D2>
+      <H1>
+      <CENTER>Interpolator Examples</CENTER></H1><BR>This example uses =
+the=20
+      following <A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?inter">Inte=
+rpolators</A>:=20
+
+      <P></P>
+      <LI><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?positint">P=
+ositionInterpolator</A>=20
+
+      <LI><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?orienint">O=
+rientationInterpolator</A>=20
+
+      <LI><A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?scalaint">S=
+calarInterpolator</A>=20
+
+      <P></P>A <A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?timer">Time=
+Sensor</A>=20
+      as well as a <A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?touch">Touc=
+hSensor=20
+      </A>are also present in this example. <A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?route">ROUT=
+ES=20
+      </A>are used for animation purposes.=20
+      <P></P>
+      <H2>Step 1: Building the Static Scene</H2>
+      <P></P>
+      <P></P>The scene includes a red platform, build using a Box. The =
+platform=20
+      is placed such that the top surface is in the XZ plane. The code =
+to build=20
+      the platform is: <BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>Transform {=20
+        <DL>
+          <DD>translation 0 -0.2 0=20
+          <DL>
+            <DD>children Shape {=20
+            <DD>appearance Appearance { material Material { diffuseColor =
+1 0 0=20
+            }}=20
+            <DD>geometry Box {size 22 0.4 2} </DD></DL>
+          <DD>} </DD></DL>
+        <DD>} </EXEMPLO></DD></DL>
+      <HR>
+      <BR>A textured sphere is also present in the scene. The sphere is =
+placed=20
+      on the top at one end of the platform. The code for the sphere is: =
+<BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>Transform {=20
+        <DL>
+          <DD>translation -10 1 0=20
+          <DD>children=20
+          <DL>
+            <DD>Shape {=20
+            <DL>
+              <DD>appearance=20
+              <DL>
+                <DD>Appearance { material Material { }=20
+                <DD>texture ImageTexture { url "cone.jpg"} </DD></DL>
+              <DD>} </DD></DL>
+            <DD>
+            <DD>geometry Sphere {} </DD></DL>
+          <DD>} </DD></DL>} </EXEMPLO></DD></DL>
+      <HR>
+      <BR>
+      <CENTER>
+      <P></P>
+      <FORM><INPUT name=3Dq1 =
+onclick=3D"window.open('media/ball1.wrl','VRML','menubar=3Dyes,resizable=3D=
+yes,width=3D320,height=3D240');" type=3Dbutton value=3D"View VRML">=20
+      </FORM>
+      <P></P></CENTER>
+      <P></P>This scene is displayed differently on different viewers. =
+Some=20
+      viewers show the whole scene and you can see the whole platform =
+and the=20
+      ball on top of it. Other viewers only show a part of the platform =
+and the=20
+      ball isn't visible. These later viewers are the ones which are =
+according=20
+      to the official specification. The specification defines an =
+initial=20
+      position for the viewer by default. The former viewers do not use =
+this=20
+      default viewer's position, instead they compute a position where =
+the whole=20
+      scene is visible.=20
+      <P></P>
+      <P></P>In here it is assumed that you're using a compliant viewer =
+and=20
+      therefore using the default viewer's position you're not able to =
+see the=20
+      whole scene. This is because you're too close to the scene. The =
+default=20
+      position for the viewer is 0 0 10, looking in the negative Z =
+direction.=20
+      The direction is good, so we only have to move ourselves a little =
+further=20
+      from the origin to view the whole scene. Try 0 0 20 and you'll be =
+able to=20
+      see the whole scene. In order to change the position a <A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?view">Viewp=
+oint=20
+      </A>node is added to the VRML file. The code for this node is: =
+<BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>Viewpoint { position 0 0 20 } </EXEMPLO></DD></DL>
+      <HR>
+      <BR>
+      <CENTER>
+      <P></P>
+      <FORM><INPUT name=3Dq1 =
+onclick=3D"window.open('media/ball12.wrl','VRML','menubar=3Dyes,resizable=
+=3Dyes,width=3D320,height=3D240');" type=3Dbutton value=3D"View VRML">=20
+      </FORM>
+      <P></P></CENTER>
+      <H2>Step 2: Animation Part I</H2>
+      <P></P>The objective of this section is to introduce the <A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?positint">P=
+ositionInterpolator</A>,=20
+      and <A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?timer">Time=
+Sensor=20
+      </A>nodes.=20
+      <P></P>
+      <P></P>The animation for this section moves the sphere from one =
+side of=20
+      the platform, its original position, to the other side.=20
+      <P></P>
+      <P></P>In the general case animations require a timer to control =
+the pace.=20
+      In VRML timers are implemented with TimeSensors. Suppose we want =
+the ball=20
+      to take eight seconds to move from one extreme of the platform to =
+the=20
+      opposite extreme and then to start all over again. The following =
+timer=20
+      could be used: <BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>DEF timer TimeSensor {=20
+        <DL>
+          <DD>cycleInterval 8=20
+          <DD>loop TRUE </DD></DL>} </EXEMPLO></DD></DL>
+      <HR>
+      <BR>Note that the node is given a name using <A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?defuse">DEF=
+</A>,=20
+      this is because this name will be needed afterwards. The field =
+<I>loop=20
+      </I>is set to TRUE to repeat the animation.=20
+      <P></P>
+      <P></P>The TimeSensor node can be placed anywhere in the file.=20
+      <P></P>
+      <P></P>Because we want to change the ball's position we also need =
+a=20
+      PositionInterpolator. The interpolator will move the ball from its =
+
+      original position, -10 1 0, to the opposite extreme of the =
+platform, 10 1=20
+      0. The node is defined as: <BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>DEF pi PositionInterpolator {=20
+        <DL>
+          <DD>key [ 0 1 ]=20
+          <DD>keyValue [-10 1 0, 10 1 0] </DD></DL>} =
+</EXEMPLO></DD></DL>
+      <HR>
+      <BR>Note that the node is given a name using <A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?defuse">DEF=
+</A>,=20
+      this is because this name will be needed afterwards.=20
+      <P></P>
+      <P></P>The PositionInterpolator node can be placed anywhere in the =
+file.=20
+      <P></P>
+      <P></P>It is time to look at the events the above nodes generate =
+to see=20
+      how the animation is performed.=20
+      <P></P>
+      <P></P>The main idea is to have the PositionInterpolator =
+outputting events=20
+      with 3D values which will be used to change the <I>translation =
+</I>of the=20
+      Transform node in which the ball is defined. However the=20
+      PositionInterpolator can't output events without receiving events. =
+This is=20
+      where the TimeSensor comes into play. The TimeSensor node =
+generates events=20
+      as time goes by, we can send these events to the =
+PositionInterpolator=20
+      which in turn will output events to be feed into the Transform =
+node to=20
+      change its <I>translation </I>field.=20
+      <P></P>
+      <P></P>In order for a node to receive events it must be given a =
+name using=20
+      DEF, so we'll have to add this to the Transform node where the =
+ball is.=20
+      The new version is: <BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO><B>DEF tr </B>Transform {=20
+        <DL>
+          <DD>translation -10 1 0=20
+          <DD>children=20
+          <DL>
+            <DD>Shape {=20
+            <DL>
+              <DD>appearance Appearance {=20
+              <DL>
+                <DD>material Material { }=20
+                <DD>texture ImageTexture { url "cone.jpg"} </DD></DL>}=20
+              <DD>geometry Sphere {} </DD></DL>} </DD></DL></DD></DL>}=20
+      </EXEMPLO></DD></DL>
+      <HR>
+      <BR>A TimeSensor node outputs an event called =
+<I>fraction_changed</I>,=20
+      this event has a value between 0 and 1, telling the fractional =
+amount of=20
+      time from the cycle interval elapsed. We can feed this value into =
+the=20
+      interpolator's, sending the event <I>set_fraction </I>to it. This =
+is=20
+      achieved using <A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?route">ROUT=
+ES</A>:=20
+      <BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>ROUTE timer.fraction_changed TO pi.set_fraction=20
+        </EXEMPLO></DD></DL>
+      <HR>
+      <BR>The event <I>set_fraction</I> inputs a value which is used has =
+a=20
+      <I>key </I>for the interpolator. The interpolator then computed =
+the=20
+      associated <I>keyValue</I>, and outputs the computed value with =
+the event=20
+      <I>value_changed</I>. This value is then fed into the Transform =
+using the=20
+      event <I>set_translation</I>. This is achieved by: <BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>ROUTE pi.value_changed TO ball_tr.set_translation=20
+        </EXEMPLO></DD></DL>
+      <HR>
+      <BR>
+      <CENTER>
+      <P></P>
+      <FORM><INPUT name=3Dq1 =
+onclick=3D"window.open('media/ball15.wrl','VRML','menubar=3Dyes,resizable=
+=3Dyes,width=3D320,height=3D240');" type=3Dbutton value=3D"View VRML">=20
+      </FORM>
+      <P></P></CENTER>
+      <H2>Step 3: Animation Part II - Adding More Realism</H2>
+      <P></P>The objective of this section is to introduce the <A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?orienint">O=
+rientationInterpolator</A>.=20
+
+      <P></P>
+      <P></P>The movement of the ball is not very realistic is it? A =
+rolling=20
+      ball would have been better. That's exactly what we're going to do =
+in=20
+      here, roll the ball as it moves.=20
+      <P></P>
+      <P></P>To roll the ball we need to change its orientation as it =
+moves, so=20
+      we'll add a OrientationInterpolator to our world. The source code =
+for this=20
+      interpolator is: <BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>DEF oi OrientationInterpolator {=20
+        <DL>
+          <DD>key [0 0.157 0.314 0.471 0.628 0.785 0.942 1]=20
+          <DD>keyValue [ 0 0 1 0, 0 0 1 -3.14,=20
+          <DL>
+            <DD>0 0 1 -6.28, 0 0 1 -9.42, 0 0 1 -12.56,=20
+            <DD>0 0 1 -15.7, 0 0 1 -18.84, 0 0 1 -20.0 ] =
+</DD></DL></DD></DL>}=20
+        </EXEMPLO></DD></DL>
+      <HR>
+      <BR>Where did we get all those strange looking values for both =
+<I>key=20
+      </I>and <I>keyValue </I>?=20
+      <P></P>
+      <P></P>First look at the keyValue list, it is a list of rotations. =
+All=20
+      rotations are done in the Z axis, this is because this is the axis =
+of=20
+      rotation for a rolling ball moving along the X axis, in the XZ =
+plane.=20
+      <P></P>
+      <P></P>Now focus on the rotation values, i.e. the angles and the =
+keys. The=20
+      first key specifies a fraction of 0.157. We know that the ball =
+will move=20
+      20 VRML units from the start of the animation till the end. So in =
+0.157 of=20
+      the total time the ball will be translated 3.14 VRML units. Now =
+look at=20
+      the first angle, -3.14. It is the same absolute value, the minus =
+sign=20
+      comes in because we want to rotate the ball in a clockwise =
+direction and=20
+      that requires negative values.=20
+      <P></P>
+      <P></P>The reasoning behind this is that if you roll a ball until =
+the top=20
+      of the ball reaches the floor, the distance covered is 3.14 * the =
+radius=20
+      of the ball, or PI times the radius. In our case the radius is 1 =
+so the=20
+      distance is 3.14. Measuring an angle in radians actually provides =
+the=20
+      fractional perimeter for the angle.=20
+      <P></P>
+      <P></P>If you apply the same computations for the remaining =
+<I>keyValues=20
+      </I>you'll see that this ratio is maintained.=20
+      <P></P>
+      <P></P>So why not just specify two rotations in the =
+<I>keyValues</I>,=20
+      namely, 0 0 1 0 and 0 0 1 -20 ? Because VRML normalizes rotations, =
+i.e. it=20
+      computes the module 2 * PI of the rotation, therefore -20 =3D =
+-1.16 - (6 *=20
+      PI). In VRML -20 is equal to -1.16 which is a little bit under -90 =
+
+      degrees.=20
+      <P></P>
+      <CENTER>
+      <P></P>
+      <P></P><IMG height=3D213=20
+      src=3D"http://www.lighthouse3d.com/vrml/tutorial/media/angle.jpg" =
+width=3D247>
+      <P></P>
+      <P></P></CENTER>
+      <P></P>
+      <P></P>
+      <P></P>When interpolating rotations VRML takes the shortest path, =
+this is=20
+      why we must specify rotations which differ at most 3.14 radians =
+between=20
+      two consecutive <I>keyValues</I>.
+      <P></P>
+      <P></P>As for the positionInterpolator we need to receive events =
+from the=20
+      TimeSensor and send them to the Transform, but this time to the=20
+      <I>rotation </I>field. The routes to achieve this are: <BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>ROUTE timer.fraction_changed TO oi.set_fraction=20
+        <P></P>ROUTE oi.value_changed TO ball_tr.set_rotation =
+</EXEMPLO></DD></DL>
+      <HR>
+      <BR>
+      <CENTER>
+      <P></P>
+      <FORM><INPUT name=3Dq1 =
+onclick=3D"window.open('media/ball16.wrl','VRML','menubar=3Dyes,resizable=
+=3Dyes,width=3D320,height=3D240');" type=3Dbutton value=3D"View VRML">=20
+      </FORM>
+      <P></P></CENTER>
+      <H2>Step 4: Animation Part IV - Making the ball move forward and=20
+      backwards</H2>
+      <P></P>This section introduces the <A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?scalaint">S=
+calarInterpolator=20
+      </A>node.=20
+      <P></P>
+      <P></P>Up till now we have a ball moving from left to right, end =
+the ball=20
+      reaches the right extreme of the platform over and over again. In =
+this=20
+      section we will make the ball move backwards as well.=20
+      <P></P>
+      <P></P>The animation built so far moves the ball from left to =
+right. Now=20
+      imagine what would happen if time went backwards: we would see the =
+ball=20
+      moving from right to left.=20
+      <P></P>
+      <P></P>How do we reverse time? All interpolators in this example =
+receive=20
+      an event <I>set_fraction</I>. This event has a value which goes =
+from 0.0=20
+      to 1.0. What we want is an event which goes from 0.0 to 1.0 and =
+then back=20
+      again to 0.0. The ball starts at the left (0.0), moves to the =
+right (1.0)=20
+      and then moves back to the left (0.0 again).=20
+      <P></P>
+      <P></P>So basically what we want is something which converts the =
+sequence=20
+      0.0 -&gt; 1.0 into the sequence 0.0-&gt;1.0-&gt;0.0. This can be =
+achieved=20
+      by a ScalarInterpolator as follows: <BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>DEF si ScalarInterpolator {=20
+        <DL>
+          <DD>key [ 0 0.5 1]=20
+          <DD>keyValue [0 1 0] </DD></DL>} </EXEMPLO></DD></DL>
+      <HR>
+      <BR>The TimeSensor should be routed to the ScalarInterpolator to =
+complete=20
+      the sequence conversion. This is achieved by: <BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>ROUTE timer.fraction_changed TO si.set_fraction=20
+        </EXEMPLO></DD></DL>
+      <HR>
+      <BR>The <I>value_changed</I> event from the ScalarInterpolator =
+will move=20
+      from 0.0 to 1.0 and back to 0.0. All there is left to do now is to =
+change=20
+      all the routes to the remaining interpolators, they no longer =
+receive=20
+      events from the TimeSensor, instead they will receive events from =
+the=20
+      ScalarInterpolator. <BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>ROUTE si.value_changed TO pi.set_fraction=20
+        <P></P>ROUTE si.value_changed TO oi.set_fraction =
+</EXEMPLO></DD></DL>
+      <HR>
+      <BR>Note: we haven't changed the cycleInterval field of the =
+TimeSensor, so=20
+      the ball will move twice as fast because the the ball is running =
+the=20
+      double of the initial distance, i.e. is moving from the left to =
+the right=20
+      and back again. IF you want to keep the previous pace then you =
+should set=20
+      the cycleInterval to twice the original value.=20
+      <P></P>
+      <CENTER>
+      <P></P>
+      <P></P>
+      <FORM><INPUT name=3Dq1 =
+onclick=3D"window.open('media/ball17.wrl','VRML','menubar=3Dyes,resizable=
+=3Dyes,width=3D320,height=3D240');" type=3Dbutton value=3D"View VRML">=20
+      </FORM>
+      <P></P></CENTER>
+      <H2>Step 5: Starting the Movement with a Mouse Click</H2>
+      <P></P>This section introduces the <A=20
+      =
+href=3D"http://www.lighthouse3d.com/vrml/tutorial/index.shtml?touch">Touc=
+hSensor=20
+      </A>node.=20
+      <P></P>
+      <P></P>In the previous sections the ball was moving constantly, =
+now were=20
+      going to start the movement with a mouse click and have the =
+movement=20
+      repeated only once.=20
+      <P></P>
+      <P></P>First, one must set the loop field of the TimeSensor to =
+FALSE. The=20
+      resulting TimeSensor is as follows:=20
+      <P></P><BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>DEF timer TimeSensor {=20
+        <DL>
+          <DD>cycleInterval 8=20
+          <DD>loop FALSE </DD></DL>} </EXEMPLO></DD></DL>
+      <HR>
+      <BR>Because the loop field is false, and we're using the default =
+startTime=20
+      and stopTime fields for the TimeSensor the ball won't move.=20
+      <P></P>
+      <P></P>Next we need to add a TouchSensor to the same group as the =
+Sphere.=20
+      The Transform node will be: <BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>DEF ball_tr Transform {=20
+        <DL>
+          <DD>translation -10 1 0=20
+          <DD>children [=20
+          <DL>
+            <DD>Shape { appearance Appearance {=20
+            <DL>
+              <DL>
+                <DD>material Material { }=20
+                <DD>texture ImageTexture { url "cone.jpg"}=20
+                <DD>} </DD></DL>
+              <DD>geometry Sphere {} </DD></DL>}=20
+            <DD>DEF ball_sensor TouchSensor {} </DD></DL>
+          <DD>] </DD></DL>} </EXEMPLO></DD></DL>
+      <HR>
+      <BR>The TouchSensor will generate the event touchTime when the =
+user clicks=20
+      the mouse over a shape that within the same group as the sensor. =
+This=20
+      event shall be used to set the startTime of the TimeSensor =
+therefore=20
+      starting the animation. Because the loop field of the TimeSensor =
+is FALSE=20
+      the animation shall perform only once.=20
+      <P></P>
+      <P></P>The required routing is: <BR>
+      <HR>
+      Example:<BR>
+      <DL>
+        <DD><EXEMPLO>ROUTE ball_sensor.touchTime TO timer.set_startTime=20
+        </EXEMPLO></DD></DL>
+      <HR>
+      <BR>
+      <CENTER>
+      <FORM><INPUT name=3Dq1 =
+onclick=3D"window.open('media/ball4.wrl','VRML','menubar=3Dyes,resizable=3D=
+yes,width=3D320,height=3D240');" type=3Dbutton value=3D"View VRML">=20
+      </FORM>
+      <P></P>
+      <P></P></CENTER>
+      <H3><I>That's all folks !!!</I>=20
+      <P></P>
+      <P></P>
+      <P></P>
+      <P></P></H3></FONT>
+      <P></P></LI></TD></TR></TBODY></TABLE>
+<TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0>
+  <TBODY>
+  <TR>
+    <TD width=3D22><IMG border=3D0 height=3D19=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/botleft.gif"=20
+      width=3D22></TD>
+    <TD=20
+    =
+background=3Dhttp://www.lighthouse3d.com/vrml/tutorial/images/botfiller.g=
+if=20
+    width=3D124><IMG border=3D0 height=3D1=20
+      src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/dummy.gif" =
+
+    width=3D1></TD>
+    <TD width=3D22><IMG border=3D0 height=3D19=20
+      =
+src=3D"http://www.lighthouse3d.com/vrml/tutorial/images/botright.gif"=20
+      width=3D22></TD></TR></TBODY></TABLE><BR><BR>
+<CENTER><FONT color=3D#333333 size=3D-1>Site designed and maintained by =
+<A=20
+href=3D"mailto:ajbrf@yahoo.com">Ant=F3nio Ramires Fernandes</A><BR>Your =
+comments,=20
+suggestions and references to further material are welcome!=20
+</FONT></CENTER></BODY></HTML>
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/images/spacer.gif
+
+R0lGODlhAQABAJH/AP///wAAAP///wAAACH/C0FET0JFOklSMS4wAt7tACH5BAEAAAIALAAAAAAB
+AAEAAAICVAEAOw==
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_01.gif
+
+R0lGODlhLgAeANUmAP+BAv/EiP/Fi/+ECf/Dhv+RIuK6p/+7dv+IEdWxrv+jRv+bNv+BA/+fPvrD
+kKei3v+vX/+6dP+wYf+PHv+oUMeptP+bN8Oswqac1f+SJf+4cOq9nv/IkbCm1v+JE/+GDL+owP+i
+Rf+QIf/Chf+gQP+AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAACYALAAAAAAuAB4AAAZSQJNw
+SCwaj8ikcslsOp/QqHRKrVqv2Kx2y+16v+CweEwum8/otHrNbrvf8Hi8A0psHAHCaM8feR8XBgIH
+EhQhJIiJiF0YFRwaChkeAwAllpeWQQA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_02.gif
+
+R0lGODlhWwAbAOZbAFBGviATrD4yt+/u+dHP7g4CjAkBWaCa25GK1ko/u29nyTElsi8jseDe8xMF
+p7Cr4WBXxGlgx0xBvBwPqhEDpBoNqTQosxUHp15UwzImshIEpjQps3hwzBgKqA8Dk3FpylFHvtvZ
+8mVcxQ8DktLP7szJ7PTz+w8DkX94z1tRwh0Qq0E1uA8DlEc8usK+6BkMqaum4FRKv0tAvKGb3Gxj
+yAwCdw8Dj8jF61JIvjcstAsCaSwgsDYrtHpyzRQGp46H1TUqtHx0zomC0yMWrZCJ1U9EvY+I1bez
+5J6Z21xSwgoCY/f3/JqT2ZiS2cnG6/Hw+tvY8S4isRADn4J70JOM17+75353z42G1E1CvP///xED
+pv///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+BAEAAFsALAAAAABbABsAAAf/gFuCg4SFhoeIiYqLjI2Oj5CRkpEmUC4wTEQ/V5ydnp+goaKjpKWf
+UxGKIUdUKDRJIFiys7S1tre4ubq7tjISMRKGSyVNPTgWQy8OWszNzs/Q0dLT1NXQDhMMQCqFN0Yi
+GxUa1uTl5ufR2BQ2gyRCEDsX1QEAAAHo+M/0APnNDhQFBD1BEiGDvGkAqmRZmKUKv37mGDxgmOWB
+AGdWspTzwaLGFicfWlSgpiDLACv1rAzIogAiOQEDBiCohyDmRWYZyzk4oWTLDAxRxkkTkIXAvWYB
+CGS56XJagwFMtTAY0KBZznIFDGwJguWotANLoRE9gLPegSoIGDgLYKUKWrXM/xQoYICgyoGHWkpa
+gZbx5lVyWbdgWNGBWlFpSpkVlWnl6c2kjJ/CrfL0gBWlDxV6lfbXWuAiPJYNzYJAGoKwCx8TIMDs
+wICjSR8wU7hXS4ABZLUMYF2tc7XACTJQA5ClNt8s/CpizHKv+PLZVZu5VVzFmdvrLbX4pgZ8ATWi
+xp+dvui8GfF6WSxbWQ/24nTp1bU0xLg+Y+3t07pXOxwtsfzw5xFHwHXXuRffbPERMIA05eEnjX7U
+tCdWeoqFV1IAROH1zHsIMnOahsxA0KBGWGmVgHffFbVZUmHJx1trvMn0nBYc0hgfA/M9o9R9JAJm
+IookmYQSACqx1MxCB9yTEYEEOBV3jwIy2mjdgRk5xAwACjbAY331gdgMhNUkRJGVRz7QwEInOXMa
+Q1UcVWONCpzJ0AEMWNYkRQuF5wyY1uyzWYVaCOClbfX8SQ4D9TSlBZ8Qlafoow/++KijkFb6paSK
+VpGdpZwyyumnLgWWggWgltrUCDpswUEOpraajxQeBAIAOw==
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_03.gif
+
+R0lGODlhWgAbAOZvAP+iRP/37v/Mmf+qVYpEANhsAP+ePf+RIv/v3v+YMP/Eif+IEP+yZf+QIP/V
+qv+AAf+CBP/duv+FCv/nzv+DB/+BAv+SJf+pUv+hQv+RI/+ECf/s2P+oUP+5c/+TJv+UKP/kyf6A
+AP/79/+vXqNRAP+SJP+jRttuAP/Ikf+OHfV7APx+AP+ZM/+wYf+tWv+MGf/ixv/BgtdsAP/nz/N6
+AOFxAP+XLv+4cP/Ro/+zZ//gwP/38P+3bv/Dho5GAP+PH//Tpv+KFf/YsP67dv/Nmq9vLv/Bg/+k
+SP+nT+XAnMmUX/+JE/+iRf+GDf+pU//58/THmv/Hj/+7dtJpAN6MOv/Ll//evtptAP/Dh/+YMf/A
+gf/ixP/EiP/YstBoAP+5cvR6APrv4+JxAP+UKf/Fi5pTDP/Jkv/16/d8AP+dOv+6df/Chf+gQP//
+//+AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+BAEAAG8ALAAAAABaABsAAAf/gG+Cg4SFhoeIiYqLjI2Oj5CRko5PG1ZAZlw9a5ydnp+goaKjpKVr
+MUZRODpniRtdZFItHExstre4ubq7vL2+v7cYRxwXX0KGIiAoNyYWSxoVbtLT1NXW19jZ2tvSDxAS
+QSVZNmsBhFtYLh4SD9zu7/Dx1RBNLwtDgzNaAykQ8v8AA1J7QEEDGChvdlQZkcGfwIcQ3XmjQSUM
+jBxpJMAb0EaANQZtFLgB0KakyTYOAExT0ybAtQBt1EhjGfEBGi9JiFz40Q5eAJfVHLRJMDImgKMA
+Bkxoo9INyzYDqnGMObNNRDcrpijpwGaBPAFQqS1og0AayabTEnSsisAjNQEI/6g6tRoxhIwiTlhQ
+kKfWrTSQMouindYmQlUFQKcFUCCX5tUTZTB8iCYPQWI3QhuYZVqtwdq5aqNK46g2sOOIV3wYyACQ
+peixhjcPbhCB81w3bafBddOYbsQCBAwcAOjZLUgG00ieNBn4NmLFIntfdQNceMAJQIV63awGKQAG
+SzXfDu2GNG/TviFWHw4Q5ICxfgV3lo7b4+7zVaevDwjfPbWz1tD33GLS0PdbcOwB5EAAC1YDYDX0
+9TVUgejph6BAU4n0n23UGBhXWRRWpcaIJA4Gz34CwUTUhia6EQECXp3GmIb4zbWcXPKgON2OPE6j
+Y49AHmhdkEQ+9GORSJ5IABMSFiTpJDw1kMDDGE9WuY0KYgQCADs=
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_04.gif
+
+R0lGODlhWgAbANU9ALy8u5OTkKOjoff39qCgnt7e3UZFRG5ua+7u7sXFw5ubmYqKiKysqubm5c3N
+zNXV1LS0soaGhIODgKmpp4iIhbCwrnR0ctHR0KampMnJx3NzcNDQz4GBfoODgb29vKWlo7q6uV5d
+W25ta5WVk5KSkJGRjnJxb8vLyaqqqLi4tp2dm7m5t5aWlM3Ny319epSUkpKSj1NSUICAfbq6uL+/
+voiIhnBwbXNycE5NTMPDwqGhn////4KCf////wAAAAAAACH5BAEAAD0ALAAAAABaABsAAAb/wJ5w
+SCwaj8ikcslsOp/QqNS5yeSu2Kx2y+16v+Cvp4K8nAAonXrNbrvf8Lh8LifoPrpii4YhRXiAgYKD
+hIWGh4iJiBIUMCM1QzkzCn+KlpeYmYeMHDZCIASVmqOkpYQSMiI9KxUlpq+wox0WIRMqoqQJOwyC
+DjsJggy/gAEJBQUAAYEAO83NAw4KsTwSJjgEyq/CAIIIOwiCurwKAwgACQgD2cwC7QIA3hDTBwbY
+sAs7BYEB+TvZPAV2LODxAMFAHgugAWI2aEEDdbHo2YPVYMeyHQJ2yAO0owGgAcACHVtocVDGkK8k
+/jOlSxpBcAgeADo5cyUCByQLDfAIS2WsxG0cgSUYQFKASQYFBrhkSChgxHorTe2QmZGXMGkPSgpy
+1mCpVkFOe0KdVgCcLkD4uA3QV4hBuZxNiYqdCItZgAZsAXbdwc0QhB3SmA7K95Tuq4zM+vJIDHgm
+RkEZjQoOBHRuVKneXPJQ8E0uR8WLBYZu+PBgyrFkvw0aMLXXgI0QFIZ2JwBCOqOFL5dihlNQVtAL
+AjpLcJCZsx3QNFueNmpBO+aXfEKfTp2H9OrYl2ffXorehBfcw2u6ESMFC/HoLbnQEAQAOw==
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_05.gif
+
+R0lGODlhEgEbAIAAAP///wAAACH5BAEAAAAALAAAAAASARsAAAJghI+py+0Po5y02ouz3rz7D4bi
+SJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmM
+TqvX7Lb7DY/L5/S6/Y7P6/f8fqUAADs=
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_06.gif
+
+R0lGODlh/gEDANUmAP+BAv/EiP/Fi/+ECf/Dhv+RIuK6p/+7dv+IEdWxrv+jRv+bNv+BA/+fPvrD
+kKei3v+vX/+6dP+wYf+PHv+oUMeptP+bN8Oswqac1f+SJf+4cOq9nv/IkbCm1v+JE/+GDL+owP+i
+Rf+QIf/Chf+gQP+AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAACYALAAAAAD+AQMAAAZqwJFw
+SCwaj8ikcslcCgKQSWlKrVqv2Kx2y+1mGQhSpEkum8/otHrNbrvf8HicRK/b7/i8fs/v+/sNCyID
+XoWGh4hcAB8FFn+PkJGSk5SVlpeYmZqbnJyJn6ChoqOkpaanqKmqq6ytrq+tQQA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_07.gif
+
+R0lGODlhIwAaAOZkAP+AAfx+AP6AAP+CBP1/ANdsAMVjAPd8AIpEANJpAAYBOtxuANhsAONyAHln
+uSIOav+SJGIwEP/Bgv+YMZhqiv+GDdptAP+MGd5vAFcrA9Wkk4RCAHg7BCwUL01Bu/+ECXs9AP+h
+Qr1fALOPpORyAEgjFaxWAF8uAP+DB9tuAHk8AE8mPe94AINBEP+KFScSIwwENjQZIqZTAIZDACgS
+KCgSI5VKAKJgYhEGNJBGTA8GNP+pUuqxh6dTIi0YoJhMAP+oUNBoANaNY14uAKNRABADjppNALtd
+APN6APF5APR6ADUZJbhcAEgjEvq7gY5GAIlEALNZAEYiIfZ8AP+XLvZ7AP+IEPl9AG01If+kSEwl
+CmMuVY5HBDsdFv+FCr9fAP/Chf+gQFstAP+AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+BAEAAGQALAAAAAAjABoAAAfhgGCCg4SFhRJOPBojDmSOj49hkpOUlZYhWUA7QhQekI9joaKjpKQA
+A14uEBNUNz6fZKWys6IDFRdWOUWftL2lACgfSlu8vsahp0g9D5DHzgAHQSvNzscBCVjU1b4CBS3a
+270pXODhsxZP5ealDAjq66Pt7/ChBVDz8AQJG/jrVwYc+plLEiWCwG0CGhiRcrDaFAMqOjS0hsFG
+CRwTfQUgIeMEjWL0BFRZQGTIEgUgwxE4wGLBkRliYsCA9aWmzZs4b4pgYuIHCDFNaqCEJaao0aNI
+k2bQ0uWFDlhQo0qdCikQADs=
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_08.gif
+
+R0lGODlhKAAXAOZPAP6AAP+AAVstAP+FCv+IENptAP+ePf+RIv+RI/x+AP+PH/+CBP+BAv+hQr1f
+AGgzGW82REwlCv+zZ7yFgRkJbPagT/Z7AP+TJj8dNv+tWv/Dh61WAP+qVYl6w+h0AN2ni7lcACoQ
+lPd8ALxvU/+gQBADkIRNcP+LFotFAI2G1PF5AP+pUv+UKOp1AP+DB9dsAP+dO/+vXv+bN5t4oP+O
+HcNiAC4WI/l9AFcrA/+ZM//AgaZTALCTscKirr5fAPN6AL9fAP+dOr1eAN6CPgoBVhUIOz0dFmAu
+OGEtX/aTNf+MGd6XZ71dJZxNAP+AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5
+BAEAAE8ALAAAAAAoABcAAAe8gE+Cg4SFhocpPRoZFwMBTpCQh5OUhDw6HDQLkZyVnoYdHzEIm5yR
+n6iCMxJBA6adqZ8TKwqPr5KxnkskBLenuZUVOS6+uMCTDSwMxU7HlAYIzM3OhwYH0tSHMNfM2YYy
+CtjehElK4uOCQye2vuiDIwTLxe6CJgEAAPP0IUw/N/m36AlCUsCDCICmBD4pAaFGARUJXil8QuHI
+DiEvWlhIAHDiEyIYHqBosgGEAx9APAoqYsNIBBwCYqqkFAgAOw==
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_09.gif
+
+R0lGODlhNgAXAMQSAPXpEfbbD/m/Cv6NAvfVDvuqB/2UA/6HAfq4CfbiEPyjBvjGC/ycBfqwCPjN
+DFstAL9fAP+AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABIALAAAAAA2ABcAAAXrYCSOZGmeaKqubOu+cCzPdG3fo9OQDIDbOp7vRwuOeiNDozE4HgoNRkQR
+HT0bheLuOCwkEIKEQQQgCBAAxwKRUEQGAZ2DMHPEHXiCbwAYRxoBZAgiBA4iCIYCCyMBWTEOAgyS
+DA0+DXQiB30RAFIRRg2GAVGSAgIyRiJIoSSdnJ6ghmV4eIOPW6o+BYEifE2un1usAW69fjCpEUgH
+CY4Chq8isRHPmY2ouMpDBgkEAQQHZLDChgd2DgmnRDzHLgMMTevy8/T19vcwEPr7/P3+/wADBnxA
+sKDBgwgTKly4UILDhxAjSpxIsWLFEAA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_10.gif
+
+R0lGODlhRwAXAMQSAP6HAf6NAvbbD/biEPuqB/2UA/q4CfjGC/m/CvfVDvyjBvycBfjNDPXpEfqw
+CFstAL9fAP+AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABIALAAAAABHABcAAAX/YCSOZGmeaKqubOu+cCzPdG3feK67TOP/DcdpAeAJUYzjbtFYNRYuAhSp
+1DFHRFGgEGE6AiKFg1CMbAPCAtjscChGSVGhXa5dRU+RgxHpJQgRCAJ7CUUOAgN8cQsDBocGInEG
+gwgDazR3EXkRe3hQBAJlBwicDVx9QgaQXU2oEQNTBoB2rZpTnbYRB6sRCgOcfJFKCwoHrXEMg6c2
+mZu4eXEiV7iuBAMJo8dCAAYJDQLLM82xwXkIpCKgwHBCg9LaAFMBBwfMtQOAAALlUIxcAAmEUIsz
+4A0AY8IAbBplb4SDBskOBEsgABABiAPQDRSYKGADSHEeMqB4KUeALCPiQK1RyeJkkS0l4oXbQbOm
+zZs4c+rcyQKCz59AgwodSrSo0aNBHyhdyrSp06dQo0qd2lSC1atYs2rdyrWr169ZQwAAOw==
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_11.gif
+
+R0lGODlhOgAXAMQSAPqwCP2UA/6NAvbiEP6HAffVDvjNDPbbD/m/CvuqB/q4CfyjBvjGC/ycBfXp
+EVstAL9fAP+AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABIALAAAAAA6ABcAAAX/YCSOZGmeaKqubOu+cCzPdG3feNQ4PG8EsV3OJBQREIWgY1gqipwBAEBA
+ik6fyyeQkAA0as4IwCBKDBSIATBiRqt1WSRBMEAADgrazsA/DL4CDmt3EYGDB3ARcmJkEQGNMjsN
+kwsMAwIASUaCmSMEgjsIDlRwCAsEYFkjBVKQEQ4NYySwOwV4I5UDDnkzYRGsCYgigQLBI8RCko6k
+C4K9qmKjBAMJIghk09WKZEUMBwQKjQGjzz0OBQsiAQO2BaiO7AfuiRHTUwcHBgMATE1rJA3+pQjQ
+4F2/gwgTKlzI8AaEhxAjSpxIsaLFixAfaNzIsaPHjyBDitwooaTJkyhTB6pcybKlyRAAOw==
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_12.gif
+
+R0lGODlhYQAXAMQSAPbiEP2UA/6NAv6HAfbbD/fVDvq4CfyjBvuqB/m/CvjGC/ycBfjNDPXpEfqw
+CFstAL9fAP+AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABIALAAAAABhABcAAAX/YCSOZGmeaKqubOu+cCzPdG3feK7vfO//JEJjMGssIgwHLCAQGYGvBQCA
+KB4Rx1dS5GhCW4kwY8QMOBDEyGJwcBxGT6ZI4HAEyPV7JFBI3NciZl0iA2sIdiN0gzgDDQcHDV4M
+BUmTRA19DgQJTkdbBwAGBgBvDgAOo2+jBAYRTwihCQB/DQyijhGgoqQ4sCKnIgwEIwRKDZwRAg13
+T1vFXAURBW8RDmNISq4Lynqaag1VEQljCtkIrTcF6AnD2CPW2iNbzV1DJoUIlMHZRg7RhMsWNHg3
+xpSBLDeUNVi48M4WLmOe7IuXRKAJA7XGXXvY71onixAhNqByw8A/EercxIlI0EpiBAJv6CnzYoZb
+SJVGELRLFglktTGABpi68ewdACQEiAQAcKSBAhGwLnlSUlSBH3sCCGzkt4akOKADQxbI5q0GJC9z
+HE0CwACYqwJamXZyF4AA3AJEFGgdS3JUyyNL7xLxCQ8UJV4/khRCa0QAIBUL9ATKIkeN5BGRWyxA
+mDgbCZdfQmvxDIez6NOoU6tenQOC69ewY8ueTbu27du4c8t+wLu379/AgwsfTry48ePAJShfzry5
+8+fQo0ufTr268xAAOw==
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_13.gif
+
+R0lGODlhMQAXAMQRAP2UA/qwCPjNDP6NAvbiEP6HAfbbD/uqB/fVDvm/CvyjBvq4CfycBfXpEVst
+AL9fAP+AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABEALAAAAAAxABcAAAXWICSOZGmeaKqubOu+cCzPdG0HTa43gss0NlODEfsFS8PRIBAAkADMgcgo
+UgQOtiQEQEgsCFjIgbBIEJxUhCAgQNS0hoAI0BgMGk5IwAAx0kcCeTJJdAUjCExuIgV4RgUEAgdS
+b0RUImtsJENUAAkGPIYzSXeTEAYHB3wipEYDeQBxNFoCCSJjBY9hCT1GCgSGBaeyRBAFCAYIZ3ME
+xwiGVAKQBj1Hc8QkDIIlAwyl1d/g4eLj5CcP5+jp6uvs7e7pDvHy8/T19vf48xH7/P3+/wADCuwX
+AgA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_14.gif
+
+R0lGODlhNAAXAMQSAPXpEfjNDPycBfbbD/6HAfbiEP6NAv2UA/m/CvfVDvuqB/q4CfjGC/yjBvqw
+CFstAL9fAP+AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABIALAAAAAA0ABcAAAXZYCSOZGmeaKqubOu+cCzPdG3PDqADg3PbjsBIUFj8aEGSAGAQERSOBsng
+cBxGhyoBKCQNFBFCIuAYIESN4qIgXfQQhSayOyJHEAznN9ITORIRBQIiC2BzJXZsIwsMBgBbJAE9
+V1wligCDfgFLJgQLCTyUOHQRRFt7IggIjnJZBJkGDHmHIkQ+EX9bB4J8twwIBJgivzU5OwmGqQUB
+AIYHAwnQWzkB0XJHJgYCkEOiYQLe2OLj5OXm5ywQ6uvs7e7v8PHvD/T19vf4+fr7+RL+/wADChxI
+sODAEAA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_15.gif
+
+R0lGODlhQAAXAMQSAPqwCPuqB/6HAf6NAvjNDPbiEPfVDv2UA/jGC/bbD/q4CfyjBvm/CvycBfXp
+EVstAL9fAP+AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABIALAAAAABAABcAAAX/YCSOZGmeaKqubOu+cCzPdG3feG42jlEajoYriOLpIjzHYDRwEFvPnePI
+QwBGAMRTEAAsSAdAQPAMA5bIaYQLENJ4AZ/IECAKDARAgiEKFBQKBEQAfwoFX0YDBQx6Cm8OZEtN
+ZEIMCCICCQERhyIAQU0HfQlpEQAEIgeoM0ZWppdEnSIKCEYiTQ1xDbs8A0Y8DAsCNUZxEXQRRFGn
+tiJBhATR0Qe2CwgFDo6sU5SQyUKaIwwMkZhBxiMNAkYHaAsOojK2CAmX36YGwwcFQgTaCqCe6CkV
+KJWSbX0cbLoXgUEBQQsPJDBgQIsQPwQMFBCVKEECAgWuHDHhaxiJBvFONroxQc3kyJcwY8qcSbMm
+Cwg4c+rcybOnz59Afz4YSrSo0aNIkypdqlSC06dQo0qdSrWq1aohAAA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_16.gif
+
+R0lGODlhRwAXAMQSAPycBf6NAv2UA/bbD/6HAfuqB/fVDvbiEPm/CvyjBvjGC/q4CfXpEfqwCPjN
+DFstAL9fAP+AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEA
+ABIALAAAAABHABcAAAX/YCSOZGmeaKqubOu+cCzPdG3feK67AOP/Ph5hd3M0YgwA0WYcEQqNgkgg
+GAEEvUaAoJwGIgFB4AhuNLqiRBTXBA+MDkMkkYwUDgEHw1DojZoNAwcOcwcIgQsiBnByTGQICiMD
+UggDAgdSEXV+IoAMVREDZAEMYQx/oDRtogCtCAgRBIKRIpunnUcNhGBJrQB8BIMFX0Vkew7IDokR
+CAyZmkqcEYC7PcnIUgKVDA5DNasJI2ERPQgH3rYjBrm7pN4RYuPwoo4iCLuyBbJHBrR1AqXgMWAn
+iQzAAAnOxZpUL5aDN4YiKBgwBCA/hgoGGVgXQdcIAQMWOes06M2SAACIP6HgQgzLCizvwKRcQrOm
+zZs4c+rECaGnz59AgwodSrSoUaAPkipdyrSp06dQo0plKqGq1atYs2rdyrWrV6whAAA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_17.gif
+
+R0lGODlhKAABAIAAAP///wAAACH5BAEAAAAALAAAAAAoAAEAAAIFhI+py1gAOw==
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_18.gif
+
+R0lGODlhNgABAIAAAP///wAAACH5BAEAAAAALAAAAAA2AAEAAAIGhI+py90FADs=
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_19.gif
+
+R0lGODlhRwABAIAAAP///wAAACH5BAEAAAAALAAAAABHAAEAAAIHhI+py+2fCgA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_20.gif
+
+R0lGODlhOgABAIAAAP///wAAACH5BAEAAAAALAAAAAA6AAEAAAIHhI+py+1XAAA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_21.gif
+
+R0lGODlhYQABAIAAAP///wAAACH5BAEAAAAALAAAAABhAAEAAAIIhI+py+0PoyoAOw==
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_22.gif
+
+R0lGODlhvwABAIAAAP///wAAACH5BAEAAAAALAAAAAC/AAEAAAIMhI+py+0Po5y02gsKADs=
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/images/vrmlyellow_23.gif
+
+R0lGODlhUAABAIAAAP///wAAACH5BAEAAAAALAAAAABQAAEAAAIIhI+py+0PTQEAOw==
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://ads.ad-up.com/cgi-bin/view.cgi/749/1
+
+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
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/images/leftc.gif
+
+R0lGODlhKgA1APcAAP///////v/+/v/+/f/+/P/9+v/8+f/8+P/89v/69P/68//47//15//05P/0
+4//Nkv/Mk/+RIv+QIf+PH/+NG/+MGP+LFv+KFf+JE/+JEv+IEP+HD/+GDP+FCv+DB/+DBv+CBP+B
+A/+AAf+AAP737P726v716v706P705f7z5v7z5f7z5P7w3v7v3v7v3P7v2/7v2v7t1f7r0v7rz/7o
+yv7oyP7nxP7mwv7lwv7jwP7hvP7guf7gtP7ft/7dsf7aqv7Zr/7Zqf7Yp/7Wqf7Wov7UpP7Un/7T
+nP7PlP7Nlv7LiP7Iiv7Iif7GiP7Fgv7EgP7Df/7Cf/7Bff6/dP69dP68cv67cf66Zf64bv63bf63
+bP63a/63Z/63Zf62a/6xYP6vXf6tWP6tT/6sVv6rVf6qUv6oT/6oTv6nTP6mSv6kR/6jRP6jQ/6j
+P/6iQv6iQf6iQP6hP/6hPv6gP/6gPf6fOv6eO/6eOf6eOP6dN/6cNP6bM/6aMP6YLP6WKf6UJf5/
+AP3Gf/V7AN5vANtuAMJhALZbALNaAIlFAEUjAEAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAKgA1AEAI/wABCBxI
+sKDBgwgTKlzIsKFBBDYecGljwQMgixgvavRg8SLHj4AKIjACpuLGkxlTbuz4EaRAJW1AckRJUyVG
+li0ttqhTUabNmjVxtgTEgufQmT+TrgTkcajDp1CjCiQRQweRB1CmZNmahQsaNWDDqkmoA4qaDUqT
+CkU6sMWUPDeBpvXINOdFAFDyNKU7V23do0V7Iu0rdy3GwC0HIUrEuLHjx5AjP5ZKubLly5grM9Dx
+IAuaPBbQ0vwrc2GMB2Dg1uULtGlpgzOctNnAmrBhjAQZQImZ0vZJ12wBMHiLdKnv23d1iBGM8rhG
+4BgZiPGzt7fc1jkPgz5q/LpK6BcRy//s7hu8B/HF4zo3n7m9+/fw48ufDxUBCQb4GZD4MYSI//9E
+UEbCDEIokcUYaNSRhx8TRDDBBKIxJaEHT5HAgxNgUJTebzNJWBdD+02hhgWredeRhxwpNEMTaJhU
+G3YnroaQDbvR5l1QHspYEANKoGGjczjleBdBPXARQXE32hTjXwQRMYaLQD7X4YQhCWSEGLR9B+SS
+Ggn0w5MlRhlkjhQywIVeq2WUZHNCpmjEWVSu+RNdKAKywBV+nKilnHTW2UIbEdTJp5ZcerATiVSq
+uWWb51EkqJh/kUkUT3UqOmihkyIa5qBSFhpYpVJeyuinEgoySCGGpKrqqqy26uqqAQEAOw==
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/images/rightc.gif
+
+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
+kgY2IA09XdVWrXoBAQA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/images/horfiller.gif
+
+R0lGODlhIwA1AMT/AP////+AAf+AAP7Xqv7Wqf7Vp/7UpP6jQ/2wV8xmAMtmAMTBvbq2slMrAlIv
+B1EqAlAuBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAA
+IwA1AEAFeSAgjmRpnmiqrmTgvnAsz3Rt33ius3zv/8DgYYgoGo/IpPKoazqftIWUIa1ar9isNcjt
+er/gsHgELZvP6LR6/Uq43/C4fD4f2+/4vH7P7/tVBYEDg4GFhoeIiYFsjI2Oj5CRkpOUlZYzDZma
+m5ydnp5/oaKjpKWmJyEAOw==
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/images/dummy.gif
+
+R0lGODlhAQABAJH/AP////+AAAAAAAAAACwAAAAAAQABAAACAkwBADs=
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/images/bugs.gif
+
+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
+VrsKoUACAgA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/images/vrmltut.gif
+
+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
+kgY2IA09XdVWrXoBAQA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/media/angle.jpg
+
+/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEP
+ERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4e
+Hh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCADVAPQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD7Looo
+oAKKKKACiiigAooooAKKKKACuWv/ABzoNjrep6JKusy3+l20V1dRW2iXtxiKVgsbIY4mEmW3DCFj
++7k/55vt39Pu7bUbG3vrK5hurS4iWaCeGQPHKjDKurDhlIIII4INeafGiPQZPGvgKz1fVobRtYvp
+9Hkt5blEF1auqXUke1vvrJNZ2luy8qyXLxkbpEIAPRdB1Sx1zRLDW9Ln+0WGoW0d1ay7GXzIpFDI
+2GAIypBwQD61oUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA
+UUUUAFFFFABXz/8Atx/EX/hC/hFJoFnIF1XxR5ljH8udlqAPtL8oVOVZY8ZVv325TlK+gK/Lb9pj
+4ij4mfF3VdftpPM0qDFjpPy4zaxltr8orfOzPJhhuXzNucKKAPq79gb4lHxL8PZvA2p3Xmar4cI+
+zeZJl5rFj8mNzlm8psocKFRDAo5NfTdflH8CPH918M/ihpHiuJp2tIZPJ1GCIkme1fiVNoZQzAfO
+oY7d6IT0r9UtPu7bUbG3vrK5hurS4iWaCeGQPHKjDKurDhlIIII4INAFqiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAwvHPh+LxX4Q1XwzcX95Y2
++qWz2txNZ+X5oicYdVMiOo3KSpO0kBiRg4I8D/4Yq+Fv/Qf8Z/8AgZbf/I9fTNFAHyzoX7FvgEaJ
+Yf25r3ib+1TbR/bvsV5B9n8/aPM8vfb7tm7O3dzjGea+hPh34WtfBHgvTfCtjqGp6ja6bEYYJ9Rn
+Es+zcSqFgqjaoIRQAAFVR2qXwJp+q6T4I0HTNdvft+q2em28F9dea0nnzpEqyPvcBm3MCcsATnJ5
+rdoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAwvAmn6rpPgjQdM129+36rZ6bbwX115rSefOkSrI+9wGbcwJywBOcnmt2sLwJp+q6T4I0
+HTNdvft+q2em28F9dea0nnzpEqyPvcBm3MCcsATnJ5rdoAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAwvAmn6rpPgjQdM129+36rZ6bbw
+X115rSefOkSrI+9wGbcwJywBOcnmt2sLwJp+q6T4I0HTNdvft+q2em28F9dea0nnzpEqyPvcBm3M
+CcsATnJ5rdoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAwvAmn6rpPgjQdM129+36rZ6bbwX115rSefOkSrI+9wGbcwJywBOcnmt2sLwJ
+p+q6T4I0HTNdvft+q2em28F9dea0nnzpEqyPvcBm3MCcsATnJ5rdoAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAwvAmn6rpPgjQdM129+
+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
+KKKKACiiigAooooAKKKKAP/Z
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/images/botleft.gif
+
+R0lGODlhFgATAOb/AP///////v/+/f/58P/Chf+6df+hQv+gQP+cOf+RIv+LFv+KFf+JEv+GDf+C
+BP+BA/+AAP7+/v7x2/7w3/7w3v7v3P6gO/6fPP6fOv6SIf6NFv6GCv5/AP3AcP2vSv2iN/z8/Pz8
++/x+APt+APqIEPl9APiHEPh8APX08/V7APPx7fPgw/KDDPJ5AO+BDet/DOrn4eqNGul+Deh+D+Pj
+4eLi4eHf3dzb2dp2DNlzCdd0DNZ0DdRxCdFyDdCfX9BwC85xDM3LyMtuCsptCr+9ub9mCLN/OrNf
+BbJgCLCtp69gCq9dB61dCKxeCqpeC52YjppuNphVCJVSCpRTDIJGBoFtTYBEBX1HDXpvYHZNFnZI
+Em4/CWldSWk6CGk5BmVbTGRTP2JYR1Q7G0s9J0MwGUIxGUEoC0AvFD8qED8qDz8qDT8pDD8nCz8n
+CgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwA
+AAAAFgATAEAHy4ASCAoOhYUKBgUEi4yNBBUWhByFkw6Tl5YOKUdgAJ6eKFVZUkxKSExSW2xjN5+e
+goSGlZmYtQArMSwcmLS0Qlthr4OylbW9k7CyysYcKTpFAx4Ku5nHlrs6WU+fKkZCLybMKUJUaUSu
+6OnqnxKRu5UNCQgG9PX2Bu3T79fMvfn7AK1VysfvmkAOOq6YaZegFjVmL6Rw8dShwbtLzJotEUPj
+kw8cLh4eQ0iFTEdXMKAwAfLC4q4UOJR4QZNknScbWMikYZMGzZcg6gIBADs=
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/images/botright.gif
+
+R0lGODlhFgATAOb/AP///////v/+/f/Fi//Fiv/Chf+wYP+gQP+fP/+bN/+QIf+PH/+FCv+AAP7+
+/v6UJP6QHP6OFv5/AP39/f3aqv3Aa/z59PysPvx+APv7+/t+APr5+PqJEPl9APj4+Pj29ff39veG
+EPZ7APWFD/Pz8vJ5APGCDO+IE+t/Ded0AOacMuV8DeN7DuN6DOLIpOJ6DN95DtptANh5Etd0C9Bv
+Cc1uCcVqCsNuEMJqC76YY75nCr5lCLllCrJgCLCtp7BgCrBfCKunoaRbDKNYCKGCV6FbDqCTf6BY
+CaBWCJyVi5JWFZFRDIxNCIlODn9GCHdDCXVtYHRIFnFKGW5NHGRHHGI6DV9QOlVINkwtCUo8Jkot
+DUksC0QoCEEwFkAvFT8tED8rDj8oDD8oCz8mCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwA
+AAAAFgATAEAHtIAFgoOEgwMDBgsNizRRAB8nERKLlJWWEjVSAJucRlNMQj09QEJPXF9BnACWrK2M
+jgAWKiMik64NEjBMXau3vo06M7W+rI2bFRC2xBIrTFaqOTcrIcqLEsxLWFCq3N3emwfh4uPiCAkK
+DJSNxLfr7K2NWEox1ezGABcK74sjOlSbFKjVayXBRhUfnFzIQHHNlYQUQrCk4kZEiI0VI65JELFC
+hxMu274BAJEkCxgwY75cmagqEAA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/images/middlec.gif
+
+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
+kgY2IA09XdVWrXoBAQA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/images/left.gif
+
+R0lGODlhCQAQAKL/AP////+KFf+AAP7w3v6fOtFpAHU7AAAAACwAAAAACQAQAEADHzgU0lJGMQel
+e3HdqmmeDQdilleG35aaHXqSLTyKagIAOw==
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/images/right.gif
+
+R0lGODlhBwAQAKL/AP////+ePf+RIv+AANBvCXRIFgAAAAAAACwAAAAABwAQAEADGRgyTKVsONje
+qlTaOK/OHbdhXkiK4PiVRQIAO5oAADtaSko5KUIxIf+EELVaCNZrCIxCAL1aAM5jAN5rAO9zAP97
+AP/3797WztbOxr21rbWtpZyUjJSMhHtza//v3nNrY97Ovf/nzu/Wvf/evf/WrYxzWlpKOf/OnFJC
+Mf/GjGNKMVpCKXNSMf+1a/+tWv+lSkIpEP+cOf+UKeeEITkhCHNCEL1rGM5zGP+MGFoxCGs5CHtC
+CIxKCJxSCK1aCL1jCM5rCN5zCO97CP+ECEIhAFIpAHM5AIRCAJRKAKVSALVaAMZjANZrAOdzAPd7
+AGtjWv/GhP+9c/+1Y/+tUrV7Of+lQv+cMeeMKZRaGP+cKd6EIe+MIfeUIf+UIYxSENZ7GJxaEP+U
+GK1jEL1rEGM5CN57EP+MEIRKCJRSCKVaCLVjCMZrCNZzCN57COd7CO+ECPeECGs5AHtCAIxKAK1a
+AM5rAP+EAP/WpffOnP/OlJx7UuetY/+9a5RrOZxrMf+tSmNCGHNKGFo5EMZ7IeeMIa1rGP+cIb1z
+GM57GJRaEN6EGO+MGFIxCKVjELVrEMZzENZ7EHNCCO+MEK1jCM5zCEopAFoxAP/nxu/WtZR7Wv/O
+jHtjQv/Ge86cWve9a/+9Y5RrMf+1UlI5GP+tQv+tOf+lMYxaGM6EIf+lKXNKEEIpCIRSENaEGGtC
+CNaEEHtKCOfWvca1nP/ere/OnP/OhJx7Sv/Gc/+9Wv+1Sq17MaVzKWtKGOecMVo5CFIxAPfnzvfe
+tc61jFpKMVJCKXNaMf/Ga7WMSr2MOTkpELWEMVI5EEoxCOfezoR7a2NaSv/nvf/epf/WjLWUWrWM
+QoRjKXNSGN7Wxr21pdbGpVpSQu/WpYx7WvfWlKWMWmNSMTkpCFJKOUI5Ie/nzt7WvVpSOVJKMUpC
+Kc7OxtbWzr29tZSUjKWlnIyMhHt7c4SEe97ezpycjGNjUgAAAMDAwCH5BAEAAP8ALAAAAACmAgYB
+QAj/AP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMnRADZm
+wHT0eCKoZghBN3Pi3HnTR6wwq34ZYLnQwD5mpmTStBlCp06eT8S80oFuKNGrWLNq3UrQgFEKg2rk
++LKjhxgxRNKkIZIBZ9O3cOPKnUu3rt27ePPq3YuXp1+nfwMDHiy4MOHDhhMjXmxzp1/HjAH/vam4
+cuTAjy9rZvp0s2fLoD+LDk16tOnSqE8zFlSmxyIvpqxONLANVRiaqhtD1k25N+/fu4P7Fg58uPHi
+yIkrP76bcOLmmRtL9j1devTC0Dtb147d+c0uAMJ8/w8fwosIEWlCtADw4m321PAZAwDQZSf9my8K
+CYLhJUMXFV2EAAMAYlx3XHXdbZcdeOnhNIMIOdHnVggq6HcTfWGEJ8gM7d0niIeLgefUfDB88UUL
+KuAE3gtddBFGBiK08EUYMwDwhX3rvdBCF/yF4UULIuyURowz1hDkii2K5yGDOT2YgRxE0mjjZE0J
+8sILE4YAYobiIeliCEPKGMaAN2qZYwtKBijImF74CGSEajonyBrgyIaQATMsIkdufMbnZ5+APhco
+d59VJuhvl4EWWoA3ZdACYDAouNqkkhqI6F8AZuDUDI/6FgaWgmQAQwu4vefdn4Y6JRp1PLF6ak5V
+4v8kRxjiuSVGGGIMBuuaubqnE61t5TRrrVVSN9itvZYWAq5w7ZQBrcUu++Jk0hXLa1xuQYfTGrXI
+Y6dBJKziQ7aJuorqoKlpgUcdcPBAwwoBEFAAV/TWC1EB3+hyxqAhmFEJNQFgZYA0+vrZHCRs8GCP
+vQw37DBWLPRABKumGsycubkRp8UdyeTz8McgT1QAAys844ojQeSSSye5JHMNDxhoswABIRtUwD0l
+n6zyyi1fQ0075eAjb81EF200RhHvuVMgohztkBY84RHEPU5XbfXVWGet9dYRJd1bIFJwXVAPDYYA
+Si1ip6322my37XZHEU9sE9hsk53T2W/nrffefPf/bbXXc4e9tt044e334YgnrvjiIAGOE92Dl204
+45RXbvnljMf9teBqE2422piHLvropGPteAiQdy456KW37vrrsBN1euppez557LjnrvvuE2keeN2r
+8y788MQLPzvntQdf/PLMN3/58cDfzbrz1Fdvfdu+P4682LZPf/334IdfNPSRSy/++einTy/5qpuv
+/vvwxz9S9qhvz3X38uev//4UsZ+8+/wLoAAHKBD/cU95BEygAt9HP9odEIALjKAErWfA+yFwghjM
+4PAquDX8afCDIIxd3M5FQnRN53YhTKEKL0eOS+zBWrq6Qy7Y0TADIIMPWlhMCPKABB7Ma4VADKIQ
+/4dIxCIa8YhITKISl8jEJjrxiVCMohRVaAB6RGAbvpjBILTIDV8wQxzfOloVr5jFLQ6CG9z4olem
+yMY2RsQAFEiK0khYhjKoIowpcQk6dCCHJ2iHUoApAy2GgUc39s0lMHBRsA5lwhI6spGQfKQkI4kY
+nNTgSpi8khxUMEffpIFYk3QkANajJhW0RxCmlJUKCpQT8HjBWhWL5AxqABgxvEA8mWRR2ax0y029
+4JVWAiZiMilMw4Rhl5E8pk5+yadc5jIxykwNMxMDoscIQhJj6MVDDMCMVaShUoW6WHLEuZxxmrOc
+6CSnOs9pLktVZzOHIs47FVVJcZ4qDQCgzHziJP8ILwBgBggql8VCk881hUcMAJhVQWfAyRD00kEt
+SNA8KSVRnGSAPjCqAU88JAYRnBInHvoCDKrkoWpWBzx+2RJ5PhQnk240TipogaaWtVIAaBQw1aym
+CmZwUS+AlJ+7glWVruQbldYqp7TcCZe0VB+deCimSlsqUzGGk0kco5ACEYcXWEnPrp4qQWD9qlgx
+Q9WKmbWslAxlWqnKVnC68z2pcqtAyxkZX1W0ooRClSRJyEjFHCatA62nWy1j195oIQuT6AQ1yvHD
+hQAunGrlK2M2ZgQMKMCQJUhEJHCRQ2WBYBJBoEYKGsuVemh2DSCgKKw+G9oVkNaQbntsdNYa2ND/
+hEBq+ICtbncLkQbar4MX5K1wh1sQDmrNg8RNLnGNmzXkKve5uvVt9ArnPehad4rMxZpzr8tdKGb3
+atvtrniXKN3yUXe86GXid60W3vS6V4jrrVp730vfFJa3feetr35XGF+nzXe/AI5gf4/23wAbeID3
+/V9+D8xgBQ7YaAVusITh9+CiRXjCGD5fgh+44Ax7mIE96KQDLQjBD5tYfBUm2oVPzOLibZjEHW6x
+jJ2XNL/MqgtcyLGOd8zjHvv4x0AOspCDXIMaeCG4M04y8XwXGS1YQQb2KoAn5FZXJhxDyVh2XgFO
+0Qg61MEOGlACHeAAhAtcNmQFqMAxbpEJJdjh/xN16IQtMJDbLNv5znjOs573zOc++/nPgA60oAdN
+6EIj0QAj2MYMuOCFRZilDH6po2tasQpgkAKr9KriNgbBaEeLQRJ+kURrXkFpVFza0KgmGhwLIRO5
+PkcMsVgFAriy6lX0YDswJKtbYhELHcwj1SrxyjzoMQJsSEAcDnCAL2AwiGY7+9nQjra0p03talv7
+2tjOtratzWxmb/vb4A63uMftbBhk0UWhFMMXuEBucsOA2eg+UFwDI4ZFsLvd+M63vvfN7377+9+D
+YPYMmEECTFfEJcyogUyIsBSKqYovEI+4xCdOcYhHlrYYn+3FN/6qWBZmkRkPOcdHLvKSKyrSsf8g
+xqwpggAK1GAHRNC1x01Oc5LbvOYYr0GLXsCeFoXgCzUaJU/Ao4K24twx+WTRhdTEDCxlQAUgFwEA
+vnl0yvgAAMDciQoiNdWmPEEEM7APz8NgEw6VtKndEdFlJARYtpcwLkQtbGBcOii3EwYNjxjHNsXx
+cpCj5uaAr7peM3aawUuWSzWRen0suh72BB4+HwpBFzy6Hyxpyac2asotcQIDESgNkJCvp0Mj+vOV
+amk+83nBLiWUIRicku10/wtKYSUhnCCeqTbZKa1oVSP78DMDXuiCjjQkCLBbh6WNYbuAUlT6MlBo
+BruX0sMpQ9SX5gTxyN+JCJKKky8QaKrJRzv/8IW/HvHgPqCzqIXB/2GAQfBR8PB/fJ9q23F0xZXw
+jol8TQZE9usDIJ5GRxrzVlQhUAMrVQOjEicGyClUJwhGEnqG9xbeF1OQ4SE44U+MYndwUhP/FH3H
+9BdS8oFL539kh0oN9UkAAAPfBHxh1xTK1wItkB5hUH6290978gWnpAIniHw5gU//5Batlx5y4AUA
+1SrFUn2UAQMqkB5foAIaQiEnSFMzsCfg0VQmVXswKIPl54JoRxiz0AhbUBQlEnO6FlBlKH9oGEkz
+F0prGCgR2B1lMltchX9sGFRU8k65hn/2B1k65Gqr0So1IRjTkYcKIldyQoiaIXemAUtZEhkg/xAJ
+1rACDIEnt9FWYXUp81d4nhECWgACeLAESkAFUhAFpBgKpXiKUWCKqYiKqtiKrPiKqxiLqqgM14AJ
+oYAJ10CLtoiLuniL1xAFteiLvciLwUiMu5iLxfiLyQiMx8iMvuiMxiiMyTiMytiMy3iN1miLRTAH
+bwAJiCiATqEFgVAJcJCNz4iN52iOuAiN1RgK26gJ3uhX30gYWoAF5KiO7biO6KiP+EiN1MiOALmP
++YiM+BiQx/iPAmmQ6SiNBTmNCemQB/mQDTmRC8mPFamMoQAE7pIPCdBbyhR/qmVO7RSOoDAH60AD
+ZwZFJVAMnLAvsCQaZpAwW/BaREEALLkvGv+nGVngBtegDTQJbI4VYpq4V5bIJ3hwBNRQArw1MtAg
+C25ACZDQWbqiBR8wCWqACTzgWh9jAPfQlE8ZlYooCCCAWJWQDDzQDx0JlP0jlAMlT+Doh26JGBuT
+DA2glnZZNUwmCFR5BVbQl375l4AZmII5mIRZmIZpmB2ABZ2FE55QB85wl5B5NLKFBb91XFRnNkHw
+k5G5mQwzmZWZNSIoCExQXZxZmvWSl5QJPDsxmqbZmp3JljeRmpGzmqTpmrbJEp6pmjfBmrfZm1eB
+mp+pXQ3Im75ZnCmRm7O5m7VpnMz5EcipOrTZnNI5PxKjE7IJnco5ndrpnLApCNeZPNG5neL/qRHP
+CZ7ZOZ7oaRHAqZuiuZzp+Z4KUZ4HFJ7wWZ8NIZ8WRJ/2uZ8IsZ7J2Z78GaAHgZ/ApZ8CKqAEapkG
+eqD86Z/YCaAMeqAJ2lzD6Z4Rip4TKpwLeqHw6aDmCaEcup8ZCl4VGqIN2p3fOZ/naaL16aEqCqIs
++p4jyl4lGqMdiqLBSaIbaqPa6aL5uaI8Op4zKl81GqRCiqPsSZxGup0+WqBAuqTTOaT+VaRQGqVI
++p9KWqXN2aQK+qRaapxSSmBU+qVgeqUPmqVk6ptcSqE7mqauGaYQNqZueptwamFyOqdvWp078QFU
+wDZfcKd4apqyJVQVV6iGKhfkUhNoGqiC/yoxoaEFTbAEYDapGqABlGqpmApmmVqplKqpl9qpnIqp
+m7oEeJBDm7GojMqZ86AnoIEHteAx9WIAiNAG8+gWcVAJ8ZCqvlkAYHAHe+B3OKEFJUkNDPAwBuAN
+m5AHmjIZeVAH1zABuqqdBlAA07p+W0mt1hqt2rqt3Nqt3vqt4Bqu4jqu5Fqu5nqu6Jqu6rqusJOt
+V+Ou7GpnVTQKMDADwNAFOqADrdAKX5CvwQcMMyAB8KoVVUQBWWQKXeAF+sqv/opjM8ALAxuvDDYP
+FDADqNAKM6FOZVBvOoAKLBCxKEGxg3CxGRuIh7GxUyEMHyuxJwZHM4AItwEfoyYMICsSBv8QATPg
+IqVCGXG5E2XwE6vwayw7YXBkCq0gB5ZCVz4bC4REsBSwR0ibLfl3hk/xs62wckNrYAcwCF4QtX9U
+iHl1Ez9rDlgxD1wbc/zys0IRoAZwANhAAcwwCIWACl2QAzmACDngBTvggXzbt377t4AbuII7uIRb
+uIbrga2gr1+QuIyrr47buJD7uJIbuZQ7uZZbuZh7uZqbuZwruSbiaH1Vf40RFWFgIp17uptruZ9b
+smbYs6xyK4vQr6g7u6lLu7Zbu7h7u7qbu7y7u77bu8DbuIurA6vQBabwDjWrEF7xEoWQAzuAFjub
+qIE4vdRbvdZ7vdibvdq7vdzbvd7bvSD/mYa2RbVv+RTyJ1jzdHLhu77iy76QFCsoOwxCexEFQA/b
+UAheEGImG0/f27/++78AHMD9u07pxE4GXMAITMAK7IefB4AJfMALnFLbtxM10IIJmxNi8CiN8Skl
+OFYP/MERHMIQPMIgTMIiXMIoHMKhqSplgAaHkLwGsAysJgZ+BJfte8ONdIY6nL48rHE77MM9/LU/
+rBNOiHrzUXRdAHyr5BQ89wUTpS1BDMVA3CpTl0pawnXV53M7AR7ch75SLMQ8XIAJ5RQG2BY91wVG
+IgK5AlKOh8H79FMO5xbChyE87FI5eXxhbIEOlXVfG8eU0SItooOArCZkpcdw1Rm/dMeG/xxplzAN
+mqm8tTEtAdiGOFzJkHWJZpjJbxW2m+y6mNizC8J2QyJ5bxwCCDUlModWlXJWq9wb4SECwcJ2REWE
+zvIh+QRPqozJu7F1PIFQwGSBvAQncYdPGWKFXThbKNUYv/Qfo7TGPGdKzJQGDwIAKuDEO/FLYsAh
+O/ACUpeCa4wTaTAgoxQgz3wlPpXIITBLvdxL0ix11cwdgdh0PBtMGPwCBVLO6CwG4iwjOYHNHHLP
+PgUm3EwiXGV3zZEGs5AOEAFHXFCJf+e+lixZ5Bu65NvHFb2GFP3EkyFVPMcoHZVI89HBYKu09oQc
+efUX1Mwee6J0grAjWhIGLeLSGXJTcP85yV6sE/gUJ8Y3goLQzmVzH1dCBORxdpxMyvlnU2/hT2t8
+HzfBUHuCHxpsJsjUfeSRzrBcJTPF1HDc0yBifAy1SDpivkzxAswwz0bFhcXi1FWihBcSg8ViUk3h
+fSVYTdSyBo3wyAVBAjPwBVQW0RB9dBjdcZ4cgBYdxx73loKRIelxemgnCOAxdTd9yHg80X68USpC
+IP8RAnJAHiqQVA8FI0A12T182IjhT9/EUE4FfTMoU9ZHIVMCfnYMGCKCdHGyVCxFUkaMer6XE19w
+Hi9QwVVNd1oNfqVHdqNyIbk9H8dnE02XUrUd3IzyUzyBeFeoJr3tUcA919EtiJRw1w3/IQG2UcMn
+TNh+Xd57ONKFTclPPJJ45VVG+H9N4YRxQlPfzIesHNiFAd+oHQIiEHyWlyEA9VCkLG+4fMfPsX8q
+oNRO1VRSqE/8tNvnl5OzvYE3IVVup4SYcdscuHgGVStszRt2Z3eTN3ltsR/Mdx37S9ZUTNO2rcej
+whNGwtMQblQbDsZnkAk3sH4S0AW3BsZTfNLjbcJCnsJDXtJJK1Bz5cGGfclKPtllmCIXCNk2kQad
+Mtg/ftGjMUpLDM7z0YBifMuhslNN7sBjZb78Pdw8uBM1gnkPPoKnl9vbjdz7BCckGNfdHCBNiHoi
+QMhu11FHDB7EYh6oZ3m9PecmNSD1/53n87Hn1rQT8tzL3QwgK1XobCfo80FLS+fcOOHn1AzoNW4Y
+keAIA8AQ4sDjBp7LGm3Rpy7Z7N3q6P3qQ/zF7b1O9j0aXZXKVx7FXTiHKuLjoJzkNmzmv5EGAQ2I
+NyEGSfzJq47rUnzHRc3qmQF6+SdUkEGI0z7PxkIl0+7ssSJYytHKI21N1D69BI4TCMMDo74QCGAK
+rPvq643rmvzs5T7vn0zv913mv95XRGnABa7qqhzvU60r7h7syj6UkrG/4g7vVu7jqV7TA4jwJY0x
+8hYcGY6+Sw7xUhvxhWjSnYztjQ62VJkJ18AOeC0QBmAOX9DAlZ3egg16787yrmaEY/+JBR5Q8zZ/
+8zif8zq/8zzf8z7/80Af9EI/9EQv9FjwAaYq60AuiFlA80X/9Dl/9El/0vsL800BAk4P9Vq/9Vzf
+9UMfCDsP9kEv9l5f9mZv82BP9jd/BZmwC7bQDgxQ8gNhAKhQ3w6P5Ec+WLVOV+piB3+QDHMmD+zA
+AIRf+IZ/+Iif+Iq/+Ii/AIz/+JAf+ZI/+ZRf+Y9vCLOAk/g+KbhwC3Rm+aC/+KXwCC7pwxw/GGag
+BjyAD6Hf+q7/+rAf+7I/+7Rf+4U/AHJvEOKwCOOycW7J7HQ4iFmgBEZADdogALkfRAlQDWuAk5JN
+V2Yg8iuQvBvBqy2Z3hWdBZlgDf3/kPxqGTEl/sAijOrOXkIb0wmrT/0qZALGsAnx6MV/oQWUUAnr
+oJVcUQKK0I25RtpaABC4KtmaUODfQYQJFS5k2NDhQ4gRJU6kWNHiRYwZNW68yKIHEUEhBIUkKbLk
+SJEpT540qZLly5YvV7qMSRImSy13jGAowdHnT6BBhQ5dWC+GLE2WtIRQSbNkCBCU1Fy7cM8AUaAF
+ziHFtbQpSpZQKVXC1C7AVaxp1a5l29btWo9ybjr9GrOuzbt5Z84FS3dunCTUBrwlXNgw2wIo1DVS
+42YSpTWWPnwws2aSpkq5bLXbQuCwxgIn4B1r/IbSLMmU1wzRxKbTNQwTBhj8XNv2/23cuQ/G5esU
+b+/fevX+Di5TuJ45GGjrZt4cd4EBDPKlmE59gYB6zkFHn149Hz4BCZZrJ1/e/HmEHkHW9O1X+F7i
+dovLvws8DhIMaNHv59/f/38AAxQQI97eM64vsOLbyz0Fh3svpSUYGW9ACiu08EIMM9QwogJH+mAK
+KEIUcUQSSzTxRBRTVHFFKP7AQguSmtglhQ1rtPFGHHPUkS31SsICghx9AGkkJoKYcEckk1RySSYr
+7DAELKTIMYw0TNqgkSaz1HJLLrsk7Mkoc+whDZKu9PJMNNNUc830PvJRShzHZEoQM9m0804887wQ
+TDhvpNJKLPUUdFBCC72NTzHJFP+pTkMbdfRRSDPqMaUwcfxzJEYj1XRTTh9FNE5F6Qy0U1JLNVXN
+T/2sEtNRT3X1VVh1nDSkSm8cs8xWY9V1V14BTNXGS0XtdVhii3Xu1xpvXTRXY5t19lmsZoWyT2BX
+FRZabLPVlsAe5KKU2mRDzXRbcss1F9kNgx3XXHbbbVbaWm1U9lp367WXV3Q1VJfZe/v1d9N8M5x3
+3X8LNphQeMFN11qCD3b4YVS7fTNRXCG2+GI0A8ZwX4w79pjJhCle9mOSS75R4ws5NnlllilE2cKB
++W15Zpq1C9lShmWueWeeP3u5wph7Fnrow36mUGWik1Y6Wje/FZnepaOWWiOjB0T/emqss+ZQYqdB
+rVhrsMNW6GZVARX77LCrFjBotNueWu0Ar3Z77qHJlldcnenWm2W4AZR7b8D55ppWhTVkO3DEV7a7
+xr8Td/zivv87/HHKLY7cv8Yr19zfxTecfHPQ+728v8xDN73c0fn7/HTWye1c35xblx31wad9uuHZ
+cyc29f1K1/13XV8XGG/gi9+99ngZj9145oNHvvDhv25++lOF33h56rPvlHf0Vtf++0a5P8938MvH
+0/oLvTd//TvFN4989uP30v3y1Jf//i7RtxB+/PtXkn7y2M9/A0wSALXDPwImsEb6AxrxFPjAAj5v
+StiDYAVPJkGvjcyCG1xg0wg3/0GzcVCEGDKgcwQ4QhTup4TNQWAKXdgcBlLohC+kIXNWyJwW1lCH
+RcOgrRy4QyDC0IO2w1kIg3hE3NxQNzNEYhPVosTc5NCJU/xJDAfERCpm0SdQxI0UtfjFinDxNlgE
+YxkpYkUBedGMa2SIGG1DRjbGcSFurI0a5RhHNAYIjne8Ix0/Y0c+mjEuKtHCB3KUAx9IL5CLbIh6
+YvKENPQgDJOkZCUteUlMZlKTm+TkJnsghjQ8ISW4Y+QiB0kcBaWSPQlapSpZ+UpXFoeUpeTjKfmy
+oOIciD4I0iWC5AOcWdJSjk/iixbwEARbACGZ6wDCOpj5zGc2s5nRdKY0oWlNatlOE5vRvEYlPgAj
+4GhQmMJ8Ryys1cqUAKYc5DEALFZlID5EaJzjNIAqRPmVmWhBA64YjHYK8AtPtIeVd4ADPuZJz1Tg
+YQ/uCQEejsCDfpKnAM3ghBPmBJMs1MEWBj3oPBOQCCWAQg8ZSIkWmvCJPlCDo+gpgCEysQQ98IEp
+IdCCHpZwBCAUpKM7NcAA+oEBZ66DB+UIwJH2U4BsYIAayaQGDfRh1J1GVapTpWpVrXpVrGZVq1vl
+ale9+lWwhlWsYyVrWc16VrSmVa1rZWtb3fpWuMZVrnNlWUAAADs=
+
+------=_NextPart_000_0000_01C1AF14.57CA5890
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.lighthouse3d.com/vrml/tutorial/images/botfiller.gif
+
+R0lGODlhBwATAKL/AP/////Chf+gQP+AALJfCD8nCwAAAAAAACwAAAAABwATAEADGxi6Af4QjklH
+dJWSzcn9oCCOQmZSRaoWYOuCCQA7
+
+------=_NextPart_000_0000_01C1AF14.57CA5890--

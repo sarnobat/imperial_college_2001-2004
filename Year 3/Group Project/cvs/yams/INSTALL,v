@@ -1,0 +1,114 @@
+head	1.2;
+access;
+symbols
+	yams-final-19-12-03:1.2
+	yams-release2-17-12-03:1.2
+	yams-release-17-12-03:1.2;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.12.11.17.05.07;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.11.16.58.26;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@Added installation directions
+@
+
+
+1.2
+log
+@Modified installation guide
+@
+text
+@YAMS INSTALLATION OVERVIEW
+
+Quick Start
+-----------
+
+A default build with instructions from DoC 2nd year compiler lab supported
+can be found in the 'build' directory.
+
+There are two versions, a console version, and a GUI version.
+
+- To run the console version:
+
+	$ java -jar YAMS.jar -console -if PATH/TO/YOUR/ASM/FILE
+
+	Alternatively, if you have a list of files to run:
+
+	$ java -jar YAMS.jar -console PATH/TO/YOUR/LIST/FILE
+	The list file should contain the path of the actual .asm files
+	one at a line.
+
+- To run the GUI version:
+
+	$ java -jar YAMS.jar -gui -if PATH/TO/YOUR/ASM/FILE
+	
+	or
+	
+	$ java -jar YAMS.jar -gui PATH/TO/YOUR/LIST/FILE
+
+
+
+Building A Customized YAMS
+--------------------------
+
+A customized build will require Apache Ant, which can be found at:
+http://ant.apache.org.
+
+To test your machine, type the following command in console:
+
+	$ ant -version
+	
+if you see some output like:
+
+	Apache Ant version 1.5.3 compiled on April 16 2003
+
+you are good to go.
+
+
+Here's how to do the build:
+- Edit the configuration XML file. It can be found in the 'conf' directory.
+  You should be able to edit that file comfortably with any text editor.
+
+- Go back to the root directory of the YAMS distribution (where the build.xml)
+  locates.
+
+- Build a new YAMS.jar usint the following command:
+	$ ant
+
+- The fresh new build will be in the 'build' directory. The old build will be
+  replaced. So it's good idea to backup the old build.
+
+- Run the build normally as mentioned in Quick Start.
+
+
+More Details
+------------
+
+More details on how to modify the configuration file, and list of ant build
+targets can be fould at #NOT YET DONE#
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d58 2
+a59 2
+- The fresh new build will be in the 'build' directory. The old one should be
+  renamed YAMS.jar.old-some-date.
+d62 7
+@
+

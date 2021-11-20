@@ -1,0 +1,300 @@
+head	1.10;
+access;
+symbols
+	yams-final-19-12-03:1.10
+	yams-release2-17-12-03:1.10
+	yams-release-17-12-03:1.10;
+locks; strict;
+comment	@# @;
+
+
+1.10
+date	2003.12.17.13.38.20;	author sw00;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.16.16.16.42;	author bmc01;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.12.18.00.31;	author ss401;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.11.17.37.00;	author ss401;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.02.15.58.31;	author bmc01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.28.17.56.34;	author bmc01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.14.15.28.20;	author ajb101;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.14.14.55.16;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.14.14.35.42;	author bmc01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.50;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@fixed javadoc error
+@
+text
+@/*
+ * Created on 26-Oct-2003
+ *
+ */
+package yams.processor;
+
+public interface RegisterManagerInterface {
+
+	/**
+	 * Sets the value of the register
+	 * @@param regid String value of the register
+	 * @@param val Value to be stored
+	 * @@return success
+	 */
+	public boolean setReg(String regid, int val);
+	
+	/**
+	 * Sets the value of the register
+	 * @@param regid Int value of the register
+	 * @@param val Value to be sotred
+	 * @@return success
+	 */
+	public boolean setReg(int regid, int val);
+
+	/**
+	 * Returns the value of the register
+	 * @@param regid 
+	 * @@return register value
+	 */
+	public int getReg(String regid);
+	public int getReg(int regid);
+	
+	/**
+	 * Returns the register value without incrementing the count in the statistics manager
+	 * @@param regid
+	 * @@return register value
+	 */
+	public int getRegOnly(String regid); 
+	public int getRegOnly(int regid);
+	
+	/**
+	 * Resets the registers to 0
+	 */
+	public void reset();
+
+	/**
+	 * Gets name corresponding to register id, for example 31 maps to $ra 
+	 * @@return name of register
+	 */
+	public String getRegName(int id) throws Exception;
+	
+	/**
+	 * Gets the total number of registers present in the processor
+	 * @@return number of registers
+	 */
+	public int getTotalNumberOfRegisters();
+}
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d1 57
+a57 57
+/*
+ * Created on 26-Oct-2003
+ *
+ */
+package yams.processor;
+
+public interface RegisterManagerInterface {
+
+	/**
+	 * Sets the value of the register
+	 * @@param regid String value of the register
+	 * @@param val Value to be stored
+	 * @@return
+	 */
+	public boolean setReg(String regid, int val);
+	
+	/**
+	 * Sets the value of the register
+	 * @@param regid Int value of the register
+	 * @@param val Value to be sotred
+	 * @@return
+	 */
+	public boolean setReg(int regid, int val);
+
+	/**
+	 * Returns the value of the register
+	 * @@param regid
+	 * @@return
+	 */
+	public int getReg(String regid);
+	public int getReg(int regid);
+	
+	/**
+	 * Returns the register value without incrementing the count in the statistics manager
+	 * @@param regid
+	 * @@return
+	 */
+	public int getRegOnly(String regid); 
+	public int getRegOnly(int regid);
+	
+	/**
+	 * Resets the registers to 0
+	 */
+	public void reset();
+
+	/**
+	 * Gets name corresponding to regsiter id (e.g. 31 maps to $ra) 
+	 * @@author ss401
+	 */
+	public String getRegName(int id) throws Exception;
+	
+	/**
+	 * Gets the total number of registers present in the processor
+	 * @@return
+	 */
+	public int getTotalNumberOfRegisters();
+}
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d11 10
+a20 2
+	 * @@param regid
+	 * @@param val
+a22 1
+	public boolean setReg(String regid, int val); //throws UnknownRegisterException
+d30 1
+a30 1
+	public int getReg(String regid); //throws UnkownRegisterException
+d38 1
+a38 1
+	public int getRegOnly(String regid); //throws UnkownRegisterException
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d43 7
+a49 1
+	public String getRegName(int id) throws Exception;	
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d39 5
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d33 5
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d10 1
+d19 1
+d25 8
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d15 1
+d22 1
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d5 1
+a5 1
+package processor;
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d1 22
+a22 13
+/*
+ * Created on 26-Oct-2003
+ *
+ */
+package yams.processor;
+
+public interface RegisterManagerInterface {
+
+	public void setReg(int regid, int val);
+
+	public int getReg(int regid);
+
+}
+@
+

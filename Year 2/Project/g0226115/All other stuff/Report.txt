@@ -1,0 +1,60 @@
+Choice of language
+-----------------
+Gamble of believing php would suffice. It did
+
+Careful Decisions
+----------------
+Not to use multiple ships
+Not to use turn based game
+
+Structure of Program
+-----------------
+Not turn based
+
+User Interface
+-----------------
+Putting resources for sale, and they can be bought with no further communicating with the customer 
+
+
+Implementation overview
+-----------------
+3 file types: display files for generating html, database modification files which are run after user input and then reroute to another file, included files for repeated code
+
+Deterioration of machines/ships modelled by a continuous quantity
+
+We decided not to use database locking for a game of this scale
+
+What we've learned
+-----------------
+How cookies work
+Flash hopfeully
+Dos and Unix encode newline and carriage returns differently!
+
+What we'd have done differently
+-----------------
+
+More modularity (some files get very long)
+Eliminate Some repetition (e.g. arrays, constants etc.)
+Make more scaleable (using arrays)
+use more functions
+VRML if more time was available because visually appealing
+
+better database structure
+e.g. less repetition of complementary data, thus less updating
+
+***************************************************************************
+***************************************************************************
+
+(Zafar)
+Tools
+-----------
+use tools to create new tools
+this deteriorates the tools used
+
+
+***************************************************************************
+***************************************************************************
+(Sridhar)
+
+Lesson learned:
+php is a weakly typed and though this has advantages, can be harder to debug as more invalid code fails to be detected by the compiler.

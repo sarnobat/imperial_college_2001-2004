@@ -1,0 +1,129 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>The ECG and BP monitor</title>
+<link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+<p class = "title" align = "center">The ECG and BP monitor<br>
+<font size="2">(based on the system used in Macao and Tsinghua, China)</font> </p>
+
+<p>
+ECG (electrocardiogram) and BP (blood pressure) telemonitoring on a medical level are closely related, because they both concern blood flow. In a telemonitoring system they are measured separately, but will be considered in parallel.
+</p>
+
+<h2>
+The patient’s side of the system
+</h2>
+
+<p>
+The patient’s unit was originally a PC workstation. However, many patients were unfamiliar with computers as well as unable to afford the system and its installation cost. This was rather unfortunate as the software had been programmed for PCs. To simplify the system without rendering the software useless, the improved version would contain a PC motherboard in addition to a hard disk and modem. It would behave as a computer, but wouldn’t have any unnecessary extras. The patient could rent it, thereby saving cost and its setup was much simpler.
+</p>
+
+<p align = "center">
+<img src = "ECG_components.jpg">
+</p>
+
+
+
+ 
+<p>
+The cardiac activity data is acquired by use of strategically placed electrodes connected to a wireless transmitter that fits neatly into a patient’s pocket. An antenna on the patient’s unit detects the data. That way, the patient isn’t restricted in daily activity and the monitoring is comprehensive.
+</p>
+
+<p>
+The BP monitor is a watch which closely resembles the current instrument. The patient takes his or her pulse at suggested times.
+</p>
+<p align = "center">
+<img src = "ECG_system.jpg">
+</p> 
+ 
+
+<p>
+The display panel is an LCD monitor which requires comparatively little power, saving operational cost. 
+</p>
+
+<p align = "center">
+<img src = "ECG_monitor.jpg">
+</p> 
+ 
+<p>
+The unit has 5 modes:
+</p>
+<ul>
+<li><b>Initialization </b>– instructions are given for the user to put on the ECG-monitoring electrodes. The system alerts the patient whether they have been placed correctly, though it also learns his or her placement habits and adjusts the reading magnitudes accordingly. It then switches to online monitoring mode.</li><br><br>
+<li><b>ECG Monitoring (Online)</b> – the ECG is displayed, and if the readings stray away from normal, data is automatically transferred to the hospital monitoring center so that the staff are notified as soon as possible of any potential problems. If the staff wish to communicate with the patients, a message can be sent and displayed on the LCD monitor.</li><br><br>
+<li><b>ECG Monitoring (Manual) </b>– In the event of patient discomfort or at the request of the physician (e.g. for checkup or advice), data can be force-transferred by switching to this mode (pressing the ‘dial’ button illustrated above). The user’s feelings can also be conveyed by an emoticon which appears on the monitoring center’s display window.</li><br><br>
+<li><b>Holter Mode  </b>- For comprehensive analysis of a patient’s well being, the monitor can be set to record the ECG pattern over a long period (i.e. days). The memory consumption isn’t really an issue with modern hard disk capacities, though daa compression is employed to reduce the cost of transferring the data to the hospital.</li><br><br>
+<li><b>BP Mode </b>-  the blood pressure is recorded, under guidance from the system, and transferred to the monitoring center.</li>
+</ul>
+<p>
+The data flow during these procedures is depicted below:
+</p> 
+
+
+<p align = "center">
+<img src = "ECG_data_stream.jpg">
+</p> 
+
+
+<h2>
+The monitoring center’s side of the system
+</h2>
+
+<p>
+Usually located within a hospital, the monitoring station in this particular system runs under UNIX; the software has been produced with the C language.
+</p>
+
+<p>
+The software has two major components, the real time monitoring system (RTMS) and the memory information management system (MIMS).
+</p>
+
+<p>
+The RTMS is responsible for receiving and monitoring incoming data from multiple patients, as well as saving the information in files (placing these files in the correct location is not its job).
+</p>
+
+<p>
+The MIMS has 4 components, two of which are for analysis of the data which has been saved, and the other two of which are for storing all the data.
+</p>
+<ul>
+<li>The <b>ECG analyzer </b>uses various algorithms to detect abnormal ECG paterns such as asystole, missed beats, ventricular ectopic beats, atrial premature beats, bradycardia, tachycardia. They are flagged on the monitoring display to attract the medical personnel’s attention. There is also a noise detection and removal algorithm.</li><br><br>
+<li>The <b>BP analyzer</b> displays the systolic and diastolic pressures (the two heart beats), average pressure, heart rate, and the time of the data recording. It can also plot a graph showing the change in any of these over a period of time.</li><br><br>
+<li>The <b>file manager</b> is responsible for reading from and writing to 3 databases. The patient profile database contains the patient id, test times, the path where all his or her data files are stored as well as some obvious personal details. The ECG and BP databases contain the complete set of data files for the respective measurements taken from a particular patient.</li><br><br>
+<li>
+  
+    The <b>backup tool</b> contains 4 functional modules which: <br>
+    <blockquote>
+	o	list the data to be backed up<br>
+	o	transfer the data to magnetic tape<br>
+	o	list the data contained on any one magnetic tape<br>
+	o	retrieve any requested data.<br>	
+  </blockquote>	</li>
+</ul>
+  <br>
+<p>
+A typical monitoring center’s display window looks like this:
+</p>
+
+
+
+<p>
+The MIMS has 4 components, two of which are for analysis of the data which has been saved, and the other two of which are for storing all the data.
+</p>
+
+<p align = "center">
+<img src = "ECG_software.jpg">
+</p> 
+
+ 
+<p>
+Each patient’s data is displayed in a separate window, and the monitoring staff can toggle between each at the click of a button.
+</p>
+
+</body>
+
+</html>

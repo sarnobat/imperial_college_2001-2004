@@ -1,0 +1,30 @@
+MINUTES - PROJECT MEETING
+=============================================
+Date: 16/10/03
+Time: 1200
+
+Present: Sridar, Adam, James, Ben, Qian
+----------------------------------------------------------
+
+Program features / technical issues:
+
+- Version 1 of the simulator should just give a plain text output of the test
+- Version 2 should have a GUI, make use of artwork etc.
+
+- One of the aims of the simulator should be to give overall statistics for a range of input files.  So the ability to read in a list of files, test them all then report average statistics would be needed.
+
+- The compiler lab only uses a few MIPS instructions, but it was suggested that accommodating more instructions could give a higher mark.
+
+- Extra features could include debugging, help windows, graphical representation of the CPU
+
+- It was suggested that the program could be made extensible to allow the handling of new instructions in the database.  Possibly in XML
+
+- All present agreed that Java would be the best to use for the project.
+
+Project Issues:
+
+- Early integration of the project was suggested to get a skeleton model working, then this can be extended afterwards.
+
+- All to look at the existing xspim simulator before Friday to become familiar with it and have an idea of features for our program.
+
+- Next meeting: 0900 Friday 17th October, Blueshift Lab

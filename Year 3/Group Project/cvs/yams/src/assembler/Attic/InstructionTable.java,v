@@ -1,0 +1,116 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2003.11.10.10.57.50;	author qq01;	state dead;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.08.17.39.30;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.04.19.38.46;	author jkm01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 04-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+
+/**
+ * @@author jkm01
+ *
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+
+package assembler;
+import java.util.TreeMap;
+
+public class InstructionTable 
+{
+
+	private TreeMap table;
+
+	public InstructionTable()
+	{
+		table = new TreeMap();	
+	}
+
+	public void add(String name, String machineCode, String type)
+	{
+		table.put(name,new InstructionTableRow(name,machineCode,type));
+		System.out.println("have put"+name+" "+machineCode+" "+type);
+	}
+
+	public void remove(String name) {table.remove(name);}
+	public InstructionTableRow getInstruction(String name) {return (InstructionTableRow)table.get(name);}
+	public boolean isInstruction(String name)	{return table.containsKey(name);}
+
+	public class InstructionTableRow
+	{
+	//this class constitutes a single row in the instruction table
+	
+		String instructionName;
+		String machineCode;
+		String type;
+	
+		public InstructionTableRow(String name, String codeRepresentation, String t)
+		{
+			// instruction name, machine code representation, and instruction type Register/Jump/I
+		
+			instructionName = name;
+			machineCode = codeRepresentation;
+			type=t;
+		}
+		
+		// get methods for the Instruction table components
+
+		public String getName() {return instructionName;}
+		public String getMachineCodeRepresentation() {return machineCode;}
+		public String getInstructionType() {return type;}
+	}
+
+}@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.1
+log
+@Updated the Assembler.java file as well as adding 6 other related classes
+
+James
+@
+text
+@d16 1
+a16 1
+import java.util.*;
+@
+

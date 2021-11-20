@@ -1,0 +1,338 @@
+head	1.8;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.8
+date	2003.11.10.10.57.51;	author qq01;	state dead;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.10.02.04.39;	author qq01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.10.00.06.33;	author qq01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.08.23.19.00;	author qq01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.08.16.28.26;	author qq01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.08.02.58.09;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.06.18.00.14;	author ss401;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.06.17.01.49;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@Added instruction class
+@
+
+
+1.8
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 06-Nov-2003
+ */
+package parser;
+
+import java.util.Iterator;
+import java.util.List;
+
+/**
+ * models a single instruction, all instructions should subclass this abstract class.
+ * 
+ * @@author qq01
+ */
+public abstract class Instruction {
+
+	/**
+	 * Instruction needing immediate values as it's oprands.
+	 */
+	public static final int IMMEDIATE_OPRAND = 1;
+	/**
+	 * Instruction needing register as it's oprands.
+	 */
+	public static final int REGISTER_OPRAND = 0;
+
+	private String name;
+
+	// Operands must be a sorted Collection
+	private List oprands;
+
+	/**
+	 * @@return name of the instruction
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @@return a list of the oprands of the instruction
+	 */
+	public List getOprands() {
+		return oprands;
+	}
+
+	private Oprand parseImmediateOprand(MIPSLexer lexer) {
+		return null;
+	}
+
+	/**
+	 * Parses oprands needed by an instruction.
+	 * 
+	 * @@param lexer lexer that tokenizes user's programs
+	 * @@param expected array of types of oprands expected by an instruction
+	 * @@throws LexerException if the lexer finds any error
+	 * @@throws ParseException if the parser finds any error
+	 */
+	public void parseOprands(MIPSLexer lexer, int[] expected)
+		throws LexerException, ParseException {
+
+		Token token;
+
+		for (int i = 0; i < expected.length; i++) {
+			switch (expected[i]) {
+				case REGISTER_OPRAND :
+					{
+						oprands.add(parseRegisterOprand(lexer));
+						break;
+					}
+				case IMMEDIATE_OPRAND :
+					{
+						oprands.add(parseImmediateOprand(lexer));
+						break;
+					}
+				default :
+					{
+						throw new ParseException(
+							"Unexpected token:"
+								+ lexer.getCurrentToken().getValue(),
+							lexer.getLineNumber());
+					}
+			}
+			if (i != expected.length - 1) {
+				token = lexer.nextToken();
+				if (token.getType() != MIPSLexer.COMMA) {
+					throw new ParseException(
+						"Expected ',' - not '" + token.getValue() + "'",
+						lexer.getLineNumber());
+				}
+			}
+		}
+	}
+
+	private RegisterOprand parseRegisterOprand(MIPSLexer lexer)
+		throws LexerException, ParseException {
+		Token token = lexer.nextToken();
+		if (token.getType() == MIPSLexer.DOLLAR
+			|| token.getType() == MIPSLexer.COLON) {
+			token = lexer.nextToken();
+			return new RegisterOprand(token.getValue());
+		} else {
+			throw new ParseException(
+				"Expected '$' or ':', not '" + token.getValue() + "'",
+				lexer.getLineNumber());
+		}
+	}
+
+	/**
+	 * Returns a <code>String</code> representation of the object.
+	 * 
+	 * @@return a string representation of the object.
+	 */
+	public String toString() {
+		StringBuffer buffer = new StringBuffer(name);
+
+		Oprand op;
+
+		Iterator it = oprands.iterator();
+
+		while (it.hasNext()) {
+			op = (Oprand) it.next();
+			buffer.append(op.toString());
+		}
+
+		return buffer.toString();
+	}
+}
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.6
+log
+@Updated parser classes and some instruction definitions
+@
+text
+@a14 4
+	/**
+	 * Instruction needing register as it's oprands.
+	 */
+	public static final int REGISTER_OPRAND = 0;
+d20 4
+d44 4
+d49 1
+a49 1
+	 * Returns a <code>string</code> representation of the object.
+d51 4
+a54 1
+	 * @@return a string representation of the object.
+a55 15
+	public String toString() {
+		StringBuffer buffer = new StringBuffer(name);
+
+		Oprand op;
+
+		Iterator it = oprands.iterator();
+
+		while (it.hasNext()) {
+			op = (Oprand) it.next();
+			buffer.append(op.toString());
+		}
+
+		return buffer.toString();
+	}
+
+d106 18
+a123 2
+	private Oprand parseImmediateOprand(MIPSLexer lexer) {
+		return null;
+@
+
+
+1.5
+log
+@Updated some methods and documentation of the methods
+@
+text
+@d15 10
+d26 2
+a28 1
+	//Operands must be a sorted Collection
+d62 54
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d6 1
+d16 1
+a16 1
+	private List operands;
+d18 1
+a18 1
+	
+a25 1
+
+d29 2
+a30 2
+	public List getOperands() {
+		return operands;
+d33 11
+d45 7
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+ * models a single instruction. All instructions are subclasses of this abstract class.
+@
+
+
+1.2
+log
+@6/11/03 - Simple methods implemented and javadocked
+@
+text
+@a5 1
+import java.util.Collection;
+d9 2
+a10 1
+ * Models a single instruction. All instructions are subclasses of this abstract class.
+d19 1
+a19 8
+	 * Constructs an Instruction object by tokenizing the text input
+	 */
+	public Instruction(String instruction) {
+		//TODO: Delegate handling to subclass
+	}
+	
+	/**
+	 * @@return
+d27 1
+a27 1
+	 * @@return
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d7 1
+d10 1
+d15 9
+a23 1
+	private Collection oprands;
+a31 6
+	/**
+	 * @@param name
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+d36 2
+a37 2
+	public Collection getOprands() {
+		return oprands;
+a39 6
+	/**
+	 * @@param oprands
+	 */
+	public void setOprands(Collection oprands) {
+		this.oprands = oprands;
+	}
+@
+

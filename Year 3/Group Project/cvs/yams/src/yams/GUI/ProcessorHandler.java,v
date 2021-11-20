@@ -1,0 +1,481 @@
+head	1.12;
+access;
+symbols
+	yams-final-19-12-03:1.12
+	yams-release2-17-12-03:1.12
+	yams-release-17-12-03:1.12;
+locks; strict;
+comment	@# @;
+
+
+1.12
+date	2003.12.16.15.28.13;	author ajb101;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.15.15.56.29;	author sw00;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.15.15.43.51;	author ajb101;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.15.04.05.45;	author ajb101;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.12.04.23.31;	author ajb101;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.11.03.17.02;	author ajb101;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.09.21.00.21;	author ajb101;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.09.15.26.52;	author ajb101;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.09.05.02.48;	author ajb101;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.12.08.19.44.14;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.12.08.13.27.44;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.08.01.15.17;	author ajb101;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@
+package yams.GUI;
+
+import yams.*;
+import yams.processor.*;
+
+
+public class ProcessorHandler extends Thread {
+
+
+	private YAMSGui controller;
+	private Processor processor;
+	
+	private boolean running = false;
+	private boolean runOneLine = false;
+	private boolean runSkip = false;
+	
+	private boolean alive = true;
+	
+	// Default delay to half a second
+	private int delay = 3;
+	
+	public ProcessorHandler(YAMSGui g, Processor p) {
+		controller = g;
+		processor = p;
+		setDelay(controller.getProcessorSpeedFromGUI());
+	}
+
+
+	public void run() {
+		// Infinite loop until this handler is destroyed, in which case
+		//   exit this run method
+		while(alive) {
+			
+			if (running) {
+				if (runOneLine) {
+					// execute instructions until the next line is reached
+					controller.updateProcessorStatus("Processor Running (one line)...");
+
+					int startLine = controller.getCurrentLine();
+					// execute while not finished AND [currentLine != -1 OR currentLine == startLine]
+					while(running && (!processor.cycleManager.hasFinished()) && ((controller.getCurrentLine() == -1) || controller.getCurrentLine() == startLine) ) {
+						processor.cycleManager.advance();
+						try { sleep(delay); } catch (InterruptedException e) {}
+					}
+					
+					// stop the processor
+					running = false;
+					runOneLine = false;
+					
+					// if finished, disable buttons
+					if (processor.cycleManager.hasFinished()) {
+						controller.disableProgramCodeButtons();
+					}
+					
+					// update currently highlighted line
+					controller.updateBreakPointPanel();
+					
+				} else if (runSkip) {
+					// skip the next line
+					controller.updateProcessorStatus("Processor Running (skipping a line)...");
+
+					int startLine = controller.getCurrentLine();
+					// execute while not finished AND [currentLine != -1 OR currentLine == startLine]
+					while(running && (!processor.cycleManager.hasFinished()) && ((controller.getCurrentLine() == -1) || controller.getCurrentLine() == startLine) ) {
+						processor.cycleManager.skip();
+						try { sleep(delay); } catch (InterruptedException e) {}
+					}
+					
+					// stop the processor
+					running = false;
+					runSkip = false;
+					
+					// if finished, disable buttons
+					if (processor.cycleManager.hasFinished()) {
+						controller.disableProgramCodeButtons();
+					}
+					
+					// update currently highlighted line
+					controller.updateBreakPointPanel();
+					
+				} else {
+					// run next instruction normally
+					controller.updateProcessorStatus("Processor Running...");
+
+					processor.cycleManager.advance();
+					
+					// if finished, stop processor and disable buttons
+					if (processor.cycleManager.hasFinished()) {
+						running = false;
+						controller.disableProgramCodeButtons();
+					}
+					
+					// update currently highlighted line
+					controller.updateBreakPointPanel();
+					
+					// if the current line is breakpointed, stop the processor
+					if (controller.currentLineHasBreakPoint()) {
+						running = false;
+					}
+					try {sleep(delay);}	catch (InterruptedException e) {}
+				}
+				
+			} else {
+				// update processor status label
+				if (processor.cycleManager.hasFinished()) {
+					controller.updateProcessorStatus("Program Finished");
+				} else {
+					controller.updateProcessorStatus("Processor Stopped");
+				}
+
+				// sleep for half a second
+				try {sleep(500);}
+				catch (InterruptedException e) {}
+			}
+		}
+	}
+	
+	
+	/**
+	 * Causes the processor to run until it reaches the next line and then stop
+	 */
+	public void runOne() {
+		runOneLine = true;
+		running = true;
+	}
+	
+	/**
+	 * Causes the processor to skip the next line
+	 */
+	public void runSkip() {
+		runSkip = true;
+		running = true;
+	}
+	
+	/**
+	 * Starts the processor running normally
+	 *
+	 */
+	public void processorStart() {
+		running = true;
+	}
+	
+	/**
+	 * Stops the processor from running
+	 */
+	public void processorStop() {
+		running = false;
+		runOneLine = false;
+		runSkip = false;
+	}
+	
+	/**
+	 * Causes the run() method to exit
+	 */
+	public void destroy() {
+		
+		alive = false;
+	}
+	
+	/**
+	 * Returns the status of the processor
+	 * @@return returns true if the processor is in the running state, false otherwise
+	 */
+	public boolean isRunning() {
+		return running;
+	}
+	
+	/**
+	 * Sets the delay between instructions being executed in milliseconds
+	 * @@param d delay in milliseconds
+	 */
+	public void setDelay(int d) {
+		delay = d;
+	}
+	
+	/**
+	 * Returns the delay between instuctions being executed in milliseconds
+	 * @@return delay in milliseconds
+	 */
+	public int getDelay() {
+		return delay;
+	}
+
+}
+@
+
+
+1.11
+log
+@moved updatedStatistics call into cyclemanager
+@
+text
+@a14 5
+	
+	private static int PH_FOREVER = -1;
+	private static int PH_ONCE = 1;
+	private static int PH_ONCEDONE = 0;
+	
+d157 1
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@a38 2
+			// TODO: remove this line, give responsiblty to cycle manager
+			controller.updateStatistics();
+@
+
+
+1.9
+log
+@more updates and bug fixes, including a weird one with the processorHandler thread
+@
+text
+@d36 2
+d44 1
+d48 1
+a48 1
+					// execute until currentLine != -1 or hasFinished() or currentLine != -1 AND currentLine != startLine
+d53 2
+d57 2
+a59 1
+						// if the program finished, then disable buttons
+d62 2
+d67 1
+a69 1
+					// skip until we have a new line
+d71 1
+a71 1
+					// execute until currentLine != -1 or hasFinished() or currentLine != -1 AND currentLine != startLine
+d76 2
+d80 2
+a82 1
+						// if the program finished, then disable buttons
+d85 2
+d90 1
+d94 2
+a95 2
+					// update currently highlighted line
+					controller.updateBreakPointPanel();
+a96 1
+						// program has finished
+d100 4
+d112 1
+a112 1
+				// not currently running, sleep for a second
+d119 2
+a120 3
+				try {
+					sleep(500);
+				}
+d126 4
+d135 3
+d143 4
+d151 3
+d167 4
+d175 4
+d183 4
+@
+
+
+1.8
+log
+@LOADS of gui changes
+@
+text
+@d23 2
+d36 1
+a36 1
+		while(true) {
+d128 7
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 6
+/*
+ * Created on 07-Dec-2003
+ *
+ * To change the template for this generated file go to
+ * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+ */
+d16 7
+d29 1
+d35 3
+d39 9
+a47 5
+				// exceute an instruction
+				processor.cycleManager.advance();
+				// update currently highlighted line
+				controller.updateBreakPointPanel();
+				if (processor.cycleManager.hasFinished()) {
+d49 17
+a65 3
+				}
+				// if the current line is breakpointed, stop the processor
+				if (controller.currentLineHasBreakPoint()) {
+d67 23
+d91 7
+a97 2
+				try {
+					sleep(delay);
+d99 1
+a99 2
+				catch (InterruptedException e) {}
+			} else {
+d101 1
+a101 1
+					sleep(1000);
+d108 9
+d124 6
+@
+
+
+1.6
+log
+@updated data panel
+@
+text
+@d22 1
+a22 1
+	private int delay = 300;
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d33 1
+d35 1
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d34 1
+a38 1
+				controller.updateBreakPointPanel();
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d22 1
+a22 1
+	private int delay = 500;
+a30 1
+		// here i am
+a32 1
+				// TODO: catch processor exception
+d34 3
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d12 1
+a12 6
+/**
+ * @@author Administrator
+ *
+ * To change the template for this generated type comment go to
+ * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+ */
+d21 1
+d36 1
+d38 3
+@
+
+
+1.1
+log
+@GUI updates Galore!
+@
+text
+@d26 1
+a26 1
+	private int delay = 0;
+@
+

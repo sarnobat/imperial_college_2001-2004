@@ -1,0 +1,108 @@
+To make use of registers when encountering loops, the translateStats function
+ would be implemented slightly differently. Previously the
+ following lines would have been used:
+
+	translateStats ( (For v first last body):rest ) (r1:r2:rs) l =
+		(	evalFirst
+			++
+			evalLast
+			++
+			cond
+			++
+			main
+			++
+			[Add (ImmNum 1) (Abs v),Bra (addL labelOne)]
+			++
+			[Label (addL labelTwo)]
+			++
+			remaining	,	l)
+
+		where
+			(evalFirst,l1) =
+				translateStats [(Assign (Var v) first)] (r1:r2:rs) l1
+			evalLast = transExp last (r1:r2:rs)
+			cond = setLabel ([Cmp (Abs v) (Reg r1),Bgt (addL labelTwo)],labelOne)
+			main = setLabel (translateStats body (r2:rs) labelTwo)
+			(remaining,l3) = translateStats rest (r1:r2:rs) l3
+
+	(note: the type signature is unaffected)
+
+The loop control variable will be stored in main memory space allocated for variable
+'v'. This creates a large disk access overhead because of it's frequent use and so it
+would make sense to use a register throughout the loop's lifetime.
+
+Therefore, it is proposed that it be changed to be defined as follows:
+
+	translateStats ( (For v first last body):rest ) (r1:r2:rs) l =
+		(	evalFirst
+			++
+			evalLast
+			++
+			cond
+			++
+			main
+			++
+			[Add (ImmNum 1) (Reg r1),Bra (addL labelOne)]
+			++
+			[Label (addL labelTwo)]
+			++
+			remaining	,	l)
+
+		where
+			(evalFirst,l1) =
+				translateStats [(Assign (Reg r1) first)] (r1:r2:rs) l1
+			evalLast = transExp last (r2:rs)
+			cond = setLabel ([Cmp (Reg r1) (Reg r2),Bgt (addL labelTwo)],labelOne)
+			main = setLabel (translateStats body (rs) labelTwo)
+			(remaining,l3) = translateStats rest (rs) l3
+
+Aside from the potential memory access overhead with less registers available, there are
+further issues to be considered. Other sections of the code generator will require modification.
+
+Firstly, what if there are only two registers available in total when generating loop code? It wouldn't
+be wise to use both for loop boundary values because then it would leave no scratchpad registers for
+statements within the loop (e.g. array access by indirect addressing which requires a register). Perhaps
+it could be got round by pushing one (or both) of the registers' values onto the stack while they
+are used for these statements but it would complicate the code generator considerably.
+
+Alternatively, it could be a recommended to only execute loops when there are at least 3 available registers
+(2 for loop boundary values, 1 for body statements). If there aren't this many, then free up space by
+pushing previous register data onto the stack. But it is easy to imagine there being nested loops, and with only 8 registers ever available,
+how would we execute a 3rd order loop?
+
+A sensible compromise would be to only store the data of the inner for loop in registers (because these
+will be executed most often), and push any other loop data on the stack. So the function might now read:
+
+
+	translateStats ( (For v first last body):rest ) [] l =
+	-- there are deliberately no registers available to show how the function would work
+		(
+			[Mov (Reg D 0) Push,
+			Mov (Reg D 1) Push,
+			Mov (Reg D 2) Push]
+			++
+			evalFirst
+			++
+			evalLast
+			++
+			cond
+			++
+			main
+			++
+			[Add (ImmNum 1) (Reg D 0),Bra (addL labelOne)]
+			++
+			[Label (addL labelTwo)]
+			++
+			[Mov Pop (Reg D 0),
+			Mov Pop (Reg D 1),
+			Mov Pop (Reg D 2)]
+			++
+			remaining	,	l)
+
+		where
+			(evalFirst,l1) =
+				translateStats [(Assign (Reg D 0) first)] [D 1,D 2] l1
+			evalLast = transExp last [D 1,D 2]
+			cond = setLabel ([Cmp (Reg D 0) (Reg D 1),Bgt (addL labelTwo)],labelOne)
+			main = setLabel (translateStats body (rs) labelTwo)
+			(remaining,l3) = translateStats rest (rs) l3

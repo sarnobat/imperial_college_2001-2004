@@ -1,0 +1,38 @@
+
+Circuit dump for circuit CIRCUIT1
+
+Inputs: C1 C2 A B 
+
+Outputs: R 
+
+Devices and connections:
+SN7400(C1,S48,S13,S13,S38,S16,GND,S18,S42,S16,R,S18,S211,VCC)
+SN7400(C1,C2,S23,S44,B,S26,GND,S28,S23,S410,S211,S28,S48,VCC)
+SN7408(A,S44,S33,S33,S46,S36,GND,S38,S26,S46,OPEN,OPEN,OPEN,VCC)
+SN7406(A,S42,C1,S44,C2,S46,GND,S48,B,S410,S36,OPEN,OPEN,VCC)
+
+Signals: C1 S48 S13 S38 S16 GND S18 S42 R S211 VCC C2 S23 S44 B S26 S28 S410 
+A S33 S46 S36 OPEN 
+
+Signal connections: C1=0 C2=11 A=18 B=14 R=8 S48=1 S13=2 S38=3 S16=4 GND=5 S18=6 S42=7 S211=9 VCC=10 S23=12 S44=13 S26=15 S28=16 S410=17 S33=19 S46=20 S36=21 OPEN=22 
+
+
+
+Truth Table Processing for circuit CIRCUIT1
+Time delay       C1    C2     A     B     R   S48   S13   S38   S16   GND   S18   S42  S211   VCC   S23   S44   S26   S28  S410   S33   S46   S36  OPEN
+         8       0     0     0     0     0     1     1     1     0     0     1     1     1     1     1     1     1     0     1     0     1     0     U  
+         8       0     0     0     1     1     0     1     0     1     0     0     1     1     1     1     1     0     0     1     0     1     0     U  
+         9       0     0     1     0     1     1     1     1     0     0     1     0     0     1     1     1     1     1     0     1     1     1     U  
+         7       0     0     1     1     0     0     1     0     1     0     1     0     1     1     1     1     0     1     0     1     1     1     U  
+         7       0     1     0     0     1     1     1     0     1     0     0     1     1     1     1     1     1     0     1     0     0     0     U  
+         7       0     1     0     1     1     0     1     0     1     0     0     1     1     1     1     1     0     0     1     0     0     0     U  
+         8       0     1     1     0     0     1     1     0     1     0     1     0     1     1     1     1     1     0     1     1     0     0     U  
+         6       0     1     1     1     0     0     1     0     1     0     1     0     1     1     1     1     0     0     1     1     0     0     U  
+         7       1     0     0     0     1     1     0     1     1     0     0     1     1     1     1     0     1     0     1     0     1     0     U  
+         8       1     0     0     1     0     0     1     1     0     0     1     1     1     1     1     0     1     0     1     0     1     0     U  
+         9       1     0     1     0     0     1     0     1     1     0     1     0     1     1     1     0     1     0     1     0     1     0     U  
+         7       1     0     1     1     0     0     1     1     0     0     1     0     1     1     1     0     1     0     1     0     1     0     U  
+         6       1     1     0     0     1     1     0     0     1     0     0     1     0     1     0     0     1     1     1     0     0     0     U  
+         7       1     1     0     1     1     0     1     0     1     0     0     1     1     1     0     0     1     1     1     0     0     0     U  
+         6       1     1     1     0     1     1     0     0     1     0     1     0     0     1     0     0     1     1     1     0     0     0     U  
+         5       1     1     1     1     0     0     1     0     1     0     1     0     1     1     0     0     1     1     1     0     0     0     U  

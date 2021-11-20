@@ -1,0 +1,266 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Adding and Removing an Item in a JList Component
+(Java Developers Almanac Example)
+</TITLE>
+<META CONTENT="Patrick Chan" NAME="AUTHOR">
+<META CONTENT="Code Examples from The Java Developers Almanac 1.4" NAME="DESCRIPTION">
+<META CONTENT="Addison-Wesley/Patrick Chan" NAME="OWNER">
+<META CONTENT="3/20/02" NAME="revision">
+<STYLE TYPE="text/css">
+<!-- 
+    BODY CODE  {font-family: Courier, Monospace;
+           font-size: 11pt}
+    TABLE, BODY
+          {font-family: Verdana, Arial, Helvetica, sans-serif;
+           font-size: 10pt}
+    PRE   {font-family: Courier, Monospace;
+           font-size: 10pt}
+    H3    {font-family: Verdana, Arial, Helvetica, sans-serif;
+           font-size: 11pt}
+    A.eglink {text-decoration: none}
+    A:hover.eglink {text-decoration: underline}
+    -->
+</STYLE>
+</HEAD>
+<BODY>
+<TABLE CELLSPACING="0" CELLPADDING="0" BORDER="0">
+<TR>
+<TD rowspan="3"><A HREF="/?l=ex"><IMG BORDER="0" ALIGN="BOTTOM" HSPACE="10" SRC="/egs/almanac14a.jpg"></A></TD><TD VALIGN="top"><font face="Times" size="6"><b>The Java Developers Almanac 1.4</b></font>
+<br>
+        Order this book from <a href="/cgi-bin/scripts/redirect.pl?l=ex&url=http://www.amazon.com/exec/obidos/ASIN/0201752808/xeo">Amazon</a>.
+    </TD>
+</TR>
+<TR>
+<TD align="right" valign="bottom">
+<FORM method="get" action="/cgi-bin/search/find.pl">
+<INPUT size="25" name="words" type="text"><INPUT value="Search" type="submit">
+</FORM>
+</TD>
+</TR>
+</TABLE>
+<HR color="#6666cc">
+<DIV ALIGN="LEFT">
+<A HREF="/">Home</A>
+    &gt;
+    <A HREF="../index.html">List of Packages</A>
+    &gt;
+    <B><A HREF="../javax.swing/pkg.html">javax.swing</A></B><font color="#666666" SIZE="-2">
+        &nbsp;[136 examples]
+        </font>
+        &gt;
+        <B><A HREF="../javax.swing/pkg.html#JList">JList</A></B><font color="#666666" SIZE="-2">
+            &nbsp;[8 examples]
+            </font>
+</DIV><P>
+  <h3>
+    e780.  
+    Adding and Removing an Item in a JList Component</h3>
+
+The default model for a list does not allow the addition and removal
+of items. The list must be created with a <code>DefaultListModel</code>.
+
+
+<pre>
+    // Create a list that allows adds and removes
+    DefaultListModel model = new DefaultListModel();
+    JList list = new JList(model);
+    
+    // Initialize the list with items
+    String[] items = {<font color="#0066ff"><i>"A", "B", "C", "D"</i></font>};
+    for (int i=0; i&lt;items.length; i++) {
+        model.add(i, items[i]);
+    }
+    
+    // Append an item
+    int pos = list.getModel().getSize();
+    model.add(pos, <font color="#0066ff"><i>"E"</i></font>);
+    
+    // Insert an item at the beginning
+    pos = <font color="#0066ff"><i>0</i></font>;
+    model.add(pos, <font color="#0066ff"><i>"a"</i></font>);
+</pre>
+
+This method replaces an item:
+
+
+<pre>
+    
+    // Replace the 2nd item
+    pos = <font color="#0066ff"><i>1</i></font>;
+    model.set(pos, <font color="#0066ff"><i>"b"</i></font>);
+</pre>
+
+These methods are used to remove items:
+
+
+<pre>
+    
+    // Remove the first item
+    pos = <font color="#0066ff"><i>0</i></font>;
+    model.remove(pos);
+    
+    // Remove the last item
+    pos = model.getSize()-1;
+    if (pos &gt;= 0) {
+        model.remove(pos);
+    }
+    
+    // Remove all items
+    model.clear();
+</pre>
+<P><table width="600" CELLSPACING="0" CELLPADDING="2" BORDER="0">
+<tr>
+<td bgcolor="#6666cc" align="center"><font color="#ffffff">
+            &nbsp;Related Examples
+        </font></td>
+</tr>
+</table>
+
+
+e778. <a class="eglink" href="list_List.html?l=rel">
+    Creating a JList Component
+</a>
+<br>
+
+e779. <a class="eglink" href="list_ListGetItem.html?l=rel">
+    Getting the Items in a JList Component
+</a>
+<br>
+
+e781. <a class="eglink" href="list_ListGetSel.html?l=rel">
+    Getting the Selected Items in a JList Component
+</a>
+<br>
+
+e782. <a class="eglink" href="list_ListSel.html?l=rel">
+    Setting the Selected Items in a JList Component
+</a>
+<br>
+
+e783. <a class="eglink" href="list_ListSelMode.html?l=rel">
+    Setting the Selection Mode of a JList Component
+</a>
+<br>
+
+e784. <a class="eglink" href="list_ListSelEvt.html?l=rel">
+    Listening for Changes to the Selection in a JList Component
+</a>
+<br>
+
+e785. <a class="eglink" href="list_ListChgEvt.html?l=rel">
+    Listening for Changes to the Items in a JList Component
+</a>
+<br>
+
+
+<table width="600" CELLSPACING="0" CELLPADDING="2" BORDER="0">
+<tr>
+<td align="left">
+<br>
+        See also: 
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#Actions">
+    Actions
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#JButton">
+    JButton
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#JCheckBox">
+    JCheckBox
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#JComboBox">
+    JComboBox
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#JDesktop%20and%20JInternalFrame">
+    JDesktop and JInternalFrame
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#JFrame,%20JWindow,%20JDialog">
+    JFrame, JWindow, JDialog
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#JLabel">
+    JLabel
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#JProgressBar">
+    JProgressBar
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#JRadioButton">
+    JRadioButton
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#JScrollPane">
+    JScrollPane
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#JSlider">
+    JSlider
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#JSpinner">
+    JSpinner
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#JSplitPane">
+    JSplitPane
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#JTabbedPane">
+    JTabbedPane
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#JToolBar">
+    JToolBar
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#Keystrokes%20and%20Input%20Maps">
+    Keystrokes and Input Maps
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#Layout">
+    Layout
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#Look%20and%20Feel">
+    Look and Feel
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#Menus">
+    Menus
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#Progress%20Monitor">
+    Progress Monitor
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#The%20Screen">
+    The Screen
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#Tool%20Tips">
+    Tool Tips
+</a>&nbsp;&nbsp;
+
+<a class="eglink" href="/egs/javax.swing/pkg.html?l=rel#UI%20Default%20Values">
+    UI Default Values
+</a>&nbsp;&nbsp;
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<br>
+<FONT FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="0">
+&copy; 2002 Addison-Wesley.
+</FONT>
+</BODY>
+</HTML>

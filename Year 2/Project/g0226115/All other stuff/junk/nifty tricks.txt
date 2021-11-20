@@ -1,0 +1,7 @@
+chown ss401.g0226115 ...
+chgrp g0226115 *
+dos2unix **.*
+pico
+l
+
+www/~ss401

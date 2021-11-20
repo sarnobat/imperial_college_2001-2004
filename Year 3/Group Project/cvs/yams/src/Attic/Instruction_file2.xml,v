@@ -1,0 +1,2007 @@
+head	1.5;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.5
+date	2003.12.11.16.33.33;	author jkm01;	state dead;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.10.17.15.01;	author jkm01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.12.10.14.38.14;	author jkm01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.12.10.01.00.42;	author jkm01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.09.18.57.45;	author jkm01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@<Instructions>
+	<Instruction>
+		<Name>add</Name>
+		<Type>Regular</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>111</OperandsCoding>
+				<MachineCode>000000bbbbbcccccaaaaa00000100000</MachineCode>
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+
+	<Instruction>
+		<Name>addu</Name>
+		<Type>Regular</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>111</OperandsCoding>
+				<MachineCode>000000bbbbbcccccaaaaa00000100001</MachineCode>
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+
+	<Instruction>
+		<Name>addi</Name>
+		<Type>Regular</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>111</OperandsCoding>
+				<MachineCode>001000bbbbbaaaaacccccccccccccccc</MachineCode>
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	
+	<Instruction>
+		<Name>sub</Name>
+		<Type>Regular</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>111</OperandsCoding>
+				<MachineCode>000000bbbbbcccccaaaaa00000100010</MachineCode>
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	
+	<Instruction>
+		<Name>mul</Name>
+		<Type>Pseudoinstruction</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>111</OperandsCoding>
+				<MachineCode>000000bbbbbccccc00000000000110000000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	mul b c
+						mtlo a
+				-->
+				<Operands>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>110</OperandsCoding>
+				<MachineCode>00110100000aaaaacccccccccccccccc000000aaaaabbbbb00000000000110000000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	addi a c  00100000000aaaaacccccccccccccccc changed to ori
+						mult b c
+						mflo a
+				-->
+				<Operands>
+					<Op>
+						<Type>0</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>11a</OperandsCoding>
+				<MachineCode>00111100000aaaaadddddddddddddddd001101aaaaaaaaaacccccccccccccccc000000aaaaabbbbb00000000000110000000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	lui a d 
+						addi a c 001000aaaaaaaaaacccccccccccccccc changed to ori
+						mult b a
+						mflo a
+				-->
+				<Operands>
+					<Op>
+						<Type>a</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+
+	<Instruction>
+		<Name>div</Name>
+		<Type>Pseudoinstruction</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>111</OperandsCoding>
+				<MachineCode>000000bbbbbccccc00000000000110100000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	div b c
+						mflo a
+				-->
+				<Operands>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>110</OperandsCoding>
+				<MachineCode>00110100000aaaaacccccccccccccccc000000bbbbbaaaaa00000000000110100000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	addi a c changed to ori
+						div b c
+						mflo a
+				-->
+				<Operands>
+					<Op>
+						<Type>0</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>11a</OperandsCoding>
+				<MachineCode>00111100000aaaaadddddddddddddddd001101aaaaaaaaaacccccccccccccccc000000bbbbbaaaaa00000000000110100000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	lui a d
+						addi a c
+						div b a
+						mtlo a
+				-->
+				<Operands>
+					<Op>
+						<Type>a</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>	
+	
+	<Instruction>
+		<Name>neg</Name>
+		<Type>Pseudoinstruction</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>11</OperandsCoding>
+				<MachineCode>000000aaaaaaaaaaaaaaa00000100010000000aaaaabbbbbaaaaa00000100010</MachineCode>
+				<!-- 	sub a  a a 
+						sub a a b
+				-->
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>lui</Name>
+		<Type>Regular</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>10</OperandsCoding>
+				<MachineCode>00111100000aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>0</Type>
+						<Mask>00000000000000001111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>li</Name>
+		<Type>Pseudoinstruction</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>10</OperandsCoding>
+				<MachineCode>00100000000aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<!-- 	addi a $zero b
+				-->
+				<Operands>
+					<Op>
+						<Type>0</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>1a</OperandsCoding>
+				<MachineCode>00111100000aaaaacccccccccccccccc001101aaaaaaaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<!-- 	lui a c 
+						addi a a b changed to ori
+				-->
+				<Operands>
+					<Op>
+						<Type>a</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>b</Name>
+		<Type>Pseudoinstruction</Type>		
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>2</OperandsCoding>
+				<MachineCode>0001000000000000aaaaaaaaaaaaaaaa</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>beq</Name>
+		<Type>Regular</Type>		
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>112</OperandsCoding>
+				<MachineCode>000100aaaaabbbbbcccccccccccccccc</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>bgez</Name>
+		<Type>Regular</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>12</OperandsCoding>
+				<MachineCode>000001aaaaa00001bbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>bgtz</Name>
+		<Type>Regular</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>12</OperandsCoding>
+				<MachineCode>000111aaaaa00000bbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Type>Regular</Type>
+		<Name>blez</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>12</OperandsCoding>
+				<MachineCode>000110aaaaa00000bbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Type>Regular</Type>
+		<Name>bltz</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>12</OperandsCoding>
+				<MachineCode>000001aaaaa00000bbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Type>Regular</Type>
+		<Name>bne</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>112</OperandsCoding>
+				<MachineCode>000101aaaaabbbbbcccccccccccccccc</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Type>Pseudoinstruction</Type>
+		<Name>beqz</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>12</OperandsCoding>
+				<MachineCode>000100aaaaa00000bbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>bge</Name>
+		<Type>Pseudoinstruction</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>112</OperandsCoding>
+				<MachineCode>000000aaaaabbbbb00001000001010100001000000100000cccccccccccccccc</MachineCode>
+				<!-- sub $at b a
+					  blez $at, c
+					  000000bbbbbaaaaa00001000001000100001100000100000cccccccccccccccc
+				-->
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>bgt</Name>
+		<Type>Pseudoinstruction</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>112</OperandsCoding>
+				<MachineCode>000000bbbbbaaaaa00001000001010100001010000100000cccccccccccccccc</MachineCode>
+				<!-- sub $at b a
+					  bltz $at, c000000bbbbbaaaaa00001000001000100000010000100000cccccccccccccccc
+				-->
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>ble</Name>
+		<Type>Pseudoinstruction</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>112</OperandsCoding>
+				<MachineCode>000000bbbbbaaaaa00001000001010100001000000100000cccccccccccccccc</MachineCode>
+				<!-- 000000aaaaabbbbb00001000001000100001100000100000cccccccccccccccc -->
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>blt</Name>
+		<Type>Pseudoinstruction</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>112</OperandsCoding>
+				<MachineCode>000000aaaaabbbbb00001000001010100001010000100000cccccccccccccccc</MachineCode>
+				<!-- 000000aaaaabbbbb00001000001000100000010000100000cccccccccccccccc -->
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>bnez</Name>
+		<Type>Pseudoinstruction</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>12</OperandsCoding>
+				<MachineCode>000101aaaaa00000bbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>j</Name>
+		<Type>Regular</Type>		
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>2</OperandsCoding>
+				<MachineCode>000010aaaaaaaaaaaaaaaaaaaaaaaaaa</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>00001111111111111111111111111100</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>26</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>jal</Name>
+		<Type>Regular</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>2</OperandsCoding>
+				<MachineCode>000011aaaaaaaaaaaaaaaaaaaaaaaaaa</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>00001111111111111111111111111100</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>26</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>syscall</Name>
+		<Type>Regular</Type>		
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>b</OperandsCoding>
+				<MachineCode>00000000000000000000000000001100</MachineCode>
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+
+	<Instruction>
+		<Name>la</Name>
+		<Type>Pseudoinstruction</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>14</OperandsCoding>
+				<MachineCode>00111100000aaaaacccccccccccccccc001101aaaaaaaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<!-- 
+				-->
+				<Operands>
+					<Op>
+						<Type>4</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>15</OperandsCoding>
+				<MachineCode>00111100000aaaaacccccccccccccccc001101aaaaaaaaaabbbbbbbbbbbbbbbb000000aaaaadddddaaaaa00000100000</MachineCode>
+				<!-- 
+				-->
+				<Operands>
+					<Op>
+						<Type>5</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>16</OperandsCoding>
+				<MachineCode>00111100000aaaaacccccccccccccccc001101aaaaaaaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<!-- 
+				-->
+				<Operands>
+					<Op>
+						<Type>6</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>17</OperandsCoding>
+				<MachineCode>00111100000aaaaacccccccccccccccc001101aaaaaaaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<!-- 
+				-->
+				<Operands>
+					<Op>
+						<Type>7</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>1c</OperandsCoding>
+				<MachineCode>00111100000aaaaacccccccccccccccc001101aaaaaaaaaabbbbbbbbbbbbbbbb000000aaaaadddddaaaaa00000100010</MachineCode>
+				<!-- 
+				-->
+				<Operands>
+					<Op>
+						<Type>c</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+
+			<Representation>
+				<OperandsCoding>18</OperandsCoding>
+				<MachineCode>00111100000aaaaacccccccccccccccc001101aaaaaaaaaabbbbbbbbbbbbbbbb000000aaaaadddddaaaaa00000100000</MachineCode>
+				<!-- 
+				-->
+				<Operands>
+					<Op>
+						<Type>8</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>19</OperandsCoding>
+				<MachineCode>00000000000bbbbbaaaaa00000100000</MachineCode>
+				<!-- 
+				-->
+				<Operands>
+					<Op>
+						<Type>9</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+
+	<Instruction>
+		<Name>lw</Name>
+		<Type>Extended</Type>
+		<CoreMachineCode>100011zzzzzaaaaabbbbbbbbbbbbbbbb</CoreMachineCode>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>14</OperandsCoding>
+				<MachineCode>001111000000000100010000000000000011010000100001100000000000000010001100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>4</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>15</OperandsCoding>
+				<MachineCode>100011cccccaaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>5</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>16</OperandsCoding>
+				<MachineCode>001111000000000100010000000000000011010000100001100000000000000010001100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>6</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>17</OperandsCoding>
+				<MachineCode>001111000000000100010000000000000011010000100001100000000000000010001100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>7</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		<Representation>
+				<OperandsCoding>1a</OperandsCoding>
+				<MachineCode>001111000000000100010000000000000011010000100001100000000000000000000000001ccccc000010000010001010001100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>a</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		<Representation>
+				<OperandsCoding>18</OperandsCoding>
+				<MachineCode>001111000000000100010000000000000011010000100001100000000000000000000000001ccccc000010000010000010001100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>8</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>19</OperandsCoding>
+				<MachineCode>100011bbbbbaaaaa0000000000000000</MachineCode>
+				<Operands>
+					<Op>
+						<Type>9</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+
+	<Instruction>
+		<Name>sw</Name>
+		<Type>Extended</Type>
+		<CoreMachineCode>101011zzzzzaaaaabbbbbbbbbbbbbbbb</CoreMachineCode>		
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>14</OperandsCoding>
+				<MachineCode>001111000000000100010000000000000011010000100001100000000000000010101100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>4</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>15</OperandsCoding>
+				<MachineCode>101011cccccaaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>5</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>16</OperandsCoding>
+				<MachineCode>001111000000000100010000000000000011010000100001100000000000000010101100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>6</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>17</OperandsCoding>
+				<MachineCode>001111000000000100010000000000000011010000100001100000000000000010101100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>7</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		<Representation>
+				<OperandsCoding>18</OperandsCoding>
+				<MachineCode>001111000000000100010000000000000011010000100001100000000000000000000000001ccccc000010000010000010101100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>8</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>1a</OperandsCoding>
+				<MachineCode>001111000000000100010000000000000011010000100001100000000000000000000000001ccccc000010000010001010101100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>a</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+
+			<Representation>
+				<OperandsCoding>19</OperandsCoding>
+				<MachineCode>101011bbbbbaaaaa0000000000000000</MachineCode>
+				<Operands>
+					<Op>
+						<Type>9</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+
+	
+	<Instruction>
+		<Name>move</Name>
+		<Type>Pseudoinstruction</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>11</OperandsCoding>
+				<MachineCode>000000aaaaaaaaaaaaaaa00000100010000000aaaaabbbbbaaaaa00000100000</MachineCode>
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+
+	<Instruction>
+		<Name>mflo</Name>
+		<Type>Regular</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>1</OperandsCoding>
+				<MachineCode>0000000000000000aaaaa00000010010</MachineCode>
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>ori</Name>
+		<Type>Regular</Type>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>10</OperandsCoding>
+				<MachineCode>001101bbbbbaaaaacccccccccccccccc</MachineCode>
+				<Operands>
+					<Op>
+						<Type>0</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+</Instructions>@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d4 1
+d18 1
+d32 1
+d46 1
+d60 1
+d73 2
+a74 2
+				<MachineCode>00100000000aaaaacccccccccccccccc000000aaaaabbbbb00000000000110000000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	addi a c
+d90 3
+a92 3
+				<MachineCode>00111100000aaaaadddddddddddddddd001000aaaaaaaaaacccccccccccccccc000000aaaaabbbbb00000000000110000000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	lui a d
+						addi a c
+d111 1
+d124 2
+a125 2
+				<MachineCode>00100000000aaaaacccccccccccccccc000000aaaaabbbbb00000000000110100000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	addi a c
+d141 1
+a141 1
+				<MachineCode>00111100000aaaaadddddddddddddddd001000aaaaaaaaaacccccccccccccccc000000aaaaabbbbb00000000000110100000000000000000aaaaa00000010010</MachineCode>
+d162 1
+d178 1
+d198 1
+d217 1
+a217 1
+				<MachineCode>00111100000aaaaacccccccccccccccc001000aaaaaaaaaabbbbbbbbbbbbbbbb</MachineCode>
+d219 1
+a219 1
+						addi a a b
+d236 1
+d256 1
+d276 1
+d296 1
+d315 1
+d335 1
+d355 1
+d375 1
+d396 1
+d400 1
+a400 1
+				<MachineCode>000000bbbbbaaaaa00001000001000100001100000100000cccccccccccccccc</MachineCode>
+d403 1
+d420 1
+d424 1
+a424 1
+				<MachineCode>000000bbbbbaaaaa00001000001000100000010000100000cccccccccccccccc</MachineCode>
+d426 1
+a426 1
+					  bltz $at, c
+d443 1
+d447 2
+a448 1
+				<MachineCode>000000aaaaabbbbb00001000001000100001100000100000cccccccccccccccc</MachineCode>
+d464 1
+d468 2
+a469 1
+				<MachineCode>000000aaaaabbbbb00001000001000100000010000100000cccccccccccccccc</MachineCode>
+d485 1
+d505 1
+d525 1
+d545 1
+d558 1
+d562 1
+a562 1
+				<MachineCode>00111100000aaaaacccccccccccccccc001000aaaaaaaaaabbbbbbbbbbbbbbbb</MachineCode>
+d577 1
+a577 1
+				<MachineCode>00111100000aaaaacccccccccccccccc001000aaaaaaaaaabbbbbbbbbbbbbbbb000000aaaaadddddaaaaa00000100000</MachineCode>
+d592 1
+a592 1
+				<MachineCode>00111100000aaaaacccccccccccccccc001000aaaaaaaaaabbbbbbbbbbbbbbbb</MachineCode>
+d607 1
+a607 1
+				<MachineCode>00111100000aaaaacccccccccccccccc001000aaaaaaaaaabbbbbbbbbbbbbbbb</MachineCode>
+d622 1
+a622 1
+				<MachineCode>00111100000aaaaacccccccccccccccc001000aaaaaaaaaabbbbbbbbbbbbbbbb000000aaaaadddddaaaaa00000100010</MachineCode>
+d638 1
+a638 1
+				<MachineCode>00111100000aaaaacccccccccccccccc001000aaaaaaaaaabbbbbbbbbbbbbbbb000000aaaaadddddaaaaa00000100000</MachineCode>
+d671 2
+d676 1
+a676 1
+				<MachineCode>001111000000000100010000000000000010000000100001100000000000000010001100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+d689 1
+a689 1
+				<MachineCode>0011110000000001000100000000000000100000001000011000000000000000100011cccccaaaaabbbbbbbbbbbbbbbb</MachineCode>
+d702 1
+a702 1
+				<MachineCode>001111000000000100010000000000000010000000100001100000000000000010001100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+d715 1
+a715 1
+				<MachineCode>001111000000000100010000000000000010000000100001100000000000000010001100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+d728 1
+a728 1
+				<MachineCode>001111000000000100010000000000000010000000100001100000000000000000000000001ccccc000010000010001010001100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+d741 1
+a741 1
+				<MachineCode>001111000000000100010000000000000010000000100001100000000000000000000000001ccccc000010000010000010001100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+d754 1
+a754 1
+				<MachineCode>0011110000000001000100000000000000100000001000011000000000000000100011bbbbbaaaaa0000000000000000</MachineCode>
+d771 2
+d776 1
+a776 1
+				<MachineCode>001111000000000100010000000000000010000000100001100000000000000010101100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+d789 1
+a789 1
+				<MachineCode>0011110000000001000100000000000000100000001000011000000000000000101011cccccaaaaabbbbbbbbbbbbbbbb</MachineCode>
+d802 1
+a802 1
+				<MachineCode>001111000000000100010000000000000010000000100001100000000000000010101100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+d815 1
+a815 1
+				<MachineCode>001111000000000100010000000000000010000000100001100000000000000010101100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+d828 1
+a828 1
+				<MachineCode>001111000000000100010000000000000010000000100001100000000000000000000000001ccccc000010000010000010101100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+d841 1
+a841 1
+				<MachineCode>001111000000000100010000000000000010000000100001100000000000000000000000001ccccc000010000010001010101100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+d855 1
+a855 1
+				<MachineCode>0011110000000001000100000000000000100000001000011000000000000000101011bbbbbaaaaa0000000000000000</MachineCode>
+d872 1
+d885 1
+d891 20
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d548 1
+a548 1
+				<MachineCode>00111100000aaaaacccccccccccccccc001000aaaaaaaaaabbbbbbbbbbbbbbbb000000dddddeeeeeaaaaa00000100000</MachineCode>
+d592 16
+d609 1
+a609 1
+				<MachineCode>00111100000aaaaacccccccccccccccc001000aaaaaaaaaabbbbbbbbbbbbbbbb000000dddddeeeeeaaaaa00000100000</MachineCode>
+d624 1
+a624 1
+				<MachineCode>000000dddddeeeeeaaaaa00000100000</MachineCode>
+d696 13
+d806 14
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d1 816
+a816 874
+<Instructions>
+	<Instruction>
+		<Name>add</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>111</OperandsCoding>
+				<MachineCode>000000bbbbbcccccaaaaa00000100000</MachineCode>
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+
+	<Instruction>
+		<Name>addu</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>111</OperandsCoding>
+				<MachineCode>000000bbbbbcccccaaaaa00000100001</MachineCode>
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+
+	<Instruction>
+		<Name>addi</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>111</OperandsCoding>
+				<MachineCode>001000bbbbbaaaaacccccccccccccccc</MachineCode>
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	
+	<Instruction>
+		<Name>sub</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>111</OperandsCoding>
+				<MachineCode>000000bbbbbcccccaaaaa00000100010</MachineCode>
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	
+	<Instruction>
+		<Name>mul</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>111</OperandsCoding>
+				<MachineCode>000000bbbbbccccc0000000000011000
+										  0000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	mul b c
+						mtlo a
+				-->
+				<Operands>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>110</OperandsCoding>
+				<MachineCode>00100000000aaaaacccccccccccccccc
+										  000000aaaaabbbbb0000000000011000
+										  0000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	addi a c
+						mult b c
+						mflo a
+				-->
+				<Operands>
+					<Op>
+						<Type>0</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>11a</OperandsCoding>
+				<MachineCode>00111100000aaaaadddddddddddddddd
+										  001000aaaaaaaaaacccccccccccccccc
+										  000000aaaaabbbbb0000000000011000
+										  0000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	lui a d
+						addi a c
+						mult b a
+						mflo a
+				-->
+				<Operands>
+					<Op>
+						<Type>a</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+
+	<Instruction>
+		<Name>div</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>111</OperandsCoding>
+				<MachineCode>000000bbbbbccccc0000000000011010
+										  0000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	div b c
+						mflo a
+				-->
+				<Operands>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>110</OperandsCoding>
+				<MachineCode>00100000000aaaaacccccccccccccccc
+										  000000aaaaabbbbb0000000000011010
+										  0000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	addi a c
+						div b c
+						mflo a
+				-->
+				<Operands>
+					<Op>
+						<Type>0</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>11a</OperandsCoding>
+				<MachineCode>00111100000aaaaadddddddddddddddd
+										  001000aaaaaaaaaacccccccccccccccc
+										  000000aaaaabbbbb0000000000011010
+										  0000000000000000aaaaa00000010010</MachineCode>
+				<!-- 	lui a d
+						addi a c
+						div b a
+						mtlo a
+				-->
+				<Operands>
+					<Op>
+						<Type>a</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>	
+	
+	<Instruction>
+		<Name>neg</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>11</OperandsCoding>
+				<MachineCode>000000aaaaaaaaaaaaaaa00000100010
+										  000000aaaaabbbbbaaaaa00000100010</MachineCode>
+				<!-- 	sub a  a a 
+						sub a a b
+				-->
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>lui</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>10</OperandsCoding>
+				<MachineCode>00111100000aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>0</Type>
+						<Mask>00000000000000001111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>li</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>10</OperandsCoding>
+				<MachineCode>00100000000aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<!-- 	addi a $zero b
+				-->
+				<Operands>
+					<Op>
+						<Type>0</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>1a</OperandsCoding>
+				<MachineCode>00111100000aaaaacccccccccccccccc
+										  001000aaaaaaaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<!-- 	lui a c 
+						addi a a b
+				-->
+				<Operands>
+					<Op>
+						<Type>a</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>b</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>2</OperandsCoding>
+				<MachineCode>0001000000000000aaaaaaaaaaaaaaaa</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>beq</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>112</OperandsCoding>
+				<MachineCode>000100aaaaabbbbbcccccccccccccccc</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>bgez</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>12</OperandsCoding>
+				<MachineCode>000001aaaaa00001bbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>bgtz</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>12</OperandsCoding>
+				<MachineCode>000111aaaaa00000bbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>blez</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>12</OperandsCoding>
+				<MachineCode>000110aaaaa00000bbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>bltz</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>12</OperandsCoding>
+				<MachineCode>000001aaaaa00000bbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>bne</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>112</OperandsCoding>
+				<MachineCode>000101aaaaabbbbbcccccccccccccccc</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>beqz</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>12</OperandsCoding>
+				<MachineCode>000100aaaaa00000bbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>bge</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>112</OperandsCoding>
+				<MachineCode>000000bbbbbaaaaa0000100000100010
+										  0001100000100000cccccccccccccccc</MachineCode>
+				<!-- sub $at b a
+					  blez $at, c
+				-->
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>bgt</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>112</OperandsCoding>
+				<MachineCode>000000bbbbbaaaaa0000100000100010
+										  0000010000100000cccccccccccccccc</MachineCode>
+				<!-- sub $at b a
+					  bltz $at, c
+				-->
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>ble</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>112</OperandsCoding>
+				<MachineCode>000000aaaaabbbbb00001000001000100001100000100000cccccccccccccccc</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>blt</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>112</OperandsCoding>
+				<MachineCode>000000aaaaabbbbb00001000001000100000010000100000cccccccccccccccc</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>bnez</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>12</OperandsCoding>
+				<MachineCode>000101aaaaa00000bbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>111111111111111100</Mask>
+						<EncodeBits>18</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>j</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>2</OperandsCoding>
+				<MachineCode>000010aaaaaaaaaaaaaaaaaaaaaaaaaa</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>00001111111111111111111111111100</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>26</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>jal</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>2</OperandsCoding>
+				<MachineCode>000011aaaaaaaaaaaaaaaaaaaaaaaaaa</MachineCode>
+				<Operands>
+					<Op>
+						<Type>2</Type>
+						<Mask>00001111111111111111111111111100</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>26</OutputBits>
+						<OffSetMode>0</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+	<Instruction>
+		<Name>syscall</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>b</OperandsCoding>
+				<MachineCode>00000000000000000000000000001100</MachineCode>
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+
+	<Instruction>
+		<Name>la</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>14</OperandsCoding>
+				<MachineCode>00111100000aaaaacccccccccccccccc
+										  001000aaaaaaaaaabbbbbbbbbbbbbbbb
+										  </MachineCode>
+				<!-- 
+				-->
+				<Operands>
+					<Op>
+						<Type>4</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>15</OperandsCoding>
+				<MachineCode>00111100000aaaaacccccccccccccccc
+										  001000aaaaaaaaaabbbbbbbbbbbbbbbb
+										  000000dddddeeeeeaaaaa00000100000
+										  </MachineCode>
+				<!-- 
+				-->
+				<Operands>
+					<Op>
+						<Type>5</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>16</OperandsCoding>
+				<MachineCode>00111100000aaaaacccccccccccccccc
+										  001000aaaaaaaaaabbbbbbbbbbbbbbbb
+										  </MachineCode>
+				<!-- 
+				-->
+				<Operands>
+					<Op>
+						<Type>6</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>17</OperandsCoding>
+				<MachineCode>00111100000aaaaacccccccccccccccc
+										  001000aaaaaaaaaabbbbbbbbbbbbbbbb
+										  </MachineCode>
+				<!-- 
+				-->
+				<Operands>
+					<Op>
+						<Type>7</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>18</OperandsCoding>
+				<MachineCode>00111100000aaaaacccccccccccccccc
+										  001000aaaaaaaaaabbbbbbbbbbbbbbbb
+										  000000dddddeeeeeaaaaa00000100000
+										  </MachineCode>
+				<!-- 
+				-->
+				<Operands>
+					<Op>
+						<Type>8</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>19</OperandsCoding>
+				<MachineCode>000000dddddeeeeeaaaaa00000100000
+										  </MachineCode>
+				<!-- 
+				-->
+				<Operands>
+					<Op>
+						<Type>9</Type>
+						<Mask>11111111111111111111111111111111</Mask>
+						<EncodeBits>32</EncodeBits>
+						<OutputBits>32</OutputBits>
+						<OffSetMode>2</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+
+	<Instruction>
+		<Name>lw</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>14</OperandsCoding>
+				<MachineCode>00111100000000010001000000000000
+											00100000001000011000000000000000
+											10001100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>4</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>15</OperandsCoding>
+				<MachineCode>00111100000000010001000000000000
+											00100000001000011000000000000000
+											100011cccccaaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>5</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>16</OperandsCoding>
+				<MachineCode>00111100000000010001000000000000
+											00100000001000011000000000000000
+											10001100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>6</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>17</OperandsCoding>
+				<MachineCode>00111100000000010001000000000000
+											00100000001000011000000000000000
+											10001100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>7</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		<Representation>
+				<OperandsCoding>18</OperandsCoding>
+				<MachineCode>00111100000000010001000000000000
+											00100000001000011000000000000000
+											00000000001ccccc0000100000100000
+											10001100001aaaaabbbbbbbbbbbbbbbb
+											</MachineCode>
+				<Operands>
+					<Op>
+						<Type>8</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>19</OperandsCoding>
+				<MachineCode>00111100000000010001000000000000
+											00100000001000011000000000000000
+											100011bbbbbaaaaa0000000000000000</MachineCode>
+				<Operands>
+					<Op>
+						<Type>9</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+	
+
+	<Instruction>
+		<Name>sw</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>14</OperandsCoding>
+				<MachineCode>00111100000000010001000000000000
+											00100000001000011000000000000000
+											10101100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>4</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>15</OperandsCoding>
+				<MachineCode>00111100000000010001000000000000
+											00100000001000011000000000000000
+											101011cccccaaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>5</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>16</OperandsCoding>
+				<MachineCode>00111100000000010001000000000000
+											00100000001000011000000000000000
+											10101100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>6</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>17</OperandsCoding>
+				<MachineCode>00111100000000010001000000000000
+											00100000001000011000000000000000
+											10101100001aaaaabbbbbbbbbbbbbbbb</MachineCode>
+				<Operands>
+					<Op>
+						<Type>7</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		<Representation>
+				<OperandsCoding>18</OperandsCoding>
+				<MachineCode>00111100000000010001000000000000
+											00100000001000011000000000000000
+											00000000001ccccc0000100000100000
+											10101100001aaaaabbbbbbbbbbbbbbbb
+											</MachineCode>
+				<Operands>
+					<Op>
+						<Type>8</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+			<Representation>
+				<OperandsCoding>19</OperandsCoding>
+				<MachineCode>00111100000000010001000000000000
+											00100000001000011000000000000000
+											101011bbbbbaaaaa0000000000000000</MachineCode>
+				<Operands>
+					<Op>
+						<Type>9</Type>
+						<Mask>1111111111111111</Mask>
+						<EncodeBits>16</EncodeBits>
+						<OutputBits>16</OutputBits>
+						<OffSetMode>1</OffSetMode>
+					</Op>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+
+	
+	<Instruction>
+		<Name>move</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>11</OperandsCoding>
+				<MachineCode>000000aaaaaaaaaaaaaaa00000100010
+										  000000aaaaabbbbbaaaaa00000100000</MachineCode>
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+
+	<Instruction>
+		<Name>mflo</Name>
+		<MachineCodeRepresentations>
+			<Representation>
+				<OperandsCoding>1</OperandsCoding>
+				<MachineCode>0000000000000000aaaaa00000010010</MachineCode>
+				<Operands>
+				</Operands>
+			</Representation>
+		</MachineCodeRepresentations>
+	</Instruction>
+@
+

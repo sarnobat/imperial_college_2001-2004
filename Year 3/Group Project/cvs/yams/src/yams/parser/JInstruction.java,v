@@ -1,0 +1,228 @@
+head	1.9;
+access;
+symbols
+	yams-final-19-12-03:1.9
+	yams-release2-17-12-03:1.9
+	yams-release-17-12-03:1.9
+	cleanup:1.9.0.2
+	Root_cleanup:1.9
+	stable-13-12-2003:1.9;
+locks; strict;
+comment	@# @;
+
+
+1.9
+date	2003.12.02.13.34.04;	author qq01;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.11.28.16.53.08;	author qq01;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.28.14.52.36;	author ajb101;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.15.18.00.39;	author qq01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.14.15.48.46;	author qq01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.11.21.16.23;	author qq01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.11.01.17.45;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.10.19.21.11;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.49;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.9
+log
+@Updated javadoc
+@
+text
+@/*
+ * Created on 06-Nov-2003
+ */
+package yams.parser;
+
+import java.util.Vector;
+
+/**
+ * Models a instruction of the type J.
+ * 
+ * @@author qq01
+ */
+public class JInstruction extends Instruction {
+
+	/**
+	 * Constructs a new J type instruction.
+	 * 
+	 * @@param name name of the instruction
+	 * @@param lexer
+	 * @@param operands array of expected operands
+	 * @@throws LexerException if the lexer finds an error
+	 * @@throws ParseException if the parser finds an error
+	 */
+	public JInstruction(String name, Lexer lexer, int[] operands)
+		throws LexerException, ParseException {
+		this.name = name;
+		this.operands = new Vector();
+
+		parseOperands(lexer, operands);
+	}
+
+	/* (non-Javadoc)
+	 * @@see yams.parser.Instruction#getType()
+	 */
+	public int getType() {
+		return TYPE_J;
+	}
+}
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d9 2
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d12 1
+d14 1
+a14 1
+	 * Constructs an <code>Instruction</code> of type J.
+d17 4
+a20 4
+	 * @@param lexer the lexer the tokenizes the user's program(s).
+	 * @@param numberOfOperands how many operands the instruction has
+	 * @@throws LexerException if an error occur
+	 * @@throws ParseException if an error occur
+d22 2
+a23 1
+	public JInstruction(String name, Lexer lexer, int[] operands) throws LexerException, ParseException {
+d26 1
+a26 1
+		
+a27 14
+	}
+	
+	public JInstruction(String name, Lexer lexer, int numberOfOperands)
+		throws LexerException, ParseException {
+		//TODO need further lookup in the mips bibel before completing this class.
+		this.name = name;
+
+		operands = new Vector();
+
+		int[] expected = new int[numberOfOperands];
+		for (int i = 0; i < numberOfOperands; i++) {
+			expected[i] = Operand.TYPE_REGISTER;
+		}
+		parseOperands(lexer, expected);
+@
+
+
+1.6
+log
+@Replaced MIPSLexer class with the new class Lexer.
+@
+text
+@d6 2
+d21 7
+d32 2
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d19 1
+a19 1
+	public JInstruction(String name, MIPSLexer lexer, int numberOfOperands)
+@
+
+
+1.4
+log
+@corrected typo
+@
+text
+@d28 1
+a28 1
+		parseOprands(lexer, expected);
+@
+
+
+1.3
+log
+@Updated parser files
+@
+text
+@d15 1
+a15 1
+	 * @@param numberOfOprands how many oprands the instruction has
+d19 1
+a19 1
+	public JInstruction(String name, MIPSLexer lexer, int numberOfOprands)
+d24 3
+a26 3
+		int[] expected = new int[numberOfOprands];
+		for (int i = 0; i < numberOfOprands; i++) {
+			expected[i] = Oprand.TYPE_REGISTER;
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d10 24
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d10 3
+a12 1
+
+@
+

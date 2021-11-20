@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form style="SWT" ide="eclipse" builder="jigloo" version="2.6.2">
+<NonVisualComponents>
+		<Component class="java.lang.Object" name="Non-visual components" style="0">
+			<Constraints>
+				<LayoutConstraint/>
+			</Constraints>
+		</Component></NonVisualComponents>
+	<Component class="org.eclipse.swt.widgets.Composite" name="ComponentPalette" style="0">
+		<Constraints>
+			<LayoutConstraint/>
+		</Constraints>
+		<Layout class="Stack">
+			<Property name="marginWidth" type="int" value="0"/>
+			<Property name="marginHeight" type="int" value="0"/>
+			<Property name="topControl" type="String" value="null"/>
+		</Layout>
+		<Events>
+		</Events>
+		<Properties>
+			<Property name="size" type="Dimension">
+				<Dimension value="[426, 43]"/>
+			</Property>
+			<Property name="bounds" type="Rectangle">
+				<Rectangle value="[0, 0, 426, 43]"/>
+			</Property>
+		</Properties>
+		<SubComponents>
+			<Component class="org.eclipse.swt.custom.CTabFolder" name="SwingTabFolder" style="0">
+				<Constraints>
+					<LayoutConstraint/>
+				</Constraints>
+				<Layout class="Absolute">
+				</Layout>
+				<Events>
+				</Events>
+				<Properties>
+					<Property name="size" type="Dimension">
+						<Dimension value="[426, 43]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[0, 0, 426, 43]"/>
+					</Property>
+					<Property name="visible" type="boolean" value="true"/>
+				</Properties>
+				<SubComponents>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="cTabItem1" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="Containers"/>
+						</Properties>
+						<SubComponents>
+							<Component class="com.cloudgarden.jigloo.editors.ScrollableToolbar" name="swingContainers" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Grid">
+									<Property name="marginWidth" type="int" value="0"/>
+									<Property name="marginHeight" type="int" value="0"/>
+									<Property name="numColumns" type="int" value="3"/>
+									<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+									<Property name="horizontalSpacing" type="int" value="0"/>
+									<Property name="verticalSpacing" type="int" value="0"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="cTabItem5" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="Components"/>
+						</Properties>
+						<SubComponents>
+							<Component class="com.cloudgarden.jigloo.editors.ScrollableToolbar" name="swingComponents" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Grid">
+									<Property name="marginWidth" type="int" value="0"/>
+									<Property name="marginHeight" type="int" value="0"/>
+									<Property name="numColumns" type="int" value="3"/>
+									<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+									<Property name="horizontalSpacing" type="int" value="0"/>
+									<Property name="verticalSpacing" type="int" value="0"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="cTabItem4" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="More Components"/>
+						</Properties>
+						<SubComponents>
+							<Component class="com.cloudgarden.jigloo.editors.ScrollableToolbar" name="swingComponents2" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Grid">
+									<Property name="marginWidth" type="int" value="0"/>
+									<Property name="marginHeight" type="int" value="0"/>
+									<Property name="numColumns" type="int" value="3"/>
+									<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+									<Property name="horizontalSpacing" type="int" value="0"/>
+									<Property name="verticalSpacing" type="int" value="0"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="cTabItem3" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="Menu"/>
+						</Properties>
+						<SubComponents>
+							<Component class="com.cloudgarden.jigloo.editors.ScrollableToolbar" name="swingMenu" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Grid">
+									<Property name="marginWidth" type="int" value="0"/>
+									<Property name="marginHeight" type="int" value="0"/>
+									<Property name="numColumns" type="int" value="3"/>
+									<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+									<Property name="horizontalSpacing" type="int" value="0"/>
+									<Property name="verticalSpacing" type="int" value="0"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="cTabItem8" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="Custom"/>
+						</Properties>
+						<SubComponents>
+							<Component class="com.cloudgarden.jigloo.editors.ScrollableToolbar" name="swingCustom" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Grid">
+									<Property name="marginWidth" type="int" value="0"/>
+									<Property name="marginHeight" type="int" value="0"/>
+									<Property name="numColumns" type="int" value="3"/>
+									<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+									<Property name="horizontalSpacing" type="int" value="0"/>
+									<Property name="verticalSpacing" type="int" value="0"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="cTabItem13" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="Layout"/>
+						</Properties>
+						<SubComponents>
+							<Component class="com.cloudgarden.jigloo.editors.ScrollableToolbar" name="swingLayouts" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Grid">
+									<Property name="marginWidth" type="int" value="0"/>
+									<Property name="marginHeight" type="int" value="0"/>
+									<Property name="numColumns" type="int" value="3"/>
+									<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+									<Property name="horizontalSpacing" type="int" value="0"/>
+									<Property name="verticalSpacing" type="int" value="0"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+									<Property name="enabled" type="boolean" value="true"/>
+									<Property name="visible" type="boolean" value="false"/>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+				</SubComponents>
+			</Component>
+			<Component class="org.eclipse.swt.custom.CTabFolder" name="SWTTabFolder" style="0">
+				<Constraints>
+					<LayoutConstraint/>
+				</Constraints>
+				<Layout class="Absolute">
+				</Layout>
+				<Events>
+				</Events>
+				<Properties>
+					<Property name="size" type="Dimension">
+						<Dimension value="[426, 43]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[0, 0, 426, 43]"/>
+					</Property>
+					<Property name="visible" type="boolean" value="true"/>
+				</Properties>
+				<SubComponents>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="cTabItem2" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="Containers"/>
+						</Properties>
+						<SubComponents>
+							<Component class="com.cloudgarden.jigloo.editors.ScrollableToolbar" name="swtContainers" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Grid">
+									<Property name="marginWidth" type="int" value="0"/>
+									<Property name="marginHeight" type="int" value="0"/>
+									<Property name="numColumns" type="int" value="3"/>
+									<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+									<Property name="horizontalSpacing" type="int" value="0"/>
+									<Property name="verticalSpacing" type="int" value="0"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="cTabItem6" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="Controls"/>
+						</Properties>
+						<SubComponents>
+							<Component class="com.cloudgarden.jigloo.editors.ScrollableToolbar" name="swtControls1" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Grid">
+									<Property name="marginWidth" type="int" value="0"/>
+									<Property name="marginHeight" type="int" value="0"/>
+									<Property name="numColumns" type="int" value="3"/>
+									<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+									<Property name="horizontalSpacing" type="int" value="0"/>
+									<Property name="verticalSpacing" type="int" value="0"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="cTabItem11" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="Items"/>
+						</Properties>
+						<SubComponents>
+							<Component class="com.cloudgarden.jigloo.editors.ScrollableToolbar" name="swtItems" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Grid">
+									<Property name="marginWidth" type="int" value="0"/>
+									<Property name="marginHeight" type="int" value="0"/>
+									<Property name="numColumns" type="int" value="3"/>
+									<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+									<Property name="horizontalSpacing" type="int" value="0"/>
+									<Property name="verticalSpacing" type="int" value="0"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="cTabItem9" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="Menu"/>
+						</Properties>
+						<SubComponents>
+							<Component class="com.cloudgarden.jigloo.editors.ScrollableToolbar" name="swtMenus" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Grid">
+									<Property name="marginWidth" type="int" value="0"/>
+									<Property name="marginHeight" type="int" value="0"/>
+									<Property name="numColumns" type="int" value="3"/>
+									<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+									<Property name="horizontalSpacing" type="int" value="0"/>
+									<Property name="verticalSpacing" type="int" value="0"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+									<Property name="enabled" type="boolean" value="true"/>
+									<Property name="visible" type="boolean" value="false"/>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="cTabItem7" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="Custom"/>
+						</Properties>
+						<SubComponents>
+							<Component class="com.cloudgarden.jigloo.editors.ScrollableToolbar" name="swtCustom" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Grid">
+									<Property name="marginWidth" type="int" value="0"/>
+									<Property name="marginHeight" type="int" value="0"/>
+									<Property name="numColumns" type="int" value="3"/>
+									<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+									<Property name="horizontalSpacing" type="int" value="0"/>
+									<Property name="verticalSpacing" type="int" value="0"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+									<Property name="enabled" type="boolean" value="true"/>
+									<Property name="visible" type="boolean" value="false"/>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+					<Component class="org.eclipse.swt.custom.CTabItem" name="cTabItem12" style="0">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+						<Events>
+						</Events>
+						<Properties>
+							<Property name="text" type="String" value="Layout"/>
+						</Properties>
+						<SubComponents>
+							<Component class="com.cloudgarden.jigloo.editors.ScrollableToolbar" name="swtLayouts" style="0">
+								<Constraints>
+									<LayoutConstraint/>
+								</Constraints>
+								<Layout class="Grid">
+									<Property name="marginWidth" type="int" value="0"/>
+									<Property name="marginHeight" type="int" value="0"/>
+									<Property name="numColumns" type="int" value="3"/>
+									<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+									<Property name="horizontalSpacing" type="int" value="0"/>
+									<Property name="verticalSpacing" type="int" value="0"/>
+								</Layout>
+								<Events>
+								</Events>
+								<Properties>
+									<Property name="enabled" type="boolean" value="true"/>
+									<Property name="visible" type="boolean" value="false"/>
+								</Properties>
+							</Component>
+						</SubComponents>
+					</Component>
+				</SubComponents>
+			</Component>
+		</SubComponents>
+	</Component>
+</Form>

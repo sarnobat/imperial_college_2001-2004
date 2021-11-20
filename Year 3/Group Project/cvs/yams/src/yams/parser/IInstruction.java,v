@@ -1,0 +1,347 @@
+head	1.15;
+access;
+symbols
+	yams-final-19-12-03:1.15
+	yams-release2-17-12-03:1.15
+	yams-release-17-12-03:1.15
+	cleanup:1.15.0.2
+	Root_cleanup:1.15
+	stable-13-12-2003:1.15;
+locks; strict;
+comment	@# @;
+
+
+1.15
+date	2003.12.03.19.02.19;	author qq01;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.12.03.17.08.36;	author qq01;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.12.03.17.02.01;	author qq01;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.03.16.59.38;	author ajb101;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.03.16.57.32;	author qq01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.03.16.55.10;	author qq01;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.03.16.54.25;	author qq01;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.02.13.34.03;	author qq01;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.28.15.54.27;	author qq01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.15.18.00.39;	author qq01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.14.15.48.46;	author qq01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.11.21.16.22;	author qq01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.11.01.17.45;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.10.19.21.11;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.49;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@/*
+ * Created on 06-Nov-2003
+ */
+package yams.parser;
+
+import java.util.Vector;
+
+/**
+ * Models instructions of type I.
+ * 
+ * @@author qq01
+ */
+public class IInstruction extends Instruction {
+	/**
+	 * Constructs an <code>Instruction</code> of type I.
+	 * 
+	 * @@param name name of the instruction
+	 * @@param lexer the lexer that's tokenizes the program
+	 * @@param operands operands
+	 * @@throws LexerException if an error occur
+	 * @@throws ParseException if an error occur
+	 */
+	public IInstruction(String name, Lexer lexer, int[] operands)
+		throws LexerException, ParseException {
+
+		this.name = name;
+
+		this.operands = new Vector();
+
+		parseOperands(lexer, operands);
+	}
+
+	/* (non-Javadoc)
+	 * @@see yams.parser.Instruction#getType()
+	 */
+	public int getType() {
+		return TYPE_I;
+	}
+}
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d19 1
+a19 1
+	 * @@param numberOfOperands how many operands
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d23 1
+a23 1
+	public IInstruction(String name, Lexer lexer, int numberOfOperands)
+a26 11
+		
+<<<<<<< IInstruction.java
+		operands = new Vector();
+
+		int[] expected = new int[numberOfOperands];
+		for (int i = 0; i < numberOfOperands; i++) {
+			expected[i] = Operand.TYPE_IMMEDIATE;
+		}
+		
+		parseOperands(lexer, expected);
+=======
+a30 1
+>>>>>>> 1.12
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d19 1
+a19 1
+	 * @@param operands operands
+d23 1
+a23 1
+	public IInstruction(String name, Lexer lexer, int [] operands)
+d28 10
+d42 1
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d28 1
+d30 1
+a30 1
+		
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d19 1
+a19 1
+	 * @@param numberOfOperands how many operands
+d23 1
+a23 1
+	public IInstruction(String name, Lexer lexer, int numberOfOperands)
+d28 1
+a28 6
+		operands = new Vector();
+
+		int[] expected = new int[numberOfOperands];
+		for (int i = 0; i < numberOfOperands; i++) {
+			expected[i] = Operand.TYPE_IMMEDIATE;
+		}
+d30 1
+a30 1
+		parseOperands(lexer, expected);
+@
+
+
+1.9
+log
+@fixed parser
+@
+text
+@d23 1
+a23 1
+	public IInstruction(String name, Lexer lexer, int [] operands)
+d28 1
+a28 1
+		this.operands = new Vector();
+d30 6
+a35 1
+		parseOperands(lexer, operands);
+@
+
+
+1.8
+log
+@Updated javadoc
+@
+text
+@d23 1
+a23 1
+	public IInstruction(String name, Lexer lexer, int numberOfOperands)
+d28 1
+a28 1
+		operands = new Vector();
+d30 1
+a30 6
+		int[] expected = new int[numberOfOperands];
+		for (int i = 0; i < numberOfOperands; i++) {
+			expected[i] = Operand.TYPE_IMMEDIATE;
+		}
+		
+		parseOperands(lexer, expected);
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d9 2
+@
+
+
+1.6
+log
+@Replaced MIPSLexer class with the new class Lexer.
+@
+text
+@d6 2
+d25 2
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d19 1
+a19 1
+	public IInstruction(String name, MIPSLexer lexer, int numberOfOperands)
+@
+
+
+1.4
+log
+@corrected typo
+@
+text
+@d29 1
+a29 1
+		parseOprands(lexer, expected);
+@
+
+
+1.3
+log
+@Updated parser files
+@
+text
+@d15 1
+a15 1
+	 * @@param numberOfOprands how many oprands
+d19 1
+a19 1
+	public IInstruction(String name, MIPSLexer lexer, int numberOfOprands)
+d24 3
+a26 3
+		int[] expected = new int[numberOfOprands];
+		for (int i = 0; i < numberOfOprands; i++) {
+			expected[i] = Oprand.TYPE_IMMEDIATE;
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d10 21
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d11 6
+a16 1
+
+@
+

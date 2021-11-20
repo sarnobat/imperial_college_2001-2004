@@ -1,0 +1,68 @@
+Processor - Simon's parts
+---------
+
+Descriptions of logical components
+- - - - - - - - - - - - - - - - - 
+
+
+Register Manager
+
+The purpose of the Register Manager is to encapsulate the MIPS registers and provide simple access procedures for them. The MIPS CPU has 32 general purpose 32-bit registers, named $0 through $31, and 32 floating point 32-bit registers, named $f0 through $f31. It also has two special 32-bit registers in the multiply & divide unit, named Lo and Hi. The MIPS CPU has coprocessors (the floating point unit is itself one) that also have registers. The most useful of these to a simulator are found in coprocessor 0, and are BadVAddr (8), Cause (12), Status (13) and EPC (14).
+
+Instruction & Syscall Handlers
+
+The Instruction and Syscall Handlers perform very similar roles, and they have the responsibility of changing the state of the MIPS CPU to simulate the execution of an instruction. 
+The Handlers takes the opcode of the instruction passed to it, and execute the appropriate code stored for that instruction. This will, typically, manipulate registers using the Register Manager and memory through the Memory Manager. The code executed has been derived from the original XML file, which has Java code stored against instructions and their opcodes. The Java code is written to use the provided simulator interfaces for the Register and Memory managers, and all other components.
+
+'Syscall' instructions are executed by the Syscall Handler, all other instructions are executed by the Instruction handler. This is because the 'syscall' instruction has non-instruction set-specific semantics, so depending on the simulator and the values in argument registers, a different operation may occur. The 'syscall' instruction is thus often used as a means of communicating with the simulator's host system, to read input and print output.
+
+ALU Unit
+
+The ALU unit is a component that isolates common operations that will be required often in coding MIPS instructions' semantics, and provides them as public functions through the ALU Unit's interface. These operations will include arithmetic and logical operations, such as shifting, rotating, multiplying and sign extending. The operations provided will save coding time and lead to increased readability and consistency of the Java code when developing the XML file.
+
+
+Specification
+- - - - - - - 
+
+NB These are all component-level system requirements
+
+[Version 1]
+The Register Manager shall provide the single point of access to the 32 general purpose registers of the simulated MIPS CPU.
+The Register Manager shall provide the capability for the registers to be accessed at the word level.
+
+The Instruction Handler shall provide the capability for the minimal (Compiler Lab) set of MIPS instructions to be executed.
+The Syscall Handler shall provide the capability for the MIPS 'syscall' instruction to be executed, which will allow characters to be read from the user, and characters to be printed to the display.
+
+The ALU Unit shall provide a collection of common routines for use in capturing MIPS instructions' semantics.
+
+
+[Version 2] 
+The Register Manager shall provide a single point of access to the 32 general purpose and 2 multiply & divide unit registers of the simulated MIPS CPU.
+The Register Manager shall allow the registers to be accessed at the word, halfword and byte level.
+
+The Instruction Handler shall provide the capability for a near-complete set of MIPS instructions (this excludes floating point, and coprocessor-related instructions) to be executed.
+The Syscall Handler shall provide the capability for the MIPS 'syscall' instruction to be executed, which will allow characters to be read from the user, and characters to be printed to the display.
+
+The ALU Unit shall provide a collection of common routines for use in capturing MIPS instructions' semantics.
+
+
+Extensions
+- - - - - 
+
+The Register Manager could be extended to include access to the floating point and coprocessor registers.
+
+The Instruction Handler could be extended to include execution of floating point and coprocessor-related instructions.
+
+The Syscall Handler could be extended to include reading and printing of numbers and strings to the console.
+
+Interrupt handling? (this should go as an extension to the CPU cycle manager probably)
+
+
+************
+
+Question:
+Are we going to be generating a test specification from our specification in the report?
+
+Perhaps one is not required, but I imagine we could produce a test spec and pass it on to Gabrielle so she can use it as her acceptance test at the end of the project.
+
+

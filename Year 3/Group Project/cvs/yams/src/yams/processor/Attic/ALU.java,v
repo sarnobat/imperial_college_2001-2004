@@ -1,0 +1,359 @@
+head	1.5;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.5
+date	2003.12.17.13.07.33;	author ajb101;	state dead;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.15.20.38.49;	author sw00;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.14.00.56.34;	author sw00;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.12.03.07.53;	author sw00;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.50;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@removing alu.java
+@
+text
+@
+// DEPRECATED PLEASE DELETE
+@
+
+
+1.4
+log
+@deprecated
+@
+text
+@@
+
+
+1.3
+log
+@removed some methods, removed todos
+@
+text
+@a0 5
+/*
+ * Created on 02-Nov-2003
+ *
+ */
+package yams.processor;
+d2 1
+a2 95
+/**
+ * The ALU has static arithmetic & logical methods.
+ * They are intended to be used by instructions' Java code in the XML file
+ * 
+ * @@author sw00
+ */
+public abstract class ALU {
+	
+	public static int add_without_overflow(int src1, int src2) {
+		return 0;
+	}
+
+	public static int mul_with_overflow(int src1, int src2) {
+		return 0;
+	}
+
+	public static int mul_unsigned_with_overflow(int src1, int src2) {
+		return 0;
+	}
+
+	public static void mult(
+		int src1,
+		int src2,
+		int desthi,
+		int destlo) {
+	}
+
+	public static void mult_unsigned(
+		int src1,
+		int src2,
+		int desthi,
+		int destlo) {
+	}
+
+	public static int neg_without_overflow(int src) {
+		return 0;
+	}
+
+	public static int rem_unsigned(int src1, int src2) {
+		return 0;
+	}
+
+	public static int rol(int src1, int src2) {
+		return 0;
+	}
+
+	public static int ror(int src1, int src2) {
+		return 0;
+	}
+
+	public static int sll(int src1, int src2) {
+		return 0;
+	}
+
+	public static int sllv(int src1, int src2) {
+		return 0;
+	}
+
+	public static int sra(int src1, int src2) {
+		return 0;
+	}
+
+	public static int srav(int src1, int src2) {
+		return 0;
+	}
+
+	public static int srl(int src1, int src2) {
+		return 0;
+	}
+
+	public static int srlv(int src1, int src2) {
+		return 0;
+	}
+
+	public static int sub_without_overflow(int src1) {
+		return 0;
+	}
+
+	public static boolean isGreaterThanEqual_unsigned(int src1, int src2) {
+		return false;
+	}
+
+	public static boolean isGreaterThan_unsigned(int src1, int src2) {
+		return false;
+	}
+
+	public static boolean isLessThanEqual_unsigned(int src1, int src2) {
+		return false;
+	}
+
+	public static boolean isLessThan_unsigned(int src1, int src2) {
+		return false;
+	}
+
+}
+@
+
+
+1.2
+log
+@removed methods with trivial implementations (such as add, sub)
+@
+text
+@a15 1
+		// TODO - add_without_overflow
+a18 32
+	public static void div(
+		int src1,
+		int src2,
+		int desthi,
+		int destlo) {
+		// TODO - div
+	}
+
+	public static void div_unsigned(
+		int src1,
+		int src2,
+		int desthi,
+		int destlo) {
+		// TODO - div_unsigned
+	}
+
+	public static void div_with_overflow(
+		int src1,
+		int src2,
+		int desthi,
+		int destlo) {
+		// TODO - div_with_overflow
+	}
+
+	public static void div_unsigned_with_overflow(
+		int src1,
+		int src2,
+		int desthi,
+		int destlo) {
+		// TODO - div_unsigned_with_overflow
+	}
+
+a19 1
+		// TODO - mul_with_overflow
+a23 1
+		// TODO - mul_unsigned_with_overflow
+a31 1
+		// TODO - mult
+a38 2
+		// TODO - mult_unsigned
+
+a41 1
+		// TODO - neg_without_overflow
+a45 1
+		// TODO - rem_unsigned
+a49 1
+		// TODO - rol
+a53 1
+		// TODO - ror
+a57 1
+		// TODO - sll
+a61 1
+		// TODO - sllv
+a65 1
+		// TODO - sra
+a69 1
+		// TODO - srav
+a73 1
+		// TODO - srl
+a77 1
+		// TODO - srlv
+a81 1
+		// TODO - sub_without_overflow
+a85 1
+		// TODO - isGreaterThanEqual_unsigned
+a89 1
+		// TODO - isGreaterThan_unsigned
+a93 1
+		// TODO - isLessThanEqual_unsigned
+a97 1
+		// TODO - isLessThan_unsigned
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d8 3
+a11 1
+ *
+a13 3
+
+	// not sure if any of these require implementing here, rather than
+	// in XML's instruction Java code
+a14 8
+	public static int abs(int src1) {
+		return Math.abs(src1);
+	}
+
+	public static int add(int src1, int src2) {
+		return src1 + src2;
+	}
+
+a19 4
+	public static int and(int src1, int src2) {
+		return src1 & src2;
+	}
+
+a51 5
+	public static int mul(int src1, int src2) {
+		// TODO - mul
+		return 0;
+	}
+
+a67 1
+
+a78 5
+	public static int neg(int src) {
+		// TODO - neg
+		return 0;
+	}
+
+a83 20
+	public static int nor(int src1, int src2) {
+		// TODO - nor
+		return 0;
+	}
+
+	public static int not(int src) {
+		// TODO - not
+		return 0;
+	}
+
+	public static int or(int src1, int src2) {
+		// TODO - or
+		return 0;
+	}
+
+	public static int rem(int src1, int src2) {
+		// TODO - rem
+		return 0;
+	}
+
+a128 5
+	public static int sub(int src1, int src2) {
+		// TODO - sub
+		return 0;
+	}
+
+a133 15
+	public static int xor(int src1, int src2) {
+		// TODO - xor
+		return 0;
+	}
+
+	public static boolean isEqual(int src1, int src2) {
+		// TODO - isEqual
+		return false;
+	}
+
+	public static boolean isGreaterThanEqual(int src1, int src2) {
+		// TODO - isGreaterThanEqual
+		return false;
+	}
+
+a138 5
+	public static boolean isGreaterThan(int src1, int src2) {
+		// TODO - isGreaterThan
+		return false;
+	}
+
+a143 5
+	public static boolean isLessThanEqual(int src1, int src2) {
+		// TODO - isLessThanEqual
+		return false;
+	}
+
+a148 5
+	public static boolean isLessThan(int src1, int src2) {
+		// TODO - isLessThan
+		return false;
+	}
+
+a152 7
+
+	public static boolean isNotEqual(int src1, int src2) {
+		// TODO - isNotEqual
+		return false;
+	}
+	
+	
+@
+

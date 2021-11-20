@@ -1,0 +1,183 @@
+head	1.4;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.4
+date	2003.11.10.10.57.52;	author qq01;	state dead;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.06.13.46.58;	author sw00;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.10.31.14.47.26;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.10.30.20.49.28;	author sw00;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.4
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 30-Oct-2003
+ *
+ */
+package processor;
+
+/**
+ * @@author sw00 Simon West
+ *
+ */
+public interface ALUInterface {
+
+	//	the following are arithmetic & logical operations 
+	 public int abs(int src1);
+	 public int add(int src1, int src2);
+	 public int add_without_overflow(int src1, int src2);
+	 public int and(int src1, int src2);
+	 public void div(int src1, int src2, int desthi, int destlo);
+	 public void div_unsigned(int src1, int src2, int desthi, int destlo);
+	 public void div_with_overflow(int src1, int src2, int desthi, int destlo);
+	 public void div_unsigned_with_overflow(int src1, int src2, int desthi, int destlo);
+	 public int mul(int src1, int src2);
+	 public int mul_with_overflow(int src1, int src2);
+	 public int mul_unsigned_with_overflow(int src1, int src2);
+	 public void mult(int src1, int src2, int desthi, int destlo);
+	 public void mult_unsigned(int src1, int src2, int desthi, int destlo);
+	 public int neg(int src);
+	 public int neg_without_overflow(int src);
+	 public int nor(int src1, int src2);
+	 public int not(int src);
+	 public int or(int src1, int src2);
+	 public int rem(int src1, int src2);
+	 public int rem_unsigned(int src1, int src2);
+	 public int rol(int src1, int src2);
+	 public int ror(int src1, int src2);
+	 public int sll(int src1, int src2);
+	 public int sllv(int src1, int src2);
+	 public int sra(int src1, int src2);
+	 public int srav(int src1, int src2);
+	 public int srl(int src1, int src2);
+	 public int srlv(int src1, int src2);
+	 public int sub(int src1, int src2);
+	 public int sub_without_overflow(int src1);
+	 public int xor(int src1, int src2);
+
+	 // comparison methods
+	 public boolean isEqual(int src1, int src2);
+	 public boolean isGreaterThanEqual(int src1, int src2);
+	 public boolean isGreaterThanEqual_unsigned(int src1, int src2);
+	 public boolean isGreaterThan(int src1, int src2);
+	 public boolean isGreaterThan_unsigned(int src1, int src2);
+	 public boolean isLessThanEqual(int src1, int src2);
+	 public boolean isLessThanEqual_unsigned(int src1, int src2);
+	 public boolean isLessThan(int src1, int src2);
+	 public boolean isLessThan_unsigned(int src1, int src2);
+	 public boolean isNotEqual(int src1, int src2);
+
+}
+@
+
+
+1.3
+log
+@changed MIPSWord refs to ints, removed sign & zero extension for the moment
+@
+text
+@@
+
+
+1.2
+log
+@fixed package typo
+@
+text
+@d7 4
+d13 32
+a44 44
+//	the following are arithmetic & logical operations 
+	 public MIPSWord abs(MIPSWord src1);
+	 public MIPSWord add(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord add_without_overflow(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord and(MIPSWord src1, MIPSWord src2);
+	 public void div(MIPSWord src1, MIPSWord src2, MIPSWord desthi, MIPSWord destlo);
+	 public void div_unsigned(MIPSWord src1, MIPSWord src2, MIPSWord desthi, MIPSWord destlo);
+	 public void div_with_overflow(MIPSWord src1, MIPSWord src2, MIPSWord desthi, MIPSWord destlo);
+	 public void div_unsigned_with_overflow(MIPSWord src1, MIPSWord src2, MIPSWord desthi, MIPSWord destlo);
+	 public MIPSWord mul(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord mul_with_overflow(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord mul_unsigned_with_overflow(MIPSWord src1, MIPSWord src2);
+	 public void mult(MIPSWord src1, MIPSWord src2, MIPSWord desthi, MIPSWord destlo);
+	 public void mult_unsigned(MIPSWord src1, MIPSWord src2, MIPSWord desthi, MIPSWord destlo);
+	 public MIPSWord neg(MIPSWord src);
+	 public MIPSWord neg_without_overflow(MIPSWord src);
+	 public MIPSWord nor(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord not(MIPSWord src);
+	 public MIPSWord or(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord rem(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord rem_unsigned(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord rol(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord ror(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord sll(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord sllv(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord sra(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord srav(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord srl(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord srlv(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord sub(MIPSWord src1, MIPSWord src2);
+	 public MIPSWord sub_without_overflow(MIPSWord src1);
+	 public MIPSWord xor(MIPSWord src1, MIPSWord src2);
+
+	 public MIPSWord sign_extend(MIPSByte src);	
+	 // returns the byte sign extended to a 32-bit word
+	
+	 public MIPSWord sign_extend(MIPSHalfword src);	
+	 // returns the halfword sign extended to a 32-bit word
+	
+	 public MIPSWord zero_extend(MIPSByte src);	
+	 // returns the byte zero extended to a 32-bit word
+	
+	 public MIPSWord zero_extend(MIPSHalfword src);	
+	 // returns the halfword sign extended to a 32-bit word
+d47 10
+a56 10
+	 public boolean isEqual(MIPSWord src1, MIPSWord src2);
+	 public boolean isGreaterThanEqual(MIPSWord src1, MIPSWord src2);
+	 public boolean isGreaterThanEqual_unsigned(MIPSWord src1, MIPSWord src2);
+	 public boolean isGreaterThan(MIPSWord src1, MIPSWord src2);
+	 public boolean isGreaterThan_unsigned(MIPSWord src1, MIPSWord src2);
+	 public boolean isLessThanEqual(MIPSWord src1, MIPSWord src2);
+	 public boolean isLessThanEqual_unsigned(MIPSWord src1, MIPSWord src2);
+	 public boolean isLessThan(MIPSWord src1, MIPSWord src2);
+	 public boolean isLessThan_unsigned(MIPSWord src1, MIPSWord src2);
+	 public boolean isNotEqual(MIPSWord src1, MIPSWord src2);
+@
+
+
+1.1
+log
+@some processor interfaces and MIPS word class, added by Simon
+@
+text
+@d5 1
+a5 1
+package src.processor;
+@
+

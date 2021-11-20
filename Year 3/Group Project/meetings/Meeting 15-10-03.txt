@@ -1,0 +1,30 @@
+MINUTES - PROJECT MEETING
+=============================================
+Date: 15/10/03
+Time: 1200
+
+Present: Sridar, Adam, James, Ben
+----------------------------------------------------------
+
+Summary of Topics Discussed:
+
+- Sridar to email the project supervisor (apgs) to arrange the first meeting for Thursday 16th 1200
+
+- All are to look at the compiler lab spec from last year, preferably before the meeting tomorrow
+  Adam may have this and will forward it to the team
+  Anyone else that can find it do the same
+
+- A solution to the lab would be useful
+  Find the best solution between us OR
+  Team to ask for sample solution from apgs
+
+- Knowing how the existing simulator works would also be useful
+  Team to ask apgs tomorrow about this
+
+- James will look up information on MIPS and MIPS processor architecture 
+
+- Important dates (available from http://www.doc.ic.ac.uk/~ih/teaching/group-projects/schedule.html)
+	24/10 Submit Report 1 - Project spec, extensions, division of work, schedule for design, implement, integrate and test.
+	14/11 Submit Report 2 - In progress report, internal design features. Early integration attempted
+	15/12-19/12 Presentations - 15min demo, 15min presentation.
+	19/12 Submit Final Report - Includes report 1 and 2, evaluation of problems, meetings held, hours spent by each member, log book

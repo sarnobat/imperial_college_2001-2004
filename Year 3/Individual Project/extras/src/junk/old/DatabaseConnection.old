@@ -1,0 +1,45 @@
+package dataImporter;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+/*
+ * Created on 17-Mar-2004
+ *
+ */
+
+/**
+ * @author ss401
+ *
+ */
+
+public class DatabaseConnection {
+	static Connection conn;
+	
+	public static Statement getConnection(){
+			
+		try {
+			Class.forName("org.postgresql.Driver");
+			Connection conn = DriverManager.getConnection("jdbc:postgresql://db/ss401", "ss401", "ss401");
+			Statement stmt = conn.createStatement();
+			return stmt;
+		}
+		catch (ClassNotFoundException e) {
+			System.err.println("Couldn't locate database driver." +e);
+		} catch (SQLException e) {
+			System.err.println("Couldn't create statement.");			
+		}
+		System.err.println("Couldn't get connection");
+		return null;
+	}
+	
+	public static void closeConnection(){
+		try {
+			conn.close();
+		} catch (SQLException e) {
+			System.err.println("Couldn't close connection");
+		}
+	}
+}

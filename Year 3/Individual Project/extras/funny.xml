@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<!-- -->
+<page>
+	<title>Project Homepage</title>
+	<project>Translating between XML and Relational Databases</project>
+	<name>Sridhar Sarnobat</name>
+	<email>ss401@doc.ic.ac.uk</email>
+	<update_list>
+		<update>
+			<date></date>
+			<description></description>
+		</update>
+		<update> 	
+			<date>Friday 30th January 2004</date>
+			<description>Searched for papers regarding XML Schema to Relational structure conversion</description>
+		</update>
+	</update_list>
+	<question_list>
+		<question>Even though we're dealing with Data-centric files, we must consider Document centric files otherwise we can't regenerate any character data outside tags, right?</question>
+		<question>Should the emphasis be on creating a lossless transformation or on an easy to use Graphical Interface?</question>
+		<question>Do databases have support for pattern matching? More generally, can XML Schema specify constraints that Database Schemas cannot?</question>
+		<question>How big a problem is it supposed to be that XML Schema can covey the same structure in different ways?</question>
+		<question>How do you use enumerated types in Databases?</question>
+		<question>How much cutting edge research must there be in this project?</question>
+		<question>What are the regulations on intellectual property rights?</question>
+		<question>What DBMS should be used?</question>
+		<question>Are there 2 major areas to the problem: Schema conversion and Importing data?</question>
+		<question>Is there anything you require on this project site?</question>
+		<question></question>
+		<question></question>
+		<question></question>
+	</question_list>
+</page>

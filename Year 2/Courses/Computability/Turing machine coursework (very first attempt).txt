@@ -1,0 +1,84 @@
+*********************************************************************
+*******************	some notes	****************************
+*********************************************************************
+
+(assume 2 tapes already, as follows:
+
+ - - - - - - - - - - -
+|z|y|x|?|y|x|y|y|z|   |
+ - - - - - - - - -  ^ 
+|^|^|^|^|^|^|^|^|^|   |
+ - - - - - - - - - - -                )
+
+'_' represets an anonymous entry (don't care what it is)
+
+
+*********************************************************************
+****************	THE ALGORITHM		*********************
+*********************************************************************
+
+
+read top element, remember it as 'a'; overwrite with (*,_)
+move forwards to (?,_)
+keep moving forwards until:
+	if you see (a,_)
+	{
+		replace with (*,_)
+		move back until you see (*,_)
+		write (_,a)
+
+		---JUMP TO LABEL 1----
+	}
+	else if you see (^)   // not to be confused with (^,^)
+	{
+		move backwards to (*,_)
+		move right one square 		// so that you're at the next character in the ordering
+	}
+
+read element, store in 'a', replace with (*,_) // or should that be replace with (?,_)   ?
+move forwards to (?,_)
+keep moving forwards until:
+	if you see (a,_)
+	{
+		replace with (*,_)
+		move back until you DON'T see (_,^) 				// see problem below
+		move right 1
+		write (_,a)
+		--go back to line where it says "move forwards to (?,_)"--	// go back 8 lines
+	}
+
+// just thought of another problem. Do you really move BACKWARDS in the following case after
+// identifying the X:
+				  - - - - - - - - - - - - - - 
+				 |z|y|x|?|x|y|y|y|y|y|y|y|   |
+				  - - - - - - - - - - - -  ^ 
+				 |y|y|y|y|y|y|y|^|^|^|^|^|   |
+				  - - - - - - - - - - - - - -  
+	
+
+	else if you see (^)
+	{
+		move backwards to (*,_)
+		move right 1
+	}
+
+
+
+
+LABEL 1:
+
+move forwards to (?,_)
+keep moving until:
+	if see (a,_)
+	{
+		replace with (*,_)
+		move backwards until DON'T see (_,^)
+		move right 1
+		write (_,a)
+		---JUMP BACK TO BEGINNING OF LABEL 1---	 		// i.e. go back 8 lines
+	}
+	else if see (^)
+	{
+		move backwards to (*,_)
+		move right 1
+	}

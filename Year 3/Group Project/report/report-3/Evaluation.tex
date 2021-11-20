@@ -1,0 +1,117 @@
+\section{Successes}
+
+The YAMS project accomplished all that was set out in our original specification to achieve. In short, this was to produce a MIPS simulator that could be used for the second year compiler Lab. The simulator was to have both a console and GUI versions. The YAMS simulator is a unification of the two, depending on the option the simulator is started with, it runs the console version or the version extended with a GUI.
+
+The console version has many command line options, to execute a list of files, printing statistics and logging to a file being a few examples. The GUI-enabled simulation has a very intuitive and easy-to-use interface, which is vastly superior to that offered by the current MIPS simulator of choice Spim, and XSpim.
+
+The development and integration of the components that made up YAMS was extremely rapid. By using numerous well-defined Java interfaces, the parser, assembler and processor meshed from the first integration build. The GUI was produced extremely quickly on top of the simulator, this was made possible by the use of JTables and the existing provision of the interaction between the simulator components and a GUI, through the use of listeners and a ProcessorHandler thread.
+
+
+\section{Failures (or missed opportunities)}
+
+In the GUI, it was decided that YAMS would not highlight registers that were being read from or written to. This was because the register highlighting would be confusing when pseudoinstructions were executed, since they are seemingly atomic to users of the simulator but in fact contain many smaller, regular MIPS instructions.
+
+It was originally intended to use ANTLR to generate the parser, however ambiguity removal from MIPS BNF grammar proved difficult. After realizing that all input would be linear (i.e. no nested constructs), it was decided that use of ANTLR would not be necessary.
+
+The Processor was originally intended to have an ALU class with static methods performing various logical and arithmetic operations. Sadly because MIPS has a RISC architecture there is very little code that can be common to multiple instructions, so the ALU class was torpedoed. Also the idea of having hard-coded static methods did not really appeal when YAMS started down the extension of using an XML instruction repository.
+
+\section{Testing}
+
+The YAMS simulator was tested against the specification throughout development to ensure a quality end product. The release build of the simulator was used in place of Spim to test four separate sets of Compiler Lab outputs. One of the these was the Lab compiler's output, the other three were produced by student-written DEC(M2) to MIPS compilers. For each file, YAMS simulated the execution correctly, and printed the correct output '1234'.
+
+
+
+
+
+\section{Extensions}
+
+The initial design stages for the project detailed not only the core requirements of the final product, but also included potential extensions that could feasibly be reached during the implementation of YAMS. Some of these extensions were achieved during the YAMS development, while others were not. These, along with other extensions developed along the way, will be outlined in the following section:
+
+\subsection{Achieved Extensions:}
+
+
+\begin{enumerate}
+\item Extra Statistics
+
+Extra statistics, such as a tentative method of keeping count of the loops used in the code was correctly implemented within the console and GUI versions of the program. This was achieved by the Statistics Manager keeping count of the number of times any given line was executed by the processor. It was then possible to identify where the majority of processor time was being spent during any given exeuction.
+
+Another extension correctly implemented was keeping count of the number of times that any type of instruction was executed within any given execution. This was written into the underlying console version, and then tied into the GUI version as well.
+
+\item Graphical Representations Of Statistics
+
+A further extension that would prove to be very effective in the final product was the graphical representation of statistical counts - represented as histograms. The regsister counts, instruction counts and line counts were all represented in the GUI using this method. This proved to be very effective for understanding what was going on in the underlying MIPS code. 
+
+\item Statistical Comparison
+
+Another supported extension was the ability to be able to compare statistics from different runs of the programs. In the console version this was achieved through outputing a comma-separated file containing comparative statistics on number of cycles required for running these programs. Additionally, this file could be imported into Excel and a comparison graph very quickly created for visual comparison.
+
+In the GUI version of YAMS, it is possible to display the statistical graphs for one program next to those for another. Once again, this is another effective method for viewing the efficiency of the compilers that generate the MIPS code.
+
+\item Multiple File Handling
+
+In both the console and GUI versions, YAMS provides functionality to allow the user to run the simulator with multiple files, through loading a file list. Additionally, within the GUI version, selection of specific programs from this list is also possible.
+
+\item XML Repository
+
+A significant integration point for YAMS was to be able to have a single XML Repository of instructions, and allow all software components to refer to these sections. This was achieved during the last phase of project development:
+
+Parser - Have handlers to recognise and validify instructions, autogenerated from the XML File through XSLT Transformation.
+Assembler - Reads information live from XML File into Object Tables for use during assembly.
+Processor - Handlers for executing instructions autogenerated from XML file.
+
+This extension required use of XML, DOM, XSLT and ANT technologies. Setting up these different technologies to work within the YAMS framework while still making it easy to add instruction proved to be a significant point of achievement within the project timeline.
+
+\end{enumerate}
+
+\subsection{Extensions Not Achieved}
+
+\begin{enumerate}
+
+\item Full MIPS R3000 Support
+
+It was not possible to implement the full MIPS instruction set for all areas of YAMS. NOTE: The handlers for all instructions  within the processor were in fact completed, however the Assembler / Parser data was not available by the end of the project timeline for all of these. Therefore these are ommitted from the final project build.
+
+It should be noted that the flexibility provided by using the XML file means that these instructions could quite esily be added at some point in the future.
+
+\item Directives Hard-Coded
+
+In addition to not supporting all the instructions, the Assembler Directives e.g. .asciiz were in fact hardcoded into the Assembler. It was envisaged that at some point these could be transferred to the XML File as code. This would have meant further XSLT transformations and extended the "ant" build, and this could not be achieved in the time alotted.
+
+This would require more modifications to the code of the Assembler to able to implement this extension in the future.
+
+\item Help Descriptions
+
+It was also planned that help entries for each of the instructions could be added to the XML Instruction Repository along with the other instruction information. This was partially implemented, and it can be seen in the XML that the tags for the help section are in fact present. However, further XSLT transformations would be required to generate HTML Help Files from this data. Other "help" is available within YAMS, and it was planned to extend this help feature with more information regarding every instruction supported. This was not achieved, but once again could be a future modification. 
+
+\item Graphical Memory Statistics
+
+This extension was partially completed. It was not possible to implement graphical representations of the exact memory usage for each MIPS file executed. However, the StatisticsManager does indeed keep track of the total amount of memory used during a run and display it numerically. It would require some modification to the GUI to enable this feature, but would not be an extensive change since it would mean simply adding another graph to the "Graphs" pane.
+
+\end{enumerate}
+
+
+
+\section{Project Evaluation}
+
+
+\subsection{Group Organisation}
+
+Initially, the project was split into three sections and two people were allocated to each section.  This meant that if one person became ill or had to spend time away, the project could continue.
+
+We organised regular meetings, many informal, to check on progress and resolve any conflicts between sections.  This resulted in a successful integration of the components on schedule.
+
+We also maintained close contact with our supervisor through regular meetings and emails to keep her informed of our progress.
+
+
+\subsection{Final Product}
+
+The final version of YAMS consists of two versions, a console version and a GUI version. Both have their uses within the scope of the compiler lab, however a significant aspect of YAMS is its extensibility.
+
+Through the modification of a single XML Instruction Repository, the functionality of YAMS can be extended. This has potential to support multiple instruction sets (within the bounds of the MIPS processor).
+
+The final product provided is therefore more than just a tool for the compiler lab. It could be tailored for multiple purposes, using more or less complex instruction sets.
+
+While there are flaws within both versions, the layered architecture (GUI and Console layer above the underlying simulation core) allows continuing updates and improvements to the GUI and user-friendly features.
+
+Overall, this has been a complex yet rewarding project, resulting in a versatile product.
+ 

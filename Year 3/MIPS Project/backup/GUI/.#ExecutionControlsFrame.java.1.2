@@ -1,0 +1,49 @@
+/*
+ * Created on 21-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+package yams.src.yams.GUI;
+
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+
+
+/**
+ * @author ss401
+ *
+ */
+public class ExecutionControlsFrame extends YamsInternalFrame {
+
+	/**
+	 * 
+	 */
+	public ExecutionControlsFrame(int width,int height) {
+		super(width,height);
+		setTitle("Execution Controls");
+		
+		getContentPane().setLayout(new GridLayout(0,2));
+		
+		JButton a = new JButton("Run to Completion");
+		JButton b = new JButton("Run to Breakpoint");
+		JButton c = new JButton("Step Forward");
+		
+		JLabel al = new JLabel("");
+		JLabel bl = new JLabel("<html>Please check box to specify breakpoint</html>");
+		JLabel cl = new JLabel("<html>Run the next instruction</html>");
+				
+		getContentPane().add(a);
+		getContentPane().add(al);
+		getContentPane().add(b);
+		getContentPane().add(bl);
+		getContentPane().add(c);
+		getContentPane().add(cl);
+		
+		
+	}
+
+}

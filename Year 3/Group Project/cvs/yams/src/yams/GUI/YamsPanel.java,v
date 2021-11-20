@@ -1,0 +1,161 @@
+head	1.6;
+access;
+symbols
+	yams-final-19-12-03:1.6
+	yams-release2-17-12-03:1.6
+	yams-release-17-12-03:1.6;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2003.12.15.19.19.07;	author ss401;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.09.05.02.48;	author ajb101;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.04.02.48.12;	author ajb101;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.12.03.13.51.14;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.12.03.01.59.34;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.02.14.47.15;	author ajb101;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@package yams.GUI;
+
+import yams.*;
+
+import javax.swing.*;
+
+public class YamsPanel extends JPanel {
+//TODO Shouldn't this be abstract?
+	protected YAMSGui controller;
+
+	public YamsPanel(YAMSGui controller) {
+		this.controller = controller;
+	}
+	
+	protected void setTitle(String title) {
+		this.setBorder(BorderFactory.createTitledBorder(title));
+	}
+}
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+
+@
+
+
+1.4
+log
+@lots of gooey updates
+@
+text
+@a0 6
+/*
+ * Created on 21-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+a6 4
+/**
+ * @@author ss401
+ *
+ */
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@a9 3
+import yams.processor.*;
+
+import java.awt.*;
+a19 1
+	protected Processor processor;
+d21 1
+a21 2
+	public YamsPanel(String windowName, YAMSGui controller) {
+		this.processor = controller.getProcessor();
+d23 4
+a26 1
+		this.setBorder(BorderFactory.createTitledBorder(windowName));
+@
+
+
+1.2
+log
+@lots of new GUI stuff :)
+@
+text
+@d25 1
+a25 1
+	public YamsPanel(int width,int height, YAMSGui controller) {
+d28 1
+a28 1
+		this.setBorder(BorderFactory.createLineBorder(Color.black));
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d12 1
+a12 1
+import java.awt.Dimension;
+a25 9
+		setPreferredSize(new Dimension(width, height));
+//		setClosable(true);
+
+//		setResizable(true);
+//		setMaximizable(true);
+
+		setEnabled(true);
+//		setIconifiable(true); //Enables minimize button in window
+
+d28 1
+a28 2
+
+//		show();
+@
+

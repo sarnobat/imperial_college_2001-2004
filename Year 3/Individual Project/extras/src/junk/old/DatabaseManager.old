@@ -1,0 +1,67 @@
+/*
+ * Created on 17-Mar-2004
+ *  
+ */
+package dataImporter;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Map;
+import java.util.TreeMap;
+
+import org.apache.log4j.Logger;
+
+/**
+ * @author ss401
+ *  Responsible for interacting with the database; aided by DatabaseConnection which
+ *  handles the connections etc.
+ */
+
+public class DatabaseManager {
+	Logger logger = Logger.getLogger(this.getClass());
+	Statement conn;
+
+	public DatabaseManager() {
+		conn = DatabaseConnection.getConnection();
+	}
+
+	/**
+	 * @param sql -
+	 *                              An sql statement of the form "INSERT
+	 *                              INTO tableName (attribute1,attribute2)
+	 *                              VALUES (value1,value2)"
+	 */
+	public void performInsert(String sql) {
+		try {
+			conn.executeUpdate(sql);
+		} catch (SQLException e) {
+			logger.warn("Coudln't perform " + sql + ".\n\t" + e);
+		}
+	}
+
+	/**
+	 * @param tableName - The name of the table in the database whose type information you wish to determine
+	 * @return - A Map from column name (String) to column type (Integer). The integer can be resolved against the fields in 
+	 * 	the interface java.sql.Types
+	 */
+	public Map getTableAttributeTypes(String tableName) {
+		Map attributeNamesToTypes = new TreeMap();
+		ResultSetMetaData metaData;
+		try {
+			metaData = conn.executeQuery("SELECT * FROM " + tableName).getMetaData();
+
+			int attributeCount = metaData.getColumnCount();
+			for (int i = 0; i < attributeCount; i++) {
+				attributeNamesToTypes.put(metaData.getColumnName(i), new Integer(metaData.getColumnType(i)));
+			}
+			return attributeNamesToTypes;
+		} catch (SQLException e) {
+			logger.error("Couldn't get table type information for "+tableName);
+			return null;
+		}
+	}
+	
+
+}

@@ -1,0 +1,34 @@
+Questions
+
+
+Do the 'user alterations' have to be semantic ones or can they be simple things like naming?
+	Anything useful: Naming, mixed content, subset data all acceptable
+Ideas for mapping flexibility: representing mixed content or not; renaming tables, relations; selecting keys; importing only parts of the data.
+	See above.
+Can SQL deal with cyclic dependencies between tables?
+	Alter table allows you to add references afterwards.
+Do you know any SQL code formatter apis for java?
+	No.
+Can you get many-to-many relationships in XML? How would you do it for example with the supplier-part?
+	Yes. See the paper about the branches and customers
+Any specific instructions on how to write report (please no)?
+	Just make sure you include algorithms and data structures
+What tense do I use?
+	Didn't say. 'We' is okay (but not very common). Don't use 'I'.
+How much implementation detail is necessary?
+	Just make sure you include algorithms and data structures
+	UML diagrams useful but not essential. If you wish to give outsourcing level detail, do it in the appendix.
+Won't it be much harder to have a bidirectional mapping if the schema conversion must be flexible?
+	Remember you do have the original XML schema to help.
+
+
+Other
+-------
+
+You can include technical problems (e.g. bugs in the driver)
+
+When using examples to demonstrate your theory, declare a few examples you are going to use at the beginning.
+
+Advice from Susan Eisenbach: say whether the technique scales.
+
+Make sure you state which XML constructs you are considering representing (it doesn't have to be all of them, but things like 'extends' aren't immediately representable in the XER model)

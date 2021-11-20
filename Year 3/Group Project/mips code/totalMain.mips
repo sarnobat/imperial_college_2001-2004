@@ -1,0 +1,53 @@
+# totalMain.mips - This is a test harness, or driver, for
+# the total procedure seen previously.  It expects a
+# sequence of decimal integers on standard input.  The
+# first number it sees must be non-negative and indicates
+# the number of elements which follow.  The result of the
+# operation is displayed on standard output.
+#
+# Register Usage:
+# $1 - Original array address
+# $2 - I/O
+# $3 - Current address within array
+# $4 - Number of elements remaining
+# $5 - Original number of elements
+
+.globl main
+
+main:   trap 5             # Read size of array into r$
+
+        llo $1, maxSize    # Get maximum array size
+        lhi $1, maxSize
+        lw $1, 0($1)
+
+        sub $1, $2, $1     # Check maximum against input
+        blez $1, ok	
+        trap 10            # Quit if input too big
+ok:     llo $1, array      # Get address of
+        lhi $1, array      # static array
+        add $3, $1, $0     # Copy address of array
+
+        add $4, $2, $0     # Copy number of
+        add $5, $2, $0     # elements
+
+        beq $0, $4, go     # Handle empty array case
+
+loop:   trap 5 	           # Read the next number
+        sw $2, 0($3)       # Store into the array
+        addi $3, $3, 4     # Advance to next
+        addi $4, $4, -1    # memory location
+        bne $0, $4, loop
+
+go:     addi $30, $30, -8
+        sw $1, 0($30)      # Pass address of array
+        sw $5, 4($30)      # Pass number of elements
+        jal total
+        addi $30, $30, 8
+        addi $4, $1, 0	   # Copy result in r1 to $4
+        trap 1             # Output total (in $4)
+        addi $4, $0, 10
+        trap 101           # Print newline character
+        trap 10             # Quit program
+
+array:    .space 4 * 256
+maxSize:  .word 256

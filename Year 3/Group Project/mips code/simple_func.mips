@@ -1,0 +1,31 @@
+# Ima T Student
+# itstuden
+
+# Calculate the x^4.  Return answer in x4.
+
+.globl main
+
+main:   lhi     $3, x
+        llo     $3, x
+        lw      $1, 0($3)
+        jal     sqsq
+        sw      $1, 4($3)
+        trap    10
+
+        # square-square.  Square the square of $1
+        # Return answer in $1
+sqsq:   mult    $1, $1          # multiply $1 to itself, Hi, Lo = $1 * $1
+        mfhi    $1
+        mflo    $1              # Place result in Hi, Lo into $1
+        mult    $1, $1          # multiply $1 to itslef, again
+        mfhi	$1
+        mflo	$1
+
+        # Show what is in $1 by copying it to $4 to be printed
+        # add	$4, $1, $0
+        # trap 	1
+
+        jr	$31		#Done
+
+x:      .word   2
+x4:     .word   0

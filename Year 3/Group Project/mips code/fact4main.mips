@@ -1,0 +1,24 @@
+# fact4main.mips
+# Read a number n from standard input, then print n!
+# (n factorial) on standard output.  Uses fact4
+# to calculate the factorial.
+
+.globl main
+
+main:   trap 5            # Get integer n into $2
+
+        addi $30, $30, -4 # Allocate space on stack
+        sw $2, 0($30)     # Push parameter on stack from $2
+        jal fact4         # Calculate n! in $1
+        addi $30, $30, 4  # De-allocate space on stack.
+                          # Not actually needed in this
+                          # context, but usually mandatory
+
+        add $4, $0, $1    # Copy result from $1 to $4
+        trap 1            # Print result (in $4)
+
+        addi $4, $0, 10        
+        trap 101          # Print newline character
+
+        trap 10           # Quit program
+

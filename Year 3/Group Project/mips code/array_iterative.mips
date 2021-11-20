@@ -1,0 +1,65 @@
+# Iterative string print/length
+# Richard C. Bilson
+# rcbilson
+# 27 September 2001
+
+# Print a string and calculate its length
+# PRE:  0($30) is the address of the string to print
+#       the string ends with character 10 (new-line)
+# POST: the string is printed, including the new-line
+#       r1 contains the number of characters printed
+#       all other registers are preserved
+
+# Registers
+#   $1 -- scratch (and the return value)
+#   $2 -- address of the current character being output
+#   $3 -- the address of the string
+#   $4 -- the ascii value of the character to output 
+#   $5 -- scratch
+
+# Pseudo Code:
+# 
+# int print_iterative(Address array)
+# {
+#       Address position = array;  // Index in array
+#       byte ch;                   // Current character
+#
+#       do {
+#               ch = load_from( position );
+#               print( ch );
+#               position += 1;
+#       } while( ch != 10 );
+#
+#       return position - array;
+# }
+
+
+.globl printStr
+
+printStr:
+# register preservation
+        addi $30, $30, -12      # make room on the stack 
+        sw   $2, 0($30)         # save $2
+        sw   $3, 4($30)         # save $3
+        sw   $4, 8($30)         # save $4
+	
+        addi $1, $0, 10         # for comparison
+
+# get the array location
+        lw   $2, 12($30)        # initialize $2 with the array start
+        add  $3, $2, $0         # save a copy in $3
+	
+# loop through the array, reading and outputting each character from the array
+loop:   lb  $4, 0($2)           # load the character
+        trap 101                # print the character
+        addi $2, $2, 1          # increment position in the array
+        bne  $4, $1, loop       # loop again, unless we found 10 (the newline)
+	
+        sub  $1, $2, $3         # calculate how many characters as return val.
+	
+# restore stack and return
+        lw   $2, 0($30)         # restore $2 
+        lw   $3, 4($30)         # restore $3
+        lw   $4, 8($30)         # restore $4
+        addi $30, $30, 12       # free up space on stack
+        jr   $31

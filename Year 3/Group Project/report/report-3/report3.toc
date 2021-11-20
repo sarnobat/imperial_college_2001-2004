@@ -1,0 +1,114 @@
+\contentsline {chapter}{\numberline {1}Project Brief}{5}
+\contentsline {section}{\numberline {1.1}What is MIPS?}{5}
+\contentsline {section}{\numberline {1.2}Program Requirements}{5}
+\contentsline {chapter}{\numberline {2}Specifications and Interfaces}{6}
+\contentsline {section}{\numberline {2.1}Lexer and Parser}{6}
+\contentsline {section}{\numberline {2.2}Assembler}{8}
+\contentsline {section}{\numberline {2.3}Processor}{8}
+\contentsline {chapter}{\numberline {3}Detailed Descriptions}{10}
+\contentsline {section}{\numberline {3.1}Lexical Tokenizer and Parser}{10}
+\contentsline {subsection}{\numberline {3.1.1}Overview}{10}
+\contentsline {subsection}{\numberline {3.1.2}Tokenizing}{10}
+\contentsline {subsection}{\numberline {3.1.3}Parsing}{12}
+\contentsline {subsection}{\numberline {3.1.4}XML Auto-generation of the Parser}{13}
+\contentsline {subsubsection}{Why We Want Auto-generation?}{13}
+\contentsline {subsubsection}{Why Use XML?}{13}
+\contentsline {subsubsection}{How Does Things Work?}{14}
+\contentsline {subsection}{\numberline {3.1.5}Problems}{15}
+\contentsline {subsubsection}{ANTLR and BNF Grammar File}{15}
+\contentsline {section}{\numberline {3.2}Assembler}{16}
+\contentsline {subsection}{\numberline {3.2.1}Introduction: Purpose of assembler}{16}
+\contentsline {subsection}{\numberline {3.2.2}XML Interaction}{16}
+\contentsline {subsection}{\numberline {3.2.3}Overview}{16}
+\contentsline {subsubsection}{COMPONENT DESIGN}{16}
+\contentsline {subsubsection}{BRIEF COMPONENT DESCRIPTIONS}{17}
+\contentsline {subsection}{\numberline {3.2.4}Assembler}{18}
+\contentsline {subsubsection}{External Interactions}{18}
+\contentsline {subsubsection}{Requirements}{19}
+\contentsline {subsubsection}{Operation}{20}
+\contentsline {subsection}{\numberline {3.2.5}OperandHandler}{24}
+\contentsline {subsubsection}{XML}{24}
+\contentsline {subsubsection}{Requirements}{24}
+\contentsline {subsubsection}{Operation}{25}
+\contentsline {subsection}{\numberline {3.2.6}AssemblerXMLHandler}{28}
+\contentsline {subsubsection}{Requirements}{28}
+\contentsline {subsubsection}{Operation}{28}
+\contentsline {subsection}{\numberline {3.2.7}Tables}{30}
+\contentsline {subsubsection}{INSTRUCTIONTABLE}{31}
+\contentsline {subsubsection}{GUIMAP}{32}
+\contentsline {subsubsection}{SYMBOLTABLE}{32}
+\contentsline {subsubsection}{TOBEDONETABLE}{32}
+\contentsline {subsection}{\numberline {3.2.8}Summary}{33}
+\contentsline {section}{\numberline {3.3}Processor}{34}
+\contentsline {subsection}{\numberline {3.3.1}Overview and UML Diagram}{34}
+\contentsline {subsection}{\numberline {3.3.2}Using the Processor}{34}
+\contentsline {subsection}{\numberline {3.3.3}The Manager Classes}{36}
+\contentsline {subsubsection}{CycleManager}{36}
+\contentsline {subsubsection}{RegisterManager}{37}
+\contentsline {subsubsection}{MemoryManager}{37}
+\contentsline {subsubsection}{StatisticsManager}{38}
+\contentsline {subsection}{\numberline {3.3.4}The Instruction Execution Classes}{39}
+\contentsline {subsubsection}{InstructionDecoder}{39}
+\contentsline {subsection}{\numberline {3.3.5}InstructionHandler}{39}
+\contentsline {subsubsection}{instructionHandler.xslt}{40}
+\contentsline {subsubsection}{SyscallHandler}{41}
+\contentsline {subsubsection}{SYSCALLHANDLER.XSLT}{41}
+\contentsline {subsection}{\numberline {3.3.6}The Bitstring Classes}{42}
+\contentsline {subsubsection}{MIPSBitstring}{42}
+\contentsline {subsubsection}{MIPSByte, MIPSHalfword, MIPSWord}{42}
+\contentsline {section}{\numberline {3.4}Graphical User Interface}{43}
+\contentsline {subsection}{\numberline {3.4.1}File Selector Panel}{45}
+\contentsline {subsection}{\numberline {3.4.2}Program Code Panel}{45}
+\contentsline {subsection}{\numberline {3.4.3}Data Segment Panel}{46}
+\contentsline {subsection}{\numberline {3.4.4}Register Contents Panel}{46}
+\contentsline {subsection}{\numberline {3.4.5}Statistics Panel}{46}
+\contentsline {subsection}{\numberline {3.4.6}Graphs Popup Window}{46}
+\contentsline {subsection}{\numberline {3.4.7}Dialog Panel}{47}
+\contentsline {subsection}{\numberline {3.4.8}Processor Handler}{47}
+\contentsline {chapter}{\numberline {4}Using the Software}{49}
+\contentsline {section}{\numberline {4.1}Welcome to YAMS!}{49}
+\contentsline {section}{\numberline {4.2}Requirements For All Versions of YAMS}{49}
+\contentsline {section}{\numberline {4.3}Requirement For GUI Version}{49}
+\contentsline {section}{\numberline {4.4}Using YAMS - Console Version}{50}
+\contentsline {subsection}{\numberline {4.4.1}Command Line Options}{50}
+\contentsline {subsubsection}{Handy Hint}{50}
+\contentsline {subsection}{\numberline {4.4.2}Interpreting the Output}{51}
+\contentsline {subsubsection}{Standard Mode}{51}
+\contentsline {subsubsection}{Statistics Mode}{51}
+\contentsline {section}{\numberline {4.5}Using YAMS - GUI Version}{53}
+\contentsline {subsection}{\numberline {4.5.1}Command Line Options}{53}
+\contentsline {subsection}{\numberline {4.5.2}Adding Files to the File Selector Box}{53}
+\contentsline {subsection}{\numberline {4.5.3}Loading a File}{54}
+\contentsline {subsection}{\numberline {4.5.4}Adding Breakpoints}{54}
+\contentsline {subsection}{\numberline {4.5.5}Controlling Execution}{54}
+\contentsline {subsubsection}{Speed}{54}
+\contentsline {subsubsection}{Run}{54}
+\contentsline {subsubsection}{Stop}{55}
+\contentsline {subsubsection}{Single Step}{56}
+\contentsline {subsubsection}{Skip}{56}
+\contentsline {subsection}{\numberline {4.5.6}Interpreting Output}{56}
+\contentsline {subsubsection}{Console Output}{56}
+\contentsline {subsubsection}{Statistics}{56}
+\contentsline {section}{\numberline {4.6}Adding Instructions}{57}
+\contentsline {subsection}{\numberline {4.6.1}Overview}{57}
+\contentsline {subsection}{\numberline {4.6.2}YAMS and XML}{57}
+\contentsline {subsection}{\numberline {4.6.3}Step-by-step Design / Addition of Instruction}{58}
+\contentsline {subsubsection}{FRAMEWORK MODIFICATION}{58}
+\contentsline {subsubsection}{PARSER MODIFICATIONS}{61}
+\contentsline {subsubsection}{ASSEMBLER MODIFICATIONS}{63}
+\contentsline {subsubsection}{PROCESSOR MODIFICATIONS}{70}
+\contentsline {subsection}{\numberline {4.6.4}Building The Project}{74}
+\contentsline {subsubsection}{Software Requirement}{75}
+\contentsline {subsubsection}{Doing the build}{75}
+\contentsline {subsubsection}{QUICK-REFERENCE PAGE for adding an instruction}{75}
+\contentsline {subsection}{\numberline {4.6.5}EXTENSION: Adding A System Call}{76}
+\contentsline {chapter}{\numberline {5}Evaluation}{80}
+\contentsline {section}{\numberline {5.1}Successes}{80}
+\contentsline {section}{\numberline {5.2}Failures (or missed opportunities)}{80}
+\contentsline {section}{\numberline {5.3}Testing}{81}
+\contentsline {section}{\numberline {5.4}Extensions}{81}
+\contentsline {subsection}{\numberline {5.4.1}Achieved Extensions:}{81}
+\contentsline {subsection}{\numberline {5.4.2}Extensions Not Achieved}{82}
+\contentsline {section}{\numberline {5.5}Project Evaluation}{83}
+\contentsline {subsection}{\numberline {5.5.1}Group Organisation}{83}
+\contentsline {subsection}{\numberline {5.5.2}Final Product}{84}

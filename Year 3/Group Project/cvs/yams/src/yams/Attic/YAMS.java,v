@@ -1,0 +1,382 @@
+head	1.12;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.12
+date	2003.12.04.15.22.34;	author qq01;	state dead;
+branches;
+next	1.11;
+
+1.11
+date	2003.11.27.21.21.01;	author qq01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.11.16.17.52.33;	author ajb101;	state dead;
+branches;
+next	1.9;
+
+1.9
+date	2003.11.14.16.57.43;	author ajb101;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.11.14.16.08.28;	author ajb101;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.14.15.51.01;	author ajb101;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.14.15.33.00;	author ajb101;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.14.15.23.45;	author ajb101;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.14.14.55.15;	author ajb101;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.14.14.27.34;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.14.14.26.05;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.52;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@// this is a change to the file
+
+// import java packages
+
+package yams;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.LinkedList;
+
+import yams.parser.*;
+import yams.assembler.*;
+import yams.processor.*;
+
+
+/**
+ * @@author ajb101
+ *
+ */
+public class YAMS {
+	
+	public YAMS() {
+		// constructor
+	}
+	
+	public void start(String args[]) {
+
+		// variable declarations (include default options)
+		LinkedList files = new LinkedList();
+		boolean statsMode = false;
+		String instruction_File = "Instruction_file.xml";
+
+		// parse command line arguments
+		for (int i = 0; i < args.length; i++) {
+
+			if (args[i].equalsIgnoreCase("-m1")
+				|| args[i].equalsIgnoreCase("--mode1")) {
+				statsMode = false;
+
+			} else if (
+				args[i].equalsIgnoreCase("-m2")
+					|| args[i].equalsIgnoreCase("--mode2")) {
+				statsMode = true;
+
+			} else if (args[i].equalsIgnoreCase("-if")) {
+				// next argument is an input file containing a list of files
+				if (i == args.length - 1) {
+					// but no more options
+					System.err.println("-if needs an argument");
+					System.exit(1);
+				} else {
+					i++;
+					// open file and read filenames
+					FileReader file;
+					BufferedReader input = null;
+					try {
+						file = new FileReader(args[i]);
+						input = new BufferedReader(file);
+					} catch (FileNotFoundException e) {
+						System.err.println("Unable to find input file: " + args[i]);
+						System.exit(1);
+					}
+					try {
+						String line;
+						while ((line = input.readLine()) != null) {
+							files.add(new File(line));
+						}
+					} catch (IOException e) {
+						// some other error
+						e.printStackTrace();
+					}
+
+				}
+
+			} else {
+				// assume it's a file
+				files.add(new File(args[i]));
+
+			}
+
+		}
+
+		// loop through our list of files
+		for (int i = 0; i < files.size(); i++) {
+			// check file exists
+			if (((File)files.get(i)).exists()) {
+				// read the file into a StringBuffer
+				//StringBuffer programCode = loadCode( (File)files.get(i) );
+				
+				// parse it
+				Parser parser = new Parser(new StringBuffer("add $a1, $a2, $a3\n"));
+				LineList instrList = null;
+				try {
+					instrList = parser.parse();
+					System.out.println(instrList.toString());
+				}
+				catch(ParseException e) {
+					System.out.println("ParseException:" + e.toString());
+					System.exit(0);
+				}
+				catch(LexerException e) {
+					System.out.println("LexerException:" + e.toString());
+					System.exit(0);
+				}
+				
+				
+				// create processor
+				Processor processor = new Processor(this);
+				
+				// assemble it
+				Assembler asm = new Assembler("Instruction_file.xml", processor.memoryManager);
+				
+				asm.assembleCode(instrList);
+				
+				processor.cycleManager.jump(0x400000);
+				processor.cycleManager.advance();
+				
+				// asm.assemble(ast);
+				// if mode 1 - start processor normally
+				// if mode 2 - start processor in silent mode and output stats
+
+			} else {
+				// file does not exist
+				System.err.println("File not found: " + ((File)files.get(i)).getName());
+			}
+		}
+
+	}
+
+
+	/**
+	 * @@param args arguments provided from the command line - see program documentation
+	 */
+	public static void main(String args[]) {
+		YAMS yams = new YAMS();
+		yams.start(args);
+	}
+	
+	/**
+	 * @@param fileName
+	 * @@return returns a StringBuffer containing the text from the file
+	 */
+	private static StringBuffer loadCode(File fileName)
+	{
+		return null;
+	}
+
+}
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.10
+log
+@fixed type in MIPSParser, and changing layout of controller classes
+@
+text
+@d93 1
+a93 1
+				MIPSParser parser = new MIPSParser();
+d96 1
+a96 1
+					instrList = parser.parseProgram("add $a1, $a2, $a3\n");
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d116 4
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d96 1
+a96 1
+					instrList = parser.parseProgram("ADD $a1, $a2, $a3\n");
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@a94 1
+			System.out.println("i am here");
+d96 1
+a96 1
+					instrList = parser.parseProgram("ADD $a1, $a2, $a3");
+d99 6
+a104 2
+				catch(Exception e) {
+					System.out.println("Error whilst parsing");
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d95 1
+d98 1
+a98 1
+					instrList.toString();
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d97 1
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d23 6
+a28 5
+
+	/**
+	 * @@param args arguments provided from the command line - see program documentation
+	 */
+	public static void main(String args[]) {
+d62 1
+a62 2
+						System.err.println(
+							"Unable to find input file: " + args[i]);
+d90 1
+a90 2
+				StringBuffer programCode = new StringBuffer();
+				
+d94 9
+a102 1
+				LineList instrList = parser.parseProgram(programCode);
+d108 1
+a108 1
+				Assembler asm = new Assembler(xmlFile, processor.memoryManager);
+d121 18
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d90 2
+d95 1
+a95 1
+				LineList instrList = parser.parseProgram();
+d101 3
+a103 2
+				Assembler asm = new Assembler(xmlFile, memoryManager);
+				asm.testAssembler();
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d13 3
+a15 1
+import yams.assembler.Assembler;
+d89 2
+d92 6
+a97 2
+				// Parser parse = new Parser();
+				// TreeMap ast = parse.parseFile((File)files.get(i));
+d99 1
+a99 1
+				Assembler asm = new Assembler(instruction_File);
+@
+

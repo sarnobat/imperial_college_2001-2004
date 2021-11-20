@@ -1,0 +1,137 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: Using Windows 98/95 built-in FTP program
+Date: Mon, 18 Feb 2002 13:51:32 -0000
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.efn.org/helpdesk/win9ftp.html
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4910.0300
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Using Windows 98/95 built-in FTP program</TITLE>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type>
+<META content=3D"MSHTML 5.00.3502.4373" name=3DGENERATOR></HEAD>
+<BODY bgColor=3D#ffffff>
+<H1 align=3Dcenter>Using Windows 98/95/NT Built-in FTP Program</H1>The =
+FTP client=20
+is a DOS command-line client.=20
+<HR>
+<BIG>
+<OL>
+  <P>
+  <LI>Make a graphical (PPP) connection to efn.=20
+  <P></P>
+  <LI>Click <B>Start / Run</B>=20
+  <P></P>
+  <LI>In the field, "Open", type <B>ftp</B>=20
+  <P></P>
+  <LI>Click "<B>OK</B>."=20
+  <P></P>
+  <LI>At the prompt, <B>ftp&gt;</B>, type, <B>open</B>.=20
+  <P></P>
+  <LI>Press <B>[Enter]</B>.=20
+  <P></P>
+  <LI>At the prompt, <B>To:</B> type the ftp address of the server you =
+want to=20
+  access.=20
+  <P>For your efn home directory, the address is, <B>ftp.efn.org</B>=20
+  <P></P>
+  <LI>Press ,<B>[Enter]</B>.=20
+  <P></P>
+  <LI>At the prompt, <B>User</B>, enter your <B>username</B>=20
+  <P>your username is your email address name. Do not use the capital P =
+here.=20
+  <P></P>
+  <LI><B>Password:</B> enter your password. It will not show as you type =
+it.=20
+  <P></P>
+  <LI>To list the files in your home directory, enter, <B>ls</B>=20
+  <P></P>
+  <LI>To change to your efn home page directory (assuming you have one), =
+enter=20
+  <B>cd public_html</B>=20
+  <P></P>
+  <LI>To change to the directory on <B>your computer</B>, where your =
+home page=20
+  files are located, enter, <B>lcd (directory name)</B>=20
+  <P></P>
+  <LI>To access the efn Public Download area, enter, <STRONG>cd=20
+  /var/spool/ftp/e/efn/pub/download</STRONG>=20
+  <P>To list the files and directories, enter, <STRONG>ls</STRONG>=20
+  <P></P>
+  <LI>For a list of available FTP commands, enter, <B>help</B> =
+</LI></OL>
+<HR>
+
+<H2 align=3Dcenter>Some Useful FTP Commands:</H2>
+<DL compact>
+  <P>
+  <DT><B>ascii</B>=20
+  <DD>Changes to text mode. This is necessary for uploading a homepage =
+file=20
+  (index.html).=20
+  <P></P>
+  <DT><B>binary</B>=20
+  <DD>Changes to binary mode. Necessary to upload a binary file, such as =
+a=20
+  picture.=20
+  <P></P>
+  <DT><B>dir</B>=20
+  <DD>List files, with more info than "ls"=20
+  <P></P>
+  <DT><B>put</B> (filename)=20
+  <DD>Upload (filename) from your machine.=20
+  <P></P>
+  <DT><B>get</B> (filename)=20
+  <DD>Download (filename) to your machine.=20
+  <P></P>
+  <DT><B>cd</B> (directoryname)=20
+  <DD>Changes directory on the remote machine.=20
+  <P></P>
+  <DT><B>lcd</B> (directoryname)=20
+  <DD>Changes directory on your local (home) computer.=20
+  <P></P>
+  <DT><B>mget</B> (files)=20
+  <DD>Download multiple files to your machine.=20
+  <P></P>
+  <DT><B>mput</B> (files)=20
+  <DD>Upload multiple files from your machine.=20
+  <P></P>
+  <DT><B>bye</B>=20
+  <DD>Close the ftp session.=20
+  <P></P>
+  <DT><B><BIG>help</BIG></B>=20
+  <DD>Shows a list of available ftp commands. </DD></DL>
+<HR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; After uploading a home page file, via =
+Windows=20
+ftp, it must be made accessible by the world. Here's how:=20
+<OL>
+  <P>
+  <LI>Login to your efn shell.=20
+  <P></P>
+  <LI>While at the <B>efn Main Menu</B>, type <B>: websetup</B>=20
+  <P>Just like that; a colon, then a space, then "websetup" (no quotes). =
+
+  <P></P>
+  <LI>Press <B>[Enter]</B> </LI></OL>Your homepage files will then be =
+visible to=20
+the world.=20
+<HR>
+Comments to: <A=20
+href=3D"mailto:helpdesk@efn.org?subject=3DHelpPage">mailto:helpdesk@efn.o=
+rg?subject=3DHelpPage</A>
+<H3>For more help:</H3>
+<UL>
+  <P>
+  <LI>email to: <A=20
+  =
+href=3D"mailto:support@efn.org?subject=3Dhelpdesk.html">mailto:support@ef=
+n.org?subject=3Dhelpdesk.html</A>
+  <P></P>
+  <LI>Call <B>484-9637</B>.=20
+  <P></P>
+  <LI>Visit <B>43 W Broadway</B>. </LI></UL>12 May, 1999 =
+</BIG></BODY></HTML>

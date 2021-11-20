@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type"><title>latex.graphicext</title><meta name="generator" content="DocBook XSL Stylesheets V1.50.0"><link rel="home" href="index.html" title="DB2LaTeX API Documentation"><link rel="up" href="rn33.html" title="Variables and Templates used in LaTeX Preamble Generation"><link rel="previous" href="rn33re44.html" title="latex.math.preamble"><link rel="next" href="rn33re46.html" title="generate.latex.pagestyle"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">latex.graphicext</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="rn33re44.html">Prev</a> </td><th width="60%" align="center">Variables and Templates used in LaTeX Preamble Generation</th><td width="20%" align="right"> <a accesskey="n" href="rn33re46.html">Next</a></td></tr></table><hr></div><div class="refentry"><div class="refentry.separator"><hr></div><a name="template.latex.graphicext"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>latex.graphicext &#8212;  Declared graphic extensions </p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><pre class="synopsis">&lt;xsl:template name=&quot;latex.graphicext&quot;/&gt;</pre></div><div class="refdescription"><a name="id2841964"></a>
+This template checks whether the user has overriden <b>grafic.default.extension</b>
+Otherwise, declares .pdf, .png, .jpg if using pdflatex and .eps if using latex.
+<pre class="programlisting">
+&lt;xsl:template name=&quot;latex.graphicext&quot;&gt;
+&lt;xsl:choose&gt;
+&lt;xsl:when test=&quot;$graphic.default.extension !=''&quot;&gt;
+	&lt;xsl:text&gt;\DeclareGraphicsExtensions{&lt;/xsl:text&gt;
+	&lt;xsl:if test=&quot;not(contains($graphic.default.extension,'.'))&quot;&gt;
+		&lt;xsl:text&gt;.&lt;/xsl:text&gt;
+	&lt;/xsl:if&gt;
+	&lt;xsl:value-of select=&quot;$graphic.default.extension&quot;/&gt;
+	&lt;xsl:text&gt;}&amp;#10;&lt;/xsl:text&gt;
+&lt;/xsl:when&gt;
+&lt;xsl:otherwise&gt;
+	&lt;xsl:choose&gt;
+	&lt;xsl:when test=&quot;$latex.pdf.support=1&quot;&gt;
+		&lt;xsl:text&gt;\ifpdf&amp;#10;&lt;/xsl:text&gt;
+		&lt;xsl:text&gt;\DeclareGraphicsExtensions{.pdf,.png,.jpg}&amp;#10;&lt;/xsl:text&gt;
+		&lt;xsl:text&gt;\else&amp;#10;&lt;/xsl:text&gt;
+		&lt;xsl:text&gt;\DeclareGraphicsExtensions{.eps}&amp;#10;&lt;/xsl:text&gt;
+		&lt;xsl:text&gt;\fi&amp;#10;&lt;/xsl:text&gt;
+	&lt;/xsl:when&gt;
+	&lt;xsl:otherwise&gt;
+		&lt;xsl:text&gt;\DeclareGraphicsExtensions{.eps}&amp;#10;&lt;/xsl:text&gt;
+	&lt;/xsl:otherwise&gt;
+	&lt;/xsl:choose&gt;
+&lt;/xsl:otherwise&gt;
+&lt;/xsl:choose&gt;
+&lt;/xsl:template&gt;
+
+
+</pre>
+</div><div class="refreturn"><b><a name="id2841985"></a>Returns</b>
+</div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="rn33re44.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="rn33.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="rn33re46.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">latex.math.preamble </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> generate.latex.pagestyle</td></tr></table></div></body></html>

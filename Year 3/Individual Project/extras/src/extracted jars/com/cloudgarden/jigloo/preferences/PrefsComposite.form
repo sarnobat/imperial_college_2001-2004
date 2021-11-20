@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form style="SWT" ide="eclipse" builder="jigloo" version="2.5.0">
+	<Component class="org.eclipse.swt.widgets.Composite" name="PrefsComposite" style="0">
+		<Constraints>
+			<LayoutConstraint/>
+		</Constraints>
+		<Layout class="Grid">
+			<Property name="marginWidth" type="int" value="5"/>
+			<Property name="marginHeight" type="int" value="5"/>
+			<Property name="numColumns" type="int" value="1"/>
+			<Property name="makeColumnsEqualWidth" type="boolean" value="true"/>
+			<Property name="horizontalSpacing" type="int" value="5"/>
+			<Property name="verticalSpacing" type="int" value="5"/>
+		</Layout>
+		<Events>
+		</Events>
+		<Properties>
+			<Property name="size" type="Dimension">
+				<Dimension value="[346, 279]"/>
+			</Property>
+			<Property name="bounds" type="Rectangle">
+				<Rectangle value="[0, 0, 346, 279]"/>
+			</Property>
+		</Properties>
+		<SubComponents>
+			<Component class="org.eclipse.swt.widgets.Group" name="group1" style="0">
+				<Constraints>
+					<Constraint class="org.eclipse.swt.layout.GridData"/>
+					<LayoutConstraint class="org.eclipse.swt.layout.GridData">
+						<Property name="verticalAlignment" type="int" value="4"/>
+						<Property name="horizontalAlignment" type="int" value="4"/>
+						<Property name="widthHint" type="int" value="-1"/>
+						<Property name="heightHint" type="int" value="-1"/>
+						<Property name="horizontalIndent" type="int" value="0"/>
+						<Property name="horizontalSpan" type="int" value="1"/>
+						<Property name="verticalSpan" type="int" value="1"/>
+						<Property name="grabExcessHorizontalSpace" type="boolean" value="true"/>
+						<Property name="grabExcessVerticalSpace" type="boolean" value="true"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Layout class="Grid">
+					<Property name="marginWidth" type="int" value="10"/>
+					<Property name="marginHeight" type="int" value="10"/>
+					<Property name="numColumns" type="int" value="2"/>
+					<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+					<Property name="horizontalSpacing" type="int" value="5"/>
+					<Property name="verticalSpacing" type="int" value="15"/>
+				</Layout>
+				<Events>
+				</Events>
+				<Properties>
+					<Property name="text" type="String" value="Behaviour"/>
+					<Property name="size" type="Dimension">
+						<Dimension value="[336, 184]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[5, 5, 336, 184]"/>
+					</Property>
+					<Property name="visible" type="boolean" value="true"/>
+				</Properties>
+			</Component>
+			<Component class="org.eclipse.swt.widgets.Group" name="group2" style="0">
+				<Constraints>
+					<Constraint class="org.eclipse.swt.layout.GridData"/>
+					<LayoutConstraint class="org.eclipse.swt.layout.GridData">
+						<Property name="verticalAlignment" type="int" value="4"/>
+						<Property name="horizontalAlignment" type="int" value="4"/>
+						<Property name="widthHint" type="int" value="-1"/>
+						<Property name="heightHint" type="int" value="-1"/>
+						<Property name="horizontalIndent" type="int" value="0"/>
+						<Property name="horizontalSpan" type="int" value="1"/>
+						<Property name="verticalSpan" type="int" value="1"/>
+						<Property name="grabExcessHorizontalSpace" type="boolean" value="true"/>
+						<Property name="grabExcessVerticalSpace" type="boolean" value="false"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Layout class="Grid">
+					<Property name="marginWidth" type="int" value="10"/>
+					<Property name="marginHeight" type="int" value="10"/>
+					<Property name="numColumns" type="int" value="1"/>
+					<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+					<Property name="horizontalSpacing" type="int" value="5"/>
+					<Property name="verticalSpacing" type="int" value="15"/>
+				</Layout>
+				<Events>
+				</Events>
+				<Properties>
+					<Property name="text" type="String" value="Appearance"/>
+					<Property name="size" type="Dimension">
+						<Dimension value="[336, 80]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[5, 194, 336, 80]"/>
+					</Property>
+					<Property name="visible" type="boolean" value="true"/>
+				</Properties>
+			</Component>
+		</SubComponents>
+	</Component>
+</Form>

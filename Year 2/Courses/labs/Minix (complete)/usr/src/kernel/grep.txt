@@ -1,0 +1,52 @@
+clock.c:#define TIMER_FREQ  1193182L	/* clock frequency for timer in PC and AT */
+console.c: * The 6845 video controller used by the IBM PC shares its video memory with
+console.c:/* Map from ANSI colors to the attributes used by the PC */
+const.h: * the PC BIOS defaults since the BIOS doesn't respect all the processor's
+const.h:#define PCR		0x65	/* Planar Control Register */
+floppy.c:#define ST_PCN          0x01	/* slot where controller reports present cyl */
+floppy.c: * 0   360K    360K     9       40     300 RPM  250 kbps   Standard PC DSDD
+floppy.c: * 2   360K    720K     9       40     300 RPM  250 kbps   Quad density PC
+floppy.c: * 4   360K    1.2M     9       40     360 RPM  300 kbps   PC disk in AT drive
+floppy.c:/* The IBM PC can perform DMA operations by using the DMA chip.  To use it,
+floppy.c:     (f_results[ST0] & ST0_BITS) != SEEK_ST0 || f_results[ST_PCN] != 0) {
+floppy.c:   * interrupt, while the PC documentation says turning bit 8 off disables
+glo.h:EXTERN int pc_at;		/* PC-AT compatible hardware interface */
+i8259.c:#define ICW1_PC         0x13	/* edge triggered, no cascade, need ICW4 */
+i8259.c:#define ICW4_PC         0x09	/* not SFNM, buffered, normal EOI, 8086 */
+i8259.c:	 * one slaved at IRQ 2.  (We don't have to deal with the PC that
+keyboard.c:/* Keyboard driver for PC's and AT's.
+keyboard.c:  if (!pc_at) return;	/* PC/XT doesn't have LEDs */
+keyboard.c:	quiet = scan_keyboard();/* quiescent value (0 on PC, last code on AT)*/
+klib.s:PC_ARGS	=	4 + 4 + 4 + 4	! 4 + 4 + 4
+klib.s:	mov	esi, PC_ARGS(esp)
+klib.s:	mov	edi, PC_ARGS+4(esp)
+klib.s:	mov	eax, PC_ARGS+4+4(esp)
+rs232.c:#if (MACHINE != IBM_PC) && (MACHINE != ATARI)
+rs232.c:#error				/* rs232.c only supports PC and Atari ST */
+rs232.c:#if (MACHINE == IBM_PC)		/* PC/AT 8250/16450 chip combination */
+rs232.c:#define MC_OUT2                 8	/* required for PC & AT interrupts */
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:  if (tp->tty_termios.c_cflag & HUPCL) {
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:#if (MACHINE == IBM_PC)
+rs232.c:#if (MACHINE == IBM_PC)
+sconst.h:PCREG		=	RETADR + W
+sconst.h:CSREG		=	PCREG + W
+tty.c:#if (MACHINE == IBM_PC)
+tty.c:#if (MACHINE == IBM_PC)
+tty.c:  /* INPCK	- not changed */
+tty.c:  /* HUPCL	- not changed */
+type.h:/* The name and fields of this struct were chosen for PC compatibility. */
+zip.c:	/* Impossible, but not on PC's:  The controller does not respond. */

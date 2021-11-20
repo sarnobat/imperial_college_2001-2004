@@ -1,0 +1,258 @@
+
+INSTRUCTION ADDITION - TEXT FOR fixedRt ATTRIBUTE DESCRIPTION
+=============================================================
+
+The fixedRt attribute must be set to true for I type branch instructions that use the Rt field of the instruction to identify the branch type. This attribute is require to identify these instructions for requiring extra decoding in the Instruction Handler. 
+The only MIPS instructions to require this attribute are: bltz, bltzal, bgez and bgezal.
+
+If the attribute is not specified, the default value is false.
+
+
+
+
+INSTRUCTION ADDITION - PROCESSOR 
+================================
+
+For an instruction to be handled by the processor correctly it should have a valid and unique machine code representation. For Regular instructions, this is described in the MachineCode tag in the MachineCodeRepresentation. For Extended instructions, this is found in the CoreMachineCode tag.
+The processor does not generate handling code for pseudoinstructions, for these are assembled into their consitituent instructions before they can be executed.
+
+Java code is used to describe the semantics of the instruction. The semantics will likely include reading values to/from registers and/or memory, depending on what the instruction is designed to do. The code is placed inside the <Javacode> opening and </Javacode> closing tags.
+
+Before writing any Java code, it is recommended to be familiar with the section of this report that describes the InstructionHandler component of the Processor. Depending on the type of MIPS instruction (R, I or J) that is being added, the interfaces and variables available to the programmer vary. 
+
+The following tables show the processor interfaces & variables available, by type of instruction.
+
+##TABLE
+All instruction types
+---------------------
+mem		: MemoryManagerInterface		the memory manager
+regs		: RegisterManagerInterface		the register manager
+stats		: StatisticsManagerInterface		the statistics manager
+out		: PrintStream				the console output
+verbose	: PrintStream				the verbose output
+op		: int						the 'op' bitfield
+op_bitstr	: MIPSBitstring				ditto (as bitstring)
+
+##TABLE
+R type only
+-----------	
+rs		: int				the first source register
+rs_bitstr	: MIPSBitstring		ditto (as bitstring)
+rt		: int				the second source register
+rt_bitstr	: MIPSBitstring		ditto (as bitstring)
+rd		: int				the destination register
+rd_bitstr	: MIPSBitstring		ditto (as bitstring)
+shamt		: int				the shift amount
+shamt_bitstr: MIPSBitstring		ditto (as bitstring)
+func		: int				the 'func' bitfield
+func_bitstr	: MIPSBitstring		ditto (as bitstring)
+
+##TABLE
+I type only
+-----------
+rs		: int				the first register
+rs_bitstr	: MIPSBitstring		ditto (as bitstring)
+rt		: int				the second register
+rt_bitstr	: MIPSBitstring		ditto (as bitstring)
+i		: int				the SIGN-EXTENDED version of 'immediate' bitfield
+i_bitstr	: MIPSBitstring		the 'immediate' bitfield as bitstring
+
+##TABLE
+J type only
+-----------
+addr		: int				the 'addr' bitfield
+addr_bitstr	: MIPSBitstring		ditto (as bitstring)
+
+
+The Java code should be placed between the <Javacode> and the </Javacode> tags.
+
+What the Java code for new instructions should NOT contain:
+- return statements
+- frivolous use of the 'out' PrintStream
+- attempts to reference classes outside the yams.processor package
+- attempts to use interfaces/variables not accessible for the instruction type (R, I or J)
+
+Violations of these recommendations will cause either a failure at XSLT transformation stage or when compiling the generated InstructionHandler.java file.
+
+##BOLD THIS PART
+N.B. All special characters, such as & (ampersand), < (left chevron) and > (right chevron) MUST be converted to their HTML equivalent.
+&  ->  &amp;
+<  ->  &lt;
+>  ->  &gt;
+This is because XSLT has its own individual use for these characters in XSLT files.
+
+Failure to do this conversion for all special characters will result in the following error on applying the transformation during the build process.
+##QUOTE THIS ERROR
+[xslt] : Fatal Error! org.xml.sax.SAXParseException: Illegal character or entity reference syntax. Cause: org.xml.sax.SAXParseException: Illegal character or entity reference syntax.
+
+
+Example Javacode for existing instructions:
+  'add rd, rs, rt' (addition)
+  'div rs, rt' (divide)
+  'beq rs, rt, label' (branch on equals)
+
+<Instruction>
+	<Name>add</Name>
+	...
+	<Javacode>
+		regs.setReg(rd, regs.getReg(rs) + regs.getReg(rt));
+	</Javacode>
+	...
+</Instruction>
+
+<Instruction>
+	<Name>div</Name>
+	...
+	<Javacode>
+		int quotient;
+		int remainder;
+		int rscontents = regs.getReg(rs);
+		int rtcontents = regs.getReg(rt);
+		quotient = rscontents / rtcontents;
+		remainder = rscontents % rtcontents;
+		regs.setReg("LO", quotient);
+		regs.setReg("HI", remainder);
+	</Javacode>
+	...
+</Instruction>
+
+<Instruction>
+	<Name>beq</Name>
+	...
+	<Javacode>
+		if(regs.getReg(rs) == regs.getReg(rt)) {
+			int pc = 0;
+			pc = regs.getReg("PC");
+			pc += i * 4 - 4;
+			regs.setReg("PC", pc);						
+		}
+	</Javacode>
+	...
+</Instruction>
+
+
+
+
+ADDING A NEW SYSCALL
+====================
+
+Before attempting to add a new Syscall, it is recommended to be familiar with the section of this report that describes the SyscallHandler component of the Processor. 
+
+To add an additional syscall, simply add or modify a case-statement in the Javacode already present for the 'syscall' instruction. The cases correspond to the system call code, the value of which is stored in $v0 before executing the 'syscall'.
+
+The interfaces available to the programmer are:
+
+##TABLE
+
+mem		: MemoryManagerInterface		the memory manager
+regs		: RegisterManagerInterface		the register manager
+stats		: StatisticsManagerInterface		the statistics manager
+cycleManager: CycleManagerInterface			the cycle manager
+in		: InputStream				the std input
+out		: PrintStream				the console output
+verbose	: PrintStream				the verbose output
+
+Also three extra java.io classes are imported: BufferedReader, InputStreamReader and IOException.
+
+The current source for the 'syscall' instruction supports the most frequently used system calls and is as follows:
+
+## QUOTE THIS SOURCE PLEASE
+<Javacode>
+switch(regs.getReg(2)) {
+	case 1: {
+		verbose.println("SYSCALL : print_int");
+		// print_int syscall
+		out.print(regs.getReg(4));
+		break;
+	}
+	case 2: {
+		verbose.println("SYSCALL : print_float");
+		// TODO - SYSCALL print_float (an extension)
+		break;
+	}
+	case 3: {
+		verbose.println("SYSCALL : print_double");
+		// TODO - SYSCALL print_double  (an extension)
+		break;
+	}
+	case 4: {
+		verbose.println("SYSCALL : print_string");
+		// print_string syscall
+		int address = regs.getReg(4);
+		int character = mem.getByte(address);
+		char c;
+		while(character != 0) {
+			c = (char) character;
+			out.print(c);
+			address++;
+			character = mem.getByte(address);
+		}
+		break;
+	}
+	case 5: {
+		verbose.println("SYSCALL : read_int");
+		// read_int syscall
+		try {
+			regs.setReg(2,in.read());
+		}
+		catch(IOException e){
+			throw new YAMSRuntimeException("Syscall read_int failed");
+		}
+		break;
+	}
+	case 6: {
+		verbose.println("SYSCALL : read_float");
+		// TODO - SYSCALL read_float  (an extension)
+		break;
+	}
+	case 7: {
+		verbose.println("SYSCALL : read_double");
+		// TODO - SYSCALL read_double  (an extension)
+		break;
+	}
+	case 8: {
+		verbose.println("SYSCALL : read_string");
+		// read_string syscall
+		int maxlength = regs.getReg(5);
+		int address = regs.getReg(4);
+		BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+		try {
+			// read a line from stdin
+			String str = reader.readLine();
+			char c;
+			int charbyte;
+			// for each char, write it to the memory
+			for(int i = 0; i &lt; str.length(); i++) {
+				c = str.charAt(i);
+				charbyte = (int) c;
+				mem.setByte(address, c);
+				address++;
+				// if we have reached the max length that we've been told to read
+				if(i == maxlength - 1) { break; }
+			}
+			// write a null terminator
+			mem.setByte(address, 0);
+		}
+		catch(IOException e){
+			throw new YAMSRuntimeException("Syscall read_string failed");
+		}
+		break;
+	}
+	case 9: {
+		verbose.println("SYSCALL : sbrk");
+		// TODO - SYSCALL sbrk  (an extension)
+		break;
+			}			
+	case 10: {
+		// 'exit' syscall
+		verbose.println("SYSCALL : exit");
+		cycleManager.finish();
+		break;
+	}
+	default: {
+		// unsupported syscall
+		throw new YAMSUnsupportedSyscallException();	
+	}
+}
+</Javacode>
+

@@ -1,0 +1,196 @@
+                Table "artist"
+  Column  |         Type          | Modifiers
+----------+-----------------------+-----------
+ artistno | integer               | not null
+ bname    | character varying(20) |
+ formed   | date                  |
+ atype    | character varying(10) |
+Primary key: p_primary_key
+Triggers: RI_ConstraintTrigger_3688140,
+          RI_ConstraintTrigger_3688141,
+          RI_ConstraintTrigger_3688149,
+          RI_ConstraintTrigger_3688150,
+          RI_ConstraintTrigger_3688167,
+          RI_ConstraintTrigger_3688168,
+          RI_ConstraintTrigger_3688173,
+          RI_ConstraintTrigger_3688174,
+          RI_ConstraintTrigger_3688179,
+          RI_ConstraintTrigger_3688180,
+          RI_ConstraintTrigger_3688188,
+          RI_ConstraintTrigger_3688189,
+          RI_ConstraintTrigger_3688206,
+          RI_ConstraintTrigger_3688207,
+          RI_ConstraintTrigger_3688212,
+          RI_ConstraintTrigger_3688213
+
+               Table "manager"
+ Column  |         Type          | Modifiers
+---------+-----------------------+-----------
+ manno   | integer               | not null
+ manname | character varying(20) |
+ manadd  | character varying(30) |
+ mantel  | integer               |
+Primary key: man_primary_key
+Triggers: RI_ConstraintTrigger_3688146,
+          RI_ConstraintTrigger_3688147,
+          RI_ConstraintTrigger_3688185,
+          RI_ConstraintTrigger_3688186
+
+          Table "manages"
+   Column    |  Type   | Modifiers
+-------------+---------+-----------
+ mcontractno | integer | not null
+ artistno    | integer | not null
+ manno       | integer | not null
+ rroyalty    | integer |
+Primary key: mang_primary_key
+Triggers: RI_ConstraintTrigger_3688145,
+          RI_ConstraintTrigger_3688148,
+          RI_ConstraintTrigger_3688184,
+          RI_ConstraintTrigger_3688187
+
+         Table "member"
+  Column  |  Type   | Modifiers
+----------+---------+-----------
+ pno      | integer | not null
+ artistno | integer | not null
+Primary key: mem_primary_key
+Triggers: RI_ConstraintTrigger_3688136,
+          RI_ConstraintTrigger_3688175
+
+                 Table "musicn"
+   Column   |         Type          | Modifiers
+------------+-----------------------+-----------
+ pno        | integer               | not null
+ instrument | character varying(16) |
+ artistno   | integer               | not null
+Primary key: m_primary_key
+Triggers: RI_ConstraintTrigger_3688139,
+          RI_ConstraintTrigger_3688142,
+          RI_ConstraintTrigger_3688178,
+          RI_ConstraintTrigger_3688181
+
+          Table "owns"
+  Column   |  Type   | Modifiers
+-----------+---------+-----------
+ pcontno   | integer | not null
+ songno    | integer | not null
+ pubcompno | integer | not null
+ proyalty  | integer |
+ padvance  | integer |
+ pdate     | date    |
+Primary key: owns_primary_key
+Triggers: RI_ConstraintTrigger_3688157,
+          RI_ConstraintTrigger_3688160,
+          RI_ConstraintTrigger_3688196,
+          RI_ConstraintTrigger_3688199
+
+                Table "person"
+  Column  |         Type          | Modifiers
+----------+-----------------------+-----------
+ pno      | integer               | not null
+ pname    | character varying(26) |
+ paddress | character varying(30) |
+Indexes: dooolaly,
+         test1_id_index,
+         test1_name_index
+Primary key: per_primary_key
+Triggers: RI_ConstraintTrigger_3688137,
+          RI_ConstraintTrigger_3688138,
+          RI_ConstraintTrigger_3688143,
+          RI_ConstraintTrigger_3688144,
+          RI_ConstraintTrigger_3688155,
+          RI_ConstraintTrigger_3688156,
+          RI_ConstraintTrigger_3688176,
+          RI_ConstraintTrigger_3688177,
+          RI_ConstraintTrigger_3688182,
+          RI_ConstraintTrigger_3688183,
+          RI_ConstraintTrigger_3688194,
+          RI_ConstraintTrigger_3688195
+
+              Table "pubcompany"
+  Column   |         Type          | Modifiers
+-----------+-----------------------+-----------
+ pubcompno | integer               | not null
+ pubname   | character varying(20) |
+ pubadd    | character varying(30) |
+Primary key: pub_primary_key
+Triggers: RI_ConstraintTrigger_3688161,
+          RI_ConstraintTrigger_3688162,
+          RI_ConstraintTrigger_3688200,
+          RI_ConstraintTrigger_3688201
+
+              Table "reccompany"
+  Column   |         Type          | Modifiers
+-----------+-----------------------+-----------
+ reccompno | integer               | not null
+ recname   | character varying(20) |
+ recadd    | character varying(30) |
+Primary key: rec_primary_key
+Triggers: RI_ConstraintTrigger_3688164,
+          RI_ConstraintTrigger_3688165,
+          RI_ConstraintTrigger_3688203,
+          RI_ConstraintTrigger_3688204
+
+                Table "recording"
+   Column    |         Type          | Modifiers
+-------------+-----------------------+-----------
+ recordingno | integer               | not null
+ artistno    | integer               | not null
+ songno      | integer               | not null
+ rlength     | integer               |
+ rdate       | date                  |
+ datapeno    | integer               |
+ rstudio     | integer               |
+ rengineer   | character varying(10) |
+Primary key: reco_primary_key
+Triggers: RI_ConstraintTrigger_3688169,
+          RI_ConstraintTrigger_3688172,
+          RI_ConstraintTrigger_3688208,
+          RI_ConstraintTrigger_3688211
+
+           Table "signs"
+   Column    |  Type   | Modifiers
+-------------+---------+-----------
+ rcontractno | integer | not null
+ reccompno   | integer | not null
+ artistno    | integer | not null
+ rroyalty    | integer |
+ radvance    | integer |
+ rdate       | date    |
+Primary key: sign_primary_key
+Triggers: RI_ConstraintTrigger_3688163,
+          RI_ConstraintTrigger_3688166,
+          RI_ConstraintTrigger_3688202,
+          RI_ConstraintTrigger_3688205
+
+                 Table "song"
+  Column  |         Type          | Modifiers
+----------+-----------------------+-----------
+ songno   | integer               | not null
+ title    | character varying(30) |
+ noverses | integer               |
+Primary key: s_primary_key
+Triggers: RI_ConstraintTrigger_3688152,
+          RI_ConstraintTrigger_3688153,
+          RI_ConstraintTrigger_3688158,
+          RI_ConstraintTrigger_3688159,
+          RI_ConstraintTrigger_3688170,
+          RI_ConstraintTrigger_3688171,
+          RI_ConstraintTrigger_3688191,
+          RI_ConstraintTrigger_3688192,
+          RI_ConstraintTrigger_3688197,
+          RI_ConstraintTrigger_3688198,
+          RI_ConstraintTrigger_3688209,
+          RI_ConstraintTrigger_3688210
+
+        Table "writes"
+ Column |  Type   | Modifiers
+--------+---------+-----------
+ pno    | integer | not null
+ songno | integer | not null
+Primary key: w_primary_key
+Triggers: RI_ConstraintTrigger_3688151,
+          RI_ConstraintTrigger_3688154,
+          RI_ConstraintTrigger_3688190,
+          RI_ConstraintTrigger_3688193

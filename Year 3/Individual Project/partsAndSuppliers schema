@@ -1,0 +1,62 @@
+CREATE SCHEMA suppliersSchema
+
+
+CREATE TABLE suppliersSchema.sup (
+	ID	INT	NOT NULL	PRIMARY KEY,
+	sup	VARCHAR(50)	NOT NULL
+)
+
+
+CREATE TABLE suppliersSchema.name_choice (
+	ID	INT	NOT NULL	PRIMARY KEY,
+	sup	INT	NOT NULL	REFERENCES suppliersSchema.sup(ID)
+)
+
+
+CREATE TABLE suppliersSchema.name (
+	ID	INT	NOT NULL	PRIMARY KEY,
+	name_choice	INT		REFERENCES suppliersSchema.name_choice(ID)
+)
+
+
+CREATE TABLE suppliersSchema.part (
+	ID	INT	NOT NULL	PRIMARY KEY,
+	colour	VARCHAR(50)	NOT NULL,
+	pno	INT	NOT NULL,
+	price	float	NOT NULL
+)
+
+
+CREATE TABLE suppliersSchema.supplies (
+	ID	INT	NOT NULL	PRIMARY KEY,
+	supplies	INT	NOT NULL
+)
+
+
+CREATE TABLE suppliersSchema.supplier_sequence (
+	ID	INT	NOT NULL	PRIMARY KEY,
+	name	INT	NOT NULL	REFERENCES suppliersSchema.name(ID),
+	supplies	INT		REFERENCES suppliersSchema.supplies(ID)
+)
+
+
+CREATE TABLE suppliersSchema.supplier (
+	ID	INT	NOT NULL	PRIMARY KEY,
+	sno	VARCHAR(50)	NOT NULL,
+	supplier_sequence	INT	NOT NULL	REFERENCES 	suppliersSchema.supplier_sequence(ID),
+	town	VARCHAR(50)	NOT NULL
+)
+
+
+CREATE TABLE suppliersSchema.ps_db_choice (
+	ID	INT	NOT NULL	PRIMARY KEY,
+	part	INT	NOT NULL	REFERENCES suppliersSchema.part(ID),
+	supplier	INT	NOT NULL	REFERENCES suppliersSchema.supplier(ID)
+)
+
+
+CREATE TABLE suppliersSchema.ps_db (
+	ps_db_choice	INT	NOT NULL	REFERENCES 	suppliersSchema.ps_db_choice(ID)
+)
+
+

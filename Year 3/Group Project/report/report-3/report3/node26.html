@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Standard Mode</TITLE>
+<META NAME="description" CONTENT="Standard Mode">
+<META NAME="keywords" CONTENT="report3">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="report3.css">
+
+<LINK REL="next" HREF="node27.html">
+<LINK REL="previous" HREF="node25.html">
+<LINK REL="up" HREF="node25.html">
+<LINK REL="next" HREF="node27.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html437"
+  HREF="node27.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html433"
+  HREF="node25.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html427"
+  HREF="node25.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html435"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html438"
+  HREF="node27.html">Statistics Mode</A>
+<B> Up:</B> <A NAME="tex2html434"
+  HREF="node25.html">Interpreting the Output</A>
+<B> Previous:</B> <A NAME="tex2html428"
+  HREF="node25.html">Interpreting the Output</A>
+ &nbsp; <B>  <A NAME="tex2html436"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00522100000000000000">
+Standard Mode</A>
+</H3>
+When running in the console mode on a single file, YAMS will first parse the file to make sure it is syntactically correct and all the instructions are valid.  If an error is encountered, the type of error and line number in the assembly program where it was found are reported on the screen.  For example:
+
+<P>
+<PRE>
+=====STARTING NEW FILE=====
+Input File: square.asm
+Parser Error:Parse error at line: 14
+Unsupported Instruction 'lkj'
+</PRE>
+
+<P>
+If no errors are found, the output by YAMS will just be the same as the output of the program. An example run is shown below:
+
+<P>
+<PRE>
+=====STARTING NEW FILE=====
+Input File: square.asm
+1111111111
+0111111111
+0011111111
+0001111111
+0000111111
+0000011111
+0000001111
+0000000111
+0000000011
+0000000001
+0000000000
+</PRE>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Benjamin Michael Cotter
+2003-12-15
+</ADDRESS>
+</BODY>
+</HTML>

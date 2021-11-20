@@ -1,0 +1,58 @@
+MINUTES - PROJECT MEETING
+=============================================
+Date: 18/11/03
+Time: 1400
+Location: Blueshift lab
+
+Present: Adam, James, Ben, Sridhar, Simon, Qian
+----------------------------------------------------------
+
+Work should be started on the GUI this week
+
+Sridhar has come up with a proposal
+Column1	- File selector
+	- Statistics
+Column2	- Register content window
+	- Data segment - memory contents..
+	- Console window (for errors and stdout)
+Column3	- Executing control
+	- Program code
+
+The issue of breakpointing
+	- Have another table (java data struct) that has a list of breakpoints (memory addresses)
+	- Better than having a seperate instruction
+
+Errors in the parser and assembler - how show in gui?
+	- The gui control will catch the errors and display them somehow
+	- It will have the references to the other obects so can get attributes from those
+
+Getting stats back from the list of files
+	- Stat manager could create a log file of the stats, so people can print these out
+
+Creating own methods for notifying the GUI methods
+	- The subscribe/notify thing could be a waste of time as we know all the classes that are involved
+
+When running through it (not stepping) the notification is not needed in the GUI as you wont be able to see it!
+However it should be updated at the end of the programme so you can see the register contents etc
+
+The help file..
+	- HTML pages for help is easily possible
+	- User documentation - BEN -> learn all about XSLT.. output HTML pages for help
+
+Showing how the registers change
+	- Highlight registers. Need to know the dest and source though..
+
+Need to check if any of the compiler labs used input
+
+Sridhar on GUI
+Qian on XSLT
+Simon on system call
+Ben on stat manager/help file
+James on assembler/XML
+ADAM on assembler
+
+
+
+
+
+	

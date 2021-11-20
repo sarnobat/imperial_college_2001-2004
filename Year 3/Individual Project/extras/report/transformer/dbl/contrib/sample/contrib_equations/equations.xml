@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+	"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<article lang="en">
+	<title>Equations Test File (Version 2.0)</title>
+	<articleinfo>
+		<authorgroup>
+			<author><surname>Pavlovic</surname><firstname>Jan</firstname></author>
+			<author><surname>Devenish</surname><firstname>James</firstname></author>
+		</authorgroup>
+		<copyright>
+			<year>2003</year>
+			<holder>Ramon Casellas</holder>
+		</copyright>
+	</articleinfo>
+	<sect1>
+		<title>InlineEquation</title>
+		<sect2>
+			<title><literal>alt[@role="latex"]</literal></title>
+			<para>Expecting maths (italic):
+				<inlineequation>
+					<alt role="tex">Ia=mc^2</alt>
+					<inlinemediaobject><imageobject><imagedata fileref="figures/Ia"/></imageobject></inlinemediaobject>
+				</inlineequation>
+			</para>
+		</sect2>
+		<sect2>
+			<title><literal>alt[not(@role)]</literal></title>
+			<para>Expecting graphics (Ib.png):
+				<inlineequation>
+					<alt>Ib=mc^2</alt>
+					<inlinemediaobject><imageobject><imagedata fileref="figures/Ib"/></imageobject></inlinemediaobject>
+				</inlineequation>
+			</para>
+		</sect2>
+		<sect2>
+			<title><literal>textobject[@role="latex"]</literal></title>
+			<para>Expecting text (non-italic):
+				<inlineequation>
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="figures/Ic.png"/>
+						</imageobject>
+						<textobject role="tex">
+							<phrase>Ic=mc^2</phrase>
+						</textobject>
+					</inlinemediaobject>
+				</inlineequation>
+			</para>
+		</sect2>
+		<sect2>
+			<title><literal>textobject[not(@role)]</literal></title>
+			<para>Expecting graphics (Id.png):
+				<inlineequation>
+					<inlinemediaobject>
+						<imageobject>
+							<imagedata fileref="figures/Id.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Id=mc^2</phrase>
+						</textobject>
+					</inlinemediaobject>
+				</inlineequation>
+			</para>
+		</sect2>
+	</sect1>
+	<sect1>
+	<title>InformalEquation</title>
+	<sect2>
+		<title><literal>alt[@role="latex"]</literal></title>
+		<para>Expecting maths (italic):
+			<informalequation>
+				<alt role="tex">IIa=mc^2</alt>
+				<mediaobject><imageobject><imagedata fileref="figures/IIa"/></imageobject></mediaobject>
+			</informalequation>
+		</para>
+	</sect2>
+	<sect2>
+		<title><literal>alt[not(@role)]</literal></title>
+		<para>Expecting graphics (Ib.png):
+			<informalequation>
+				<alt>IIb=mc^2</alt>
+				<mediaobject><imageobject><imagedata fileref="figures/IIb"/></imageobject></mediaobject>
+			</informalequation>
+		</para>
+	</sect2>
+	<sect2>
+		<title><literal>textobject[@role="latex"]</literal></title>
+		<para>
+			<informalequation>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="figures/IIc.png"/>
+					</imageobject>
+					<textobject role="tex">
+						<phrase>Ic=mc^2</phrase>
+					</textobject>
+				</mediaobject>
+			</informalequation>
+		</para>
+	</sect2>
+	<sect2>
+		<title><literal>textobject[not(@role)]</literal></title>
+		<para>Expecting graphics (Id.png):
+			<informalequation>
+				<mediaobject>
+					<imageobject>
+						<imagedata fileref="figures/IIc.png"/>
+					</imageobject>
+					<textobject>
+						<phrase>Ic=mc^2</phrase>
+					</textobject>
+				</mediaobject>
+			</informalequation>
+		</para>
+	</sect2>
+	</sect1>
+	<sect1>
+	<title>III. Equation</title>
+	<sect2>
+		<title>IIIa. simple use</title>
+		<!-- case IIIa. [equation] simple use -->
+		<equation>
+		<title>maths IIIa.</title>
+		<alt role="tex">IIIa=mc^2</alt>
+		<mediaobject><imageobject><imagedata fileref="figures/IIIa"/></imageobject></mediaobject>
+		</equation>
+		<!-- end case IIIa. -->
+	</sect2>
+	<sect2>
+		<title>IIIb. simple use, maths in picture</title>
+		<!-- case IIIb. [equation] simple use, maths in picture -->
+		<equation>
+		<title>maths IIIb.</title>
+		<alt>IIIb=mc^2</alt>
+		<mediaobject><imageobject><imagedata fileref="figures/IIIb"/></imageobject></mediaobject>
+		</equation>
+		<!-- end case IIIa. -->
+	</sect2>
+	<sect2>
+		<title>IIIc. enhanced use</title>
+		<!-- case IIIc. [equation] enhanced use -->
+		<equation>
+		<title>maths IIIc.</title>
+		<mediaobject>
+		<imageobject>
+		<imagedata fileref="figures/IIIc.png"/>
+		</imageobject>
+		<textobject role="tex">
+		<phrase>IIIc=mc^2</phrase>
+		</textobject>
+		</mediaobject>
+		</equation>
+		<!-- end case IIIc. -->
+	</sect2>
+	<sect2>
+		<title>IIId. enhanced use, maths in picture</title>
+		<!-- case IIId. [equation] enhanced use, maths in picture -->
+		<equation>
+		<title>maths IIId.</title>
+		<mediaobject>
+		<imageobject>
+		<imagedata fileref="figures/IIId.png"/>
+		</imageobject>
+		<textobject>
+		<phrase>IIId=mc^2</phrase>
+		</textobject>
+		</mediaobject>
+		</equation>
+		<!-- end case IIId. -->
+	</sect2>
+	</sect1>
+	<!-- not valid case
+	<equation>
+	<title>Vztah mezi hmotou a energi.</title>
+	<mediaobject>
+	<imageobject>
+	<imagedata fileref="math4.png"/>
+	</imageobject>
+	<textobject>
+	<phrase>
+	<alt role="tex">E=mc^4</alt>
+	</phrase>
+	</textobject>
+	</mediaobject>
+	</equation>
+	end not valid case -->
+	<sect1><title>Misc</title>
+	<para>maths Ic2.
+	<inlineequation>
+	<inlinemediaobject>
+	<imageobject>
+	<imagedata fileref="figures/Ic.png"/>
+	</imageobject>
+	<textobject>
+	<phrase role="tex">This is maths in \LaTeX: $Ic2=mc^2$</phrase>
+	</textobject>
+	</inlinemediaobject>
+	</inlineequation>
+	</para>
+	<para>maths Ic2b.
+	<inlineequation>
+	<inlinemediaobject>
+	<imageobject>
+	<imagedata fileref="figures/Ic.png"/>
+	</imageobject>
+	<textobject>
+	<phrase>Ic2 equals the square of the product of m and c.</phrase>
+	</textobject>
+	</inlinemediaobject>
+	</inlineequation>
+	</para>
+	</sect1>
+	<sect1>
+		<title>Processing Directive</title>
+		<para>
+		<sgmltag class="pi">latex</sgmltag>: <?latex $E^2=(mc^2)^2+(pc)^2$?>
+		</para>
+		<para>
+		<sgmltag class="pi">db2latex</sgmltag>: <?db2latex $E^2=(mc^2)^2+(pc)^2$?>
+		</para>
+	</sect1>
+</article>

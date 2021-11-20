@@ -1,0 +1,91 @@
+\documentclass[pdftex,english,a4paper,10pt]{article}
+\usepackage[pdftex,bookmarksnumbered,colorlinks,backref, bookmarks, breaklinks, linktocpage]{hyperref}
+\usepackage[pdftex]{graphicx}
+\usepackage{isolatin1}
+\pdfcompresslevel=9
+% In any other LaTeX context, this would probably go into a style file.
+\newcommand{\docbookhyphenateurl}[1]{{\hyphenchar\font=`\/\relax #1\hyphenchar\font=`\-}}
+\newcommand{\docbookhyphenatedot}[1]{{\hyphenchar\font=`.\relax #1\hyphenchar\font=`\-}}
+\makeatletter
+\newcommand{\docbooktolatexusefootnoteref}[1]{\@ifundefined{@fn@label@#1}%
+  {\hbox{\@textsuperscript{\normalfont ?}}%
+    \@latex@warning{Footnote label `#1' was not defined}}%
+  {\@nameuse{@fn@label@#1}}}
+\newcommand{\docbooktolatexmakefootnoteref}[1]{%
+  \protected@write\@auxout{}%
+    {\global\string\@namedef{@fn@label@#1}{\@makefnmark}}%
+  \@namedef{@fn@label@#1}{\hbox{\@textsuperscript{\normalfont ?}}}%
+  }
+\makeatother\title{Links}
+\author{Ramon Casellas \and James Devenish}
+\begin{document}
+
+\maketitle
+
+% ------------------------   
+% Section 
+\section{Plain Tests}
+\label{id2718574}\hypertarget{id2718574}{}%
+
+buf\_init: \hyperlink{buf-init}{buf\_init},
+Third Section:
+\hyperlink{sec:ulinks}{Third Section},
+Ulinks\_:
+\hyperlink{sec:ulinks}{Ulinks\_},
+Section 3:
+\hyperlink{sec:ulinks}{Section {\ref*{sec:ulinks}}}.
+Title:
+\hyperlink{title:ulinks}{Title}.
+
+% ------------------------   
+% Section 
+\section{Cross-reference Tests}
+\label{id2767106}\hypertarget{id2767106}{}%
+
+Ulinks\_:
+\hyperlink{sec:ulinks}{Ulinks\_} on page \pageref*{sec:ulinks},
+Section 3:
+\hyperlink{sec:ulinks}{Section {\ref*{sec:ulinks}}} on page \pageref*{sec:ulinks},
+XrefId[???]:
+XrefId[??].
+
+% ------------------------   
+% Section 
+\section{Ulinks\_}
+\label{sec:ulinks}\hypertarget{sec:ulinks}{}%
+\hypertarget{buf-init}{}
+This is an amount of text that may make this sentence long
+  \url{http://www.enst.fr/#top} 
+
+This is might also make this sentence a bit long
+  \url{http://www.enst.fr/_~#top} 
+
+\url{http://www.enst.fr}
+
+This is might also make this sentence long enough for the regular text
+  \href{http://www.enst.fr/#top}{blah http://www.enst.fr/\_\textasciitilde \#top {\tt{http://www.enst.fr/\_\textasciitilde \#top}}}
+
+\href{http://www.enst.fr}{ENST}
+
+\texttt{<\href{mailto:email}{email}>}
+
+Regular text \_\textasciitilde \#1 with footnote\label{id2718943}\begingroup\catcode`\#=12\footnote{\url{http://www.enst.fr/#top} 
+
+\url{http://www.enst.fr/_~#top} 
+
+\url{http://www.enst.fr}
+
+\href{http://www.enst.fr/#top}{blah http://www.enst.fr/\_\textasciitilde \#top {\tt{http://www.enst.fr/\_\textasciitilde \#top}}}
+
+\href{http://www.enst.fr/_~#top}{ENST}
+
+\texttt{<\href{mailto:email}{email}>}
+
+Regular text \_\textasciitilde \#2.
+
+}\endgroup\docbooktolatexmakefootnoteref{id2718943}.
+
+% --------------------------------------------
+% End of document
+% --------------------------------------------
+\end{document}

@@ -1,0 +1,203 @@
+<script language="JavaScript">	
+	
+		function checkSMS(frm) {
+							
+			MAX = 160;
+			Length = frm.m.value.length;
+			if (Length > MAX) {				
+				frm.m.value = frm.m.value.substring(0, MAX);
+				frm.m.focus();
+			}
+			frm.COUNTER.value=MAX - frm.m.value.length;
+			//window.status=MAX - frm.m.value.length + " character left";
+		}
+		function frmReset() {
+			frm=document.forms.frmnewsmsuser;
+			frm.hp.value="";
+			frm.m.value="";
+			checkSMS(frm);
+		}
+		function frmSubmit() {
+			frm=document.forms.frmnewsmsuser;
+			if(frm.hp.value=="") {
+				alert("The destination mobile phone number field is empty!");
+				frm.hp.focus();
+				return false;
+			}
+			firstkar = frm.hp.value.substring(0,1);
+	
+			if(frm.m.value=="") {
+				alert("The message field is empty!");
+				frm.m.focus();
+				return false;
+			}
+			return true;
+		}		
+
+	function keyTrap(){
+		checkSMS(document.forms.frmnewsmsuser);
+	}	
+	if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) >= 4)) {
+		document.captureEvents(Event.KEYUP)
+		document.onkeyup = keyTrap;
+	}
+	if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) {
+		document.onkeyup = keyTrap;
+	}
+		
+		function fungsipicker(){
+		
+			NAME = "picker";
+			OPTIONS = "toolbars=0,location=0,directories=0,status=1,menubar=0,scrollbars=0,resizable=0,width=430,height=300";
+		
+			windowpicker=window.open("/partners/go.php?PHPSESSID=&sestime=09012002043840&pid=addressbook&aid=picker" , NAME, OPTIONS);
+									
+ 		}
+			
+</script>
+
+	</head>
+		<body  onload="window.focus();" bgcolor="#ffffff" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0"><!--<body bgcolor="#ffffff" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0">-->
+		<div align="left">
+			<table border="0" cellpadding="0" cellspacing="0" width="64">
+				<tr height="336">
+					<td width="292" height="336">
+				<form name="frmnewsmsuser" action="/partners/go.php?PHPSESSID=&amp;sestime=27052003105740&amp;pid=addressbook&amp;aid=smswindow&amp;step=send" method="post" onsubmit="return frmSubmit()" 
+     ><!--<table border="0" cellpadding="0" cellspacing="0" width="180">-->
+							<table border="0" cellpadding="0" cellspacing="0" width="180">
+								<tr>
+									<td colspan="3"></td>
+								</tr>
+								<tr>
+									<td bgcolor="#e0e7e0"></td>
+									<td valign="top" bgcolor="#e0e7e0">
+										<div align="center">
+											<table border="0" cellpadding="0" cellspacing="0" width="90%" bgcolor="#e0e7e0">
+												<tr>
+													<td valign="top" align="middle" bgcolor="#e0e7e0">
+														<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#e0e7e0">
+															<tr>
+																<td bgcolor="#e0e7e0">
+																	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																		<tr>
+																			<td colspan="2"></td>
+																		</tr>
+																		<tr>
+																			<td valign="top" width="78">
+																				<div align="left">&nbsp;</div>
+																			</td>
+																			<td></td>
+																		</tr>
+																		<tr>
+																			<td valign="top" width="78">
+																				<div align="left">&nbsp;</div>
+																			</td>
+																			<td valign="top">
+																				<table border="0" cellpadding="0" cellspacing="0" width="104">
+																					<tr>
+																						<td></td>
+																						<td width="33"></td>
+																						<td><IMG border=0 height=8 src="images/spacer.gif" width=8></td>
+																						<td>
+																							<div align="right">&nbsp;</div>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		<tr>
+																			<td valign="top" width="78"><font size="2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Message:</font></td>
+																			<td valign="top">
+																				<div align="left">
+																					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																						<tr>
+																							<td width="33"><input style="BACKGROUND-COLOR: #bfd0cf; BORDER-BOTTOM:  #bfd0cf 1px solid; BORDER-LEFT: #bfd0cf 1px solid; BORDER-RIGHT: #bfd0cf 1px solid; BORDER-TOP: #bfd0cf 1px solid" 
+                                name="COUNTER" size="3" 
+                               ></td>
+																							<td>
+																								<div align="right">
+																																																	<table border="0" cellpadding="0" cellspacing="0" width="74">
+																										<tr>
+																											<td width="19"></td>
+																											<td valign="top">
+																												<div align="right">
+																													<font size="2" face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&nbsp;</font></div>
+																											</td>
+																										</tr>
+																									</table>
+																																																	</div>
+																							</td>
+																						</tr>
+																						<tr>
+																							<td colspan="2"><IMG border=0 height=7 src="images/spacer.gif" width=9></td>
+																						</tr>
+																					</table>
+																				</div>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td bgcolor="#e0e7e0">
+																	<div align="left"><TEXTAREA cols=27 name=m rows=4 style="BACKGROUND-COLOR: #bfd0cf; BORDER-BOTTOM: #bfd0cf 1px solid; BORDER-LEFT: #bfd0cf 1px solid; BORDER-RIGHT: #bfd0cf 1px solid; BORDER-TOP: #bfd0cf 1px solid; HEIGHT: 90px; WIDTH: 230px" wrap=physical></TEXTAREA></div>
+																</td>
+															</tr>
+															<tr>
+																<td>
+																	<div align="left">
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			<tr>
+																				<td colspan="2"><IMG border=0 height=8 src="images/spacer.gif" width=10></td>
+																			</tr>
+																			<tr>
+																				<td></td>
+																				<td>
+																				<div align="right">&nbsp; 
+                            
+																						</div>
+																				</td>
+																			</tr>
+																		</table>
+																	</div>
+																</td>
+															</tr>
+														</table>
+														
+														
+														
+														&nbsp;</td>
+												</tr>
+										<tr height="35">
+													<td valign="top" align="middle" bgcolor="#e0e7e0" height="35">
+														<table border="0" cellpadding="1" cellspacing="0" width="100%" bgcolor="black">
+															<tr>
+																<td>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr><!--<tr><td>
+																<font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" size="2"></font></div>
+										</td></tr>-->
+									</table>
+										</div>
+									</td>
+									<td bgcolor="#e0e7e0">
+										<div align="right">&nbsp;</div>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3"></td>
+								</tr>
+							</table>
+						</form>
+					</td>
+				</tr>
+			</table>
+		</div>
+<script language="JavaScript">		
+		keyTrap()
+</script>		
+	</body>
+</html>

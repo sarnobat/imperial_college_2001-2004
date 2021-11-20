@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE article
+	PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+	"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
+	[
+	<!ENTITY beta "<?latex \ensuremath{\beta}?><?html &#946;?>">
+	<!ENTITY h2o "H<subscript>2</subscript>O">
+	<!ENTITY il6 "IL<?latex ~?><?html &nbsp;?>6">
+	<!ENTITY mg "mg">
+	<!ENTITY ml "<?latex ml?><?html mL?>">
+	<!ENTITY times "<?latex \ensuremath{\times}?><?html &#215;?>">
+	<!ENTITY ug "<?latex \ensuremath{\mu}g{}?><?html &#956;g?>">
+	<!ENTITY um "<?latex \ensuremath{\mu}m{}?><?html &#956;m?>">
+]>
+<article lang="en">
+	<articleinfo>
+	<!--  ************************************************************** -->
+	<!--  Title and Author                                               -->
+	<!--  ************************************************************** -->
+		<title>Title</title>
+		<subtitle>Lists</subtitle>
+		<authorgroup>
+			<author>
+				<firstname>James</firstname>
+				<surname>Devenish</surname>
+			</author>
+		</authorgroup>
+	</articleinfo>
+	<!-- ************************************************************** -->
+	<!-- CONTENT                                                        -->
+	<!-- ************************************************************** -->
+	<section>
+		<title>Lists</title>
+
+		<variablelist>
+			<varlistentry>
+				<term>Term 1</term>
+				<listitem>
+					<simpara>This is a simple paragraph.</simpara>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Term 2</term>
+				<listitem>
+					<itemizedlist>
+						<listitem>
+							<screen>Item 1</screen>
+						</listitem>
+						<listitem>
+							<programlisting>Item 2</programlisting>
+						</listitem>
+					</itemizedlist>
+				</listitem>
+			</varlistentry>
+			<varlistentry>
+				<term>Term 3</term>
+				<listitem>
+					<itemizedlist>
+						<listitem>
+							<simpara>This is text.</simpara>
+						</listitem>
+					</itemizedlist>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+
+		<variablelist>
+			<varlistentry>
+				<term>Term 1</term>
+				<listitem>
+					<itemizedlist>
+						<listitem>
+							<para>Blah</para>
+							<screen>Item 1</screen>
+							<para>Blah</para>
+						</listitem>
+						<listitem>
+							<para>Blah</para>
+							<programlisting>Item 2</programlisting>
+							<para>Blah</para>
+						</listitem>
+					</itemizedlist>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+
+		<variablelist>
+			<varlistentry>
+				<term>Term 1</term>
+				<listitem>
+					<itemizedlist>
+						<listitem>
+							<para>Item 1</para>
+						</listitem>
+						<listitem>
+							<para>Item 2</para>
+						</listitem>
+					</itemizedlist>
+				</listitem>
+			</varlistentry>
+		</variablelist>
+
+		<segmentedlist>
+			<title>Trademarks and Registered Trademarks</title>
+			<segtitle>Trademark(s)</segtitle>
+			<segtitle>Owner</segtitle>
+			<seglistitem><seg>
+			ABI PRISM and BigDye
+			</seg><seg>
+			Applied Biosystems
+			</seg></seglistitem>
+			<seglistitem><seg>
+			Bacto
+			</seg><seg>
+			Difco Laboratories GmbH
+			</seg></seglistitem>
+			<seglistitem><seg>
+			Chill-out
+			</seg><seg>
+			MJ Research
+			</seg></seglistitem>
+			<seglistitem><seg>
+			Coomassie
+			</seg><seg>
+			Imperial Chemicals Industries PLC
+			</seg></seglistitem>
+			<seglistitem><seg>
+			Dual-Luciferase
+			</seg><seg>
+			Promega Corporation
+			</seg></seglistitem>
+			<seglistitem><seg>
+			ECL, Hyperfilm, FPLC and Sepharose
+			</seg><seg>
+			Amersham Biosciences
+			</seg></seglistitem>
+			<seglistitem><seg>
+			FLAG
+			</seg><seg>
+			Sigma-Aldrich Co
+			</seg></seglistitem>
+			<seglistitem><seg>
+			Kodak
+			</seg><seg>
+			Eastman Kodak Co
+			</seg></seglistitem>
+			<seglistitem><seg>
+			High DNA MASS, Lipofectamine, PLUS Reagent and GibcoBRL
+			</seg><seg>
+			Invitrogen Corporation
+			</seg></seglistitem>
+			<seglistitem><seg>
+			MiniCycler
+			</seg><seg>
+			MJ Research, Inc
+			</seg></seglistitem>
+			<seglistitem><seg>
+			Mini-PROTEAN
+			</seg><seg>
+			Bio-Rad Laboratories, Inc
+			</seg></seglistitem>
+			<seglistitem><seg>
+			Parafilm
+			</seg><seg>
+			American Can Company
+			</seg></seglistitem>
+			<seglistitem><seg>
+			QIAfilter and QIAprep
+			</seg><seg>
+			QIAGEN.
+			</seg></seglistitem>
+			<seglistitem><seg>
+			QuikChange
+			</seg><seg>
+			Stratagene
+			</seg></seglistitem>
+			<seglistitem><seg>
+			Rainbow
+			</seg><seg>
+			Amersham Biosciences
+			</seg></seglistitem>
+			<seglistitem><seg>
+			Sepharose
+			</seg><seg>
+			Pharmacia AB
+			</seg></seglistitem>
+			<seglistitem><seg>
+			SuperSignal
+			</seg><seg>
+			Pierce Chemical Company
+			</seg></seglistitem>
+			<seglistitem><seg>
+			Triton
+			</seg><seg>
+			Rohm &amp; Haas Company
+			</seg></seglistitem>
+			<seglistitem><seg>
+			Tween
+			</seg><seg>
+			ICI Americas Inc
+			</seg></seglistitem>
+			<seglistitem><seg>
+			Whatman
+			</seg><seg>
+			Whatman Ltd.
+			</seg></seglistitem>
+		</segmentedlist>
+
+		<simplelist columns="2" type="horiz">
+			<member><emphasis role="bold">Product</emphasis></member><member><emphasis role="bold">Supplier</emphasis><?latex %?></member>
+			<member><?latex \endhead ?>3MM Filter Paper </member><member>Whatman </member>
+			<member>Acetic acid </member><member>BDH Laboratory Supplies</member>
+			<member>Acrylamide/N'N'-bis-methylene-acrylamide</member><member>Bio-Rad </member>
+			<member>(37.5:1 monomer cross-link ratio) </member><member></member>
+			<member>Agar (Bacto-brand)</member><member>BD</member>
+			<member>Agarose </member><member>Pharmacia</member>
+			<member>2-Amino-2-hydroxymethylpropane-1,3-diol (Tris) </member><member>BDH Laboratory Supplies </member>
+			<member>Ammonium Persulfate </member><member>Sigma </member>
+			<member>Ampicillin </member><member>Sigma </member>
+			<member>Aprotinin </member><member>Sigma </member>
+			<member>BamHI and buffer </member><member>Promega </member>
+			<member>Blue/Orange Loading Dye (6&times;) </member><member>Promega </member>
+			<member>Bovine Serum Albumin (BSA, 2&mg;/&ml;) </member><member>Pierce </member>
+			<member>Bovine Serum Albumin (BSA, solid) </member><member>Sigma </member>
+			<member>Bradford Reagent </member><member>Bio-Rad </member>
+			<member>Bromophenol Blue </member><member>Sigma </member>
+			<member>BSA (solid) </member><member>Sigma </member>
+			<member>BSA 2&mg;/&ml; Standard </member><member>Pierce </member>
+			<member>Chill-out 14 Liquid Wax </member><member>MJ Research</member>
+			<member>Coomassie Brilliant Blue </member><member>Sigma </member>
+			<member>Dimethyl Sulfoxide (DMSO) </member><member>BDH Laboratory Supplies </member>
+			<member>Dithiothreitol (DTT) </member><member>Sigma </member>
+			<member>DNA Molecular Weight Marker II (0.12--23.1kbp)</member><member>Roche </member>
+			<member>dNTP Mixture 10mM </member><member>Fischer</member>
+			<member>DpnI </member><member>Promega </member>
+			<member>Dulbecco's  10&times; phosphaste-buffered saline (PBS) sterile </member><member>Invitrogen </member>
+			<member>Dulbecco's Modified Eagle's Medium (DMEM) </member><member>Invitrogen </member>
+			<member>Ethanol </member><member>BDH Laboratory Supplies </member>
+			<member>Ethidium bromide </member><member>Sigma </member>
+			<member>Ethylenediaminetetraacetic acid (EDTA) </member><member>Sigma </member>
+			<member>Foetal calf (bovine) serum (FCS) </member><member>Invitrogen </member>
+			<member>GBX Developer </member><member>Kodak </member>
+			<member>GBX Fixer </member><member>Kodak </member>
+			<member>Glycerol </member><member>BDH Laboratory Supplies </member>
+			<member>&beta;-glycerophosphate </member><member>Sigma </member>
+			<member>Glycine </member><member>BDH Laboratory Supplies </member>
+			<member>Hydrochloric Acid (HCl) </member><member>BDH Laboratory Supplies </member>
+			<member>HEPES </member><member>Sigma </member>
+			<member>High DNA MASS Ladder markers </member><member>Invitrogen </member>
+			<member>Hybond ECL nitrocellulose membranes </member><member>Amersham Biosciences </member>
+			<member>Hypercassette </member><member>Amersham Biosciences </member>
+			<member>Hyperfilm ECL </member><member>Amersham Biosciences </member>
+			<member>&il6; </member><member>Sigma</member>
+			<member>Isopropanol </member><member>BDH Laboratory Supplies </member>
+			<member>Leupeptin </member><member>Sigma </member>
+			<member>Lipofectamine </member><member>Invitrogen </member>
+			<member>LumiLight PLUS Chemiluminescent Substrates </member><member>Roche </member>
+			<member>Magnesium chloride (MgCl<subscript>2</subscript>.6&h2o;)</member><member>Sigma </member>
+			<member>&beta;-mercaptoethanol </member><member>Sigma </member>
+			<member>Methanol </member><member>BDH Laboratory Supplies</member>
+			<member>Milk Powder (Low-fat)</member><member>Bonland Dairies</member>
+			<member>N,N,N',N'-tetramethulethylenediamine (TEMED) </member><member>Sigma </member>
+			<member>Nonidet P40 </member><member>Calbiochem </member>
+			<member>Oligonucleotide primers </member><member>Sigma-Genosys </member>
+			<member>Penicillin 100U&ml; + Streptomycin 100&ug;/&ml; </member><member>Invitrogen </member>
+			<member><foreignphrase>Pfu</foreignphrase> DNA Polymerase and buffer </member><member>Promega </member>
+			<member>Phenylmethylsulfonyl fluoride (PMSF) </member><member>Sigma </member>
+			<member>PLUS Reagent </member><member>Invitrogen </member>
+			<member>Polyoxyethylene (20) sorbitan monolaurate (Tween 20) </member><member>BDH Laboratory Supplies </member>
+			<member>Ponceau SS Acid Red 150 </member><member>Sigma </member>
+			<member>PTFE Filter Membrane (0.02&um; pore) </member><member>Millipore </member>
+			<member>Rainbow coloured protein molecular weight markers</member><member>Amersham Biosciences </member>
+			<member>Sepharose-conjugated Protein A </member><member>Sigma </member>
+			<member>Sepharose-conjugated Protein G </member><member>Sigma </member>
+			<member>Sodium Acetate </member><member>APS Finechem</member>
+			<member>Sodium Chloride (NaCl) </member><member>BDH Laboratory Supplies </member>
+			<member>Sodium Dodecyl Sulfate (SDS) </member><member>Sigma </member>
+			<member>Sodium Hydroxide (NaOH) </member><member> BDH Laboratory Supplies</member>
+			<member>Sodium Orthovanadate (Na<subscript>3</subscript>VO<subscript>4</subscript>) </member><member>Sigma </member>
+			<member>SuperSignal Chemiluminescent Substrates </member><member>Pierce </member>
+			<member>Tris </member><member>BDH Laboratory Supplies </member>
+			<member>Triton X-100 </member><member>BDH Laboratory Supplies </member>
+			<member>Trypsin-EDTA 0.05% (w/v) in PBS </member><member>Invitrogen </member>
+			<member>Tryptone Peptone (Bacto-brand)</member><member>BD</member>
+			<member>XbaI and buffer </member><member>Promega </member>
+			<member>Yeast Extract (Bacto-brand)</member><member>BD</member>
+		</simplelist>
+	</section>
+</article>

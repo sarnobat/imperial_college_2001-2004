@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form style="SWT" ide="eclipse" builder="jigloo" version="1.0.0">
+	<Component class="org.eclipse.swt.widgets.Composite" name="Shell" style="0">
+		<Constraints>
+			<LayoutConstraint/>
+		</Constraints>
+		<Layout class="Grid">
+			<Property name="marginHeight" type="int" value="5"/>
+			<Property name="verticalSpacing" type="int" value="5"/>
+			<Property name="horizontalSpacing" type="int" value="5"/>
+			<Property name="marginWidth" type="int" value="5"/>
+			<Property name="makeColumnsEqualWidth" type="boolean" value="true"/>
+			<Property name="numColumns" type="int" value="1"/>
+		</Layout>
+		<Events>
+		</Events>
+		<Properties>
+			<Property name="size" type="Dimension">
+				<Dimension value="[300, 200]"/>
+			</Property>
+		</Properties>
+	</Component>
+</Form>

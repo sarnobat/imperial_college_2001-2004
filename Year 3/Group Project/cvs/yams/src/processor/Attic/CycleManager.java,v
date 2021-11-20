@@ -1,0 +1,233 @@
+head	1.5;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.5
+date	2003.11.10.10.57.52;	author qq01;	state dead;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.09.23.01.47;	author sw00;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.06.13.47.41;	author sw00;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.10.31.14.47.26;	author qq01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.10.30.20.49.28;	author sw00;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 30-Oct-2003
+ *
+ */
+package processor;
+import YAMS;
+
+/**
+ * @@author sw00
+ *
+ */
+public class CycleManager implements CycleManagerInterface {
+
+	private YAMS controller;
+	private RegisterManagerInterface registerManager;
+	private MemoryManagerInterface memoryManager;
+	private StatisticsManagerInterface statisticsManager;
+	private InstructionDecoderInterface instructionDecoder;
+		
+	private boolean running;
+
+	public CycleManager(YAMS controller,
+						RegisterManagerInterface registerManager,
+						MemoryManagerInterface memoryManager,
+						StatisticsManagerInterface statisticsManager,
+						InstructionDecoderInterface instructionDecoder) {
+							
+		this.controller = controller;
+		this.registerManager = registerManager;
+		this.memoryManager = memoryManager;
+		this.statisticsManager = statisticsManager;
+		this.instructionDecoder = instructionDecoder;
+	
+		running = false;
+		
+		// controller should now issue a jump() to start of code, and a start()
+	}
+
+	public void start() {
+		running = true;
+		while(running) {
+			executeInstruction();
+		}
+	}
+
+	public void stop() {
+		running = false;
+	}
+
+	public void terminate() {
+		stop();
+		// controller.terminateSimulation();
+	}
+
+	public void advance() {
+		if(!running) {
+			executeInstruction();
+		}
+	}
+
+	public void skip() {
+		if(!running) {
+			incrementPC();
+		}
+	}
+
+	public void jump(int address) {
+		if(!running) {
+			// registerManager.setReg(PC_REGISTER_ID, address);
+		}
+	}
+
+	private boolean executeInstruction() {
+		boolean executionSuccessful = false;
+		int instruction;
+		int pc = 0;
+		// pc = registerManager.getReg(PC_REGISTER_ID); 
+		instruction = memoryManager.getLocation(pc);
+		executionSuccessful = instructionDecoder.handle(instruction); 
+		incrementPC();
+		
+		return executionSuccessful;
+	}
+
+	private void incrementPC() {
+		int pc = 0;
+		// pc = registerManager.getReg(PC_REGISTER_ID); 
+		pc += 4;
+		// registerManager.setReg(PC_REGISTER_ID, pc);
+	}
+
+}
+@
+
+
+1.4
+log
+@updated constructor
+@
+text
+@@
+
+
+1.3
+log
+@added memory manager use, changed jump param to int
+@
+text
+@d6 1
+d9 1
+a9 1
+ * @@author sw00 Simon West
+d14 2
+a15 3
+	//private YAMS controller;
+	//private RegisterManagerInterface registerManager;
+	//private StatisticsManagerInterface statisticsManager;
+d17 1
+d22 2
+a23 3
+	public CycleManager(//YAMS controller,
+						//RegisterManagerInterface registerManager,
+						//StatisticsManagerInterface statisticsManager,
+d25 1
+d28 2
+a29 4
+		//this.controller = controller;
+		//this.registerManager = registerManager;
+		//this.statisticsManager = statisticsManager;
+	
+d31 1
+d33 1
+@
+
+
+1.2
+log
+@fixed package typo
+@
+text
+@d7 4
+d13 1
+a13 1
+	//private ControllerInterface controller;
+a14 1
+	//private MemoryManagerInterface memoryManager;
+d16 1
+a16 1
+	
+d21 1
+a21 1
+	public CycleManager(//ControllerInterface controller,
+a22 1
+						//MemoryManagerInterface memoryManager,
+d24 1
+a28 1
+		//this.memoryManager = memoryManager;
+d30 2
+a31 1
+		
+d35 1
+a35 1
+		// controller should next issue jump() to start of code, and start()
+d66 1
+a66 1
+	public void jump(MIPSWord address) {
+d68 1
+a68 1
+			// registerManager.PC.set(address);
+d74 5
+a78 3
+		MIPSWord instruction;
+		// instruction = memoryManager.retrieve(registerManager.PC.get());
+		// executionSuccessful = instructionDecoder.handle(instruction); 
+d80 1
+d85 4
+a88 1
+		// registerManager.PC.set(registerManager.PC.get() + 4);
+@
+
+
+1.1
+log
+@some processor interfaces and MIPS word class, added by Simon
+@
+text
+@d5 1
+a5 1
+package src.processor;
+@
+

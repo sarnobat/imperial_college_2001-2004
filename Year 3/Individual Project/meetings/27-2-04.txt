@@ -1,0 +1,26 @@
+Questions
+---------
+
+1. Should sequences be tables of their own? It's difficult to handle nested model groups otherwise. Of course there are exceptional cases, but how necessary are these? I need to get something that works in every case first.
+
+- YES, use different tables so that it works in theory in every case. Worry about practical issues only if you have time.
+
+2. If document regeneration isn't a priority, what is the other half of the project? Otherwise I'm only doing the translation irreversibly. See next question...
+
+3. Presumably the user must be able to choose what data to export into an xml file, but I'm not quite sure how to specify this. Is it up to me to be creative, or is there a recommended way of doing it?
+- NO, you don't need to be able to export arbitrary data. You just need to be able to regenerate the orignal files that were imported.
+
+4. Which is the huge xml file I should ultimately be able to support?
+- On his page, go to: databases > datasets > mondial (1mb) - this is the most important
+- DBLP is 200mb. If you get this working everyone will be really impressed.
+- Shakespeare, surprisingly is not document centric but one of the ones that follows is. (mixed content)
+
+5. Does it support absolutely every construct in xml schemas and sql?
+- Nah. Just concentrate on getting it working for some examples.
+
+Other points
+-----------
+XBench can create sample data based on XML schemas (one of the other students is using this)
+
+xsd:attribute type="xs:ID" means the attribute is unique, but not necessarily a key.
+However, if it is mandatory then it effectively is a key.

@@ -1,0 +1,50 @@
+# Array summation Loop
+# Kweequeg W Yjibo
+# kwyjibo
+
+
+# Sum an array of integers.  
+# Leave the result in Sum.
+
+# To demonstrate that the result is as predicted, place the value in r4 to be printed
+
+# Registers
+#   $1 -- true if done
+#   $2 -- current address in array
+#   $3 -- last address of array
+#   $4 -- running sum	
+#   $5 -- temp to get value from memory
+
+.globl main
+
+main:   add     $4, $0, $0      # Initialize $4
+        llo     $2, First       # get first address
+        lhi     $2, First
+        llo     $3, Last        # get last address
+        lhi     $3, Last
+
+loop:   slt     $1, $3, $2      # test if done
+        bne     $1, $0, done    # if yes, branch
+        lw      $5, 0($2)       # load array value 
+        add     $4, $4, $5      # add to sum
+        addi    $2, $2, 4       # inc array pointer
+        j       loop            # do it again
+
+done:   llo     $5, Sum         # store sum
+        lhi     $5, Sum
+        sw      $4, 0($5)
+
+        trap    1               # print contents of $4 (This will be the sum)
+	
+        trap    10              # Quit
+
+# Data
+
+First:  .word   10
+        .word   20
+        .word    1
+        .word   15
+        .word    3
+        .word   10
+Last:   .word    5
+Sum:    .word    0     # should be 64

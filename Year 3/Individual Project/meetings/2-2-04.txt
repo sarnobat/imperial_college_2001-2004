@@ -1,0 +1,102 @@
+Questions that I asked:
+
+
+Even though we're dealing with Data-centric files, we must consider Document centric files otherwise we can't regenerate any character data outside tags, right?
+	Only worry about Data Centric files to begin with.
+	Remember that Data-Centric files have no mixed content or
+	whitespace, BUT they do have to take into account the order
+	they are given in the xml file (it could implicitly be the order
+	some coordinates are plotted or temperature readings at fixed intervals
+	
+
+Should the emphasis be on creating a lossless transformation or on an easy to use Graphical Interface?
+
+	You COULD have something that runs off the command line and get a good mark for it, but it must
+	be feature-rich and be able to accept complex input
+	Not recommended in any case
+	Of course, get a working program before getting into GUI coding
+	Good idea to finish technical code before end of term so that no worries over the holiday
+
+Do databases have support for pattern matching? More generally, can XML Schema specify constraints that Database 
+Schemas cannot?
+
+	You can form almost any constraints, but it would have to be using TRIGGERS (stored procedures 
+	which are invoked e.g. when an insert is carried out)
+	Don't worry about these for now, but they may be useful later.
+
+How much cutting edge research must there be in this project?
+
+	You should implement new ideas that reasearchers haven't given information on how to implement.
+	But you don't have to invent your own brilliant ideas
+	Cobbling together of given APIs must be done in a systematic and technically sound manner
+
+What are the regulations on intellectual property rights?
+
+	Technically it is owned by the college but people have been known to use their ideas outside of college
+	Just be a bit careful.
+
+What DBMS should be used?
+
+	POSTGres would suffice at the start
+	Later on you may wish to use SQL Server thought it should be a big problem.
+	One bug with a certain version of PSQL (not sure if fixed) is that JDBC doesn't detect the representation 		of foreign keys (not quite sure what this means)
+	SQL Server's interface is a little bit more cumbersome apparently
+
+
+Are there 2 major areas to the problem: Schema conversion and Importing data?
+
+	Not really. Once you've figured out the schema conversion the data importing should be a huge problem.
+	(Not convinced though)
+
+Is there anything you require on this project site?
+
+	Yes, you should have a project site even if it's not to do with websites.
+	Put references, files etc. here
+	Actually, I'm going to put my report online so this should contain all that stuff.
+	Put any good self-containing info there (e.g. Relational Algebra axioms)
+
+
+
+OTHER POINTS
+-----------
+
+-Amiri (amiri@doc...) has been allocated as the 2nd marker. Situated in room 428 (which is unlabelled)
+
+- Even if you don't have time to do certain things, showing that you've considered them and know that they could be done given more time will only help.
+But don't list a load of things you did't do (?)
+
+(I'm not really sure what is meant by the following, but it is important nonetheless)
+I would be good if you could support all the Relational Algebra operators
+
+There are 4 ways to map an xml file containing records of people with a gender attribute
+
+A male and female table
+A single table with a gender attribute.
+++?
+(I suppose the other two might have been to do with how to map the other way, but I'm not sure. Ask again later.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Graphical User Interface</TITLE>
+<META NAME="description" CONTENT="Graphical User Interface">
+<META NAME="keywords" CONTENT="report3">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="report3.css">
+
+<LINK REL="previous" HREF="node9.html">
+<LINK REL="up" HREF="node6.html">
+<LINK REL="next" HREF="node11.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html211"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html207"
+  HREF="node6.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html203"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html209"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html212"
+  HREF="node11.html">File Selector</A>
+<B> Up:</B> <A NAME="tex2html208"
+  HREF="node6.html">Detailed Descriptions</A>
+<B> Previous:</B> <A NAME="tex2html204"
+  HREF="node9.html">Processor</A>
+ &nbsp; <B>  <A NAME="tex2html210"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00440000000000000000">
+Graphical User Interface</A>
+</H1>
+
+<P>
+
+<P>
+The YAMS class creates a new YAMSGui object and invokes its 'start'.
+
+<P>
+The 'start' method initially attempts to read in a list of files which should be displayed in the file selector window. 'SetupGui' is then called which creates and initializes various groups of swing components. These groups are formed by their logical roles within the application. The initialization and functionality of each of them is explained below. 
+
+<P>
+Each group is encapsulated in a 'YAMSPanel', a subclass of Swing's JPanel class. And each has its own suitable layout defined using Java's Layout Managers. Also, they all need to have access to each other. To avoid passing substantial numbers of parameters between classes, the YAMSGui itself is passed and the necessary interactions can done via it.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html213"
+  HREF="node11.html">File Selector</A>
+<LI><A NAME="tex2html214"
+  HREF="node12.html">Statistics Reporter</A>
+<LI><A NAME="tex2html215"
+  HREF="node13.html">Graphs Popup Window</A>
+<LI><A NAME="tex2html216"
+  HREF="node14.html">Program code</A>
+<LI><A NAME="tex2html217"
+  HREF="node15.html">Register contents</A>
+<LI><A NAME="tex2html218"
+  HREF="node16.html">Data segment</A>
+<LI><A NAME="tex2html219"
+  HREF="node17.html">Console</A>
+<LI><A NAME="tex2html220"
+  HREF="node18.html">Other panels</A>
+<LI><A NAME="tex2html221"
+  HREF="node19.html">Processor Handler</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Benjamin Michael Cotter
+2003-12-15
+</ADDRESS>
+</BODY>
+</HTML>

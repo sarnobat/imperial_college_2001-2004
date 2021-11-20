@@ -1,0 +1,192 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2003.11.10.10.57.52;	author qq01;	state dead;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.09.23.03.40;	author sw00;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.06.13.51.23;	author sw00;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 03-Nov-2003
+ *
+ */
+package processor;
+import exceptions.YAMSUnsupportedInstructionException;
+
+/**
+ * @@author sw00
+ *
+ */
+public class InstructionHandler implements InstructionHandlerInterface {
+	// this is a template
+	
+	private RegisterManagerInterface regs;
+	private MemoryManagerInterface mem;
+	
+	public InstructionHandler(RegisterManagerInterface registerManager,
+								MemoryManagerInterface memoryManager) {
+		regs = registerManager;
+		mem = memoryManager;
+	}
+
+	public boolean execute(int instruction) {
+		MIPSWord inst = new MIPSWord(instruction);
+		// get 'op' field to determine instruction
+		MIPSBitstring bst_op = MIPSBitstring.extract(inst, 26, 31);
+		int op = bst_op.toInt();
+		
+		if(op == 0) {
+			// we're executing an R type instruction
+			// extract R type instruction operands
+			MIPSBitstring bst_s = MIPSBitstring.extract(inst, 21, 25);
+			MIPSBitstring bst_t = MIPSBitstring.extract(inst, 16, 20);
+			MIPSBitstring bst_d = MIPSBitstring.extract(inst, 11, 15);
+			MIPSBitstring bst_shamt = MIPSBitstring.extract(inst, 6, 10);
+			MIPSBitstring bst_func = MIPSBitstring.extract(inst, 0, 5);
+			int s = bst_s.toInt();
+			int t = bst_t.toInt();
+			int d = bst_d.toInt();
+			int shamt = bst_shamt.toInt();
+			int func = bst_func.toInt();
+					
+			switch(func) {
+				/* 
+				 * TODO - add cases for every R type instruction from XML file
+				 * 
+				 * Available to the XML Java code programmer:
+				 *   For R types
+				 *   s (int)		first source register
+				 * 	 t (int)		second source register
+				 *   d (int)		destination register
+				 *   shamt (int)	shift amount
+				 *  
+				 *	 regs (RegisterManagerInterface)
+				 *	 mem (MemoryManagerInterface)
+				 */
+				 
+				// example: the no-operation instruction, NOP				
+				case 0x0: {
+					System.out.println("NOP");
+					// R type instruction's Java code included here
+					break;
+				}
+								
+				default: {
+					// unsupported instruction
+					throw new YAMSUnsupportedInstructionException();	
+				}
+			}
+			return true;
+		}
+
+		// extract I type instruction operands
+		MIPSBitstring bst_s = MIPSBitstring.extract(inst, 21, 25);
+		MIPSBitstring bst_t = MIPSBitstring.extract(inst, 16, 20);
+		MIPSBitstring bst_immediate = MIPSBitstring.extract(inst, 0, 15);
+		int s = bst_s.toInt();
+		int t = bst_t.toInt();
+		int i = bst_immediate.signExtend();
+		
+		// extract J type instruction operand
+		MIPSBitstring bst_address = MIPSBitstring.extract(inst, 0, 25);
+		int address = bst_address.signExtend();
+
+		switch(op) { 
+			/* 
+			 * TODO - add cases for every I or J type instruction from XML file
+			 *
+			 * Available to the XML Java code programmer:
+			 *   For I types
+			 *   s (int)		first source register
+			 * 	 t (int)		second source register
+			 *   i (int)		immediate value
+			 * 
+			 *   For J types
+			 *   addr (int)		address
+			 *  
+			 * 	 For both types
+			 *	 regs (RegisterManagerInterface)
+			 *	 mem (MemoryManagerInterface)
+			 *
+			 */
+				
+			
+			
+			// example: the jump instruction, J
+			case 0x2: {
+				System.out.println("J");
+				break;
+			}
+			
+			default: {
+				// unsupported instruction
+				throw new YAMSUnsupportedInstructionException();
+			}		
+		}		
+		return true;
+	}
+
+}
+@
+
+
+1.2
+log
+@updated constructor
+@
+text
+@@
+
+
+1.1
+log
+@added, case statements to be filled out from XML file's Java code
+@
+text
+@d6 1
+d9 1
+a9 1
+ * @@author sw00 Simon West
+d15 7
+a21 1
+	public InstructionHandler() {
+d55 2
+a56 1
+				 * TODO - need refs to Register & Memory managers
+d67 2
+a68 2
+					// TODO - throw YAMSUnsupportedInstructionException	
+					return false;
+d99 4
+a102 1
+			 * TODO - need refs to Register & Memory managers
+d114 2
+a115 2
+				// TODO - throw YAMSUnsupportedInstructionException	
+				return false;
+@
+

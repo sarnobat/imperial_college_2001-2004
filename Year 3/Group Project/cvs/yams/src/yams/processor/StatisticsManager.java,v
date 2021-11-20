@@ -1,0 +1,1454 @@
+head	1.44;
+access;
+symbols
+	yams-final-19-12-03:1.44
+	yams-release2-17-12-03:1.43
+	yams-release-17-12-03:1.43;
+locks; strict;
+comment	@# @;
+
+
+1.44
+date	2003.12.19.12.03.52;	author bmc01;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2003.12.16.17.57.58;	author bmc01;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2003.12.16.17.56.46;	author bmc01;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2003.12.16.16.16.42;	author bmc01;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2003.12.16.11.12.57;	author bmc01;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2003.12.15.18.48.10;	author bmc01;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2003.12.15.18.25.29;	author bmc01;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2003.12.14.12.05.15;	author bmc01;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2003.12.14.11.53.56;	author bmc01;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2003.12.14.11.28.36;	author bmc01;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2003.12.11.21.23.00;	author bmc01;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2003.12.11.21.22.10;	author bmc01;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2003.12.11.19.06.27;	author bmc01;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2003.12.10.13.29.48;	author bmc01;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2003.12.10.13.15.52;	author bmc01;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2003.12.10.12.24.05;	author bmc01;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2003.12.10.12.15.52;	author bmc01;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2003.12.10.03.02.45;	author ajb101;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2003.12.09.19.49.59;	author bmc01;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2003.12.05.15.51.44;	author bmc01;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2003.12.05.10.32.42;	author bmc01;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2003.12.05.10.27.11;	author bmc01;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2003.12.04.19.33.34;	author jkm01;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2003.12.04.19.20.38;	author bmc01;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2003.12.04.19.08.55;	author bmc01;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2003.12.04.18.50.25;	author bmc01;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2003.12.04.18.41.56;	author sw00;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2003.12.04.18.34.36;	author bmc01;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.12.04.18.20.00;	author bmc01;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.12.04.18.08.25;	author bmc01;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.12.04.17.57.28;	author bmc01;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.12.04.17.43.39;	author bmc01;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.04.17.14.33;	author bmc01;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.04.17.12.59;	author bmc01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.02.15.58.31;	author bmc01;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.02.14.44.56;	author sw00;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.02.14.41.50;	author sw00;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.02.14.26.50;	author jkm01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.02.09.56.56;	author bmc01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.29.21.53.38;	author sw00;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.26.13.09.39;	author sw00;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.14.15.37.59;	author sw00;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.14.15.03.49;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.14.14.35.42;	author bmc01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.44
+log
+@*** empty log message ***
+@
+text
+@	/*
+ * Created on 26-Oct-2003
+ *
+ */
+package yams.processor;
+
+import yams.assembler.GuiMap;
+import java.io.PrintStream;
+import java.util.*;
+import yams.parser.LineList;
+
+/**
+ * 
+ * @@author bmc01
+ *The statistics manager stores statistics about the program being run in the simulator.  The components of the 
+ *program call the statistics manager interface which updates the various statistics it holds:  These are:<br>
+ *- Line Execution count<br>
+ *- Instruction usage count<br>
+ *- Register usage count<br>
+ *- Total CPU Cycles<br>
+ *- Total Memory used<br>
+ * 
+ * 
+ */
+public class StatisticsManager implements StatisticsManagerInterface {
+
+	private TreeMap regStatMap = new TreeMap();
+	private TreeMap instrStatMap = new TreeMap();
+	private TreeMap lineStatMap = new TreeMap();
+	private PrintStream out;
+	private int cycleCount;
+	private int totalCycleCount;
+	private Processor processor;
+	private Integer zero_value = new Integer(0);
+	private GuiMap lineMap;
+
+/**
+ * The statistics manager constructor requires 2 parameters
+ * @@param out The printstream where the statistics are output to
+ * @@param p The address of the processor so other components can be referenced.
+ */
+  	public StatisticsManager(PrintStream out, Processor p)
+  	{
+  	this.out = out;
+  	processor = p;
+  	//initialise the register statistics map
+	String regname;
+	for (int i=0; i<32; i++)
+		{
+		regname = "$" + i;
+		regStatMap.put(regname, zero_value);
+		}
+	//initialise counts
+	cycleCount = 0;
+  	}
+  	
+  	public void regUsed(String regid) //throws UnknownRegisterNameException;
+	{
+	//get the current regcount of the register
+	Integer value_object;
+	int count;
+	if (regStatMap.containsKey(regid))
+	{   
+		count = ((Integer) regStatMap.get(regid)).intValue();
+		count++;
+		value_object= new Integer(count);
+		regStatMap.remove(regid);
+		regStatMap.put(regid, value_object);
+		}
+		else
+		{
+	    
+		}
+	}
+	
+  	public void cycle()
+  	{
+  		cycleCount++;
+  		totalCycleCount++;
+  	}
+  	
+	public void addInstruction(String instrName)
+		{
+		//receive the instruction
+		String instruction = instrName.toUpperCase();
+		//add the name and count
+		instrStatMap.put(instruction, zero_value);
+		}
+		
+  	
+	public void instructionUsed(String instr)
+		{
+		
+		int count;
+		instr = instr.toUpperCase();
+		//get the current count
+		Integer value_object;
+	
+		//get the name of the instruction
+			
+		if (instrStatMap.containsKey(instr))
+			{   
+			count = ((Integer) instrStatMap.get(instr)).intValue();
+			count++;
+			value_object= new Integer(count);
+			instrStatMap.remove(instr);
+			instrStatMap.put(instr, value_object);
+			}
+			else
+			{
+			//throw new UnknownInstructionException
+			}
+		
+		}
+
+		
+	public void reset()
+	{
+		//reset registermap
+		regStatMap = new TreeMap();
+		String regname;
+		for (int i=0; i<32; i++)
+			{
+			regname = "$" + i;
+			regStatMap.put(regname, zero_value);
+			}
+			
+		//reset instructionmap
+		String instrName;
+		String instr[] = new String[instrStatMap.size()];
+		instrStatMap.keySet().toArray(instr);
+		
+		for (int i = 0; i<instr.length; i++)
+				{ 
+				instrName = instr[i];
+				instrStatMap.remove(instrName);
+				instrStatMap.put(instrName, zero_value);
+				}
+				
+		//reset lineMap
+		lineStatMap.clear();
+		
+		//reset instructions executed
+		cycleCount = 0;
+	}
+	
+	
+	public void setLineMap(GuiMap gm)
+	{ lineMap = gm; }
+	
+		
+	public void lineUsed(int address)
+	{		
+		Integer line;
+		Integer one = new Integer(1);
+		int count;
+	if (lineMap.containsAddress(address))
+		{
+		//get line number from lineMap
+		line = new Integer(lineMap.returnLine(address));
+
+		//update the lineStatMap 
+		if (!lineStatMap.containsKey(line))
+			 {
+			   // doesnt contain the addr value, so add to map 
+			   lineStatMap.put(line, one);
+			 }
+			 else
+			 {
+			   // does contain addr, so must replace 
+			   count = ((Integer)lineStatMap.get(line)).intValue();
+			   count++;
+			   lineStatMap.remove(line);
+			   lineStatMap.put(line, new Integer(count));
+			 }
+		}
+	}
+	
+	
+  	
+  	
+	public void printStats(LineList lineList)
+	{
+	int count;
+	String line;
+	int z;
+	out.println("");
+    out.println("==============");
+	out.println(" STATISTICS");
+    out.println("==============");
+	out.println("");
+	//lines used 
+	out.println("------------LINES EXECUTED------------");
+	out.println("");
+	out.println("Line                                  Count");
+	int lastLine = lineMap.returnLastLine();
+	int startLine = lineMap.returnLine(0x400000);
+	
+	for (int i=startLine; i<=lastLine; i++)
+		{
+			count = 0;
+			line = lineList.getLine(i).getOriginal();
+			if (lineList.getLine(i).containsInstruction())
+			{
+			
+				if (lineStatMap.containsKey(new Integer(i)))
+					{
+					count = ((Integer)lineStatMap.get(new Integer(i))).intValue();
+					}
+			
+				//add extra space if less than 10 to format nicely.
+				if (i < 10)
+				  z=1;
+				else
+				  z=0;
+				 
+				out.println(i + "   " + removeTabs(line) + ":" + spacer(38 + z, line.length() + 4) + count);
+			}
+			else
+			{
+				out.println(i + "   " + removeTabs(line));
+			}
+				
+		}
+		
+	//instructions used
+	out.println("");
+	out.println("-----------INSTRUCTION USED-----------");
+	out.println("");
+	out.println("Instr     Count");
+	String instrName;
+	Integer instrCount;
+	for(Iterator instrNames = instrStatMap.keySet().iterator(); instrNames.hasNext();)
+	  {
+	  instrName = (String)instrNames.next();
+	  instrCount = (Integer)instrStatMap.get(instrName);
+	  if (instrCount.intValue() != 0)
+		  {
+			  out.println(instrName + ":" + spacer(11,instrName.length()) + instrCount.toString());  
+		  }
+	   
+	  }
+
+		
+	out.println("");
+	//registers used
+	out.println("------------REGISTERS USED------------");
+	out.println("");
+	out.println("Reg       Count");
+	String regname;
+	count = 0;
+	for (int i=0; i<32; i++)
+	{
+		regname = "$" + i;
+		count = ( (Integer) regStatMap.get(regname)).intValue();
+		if (count > 0)
+		{
+			out.println(regname + ":" + spacer(11, regname.length()) + count);
+		}
+	}
+
+		out.println("");
+		//Processor cycles
+		out.println("CPU CYCLES: " + cycleCount);
+		out.println("");
+ 
+	 //memory used
+	 out.println("MEMORY USED: " + processor.memoryManager.memoryUsed() + " WORDS");
+	 out.println("");
+	  	  
+	}
+	
+	
+	public int getCycles(){
+		return cycleCount;
+	}
+	
+	public int getMemoryUsed() {
+		return processor.memoryManager.memoryUsed();
+	}
+	
+	public int getTotalCycles() {
+		return totalCycleCount;
+	}
+	
+	public int getRegCount(String regid) {
+		return ((Integer)regStatMap.get(regid)).intValue();
+	}
+	
+	public int getRegCount(int regid) {
+		return getRegCount("$" + regid);
+	}
+
+	public int getLineCount(int line) {
+		if (lineStatMap.containsKey(new Integer(line)))
+		  return ((Integer)lineStatMap.get(new Integer(line))).intValue();
+		else
+		  return 0;
+	}
+	
+	public String[] getInstr()
+	{
+	String instr[] = new String[instrStatMap.size()];
+	instrStatMap.keySet().toArray(instr);
+	return instr;
+	}
+	
+	public Integer[] getInstrCount()
+	{
+	Integer instr[] = new Integer[instrStatMap.size()];
+	instrStatMap.values().toArray(instr);
+	return instr;
+	}
+	
+	
+	/**
+	 * Used to format the output nicely. Generates a space of the required length
+	 * @@param totalLength - available space
+	 * @@param usedLength - used space
+	 * @@return String of spaces of the required length
+	 */
+	private String spacer(int totalLength, int usedLength)
+	{
+		String result = "";
+		int length = totalLength - usedLength;
+		for (int i=0; i<length; i++)
+		{
+			result = result + " ";
+		}
+		
+		return result;
+		}
+		
+	/**
+	 * Used to format the output nicely by removing tabs.
+	 * @@param input String with tabs
+	 * @@return String with the tabs removed
+	 */
+	private String removeTabs(String input)
+	{
+		String result = "";
+		for (int i=0; i<input.length(); i++)
+		{
+		if (input.charAt(i) == '\t')
+			result = result + " ";
+		else
+			result = result + input.charAt(i);			
+		}		
+		return result;
+	}
+	
+	
+	
+}
+@
+
+
+1.43
+log
+@*** empty log message ***
+@
+text
+@d12 13
+d37 5
+@
+
+
+1.42
+log
+@*** empty log message ***
+@
+text
+@d69 1
+a69 1
+		instrStatMap.put(instrName, zero_value);
+@
+
+
+1.41
+log
+@*** empty log message ***
+@
+text
+@d54 1
+a54 1
+	    //throw new UnknownRegisterException
+d67 1
+a67 1
+		String instruction = instrName;
+d77 1
+@
+
+
+1.40
+log
+@*** empty log message ***
+@
+text
+@d98 1
+a98 4
+	/**
+	 * Resets the statistics held for the next program
+	 */	
+	public synchronized void reset()
+d130 1
+a130 3
+	{
+		lineMap = gm; 
+	}
+d134 1
+a134 2
+	{
+		
+@
+
+
+1.39
+log
+@*** empty log message ***
+@
+text
+@d298 1
+a298 1
+	instrStatMap.entrySet().toArray(instr);
+@
+
+
+1.38
+log
+@*** empty log message ***
+@
+text
+@d280 1
+a280 1
+	
+@
+
+
+1.37
+log
+@*** empty log message ***
+@
+text
+@d98 3
+a100 1
+		
+d288 14
+d307 1
+a307 1
+	 * @@return
+d323 2
+a324 2
+	 * @@param input - String with tabs
+	 * @@return
+@
+
+
+1.36
+log
+@*** empty log message ***
+@
+text
+@d188 7
+a194 4
+			if (lineStatMap.containsKey(new Integer(i)))
+				{
+				count = ((Integer)lineStatMap.get(new Integer(i))).intValue();
+				}
+d196 8
+a203 3
+			//add extra space if less than 10 to format nicely.
+			if (i < 10)
+			{ z=1; }
+d205 4
+a208 3
+			{z=0;}
+			
+			out.println(i + "   " + removeTabs(line) + ":" + spacer(38 + z, line.length() + 4) + count);
+d215 1
+a215 1
+	out.println("Instr    Count");
+d281 1
+a281 1
+		{ return ((Integer)lineStatMap.get(new Integer(line))).intValue(); }
+d283 1
+a283 1
+		{ return 0; }
+a314 1
+		
+d316 1
+a316 3
+			{
+			result = result + " "; 
+			}
+d318 1
+a318 3
+			{
+			result = result + input.charAt(i);
+			}			
+@
+
+
+1.35
+log
+@*** empty log message ***
+@
+text
+@d171 1
+d180 1
+a180 1
+	out.println("Line                                    Count");
+d192 8
+a199 2
+							
+			out.println(i + "   " + line + ":" + spacer(38, line.length() + 4) + count);
+d278 6
+d296 5
+d304 2
+a305 2
+		if input.charAt(i) = 
+		
+d307 9
+@
+
+
+1.34
+log
+@*** empty log message ***
+@
+text
+@d282 9
+@
+
+
+1.33
+log
+@*** empty log message ***
+@
+text
+@d179 1
+a179 1
+	out.println("Line                                      Count");
+@
+
+
+1.32
+log
+@*** empty log message ***
+@
+text
+@d173 1
+a173 1
+	out.println("   STATISTICS");
+d179 1
+a179 1
+	out.println("Line      Count");
+d181 1
+d183 1
+a183 1
+	for (int i=0; i<=lastLine; i++)
+d192 1
+a192 1
+			out.println(i + "   " + line + ":   " + count);
+d208 1
+a208 1
+			  out.println(instrName + ":  " + instrCount.toString());  
+d227 1
+a227 1
+			out.println(regname + ":  " + count);
+d270 12
+@
+
+
+1.31
+log
+@*** empty log message ***
+@
+text
+@d10 1
+d167 1
+a167 1
+	public void printStats()
+d170 1
+d185 1
+d191 1
+a191 1
+			out.println(i + ":  " + count);
+@
+
+
+1.30
+log
+@*** empty log message ***
+@
+text
+@d169 5
+d175 2
+a176 2
+	out.println("LINES EXECUTED");
+	out.println("===============");
+a178 1
+	out.println("LAST LINE  " + lastLine);
+d193 2
+a194 2
+	out.println("INSTRUCTION USED");
+	out.println("===============");
+d212 2
+a213 2
+	out.println("REGISTERS USED");
+	out.println("===============");
+d260 4
+a263 1
+		return ((Integer)lineStatMap.get(new Integer(line))).intValue();
+@
+
+
+1.29
+log
+@*** empty log message ***
+@
+text
+@d137 1
+d141 2
+d145 1
+d149 1
+a149 1
+			   /* doesnt contain the addr value, so add to map */
+d154 1
+a154 1
+			   /* does contain addr, so must replace */
+d160 1
+a160 1
+		
+d175 1
+a175 1
+	/*
+d185 1
+a185 1
+		}*/
+@
+
+
+1.28
+log
+@*** empty log message ***
+@
+text
+@d170 2
+d181 1
+a181 1
+		}
+@
+
+
+1.27
+log
+@yet more work on gui - including addition of a HexTable
+@
+text
+@d164 38
+d204 1
+a204 1
+	out.println("Reg   Count");
+d206 1
+a206 1
+	int count;
+a215 8
+	
+      //instructions used
+	  out.println("");
+	  out.println("INSTRUCTION USED");
+	  out.println("===============");
+	  out.println("Instr    Count");
+      String instrName;
+      Integer instrCount;
+a216 10
+	 for(Iterator instrNames = instrStatMap.keySet().iterator(); instrNames.hasNext();)
+	  	{
+	    instrName = (String)instrNames.next();
+	    instrCount = (Integer)instrStatMap.get(instrName);
+	    if (instrCount.intValue() != 0)
+	    	{
+				out.println(instrName + ":  " + instrCount.toString());  
+	    	}
+	    
+	  	}
+a217 1
+		
+@
+
+
+1.26
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+/*
+d210 3
+a212 2
+	public String getCycles()
+	{ return new Integer(cycleCount).toString();	}
+d214 3
+a216 2
+	public String getMemoryUsed()
+	{ return new Integer(processor.memoryManager.memoryUsed()).toString();	}
+d218 3
+a220 2
+	public String getTotalCycles()
+	{ return new Integer(totalCycleCount).toString(); }
+d222 3
+a224 2
+	public String getRegCount(String regid)
+	{ return ((Integer)regStatMap.get(regid)).toString(); }
+d226 3
+a228 2
+	public String getRegCount(int regid)
+	{ return getRegCount("$" + regid); }
+d230 3
+a232 2
+	public String getLineCount(int line)
+	{ return ((Integer)lineStatMap.get(new Integer(line))).toString();	}
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@d15 1
+d95 1
+a95 5
+		
+	public void lineUsed(int address)
+	{
+		//get the line number 
+	}
+d120 3
+d134 25
+d219 1
+a219 1
+	public String regCount(String regid)
+d222 5
+a226 2
+	public String regCount(int regid)
+	{ return regCount("$" + regid); }
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d114 4
+a117 2
+		Iterator instr = instrStatMap.keySet().iterator();
+	/*	while (instr.hasNext())
+d119 1
+a119 2
+				
+				instrName = (String)instr.next();
+d122 1
+a122 1
+				}*/
+d199 1
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@d193 5
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d17 1
+d59 1
+d189 3
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d99 1
+a99 1
+	public void reset()
+d113 3
+a115 2
+		while (instr.hasNext())
+				{
+d119 1
+a119 1
+				}
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d112 2
+a113 1
+		for(Iterator instr = instrStatMap.keySet().iterator(); instr.hasNext();)
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@d180 9
+@
+
+
+1.18
+log
+@cycleCount replaces instructionCount
+@
+text
+@d6 2
+d19 1
+d93 5
+d121 6
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@a13 1
+	private int instructionCount;
+a29 1
+	instructionCount = 0;
+a51 4
+  	public void instructionExecuted() {
+  		instructionCount++;
+  	}
+  	
+d112 1
+a112 1
+		instructionCount = 0;
+a133 2
+	out.println("");
+	out.println("INSTRUCTIONS EXECUTED: " + instructionCount);
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d15 1
+d30 1
+d32 1
+d58 5
+d120 2
+a121 2
+		
+		
+d162 4
+a165 1
+ 
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d141 1
+a141 1
+      String instrCount;
+d146 2
+a147 2
+	    instrCount = (String)instrStatMap.get(instrName).toString();
+	    if (!(instrCount.compareTo("0") == 0))
+d149 1
+a149 1
+				out.println(instrName + ":  " + instrCount);  
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d147 5
+a151 1
+	    out.println(instrName + ":  " + instrCount);   
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d16 1
+a16 1
+	private boolean instrStatMapEmpty = true;
+a23 1
+	Integer value_object = new Integer(0);
+d27 1
+a27 1
+		regStatMap.put(regname, value_object);
+a58 1
+		Integer value_object = new Integer(0);
+d60 1
+a60 1
+		instrStatMap.put(instrName, value_object);
+d66 1
+a66 5
+		//clone the empty map to so it can be used in the reset
+		if (instrStatMapEmpty = true)
+			{
+			
+			}
+a93 1
+		Integer value_object = new Integer(0);
+d97 1
+a97 1
+			regStatMap.put(regname, value_object);
+d101 7
+a107 1
+		instrStatMap = new TreeMap();
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d16 1
+d68 5
+d130 1
+a130 1
+			out.println(regname + ": " + count);
+d144 7
+a150 7
+	//  Iterator instrCounts = instrStatMap.values().iterator();
+	  
+	 // for(Iterator instrNames = instrStatMap.keySet().iterator(); instrNames.hasNext();)
+	//  	{
+//	    instrName = (String)instrNames.next();
+//	    instrCount = (String)instrCounts.next();
+//	  	}
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d138 1
+a138 1
+	  Iterator instrCounts = instrStatMap.values().iterator();
+d140 5
+a144 5
+	  for(Iterator instrNames = instrStatMap.keySet().iterator(); instrNames.hasNext();)
+	  	{
+	    instrName = (String)instrNames.next();
+	    instrCount = (String)instrCounts.next();
+	  	}
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@a12 1
+	private TreeMap instrNames = new TreeMap();
+d87 22
+d146 1
+a146 2
+
+	 
+@
+
+
+1.9
+log
+@added memory usage output
+@
+text
+@d7 1
+a7 1
+import java.util.TreeMap;
+a62 2
+		//add the name and its machine code representation for reference
+		instrNames.put(instruction, instrName);
+d66 1
+a66 1
+	public void instructionUsed(int instr)
+a67 1
+		String instructionName;
+a69 1
+		Integer instruction = new Integer(instr);
+d73 2
+a74 3
+		instructionName = (String)instrNames.get(instruction);
+	
+		if (instrStatMap.containsKey(instructionName))
+d76 1
+a76 1
+			count = ((Integer) instrStatMap.get(instructionName)).intValue();
+d79 2
+a80 2
+			instrStatMap.remove(instructionName);
+			instrStatMap.put(instructionName, value_object);
+d114 12
+a125 2
+	  String instrName;
+	  //print out the tree map info
+@
+
+
+1.8
+log
+@updated statsManager constructor
+@
+text
+@d111 1
+a111 1
+	out.println();
+d122 4
+a125 1
+	  
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d16 1
+d18 1
+a18 1
+  	public StatisticsManager(PrintStream out)
+d21 1
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d54 1
+a54 1
+	public void addInstruction(String instrName, int instr)
+d57 1
+a57 1
+		Integer instruction = new Integer(instr);
+@
+
+
+1.5
+log
+@added count of instructions executed
+@
+text
+@d12 2
+d54 39
+d111 10
+@
+
+
+1.4
+log
+@added input & output stream support
+@
+text
+@d13 1
+d26 1
+a45 1
+		
+d48 4
+a66 1
+		
+d68 2
+@
+
+
+1.3
+log
+@added 'implements StatisticsManagerInterface'
+@
+text
+@d6 1
+d12 1
+d14 1
+a14 1
+  	public StatisticsManager()
+d16 1
+d49 3
+a51 3
+	System.out.println("REGSITERS USED");
+	System.out.println("===============");
+	System.out.println("Reg   Count");
+d60 1
+a60 1
+			System.out.println(regname + ": " + count);
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d1 64
+a64 64
+/*
+ * Created on 26-Oct-2003
+ *
+ */
+package yams.processor;
+import java.util.TreeMap;
+
+public class StatisticsManager {
+
+	private TreeMap regStatMap = new TreeMap();
+
+  	public StatisticsManager()
+  	{
+  	//initialise the register statistics map
+	String regname;
+	Integer value_object = new Integer(0);
+	for (int i=0; i<32; i++)
+		{
+		regname = "$" + i;
+		regStatMap.put(regname, value_object);
+		}
+  	}
+  	
+  	public void regUsed(String regid) //throws UnknownRegisterNameException;
+	{
+	//get the current regcount of the register
+	Integer value_object;
+	int count;
+	if (regStatMap.containsKey(regid))
+	{   
+		count = ((Integer) regStatMap.get(regid)).intValue();
+		count++;
+		value_object= new Integer(count);
+		regStatMap.remove(regid);
+		regStatMap.put(regid, value_object);
+		}
+		else
+		{
+	    //throw new UnknownRegisterException
+		}
+		
+	}
+	
+	public void printStats()
+	{
+	System.out.println("REGSITERS USED");
+	System.out.println("===============");
+	System.out.println("Reg   Count");
+	String regname;
+	int count;
+	for (int i=0; i<32; i++)
+	{
+		regname = "$" + i;
+		count = ( (Integer) regStatMap.get(regname)).intValue();
+		if (count > 0)
+		{
+			System.out.println(regname + ": " + count);
+		}
+		
+	}
+	}
+	
+	
+}
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d5 1
+a5 1
+package processor;
+@
+

@@ -1,0 +1,284 @@
+jamm=> SELECT * FROM artist;
+ artistno |     bname      |   formed   | atype
+----------+----------------+------------+-------
+      100 | Wynter         | 1993-03-12 | Rock
+      200 | U2             | 1992-03-12 | Rock
+      300 | Dev/Null       | 1993-03-12 | Rock
+      120 | Monster Magnet | 1993-03-12 | Rock
+      139 | Pearl Jam      | 1993-03-12 | Rock
+      210 | Aerosmith      | 1993-03-12 | Rock
+      400 | Madonna        | 1993-03-12 | Pop
+      401 | Elton John     | 1992-03-23 | Pop
+(8 rows)
+
+jamm=> SELECT * FROM manager;
+ manno |  manname   |         manadd         |  mantel
+-------+------------+------------------------+-----------
+    33 | Dirty Dick |  44 Toomuchmoney House | 171233456
+    44 | Nick Plumb |  36 PosHville House    | 181234678
+    87 | James Blue |  88 Groovyville House  |  17173746
+(3 rows)
+
+jamm=> SELECT * FROM manages;
+ mcontractno | artistno | manno | rroyalty
+-------------+----------+-------+----------
+          10 |      100 |    33 |       20
+          20 |      200 |    33 |       15
+          30 |      300 |    44 |       25
+          40 |      120 |    87 |       30
+          50 |      139 |    44 |       20
+          60 |      210 |    44 |       20
+          70 |      400 |    44 |       20
+          80 |      401 |    87 |       20
+(8 rows)
+
+
+jamm=> SELECT * FROM member;
+ pno | artistno
+-----+----------
+  10 |      100
+  20 |      100
+  30 |      100
+  50 |      100
+  11 |      200
+  21 |      200
+  32 |      200
+  44 |      200
+  25 |      300
+  36 |      300
+  41 |      300
+  51 |      300
+  59 |      120
+  60 |      120
+  53 |      139
+  54 |      139
+  55 |      139
+  56 |      210
+  57 |      210
+  58 |      210
+  52 |      400
+  61 |      401
+(22 rows)
+
+jamm=> SELECT * FROM musicn;
+ pno | instrument | artistno
+-----+------------+----------
+  10 | guitar     |      100
+  20 | vocals     |      100
+  30 | bass       |      100
+  50 | drumbs     |      100
+  11 | vocals     |      200
+  21 | guitar     |      200
+  32 | drumbs     |      200
+  44 | bass       |      200
+  25 | keyboards  |      300
+  36 | guitar     |      300
+  41 | bass       |      300
+  51 | vocals     |      300
+  65 | drumbs     |      300
+  51 | piano      |      401
+  52 | vocals     |      400
+  53 | vocals     |      139
+  54 | guitar     |      139
+  55 | bass       |      139
+  56 | vocals     |      210
+  57 | guitar     |      210
+  58 | drumbs     |      210
+  59 | vocals     |      120
+  60 | guitar     |      120
+(23 rows)
+
+jamm=> SELECT * FROM owns;
+ pcontno | songno | pubcompno | proyalty | padvance |   pdate
+---------+--------+-----------+----------+----------+------------
+       1 |     71 |        10 |       20 |  1000000 | 1983-06-10
+       2 |     61 |        20 |       30 |  1000000 | 1984-03-10
+       3 |     67 |        30 |       25 |  1000000 | 1984-03-10
+       4 |     72 |        10 |       23 |  2000000 | 1984-03-10
+       5 |     68 |        20 |       22 |   300000 | 1984-03-10
+       6 |     62 |        30 |       20 |   200000 | 1984-03-10
+       7 |     64 |        30 |       20 |  3000000 | 1984-03-10
+       8 |     73 |        30 |       20 |   400000 | 1984-03-10
+       9 |     76 |        10 |       23 |  1000000 | 1984-03-10
+      10 |     65 |        10 |       24 |  3500000 | 1984-03-10
+      11 |     74 |        20 |       24 |   230000 | 1984-03-10
+      12 |     78 |        30 |       30 |    30000 | 1984-03-10
+      13 |     88 |        20 |       10 |   400000 | 1984-03-10
+      14 |     80 |        20 |       23 |  1000000 | 1984-03-10
+      15 |     81 |        10 |       24 |   100000 | 1984-03-10
+      16 |     83 |        10 |       30 |   200000 | 1984-03-10
+      17 |     90 |        10 |       23 |  4000000 | 1987-03-10
+      18 |     91 |        30 |       23 |  4000000 | 1984-03-10
+      19 |     92 |        30 |       24 |    60000 | 1984-03-10
+      20 |     94 |        30 |       25 |   300000 | 1984-03-10
+(20 rows)
+
+jamm=> SELECT * FROM person;
+ pno |        pname         |        paddress
+-----+----------------------+-------------------------
+  10 | Andy Ryan            | 10 Gibson St
+  20 | Johnny Lennie        | 73 Scary St.
+  30 | Rick Loyer           | 44 Weird St.
+  50 | Sean Redfearn        | 88 Groovy St.
+  11 | Bono                 | The Tower Dublin
+  21 | The Edge             | Big House Dublin
+  32 | Larry Mullin         | Mansion Dublin
+  44 | Adam Globber         | Nice Place Dublin
+  36 | Shimon Old           | Groovy Pad London
+  41 | Simon Cooer          | Groovy Pad London
+  51 | Maria Goretti        | NY Pad London
+  33 | Michael Kamen        | Big House London
+  45 | Tim Rice             | Massive Pad NY
+  46 | Andrew Lloyed-Webber | Massive Pad London
+  61 | Elton John           | Main Street Everywhere
+  52 | Madonna Ciccone      | Nice Pad LA
+  53 | Eddie Vedder         | Somewhere Quiet Seattle
+  54 | Other dude           | Seattle
+  55 | Other dudeII         | Seattle as well
+  56 | Steve Tyler          | Somewhere Wild
+  57 | Joe Perry            | Americia
+  58 | Tom Hamilition       | USA
+  65 | Joey Kramer          | LA
+  59 | Dave Wyndrof         | Wibbletown USA
+  60 | Ed Mundell           | Fishyness USA
+  25 | bob                  | Big Place London
+(26 rows)
+
+jamm=> SELECT * FROM pubcompany;
+ pubcompno |    pubname     |   pubadd
+-----------+----------------+-------------
+        10 | Sony Music     | Soho Square
+        20 | EMI Publishing | Soho Square
+        30 | Warner Music   | Soho Square
+(3 rows)
+
+jamm=> SELECT * FROM reccompany;
+ reccompno | recname |        recadd
+-----------+---------+----------------------
+        50 | Sony    | 22 Main St. London
+        60 | EMI     | 25 Market Sq. London
+        70 | BMG     | 22 Main St. London
+        80 | 4AD     | 88 Docklands London
+(4 rows)
+
+jamm=> SELECT * FROM recording;
+ recordingno | artistno | songno | rlength |   rdate    | datapeno | rstudio | rengineer
+-------------+----------+--------+---------+------------+----------+---------+-----------
+           1 |      100 |     66 |       3 | 1991-06-10 |      123 |     123 | 12
+           3 |      100 |     75 |       4 | 1991-06-10 |      235 |     432 | 12
+           2 |      100 |     70 |       3 | 1991-06-10 |      124 |     333 | 12
+           4 |      100 |     71 |       3 | 1991-06-10 |      126 |     455 | 23
+           5 |      200 |     61 |       2 | 1991-06-10 |      127 |     676 | 23
+           6 |      200 |     67 |       5 | 1991-06-10 |      128 |     567 | 23
+           7 |      200 |     72 |       3 | 1990-06-10 |      129 |     666 | 23
+           8 |      200 |     68 |       2 | 1990-06-10 |      149 |       3 | 45
+           9 |      120 |     62 |       3 | 1990-06-10 |      149 |     356 | 55
+          10 |      120 |     64 |       5 | 1990-06-10 |      126 |     455 | 66
+          11 |      120 |     73 |       6 | 1990-06-10 |      246 |     445 | 66
+          12 |      300 |     76 |       9 | 1990-06-10 |      456 |     456 | 44
+          13 |      300 |     65 |       2 | 1990-06-10 |      467 |       6 | 33
+          14 |      300 |     74 |       3 | 1990-06-10 |      778 |     676 | 33
+          16 |      139 |     90 |       4 | 1990-06-10 |      776 |       3 | 33
+          18 |      139 |     91 |       2 | 1990-06-10 |      564 |      34 | 53
+          19 |      210 |     92 |       5 | 1990-06-10 |      453 |      44 | 33
+          20 |      210 |     94 |       4 | 1990-06-10 |      346 |       4 | 33
+          21 |      401 |     80 |       4 | 1990-06-10 |      456 |     334 | 33
+          22 |      400 |     81 |       5 | 1990-06-10 |      456 |     353 | 33
+          23 |      401 |     81 |       5 | 1990-06-10 |      457 |     353 | 33
+(21 rows)
+
+jamm=> SELECT * FROM signs;
+ rcontractno | reccompno | artistno | rroyalty | radvance |   rdate
+-------------+-----------+----------+----------+----------+------------
+         100 |        50 |      100 |       14 |  7000000 | 1995-06-20
+         101 |        70 |      200 |       12 |  9000000 | 1995-06-20
+         102 |        60 |      120 |       15 |  3000000 | 1995-06-20
+         103 |        70 |      139 |       15 |  4000000 | 1995-06-20
+         104 |        80 |      300 |       30 |  9000000 | 1995-06-20
+         105 |        70 |      210 |       20 |  8000000 | 1995-06-20
+         106 |        80 |      400 |       12 |  9000000 | 1995-06-20
+         107 |        80 |      401 |       17 |  3000000 | 1995-06-20
+(8 rows)
+
+jamm=> SELECT * FROM song;
+ songno |           title            | noverses
+--------+----------------------------+----------
+     60 | A Cross The Snorcles Hedge |        6
+     66 | Toybox                     |       12
+     70 | Evengate                   |        3
+     75 | Tell Us                    |       10
+     71 | Swiftly Dark Swallow       |        4
+     61 | 11 OClock Tic Tock         |        3
+     67 | Fire                       |        4
+     72 | One                        |        4
+     68 | Dorian Grey                |        3
+     62 | Cyclops Revolution         |        5
+     64 | Elephant Bell              |        2
+     73 | Brainstorm                 |        8
+     76 | Segmentation Fault         |        4
+     65 | Finger Daemon              |        3
+     74 | Touch it                   |        5
+     78 | Sasha                      |        6
+     88 | Thorn In My Side           |        5
+     80 | Theme to the Lion King     |        5
+     81 | Evita                      |       10
+     83 | Phantom of the Opera       |        5
+     90 | Rear View Mirror           |        4
+     91 | Rats                       |        5
+     92 | Walk this way              |        4
+     94 | Dream On                   |        5
+(24 rows)
+
+jamm=> SELECT * FROM writes;
+ pno | songno
+-----+--------
+  10 |     60
+  20 |     60
+  10 |     66
+  20 |     66
+  10 |     70
+  20 |     70
+  10 |     75
+  20 |     75
+  11 |     61
+  21 |     61
+  11 |     67
+  21 |     67
+  11 |     72
+  21 |     72
+  11 |     68
+  21 |     68
+  59 |     62
+  59 |     64
+  59 |     73
+  51 |     76
+  36 |     76
+  51 |     74
+  36 |     74
+  51 |     65
+  36 |     65
+  33 |     78
+  33 |     88
+  45 |     80
+  45 |     81
+  51 |     81
+  46 |     83
+  53 |     90
+  53 |     91
+  56 |     92
+  56 |     94
+(35 rows)
+
+jamm=> SELECT * FROM artist;
+ artistno |     bname      |   formed   | atype
+----------+----------------+------------+-------
+      100 | Wynter         | 1993-03-12 | Rock
+      200 | U2             | 1992-03-12 | Rock
+      300 | Dev/Null       | 1993-03-12 | Rock
+      120 | Monster Magnet | 1993-03-12 | Rock
+      139 | Pearl Jam      | 1993-03-12 | Rock
+      210 | Aerosmith      | 1993-03-12 | Rock
+      400 | Madonna        | 1993-03-12 | Pop
+      401 | Elton John     | 1992-03-23 | Pop
+(8 rows)
+

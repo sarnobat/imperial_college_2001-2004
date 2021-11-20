@@ -1,0 +1,39 @@
+Evaluation
+
+Successes & Failures
+ Successes
+  integration of 3 components achieved quickly
+  rapid development of gui using JTables
+  ability to compare statistics graphically and in textual format
+  met specfication
+	version1 console
+	version2 gui
+
+ Failures
+  antlr proposed originally -> antlr complexity / grammar
+  failures....
+
+
+Extensions
+ Achieved
+  XSLT transformations & ant build for central instruction repository
+  Full compiler lab support
+  multiple file handling
+
+ Not Implemented
+  not supporting more instructions
+  Directives hard-coded
+  
+
+Testing Notes
+  Core MIPS testing
+  User Testing on a live-second year
+
+Project Evaluation
+ Group Organisation
+ Final Product
+
+
+ 
+
+

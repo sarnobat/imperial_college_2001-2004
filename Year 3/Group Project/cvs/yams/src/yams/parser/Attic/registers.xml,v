@@ -1,0 +1,64 @@
+head	1.2;
+access;
+symbols
+	yams-release2-17-12-03:1.1
+	yams-release-17-12-03:1.1
+	cleanup:1.1.0.2
+	Root_cleanup:1.1
+	stable-13-12-2003:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.12.19.14.08.53;	author qq01;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.11.15.23.00;	author ss401;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@deleted deprecated files
+@
+text
+@<Registers>
+	<Register>$t0</Register>
+	<Register>$t1</Register>
+	<Register>$t2</Register>
+	<Register>$t3</Register>
+	<Register>$t4</Register>
+	<Register>$t5</Register>
+	<Register>$t6</Register>
+	<Register>$t7</Register>
+	<Register>$t8</Register>
+	<Register>$t9</Register>
+	<Register>$s0</Register>
+	<Register>$s1</Register>
+	<Register>$s2</Register>
+	<Register>$s3</Register>
+	<Register>$s4</Register>
+	<Register>$s5</Register>
+	<Register>$s6</Register>
+	<Register>$s7</Register>
+	<Register>$sp</Register>
+	<Register>$fp</Register>
+	<Register>$ra</Register>
+<Registers>@
+
+
+1.1
+log
+@Added 3 files for importing valid register data
+@
+text
+@@
+

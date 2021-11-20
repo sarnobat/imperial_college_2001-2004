@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE article SYSTEM "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd">
+<article id="test_callout" lang="en">
+  <articleinfo>
+    <title>DB2<?latex \?>LaTeX: <filename>test_callout</filename></title>
+    <authorgroup>
+      <author>
+        <surname>Devenish</surname>
+        <firstname>James</firstname>
+      </author>
+    </authorgroup>
+    <keywordset>
+      <keyword>DB2LaTeX</keyword>
+      <keyword>test</keyword>
+      <keyword>callout</keyword>
+      <keyword>callouts</keyword>
+    </keywordset>
+    <legalnotice>
+      <title>Legal Notice</title>
+      <para>This is a test document. You can do what you will with it.</para>
+    </legalnotice>
+    <copyright>
+      <year>2004</year>
+      <holder>James Devenish</holder>
+    </copyright>
+    <revhistory>
+      <revision>
+        <revnumber>1.0</revnumber>
+        <date>January 2004</date>
+        <authorinitials>JND</authorinitials>
+        <revremark>Test callouts with both images and text.</revremark>
+      </revision>
+    </revhistory>
+  </articleinfo>
+  <highlights>
+    <para>This file tests the following elements and variables:</para>
+    <simplelist type="horiz" columns="5">
+      <member><sgmltag>callout</sgmltag></member>
+      <member><sgmltag>area</sgmltag></member>
+      <member><sgmltag>imageobjectco</sgmltag></member>
+      <member><sgmltag>mediaobjectco</sgmltag></member>
+      <member><sgmltag>screenco</sgmltag></member>
+    </simplelist>
+  </highlights>
+  <section id="sec:1">
+    <title>Callouts for Images with Automatic Overlays</title>
+    <para>
+      Attempts to overlap some <?latex \?>LaTeX<?latex {}?> code onto a PDF
+      image. In the centre of each area is a callout symbol.
+      <?latex \vspace{1em}?>
+    </para>
+    <mediaobjectco id="moco">
+      <objectinfo>
+        <title>Oblong with grid lines and shaded areas</title>
+      </objectinfo>
+      <imageobjectco>
+        <areaspec units="calspair">
+          <!-- calspair => 0..10000 -->
+          <area id="moco:area:1" coords="0,0 2500,10000" linkends="moco:co:1"/>
+          <area id="moco:area:2" coords="5000 5000" linkends="moco:co:2"/>
+        </areaspec>
+        <imageobject>
+          <imagedata fileref="oblong-grid"/>
+        </imageobject>
+        <calloutlist>
+          <title>Descriptions:</title>
+          <callout id="moco:co:1" arearefs="moco:area:1">
+            <para>This callout refers to an area that occupies the shaded region of the image.</para>
+          </callout>
+          <callout id="moco:co:2" arearefs="moco:area:2">
+            <para>This callout refers to a point that is located in the centre of the image.</para>
+          </callout>
+          <callout id="moco:co:3" arearefs="moco:area:1 moco:area:2">
+            <para>This callout refers both the previous areas.</para>
+          </callout>
+        </calloutlist>
+      </imageobjectco>
+      <textobject>
+        <phrase>FIXME. This text should not be displayed.</phrase>
+      </textobject>
+    </mediaobjectco>
+    <para>Here is a small version of the same image shown above:</para>
+    <mediaobject>
+      <imageobject>
+        <imagedata depth="2cm" scalefit="1" fileref="oblong-grid"/>
+      </imageobject>
+    </mediaobject>
+  </section>
+  <section id="sec:2">
+    <title>Callouts for Line-by-line Text</title>
+    <para>
+      You cannot use <sgmltag>co</sgmltag>. Instead, you can use line numbering.
+    </para>
+    <screenco id="scrco">
+      <areaspec>
+        <area units="linerange" coords="2 2" id="scrco:area:1"/>
+        <area units="linerange" coords="1 3" id="scrco:area:2"/>
+      </areaspec>
+      <screen format="linespecific" linenumbering="numbered"><![CDATA[The quick brown
+fox jumps over
+the lazy dog.]]></screen>
+      <calloutlist>
+        <callout id="scrco:co:1" arearefs="scrco:area:1">
+          <para>This callout refers to the second line.</para>
+        </callout>
+        <callout id="scrco:co:2" arearefs="scrco:area:2">
+          <para>This callout refers to all lines.</para>
+        </callout>
+      </calloutlist>
+    </screenco>
+  </section>
+</article>

@@ -1,0 +1,70 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	2003.11.14.14.54.55;	author qq01;	state dead;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.11.15.23.00;	author ss401;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@/*
+ * Created on 11-Nov-2003
+ *
+ */
+package yams.parser;
+
+import junit.framework.TestCase;
+
+/**
+ * @@author ss401
+ * This is a simple JUnit test case to check that reading in of the valid registers from the xml file is being done
+ * correctly.
+ */
+public class testValidRegisters extends TestCase {
+
+	String[] validRegisters;
+
+	protected void setUp() throws Exception {
+		super.setUp();
+		ValidRegisters.getValidRegisters();
+	}
+
+	protected void tearDown() throws Exception {
+		super.tearDown();
+		validRegisters = null;
+		
+	}
+	
+	public void testDummy(){
+		assertTrue(true);
+	}
+
+}
+@
+
+
+1.1
+log
+@Added 3 files for importing valid register data
+@
+text
+@@
+

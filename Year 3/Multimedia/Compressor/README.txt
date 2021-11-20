@@ -1,0 +1,5 @@
+Compiling
+---------
+Type:
+	javac *.java
+

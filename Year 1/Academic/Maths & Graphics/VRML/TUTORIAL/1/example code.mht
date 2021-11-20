@@ -1,0 +1,143 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: space.wrl
+Date: Mon, 4 Feb 2002 12:59:59 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0026_01C1AD7B.D9DDD0E0";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4910.0300
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0026_01C1AD7B.D9DDD0E0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/slides/space.htm
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>space.wrl</TITLE>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type><!-- Created by mktalk.pl on 4/20/98 at =
+6:30:21 PM -->
+<META content=3D"MSHTML 5.00.3502.4373" name=3DGENERATOR></HEAD>
+<BODY aLink=3D#00ff00 bgColor=3D#000000 link=3D#ffffff text=3D#ffffff=20
+vLink=3D#888888><FONT color=3D#ffff00 size=3D+0>
+<CENTER>Building primitive shapes</CENTER></FONT><FONT color=3D#ffff00 =
+size=3D+3>
+<CENTER><B><I>space.wrl</I></B></CENTER></FONT>
+<CENTER><IMG border=3D0 height=3D2=20
+src=3D"http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/images/r=
+ed.jpg"=20
+width=3D"70%"></CENTER>
+<P><PRE>=09
+<FONT color=3D#00ff00 size=3D+1>
+#VRML V2.0 utf8
+#
+#  Space Station
+#  space.wrl
+#        by David R. Nadeau
+#        published in "The VRML 2.0 Sourcebook" by Ames, Nadeau, and =
+Moreland
+#
+#  This file illustrates the use of multiple Shape nodes in the same =
+file.
+#  Notice that all of the shapes are built overlapping each other!
+#
+
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Box {
+        size 1.0 1.0 1.0
+    }
+}
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Sphere {
+        radius 0.7
+    }
+}
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Cylinder {
+        radius 1.25
+        height 0.05
+    }
+}
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Cylinder {
+        radius 0.4
+        height 2.0
+    }
+}
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Cylinder {
+        radius 0.3
+        height 3.0
+    }
+}
+Shape {
+    appearance Appearance {
+        material Material { }
+    }
+    geometry Cylinder {
+        radius 0.1
+        height 6.0
+    }
+}
+</FONT></PRE></BODY></HTML>
+
+------=_NextPart_000_0026_01C1AD7B.D9DDD0E0
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sdsc.edu/~nadeau/Courses/Siggraph98vrml/vrml97/images/red.jpg
+
+/9j/4AAQSkZJRgABAgEASABIAAD/7QUAUGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAASAAAAAEA
+AQBIAAAAAQABOEJJTQPzAAAAAAAIAAAAAAAAAAA4QklNBAoAAAAAAAEAADhCSU0nEAAAAAAACgAB
+AAAAAAAAAAI4QklNA/UAAAAAAEgAL2ZmAAEAbGZmAAYAAAAAAAEAL2ZmAAEAoZmaAAYAAAAAAAEA
+MgAAAAEAWgAAAAYAAAAAAAEANQAAAAEALQAAAAYAAAAAAAE4QklNA/gAAAAAAHAAAP//////////
+//////////////////8D6AAAAAD/////////////////////////////A+gAAAAA////////////
+/////////////////wPoAAAAAP////////////////////////////8D6AAAOEJJTQQIAAAAAAAQ
+AAAAAQAAAkAAAAJAAAAAADhCSU0ECQAAAAADjwAAAAEAAACAAAAAgAAAAYAAAMAAAAADcwAYAAH/
+2P/gABBKRklGAAECAQBIAEgAAP/+ACdGaWxlIHdyaXR0ZW4gYnkgQWRvYmUgUGhvdG9zaG9wqCA0
+LjAA/+4ADkFkb2JlAGSAAAAAAf/bAIQADAgICAkIDAkJDBELCgsRFQ8MDA8VGBMTFRMTGBEMDAwM
+DAwRDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAENCwsNDg0QDg4QFA4ODhQUDg4ODhQRDAwM
+DAwREQwMDAwMDBEMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8AAEQgAgACAAwEiAAIRAQMR
+Af/dAAQACP/EAT8AAAEFAQEBAQEBAAAAAAAAAAMAAQIEBQYHCAkKCwEAAQUBAQEBAQEAAAAAAAAA
+AQACAwQFBgcICQoLEAABBAEDAgQCBQcGCAUDDDMBAAIRAwQhEjEFQVFhEyJxgTIGFJGhsUIjJBVS
+wWIzNHKC0UMHJZJT8OHxY3M1FqKygyZEk1RkRcKjdDYX0lXiZfKzhMPTdePzRieUpIW0lcTU5PSl
+tcXV5fVWZnaGlqa2xtbm9jdHV2d3h5ent8fX5/cRAAICAQIEBAMEBQYHBwYFNQEAAhEDITESBEFR
+YXEiEwUygZEUobFCI8FS0fAzJGLhcoKSQ1MVY3M08SUGFqKygwcmNcLSRJNUoxdkRVU2dGXi8rOE
+w9N14/NGlKSFtJXE1OT0pbXF1eX1VmZ2hpamtsbW5vYnN0dXZ3eHl6e3x//aAAwDAQACEQMRAD8A
+5ZJJJdm56kkkklKSSSSUpJJJJSkkkklKSSSSUpJJJJSkkkklP//Q5ZJJJdm56kkkklKSSSSUpJJJ
+JSkkkklKSSSSUpJJJJSkkkklP//R5ZJJJdm56kkkklKSSSSUpJJJJSkkkklKSSSSUpJJJJSkkkkl
+P//S5ZJJJdm56kkkklKSSSSUpJJJJSkkkklKSSSSUpJJJJSkkkklP//T5ZJJJdm56kkkklKSSSSU
+pJJJJSkkkklKSSSSUpJJJJSkkkklP//U5ZJJJdm56kkkklKSSSSUpJJJJSkkkklKSSSSUpJJJJSk
+kkklP//V5ZJJJdm56kkkklKSSSSUpJJJJSkkkklKSSSSUpJJJJSkkkklP//W5ZJJJdm56kkkklKS
+SSSUpJJJJSkkkklKSSSSUpJJJJSkkkklP//ZADhCSU0EBgAAAAAABwAIAAAAAQEA//4AJ0ZpbGUg
+d3JpdHRlbiBieSBBZG9iZSBQaG90b3Nob3CoIDQuMAD/7gAOQWRvYmUAZEAAAAAB/9sAhAABAQEB
+AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAgICAgICAgICAgIDAwMDAwMD
+AwMDAQEBAQEBAQEBAQECAgECAgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD
+AwMDAwMDAwMDAwP/wAARCAABAAEDAREAAhEBAxEB/90ABAAB/8QBogAAAAYCAwEAAAAAAAAAAAAA
+BwgGBQQJAwoCAQALAQAABgMBAQEAAAAAAAAAAAAGBQQDBwIIAQkACgsQAAIBAwQBAwMCAwMDAgYJ
+dQECAwQRBRIGIQcTIgAIMRRBMiMVCVFCFmEkMxdScYEYYpElQ6Gx8CY0cgoZwdE1J+FTNoLxkqJE
+VHNFRjdHYyhVVlcassLS4vJkg3SThGWjs8PT4yk4ZvN1Kjk6SElKWFlaZ2hpanZ3eHl6hYaHiImK
+lJWWl5iZmqSlpqeoqaq0tba3uLm6xMXGx8jJytTV1tfY2drk5ebn6Onq9PX29/j5+hEAAgEDAgQE
+AwUEBAQGBgVtAQIDEQQhEgUxBgAiE0FRBzJhFHEIQoEjkRVSoWIWMwmxJMHRQ3LwF+GCNCWSUxhj
+RPGisiY1GVQ2RWQnCnODk0Z0wtLi8lVldVY3hIWjs8PT4/MpGpSktMTU5PSVpbXF1eX1KEdXZjh2
+hpamtsbW5vZnd4eXp7fH1+f3SFhoeIiYqLjI2Oj4OUlZaXmJmam5ydnp+So6SlpqeoqaqrrK2ur6
+/9oADAMBAAIRAxEAPwCrf3zM6+qLr//Z
+
+------=_NextPart_000_0026_01C1AD7B.D9DDD0E0--

@@ -1,0 +1,9 @@
+dos2unix *
+chgrp g0226115 *
+chmod 775 *
+cd include
+chgrp g0226115 *
+chmod 775 *
+cd ..
+ls -l
+

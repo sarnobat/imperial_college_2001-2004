@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<xsd:element name="ps_db"> 
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element name="part" type="part"/>
+				<xsd:element name="supplier" type="supplier"/>
+			</xsd:choice>
+		</xsd:complexType>
+		
+		<xsd:key name="part_pk">	
+			<xsd:selector xpath="part"/>
+			<xsd:field xpath="@pno"/>
+		</xsd:key>
+		
+		<xsd:key name="supplier_pk">	
+			<xsd:selector xpath="supplier"/>
+			<xsd:field xpath="@sno"/>
+		</xsd:key>
+		
+		<xsd:keyref name="supplier_supplies_fk" refer="part_pk">	
+			<xsd:selector xpath="supplier/supplies"/>
+			<xsd:field xpath="."/>
+		</xsd:keyref>
+	</xsd:element>
+	
+	<xsd:complexType name="supplier">
+		<xsd:sequence>
+			<xsd:element name="name" type="name"/>
+			<xsd:element name="supplies" type="xsd:integer" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+			<xsd:attribute name="sno" type="xsd:string" use="required"/>
+			<xsd:attribute name="town" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="name" mixed="true">
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<xsd:element name="sup" type="xsd:string"/>
+		</xsd:choice>
+	</xsd:complexType>
+	
+	<xsd:complexType name="part">
+		<xsd:attribute name="pno" type="xsd:integer" use="required"/>
+		<xsd:attribute name="colour" type="xsd:string" use="required"/>
+		<xsd:attribute name="price" type="xsd:float" use="required"/>
+	</xsd:complexType>
+
+</xsd:schema>

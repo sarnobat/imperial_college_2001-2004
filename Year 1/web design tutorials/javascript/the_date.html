@@ -1,0 +1,46 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+
+<h2>
+<script Language="JavaScript">
+
+function GetDay(nDay)
+{
+	var Days = new Array("Sunday","Monday","Tuesday","Wednesday",
+	                     "Thursday","Friday","Saturday");
+	return Days[nDay]
+}
+function GetMonth(nMonth)
+{
+	var Months = new Array("January","February","March","April","May","June",
+	                       "July","August","September","October","November","December");
+	return Months[nMonth] 	  	 
+}
+
+</script>
+
+
+
+<script Language="JavaScript">
+
+var Today = new Date();
+var SundayDate = Today.getDay()
+var DayNumber = Today.getDate()%7 - SundayDate;
+var MonthNumber = Today.getMonth();
+
+document.write(GetDay(DayNumber) + ", ");
+document.write(GetMonth(MonthNumber) + " ");
+document.write(Today.getDate() + "th ");
+document.write(Today.getYear());
+
+
+</script>
+</h2>
+
+</body>
+</html>

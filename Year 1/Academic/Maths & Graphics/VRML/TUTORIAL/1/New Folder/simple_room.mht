@@ -1,0 +1,103 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: 
+Date: Mon, 4 Feb 2002 13:37:19 -0000
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://philliphansel.com/cybertown/simple_room.txt
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4910.0300
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type>
+<META content=3D"MSHTML 5.00.3502.4373" name=3DGENERATOR></HEAD>
+<BODY><XMP>#VRML V2.0 utf8
+# everything that follows a "#" is a comment=20
+#(except the first line which is a needed header for all VRML files)
+#
+#Make a wall
+    Transform {
+     translation -3.0 0.0 0.0		# move it to the left 3 meters
+     children [
+      Shape {
+       appearance Appearance {
+        material DEF Red_mat Material {
+         diffuseColor 1.0 0.0 0.0	# color is 0 to 1 values of red, =
+green, and blue
+        }				#this example is 100% red														       }
+       geometry Box {
+        size 0.1 3.0 10.0		# Make  a long thin box that is 3 meters high
+       }
+      }
+     ]
+    }
+#Make another wall
+    Transform {
+     translation 3.0 0.0 0.0		# move it to the right 3 meters
+     children [
+      Shape {
+       appearance Appearance {
+        material USE Red_mat		# USE the previously DEFined color (above)
+       }
+       geometry Box {
+        size 0.1 3.0 10.0		# Make  a long thin box that is 3 meters high
+       }
+      }
+     ]
+    }
+#Make the back wall
+    Transform {
+     translation 0 0.0 -5		# move it to the back 5 meters=20
+     children [
+      Shape {
+       appearance Appearance {
+        material USE Red_mat		# USE the previously DEFined color		=
+(above)
+       }
+       geometry Box {
+        size 6.0 3.0 0.1		# Make a wide box 3 meters high and 1/10 of a =
+meter thick
+       }
+      }
+     ]
+    }
+# Make a floor or ground to walk on.
+    Transform {
+     translation 0.0 -1.5 0.0		# move it down a meter and a half.
+     children [
+      Shape {
+       appearance Appearance {
+        material Material {
+         diffuseColor 0.0 1.0 0.0	# Make a new color (green)
+        }
+       }
+       geometry Box {
+        size 20.0 0.1 20.0		#Make a wide and deep box which is flat.
+       }
+      }
+     ]
+    }
+
+# add a light to the scene
+    Transform {
+     translation 0 1.0 0=20
+     rotation 0.659 0.0 0.753 0.442
+     children [
+      PointLight {
+      }
+     ]
+    }
+
+# add a viewpoint 8 meters from the center.
+    Transform {
+     translation 0.0 0.0 8.0
+     children [
+      Viewpoint {
+       description "Viewpoint1"
+       fieldOfView 0.79
+       position   0.0  0.0  0.0
+      }
+     ]
+    }</XMP></BODY></HTML>

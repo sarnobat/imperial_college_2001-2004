@@ -1,0 +1,70 @@
+
+-------------------------------------------------------------------------
+-	The ULTIMATE Target Database Schema (BUT UNREALISTIC)		-
+-------------------------------------------------------------------------
+
+CREATE TABLE purcahseOrder {
+	orderDate 	DATE 		NOT NULL,
+	shipTo 		DECIMAL 	NOT NULL REFERENCES USAddress(?),
+	billTo 		DECIMAL 	NOT NULL,
+	items 		DECIMAL 	NOT NULL,
+}
+
+CREATE TABLE USAddress {
+	country		VARCHAR(50)	NOT NULL,
+	name		VARCHAR(50)	NOT NULL,
+	street		VARCHAR(50)	NOT NULL,
+	city		VARCHAR(50)	NOT NULL,
+	state		VARCHAR(50)	NOT NULL,
+	zip		VARCHAR(50)	NOT NULL
+}
+
+CREATE TABLE Items {
+	item 		DECIMAL		NOT NULL REFERENCES item(?),
+}
+
+CREATE TABLE item {
+	partNum		VARCAHR(50)	NOT NULL,
+	productName	VARCAHR(50)	NOT NULL,
+	quantity	DECIMAL		NOT NULL,
+	USPrice				NOT NULL,
+	shipDate			NOT NULL
+}
+** Trigger ensuring quantity is a positive integer less than 100 **
+** Trigger ensuring partnum follows a certain pattern restriction **
+
+
+-------------------------------------------------------------------------
+-	Target Database Schema (Semantically correct but not great	-
+-------------------------------------------------------------------------
+
+CREATE TABLE purcahseOrder {
+	orderDate 	DATE 		NOT NULL,
+	shipTo 		DECIMAL 	NOT NULL REFERENCES USAddress(?),
+	billTo 		DECIMAL 	NOT NULL REFERENCES USAddress(?),
+	items 		DECIMAL 	NOT NULL REFERENCES Items(?)
+}
+
+CREATE TABLE USAddress {
+	country		VARCHAR(50)	NOT NULL,
+	name		VARCHAR(50)	NOT NULL,
+	street		VARCHAR(50)	NOT NULL,
+	city		VARCHAR(50)	NOT NULL,
+	state		VARCHAR(50)	NOT NULL,
+	zip		VARCHAR(50)	NOT NULL
+}
+
+CREATE TABLE Items {
+	item 		DECIMAL		NOT NULL REFERENCES item(?),
+}
+
+CREATE TABLE item {
+	partNum		VARCAHR(50)	NOT NULL,
+	productName	VARCAHR(50)	NOT NULL,
+	quantity	DECIMAL		NOT NULL,
+	USPrice				NOT NULL,
+	shipDate			NOT NULL
+}
+** Trigger ensuring quantity is a positive integer less than 100 **
+** Trigger ensuring partnum follows a certain pattern restriction **
+

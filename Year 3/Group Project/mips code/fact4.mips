@@ -1,0 +1,30 @@
+# fact4.mips - Given a number n passed on the stack,
+# calculate n!.  Return the result in $1.  No other
+# registers are modified. Uses a recursive implementation.
+#
+# Register Usage:
+# $1 - Used to return result  $2 - Temporary storage of n
+# $31 - Return address        $3 - Temporary storage of n-1
+
+.globl fact4
+
+fact4:  addi $30, $30, -12
+        sw $2, 0($30)
+        sw $3, 4($30)
+        sw $31, 8($30)
+        lw $2, 12($30)    # Copy n to $2
+        beq $0, $2, base  # Check for n=0
+        addi $3, $2, -1   # Calculate n-1
+        addi $30, $30, -4
+        sw $3, 0($30)
+        jal fact4         # Calculate (n-1)!
+        addi $30, $30, 4
+        mult $1, $2       # Calculate (n-1)!*n
+        mflo $1           # Get product from Lo register
+        j done
+base:   addi $1, $0, 1    # Return 1
+done:   lw $2, 0($30)
+        lw $3, 4($30)
+        lw $31, 8($30)
+        addi $30, $30, 12
+        jr $31            # Return to caller

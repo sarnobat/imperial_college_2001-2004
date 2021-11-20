@@ -1,0 +1,56 @@
+MINUTES - PROJECT MEETING
+=============================================
+Date: 21/10/03
+Time: 1400
+Location: 217
+
+Present: Adam, James, Ben, Qian, Sridar, Simon, Apgs
+-----------------------------------------------------------------
+
+Summary of topics discussed:
+
+- Min spec has to be something that would deserve a B, ie not too minimal
+
+- The minimum spec could be just what is required for the lab, anything else could be extensions.
+
+- Division of work: 3 main areas, spolit up into pairs
+	XML -> priority, shouldnt take so long
+	Processor -> Interfaces can be completed quickly
+	Assembler -> limited because must wait for the AST before we can test it.
+
+
+
+Project management:
+
+- In the end its a project and will get a grade.. the min spec and extensions may not affect too much
+
+- Project management tool eclipse can be found in /vol/linux/apps/  
+
+- RCS might be a more appropriate one to use if the eclipse take too long to work out
+ 
+
+
+Possible Extensions Discussed:
+
+- Possibility of using javadoc
+
+- The printing part of statistics could be kept seperate from the data
+
+
+
+Report Related:
+
+- It is preferred for the report to be in LaTex (www.ctan.org)
+
+- Report 1 about 10 pages
+
+- Schedule (design, implementation and testing) and division of work needs to be in report 	1
+
+- Details of the integration should also be in report 1
+
+- 2nd report should provide evidence of the integration, but top priority is to acutally do it!
+
+- Final report 30-50 pages
+
+
+NEXT MEETING - 10 Days from current or so

@@ -1,0 +1,68 @@
+head	1.1;
+access;
+symbols
+	yams-final-19-12-03:1.1
+	yams-release2-17-12-03:1.1
+	yams-release-17-12-03:1.1;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2003.11.13.01.47.36;	author sw00;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@added
+@
+text
+@/*
+ * Created on 13-Nov-2003
+ *
+ */
+package yams.exceptions;
+
+/**
+ * @@author sw00
+ *
+ */
+public class YAMSUnsupportedSyscallException extends YAMSRuntimeException {
+
+	/**
+	 * 
+	 */
+	public YAMSUnsupportedSyscallException() {
+		super();
+	}
+
+	/**
+	 * @@param message
+	 */
+	public YAMSUnsupportedSyscallException(String message) {
+		super(message);
+	}
+
+	/**
+	 * @@param message
+	 * @@param cause
+	 */
+	public YAMSUnsupportedSyscallException(String message, Throwable cause) {
+		super(message, cause);
+	}
+
+	/**
+	 * @@param cause
+	 */
+	public YAMSUnsupportedSyscallException(Throwable cause) {
+		super(cause);
+	}
+
+}
+@

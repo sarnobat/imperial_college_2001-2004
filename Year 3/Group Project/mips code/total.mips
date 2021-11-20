@@ -1,0 +1,44 @@
+# total.mips - Given an array A, calculate the sum of all
+# of its elements.  Requires two parameters# the first is
+# the address of the first element of the array, the second
+# is the number of elements in the array.  The result is
+# returned in $1.
+#
+# Register Usage:
+# $1 - Accumulates result
+# $2 - Address of array
+# $3 - Number of elements in array
+# $4 - Current array index
+# $5 - Used to test condition
+# $6 - Array element address/data
+
+.globl total
+
+total:  addi $30, $30, -20
+        sw $2, 0($30)
+        sw $3, 4($30)
+        sw $4, 8($30)
+        sw $5, 12($30)
+        sw $6, 16($30)
+
+        add $1, $0, $0   # Initialize accumulator
+        lw $2, 20($30)   # Get address of beginning of array
+        lw $3, 24($30)   # Get number of elements in array
+        add $4, $0, $0   # Initialize current array index
+
+loop:   sub $5, $3, $4	  # Array size minus Current index
+        blez $5, done     # Exit loop if reached end of array.	
+        sll $6, $4, 2     # Calculate next array address
+        add $6, $6, $2
+        lw $6, 0($6)     # Read next number from array
+        add $1, $1, $6   # Add to accumulator
+        addi $4, $4, 1   # Increment current array index
+        j loop
+
+done:   lw $2, 0($30)
+        lw $3, 4($30)
+        lw $4, 8($30)
+        lw $5, 12($30)
+        lw $6, 16($30)
+        addi $30, $30, 20
+        jr $31

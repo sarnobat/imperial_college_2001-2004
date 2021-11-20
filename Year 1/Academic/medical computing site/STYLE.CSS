@@ -1,0 +1,69 @@
+body
+{
+    BACKGROUND-COLOR: #ffffff;
+}
+p
+{
+
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt
+}
+
+.mytext
+{
+	
+	COLOR: #AB0000;
+}
+
+.title
+{
+	text-align: center
+	COLOR: #000000;
+	FONT-SIZE: 21pt
+}
+
+.heading
+{
+	text-align: center;
+	COLOR: #FFFFFF;
+	FONT-FAMILY: Times New Roman;
+	FONT-SIZE: 48pt;
+	font-style: italic;
+}
+
+
+h2
+{
+    COLOR: #0000AA;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 11pt
+}
+
+h3
+{
+    COLOR: #00AAAA;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 9pt
+}
+
+blockquote
+{
+     FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+li
+{
+	COLOR: #000000;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+   FONT-SIZE: 10pt
+
+}
+
+ol
+{
+	COLOR: #000000;
+   FONT-FAMILY: Arial, Helvetica, sans-serif;
+   FONT-SIZE: 10pt
+
+}

@@ -1,0 +1,72 @@
+package yams.GUI;
+
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+import yams.*;
+import yams.GUI.graphs.StatisticsVisualizer;
+import yams.parser.*;
+
+import yams.processor.*;
+
+public class StatisticsPanel extends YamsPanel {
+	
+	// window elements
+	JLabel lblCycles;
+	JLabel lblMemory;
+	JButton butGraphs;
+	LineList source;
+
+	public StatisticsPanel(String windowName, YAMSGui controller){
+		super(controller);
+		setTitle("Statistics");
+		
+		// TODO: layout this nicer
+		
+		this.setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
+		
+		// TODO: display results: cycles/memory used??
+		
+		lblCycles = new JLabel();
+		lblCycles.setAlignmentX(Component.CENTER_ALIGNMENT);
+		lblCycles.setText("Number of Cycles: " + 12);
+		
+		lblMemory = new JLabel();
+		lblMemory.setAlignmentX(Component.CENTER_ALIGNMENT);
+		lblMemory.setText("Memory Used: " + 42);
+		
+		butGraphs = new JButton("Graphs");
+		butGraphs.setAlignmentX(Component.CENTER_ALIGNMENT);
+		butGraphs.addActionListener(new StatsButtonController(controller));
+		
+		this.add(lblCycles);
+		this.add(lblMemory);
+		this.add(butGraphs);
+	}
+	
+	public void update() {
+		// update statistics labels
+		
+	}
+	
+	public void setSourceCode(LineList l) {
+			source = l;
+	}
+	
+	class StatsButtonController implements ActionListener {
+	
+		YAMSGui controller;
+	
+		StatsButtonController(YAMSGui c) {
+			controller = c;
+		}
+	
+		public void actionPerformed(ActionEvent e) {
+			StatisticsFrame sf = new StatisticsFrame(controller.getProcessor(), source);
+		}
+	
+	}
+
+}
+

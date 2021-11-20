@@ -1,0 +1,37 @@
+/*
+ * Created on 21-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+package yams.GUI;
+
+import java.awt.Dimension;
+
+import javax.swing.JEditorPane;
+
+
+/**
+ * @author ss401
+ *
+ */
+public class DialogFrame extends YamsInternalFrame {
+
+	/**
+	 * 
+	 */
+	public DialogFrame(int width,int height) {
+		super(width,height);
+		setTitle("Dialog");
+		
+		//JTextArea t = new JTextArea("<html><b>This message will self destruct in 30 seconds...</b></html>");
+		JEditorPane t = new JEditorPane("text/html","<html><b><font color=red>This message will self destruct in 30 seconds...</font></b></html>");
+		t.setVisible(true);
+		t.setEditable(false);
+		t.setPreferredSize(new Dimension(width,height));
+		/*t.setLineWrap(true);
+		t.setWrapStyleWord(true);
+		*/getContentPane().add(t);
+	}
+
+}

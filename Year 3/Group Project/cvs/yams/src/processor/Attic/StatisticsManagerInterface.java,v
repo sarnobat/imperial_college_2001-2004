@@ -1,0 +1,74 @@
+head	1.3;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.3
+date	2003.11.10.10.57.52;	author qq01;	state dead;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.04.23.06.50;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.04.15.29.46;	author bmc01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 26-Oct-2003
+ *
+ */
+package processor;
+
+public interface StatisticsManagerInterface {
+
+	public void regUsed(int regid);
+
+}
+@
+
+
+1.2
+log
+@adding assembler calls to YAMS.java
+@
+text
+@@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d1 11
+a11 11
+/*
+ * Created on 26-Oct-2003
+ *
+ */
+package ic.doc.yams;
+
+public interface StatisticsManagerInterface {
+
+	public void regUsed(int regid);
+
+}
+@
+

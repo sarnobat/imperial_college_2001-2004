@@ -1,0 +1,201 @@
+///////////////////////MEAN/////////////////////////////
+
+double findMean (int [ ] v){
+//post: finds the mean of a set of numbers
+int i;
+int total = 0;
+int n = 0;
+	for (i=0; i < v.length; i++){
+		total = total + i* v[i];
+		n = n + v[i];
+	}
+	double answer = total/n;
+	return answer;
+// better way: return (double) total/n; but not permitted!
+}
+
+////////////STANDARD DEVIATION//////////////////////////
+
+double findStdDeviation (int [ ] v)
+	{
+		int i;
+		int total = 0;
+		int sigmafxsquared = 0;
+
+		double mean = findMean(v);
+
+		for (i = 0;i<v.length;i++)
+		{
+			sigmafxsquared	=	sigmafxsquared + i*i*v[i];
+			total = total + v[i];
+		}
+			double answer = sqrt (sigmafxsquared/total - mean*mean);
+			return answer;
+	}
+
+///////////////MEDIAN//////////////////////////////
+
+///////////(helper function cumulative totals)////////////////
+
+int [ ] totals (int [ ] t)
+	{
+//post: returns the cumulative totals of an array at each index
+		int [ ] v = {t[0],0,0,0,0,0,0,0,0,0,0};
+		int i;
+		for (i = 1; i < t.length; i++)
+			{
+				v[i] = v[i-1]+t[i];
+			}
+		return v;
+
+	}
+
+//////////(end of helper function)////////////////////////
+
+int findMedian (int [ ] t)
+	{
+		int [ ] v = totals(t);
+
+		int j;
+		int totalstud = 0;
+		for (j=0; j < t.length; j++)
+			{
+				totalstud = totalstud + t[j];
+			}
+
+			int middlepos = (totalstud+1)/2;
+			int i=0;
+			while (middlepos > v[i])
+			{
+				i = i+1;
+			}
+
+		return i;
+				
+	}
+
+////////////////////////////////////////////////////////
+
+///////////////PLOTTING THE GRAPH//////////////////////////
+
+void plotGraph (int [ ] v){
+		int row;
+		int col;
+		int maxfreq = maxFreq (v);
+		for (col = 0; col < v.length; col++)
+			{
+				v[col] = v[col]-maxfreq;
+			}
+
+		for (row = 0; row < maxfreq+1; row ++)
+			{	
+				for (col = 0; col < v.length; col++)
+				{
+					if (v[col] == 0 )
+						{
+								print ("* ");
+						}
+					else 
+						{
+							if (v[col] < 0)
+								{
+									print ("  ");
+								}
+							else
+								{
+									print ("| ");
+								}
+						}
+					v[col] = v[col]+1;
+				
+				}
+				println ("");
+			}
+
+	println ("0 1 2 3 4 5 6 7 8 9 10");
+
+	}
+
+/////////////(Helper funciton maxFreq)/////////////////////
+
+
+int maxFreq (int [ ] v){
+//prints the maximum frequency recorded by the array
+//(do not confuse with the mark represented by this
+//frequency)
+
+	int maxfreq	= v[0];
+	int i;
+
+
+	for (i = 1; i < v.length; i++){
+		
+		if(maxfreq < v[i])
+			{
+				 maxfreq = v[i];
+			}
+	}
+			
+	return maxfreq;
+	
+}
+
+///////////////(end of helper function)////////////////////
+
+///////////////MEDIAN//////////////////////////////
+
+
+
+
+
+//////////////READING IN THE MARKS////////////////////////
+
+int [ ] getMarks (int[ ] marks){
+	println("Enter your set of marks -->");
+ 		while (!isEOF())
+	{
+		int mark; 
+		mark = readInt();
+		marks[mark] = marks[mark] + 1;
+	}
+	return marks;
+}
+
+//////////////Calling the functions////////////////////////
+
+void main() {
+
+  int [ ] marks = {0,0,0,0,0,0,0,0,0,0,0};
+
+  marks = getMarks(marks);
+
+	println ("");
+
+	double mean = findMean(marks);
+
+	println("Mean = " + mean);
+
+	println ("");
+	
+	double stdDeviation = findStdDeviation(marks);
+
+	println ("Standard deviation is " + stdDeviation);
+
+	println ("");
+
+	int m = median(marks);
+
+	print("The median is " + m);
+
+	println("");
+
+	println("");
+
+	plotGraph (marks);
+
+}
+
+////////////////////////////////////////////////////////
+
+
+main();

@@ -1,0 +1,1259 @@
+From MAILER-DAEMON Mon Jun 10 19:27:09 2002
+Date: 10 Jun 2002 19:27:09 +0100
+From: Mail System Internal Data <MAILER-DAEMON@mallard.doc.ic.ac.uk>
+Subject: DON'T DELETE THIS MESSAGE -- FOLDER INTERNAL DATA
+Message-ID: <1023733629@mallard.doc.ic.ac.uk>
+X-IMAP: 1003144507 0000000024
+Status: RO
+
+This text is part of the internal format of your mail folder, and is not
+a real message.  It is created automatically by the mail system software.
+If deleted, important folder data will be lost, and it will be re-created
+with the data reset to initial values.
+
+From ajf@doc.ic.ac.uk Tue Oct 16 17:05:26 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 16 Oct 2001 17:05:26 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15tWiU-00018B-00; Tue, 16 Oct 2001 17:05:18 +0100
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15tWiR-0004vg-00
+	for cs-first-year@doc.ic.ac.uk; Tue, 16 Oct 2001 17:05:15 +0100
+Message-ID: <3BCC5B06.A877BF97@doc.ic.ac.uk>
+Date: Tue, 16 Oct 2001 17:06:30 +0100
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+Subject: Haskell things
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 1
+
+Two things...
+
+* The graph manipulation functions I showed you today are now available
+from the course web page at:
+http://www.doc.ic.ac.uk/~ajf/Teaching/Haskell.html.  Note: my mkEdges
+function on the board had the left-hand-side mkEdges i is = ...  This
+should have been mkEdges ( i, is ) = ...  The above code gets it right!
+
+* Tomorrow's test will cover all the material up to and including last
+Wednesday's lecture; I believe this takes you up to slide 75 in the
+notes.  Last year's test is also available from the above url.
+
+Tony Field.
+
+
+From psc@doc.ic.ac.uk Tue Oct 16 12:50:11 2001
+Return-path: <psc@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 16 Oct 2001 12:50:11 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15tSjU-00040W-00; Tue, 16 Oct 2001 12:50:04 +0100
+Received: from diss.doc.ic.ac.uk ([146.169.40.22] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15tSjR-0000Gg-00; Tue, 16 Oct 2001 12:50:01 +0100
+Received: from psc by diss.doc.ic.ac.uk with local (Exim 3.32 #1)
+	id 15tSjR-0006Ri-00; Tue, 16 Oct 2001 12:50:01 +0100
+To: cs-first-year@doc.ic.ac.uk
+Subject: LSystems Lab
+Cc: aem3@doc.ic.ac.uk, ajf@doc.ic.ac.uk, 
+	cjd99@doc.ic.ac.uk, dfg@doc.ic.ac.uk, 
+	dr@doc.ic.ac.uk, ecl1@doc.ic.ac.uk, 
+	frk@doc.ic.ac.uk, jamm@doc.ic.ac.uk, 
+	jd@doc.ic.ac.uk, jj@doc.ic.ac.uk, 
+	jnm@doc.ic.ac.uk, mrc@doc.ic.ac.uk, 
+	phjk@doc.ic.ac.uk,
+    pjm@doc.ic.ac.uk, 
+	rc3@doc.ic.ac.uk, rjc@doc.ic.ac.uk, 
+	smc@doc.ic.ac.uk, sue@doc.ic.ac.uk, 
+	wjk@doc.ic.ac.uk, wl@doc.ic.ac.uk
+Message-Id: <E15tSjR-0006Ri-00@diss.doc.ic.ac.uk>
+From: "Peter Cutler,372H,48349," <psc@doc.ic.ac.uk>
+Date: Tue, 16 Oct 2001 12:50:01 +0100
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 2
+
+
+Some students doing their Haskell LSystems lab have found that
+their program runs out of memory when they try to draw out a 
+large LSystem.  You can increase the heap space available to
+your program if you start hugs with the following flag at your
+linux prompt:
+
+hugs -h2000000 LSystems.hs
+
+There are also two typos on the spec.  On page 7 the 
+example:
+
+expand (base 3) (rule 3 ) 3 should be expand (base 3) (rules 3 ) 3 
+
+and
+
+expandOne (expand ( base 3) (rule 3) 3 ) mapper should be
+expandOne (expand ( base 3) (rules 3) 3 ) mapper
+
+
+Thanks,
+
+Peter Cutler
+
+
+
+
+From ajf@doc.ic.ac.uk Tue Oct 23 10:27:28 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 23 Oct 2001 10:27:28 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15vxqD-0005vI-00; Tue, 23 Oct 2001 10:27:21 +0100
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15vxqC-0000Fs-00
+	for cs-first-year@doc.ic.ac.uk; Tue, 23 Oct 2001 10:27:20 +0100
+Message-ID: <3BD53837.19D61CCC@doc.ic.ac.uk>
+Date: Tue, 23 Oct 2001 10:28:23 +0100
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+Subject: Haskell Test
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 3
+
+
+The Haskell Test 1 sheets have now been marked and can be collected from
+the SGO.
+
+Tony Field.
+
+
+From ajf@doc.ic.ac.uk Tue Oct 23 12:01:57 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 23 Oct 2001 12:01:57 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15vzJW-0007e2-00; Tue, 23 Oct 2001 12:01:42 +0100
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15vzJU-0001xw-00
+	for cs-first-year@doc.ic.ac.uk; Tue, 23 Oct 2001 12:01:40 +0100
+Message-ID: <3BD54E53.8DB45154@doc.ic.ac.uk>
+Date: Tue, 23 Oct 2001 12:02:43 +0100
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+Subject: Haskell Test Solution
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 4
+
+
+This is now available from the Haskell web page:
+
+   http://www.doc.ic.ac.uk/~ajf/Teaching/Haskell.html
+
+Tony Field.
+
+
+From ajf@doc.ic.ac.uk Tue Oct 23 12:59:12 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 23 Oct 2001 12:59:12 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15w0Cy-00016F-00; Tue, 23 Oct 2001 12:59:00 +0100
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15w0Cx-00033m-00; Tue, 23 Oct 2001 12:58:59 +0100
+Message-ID: <3BD55BC2.2B3190DD@doc.ic.ac.uk>
+Date: Tue, 23 Oct 2001 13:00:02 +0100
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: Lee William Howes <lwh01@doc.ic.ac.uk>
+CC: cs-first-year@doc.ic.ac.uk
+Subject: Error on Haskell sheet 4
+References: <Pine.LNX.4.40.0110231110001.10531-100000@voxel15.doc.ic.ac.uk>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 5
+
+Lee is quite right.  I have corrected this on the Errata sheet at:
+
+    http://www.doc.ic.ac.uk/~ajf/Teaching/Haskell.html
+
+Tony Field.
+
+Lee William Howes wrote:
+
+> -----BEGIN PGP SIGNED MESSAGE-----
+> Hash: SHA1
+>
+> Q 5 says "Associated with each employee is also a basic information
+> record of type Empdata, as defined in question 4".
+>
+> Empdata is used nowhere in question for :S
+>
+> - ----------------
+>
+> Lee Howes
+> lee.howes@virgin.net; lee.howes@ic.ac.uk
+> PGP Public Key:
+> Address- http://www.doc.ic.ac.uk/~lwh01/leehowes.asc
+> Fingerprint- 3459 122A 02A6 8D59 0658  136E EABC BFE3 A339 2020
+> -----BEGIN PGP SIGNATURE-----
+> Version: GnuPG v1.0.6 (GNU/Linux)
+> Comment: For info see http://www.gnupg.org
+>
+> iD8DBQE71UJe6ry/46M5ICARAtbpAJ92wYyA9Zq177ZZ5wuIGIKEKVV1LgCgsvWF
+> TGpKP4W3iEsnXbtOZVsvwMY=
+> =QkjA
+> -----END PGP SIGNATURE-----
+
+
+From ajf@doc.ic.ac.uk Tue Oct 23 16:36:41 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 23 Oct 2001 16:36:41 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15w3bX-0006Ky-00; Tue, 23 Oct 2001 16:36:35 +0100
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15w3bW-0007TX-00
+	for cs-first-year@doc.ic.ac.uk; Tue, 23 Oct 2001 16:36:34 +0100
+Message-ID: <3BD58EC2.A1C73CA@doc.ic.ac.uk>
+Date: Tue, 23 Oct 2001 16:37:38 +0100
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+Subject: A nice problem...(?)
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 6
+
+
+Following the question at the end of today's lecture, you might like to
+try this...
+
+Suppose we have the data type:
+
+    data List a = Nil | Cons a ( List a )
+
+which is isomorphic to Haskell's [a] type.  Now, on the command line we
+can type conventional list expressions, for example:
+
+Prelude> [1,2]
+[1,2]
+Prelude> [ True, False ]
+[True,False]
+
+and so on.  But suppose we instead want to use the List type, as in:
+
+Prelude> Cons 1 ( Cons 2 Nil )
+Prelude> Cons True ( Cons False Nil )
+
+In both cases we get an error because List a is not a member of the Show
+class.  As an exercise explicitly create an instance of Show (i.e.
+instance Show a => Show ( List a ) where ...) which defines show :: List
+a -> String such that the above lists are printed in the *same format*
+as Haskell's built-in lists.  For example, we want:
+
+Prelude> Cons 1 ( Cons 2 Nil )
+[1,2]
+Prelude> Cons True ( Cons False Nil )
+[True,False]
+
+Note, however, that you won't be able to print lists of characters using
+"..." notation (that's a truly built-in capability!).  Hence:
+
+Prelude> Cons ( Cons 'a' Nil ) ( Cons ( Cons 'z' Nil ) Nil )
+[['a'],['z']]
+Prelude> ( 'a' : [] ) : ( 'z' : [] ) : []
+["a","z"]
+
+Finally, note that Int, Bool, Char, etc. are already members of Show so,
+for example,
+
+Prelude> show True
+"True"
+Prelude> show 21
+"21"
+
+You may notice (e.g. by doing Prelude> :info Show) that there are two
+other member functions in the Show class (showsPrec and showList).  You
+do not *have* to define these when you create your instance.
+
+
+
+
+From ajf@doc.ic.ac.uk Thu Oct 25 16:28:28 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 25 Oct 2001 16:28:28 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15wmQf-0001nk-00; Thu, 25 Oct 2001 16:28:21 +0100
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15wmQc-0007Um-00
+	for cs-first-year@doc.ic.ac.uk; Thu, 25 Oct 2001 16:28:18 +0100
+Message-ID: <3BD8300D.9EEC3797@doc.ic.ac.uk>
+Date: Thu, 25 Oct 2001 16:30:21 +0100
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+Subject: Haskell graphics
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 7
+
+
+If you are playing with Haskell graphics and/or are thinking about the
+competition...
+
+It has come to my attention that Win32 and Linux versions of the
+graphics libraries differ slightly.  The Linux release does not
+implement lines completely and I think this translates into pen widths
+being ignored.  So, if you try to change the pen size from, say, 1 to 4
+nothing will happen under Linux!  It certainly works OK under Win32.
+
+This is a known 'bug' and is mentioned on the haskell.org web site.  I
+just hadn't noticed it before!
+
+Enjoy...
+
+Tony.
+
+
+From wjk@doc.ic.ac.uk Thu Oct 25 12:15:27 2001
+Return-path: <wjk@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 25 Oct 2001 12:15:27 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15wiTv-0004LF-00
+	for ss401@doc.ic.ac.uk; Thu, 25 Oct 2001 12:15:27 +0100
+Received: from emu.doc.ic.ac.uk ([146.169.1.45])
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15wiTu-0006Yt-00
+	for ss401@doc.ic.ac.uk; Thu, 25 Oct 2001 12:15:26 +0100
+Received: (from wjk@localhost)
+	by emu.doc.ic.ac.uk (8.11.6/8.8.8) id f9PBFRD23422
+	for ss401@doc; Thu, 25 Oct 2001 12:15:27 +0100
+Date: Thu, 25 Oct 2001 12:15:27 +0100
+From: William Knottenbelt <wjk@doc.ic.ac.uk>
+To: ss401@doc.ic.ac.uk
+Subject: Re: Miserable Haskell program
+Message-ID: <20011025121527.A22831@emu.doc.ic.ac.uk>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 8
+
+Hi Sridhar
+
+Two things:
+
+1. Your where clause must be indented to appear to the right of "count
+   db"
+
+2.   listsorts :: Database -> [Sort]
+     listsorts Empty               =  0
+     listsorts (Node l (n,s,t) r) =  listsorts l ++ [s] ++ listsorts r
+
+listsorts Empty = [], not 0 
+
+Cheers
+Will
+
+
+> type Name       = [Char]
+> type Sort       = [Char]
+> type Tins       = Int
+>
+> type CatEntry   = (Name, Sort, Tins)
+> data Database   = Empty | Node Database CatEntry Database
+>                   deriving (Eq, Ord, Show)
+>
+> count :: Database -> (Int, Int, Int)
+>
+>   count db = ( totalcats db ,totalsorts db , totaltins db )
+>   where
+>   totalcats :: Database -> Int
+>   totalcats Empty               =  0
+>   totalcats (Node l (n,s,t) r) =  1 + totalcats l + totalcats r
+>
+>   totalsorts :: Database -> Int
+>   totalsorts db                 =  length (duplicaterem (listsorts db))
+>
+>   listsorts :: Database -> [Sort]
+>   listsorts Empty               =  0
+>   listsorts (Node l (n,s,t) r) =  listsorts l ++ [s] ++ listsorts r
+>
+>   duplicaterem :: [Sort] -> [Sort]
+>   duplicaterem []               =  []
+>   duplicaterem (h:t)
+>         |h `elem` t             =  duplicaterem t
+>         |otherwise              =  h:(duplicaterem t)
+>
+>   totaltins :: Database -> Int
+>   totaltins Empty               =  0
+>   totaltins (Node l (n,s,t) r) =  t + (totaltins l) + (totaltins r)
+
+
+----- End forwarded message -----
+
+From ajf@doc.ic.ac.uk Mon Oct 29 18:15:25 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 29 Oct 2001 18:15:25 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15yGwT-0002nV-00; Mon, 29 Oct 2001 18:15:21 +0000
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15yGwT-0007z5-00; Mon, 29 Oct 2001 18:15:21 +0000
+Message-ID: <3BDD9D28.86A03800@doc.ic.ac.uk>
+Date: Mon, 29 Oct 2001 18:17:12 +0000
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+CC: jb@doc.ic.ac.uk, psc@doc.ic.ac.uk, ids@doc.ic.ac.uk
+Subject: Haskell stuff
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 9
+
+
+*  I have now completed eveything I needed to in the lectures.  You are,
+of course, encouraged to read through the slides that we didn't cover
+(141 onwards) - these may even help you understand better the ealier
+material.
+
+*  The test on Wednesday is at 10-00 in 311 and 343. Please use the SAME
+room that you were in last time to even the load.  Again 2 chairs apart,
+blah blah...!  Last year's test is now available from the course web
+page, but the format may be slightly different this year.  The test will
+cover all the material up to, and including, slide 133.
+
+*  Tomorrow at 2-00pm there will be TWO optional tutorial sessions.  In
+311 there will be an additional help session for people who feel that
+they are lagging behind.  In STUDIO B (that's the posh room accessible
+through the BACK door to 311) Jeremy Bradley will hold the second
+advanced topics tutorial.  He will be talking in part about Haskell
+monads, which you may find useful if you are doing the competition (it
+explains how Haskell's I/O works).
+
+*  If you would like to try another advanced problem, I've put up the
+seond (of three) on the course web page.  Jeremy may have time to talk
+about this tomorrow.  It's a neat little problem that ties in
+(literally!) with last week's problems.  The third advanced sheet, which
+I'll give you later in the week, is a "little Michaelangelo soaked in
+Brute"!!  Watch this space...
+
+Tony Field.
+
+Haskell course page:  http://www.doc.ic.ac.uk/~ajf/Teaching/Haskell.html
+
+
+From ajf@doc.ic.ac.uk Thu Oct 11 11:17:33 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 11 Oct 2001 11:17:33 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15rcu7-0002oF-00; Thu, 11 Oct 2001 11:17:27 +0100
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15rcu6-0003f7-00; Thu, 11 Oct 2001 11:17:26 +0100
+Message-ID: <3BC57206.2A5B2135@doc.ic.ac.uk>
+Date: Thu, 11 Oct 2001 11:18:46 +0100
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+CC: jb@doc.ic.ac.uk
+Subject: Haskell errata sheet
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 10
+
+
+I've now made available .ps and .doc versions of the errata sheet at:
+
+      http://www.doc.ic.ac.uk/~ajf/Teaching/Haskell.html
+
+Also from this page you can access the first advanced problem sheet for
+those of you who would like to try out some more challenging exercises.
+I propose to hold at least one (entirely optional) advanced tutorial
+each week and the tentative suggestion is that we do this on Thursday
+afternoons at 2-00, during your first lab slot (room to be announced).
+If you've finished the lab submission by then feel free to come along.
+
+Watch this space...
+
+Tony Field.
+
+
+From ajf@doc.ic.ac.uk Mon Oct 15 15:10:17 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 15 Oct 2001 15:10:17 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15t8RW-0001O5-00; Mon, 15 Oct 2001 15:10:10 +0100
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15t8RT-0003Do-00; Mon, 15 Oct 2001 15:10:07 +0100
+Message-ID: <3BCAEE8A.1A3ADC1B@doc.ic.ac.uk>
+Date: Mon, 15 Oct 2001 15:11:22 +0100
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+CC: psc@doc.ic.ac.uk, ids@doc.ic.ac.uk
+Subject: Test on Wednesday
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 11
+
+
+OK - I have been thinking...
+
+I have decided to base the test on the material we have covered up to
+the end of *last* week only.  The material covered this week will be
+left until the next test in two week's time.  I hope you are pleased!
+
+To help you prepare (a bit) I have put last year's test on the course
+web page at:
+
+    http://www.doc.ic.ac.uk/~ajf/Teaching/Haskell.html
+
+However, be aware that the course this year has been re-structured so
+different material had been covered at this point.  However, it should
+give you some ideas.  The structureof the test will be very similar to
+last year.
+
+Good luck.
+
+Tony Field.
+
+
+From ajf@doc.ic.ac.uk Mon Oct 22 15:36:57 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 22 Oct 2001 15:36:57 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15vgC9-0000xh-00; Mon, 22 Oct 2001 15:36:49 +0100
+Received: from owl.doc.ic.ac.uk ([146.169.1.44] ident=root)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15vgC9-0003k6-00; Mon, 22 Oct 2001 15:36:49 +0100
+Received: (from ajf@localhost)
+	by owl.doc.ic.ac.uk (8.11.6/8.8.8) id f9MEanr10628;
+	Mon, 22 Oct 2001 15:36:49 +0100
+Message-Id: <200110221436.f9MEanr10628@owl.doc.ic.ac.uk>
+From: ajf@doc.ic.ac.uk (Tony Field)
+Date: Mon, 22 Oct 2001 15:36:49 +0100
+X-Mailer: Mail User's Shell (7.2.6 beta(4)-csg-y2k 04/02/2000)
+To: cs-first-year@doc.ic.ac.uk
+Subject: Advanced Haskell stuff
+Cc: jb@doc.ic.ac.uk
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 12
+
+If you want to join in with the advanced tutorials over the next week or
+two, please print off the first Advanced Problem Sheet from 
+
+  http://www.doc.ic.ac.uk/~ajf/Teaching/Haskell.html
+
+and have a go BEFORE the tutorial.  We will meet in Room 145 on Wednesday at 10-00 
+during the usual tutorial slot.  I'll publish solutions at the end of the week 
+and will make the second set of problems available at the same time.
+
+Enjoy...
+
+Tony.
+
+-- 
+
+From ajf@doc.ic.ac.uk Thu Nov 01 15:17:47 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 01 Nov 2001 15:17:47 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15zJbE-000291-00; Thu, 01 Nov 2001 15:17:44 +0000
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15zJbD-0002GU-00; Thu, 01 Nov 2001 15:17:43 +0000
+Message-ID: <3BE16805.84D90D18@doc.ic.ac.uk>
+Date: Thu, 01 Nov 2001 15:19:34 +0000
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+CC: drb@doc.ic.ac.uk, psc@doc.ic.ac.uk, ids@doc.ic.ac.uk,
+ 	jb@doc.ic.ac.uk, faaiz.zaheer@ee.ic.ac.uk
+Subject: Haskell CORRECTION for next week
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 13
+
+
+I have just noticed that Computer Systems starts next week from Tuesday
+at 2-00.  So, I'll move the planned Tuesday 2-00 session to Monday at
+3-00.  So...
+
+Monday 2-00 - test 2 revisited
+Monday 3-00 - last year's driving test revisited
+
+Wed at 10-00 for the advanced tutorial is still OK.
+
+We'll use the rooms on the timetable and I'll try to make a break in the
+middle of 20-30mins
+
+Tony.
+
+
+From ajf@doc.ic.ac.uk Fri Nov 02 15:33:23 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 02 Nov 2001 15:33:23 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15zgJo-0001JS-00; Fri, 02 Nov 2001 15:33:16 +0000
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15zgJm-0003ZU-00
+	for cs-first-year@doc.ic.ac.uk; Fri, 02 Nov 2001 15:33:14 +0000
+Message-ID: <3BE2BD29.89F2602E@doc.ic.ac.uk>
+Date: Fri, 02 Nov 2001 15:35:05 +0000
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+Subject: Haskell set 5
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 14
+
+
+I've made Solutions to unassessed problems set 5 available from the
+course web page (.ps and MS word).
+
+I'll put hard some copies in the SGO for collection in a moment...
+
+Tony field.
+
+
+From ajf@doc.ic.ac.uk Mon Nov 05 13:24:40 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 05 Nov 2001 13:24:40 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 160jju-0007En-00; Mon, 05 Nov 2001 13:24:34 +0000
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 160jju-0000D2-00
+	for cs-first-year@doc.ic.ac.uk; Mon, 05 Nov 2001 13:24:34 +0000
+Message-ID: <3BE6937B.6CF1E06F@doc.ic.ac.uk>
+Date: Mon, 05 Nov 2001 13:26:19 +0000
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+Subject: Test results
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 15
+
+
+OK - I'm one batch of 28 scripts short, but I propose to release the
+rest now.  If you want to collect your marked test script before 2-00 go
+to the SGO.  There are THREE sorted sub-heaps.  Try not to make a mess!
+
+Tony.
+
+
+From ajf@doc.ic.ac.uk Mon Nov 05 18:01:55 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 05 Nov 2001 18:01:55 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 160o4D-0007Xd-00; Mon, 05 Nov 2001 18:01:49 +0000
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 160o4D-0005eO-00
+	for cs-first-year@doc.ic.ac.uk; Mon, 05 Nov 2001 18:01:49 +0000
+Message-ID: <3BE6D472.5E879851@doc.ic.ac.uk>
+Date: Mon, 05 Nov 2001 18:03:30 +0000
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+Subject: Final things...
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 16
+
+
+* I still have not managed to get hold of the remaining 28 test 2
+scripts, but watch this space...
+
+* The deadline for the Programming Competition is tomorrow evening (hard
+deadline Wed morning at 8-30am).  I'll need from each entrant:
+  - Names of group member(s)
+  - Source code for L-system AND any modified Plot.hs module.  Either
+attach them as TEXT in the email or put them somewhere readable and send
+me the url/path
+  - Instructions for use.  You should set up your most prized
+L-system(s) and make it clear how to run the program to generate them.
+All submissions will be tested under Win32.
+
+* Advanced tutorial 3 will be on Wed. at 10-00 in 346.
+
+Enjoy the driving test - you will do fine!  And finally...
+
+IMPORTANT
+==========
+Several of my colleagues have complained about behaviour during lectures
+of some individuals in Comp-1, specifically wrt talking.  You were all
+incredibly well behaved in my lectures and this made teaching you a
+great pleasure.  It should be a pleasure for us all.  Please remember
+that the slightest noise ANYWHERE can be heard from the front by both
+the lecturer and your fellow students.  It is disruptive for the
+lecturer and, arguably more importantly, it is extremely distracting for
+the majority of the class who *are* trying to listen.  If you want to
+talk whilst a lecture is taking place please do so in a DIFFERENT room!
+Enough said...?
+
+Good luck.
+
+Tony Field.
+
+
+From ajf@doc.ic.ac.uk Thu Nov 01 14:07:46 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 01 Nov 2001 14:07:46 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 15zIVS-0000p8-00; Thu, 01 Nov 2001 14:07:42 +0000
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 15zIVS-00010V-00; Thu, 01 Nov 2001 14:07:42 +0000
+Message-ID: <3BE1579C.9B25C327@doc.ic.ac.uk>
+Date: Thu, 01 Nov 2001 14:09:32 +0000
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+CC: psc@doc.ic.ac.uk, ids@doc.ic.ac.uk, jb@doc.ic.ac.uk
+Subject: Haskell next week
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 17
+
+
+I have a plan for next week.
+
+*  On Monday at 2-00 in 308 I'll go through last week's test.  Some of
+you will not have done very well (the test *was* quite hard) and it will
+be helpful to see where you went wrong.  I hope to have the test results
+back either tomorrow or Monday.  This is entirely optional - if you did
+OK in the test you won't need to come along.
+
+*  On Tuesday at 2-00 in 308 I'll go through last year's driving test
+which was about Radix Trees.  This is available from the Haskell course
+page as a .ps file only.  This again is optional, but if you do come
+along I'll assume you've read the question beforehand. You should also
+try to solve the problem yourself before then, at least on paper.
+
+*  On Wednesday at 10-00 Jeremy will take the third and final advanced
+tutorial in room 346 (that's opposite my office).  This week it's about
+tree labelling.  The exercise sheet is now available on the course web
+page (it's very tricky...!).
+
+Those of you who would like extra help beyond this should see your PPT -
+they should have time to spare as there is no lab exercise next week to
+discuss.  If all else fails come and see me!
+
+Tony Field.
+
+Course page:  http://www.doc.ic.ac.uk/~ajf/Teaching/Haskell.html
+
+
+From ajf@doc.ic.ac.uk Tue Nov 06 12:54:01 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 06 Nov 2001 12:54:01 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 1615jc-0004rT-00; Tue, 06 Nov 2001 12:53:44 +0000
+Received: from owl.doc.ic.ac.uk ([146.169.1.44] ident=root)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 1615jc-0006Fy-00
+	for cs-first-year@doc.ic.ac.uk; Tue, 06 Nov 2001 12:53:44 +0000
+Received: (from ajf@localhost)
+	by owl.doc.ic.ac.uk (8.11.6/8.8.8) id fA6Crh600438
+	for cs-first-year; Tue, 6 Nov 2001 12:53:43 GMT
+Message-Id: <200111061253.fA6Crh600438@owl.doc.ic.ac.uk>
+From: ajf@doc.ic.ac.uk (Tony Field)
+Date: Tue, 6 Nov 2001 12:53:43 +0000
+X-Mailer: Mail User's Shell (7.2.6 beta(4)-csg-y2k 04/02/2000)
+To: cs-first-year@doc.ic.ac.uk
+Subject: Test 2 Scripts
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 18
+
+The remaining marked scripts are now ready for collection.
+
+By the way...
+
+You may be interested to know that the average mark on the first test was
+11.62 and that the average on the second was 11.66(!!)  So it *wasn't*
+that hard, was it?!  
+
+Last year:  the averages were 9.22 and 13.88.  So, swings and
+roundabouts...!
+
+Tony Field.
+
+-- 
+
+From ajf@doc.ic.ac.uk Thu Nov 08 17:12:52 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Thu, 08 Nov 2001 17:12:52 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 161sjJ-0004aG-00; Thu, 08 Nov 2001 17:12:42 +0000
+Received: from tonyfield.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 161sjJ-0005qG-00; Thu, 08 Nov 2001 17:12:41 +0000
+Message-ID: <3BEABD6E.3BEEC43E@doc.ic.ac.uk>
+Date: Thu, 08 Nov 2001 17:14:22 +0000
+From: ajf <ajf@doc.ic.ac.uk>
+Organization: Dept of Computing, Imperial College, London
+X-Mailer: Mozilla 4.7 [en-gb] (WinNT; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+CC: all-ppts@doc.ic.ac.uk
+Subject: Haskell Programming Competition
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 19
+
+
+We've decided!
+
+There is one clear winner which succeeded in producing lovely trees with
+tapering branches
+and depth-dependent colouring. The colour and thickness ranges can be
+modifed
+by changing rules although the way the information is used is somewhat
+hard-coded. It
+walks the branches using a stack to remember turtle states at branching
+points - spot on!
+The program was lovely!  So, congratulations go to:  JONAS WOLF and
+THIBAUT WEISE.
+
+There are two "close-second" runners-up:
+
+SIMON FOTHERGILL worked on his own (so he doesn't have to share his
+prize!).  He
+built in extra commands to change the colour and line thickness - a nice
+idea!  Exactly how
+the colour changes is a bit hard-coded, but it produces really nice
+pictures (with even a
+suggestion of flowers at the tips!).  This solution offered arguably the
+most flexibility.
+
+BARBOD AZIZI and RAHUL BAPTISTA produced a really beautiful and complex
+final image - in fact there were so many lines in it that it crashed
+most Hugs systems I tried
+it with!! The colour changing rules are again hard-coded and there was a
+rather fundamental
+problem to do with algorithmic complexity, but their 'piece de
+resistance' really is lovely.
+
+I'll hand back the submissions and will dish out the prizes tomorrow.
+
+After the test tomorrow (i.e. at 12-00) they might do a demo in 219 if
+anyone's interested.
+
+Good luck!
+
+Tony Field.
+
+
+From ajf@doc.ic.ac.uk Tue Nov 27 13:58:13 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 27 Nov 2001 13:58:13 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 168ikR-00004h-00; Tue, 27 Nov 2001 13:58:07 +0000
+Received: from blyth.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 168ikR-0008R3-00
+	for cs-first-year@doc.ic.ac.uk; Tue, 27 Nov 2001 13:58:07 +0000
+Message-ID: <3C039BEF.9030209@doc.ic.ac.uk>
+Date: Tue, 27 Nov 2001 13:58:07 +0000
+From: Tony Field <ajf@doc.ic.ac.uk>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.5) Gecko/20011011
+X-Accept-Language: en-us
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+Subject: Haskell Driving Test
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 20
+
+
+This has now been marked and can be collected from the SGO.
+
+For your information, the class average was an exxcellent 16.3/25 - in 
+other words the average was about 65% which equates to a mid 2/1.  10 
+students scored full marks!
+
+The pass mark is 50% i.e. 12.5.  If you scored 12 or less you'll have to 
+retake the test, I'm afraid.  Watch this space.
+
+Tony Field.
+
+
+From ajf@doc.ic.ac.uk Wed Dec 05 10:55:04 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 05 Dec 2001 10:55:04 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16BZhb-000795-00; Wed, 05 Dec 2001 10:54:59 +0000
+Received: from blyth.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16BZhb-0003Lg-00
+	for cs-first-year@doc.ic.ac.uk; Wed, 05 Dec 2001 10:54:59 +0000
+Message-ID: <3C0DFD03.8020908@doc.ic.ac.uk>
+Date: Wed, 05 Dec 2001 10:54:59 +0000
+From: Tony Field <ajf@doc.ic.ac.uk>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.5) Gecko/20011011
+X-Accept-Language: en-us
+MIME-Version: 1.0
+To: cs-first-year <cs-first-year@doc.ic.ac.uk>
+Subject: A small omission...!
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 21
+
+Regarding the 'how to do Dijkstra in Haskell' lecture yesterday, I made an omission when discussing solve. The effect of the relaxation process is to refine the shortest path so far for each node once the node with the minimum path has been removed.  However, I believe I omitted to add that having done the relaxation we must then proceed recursively to 'solve' for this relaxed list.  Thus you need to add the call to 'solve' thus:
+
+  :
+  where
+    :
+    solve ps = minp : ( solve ( map relax ( remove minp ps ) ) )
+    :
+
+Thanks to the student who spotted this!  Also there is a typo in the 'Common Style Errors' sheet - in 2. fst, snd etc. should all be applied to 'x' not 'xs' as shown.
+
+I hope it helped anyway...
+
+Tony Field.
+
+
+
+
+From ajf@doc.ic.ac.uk Fri Dec 07 13:42:05 2001
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 07 Dec 2001 13:42:06 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16CLGM-00062g-00; Fri, 07 Dec 2001 13:42:02 +0000
+Received: from blyth.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16CLGM-0004rN-00
+	for cs-first-year@doc.ic.ac.uk; Fri, 07 Dec 2001 13:42:02 +0000
+Message-ID: <3C10C729.2040506@doc.ic.ac.uk>
+Date: Fri, 07 Dec 2001 13:42:01 +0000
+From: Tony Field <ajf@doc.ic.ac.uk>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.5) Gecko/20011011
+X-Accept-Language: en-us
+MIME-Version: 1.0
+To: cs-first-year <cs-first-year@doc.ic.ac.uk>
+Subject: January Exam
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 22
+
+
+To help you all prepare for the January exam, I have put up last year's 
+exam on the Haskell course web page:
+
+    http://www.doc.ic.ac.uk/~ajf/Teaching/Haskell.html
+
+We have also set this as the resit driving test for students who didn't 
+make the magic 13/25 last time round.
+
+Tony Field.
+
+
+From ajf@doc.ic.ac.uk Fri Jan 04 18:22:09 2002
+Return-path: <ajf@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 04 Jan 2002 18:22:09 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16MYyh-00011t-00; Fri, 04 Jan 2002 18:22:03 +0000
+Received: from blyth.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16MYyh-00087h-00
+	for cs-first-year@doc.ic.ac.uk; Fri, 04 Jan 2002 18:22:03 +0000
+Message-ID: <3C35F2CB.8020601@doc.ic.ac.uk>
+Date: Fri, 04 Jan 2002 18:22:03 +0000
+From: Tony Field <ajf@doc.ic.ac.uk>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.5) Gecko/20011011
+X-Accept-Language: en-us
+MIME-Version: 1.0
+To: cs-first-year@doc.ic.ac.uk
+Subject: Mastermind
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 23
+
+I've marked the Haskell resits - the scripts are in the SGO.  The main 
+purpose of the exercise is to prepare you better for the exam on Friday 
+- don't worry about the mark too much, although the nominal pass mark is 
+15/30.  Some of you handed in solutions that were not unique.  Where 
+I've spotted this I've deducted 3 marks from each script with a shared 
+single answer and 5 from scripts that were identical in all answers. 
+ It's up to you how you interpret your final 'score' in these cases - I 
+can't judge it on your behalf becase I don't know who really did the work!
+
+I enclose a model answer which is pretty minimal in that it uses 
+higher-order functions etc. to reduce the bulk of the code.  Even if you 
+didn't solve the problem in exactly the same way you should make sure 
+you understand what the model answer is doing.  The original question is 
+still available on the Haskell course web page.
+
+Good luck on Friday!  Remember it's only the first HALF of a two-part 
+exam.  The second part concerns Prolog which you'll be covering in the 
+summer term.
+
+Tony Field.
+---------------
+
+import List
+
+data Colour = R | B | G deriving ( Eq, Ord, Show )
+
+type Colours = [ Colour ]
+
+type Score = ( Int, Int )
+
+type Result = ( Colours, Score )
+
+colour :: Int -> Colour
+base3 :: Int -> Int -> [ Int ]
+blacks :: Colours -> Colours -> Int
+score :: Colours -> Colours -> Result
+allGuesses :: Int -> [ Colours ]
+consistent :: Colours -> [ Result ] -> Bool
+strike :: [ Colours ] -> [ Result ] -> [ Colours ]
+
+---------------------------------------------------------------------
+
+-- colour: 2 marks
+colour 0 = R
+colour 1 = B
+colour 2 = G
+
+-- base3: 4 marks
+base3 x n
+  = if n == 0
+    then []
+    else base3 ( x `div` 3 ) ( n - 1 ) ++ [ x `mod` 3 ]
+
+-- allGuesses: 3 marks
+allGuesses n
+  = map ( map colour . flip base3 n ) [ 0 .. 3^n-1 ]
+
+-- blacks: 3 marks
+blacks guess secret =
+  sum [ 1 | (x,y) <- zip guess secret, x == y ]
+
+-- score: 4 marks
+score guess secret =
+  ( guess, ( b, length secret - length ( guess \\ secret ) - b ) )
+  where
+    b = blacks guess secret
+
+-- consistent: 6 marks
+consistent g rs
+  = rs == map ( flip score g ) ( map fst rs )
+
+-- strike: 3 marks
+strike gs rs
+  = filter ( flip consistent rs ) gs
+
+
+
+
+From ss401@mallard.doc.ic.ac.uk Fri Jan  4 17:54:10 2002 -0000
+>From ajf@doc.ic.ac.uk Fri, 04 Jan 2002 09:54:54 -0800
+Received: from [146.169.1.46] by hotmail.com (3.2) with ESMTP id MHotMailBDFF3741001B4004318B92A9012E0D920; Fri, 04 Jan 2002 09:54:10 -0800
+Received: from blyth.doc.ic.ac.uk ([146.169.4.46] helo=doc.ic.ac.uk)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16MYXg-0007n6-00
+	for sarnobat@hotmail.com; Fri, 04 Jan 2002 17:54:08 +0000
+Message-ID: <3C35EC40.6090206@doc.ic.ac.uk>
+Date: Fri, 04 Jan 2002 17:54:08 +0000
+From: Tony Field <ajf@doc.ic.ac.uk>
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.5) Gecko/20011011
+X-Accept-Language: en-us
+MIME-Version: 1.0
+To: Sridhar Sarnobat <sarnobat@hotmail.com>
+Subject: Re: Haskell Unassessed excercise answers
+References: <OE68SbOUFogfnNVvxKv00003231@hotmail.com>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 24
+
+Sridhar Sarnobat wrote:
+
+> I am having incredible difficulty finding a file viewer for .ps files
+> and thus cannot read the answer files. Would you be able to upload
+> them in pdf format to your site or email them to me?
+>
+>
+>
+> Also, haven't you only partly answered exercise 3 question 4?
+>
+>
+>
+> Thanks,
+>
+> Sridhar Sarnobat
+>
+Did I do this?
+
+Tony.
+
+
+

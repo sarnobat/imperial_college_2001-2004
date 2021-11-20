@@ -1,0 +1,74 @@
+package yams.GUI;
+
+import java.awt.Dimension;
+import java.io.File;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.StringTokenizer;
+
+import javax.swing.DefaultListModel;
+import javax.swing.JList;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+/*
+ * Created on 21-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+
+/**
+ * @author ajb101
+ *
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+public class FileSelectorFrame extends YamsInternalFrame {
+
+	JList files;
+	DefaultListModel list = new DefaultListModel();
+	
+	public FileSelectorFrame(int width, int height) {
+		super(width, height);
+		setTitle("File Selector");
+
+		//Add the JList to this frame 
+		
+		files = new JList(list);
+		files.setVisible(true);
+		files.setPreferredSize(new Dimension(width, height));
+		files.setMaximumSize(new Dimension(width, height));
+		getContentPane().add(files);
+	}
+	public int addFile(File f){
+		JPanel p = new JPanel();
+		
+		Set validFileTypes = new HashSet();
+		validFileTypes.add("txt");
+		validFileTypes.add("");
+		
+		if(! validFileTypes.contains(getFileType(f)) ) {
+			JOptionPane.showMessageDialog(null,"XSPIM cannot read files of type" + getFileType(f),"Invalid File Type",JOptionPane.WARNING_MESSAGE);
+			return -1;
+		}
+		else{
+			list.add(list.size(),f.getName());
+			return 0;
+		}
+	}
+	public String getFileType(File f){
+		StringTokenizer t = new StringTokenizer(f.getName(),".",false);
+		if (t.countTokens() == 1){
+			return "";
+		}
+		String token = null;
+		while(t.hasMoreTokens()){
+			token = t.nextToken();
+		}
+		
+		return token;
+		
+	}
+
+}

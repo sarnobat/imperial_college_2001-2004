@@ -1,0 +1,672 @@
+From MAILER-DAEMON Mon Jun 10 17:42:23 2002
+Date: 10 Jun 2002 17:42:23 +0100
+From: Mail System Internal Data <MAILER-DAEMON@mallard.doc.ic.ac.uk>
+Subject: DON'T DELETE THIS MESSAGE -- FOLDER INTERNAL DATA
+Message-ID: <1023727343@mallard.doc.ic.ac.uk>
+X-IMAP: 1018446515 0000000014
+Status: RO
+
+This text is part of the internal format of your mail folder, and is not
+a real message.  It is created automatically by the mail system software.
+If deleted, important folder data will be lost, and it will be re-created
+with the data reset to initial values.
+
+From ss401@mallard.doc.ic.ac.uk Fri Mar 22 05:33:00 2002 +0100
+Return-path: <root@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 22 Mar 2002 04:33:01 +0000
+Received: from root by falcon.doc.ic.ac.uk with local (Exim 3.13 #8)
+	id 16oGjc-0002NI-00; Fri, 22 Mar 2002 04:33:00 +0000
+Subject: Warning: over your disk quota on falcon
+To: ss401@doc.ic.ac.uk
+Cc: root@doc.ic.ac.uk
+Message-Id: <E16oGjc-0002NI-00@falcon.doc.ic.ac.uk>
+From: Super-User <root@doc.ic.ac.uk>
+Date: Fri, 22 Mar 2002 04:33:00 +0000
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 1
+
+
+You are over your disk quota on your home directory on falcon - use 'quota -v'
+from any Linux PC to check your quota.  Your disk quota is currently:
+
+             usage  quota  limit     timeleft   files  quota  limit    timeleft
+ss401     +- 102472 100000 110000    6.3 days    1662  10000  11000            
+
+You must delete sufficient files to get under quota before the time column
+reaches zero.  After that time, you will not be able to create any new files at
+all without coming to see us in room 220 or 225.
+
+Alternatively, if you have a genuine reason for needing more quota, please
+email your quota request to help and we'll consider it.
+
+From ss401@mallard.doc.ic.ac.uk Mon Mar  4 20:24:27 2002 +0100
+Return-path: <pgw99@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 04 Mar 2002 19:26:20 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16hy4R-0004fj-00; Mon, 04 Mar 2002 19:24:27 +0000
+Received: from pub.doc.ic.ac.uk ([146.169.5.164] ident=pgw99)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16hy4M-0003MI-00
+	for all-students@doc.ic.ac.uk; Mon, 04 Mar 2002 19:24:22 +0000
+Date: Mon, 4 Mar 2002 19:24:22 +0000 (GMT)
+From: Philip Willoughby <pgw99@doc.ic.ac.uk>
+To: all-students@doc.ic.ac.uk
+Subject: Message from CSG re Printing
+Message-ID: <Pine.LNX.4.42.0203041651150.16595-100000@pub.doc.ic.ac.uk>
+X-hidden-message: Nothing to see here
+X-beer: Tetley's Extra Smooth (With Floating Widget)
+X-icq-number: 53659369
+X-quote: I reserve the right to drink free beer.
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 2
+
+Just a quick reminder that the department buys printers for academic use.
+
+Using the printers for non-academic work greatly inconveniences other
+users, so please avoid doing so.
+
+We would very much prefer not to have to introduce a quota system for
+printng -- it's a big hassle for everyone...
+
+Regards,
+
+Philip Willoughby
+
+Systems Programmer, Department of Computing, Imperial College, London, UK
+--
+echo bzidd@nfo.ho.co.se | tr "bizndfohces" "pwgd9ociaku"
+
+
+From ss401@mallard.doc.ic.ac.uk Fri Feb 22 16:28:59 2002 +0100
+Return-path: <ts@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 22 Feb 2002 15:32:09 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16eHd5-00030y-00; Fri, 22 Feb 2002 15:28:59 +0000
+Received: from genghis.doc.ic.ac.uk ([146.169.5.37] helo=GENGHIS)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16eHcw-00055f-00; Fri, 22 Feb 2002 15:28:50 +0000
+From: "Tim Southerwood" <ts@doc.ic.ac.uk>
+To: all-students@doc.ic.ac.uk
+Date: Fri, 22 Feb 2002 15:28:50 -0000
+MIME-Version: 1.0
+Subject: ANNOUNCEMENT - New Canon printers in the labs
+CC: ts@doc.ic.ac.uk
+Message-ID: <3C7663B2.5755.2AD27B@localhost>
+Priority: normal
+X-mailer: Pegasus Mail for Windows (v4.01)
+Content-type: text/plain; charset=US-ASCII
+Content-transfer-encoding: 7BIT
+Content-description: Mail message body
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 3
+
+Dear all,
+
+We have commissioned 2 brand new Canon IR3300 printers.
+
+One is the large lab (H219) and is called REDSHIFT and the other
+is in H206 and is called BLUESHIFT.
+
+These printers are capable of A4 printing, with facilities to do double sided printing,
+stapling and hole punching (for ring binders).
+
+Please see http://www.doc.ic.ac.uk/csg/printers/
+for details on how to use them from Windows 2000 and Linux/Unix.
+
+The units are not intended to be used as photocopiers - although
+they come equipped as such as standard (and it cannot be removed
+physically). Photocopying is not allowed and has been disabled in software.
+Copying is available in the technical library for small jobs and, of course, at various
+places on campus for larger jobs. Unfortunately, we cannot allow *unregulated*
+copying which is why it's disabled.
+
+We are expecting to order some more (smaller) printers for the labs later
+once costing calculations have been done.
+
+Please be nice to the new printers - we hope they will give good reliable service for 3 
+years. Please note some points in particular:
+
+* Please report faults to CSG via the helpdesk or help@doc.ic.ac.uk. Do not try to fix 
+problems yourself.
+
+* When printed pages are coming out on to the left paper tray, please do not touch or 
+otherwise handle the pages in that job - doing so can cause printer jams and mess up 
+someone else's printout. When a single print job is complete, it will be pushed out 
+10cm further by the printer. You can safely remove it then.
+
+* To look for your printout, please remove all completed pages (as per previous point) 
+and take them to a nearby table and leave other people's printouts in a neat pile.
+
+Following these guidelines will prolong the printer's life and make it easier for everyone 
+to find their work.
+
+*BUGS* 
+
+We are aware of a few issues:
+
+* Some MS Word documents with unusual fonts may not print at all. If you get an error 
+page containing the work "invalid font", then try changing the fonts in your document.
+
+* Linux can only accept pure postscript or text for printing. Please use acrobat reader 
+to print PDFs or the appropriate application in other cases.
+
+Please feel free to report any problems to help@doc.ic.ac.uk - there is some work still 
+to be done, but the printers are capable of handling all your academic work quickly and 
+reliably.
+
+Many thanks
+
+Tim Southerwood
+CSG
+
+From ss401@mallard.doc.ic.ac.uk Wed Feb  6 12:23:49 2002 +0100
+Return-path: <help@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 06 Feb 2002 11:23:54 +0000
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16YQB3-00067Q-00; Wed, 06 Feb 2002 11:23:49 +0000
+Received: from seagull.doc.ic.ac.uk ([146.169.1.10] ident=root)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16YQB3-0002Z1-00; Wed, 06 Feb 2002 11:23:49 +0000
+Received: (from wwwnot@localhost)
+	by seagull.doc.ic.ac.uk (8.11.6/8.8.8) id g16BN3D31778;
+	Wed, 6 Feb 2002 11:23:03 GMT
+Date: Wed, 6 Feb 2002 11:23:03 GMT
+Message-Id: <200202061123.g16BN3D31778@seagull.doc.ic.ac.uk>
+X-Authentication-Warning: seagull.doc.ic.ac.uk: wwwnot set sender to help@doc.ic.ac.uk using -f
+From: "Eion Murdock" <ecm99@doc.ic.ac.uk>
+To: oskar@doc.ic.ac.uk
+Subject: Re: [incoming #5730] VRML plugin
+Cc: cs-first-year@doc.ic.ac.uk
+Reply-To: help@doc.ic.ac.uk
+X-Loop: WREQ 2
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 4
+
+Your request #5730 was resolved by ecm99:
+
+As requested, I've cc'ed this to cs-first year. I've had a look, 
+and here's the solution:
+Step-by-step instructions:
+ - In Internet Explorer, select Internet Options... from the 
+Tools menu.
+ - Select the Security tab
+ - Click on the Custom Level button (just above the OK button)
+ - Under Download unsigned ActiveX controls, change to Prompt
+ - Under Initialize and script ActiveX controls not marked as 
+safe, change to Prompt
+Then you can view your VRML pages happily (if prompted about 
+ActiveX controls, select Yes - to get rid of the prompt, change 
+the settings above to Enable rather than Prompt).
+To check to see if the plugin is set up correctly, go to 
+http://cic.nist.gov/vrml/vbdetect.html.
+To view vrml (.wrl) files, open them with Internet Explorer - 
+right-click on the file, and select Open With... - then choose 
+Internet Explorer from the list that appears. One last bit of 
+advice - the plugin does seem to be *slightly* unstable 
+(certainly on my machine at home), so I'd recommend saving stuff 
+reglarly.
+Regards,
+
+-- 
+Eion Murdock
+Computing Support Group
+To view your .wrl files, open with In
+
+From ss401@mallard.doc.ic.ac.uk Tue Feb  5 14:04:50 2002 +0100
+Return-path: <help@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 05 Feb 2002 13:04:50 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16Y5HG-0006ML-00
+	for ss401@doc.ic.ac.uk; Tue, 05 Feb 2002 13:04:50 +0000
+Received: from seagull.doc.ic.ac.uk ([146.169.1.10] ident=root)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16Y5HG-0000Xu-00
+	for ss401@doc.ic.ac.uk; Tue, 05 Feb 2002 13:04:50 +0000
+Received: (from wwwnot@localhost)
+	by seagull.doc.ic.ac.uk (8.11.6/8.8.8) id g15D48O13901
+	for ss401; Tue, 5 Feb 2002 13:04:08 GMT
+Date: Tue, 5 Feb 2002 13:04:08 GMT
+Message-Id: <200202051304.g15D48O13901@seagull.doc.ic.ac.uk>
+X-Authentication-Warning: seagull.doc.ic.ac.uk: wwwnot set sender to help@doc.ic.ac.uk using -f
+From: "Eion Murdock" <ecm99@doc.ic.ac.uk>
+To: ss401@doc.ic.ac.uk
+Subject: Re: [incoming #5716] blaxxun VRML plugin wanted on network
+Reply-To: help@doc.ic.ac.uk
+X-Loop: WREQ 2
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 5
+
+Your request #5716 was updated by ecm99:
+
+Try embedding it into html, then? Blaxxun, as an ActiveX plugin, 
+may require/want html files (or try opening the .wrl in IE). 
+Unfortunately, the non-ActiveX viewers (Cortona et al.) couldn't 
+easily be packaged. Blaxxun was the only one I could get working.
+Regards,
+
+-- 
+Eion Murdock
+Computing Support Group
+
+From ss401@mallard.doc.ic.ac.uk Tue Feb  5 13:31:22 2002 +0100
+Return-path: <help@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 05 Feb 2002 12:31:22 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16Y4ks-0005u5-00
+	for ss401@doc.ic.ac.uk; Tue, 05 Feb 2002 12:31:22 +0000
+Received: from seagull.doc.ic.ac.uk ([146.169.1.10] ident=root)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16Y4ks-0008ME-00
+	for ss401@doc.ic.ac.uk; Tue, 05 Feb 2002 12:31:22 +0000
+Received: (from wwwnot@localhost)
+	by seagull.doc.ic.ac.uk (8.11.6/8.8.8) id g15CUeP04977
+	for ss401; Tue, 5 Feb 2002 12:30:40 GMT
+Date: Tue, 5 Feb 2002 12:30:40 GMT
+Message-Id: <200202051230.g15CUeP04977@seagull.doc.ic.ac.uk>
+X-Authentication-Warning: seagull.doc.ic.ac.uk: wwwnot set sender to help@doc.ic.ac.uk using -f
+From: "Eion Murdock" <ecm99@doc.ic.ac.uk>
+To: ss401@doc.ic.ac.uk
+Subject: Re: [incoming #5716] blaxxun VRML plugin wanted on network
+Reply-To: help@doc.ic.ac.uk
+X-Loop: WREQ 2
+Status: RO
+X-Status: DA
+X-Keywords:               
+X-UID: 6
+
+Your request #5716 was resolved by ecm99:
+
+Have you checked that it is not already there?
+Change your ActiveX settings as your supervisor (oskar) should 
+have told you, and then, to test the plugin, go to:
+http://cic.nist.gov/vrml/vbdetect.html
+in Internet Explorer. I think you will find that a viewer is, in 
+fact, installed.
+Regards,
+
+-- 
+Eion Murdock
+Computing Support Group
+
+From ss401@mallard.doc.ic.ac.uk Tue Feb  5 13:23:03 2002 +0100
+Return-path: <help@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 05 Feb 2002 12:23:04 +0000
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16Y4cp-0005nH-00
+	for ss401@doc.ic.ac.uk; Tue, 05 Feb 2002 12:23:03 +0000
+Received: from seagull.doc.ic.ac.uk ([146.169.1.10] ident=root)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16Y4cp-0008DE-00
+	for ss401@doc.ic.ac.uk; Tue, 05 Feb 2002 12:23:03 +0000
+Received: (from wwwnot@localhost)
+	by seagull.doc.ic.ac.uk (8.11.6/8.8.8) id g15CMMX04131
+	for ss401; Tue, 5 Feb 2002 12:22:22 GMT
+Date: Tue, 5 Feb 2002 12:22:22 GMT
+Message-Id: <200202051222.g15CMMX04131@seagull.doc.ic.ac.uk>
+X-Authentication-Warning: seagull.doc.ic.ac.uk: wwwnot set sender to help@doc.ic.ac.uk using -f
+From: CSG Problem Tracking <help@doc.ic.ac.uk>
+To: ss401@doc.ic.ac.uk
+Subject: [incoming #5716] CSG Problem Tracking Autoreply
+Reply-To: help@doc.ic.ac.uk
+X-Loop: WREQ 2
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 7
+
+We have receive d your request of the subject:
+
+ "blaxxun VRML plugin wanted on network"
+
+Please refer to request #5716
+when you need to check its status in the job queue
+through the URL:
+
+ https://www.doc.ic.ac.uk/wreq/req.cgi?showme-2-5716
+
+Thank you.
+
+Computing Support Group,
+Department of Computing,
+Imperial College
+
+From ss401@mallard.doc.ic.ac.uk Tue Apr 16 12:04:41 2002 +0100
+Return-path: <dcw@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Tue, 16 Apr 2002 12:07:46 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16xQlN-0007CS-00; Tue, 16 Apr 2002 12:04:41 +0100
+Received: from picard.doc.ic.ac.uk ([146.169.5.40] ident=exim)
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16xQlB-0000ZH-00; Tue, 16 Apr 2002 12:04:29 +0100
+Received: from dcw (helo=doc.ic.ac.uk)
+	by picard.doc.ic.ac.uk with local-esmtp (Exim 3.32 #1)
+	id 16xQlB-0008AX-00; Tue, 16 Apr 2002 12:04:29 +0100
+X-Mailer: exmh version 2.5 01/15/2001 with nmh-1.0.4
+To: all-doc@doc.ic.ac.uk
+Subject: Home directory fileserver (falcon) shutdown WEDNESDAY (tomorrow) evening 
+ from 6pm
+From: dcw@doc.ic.ac.uk
+Reply-To: dcw@doc.ic.ac.uk
+cc: dcw@doc.ic.ac.uk
+X-Image-Url: http://www.doc.ic.ac.uk/~dcw/TinyDunc.gif
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Date: Tue, 16 Apr 2002 12:04:29 +0100
+Message-Id: <E16xQlB-0008AX-00@picard.doc.ic.ac.uk>
+Sender: "Duncan C White,225H,48254,48389," <dcw@doc.ic.ac.uk>
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 8
+
+Hello everyone,
+
+We need to take the home directory fileserver (falcon) down for a spot of
+preventative maintenance on WEDNESDAY (tomorrow) evening from 6pm onwards.
+We suspect that the work will take about an hour, but can't guarantee a
+specific end-time.  If anyone knows of an absolutely vital reason why this
+can't go ahead tomorrow, please let us know ASAP, but we have been trying to
+schedule a suitable time since the end of term!  Obviously we need to do the
+work out of term time to minimise disruption, but the need to work around
+various Easter events - such as the Tools2002 conference and an intensive
+Industrial MSc lecture course - has made planning this a little tricky.
+
+We therefore request that everyone log off their machines by, say, 5:30pm
+tomorrow, and that you all stay off your machines - making no home directory
+access at all, including (for instance) trying to read email from home -
+for the rest of the evening.  Normal service will be resumed later in the
+evening - details will be posted on the CSG news webpage
+(http://www.doc.ic.ac.uk/csg/) when the upgrade is completed.
+
+If you like to know all the details, we are going to upgrade the RAID
+controller's firmware to the latest release, which we hope will stop the
+intermittent "network freezes" some of you may have noticed.  After a lot
+of investigation, we tracked the cause of the "freezes" down to falcon's
+RAID array mysteriously "locking up" or "freezing" for 30-60 seconds at a
+time.  We believe that the firmware upgrade is an effective cure for this
+problem.
+
+cheers
+duncan
+
+
+From ss401@mallard.doc.ic.ac.uk Wed Apr 17 17:17:20 2002 +0100
+Return-path: <dcw@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Wed, 17 Apr 2002 17:19:47 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 16xs7U-0006Vf-00; Wed, 17 Apr 2002 17:17:20 +0100
+Received: from picard.doc.ic.ac.uk ([146.169.5.40] ident=exim)
+	by diver.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 16xs7L-0004sJ-00; Wed, 17 Apr 2002 17:17:11 +0100
+Received: from dcw (helo=doc.ic.ac.uk)
+	by picard.doc.ic.ac.uk with local-esmtp (Exim 3.32 #1)
+	id 16xs7L-0004aW-00; Wed, 17 Apr 2002 17:17:11 +0100
+X-Mailer: exmh version 2.5 01/15/2001 with nmh-1.0.4
+To: all-doc@doc.ic.ac.uk
+Subject: REMINDER: Home directory fileserver (falcon) shutdown AT 6PM TONIGHT
+ from 6pm
+From: dcw@doc.ic.ac.uk
+Reply-To: dcw@doc.ic.ac.uk
+cc: dcw@doc.ic.ac.uk
+Date: Wed, 17 Apr 2002 17:17:11 +0100
+Message-Id: <E16xs7L-0004aW-00@picard.doc.ic.ac.uk>
+Sender: "Duncan C White,225H,48254,48389," <dcw@doc.ic.ac.uk>
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 9
+
+Hello everyone,
+
+Quick reminder - please finish your work and log out of all networked computer
+systems which make access to your home directories before 6pm THIS EVENING (45
+minutes away as I write this email!), and then do not attempt to make any
+access to your home directory for the rest of the evening.
+
+As previously stated, we need to take the home directory fileserver (falcon)
+down for a spot of preventative maintenance. We suspect that the work will
+take about an hour, but can't guarantee a specific end-time.
+
+Normal service will be resumed later in the evening - details will be posted
+on the CSG news webpage (http://www.doc.ic.ac.uk/csg/) when the upgrade is
+completed and it's safe to log back in.
+
+cheers
+duncan
+
+
+
+
+
+From ts@doc.ic.ac.uk Mon Apr 29 12:21:48 2002
+Return-path: <ts@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 29 Apr 2002 12:21:48 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 1729AO-0002iO-00; Mon, 29 Apr 2002 12:18:00 +0100
+Received: from genghis.doc.ic.ac.uk ([146.169.5.37] helo=there)
+	by diver.doc.ic.ac.uk with smtp (Exim 3.16 #7)
+	id 1729AB-0000Xc-00
+	for all-doc@doc.ic.ac.uk; Mon, 29 Apr 2002 12:17:47 +0100
+Content-Type: text/plain;
+  charset="iso-8859-15"
+From: Tim Southerwood <ts@doc.ic.ac.uk>
+To: all-doc@doc.ic.ac.uk
+Subject: Windows 2000 Failure (Profiles)
+Date: Mon, 29 Apr 2002 12:17:46 +0100
+X-Mailer: KMail [version 1.3.2]
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <E1729AB-0000Xc-00@diver.doc.ic.ac.uk>
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 10
+
+Dear All,
+
+This morning an uniterruptable power supply (UPS) failed causing 6 servers to 
+lose power.
+
+5 servers were restored fairly quickly. The sixth server, GYR, is refusing to 
+boot. The result of this is many of you will have difficulty logging on to 
+the Windows 2000 domain as GYR holds the profiles.
+
+The time to fix is unknown due to the difficulty in diagnosing an unbootable
+Win2K server (no single user mode or boot CD).
+
+We are working as quickly as possible to restore the service.
+
+As the people who do are trying to use Windows 2000 will not see this message
+immediately, I would appreciate it if you could show this message to anyone 
+near you who seems to be having difficulties.
+
+Many thanks
+
+Yours,
+
+Tim Southerwood
+CSG
+
+From ts@doc.ic.ac.uk Mon Apr 29 13:12:54 2002
+Return-path: <ts@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 29 Apr 2002 13:12:54 +0100
+Received: from [146.169.1.47] (helo=diver.doc.ic.ac.uk)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 1729zF-0004qE-00; Mon, 29 Apr 2002 13:10:34 +0100
+Received: from genghis.doc.ic.ac.uk ([146.169.5.37] helo=there)
+	by diver.doc.ic.ac.uk with smtp (Exim 3.16 #7)
+	id 1729yt-0001Qd-00
+	for all-doc@doc.ic.ac.uk; Mon, 29 Apr 2002 13:10:11 +0100
+Content-Type: text/plain;
+  charset="iso-8859-15"
+From: Tim Southerwood <ts@doc.ic.ac.uk>
+To: all-doc@doc.ic.ac.uk
+Subject: Windows 2000 Back
+Date: Mon, 29 Apr 2002 13:10:11 +0100
+X-Mailer: KMail [version 1.3.2]
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <E1729yt-0001Qd-00@diver.doc.ic.ac.uk>
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 11
+
+Dear All,
+
+GYR (MS Profile Server) is now running after a *lot* of persuasion.
+
+We will need to undertake some diagnostics on this
+in conjunction with Microsoft later - we will advise
+later.
+
+Cheers
+
+Tim Southerwood
+
+CSG
+
+From owner-linstead-hall-list@ic.ac.uk Mon Apr 29 19:19:46 2002
+Return-path: <owner-linstead-hall-list@ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Mon, 29 Apr 2002 19:19:46 +0100
+Received: from [146.169.1.46] (helo=duck.doc.ic.ac.uk ident=exim)
+	by falcon.doc.ic.ac.uk with esmtp (Exim 3.13 #8)
+	id 172FkX-0001YO-00; Mon, 29 Apr 2002 19:19:45 +0100
+Received: from tomatin.cc.ic.ac.uk ([155.198.5.58])
+	by duck.doc.ic.ac.uk with esmtp (Exim 3.16 #7)
+	id 172FkY-00014P-00; Mon, 29 Apr 2002 19:19:46 +0100
+Received: from majordom by tomatin.cc.ic.ac.uk with local (Exim 2.12 #2)
+	id 172FkW-0006uH-00; Mon, 29 Apr 2002 19:19:44 +0100
+Received: from mr4.cc.ic.ac.uk ([155.198.5.114])
+	by tomatin.cc.ic.ac.uk with esmtp (Exim 2.12 #2)
+	id 172FkV-0006u9-00; Mon, 29 Apr 2002 19:19:43 +0100
+Received: from icex6.cc.ic.ac.uk ([155.198.3.6])
+	by mr4.cc.ic.ac.uk with esmtp (Exim 3.35 #1)
+	id 172FkV-00021Z-04
+	for linstead-hall-list@ic.ac.uk; Mon, 29 Apr 2002 19:19:43 +0100
+Received: by icex6.cc.ic.ac.uk with Internet Mail Service (5.5.2653.19)
+	id <JX0MYLT5>; Mon, 29 Apr 2002 19:19:43 +0100
+Message-ID: <B8E71A89E7E0D411B0E200A0C9D85B2603A8765D@icex6.cc.ic.ac.uk>
+From: "Thompson, Nicholas" <nicholas.thompson@ic.ac.uk>
+To: linstead-hall-list <linstead-hall-list@ic.ac.uk>
+Subject: Plop90's ftp Server
+Date: Mon, 29 Apr 2002 19:19:38 +0100
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain
+Sender: owner-linstead-hall-list@ic.ac.uk
+Precedence: bulk
+Reply-To: "Thompson, Nicholas" <nicholas.thompson@ic.ac.uk>
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 12
+
+Hi Folks, sorry if this doesn't concern you, or you already know about it,
+but I have stopped sharing stuff normally. You must now connect to my
+computer by going to http://129.31.24.13
+
+Enjoy...
+
+- Nick (aka plop90)
+
+
+__
+To avoid spam only your IC email will be able to send messages to this list,
+please do not try to send messages from Hotmail, AOL etc.
+
+From ss401@mallard.doc.ic.ac.uk Fri May 10 04:38:14 2002 +0100
+Return-path: <root@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 10 May 2002 16:53:49 +0100
+Received: from root by falcon.doc.ic.ac.uk with local (Exim 3.13 #8)
+	id 1761EU-0003JC-00; Fri, 10 May 2002 04:38:14 +0100
+Subject: Warning: over your disk quota on falcon
+To: ss401@doc.ic.ac.uk
+Cc: root@doc.ic.ac.uk
+Message-Id: <E1761EU-0003JC-00@falcon.doc.ic.ac.uk>
+From: Super-User <root@doc.ic.ac.uk>
+Date: Fri, 10 May 2002 04:38:14 +0100
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 13
+
+
+You are over your disk quota on your home directory on falcon - use 'quota -v'
+from any Linux PC to check your quota.  Your disk quota is currently:
+
+             usage  quota  limit     timeleft   files  quota  limit    timeleft
+ss401     +- 109992 100000 110000    6.3 days    1834  10000  11000            
+
+You must delete sufficient files to get under quota before the time column
+reaches zero.  After that time, you will not be able to create any new files at
+all without coming to see us in room 220 or 225.
+
+Alternatively, if you have a genuine reason for needing more quota, please
+email your quota request to help and we'll consider it.
+
+From root@doc.ic.ac.uk Fri May 17 04:47:27 2002
+Return-path: <root@doc.ic.ac.uk>
+Envelope-to: ss401@doc.ic.ac.uk
+Delivery-date: Fri, 17 May 2002 04:47:27 +0100
+Received: from root by falcon.doc.ic.ac.uk with local (Exim 3.13 #8)
+	id 178YiE-0004ax-00; Fri, 17 May 2002 04:47:26 +0100
+Subject: Warning: over your disk quota on falcon
+To: ss401@doc.ic.ac.uk
+Cc: root@doc.ic.ac.uk
+Message-Id: <E178YiE-0004ax-00@falcon.doc.ic.ac.uk>
+From: Super-User <root@doc.ic.ac.uk>
+Date: Fri, 17 May 2002 04:47:26 +0100
+Status: RO
+X-Status: D
+X-Keywords:                
+X-UID: 14
+
+
+You are over your disk quota on your home directory on falcon - use 'quota -v'
+from any Linux PC to check your quota.  Your disk quota is currently:
+
+             usage  quota  limit     timeleft   files  quota  limit    timeleft
+ss401     +- 108496 100000 110000    6.3 days    1856  10000  11000            
+
+You must delete sufficient files to get under quota before the time column
+reaches zero.  After that time, you will not be able to create any new files at
+all without coming to see us in room 220 or 225.
+
+Alternatively, if you have a genuine reason for needing more quota, please
+email your quota request to help and we'll consider it.
+

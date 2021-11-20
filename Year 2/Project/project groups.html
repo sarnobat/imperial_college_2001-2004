@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD><TITLE>Trader Groups</TITLE>
+<LINK TYPE="text/css" REL="stylesheet" HREF="../stylesheet.css">
+</HEAD><BODY>
+<FORM METHOD="POST"  ENCTYPE="application/x-www-form-urlencoded">
+<INPUT TYPE="hidden" NAME="Select" VALUE="SELECT students.uid,Forenames,Surname,trader.Group_num,nums.count,demo FROM students,Trader,(select group_num,count(*) from trader group by group_num) as nums  WHERE students.uid = Trader.uid AND (nums.group_num = trader.group_num or (trader.group_num is null and nums.group_num is null)) and  students.uid != ? AND students.uid != ?  ORDER BY Demo,trader.Group_num"><INPUT TYPE="hidden" NAME="Database" VALUE="trader"><TABLE BORDER=3>
+<tr><TH>User</th><th>Forenames</th><th>Surname</th><th>Group</th><th>Demo time</th></tr>
+<tr><td> jz01</td><td>Jiarui</td><td>Zhu</td><td>7</td><td>09/06/2003 14:00:00.00 BST </td>
+
+<tr><td> ksy101</td><td>Kuan Seong</td><td>Yap</td><td>7</td><td>09/06/2003 14:00:00.00 BST </td>
+
+<tr><td> wkw01</td><td>Wai Kean Wallace</td><td>Wong</td><td>7</td><td>09/06/2003 14:00:00.00 BST </td>
+
+<tr><td> jil01</td><td>Jonathan Israel</td><td>Love</td><td>4</td><td>09/06/2003 15:00:00.00 BST </td>
+
+<tr><td> mab201</td><td>Maurice Abraham</td><td>Berk</td><td>4</td><td>09/06/2003 15:00:00.00 BST </td>
+
+<tr><td> sb601</td><td>Steven</td><td>Barham</td><td>4</td><td>09/06/2003 15:00:00.00 BST </td>
+
+<tr><td> jmr101</td><td>James Matthew</td><td>Robinson</td><td>3</td><td>09/06/2003 15:20:00.00 BST </td>
+
+<tr><td> ldl01</td><td>Lyndon Dale Andrew</td><td>Leggate</td><td>3</td><td>09/06/2003 15:20:00.00 BST </td>
+
+<tr><td> ncb01</td><td>Natalie Claire</td><td>Brown</td><td>3</td><td>09/06/2003 15:20:00.00 BST </td>
+
+<tr><td> asp01</td><td>Abhishek Surendra</td><td>Patel</td><td>11</td><td>09/06/2003 15:40:00.00 BST </td>
+
+<tr><td> cdk01</td><td>Christopher David</td><td>Knowles</td><td>11</td><td>09/06/2003 15:40:00.00 BST </td>
+
+<tr><td> rab01</td><td>Robin Andrew</td><td>Beitra</td><td>11</td><td>09/06/2003 15:40:00.00 BST </td>
+
+<tr><td> azs01</td><td>Andonis Zen</td><td>Sakatis</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 6"></td><td>09/06/2003 16:00:00.00 BST </td>
+
+<tr><td> ph201</td><td>Philip</td><td>Howson</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 6"></td><td>09/06/2003 16:00:00.00 BST </td>
+
+<tr><td> mpg01</td><td>Maria Pilar</td><td>Guerra Arias</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 20"></td><td>09/06/2003 16:20:00.00 BST </td>
+
+<tr><td> ra101</td><td>Rishi</td><td>Aggarwal</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 20"></td><td>09/06/2003 16:20:00.00 BST </td>
+
+<tr><td> bpa01</td><td>Barbod Pujan</td><td>Azizi-Namini</td><td>22</td><td>09/06/2003 16:40:00.00 BST </td>
+
+<tr><td> jew01</td><td>Jonas Emanuel</td><td>Wolf</td><td>22</td><td>09/06/2003 16:40:00.00 BST </td>
+
+<tr><td> tw201</td><td>Thibaut</td><td>Weise</td><td>22</td><td>09/06/2003 16:40:00.00 BST </td>
+
+<tr><td> ham101</td><td>Hinesh Amarshi</td><td>Mandalia</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 9"></td><td>09/06/2003 17:00:00.00 BST </td>
+
+<tr><td> jf01</td><td>James</td><td>Furness</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 9"></td><td>09/06/2003 17:00:00.00 BST </td>
+
+<tr><td> kc201</td><td>Kunal</td><td>Changela</td><td>15</td><td>09/06/2003 17:20:00.00 BST </td>
+
+<tr><td> ss401</td><td>Sridhar</td><td>Sarnobat</td><td><INPUT TYPE="submit" NAME="Leave" VALUE="Leave group 15 "></td><td>09/06/2003 17:20:00.00 BST </td>
+
+<tr><td> zam01</td><td>Zafar Ali</td><td>Mirza</td><td>15</td><td>09/06/2003 17:20:00.00 BST </td>
+
+<tr><td> dm901</td><td>Mangal</td><td>Dalal</td><td>16</td><td>10/06/2003 14:00:00.00 BST </td>
+
+<tr><td> jrs101</td><td>James Roland Blain</td><td>Scott</td><td>16</td><td>10/06/2003 14:00:00.00 BST </td>
+
+<tr><td> pjs01</td><td>Philip James Richard</td><td>Standen</td><td>16</td><td>10/06/2003 14:00:00.00 BST </td>
+
+<tr><td> kl101</td><td>Karan</td><td>Lohia</td><td>21</td><td>10/06/2003 14:20:00.00 BST </td>
+
+<tr><td> mu01</td><td>Manish</td><td>Uttamchandani</td><td>21</td><td>10/06/2003 14:20:00.00 BST </td>
+
+<tr><td> npg01</td><td>Neil Pareshkumar</td><td>Gandhi</td><td>21</td><td>10/06/2003 14:20:00.00 BST </td>
+
+<tr><td> jd101</td><td>Jamie</td><td>Denton</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 14"></td><td>10/06/2003 14:40:00.00 BST </td>
+
+<tr><td> jsf01</td><td>John Simon</td><td>Fothergill</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 14"></td><td>10/06/2003 14:40:00.00 BST </td>
+
+<tr><td> awb01</td><td>Ashley William</td><td>Brown</td><td>2</td><td>10/06/2003 15:40:00.00 BST </td>
+
+<tr><td> jlc01</td><td>Jay Lee Terence</td><td>Cornwall</td><td>2</td><td>10/06/2003 15:40:00.00 BST </td>
+
+<tr><td> lwh01</td><td>Lee William</td><td>Howes</td><td>2</td><td>10/06/2003 15:40:00.00 BST </td>
+
+<tr><td> abs01</td><td>Adam Benjamin</td><td>Soffe</td><td>24</td><td>10/06/2003 16:00:00.00 BST </td>
+
+<tr><td> ada01</td><td>Andrew Derek</td><td>Ainscow</td><td>24</td><td>10/06/2003 16:00:00.00 BST </td>
+
+<tr><td> ncg01</td><td>Neil Colin</td><td>Greatorex</td><td>24</td><td>10/06/2003 16:00:00.00 BST </td>
+
+<tr><td> dc301</td><td>David</td><td>Collis</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 25"></td><td>10/06/2003 16:20:00.00 BST </td>
+
+<tr><td> seo01</td><td>Simon E</td><td>Overell</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 25"></td><td>10/06/2003 16:20:00.00 BST </td>
+
+<tr><td> ah101</td><td>Andrew</td><td>Hickson</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 26"></td><td>10/06/2003 16:40:00.00 BST </td>
+
+<tr><td> djr01</td><td>Dominic James</td><td>Rutter</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 26"></td><td>10/06/2003 16:40:00.00 BST </td>
+
+<tr><td> nb01</td><td>Nikola</td><td>Brbora</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 10"></td><td>10/06/2003 17:00:00.00 BST </td>
+
+<tr><td> ta201</td><td>Tolulope</td><td>Adelowo</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 10"></td><td>10/06/2003 17:00:00.00 BST </td>
+
+<tr><td> fnt01</td><td>Farzana Nazir</td><td>Tejani</td><td>17</td><td>12/06/2003 12:20:00.00 BST </td>
+
+<tr><td> jta01</td><td>Johny Tom Nishanth</td><td>Alphonse</td><td>17</td><td>12/06/2003 12:20:00.00 BST </td>
+
+<tr><td> ka01</td><td>Kelvin</td><td>Au</td><td>17</td><td>12/06/2003 12:20:00.00 BST </td>
+
+<tr><td> qaa101</td><td>Qurratul Ain Shams</td><td>Asari</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 34"></td><td>12/06/2003 12:40:00.00 BST </td>
+
+<tr><td> rsj01</td><td>Rabi Sulaiman</td><td>Jabbar</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 34"></td><td>12/06/2003 12:40:00.00 BST </td>
+
+<tr><td> jtl01</td><td>Jorden Thomas</td><td>Lacey</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 31"></td><td>12/06/2003 14:00:00.00 BST </td>
+
+<tr><td> pk701</td><td>Paul</td><td>Krepski</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 31"></td><td>12/06/2003 14:00:00.00 BST </td>
+
+<tr><td> bmc01</td><td>Benjamin Michael</td><td>Cotter</td><td>32</td><td>12/06/2003 14:40:00.00 BST </td>
+
+<tr><td> jkm01</td><td>James Keith</td><td>Milns</td><td>32</td><td>12/06/2003 14:40:00.00 BST </td>
+
+<tr><td> rwk01</td><td>Richard William</td><td>Kirk</td><td>32</td><td>12/06/2003 14:40:00.00 BST </td>
+
+<tr><td> gp01</td><td>Geethanjali</td><td>Pavar</td><td>33</td><td>12/06/2003 15:00:00.00 BST </td>
+
+<tr><td> yjc01</td><td>Yan Jun Daisy</td><td>Chen</td><td>33</td><td>12/06/2003 15:00:00.00 BST </td>
+
+<tr><td> yyl01</td><td>Yue Yan Grace</td><td>Leung</td><td>33</td><td>12/06/2003 15:00:00.00 BST </td>
+
+<tr><td> dp201</td><td>Dhruv</td><td>Patel</td><td>1</td><td>12/06/2003 15:40:00.00 BST </td>
+
+<tr><td> rn01</td><td>Ramesh</td><td>Nair</td><td>1</td><td>12/06/2003 15:40:00.00 BST </td>
+
+<tr><td> sai101</td><td>Simon Adel Fawzy</td><td>Iskander</td><td>1</td><td>12/06/2003 15:40:00.00 BST </td>
+
+<tr><td> jal01</td><td>James Anthony</td><td>Lawton</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 28"></td><td>12/06/2003 16:00:00.00 BST </td>
+
+<tr><td> pi01</td><td>Patrick</td><td>Irvine</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 28"></td><td>12/06/2003 16:00:00.00 BST </td>
+
+<tr><td> cht01</td><td>Chun Him Vincent</td><td>Tsoi</td><td>27</td><td>12/06/2003 16:20:00.00 BST </td>
+
+<tr><td> lw201</td><td>Lee</td><td>Wong</td><td>27</td><td>12/06/2003 16:20:00.00 BST </td>
+
+<tr><td> ty101</td><td>Tony</td><td>Yum</td><td>27</td><td>12/06/2003 16:20:00.00 BST </td>
+
+<tr><td> cb801</td><td>Conor</td><td>Beverland</td><td>38</td><td>12/06/2003 16:40:00.00 BST </td>
+
+<tr><td> jkd01</td><td>Jaspreet Kaur</td><td>Deol</td><td>38</td><td>12/06/2003 16:40:00.00 BST </td>
+
+<tr><td> srr01</td><td>Shania Ranita</td><td>Ramessur</td><td>38</td><td>12/06/2003 16:40:00.00 BST </td>
+
+<tr><td> mja01</td><td>Matthew James</td><td>Alston</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 23"></td><td>12/06/2003 17:00:00.00 BST </td>
+
+<tr><td> rf301</td><td>Richard</td><td>Fisk</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 23"></td><td>12/06/2003 17:00:00.00 BST </td>
+
+<tr><td> cag00</td><td>Chamila Abewickrama</td><td>Gunawardhana</td><td>37</td><td>12/06/2003 17:20:00.00 BST </td>
+
+<tr><td> mb401</td><td>Myuran</td><td>Balendran</td><td>37</td><td>12/06/2003 17:20:00.00 BST </td>
+
+<tr><td> ss501</td><td>Sivajan</td><td>Sooriyakumaran</td><td>37</td><td>12/06/2003 17:20:00.00 BST </td>
+
+<tr><td> ps200</td><td>Peter</td><td>Simeonov</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 40"></td><td>13/06/2003 12:00:00.00 BST </td>
+
+<tr><td> klo01</td><td>Karen Louise</td><td>Osmond</td><td>12</td><td>13/06/2003 12:40:00.00 BST </td>
+
+<tr><td> uk01</td><td>Ulrich</td><td>Kadolsky</td><td>12</td><td>13/06/2003 12:40:00.00 BST </td>
+
+<tr><td> zc101</td><td>Zoel</td><td>Cardosa</td><td>12</td><td>13/06/2003 12:40:00.00 BST </td>
+
+<tr><td> jss101</td><td>Jatinder Singh</td><td>Soomal</td><td>30</td><td>13/06/2003 14:20:00.00 BST </td>
+
+<tr><td> mam101</td><td>Muhammed Abdul</td><td>Munim</td><td>30</td><td>13/06/2003 14:20:00.00 BST </td>
+
+<tr><td> sp200</td><td>Saurabh</td><td>Pandya</td><td>30</td><td>13/06/2003 14:20:00.00 BST </td>
+
+<tr><td> jga01</td><td>John George</td><td>Attara</td><td>8</td><td>13/06/2003 14:40:00.00 BST </td>
+
+<tr><td> rs201</td><td>Rabindra</td><td>Singh</td><td>8</td><td>13/06/2003 14:40:00.00 BST </td>
+
+<tr><td> ss601</td><td>Simon</td><td>Seefeldt</td><td>8</td><td>13/06/2003 14:40:00.00 BST </td>
+
+<tr><td> ayc01</td><td>Anthony Yeeonn</td><td>Cheah</td><td>29</td><td>13/06/2003 15:00:00.00 BST </td>
+
+<tr><td> dc401</td><td>Douglas</td><td>Chan</td><td>29</td><td>13/06/2003 15:00:00.00 BST </td>
+
+<tr><td> dws01</td><td>David Wei Kiang</td><td>Siew</td><td>29</td><td>13/06/2003 15:00:00.00 BST </td>
+
+<tr><td> rb301</td><td>Rahul</td><td>Sen</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 35"></td><td>13/06/2003 15:20:00.00 BST </td>
+
+<tr><td> ss301</td><td>Shaminder</td><td>Sansoy</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 35"></td><td>13/06/2003 15:20:00.00 BST </td>
+
+<tr><td> dbv01</td><td>Dipak Bhanji</td><td>Varsani</td><td>5</td><td>13/06/2003 15:40:00.00 BST </td>
+
+<tr><td> tht01</td><td>Tak Him Jimmy</td><td>Tang</td><td>5</td><td>13/06/2003 15:40:00.00 BST </td>
+
+<tr><td> tt101</td><td>Thomas</td><td>Timbul</td><td>5</td><td>13/06/2003 15:40:00.00 BST </td>
+
+<tr><td> ltf01</td><td>Lok Ting Rebecca</td><td>Fung</td><td>19</td><td>13/06/2003 16:00:00.00 BST </td>
+
+<tr><td> tlh01</td><td>Tak Leung</td><td>Hung</td><td>19</td><td>13/06/2003 16:00:00.00 BST </td>
+
+<tr><td> zl01</td><td>Zhujin</td><td>Lin</td><td>19</td><td>13/06/2003 16:00:00.00 BST </td>
+
+<tr><td> kb01</td><td>Kristoff</td><td>Brunet De Courssou</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 41"></td><td>13/06/2003 16:20:00.00 BST </td>
+
+<tr><td> dz01</td><td>Dan</td><td>Zhang</td><td>13</td><td>13/06/2003 16:40:00.00 BST </td>
+
+<tr><td> fg01</td><td>Fei</td><td>Gong</td><td>13</td><td>13/06/2003 16:40:00.00 BST </td>
+
+<tr><td> gs01</td><td>Gaurav</td><td>Sharma</td><td>13</td><td>13/06/2003 16:40:00.00 BST </td>
+
+<tr><td> as801</td><td>Alexandros</td><td>Skaliotis</td><td>18</td><td>13/06/2003 17:00:00.00 BST </td>
+
+<tr><td> cl201</td><td>Charalambos</td><td>Lazanitis</td><td>18</td><td>13/06/2003 17:00:00.00 BST </td>
+
+<tr><td> sam01</td><td>Sameena</td><td>Misbahuddin</td><td>18</td><td>13/06/2003 17:00:00.00 BST </td>
+
+<tr><td> dt01</td><td>Davor</td><td>Tomic</td><td>36</td><td>13/06/2003 17:20:00.00 BST </td>
+
+<tr><td> fw01</td><td>Fauzi</td><td>Waraich</td><td>36</td><td>13/06/2003 17:20:00.00 BST </td>
+
+<tr><td> srs01</td><td>Shadi Rafic</td><td>Salman</td><td>36</td><td>13/06/2003 17:20:00.00 BST </td>
+
+<tr><td> ntg01</td><td>Nicklaus</td><td>Goh</td><td><INPUT TYPE="submit" NAME="Join" VALUE="Join group 39"></td><td>13/06/2003 17:40:00.00 BST </td>
+
+
+</TABLE>
+</FORM></BODY></HTML>

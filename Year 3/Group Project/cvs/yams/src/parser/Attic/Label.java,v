@@ -1,0 +1,131 @@
+head	1.5;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.5
+date	2003.11.10.10.57.51;	author qq01;	state dead;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.08.23.18.59;	author qq01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.08.02.58.09;	author qq01;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.06.18.00.14;	author ss401;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.06.17.04.29;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@Updated package structure.
+@
+text
+@/*
+ * Created on 06-Nov-2003
+ *
+ */
+package parser;
+
+/**
+ * @@author qq01
+ */
+public class Label {
+	private String label;
+	
+	/**
+	 * constructs a label with the given name
+	 * 
+	 * @@param label name of the label
+	 */
+	public Label(String label){
+		this.label = label;
+	}
+	
+	/**
+	 * returns the name of the label
+	 * 
+	 * @@return name of the label
+	 */
+	public String getLabel() {
+		return label;
+	}
+	
+	
+	/**
+	 * Returns a string representation of the object.
+	 * 
+	 * @@return a string representation of the object.
+	 */
+	public String toString(){
+		return getLabel();
+	}
+}
+@
+
+
+1.4
+log
+@Updated some methods and documentation of the methods
+@
+text
+@@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d30 10
+a39 1
+
+@
+
+
+1.2
+log
+@6/11/03 - Simple methods implemented and javadocked
+@
+text
+@a8 1
+ *
+d13 5
+d23 3
+a25 1
+	 * @@return
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@a3 2
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+a9 2
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+@
+

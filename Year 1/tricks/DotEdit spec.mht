@@ -1,0 +1,1623 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: Advanced Code Editor
+Date: Tue, 29 Jan 2002 13:46:28 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0000_01C1A8CB.5A1BE6D0";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4522.1200
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ashleybrown.co.uk/dotedit/features/synedit.asp
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- Generated with Iosphere 2  - http://www.ashleybrown.co.uk/iosphere/ =
+--><HTML><HEAD><TITLE>Advanced Code Editor</TITLE>
+<META content=3Den-gb http-equiv=3DContent-Language>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type>
+<META content=3D"MSHTML 5.00.3315.2870" name=3DGENERATOR>
+<META=20
+content=3D"html, asp, php, javascript, java, tag assistant, syntax =
+highlighting, coloriser, colouriser, colourizer, colouriser, editor, =
+clipboards, multi-clipboard, code insertion, code snippets"=20
+name=3Dkeywords>
+<META=20
+content=3D"A syntax highlighting editor with multiple clipboards, HTML =
+tag assistance and many keyboard shortcuts."=20
+name=3Ddescription>
+<META content=3D"Wed 09 Jan 2002" name=3DLast-Updated>
+<META content=3D"" http-equiv=3DPICS-Label>
+<SCRIPT language=3DJavaScript type=3Dtext/javascript>
+<!--
+    // Source code from the JavaScript library at =
+http://www.ashleybrown.co.uk | ashley@ashleybrown.co.uk
+    // (C) Ashley Brown 1998-2000.
+    // You may reproduce this code providing this message appears on all =
+copies
+
+    if(navigator.appName.substring(0,8) =3D=3D "Netscape")
+        Browser =3D "Netscape";
+    else if(navigator.appName.substring(0,9) =3D=3D "Microsoft")
+        Browser =3D "MSIE";
+    else
+        Browser =3D "Unknown";
+    Ver =3D Math.round(parseFloat(navigator.appVersion) * 1000);
+
+    var Descs =3D new Object();
+
+    Descs["Home"] =3D "Visit the home page.";
+    Descs["About Me"] =3D "View my CV online.";
+    Descs["Contact Me"] =3D 'Get in touch with me.';
+    Descs["News"] =3D "The latest information about what's happening.";
+    Descs["Downloads"] =3D 'Download software from this site.';
+       =20
+    Descs["WebChat!"] =3D 'WebChat! is a new mini chat system designed =
+mainly for Intranet and small business use (although it can cope with =
+fairly high loadings).';
+    Descs[".edit"] =3D '.edit is a code editor aimed mainly at Internet =
+source files. It includes a syntax highlighting editor and html tag =
+assistance.';   =20
+    Descs["iWeb Server"] =3D 'The iWeb Server is a mini web server =
+designed for hosting no-frills websites.';
+    Descs["Iosphere"] =3D 'Iosphere is the website manager used on this =
+and many other sites.';
+
+    Descs["Web Development"] =3D 'From advanced database-driven sites, =
+to simple HTML pages - anything is possible.';
+    Descs["e-commerce"] =3D 'One of the most important, consumer =
+applications of the Internet - we currently create simple =
+catalogue-based websites.';
+    Descs["WAP Development"] =3D 'Although still an emerging technology, =
+WAP has a number of uses. We can create WAP web sites as well.';
+       =20
+    Descs["JavaScript"] =3D 'Various resources and downloads for =
+JavaScript.';
+    Descs["ASP"] =3D 'ASP Scripts and techniques to view and download.';
+
+    Descs["Forums"] =3D 'Technical support forums for our software and a =
+place to discuss the articles on this site.';
+
+    Descs["In Perspective"] =3D 'A look at recent Internet news from a =
+different perspective.';
+    Descs["Net Tips"] =3D 'Handy tips to help you improve your Internet =
+projects.';
+
+    Descs["Updates"] =3D 'The latest developments on the site.';
+    Descs["Links"] =3D 'Some links to useful sites.';
+
+    Descs["HTML Reference"] =3D 'View the HTML tag reference database.';
+   =20
+    Descs["Advanced"] =3D 'Perform and advanced search on this site.';
+    Descs["Internet"] =3D 'Search the Internet with Google&reg;.';
+   =20
+    Descs["Access Home"] =3D 'The latest downloads and information.';    =
+
+
+    function dhtml()
+    {
+        if(Browser !=3D "Unknown")
+        {
+            if(Browser =3D=3D "MSIE" && Ver <4000)
+                return false;
+            else if(Browser =3D=3D "Netscape")
+                return false;
+
+        }
+        else
+            return false;
+        return true;
+
+    }
+
+    function navlinkover(link, color)
+    {
+        if(dhtml())
+            link.style.color =3D color;
+    }
+   =20
+    function navlinkout(link, color)
+    {
+
+        if(dhtml())
+            link.style.color =3D color;
+    }
+   =20
+    function chngbg(obj, color)
+    {
+        if(dhtml())
+            obj.style.background =3D color;
+    }
+
+    function showdesc(text)
+    {
+         if(dhtml())
+         {
+             if(text =3D=3D '')
+                 text =3D 'Move your mouse over a link to see a =
+description.';
+             urldesc.innerHTML =3D text;
+         }
+    }
+
+    function showtndesc(link)
+    {
+/*        if(dhtml())
+        {
+            tndesc.innerHTML =3D "\x3cfont =
+color=3D\"#8000FF\">&gt;\x3c/font> " + Descs[link.innerText];
+        }*/
+        showdesc(Descs[link.innerText]);
+    }
+
+    function hidetndesc()
+    {
+/*        if(dhtml())
+            tndesc.innerHTML =3D "";*/
+        showdesc('');
+    }
+
+    function getSearchString()
+    {
+     return "Enter a phrase which you wish to search for. Use + to force =
+a word to be included, - to exclude a word. Press 'Go!' to search.";
+    }
+   =20
+   =20
+//-->
+</SCRIPT>
+<!-- Generated with Iosphere 2  - http://www.ashleybrown.co.uk/iosphere/ =
+--><LINK=20
+href=3D"http://www.ashleybrown.co.uk/ab.css" rel=3Dstylesheet =
+type=3Dtext/css><!-- Generated with Iosphere 2  - =
+http://www.ashleybrown.co.uk/iosphere/ --></HEAD>
+<BODY aLink=3D#6666ff bgColor=3D#ffffff link=3D#0000cc =
+vLink=3D#993399><A id=3Dtop=20
+name=3Dtop></A>
+<TABLE bgColor=3D#ffffff border=3D0 cellPadding=3D0 cellSpacing=3D0 =
+width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD height=3D60 rowSpan=3D3 vAlign=3Dtop width=3D320><IMG alt=3DTop =
+border=3D0=20
+      height=3D60 src=3D"http://www.ashleybrown.co.uk/res/doteditat.gif" =
+
+    width=3D320></TD>
+    <TD align=3Dright bgColor=3D#000000 class=3Dtopnav height=3D36 =
+vAlign=3Dcenter=20
+    width=3D"100%">
+      <DIV align=3Dright class=3Dtopnav><A=20
+      href=3D"http://www.ashleybrown.co.uk/default.asp"=20
+      onmouseout=3D"navlinkout(this, 'white');hidetndesc()"=20
+      onmouseover=3D"navlinkover(this, '#CC99FF');showtndesc(this)"=20
+      style=3D"COLOR: white">Home</A> | <A=20
+      href=3D"http://www.ashleybrown.co.uk/news/"=20
+      onmouseout=3D"navlinkout(this, 'white');hidetndesc()"=20
+      onmouseover=3D"navlinkover(this, '#99CCFF');showtndesc(this)"=20
+      style=3D"COLOR: white">News</A> | <A=20
+      href=3D"http://www.ashleybrown.co.uk/contact.asp"=20
+      onmouseout=3D"navlinkout(this, 'white');hidetndesc()"=20
+      onmouseover=3D"navlinkover(this, '#FF99CC');showtndesc(this)"=20
+      style=3D"COLOR: white">Contact Me</A> | <A=20
+      href=3D"http://www.ashleybrown.co.uk/about.asp"=20
+      onmouseout=3D"navlinkout(this, 'white');hidetndesc()"=20
+      onmouseover=3D"navlinkover(this, '#FFCC99');showtndesc(this)"=20
+      style=3D"COLOR: white">About Me</A>&nbsp;</DIV></TD></TR>
+  <TR>
+    <TD align=3Dmiddle height=3D16 noWrap style=3D"FONT-SIZE: 1px" =
+vAlign=3Dcenter=20
+    width=3D"100%"><IMG alt=3D- border=3D0 height=3D16=20
+      src=3D"http://www.ashleybrown.co.uk/t.gif" width=3D1></TD></TR>
+  <TR>
+    <TD bgColor=3D#0080ff style=3D"FONT-SIZE: 1px"><IMG alt=3D- =
+border=3D0 height=3D8=20
+      src=3D"http://www.ashleybrown.co.uk/t.gif" =
+width=3D1></TD></TR></TBODY></TABLE>
+<TABLE border=3D0 cellPadding=3D0 cellSpacing=3D3 width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD colSpan=3D2 width=3D150><IMG alt=3D- border=3D0 height=3D1=20
+      src=3D"http://www.ashleybrown.co.uk/t.gif" width=3D150></TD>
+    <TD bgColor=3D#0080ff rowSpan=3D2 width=3D1><IMG alt=3D- border=3D0 =
+height=3D1=20
+      src=3D"http://www.ashleybrown.co.uk/t.gif" width=3D1></TD>
+    <TD width=3D"100%"></TD></TR>
+  <TR>
+    <TD width=3D5><IMG alt=3D- border=3D0 height=3D1=20
+      src=3D"http://www.ashleybrown.co.uk/t.gif" width=3D5></TD>
+    <TD vAlign=3Dtop width=3D145>
+      <FORM action=3Dhttp://search.atomz.com/search/ method=3Dget =
+name=3Dsearch>
+      <DIV align=3Dleft><B>Search</B><BR><IMG alt=3D---- border=3D0 =
+height=3D1=20
+      src=3D"http://www.ashleybrown.co.uk/greenline.gif" =
+width=3D145><BR><IMG=20
+      align=3Dmiddle alt=3DFind: height=3D16=20
+      src=3D"http://www.ashleybrown.co.uk/res/searchico.gif" =
+width=3D14><SMALL> <!-- Atomz.com Search HTML for ashleybrown.co.uk =
+--><INPUT name=3Dsp-q=20
+      onblur=3D"showdesc('')" onfocus=3D"if(dhtml()) this.value =3D '';" =
+
+      onmouseout=3D"showdesc('')" =
+onmouseover=3Dshowdesc(getSearchString()) size=3D10=20
+      style=3D"FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica; =
+FONT-SIZE: 8pt; WIDTH: 100px"=20
+      value=3D"- Type your search -"></SMALL><INPUT type=3Dsubmit =
+value=3DGo!> <INPUT=20
+      name=3Dsp-a type=3Dhidden value=3D00091a95-sp00000000>=20
+      <DIV align=3Dcenter><A =
+href=3D"http://www.ashleybrown.co.uk/search.asp"><SMALL=20
+      onmouseout=3D"showdesc('')"=20
+      =
+onmouseover=3D"showdesc(dhtml()?Descs[this.innerText]:'')">Advanced=20
+      </SMALL></A><FONT color=3D#cccccc>|</FONT> <A=20
+      =
+href=3D"http://www.ashleybrown.co.uk/search.asp?what=3Dinternet"><SMALL=20
+      onmouseout=3D"showdesc('')"=20
+      =
+onmouseover=3D"showdesc(dhtml()?Descs[this.innerText]:'')">Internet=20
+      </SMALL></A></DIV></DIV></FORM>
+      <DIV align=3Dleft><B>Software<BR><IMG alt=3D---- border=3D0 =
+height=3D1=20
+      src=3D"http://www.ashleybrown.co.uk/orngline.gif" =
+width=3D145><BR></B><A=20
+      href=3D"http://www.ashleybrown.co.uk/webchat/default.asp"><SPAN=20
+      onmouseout=3D"showdesc('')"=20
+      =
+onmouseover=3D"showdesc(dhtml()?Descs[this.innerHTML]:'')">WebChat!</SPAN=
+></A><BR><A=20
+      href=3D"http://www.ashleybrown.co.uk/iweb/default.asp"><SPAN=20
+      onmouseout=3D"showdesc('')"=20
+      onmouseover=3D"showdesc(dhtml()?Descs[this.innerHTML]:'')">iWeb=20
+      Server</SPAN></A><BR>
+      <DIV style=3D"BACKGROUND-COLOR: #e1e1e1"><B><A=20
+      href=3D"http://www.ashleybrown.co.uk/dotedit/default.asp"><SPAN=20
+      onmouseout=3D"showdesc('')"=20
+      =
+onmouseover=3D"showdesc(dhtml()?Descs[this.innerHTML]:'')">.Edit</SPAN></=
+A><BR></B></DIV><IMG=20
+      alt=3D---- border=3D0 height=3D1 =
+src=3D"http://www.ashleybrown.co.uk/t.gif"=20
+      width=3D145><BR>
+      <DIV id=3Dsoft2 style=3D"BACKGROUND-COLOR: #efefef"><SPAN=20
+      onmouseout=3D"showdesc('')"=20
+      onmouseover=3D"showdesc(dhtml()?Descs[this.innerText]:'')"><IMG =
+alt=3D----=20
+      border=3D0 height=3D5 =
+src=3D"http://www.ashleybrown.co.uk/res/t.gif" width=3D5><A=20
+      =
+href=3D"http://www.ashleybrown.co.uk/dotedit/docs/default.asp"><SMALL=20
+      title=3DDocumentation>Documentation</SMALL></A><BR>
+      <SCRIPT type=3Dtext/javascript>
+                 <!--
+                     Descs["Documentation"] =3D "";
+                 //-->
+                 </SCRIPT>
+      </SPAN><SPAN onmouseout=3D"showdesc('')"=20
+      onmouseover=3D"showdesc(dhtml()?Descs[this.innerText]:'')"><IMG =
+alt=3D----=20
+      border=3D0 height=3D5 =
+src=3D"http://www.ashleybrown.co.uk/res/t.gif" width=3D5><A=20
+      =
+href=3D"http://www.ashleybrown.co.uk/dotedit/features/default.asp"><SMALL=
+=20
+      title=3DFeatures>Features</SMALL></A><BR>
+      <SCRIPT type=3Dtext/javascript>
+                 <!--
+                     Descs["Features"] =3D "";
+                 //-->
+                 </SCRIPT>
+      </SPAN><SPAN onmouseout=3D"showdesc('')"=20
+      onmouseover=3D"showdesc(dhtml()?Descs[this.innerText]:'')"><IMG =
+alt=3D----=20
+      border=3D0 height=3D5 =
+src=3D"http://www.ashleybrown.co.uk/res/t.gif" width=3D5><A=20
+      href=3D"http://www.ashleybrown.co.uk/dotedit/versions.asp"><SMALL=20
+      title=3D"Version History">Version History</SMALL></A><BR>
+      <SCRIPT type=3Dtext/javascript>
+                 <!--
+                     Descs["Version History"] =3D "";
+                 //-->
+                 </SCRIPT>
+      </SPAN></DIV><A=20
+      href=3D"http://www.ashleybrown.co.uk/iosphere/default.asp"><SPAN=20
+      onmouseout=3D"showdesc('')"=20
+      =
+onmouseover=3D"showdesc(dhtml()?Descs[this.innerHTML]:'')">Iosphere</SPAN=
+></A><BR><BR></DIV>
+      <DIV align=3Dleft><B>Services<BR><IMG alt=3D---- border=3D0 =
+height=3D1=20
+      src=3D"http://www.ashleybrown.co.uk/redline.gif" =
+width=3D145><BR></B><A=20
+      href=3D"http://www.ashleybrown.co.uk/webdev/default.asp"><SPAN=20
+      onmouseout=3D"showdesc('')"=20
+      onmouseover=3D"showdesc(dhtml()?Descs[this.innerHTML]:'')">Web=20
+      Development</SPAN></A><BR><A=20
+      href=3D"http://www.ashleybrown.co.uk/wapdev/default.asp"><SPAN=20
+      onmouseout=3D"showdesc('')"=20
+      onmouseover=3D"showdesc(dhtml()?Descs[this.innerHTML]:'')">WAP=20
+      Development</SPAN></A><BR><BR></DIV>
+      <DIV align=3Dleft><B>Articles<BR><IMG alt=3D---- border=3D0 =
+height=3D1=20
+      src=3D"http://www.ashleybrown.co.uk/blueline.gif" =
+width=3D145><BR></B><A=20
+      href=3D"http://www.ashleybrown.co.uk/nettips/default.asp"><SPAN=20
+      onmouseout=3D"showdesc('')"=20
+      onmouseover=3D"showdesc(dhtml()?Descs[this.innerHTML]:'')">Net=20
+      Tips</SPAN></A><BR><A=20
+      href=3D"http://www.ashleybrown.co.uk/ip/default.asp"><SPAN=20
+      onmouseout=3D"showdesc('')"=20
+      onmouseover=3D"showdesc(dhtml()?Descs[this.innerHTML]:'')">In=20
+      Perspective</SPAN></A><BR><BR></DIV>
+      <DIV align=3Dleft><B>Community<BR><IMG alt=3D---- border=3D0 =
+height=3D1=20
+      src=3D"http://www.ashleybrown.co.uk/grline.gif" =
+width=3D145></B><BR><A=20
+      href=3D"http://www.ashleybrown.co.uk/forum/"><SPAN =
+onmouseout=3D"showdesc('')"=20
+      =
+onmouseover=3D"showdesc(dhtml()?Descs[this.innerHTML]:'')">Forums</SPAN> =
+
+      </A><BR><BR></DIV>
+      <FORM action=3D/htmlref/tagref.asp method=3Dget>
+      <DIV align=3Dleft><B>Resources<BR><IMG alt=3D---- border=3D0 =
+height=3D1=20
+      src=3D"http://www.ashleybrown.co.uk/tealline.gif" =
+width=3D145></B><BR><A=20
+      href=3D"http://www.ashleybrown.co.uk/htmlref/"><SPAN=20
+      onmouseout=3D"showdesc('')"=20
+      onmouseover=3D"showdesc(dhtml()?Descs[this.innerHTML]:'')">HTML=20
+      Reference</SPAN></A><BR><INPUT name=3Dtag=20
+      onfocus=3D"if(dhtml()) tag.value =3D '';" size=3D8 style=3D"WIDTH: =
+115px"=20
+      value=3D"- Enter a tag name -"><INPUT type=3Dsubmit value=3DGo!>=20
+      <BR></DIV></FORM>
+      <DIV align=3Dleft><B>General Interest<BR><IMG alt=3D---- =
+border=3D0 height=3D1=20
+      src=3D"http://www.ashleybrown.co.uk/yline.gif" =
+width=3D145></B><BR><A=20
+      href=3D"http://www.ashleybrown.co.uk/updates.asp"><SPAN=20
+      onmouseout=3D"showdesc('')"=20
+      =
+onmouseover=3D"showdesc(dhtml()?Descs[this.innerHTML]:'')">Updates</SPAN>=
+</A><BR><A=20
+      href=3D"http://www.ashleybrown.co.uk/links.asp"><SPAN=20
+      onmouseout=3D"showdesc('')"=20
+      =
+onmouseover=3D"showdesc(dhtml()?Descs[this.innerHTML]:'')">Links</SPAN></=
+A><BR><BR></DIV>
+      <SCRIPT type=3Dtext/javascript>
+      <!--
+      if(dhtml())
+      {
+          document.write('<p onmouseover=3D"showdesc(\'Shows =
+descriptions of each item.\')" onmouseout=3D"showdesc(\'\')" =
+style=3D"background: #EEDDFF; position: relative; height: 100; =
+font-size:8pt" id=3D"urldesc" align=3D"center">Move your mouse over an =
+item to see a description.');
+          document.write('</p>');
+       }
+       // -->
+    </SCRIPT>
+      <SPAN id=3Dtndesc style=3D"FONT-SIZE: 8pt; WIDTH: 100%"></SPAN>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD colSpan=3D2><SMALL><B>Key:</B></SMALL></TD></TR>
+        <TR>
+          <TD align=3Dmiddle><IMG align=3Dmiddle alt=3DLink border=3D0=20
+            src=3D"http://www.ashleybrown.co.uk/res/link.gif"></TD>
+          <TD><SMALL>Off-site Link</SMALL></TD></TR>
+        <TR>
+          <TD align=3Dmiddle><IMG align=3Dmiddle alt=3DEmail border=3D0=20
+            src=3D"http://www.ashleybrown.co.uk/res/pmail.gif"></TD>
+          <TD><SMALL>Email Link</SMALL></TD></TR>
+        <TR>
+          <TD align=3Dmiddle><IMG align=3Dmiddle alt=3DHint border=3D0=20
+            src=3D"http://www.ashleybrown.co.uk/res/hint.gif"></TD>
+          <TD><SMALL>Additional Information</SMALL></TD></TR>
+        <TR>
+          <TD align=3Dmiddle><IMG align=3Dmiddle alt=3DDownload =
+border=3D0=20
+            src=3D"http://www.ashleybrown.co.uk/res/dnld.gif"></TD>
+          <TD><SMALL>Download</SMALL></TD></TR>
+        <TR>
+          <TD align=3Dmiddle><IMG align=3Dmiddle alt=3D"Private Area" =
+border=3D0=20
+            src=3D"http://www.ashleybrown.co.uk/res/keys.gif"></TD>
+          <TD><SMALL>Private Area (requires=20
+    login)</SMALL></TD></TR></TBODY></TABLE></TD>
+    <TD height=3D"100%" vAlign=3Dtop width=3D"100%">
+      <TABLE border=3D0 cellPadding=3D0 cellSpacing=3D0 width=3D"100%">
+        <TBODY>
+        <TR>
+          <TD width=3D20><IMG alt=3D- border=3D0 height=3D1=20
+            src=3D"http://www.ashleybrown.co.uk/t.gif" width=3D20></TD>
+          <TD width=3D"100%"><!-- Generated with Iosphere 2  - =
+http://www.ashleybrown.co.uk/iosphere/ -->
+            <TABLE=20
+            style=3D"BACKGROUND-COLOR: #ddeeff; PADDING-BOTTOM: 2px; =
+PADDING-LEFT: 2px; PADDING-RIGHT: 2px; PADDING-TOP: 2px"=20
+            width=3D"100%">
+              <TBODY>
+              <TR>
+                <TD vAlign=3Dcenter><A=20
+                  href=3D"http://www.ashleybrown.co.uk/default.asp"><IMG =
+
+                  align=3Dmiddle alt=3DHome border=3D0=20
+                  =
+src=3D"http://www.ashleybrown.co.uk/res/homesm.gif"></A></TD>
+                <TD vAlign=3Dcenter width=3D"100%"><B><A=20
+                  =
+href=3D"http://www.ashleybrown.co.uk/default.asp">Home</A></B>=20
+                  -&gt; <B><A=20
+                  =
+href=3D"http://www.ashleybrown.co.uk/dotedit/default.asp">.Edit</A></B>=20
+                  -&gt; <B><A=20
+                  =
+href=3D"http://www.ashleybrown.co.uk/dotedit/features/default.asp">Featur=
+es</A></B>=20
+                  -&gt; Advanced Code Editor </TD>
+                <TD align=3Dright noWrap vAlign=3Dcenter><A=20
+                  =
+href=3D"http://www.ashleybrown.co.uk/dotedit/features/synedit.asp?display=
+=3Dprint"=20
+                  onmouseout=3D"showdesc('')"=20
+                  onmouseover=3D"showdesc('Remove the left and top =
+navigation bars for printing or easy reading.')"=20
+                  title=3D"View a printer-friendly version without the =
+navigation bars."><IMG=20
+                  align=3Dmiddle alt=3D"Printer Version - Hide =
+navigation bars"=20
+                  border=3D0=20
+                  =
+src=3D"http://www.ashleybrown.co.uk/res/printer.gif"></A></TD>
+                <TD align=3Dright noWrap vAlign=3Dcenter><A=20
+                  =
+href=3D"http://www.ashleybrown.co.uk/dotedit/features/synedit.asp?display=
+=3Dprint"=20
+                  onmouseout=3D"showdesc('')"=20
+                  onmouseover=3D"showdesc('Remove the left and top =
+navigation bars for printing or easy reading.')"=20
+                  title=3D"View a printer-friendly version without the =
+navigation bars.">Printer=20
+                  Version</A> </TD></TR></TBODY></TABLE>
+            <H1>Advanced Code Editor</H1>
+            <P>The .edit text editor has a variety of time saving =
+features. Each=20
+            one is outlined below.</P>
+            <H2>Syntax Highlighting</H2>
+            <P>The .edit text editor features a syntax highlighting =
+editor based=20
+            on the open source <A=20
+            href=3D"http://synedit.sourceforge.net/">SynEdit</A> project =
+(below).=20
+            At the present time it will highlight the following types of =
+files:=20
+            <UL>
+              <LI>HTML=20
+              <LI>ASP=20
+              <LI>PHP=20
+              <LI>JavaScript=20
+              <LI>VBScript=20
+              <LI>XML=20
+              <LI>SQL=20
+              <LI>Java=20
+              <LI>C++=20
+              <LI>Perl=20
+              <LI>Pascal=20
+              <LI>Python=20
+              <LI>TCL=20
+              <LI>AWK=20
+              <LI>Windows Ini=20
+              <LI><A href=3D"http://haskell.org/"><IMG border=3D0=20
+              src=3D"http://www.ashleybrown.co.uk/res/link.gif"> =
+Haskell</A>=20
+            </LI></UL>
+            <P></P>
+            <P align=3Dcenter><IMG alt=3D"The Syntax Highlighting =
+Editor" border=3D1=20
+            =
+src=3D"http://www.ashleybrown.co.uk/dotedit/dehighlighter.gif">=20
+            </P><IMG align=3Dright alt=3D"Tag Assistant" border=3D1=20
+            src=3D"http://www.ashleybrown.co.uk/dotedit/tag.gif"> <A =
+name=3Dasst>
+            <H2>Tag Assistant</H2></A>
+            <P>If you are editing HTML, ASP or PHP you can benefit from =
+the Tag=20
+            Assistant. This will automatically prompt you with HTML tag =
+names,=20
+            attributes and values as you are typing HTML code.</P>
+            <P>If you select a colour attribute, .Edit will show a=20
+            colour-selection box - you no longer need to work with HTML =
+colour=20
+            values.</P><BR clear=3Dall><BR><IMG align=3Dright=20
+            alt=3D"JavaScript Code Assistant" border=3D1=20
+            src=3D"http://www.ashleybrown.co.uk/dotedit/jsasst.gif">=20
+            <H2>JavaScript Code Assistant</H2>
+            <P>.Edit also includes a JavaScript Code Assistant, which =
+will=20
+            prompt you with object properties, events and methods when =
+you are=20
+            editing JavaScript files or a script section within HTML =
+files.</P>
+            <H2>ASP Code Assistant</H2>
+            <P>In addition to the JavaScript and HTML code assistants, =
+.Edit now=20
+            includes an ASP assistant. For example, typing=20
+            <CODE>Response.</CODE> will bring up a list of all Response =
+object=20
+            properties.</P>
+            <H2>Quick Access Toolbars</H2>
+            <P>The quick-access toolbars give you common code structures =
+on a=20
+            multi-tabbed toolbar. For HTML files this means that image =
+and Java=20
+            applet tags are just a click away. The JavaScript toolbar =
+provides=20
+            code snippets such as an "if" statement. The most commonly =
+used=20
+            structures have keyboard shortcut keys assigned to them, so =
+you will=20
+            rarely need to touch the mouse.</P><A name=3Dqclips>
+            <H2>Quick Clipboards</H2></A>
+            <P>A single system clipboard is rarely enough, so an =
+additional 8=20
+            are available on the toolbar. These quick clipboards =
+(QClips) appear=20
+            as blue clipboard icons. You can store code snippets in them =
+for use=20
+            later in your editing session.</P>
+            <P>&nbsp;</P></TD>
+          <TD width=3D20><IMG alt=3D- border=3D0 height=3D1=20
+            src=3D"http://www.ashleybrown.co.uk/res/t.gif"=20
+      width=3D20></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD colSpan=3D4 width=3D"100%">
+      <HR noShade SIZE=3D2 style=3D"COLOR: #0080ff">
+
+      <DIV align=3Dcenter class=3Dcopyright><A=20
+      href=3D"http://www.ashleybrown.co.uk/iosphere/"=20
+      title=3D"Created with Iosphere 2"><IMG align=3Dright=20
+      alt=3D"Created with Iosphere 2" border=3D0 height=3D31=20
+      src=3D"http://www.ashleybrown.co.uk/res/ioscw.gif" width=3D88></A> =
+<A=20
+      href=3D"http://www.icra.org/" title=3D"We rated with ICRA"><IMG =
+align=3Dright=20
+      alt=3D"We rated with ICRA" border=3D0 height=3D31=20
+      src=3D"http://www.ashleybrown.co.uk/res/icra_aw.gif" =
+width=3D88></A> <A=20
+      href=3D"http://jigsaw.w3.org/css-validator/"><IMG align=3Dleft=20
+      alt=3D"Valid CSS!" =
+src=3D"http://www.ashleybrown.co.uk/res/css.gif"=20
+      style=3D"BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-RIGHT: 0px; =
+BORDER-TOP: 0px; HEIGHT: 31px; WIDTH: 88px">=20
+      </A><A href=3D"http://validator.w3.org/check/referer"><IMG =
+align=3Dleft=20
+      alt=3D"Valid XHTML 1.0!" border=3D0 height=3D31=20
+      src=3D"http://www.ashleybrown.co.uk/res/xhtml1.gif" width=3D88> =
+</A>=A9 Ashley=20
+      Brown 2000-2002. Questions, comments or problems? Contact <A=20
+      class=3Dcopyright =
+href=3D"mailto:webmaster@ashleybrown.co.uk">Ashley Brown</A>=20
+      <BR>67085 visits since 12th August =
+2000.</DIV></TD></TR></TBODY></TABLE><!-- Generated with Iosphere 2  - =
+http://www.ashleybrown.co.uk/iosphere/ --><!-- Generated with Iosphere 2 =
+ - http://www.ashleybrown.co.uk/iosphere/ --></BODY></HTML>
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/res/doteditat.gif
+
+R0lGODlhQAE8APcAAAAAABAQEBApShgYGBg5WiEhISFCYyFKcy0tLT09PUpKSlZWVmNjY2tra3Nz
+c3tzcxBChBRarBhrzhiU5yFz5yF77yGE9wCE/1Jwn4yHhymc506g5mO973PG7ymE94TG9/9rEPdr
+GP9rGP97KaVjOaVaQs6MY5yEa5ycnKWgnKWlpbGxsb29vcbGxt6Ua/fWvc7OztbW1v/n1t7e3ufn
+5+/v75zW963e98bn/87n/97v/+f3/+/3//fv//f//////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAQAE8AEAI/gA/CBxI
+sGBBGzcSJszBMMeOhgx/SJxIcYfFHRQzatzIsaPHjyBDihxJsqTJjgBSqlzJsqXLlzBjypxJk+UH
+DTg13My5E+cHG0Bt5JhAdMINiDuCClWaIyPSjjIuVLBAtSrVC1arYs1qVUKKGhJRKFiJogXYGjUW
+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
+ki75kjAZBZOTEhAAADs=
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/t.gif
+
+R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAIBTAA7
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/greenline.gif
+
+R0lGODlhAQABALMAAADAAP//////////////////////////////////////////////////////
+/////ywAAAAAAQABAAAEAhBEADs=
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/res/searchico.gif
+
+R0lGODlhDgAQALMAAAAAACkhWlJKta2l3sbGxv///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACH5BAEAAAQALAAAAAAOABAAAARJkBBBa5VYlM3LENjUcUMBStpYACyACkA5Dm66yiRgb3FH
+7zefbtTLTWQ6AY6GYikpMqZoE6iUpMqBtgqVtloTCitEDrvKoTEhAgA7
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/orngline.gif
+
+R0lGODlhAQABALMAAP+EAP//////////////////////////////////////////////////////
+/////ywAAAAAAQABAAAEAhBEADs=
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/res/t.gif
+
+R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAIBTAA7
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/redline.gif
+
+R0lGODlhAQABALMAAP8AAP//////////////////////////////////////////////////////
+/////ywAAAAAAQABAAAEAhBEADs=
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/blueline.gif
+
+R0lGODlhAQABALMAAAAA////////////////////////////////////////////////////////
+/////ywAAAAAAQABAAAEAhBEADs=
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/grline.gif
+
+R0lGODlhAQABALMAAK2trf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACwAAAAAAQABAAAEAhBEADs=
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/tealline.gif
+
+R0lGODlhAQABALMAAGOUrf///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACwAAAAAAQABAEAEAhBEADs=
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/yline.gif
+
+R0lGODlhAQABALMAANbeUv///////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACwAAAAAAQABAEAEAhBEADs=
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/res/link.gif
+
+R0lGODlhCQAJALMAAAAAAAAxnDFj/2NjY2Oc/4QA/5zO/8bG////////////////////////////
+/////yH5BAEAAAgALAAAAAAJAAkAAAQYEElUpqX10pOL9we3hST3gaJVpGp2uUgEADs=
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/res/pmail.gif
+
+R0lGODlhDQAPALMAAHhqynVnyb225szH67Co4P////z8/ru05FpKvgMDBQAAAAAAAAAAAAAAAAAA
+AAAAACH5BAEAAAUALAAAAAANAA8AAARMsMiJprXIpIuNCRuXeV9IecIngCcprACLZO8axECSZEiw
+CjjEYefpBY6AzHBEmDkPg6WhSRoYhEuqwbq9LkfWQfi6O5jP6KFuzWZHAAA7
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/res/hint.gif
+
+R0lGODlhEAAQALMAAGsA1nMI1oQA/4Qp3pQh/9al/+/O///3////////////////////////////
+/////yH5BAEAAAgALAAAAAAQABAAAARAEEkpap14imnMzhTXeeCHjEZxmOGJFggbu++MbWgKy997
+rCXJSCXTTGAE0G1gUd4IA6ZTAwgQihmLdEq5cI3KCAA7
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/res/dnld.gif
+
+R0lGODlhEAATALMAAAAAAACEAADOAHNzc4QA/5SUlJycnLW1tcbGxsbG/97e3v//////////////
+/////yH5BAEAAAsALAAAAAAQABMAAARRcMm5iKWYkkSy352HgeLIlZUFquKWvGfpxiiJTqE37HzP
+S4ODcEgUDgCD26JwHCAQB6j0IAgcmEhFdAsdGrADhc93bSJQZeR4DZAA3vA4XBIBADs=
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/res/keys.gif
+
+R0lGODlhEAAQALMAAAgICDkxa1JKpVJSrWNaxqWc57217+fn////////////////////////////
+/////yH5BAEAAAgALAAAAAAQABAAQARWEEkJ6ryXGAKCJ4EASARyEBxnGMGIIUTBvcFcIiPoudnB
+wgKBQfSCGQY8RC3EQyWLsJTzCTMZOspgK4M4BrobwRZD8CWZZNNMsiSS1M+lq3SiKpP2SwQAOw==
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/res/homesm.gif
+
+R0lGODlhEAAQAPcAAP///4Jczo1r04pn0f79/6uS3hoPMUkqiGQ5u1w1q7eh40Ald87A7Jh51+fg
+9ndOyg0IGHZNyfz7/4pn0Zp82FUxnbmk5Gg8wtfK8GxAxkImfJV11Y9t025Dx25Dx3FHx1Mwmt/V
+81UxnbWf4////7Oc4v///08tkzAcWl42sHxUzObe9sKw6GxAxtPG7sKw6JJx1bSe4sy9600skKSI
+3M2+7Gg8wu7p+Y9t03lRy4Zi0AAAAOzm+KeN3dnN8d/V8/Hs+se26lYxoWk8xHdOyrij4+be9vLu
++t/V87Wf4zQeYnZNyca16d3S8lcyovj1/eXd9Usri0kqiHRKyL2p5dnN8V42sFcyorGZ4dbJ73lR
+y+3o+L2p5dzR8WM5uf79//79/6GF29zR8VQwnNbJ76eN3fTx+/v6/sGv50srjbun5V83saaM3MSy
+6Mi46vXy/G1Cxopn0ZNz1SIUQCcXSdrP8eDX8142sN/V88q66vv6/p6B2YBaztPG7pNz1f///0Mn
+faGF2/Xy/IZi0Lun5Vw1q8i46qGF24to0mQ5u3hQyqqQ3oll0eXd9Z1/2Y1r0/z7/8a16WQ5u6SI
+3Mq66n5XzcGv59TH77GZ4TQeYPTx+6WK3IJczq2V3/f0/Pr4/u3o+GQ5u5Jx1dLE7jwjb5Nz1fDr
++Wc7wcSy6E4tkb2p5ZNz1cGv593S8uHY9JNz1fv6/p6B2ezm+My9600skAwHF9jM8IVhz+jh98Gv
+50ImetbJ7/Xy/GE4tKqQ3oZi0INezmc7wcy962I4ttbJ7/n3/eDX85h519PG7su763lRy/z7/1s0
+qm1Cxt/V87CY4KWK3KyT36WK3PLu+vv6/pd41nBFx/Xy/HZNyb+s5run5Wo9xayT3zcgZvLu+kAl
+d62V31IvmaCE2qyT30kqiHtTyzYfZfn3/XVLyUAld5h518a16UImetLE7rSe4ufg9ube9l01rUYo
+gtHD7dLE7rWf47Oc4rSe4tbJ7zYfZcGv58Sy6Lun5b2p5ToibLmk5CH5BAEAAAAALAAAAAAQABAA
+QAi0AAEIHEjwmwqCADC5IDRoELVrslZQWUSMTB4OAjfsCRNmz4Y4G55cUwcHYZkYMRzgqfgggCpM
+lSgQ3LAhjK8wH+MgHMeRZhyHTyLiaUVBJqY8uXIRkiVrqA0befKowkgQHIcA7RBqBUBzTxsA36xs
+pckRp0YLyWZu7BlnDy+IK/jQE4iJ7SBcT0ytWNGqFRmjLmqgzLv3qcWLAmvkehEjYt+nUqcSjBZj
+qEUOHCiA28p5YEAAADs=
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/res/printer.gif
+
+R0lGODlhEAAQALMAAAAAADkxa0pClGtjnHNjvYR7xq2l3sa958bGxtbW1tbW797e3u/v7/8A////
+/////yH5BAEAAA0ALAAAAAAQABAAAARfsMlJq6Uj3zoYc9o2LJ7jLADADQnpoasjIMhiq1PmKMdB
+zAiAQSBoDHYKQqB3EBCERMDR1Pv1DISsQOowGKjV7G97vH4LBbGTDGB60eInrpG6wuWXOjq1maTm
+fYENEQAAOw==
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/dotedit/dehighlighter.gif
+
+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
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/dotedit/tag.gif
+
+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
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/dotedit/jsasst.gif
+
+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
+hLGoGvwVHNzBT/HBIFwUEQAAADs=
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/res/ioscw.gif
+
+R0lGODlhWAAfAPcAAAAAAACExjk5OXNzc3t7e5ycnMbGxt7e3vf39/+EAP+MEP+UIf+cKf+cMf+l
+Qv+tSv+tUv+1Y/+9a/+9c//GhP/GjP/OlP/Wpf/Wrf/etf/nxv/nzv/v1v/35//37////wAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAWAAfAEAI/gAJGBhI
+sKDBgwgTKlzIsGHCAgIRfJhIsaLFDwEoZsQYoOPEjhk3ggz5sSLJkxhLprzIkqKBAREtakhAk4JF
+DDRpMugwscOCnAkUfHCgM6cCDhMpBM2JoecDoDsnEk0AISeDDx2eWuXpEqYBiS3Diq2oNejYs2jF
+voyZtm3ajWLhrnQ7ce1Xlh00cKWLNq8GvoA/2AV7MYFNihUSNMXKQOiHBw8o4vyrNGoHBgl4KqW4
++XHUnn8nzgxN8cFnrKQFez3gsLXr17AVeiUcuLZtuoPpejwJ1yPHj719qxSZcrfwtrnd7tboG+Tw
+5sfnEi+uEvlsvHpvh+0QIYH2tMkL/h+e+GBBxQsJkM5MwODBhNBK93ZIUOFDZ/vePyhoQKE/hapI
+fTDTeBPt599/6XXFFmIH9hfgBxc84MAEe2WAQQQOOFABV/FVQMEFXHHQX30iUlAfVhVk+AAFSHXQ
+IIsUdZCiAys+qNqC3+WoY10DCADAj0AGKeSQRBZp5JFIJmlkRAg06eSTUEYp5ZRUVmnllVAecN2O
+bcmFlpfW4cglmCa9VR1uW5oJ3EpykcTmmxoNRx2cYd7VZZxzvTmdnCaFRNx0ZKqVJpeE1hZeRaMV
+OhRNil50qGgaZGeRjBRkMOkFJmrQYqQdYAoiZ5l5aOMHJVoaI6cybkhRqY4OCqlhpohSxVMG+yWV
+wF9Zeccde0hx0JhmCTzQQVaOSZCABbPWipUFNAmLgQQfGIvsB7Q2UNGjFMFKkQNXUZTBraJNwC17
+tsoH632dAQVUaIlWpG5OpD2qwLv1XZbAAlMtRpQCGbIH7Lw0KWBpYmYRLBQH82b4U3oc0DsRwgko
+TNOD2Op4X6NnVfxdBv6diLGgYn4sMktrFTDAySinrPLKLLfs8sswx9xyQAAAOw==
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/res/icra_aw.gif
+
+R0lGODlhWAAfAMQAAAAAABAQECEhIS0tLUJCQlpaWnNzc4SEhCZXn0dvr2SGu4uSnqmpqXiWxpas
+0bW1tcbGxs7OztbW1rnG4r3O3sbO58rW59be797n7+fn5+fn9+/v7+/v9/f3/////wAAACH/C05F
+VFNDQVBFMi4wAwEAAAAh+QQFyAAAACwAAAAAWAAfAAAI/gAXQBhIsKDBgwgTKlzIsGFCBgwgZJhI
+saLFixgzatzIsePFCAcEZujQYQNJkyVPqkzJEqXLlS9bwpwps2bMlxkeHIg40oPPn0B9OkCAQMGG
+oEiTKl3KtKnSnCEldmg6gSjRBE6zat3KVIJOnlOZKrBKFAPXs2idQhUZdmkDsgjMZpUA4QGEpXbx
+3s2rlG9SrzulNqVAVkFbpwM+ZFh64ANjx40fL10rmGqCBA00cCXgWLLSyJE/d04KFSzXDg1SN1Cg
+mkNSzkEhEjjgofGBAbQzFGBAoDZkx7p5e8gwAAJspYDZ/qSwWnXz1Kwxbz3+88MB0I4fKMbt4cMC
+7B64/n9gYKC3gdFIS1fW6sDBYabUR0pYUOC3Bwgf8BewKwH8h/0SEdBbaKTppJxPCiSYgIKsAXUB
+BhVYYEGEEVrw2mgFhMcAePhJEEBvPoH34U8C+rYUYKb5BJdVCUxAgYsOKEBBBTPWOEFSidl1AAHa
+HVBff4rt6MF5CywAkn1EGqmdboq95xNlPfn0ootUVvlig3PVpWUEtTGQwQF0RcDAAz99d1ddOUEg
+gQdm+mQmmch9tR6NLr5IAQUW/uTABWkF5WSfahm4XgIrIoDVTx044JxqDgDqqFMorufAZZRSmiCD
+jz4A55MPLPZogVFF6dNUpHoQVljt/TkdiGt2R9un/khFKqoHkyqw4IINOLgBBhpgwCsGrqElQQFT
+WQdreoLOasGKLU7gbIwOTBBttHIhVZ4E1wpUgAESCDDAAt0VMMAAx/4k63sWOKvuuhMk6OdSC3xw
+pFcelFhidwbgd1e5UP55wb8WmIUqn1sFUAAEBt9lL4jWaQeBqmmdmxRhVx0mbQMOBMtUAQHo1nG9
+vQlY7AH6/jRRBxN50CpX/SqVKFHNJQizZk490JvNPtkrAAOuOhwWAQF48KEExnIlcblJ7btmBnVt
+8KUEdD0QprlkSl2bp1u1jPTWj6pHkQQZgC122GSPbXbZaJ+tdtpsr+1224JGoOncdNdt99145633
+Kd58373ThtcFLvjghBdu+OGIJ6544QaUJ+DjkEcu+eSUV2755ZhXHhAAACH5BAWQAQAALCEABgA1
+ABYAAAj+AAEI9EDQg8CDCAkiXKhQ4cKDDh8+LChxoMGKDS9KjFgRosaNHxka5Ciyo4QMCw6oPPAg
+oYQDBGIekLAhAsqVBwColDCSYsEHGTpUzCBwwIcPCxBmIPBhAAQAGRgI+AChgwejAh8cCNA0Q0aF
+AnJWlCCQKVWERglkzCAAAkGzbj08+ACgQMG7ED4EINoRAFyhfo8G7QlgQVWDRw8DoPshIkGsDPoG
+pkowwtEBd++S9QBXIePMHiRMBSAg5MK/HgwcNQA6Iuq5HwoAoFgXAtezD/nCLXs0p+mDZg1v7bow
+g+wDlyWSnVx1stiOZgtM/UBA4oGnGY5+CFqcN+4CR+3CfqQNN+/RlkqdPoAQ/eHyvwBgY75I/+Jf
+1Xo3IFxQYCX+vd0xd5BR2wlFEU/eYTfdAAhVBwBgBD4n0HuJWWUQV/MVJIFab1UIgATaJVWYAQst
+cJQA3WVw2wF3GdeUYQ8UUIBXHqi4GmDIHbUAWwTwlZV2BgAmUAbrFRmXQhIwoBIDm9XYkpEHrQeB
+kRDwJcGUWC4H0l2zjWRVl7SB2ZBkZHZpppk+ZWaRmL+VmdBAbLamUUZnumnnnXi6l+eedmYQEAAA
+Ow==
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/res/css.gif
+
+R0lGODlhWAAfAPcAAP///3OUxwxHnTZkrlR8ut/m8u7u7kxMTK6urp2dnb6+vrHD4KG32ZKr0yws
+LAAAAH19fRwcHO7y+CFVpsHP5o2NjQwMDBdNomSIwQtEnY6n0s7Ozl1dXdDb7CZZqIOfzUVwtDw8
+PGx6kW1tbczMzP/MZmOlxgBmmRh7rUqUvefv90pKSr29xpmZmbXW54S11jMzM4SEhCMcDg8MBlqc
+vWZmZu+/X4ltNjwwGG1XK9+yWa+MRkw8HsCZTM+lUltIJCwjEQwJBJx8PjGMtTk5ORwWC8OcTuu8
+XpkAAGYzAPTDYZUAAMyZM7mUSuG0Wt6xWHtzZiggEABmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBm
+mQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBm
+mQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmQBmmf///wAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAAWAAfAEAI/gBJCBxI
+sKDBgwgTKlzIsOCfhw9JAACwQICAAhMZWJw4sYHFjxYHADDg4IFJCBEgcCzBsqXLlzBjyox5xMgK
+iBE5TrwggOcHAAM+YtAJAINFCRuIEmUp5EEQISV8AHmQowQOqix5PMBR4sYDHixzOJ3ZUgiSs2iR
+5FTKtq3bpWTjxmWSFq2SEjVv4pT4tq/fiXIDC3aZF+cfvgAKWFwA4MPHDkUFiFQs4OfEBwbcsrQx
+9UHnIDpK9DAZ5OqDHiV0BHFqGmrgmknQrtVJQADjiUYZAAAhmYJjASAARKgw0cCBByoBDw5Mty4S
+s871QkT8t7rS5djJFt5rvTvc7OAJ/ts0TN279fDoWW6fzrE2AY48h04UkEEDAAk83wNwYCEpAA4R
+6JQeeuvN1pgAHkhgUQCSdWARZLx9RAEAIbyVFVYw7WASaT/YENWGJvHgg2A3OIdEeRX1NJGDGxGl
+kQAiKGWAAiu1tEMOOPzgGks+3IADDjegxpION/CAQw47lHWWEHcxZSJ3RBWg30QSiDTRArUheBsA
+CERgEgeZ1TggTNCZeJYT40FpXndjxvWEXS0VeNgKdNZp55145qnnnnz26SedRERB3pretZmdnOUR
+2peh2CGq6HmMDuYoAAxaCYB7OlEGUovGHYAAAAnQqFykr6XJ3nwC6HbfYu0JMAEF/hQwKMCEFTxg
+wQFePpCAmKTGNSkAGl2wokUeXHnUgRddRlxxoo5qg48/5hAaSzsYiQMPQkb1w488JClYYWoZGFQA
+QPUkQAMAeHDupcROuJ+FXTk1og1X/RBvEEn6CJVXD9xQwg447OhriWkdphOLjg1AmWPFckQBT8Et
+2xZLP2Ao2g1Q9YhjESGmdsO2nQERWJkFl2fUg5R+tGVGFrmrGcUgeuahhjEn6cNqIFbFEsZkPmng
+qgLIB0B+lHqAUWQCJLCrThyMwKuhJCNxV9RILDEoUR5JwJFGGBXAE0iQIfBABCGY5ICApFJtYhPS
+/TzR0RzBTSVk1fXKUnMmKvHrMaOL2n13XU3uzffLfrP0xA1NqmdqTiw07vjjkEcuueRGVG755Zhn
+rvnmmscARdt/BAQAOw==
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.ashleybrown.co.uk/res/xhtml1.gif
+
+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
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.ashleybrown.co.uk/ab.css
+
+P {
+	FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: =
+8pt
+}
+BODY {
+	FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: =
+8pt
+}
+TD {
+	FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: =
+8pt
+}
+A {
+	FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: =
+8pt
+}
+INPUT {
+	FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: =
+8pt
+}
+SELECT {
+	FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: =
+8pt
+}
+INPUT {
+	FONT-FAMILY: Tahoma, Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: =
+8pt
+}
+P {
+	COLOR: black
+}
+BODY {
+	COLOR: black
+}
+TD {
+	COLOR: black
+}
+A {
+	COLOR: black
+}
+BODY {
+	MARGIN: 0px
+}
+H1 {
+	FONT-SIZE: 18pt
+}
+H1 {
+	COLOR: #000099
+}
+H2 {
+	FONT-SIZE: 14pt
+}
+H2 {
+	COLOR: #8000cc
+}
+H3 {
+	FONT-SIZE: 12pt
+}
+H3 {
+	COLOR: black
+}
+H3 {
+	FONT-SIZE: 10pt
+}
+H3 {
+	COLOR: black
+}
+A {
+	COLOR: #0000cc; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #0000cc; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #993399; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #6666ff; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #6666ff; TEXT-DECORATION: underline
+}
+.copyright {
+	FONT-SIZE: 8pt
+}
+.rightpane {
+	FONT-SIZE: 8pt
+}
+.date {
+	COLOR: #666666; FONT-SIZE: 7pt
+}
+.topnav {
+	COLOR: #808080
+}
+.sitemaph {
+	COLOR: purple; FONT-WEIGHT: 700
+}
+.gbheader {
+	BACKGROUND-COLOR: #0080c0; COLOR: white
+}
+.hitshade {
+	BACKGROUND-COLOR: #eeeeff; COLOR: white
+}
+.ticker {
+	COLOR: #0000cc; TEXT-DECORATION: none
+}
+
+------=_NextPart_000_0000_01C1A8CB.5A1BE6D0--

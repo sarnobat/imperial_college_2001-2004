@@ -1,0 +1,206 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 1</title>
+<link rel="stylesheet" href="file:///I:/style.css">
+</head>
+
+<body>
+
+<b>
+<p class="title"align ="center">
+Networking in Telemedicine
+</p>
+</b>
+
+<h2>Introduction</h2>
+<p>
+Telemedicine requires networking. We shall concentrate on networking in telesurgery particularly as this demands more networking technology. The networking must have the following characteristics:
+</p>
+
+
+<p align = "center">
+<img src = "bubble.jpg" width="496" height="259">
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The two broad categories of communications in telemedicine are analogue communications and digital communications. A wide variety of network options are available for telesurgery. The advantages and disadvantages of the methods are discussed briefly below.
+
+<h2>
+ANALOGUE COMMUNICATIONS
+</h2>
+
+<ul>
+
+<li>	<b>Domestic telephones: </b> The electrical connection between the home and the local exchange is a pair of copper wires with an analogue bandwidth of about 3 KHz. Modemsare used to transfer data across analogue telephone lines. The max. data rate is 28.8 kbit/s. This is sufficient for voice telephony but inadequate for telesurgery. 
+</li>
+
+
+<li>	<b> Cable TV Telephone services: </b> Cable TV companies offer telephone services to people living in their operating areas over copper wires which run from street multiplexers to each home in the area. The cable used for connection to the home is called the ‘gemini-pair’ because it consists of a co-axial (for television) and a copper pair (for telephony). This modem is the same as the domestic telephones so due to the slow data rate transfer, this is also a limitation for telesurgery. 
+</li>
+
+
+Multimedia services offered by cable TV companies have sufficient bandwidth for telesurgery applications. The Multimedia services provide cable TV subscribers services such as video-on-demand, near-video-on-demand, home banking/shopping, teleworking and interactive games. Cable TV networks are not ubiquitous. This limits its suitability to telesurgery.
+
+
+
+<li>	<b>Cellular telephones: </b> using cellular telephone transceivers to provide communications bandwidth required for telesurgical equipment. The main advantage is the ubiquity of coverage. The PCN (personal communications network) transceiver operates successfully even when the signal is impaired or weak by interference. This is because the PCNs employ digital modulation in which error detection and correction coding are incorporated in the transmitted signal. However there are three disadvantages with this system for telesurgery:
+</li>
+<ol>
+1)	Congestion at peak times can occur so there can be difficulties finding a free channel in which to make a call.
+</ol>
+<ol>
+2)	Cellular handsets have limited capacity for carrying data.
+</ol>
+<ol>
+3)	Cellular telephones can ‘drop-out’ when a call is in progress.
+</ol>
+
+GSM (Group standard for mobile system) is a new technology emerging but the drop-out problem stated above also applies equally for GSM terminal so cannot be used for telesurgery applications. 
+
+<li>	<b> Fixed wireless access: </b> There are only two systems presently for this. Both systems consist of a single base station sending calls to and receiving calls from all the homes in the coverage area. Each home has a small dish on the roof and no wires in the home are needed. One system used CDMA and the other uses FDMA. The radio transmissions are more susceptible to interference and so data loss than any other medium. Therefore this is inappropriate for telesurgery applications.
+</li>
+<li>
+<b> ADSL: </b> this transmits data from the local exchange to the home over existing copper telephone wires. Data transfer rates are very high due the asymmetric transmission. There is a distance limitation presently of about 1km. ADSL requires complex circuitry and is therefore expensive to implement. However the cost is being reduced to a commercially acceptable level. Unfortunately once the cost is reduced, more appropriate technologies will be available commercially. ADSL is therefore not recommended for telesurgery.
+</li>
+
+<img src = "network2.jpg">
+
+
+
+
+<h2> DIGITAL COMMUNICATIONS 
+</h2>
+<li><b> ISDN (Integrated Services Digital Network): </b> Conventional telecommunications networks are almost digital except for the final portion from the local exchange to the home. Therefore analogue-to-digital conversion is needed at the local exchange. ISDN provides a digital connection from end to end. Connections are set up on a call-by-call basis. The data carried can be a mixture of voice, image, text and computer data, which are required for telesurgery. There may be small differences in the interpretation from country to country; however there is a standard terminal available to make networks in different countries compatible. The data rate is high and the error rates are low so ISDN meets the network requirement for telesurgery so is appropriate technology.
+</li>
+<li>	<b> ATM (Asynchronous Transfer Mode): </b> This is a means of digital communications that is capable of very high speeds. It is used for the transport of voice, video, data and images. ATM is an international Telecommunications Union-Telecommunication Standardization Sector (ITU-T) standard for cell relay. Information is transported in small, fixed sized cells. Information is divided among these cells, transmitted and then re-assembled at their final destination. Therefore on this system, multiple items of data can be transmitted to one user simultaneously and independently.  Delays in video transfer do not affect audio transfer. As the data can be transferred at different rates, ATM is appropriate for telemedicine applications. 
+</li>
+<li> <b> SONET/SDH (Synchronous Optical Network/ Synchronous Digital Hierarchy): </b> This is the international standard for synchronous data transmission. The three main advantages of this network option are:
+</li>
+
+<ol> 1)	International compatibility </ol>
+
+<ol> 2)	The ease with which a single voice/video/data channel can be inserted into or extracted from the network. </ol>
+
+<ol> 3)	The provision made in the standard for the network OA&M (operation, administration and management). </ol>
+
+There are variable transfer rates and ample and flexible bandwidth. There is less equipment and self-rerouting in the event of a fault. As network integrity is being improved and national networks around the world are making this a standard system, this is ideal for telesurgery.
+
+
+<h2> NETWORK OPTIONS FOR TELESURGERY
+</h2>
+
+The network must be digital from end-to-end so that data can be protected against errors. 
+
+<br>
+</br>
+<br>
+</br>
+<b> LAN: </b> The transmission medium LAN using Ethernet protocol has a capacity of 16Mbit/s. This bandwidth is shared between users of the network so that the network is sometimes unavailable to different users for a few seconds especially when other users are transferring large quantities of data. Token ring networks with the same bandwidth have predictable delays and so can be used for telesurgery. For WAN, token ring networks are connected by FDDI (fibre distributed data interface.) FDDI networks can be designed for metropolitan or local area use. They carry synchronous and asynchronous data at 100Mbit/s. FDDI is appropriate for telesurgery in a metropolitan area. Synchronous data such as voice and video signals can be sent as synchronous FDDI data. Robot commands and images can be sent as asynchronous FDDI data. Each data can tell other stations what minimum delay (token rotation time) it can tolerate.        
+<br>
+</br>
+<br>
+</br>
+<b> ISDN: </b>  presently, this is one of the best options available. Its advantages are:
+
+
+<ol> 1)	Provides a digital connection from end-to-end so data can be protected against errors.
+</ol>
+<ol>
+2)	Transfers data to and from places with different bandwidth requirements. 
+</ol>
+<ol>
+3)	It has an acceptable end-to-end delay and is one of the most reliable networks available. 95% of periods of 60 secs. are entirely error free.
+</ol>
+
+A single basic-rate connection has a data rate of 128kbit/s, which is sufficient for transmitting robot commands. One more line is needed for a speech and video connection, assuming that a telesurgery robot has its own line. The most demanding task is the transfer of medical images such as CT and MRI scans at high speed.  The transmission speed can be improved by:
+<li>	Lossless compression techniques can reduce the size of data to as low as a third.
+</li>
+<li>
+	Transmitting images over more than one ISDN connection.
+</li>
+
+ISDN plug-in cards are easily available for interfacing PCs to the network. 
+<br>
+</br>
+<br>
+</br>
+<b> ATM: </b> This option satisfies all the characteristics required for networking in telesurgery above. Therefore ISDN is likely to be the best option available for telesurgery in the near future as ATM is an emerging technology and direct access to ATM networks will not be available commercially for the next few years.
+<h2>
+SAFETY MEASURES IN NETWORKING IN TELESURGERY
+</h2>
+
+<li> Digital transmissions are protected against errors by appropriate coding. The receiver can detect errors in the received signals and corrections can be made. For example, retransmission. The data rate with robot commands is very low and so there is scope to protect each message with error-protection coding. The receiving end can echo the signal back to the sending end a specific number of times in succession. If correct, the command is executed at the receiving end.
+</li>
+<li>A power cut occurring in the network can be prevented. Battery array and ‘hot standby’ generators take over the task of powering the network if mains power failure occurs. The switch of power supply occurs before the power falls below the min. level of power required for operation of the network. Therefore the user would not notice a power cut
+</li>
+<li>In SONET, and foreseen faults in the network are acted upon by rerouting the data being transferred via different routes which have healthy nodes. Rerouting is done very quickly so does not disrupt the transmission rate significantly.
+</li>
+
+
+
+<h2> CONCLUSIONS
+</h2>
+
+Considering all the network options, ISDN seems to be the best choice for telesurgical operations. It is reliable, has an acceptable delay, multiplexing of various data rates and low error rates. FDDI computer networks are also suitable but can only be used in local areas and are not as easy to install as ISDN.  
+ATM is more reliable, transfers a wider range of data rates and introduces fewer errors. It is likely that this network will be used for telesurgical operations in the future. 
+ 
+
+
+
+
+   
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

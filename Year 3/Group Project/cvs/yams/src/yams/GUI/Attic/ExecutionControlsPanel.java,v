@@ -1,0 +1,217 @@
+head	1.6;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.6
+date	2003.12.04.13.06.45;	author ajb101;	state dead;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.04.02.48.12;	author ajb101;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.12.03.16.59.35;	author ajb101;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.12.03.13.51.14;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.12.03.01.59.34;	author ajb101;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.12.02.14.47.15;	author ajb101;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@/*
+ * Created on 21-Nov-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+package yams.GUI;
+
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.*;
+
+import yams.*;
+
+
+/**
+ * @@author ss401
+ *
+ */
+public class ExecutionControlsPanel extends YamsPanel {
+
+	// window elements
+	JButton butRun;
+	JButton butRunComplete;
+	JButton butStop;
+	JButton butSkipNext;
+	
+	public ExecutionControlsPanel(String windowName, YAMSGui controller) {
+		super(controller);
+		
+		this.setLayout(new GridLayout(2,2));
+		
+//		JPanel topButtonPanel = new JPanel();
+//		topButtonPanel.setLayout(new BoxLayout(this, BoxLayout.LINE_AXIS));
+//		JPanel bottomButtonPanel = new JPanel();
+//		bottomButtonPanel.setLayout(new BoxLayout(this, BoxLayout.LINE_AXIS));
+
+		
+//		buttonPanel.setMaximumSize(new Dimension(500000, 80));
+//		buttonPanel.setMinimumSize(new Dimension(0,80));
+		
+		butRun = new JButton("Run");
+		butRunComplete = new JButton("Run to Completion");
+		butStop = new JButton("Stop");
+		butSkipNext = new JButton("Skip Next Instruction");
+		
+		add(butRun);
+		add(butRunComplete);
+		add(butStop);
+		add(butSkipNext);
+		
+		
+	}
+	
+	/**
+	 * The following listener is to handle clicks on the Step Forward button.
+	 * @@author ss401
+	 *
+	 */
+	class StepForwardListener implements ActionListener {
+		public void actionPerformed(ActionEvent a){
+			// YAMSGui.getCodeFrame().stepForward();
+		}
+	}
+
+}
+@
+
+
+1.5
+log
+@lots of gooey updates
+@
+text
+@@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d30 1
+a30 1
+		super(windowName,controller);
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d9 2
+a10 4
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+d12 1
+a12 2
+import javax.swing.JButton;
+import javax.swing.JLabel;
+a13 1
+import yams.processor.*;
+d23 6
+a28 3
+	/**
+	 * 
+	 */
+a30 1
+//		setTitle("Execution Controls");
+d32 1
+a32 1
+		this.setLayout(new GridLayout(0,2));
+d34 8
+a41 3
+		JButton a = new JButton("Run to Completion");
+		JButton b = new JButton("Run to Breakpoint");
+		JButton c = new JButton("Step Forward");
+d43 4
+a46 2
+		StepForwardListener a1 = new StepForwardListener();
+		c.addActionListener(a1);
+d48 4
+a51 10
+		JLabel al = new JLabel("");
+		JLabel bl = new JLabel("<html>Please check box to specify breakpoint</html>");
+		JLabel cl = new JLabel("<html>Run the next instruction</html>");
+				
+		this.add(a);
+		this.add(al);
+		this.add(b);
+		this.add(bl);
+		this.add(c);
+		this.add(cl);
+@
+
+
+1.2
+log
+@lots of new GUI stuff :)
+@
+text
+@d30 2
+a31 2
+	public ExecutionControlsPanel(int width,int height, YAMSGui controller) {
+		super(width,height,controller);
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d47 6
+a52 6
+//		getContentPane().add(a);
+//		getContentPane().add(al);
+//		getContentPane().add(b);
+//		getContentPane().add(bl);
+//		getContentPane().add(c);
+//		getContentPane().add(cl);
+d64 1
+a64 1
+			YAMSGui.getCodeFrame().stepForward();
+@
+

@@ -1,0 +1,870 @@
+head	1.15;
+access;
+symbols
+	yams-final-19-12-03:1.15
+	yams-release2-17-12-03:1.14
+	yams-release-17-12-03:1.14;
+locks; strict;
+comment	@# @;
+
+
+1.15
+date	2003.12.19.12.03.52;	author bmc01;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.12.16.16.16.42;	author bmc01;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.12.15.21.37.06;	author sw00;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.11.03.17.02;	author ajb101;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.09.21.00.22;	author ajb101;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.04.18.50.32;	author sw00;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.12.03.18.15.12;	author sw00;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.12.03.17.46.15;	author sw00;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.12.02.14.36.41;	author sw00;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.12.01.15.31.09;	author bmc01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.12.01.15.28.06;	author bmc01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.23.21.43.12;	author sw00;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.14.15.03.49;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.14.14.35.42;	author bmc01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.50;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@/*
+ * Created on 26-Oct-2003
+ *
+ */
+
+package yams.processor;
+import java.io.PrintStream;
+import java.util.TreeMap;
+import yams.*;
+
+/**
+ * 
+ * @@author bmc01
+ * The Memory Manager class simulates the memory for the MIPS processor.  This is done using treemaps to increase performance.
+ * 
+ * 
+ * 
+ */
+public class MemoryManager implements MemoryManagerInterface
+{
+  private int reserved_start_addr;
+  private int text_start_addr;
+  private int data_start_addr;
+  private int maximum_addr;
+  private PrintStream verbose;
+
+  private TreeMap reserved_map = new TreeMap();
+  private TreeMap text_map = new TreeMap();
+  private TreeMap data_map = new TreeMap();
+  
+  private YAMSController controller;
+
+/**
+ * The memory manager constructor requires 5 parameters
+ * @@param reserved_segment_size Set the size of the reserved memory segment
+ * @@param text_segment_size Set the size of the text memory segment
+ * @@param maximum_memory_size Set the total size of the memory available
+ * @@param verbose Option to switch verbose mode on
+ * @@param c The address of the YAMS controller to interface with the GUI/Console
+ */
+  public MemoryManager(int reserved_segment_size,
+                       int text_segment_size,
+                       int maximum_memory_size,
+                       PrintStream verbose,
+                       YAMSController c)
+  {
+  	this.controller = c;
+  	this.verbose = verbose;
+    if (reserved_segment_size > 0 &&
+        text_segment_size > 0 &&
+        reserved_segment_size + text_segment_size < maximum_memory_size)
+    {
+      /* if the memory segments are suitably sized, assign the global
+       variables for the memory manager accordingly */
+
+      reserved_start_addr = 0;
+      text_start_addr = reserved_segment_size;
+      data_start_addr = text_start_addr + text_segment_size;
+      maximum_addr = maximum_memory_size;
+    }
+    else
+    {
+
+      /* if there is an error in sizing memory, then set to MIPS defaults */
+
+      reserved_start_addr = 0;
+      text_start_addr = 10000;
+      data_start_addr = 20000;
+      maximum_addr = 100000;
+    }
+  }
+
+
+
+
+  public boolean setLocation(int addr, int val) 
+  {
+  	verbose.println("setLocation " + addr + " (" + Integer.toHexString(addr) + "h) to " + val + " (" + Integer.toHexString(val) + "h)");
+    TreeMap destination_map = resolveaddr(addr);
+    Integer addr_object = new Integer(addr);
+    Integer value_object = new Integer(val);
+    if (destination_map != null)
+    {
+      /* if the addr is in bounds (therefore a destination map exists)*/
+      if (!destination_map.containsKey(addr_object))
+      {
+        /* doesnt contain the addr value, so add to map */
+        destination_map.put(addr_object, value_object);
+      }
+      else
+      {
+        /* does contain addr, so must replace */
+        destination_map.remove(addr_object);
+        destination_map.put(addr_object, value_object);
+      }
+      // let the GUI know about the change
+   	  controller.memoryChanged(addr);
+      return true;
+    }
+    else
+    {
+      /* the addr is not in bounds & no destination map exists */
+      //throw new MemoryOutOfBoundsException();
+      return false;
+    }
+  }
+
+
+
+
+
+  public int getLocation(int addr) 
+  {
+//	verbose.print("getLocation " + addr + " (" + Integer.toHexString(addr) + "h) returns ");
+    
+    TreeMap destination_map = resolveaddr(addr);
+    Integer addr_object = new Integer(addr);
+  if (destination_map != null)
+    {
+      /* if the addr is in bounds (therefore a destination map exists)*/
+      if (destination_map.containsKey(addr_object))
+      {
+        /* if the addr has something stored at it within the memory map,
+         then return the value */
+         int val = ((Integer) destination_map.get(addr_object)).intValue();
+//		verbose.println(val + " (" + Integer.toHexString(val) + "h)");
+        return val;
+      }
+      else
+      {
+        /* if the addr has no associated value then return 0 */
+//		verbose.println("0 (NO ASSOCIATED VALUE)");
+        return 0;
+      }
+    }
+  else
+   {
+      /* the addr is not in bounds & no destination map exists */
+	verbose.println("-1 (NOT IN BOUNDS OR NO DEST MAP)");
+      return -1;
+
+    }
+  }
+
+
+	public boolean setByte(int addr, int val) {
+		verbose.println("setByte " + addr + " (" + Integer.toHexString(addr) + "h) to " + val + " (" + Integer.toHexString(val) + "h)");
+    	int wordaddress = 4 * ((int)(addr / 4));
+		int rem = addr % 4;
+		// get the word that we're going to write the byte in
+		int source = getLocation(wordaddress);
+		if(source == -1) {
+			// not a valid address
+			return false;
+		}
+		MIPSByte thebyte = new MIPSByte(val);
+		MIPSWord theword = new MIPSWord(source);
+		int lowbit = 0;
+		switch (rem) {
+			case 0 : lowbit = 24;
+					break;
+			case 1 : lowbit = 16;
+					break;
+			case 2 : lowbit = 8;
+					break;
+			case 3 : lowbit = 0;
+					break;
+		}	
+		// write the byte to the word
+		for(int i = 0; i < 8; i++) {
+			theword.setBit(lowbit + i, thebyte.getBit(i));
+		}
+		// write the word back to memory
+		return setLocation(wordaddress, theword.get());
+	}
+
+
+	public int getByte(int addr) {
+//		verbose.print("getByte " + addr + " (" + Integer.toHexString(addr) + "h) returns");
+    
+		int wordaddress = 4 * ((int)(addr / 4));
+		int rem = addr % 4;
+		// get the word that this byte is in
+		int source = getLocation(wordaddress);
+		if(source == -1) {
+			// not a valid address
+			return -1;
+		}
+		int result = 0;
+		MIPSWord theword = new MIPSWord(source);
+		// extract the byte from the word
+		switch (rem) {
+			case 0 : result = MIPSBitstring.extract(theword, 24, 31).toInt();
+			break;
+			case 1 : result = MIPSBitstring.extract(theword, 16, 23).toInt();
+			break;
+			case 2 : result = MIPSBitstring.extract(theword, 8, 15).toInt();
+			break;
+			case 3 : result = MIPSBitstring.extract(theword, 0, 7).toInt();
+			break;
+		}
+//		verbose.println(result + " (" + Integer.toHexString(result) + "h)");
+		return result;
+	}
+
+ public void reset()
+ {
+	reserved_map = new TreeMap();
+	text_map = new TreeMap();
+	data_map = new TreeMap();
+ }
+
+/**
+ * Return to corresponding treemap for the incoming address
+ * @@param addr Memory address requested
+ * @@return
+ */
+  private TreeMap resolveaddr(int addr) 
+  {
+    if (addr >= reserved_start_addr && addr < text_start_addr)
+    {
+      /* if the addr is within the reserved section of memory */
+      return reserved_map;
+    }
+    else if (addr >= text_start_addr && addr < data_start_addr)
+    {
+      /* if the addr is within the text segment of memory */
+      return text_map;
+    }
+    else if (addr >= data_start_addr && addr <= maximum_addr)
+    {
+      /* if the addr is within the data/dynamic segment of memory*/
+      return data_map;
+    }
+    else
+    {
+      /* addr is out of bounds and not contained within memory */
+      return null;
+    }
+  }
+  
+  public int memoryUsed() {
+  	return reserved_map.size() + text_map.size() + data_map.size();
+  }
+  
+  public void setVerbose(PrintStream verbose) {
+  	this.verbose = verbose;
+  }
+  
+}
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d5 1
+d11 8
+d33 8
+a71 1
+
+@
+
+
+1.13
+log
+@added setVerbose(PrintStream)
+@
+text
+@d60 1
+a60 1
+  public boolean setLocation(int addr, int val) //throws MemoryOutOfBoundsException
+d96 1
+a96 1
+  public int getLocation(int addr) //throws MemoryOutOfBoundsException
+d125 1
+a125 1
+ //   throw new MemoryOutOfBoundsException();
+d197 6
+a202 1
+  private TreeMap resolveaddr(int addr) //throws MemoryOutOfBoundsException
+a221 1
+      //throw new MemoryOutOfBoundsException();
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d226 4
+@
+
+
+1.11
+log
+@updated data panel
+@
+text
+@d80 2
+a81 4
+      // if the data map was modified, let the GUI know
+      if (destination_map == data_map) {
+      	controller.memoryChanged(addr);
+      }
+@
+
+
+1.10
+log
+@changed output to verbose
+@
+text
+@d8 1
+d21 2
+d27 2
+a28 1
+                       PrintStream verbose)
+d30 1
+d80 4
+d100 1
+a100 1
+	verbose.print("getLocation " + addr + " (" + Integer.toHexString(addr) + "h) returns ");
+d112 1
+a112 1
+		verbose.println(val + " (" + Integer.toHexString(val) + "h)");
+d118 1
+a118 1
+		verbose.println("0 (NO ASSOCIATED VALUE)");
+d165 1
+a165 1
+		verbose.print("getByte " + addr + " (" + Integer.toHexString(addr) + "h) returns");
+d188 1
+a188 1
+		verbose.println(result + " (" + Integer.toHexString(result) + "h)");
+@
+
+
+1.9
+log
+@prints addresses and values for reads and writes
+@
+text
+@d6 1
+a6 1
+
+a8 1
+
+a10 1
+
+d15 1
+d23 2
+a24 1
+                       int maximum_memory_size)
+d26 1
+d57 1
+a57 1
+  	System.out.println("setLocation " + addr + " (" + Integer.toHexString(addr) + "h) to " + val + " (" + Integer.toHexString(val) + "h)");
+d91 1
+a91 1
+	System.out.print("getLocation " + addr + " (" + Integer.toHexString(addr) + "h) returns ");
+d103 1
+a103 1
+		System.out.println(val + " (" + Integer.toHexString(val) + "h)");
+d109 1
+a109 1
+        System.out.println("0 (NO ASSOCIATED VALUE)");
+d116 1
+a116 1
+	System.out.println("-1 (NOT IN BOUNDS OR NO DEST MAP)");
+d124 1
+a124 1
+		System.out.println("setByte " + addr + " (" + Integer.toHexString(addr) + "h) to " + val + " (" + Integer.toHexString(val) + "h)");
+d156 1
+a156 1
+		System.out.print("getByte " + addr + " (" + Integer.toHexString(addr) + "h) returns");
+d179 1
+a179 1
+		System.out.println(result + " (" + Integer.toHexString(result) + "h)");
+@
+
+
+1.8
+log
+@added prints
+@
+text
+@d56 1
+a56 1
+  	System.out.println("Setting word at " + addr + " to " + val);
+d90 2
+a91 1
+	System.out.print("Getting word at " + addr + ", it is ");
+d101 3
+a103 2
+         System.out.println(((Integer) destination_map.get(addr_object)).intValue());
+        return ( (Integer) destination_map.get(addr_object)).intValue();
+d108 1
+a108 1
+        System.out.println("0 (no associated value)");
+d115 1
+a115 1
+	System.out.println("-1 (not in bounds or no dest map exists)");
+d123 2
+a124 2
+		System.out.print("Setting byte at " + addr + " to " + val);
+		int wordaddress = 4 * ((int)(addr / 4));
+d155 2
+a156 1
+		System.out.print("Getting byte at " + addr + ", it is ");
+d178 1
+a178 1
+		System.out.println(result);
+@
+
+
+1.7
+log
+@added memoryUsed method
+@
+text
+@d56 1
+d90 1
+d100 1
+d106 1
+d113 1
+d121 1
+d153 1
+d175 1
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d202 6
+a207 1
+}@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d173 3
+a175 1
+ 	 
+@
+
+
+1.4
+log
+@added getByte and setByte
+@
+text
+@d171 4
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d1 195
+a195 143
+/*
+ * Created on 26-Oct-2003
+ *
+ */
+package yams.processor;
+
+import java.util.TreeMap;
+
+
+public class MemoryManager implements MemoryManagerInterface
+{
+
+  private int reserved_start_addr;
+  private int text_start_addr;
+  private int data_start_addr;
+  private int maximum_addr;
+
+  private TreeMap reserved_map = new TreeMap();
+  private TreeMap text_map = new TreeMap();
+  private TreeMap data_map = new TreeMap();
+
+  public MemoryManager(int reserved_segment_size,
+                       int text_segment_size,
+                       int maximum_memory_size)
+  {
+    if (reserved_segment_size > 0 &&
+        text_segment_size > 0 &&
+        reserved_segment_size + text_segment_size < maximum_memory_size)
+    {
+      /* if the memory segments are suitably sized, assign the global
+       variables for the memory manager accordingly */
+
+      reserved_start_addr = 0;
+      text_start_addr = reserved_segment_size;
+      data_start_addr = text_start_addr + text_segment_size;
+      maximum_addr = maximum_memory_size;
+    }
+    else
+    {
+
+      /* if there is an error in sizing memory, then set to MIPS defaults */
+
+      reserved_start_addr = 0;
+      text_start_addr = 10000;
+      data_start_addr = 20000;
+      maximum_addr = 100000;
+    }
+  }
+
+
+
+
+
+  public boolean setLocation(int addr, int val) //throws MemoryOutOfBoundsException
+  {
+    TreeMap destination_map = resolveaddr(addr);
+    Integer addr_object = new Integer(addr);
+    Integer value_object = new Integer(val);
+    if (destination_map != null)
+    {
+      /* if the addr is in bounds (therefore a destination map exists)*/
+      if (!destination_map.containsKey(addr_object))
+      {
+        /* doesnt contain the addr value, so add to map */
+        destination_map.put(addr_object, value_object);
+      }
+      else
+      {
+        /* does contain addr, so must replace */
+        destination_map.remove(addr_object);
+        destination_map.put(addr_object, value_object);
+      }
+      return true;
+    }
+    else
+    {
+      /* the addr is not in bounds & no destination map exists */
+      //throw new MemoryOutOfBoundsException();
+      return false;
+    }
+  }
+
+
+
+
+
+  public int getLocation(int addr) //throws MemoryOutOfBoundsException
+  {
+    TreeMap destination_map = resolveaddr(addr);
+    Integer addr_object = new Integer(addr);
+  if (destination_map != null)
+    {
+      /* if the addr is in bounds (therefore a destination map exists)*/
+      if (destination_map.containsKey(addr_object))
+      {
+        /* if the addr has something stored at it within the memory map,
+         then return the value */
+        return ( (Integer) destination_map.get(addr_object)).intValue();
+      }
+      else
+      {
+        /* if the addr has no associated value then return 0 */
+        return 0;
+      }
+    }
+  else
+   {
+      /* the addr is not in bounds & no destination map exists */
+      return -1;
+ //   throw new MemoryOutOfBoundsException();
+    }
+  }
+
+
+
+
+
+
+
+  private TreeMap resolveaddr(int addr) //throws MemoryOutOfBoundsException
+  {
+    if (addr >= reserved_start_addr && addr < text_start_addr)
+    {
+      /* if the addr is within the reserved section of memory */
+      return reserved_map;
+    }
+    else if (addr >= text_start_addr && addr < data_start_addr)
+    {
+      /* if the addr is within the text segment of memory */
+      return text_map;
+    }
+    else if (addr >= data_start_addr && addr <= maximum_addr)
+    {
+      /* if the addr is within the data/dynamic segment of memory*/
+      return data_map;
+    }
+    else
+    {
+      /* addr is out of bounds and not contained within memory */
+      //throw new MemoryOutOfBoundsException();
+      return null;
+    }
+  }
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d5 1
+a5 1
+package processor;
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d1 143
+a143 137
+package yams.processor;
+
+import java.util.TreeMap;
+
+
+public class MemoryManager
+    implements MemoryManagerInterface
+{
+
+  private int reserved_start_addr;
+  private int text_start_addr;
+  private int data_start_addr;
+  private int maximum_addr;
+
+  private TreeMap reserved_map = new TreeMap();
+  private TreeMap text_map = new TreeMap();
+  private TreeMap data_map = new TreeMap();
+
+  public MemoryManager(int reserved_segment_size,
+                       int text_segment_size,
+                       int maximum_memory_size)
+  {
+    if (reserved_segment_size > 0 &&
+        text_segment_size > 0 &&
+        reserved_segment_size + text_segment_size < maximum_memory_size)
+    {
+      /* if the memory segments are suitably sized, assign the global
+       variables for the memory manager accordingly */
+
+      reserved_start_addr = 0;
+      text_start_addr = reserved_segment_size;
+      data_start_addr = text_start_addr + text_segment_size;
+      maximum_addr = maximum_memory_size;
+    }
+    else
+    {
+
+      /* if there is an error in sizing memory, then set to MIPS defaults */
+
+      reserved_start_addr = 0;
+      text_start_addr = 10000;
+      data_start_addr = 20000;
+      maximum_addr = 100000;
+    }
+  }
+
+
+
+
+
+  public void setLocation(int addr, int val) throws LocationOutOfBoundsException
+  {
+    TreeMap destination_map = resolveaddr(addr);
+    Integer addr_object = new Integer(addr);
+    Integer value_object = new Integer(value);
+    if (destination_map != null)
+    {
+      /* if the addr is in bounds (therefore a destination map exists)*/
+      if (!destination_map.containsKey(addr_object))
+      {
+        /* doesnt contain the addr value, so add to map */
+        destination_map.put(addr_object, value_object);
+      }
+      else
+      {
+        /* does contain addr, so must replace */
+        destination_map.remove(addr_object);
+        destination_map.put(addr_object, value_object);
+      }
+      return true;
+    }
+    else
+    {
+      /* the addr is not in bounds & no destination map exists */
+      return false;
+    }
+  }
+
+
+
+
+
+  public int getLocation(int addr)
+  {
+    TreeMap destination_map = resolveaddr(addr);
+    Integer addr_object = new Integer(addr);
+    if (destination_map != null)
+    {
+      /* if the addr is in bounds (therefore a destination map exists)*/
+      if (destination_map.containsKey(addr_object))
+      {
+        /* if the addr has something stored at it within the memory map,
+         then return the value */
+        return ( (Integer) destination_map.get(addr_object)).intValue();
+      }
+      else
+      {
+        /* if the addr has no associated value then return 0 */
+        return 0;
+      }
+    }
+    else
+    {
+      /* the addr is not in bounds & no destination map exists */
+      return -1;
+    }
+  }
+
+
+
+
+
+
+
+  private TreeMap resolveaddr(int addr)
+  {
+    if (addr >= reserved_start_addr && addr < text_start_addr)
+    {
+      /* if the addr is within the reserved section of memory */
+      return reserved_map;
+    }
+    else if (addr >= text_start_addr && addr < data_start_addr)
+    {
+      /* if the addr is within the text segment of memory */
+      return text_map;
+    }
+    else if (addr >= data_start_addr && addr <= maximum_addr)
+    {
+      /* if the addr is within the data/dynamic segment of memory*/
+      return data_map;
+    }
+    else
+    {
+      /* addr is out of bounds and not contained within memory */
+      return null;
+    }
+  }
+@
+

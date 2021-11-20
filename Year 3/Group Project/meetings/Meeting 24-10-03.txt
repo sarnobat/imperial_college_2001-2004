@@ -1,0 +1,33 @@
+MINUTES - PROJECT MEETING
+=============================================
+Date: 24/10/03
+Time: 1500
+Location: Blueshift Lab
+
+Present: Adam, James, Ben, Qian, Sridhar, Simon
+----------------------------------------------------
+
+- Skip, advance, stop, jump - cycle manager
+	Should this be done directly by the GUI or the processor?
+	Ben and simon to look into this more later (as they are the developers for this section)
+
+- XML spec
+	- opcode
+	- description
+	- operand
+The actual schema can be generate from XMLspy
+The code for each instruction would need to generate java classes 
+How to update the XML would need to be documented so other people can add to it
+
+- Theres only one system call file which is 'syscall'
+
+- Handling exceptions
+	Need to be handled in one place ideally, as the GUI will display all errors in one place.
+	These will just be caught by the outer most class that executes the programe
+	Dont handle exceptions anywhere else (unless they can be fixed directly)
+
+- Monday
+	Should have a prototype parser that can handle a few instructions (Sridhar and Jo)
+	Processor internals (Ben and Simon)
+	Version 1 controller (Adam and James)
+	

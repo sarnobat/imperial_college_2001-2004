@@ -1,0 +1,41 @@
+MINUTES - PROJECT MEETING
+=============================================
+Date: 06/11/03
+Time: 1500
+Location: Blueshift Lab
+
+Present: Adam, James, Ben, Qian, Sridhar, Simon
+----------------------------------------------------
+
+Progress made so far:
+
+- Adam and James
+	- Almost about to write some code..
+	- Have an instruction and subclass for each one
+	- Main instruction class will be split into 3 sub classes
+	- Instruction classes will have links to the operand classes
+
+	- We should read through appendix of the architecture book (adam will put on proj space)
+	
+Ben and Simon
+	- ALU will be a static class
+	- Instruction handler will need the code from the XML to bolt on
+	- Regsiter manager and memory manager almost done
+	- Statistics manager could keep track of how often instructions are being used, as well as how often each line is executed
+	- Stat manager will need to read in the instructions from XML 
+
+Sridar and Jo
+	- Jo has written a lexer from scratch and a parser
+	- A Tree generator needs to be made to make the class structure for each instructions
+
+Main program
+	- Main yams.java which is the executable taking the args
+	- /parser, /assembler, /processor, /GUI
+	- Exception classes should go in the package yams.exceptions
+	- JavaDoc should be used
+	- Processor will make the memory manager
+
+Report
+	- Some early integration should have been attempted
+	- Log books have been kept
+	- Class diagrams and interfaces

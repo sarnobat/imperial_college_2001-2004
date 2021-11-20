@@ -1,0 +1,44 @@
+Questions
+---------
+
+Is it possible to pose natural join queries without having to explicitly state all attributes (without the problem of duplicated key attributes)?
+
+	Use "Natural Join" keywords
+
+Is element schema something you proposed?
+
+	No, Shamgunstar... proposed it but didn't give it a name
+
+Can you use "\d" as queries?
+
+	Use JDBC's DatabaseMetaData's getTables() method
+
+I was planning to recreate the exact order that attributes appear (jdom permitting). Is this worth it?
+	Don't bother. It encourages the users to give meaning to the order of their attributes (just 	like you shouldn't rely on the order rows appear in a database). You won't get any credit
+	even if your theory suggests a way to tackle it.
+
+What sort of grade am I looking at?
+
+	At the moment in the 50%s (2:2).
+	[See below for more]
+
+Does the size of my applicaiton matter (jar problems)?
+
+	Classpath should take care of it. Go back to him nearer the time to help get it working.
+
+Can I store the xml schema?
+	Yes, it's down to you. But don't forget that sometimes you might want to START
+	with a relational database and end up with XML.
+
+
+Other Points
+------------
+
+To get above 70% you must have some sort of flexibility in your mappings. Use the XER model
+as your diagramatic way of doing this.
+An alternative suggestion: a set of possible mappings for something and the user selects what they want.
+See the technical library to find out what previous projects have done.
+
+You must have some sort of 'spark': something innovative (one example is the vertical fragmentation)
+
+"You won't get a 3rd" - (40-50%)

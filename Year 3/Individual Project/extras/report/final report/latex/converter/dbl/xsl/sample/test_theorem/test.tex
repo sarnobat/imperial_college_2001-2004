@@ -1,0 +1,284 @@
+
+\documentclass[pdftex,french,english,a4paper,10pt,twoside,openright,]{report}
+\label{book}
+\usepackage[pdftex]{graphicx}
+\pdfcompresslevel=9
+\usepackage{anysize}
+\marginsize{3cm}{2cm}{1.25cm}{1.25cm}
+% ---------------------- 
+% Most Common Packages   
+% ---------------------- 
+\usepackage{makeidx} 
+\usepackage{varioref}         
+\usepackage{latexsym}         
+\usepackage{enumerate}         
+\usepackage{fancybox}      
+\usepackage{float}       
+\usepackage{ragged2e}       
+\usepackage[french]{babel} 
+\usepackage{isolatin1}         
+\usepackage{rotating}         
+\usepackage{tabularx}         
+\usepackage{url}         
+\usepackage{fancyhdr}         
+% ---------------
+% Document Font  
+% ---------------
+\usepackage{palatino}
+% --------------------------------------------
+% Math support                                
+% --------------------------------------------
+\usepackage{amsmath,amsthm, amsfonts, amssymb, amsxtra,amsopn}
+ \theoremstyle{plain}
+ \newtheorem{thm}{Thérème}[section]
+ \newtheorem{cor}{Corollaire}[section]
+ \newtheorem{lem}{Lemme}[section]
+ \newtheorem{prop}{Proposition}[section]
+ \newtheorem{ax}{Axiome}[section]
+ \theoremstyle{remark}
+ \newtheorem{rem}{Remarque}[section]
+ \newtheorem{exm}{Exemple}[section]
+ \newtheorem{notation}{Notation}[section]
+ \theoremstyle{definition}
+ \newtheorem{defn}{Définition}[section]
+
+ \newcommand{\ntt}{\normalfont\ttfamily}
+ \newcommand{\thmref}[1]{Théoème~\ref{#1}}
+ \newcommand{\secref}[1]{\S\ref{#1}}
+ \newcommand{\lemref}[1]{Lemme~\ref{#1}}
+ \newcommand{\bysame}{\mbox{\rule{3em}{.4pt}}\,}
+ \newcommand{\A}{\mathcal{A}}
+ \newcommand{\B}{\mathcal{B}}
+ \newcommand{\XcY}{{(X,Y)}}
+ \newcommand{\SX}{{S_X}}
+ \newcommand{\SY}{{S_Y}}
+ \newcommand{\SXY}{{S_{X,Y}}}
+ \newcommand{\SXgYy}{{S_{X|Y}(y)}}
+ \newcommand{\Cw}[1]{{\hat C_#1(X|Y)}}
+ \newcommand{\G}{{G(X|Y)}}
+ \newcommand{\PY}{{P_{\mathcal{Y}}}}
+ \newcommand{\X}{\mathcal{X}}
+ \newcommand{\wt}{\widetilde}
+ \newcommand{\wh}{\widehat}
+ \DeclareMathOperator{\per}{per}
+ \DeclareMathOperator{\cov}{cov}
+ \DeclareMathOperator{\cf}{cf}
+ \DeclareMathOperator{\add}{add}
+ \DeclareMathOperator{\Cham}{Cham}
+ \DeclareMathOperator{\IM}{Im}
+ \DeclareMathOperator{\esssup}{ess\,sup}
+ \DeclareMathOperator{\essinf}{ess\,inf}
+ \DeclareMathOperator{\meas}{meas}
+ \DeclareMathOperator{\seg}{seg}
+ \DeclareMathOperator{\avg}{avg}
+ \DeclareMathOperator{\non}{non}
+
+\newcommand{\href}[1]{{}}
+\newcommand{\hyperlink}[1]{{}}
+\newcommand{\hypertarget}[2]{#2}
+% --------------------------------------------
+% Commands to manage/style/create floats      
+% figures, tables, algorithms, examples, eqn  
+% --------------------------------------------
+ \floatstyle{ruled}
+ \restylefloat{figure}
+ \floatstyle{ruled}
+ \restylefloat{table}
+ \floatstyle{ruled}
+ \newfloat{program}{ht}{lop}[section]
+ \floatstyle{ruled}
+ \newfloat{example}{ht}{loe}[section]
+ \floatname{example}{Example}
+ \floatstyle{ruled}
+ \newfloat{dbequation}{ht}{loe}[section]
+ \floatname{dbequation}{Equation}
+ \floatstyle{boxed}
+ \newfloat{algorithm}{ht}{loa}[section]
+ \floatname{algorithm}{Algorithm}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\newcommand{\docbooktolatexalignrl}{\protect\ifvmode\raggedleft\else\hfill\fi}
+\newcommand{\docbooktolatexalignrr}{\protect}
+\newcommand{\docbooktolatexalignll}{\protect\ifvmode\raggedright\else\fi}
+\newcommand{\docbooktolatexalignlr}{\protect\ifvmode\else\hspace*\fill\fi}
+\newcommand{\docbooktolatexaligncl}{\protect\ifvmode\centering\else\hfill\fi}
+\newcommand{\docbooktolatexaligncr}{\protect\ifvmode\else\hspace*\fill\fi}
+\title{\bfseries Theorems}
+\author{John Doe \and Ramon Casellas}
+% --------------------------------------------
+\makeindex
+\makeglossary
+% --------------------------------------------
+
+\setcounter{tocdepth}{4}
+
+\setcounter{secnumdepth}{4}
+\begin{document}
+
+\InputIfFileExists{title}{\typeout{WARNING: Using cover pagetitle}}{\pagestyle{empty}\maketitle\pagestyle{fancy}}
+
+% ------------------------   
+% Section 
+\section{This is NOT DOCBOOK}
+\label{id2715774}\hypertarget{id2715774}{}%
+
+ I have extended (for my own purposes) the DTD, 
+using {\tt{mathelement}}, and its content model that I saw on a
+mailing list (credit is due, contact me).
+
+
+      \begin{defn}[Task]
+
+        
+        
+          
+ A task is something that has to be done, usually given by 
+	your boss, under the hypothesis that you do not want to. (Otherwise
+	it is a pleasure, like working on DB2LaTeX).
+
+        
+      \end{defn}
+
+    
+      \begin{thm}[Lazy man theorem]
+
+        
+        
+          
+Given a task to do, T
+
+        
+        
+          
+Do not perform task T today, if it can be done tomorrow.
+
+        
+        \begin{proof}
+          
+ A proof will be given tomorrow.
+
+        \end{proof}
+
+      \end{thm}
+
+    
+      \begin{defn}[Processus stationnaire]
+
+        
+        
+          
+Un processus stochastique $x(t)$ est dit {\bf stationnaire} si  $ \forall n \in \mathbb{N}, \forall \tau, \forall t_0 < t_1 < t_2 < \ldots < t_n $ on a :
+
+        
+        
+
+\begin{equation*}
+( x(t_0), \ldots, x(t_n) ) \quad  =_{\mathbb{L}} \quad (x(t_0 + \tau), \ldots, x(t_n + \tau))
+\end{equation*}
+
+        
+        
+
+\begin{equation*}
+\rho(\tau) = \frac{\textrm{cov}[x(t),x(t+\tau)]} {\sqrt{\textrm{var}[x(t+\tau)] \textrm{var}[x(t)]}}
+\end{equation*}
+
+        
+        
+
+\begin{itemize}
+\item $\mathbb{E}[x(t)] = \lambda < \infty$ 
+\item $\mathbb{E}[(x(t) - \lambda)^2] = \sigma^2 < \infty$
+\item $\mathbb{E}[(x(t) - \lambda)(x(t+\tau) - \lambda)] = \textrm{cov}(\tau) < \infty$
+\end{itemize}
+
+        
+        
+
+\begin{equation*}
+\rho(\tau) = \frac{\textrm{cov}(\tau)} {\sigma^2}
+\end{equation*}
+
+        
+      \end{defn}
+
+    
+      \begin{defn}[Processus Cumulatif (ang. Cumulant Process)]
+
+        
+        
+          
+Soit $x(t)$ un processus stochastique discret (resp. continu), et $t_0,t_1 \in \mathbb{N}$ (resp. $t_0,t_1 \in \mathbb{R}$). Le processus $X[t_0,t_1) \triangleq \sum_{t_0}^{t_1} x(t)$ (resp. $X[t_0,t_1) \triangleq \int_{t_0}^{t_1}{ x(t) dt}$) est dit processus cumulatif (ou {\bf  processus d'accroissements}) de $x(t)$. (cf. XrefId[??]).
+
+        
+      \end{defn}
+
+    
+      \begin{defn}[Processus à accroissements indépendants]
+
+        
+        
+          
+Un processus $x(t)$ est dit {\bf à accroissements indépendants } si pour n'importe quelle suite d'instants de temps  $0 = t_0 < t_1 < t_2 < \ldots < t_n $, les accroissements du processus $x(t_n) - x(t_{n-1}) , x(t_{n-1}), \ldots, x(t_1) - x(t_0)$ sont indépendants.
+
+        
+      \end{defn}
+
+    
+      \begin{defn}[Processus à borne stationnaire]
+
+        
+        
+          
+ Un processus d'accroissements $x(t)$ est borné stationnairement  si $\forall h$
+
+\begin{equation}
+\lim_{a \to \infty} \sup_{t} \mathbb{P} \left\{ x(t+h) - x(t) \ge a \right\} = 0
+\end{equation}
+
+
+
+        
+      \end{defn}
+
+    
+      \begin{defn}[Processus à  mémoire longue (ang. Long Range Dependent)]
+
+        
+        
+          
+ Un processus $x(t)$ stationnaire est dit «à mémoire longue» {\em (ang. Long Range Dependent)} si
+
+\begin{equation}
+\sum\limits_{k=-\infty}^{\infty} \left| \rho_x(k) \right| = \infty
+\end{equation}
+
+
+
+        
+      \end{defn}
+
+    
+      \begin{defn}[Modèles de Trafic à Queue Lourde]
+
+        
+        
+          
+ Une variable aléatoire $X$ est dit «à queue lourde»  si $\exists \alpha,  0 < \alpha < 2$ et $\exists C$ tel que $x^\alpha \mathbb{P}(|X| > x) \to C$, quand $x \to \infty$, où $C$ est une constante et $\alpha$ est l'index de la distribution. Un processus avec des distributions marginales à queue lourde est dit un processus à queue lourde.
+
+        
+      \end{defn}
+
+    
+      \begin{defn}[Auto-similarité]
+
+        
+        
+          
+Un processus  $x(t)$ est dit «auto similaire»  {\em (self-similar)} de paramètre H, si le processus $c^{-H} x(ct)$ et le processus $x(t)$ sont équivalents en distribution. L'exemple classique de processus auto similaire est le processus mouvement fractionnaire Brownien (fBm) de paramètre H (paramètre de Hurst). Voir par exemple \cite{RabEBE} pp. 34 ou \cite{Norros}.
+
+        
+      \end{defn}
+
+    
+\end{document}
+

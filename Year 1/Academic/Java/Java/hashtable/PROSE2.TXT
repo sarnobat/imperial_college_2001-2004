@@ -1,0 +1,52 @@
+What is quantum computing It's something that could have
+been thought up a long time ago  an idea whose time has come
+For any physical theory one can ask what sort of machines
+will do useful computation or what sort of processes will count as
+useful computational acts
+Alan Turing thought about this in 1936
+with regard implicitly to classical mechanics
+and gave the world the paradime classical computer the Turing machine
+
+But even in 1936 classical mechanics was known to be false
+Work is now under way  mostly theoretical but tentatively hesitantly
+groping towards the practical  in seeing what quantum mechanics
+means for computers and computing
+
+In a trivial sense everything is a quantum computer
+A pebble is a quantum computer
+for calculating the constant-position function
+  you get the idea
+And of course today's computers exploit quantum effects
+like electrons tunneling through barriers
+to help do the right thing and do it fast
+For that matter both the computer and the pebble
+exploit a quantum effect
+  the Pauli exclusion principle which holds up ordinary matter against
+collapse by bringing about the kind of degeneracy we call chemistry
+  just to remain stable solid objects
+But quantum computing is much more than that
+
+The most exiting really new feature of quantum computing is
+quantum parallelism
+A quantum system is in general not in one classical state
+but in a quantum state consisting crudely speaking
+of a superposition of many classical or classical-like states
+This superpisition is not just a figure of speech
+covering up our ignorance of which classical-like state it's really in
+If that was all the superposition meant you could drop all but one
+of the classical-like states maybe only later after you deduced
+retrospecktively which one was the right one and still get the
+time evolution right
+But actually you need the whole superposition
+to get the time evolution right
+The system really is in some sense
+in all the classical-like states at once
+If the superposition can be protected from unwanted
+entanglement with its environment known as decoherence
+a quantum computer can output results dependent on details of all
+its classical-like states
+This is quantum parallelism  paralellism on a serial machine
+And if that wasn't enough machines that would already
+in architectural terms qualify as parallel
+can benifit from quantum parallellism too
+  at which point the mind begins to seriously boggle

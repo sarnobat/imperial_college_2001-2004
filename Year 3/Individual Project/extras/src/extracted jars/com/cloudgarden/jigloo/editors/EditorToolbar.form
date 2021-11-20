@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form style="SWT" ide="eclipse" builder="jigloo" version="1.0.0">
+	<Component class="org.eclipse.swt.custom.CLabel" name="EditorToolbar" style="0">
+		<Constraints>
+			<LayoutConstraint/>
+		</Constraints>
+		<Layout class="Grid">
+			<Property name="marginHeight" type="int" value="2"/>
+			<Property name="verticalSpacing" type="int" value="5"/>
+			<Property name="horizontalSpacing" type="int" value="10"/>
+			<Property name="marginWidth" type="int" value="5"/>
+			<Property name="makeColumnsEqualWidth" type="boolean" value="false"/>
+			<Property name="numColumns" type="int" value="6"/>
+		</Layout>
+		<Events>
+		</Events>
+		<Properties>
+			<Property name="text" type="String" value=""/>
+			<Property name="background" type="Color">
+				<Color red="c0" green="c0" blue="c0"/>
+			</Property>
+			<Property name="size" type="Dimension">
+				<Dimension value="[450, 39]"/>
+			</Property>
+			<Property name="visible" type="boolean" value="true"/>
+		</Properties>
+		<SubComponents>
+			<Component class="org.eclipse.swt.widgets.Button" name="gridButton" style="16777224">
+				<Constraints>
+					<Constraint class="org.eclipse.swt.layout.GridData"/>
+					<LayoutConstraint class="org.eclipse.swt.layout.GridData">
+						<Property name="verticalAlignment" type="int" value="4"/>
+						<Property name="horizontalAlignment" type="int" value="2"/>
+						<Property name="widthHint" type="int" value="28"/>
+						<Property name="heightHint" type="int" value="-1"/>
+						<Property name="horizontalIndent" type="int" value="0"/>
+						<Property name="horizontalSpan" type="int" value="1"/>
+						<Property name="verticalSpan" type="int" value="1"/>
+						<Property name="grabExcessHorizontalSpace" type="boolean" value="false"/>
+						<Property name="grabExcessVerticalSpace" type="boolean" value="true"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Events>
+					<EventHandler event="widgetSelected" listener="org.eclipse.swt.events.SelectionListener" handler="gridButtonWidgetSelected"/>
+				</Events>
+				<Properties>
+					<Property name="image" type="Image">
+						<Image name="\com\cloudgarden\jigloo\images\gridlayout.gif"/>
+					</Property>
+					<Property name="text" type="String" value=""/>
+					<Property name="size" type="Dimension">
+						<Dimension value="[28, 35]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[5, 2, 28, 35]"/>
+					</Property>
+					<Property name="visible" type="boolean" value="true"/>
+					<Property name="toolTipText" type="String" value="Toggles between no grid, and grids of 5, 10 and 20 pixels"/>
+				</Properties>
+			</Component>
+			<Component class="org.eclipse.swt.widgets.Button" name="runButton" style="16777224">
+				<Constraints>
+					<Constraint class="org.eclipse.swt.layout.GridData"/>
+					<LayoutConstraint class="org.eclipse.swt.layout.GridData">
+						<Property name="verticalAlignment" type="int" value="4"/>
+						<Property name="horizontalAlignment" type="int" value="2"/>
+						<Property name="widthHint" type="int" value="28"/>
+						<Property name="heightHint" type="int" value="-1"/>
+						<Property name="horizontalIndent" type="int" value="0"/>
+						<Property name="horizontalSpan" type="int" value="1"/>
+						<Property name="verticalSpan" type="int" value="1"/>
+						<Property name="grabExcessHorizontalSpace" type="boolean" value="false"/>
+						<Property name="grabExcessVerticalSpace" type="boolean" value="true"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Events>
+					<EventHandler event="widgetSelected" listener="org.eclipse.swt.events.SelectionListener" handler="runButtonWidgetSelected"/>
+				</Events>
+				<Properties>
+					<Property name="image" type="Image">
+						<Image name="\com\cloudgarden\jigloo\images\run_exec.gif"/>
+					</Property>
+					<Property name="text" type="String" value=""/>
+					<Property name="size" type="Dimension">
+						<Dimension value="[28, 35]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[43, 2, 28, 35]"/>
+					</Property>
+					<Property name="visible" type="boolean" value="true"/>
+					<Property name="toolTipText" type="String" value="Builds and runs the generated code"/>
+				</Properties>
+			</Component>
+			<Component class="org.eclipse.swt.widgets.Button" name="previewButton" style="16777224">
+				<Constraints>
+					<Constraint class="org.eclipse.swt.layout.GridData"/>
+					<LayoutConstraint class="org.eclipse.swt.layout.GridData">
+						<Property name="verticalAlignment" type="int" value="4"/>
+						<Property name="horizontalAlignment" type="int" value="2"/>
+						<Property name="widthHint" type="int" value="28"/>
+						<Property name="heightHint" type="int" value="-1"/>
+						<Property name="horizontalIndent" type="int" value="0"/>
+						<Property name="horizontalSpan" type="int" value="1"/>
+						<Property name="verticalSpan" type="int" value="1"/>
+						<Property name="grabExcessHorizontalSpace" type="boolean" value="false"/>
+						<Property name="grabExcessVerticalSpace" type="boolean" value="true"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Events>
+					<EventHandler event="widgetSelected" listener="org.eclipse.swt.events.SelectionListener" handler="previewButtonWidgetSelected"/>
+				</Events>
+				<Properties>
+					<Property name="image" type="Image">
+						<Image name="\com\cloudgarden\jigloo\images\preview.gif"/>
+					</Property>
+					<Property name="text" type="String" value=""/>
+					<Property name="size" type="Dimension">
+						<Dimension value="[28, 35]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[81, 2, 28, 35]"/>
+					</Property>
+					<Property name="visible" type="boolean" value="true"/>
+					<Property name="toolTipText" type="String" value="Pops up a preview of the GUI (non-compiled)"/>
+				</Properties>
+			</Component>
+			<Component class="org.eclipse.swt.widgets.Button" name="codeButton" style="16777224">
+				<Constraints>
+					<Constraint class="org.eclipse.swt.layout.GridData"/>
+					<LayoutConstraint class="org.eclipse.swt.layout.GridData">
+						<Property name="verticalAlignment" type="int" value="4"/>
+						<Property name="horizontalAlignment" type="int" value="2"/>
+						<Property name="widthHint" type="int" value="28"/>
+						<Property name="heightHint" type="int" value="-1"/>
+						<Property name="horizontalIndent" type="int" value="0"/>
+						<Property name="horizontalSpan" type="int" value="1"/>
+						<Property name="verticalSpan" type="int" value="1"/>
+						<Property name="grabExcessHorizontalSpace" type="boolean" value="false"/>
+						<Property name="grabExcessVerticalSpace" type="boolean" value="true"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Events>
+					<EventHandler event="widgetSelected" listener="org.eclipse.swt.events.SelectionListener" handler="codeButtonWidgetSelected"/>
+				</Events>
+				<Properties>
+					<Property name="image" type="Image">
+						<Image name="\com\cloudgarden\jigloo\images\jcu_obj.gif"/>
+					</Property>
+					<Property name="text" type="String" value=""/>
+					<Property name="size" type="Dimension">
+						<Dimension value="[28, 35]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[119, 2, 28, 35]"/>
+					</Property>
+					<Property name="visible" type="boolean" value="true"/>
+					<Property name="toolTipText" type="String" value="Opens the Java code in an editor"/>
+				</Properties>
+			</Component>
+			<Component class="org.eclipse.swt.widgets.Button" name="toggleButton" style="16777224">
+				<Constraints>
+					<Constraint class="org.eclipse.swt.layout.GridData"/>
+					<LayoutConstraint class="org.eclipse.swt.layout.GridData">
+						<Property name="verticalAlignment" type="int" value="4"/>
+						<Property name="horizontalAlignment" type="int" value="2"/>
+						<Property name="widthHint" type="int" value="32"/>
+						<Property name="heightHint" type="int" value="-1"/>
+						<Property name="horizontalIndent" type="int" value="0"/>
+						<Property name="horizontalSpan" type="int" value="1"/>
+						<Property name="verticalSpan" type="int" value="1"/>
+						<Property name="grabExcessHorizontalSpace" type="boolean" value="false"/>
+						<Property name="grabExcessVerticalSpace" type="boolean" value="true"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Events>
+					<EventHandler event="widgetSelected" listener="org.eclipse.swt.events.SelectionListener" handler="toggleButtonWidgetSelected"/>
+				</Events>
+				<Properties>
+					<Property name="image" type="Image">
+						<Image name="\com\cloudgarden\jigloo\images\toggle.gif"/>
+					</Property>
+					<Property name="text" type="String" value=""/>
+					<Property name="size" type="Dimension">
+						<Dimension value="[32, 35]"/>
+					</Property>
+					<Property name="bounds" type="Rectangle">
+						<Rectangle value="[157, 2, 32, 35]"/>
+					</Property>
+					<Property name="visible" type="boolean" value="true"/>
+					<Property name="toolTipText" type="String" value="Switches GUI from Swing to SWT or from SWT to Swing"/>
+				</Properties>
+			</Component>
+		</SubComponents>
+	</Component>
+</Form>

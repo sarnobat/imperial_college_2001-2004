@@ -1,0 +1,512 @@
+head	1.18;
+access;
+symbols
+	yams-final-19-12-03:1.18
+	yams-release2-17-12-03:1.17
+	yams-release-17-12-03:1.17;
+locks; strict;
+comment	@# @;
+
+
+1.18
+date	2003.12.19.07.11.37;	author sw00;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2003.12.15.21.00.35;	author sw00;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.12.15.15.52.57;	author sw00;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.12.10.13.48.36;	author sw00;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.12.10.13.15.52;	author bmc01;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.12.10.08.26.48;	author sw00;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.08.17.59.33;	author sw00;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.04.18.42.58;	author sw00;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.03.13.32.26;	author sw00;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.11.29.21.54.43;	author sw00;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.11.29.20.13.02;	author ajb101;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.26.13.04.43;	author sw00;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.21.13.15.41;	author sw00;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.16.17.52.31;	author ajb101;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.14.15.49.31;	author sw00;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.13.01.46.54;	author sw00;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.12.11.51.08;	author sw00;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.10.10.57.49;	author qq01;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.18
+log
+@javadoc
+@
+text
+@/*
+ * Created on 30-Oct-2003
+ *
+ */
+package yams.processor;
+import java.io.PrintStream;
+import yams.*;
+
+/**
+ * Controls processor execution.
+ * Single-stepping or running to completion are supported.
+ * 
+ * @@author sw00
+ */
+public class CycleManager implements CycleManagerInterface {
+
+	private YAMSController controller;
+	private RegisterManagerInterface registerManager;
+	private MemoryManagerInterface memoryManager;
+	private StatisticsManagerInterface statisticsManager;
+	private InstructionDecoderInterface instructionDecoder;
+	private BreakpointManager breakpointManager;
+	private PrintStream out;
+	private PrintStream verbose;
+		
+	private boolean running;
+	private boolean finished;
+	
+	/**
+	 * Creates a new cycle manager
+	 * @@param controller
+	 * @@param registerManager
+	 * @@param memoryManager
+	 * @@param statisticsManager
+	 * @@param instructionDecoder
+	 * @@param out
+	 * @@param verbose
+	 */
+	public CycleManager(YAMSController controller,
+						RegisterManagerInterface registerManager,
+						MemoryManagerInterface memoryManager,
+						StatisticsManagerInterface statisticsManager,
+						InstructionDecoderInterface instructionDecoder,
+						PrintStream out,
+						PrintStream verbose) {
+							
+		this.controller = controller;
+		this.registerManager = registerManager;
+		this.memoryManager = memoryManager;
+		this.statisticsManager = statisticsManager;
+		this.instructionDecoder = instructionDecoder;
+		breakpointManager = new BreakpointManager();
+		this.out = out;
+		this.verbose = verbose;
+	
+		running = false;
+		finished = false;
+		
+		// controller should now issue a jump() to start of code, and a start()
+	}
+
+	public void start() {
+		running = true;
+		while(running) {
+			executeInstruction();
+		}
+	}
+
+	public void stop() {
+		running = false;
+	}
+
+	public void advance() {
+		if(!running) {
+			executeInstruction();
+		}
+	}
+
+	public void skip() {
+		if(!running) {
+			incrementPC();
+		}
+	}
+
+	public void jump(int address) {
+		if(!running) {
+			registerManager.setReg("PC", address);
+		}
+	}
+
+	public void setBreakpoint(int address) {
+		breakpointManager.setBreakpoint(address);
+	}
+
+	public void clearBreakpoint(int address) {
+		breakpointManager.clearBreakpoint(address);
+	}
+
+	public boolean hasFinished() {
+		return finished;
+	}
+		
+	public void finish() {
+		running = false;
+		finished = true;
+	}
+	
+	public void resetFinished() {
+		finished = false;
+	}
+	
+	public void reset() {
+		running = false;
+		finished = false;
+	}
+
+	/**
+	 * Execute the next instruction in memory
+	 * @@return success
+	 */
+	private boolean executeInstruction() {
+		boolean executionSuccessful = false;
+		int instruction;
+		int pc = 0;
+		pc = registerManager.getReg("PC"); 
+		instruction = memoryManager.getLocation(pc);
+		if(breakpointManager.isBreakpoint(instruction)) {
+			reachedBreakpoint();
+			return false;
+		}
+		executionSuccessful = instructionDecoder.handle(instruction);
+		statisticsManager.cycle();
+		statisticsManager.lineUsed(pc);
+		incrementPC();
+		
+		controller.updateStatistics();
+		
+		return executionSuccessful;
+	}
+
+	/**
+	 * Increments the program counter to point to the next instruction
+	 */
+	private void incrementPC() {
+		int pc = 0;
+		pc = registerManager.getReg("PC"); 
+		pc += 4;
+		registerManager.setReg("PC", pc);
+	}
+
+	/**
+	 * Stops the processor, since breakpoint has been reached
+	 */
+	private void reachedBreakpoint() {
+		verbose.println("Reached Breakpoint");
+		running = false;
+	}
+	
+	public void setVerbose(PrintStream verbose) {
+		this.verbose = verbose;
+	}
+
+}
+@
+
+
+1.17
+log
+@added setVerbose(PrintStream)
+@
+text
+@d30 1
+a30 1
+	 * Creates a new cycle manager.
+d36 2
+d117 4
+d141 3
+d151 3
+@
+
+
+1.16
+log
+@moved updatedStatistics call here from GUI.ProcessorHandler
+@
+text
+@d146 4
+a149 1
+
+@
+
+
+1.15
+log
+@added reset
+@
+text
+@d130 2
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d109 5
+@
+
+
+1.13
+log
+@added method to clear finished flag
+@
+text
+@d122 1
+@
+
+
+1.12
+log
+@added finished methods
+@
+text
+@d105 4
+@
+
+
+1.11
+log
+@calls statsManager.cycle()
+@
+text
+@d27 1
+d55 1
+a70 4
+	public void terminate() {
+		stop();
+	}
+
+d97 8
+@
+
+
+1.10
+log
+@added verbose printstream
+@
+text
+@d111 1
+a111 1
+		statisticsManager.instructionExecuted();
+@
+
+
+1.9
+log
+@added call to stats manager to count instructions executed
+@
+text
+@d24 1
+d41 2
+a42 1
+						PrintStream out) {
+d51 1
+d125 1
+a125 1
+		out.println("Reached Breakpoint");
+@
+
+
+1.8
+log
+@changed YAMSConsole to more generic YAMSController in a couple of places
+@
+text
+@d107 2
+a108 1
+		executionSuccessful = instructionDecoder.handle(instruction); 
+@
+
+
+1.7
+log
+@added input & output stream support
+@
+text
+@d7 1
+a7 1
+import yams.YAMSConsole;
+d17 1
+a17 1
+	private YAMSConsole controller;
+d35 1
+a35 1
+	public CycleManager(YAMSConsole controller,
+@
+
+
+1.6
+log
+@added breakpoint support
+@
+text
+@d6 1
+d23 1
+d39 2
+a40 1
+						InstructionDecoderInterface instructionDecoder) {
+d48 1
+d121 1
+a121 1
+		System.out.println("Reached Breakpoint");
+@
+
+
+1.5
+log
+@fixed type in MIPSParser, and changing layout of controller classes
+@
+text
+@d21 1
+d44 1
+a63 1
+		// controller.terminateSimulation();
+d84 9
+d99 4
+d115 6
+@
+
+
+1.4
+log
+@now uses new register interfaces
+@
+text
+@d6 1
+a6 1
+import yams.YAMS;
+d16 1
+a16 1
+	private YAMS controller;
+d32 1
+a32 1
+	public CycleManager(YAMS controller,
+@
+
+
+1.3
+log
+@fixed typos
+@
+text
+@d79 1
+a79 2
+			// TODO - get register ID for PC (in register manager)
+			// registerManager.setReg(PC_REGISTER_ID, address);
+d87 1
+a87 2
+		// TODO - get register ID for PC (in register manager)
+		// pc = registerManager.getReg(PC_REGISTER_ID); 
+d97 1
+a97 2
+		// TODO - get register ID for PC (in register manager)
+		// pc = registerManager.getReg(PC_REGISTER_ID); 
+d99 1
+a99 1
+		// registerManager.setReg(PC_REGISTER_ID, pc);
+@
+
+
+1.2
+log
+@added javadoc comments
+@
+text
+@d10 1
+a10 1
+ * Single-stepping and running to completion are supported
+d23 1
+a23 1
+
+d25 1
+a25 1
+	 * Create a cycle manager
+d79 1
+d88 1
+d99 1
+@
+
+
+1.1
+log
+@Updated package structure.
+@
+text
+@d9 3
+a12 1
+ *
+d24 8
+@
+

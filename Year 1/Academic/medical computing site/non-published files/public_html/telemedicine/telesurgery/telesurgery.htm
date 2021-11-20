@@ -1,0 +1,92 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Telesurgery</title>
+
+<link rel="stylesheet" href="I:\style.css">
+
+</head>
+
+<body>
+
+
+<b><p class = "title" align = "center">Telesurgery</p></b>
+
+<h2>What it is</h2>
+<p>As the name suggests, it is possible to perform surgery from afar, without making direct contact with the patient. A term which tends to be used for the same idea is Minimally Invasive Surgery(MIS). There would appear to be a subtle difference simply in the wording, as MIS doesn’t imply that it is carried out at a distance. For all intents and purposes, we shall consider them interchangeable as they work conceptually in the same way.
+</p>
+<h2>How it works</h2>
+<p>
+MIS was introduced in the 1980’s. While previous surgery on a patient’s thorax would involve huge incisions, this new technique merely punctures the surface and enable entry of endoscopic tools (connected to a computer) to the operation site. The tools are controlled by a human surgeon another computer connected to the first. The advantage of MIS is that it damages far less healthy tissue, meaning less post-operative pain and a quicker recovery, hence a shorter stay in hospital and less use of hospital resources.
+</p>
+
+<p align ="center">
+<img src="MIS.jpg" align="middle" width="593" height="238"> 
+</p>
+
+<h2>More about its components</h2>
+
+<p>
+To discover how a typical surgeon-robot combination achieves its goal we consider features from several telesurgical systems, such as the daVinci System and the UC Berkely-UC San Francisco system.
+</p>
+
+<h3>The Surgeon’s Station</h3>
+<p>Clearly no matter where the surgeon physically is, he or she must be able to see what is being operated on. Providing simple video images from an endoscopic camera is unsatisfactory, as it would be impossible to appreciate depth and thus hand-eye co-ordiation is lost. However, thanks to advances in graphics technology a greater sense of realism is obtainable by 3D images. These are created using two 3-chip CCD cameras inside the patient’s thorax and are separately transmitted to one of two medical CRT monitors in a 
+
+<a href="">Head Mounted Display </a>
+
+worn by the surgeon. The thorax must be inflated with carbon dioxide so that suitable camera angles may be taken up.
+</p>
+<p>The handles which the surgeon uses (the masters) serve two purposes. The first is as an input device, encoding movements made by the surgeon that will later be decoded and copied by the robotic arms (the slaves). The handlers are very sensitive to movement, but it is often preferable to pre-program removal of the surgeon’s hand tremors into the digital encoder. The masters secondly serve as output devices, giving 
+<a href="">force feedback</a> 
+which the slaves experience during their actions. 
+</p>
+<p align ="center">
+<img src="masters.jpg" align="center"> 
+</p>
+
+ 
+<p>
+Alternatively, the surgery could be voice controlled.
+</p>
+
+<p>The surgeon’s console also contains the 
+<a href="">controller</a>.
+</p>
+
+<h3>The Operation Station</h3>
+<p>The patient-side console contains manipulators which supply the decoded signals of the masters inputs. There are 3 of them, to which two slaves are connected at any one time (in this particular system; others could well have more) corresponding to what the surgeon would is virtually holding. The puncture in the patient’s body through which the slaves are placed is approximately 10mm in diameter. The slaves include scalpels, needles and graspers among others. The graspers, equivalent to the surgeon’s fingers, would seem rather limited as they do not have the flexibility of a human wrist. However, many systems are keen to incorporate ‘degrees of freedom’ which are equivalent to the vertical flexibility of a human wrist (in the daVinci system, 7 degrees of freedom are given).
+</p>   
+<p align ="center">
+<img src="grasper.jpg" align="center">
+<br>
+<img src="op_theatre.jpg" align="center"> 
+</p>
+
+
+<p>
+A complete system at functional level might have the following 
+<a href="">block diagram</a>.
+</p>
+<p>
+As of October 1999, M.I.S. has been used in over 500 different variations of surgery including nissen fundoplication, cholecystectomy, hernia repair, tubal reanastomosis, gastroplasty, appendectomy, arteriovenous fistula, intra-rectal surgery, lysis of adhesions, hysterectomy, lumbar sympathectomy, toupet surgery and colorectal surgery.
+</p>
+<p align ="center">
+<img src="slaves_action.jpg" align="center">
+</p>
+
+<p>
+There various 
+<a href="">issues </a>
+to consider in the design and use of telesurgery.
+</p>
+
+
+
+
+</body>
+
+</html>

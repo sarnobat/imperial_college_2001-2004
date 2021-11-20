@@ -1,0 +1,3151 @@
+head	1.32;
+access;
+symbols
+	yams-final-19-12-03:1.32
+	yams-release2-17-12-03:1.29
+	yams-release-17-12-03:1.29;
+locks; strict;
+comment	@# @;
+
+
+1.32
+date	2003.12.19.14.20.25;	author qq01;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2003.12.19.14.09.00;	author jkm01;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2003.12.19.13.25.30;	author jkm01;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2003.12.14.22.17.16;	author jkm01;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2003.12.12.16.11.50;	author jkm01;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2003.12.12.15.03.44;	author jkm01;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2003.12.11.18.26.16;	author jkm01;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2003.12.11.16.40.21;	author jkm01;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2003.12.11.16.15.20;	author jkm01;	state dead;
+branches;
+next	1.23;
+
+1.23
+date	2003.12.05.10.03.43;	author jkm01;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2003.12.04.18.45.32;	author jkm01;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2003.12.04.15.40.41;	author jkm01;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2003.12.03.17.55.15;	author ajb101;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2003.12.03.17.46.44;	author ajb101;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2003.12.03.17.26.08;	author ajb101;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2003.12.03.16.59.36;	author ajb101;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.12.03.15.03.22;	author jkm01;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.12.03.13.54.22;	author jkm01;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.12.03.13.49.18;	author jkm01;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.12.02.20.43.36;	author jkm01;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.12.02.14.44.40;	author jkm01;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.12.02.14.21.22;	author jkm01;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.12.02.13.41.14;	author jkm01;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.11.30.02.54.26;	author jkm01;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.11.28.16.56.14;	author jkm01;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.11.28.01.16.00;	author jkm01;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.11.27.20.33.45;	author jkm01;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2003.11.27.17.05.14;	author jkm01;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2003.11.27.12.04.42;	author jkm01;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2003.11.26.13.45.19;	author ajb101;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2003.11.26.01.21.28;	author jkm01;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2003.11.25.18.36.54;	author ajb101;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.32
+log
+@updated javadoc
+@
+text
+@/*
+ * Created on 03-Dec-2003
+ *
+ * To change the template for this generated file go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+ */
+package yams.assembler;
+
+import java.util.List;
+import java.util.ArrayList;
+import yams.parser.*;
+
+/**
+ * This component is designed to take a provided set of operands for a given instruction, along with its 
+ * core machine code representation (without any operand values filled in). It then performs the correct 
+ * translation of the operands as required for the specific instruction and substitutes them into the 
+ * machine code, leaving us with a machine word that can be written to memory ready for execution.
+ *<BR><BR>
+ * It operates on ONE machine word at a time from the instruction, carrying out substitution to generate the final
+ * code.
+ *
+ * @@author jkm01
+ */
+public class OperandHandler {
+
+	private SymbolTable symbolTable;
+	private ToBeDoneTable toBeDoneTable; 
+	private InstructionTable instructionTable;
+	
+	private static int FIXED_BLOCK_ADDRESS=0x10008000;
+	private static int BOUNDARY_16_32 = 32767; 
+
+	// passed state variables
+	private Instruction currentInstruction;
+	private String currentInstructionName;
+	private int lineNumber;
+	private int currentLineAddress;
+	private String machineWord;
+	private Representation currentRepresentation;
+
+	// handler state variables
+	private String opsCoding;
+	private int encodeBits;
+	private int outputNumberOfBits;
+	private String mask;
+	private int offSetMode;
+	private String operandType;
+	private List operandList;
+
+	//handler variables
+	private ArrayList translatedList;
+	private String rsRegister;
+	private boolean symbolTableError;
+	
+	public OperandHandler(SymbolTable st, ToBeDoneTable tbdt, InstructionTable instrT)
+	{
+		//checked
+		symbolTable = st;
+		toBeDoneTable = tbdt;
+		instructionTable = instrT;
+	}
+
+
+	/**
+	 * Recalculates the values of the operand list within the class, adding them to the translateList structure.
+	 * <BR><BR>These operands are then available for substitution into the final machine word.
+	 * 
+	 * @@throws AssemblerException
+	 */
+	public void reCalculateOperandValues() throws AssemblerException
+	{
+		char searchOperandType;
+		OperandDetails currentOperand;
+		for (int count =0; count<operandList.size(); count++)
+			{
+				searchOperandType = opsCoding.charAt(count);
+				
+				if (currentRepresentation.isOperand(count+1,""+searchOperandType))
+					
+					{
+						//index operand by number
+						currentOperand = currentRepresentation.getOperand(count+1,""+searchOperandType);
+						encodeBits = currentOperand.getEncodeBits();
+						outputNumberOfBits = currentOperand.getOutputBits();
+						mask = currentOperand.getMask();
+						offSetMode = currentOperand.getOffset();
+						operandType = currentOperand.getType();
+					}
+				handleOperand((Operand)operandList.get(count));		// handle the operands and encode the value
+			}
+		
+	}
+	
+	public boolean isSymbolTableError()
+	{
+		return symbolTableError;
+	}
+
+
+	public void resetHandler()
+	{
+		// to deal with a new instruction
+		symbolTableError=false;
+	}
+
+	/**
+	 * <BR>
+	 * INPUT:	
+	 * <BR><BR>
+	 * Receives a combination of operands (see below).<BR><BR>
+	 * The final two operands imply redundant reference to certain objects, but note that they are used to highlight any errors encountered with the whole line.
+	 * <BR><BR>NOTE: “uncoded? refers to machine code that hasn’t had the correct values for its operands substituted yet e.g. 001000bbbbbaaaaacccccccccccccccc
+	 * <BR><BR>NOTE: Some instructions within the supported set can be multiple words in length, and the Assembler essentially will pass the OperandHandler a SINGLE word from this representation, and the operands themselves ready to be substituted. The other variables are used to setup the handler to translate these operands correctly pre-substitution e.g. if one operand is a label, then the OperandHandler must establish whether the offset should be calculated from the current address or from the FIXED_LINE_ADDRESS (see addressing modes section later in this report).
+	 * <BR><BR>
+	 * HANDLING:
+	 * <BR><BR>
+	 * The handler must encode the provided operands, and substitute their translated values into the provided “uncoded? machine word.
+	 * <BR><BR>
+	 * OUTPUT:
+	 * <BR><BR>
+	 * Returns a machine word which is fully coded, with all operands successfully substituted into their correct positions, ready to be written to memory. Must also provide an indication of whether there has been some error in referencing the SymbolTable (referencing label not yet encountered in the MIPS program).
+	 * <BR><BR>
+	 * 
+	 * @@param word A single 32 bit bitstring, which is an “uncoded? machine code representation of some of the instruction which is required to be translated.
+	 * @@param address An integer representing the current text address (NEXT_TEXT_ADDRESS from Assembler).
+	 * @@param representation Current Representation structure for given instruction and operand combination.
+	 * @@param opList A list structure containing the Operand objects retrieved from the current Instruction representation (passed from parser).
+	 * @@param operandsCoding A coded representation of the types of the operands in the list above.
+	 * @@param line The current line number of the Instruction
+	 * @@param current The full instruction itself from the original LineList AST.
+	 * @@return Encoded string with operands included
+	 * @@throws AssemblerException
+	 */
+	public String encodeWord (String word,
+												int address,
+												Representation representation,
+												List opList,
+												String operandsCoding,
+												int line,
+												Instruction current) throws AssemblerException
+			{
+				currentLineAddress = address;
+				machineWord =  word;
+				currentInstruction = current;
+				lineNumber = line;
+				currentRepresentation = representation;
+				opsCoding = operandsCoding;
+				operandList = opList;
+				
+				translatedList = new ArrayList();
+				rsRegister = null;
+				
+				reCalculateOperandValues();
+				
+				for (int count = 0; count<translatedList.size(); count++)
+					{
+						if (!(translatedList.get(count).equals("LABEL_ERROR")))
+							{
+								machineWord = replaceOperand((String)translatedList.get(count),machineWord,encodeMarker(count));
+							}
+						//replace all operands in the word 
+					}
+				if (rsRegister!=null)
+					{
+						machineWord = replaceOperand(rsRegister,machineWord,'z');
+					}
+				return machineWord;
+			}
+			
+	/**
+	 * 
+	 * Distinguishes between four main types of operand (from parser point-of-view): Registers / Immediates / Labels / Addresses
+	 * <BR><BR>Passes on Operand to other handlers to deal with appropriately.
+	 * 
+	 * @@param currentOperand
+	 * @@throws AssemblerException
+	 */
+	public void handleOperand(Operand currentOperand) throws AssemblerException
+	{
+		//checked
+		if (currentOperand instanceof RegisterOperand)
+			{handleGeneralRegisterOperand((RegisterOperand)currentOperand);}
+		else if (currentOperand instanceof ImmediateOperand)
+			{handleImmediateOperand((ImmediateOperand)currentOperand);}
+		else if (currentOperand instanceof LabelOperand)
+			{handleGeneralLabelOperand((LabelOperand)currentOperand);}
+		else if (currentOperand instanceof AddressingOperand)
+			{handleAddressingOperand((AddressingOperand)currentOperand);}
+		else throw new AssemblerException("[Error A20] Current operand ("+currentOperand.toString()+") is not a valid operand, error in parser",lineNumber,currentInstruction);
+	}
+
+	/**
+	 * 
+	 * Formats the given inputString by applying the bit mask variable (corresponding "set" bits in given string 
+	 * are included in output, "unset" not included). Additionally it checks whether the resulting string is the correct
+	 * length ready for subsitution into the machine word.
+	 * 
+	 * @@param inputString
+	 * @@return returns correctly formatted string
+	 * @@throws AssemblerException
+	 */
+	private String formatString(String inputString) throws AssemblerException
+	{
+		//checked
+		String outputString="";
+		for (int count =0; count<inputString.length(); count++)
+			{
+				if (mask.charAt(count)=='1') {outputString+=inputString.charAt(count);}
+			}
+		if (outputNumberOfBits==outputString.length()) return outputString;
+		else throw new AssemblerException("[Error A21] Required output length ("+outputString.length()+") and bit mask ("+outputNumberOfBits+") contradict one another for current instruction XML representation",lineNumber,currentInstruction);
+	}
+	
+	/**
+	 * 
+	 * Handles an immediate operand, distinguising between 16 / 32 bit immediates and adding the correct
+	 * translation to the translatedList as appropriate.
+	 * 
+	 * @@param currentOperand
+	 * @@throws AssemblerException
+	 */
+	private void handleImmediateOperand(ImmediateOperand currentOperand) throws AssemblerException
+	{
+		//checked
+		int imm = currentOperand.getValue();
+		String outputString=""+intToBinaryString(imm,encodeBits);
+		if (outputNumberOfBits<32)
+			{
+				translatedList.add(formatString(outputString));
+			}
+		else if (outputNumberOfBits==32)
+			{
+				// if 32 bit number, break into separate components
+				translatedList.add(formatString(outputString).substring(16,32));
+				translatedList.add(formatString(outputString).substring(0,16));
+			}
+	}
+		
+	/**
+	 * 
+	 * Handler adds the encoded representation of a given Register operand to the translated list ready for substitution
+	 * 
+	 * @@param currentOperand
+	 * @@throws AssemblerException
+	 */
+	private void handleGeneralRegisterOperand(RegisterOperand currentOperand) throws AssemblerException
+	{
+		//checked
+		String register = currentOperand.getValue();
+		translatedList.add(encodeRegister(register));						
+	}
+	
+	/**
+	 * 
+	 * Handles a general label operand (not an address operand), taking into account symbol table errors and offset modes, and adding
+	 * the computed values to the translatedList.
+	 * 
+	 * @@param currentOperand
+	 * @@throws AssemblerException
+	 */
+	private void handleGeneralLabelOperand(LabelOperand currentOperand) throws AssemblerException
+	{
+		//checked
+		String label = currentOperand.getLabel();
+		int this_address;
+		if (!symbolTable.containsLabel(label))
+			{
+				translatedList.add("LABEL_ERROR");
+				symbolTableError=true;
+			}
+		else
+			{
+				if (offSetMode==0)			{this_address=currentLineAddress;}
+				else if (offSetMode==1) 	{this_address=FIXED_BLOCK_ADDRESS;}
+				else if (offSetMode==2)		{this_address=0;}
+				else						throw new AssemblerException("[Error A22] Provided offset mode ("+offSetMode+") for Label Addressingcurrent instruction is incorrect",lineNumber,currentInstruction);
+				String address = ""+intToBinaryString(symbolTable.returnAddress(label)-this_address,encodeBits);
+				translatedList.add(formatString(address));
+			}
+	}
+
+	/**
+	 * 
+	 * Distinguishes between the different types of AddressingOperands : Immediate/Immediate_Register/Label/Label_Plus_Immediate/Label_Plus_Immediate_Register/Register and passes
+	 * the given operand down to separate handlers to deal with appropriately.
+	 * <BR><BR>
+	 * These handlers can be found below, and deal generically with the operand according to the mode settings that have been set e.g. OffsetMode, encode bits etc
+	 * 
+	 * @@param currentOperand
+	 * @@throws AssemblerException
+	 */
+	private void handleAddressingOperand(AddressingOperand currentOperand) throws AssemblerException
+	{
+		//checked
+		switch (currentOperand.getType())
+		{
+			case AddressingOperand.IMMEDIATE 									:	{handleAddressingImmediate(currentOperand);break;}
+			case AddressingOperand.IMMEDIATE_REGISTER 							: 	{handleAddressingImmediateRegister(currentOperand);break;}
+			case AddressingOperand.LABEL										: 	{handleAddressingLabel(currentOperand);break;}
+			case AddressingOperand.LABEL_PLUS_IMMEDIATE							: 	{handleAddressingLabelImmediate(currentOperand);break;}
+			case AddressingOperand.LABEL_PLUS_IMMEDIATE_REGISTER 				: 	{handleAddressingLabelImmediateRegister(currentOperand);break;}
+			case AddressingOperand.REGISTER						 				: 	{handleAddressingRegister(currentOperand);break;}
+			default																:	{throw new AssemblerException("[Error A23] Addressing operand has unrecognised type ("+currentOperand.getType()+") Operand is not recognised",lineNumber,currentInstruction);} //0
+		}
+	}
+	
+	private void handleAddressingImmediate(AddressingOperand currentOperand) throws AssemblerException
+	{
+		//checked
+		int imm = currentOperand.getImmediate();
+		if (offSetMode==2)
+			{
+				translatedList.add(formatString(""+intToBinaryString(imm,encodeBits)).substring(16,32));
+				translatedList.add(formatString(""+intToBinaryString(imm,encodeBits)).substring(0,16));
+			}
+		else if (offSetMode==1)
+			{
+				translatedList.add(formatString(""+intToBinaryString(imm-FIXED_BLOCK_ADDRESS,encodeBits)));				
+			}
+		else if (offSetMode==0)
+			{
+				translatedList.add(formatString(""+intToBinaryString(imm-currentLineAddress,encodeBits)));								
+			}
+		else throw new AssemblerException("[Error A24] Offset mode ("+offSetMode+") is invalid for Address(Immediate) Addressing for current instruction",lineNumber,currentInstruction);
+	}
+
+	private void handleAddressingRegister(AddressingOperand currentOperand) throws AssemblerException
+	{
+		//checked
+		String register = currentOperand.getRegister();
+		if (offSetMode==2)
+			{
+				translatedList.add(encodeRegister(register));
+			}
+		else if (offSetMode==1 || offSetMode==0)
+			{
+				rsRegister = encodeRegister(register);
+			}
+		else throw new AssemblerException("[Error A25] Offset mode ("+offSetMode+") is invalid for Address(Register) Addressing for current instruction",lineNumber,currentInstruction);
+	}
+	
+	private void handleAddressingImmediateRegister(AddressingOperand currentOperand) throws AssemblerException
+	{
+		//checked
+		int imm = currentOperand.getImmediate();
+		String register = currentOperand.getRegister();
+		if (offSetMode==2)
+			{
+				translatedList.add(formatString(""+intToBinaryString(imm,encodeBits)).substring(16,32));
+				translatedList.add(formatString(""+intToBinaryString(imm,encodeBits)).substring(0,16));
+				translatedList.add(encodeRegister(register));
+			}
+		else if (offSetMode==1 || offSetMode==0)
+			{
+				translatedList.add(formatString(""+intToBinaryString(imm,encodeBits)));				
+				rsRegister = encodeRegister(register);
+			}
+		else throw new AssemblerException("[Error A26] Offset mode ("+offSetMode+")  is invalid for Address(RegisterImmediate) Addressing for current instruction",lineNumber,currentInstruction);
+	}
+	
+	private void handleAddressingLabel(AddressingOperand currentOperand) throws AssemblerException
+	{
+		//checked
+		String label = currentOperand.getLabel();
+		if (!symbolTable.containsLabel(label))
+			{
+				translatedList.add("LABEL_ERROR");
+				symbolTableError=true;
+			}
+		else
+			{
+				if (offSetMode==2)
+					{
+						translatedList.add(formatString(""+intToBinaryString(symbolTable.returnAddress(label),encodeBits)).substring(16,32));
+						translatedList.add(formatString(""+intToBinaryString(symbolTable.returnAddress(label),encodeBits)).substring(0,16));
+					}
+				else if (offSetMode==1)
+					{
+						translatedList.add(formatString(""+intToBinaryString(symbolTable.returnAddress(label)-FIXED_BLOCK_ADDRESS,encodeBits)));
+					}
+				else if (offSetMode==0)
+					{
+						translatedList.add(formatString(""+intToBinaryString(symbolTable.returnAddress(label),encodeBits)));
+					}
+				else throw new AssemblerException("[Error A27] Offset mode ("+offSetMode+")  is invalid for Address(Label) Addressing for current instruction",lineNumber,currentInstruction);
+			}
+	}
+	
+	private void handleAddressingLabelImmediate(AddressingOperand currentOperand) throws AssemblerException
+	{
+		//chceked
+		String label = currentOperand.getLabel();
+		int immediate = currentOperand.getImmediate();
+
+		if (!symbolTable.containsLabel(label))
+			{
+				translatedList.add("LABEL_ERROR");
+				symbolTableError=true;				
+			}
+		else
+			{
+				if (offSetMode==2)
+					{
+						translatedList.add(formatString(""+intToBinaryString(symbolTable.returnAddress(label)+immediate,encodeBits)).substring(16,32));
+						translatedList.add(formatString(""+intToBinaryString(symbolTable.returnAddress(label)+immediate,encodeBits)).substring(0,16));
+					}
+				else if (offSetMode==1)
+					{
+						translatedList.add(formatString(""+intToBinaryString(symbolTable.returnAddress(label)+immediate-FIXED_BLOCK_ADDRESS,encodeBits)));
+					}
+				else if (offSetMode==0)
+					{
+						translatedList.add(formatString(""+intToBinaryString(symbolTable.returnAddress(label)+immediate,encodeBits)));
+					}
+				else throw new AssemblerException("[Error A28] Offset mode ("+offSetMode+")  is invalid for Address(LabelImmediate) Addressing for current instruction",lineNumber,currentInstruction);
+			}
+	}
+	
+	private void handleAddressingLabelImmediateRegister(AddressingOperand currentOperand) throws AssemblerException
+	{
+		//checked
+		String label = currentOperand.getLabel();
+		int immediate = currentOperand.getImmediate();
+		String register = currentOperand.getRegister();
+
+		if (!symbolTable.containsLabel(label))
+			{
+				translatedList.add("LABEL_ERROR");
+				symbolTableError=true;				
+			}
+		else
+			{
+				if (offSetMode==2)
+					{
+						translatedList.add(formatString(""+intToBinaryString(symbolTable.returnAddress(label)+immediate,encodeBits)).substring(16,32));
+						translatedList.add(formatString(""+intToBinaryString(symbolTable.returnAddress(label)+immediate,encodeBits)).substring(0,16));
+					}
+				else if (offSetMode==1)
+					{
+						translatedList.add(formatString(""+intToBinaryString(symbolTable.returnAddress(label)-FIXED_BLOCK_ADDRESS+immediate,encodeBits)));														
+					}
+				else if (offSetMode==0)
+					{
+						translatedList.add(formatString(""+intToBinaryString(symbolTable.returnAddress(label)-currentLineAddress+immediate,encodeBits)));														
+					}
+				else throw new AssemblerException("[Error A29] Offset mode ("+offSetMode+")  is invalid for Address(LabelImmediateRegister) Addressing for current instruction",lineNumber,currentInstruction);
+				translatedList.add(encodeRegister(register));
+			}
+	}
+
+	/**
+	 * Given a register name, this method returns the machine code representation
+	 * of any register available to the assembler and modelled in the processor.
+	 * 
+	 * @@param registerName
+	 * @@return returns the binary representation of the register
+	 * @@throws AssemblerException
+	 */
+	private String encodeRegister(String registerName) throws AssemblerException
+	{		
+		if 			(registerName.equals("$zero")) 	{return "00000";}
+		else if 	(registerName.equals("$at")) 		{return "00001";}
+		else if 	(registerName.equals("$v0")) 		{return "00010";}
+		else if 	(registerName.equals("$v1"))	 	{return "00011";}
+		else if 	(registerName.equals("$a0")) 		{return "00100";}
+		else if 	(registerName.equals("$a1")) 		{return "00101";}
+		else if 	(registerName.equals("$a2")) 		{return "00110";}
+		else if 	(registerName.equals("$a3"))	 	{return "00111";}
+		else if 	(registerName.equals("$t0")) 		{return "01000";}
+		else if 	(registerName.equals("$t1")) 		{return "01001";}
+		else if 	(registerName.equals("$t2")) 		{return "01010";}
+		else if 	(registerName.equals("$t3")) 		{return "01011";}
+		else if 	(registerName.equals("$t4")) 		{return "01100";}
+		else if 	(registerName.equals("$t5")) 		{return "01101";}
+		else if 	(registerName.equals("$t6")) 		{return "01110";}
+		else if 	(registerName.equals("$t7")) 		{return "01111";}
+		else if 	(registerName.equals("$s0"))	 	{return "10000";}
+		else if 	(registerName.equals("$s1")) 		{return "10001";}
+		else if 	(registerName.equals("$s2")) 		{return "10010";}
+		else if 	(registerName.equals("$s3")) 		{return "10011";}
+		else if 	(registerName.equals("$s4")) 		{return "10100";}
+		else if 	(registerName.equals("$s5")) 		{return "10101";}
+		else if 	(registerName.equals("$s6")) 		{return "10110";}
+		else if 	(registerName.equals("$s7")) 		{return "10111";}
+		else if 	(registerName.equals("$t8")) 		{return "11000";}
+		else if 	(registerName.equals("$t9"))		{return "11001";}
+		else if 	(registerName.equals("$k0")) 		{return "11010";}
+		else if 	(registerName.equals("$k1")) 		{return "11011";}
+		else if 	(registerName.equals("$gp")) 		{return "11100";}
+		else if 	(registerName.equals("$sp"))	 	{return "11101";}
+		else if 	(registerName.equals("$fp")) 		{return "11110";}
+		else if 	(registerName.equals("$ra")) 		{return "11111";}
+		else
+			{
+				throw new AssemblerException("[Error A30] This ("+registerName+") is not a register -> this should have been picked up by parser",lineNumber,currentInstruction);
+			}
+	}
+		
+	/**
+	 * 
+	 * Given a translatedOperand (String of specific length), a machineWord (32 bits) and a character (representing
+	 * which operand string we wish to replace e.g. a = first operand etc) this method substitutes the correct operand
+	 * values into their positions within the machine word.
+	 * 
+	 * @@param translatedOperand
+	 * @@param machineCode
+	 * @@param oprep
+	 * @@return returns string with operands replaced
+	 */
+	public String replaceOperand(String translatedOperand, String machineCode, char oprep)
+	{
+		
+		int length = translatedOperand.length();
+		String replaceString = "";
+		for (int count = 0; count<length; count++)
+		{
+			replaceString = replaceString+oprep;
+		}
+		
+		while (machineCode.indexOf(oprep)!=-1)
+			{
+				machineCode = machineCode.replaceFirst(replaceString,translatedOperand);
+			}
+		return machineCode;		
+	}
+	
+	private char encodeMarker(int number) throws AssemblerException
+	{
+		switch (number)
+			{
+				case 0	:	{return 'a';}
+				case 1	:	{return 'b';}
+				case 2	:	{return 'c';}
+				case 3	:	{return 'd';}
+				case 4	:	{return 'e';}
+				case 5 :	{return 'f';}
+				case 6 :	{return 'g';}
+				case 7 :	{return 'h';}
+				case 8 :	{return 'i';}
+				case 9 :	{return 'j';}
+				default :	{throw new AssemblerException("[Error A31] Too many operands for an instruction",lineNumber,currentInstruction);}
+			}
+	}
+
+	/**
+	 * 
+	 * This method transforms a decimal immediate into twos complement binary with accuracy definted by the numberOfBitsRequired parameter.
+	 * It will thrw an error if the number cannot be represented in the given space e.g. if the number is too big 
+	 * for a certain number of bits.
+	 * 
+	 * @@param immediate
+	 * @@param numberOfBitsRequired
+	 * @@return binary string representation of int
+	 * @@throws AssemblerException
+	 */
+	public String intToBinaryString(int immediate,int numberOfBitsRequired) throws AssemblerException
+	{
+		String binaryString="";
+		if (immediate<0)
+			{
+				binaryString = encodeToBinary(-(immediate),numberOfBitsRequired);
+				if (binaryString.length()<numberOfBitsRequired) 
+					{
+						binaryString = padOutPositiveBinaryString(binaryString,numberOfBitsRequired);
+						return toTwosComplement(binaryString);
+					}
+				else if (binaryString.length()==numberOfBitsRequired && binaryStringToInteger(binaryString.substring(1,numberOfBitsRequired))==0)
+					{
+						return toTwosComplement(binaryString);
+					}
+				else	throw new AssemblerException("[Error A32] This immediate ("+immediate+") cannot be represented as a twos complement number within current bounds ("+numberOfBitsRequired+")",lineNumber,currentInstruction);
+			}
+		else
+			{
+				binaryString = encodeToBinary(immediate,numberOfBitsRequired);
+				if (binaryString.length()<numberOfBitsRequired) 
+					{
+						binaryString = padOutPositiveBinaryString(binaryString,numberOfBitsRequired);
+						return binaryString;
+					}
+				else	throw new AssemblerException("[Error A33] This immediate ("+immediate+") cannot be represented as a twos complement number within current bounds ("+numberOfBitsRequired+")",lineNumber,currentInstruction);
+			}
+	}
+
+	/**
+	 * 
+	 * Method used in translating an immediate to binary to convert any bitstring given into twos complement.
+	 * It throws exceptions if the number is not a binary string.
+	 * 
+	 * @@param positiveBinaryNumber
+	 * @@return returns Twos complement representation of string
+	 * @@throws AssemblerException
+	 */
+	public String toTwosComplement(String positiveBinaryNumber) throws AssemblerException
+	{
+		//copy up to and including first 1, then invert remainder
+		int count = positiveBinaryNumber.length()-1;
+		String newOutput = "";
+		while (count>=0 && positiveBinaryNumber.charAt(count)=='0')
+			{
+				newOutput = "0"+newOutput;
+				count--;
+			}
+		if (positiveBinaryNumber.charAt(count)=='1')
+			{
+				newOutput = "1"+newOutput;
+				count--;
+			}
+		while (count>=0)
+			{
+				if (positiveBinaryNumber.charAt(count)=='1') {newOutput = "0"+newOutput;}
+				else if (positiveBinaryNumber.charAt(count)=='0') {newOutput = "1"+newOutput;}
+				else {throw new AssemblerException("[Error A34] The number ("+positiveBinaryNumber+") for some reason is not in binary",lineNumber,currentInstruction);}
+				count--;
+			}
+		return newOutput;
+	}
+	
+	/**
+	 * 
+	 * Encodes any deciaml immediate into its positive binary representation (modulus)
+	 * 
+	 * @@param immediate
+	 * @@param numberOfBitsRequired
+	 * @@return returns positive binary representation of immediate
+	 */
+	public String encodeToBinary(int immediate,int numberOfBitsRequired)
+	{
+		int value = immediate;
+		String output = "";
+		while (value>=1)
+			{
+				output = (value%2)+output;
+				value = value/2;
+			}
+		return output;
+	}
+	
+	/**
+	 * 
+	 * Pads out the high end bits of a binary string till it fills the number of bits required (using twos complement rules: 1s used if negative, 0 if positive)
+	 * 
+	 * @@param binaryString
+	 * @@param numberOfBitsRequired
+	 * @@return returns padded out string
+	 * 
+	 */
+	public String padOutPositiveBinaryString(String binaryString,int numberOfBitsRequired)
+	{
+		while (binaryString.length()<numberOfBitsRequired)
+			{
+				binaryString = "0"+binaryString;
+			}	
+		return binaryString;
+	}
+	
+	/**
+	 * Converts any binary string to its integer value.
+	 * 
+	 * @@param binaryString
+	 * @@return returns integer representation of binary string
+	 * @@throws AssemblerException
+	 */
+	public int binaryStringToInteger(String binaryString) throws AssemblerException
+	{
+
+		if (binaryString.charAt(0)=='1')
+			{
+				// is a negative number
+				// convert back to positive number
+				return -(binaryToPositiveInteger(toTwosComplement(binaryString)));
+			}
+		else
+			{
+				return binaryToPositiveInteger(binaryString);
+			}
+
+	}
+	
+	public int binaryToPositiveInteger(String binaryString)
+	{
+		int value = 0;
+		int equivalent = 1;
+		int count = binaryString.length()-1;
+		while (count>=0)
+		{
+			if (binaryString.charAt(count)=='1') {value+=equivalent;}
+			equivalent=equivalent*2;	
+			count--;
+		}
+		return value;
+	}
+	
+	public char getOperandCode(Operand op) throws AssemblerException
+	{
+		//checked
+		if (op instanceof ImmediateOperand)
+			{
+				int number = BOUNDARY_16_32;
+				int number2 = ((ImmediateOperand)op).getValue();
+				if (((ImmediateOperand)op).getValue()<=BOUNDARY_16_32)		{return '0';}
+				else																									{return 'a';}
+			}
+		else if (op instanceof RegisterOperand) 												{return '1';}
+		else if (op instanceof LabelOperand) 													{return '2';}
+		else if (op instanceof AddressingOperand)  							//3
+			{
+				switch (((AddressingOperand)op).getType())
+				{
+					case AddressingOperand.IMMEDIATE 						:	{return '4';}
+					case AddressingOperand.IMMEDIATE_REGISTER 				: 	{return '5';}
+					case AddressingOperand.LABEL							: 	{return '6';}
+					case AddressingOperand.LABEL_PLUS_IMMEDIATE				: 	{return '7';}
+					case AddressingOperand.LABEL_PLUS_IMMEDIATE_REGISTER	: 	
+						{
+							if (((AddressingOperand)op).getImmediate()<0) 
+								{
+									{return 'c';}																	//negative immediate thus register subbed
+								}
+							else
+								{
+									{return '8';}																	//positive immediate thus register added
+								}
+						}
+					case AddressingOperand.REGISTER						 	: 	{return '9';}
+					default													:	{ throw new AssemblerException("[Error A35] Addressing operand unrecognised type  Operand is not recognised",lineNumber,currentInstruction);}
+				}
+			}
+		else throw new AssemblerException("[Error A36] Addressing operand has unrecognised type  Operand is not recognised",lineNumber,currentInstruction);
+	}
+
+	public String encodeOperandList(List anOperandList) throws AssemblerException
+	{
+		//checked		
+		String coding="";
+		for (int count=0; count<anOperandList.size(); count++)
+			{
+				coding+=""+getOperandCode((Operand)anOperandList.get(count));
+			}
+		if (anOperandList.size()==0) 		return "b";				//has no operands thus represented by b
+		else 									 		return coding;
+	}
+}@
+
+
+1.31
+log
+@*** empty log message ***
+@
+text
+@a13 3
+ * @@author jkm01
+ *
+ *
+d22 1
+a23 1
+
+d112 1
+a112 1
+	 * <BR><BR>NOTE: “uncoded” refers to machine code that hasn’t had the correct values for its operands substituted yet e.g. 001000bbbbbaaaaacccccccccccccccc
+d117 1
+a117 1
+	 * The handler must encode the provided operands, and substitute their translated values into the provided “uncoded” machine word.
+d124 1
+a124 1
+	 * @@param word A single 32 bit bitstring, which is an “uncoded” machine code representation of some of the instruction which is required to be translated.
+d130 1
+a130 1
+	 * @@param currentThe full instruction itself from the original LineList AST.
+@
+
+
+1.30
+log
+@*** empty log message ***
+@
+text
+@d134 1
+a134 1
+	 * @@return
+d202 1
+a202 1
+	 * @@return
+d459 1
+a459 1
+	 * @@return
+d511 1
+a511 1
+	 * @@return
+d556 1
+a556 1
+	 * @@return
+d594 1
+a594 1
+	 * @@return
+d628 1
+a628 1
+	 * @@return
+d648 2
+a649 1
+	 * @@return
+d664 1
+a664 1
+	 * @@return
+@
+
+
+1.29
+log
+@*** empty log message ***
+@
+text
+@d16 9
+a24 2
+ * To change the template for this generated type comment go to
+ * Window - Preferences - Java - Code Generation - Code and Comments
+d67 6
+d109 28
+d173 8
+d195 10
+d217 8
+d242 7
+d256 8
+d285 10
+d454 8
+d502 11
+d548 11
+d588 9
+d622 8
+d642 8
+d659 7
+@
+
+
+1.28
+log
+@*** empty log message ***
+@
+text
+@d27 1
+a27 1
+	private static int BOUNDARY_16_32 = (2^15)-1; 
+d547 2
+@
+
+
+1.27
+log
+@*** empty log message ***
+@
+text
+@d68 1
+a68 3
+				if (currentRepresentation.isOperand(""+searchOperandType)) 			// if there are details on this particular operand, setup handler variables appropriately
+					
+//					currentRepresentation.isOperand2(count+1,searchOperandType)
+a70 2
+						currentOperand =currentRepresentation.getOperand(""+searchOperandType);
+
+d72 1
+a72 3
+//						currentOperand = currentRepresentation.getOperand2(count+1,""+searchOperandType);
+						
+
+@
+
+
+1.26
+log
+@*** empty log message ***
+@
+text
+@d27 1
+a27 1
+	private static int BOUNDARY_16_32 = (2^15)-1; //TODO work out upper boundary for 16bit numbers in twos complement
+d67 1
+d69 3
+d74 5
+a445 1
+		//TODO check whether immediate is in possible range
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@d140 1
+a140 4
+		else
+			{
+				throw new AssemblerException("Error A59 - Line "+lineNumber+": "+currentInstruction.getName()+" - Current operand ("+currentOperand.toString()+") is not a valid operand, error in parser");
+			}
+d152 1
+a152 1
+		else throw new AssemblerException("required output length and bit mask contradict one another");
+d194 1
+a194 1
+				else						throw new AssemblerException("Error provided offset mode is incorrect");
+d211 1
+a211 1
+			default																:	{throw new AssemblerException("Error A91 - Line "+lineNumber+": "+currentInstruction.getName()+" - Addressing operand has unrecognised type ("+currentOperand.getType()+") Operand is not recognised");} //0
+d232 1
+a232 1
+		else throw new AssemblerException("Error - offset mode is invalid");
+d247 1
+a247 1
+		else throw new AssemblerException("Error - offset mode is invalid");
+d266 1
+a266 1
+		else throw new AssemblerException("Error - offset mode is invalid");
+d293 1
+a293 1
+				else throw new AssemblerException("Error - offset mode is invalid");
+d323 1
+a323 1
+				else throw new AssemblerException("Error - offset mode is invalid");
+a344 5
+/*						if (immediate<0)
+							{
+								machineWord = machineWord.substring(0,64)+"000000aaaaacccccaaaaa00000100010";
+							}
+*/
+a348 7
+/*						if (immediate<0)
+							{
+							   machineWord = 	machineWord.substring(0,64)+
+												"00000000001"+encodeRegister(register)+"0000100000100011"+ //subuu at,at,register
+												machineWord.subSequence(96,machineWord.length());												 //prefix the machine code instruction to set the at register	
+							}
+*/
+a352 7
+/*						if (immediate<0)
+							{
+							   machineWord = 	machineWord.substring(0,64)+
+												"00000000001"+encodeRegister(register)+"0000100000100011"+ //subuu at,at,register
+												machineWord.subSequence(96,machineWord.length());												 //prefix the machine code instruction to set the at register	
+							}
+*/
+d354 1
+a354 1
+				else throw new AssemblerException("Error - offset mode is invalid");
+d395 1
+a395 1
+				throw new AssemblerException("Error A82 - Line "+lineNumber+": "+currentInstruction.getName()+" - this ("+registerName+") is not a register -> this should have been picked up by parser");
+d424 7
+a430 2
+				case 4	:	{return 'e';}			
+				default :	{throw new AssemblerException("Error A83 - Line "+lineNumber+": "+currentInstruction.getName()+" - too many operands for an instruction");}
+d450 1
+a450 1
+				else	throw new AssemblerException("Error A84 - Line "+lineNumber+": "+currentInstruction.getName()+" - this immediate ("+immediate+") cannot be represented as a twos complement number within current bounds ("+numberOfBitsRequired+")");
+d460 1
+a460 1
+				else	throw new AssemblerException("Error A84 - Line "+lineNumber+": "+currentInstruction.getName()+" - this immediate ("+immediate+") cannot be represented as a twos complement number within current bounds ("+numberOfBitsRequired+")");
+d483 1
+a483 1
+				else {throw new AssemblerException("Error A85 - Line "+lineNumber+": "+currentInstruction.getName()+" - the number ("+positiveBinaryNumber+") for some reason is not in binary");}
+a497 7
+/*
+		if (output.length()>=numberOfBitsRequired) throw new AssemblerException("Error - positive binary representation cannot be converted to 2s complement "+immediate+"="+output+", requires an extra bit");
+		while (output.length()<numberOfBitsRequired)
+			{
+				output = "0"+output;
+			}
+*/
+d570 1
+a570 1
+					default													:	{ throw new AssemblerException("Error A91 - Line "+lineNumber+": "+currentInstruction.getName()+" - Addressing operand unrecognised type  Operand is not recognised");}
+d573 1
+a573 1
+		else throw new AssemblerException("Error A91 - Line "+lineNumber+": "+currentInstruction.getName()+" - Addressing operand has unrecognised type  Operand is not recognised");
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d2 1
+a2 1
+ * Created on 25-Nov-2003
+a11 1
+import java.io.PrintStream;
+d14 1
+a14 1
+ * @@author ajb101
+d24 6
+d31 1
+d33 12
+a48 3
+	private int handlerMode;
+	private int currentLineAddress;
+	private String machineWord;
+a49 2
+	private boolean useOffsets;
+	private PrintStream verboseStream;
+d51 1
+a51 1
+	public OperandHandler(SymbolTable st, ToBeDoneTable tbdt, PrintStream verbose)
+d53 1
+d56 1
+a56 1
+		verboseStream = verbose;
+d59 2
+a60 1
+	public void setHandlerMode(int mode) throws AssemblerException
+d62 3
+a64 1
+		if (mode<=6 && mode >=0)
+d66 11
+a76 5
+				handlerMode = mode;
+			}
+		else
+			{
+				throw new AssemblerException("Error A58 - Line "+lineNumber+": "+currentInstruction.getName()+" - Instruction type ("+mode+") is invalid for current instruction, XML representation of instruction is incorrect");
+d78 1
+d80 1
+a80 1
+
+d86 2
+a87 1
+	public String encodeOperands(List operandList,int cLA, String mW, int instructionType,Instruction cI, int lN, boolean useO) throws AssemblerException
+d89 1
+a89 7
+		translatedList = new ArrayList();
+		setHandlerMode(instructionType);
+		currentLineAddress = cLA;
+		machineWord = mW;
+		currentInstruction = cI;
+		lineNumber = lN;
+		rsRegister = null;
+d91 32
+a122 9
+		useOffsets = useO;
+		
+		for (int count = 0; count<operandList.size(); count++)
+			{
+				handleOperand((Operand)operandList.get(count));
+			}
+		for (int count = 0; count<translatedList.size(); count++)
+			{
+				if (!(translatedList.get(count).equals("LABEL_ERROR")))
+d124 1
+a124 1
+						machineWord = replaceOperand((String)translatedList.get(count),machineWord,encodeMarker(count));
+d126 1
+a127 7
+		if (rsRegister!=null)
+			{
+				machineWord = replaceOperand(rsRegister,machineWord,'z');
+			}
+		return machineWord;
+	}
+
+d131 1
+a144 9
+	
+	
+// 0 no restrictions
+// 1 16 bits general immediate
+// 2 5 bits shamt immediate
+// 3 16 bits general label
+// 4 26 bits target label
+//  5  la special handling
+// 6 div mul stupid compiler lab handling
+d146 1
+a146 1
+	private void handleImmediateOperand(ImmediateOperand currentOperand) throws AssemblerException
+d148 8
+a155 6
+//		if (handlerMode==1) {handleGeneralImmediateOperand(currentOperand);}
+		if (handlerMode==2) {handleShamtImmediateOperand(currentOperand);}
+		else if (handlerMode==6) {handleShamtImmediateOperand(currentOperand);}
+		else handleGeneralImmediateOperand(currentOperand);
+//		else {throw new AssemblerException("Error A59 - Line "+lineNumber+": "+currentInstruction.getName()+" - immediate value is not a valid type for this instruction");}
+
+d158 1
+a158 1
+	private void handleGeneralImmediateOperand(ImmediateOperand currentOperand) throws AssemblerException
+d160 1
+d162 11
+a172 1
+		translatedList.add(""+intToBinaryString(imm,16));
+d174 1
+a174 15
+	
+	private void handleShamtImmediateOperand(ImmediateOperand currentOperand) throws AssemblerException
+	{
+		int shamt = currentOperand.getValue();
+		translatedList.add(""+intToBinaryString(shamt,5));
+	}
+	
+	private void handleDivMulImmediateOperand(ImmediateOperand currentOperand) throws AssemblerException
+	{
+		int divmulamt = currentOperand.getValue();
+		machineWord = 	"00100000000aaaaa"+intToBinaryString(divmulamt,32).substring(16,32)+
+									"00111100000aaaaa"+intToBinaryString(divmulamt,32).substring(0,16)+
+									machineWord;					    //prefix the machine code instruction to set the at register
+	}
+	
+d177 1
+d179 1
+a179 9
+		if (handlerMode==6 && translatedList.size()==2)
+			{
+				machineWord = 	"00000000000"+encodeRegister(register)+"aaaaa00000100001"+
+											machineWord;					    
+			}
+		else
+			{
+				translatedList.add(encodeRegister(register));						
+			}
+d184 1
+a184 8
+//		if (handlerMode==3) {handleGeneralLabel(currentOperand);}
+		if (handlerMode==4) {handleTarget(currentOperand);}
+		else handleGeneralLabel(currentOperand);
+//		else {throw new AssemblerException("Error A91 - Line "+lineNumber+": "+currentInstruction.getName()+" - Unknown label operand");}
+	}
+
+	private void handleGeneralLabel(LabelOperand currentOperand) throws AssemblerException
+	{
+d186 1
+d194 6
+a199 2
+				String address = ""+intToBinaryString(symbolTable.returnAddress(label)-currentLineAddress,18);
+				translatedList.add(address.substring(0,address.length()-2));
+a201 16
+	
+
+	private void handleTarget(LabelOperand currentOperand) throws AssemblerException
+	{
+		String target = currentOperand.getLabel();
+		if (!symbolTable.containsLabel(target))
+			{
+				translatedList.add("LABEL_ERROR");
+				symbolTableError=true;		
+			}
+		else
+			{
+				String address = ""+intToBinaryString(symbolTable.returnAddress(target)-currentLineAddress,32);
+				translatedList.add(address.substring(3,address.length()-2));
+			}
+	}	
+d205 1
+d208 7
+a214 7
+			case AddressingOperand.IMMEDIATE 						:	{handleAddressingImmediate(currentOperand);break;}
+			case AddressingOperand.IMMEDIATE_REGISTER 				: 	{handleAddressingImmediateRegister(currentOperand);break;}
+			case AddressingOperand.LABEL							: 	{handleAddressingLabel(currentOperand);break;}
+			case AddressingOperand.LABEL_PLUS_IMMEDIATE				: 	{handleAddressingLabelImmediate(currentOperand);break;}
+			case AddressingOperand.LABEL_PLUS_IMMEDIATE_REGISTER 	: 	{handleAddressingLabelImmediateRegister(currentOperand);break;}
+			case AddressingOperand.REGISTER						 	: 	{handleAddressingRegister(currentOperand);break;}
+			default													:	{ throw new AssemblerException("Error A91 - Line "+lineNumber+": "+currentInstruction.getName()+" - Addressing operand has unrecognised type ("+currentOperand.getType()+") Operand is not recognised");} //0
+d220 1
+d222 6
+a227 1
+		if (!useOffsets)
+d229 1
+a229 9
+				translatedList.add(""+intToBinaryString(imm,32).substring(16,32));
+				translatedList.add(""+intToBinaryString(imm,32).substring(0,16));
+
+/*				
+				translatedList.add(""+intToBinaryString(imm,32).substring(0,16));
+				translatedList.add(""+intToBinaryString(imm,32).substring(16,32));
+*/				
+				translatedList.add(translatedList.get(0));
+				translatedList.add("00000");				
+d231 1
+a231 1
+		else
+d233 1
+a233 5
+				rsRegister = "00001";
+				machineWord = 	"00111100000000010001000000000000"+ //lui at, 0x1000
+											"00100000001000011000000000000000"+ //addi at,at,0x8000
+											machineWord;					    //prefix the machine code instruction to set the at register
+				translatedList.add(""+intToBinaryString(imm-0x10008000,16));				
+d235 1
+a235 1
+
+d240 1
+d242 1
+a242 1
+		if (!useOffsets)
+d244 1
+a244 4
+				translatedList.add("0000000000000000");
+				translatedList.add("0000000000000000");
+				translatedList.add("00000");
+				translatedList.add(encodeRegister(register));				
+d246 1
+a246 1
+		else
+a247 1
+				translatedList.add("0000000000000000");
+d250 1
+d255 1
+d258 1
+a258 1
+		if (!useOffsets)
+d260 3
+a262 8
+				translatedList.add(""+intToBinaryString(imm,32).substring(16,32));
+				translatedList.add(""+intToBinaryString(imm,32).substring(0,16));
+/*
+				translatedList.add(""+intToBinaryString(imm,32).substring(0,16));
+				translatedList.add(""+intToBinaryString(imm,32).substring(16,32));
+*/
+				translatedList.add(translatedList.get(0));
+				translatedList.add(encodeRegister(register));				
+d264 1
+a264 1
+		else
+d266 2
+a267 2
+				translatedList.add(""+intToBinaryString(imm,16));
+				rsRegister = encodeRegister(register);				
+d269 1
+d274 1
+d283 1
+a283 1
+				if (!useOffsets)
+d285 6
+a290 12
+						verboseStream.println("absolute label address is "+symbolTable.returnAddress(label)+ " "+intToBinaryString(symbolTable.returnAddress(label),32));
+						verboseStream.println("absolute label address upper half is "+intToBinaryString(symbolTable.returnAddress(label),32).substring(0,16));
+						verboseStream.println("absolute label address lower half is "+intToBinaryString(symbolTable.returnAddress(label),32).substring(16,32));
+/*						
+						translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label),32).substring(0,16));
+						translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label),32).substring(16,32));
+*/
+						translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label),32).substring(16,32));
+						translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label),32).substring(0,16));
+
+						translatedList.add(translatedList.get(0));
+						translatedList.add("00000");				
+d292 1
+a292 1
+				else
+d294 1
+a294 7
+						rsRegister = "00001";
+						machineWord = 	"00111100000000010001000000000000"+ //lui at, 0x1000
+													"00100000001000011000000000000000"+ //addi at,at,0x8000
+													machineWord;												 //prefix the machine code instruction to set the at register
+						translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-0x10008000,16));
+						verboseStream.println("label "+label+" has absolute address "+symbolTable.returnAddress(label)+" relative "+(symbolTable.returnAddress(label)-0x10008000));
+
+d296 1
+d302 1
+d313 6
+a318 1
+				if (!useOffsets)
+d320 1
+a320 9
+						translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)+immediate,32).substring(16,32));
+						translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)+immediate,32).substring(0,16));
+
+/*
+						translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)+immediate,32).substring(0,16));
+						translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)+immediate,32).substring(16,32));
+*/
+						translatedList.add(translatedList.get(0));
+						translatedList.add("00000");				
+d322 1
+a322 1
+				else
+d324 1
+a324 5
+						rsRegister = "00001";
+						machineWord = 	"00111100000000010001000000000000"+ //lui at, 0x1000
+													"00100000001000011000000000000000"+ //addi at,at,0x8000
+													machineWord;						//prefix the machine code instruction to set the at register
+						translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)+immediate-0x10008000,16));														
+d326 1
+d332 1
+d344 1
+a344 1
+				if (!useOffsets)
+d346 3
+a348 9
+						translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)+immediate,32).substring(16,32));
+						translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)+immediate,32).substring(0,16));
+/*
+ 						translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)+immediate,32).substring(0,16));
+						translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)+immediate,32).substring(16,32));
+*/
+						translatedList.add(translatedList.get(0));
+						translatedList.add("00000");				
+						if (immediate<0)
+d350 1
+a350 1
+								machineWord = machineWord.substring(0,64)+"000000dddddeeeeeaaaaa00000100010";
+d352 1
+d354 1
+a354 1
+				else
+d356 2
+a357 2
+						rsRegister = "00001";
+						if (immediate>=0)
+d359 3
+a361 4
+								machineWord = 	"00111100000000010001000000000000"+ //lui at, 0x1000
+															"00100000001000011000000000000000"+ //addi at,at,0x8000
+															"00000000001"+encodeRegister(register)+"0000100000100001"+ //addu at,at,register
+												machineWord;												 //prefix the machine code instruction to set the at register	
+d363 6
+a368 1
+						else
+d370 3
+a372 4
+								machineWord = 	"00111100000000010001000000000000"+ //lui at, 0x1000
+															"00100000001000011000000000000000"+ //addi at,at,0x8000
+															"00000000001"+encodeRegister(register)+"0000100000100011"+ //subuu at,at,register
+												machineWord;												 //prefix the machine code instruction to set the at register						
+d374 1
+a374 1
+							translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-0x10008000+immediate,16));														
+d376 2
+a435 11
+/*		
+		int firstOccurrance = machineCode.indexOf(oprep);
+		int lastOccurrance = machineCode.lastIndexOf(oprep);
+		int substituteLength = lastOccurrance-firstOccurrance+1;
+		String replaceString = "";
+		for (int count = 0; count<substituteLength; count++)
+		{
+			replaceString = replaceString+oprep;
+		}
+		return machineCode.replaceAll(replaceString,translatedOperand);
+*/
+d453 6
+a458 2
+
+				if (immediate<0)
+d460 2
+a461 1
+						return toTwosComplement(encodeToBinary(-(immediate),numberOfBitsRequired));
+d463 1
+a463 1
+				else
+d465 1
+a465 1
+						return encodeToBinary(immediate,numberOfBitsRequired);
+d467 12
+d506 1
+a506 1
+	public String encodeToBinary(int immediate,int numberOfBitsRequired) throws AssemblerException
+d515 2
+d521 7
+a527 1
+		if (output.length()>numberOfBitsRequired)
+d529 3
+a531 3
+				throw new AssemblerException("Error A84- this immediate ("+immediate+") cannot be represented as a twos complement number within current bounds");
+			}
+		return output;
+d563 49
+a611 1
+}
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d122 1
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d12 1
+d36 1
+d38 1
+a38 1
+	public OperandHandler(SymbolTable st, ToBeDoneTable tbdt)
+d42 1
+d291 3
+a293 3
+						System.out.println("absolute label address is "+symbolTable.returnAddress(label)+ " "+intToBinaryString(symbolTable.returnAddress(label),32));
+						System.out.println("absolute label address upper half is "+intToBinaryString(symbolTable.returnAddress(label),32).substring(0,16));
+						System.out.println("absolute label address lower half is "+intToBinaryString(symbolTable.returnAddress(label),32).substring(16,32));
+d311 1
+a311 1
+						System.out.println("label "+label+" has absolute address "+symbolTable.returnAddress(label)+" relative "+(symbolTable.returnAddress(label)-0x10008000));
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d44 1
+a44 1
+		if (mode<6 && mode >=0)
+d147 1
+a147 1
+		if (handlerMode==6)
+d150 1
+a150 1
+											machineWord;					    //prefix the machine code instruction to set the at register
+d216 4
+d222 1
+d260 3
+d265 1
+d288 4
+d294 4
+d328 4
+d334 1
+d364 1
+d366 2
+d369 1
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@d292 1
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d291 1
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d34 1
+d59 1
+a59 1
+	public String encodeOperands(List operandList,int cLA, String mW, int instructionType,Instruction cI, int lN) throws AssemblerException
+d69 1
+d214 1
+a214 1
+		if (handlerMode==5)
+d235 1
+a235 1
+		if (handlerMode==5)
+d253 1
+a253 1
+		if (handlerMode==5)
+d277 1
+a277 1
+				if (handlerMode==5)
+d307 1
+a307 1
+				if (handlerMode==5)
+d338 1
+a338 1
+				if (handlerMode==5)
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d43 1
+a43 1
+		if (mode<4 && mode >=0)
+d115 5
+a119 4
+		if (handlerMode==1) {handleGeneralImmediateOperand(currentOperand);}
+		else if (handlerMode==2) {handleShamtImmediateOperand(currentOperand);}
+		else if (handlerMode==6) {handleDivMulImmediateOperand(currentOperand);}
+		else {throw new AssemblerException("Error A59 - Line "+lineNumber+": "+currentInstruction.getName()+" - immediate value is not a valid type for this instruction");}
+d158 4
+a161 3
+		if (handlerMode==3) {handleGeneralLabel(currentOperand);}
+		else if (handlerMode==4) {handleTarget(currentOperand);}
+		else {throw new AssemblerException("Error A91 - Line "+lineNumber+": "+currentInstruction.getName()+" - Unknown label operand");}
+d223 1
+a223 1
+											"00100000001000011000000000000000  "+ //addi at,at,0x8000
+d286 1
+a286 1
+													"00100000001000011000000000000000  "+ //addi at,at,0x8000
+d316 1
+a316 1
+													"00100000001000011000000000000000  "+ //addi at,at,0x8000
+d353 1
+a353 1
+															"00100000001000011000000000000000  "+ //addi at,at,0x8000
+d360 1
+a360 1
+															"00100000001000011000000000000000  "+ //addi at,at,0x8000
+d452 1
+a452 3
+		//TODO check whether immediate is in possible range
+		if (immediate>=(-(2^(numberOfBitsRequired-1))) && immediate<=((2^(numberOfBitsRequired-1))-1))
+			{
+a460 5
+			}
+		else
+			{
+				throw new AssemblerException("Error A84 - Line "+lineNumber+": "+currentInstruction.getName()+" - this immediate ("+immediate+") cannot be represented as a twos complement number within current bounds");
+			}
+d488 1
+a488 1
+	public String encodeToBinary(int immediate,int numberOfBitsRequired)
+d500 4
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d110 2
+d117 1
+d133 8
+d144 9
+a152 1
+		translatedList.add(encodeRegister(register));		
+@
+
+
+1.14
+log
+@c
+@
+text
+@a89 5
+		// handle immediate
+		// handle register
+		// handle label
+		// handle addressing
+		
+a112 1
+
+a519 434
+/* before alternative was created
+public class OperandHandler {
+
+	private SymbolTable symbolTable;
+	private ToBeDoneTable toBeDoneTable; 
+	private Instruction currentInstruction;
+	private int lineNumber;
+
+	//handler variables
+	private ArrayList translatedList;
+	private String rsRegister;
+	private int handlerMode;
+	private int currentLineAddress;
+	private String machineWord;
+	private boolean symbolTableError;
+
+
+	//TODO
+	private int MAX_INTEGER = 999999999;
+	
+	public OperandHandler(SymbolTable st, ToBeDoneTable tbdt)
+	{
+		symbolTable = st;
+		toBeDoneTable = tbdt;
+	}
+
+	public void setHandlerMode(int mode) throws AssemblerException
+	{
+		if (mode<4 && mode >=0)
+			{
+				handlerMode = mode;
+			}
+		else
+			{
+				throw new AssemblerException("Error A58 - Line "+lineNumber+": "+currentInstruction.getName()+" - Instruction type ("+mode+") is invalid for current instruction, XML representation of instruction is incorrect");
+			}
+	}
+
+	public boolean isSymbolTableError()
+	{
+		return symbolTableError;
+	}
+
+	public String encodeOperands(List operandList,int cLA, String mW, int instructionType,Instruction cI, int lN) throws AssemblerException
+	{
+		translatedList = new ArrayList();
+		setHandlerMode(instructionType);
+		currentLineAddress = cLA;
+		machineWord = mW;
+		currentInstruction = cI;
+		lineNumber = lN;
+		rsRegister = null;
+		symbolTableError=false;
+		
+		for (int count = 0; count<operandList.size(); count++)
+			{
+				handleOperand((Operand)operandList.get(count));
+			}
+		for (int count = 0; count<translatedList.size(); count++)
+			{
+				if (!(translatedList.get(count).equals("LABEL_ERROR")))
+					{
+						machineWord = replaceOperand((String)translatedList.get(count),machineWord,encodeMarker(count));
+					}
+			}
+		machineWord = replaceOperand(rsRegister,machineWord,'z');
+		return machineWord;
+	}
+			
+	public void handleOperand(Operand currentOperand) throws AssemblerException
+	{
+		if (currentOperand instanceof RegisterOperand)
+			{handleRegisterOperand((RegisterOperand)currentOperand);}
+		else if (currentOperand instanceof ImmediateOperand)
+			{handleImmediateOperand((ImmediateOperand)currentOperand);}
+		else if (currentOperand instanceof ImmediateRegisterOperand)
+			{handleImmediateRegisterOperand((ImmediateRegisterOperand)currentOperand);}
+		else if (currentOperand instanceof LabelOperand)
+			{handleLabelOperand((LabelOperand)currentOperand);}
+		else if (currentOperand instanceof LabelPlusImmediateOperand)
+			{handleLabelImmediate((LabelPlusImmediateOperand)currentOperand);}
+		else if (currentOperand instanceof LabelPlusImmediateRegisterOperand)
+			{handleLabelImmediateRegister((LabelPlusImmediateRegisterOperand)currentOperand);}
+		else
+			{
+				throw new AssemblerException("Error A59 - Line "+lineNumber+": "+currentInstruction.getName()+" - Current operand ("+currentOperand.toString()+") is not a valid operand, error in parser");
+			}
+	}
+	
+	private void handleRegisterOperand(RegisterOperand currentOperand) throws AssemblerException
+	{
+		String register = currentOperand.getValue();
+		switch (handlerMode)
+		{
+			case 0		:			{	translatedList.add(encodeRegister(register));} //<=3
+			case 1		:			{	translatedList.add(encodeRegister(register));} //<=1
+			case 2		:			{	throw new AssemblerException("Error A60 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no register operands in a jump instruction");} //0
+			case 3		:			{	if (translatedList.size()==1)
+												{
+													//first register operand has already been added, we are in address mode
+													translatedList.add("0000000000000000");
+													rsRegister = encodeRegister(register);
+												}
+											else
+												{
+													//first register has not been added, we are reading in the first register operand
+													translatedList.add(encodeRegister(register));
+												}										
+										} //<=2
+		}
+	}
+		
+	private void handleImmediateOperand(ImmediateOperand currentOperand) throws AssemblerException
+	{
+		int immediateValue = currentOperand.getValue();
+		switch (handlerMode)
+		{
+			case 0		:			{	translatedList.add(""+intToBinaryString(immediateValue,16));} //<=1
+			case 1		:			{	throw new AssemblerException("Error A61 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no immediate operands in a branch instruction");} //<=1
+			case 2		:			{	throw new AssemblerException("Error A62 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no immediates in a jump instruction");} //0
+			case 3		:			{
+											rsRegister = "00001";
+											machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+																		"00100000001000010001000000000000"+ //addi at,at,0x1000
+																		machineWord;												 //prefix the machine code instruction to set the at register
+											translatedList.add(""+intToBinaryString(immediateValue-0x10008000,16));
+										}
+		}
+	}
+
+	private void handleImmediateRegisterOperand(ImmediateRegisterOperand currentOperand) throws AssemblerException
+	{
+		int immediateValue = currentOperand.getImmediateValue();
+		String register = currentOperand.getRegister();
+		switch (handlerMode)
+		{
+			case 0		:			{	throw new AssemblerException("Error A63 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no addressing within normal instructions");} //0
+			case 1		:			{	throw new AssemblerException("Error A64 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no imm(reg) within branch instructions only labels");} //0
+			case 2		:			{	throw new AssemblerException("Error A65 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no imm(reg) within jump instructions only labels");} //0
+			case 3		:			{
+											translatedList.add(""+intToBinaryString(immediateValue,16));
+											rsRegister = encodeRegister(register);
+										}//<=1 should only be 1 of these here
+		}
+	}
+
+	private void handleLabelOperand(LabelOperand currentOperand) throws AssemblerException
+	{
+		String label = currentOperand.getValue();
+		if (!symbolTable.containsLabel(label))
+			{
+				switch (handlerMode)
+				{
+					case 0		:			{	throw new AssemblerException("Error A66 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label addressing within normal instructions");} //0
+					case 1		:			{	translatedList.add("LABEL_ERROR");} //1
+					case 2		:			{	translatedList.add("LABEL_ERROR");} //1
+					case 3		:			{	translatedList.add("LABEL_ERROR");} //1
+				}
+				symbolTableError=true;				
+			}
+		else
+			{
+				switch (handlerMode)
+				{
+					case 0		:			{	throw new AssemblerException("Error A67 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label addressing within normal instructions");} //0
+					case 1		:			{
+													String address = ""+intToBinaryString(symbolTable.returnAddress(label)-currentLineAddress,16);
+													translatedList.add(address.substring(0,address.length()-3));
+												} //1
+					case 2		:			{
+													String address = ""+intToBinaryString(symbolTable.returnAddress(label)-currentLineAddress,26);
+													translatedList.add(address.substring(3,address.length()-3));
+												} //1
+					case 3		:			{
+													rsRegister = "00001";
+													machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+																				"00100000001000010001000000000000"+ //addi at,at,0x1000
+																				machineWord;												 //prefix the machine code instruction to set the at register
+													translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-0x10008000,16));
+												}//<=1 should only be 1 of these here
+				}
+			}
+	}
+
+	private void handleLabelImmediate(LabelPlusImmediateOperand currentOperand) throws AssemblerException
+	{
+		String label = currentOperand.getLabel();
+		String sign = currentOperand.getSign();
+		int immediate = currentOperand.getImmediate();
+
+		if (!symbolTable.containsLabel(label))
+			{
+				switch (handlerMode)
+				{
+					case 0		:			{	throw new AssemblerException("Error A68 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate addressing within normal instructions");} //0
+					case 1		:			{	throw new AssemblerException("Error A69 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate addressing within branch instructions");} //0
+					case 2		:			{	throw new AssemblerException("Error A70 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate addressing within jump instructions");} //0 TODO is this right?
+					case 3		:			{	translatedList.add("LABEL_ERROR");} //1
+				}
+				symbolTableError=true;				
+			}
+		else
+			{
+				switch (handlerMode)
+				{
+					case 0		:			{	throw new AssemblerException("Error A71 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediateaddressing within normal instructions");} //0
+					case 1		:			{	throw new AssemblerException("Error A72 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate addressing within branch instructions");} //0
+					case 2		:			{	throw new AssemblerException("Error A73 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate addressing within jump instructions");} //0 TODO is this right?
+					case 3		:			{	rsRegister = "00001";
+													machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+																				"00100000001000010001000000000000"+ //addi at,at,0x1000
+																				machineWord;												 //prefix the machine code instruction to set the at register
+													if (sign.equals("+"))
+														{
+															translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)+immediate-0x10008000,16));														
+														}
+													else if (sign.equals("-"))
+														{
+															translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-immediate-0x10008000,16));																												
+														}
+													else
+														{
+															throw new AssemblerException("Error A74 - Line "+lineNumber+": "+currentInstruction.getName()+" - sign not represented correctly in operand");
+														}
+												}//<=1 should only be 1 of these here
+				}
+			}
+	}
+
+	private void handleLabelImmediateRegister(LabelPlusImmediateRegisterOperand currentOperand) throws AssemblerException
+	{		
+		String label = currentOperand.getLabel();
+		String sign = currentOperand.getSign();
+		int immediate = currentOperand.getImmediate();
+		String register = currentOperand.getRegister();
+
+		if (!symbolTable.containsLabel(label))
+			{
+				switch (handlerMode)
+				{
+					case 0		:			{	throw new AssemblerException("Error A75 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate register addressing within normal instructions"); } //0
+					case 1		:			{	throw new AssemblerException("Error A76 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate register addressing within branch instructions"); } //0
+					case 2		:			{	throw new AssemblerException("Error A77 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate register addressing within jump instructions"); } //0 TODO is this right?
+					case 3		:			{	translatedList.add(null);} //1
+				}
+				symbolTableError=true;				
+			}
+		else
+			{
+				switch (handlerMode)
+				{
+					case 0		:			{	throw new AssemblerException("Error A78 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate rehgister addressing within normal instructions");} //0
+					case 1		:			{	throw new AssemblerException("Error A79 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate register addressing within branch instructions");} //0
+					case 2		:			{	throw new AssemblerException("Error A80 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate register addressing within jump instructions");} // TODO is this right?
+					case 3		:			{
+												rsRegister = "00001";
+			
+												machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+																			"00100000001000010001000000000000"+ //addi at,at,0x1000
+																			"00000000001"+encodeRegister(register)+"0000100000100001"+ //addu at,at,register
+																			machineWord;												 //prefix the machine code instruction to set the at register
+												if (sign.equals("+"))
+													{
+														translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-0x10008000+immediate,16));														
+													}
+												else if (sign.equals("-"))
+													{
+														translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-0x10008000-immediate,16));														
+													}
+												else
+													{
+														throw new AssemblerException("Error A81 - Line "+lineNumber+": "+currentInstruction.getName()+" - sign not represented correctly in operand");
+													}
+												}//<=1 should only be 1 of these here
+				}
+			}
+	}
+
+	private String encodeRegister(String registerName) throws AssemblerException
+	{		
+		if 			(registerName.equals("$zero")) 		{return "00000";}
+		else if 	(registerName.equals("$at")) 		{return "00001";}
+		else if 	(registerName.equals("$v0")) 		{return "00010";}
+		else if 	(registerName.equals("$v1"))	 	{return "00011";}
+		else if 	(registerName.equals("$a0")) 		{return "00100";}
+		else if 	(registerName.equals("$a1")) 		{return "00101";}
+		else if 	(registerName.equals("$a2")) 		{return "00110";}
+		else if 	(registerName.equals("$a3"))	 	{return "00111";}
+		else if 	(registerName.equals("$t0")) 		{return "01000";}
+		else if 	(registerName.equals("$t1")) 		{return "01001";}
+		else if 	(registerName.equals("$t2")) 		{return "01010";}
+		else if 	(registerName.equals("$t3")) 		{return "01011";}
+		else if 	(registerName.equals("$t4")) 		{return "01100";}
+		else if 	(registerName.equals("$t5")) 		{return "01101";}
+		else if 	(registerName.equals("$t6")) 		{return "01110";}
+		else if 	(registerName.equals("$t7")) 		{return "01111";}
+		else if 	(registerName.equals("$s0"))	 	{return "10000";}
+		else if 	(registerName.equals("$s1")) 		{return "10001";}
+		else if 	(registerName.equals("$s2")) 		{return "10010";}
+		else if 	(registerName.equals("$s3")) 		{return "10011";}
+		else if 	(registerName.equals("$s4")) 		{return "10100";}
+		else if 	(registerName.equals("$s5")) 		{return "10101";}
+		else if 	(registerName.equals("$s6")) 		{return "10110";}
+		else if 	(registerName.equals("$s7")) 		{return "10111";}
+		else if 	(registerName.equals("$t8")) 		{return "11000";}
+		else if 	(registerName.equals("$t9"))		{return "11001";}
+		else if 	(registerName.equals("$k0")) 		{return "11010";}
+		else if 	(registerName.equals("$k1")) 		{return "11011";}
+		else if 	(registerName.equals("$gp")) 		{return "11100";}
+		else if 	(registerName.equals("$sp"))	 	{return "11101";}
+		else if 	(registerName.equals("$fp")) 		{return "11110";}
+		else if 	(registerName.equals("$ra")) 		{return "11111";}
+		else
+			{
+				throw new AssemblerException("Error A82 - Line "+lineNumber+": "+currentInstruction.getName()+" - this ("+registerName+") is not a register -> this should have been picked up by parser");
+			}
+	}
+		
+	public String replaceOperand(String translatedOperand, String machineCode, char oprep)
+	{
+		int firstOccurrance = machineCode.indexOf(oprep);
+		int lastOccurrance = machineCode.lastIndexOf(oprep);
+		int substituteLength = lastOccurrance-firstOccurrance+1;
+		String replaceString = "";
+		for (int count = 0; count<substituteLength; count++)
+		{
+			replaceString = replaceString+oprep;
+		}
+		return machineCode.replaceAll(replaceString,translatedOperand);	
+	}
+	
+	private char encodeMarker(int number) throws AssemblerException
+	{
+		switch (number)
+			{
+				case 0	:	{return 'a';}
+				case 1	:	{return 'b';}
+				case 2	:	{return 'c';}
+				case 3	:	{return 'd';}
+				case 4	:	{return 'e';}			
+				default :	{throw new AssemblerException("Error A83 - Line "+lineNumber+": "+currentInstruction.getName()+" - too many operands for an instruction");}
+			}
+	}
+
+	public String intToBinaryString(int immediate,int numberOfBitsRequired) throws AssemblerException
+	{
+		//TODO check whether immediate is in possible range
+		if (true)
+			{
+				if (immediate<0)
+					{
+						return toTwosComplement(encodeToBinary(-(immediate),numberOfBitsRequired));
+					}
+				else
+					{
+						return encodeToBinary(immediate,numberOfBitsRequired);
+					}
+			}
+		else
+			{
+				throw new AssemblerException("Error A84 - Line "+lineNumber+": "+currentInstruction.getName()+" - this immediate ("+immediate+") cannot be represented as a twos complement number within current bounds");
+			}
+	}
+
+	public String toTwosComplement(String positiveBinaryNumber) throws AssemblerException
+	{
+		//copy up to and including first 1, then invert remainder
+		int count = positiveBinaryNumber.length()-1;
+		String newOutput = "";
+		while (count>=0 && positiveBinaryNumber.charAt(count)=='0')
+			{
+				newOutput = "0"+newOutput;
+				count--;
+			}
+		if (positiveBinaryNumber.charAt(count)=='1')
+			{
+				newOutput = "1"+newOutput;
+				count--;
+			}
+		while (count>=0)
+			{
+				if (positiveBinaryNumber.charAt(count)=='1') {newOutput = "0"+newOutput;}
+				else if (positiveBinaryNumber.charAt(count)=='0') {newOutput = "1"+newOutput;}
+				else {throw new AssemblerException("Error A85 - Line "+lineNumber+": "+currentInstruction.getName()+" - the number ("+positiveBinaryNumber+") for some reason is not in binary");}
+				count++;
+			}
+		return newOutput;
+	}
+	
+	public String encodeToBinary(int immediate,int numberOfBitsRequired)
+	{
+		int value = immediate;
+		String output = "";
+		while (value>1)
+			{
+				output = (value%2)+output;
+				value = value/2;
+			}
+		while (output.length()<numberOfBitsRequired)
+			{
+				output = "0"+output;
+			}
+		return output;
+	}
+	
+	public int binaryStringToInteger(String binaryString) throws AssemblerException
+	{
+
+		if (binaryString.charAt(0)=='1')
+			{
+				// is a negative number
+				// convert back to positive number
+				return -(binaryToPositiveInteger(toTwosComplement(binaryString)));
+			}
+		else
+			{
+				return binaryToPositiveInteger(toTwosComplement(binaryString));
+			}
+
+	}
+	
+	public int binaryToPositiveInteger(String binaryString)
+	{
+		int value = 0;
+		int equivalent = 1;
+		for (int count = binaryString.length()-1; count>=0; count--)
+			{
+				if (binaryString.charAt(count)=='1') {value+=equivalent;}
+				equivalent=equivalent*2;
+			}
+		return value;
+	}
+}
+*/
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@a178 40
+/*
+	private void handleGeneralLabelOperand2(AddressingOperand currentOperand) throws AssemblerException
+	{
+		if (handlerMode==3) {handleGeneralLabel2(currentOperand);}
+		else if (handlerMode==4) {handleTarget2(currentOperand);}
+		else {throw new AssemblerException("Error A91 - Line "+lineNumber+": "+currentInstruction.getName()+" - Unknown label operand");}
+	}
+
+	private void handleGeneralLabel2(AddressingOperand currentOperand) throws AssemblerException
+	{
+		String label = currentOperand.getLabel();
+		if (!symbolTable.containsLabel(label))
+			{
+				translatedList.add("LABEL_ERROR");
+				symbolTableError=true;
+			}
+		else
+			{
+				String address = ""+intToBinaryString(symbolTable.returnAddress(label)-currentLineAddress,18);
+				translatedList.add(address.substring(0,address.length()-2));
+			}
+	}
+	
+
+	private void handleTarget2(AddressingOperand currentOperand) throws AssemblerException
+	{
+		String target = currentOperand.getLabel();
+		if (!symbolTable.containsLabel(target))
+			{
+				translatedList.add("LABEL_ERROR");
+				symbolTableError=true;		
+			}
+		else
+			{
+				String address = ""+intToBinaryString(symbolTable.returnAddress(target)-currentLineAddress,32);
+				translatedList.add(address.substring(3,address.length()-2));
+			}
+	}	
+
+*/
+a186 3
+/*
+			case AddressingOperand.LABEL							: 	{handleGeneralLabelOperand2(currentOperand);break;}
+*/
+d197 15
+a211 6
+		rsRegister = "00001";
+/*
+		machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+									"00100000001000010001000000000000"+ //addi at,at,0x1000
+						 			machineWord;					    //prefix the machine code instruction to set the at register
+*/
+a212 4
+		machineWord = 	"00111100000000010001000000000000"+ //lui at, 0x1000
+									"00100000001000011000000000000000  "+ //addi at,at,0x8000
+									machineWord;					    //prefix the machine code instruction to set the at register
+		translatedList.add(""+intToBinaryString(imm-0x10008000,16));
+d218 12
+a229 2
+		translatedList.add("0000000000000000");
+		rsRegister = encodeRegister(register);
+d236 12
+a247 2
+		translatedList.add(""+intToBinaryString(imm,16));
+		rsRegister = encodeRegister(register);
+d260 15
+a274 11
+				rsRegister = "00001";
+/*
+  				machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+											"00100000001000010001000000000000"+ //addi at,at,0x1000
+											machineWord;												 //prefix the machine code instruction to set the at register
+ */
+ 				machineWord = 	"00111100000000010001000000000000"+ //lui at, 0x1000
+											"00100000001000011000000000000000  "+ //addi at,at,0x8000
+											machineWord;												 //prefix the machine code instruction to set the at register
+
+				translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-0x10008000,16));
+d290 15
+a304 10
+				rsRegister = "00001";
+/*
+				machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+											"00100000001000010001000000000000"+ //addi at,at,0x1000
+											machineWord;						//prefix the machine code instruction to set the at register
+*/
+				machineWord = 	"00111100000000010001000000000000"+ //lui at, 0x1000
+											"00100000001000011000000000000000  "+ //addi at,at,0x8000
+											machineWord;						//prefix the machine code instruction to set the at register
+				translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)+immediate-0x10008000,16));														
+d321 30
+a350 21
+				rsRegister = "00001";
+/*
+				machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+											"00100000001000010001000000000000"+ //addi at,at,0x1000
+*/
+
+			if (immediate>=0)
+				{
+					machineWord = 	"00111100000000010001000000000000"+ //lui at, 0x1000
+												"00100000001000011000000000000000  "+ //addi at,at,0x8000
+												"00000000001"+encodeRegister(register)+"0000100000100001"+ //addu at,at,register
+									machineWord;												 //prefix the machine code instruction to set the at register	
+				}
+			else
+				{
+					machineWord = 	"00111100000000010001000000000000"+ //lui at, 0x1000
+												"00100000001000011000000000000000  "+ //addi at,at,0x8000
+												"00000000001"+encodeRegister(register)+"0000100000100011"+ //subuu at,at,register
+									machineWord;												 //prefix the machine code instruction to set the at register						
+				}
+				translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-0x10008000+immediate,16));														
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d241 1
+d243 7
+a249 2
+						"00100000001000010001000000000000"+ //addi at,at,0x1000
+						machineWord;					    //prefix the machine code instruction to set the at register
+d274 1
+a274 1
+				symbolTableError=true;				
+d279 9
+a287 3
+				machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+								"00100000001000010001000000000000"+ //addi at,at,0x1000
+								machineWord;												 //prefix the machine code instruction to set the at register
+d305 1
+d307 6
+a312 2
+								"00100000001000010001000000000000"+ //addi at,at,0x1000
+								machineWord;						//prefix the machine code instruction to set the at register
+d331 1
+d333 17
+a349 3
+								"00100000001000010001000000000000"+ //addi at,at,0x1000
+								"00000000001"+encodeRegister(register)+"0000100000100001"+ //addu at,at,register
+								machineWord;												 //prefix the machine code instruction to set the at register
+d356 1
+a356 1
+		if 			(registerName.equals("$zero")) 		{return "00000";}
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d80 4
+a83 1
+		machineWord = replaceOperand(rsRegister,machineWord,'z');
+d364 14
+a377 1
+		/*
+d387 1
+a387 12
+		*/	
+		int substituteLength = translatedOperand.length();
+		String replaceString = "";
+		for (int count = 0; count<substituteLength; count++)
+		{
+			replaceString = replaceString+oprep;
+		}
+		while (machineCode.indexOf(oprep)!=-1)
+			{
+				machineCode.replaceFirst(replaceString,translatedOperand);
+			}
+		return machineCode;
+@
+
+
+1.10
+log
+@edited pseudoinstructions and changed to handle multiple operand occurrances
+@
+text
+@d378 5
+a382 1
+		return machineCode.replaceAll(replaceString,translatedOperand);
+@
+
+
+1.9
+log
+@updated stuff
+@
+text
+@d361 1
+d370 9
+a378 1
+		return machineCode.replaceAll(replaceString,translatedOperand);	
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d115 4
+a118 6
+		switch (handlerMode)
+		{
+			case 1 : {handleGeneralImmediateOperand(currentOperand);}
+			case 2 : {handleShamtImmediateOperand(currentOperand);}
+			default : {throw new AssemblerException("Error A59 - Line "+lineNumber+": "+currentInstruction.getName()+" - immediate value is not a valid type for this instruction");}
+		}
+d141 3
+a143 6
+		switch (handlerMode)
+		{
+			case 1 : {handleGeneralLabel(currentOperand);}
+			case 2 : {handleTarget(currentOperand);}
+			default : {throw new AssemblerException("Error A91 - Line "+lineNumber+": "+currentInstruction.getName()+" - Unknown label operand");}
+		}
+d156 2
+a157 2
+				String address = ""+intToBinaryString(symbolTable.returnAddress(label)-currentLineAddress,16);
+				translatedList.add(address.substring(0,address.length()-3));
+d173 39
+a211 1
+				translatedList.add(address.substring(3,address.length()-3));
+d215 2
+d221 9
+a229 6
+			case AddressingOperand.IMMEDIATE 						:	{handleAddressingImmediate(currentOperand);}
+			case AddressingOperand.IMMEDIATE_REGISTER 				: 	{handleAddressingImmediateRegister(currentOperand);}
+			case AddressingOperand.LABEL							: 	{handleAddressingLabel(currentOperand);}
+			case AddressingOperand.LABEL_PLUS_IMMEDIATE				: 	{handleAddressingLabelImmediate(currentOperand);}
+			case AddressingOperand.LABEL_PLUS_IMMEDIATE_REGISTER 	: 	{handleAddressingLabelImmediateRegister(currentOperand);}
+			case AddressingOperand.REGISTER						 	: 	{handleAddressingRegister(currentOperand);}
+d388 1
+a388 1
+		if (true)
+d425 1
+a425 1
+				count++;
+d434 1
+a434 1
+		while (value>1)
+d457 1
+a457 1
+				return binaryToPositiveInteger(toTwosComplement(binaryString));
+d466 7
+a472 5
+		for (int count = binaryString.length()-1; count>=0; count--)
+			{
+				if (binaryString.charAt(count)=='1') {value+=equivalent;}
+				equivalent=equivalent*2;
+			}
+@
+
+
+1.7
+log
+@assembler stuff
+@
+text
+@d153 1
+a153 1
+		String label = currentOperand.getValue();
+d157 1
+a157 1
+				symbolTableError=true;		
+d169 1
+a169 1
+		String target = currentOperand.getValue();
+a242 1
+		boolean isPlus = false;
+a243 6
+/*
+		if (currentOperand.getSign().equals("+"))
+		{
+			isPlus = true;
+		}
+*/
+d255 1
+a255 8
+				if (isPlus)
+				{
+					translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)+immediate-0x10008000,16));														
+				}
+				else
+				{
+					translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-immediate-0x10008000,16));																												
+				}
+a264 7
+		boolean isPlus = false;
+/*
+		if (currentOperand.getSign().equals("+"))
+		{
+			isPlus = true;
+		}
+*/
+d277 1
+a277 8
+				if (isPlus)
+				{
+					translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-0x10008000+immediate,16));														
+				}
+				else
+				{
+					translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-0x10008000-immediate,16));														
+				}
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@a33 4
+
+
+	//TODO
+	private int MAX_INTEGER = 999999999;
+d87 5
+d93 1
+a93 1
+			{handleRegularRegisterOperand((RegisterOperand)currentOperand);}
+d95 1
+a95 3
+			{handleRegularImmediateOperand((ImmediateOperand)currentOperand);}
+		else if (currentOperand instanceof ImmediateRegisterOperand)
+			{handleImmediateRegisterOperand((ImmediateRegisterOperand)currentOperand);}
+d97 3
+a99 5
+			{handleLabelOperand((LabelOperand)currentOperand);}
+		else if (currentOperand instanceof LabelPlusImmediateOperand)
+			{handleLabelImmediate((LabelPlusImmediateOperand)currentOperand);}
+		else if (currentOperand instanceof LabelPlusImmediateRegisterOperand)
+			{handleLabelImmediateRegister((LabelPlusImmediateRegisterOperand)currentOperand);}
+d105 7
+d113 1
+a113 1
+	private void handleRegularRegisterOperand(RegisterOperand currentOperand) throws AssemblerException
+a114 1
+		String register = currentOperand.getValue();
+d117 3
+a119 4
+			case 0		:			{	translatedList.add(encodeRegister(register));} //<=3
+			case 1		:			{	translatedList.add(encodeRegister(register));} //<=1
+			case 2		:			{	throw new AssemblerException("Error A60 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no register operands in a jump instruction");} //0
+			case 3		:			{	translatedList.add(encodeRegister(register));} //<=2 is a regular register and not an addressing operand
+d122 2
+a123 2
+
+	private void handleRegularImmediateOperand(ImmediateOperand currentOperand) throws AssemblerException
+d125 2
+a126 8
+		int immediateValue = currentOperand.getValue();
+		switch (handlerMode)
+		{
+			case 0		:			{	translatedList.add(""+intToBinaryString(immediateValue,16));} //<=1
+			case 1		:			{	throw new AssemblerException("Error A61 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no immediate operands in a branch instruction");} //0
+			case 2		:			{	throw new AssemblerException("Error A62 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no immediates in a jump instruction");} //0
+			case 3		:			{	throw new AssemblerException("Error A90 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no immediates in a load/store instruction unless it is a AddressingOperand");} //0
+		}
+d129 5
+d135 5
+d141 1
+a141 2
+	
+	private void handleRegisterOperand(RegisterOperand currentOperand) throws AssemblerException
+a142 1
+		String register = currentOperand.getValue();
+d145 3
+a147 15
+			case 0		:			{	translatedList.add(encodeRegister(register));} //<=3
+			case 1		:			{	translatedList.add(encodeRegister(register));} //<=1
+			case 2		:			{	throw new AssemblerException("Error A60 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no register operands in a jump instruction");} //0
+			case 3		:			{	if (translatedList.size()==1)
+												{
+													//first register operand has already been added, we are in address mode
+													translatedList.add("0000000000000000");
+													rsRegister = encodeRegister(register);
+												}
+											else
+												{
+													//first register has not been added, we are reading in the first register operand
+													translatedList.add(encodeRegister(register));
+												}										
+										} //<=2
+d150 33
+a182 2
+		
+	private void handleImmediateOperand(ImmediateOperand currentOperand) throws AssemblerException
+d184 1
+a184 2
+		int immediateValue = currentOperand.getValue();
+		switch (handlerMode)
+d186 7
+a192 10
+			case 0		:			{	translatedList.add(""+intToBinaryString(immediateValue,16));} //<=1
+			case 1		:			{	throw new AssemblerException("Error A61 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no immediate operands in a branch instruction");} //<=1
+			case 2		:			{	throw new AssemblerException("Error A62 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no immediates in a jump instruction");} //0
+			case 3		:			{
+											rsRegister = "00001";
+											machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+																		"00100000001000010001000000000000"+ //addi at,at,0x1000
+																		machineWord;												 //prefix the machine code instruction to set the at register
+											translatedList.add(""+intToBinaryString(immediateValue-0x10008000,16));
+										}
+d195 10
+d206 1
+a206 1
+	private void handleImmediateRegisterOperand(ImmediateRegisterOperand currentOperand) throws AssemblerException
+a207 1
+		int immediateValue = currentOperand.getImmediateValue();
+d209 10
+a218 10
+		switch (handlerMode)
+		{
+			case 0		:			{	throw new AssemblerException("Error A63 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no addressing within normal instructions");} //0
+			case 1		:			{	throw new AssemblerException("Error A64 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no imm(reg) within branch instructions only labels");} //0
+			case 2		:			{	throw new AssemblerException("Error A65 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no imm(reg) within jump instructions only labels");} //0
+			case 3		:			{
+											translatedList.add(""+intToBinaryString(immediateValue,16));
+											rsRegister = encodeRegister(register);
+										}//<=1 should only be 1 of these here
+		}
+d220 2
+a221 2
+
+	private void handleLabelOperand(LabelOperand currentOperand) throws AssemblerException
+d223 1
+a223 1
+		String label = currentOperand.getValue();
+d226 1
+a226 7
+				switch (handlerMode)
+				{
+					case 0		:			{	throw new AssemblerException("Error A66 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label addressing within normal instructions");} //0
+					case 1		:			{	translatedList.add("LABEL_ERROR");} //1
+					case 2		:			{	translatedList.add("LABEL_ERROR");} //1
+					case 3		:			{	translatedList.add("LABEL_ERROR");} //1
+				}
+d231 5
+a235 19
+				switch (handlerMode)
+				{
+					case 0		:			{	throw new AssemblerException("Error A67 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label addressing within normal instructions");} //0
+					case 1		:			{
+													String address = ""+intToBinaryString(symbolTable.returnAddress(label)-currentLineAddress,16);
+													translatedList.add(address.substring(0,address.length()-3));
+												} //1
+					case 2		:			{
+													String address = ""+intToBinaryString(symbolTable.returnAddress(label)-currentLineAddress,26);
+													translatedList.add(address.substring(3,address.length()-3));
+												} //1
+					case 3		:			{
+													rsRegister = "00001";
+													machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+																				"00100000001000010001000000000000"+ //addi at,at,0x1000
+																				machineWord;												 //prefix the machine code instruction to set the at register
+													translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-0x10008000,16));
+												}//<=1 should only be 1 of these here
+				}
+d238 2
+a239 2
+
+	private void handleLabelImmediate(LabelPlusImmediateOperand currentOperand) throws AssemblerException
+a241 1
+		String sign = currentOperand.getSign();
+d243 1
+d245 6
+d253 1
+a253 7
+				switch (handlerMode)
+				{
+					case 0		:			{	throw new AssemblerException("Error A68 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate addressing within normal instructions");} //0
+					case 1		:			{	throw new AssemblerException("Error A69 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate addressing within branch instructions");} //0
+					case 2		:			{	throw new AssemblerException("Error A70 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate addressing within jump instructions");} //0 TODO is this right?
+					case 3		:			{	translatedList.add("LABEL_ERROR");} //1
+				}
+d258 5
+a262 1
+				switch (handlerMode)
+d264 5
+a268 20
+					case 0		:			{	throw new AssemblerException("Error A71 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediateaddressing within normal instructions");} //0
+					case 1		:			{	throw new AssemblerException("Error A72 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate addressing within branch instructions");} //0
+					case 2		:			{	throw new AssemblerException("Error A73 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate addressing within jump instructions");} //0 TODO is this right?
+					case 3		:			{	rsRegister = "00001";
+													machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+																				"00100000001000010001000000000000"+ //addi at,at,0x1000
+																				machineWord;												 //prefix the machine code instruction to set the at register
+													if (sign.equals("+"))
+														{
+															translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)+immediate-0x10008000,16));														
+														}
+													else if (sign.equals("-"))
+														{
+															translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-immediate-0x10008000,16));																												
+														}
+													else
+														{
+															throw new AssemblerException("Error A74 - Line "+lineNumber+": "+currentInstruction.getName()+" - sign not represented correctly in operand");
+														}
+												}//<=1 should only be 1 of these here
+d272 3
+a274 3
+
+	private void handleLabelImmediateRegister(LabelPlusImmediateRegisterOperand currentOperand) throws AssemblerException
+	{		
+a275 1
+		String sign = currentOperand.getSign();
+d279 7
+d288 1
+a288 7
+				switch (handlerMode)
+				{
+					case 0		:			{	throw new AssemblerException("Error A75 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate register addressing within normal instructions"); } //0
+					case 1		:			{	throw new AssemblerException("Error A76 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate register addressing within branch instructions"); } //0
+					case 2		:			{	throw new AssemblerException("Error A77 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate register addressing within jump instructions"); } //0 TODO is this right?
+					case 3		:			{	translatedList.add(null);} //1
+				}
+d293 10
+a302 1
+				switch (handlerMode)
+d304 1
+a304 23
+					case 0		:			{	throw new AssemblerException("Error A78 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate rehgister addressing within normal instructions");} //0
+					case 1		:			{	throw new AssemblerException("Error A79 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate register addressing within branch instructions");} //0
+					case 2		:			{	throw new AssemblerException("Error A80 - Line "+lineNumber+": "+currentInstruction.getName()+" - should be no label immediate register addressing within jump instructions");} // TODO is this right?
+					case 3		:			{
+												rsRegister = "00001";
+			
+												machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+																			"00100000001000010001000000000000"+ //addi at,at,0x1000
+																			"00000000001"+encodeRegister(register)+"0000100000100001"+ //addu at,at,register
+																			machineWord;												 //prefix the machine code instruction to set the at register
+												if (sign.equals("+"))
+													{
+														translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-0x10008000+immediate,16));														
+													}
+												else if (sign.equals("-"))
+													{
+														translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-0x10008000-immediate,16));														
+													}
+												else
+													{
+														throw new AssemblerException("Error A81 - Line "+lineNumber+": "+currentInstruction.getName()+" - sign not represented correctly in operand");
+													}
+												}//<=1 should only be 1 of these here
+@
+
+
+1.5
+log
+@changed instruction file to only contain information on instructions
+@
+text
+@d87 461
+d568 1
+a568 1
+
+d912 2
+a913 1
+}@
+
+
+1.4
+log
+@revised method for assembling instructions
+@
+text
+@d45 1
+a45 1
+	public void setHandlerMode(int mode)
+d53 1
+a53 1
+				// throw new error, instruction mode is invalid, thus xml probably incorrect
+d62 1
+a62 1
+	public String encodeOperands(List operandList,int cLA, String mW, int instructionType,Instruction cI, int lN)
+d88 1
+a88 1
+	public void handleOperand(Operand currentOperand)
+d103 3
+a105 1
+			{/*throw new error notValidOperand*/}
+d108 1
+a108 1
+	private void handleRegisterOperand(RegisterOperand currentOperand)
+d113 14
+a126 14
+			case 0		:			{translatedList.add(encodeRegister(register));} //<=3
+			case 1		:			{translatedList.add(encodeRegister(register));} //<=1
+			case 2		:			{/* error: should be no registers in a jump instruction */} //0
+			case 3		:			{if (translatedList.size()==1)
+											{
+												//first register operand has already been added, we are in address mode
+												translatedList.add("0000000000000000");
+												rsRegister = encodeRegister(register);
+											}
+										else
+											{
+												//first register has not been added, we are reading in the first register operand
+												translatedList.add(encodeRegister(register));
+											}										
+d131 1
+a131 1
+	private void handleImmediateOperand(ImmediateOperand currentOperand)
+d136 3
+a138 3
+			case 0		:			{translatedList.add(""+intToBinaryString(immediateValue,16));} //<=1
+			case 1		:			{/*error: should be no immediates in a branch instruction*/} //<=1
+			case 2		:			{/* error: should be no immediates in a jump instruction */} //0
+d140 5
+a144 5
+										rsRegister = "00001";
+										machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+																	"00100000001000010001000000000000"+ //addi at,at,0x1000
+																	machineWord;												 //prefix the machine code instruction to set the at register
+										translatedList.add(""+intToBinaryString(immediateValue-0x10008000,16));
+d149 1
+a149 1
+	private void handleImmediateRegisterOperand(ImmediateRegisterOperand currentOperand)
+d155 6
+a160 5
+			case 0		:			{/* error: should be no addressing within normal instructions */} //0
+			case 1		:			{/* error: should be no imm(reg) within branch instructions only labels*/} //0
+			case 2		:			{/* error: should be no imm(reg) within jump instructions only labels*/} //0
+			case 3		:			{translatedList.add(""+intToBinaryString(immediateValue,16));
+										 rsRegister = encodeRegister(register);
+d165 1
+a165 1
+	private void handleLabelOperand(LabelOperand currentOperand)
+d172 4
+a175 4
+					case 0		:			{/* error: should be no label addressing within normal instructions */} //0
+					case 1		:			{translatedList.add(null);} //1
+					case 2		:			{translatedList.add(null);} //1
+					case 3		:			{translatedList.add(null);} //1
+d183 1
+a183 1
+					case 0		:			{/* error: should be no label addressing within normal instructions */} //0
+d185 2
+a186 2
+												String address = ""+intToBinaryString(symbolTable.returnAddress(label)-currentLineAddress,16);
+												translatedList.add(address.substring(0,address.length()-3));
+d189 2
+a190 2
+												String address = ""+intToBinaryString(symbolTable.returnAddress(label)-currentLineAddress,26);
+												translatedList.add(address.substring(3,address.length()-3));
+d193 5
+a197 5
+												rsRegister = "00001";
+												machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+																			"00100000001000010001000000000000"+ //addi at,at,0x1000
+																			machineWord;												 //prefix the machine code instruction to set the at register
+												translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-0x10008000,16));
+d203 1
+a203 1
+	private void handleLabelImmediate(LabelPlusImmediateOperand currentOperand)
+d213 4
+a216 4
+					case 0		:			{/* error: should be no label immediate addressing within normal instructions */} //0
+					case 1		:			{/* error: should be no label immediate addressing within branch instructions */} //0
+					case 2		:			{/* error: should be no label immediate addressing within jump instructions */} //0 TODO is this right?
+					case 3		:			{translatedList.add(null);} //1
+d224 19
+a242 19
+					case 0		:			{/* error: should be no label immediateaddressing within normal instructions */} //0
+					case 1		:			{/* error: should be no label immediate addressing within branch instructions */} //0
+					case 2		:			{/* error: should be no label immediate addressing within jump instructions */} //0 TODO is this right?
+					case 3		:			{rsRegister = "00001";
+												machineWord = 	"00111100000000011000000000000000"+ //lui at, 0x8000
+																			"00100000001000010001000000000000"+ //addi at,at,0x1000
+																			machineWord;												 //prefix the machine code instruction to set the at register
+												if (sign.equals("+"))
+													{
+														translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)+immediate-0x10008000,16));														
+													}
+												else if (sign.equals("-"))
+													{
+														translatedList.add(""+intToBinaryString(symbolTable.returnAddress(label)-immediate-0x10008000,16));																												
+													}
+												else
+													{
+														/* throw error, sign not represented correctly in operand */
+													}
+d248 1
+a248 1
+	private void handleLabelImmediateRegister(LabelPlusImmediateRegisterOperand currentOperand)
+d259 4
+a262 4
+					case 0		:			{/* error: should be no label immediate register addressing within normal instructions */} //0
+					case 1		:			{/* error: should be no label immediate register addressing within branch instructions */} //0
+					case 2		:			{/* error: should be no label immediate register addressing within jump instructions */} //0 TODO is this right?
+					case 3		:			{translatedList.add(null);} //1
+d270 3
+a272 3
+					case 0		:			{/* error: should be no label immediate rehgister addressing within normal instructions */} //0
+					case 1		:			{/* error: should be no label immediate register addressing within branch instructions */} //0
+					case 2		:			{/* error: should be no label immediate register addressing within jump instructions */} //0 TODO is this right?
+d290 1
+a290 1
+														/* throw error, sign not represented correctly in operand */
+d297 1
+a297 1
+	private String encodeRegister(String registerName)
+d333 1
+a333 2
+				System.out.println("error this is not a register -> this should have been picked up by parser");
+				return null;
+d350 1
+a350 1
+	private char encodeMarker(int number)
+d359 1
+a359 1
+				default :	{/*throw new error: too many operands for an instruction */ return 'q';}
+d363 1
+a363 1
+	private String intToBinaryString(int immediate,int numberOfBitsRequired)
+d365 1
+a365 1
+		//check whether immediate is in possible range
+d379 1
+a379 2
+				/*throw error: this immediate cannot be represented as a twos complement number within current bounds*/
+				return "";
+d383 1
+a383 1
+	public String toTwosComplement(String positiveBinaryNumber)
+d402 1
+a402 1
+				else {/*throw errror becase the number for some reason is not in binary */}
+d408 1
+a408 1
+	private String encodeToBinary(int immediate,int numberOfBitsRequired)
+d423 3
+d427 10
+d438 13
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d24 4
+d29 6
+d45 18
+a62 1
+	public String encodeOperands(List operandList,int currentLineAddress, String machineWord, String instructionType)
+d66 7
+d77 9
+a85 3
+		//scan through and replace in order
+		//replace the zRegister
+		return "";
+d109 18
+a126 1
+		translatedList.add(encodeRegister(register));
+d132 13
+a144 1
+		translatedList.add(""+intToBinaryString(immediateValue));
+d151 9
+a159 2
+		translatedList.add(""+intToBinaryString(immediateValue));
+		translatedList.add(encodeRegister(register));
+d165 33
+a197 4
+		if (symbolTable.containsLabel(label))
+			{translatedList.add(""+symbolTable.returnAddress(label));}
+		else	
+			{translatedList.add(null);}
+d206 11
+a216 2
+		if (symbolTable.containsLabel(label))
+			{translatedList.add(""+symbolTable.returnAddress(label));}
+d218 25
+a242 6
+			{translatedList.add(null);}
+		if (sign.equals("+") && sign.equals("-"))
+			{translatedList.add(sign);}
+		else
+			{translatedList.add(null);}
+		translatedList.add(intToBinaryString(immediate));
+d252 11
+a262 2
+		if (symbolTable.containsLabel(label))
+			{translatedList.add(""+symbolTable.returnAddress(label));}
+d264 28
+a291 7
+			{translatedList.add(null);}
+		if (sign.equals("+") && sign.equals("-"))
+			{translatedList.add(sign);}
+		else
+			{translatedList.add(null);}
+		translatedList.add(intToBinaryString(immediate));
+		translatedList.add(encodeRegister(register));
+d335 1
+a335 1
+	public String replaceOperand(String translatedOperand, String machineCode, int operandNumber)
+a336 1
+		char oprep = alphaNumericOperandNumber(operandNumber);
+d348 1
+a348 1
+	private char alphaNumericOperandNumber(int number)
+d351 8
+a358 8
+		{
+			case 0	:	{return 'a';}
+			case 1	:	{return 'b';}
+			case 2	:	{return 'c';}
+			case 3	:	{return 'd';}
+			case 4	:	{return 'e';}			
+		}
+		return 'z';
+d361 1
+a361 1
+	private String intToBinaryString(int immediate)
+d363 12
+a374 11
+		if (immediate<=MAX_INTEGER)
+		{
+			int value = immediate;
+			String output = "";
+			while (value>1)
+				{
+					output += (value%2);
+					value = value/2;
+				}	
+			return output;					
+		}
+d376 45
+a420 3
+		{
+			return null;
+		}
+a422 2
+	public int getOperandNumbers() {return translatedList.size();}
+	public String getOperand(int number) {return (String)translatedList.get(number);}
+@
+
+
+1.2
+log
+@updated operand handler
+@
+text
+@d35 1
+a35 1
+	public String encodeOperands(List operandList,int currentLineAddress, String machineWord)
+d38 1
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d19 1
+d25 3
+a27 2
+	private boolean notValidOperand;
+	
+a32 2
+		translatedList = new ArrayList();
+		notValidOperand = false;
+d34 2
+a35 2
+	/*
+	public void encodeOperands(List operandList)
+d37 1
+d42 3
+d46 1
+a46 1
+	
+d49 14
+a62 14
+			if (currentOperand instanceof RegisterOperand)
+				{handleRegisterOperand((RegisterOperand)currentOperand);}
+			else if (currentOperand instanceof ImmediateOperand)
+				{handleImmediateOperand((ImmediateOperand)currentOperand);}
+			else if (currentOperand instanceof ImmediateRegisterOperand)
+				{handleImmediateRegisterOperand((ImmediateRegisterOperand)currentOperand);}
+			else if (currentOperand instanceof LabelOperand)
+				{handleLabelOperand((LabelOperand)currentOperand);}
+			else if (currentOperand instanceof LabelPlusImmediateOperand)
+				{handleLabelImmediate((LabelPlusImmediateOperand)currentOperand);}
+			else if (currentOperand instanceof LabelPlusImmediateRegisterOperand)
+				{handleLabelImmediateRegister((LabelPlusImmediateRegisterOperand)currentOperand);}
+			else
+				{notValidOperand = true;}
+d67 2
+a68 1
+		translatedList.add(encodeRegister(currentOperand.getValue()));
+d70 2
+a71 2
+	
+	private String handleImmediateOperand(ImmediateOperand currentOperand, Instruction currentInstruction, int lineNumber)
+d73 2
+a74 8
+		String output = "";
+		int value = currentOperand.getValue();
+		while (value>1)
+			{
+				output += (value%2);
+				value = value/2;
+			}	
+		return output;
+d77 1
+a77 1
+	private static String handleImmediateRegisterOperand(ImmediateRegisterOperand currentOperand, Instruction currentInstruction, int lineNumber)
+a78 1
+
+d81 2
+a82 4
+
+		//TODO
+		//ImmediateRegisterOprand 
+		return "";
+d85 1
+a85 1
+	private static String handleLabelOperand(LabelOperand currentOperand, Instruction currentInstruction, int lineNumber)
+d88 4
+a91 4
+
+		//TODO
+		//LabelOprand
+		return "";
+d94 1
+a94 1
+	private static String handleLabelImmediate(LabelPlusImmediateOperand currentOperand, Instruction currentInstruction, int lineNumber)
+d99 10
+a108 4
+		
+		//TODO
+		//LabelImmediateOprand 
+		return "";
+d111 2
+a112 3
+	private static String handleLabelImmediateRegister(LabelPlusImmediateRegisterOperand currentOperand, Instruction currentInstruction, int lineNumber)
+	{
+		
+d117 53
+d171 44
+a214 3
+		//TODO
+		//LabelImmediateRegisterOprand 
+		return "";
+d217 4
+a220 2
+*/
+}
+@
+
